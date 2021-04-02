@@ -2956,11 +2956,11 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       class="case_footer container_full"
     >
       <div
-        class="case_logotype"
+        class="case_logotype-namba-food"
       />
        
       <h2
-        class="case_title case_title_h2 case_title-sjmc-case"
+        class="case_title case_title_h2 case_title-namba-food"
       >
         
       Namba Food 
@@ -2968,7 +2968,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         
       Top Delivery Service in 
         <br
-          class="case_mobile-screen-break"
+          class="case_mobile-break-namba-food"
         />
         
       Central Asia

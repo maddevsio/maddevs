@@ -580,15 +580,15 @@
     </section>
     <Footer
       link="/case-studies/sir-john-monash-centre/"
-      class-name="namba-food-case"
+      class-name="sjmc"
     >
       <div
         slot="icon"
-        class="case_logotype"
+        class="case_logotype-sjmc"
       />
-      The maintenance <br class="case_mobile-break">
+      The maintenance <br class="case_mobile-break-sjmc">
       of memory: <br>
-      Sir John Monash <br class="case_mobile-break">
+      Sir John Monash <br class="case_mobile-break-sjmc">
       Centre
     </Footer>
   </main>
@@ -755,7 +755,7 @@ export default {
         },
         {
           techName: 'Docker',
-          className: 'devops-docker case_technologies-item__docker',
+          className: 'devops-docker',
         },
         {
           techName: 'Nginx',

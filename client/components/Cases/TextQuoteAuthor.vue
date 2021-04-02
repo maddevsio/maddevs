@@ -90,6 +90,7 @@ export default {
     height: 70px;
     margin-bottom: 4px;
     border-radius: 100%;
+    overflow: hidden;
     background-color: #f4f4f4;
   }
 

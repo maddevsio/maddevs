@@ -57,3 +57,76 @@ export const keyProjectMilestones = [
     background: 'black-primary-bg',
   },
 ]
+
+export const technologies = [
+  {
+    techName: 'Golang',
+    className: 'backend-go',
+  },
+  {
+    techName: 'Django',
+    className: 'backend-django',
+  },
+  {
+    techName: 'PostgreSQL',
+    className: 'backend-postgresql',
+  },
+  {
+    techName: 'Nimble Streamer',
+    className: 'other-nimble',
+  },
+  {
+    techName: 'Plex Media Server',
+    className: 'other-plex',
+  },
+  {
+    techName: 'jQuery',
+    className: 'frontend-jquery',
+  },
+  {
+    techName: 'Video.js',
+    className: 'frontend-video-js',
+  },
+  {
+    techName: 'Nginx',
+    className: 'devops-nginx-txt',
+  },
+]
+
+export const team = [
+  {
+    name: 'Rinat Shcherba',
+    position: 'Backend Developer',
+    fileName: 'andrew-minkin',
+    fileExtension: 'png',
+    alt: 'Rinat Shcherba',
+  },
+  {
+    name: 'Daniyar Chambylov',
+    position: 'Backend Developer',
+    fileName: 'andrew-minkin',
+    fileExtension: 'png',
+    alt: 'Daniyar Chambylov',
+  },
+  {
+    name: 'Vladimir Shebarshov',
+    position: 'Frontend Developer',
+    fileName: 'andrew-minkin',
+    fileExtension: 'png',
+    alt: 'Vladimir Shebarshov',
+  },
+  {
+    name: 'Andrew Minkin',
+    position: 'Tech Lead',
+    fileName: 'andrew-minkin',
+    fileExtension: 'png',
+    alt: 'Andrew Minkin',
+  },
+  {
+    name: 'Erik Sultanaliev',
+    position: 'Backend Developer',
+    fileName: 'erik-sultanaliev',
+    fileExtension: 'png',
+    alt: 'Erik Sultanaliev',
+  },
+]

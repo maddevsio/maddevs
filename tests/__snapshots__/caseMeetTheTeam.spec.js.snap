@@ -11,5 +11,282 @@ exports[`meet the team renders correctly 1`] = `
     Meet the team
   
   </h2>
+   
+  <ul
+    class="case_list-team m-72_bottom media-m-48_bottom"
+  >
+    <li
+      class="case_team-item"
+      file-name-retina="andrew-minkin@2x"
+    >
+      <picture
+        class="case_team-item__image"
+      >
+        <source
+          class="image grey-background"
+          srcset="[object Object] ,[object Object] 2x"
+          type="image/webp"
+        />
+         
+        <img
+          alt="Rinat Shcherba"
+          class="image grey-background"
+          height="50"
+          loading="lazy"
+          src="[object Object]"
+          srcset="[object Object] 2x"
+          width="50"
+        />
+      </picture>
+       
+      <div
+        class="case_team-item__info"
+      >
+        <p
+          class="case_team-item__name"
+        >
+          
+      Rinat Shcherba
+    
+        </p>
+         
+        <p
+          class="case_team-item__position"
+        >
+          
+      Backend Developer
+    
+        </p>
+      </div>
+    </li>
+    <li
+      class="case_team-item"
+      file-name-retina="andrew-minkin@2x"
+    >
+      <picture
+        class="case_team-item__image"
+      >
+        <source
+          class="image grey-background"
+          srcset="[object Object] ,[object Object] 2x"
+          type="image/webp"
+        />
+         
+        <img
+          alt="Daniyar Chambylov"
+          class="image grey-background"
+          height="50"
+          loading="lazy"
+          src="[object Object]"
+          srcset="[object Object] 2x"
+          width="50"
+        />
+      </picture>
+       
+      <div
+        class="case_team-item__info"
+      >
+        <p
+          class="case_team-item__name"
+        >
+          
+      Daniyar Chambylov
+    
+        </p>
+         
+        <p
+          class="case_team-item__position"
+        >
+          
+      Backend Developer
+    
+        </p>
+      </div>
+    </li>
+    <li
+      class="case_team-item"
+      file-name-retina="andrew-minkin@2x"
+    >
+      <picture
+        class="case_team-item__image"
+      >
+        <source
+          class="image grey-background"
+          srcset="[object Object] ,[object Object] 2x"
+          type="image/webp"
+        />
+         
+        <img
+          alt="Vladimir Shebarshov"
+          class="image grey-background"
+          height="50"
+          loading="lazy"
+          src="[object Object]"
+          srcset="[object Object] 2x"
+          width="50"
+        />
+      </picture>
+       
+      <div
+        class="case_team-item__info"
+      >
+        <p
+          class="case_team-item__name"
+        >
+          
+      Vladimir Shebarshov
+    
+        </p>
+         
+        <p
+          class="case_team-item__position"
+        >
+          
+      Frontend Developer
+    
+        </p>
+      </div>
+    </li>
+    <li
+      class="case_team-item"
+      file-name-retina="andrew-minkin@2x"
+    >
+      <picture
+        class="case_team-item__image"
+      >
+        <source
+          class="image grey-background"
+          srcset="[object Object] ,[object Object] 2x"
+          type="image/webp"
+        />
+         
+        <img
+          alt="Andrew Minkin"
+          class="image grey-background"
+          height="50"
+          loading="lazy"
+          src="[object Object]"
+          srcset="[object Object] 2x"
+          width="50"
+        />
+      </picture>
+       
+      <div
+        class="case_team-item__info"
+      >
+        <p
+          class="case_team-item__name"
+        >
+          
+      Andrew Minkin
+    
+        </p>
+         
+        <p
+          class="case_team-item__position"
+        >
+          
+      Tech Lead
+    
+        </p>
+      </div>
+    </li>
+    <li
+      class="case_team-item"
+      file-name-retina="erik-sultanaliev@2x"
+    >
+      <picture
+        class="case_team-item__image"
+      >
+        <source
+          class="image grey-background"
+          srcset="[object Object] ,[object Object] 2x"
+          type="image/webp"
+        />
+         
+        <img
+          alt="Erik Sultanaliev"
+          class="image grey-background"
+          height="50"
+          loading="lazy"
+          src="[object Object]"
+          srcset="[object Object] 2x"
+          width="50"
+        />
+      </picture>
+       
+      <div
+        class="case_team-item__info"
+      >
+        <p
+          class="case_team-item__name"
+        >
+          
+      Erik Sultanaliev
+    
+        </p>
+         
+        <p
+          class="case_team-item__position"
+        >
+          
+      Backend Developer
+    
+        </p>
+      </div>
+    </li>
+  </ul>
+   
+  <blockquote
+    class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
+  >
+    
+    While working on this project, we acquired extensive hands-on experience in building modern livestreaming and VoD
+    services. We were amazed by the abundance of open-source tools available for building great OTT platforms and
+    online movies. Yourcast.TV was the beginning; however, we now see that this internal project could become a
+    cornerstone for many enterprise-level solutions.
+   
+    <div
+      class="case_blockquote-author__author-info m-24_top"
+    >
+      <div
+        class="case_blockquote-author__photo m-auto"
+      >
+        <picture>
+          <source
+            class="image"
+            srcset="[object Object] ,[object Object] 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Andrew Minkin"
+            class="image"
+            height="0"
+            loading="lazy"
+            src="[object Object]"
+            srcset="[object Object] 2x"
+            width="0"
+          />
+        </picture>
+      </div>
+       
+      <p
+        class="case_paragraph case_blockquote-author__name"
+      >
+        
+      Andrew Minkin
+    
+      </p>
+       
+      <p
+        class="case_blockquote-author__position"
+      >
+        
+      CTO, Mad Devs
+    
+      </p>
+    </div>
+  </blockquote>
 </section>
 `;
