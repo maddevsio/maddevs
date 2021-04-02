@@ -57,14 +57,14 @@ exports[`CardNinjaSushi component should render correctly 1`] = `
       <picture>
         <source
           class="case_card-content_image"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="img.jpg ,img.jpg 2x"
           type="image/webp"
         />
          
         <img
           class="case_card-content_image"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="img.jpg"
+          srcset="img.jpg 2x"
         />
       </picture>
     </div>

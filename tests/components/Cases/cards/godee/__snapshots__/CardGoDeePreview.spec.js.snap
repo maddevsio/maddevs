@@ -33,7 +33,7 @@ exports[`CardGoDeePreview component should render correctly 1`] = `
       >
         <source
           class="image"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="img.jpg ,img.jpg 2x"
           type="image/webp"
         />
          
@@ -42,8 +42,8 @@ exports[`CardGoDeePreview component should render correctly 1`] = `
           class="image"
           height="50"
           loading=""
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="img.jpg"
+          srcset="img.jpg 2x"
           width="50"
         />
       </picture>
@@ -53,7 +53,7 @@ exports[`CardGoDeePreview component should render correctly 1`] = `
       >
         <source
           class="image"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="img.jpg ,img.jpg 2x"
           type="image/webp"
         />
          
@@ -62,8 +62,8 @@ exports[`CardGoDeePreview component should render correctly 1`] = `
           class="image"
           height="160"
           loading=""
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="img.jpg"
+          srcset="img.jpg 2x"
           width="307"
         />
       </picture>

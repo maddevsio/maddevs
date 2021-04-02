@@ -21,6 +21,9 @@ describe('CaseHeader component', () => {
   it('should render correctly', () => {
     const { container } = render(CaseHeader, {
       props,
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
 
     expect(container).toMatchSnapshot()
@@ -31,6 +34,9 @@ describe('CaseHeader component', () => {
 
     const { html } = render(CaseHeader, {
       props,
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
 
     expect(html()).toContain('case_main-video')

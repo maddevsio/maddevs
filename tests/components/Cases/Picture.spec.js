@@ -18,6 +18,9 @@ describe('Picture component', () => {
   it('should render correctly', () => {
     const { container } = render(Picture, {
       props,
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
     expect(container).toMatchSnapshot()
   })

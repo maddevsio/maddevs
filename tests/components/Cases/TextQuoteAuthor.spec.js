@@ -19,6 +19,9 @@ describe('TextQuoteAuthor component', () => {
     const { container } = render(TextQuoteAuthor, {
       slots,
       props,
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
 
     expect(container).toMatchSnapshot()

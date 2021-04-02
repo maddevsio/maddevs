@@ -19,6 +19,9 @@ describe('CardGoDeePreview component', () => {
   it('should render correctly', () => {
     const { container } = render(CardGoDeePreview, {
       props,
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
 
     expect(container).toMatchSnapshot()
@@ -27,6 +30,9 @@ describe('CardGoDeePreview component', () => {
   it('should correctly render classname', () => {
     const { html } = render(CardGoDeePreview, {
       props,
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
 
     expect(screen.getByText(props.title)).toBeTruthy()

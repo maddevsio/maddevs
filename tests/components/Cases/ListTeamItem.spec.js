@@ -14,6 +14,9 @@ describe('ListTeamItem component', () => {
   it('should render correctly', () => {
     const { container } = render(ListTeamItem, {
       props,
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
 
     expect(container).toMatchSnapshot()

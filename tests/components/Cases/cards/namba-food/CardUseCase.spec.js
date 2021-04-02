@@ -14,6 +14,9 @@ describe('CardUseCase component', () => {
   it('should render correctly', () => {
     const { container } = render(CardUseCase, {
       props,
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
 
     expect(container).toMatchSnapshot()
@@ -27,6 +30,9 @@ describe('CardUseCase component', () => {
       props: {
         ...props,
         classList,
+      },
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
       },
     })
 

@@ -10,7 +10,7 @@ exports[`ListTeamItem component should render correctly 1`] = `
     >
       <source
         class="image grey-background"
-        srcset="[object Object] ,[object Object] 2x"
+        srcset="img.jpg ,img.jpg 2x"
         type="image/webp"
       />
        
@@ -19,8 +19,8 @@ exports[`ListTeamItem component should render correctly 1`] = `
         class="image grey-background"
         height="50"
         loading="lazy"
-        src="[object Object]"
-        srcset="[object Object] 2x"
+        src="img.jpg"
+        srcset="img.jpg 2x"
         width="50"
       />
     </picture>

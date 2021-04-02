@@ -24,7 +24,7 @@ exports[`should render correctly Picture component 1`] = `
             <picture>
               <source
                 class="image"
-                srcset="[object Object] ,[object Object] 2x"
+                srcset="img.jpg ,img.jpg 2x"
                 type="image/webp"
               />
                
@@ -33,8 +33,8 @@ exports[`should render correctly Picture component 1`] = `
                 class="image"
                 height="0"
                 loading="lazy"
-                src="[object Object]"
-                srcset="[object Object] 2x"
+                src="img.jpg"
+                srcset="img.jpg 2x"
                 width="0"
               />
             </picture>
@@ -45,7 +45,7 @@ exports[`should render correctly Picture component 1`] = `
             <picture>
               <source
                 class="image"
-                srcset="[object Object] ,[object Object] 2x"
+                srcset="img.jpg ,img.jpg 2x"
                 type="image/webp"
               />
                
@@ -54,8 +54,8 @@ exports[`should render correctly Picture component 1`] = `
                 class="image"
                 height="0"
                 loading="lazy"
-                src="[object Object]"
-                srcset="[object Object] 2x"
+                src="img.jpg"
+                srcset="img.jpg 2x"
                 width="0"
               />
             </picture>
@@ -84,7 +84,7 @@ exports[`should render correctly Picture component 1`] = `
           <picture>
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -93,8 +93,8 @@ exports[`should render correctly Picture component 1`] = `
               class="image"
               height="0"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="0"
             />
           </picture>
@@ -105,7 +105,7 @@ exports[`should render correctly Picture component 1`] = `
           <picture>
             <source
               class="image"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -114,8 +114,8 @@ exports[`should render correctly Picture component 1`] = `
               class="image"
               height="0"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="0"
             />
           </picture>

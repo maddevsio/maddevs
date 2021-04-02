@@ -20,6 +20,9 @@ describe('should render correctly', () => {
   it('Picture component', () => {
     const { container } = render(Swiper, {
       props,
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
     expect(container).toMatchSnapshot()
   })
