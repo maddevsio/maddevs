@@ -1,5 +1,5 @@
 import CardSupportedGadgets from '@/components/Cases/kaf/CardSupportedGadgets'
-import { render } from '@testing-library/vue'
+import { render, screen } from '@testing-library/vue'
 
 const props = {
   title: 'title',
@@ -18,5 +18,15 @@ describe('CardSupportedGadgets component', () => {
       },
     })
     expect(container).toMatchSnapshot()
+  })
+
+  it('title should include classname', () => {
+    render(CardSupportedGadgets, {
+      props,
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
+    })
+    expect(screen.getByText(props.title).className).toContain('card-content_title case_title_h4')
   })
 })

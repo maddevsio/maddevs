@@ -1,9 +1,9 @@
-import SupportedGadgets from '@/components/Cases/kaf/SupportedGadgets'
+import Team from '@/components/Cases/kaf/Team'
 import { render, screen } from '@testing-library/vue'
 
-describe('SupportedGadgets component', () => {
+describe('Team component', () => {
   it('should render correctly', () => {
-    const { container } = render(SupportedGadgets, {
+    const { container } = render(Team, {
       mocks: {
         getMediaFromS3: () => 'img.jpg',
       },
@@ -12,11 +12,11 @@ describe('SupportedGadgets component', () => {
   })
 
   it('title should include classname', () => {
-    render(SupportedGadgets, {
+    render(Team, {
       mocks: {
         getMediaFromS3: () => 'img.jpg',
       },
     })
-    expect(screen.getByText(/Supported gadgets/i).className).toContain('case_title_h2')
+    expect(screen.getByText(/Meet the team/i).className).toContain('case_title_h2')
   })
 })

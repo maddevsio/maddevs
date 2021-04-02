@@ -1,5 +1,5 @@
 import CardProjectMilestone from '@/components/Cases/kaf/CardProjectMilestone'
-import { render } from '@testing-library/vue'
+import { render, screen } from '@testing-library/vue'
 
 describe('CardProjectMilestone component', () => {
   const props = {
@@ -13,5 +13,12 @@ describe('CardProjectMilestone component', () => {
       props,
     })
     expect(container).toMatchSnapshot()
+  })
+
+  it('title should include classname', () => {
+    render(CardProjectMilestone, {
+      props,
+    })
+    expect(screen.getByText(props.title).tagName).toBe('H4')
   })
 })

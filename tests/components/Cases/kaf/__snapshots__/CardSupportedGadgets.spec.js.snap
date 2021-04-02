@@ -18,9 +18,6 @@ exports[`CardSupportedGadgets component should render correctly 1`] = `
     >
       <picture
         class="card-content_picture"
-        file-extension="png"
-        file-name="macbook-pro-card"
-        picture-folder="kaf"
       >
         <source
           class="image"
@@ -43,11 +40,7 @@ exports[`CardSupportedGadgets component should render correctly 1`] = `
     <div
       class="card-content_gadget-picture-wrapp-mobile card-content_gadget-picture-wrapp-mobile-macbook-pro"
     >
-      <picture
-        file-extension="png"
-        file-name="macbook-pro"
-        picture-folder="kaf"
-      >
+      <picture>
         <source
           class="image"
           srcset="img.jpg ,img.jpg 2x"

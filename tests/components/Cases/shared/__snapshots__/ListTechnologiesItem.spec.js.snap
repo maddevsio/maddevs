@@ -6,7 +6,7 @@ exports[`ListTechnologiesItem components should render correctly 1`] = `
     class="case_technologies-item"
   >
     <div
-      class="case_technologies-item__tech-icon iconClassName"
+      class="case_technologies-item__tech-icon case_technologies-item__iconClassName iconClassName"
     />
      
     <p
