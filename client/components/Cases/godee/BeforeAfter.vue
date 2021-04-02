@@ -8,8 +8,8 @@
         <UIBeforeAfterImage
           :base-width="'1000'"
           :base-height="'578.47'"
-          :before-image="'Cases/godee/png/application-before.png'"
-          :after-image="'Cases/godee/png/application-after.png'"
+          before-image="/images/Cases/godee/png/application-before.png"
+          after-image="/images/Cases/godee/png/application-after.png"
           :alt="'GoDee Public Transportation App at 2018 and now.'"
         />
       </div>
