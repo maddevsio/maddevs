@@ -1,4 +1,4 @@
-export default function (animation, lottieId) {
+export default function playLottie(animation, lottieId) {
   const observerCallback = entries => entries.forEach(({ isIntersecting }) => {
     if (isIntersecting) animation.play()
   })
