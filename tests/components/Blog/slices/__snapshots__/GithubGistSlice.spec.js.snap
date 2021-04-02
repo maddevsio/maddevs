@@ -2,7 +2,9 @@
 
 exports[`github gist component is a Vue instance 1`] = `
 <div>
-  <div>
+  <div
+    stubs="prismic-image"
+  >
     <!---->
   </div>
 </div>

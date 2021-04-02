@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container_full background-color-black-godee p-100_top p-100_bottom media-p-48_top media-p-48_bottom"
+    class="container_full background-color-black-primary-bg p-100_top p-100_bottom media-p-48_top media-p-48_bottom"
   >
     <div class="container_regular">
       <div class="case_preview-cards">
