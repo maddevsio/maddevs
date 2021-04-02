@@ -16,7 +16,7 @@
       <div class="container_regular">
         <Lottie
           id="online-cinema"
-          :options="lottieOptions"
+          :options="options"
           class="case_lottie"
           @animCreated="handleAnimation"
         />
@@ -44,7 +44,7 @@ import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import TextQuote from '@/components/Cases/shared/TextQuote'
 import Lottie from 'vue-lottie/src/lottie.vue'
 import animationData from '@/assets/lottie/yourcast/phase-online-cinema.json'
-import playLottie from '@/helpers/playLottie'
+import playLottieMixin from '@/mixins/playLottieMixin'
 
 export default {
   name: 'PhaseOnlineCinema',
@@ -54,20 +54,10 @@ export default {
     Lottie,
   },
 
-  data() {
-    return {
-      lottieOptions: {
-        animationData,
-        autoplay: false,
-      },
-    }
-  },
-
-  methods: {
-    handleAnimation(animation) {
-      playLottie(animation, 'online-cinema')
-    },
-  },
+  mixins: [playLottieMixin('online-cinema', {
+    animationData,
+    autoplay: false,
+  })],
 }
 </script>
 

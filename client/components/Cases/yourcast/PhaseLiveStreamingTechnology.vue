@@ -34,7 +34,7 @@
       <div class="container_regular">
         <Lottie
           id="streaming-technology"
-          :options="lottieOptions"
+          :options="options"
           class="case_lottie"
           @animCreated="handleAnimation"
         />
@@ -48,7 +48,7 @@ import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
 import Lottie from 'vue-lottie/src/lottie.vue'
 import animationData from '@/assets/lottie/yourcast/streaming-technology.json'
-import playLottie from '@/helpers/playLottie'
+import playLottieMixin from '@/mixins/playLottieMixin'
 
 export default {
   name: 'PhaseLiveStreamingTechnology',
@@ -58,20 +58,10 @@ export default {
     Lottie,
   },
 
-  data() {
-    return {
-      lottieOptions: {
-        animationData,
-        autoplay: false,
-      },
-    }
-  },
-
-  methods: {
-    handleAnimation(animation) {
-      playLottie(animation, 'streaming-technology')
-    },
-  },
+  mixins: [playLottieMixin('streaming-technology', {
+    animationData,
+    autoplay: false,
+  })],
 }
 </script>
 
