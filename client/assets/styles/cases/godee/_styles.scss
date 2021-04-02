@@ -1,10 +1,6 @@
 .case {
-  &_header {
+  &_header::before {
     background-color: $bgcolor--black-opacity-07;
-
-    &:before {
-      background-image: url("../../assets/img/Cases/godee/jpg/godee-case-preview.jpg");
-    }
   }
 
   &_godee-logo {
@@ -15,17 +11,6 @@
 
   &_text-quote-break {
     display: block;
-  }
-
-  &_logotype {
-    @include nambafood-footer;
-    width: 200px;
-    height: 63px;
-    margin-bottom: 33px;
-  }
-
-  &_mobile-screen-break { // Foooter text break
-    display: none;
   }
 
   &_issues-godee-card {
@@ -157,7 +142,6 @@
     left: -5px;
     right: 0;
     bottom: 0;
-    background: url('../../assets/img/Cases/godee/jpg/parallax.jpg');
     background-size: cover;
     background-position: center;
     -webkit-transform: translateZ(-300px) scale(2);
@@ -266,12 +250,6 @@
       width: 147px;
       height: 65px;
       margin-bottom: 20px;
-    }
-  }
-
-  @media screen and (max-width: 520px) {
-    &_mobile-screen-break {
-      display: block;
     }
   }
 

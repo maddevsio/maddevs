@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListTeamItem component should render correctly 1`] = `
+<div>
+  <li
+    class="case_team-item"
+  >
+    <picture
+      class="case_team-item__image"
+    >
+      <source
+        class="image grey-background"
+        srcset="img.jpg ,img.jpg 2x"
+        type="image/webp"
+      />
+       
+      <img
+        alt="some-name"
+        class="image grey-background"
+        height="50"
+        loading="lazy"
+        src="img.jpg"
+        srcset="img.jpg 2x"
+        width="50"
+      />
+    </picture>
+     
+    <div
+      class="case_team-item__info"
+    >
+      <p
+        class="case_team-item__name"
+      >
+        
+      some-name
+    
+      </p>
+       
+      <p
+        class="case_team-item__position"
+      >
+        
+      
+    
+      </p>
+    </div>
+  </li>
+</div>
+`;

@@ -14,6 +14,7 @@
             :key="paragraph"
             :class="`content-item__paragraph-${type}`"
             class="content-item__paragraph"
+            data-testid="test-paragraph"
             v-html="paragraph"
           >
             {{ paragraph }}

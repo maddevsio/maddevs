@@ -1,8 +1,9 @@
 <template>
   <main class="case">
     <CaseHeader
-      :header-logo="headerLogo"
+      :logo="logo"
       video-name=""
+      video-fallback-path="/images/Cases/kaf/png/banner-bg.png"
     >
       <h1
         slot="title"
@@ -23,23 +24,23 @@
     <Main />
     <Footer
       link="/case-studies/sir-john-monash-centre/"
-      class-name="kaf-case"
+      class-name="sjmc"
     >
       <div
         slot="icon"
-        class="case_logotype"
+        class="case_logotype-sjmc"
       />
-      The maintenance <br class="case_mobile-break">
+      The maintenance <br class="case_mobile-break-sjmc">
       of memory: <br>
-      Sir John Monash <br class="case_mobile-break">
+      Sir John Monash <br class="case_mobile-break-sjmc">
       Centre
     </Footer>
   </main>
 </template>
 
 <script>
-import CaseHeader from '@/components/Cases/CaseHeader'
-import Footer from '@/components/Cases/Footer'
+import CaseHeader from '@/components/Cases/shared/CaseHeader'
+import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/kaf/Main'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
@@ -55,11 +56,11 @@ export default {
 
   data() {
     return {
-      headerLogo: {
+      logo: {
         width: 387,
         height: 81.23,
-        pictureFolder: 'kaf',
-        fileName: 'kaf-logo',
+        folder: 'kaf',
+        file: 'kaf-logo',
         alt: '',
       },
     }
