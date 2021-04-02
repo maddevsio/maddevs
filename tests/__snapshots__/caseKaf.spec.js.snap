@@ -287,9 +287,6 @@ exports[`kaf renders correctly 1`] = `
             >
               <picture
                 class="card-content_picture"
-                file-extension="png"
-                file-name="macbook-pro-card"
-                picture-folder="kaf"
               >
                 <source
                   class="image"
@@ -312,11 +309,7 @@ exports[`kaf renders correctly 1`] = `
             <div
               class="card-content_gadget-picture-wrapp-mobile card-content_gadget-picture-wrapp-mobile-macbook-pro"
             >
-              <picture
-                file-extension="png"
-                file-name="macbook-pro"
-                picture-folder="kaf"
-              >
+              <picture>
                 <source
                   class="image"
                   srcset="img.jpg ,img.jpg 2x"
@@ -355,9 +348,6 @@ exports[`kaf renders correctly 1`] = `
             >
               <picture
                 class="card-content_picture"
-                file-extension="png"
-                file-name="iphonex-card"
-                picture-folder="kaf"
               >
                 <source
                   class="image"
@@ -380,11 +370,7 @@ exports[`kaf renders correctly 1`] = `
             <div
               class="card-content_gadget-picture-wrapp-mobile card-content_gadget-picture-wrapp-mobile-iphonex"
             >
-              <picture
-                file-extension="png"
-                file-name="iphonex"
-                picture-folder="kaf"
-              >
+              <picture>
                 <source
                   class="image"
                   srcset="img.jpg ,img.jpg 2x"
@@ -423,9 +409,6 @@ exports[`kaf renders correctly 1`] = `
             >
               <picture
                 class="card-content_picture"
-                file-extension="png"
-                file-name="ipad-pro-card"
-                picture-folder="kaf"
               >
                 <source
                   class="image"
@@ -448,11 +431,7 @@ exports[`kaf renders correctly 1`] = `
             <div
               class="card-content_gadget-picture-wrapp-mobile card-content_gadget-picture-wrapp-mobile-ipad-pro"
             >
-              <picture
-                file-extension="png"
-                file-name="ipad-pro"
-                picture-folder="kaf"
-              >
+              <picture>
                 <source
                   class="image"
                   srcset="img.jpg ,img.jpg 2x"
@@ -2141,11 +2120,7 @@ exports[`kaf renders correctly 1`] = `
        
       <blockquote
         alt="Andrew Minkin"
-        author-name="Andrew Minkin"
-        author-position="CTO, Mad Devs"
         class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
-        file-extension="png"
-        file-name="andrew-minkin"
       >
         
     While working on this project, we acquired extensive hands-on experience in building modern livestreaming and VoD
@@ -2167,7 +2142,7 @@ exports[`kaf renders correctly 1`] = `
               />
                
               <img
-                alt=""
+                alt="Andrew Minkin"
                 class="image"
                 height="0"
                 loading="lazy"
@@ -2182,7 +2157,7 @@ exports[`kaf renders correctly 1`] = `
             class="case_paragraph case_blockquote-author__name"
           >
             
-      
+      Andrew Minkin
     
           </p>
            
@@ -2190,7 +2165,7 @@ exports[`kaf renders correctly 1`] = `
             class="case_blockquote-author__position"
           >
             
-      
+      CTO, Mad Devs
     
           </p>
         </div>

@@ -234,11 +234,7 @@ exports[`team renders correctly 1`] = `
    
   <blockquote
     alt="Andrew Minkin"
-    author-name="Andrew Minkin"
-    author-position="CTO, Mad Devs"
     class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
-    file-extension="png"
-    file-name="andrew-minkin"
   >
     
     While working on this project, we acquired extensive hands-on experience in building modern livestreaming and VoD
@@ -260,7 +256,7 @@ exports[`team renders correctly 1`] = `
           />
            
           <img
-            alt=""
+            alt="Andrew Minkin"
             class="image"
             height="0"
             loading="lazy"
@@ -275,7 +271,7 @@ exports[`team renders correctly 1`] = `
         class="case_paragraph case_blockquote-author__name"
       >
         
-      
+      Andrew Minkin
     
       </p>
        
@@ -283,7 +279,7 @@ exports[`team renders correctly 1`] = `
         class="case_blockquote-author__position"
       >
         
-      
+      CTO, Mad Devs
     
       </p>
     </div>
