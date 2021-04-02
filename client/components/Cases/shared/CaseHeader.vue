@@ -137,7 +137,7 @@ export default {
   }
 
   &_header-logo {
-    color: #fff;
+    color: $text-color--white;
   }
 
   &_header-text {
