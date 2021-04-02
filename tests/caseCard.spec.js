@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils'
 
-import Card from '@/components/Cases/Card.vue'
+import Card from '@/components/Cases/shared/Card.vue'
 
 describe('card component', () => {
   let wrapper

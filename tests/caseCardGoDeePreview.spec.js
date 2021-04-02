@@ -1,11 +1,14 @@
 import { mount } from '@vue/test-utils'
-import CardGoDeePreview from '@/components/Cases/cards/godee/CardGoDeePreview'
+import CardGoDeePreview from '@/components/Cases/godee/cards/CardGoDeePreview'
 
 describe('cardGoDeePreview', () => {
   let wrapper
 
   beforeEach(() => {
     wrapper = mount(CardGoDeePreview, {
+      mocks: {
+        getMediaFromS3: () => 's3 image url',
+      },
       propsData: {
         pictureFolder: 'godee',
         fileName: 'application-for-passengers-card',

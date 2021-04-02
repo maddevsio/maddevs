@@ -1,11 +1,15 @@
 import { mount } from '@vue/test-utils'
-import CardNinjaSushi from '@/components/Cases/cards/namba-food/CardNinjaSushi'
+import CardNinjaSushi from '@/components/Cases/nambafood/cards/CardNinjaSushi'
 
 describe('cardNinjaSushi', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(CardNinjaSushi)
+    wrapper = mount(CardNinjaSushi, {
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
+    })
   })
 
   // ------ IMPORTANT ----- //

@@ -1,10 +1,6 @@
 .case {
-  &_header {
+  &_header::before {
     background-color: $bgcolor--black-opacity-07;
-
-    &:before {
-      background-image: url("../../assets/img/Cases/godee/jpg/godee-case-preview.jpg");
-    }
   }
 
   &_godee-logo {
@@ -146,7 +142,6 @@
     left: -5px;
     right: 0;
     bottom: 0;
-    background: url('../../assets/img/Cases/godee/jpg/parallax.jpg');
     background-size: cover;
     background-position: center;
     -webkit-transform: translateZ(-300px) scale(2);

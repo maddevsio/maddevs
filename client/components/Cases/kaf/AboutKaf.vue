@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import TextQuote from '@/components/Cases/TextQuote'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextQuote from '@/components/Cases/shared/TextQuote'
 
 export default {
   name: 'AboutKaf',
