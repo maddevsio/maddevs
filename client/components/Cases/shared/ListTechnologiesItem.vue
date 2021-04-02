@@ -1,7 +1,7 @@
 <template>
   <li class="case_technologies-item">
     <div
-      :class="className"
+      :class="`case_technologies-item__${className} ${className}`"
       class="case_technologies-item__tech-icon"
     />
     <p class="case_technologies-item__tech-name">
@@ -51,16 +51,27 @@ export default {
     @include default_text($text-color--tech-label-black, 14px, 171%, -0.035em, normal);
   }
 
-  &__docker,
-  &__grpc {
+  &__devops-docker,
+  &__backend-grpc,
+  &__backend-django {
     &::before {
       width: 70px;
     }
   }
 
-  &__uptime-robot {
+  &__other-uptime-robot,
+  &__frontend-jquery,
+  &__other-nimble,
+  &__frontend-video-js,
+  &__devops-nginx-txt {
     &::before {
       width: 92px;
+    }
+  }
+
+  &__other-plex {
+    &::before {
+      width: 59px;
     }
   }
 
@@ -74,16 +85,32 @@ export default {
       }
     }
 
-    &__docker,
-    &__grpc {
+    &__devops-docker,
+    &__backend-grpc,
+    &__backend-django,
+    &__devops-nginx-txt,
+    &__frontend-video-js {
       &::before {
         width: 40px;
       }
     }
 
-    &__uptime-robot {
+    &__frontend-jquery,
+    &__other-nimble {
+      &::before {
+        width: 45px;
+      }
+    }
+
+    &__other-uptime-robot {
       &::before {
         width: 62px;
+      }
+    }
+
+    &__other-plex {
+      &::before {
+        width: 28px;
       }
     }
 

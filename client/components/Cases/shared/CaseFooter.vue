@@ -58,15 +58,6 @@ export default {
     text-align: center;
   }
 
-  &_title-sjmc-case,
-  &_title-godee-case {
-    margin-bottom: 51px;
-  }
-
-  &_title-namba-food-case {
-    margin-bottom: 25px;
-  }
-
   &_next-project-button {
     padding: 11px 28px;
     background-color: $bgcolor--black;
@@ -74,6 +65,46 @@ export default {
     cursor: pointer;
     text-decoration: none;
     @include default_text($text-color--white-primary, 17px, 166%, -0.035em, normal);
+  }
+
+  // --------- NambaFood footer styles --------- //
+  &_logotype-namba-food {
+    @include nambafood-footer;
+    width: 200px;
+    height: 63px;
+    margin-bottom: 33px;
+  }
+
+  &_title-namba-food {
+    margin-bottom: 51px;
+  }
+
+  &_mobile-break-namba-food {
+    display: none;
+
+    @media screen and (max-width: 520px) {
+      display: block;
+    }
+  }
+
+  // --------- SJMC footer styles --------- //
+  &_logotype-sjmc {
+    @include sjmc-footer;
+    width: 253px;
+    height: 113px;
+    margin-bottom: 35px;
+  }
+
+  &_title-sjmc {
+    margin-bottom: 25px;
+  }
+
+  &_mobile-break-sjmc {
+    display: none;
+
+    @media screen and (max-width: 420px) {
+      display: block;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -86,13 +117,24 @@ export default {
       }
     }
 
-    &_title-sjmc-case,
-    &_title-godee-case {
+    &_title-namba-food {
       margin-bottom: 41px;
     }
 
     &_next-project-button {
       @include default_text($text-color--white-primary, 16px, 150%, -0.02em, normal);
+    }
+
+    &_logotype-namba-food {
+      width: 160px;
+      height: 60px;
+      margin-bottom: 25px;
+    }
+
+    &_logotype-sjmc {
+      width: 212px;
+      height: 94px;
+      margin-bottom: 25px;
     }
   }
 }

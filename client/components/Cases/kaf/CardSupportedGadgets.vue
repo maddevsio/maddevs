@@ -8,15 +8,15 @@
       :class="`card-content_gadget-picture-wrapp-${file}-card`"
     >
       <Picture
-        :lazy-loading="false"
-        :box-shadow="false"
-        :background-color="false"
+        :lazy="false"
+        :shadow="false"
+        :background="false"
         :width="width"
         :height="height"
-        :file-name="`${file}-card`"
+        :file="`${file}-card`"
         :alt="alt"
-        picture-folder="kaf"
-        file-extension="png"
+        folder="kaf"
+        extension="png"
         class="card-content_picture"
       />
     </div>
@@ -25,15 +25,15 @@
       :class="`card-content_gadget-picture-wrapp-mobile-${file}`"
     >
       <Picture
-        :lazy-loading="false"
-        :box-shadow="false"
-        :background-color="false"
+        :lazy="false"
+        :shadow="false"
+        :background="false"
         :width="width"
         :height="height"
-        :file-name="file"
+        :file="file"
         :alt="alt"
-        picture-folder="kaf"
-        file-extension="png"
+        folder="kaf"
+        extension="png"
       />
     </div>
   </div>

@@ -1,11 +1,15 @@
 import { mount } from '@vue/test-utils'
-import TechnologyStack from '../client/components/Cases/kaf/TechnologyStack'
+import Team from '../client/components/Cases/kaf/Team'
 
-describe('technology stack', () => {
+describe('team', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(TechnologyStack)
+    wrapper = mount(Team, {
+      mocks: {
+        getMediaFromS3: () => 's3 image url',
+      },
+    })
   })
 
   // ------ IMPORTANT ----- //
