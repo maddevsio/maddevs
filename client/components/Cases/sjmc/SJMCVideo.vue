@@ -94,7 +94,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/cases/_icons';
+@import '../../../assets/styles/cases/_icons';
 
 .main-video {
   position: absolute;
