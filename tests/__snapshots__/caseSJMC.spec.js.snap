@@ -15,6 +15,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
     <video
       autoplay="autoplay"
       class="case_main-video"
+      data-testid="test-case_main-video"
       loop="loop"
       muted="muted"
     >
@@ -113,1560 +114,108 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
   </div>
    
   <section>
-    <section
-      class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom"
-      id="case-first-section"
-    >
-      <p
-        class="case_paragraph m-24_bottom media-m-12_bottom"
-      >
-        
-        The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front during the First World War in
-        the words of those who served.
-      
-      </p>
-       
-      <p
-        class="case_paragraph m-24_bottom media-m-12_bottom"
-      >
-        
-        There is much to learn from the Great War, however, ordinary history books often only explain events on a
-        surface level. In contrast, using interactive multimedia installations and technologies, the 480-square metre
-        interpretive centre takes visitors on a journey in the footsteps of ordinary soldiers who experienced
-        extraordinary events.
-      
-      </p>
-       
-      <p
-        class="case_paragraph"
-      >
-        
-        The SJMC’s technology enables each visitor to personalise their experience as they learn about the Australian
-        soldiers’ stories. Visitors are "fully immersed" in a way that is not seen anywhere else.
-      
-      </p>
-       
-      <blockquote
-        class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
-      >
-        
-        World-class BYOD technology delivers an enhanced understanding of the nature and context of the Australian
-        contribution to the First World War.
-      
-      </blockquote>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2 m-12_bottom"
-      >
-        
-        The SJMC and Mad Devs partnership
-      
-      </h2>
-       
-      <p
-        class="case_paragraph m-24_bottom media-m-12_bottom"
-      >
-        
-        The SJMC opened to the public on April 16th, 2018. The entire centre, including its half-sunken building and
-        cutting-edge new technology, was developed and deployed by an Australian-based IT vendor. The SJMC and Mad
-        Devs partnership has therefore been based on enhancements and preventative maintenance contracts.
-      
-      </p>
-       
-      <p
-        class="case_paragraph"
-      >
-        
-        After conducting an
-        
-        <nuxt-link-stub
-          class="case_link"
-          to="/services#it-consulting"
-        >
-          
-          independent audit
-        
-        </nuxt-link-stub>
-         of a previous IT
-        vendor, a list of technical debt was formed.
-      
-      </p>
-       
-      <blockquote
-        class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top"
-      >
-        
-        The Mad Devs team has successfully accomplished code refactoring as well as closing the technical debt. After
-        that, system monitoring, new feature development, and maintenance was placed on Mad Devs shoulders.
-      
-      </blockquote>
-    </section>
-     
-    <section
-      class="container_full case_full-screen-img"
-    >
-      <picture>
-        <source
-          class="image"
-          srcset="s3 image url ,s3 image url 2x"
-          type="image/webp"
-        />
-         
-        <img
-          alt="The Mad Devs team in Sir John Monash Centre."
-          class="image"
-          height="0"
-          loading="lazy"
-          src="s3 image url"
-          srcset="s3 image url 2x"
-          width="0"
-        />
-      </picture>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h3
-        class="case_title_h3 m-48_top m-12_bottom"
-      >
-        
-        The challenges
-      
-      </h3>
-       
-      <ul
-        class="case_list"
-      >
-        <li
-          class="list-item_box"
-        >
-          
-          The 100MB of documentation and 1M+ lines of code, which required months of onboarding.
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          The unique nature of the software in a one-of-a-kind technologically advanced centre.
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          The 450 units of hardware connected to operate as a coherent solution that delivers content to SJMC visitors in a personalised manner.
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          The 5000 km distance between the SJMC and Mad Devs’ office.
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          The lockdown caused by the Covid19 pandemic, which made it difficult to check the deploy updates.
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          Orchestrating a seamless experience for 110K visitors annually.
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          Cooperating and communicating with numerous vendors working at SJMC.
-        
-        </li>
-      </ul>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2 m-96_top media-m-48_top m-12_bottom"
-      >
-        
-        The SJMC Software
-      
-      </h2>
-       
-      <p
-        class="case_paragraph m-48_bottom"
-      >
-        
-        Transferring a project to another software partner is never easy for all parties involved. So, let us
-        introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.
-      
-      </p>
-       
-      <h3
-        class="case_title_h3 m-12_bottom"
-      >
-        
-        Multimedia Management IT Brain
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
-      >
-        
-        Personalised experience at your own speed and in your own language
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_full background-color-silver"
-    >
+    <section>
       <div
-        class="container_full case_full-screen-img"
-      >
-        <picture>
-          <source
-            class="image"
-            srcset="s3 image url ,s3 image url 2x"
-            type="image/webp"
-          />
-           
-          <img
-            alt="The SJMC: Multimedia Management System."
-            class="image"
-            height="0"
-            loading="lazy"
-            src="s3 image url"
-            srcset="s3 image url 2x"
-            width="0"
-          />
-        </picture>
-      </div>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <p
-        class="case_paragraph m-48_top media-m-24_top"
-      >
-        
-        Since the available existing solutions had limitations and restrictions, The Sir John Monash Centre hired an
-        Australia-based IT company to create an integrated multimedia solution to coordinate and communicate with
-        every piece of technology in the centre.
-      
-      </p>
+        class="case_animation_block"
+        id="case-first-section"
+      />
        
-      <p
-        class="case_paragraph m-24_top media-m-12_top"
-      >
-        
-        The MMIT Brain synchronises two information systems: the multimedia management system and the smart building
-        management system. The multimedia software and hardware management system controls, supervises and monitors
-        lighting, audio, video and special effects for the SJMC. The universal software infrastructure to building
-        controls infrastructure integrators is the third-party framework that works as a foundation of the SJMC
-        intelligent building. It supports a complete IP-based information network for real-time management and
-        controls the SJMC's multiple facilities. This one-stop software manages all building operations, energy,
-        security, and operational systems.
-      
-      </p>
-       
-      <blockquote
-        class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
-      >
-        
-        The MMIT Brain is a coherent solution that brings together the monitoring and management of two information
-        systems.
-      
-      </blockquote>
-       
-      <p
-        class="case_paragraph m-16_bottom"
-      >
-        
-        The MMIT Brain orchestrated the synchronisation of every thread into one coherent solution. Physically
-        constructed as a single hardware and software, it performs various services under one hood. Here is a list of
-        functions the MMIT Brain performs.
-      
-      </p>
-       
-      <ul
-        class="case_list m-56_bottom media-m-32_bottom"
-      >
-        <li
-          class="list-item_dot"
-        >
-          
-          Delivers content to mobile applications and synchronises subtitles and audio on multimedia screens in 3
-          languages (German, English, and French).
-        
-        </li>
-         
-        <li
-          class="list-item_dot"
-        >
-          Orchestrates the experience of multiple SJMC visitors to avoid interference.
-        </li>
-         
-        <li
-          class="list-item_dot"
-        >
-          Performs interaction between two internal information systems.
-        </li>
-         
-        <li
-          class="list-item_dot"
-        >
-          Enables content managers to deploy and modify new content.
-        </li>
-         
-        <li
-          class="list-item_dot"
-        >
-          Synchronises content storage and other multimedia computers.
-        </li>
-      </ul>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2 m-104_top media-m-48_top m-12_bottom"
-      >
-        
-        Mobile applications
-      
-      </h2>
-       
-      <p
-        class="case_paragraph m-48_bottom"
-      >
-        
-        The world-class BYOD technology solution ensures that visitors are immersed in soldiers' personal histories.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_full background-color-black-section"
-    >
-      <div
-        class="container_full case_full-screen-img"
-      >
-        <picture>
-          <source
-            class="image"
-            srcset="s3 image url ,s3 image url 2x"
-            type="image/webp"
-          />
-           
-          <img
-            alt="The SJMC Mobile Applications."
-            class="image"
-            height="0"
-            loading="lazy"
-            src="s3 image url"
-            srcset="s3 image url 2x"
-            width="0"
-          />
-        </picture>
-      </div>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <blockquote
-        class="case_blockquote-box m-auto m-48_top m-48_bottom"
-      >
-        
-        As soon as visitors enter the site, the SJMC’s mobile applications, with the help of advanced positioning
-        algorithms proactively cache content, cue up relevant multimedia, and guide visitors through the stories of
-        Australian soldiers.
-      
-      </blockquote>
-       
-      <p
-        class="case_paragraph m-24_bottom media-m-12_bottom"
-      >
-        
-        On an annual basis, approximately 60,000 visitors move throughout the centre. 150 Bluetooth beacons determine
-        the location of each smartphone to deliver the right content at the right time.
-      
-      </p>
-       
-      <p
-        class="case_paragraph m-24_bottom media-m-12_bottom"
-      >
-        
-        The gallery's small size and the volume and density of signal traffic from visitors is a challenge that was
-        solved using a complex, layered positioning algorithm that was developed to help deal with the unique
-        challenges of SJMC’s physical environment.
-      
-      </p>
-       
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
-      >
-        
-        When visitors move around the centre, the app will continually refresh a list of the content that is available
-        nearby and allow them to create their own experience.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <picture>
-        <source
-          class="image"
-          srcset="s3 image url ,s3 image url 2x"
-          type="image/webp"
-        />
-         
-        <img
-          alt="Sir Jonh Monash Centre Map."
-          class="image"
-          height="0"
-          loading="lazy"
-          src="s3 image url"
-          srcset="s3 image url 2x"
-          width="0"
-        />
-      </picture>
-       
-      <p
-        class="case_image-description m-8_top"
-      >
-        
-        Sir Jonh Monash Centre Site
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2 m-56_top media-m-48_top m-12_bottom"
-      >
-        
-        SJMC Hardware
-      
-      </h2>
-       
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
-      >
-        
-        Hundreds of pieces of equipment are master-mindedly organised to transform content stored in audio, video, and
-        subtitles format to interactive monitors that are run on multiple servers.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_full case_full-screen-img"
-    >
-      <picture>
-        <source
-          class="image"
-          srcset="s3 image url ,s3 image url 2x"
-          type="image/webp"
-        />
-         
-        <img
-          alt="The SJMC Immersive Gallery."
-          class="image"
-          height="0"
-          loading="lazy"
-          src="s3 image url"
-          srcset="s3 image url 2x"
-          width="0"
-        />
-      </picture>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h3
-        class="case_title_h3 m-48_top m-12_bottom"
-      >
-        
-        WATCHOUT
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
-      >
-        
-        WATCHOUT is a multi-display production and presentation system that enables the SJMC to arrange displays in
-        unusual ways and create seamless images and videos. The absence of gaps between display surfaces is possible
-        due to the WATCHOUT system that distributes the content and keeps everything in sync across all connected
-        displays.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_full background-color-silver"
-    >
       <section
-        class="container_middle"
+        class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom"
+        id="case-first-section"
       >
-        <img
-          alt="WATCHOUT - Multi-Display Production and Presentation Software."
-          class="case_gif"
-          src="s3 image url"
-        />
-      </section>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h3
-        class="case_title_h3 m-96_top media-m-48_top m-12_bottom"
-      >
-        
-        BRIX
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
-      >
-        
-        Essentially, BRIX is an ultra-compact multimedia computer that can be hung on a wall. The advanced graphics
-        card delivers heavy content to multiple monitors simultaneously. Moreover, each BRIX is managed by the MMIT
-        Brain to work in synchronisation with mobile applications.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_full background-color-silver"
-    >
-      <section
-        class="container_middle"
-      >
-        <img
-          alt="Ultra-Compact Multimedia Computer - BRIX."
-          class="case_gif"
-          src="s3 image url"
-        />
-      </section>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h3
-        class="case_title_h3 m-96_top media-m-48_top m-12_bottom"
-      >
-        
-        Bluetooth beacons
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-24_bottom media-m-12_bottom"
-      >
-        
-        The mobile application’s positioning algorithm collects the location data of each user via 150 Bluetooth
-        beacons located all over the centre.
-      
-      </p>
-       
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
-      >
-        
-        The limited space in the SJMC made detecting each visitor’s location and continuously refreshing a list of
-        available content nearby challenging.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_full case_sjmc-phone-video-section background-color-black-primary"
-    >
-      <div
-        class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video"
-      >
-        <video
-          height="100%"
-          playsinline=""
-          width="100%"
+        <p
+          class="case_paragraph m-24_bottom media-m-12_bottom"
         >
-          <source
-            src="s3 image url"
-            type="video/mp4"
-          />
           
-          Your browser does not support the video tag.
-          
-          <img
-            src="s3 image url"
-          />
-        </video>
-      </div>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <p
-        class="case_image-description m-34_top media-m-24_top"
-      >
-        
-        Playback of content in the application when approaching the bluetooth beacons.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_regular m-56_top media-m-24_top m-96_bottom media-m-72_bottom"
-    >
-      <div
-        class="case_column-container"
-      >
-        <div
-          class="case_column-item"
+    The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front during the First World War in
+    the words of those who served.
+  
+        </p>
+         
+        <p
+          class="case_paragraph m-24_bottom media-m-12_bottom"
         >
-          <h4
-            class="case_title_h4 m-8_bottom media-m-2_bottom"
+          
+    There is much to learn from the Great War, however, ordinary history books often only explain events on a
+    surface level. In contrast, using interactive multimedia installations and technologies, the 480-square metre
+    interpretive centre takes visitors on a journey in the footsteps of ordinary soldiers who experienced
+    extraordinary events.
+  
+        </p>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+    The SJMC’s technology enables each visitor to personalise their experience as they learn about the Australian
+    soldiers’ stories. Visitors are "fully immersed" in a way that is not seen anywhere else.
+  
+        </p>
+         
+        <blockquote
+          class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+        >
+          
+    World-class BYOD technology delivers an enhanced understanding of the nature and context of the Australian
+    contribution to the First World War.
+  
+        </blockquote>
+      </section>
+       
+      <section>
+        <section
+          class="container_regular"
+        >
+          <h2
+            class="case_title_h2 m-12_bottom"
           >
             
-            60,000 visitors
-          
-          </h4>
+      The SJMC and Mad Devs partnership
+    
+          </h2>
            
           <p
-            class="case_paragraph"
-          >
-             On an annual basis move throughout the centre. 
-          </p>
-        </div>
-         
-        <div
-          class="case_column-item"
-        >
-          <h4
-            class="case_title_h4 m-8_bottom media-m-2_bottom"
+            class="case_paragraph m-24_bottom media-m-12_bottom"
           >
             
-            150 Bluetooth beacons
-          
-          </h4>
+      The SJMC opened to the public on April 16th, 2018. The entire centre, including its half-sunken building and
+      cutting-edge new technology, was developed and deployed by an Australian-based IT vendor. The SJMC and Mad
+      Devs partnership has therefore been based on enhancements and preventative maintenance contracts.
+    
+          </p>
            
           <p
             class="case_paragraph"
           >
             
-            Determine the location of each smartphone to deliver the right content at the right time.
-          
-          </p>
-        </div>
-      </div>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2 m-48_bottom media-m-24_bottom"
-      >
-        
-        Key goals for Mad Devs
+      After conducting an
       
-      </h2>
-       
-      <ul
-        class="case_list m-96_bottom media-m-48_bottom"
-      >
-        <li
-          class="list-item_box"
-        >
-          
-          Understanding the complexity of the MMIT Brain software
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          Building a small-scale version of the SJMC experience in 1 month
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          Finishing technical debt conducted by an independent auditor
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          Covering the code with unit and integration tests
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          Building a framework for automating E2E tests
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          Deploying technical debt changes and improvements on site
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          Developing a reporting system
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          Testing the deployment of new content
-        
-        </li>
-        <li
-          class="list-item_box"
-        >
-          
-          Setting up system monitoring
-        
-        </li>
-      </ul>
-       
-      <h3
-        class="case_title_h3 m-48_bottom media-m-24_bottom"
-      >
-        
-        Technology stack
-      
-      </h3>
-       
-      <ul
-        class="case_list-technologies m-107_bottom media-m-48_bottom"
-      >
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon backend-go"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Go
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon mobile-swift"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Swift
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon mobile-java"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Java for Android
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon other-unity"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Unity
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon infrastructure-aws"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    AWS
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon infrastructure-codecommit"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    CodeCommit
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon other-windows"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Windows 10
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon mobile-apple-black"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    iOS
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon mobile-android-black-text"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Android
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon other-ubuntu"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Ubuntu
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon devops-ansible"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Ansible
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon devops-sentry-dark"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Sentry
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon devops-elastic"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Elasticsearch
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon devops-logstash"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Logstash
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon devops-kibana"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Kibana
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon devops-prometheus"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Prometheus
-  
-          </p>
-        </li>
-      </ul>
-       
-      <h3
-        class="case_title_h3 m-12_bottom"
-      >
-        
-        Custom small-scale version of the SJMC in Mad Devs’ office
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-24_bottom media-m-12_bottom"
-      >
-        
-        As thousands of kilometres separate the SJMC and Mad Devs’ office, a unique approach to the engineering
-        partnership was required.
-      
-      </p>
-       
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
-      >
-        
-        After purchasing the required equipment and reading code and documentation, in one month after understanding
-        the complexity of the SJMC, Mad Devs’ DevOps and back-end engineers built a custom small-scale version of the
-        SJMC complex multimedia environment. Thus, testing and deploying new content and changes in the Brain was made
-        possible even kilometres away from the real SJMC.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_full case_full-screen-slider"
-    >
-      <div
-        class="slider-content"
-      >
-        <div
-          class="swiper-container thumb-example"
-        >
-          <!---->
-           
-          <div
-            class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
-            style="cursor: grab;"
-          >
-            <div
-              class="swiper-wrapper"
-              style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+            <nuxtlink-stub
+              class="case_link"
+              to="/services#it-consulting"
             >
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="s3 image url ,s3 image url 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                    class="image"
-                    height="0"
-                    loading="lazy"
-                    src="s3 image url"
-                    srcset="s3 image url 2x"
-                    width="0"
-                  />
-                </picture>
-              </div>
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="s3 image url ,s3 image url 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                    class="image"
-                    height="0"
-                    loading="lazy"
-                    src="s3 image url"
-                    srcset="s3 image url 2x"
-                    width="0"
-                  />
-                </picture>
-              </div>
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="s3 image url ,s3 image url 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                    class="image"
-                    height="0"
-                    loading="lazy"
-                    src="s3 image url"
-                    srcset="s3 image url 2x"
-                    width="0"
-                  />
-                </picture>
-              </div>
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="s3 image url ,s3 image url 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                    class="image"
-                    height="0"
-                    loading="lazy"
-                    src="s3 image url"
-                    srcset="s3 image url 2x"
-                    width="0"
-                  />
-                </picture>
-              </div>
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="s3 image url ,s3 image url 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                    class="image"
-                    height="0"
-                    loading="lazy"
-                    src="s3 image url"
-                    srcset="s3 image url 2x"
-                    width="0"
-                  />
-                </picture>
-              </div>
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="s3 image url ,s3 image url 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                    class="image"
-                    height="0"
-                    loading="lazy"
-                    src="s3 image url"
-                    srcset="s3 image url 2x"
-                    width="0"
-                  />
-                </picture>
-              </div>
-            </div>
-            <span
-              aria-atomic="true"
-              aria-live="assertive"
-              class="swiper-notification"
-            />
-          </div>
-        </div>
-         
-        <!---->
-         
-        <div
-          class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
-        >
-          <div
-            class="swiper-wrapper"
-            style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+              
+        independent audit
+      
+            </nuxtlink-stub>
+             of a previous IT
+      vendor, a list of technical debt was formed.
+    
+          </p>
+           
+          <blockquote
+            class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top"
           >
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-          </div>
-          <span
-            aria-atomic="true"
-            aria-live="assertive"
-            class="swiper-notification"
-          />
-        </div>
-      </div>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h3
-        class="case_title_h3 m-78_top media-m-48_top m-12_bottom"
-      >
-        
-        Technical debt
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-24_bottom media-m-12_bottom"
-      >
-        
-        Although the previous vendors have developed incredible software, an independent organisation prepared a
-        detailed audit and evaluated deficiencies or areas of improvement.
-      
-      </p>
-       
-      <p
-        class="case_paragraph m-72_bottom media-m-48_bottom"
-      >
-        
-        The complexity of the system raises particular challenges for the Mad Devs team, as they had to submerge
-        themselves into the full comprehensiveness of the Brain solution to be able to improve it. It took our team a
-        month of onboarding and reading documentation before we could fix even a minor issue.
-      
-      </p>
-       
-      <h3
-        class="case_title_h3 m-12_bottom"
-      >
-        
-        Code refactoring and optimization
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-24_bottom media-m-12_bottom"
-      >
-        
-        Refactoring the SJMC code and covering it with the unit and integration tests improved the stability and
-        usability of both mobile applications and the MMIT Brain.
-      
-      </p>
-       
-      <p
-        class="case_paragraph m-72_bottom media-m-48_bottom"
-      >
-        
-        On top of that, by establishing an efficient testing process we significantly increased iOS and Android
-        applications' 40% test coverage that ultimately prevented defect leakage. Moreover, after fighting 1000+ minor
-        defects and optimising applications to support the latest mobile operating systems, Mad Devs’ engineers
-        successfully finished the technical debt on time and planned the deployment of the changes on site.
-      
-      </p>
-       
-      <h3
-        class="case_title_h3 m-12_bottom"
-      >
-        
-        Analytics and user-friendly reports
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
-      >
-        
-        Extensive SJMC data gathered from the Multimedia IT System is organised into user-friendly reports by an
-        Analytics feature. Such reports enabled the Centre’s managers to easily track performance and report directly
-        to stakeholders.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_middle"
-    >
-      <picture>
-        <source
-          class="image box-shadow"
-          srcset="s3 image url ,s3 image url 2x"
-          type="image/webp"
-        />
+            
+      The Mad Devs team has successfully accomplished code refactoring as well as closing the technical debt. After
+      that, system monitoring, new feature development, and maintenance was placed on Mad Devs shoulders.
+    
+          </blockquote>
+        </section>
          
-        <img
-          alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
-          class="image box-shadow"
-          height="0"
-          loading="lazy"
-          src="s3 image url"
-          srcset="s3 image url 2x"
-          width="0"
-        />
-      </picture>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <p
-        class="case_paragraph m-48_top media-m-24_top m-6_bottom"
-      >
-        
-        The analytics show the following metrics:
-      
-      </p>
-       
-      <ul
-        class="case_list m-104_bottom media-m-56_bottom"
-      >
-        <li
-          class="list-item_dot"
-        >
-          Number of visitors
-        </li>
-         
-        <li
-          class="list-item_dot"
-        >
-          Number of school groups
-        </li>
-         
-        <li
-          class="list-item_dot"
-        >
-          Number of students
-        </li>
-         
-        <li
-          class="list-item_dot"
-        >
-          Average visit time – i.e. time detected on-site
-        </li>
-         
-        <li
-          class="list-item_dot"
-        >
-          
-          The average length of time of the SJMC Experience – i.e. time between connections to first and last
-          site
-        
-        </li>
-         
-        <li
-          class="list-item_dot"
-        >
-          
-          Popular stands, by analysing the longevity of visitors listening to/watching/interacting with
-          content
-        
-        </li>
-         
-        <li
-          class="list-item_dot"
-        >
-          Average time visitors spend in each SJMC zone
-        </li>
-      </ul>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2 m-12_bottom"
-      >
-        
-        SJMC System monitoring
-      
-      </h2>
-       
-      <p
-        class="case_paragraph"
-      >
-        
-        System monitoring is a proactive method to improve the quality of SJMC software and hardware by gathering data
-        from 6 servers and 100+ BRIX multimedia computers highlighting areas that might need Mad Devs’ engineers'
-        attention.
-      
-      </p>
-       
-      <blockquote
-        class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
-      >
-        
-        Sophisticated system monitoring is the fight life of defence against downtime.
-      
-      </blockquote>
-       
-      <h3
-        class="case_title_h3 m-12_bottom"
-      >
-        
-        Grafana + Prometheus
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
-      >
-        
-        To achieve maximum observability of the SJMC hardware Grafana was used to build all the graphs for the current
-        state. It enables the Mad Devs team to configure the reports and alerts if any of the system components fail
-        or are under high load or in case of any other problem.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_middle m-48_bottom media-m-24_bottom"
-    >
-      <div
-        class="slider-content"
-      >
-        <div
-          class="swiper-container thumb-example box-shadow"
+        <section
+          class="container_full case_full-screen-img"
         >
           <picture>
             <source
@@ -1676,7 +225,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             />
              
             <img
-              alt="Safari Top Bar."
+              alt="The Mad Devs team in Sir John Monash Centre."
               class="image"
               height="0"
               loading="lazy"
@@ -1685,1242 +234,118 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               width="0"
             />
           </picture>
-           
-          <div
-            class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
-            style="cursor: grab;"
-          >
-            <div
-              class="swiper-wrapper"
-              style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
-            >
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="s3 image url ,s3 image url 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="SJMC System Monitoring."
-                    class="image"
-                    height="0"
-                    loading="lazy"
-                    src="s3 image url"
-                    srcset="s3 image url 2x"
-                    width="0"
-                  />
-                </picture>
-              </div>
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="s3 image url ,s3 image url 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="SJMC System Monitoring."
-                    class="image"
-                    height="0"
-                    loading="lazy"
-                    src="s3 image url"
-                    srcset="s3 image url 2x"
-                    width="0"
-                  />
-                </picture>
-              </div>
-            </div>
-            <span
-              aria-atomic="true"
-              aria-live="assertive"
-              class="swiper-notification"
-            />
-          </div>
-        </div>
-         
-        <!---->
-         
-        <div
-          class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
-        >
-          <div
-            class="swiper-wrapper"
-            style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
-          >
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="SJMC System Monitoring."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="SJMC System Monitoring."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-          </div>
-          <span
-            aria-atomic="true"
-            aria-live="assertive"
-            class="swiper-notification"
-          />
-        </div>
-      </div>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <p
-        class="case_paragraph m-56_bottom media-m-24_bottom"
-      >
-        
-        Prometheus acts as the storage backend and exposes a wide variety of metrics gathered from 6 servers while
-        Grafana acts as a visualisation layer and works as the interface for analysis and visualisation.
-      
-      </p>
+        </section>
+      </section>
        
-      <h3
-        class="case_title_h3 m-12_bottom"
+      <section
+        class="container_regular"
       >
-        
-        Elasticsearch+Kibana+
-        <br
-          class="case_mobile-break"
-        />
-        Logstash
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
-      >
-        
-        Logstash ingests, transforms, and ships SJMC logging data from 100+ BRIX (multimedia computers). Before
-        unstructured logging data was scattered across hundreds of folders and was not properly monitored, which
-        ultimately caused breakages and deterioration of expensive hardware. Now Logstash collects and transforms
-        logging data by sending it to Elasticsearch. Elasticsearch enables the SJMC to store, search, and analyse
-        logged data with ease at scale.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_middle"
-    >
-      <picture>
-        <source
-          class="image box-shadow"
-          srcset="s3 image url ,s3 image url 2x"
-          type="image/webp"
-        />
-         
-        <img
-          alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
-          class="image box-shadow"
-          height="0"
-          loading="lazy"
-          src="s3 image url"
-          srcset="s3 image url 2x"
-          width="0"
-        />
-      </picture>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <p
-        class="case_paragraph m-48_top media-m-24_top m-72_bottom media-m-48_bottom"
-      >
-        
-        Kibana pulls up logged data and creates user-friendly visualizations with charts, graphs, heatmaps, and more.
-        It is easy to understand solutions to manage SJMC hardware in a single dashboard.
-      
-      </p>
-       
-      <h3
-        class="case_title_h3 m-12_bottom"
-      >
-        
-        Continuous integration and delivery (CI/CD)
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-72_bottom media-m-48_bottom"
-      >
-        
-        CI/CD shortens the feedback cycle and allows Mad Devs’ engineers to minimise risks and increase productivity
-        by configuring CI/CD for autotest running and automatic deployment.
-      
-      </p>
-       
-      <h3
-        class="case_title_h3 m-12_bottom"
-      >
-        
-        Sentry
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-96_bottom media-m-72_bottom"
-      >
-        
-        Integration of Sentry provides the Mad Devs team with automated error tracking and shows us every fault that
-        happens with the SJMC MMIT Brain by organising its logs. Sentry enables the Mad Devs team to identify,
-        prioritise, and reproduce each issue.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2 m-24_bottom media-m-12_bottom"
-      >
-        
-        Automated testing the MMIT Brain via custom emulators
-      
-      </h2>
-       
-      <p
-        class="case_paragraph m-6_bottom"
-      >
-        
-        Auto-testing of the MMIT Brain can be sorted into two categories:
-      
-      </p>
-       
-      <ul
-        class="case_list m-32_bottom"
-      >
-        <li
-          class="list-item_dot"
-        >
-          The synchronisation of two internal information systems.
-        </li>
-         
-        <li
-          class="list-item_dot"
+        <h3
+          class="case_title_h3 m-48_top m-12_bottom"
         >
           
-          End to end testing to ensure seamless user experience for thousands of SJMC visitors.
-        
-        </li>
-      </ul>
-       
-      <p
-        class="case_paragraph m-72_bottom media-m-48_bottom"
-      >
-        
-        Testing the accuracy of new content and feature deployment is a challenge due to the 5000 km distance that
-        separate Mad Devs’ office and the SJMC. Thus, our back-end developers developed two types of emulation
-        software that enables Mad Devs to test the MMIT Brain without accumulating additional travel expenses.
-      
-      </p>
-       
-      <h3
-        class="case_title_h3 m-12_bottom"
-      >
-        
-        1. Internal information systems synchronization
-      
-      </h3>
-       
-      <p
-        class="case_paragraph"
-      >
-        
-        The emulator code tests the interaction of two independent information systems that control multimedia
-        software and intelligent infrastructure integrations.
-      
-      </p>
-       
-      <blockquote
-        class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
-      >
-        
-        The internal information systems synchronisation emulator makes the infrastructure control system believe that
-        emulated hardware is real.
-      
-      </blockquote>
-       
-      <p
-        class="case_paragraph m-24_bottom media-m-12_bottom"
-      >
-        
-        For example, in case of an emergency like a water leakage, a smart building control system that controls
-        electricity has to communicate the emergency to multimedia software through the MMIT Brain and turn off all
-        multimedia computers to avoid closure.
-      
-      </p>
-       
-      <p
-        class="case_paragraph m-72_bottom media-m-48_bottom"
-      >
-        
-        Without such an emulator, Mad Devs’ developers would not be able to look at the MMIT Brain code and understand
-        whether the Brain has transferred the command from one system to another. Without such an emulator, the team
-        would be clueless regarding whether the command had been successfully executed or not.
-      
-      </p>
-       
-      <h3
-        class="case_title_h3"
-      >
-        
-        2. End to end tests using emulators of mobile applications
-      
-      </h3>
-       
-      <blockquote
-        class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
-      >
-        
-        A mobile applications emulator enables the SJMC to run all possible user experiences on all possible virtual
-        multimedia sites.
-      
-      </blockquote>
-       
-      <p
-        class="case_paragraph m-96_bottom media-m-48_bottom"
-      >
-        
-        All possible interactions with WATCHOUT site multimedia computers including touch screens, multiple users
-        watching simultaneously, and switching audio and subtitle languages usually last a minimum of 6 hours. The
-        emulator for end to end testing accomplishes the tests in just 20 minutes.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2 m-24_bottom"
-      >
-        
-        Mad Devs’ trip to the SJMC
-      
-      </h2>
-    </section>
-     
-    <section
-      class="container_full case_full-screen-slider"
-    >
-      <div
-        class="slider-content"
-      >
-        <div
-          class="swiper-container thumb-example"
-        >
-          <!---->
-           
-          <div
-            class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
-            style="cursor: grab;"
-          >
-            <div
-              class="swiper-wrapper"
-              style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
-            >
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="s3 image url ,s3 image url 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="Mad Devs’ Team Trip to the SJMC."
-                    class="image"
-                    height="0"
-                    loading="lazy"
-                    src="s3 image url"
-                    srcset="s3 image url 2x"
-                    width="0"
-                  />
-                </picture>
-              </div>
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="s3 image url ,s3 image url 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="Mad Devs’ Team Trip to the SJMC."
-                    class="image"
-                    height="0"
-                    loading="lazy"
-                    src="s3 image url"
-                    srcset="s3 image url 2x"
-                    width="0"
-                  />
-                </picture>
-              </div>
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="s3 image url ,s3 image url 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="Mad Devs’ Team Trip to the SJMC."
-                    class="image"
-                    height="0"
-                    loading="lazy"
-                    src="s3 image url"
-                    srcset="s3 image url 2x"
-                    width="0"
-                  />
-                </picture>
-              </div>
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="s3 image url ,s3 image url 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="Mad Devs’ Team Trip to the SJMC."
-                    class="image"
-                    height="0"
-                    loading="lazy"
-                    src="s3 image url"
-                    srcset="s3 image url 2x"
-                    width="0"
-                  />
-                </picture>
-              </div>
-              <div
-                class="swiper-slide"
-              >
-                <picture>
-                  <source
-                    class="image"
-                    srcset="s3 image url ,s3 image url 2x"
-                    type="image/webp"
-                  />
-                   
-                  <img
-                    alt="Mad Devs’ Team Trip to the SJMC."
-                    class="image"
-                    height="0"
-                    loading="lazy"
-                    src="s3 image url"
-                    srcset="s3 image url 2x"
-                    width="0"
-                  />
-                </picture>
-              </div>
-            </div>
-            <span
-              aria-atomic="true"
-              aria-live="assertive"
-              class="swiper-notification"
-            />
-          </div>
-        </div>
+    The challenges
+  
+        </h3>
          
-        <!---->
+        <ul
+          class="case_list"
+        >
+          <li
+            class="list-item_box"
+          >
+            
+      The 100MB of documentation and 1M+ lines of code, which required months of onboarding.
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      The unique nature of the software in a one-of-a-kind technologically advanced centre.
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      The 450 units of hardware connected to operate as a coherent solution that delivers content to SJMC visitors in a personalised manner.
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      The 5000 km distance between the SJMC and Mad Devs’ office.
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      The lockdown caused by the Covid19 pandemic, which made it difficult to check the deploy updates.
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      Orchestrating a seamless experience for 110K visitors annually.
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      Cooperating and communicating with numerous vendors working at SJMC.
+    
+          </li>
+        </ul>
+      </section>
+       
+      <section>
+        <section
+          class="container_regular"
+        >
+          <h2
+            class="case_title_h2 m-96_top media-m-48_top m-12_bottom"
+          >
+            
+      The SJMC Software
+    
+          </h2>
+           
+          <p
+            class="case_paragraph m-48_bottom"
+          >
+            
+      Transferring a project to another software partner is never easy for all parties involved. So, let us
+      introduce you to the new era of interpretive centres and walk you through the complexity of the SJMC project.
+    
+          </p>
+           
+          <h3
+            class="case_title_h3 m-12_bottom"
+          >
+            
+      Multimedia Management IT Brain
+    
+          </h3>
+           
+          <p
+            class="case_paragraph m-48_bottom media-m-24_bottom"
+          >
+            
+      Personalised experience at your own speed and in your own language
+    
+          </p>
+        </section>
          
-        <div
-          class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
+        <section
+          class="container_full background-color-silver"
         >
           <div
-            class="swiper-wrapper"
-            style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
-          >
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Mad Devs’ Team Trip to the SJMC."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Mad Devs’ Team Trip to the SJMC."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Mad Devs’ Team Trip to the SJMC."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Mad Devs’ Team Trip to the SJMC."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-            <div
-              class="swiper-slide"
-            >
-              <picture>
-                <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
-                  type="image/webp"
-                />
-                 
-                <img
-                  alt="Mad Devs’ Team Trip to the SJMC."
-                  class="image"
-                  height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
-                  width="0"
-                />
-              </picture>
-            </div>
-          </div>
-          <span
-            aria-atomic="true"
-            aria-live="assertive"
-            class="swiper-notification"
-          />
-        </div>
-      </div>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <p
-        class="case_paragraph m-56_top media-m-24_top m-24_bottom media-m-12_bottom"
-      >
-        
-        In February 2020, just before the contract’s deadline, a Mad Devs’ team of eight travelled to the Сentre,
-        which is located near the village of Villers-Bretonneux (Somme) in northern France.
-      
-      </p>
-       
-      <p
-        class="case_paragraph m-6_bottom"
-      >
-        
-        Although the small-scale version of the Сentre was built inside Mad Devs’ office, the team was pursuing the
-        following goals:
-      
-      </p>
-       
-      <ul
-        class="case_list m-56_bottom media-m-24_bottom"
-      >
-        <li
-          class="list-item_dot"
-        >
-          Understand the complexity of the SJMC hardware and software in person
-        </li>
-         
-        <li
-          class="list-item_dot"
-        >
-          Uncover the potential risks and problems
-        </li>
-         
-        <li
-          class="list-item_dot"
-        >
-          Deploy technical debts and test the changes
-        </li>
-         
-        <li
-          class="list-item_dot"
-        >
-          Deploy new content on large scale screens and test the changes
-        </li>
-      </ul>
-       
-      <ul
-        class="case_list-team m-96_bottom media-m-24_bottom"
-      >
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              srcset="s3 image url ,s3 image url 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Kirill Zinchenko"
-              class="image grey-background"
-              height="50"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="50"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              
-      Kirill Zinchenko
-    
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              
-      Project Manager
-    
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              srcset="s3 image url ,s3 image url 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Vlad Andreev"
-              class="image grey-background"
-              height="50"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="50"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              
-      Vlad Andreev
-    
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              
-      DevOps Engineer
-    
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              srcset="s3 image url ,s3 image url 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Aleksandr Zhitov"
-              class="image grey-background"
-              height="50"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="50"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              
-      Aleksandr Zhitov
-    
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              
-      QA Manager
-    
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              srcset="s3 image url ,s3 image url 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Sergey Boyko"
-              class="image grey-background"
-              height="50"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="50"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              
-      Sergey Boyko
-    
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              
-      QA Tester
-    
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              srcset="s3 image url ,s3 image url 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Andrew Minkin"
-              class="image grey-background"
-              height="50"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="50"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              
-      Andrew Minkin
-    
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              
-      Back-end Developer
-    
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              srcset="s3 image url ,s3 image url 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Dmitri Khalezin"
-              class="image grey-background"
-              height="50"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="50"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              
-      Dmitri Khalezin
-    
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              
-      DevOps Engineer
-    
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              srcset="s3 image url ,s3 image url 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Kirill Avdeev"
-              class="image grey-background"
-              height="50"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="50"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              
-      Kirill Avdeev
-    
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              
-      Back-end Developer
-    
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              srcset="s3 image url ,s3 image url 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Stanislav Shcherbinin"
-              class="image grey-background"
-              height="50"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="50"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              
-      Stanislav Shcherbinin
-    
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              
-      Back-end Developer
-    
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              srcset="s3 image url ,s3 image url 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Aleksandr Astashov"
-              class="image grey-background"
-              height="50"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="50"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              
-      Aleksandr Astashov
-    
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              
-      Back-end Developer
-    
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              srcset="s3 image url ,s3 image url 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Ruslan Kasymov"
-              class="image grey-background"
-              height="50"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="50"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              
-      Ruslan Kasymov
-    
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              
-      Logistics Manager
-    
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              srcset="s3 image url ,s3 image url 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Pavel Pushkarev"
-              class="image grey-background"
-              height="50"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="50"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              
-      Pavel Pushkarev
-    
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              
-      Mobile App Developer
-    
-            </p>
-          </div>
-        </li>
-        <li
-          class="case_team-item"
-        >
-          <picture
-            class="case_team-item__image"
-          >
-            <source
-              class="image grey-background"
-              srcset="s3 image url ,s3 image url 2x"
-              type="image/webp"
-            />
-             
-            <img
-              alt="Rustom Kulbatyrov"
-              class="image grey-background"
-              height="50"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="50"
-            />
-          </picture>
-           
-          <div
-            class="case_team-item__info"
-          >
-            <p
-              class="case_team-item__name"
-            >
-              
-      Rustom Kulbatyrov
-    
-            </p>
-             
-            <p
-              class="case_team-item__position"
-            >
-              
-      Mobile App Developer
-    
-            </p>
-          </div>
-        </li>
-      </ul>
-    </section>
-     
-    <section
-      class="container_regular"
-    >
-      <h2
-        class="case_title_h2 m-12_bottom"
-      >
-        
-        Ongoing partnership
-      
-      </h2>
-       
-      <p
-        class="case_paragraph m-24_bottom media-m-12_bottom"
-      >
-        
-        According to the internal CSAT survey, 98% of Mad Devs' customers find the company's service great value for
-        money, and most of them stay with us for 3+ years. The SJMC is no exception.
-      
-      </p>
-       
-      <p
-        class="case_paragraph m-72_bottom media-m-48_bottom"
-      >
-        
-        We are honoured to extend our partnership to improve the SJMC visitors' experience by introducing the iPadOS
-        application for children. This application will offer engaging content which allows children to discover the
-        centre and its resources through a series of educational games. Moreover, Mad Devs is going to develop a
-        sophisticated content management system that is eventually going to simplify the deployment of new content and
-        will enable the managers of the SJMC themselves to make the required changes with ease.
-      
-      </p>
-       
-      <blockquote
-        alt="Wade Bartlett: Former Technical and Operations Director, Sir John Monash Centre."
-        class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
-      >
-        
-        The Sir John Monash Centre operates within a bespoke multimedia framework, which requires high-level technical
-        expertise to deliver the Centre's visitor experience. Mad Devs provide outstanding levels of support and
-        development services across our multimedia and IT platforms, systems and languages. Always available to
-        provide assistance when needed, Mad Devs are a highly-valued part of our wider operations.
-       
-        <div
-          class="case_blockquote-author__author-info m-24_top"
-        >
-          <div
-            class="case_blockquote-author__photo m-auto"
+            class="container_full case_full-screen-img"
           >
             <picture>
               <source
@@ -2930,7 +355,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               />
                
               <img
-                alt="Wade Bartlett"
+                alt="The SJMC: Multimedia Management System."
                 class="image"
                 height="0"
                 loading="lazy"
@@ -2940,35 +365,2642 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               />
             </picture>
           </div>
-           
+        </section>
+         
+        <section
+          class="container_regular"
+        >
           <p
-            class="case_paragraph case_blockquote-author__name"
+            class="case_paragraph m-48_top media-m-24_top"
           >
             
+      Since the available existing solutions had limitations and restrictions, The Sir John Monash Centre hired an
+      Australia-based IT company to create an integrated multimedia solution to coordinate and communicate with
+      every piece of technology in the centre.
+    
+          </p>
+           
+          <p
+            class="case_paragraph m-24_top media-m-12_top"
+          >
+            
+      The MMIT Brain synchronises two information systems: the multimedia management system and the smart building
+      management system. The multimedia software and hardware management system controls, supervises and monitors
+      lighting, audio, video and special effects for the SJMC. The universal software infrastructure to building
+      controls infrastructure integrators is the third-party framework that works as a foundation of the SJMC
+      intelligent building. It supports a complete IP-based information network for real-time management and
+      controls the SJMC's multiple facilities. This one-stop software manages all building operations, energy,
+      security, and operational systems.
+    
+          </p>
+           
+          <blockquote
+            class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+          >
+            
+      The MMIT Brain is a coherent solution that brings together the monitoring and management of two information
+      systems.
+    
+          </blockquote>
+           
+          <p
+            class="case_paragraph m-16_bottom"
+          >
+            
+      The MMIT Brain orchestrated the synchronisation of every thread into one coherent solution. Physically
+      constructed as a single hardware and software, it performs various services under one hood. Here is a list of
+      functions the MMIT Brain performs.
+    
+          </p>
+           
+          <ul
+            class="case_list m-56_bottom media-m-32_bottom"
+          >
+            <li
+              class="list-item_dot"
+            >
+              
+        Delivers content to mobile applications and synchronises subtitles and audio on multimedia screens in 3
+        languages (German, English, and French).
+      
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Orchestrates the experience of multiple SJMC visitors to avoid interference.
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Performs interaction between two internal information systems.
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Enables content managers to deploy and modify new content.
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Synchronises content storage and other multimedia computers.
+            </li>
+          </ul>
+        </section>
+      </section>
+       
+      <section>
+        <section
+          class="container_regular"
+        >
+          <h2
+            class="case_title_h2 m-104_top media-m-48_top m-12_bottom"
+          >
+            
+      Mobile applications
+    
+          </h2>
+           
+          <p
+            class="case_paragraph m-48_bottom"
+          >
+            
+      The world-class BYOD technology solution ensures that visitors are immersed in soldiers' personal histories.
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_full background-color-black-section"
+        >
+          <div
+            class="container_full case_full-screen-img"
+          >
+            <picture>
+              <source
+                class="image"
+                srcset="s3 image url ,s3 image url 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="The SJMC Mobile Applications."
+                class="image"
+                height="0"
+                loading="lazy"
+                src="s3 image url"
+                srcset="s3 image url 2x"
+                width="0"
+              />
+            </picture>
+          </div>
+        </section>
+         
+        <section
+          class="container_regular"
+        >
+          <blockquote
+            class="case_blockquote-box m-auto m-48_top m-48_bottom"
+          >
+            
+      As soon as visitors enter the site, the SJMC’s mobile applications, with the help of advanced positioning
+      algorithms proactively cache content, cue up relevant multimedia, and guide visitors through the stories of
+      Australian soldiers.
+    
+          </blockquote>
+           
+          <p
+            class="case_paragraph m-24_bottom media-m-12_bottom"
+          >
+            
+      On an annual basis, approximately 60,000 visitors move throughout the centre. 150 Bluetooth beacons determine
+      the location of each smartphone to deliver the right content at the right time.
+    
+          </p>
+           
+          <p
+            class="case_paragraph m-24_bottom media-m-12_bottom"
+          >
+            
+      The gallery's small size and the volume and density of signal traffic from visitors is a challenge that was
+      solved using a complex, layered positioning algorithm that was developed to help deal with the unique
+      challenges of SJMC’s physical environment.
+    
+          </p>
+           
+          <p
+            class="case_paragraph m-48_bottom media-m-24_bottom"
+          >
+            
+      When visitors move around the centre, the app will continually refresh a list of the content that is available
+      nearby and allow them to create their own experience.
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_regular"
+        >
+          <picture>
+            <source
+              class="image"
+              srcset="s3 image url ,s3 image url 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Sir Jonh Monash Centre Map."
+              class="image"
+              height="0"
+              loading="lazy"
+              src="s3 image url"
+              srcset="s3 image url 2x"
+              width="0"
+            />
+          </picture>
+           
+          <p
+            class="case_image-description m-8_top"
+          >
+            
+      Sir Jonh Monash Centre Site
+    
+          </p>
+        </section>
+      </section>
+       
+      <section>
+        <section
+          class="container_regular"
+        >
+          <h2
+            class="case_title_h2 m-56_top media-m-48_top m-12_bottom"
+          >
+            
+      SJMC Hardware
+    
+          </h2>
+           
+          <p
+            class="case_paragraph m-48_bottom media-m-24_bottom"
+          >
+            
+      Hundreds of pieces of equipment are master-mindedly organised to transform content stored in audio, video, and
+      subtitles format to interactive monitors that are run on multiple servers.
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_full case_full-screen-img"
+        >
+          <picture>
+            <source
+              class="image"
+              srcset="s3 image url ,s3 image url 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="The SJMC Immersive Gallery."
+              class="image"
+              height="0"
+              loading="lazy"
+              src="s3 image url"
+              srcset="s3 image url 2x"
+              width="0"
+            />
+          </picture>
+        </section>
+         
+        <section
+          class="container_regular"
+        >
+          <h3
+            class="case_title_h3 m-48_top m-12_bottom"
+          >
+            
+      WATCHOUT
+    
+          </h3>
+           
+          <p
+            class="case_paragraph m-48_bottom media-m-24_bottom"
+          >
+            
+      WATCHOUT is a multi-display production and presentation system that enables the SJMC to arrange displays in
+      unusual ways and create seamless images and videos. The absence of gaps between display surfaces is possible
+      due to the WATCHOUT system that distributes the content and keeps everything in sync across all connected
+      displays.
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_full background-color-silver"
+        >
+          <section
+            class="container_middle"
+          >
+            <img
+              alt="WATCHOUT - Multi-Display Production and Presentation Software."
+              class="case_gif"
+              src="s3 image url"
+            />
+          </section>
+        </section>
+         
+        <section
+          class="container_regular"
+        >
+          <h3
+            class="case_title_h3 m-96_top media-m-48_top m-12_bottom"
+          >
+            
+      BRIX
+    
+          </h3>
+           
+          <p
+            class="case_paragraph m-48_bottom media-m-24_bottom"
+          >
+            
+      Essentially, BRIX is an ultra-compact multimedia computer that can be hung on a wall. The advanced graphics
+      card delivers heavy content to multiple monitors simultaneously. Moreover, each BRIX is managed by the MMIT
+      Brain to work in synchronisation with mobile applications.
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_full background-color-silver"
+        >
+          <section
+            class="container_middle"
+          >
+            <img
+              alt="Ultra-Compact Multimedia Computer - BRIX."
+              class="case_gif"
+              src="s3 image url"
+            />
+          </section>
+        </section>
+         
+        <section
+          class="container_regular"
+        >
+          <h3
+            class="case_title_h3 m-96_top media-m-48_top m-12_bottom"
+          >
+            
+      Bluetooth beacons
+    
+          </h3>
+           
+          <p
+            class="case_paragraph m-24_bottom media-m-12_bottom"
+          >
+            
+      The mobile application’s positioning algorithm collects the location data of each user via 150 Bluetooth
+      beacons located all over the centre.
+    
+          </p>
+           
+          <p
+            class="case_paragraph m-48_bottom media-m-24_bottom"
+          >
+            
+      The limited space in the SJMC made detecting each visitor’s location and continuously refreshing a list of
+      available content nearby challenging.
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_full case_sjmc-phone-video-section background-color-black-primary"
+        >
+          <div
+            class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video"
+          >
+            <video
+              height="100%"
+              playsinline=""
+              width="100%"
+            >
+              <source
+                src="s3 image url"
+                type="video/mp4"
+              />
+              
+        Your browser does not support the video tag.
+        
+              <img
+                src="s3 image url"
+              />
+            </video>
+          </div>
+        </section>
+         
+        <section
+          class="container_regular"
+        >
+          <p
+            class="case_image-description m-34_top media-m-24_top"
+          >
+            
+      Playback of content in the application when approaching the bluetooth beacons.
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_regular m-56_top media-m-24_top m-96_bottom media-m-72_bottom"
+        >
+          <div
+            class="case_column-container"
+          >
+            <div
+              class="case_column-item"
+            >
+              <h4
+                class="case_title_h4 m-8_bottom media-m-2_bottom"
+              >
+                
+          60,000 visitors
+        
+              </h4>
+               
+              <p
+                class="case_paragraph"
+              >
+                 On an annual basis move throughout the centre. 
+              </p>
+            </div>
+             
+            <div
+              class="case_column-item"
+            >
+              <h4
+                class="case_title_h4 m-8_bottom media-m-2_bottom"
+              >
+                
+          150 Bluetooth beacons
+        
+              </h4>
+               
+              <p
+                class="case_paragraph"
+              >
+                
+          Determine the location of each smartphone to deliver the right content at the right time.
+        
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+       
+      <section
+        class="container_regular"
+      >
+        <h2
+          class="case_title_h2 m-48_bottom media-m-24_bottom"
+        >
+          
+    Key goals for Mad Devs
+  
+        </h2>
+         
+        <ul
+          class="case_list m-96_bottom media-m-48_bottom"
+        >
+          <li
+            class="list-item_box"
+          >
+            
+      Understanding the complexity of the MMIT Brain software
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      Building a small-scale version of the SJMC experience in 1 month
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      Finishing technical debt conducted by an independent auditor
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      Covering the code with unit and integration tests
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      Building a framework for automating E2E tests
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      Deploying technical debt changes and improvements on site
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      Developing a reporting system
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      Testing the deployment of new content
+    
+          </li>
+          <li
+            class="list-item_box"
+          >
+            
+      Setting up system monitoring
+    
+          </li>
+        </ul>
+      </section>
+       
+      <section
+        class="container_regular"
+      >
+        <h3
+          class="case_title_h3 m-48_bottom media-m-24_bottom"
+        >
+          
+    Technology stack
+  
+        </h3>
+         
+        <ul
+          class="case_list-technologies m-107_bottom media-m-48_bottom"
+        >
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Go
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-swift mobile-swift"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Swift
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-java mobile-java"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Java for Android
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__other-unity other-unity"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Unity
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__infrastructure-aws infrastructure-aws"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    AWS
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__infrastructure-codecommit infrastructure-codecommit"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    CodeCommit
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__other-windows other-windows"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Windows 10
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-apple-black mobile-apple-black"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    iOS
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-android-black-text mobile-android-black-text"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Android
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__other-ubuntu other-ubuntu"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Ubuntu
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__devops-ansible devops-ansible"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Ansible
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__devops-sentry-dark devops-sentry-dark"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Sentry
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__devops-elastic devops-elastic"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Elasticsearch
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__devops-logstash devops-logstash"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Logstash
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__devops-kibana devops-kibana"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Kibana
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__devops-prometheus devops-prometheus"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Prometheus
+  
+            </p>
+          </li>
+        </ul>
+      </section>
+       
+      <section>
+        <section
+          class="container_regular"
+        >
+          <h3
+            class="case_title_h3 m-12_bottom"
+          >
+            
+      Custom small-scale version of the SJMC in Mad Devs’ office
+    
+          </h3>
+           
+          <p
+            class="case_paragraph m-24_bottom media-m-12_bottom"
+          >
+            
+      As thousands of kilometres separate the SJMC and Mad Devs’ office, a unique approach to the engineering
+      partnership was required.
+    
+          </p>
+           
+          <p
+            class="case_paragraph m-48_bottom media-m-24_bottom"
+          >
+            
+      After purchasing the required equipment and reading code and documentation, in one month after understanding
+      the complexity of the SJMC, Mad Devs’ DevOps and back-end engineers built a custom small-scale version of the
+      SJMC complex multimedia environment. Thus, testing and deploying new content and changes in the Brain was made
+      possible even kilometres away from the real SJMC.
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_full case_full-screen-slider"
+        >
+          <div
+            class="slider-content"
+          >
+            <div
+              class="swiper-container thumb-example"
+            >
+              <!---->
+               
+              <div
+                class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
+                style="cursor: grab;"
+              >
+                <div
+                  class="swiper-wrapper"
+                  style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+                >
+                  <div
+                    class="swiper-slide"
+                  >
+                    <picture>
+                      <source
+                        class="image"
+                        srcset="s3 image url ,s3 image url 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                        class="image"
+                        height="0"
+                        loading="lazy"
+                        src="s3 image url"
+                        srcset="s3 image url 2x"
+                        width="0"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                  >
+                    <picture>
+                      <source
+                        class="image"
+                        srcset="s3 image url ,s3 image url 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                        class="image"
+                        height="0"
+                        loading="lazy"
+                        src="s3 image url"
+                        srcset="s3 image url 2x"
+                        width="0"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                  >
+                    <picture>
+                      <source
+                        class="image"
+                        srcset="s3 image url ,s3 image url 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                        class="image"
+                        height="0"
+                        loading="lazy"
+                        src="s3 image url"
+                        srcset="s3 image url 2x"
+                        width="0"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                  >
+                    <picture>
+                      <source
+                        class="image"
+                        srcset="s3 image url ,s3 image url 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                        class="image"
+                        height="0"
+                        loading="lazy"
+                        src="s3 image url"
+                        srcset="s3 image url 2x"
+                        width="0"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                  >
+                    <picture>
+                      <source
+                        class="image"
+                        srcset="s3 image url ,s3 image url 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                        class="image"
+                        height="0"
+                        loading="lazy"
+                        src="s3 image url"
+                        srcset="s3 image url 2x"
+                        width="0"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                  >
+                    <picture>
+                      <source
+                        class="image"
+                        srcset="s3 image url ,s3 image url 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                        class="image"
+                        height="0"
+                        loading="lazy"
+                        src="s3 image url"
+                        srcset="s3 image url 2x"
+                        width="0"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <span
+                  aria-atomic="true"
+                  aria-live="assertive"
+                  class="swiper-notification"
+                />
+              </div>
+            </div>
+             
+            <!---->
+             
+            <div
+              class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
+            >
+              <div
+                class="swiper-wrapper"
+                style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+              >
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <span
+                aria-atomic="true"
+                aria-live="assertive"
+                class="swiper-notification"
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+       
+      <section>
+        <section
+          class="container_regular"
+        >
+          <h3
+            class="case_title_h3 m-78_top media-m-48_top m-12_bottom"
+          >
+            
+      Technical debt
+    
+          </h3>
+           
+          <p
+            class="case_paragraph m-24_bottom media-m-12_bottom"
+          >
+            
+      Although the previous vendors have developed incredible software, an independent organisation prepared a
+      detailed audit and evaluated deficiencies or areas of improvement.
+    
+          </p>
+           
+          <p
+            class="case_paragraph m-72_bottom media-m-48_bottom"
+          >
+            
+      The complexity of the system raises particular challenges for the Mad Devs team, as they had to submerge
+      themselves into the full comprehensiveness of the Brain solution to be able to improve it. It took our team a
+      month of onboarding and reading documentation before we could fix even a minor issue.
+    
+          </p>
+           
+          <h3
+            class="case_title_h3 m-12_bottom"
+          >
+            
+      Code refactoring and optimization
+    
+          </h3>
+           
+          <p
+            class="case_paragraph m-24_bottom media-m-12_bottom"
+          >
+            
+      Refactoring the SJMC code and covering it with the unit and integration tests improved the stability and
+      usability of both mobile applications and the MMIT Brain.
+    
+          </p>
+           
+          <p
+            class="case_paragraph m-72_bottom media-m-48_bottom"
+          >
+            
+      On top of that, by establishing an efficient testing process we significantly increased iOS and Android
+      applications' 40% test coverage that ultimately prevented defect leakage. Moreover, after fighting 1000+ minor
+      defects and optimising applications to support the latest mobile operating systems, Mad Devs’ engineers
+      successfully finished the technical debt on time and planned the deployment of the changes on site.
+    
+          </p>
+           
+          <h3
+            class="case_title_h3 m-12_bottom"
+          >
+            
+      Analytics and user-friendly reports
+    
+          </h3>
+           
+          <p
+            class="case_paragraph m-48_bottom media-m-24_bottom"
+          >
+            
+      Extensive SJMC data gathered from the Multimedia IT System is organised into user-friendly reports by an
+      Analytics feature. Such reports enabled the Centre’s managers to easily track performance and report directly
+      to stakeholders.
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_middle"
+        >
+          <picture>
+            <source
+              class="image box-shadow"
+              srcset="s3 image url ,s3 image url 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
+              class="image box-shadow"
+              height="0"
+              loading="lazy"
+              src="s3 image url"
+              srcset="s3 image url 2x"
+              width="0"
+            />
+          </picture>
+        </section>
+         
+        <section
+          class="container_regular"
+        >
+          <p
+            class="case_paragraph m-48_top media-m-24_top m-6_bottom"
+          >
+            
+      The analytics show the following metrics:
+    
+          </p>
+           
+          <ul
+            class="case_list m-104_bottom media-m-56_bottom"
+          >
+            <li
+              class="list-item_dot"
+            >
+              Number of visitors
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Number of school groups
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Number of students
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Average visit time – i.e. time detected on-site
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              
+        The average length of time of the SJMC Experience – i.e. time between connections to first and last
+        site
+      
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              
+        Popular stands, by analysing the longevity of visitors listening to/watching/interacting with
+        content
+      
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Average time visitors spend in each SJMC zone
+            </li>
+          </ul>
+        </section>
+      </section>
+       
+      <section>
+        <section
+          class="container_regular"
+        >
+          <h2
+            class="case_title_h2 m-12_bottom"
+          >
+            
+      SJMC System monitoring
+    
+          </h2>
+           
+          <p
+            class="case_paragraph"
+          >
+            
+      System monitoring is a proactive method to improve the quality of SJMC software and hardware by gathering data
+      from 6 servers and 100+ BRIX multimedia computers highlighting areas that might need Mad Devs’ engineers'
+      attention.
+    
+          </p>
+           
+          <blockquote
+            class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+          >
+            
+      Sophisticated system monitoring is the fight life of defence against downtime.
+    
+          </blockquote>
+           
+          <h3
+            class="case_title_h3 m-12_bottom"
+          >
+            
+      Grafana + Prometheus
+    
+          </h3>
+           
+          <p
+            class="case_paragraph m-48_bottom media-m-24_bottom"
+          >
+            
+      To achieve maximum observability of the SJMC hardware Grafana was used to build all the graphs for the current
+      state. It enables the Mad Devs team to configure the reports and alerts if any of the system components fail
+      or are under high load or in case of any other problem.
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_middle m-48_bottom media-m-24_bottom"
+        >
+          <div
+            class="slider-content"
+          >
+            <div
+              class="swiper-container thumb-example box-shadow"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Safari Top Bar."
+                  class="image"
+                  height="0"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="0"
+                />
+              </picture>
+               
+              <div
+                class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
+                style="cursor: grab;"
+              >
+                <div
+                  class="swiper-wrapper"
+                  style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+                >
+                  <div
+                    class="swiper-slide"
+                  >
+                    <picture>
+                      <source
+                        class="image"
+                        srcset="s3 image url ,s3 image url 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="SJMC System Monitoring."
+                        class="image"
+                        height="0"
+                        loading="lazy"
+                        src="s3 image url"
+                        srcset="s3 image url 2x"
+                        width="0"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                  >
+                    <picture>
+                      <source
+                        class="image"
+                        srcset="s3 image url ,s3 image url 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="SJMC System Monitoring."
+                        class="image"
+                        height="0"
+                        loading="lazy"
+                        src="s3 image url"
+                        srcset="s3 image url 2x"
+                        width="0"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <span
+                  aria-atomic="true"
+                  aria-live="assertive"
+                  class="swiper-notification"
+                />
+              </div>
+            </div>
+             
+            <!---->
+             
+            <div
+              class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
+            >
+              <div
+                class="swiper-wrapper"
+                style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+              >
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="SJMC System Monitoring."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="SJMC System Monitoring."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <span
+                aria-atomic="true"
+                aria-live="assertive"
+                class="swiper-notification"
+              />
+            </div>
+          </div>
+        </section>
+         
+        <section
+          class="container_regular"
+        >
+          <p
+            class="case_paragraph m-56_bottom media-m-24_bottom"
+          >
+            
+      Prometheus acts as the storage backend and exposes a wide variety of metrics gathered from 6 servers while
+      Grafana acts as a visualisation layer and works as the interface for analysis and visualisation.
+    
+          </p>
+           
+          <h3
+            class="case_title_h3 m-12_bottom"
+          >
+            
+      Elasticsearch+Kibana+
+            <br
+              class="case_mobile-break"
+            />
+            Logstash
+    
+          </h3>
+           
+          <p
+            class="case_paragraph m-48_bottom media-m-24_bottom"
+          >
+            
+      Logstash ingests, transforms, and ships SJMC logging data from 100+ BRIX (multimedia computers). Before
+      unstructured logging data was scattered across hundreds of folders and was not properly monitored, which
+      ultimately caused breakages and deterioration of expensive hardware. Now Logstash collects and transforms
+      logging data by sending it to Elasticsearch. Elasticsearch enables the SJMC to store, search, and analyse
+      logged data with ease at scale.
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_middle"
+        >
+          <picture>
+            <source
+              class="image box-shadow"
+              srcset="s3 image url ,s3 image url 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
+              class="image box-shadow"
+              height="0"
+              loading="lazy"
+              src="s3 image url"
+              srcset="s3 image url 2x"
+              width="0"
+            />
+          </picture>
+        </section>
+         
+        <section
+          class="container_regular"
+        >
+          <p
+            class="case_paragraph m-48_top media-m-24_top m-72_bottom media-m-48_bottom"
+          >
+            
+      Kibana pulls up logged data and creates user-friendly visualizations with charts, graphs, heatmaps, and more.
+      It is easy to understand solutions to manage SJMC hardware in a single dashboard.
+    
+          </p>
+           
+          <h3
+            class="case_title_h3 m-12_bottom"
+          >
+            
+      Continuous integration and delivery (CI/CD)
+    
+          </h3>
+           
+          <p
+            class="case_paragraph m-72_bottom media-m-48_bottom"
+          >
+            
+      CI/CD shortens the feedback cycle and allows Mad Devs’ engineers to minimise risks and increase productivity
+      by configuring CI/CD for autotest running and automatic deployment.
+    
+          </p>
+           
+          <h3
+            class="case_title_h3 m-12_bottom"
+          >
+            
+      Sentry
+    
+          </h3>
+           
+          <p
+            class="case_paragraph m-96_bottom media-m-72_bottom"
+          >
+            
+      Integration of Sentry provides the Mad Devs team with automated error tracking and shows us every fault that
+      happens with the SJMC MMIT Brain by organising its logs. Sentry enables the Mad Devs team to identify,
+      prioritise, and reproduce each issue.
+    
+          </p>
+        </section>
+      </section>
+       
+      <section
+        class="container_regular"
+      >
+        <h2
+          class="case_title_h2 m-24_bottom media-m-12_bottom"
+        >
+          
+    Automated testing the MMIT Brain via custom emulators
+  
+        </h2>
+         
+        <p
+          class="case_paragraph m-6_bottom"
+        >
+          
+    Auto-testing of the MMIT Brain can be sorted into two categories:
+  
+        </p>
+         
+        <ul
+          class="case_list m-32_bottom"
+        >
+          <li
+            class="list-item_dot"
+          >
+            The synchronisation of two internal information systems.
+          </li>
+           
+          <li
+            class="list-item_dot"
+          >
+            
+      End to end testing to ensure seamless user experience for thousands of SJMC visitors.
+    
+          </li>
+        </ul>
+         
+        <p
+          class="case_paragraph m-72_bottom media-m-48_bottom"
+        >
+          
+    Testing the accuracy of new content and feature deployment is a challenge due to the 5000 km distance that
+    separate Mad Devs’ office and the SJMC. Thus, our back-end developers developed two types of emulation
+    software that enables Mad Devs to test the MMIT Brain without accumulating additional travel expenses.
+  
+        </p>
+         
+        <h3
+          class="case_title_h3 m-12_bottom"
+        >
+          
+    1. Internal information systems synchronization
+  
+        </h3>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+    The emulator code tests the interaction of two independent information systems that control multimedia
+    software and intelligent infrastructure integrations.
+  
+        </p>
+         
+        <blockquote
+          class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
+        >
+          
+    The internal information systems synchronisation emulator makes the infrastructure control system believe that
+    emulated hardware is real.
+  
+        </blockquote>
+         
+        <p
+          class="case_paragraph m-24_bottom media-m-12_bottom"
+        >
+          
+    For example, in case of an emergency like a water leakage, a smart building control system that controls
+    electricity has to communicate the emergency to multimedia software through the MMIT Brain and turn off all
+    multimedia computers to avoid closure.
+  
+        </p>
+         
+        <p
+          class="case_paragraph m-72_bottom media-m-48_bottom"
+        >
+          
+    Without such an emulator, Mad Devs’ developers would not be able to look at the MMIT Brain code and understand
+    whether the Brain has transferred the command from one system to another. Without such an emulator, the team
+    would be clueless regarding whether the command had been successfully executed or not.
+  
+        </p>
+         
+        <h3
+          class="case_title_h3"
+        >
+          
+    2. End to end tests using emulators of mobile applications
+  
+        </h3>
+         
+        <blockquote
+          class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
+        >
+          
+    A mobile applications emulator enables the SJMC to run all possible user experiences on all possible virtual
+    multimedia sites.
+  
+        </blockquote>
+         
+        <p
+          class="case_paragraph m-96_bottom media-m-48_bottom"
+        >
+          
+    All possible interactions with WATCHOUT site multimedia computers including touch screens, multiple users
+    watching simultaneously, and switching audio and subtitle languages usually last a minimum of 6 hours. The
+    emulator for end to end testing accomplishes the tests in just 20 minutes.
+  
+        </p>
+      </section>
+       
+      <section>
+        <section
+          class="container_regular"
+        >
+          <h2
+            class="case_title_h2 m-24_bottom"
+          >
+            
+      Mad Devs’ trip to the SJMC
+    
+          </h2>
+        </section>
+         
+        <section
+          class="container_full case_full-screen-slider"
+        >
+          <div
+            class="slider-content"
+          >
+            <div
+              class="swiper-container thumb-example"
+            >
+              <!---->
+               
+              <div
+                class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
+                style="cursor: grab;"
+              >
+                <div
+                  class="swiper-wrapper"
+                  style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+                >
+                  <div
+                    class="swiper-slide"
+                  >
+                    <picture>
+                      <source
+                        class="image"
+                        srcset="s3 image url ,s3 image url 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="Mad Devs’ Team Trip to the SJMC."
+                        class="image"
+                        height="0"
+                        loading="lazy"
+                        src="s3 image url"
+                        srcset="s3 image url 2x"
+                        width="0"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                  >
+                    <picture>
+                      <source
+                        class="image"
+                        srcset="s3 image url ,s3 image url 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="Mad Devs’ Team Trip to the SJMC."
+                        class="image"
+                        height="0"
+                        loading="lazy"
+                        src="s3 image url"
+                        srcset="s3 image url 2x"
+                        width="0"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                  >
+                    <picture>
+                      <source
+                        class="image"
+                        srcset="s3 image url ,s3 image url 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="Mad Devs’ Team Trip to the SJMC."
+                        class="image"
+                        height="0"
+                        loading="lazy"
+                        src="s3 image url"
+                        srcset="s3 image url 2x"
+                        width="0"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                  >
+                    <picture>
+                      <source
+                        class="image"
+                        srcset="s3 image url ,s3 image url 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="Mad Devs’ Team Trip to the SJMC."
+                        class="image"
+                        height="0"
+                        loading="lazy"
+                        src="s3 image url"
+                        srcset="s3 image url 2x"
+                        width="0"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="swiper-slide"
+                  >
+                    <picture>
+                      <source
+                        class="image"
+                        srcset="s3 image url ,s3 image url 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="Mad Devs’ Team Trip to the SJMC."
+                        class="image"
+                        height="0"
+                        loading="lazy"
+                        src="s3 image url"
+                        srcset="s3 image url 2x"
+                        width="0"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <span
+                  aria-atomic="true"
+                  aria-live="assertive"
+                  class="swiper-notification"
+                />
+              </div>
+            </div>
+             
+            <!---->
+             
+            <div
+              class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
+            >
+              <div
+                class="swiper-wrapper"
+                style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+              >
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="Mad Devs’ Team Trip to the SJMC."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="Mad Devs’ Team Trip to the SJMC."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="Mad Devs’ Team Trip to the SJMC."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="Mad Devs’ Team Trip to the SJMC."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="swiper-slide"
+                >
+                  <picture>
+                    <source
+                      class="image"
+                      srcset="s3 image url ,s3 image url 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="Mad Devs’ Team Trip to the SJMC."
+                      class="image"
+                      height="0"
+                      loading="lazy"
+                      src="s3 image url"
+                      srcset="s3 image url 2x"
+                      width="0"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <span
+                aria-atomic="true"
+                aria-live="assertive"
+                class="swiper-notification"
+              />
+            </div>
+          </div>
+        </section>
+         
+        <section
+          class="container_regular"
+        >
+          <p
+            class="case_paragraph m-56_top media-m-24_top m-24_bottom media-m-12_bottom"
+          >
+            
+      In February 2020, just before the contract’s deadline, a Mad Devs’ team of eight travelled to the Сentre,
+      which is located near the village of Villers-Bretonneux (Somme) in northern France.
+    
+          </p>
+           
+          <p
+            class="case_paragraph m-6_bottom"
+          >
+            
+      Although the small-scale version of the Сentre was built inside Mad Devs’ office, the team was pursuing the
+      following goals:
+    
+          </p>
+           
+          <ul
+            class="case_list m-56_bottom media-m-24_bottom"
+          >
+            <li
+              class="list-item_dot"
+            >
+              Understand the complexity of the SJMC hardware and software in person
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Uncover the potential risks and problems
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Deploy technical debts and test the changes
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Deploy new content on large scale screens and test the changes
+            </li>
+          </ul>
+           
+          <ul
+            class="case_list-team m-96_bottom media-m-24_bottom"
+          >
+            <li
+              class="case_team-item"
+            >
+              <picture
+                class="case_team-item__image"
+              >
+                <source
+                  class="image grey-background"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Kirill Zinchenko"
+                  class="image grey-background"
+                  height="50"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="50"
+                />
+              </picture>
+               
+              <div
+                class="case_team-item__info"
+              >
+                <p
+                  class="case_team-item__name"
+                >
+                  
+      Kirill Zinchenko
+    
+                </p>
+                 
+                <p
+                  class="case_team-item__position"
+                >
+                  
+      Project Manager
+    
+                </p>
+              </div>
+            </li>
+            <li
+              class="case_team-item"
+            >
+              <picture
+                class="case_team-item__image"
+              >
+                <source
+                  class="image grey-background"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Vlad Andreev"
+                  class="image grey-background"
+                  height="50"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="50"
+                />
+              </picture>
+               
+              <div
+                class="case_team-item__info"
+              >
+                <p
+                  class="case_team-item__name"
+                >
+                  
+      Vlad Andreev
+    
+                </p>
+                 
+                <p
+                  class="case_team-item__position"
+                >
+                  
+      DevOps Engineer
+    
+                </p>
+              </div>
+            </li>
+            <li
+              class="case_team-item"
+            >
+              <picture
+                class="case_team-item__image"
+              >
+                <source
+                  class="image grey-background"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Aleksandr Zhitov"
+                  class="image grey-background"
+                  height="50"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="50"
+                />
+              </picture>
+               
+              <div
+                class="case_team-item__info"
+              >
+                <p
+                  class="case_team-item__name"
+                >
+                  
+      Aleksandr Zhitov
+    
+                </p>
+                 
+                <p
+                  class="case_team-item__position"
+                >
+                  
+      QA Manager
+    
+                </p>
+              </div>
+            </li>
+            <li
+              class="case_team-item"
+            >
+              <picture
+                class="case_team-item__image"
+              >
+                <source
+                  class="image grey-background"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Sergey Boyko"
+                  class="image grey-background"
+                  height="50"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="50"
+                />
+              </picture>
+               
+              <div
+                class="case_team-item__info"
+              >
+                <p
+                  class="case_team-item__name"
+                >
+                  
+      Sergey Boyko
+    
+                </p>
+                 
+                <p
+                  class="case_team-item__position"
+                >
+                  
+      QA Tester
+    
+                </p>
+              </div>
+            </li>
+            <li
+              class="case_team-item"
+            >
+              <picture
+                class="case_team-item__image"
+              >
+                <source
+                  class="image grey-background"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Andrew Minkin"
+                  class="image grey-background"
+                  height="50"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="50"
+                />
+              </picture>
+               
+              <div
+                class="case_team-item__info"
+              >
+                <p
+                  class="case_team-item__name"
+                >
+                  
+      Andrew Minkin
+    
+                </p>
+                 
+                <p
+                  class="case_team-item__position"
+                >
+                  
+      Back-end Developer
+    
+                </p>
+              </div>
+            </li>
+            <li
+              class="case_team-item"
+            >
+              <picture
+                class="case_team-item__image"
+              >
+                <source
+                  class="image grey-background"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Dmitri Khalezin"
+                  class="image grey-background"
+                  height="50"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="50"
+                />
+              </picture>
+               
+              <div
+                class="case_team-item__info"
+              >
+                <p
+                  class="case_team-item__name"
+                >
+                  
+      Dmitri Khalezin
+    
+                </p>
+                 
+                <p
+                  class="case_team-item__position"
+                >
+                  
+      DevOps Engineer
+    
+                </p>
+              </div>
+            </li>
+            <li
+              class="case_team-item"
+            >
+              <picture
+                class="case_team-item__image"
+              >
+                <source
+                  class="image grey-background"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Kirill Avdeev"
+                  class="image grey-background"
+                  height="50"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="50"
+                />
+              </picture>
+               
+              <div
+                class="case_team-item__info"
+              >
+                <p
+                  class="case_team-item__name"
+                >
+                  
+      Kirill Avdeev
+    
+                </p>
+                 
+                <p
+                  class="case_team-item__position"
+                >
+                  
+      Back-end Developer
+    
+                </p>
+              </div>
+            </li>
+            <li
+              class="case_team-item"
+            >
+              <picture
+                class="case_team-item__image"
+              >
+                <source
+                  class="image grey-background"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Stanislav Shcherbinin"
+                  class="image grey-background"
+                  height="50"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="50"
+                />
+              </picture>
+               
+              <div
+                class="case_team-item__info"
+              >
+                <p
+                  class="case_team-item__name"
+                >
+                  
+      Stanislav Shcherbinin
+    
+                </p>
+                 
+                <p
+                  class="case_team-item__position"
+                >
+                  
+      Back-end Developer
+    
+                </p>
+              </div>
+            </li>
+            <li
+              class="case_team-item"
+            >
+              <picture
+                class="case_team-item__image"
+              >
+                <source
+                  class="image grey-background"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Aleksandr Astashov"
+                  class="image grey-background"
+                  height="50"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="50"
+                />
+              </picture>
+               
+              <div
+                class="case_team-item__info"
+              >
+                <p
+                  class="case_team-item__name"
+                >
+                  
+      Aleksandr Astashov
+    
+                </p>
+                 
+                <p
+                  class="case_team-item__position"
+                >
+                  
+      Back-end Developer
+    
+                </p>
+              </div>
+            </li>
+            <li
+              class="case_team-item"
+            >
+              <picture
+                class="case_team-item__image"
+              >
+                <source
+                  class="image grey-background"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Ruslan Kasymov"
+                  class="image grey-background"
+                  height="50"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="50"
+                />
+              </picture>
+               
+              <div
+                class="case_team-item__info"
+              >
+                <p
+                  class="case_team-item__name"
+                >
+                  
+      Ruslan Kasymov
+    
+                </p>
+                 
+                <p
+                  class="case_team-item__position"
+                >
+                  
+      Logistics Manager
+    
+                </p>
+              </div>
+            </li>
+            <li
+              class="case_team-item"
+            >
+              <picture
+                class="case_team-item__image"
+              >
+                <source
+                  class="image grey-background"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Pavel Pushkarev"
+                  class="image grey-background"
+                  height="50"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="50"
+                />
+              </picture>
+               
+              <div
+                class="case_team-item__info"
+              >
+                <p
+                  class="case_team-item__name"
+                >
+                  
+      Pavel Pushkarev
+    
+                </p>
+                 
+                <p
+                  class="case_team-item__position"
+                >
+                  
+      Mobile App Developer
+    
+                </p>
+              </div>
+            </li>
+            <li
+              class="case_team-item"
+            >
+              <picture
+                class="case_team-item__image"
+              >
+                <source
+                  class="image grey-background"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Rustom Kulbatyrov"
+                  class="image grey-background"
+                  height="50"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="50"
+                />
+              </picture>
+               
+              <div
+                class="case_team-item__info"
+              >
+                <p
+                  class="case_team-item__name"
+                >
+                  
+      Rustom Kulbatyrov
+    
+                </p>
+                 
+                <p
+                  class="case_team-item__position"
+                >
+                  
+      Mobile App Developer
+    
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </section>
+       
+      <section
+        class="container_regular"
+      >
+        <h2
+          class="case_title_h2 m-12_bottom"
+        >
+          
+    Ongoing partnership
+  
+        </h2>
+         
+        <p
+          class="case_paragraph m-24_bottom media-m-12_bottom"
+        >
+          
+    According to the internal CSAT survey, 98% of Mad Devs' customers find the company's service great value for
+    money, and most of them stay with us for 3+ years. The SJMC is no exception.
+  
+        </p>
+         
+        <p
+          class="case_paragraph m-72_bottom media-m-48_bottom"
+        >
+          
+    We are honoured to extend our partnership to improve the SJMC visitors' experience by introducing the iPadOS
+    application for children. This application will offer engaging content which allows children to discover the
+    centre and its resources through a series of educational games. Moreover, Mad Devs is going to develop a
+    sophisticated content management system that is eventually going to simplify the deployment of new content and
+    will enable the managers of the SJMC themselves to make the required changes with ease.
+  
+        </p>
+         
+        <blockquote
+          alt="Wade Bartlett: Former Technical and Operations Director, Sir John Monash Centre."
+          class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
+        >
+          
+    The Sir John Monash Centre operates within a bespoke multimedia framework, which requires high-level technical
+    expertise to deliver the Centre's visitor experience. Mad Devs provide outstanding levels of support and
+    development services across our multimedia and IT platforms, systems and languages. Always available to
+    provide assistance when needed, Mad Devs are a highly-valued part of our wider operations.
+   
+          <div
+            class="case_blockquote-author__author-info m-24_top"
+          >
+            <div
+              class="case_blockquote-author__photo m-auto"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="s3 image url ,s3 image url 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Wade Bartlett"
+                  class="image"
+                  height="0"
+                  loading="lazy"
+                  src="s3 image url"
+                  srcset="s3 image url 2x"
+                  width="0"
+                />
+              </picture>
+            </div>
+             
+            <p
+              class="case_paragraph case_blockquote-author__name"
+            >
+              
       Wade Bartlett
     
-          </p>
-           
-          <p
-            class="case_blockquote-author__position"
-          >
-            
+            </p>
+             
+            <p
+              class="case_blockquote-author__position"
+            >
+              
       Former Technical and Operations Director, Sir John Monash Centre
     
-          </p>
-        </div>
-      </blockquote>
+            </p>
+          </div>
+        </blockquote>
+      </section>
     </section>
      
     <section
       class="case_footer container_full"
     >
       <div
-        class="case_logotype"
+        class="case_logotype-namba-food"
       />
        
       <h2
-        class="case_title case_title_h2 case_title-sjmc-case"
+        class="case_title case_title_h2 case_title-namba-food"
       >
         
       Namba Food 
@@ -2976,7 +3008,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         
       Top Delivery Service in 
         <br
-          class="case_mobile-screen-break"
+          class="case_mobile-break-namba-food"
         />
         
       Central Asia

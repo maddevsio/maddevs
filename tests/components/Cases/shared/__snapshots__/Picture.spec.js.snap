@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Picture component should render correctly 1`] = `
+<div>
+  <picture
+    boxshadow="true"
+    fileextension="png"
+    filename="apple-iphone-xr-silver"
+    lazyloading="true"
+    picturefolder="nambafood"
+  >
+    <source
+      class="image"
+      srcset="img.jpg ,img.jpg 2x"
+      type="image/webp"
+    />
+     
+    <img
+      alt="alt"
+      class="image"
+      height="0"
+      loading=""
+      src="img.jpg"
+      srcset="img.jpg 2x"
+      width="0"
+    />
+  </picture>
+</div>
+`;

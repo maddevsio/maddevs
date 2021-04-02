@@ -13,17 +13,6 @@
     display: block;
   }
 
-  &_logotype {
-    @include nambafood-footer;
-    width: 200px;
-    height: 63px;
-    margin-bottom: 33px;
-  }
-
-  &_mobile-screen-break { // Foooter text break
-    display: none;
-  }
-
   &_issues-godee-card {
     margin-bottom: 20px;
   }
@@ -261,12 +250,6 @@
       width: 147px;
       height: 65px;
       margin-bottom: 20px;
-    }
-  }
-
-  @media screen and (max-width: 520px) {
-    &_mobile-screen-break {
-      display: block;
     }
   }
 

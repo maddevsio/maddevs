@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component should render correctly 1`] = `
+<div>
+  <div
+    class="case_card"
+    style="padding: 16px;"
+  >
+    Main Content
+  </div>
+</div>
+`;

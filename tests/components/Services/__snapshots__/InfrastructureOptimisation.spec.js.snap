@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfrastructureOptimisation should render correctly 1`] = `
+<div>
+  <section
+    class="infrastructure-optimisation"
+    id="infrastructure-optimisation"
+  >
+    <div
+      class="container"
+      data-testid="test-container"
+    >
+      <div
+        class="infrastructure-optimisation__content-wrapper"
+      >
+        <h2
+          c=""
+          class="infrastructure-optimisation__main-title"
+        >
+          
+        Infrastructure 
+          <br
+            class="infrastructure-optimisation__small-screen-break"
+          />
+          
+        Optimisation
+      
+        </h2>
+         
+        <div
+          class="infrastructure-optimisation__content"
+        >
+          <div
+            class="infrastructure-optimisation__text-content"
+          >
+            <div
+              class="content-item"
+              type="whatMakes"
+            >
+              <h3
+                class="item-title content-item__title content-item__title-first-item"
+              >
+                
+    What makes us stand out from others?
+  
+              </h3>
+               
+              <h4
+                class="item-sub-title content-item__sub-title content-item__sub-title-first-item"
+              >
+                
+    Optimising teams don’t care for tomorrow’s traffic peaks? We care!
+  
+              </h4>
+               
+              <p
+                class="paragraph content-item__paragraph"
+              >
+                
+    We don't just have experience with infrastructure management tools, our team helped develop some of them. We know where to get the cheapest price and the best service.
+  
+              </p>
+            </div>
+            <div
+              class="content-item"
+              type="upToSaving"
+            >
+              <h3
+                class="item-title content-item__title content-item__title-second-item"
+              >
+                
+    Up to 50% savings on infrastructure
+  
+              </h3>
+               
+              <h4
+                class="item-sub-title content-item__sub-title content-item__sub-title-second-item"
+              >
+                
+    Pay-as-you-go receipts from your cloud providers make you curse them?
+  
+              </h4>
+               
+              <p
+                class="paragraph content-item__paragraph"
+              >
+                
+    Our fire brigade can help you optimise resource consumption like we've done for 75% of our customers. We’ll reconfigure and disable every option or service that is not necessary.
+  
+              </p>
+            </div>
+          </div>
+           
+          <button
+            class="ui-button-modal-trigger infrastructure-optimisation__button"
+          >
+            
+  Get an infrastructure audit
+
+          </button>
+        </div>
+      </div>
+    </div>
+     
+    <transition-stub
+      mode="out-in"
+      name="main-fade"
+    >
+      <!---->
+    </transition-stub>
+  </section>
+</div>
+`;

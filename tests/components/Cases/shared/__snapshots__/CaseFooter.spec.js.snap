@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CaseFooter component should render correctly 1`] = `
+<div>
+  <section
+    class="case_footer container_full"
+  >
+     
+    <h2
+      class="case_title case_title_h2 case_title-"
+    >
+      Main Content
+    </h2>
+     
+    <a
+      class="case_next-project-button"
+      href=""
+    >
+      Read next project
+    </a>
+  </section>
+</div>
+`;

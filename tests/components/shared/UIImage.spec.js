@@ -14,6 +14,7 @@ describe('UIImage', () => {
   it('should render correctly', () => {
     const { container } = render(UIImage, {
       props,
+      stubs: ['prismic-image'],
     })
 
     expect(container).toMatchSnapshot()
@@ -22,6 +23,7 @@ describe('UIImage', () => {
   it('correctly props data', () => {
     const { getByTestId } = render(UIImage, {
       props,
+      stubs: ['prismic-image'],
     })
     const result = getByTestId('test-multi-image')
     expect(result.width).toBe(Number(props.width))
@@ -32,6 +34,7 @@ describe('UIImage', () => {
   it('has class if sectionIsRequired equal true', () => {
     const { container } = render(UIImage, {
       props,
+      stubs: ['prismic-image'],
     })
     expect(container.getElementsByTagName('picture')).toBeTruthy()
   })
