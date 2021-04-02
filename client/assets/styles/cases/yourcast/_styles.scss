@@ -1,11 +1,7 @@
 .case {
-  &_header {
+  &_header::before {
     background: $bgcolor--yourcast-banner;
-
-    &:before {
-      background-image: url("../../assets/img/Cases/yourcast/png/banner-bg.png");
-      z-index: 1; // place picture above the background gradient
-    }
+    z-index: -1 !important;
   }
 
   &_kaf-logo {

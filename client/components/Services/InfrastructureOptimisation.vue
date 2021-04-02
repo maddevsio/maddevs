@@ -3,9 +3,15 @@
     id="infrastructure-optimisation"
     class="infrastructure-optimisation"
   >
-    <div class="container">
+    <div
+      class="container"
+      data-testid="test-container"
+    >
       <div class="infrastructure-optimisation__content-wrapper">
-        <h2 class="infrastructure-optimisation__main-title">
+        <h2
+          class="infrastructure-optimisation__main-title"
+          c
+        >
           Infrastructure <br class="infrastructure-optimisation__small-screen-break">
           Optimisation
         </h2>

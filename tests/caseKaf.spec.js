@@ -5,7 +5,11 @@ describe('yourcast', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(yourcast)
+    wrapper = mount(yourcast, {
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
+    })
   })
 
   // ------ IMPORTANT ----- //

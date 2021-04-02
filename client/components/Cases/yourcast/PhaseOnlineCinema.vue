@@ -40,8 +40,8 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import TextQuote from '@/components/Cases/TextQuote'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextQuote from '@/components/Cases/shared/TextQuote'
 import Lottie from 'vue-lottie/src/lottie.vue'
 import animationData from '@/assets/lottie/yourcast/phase-online-cinema.json'
 import playLottie from '@/helpers/playLottie'

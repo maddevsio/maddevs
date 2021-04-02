@@ -14,6 +14,9 @@ describe('card supported gadgets', () => {
   beforeEach(() => {
     wrapper = mount(CardSupportedGadgets, {
       propsData: props,
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
     })
   })
 

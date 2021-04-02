@@ -1,8 +1,9 @@
 <template>
   <main class="case">
     <CaseHeader
-      :header-logo="headerLogo"
+      :logo="logo"
       video-name=""
+      video-fallback-path="/images/Cases/yourcast/png/banner-bg.png"
     >
       <h1
         slot="title"
@@ -38,8 +39,8 @@
 </template>
 
 <script>
-import CaseHeader from '@/components/Cases/CaseHeader'
-import Footer from '@/components/Cases/Footer'
+import CaseHeader from '@/components/Cases/shared/CaseHeader'
+import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/yourcast/Main'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
@@ -55,11 +56,11 @@ export default {
 
   data() {
     return {
-      headerLogo: {
+      logo: {
         width: 387,
         height: 81.23,
-        pictureFolder: 'yourcast',
-        fileName: 'yourcast-logo',
+        folder: 'yourcast',
+        file: 'yourcast-logo',
         alt: '',
       },
     }

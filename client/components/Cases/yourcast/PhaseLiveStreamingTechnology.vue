@@ -44,8 +44,8 @@
 </template>
 
 <script>
-import TextParagraph from '@/components/Cases/TextParagraph'
-import TextQuoteBox from '@/components/Cases/TextQuoteBox'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
 import Lottie from 'vue-lottie/src/lottie.vue'
 import animationData from '@/assets/lottie/yourcast/streaming-technology.json'
 import playLottie from '@/helpers/playLottie'

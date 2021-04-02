@@ -19,9 +19,9 @@
 </template>
 
 <script>
-import Card from '@/components/Cases/Card'
+import Card from '@/components/Cases/shared/Card'
 import CardProjectInNumbers from '@/components/Cases/yourcast/CardProjectInNumbers'
-import TextParagraph from '@/components/Cases/TextParagraph'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
 
 export default {
   name: 'ProjectInNumbers',

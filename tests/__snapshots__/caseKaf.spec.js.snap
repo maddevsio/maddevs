@@ -8,6 +8,11 @@ exports[`yourcast renders correctly 1`] = `
     class="case_header"
     id="case-header"
   >
+    <div
+      class="case_main-video_fallback"
+      style="background-image: url(img.jpg);"
+    />
+     
     <video
       autoplay="autoplay"
       class="case_main-video"
@@ -15,7 +20,7 @@ exports[`yourcast renders correctly 1`] = `
       muted="muted"
     >
       <source
-        src="undefined/"
+        src="img.jpg"
         type="video/mp4"
       />
       
@@ -68,7 +73,7 @@ exports[`yourcast renders correctly 1`] = `
         alt=""
         class="case_header-logo case_kaf-logo"
         height="81.23"
-        src="[object Object]"
+        src="img.jpg"
         width="387"
       />
     </div>
@@ -285,7 +290,7 @@ exports[`yourcast renders correctly 1`] = `
               >
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
@@ -294,8 +299,8 @@ exports[`yourcast renders correctly 1`] = `
                   class="image"
                   height="449"
                   loading=""
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
                   width="735"
                 />
               </picture>
@@ -307,7 +312,7 @@ exports[`yourcast renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
@@ -316,8 +321,8 @@ exports[`yourcast renders correctly 1`] = `
                   class="image"
                   height="449"
                   loading=""
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
                   width="735"
                 />
               </picture>
@@ -346,7 +351,7 @@ exports[`yourcast renders correctly 1`] = `
               >
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
@@ -355,8 +360,8 @@ exports[`yourcast renders correctly 1`] = `
                   class="image"
                   height="627"
                   loading=""
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
                   width="312"
                 />
               </picture>
@@ -368,7 +373,7 @@ exports[`yourcast renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
@@ -377,8 +382,8 @@ exports[`yourcast renders correctly 1`] = `
                   class="image"
                   height="627"
                   loading=""
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
                   width="312"
                 />
               </picture>
@@ -407,7 +412,7 @@ exports[`yourcast renders correctly 1`] = `
               >
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
@@ -416,8 +421,8 @@ exports[`yourcast renders correctly 1`] = `
                   class="image"
                   height="374"
                   loading=""
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
                   width="518"
                 />
               </picture>
@@ -429,7 +434,7 @@ exports[`yourcast renders correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="[object Object] ,[object Object] 2x"
+                  srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
@@ -438,8 +443,8 @@ exports[`yourcast renders correctly 1`] = `
                   class="image"
                   height="374"
                   loading=""
-                  src="[object Object]"
-                  srcset="[object Object] 2x"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
                   width="518"
                 />
               </picture>
@@ -467,14 +472,14 @@ exports[`yourcast renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-go"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
             
-    Golang
+    
   
           </p>
         </li>
@@ -482,14 +487,14 @@ exports[`yourcast renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-django"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-django backend-django"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
             
-    Django
+    
   
           </p>
         </li>
@@ -497,14 +502,14 @@ exports[`yourcast renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-postgresql"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-postgresql backend-postgresql"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
             
-    PostgreSQL
+    
   
           </p>
         </li>
@@ -512,14 +517,14 @@ exports[`yourcast renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon other-nimble"
+            class="case_technologies-item__tech-icon case_technologies-item__other-nimble other-nimble"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
             
-    Nimble Streamer
+    
   
           </p>
         </li>
@@ -527,14 +532,14 @@ exports[`yourcast renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon other-plex"
+            class="case_technologies-item__tech-icon case_technologies-item__other-plex other-plex"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
             
-    Plex Media Server
+    
   
           </p>
         </li>
@@ -542,14 +547,14 @@ exports[`yourcast renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon frontend-jquery"
+            class="case_technologies-item__tech-icon case_technologies-item__frontend-jquery frontend-jquery"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
             
-    jQuery
+    
   
           </p>
         </li>
@@ -557,14 +562,14 @@ exports[`yourcast renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon frontend-video-js"
+            class="case_technologies-item__tech-icon case_technologies-item__frontend-video-js frontend-video-js"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
             
-    Video.js
+    
   
           </p>
         </li>
@@ -572,14 +577,14 @@ exports[`yourcast renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon devops-nginx-txt"
+            class="case_technologies-item__tech-icon case_technologies-item__devops-nginx-txt devops-nginx-txt"
           />
            
           <p
             class="case_technologies-item__tech-name"
           >
             
-    Nginx
+    
   
           </p>
         </li>
@@ -1890,14 +1895,13 @@ exports[`yourcast renders correctly 1`] = `
       >
         <li
           class="case_team-item"
-          file-name-retina="andrew-minkin@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -1906,8 +1910,8 @@ exports[`yourcast renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -1934,14 +1938,13 @@ exports[`yourcast renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="andrew-minkin@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -1950,8 +1953,8 @@ exports[`yourcast renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -1978,14 +1981,13 @@ exports[`yourcast renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="andrew-minkin@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -1994,8 +1996,8 @@ exports[`yourcast renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -2022,14 +2024,13 @@ exports[`yourcast renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="andrew-minkin@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -2038,8 +2039,8 @@ exports[`yourcast renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -2066,14 +2067,13 @@ exports[`yourcast renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="erik-sultanaliev@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -2082,8 +2082,8 @@ exports[`yourcast renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -2111,6 +2111,7 @@ exports[`yourcast renders correctly 1`] = `
       </ul>
        
       <blockquote
+        alt="Andrew Minkin"
         class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
       >
         
@@ -2128,7 +2129,7 @@ exports[`yourcast renders correctly 1`] = `
             <picture>
               <source
                 class="image"
-                srcset="[object Object] ,[object Object] 2x"
+                srcset="img.jpg ,img.jpg 2x"
                 type="image/webp"
               />
                
@@ -2137,8 +2138,8 @@ exports[`yourcast renders correctly 1`] = `
                 class="image"
                 height="0"
                 loading="lazy"
-                src="[object Object]"
-                srcset="[object Object] 2x"
+                src="img.jpg"
+                srcset="img.jpg 2x"
                 width="0"
               />
             </picture>
