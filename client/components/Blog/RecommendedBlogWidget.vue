@@ -8,6 +8,8 @@
         :src="post.data.featured_image.url"
         :alt="post.data.featured_image.alt"
         class="blog-post__image"
+        width="400"
+        height="217"
       >
       <div>
         <h2
@@ -127,6 +129,7 @@ export default {
 
   &__image {
     display: block;
+    width: 100%;
     max-width: 100%;
     height: auto;
     margin-bottom: 16px;
