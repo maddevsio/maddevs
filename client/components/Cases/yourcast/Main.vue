@@ -3,7 +3,7 @@
     <AboutYourcast id="case-first-section" />
     <ProjectInNumbers />
     <SupportedGadgets />
-    <TechnologyStack />
+    <Technologies />
     <KeyProjectMilestones />
     <PhaseOnlineCinema />
     <PhaseLiveStreamingTechnology />
@@ -13,7 +13,7 @@
     <PhaseUserAuthorisation />
     <WatchWhatYouLikeVideo />
     <PlansForSimilarProjects />
-    <MeetTheTeam />
+    <Team />
   </section>
 </template>
 
@@ -21,7 +21,7 @@
 import AboutYourcast from '@/components/Cases/yourcast/AboutYourcast'
 import ProjectInNumbers from '@/components/Cases/yourcast/ProjectInNumbers'
 import SupportedGadgets from '@/components/Cases/yourcast/SupportedGadgets'
-import TechnologyStack from '@/components/Cases/yourcast/TechnologyStack'
+import Technologies from '@/components/Cases/yourcast/Technologies'
 import KeyProjectMilestones from '@/components/Cases/yourcast/KeyProjectMilestones'
 import PhaseOnlineCinema from '@/components/Cases/yourcast/PhaseOnlineCinema'
 import PhaseLiveStreamingTechnology from '@/components/Cases/yourcast/PhaseLiveStreamingTechnology'
@@ -31,14 +31,14 @@ import PhaseVideoOnDemand from '@/components/Cases/yourcast/PhaseVideoOnDemand'
 import PhaseUserAuthorisation from '@/components/Cases/yourcast/PhaseUserAuthorisation'
 import WatchWhatYouLikeVideo from '@/components/Cases/yourcast/WatchWhatYouLikeVideo'
 import PlansForSimilarProjects from '@/components/Cases/yourcast/PlansForSimilarProjects'
-import MeetTheTeam from '@/components/Cases/yourcast/MeetTheTeam'
+import Team from '@/components/Cases/yourcast/Team'
 
 export default {
   components: {
     AboutYourcast,
     ProjectInNumbers,
     SupportedGadgets,
-    TechnologyStack,
+    Technologies,
     KeyProjectMilestones,
     PhaseOnlineCinema,
     PhaseLiveStreamingTechnology,
@@ -48,7 +48,7 @@ export default {
     PhaseUserAuthorisation,
     WatchWhatYouLikeVideo,
     PlansForSimilarProjects,
-    MeetTheTeam,
+    Team,
   },
 }
 </script>
