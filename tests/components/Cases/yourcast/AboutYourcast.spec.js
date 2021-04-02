@@ -1,14 +1,14 @@
-import AboutKaf from '@/components/Cases/kaf/AboutKaf'
+import AboutYourcast from '@/components/Cases/yourcast/AboutYourcast'
 import { render, screen } from '@testing-library/vue'
 
-describe('AboutKaf component', () => {
+describe('AboutYourcast component', () => {
   it('should render correctly', () => {
-    const { container } = render(AboutKaf)
+    const { container } = render(AboutYourcast)
     expect(container).toMatchSnapshot()
   })
 
   it('title should include classname', () => {
-    render(AboutKaf)
+    render(AboutYourcast)
     expect(screen.getByText(/OTT-like video streaming platform & online cinema/i).className).toContain('case_title_h2')
   })
 })

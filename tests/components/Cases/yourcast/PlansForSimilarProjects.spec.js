@@ -1,4 +1,4 @@
-import PlansForSimilarProjects from '@/components/Cases/kaf/PlansForSimilarProjects'
+import PlansForSimilarProjects from '@/components/Cases/yourcast/PlansForSimilarProjects'
 import { render, screen } from '@testing-library/vue'
 
 describe('PlansForSimilarProjects component', () => {

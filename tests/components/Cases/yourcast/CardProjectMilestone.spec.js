@@ -1,4 +1,4 @@
-import CardProjectMilestone from '@/components/Cases/kaf/CardProjectMilestone'
+import CardProjectMilestone from '@/components/Cases/yourcast/CardProjectMilestone'
 import { render, screen } from '@testing-library/vue'
 
 describe('CardProjectMilestone component', () => {

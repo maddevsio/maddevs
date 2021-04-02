@@ -1,4 +1,4 @@
-import FullPlatformArchitecture from '@/components/Cases/kaf/FullPlatformArchitecture'
+import FullPlatformArchitecture from '@/components/Cases/yourcast/FullPlatformArchitecture'
 import { render, screen } from '@testing-library/vue'
 
 describe('FullPlatformArchitecture component', () => {

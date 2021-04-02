@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import WatchWhatYouLikeVideo from '../../../../client/components/Cases/kaf/WatchWhatYouLikeVideo'
+import WatchWhatYouLikeVideo from '../../../../client/components/Cases/yourcast/WatchWhatYouLikeVideo'
 
 describe('WatchWhatYouLikeVideo component', () => {
   it('should render correctly', () => {

@@ -1,4 +1,4 @@
-import CardSupportedGadgets from '@/components/Cases/kaf/CardSupportedGadgets'
+import CardSupportedGadgets from '@/components/Cases/yourcast/CardSupportedGadgets'
 import { render, screen } from '@testing-library/vue'
 
 const props = {

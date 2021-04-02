@@ -1,4 +1,4 @@
-import KeyProjectMilestones from '@/components/Cases/kaf/KeyProjectMilestones'
+import KeyProjectMilestones from '@/components/Cases/yourcast/KeyProjectMilestones'
 import { render, screen } from '@testing-library/vue'
 
 describe('KeyProjectMilestones component', () => {

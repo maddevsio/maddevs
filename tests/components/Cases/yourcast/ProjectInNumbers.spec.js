@@ -1,4 +1,4 @@
-import ProjectInNumbers from '@/components/Cases/kaf/ProjectInNumbers'
+import ProjectInNumbers from '@/components/Cases/yourcast/ProjectInNumbers'
 import { render, screen } from '@testing-library/vue'
 
 describe('ProjectInNumbers component', () => {

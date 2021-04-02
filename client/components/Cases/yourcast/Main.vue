@@ -1,6 +1,6 @@
 <template>
   <section class="case_body p-48_top media-p-24_top">
-    <AboutKaf id="case-first-section" />
+    <AboutYourcast id="case-first-section" />
     <ProjectInNumbers />
     <SupportedGadgets />
     <TechnologyStack />
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import AboutKaf from '@/components/Cases/yourcast/AboutKaf'
+import AboutYourcast from '@/components/Cases/yourcast/AboutYourcast'
 import ProjectInNumbers from '@/components/Cases/yourcast/ProjectInNumbers'
 import SupportedGadgets from '@/components/Cases/yourcast/SupportedGadgets'
 import TechnologyStack from '@/components/Cases/yourcast/TechnologyStack'
@@ -35,7 +35,7 @@ import MeetTheTeam from '@/components/Cases/yourcast/MeetTheTeam'
 
 export default {
   components: {
-    AboutKaf,
+    AboutYourcast,
     ProjectInNumbers,
     SupportedGadgets,
     TechnologyStack,

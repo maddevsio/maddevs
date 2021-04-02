@@ -1,4 +1,4 @@
-import SupportedGadgets from '@/components/Cases/kaf/SupportedGadgets'
+import SupportedGadgets from '@/components/Cases/yourcast/SupportedGadgets'
 import { render, screen } from '@testing-library/vue'
 
 describe('SupportedGadgets component', () => {

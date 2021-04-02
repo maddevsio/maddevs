@@ -1,5 +1,6 @@
-import PhaseLiveStreamingTechnology from '@/components/Cases/kaf/PhaseLiveStreamingTechnology'
+import PhaseLiveStreamingTechnology from '@/components/Cases/yourcast/PhaseLiveStreamingTechnology'
 import { render, screen } from '@testing-library/vue'
+import '../../../__mocks__/intersectionObserverMock'
 
 describe('PhaseLiveStreamingTechnology component', () => {
   it('should render correctly', () => {

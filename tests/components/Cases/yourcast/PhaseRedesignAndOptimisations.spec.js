@@ -1,4 +1,4 @@
-import PhaseRedesignAndOptimisations from '@/components/Cases/kaf/PhaseRedesignAndOptimisations'
+import PhaseRedesignAndOptimisations from '@/components/Cases/yourcast/PhaseRedesignAndOptimisations'
 import { render, screen } from '@testing-library/vue'
 
 describe('PhaseRedesignAndOptimisations component', () => {

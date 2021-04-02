@@ -1,5 +1,6 @@
-import PhaseOnlineCinema from '@/components/Cases/kaf/PhaseOnlineCinema'
+import PhaseOnlineCinema from '@/components/Cases/yourcast/PhaseOnlineCinema'
 import { render, screen } from '@testing-library/vue'
+import '../../../__mocks__/intersectionObserverMock'
 
 describe('PhaseOnlineCinema component', () => {
   it('should render correctly', () => {

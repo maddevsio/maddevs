@@ -25,7 +25,7 @@ import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import TextQuote from '@/components/Cases/shared/TextQuote'
 
 export default {
-  name: 'AboutKaf',
+  name: 'AboutYourcast',
   components: {
     TextParagraph,
     TextQuote,

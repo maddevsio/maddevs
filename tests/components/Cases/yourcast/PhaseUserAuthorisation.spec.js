@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/vue'
-import PhaseUserAuthorisation from '../../../../client/components/Cases/kaf/PhaseUserAuthorisation'
+import PhaseUserAuthorisation from '../../../../client/components/Cases/yourcast/PhaseUserAuthorisation'
 
 describe('PhaseUserAuthorisation component', () => {
   it('should render correctly', () => {

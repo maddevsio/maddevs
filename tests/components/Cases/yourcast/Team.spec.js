@@ -1,4 +1,4 @@
-import Team from '@/components/Cases/kaf/Team'
+import Team from '@/components/Cases/yourcast/Team'
 import { render, screen } from '@testing-library/vue'
 
 describe('Team component', () => {

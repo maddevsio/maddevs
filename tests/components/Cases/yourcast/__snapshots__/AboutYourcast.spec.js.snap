@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AboutKaf component should render correctly 1`] = `
+exports[`AboutYourcast component should render correctly 1`] = `
 <div>
   <section
     class="container_regular"

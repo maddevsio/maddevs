@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/vue'
-import PhaseVideoOnDemand from '../../../../client/components/Cases/kaf/PhaseVideoOnDemand'
+import PhaseVideoOnDemand from '../../../../client/components/Cases/yourcast/PhaseVideoOnDemand'
 
 describe('PhaseVideoOnDemand component', () => {
   it('should render correctly', () => {

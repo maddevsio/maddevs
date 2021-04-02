@@ -1,4 +1,4 @@
-import TechnologyStack from '@/components/Cases/kaf/Technologies'
+import TechnologyStack from '@/components/Cases/yourcast/Technologies'
 import { render, screen } from '@testing-library/vue'
 
 describe('Technologies component', () => {
