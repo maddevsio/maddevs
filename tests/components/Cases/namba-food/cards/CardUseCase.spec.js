@@ -1,4 +1,4 @@
-import CardUseCase from '@/components/Cases/namba-food/cards/CardUseCase.vue'
+import CardUseCase from '@/components/Cases/nambafood/cards/CardUseCase.vue'
 import { render, screen } from '@testing-library/vue'
 
 const props = {
@@ -14,6 +14,7 @@ describe('CardUseCase component', () => {
   it('should render correctly', () => {
     const { container } = render(CardUseCase, {
       props,
+      stubs: ['client-only'],
       mocks: {
         getMediaFromS3: () => 'img.jpg',
       },
@@ -31,6 +32,7 @@ describe('CardUseCase component', () => {
         ...props,
         classList,
       },
+      stubs: ['client-only'],
       mocks: {
         getMediaFromS3: () => 'img.jpg',
       },

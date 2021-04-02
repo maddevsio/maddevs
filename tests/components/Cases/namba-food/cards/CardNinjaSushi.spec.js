@@ -1,5 +1,5 @@
-import CardNinjaSushi from '@/components/Cases/namba-food/cards/CardNinjaSushi.vue'
-import { render } from '@testing-library/vue'
+import CardNinjaSushi from '@/components/Cases/nambafood/cards/CardNinjaSushi.vue'
+import { render, screen } from '@testing-library/vue'
 
 describe('CardNinjaSushi component', () => {
   it('should render correctly', () => {
@@ -9,6 +9,7 @@ describe('CardNinjaSushi component', () => {
       },
     })
 
+    expect(screen.getByText(/Mini white label/i)).toBeTruthy()
     expect(container).toMatchSnapshot()
   })
 })

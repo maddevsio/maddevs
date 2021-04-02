@@ -1,5 +1,5 @@
-import CardsBusinessModelsGrid from '@/components/Cases/namba-food/cards/CardsBusinessModelsGrid.vue'
-import { render } from '@testing-library/vue'
+import CardsBusinessModelsGrid from '@/components/Cases/nambafood/cards/CardsBusinessModelsGrid.vue'
+import { render, screen } from '@testing-library/vue'
 
 describe('CardsBusinessModelsGrid component', () => {
   it('should render correctly', () => {
@@ -9,6 +9,7 @@ describe('CardsBusinessModelsGrid component', () => {
       },
     })
 
+    expect(screen.getAllByText(/Personal courier/i)).toHaveLength(2)
     expect(container).toMatchSnapshot()
   })
 })
