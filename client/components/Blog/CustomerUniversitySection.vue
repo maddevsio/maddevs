@@ -12,9 +12,7 @@
             :to="`/customer-university/${master.data.featured_cu.uid}/`"
             class="featured-post"
           >
-            <h6 class="featured-post__date">
-              {{ formattedDate }}
-            </h6>
+            <span class="featured-post__date">{{ formattedDate }}</span>
             <h2 class="featured-post__title">
               {{ $prismic.asText(featured.title).replace(/^[0-9]*\. /, '') }}
             </h2>
@@ -26,15 +24,15 @@
               <prismic-image
                 :field="featured.featured_image"
                 class="featured-post__cover"
+                width="560"
+                height="347"
               />
             </div>
           </router-link>
         </div>
         <div class="customer-university__list">
           <div class="customer-university__list-wrapper">
-            <h6 class="customer-university__list-title">
-              Series of articles:
-            </h6>
+            <span class="customer-university__list-title">Series of articles:</span>
             <div>
               <router-link
                 v-for="(cluster, i) in clustersToShow"
@@ -46,6 +44,8 @@
                   <prismic-image
                     :field="cluster.primary.cover_image"
                     class="single-cluster__cover"
+                    width="295"
+                    height="160"
                   />
                 </div>
                 <div class="single-cluster__data">
@@ -221,6 +221,7 @@ export default {
   }
 
   &__list-title {
+    display: block;
     @include label;
   }
 
@@ -254,6 +255,7 @@ export default {
   padding-right: 60px;
 
   &__date {
+    display: block;
     @include label;
   }
 
@@ -281,6 +283,7 @@ export default {
   }
 
   &__cover {
+    width: 100%;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
@@ -301,6 +304,7 @@ export default {
   }
 
   &__cover {
+    width: 100%;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
@@ -374,14 +378,42 @@ export default {
       }
     }
 
-    &__featured-post,
+    &__featured-post {
+      width: 100%;
+      margin-bottom: 31px;
+    }
+
     &__list-title {
       display: none;
     }
   }
 
   .featured-post {
+    display: flex;
+    flex-direction: column;
     padding-right: 0;
+
+    &__date,
+    .blog-post__author {
+      display: none;
+    }
+
+    &__title {
+      order: 1;
+      margin-bottom: 6px;
+      font-size: 22.78px;
+    }
+
+    &__text {
+      order: 2;
+      margin-bottom: 0;
+    }
+
+    &__cover-wrapper {
+      order: 0;
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
   }
 
   .single-cluster {

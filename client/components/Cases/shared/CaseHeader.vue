@@ -137,6 +137,10 @@ export default {
     z-index: 1;
   }
 
+  &_header-logo {
+    color: $text-color--white;
+  }
+
   &_header-text {
     @include default_text($text-color--white, 17px, 166%, -0.035em, normal);
   }
