@@ -2101,7 +2101,30 @@ exports[`Main component should render correctly 1`] = `
       To add live-streaming technology, Mad Devs leveraged its existing open-source project, Yourcast.tv.
     
         </p>
-         
+      </div>
+       
+      <div
+        class="container_full background-color-black-primary case_video-wrapp m-60_bottom media-m-48_bottom"
+      >
+        <video
+          class="case_yourcast-tv"
+          id="yourcast-tv"
+          loop="loop"
+          muted="muted"
+        >
+          <source
+            src="img.jpg"
+            type="video/mp4"
+          />
+          
+      Your browser does not support the video tag.
+    
+        </video>
+      </div>
+       
+      <div
+        class="container_regular"
+      >
         <h3
           class="case_title_h3"
         >
@@ -2615,11 +2638,29 @@ exports[`Main component should render correctly 1`] = `
     </section>
      
     <section
-      class="container_full"
+      class="container_full m-48_bottom media-m-24_bottom background-color-black-primary"
     >
       <div
-        class="m-48_bottom media-m-24_bottom"
-      />
+        class="case_image-wrapp"
+      >
+        <picture>
+          <source
+            class="image"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="iPhone XS Max Gold"
+            class="image"
+            height="609.19"
+            loading=""
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="305"
+          />
+        </picture>
+      </div>
     </section>
      
     <section
