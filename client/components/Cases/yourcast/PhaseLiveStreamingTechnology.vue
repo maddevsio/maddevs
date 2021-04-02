@@ -65,7 +65,7 @@
       <div class="container_regular">
         <Lottie
           id="streaming-technology"
-          :options="lottieOptions"
+          :options="options"
           class="case_lottie"
           @animCreated="handleAnimation"
         />
@@ -80,8 +80,8 @@ import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
 import Picture from '@/components/Cases/shared/Picture'
 import Lottie from 'vue-lottie/src/lottie.vue'
 import animationData from '@/assets/lottie/yourcast/streaming-technology.json'
-import playLottie from '@/helpers/playLottie'
 import isIphoneMixin from '@/mixins/isIphoneMixin'
+import playLottieMixin from '@/mixins/playLottieMixin'
 
 export default {
   name: 'PhaseLiveStreamingTechnology',
@@ -92,22 +92,10 @@ export default {
     Picture,
   },
 
-  mixins: [isIphoneMixin],
-
-  data() {
-    return {
-      lottieOptions: {
-        animationData,
-        autoplay: false,
-      },
-    }
-  },
-
-  methods: {
-    handleAnimation(animation) {
-      playLottie(animation, 'streaming-technology')
-    },
-  },
+  mixins: [isIphoneMixin, playLottieMixin('streaming-technology', {
+    animationData,
+    autoplay: false,
+  })],
 }
 </script>
 
