@@ -11,6 +11,11 @@ exports[`CaseHeader component should render correctly 1`] = `
     picturefolder=""
     width="100"
   >
+    <div
+      class="case_main-video_fallback"
+      style="background-image: url(img.jpg);"
+    />
+     
     <video
       autoplay="autoplay"
       class="case_main-video"
@@ -19,7 +24,7 @@ exports[`CaseHeader component should render correctly 1`] = `
       muted="muted"
     >
       <source
-        src="undefined/video-name"
+        src="img.jpg"
         type="video/mp4"
       />
       
@@ -47,7 +52,7 @@ exports[`CaseHeader component should render correctly 1`] = `
         alt="some-logo-alt"
         class="case_header-logo case_godee-logo"
         height="100"
-        src="[object Object]"
+        src="img.jpg"
         width="100"
       />
     </div>
