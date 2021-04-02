@@ -97,36 +97,36 @@ export const team = [
   {
     name: 'Rinat Shcherba',
     position: 'Backend Developer',
-    fileName: 'andrew-minkin',
-    fileExtension: 'png',
-    alt: 'Rinat Shcherba',
+    image: {
+      file: 'andrew-minkin',
+    },
   },
   {
     name: 'Daniyar Chambylov',
     position: 'Backend Developer',
-    fileName: 'andrew-minkin',
-    fileExtension: 'png',
-    alt: 'Daniyar Chambylov',
+    image: {
+      file: 'andrew-minkin',
+    },
   },
   {
     name: 'Vladimir Shebarshov',
     position: 'Frontend Developer',
-    fileName: 'andrew-minkin',
-    fileExtension: 'png',
-    alt: 'Vladimir Shebarshov',
+    image: {
+      file: 'andrew-minkin',
+    },
   },
   {
     name: 'Andrew Minkin',
     position: 'Tech Lead',
-    fileName: 'andrew-minkin',
-    fileExtension: 'png',
-    alt: 'Andrew Minkin',
+    image: {
+      file: 'andrew-minkin',
+    },
   },
   {
     name: 'Erik Sultanaliev',
     position: 'Backend Developer',
-    fileName: 'erik-sultanaliev',
-    fileExtension: 'png',
-    alt: 'Erik Sultanaliev',
+    image: {
+      file: 'erik-sultanaliev',
+    },
   },
 ]

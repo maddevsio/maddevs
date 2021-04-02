@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import ListTechnologies from '@/components/Cases/ListTechnologies'
-import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
+import ListTechnologies from '@/components/Cases/shared/ListTechnologies'
+import ListTechnologiesItem from '@/components/Cases/shared/ListTechnologiesItem'
 import { technologies } from '@/data/caseKaf'
 
 export default {

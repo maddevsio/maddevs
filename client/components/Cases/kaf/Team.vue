@@ -5,15 +5,9 @@
     </h2>
     <ListTeam class="m-72_bottom media-m-48_bottom">
       <ListTeamItem
-        v-for="teamMember in team"
-        :key="teamMember.name"
-        :name="teamMember.name"
-        :position="teamMember.position"
-        :file-name="teamMember.fileName"
-        :file-name-retina="`${teamMember.fileName}@2x`"
-        :file-extension="teamMember.fileExtension"
-        :alt="teamMember.name"
-        picture-folder="common"
+        v-for="member in team"
+        :key="member.name"
+        v-bind="member"
       />
     </ListTeam>
     <TextQuoteAuthor
@@ -23,7 +17,7 @@
       file-name="andrew-minkin"
       file-extension="png"
       alt="Andrew Minkin"
-      picture-folder="common"
+      folder="common"
     >
       While working on this project, we acquired extensive hands-on experience in building modern livestreaming and VoD
       services. We were amazed by the abundance of open-source tools available for building great OTT platforms and
@@ -34,9 +28,9 @@
 </template>
 
 <script>
-import ListTeam from '@/components/Cases/ListTeam'
-import ListTeamItem from '@/components/Cases/ListTeamItem'
-import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
+import ListTeam from '@/components/Cases/shared/ListTeam'
+import ListTeamItem from '@/components/Cases/shared/ListTeamItem'
+import TextQuoteAuthor from '@/components/Cases/shared/TextQuoteAuthor'
 import { team } from '@/data/caseKaf'
 
 export default {
