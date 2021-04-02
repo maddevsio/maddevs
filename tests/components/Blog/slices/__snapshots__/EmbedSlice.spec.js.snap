@@ -5,7 +5,7 @@ exports[`embed slice component is a Vue instance 1`] = `
   <div
     class="embed video"
   >
-    <prismic-embed
+    <prismic-embed-stub
       class="embed__video"
       field="[object Object]"
       target="_blank"

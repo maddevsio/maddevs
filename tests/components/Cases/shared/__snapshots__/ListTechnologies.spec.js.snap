@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListTechnologies component should render correctly 1`] = `
+<div>
+  <ul
+    class="case_list-technologies"
+  >
+    <li>
+      List item
+    </li>
+  </ul>
+</div>
+`;
