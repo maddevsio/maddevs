@@ -26,9 +26,9 @@
 </template>
 
 <script>
-import Card from '@/components/Cases/Card'
+import Card from '@/components/Cases/shared/Card'
 import CardSupportedGadgets from '@/components/Cases/kaf/CardSupportedGadgets'
-import TextParagraph from '@/components/Cases/TextParagraph'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import { supportedGadgets } from '@/data/caseKaf'
 
 export default {
