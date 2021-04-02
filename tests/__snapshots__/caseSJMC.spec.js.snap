@@ -889,7 +889,6 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         <h3
           class="case_title_h3 m-48_bottom media-m-24_bottom"
         >
-<<<<<<< HEAD
           
     Technology stack
   
@@ -900,17 +899,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <li
             class="case_technologies-item"
-=======
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon backend-go"
+              class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
             />
              
             <p
@@ -919,27 +910,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     Go
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__mobile-swift mobile-swift"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon mobile-swift"
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-swift mobile-swift"
             />
              
             <p
@@ -948,27 +925,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     Swift
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__mobile-java mobile-java"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon mobile-java"
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-java mobile-java"
             />
              
             <p
@@ -977,27 +940,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     Java for Android
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__other-unity other-unity"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon other-unity"
+              class="case_technologies-item__tech-icon case_technologies-item__other-unity other-unity"
             />
              
             <p
@@ -1006,27 +955,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     Unity
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__infrastructure-aws infrastructure-aws"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon infrastructure-aws"
+              class="case_technologies-item__tech-icon case_technologies-item__infrastructure-aws infrastructure-aws"
             />
              
             <p
@@ -1035,27 +970,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     AWS
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__infrastructure-codecommit infrastructure-codecommit"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon infrastructure-codecommit"
+              class="case_technologies-item__tech-icon case_technologies-item__infrastructure-codecommit infrastructure-codecommit"
             />
              
             <p
@@ -1064,14 +985,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     CodeCommit
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
           >
             <div
-              class="case_technologies-item__tech-icon other-windows"
+              class="case_technologies-item__tech-icon case_technologies-item__other-windows other-windows"
             />
              
             <p
@@ -1084,37 +1004,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__other-windows other-windows"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Windows 10
-  
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__mobile-apple-black mobile-apple-black"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon mobile-apple-black"
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-apple-black mobile-apple-black"
             />
              
             <p
@@ -1123,27 +1015,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     iOS
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__mobile-android-black-text mobile-android-black-text"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon mobile-android-black-text"
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-android-black-text mobile-android-black-text"
             />
              
             <p
@@ -1152,27 +1030,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     Android
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__other-ubuntu other-ubuntu"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon other-ubuntu"
+              class="case_technologies-item__tech-icon case_technologies-item__other-ubuntu other-ubuntu"
             />
              
             <p
@@ -1181,27 +1045,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     Ubuntu
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__devops-ansible devops-ansible"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon devops-ansible"
+              class="case_technologies-item__tech-icon case_technologies-item__devops-ansible devops-ansible"
             />
              
             <p
@@ -1210,27 +1060,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     Ansible
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__devops-sentry-dark devops-sentry-dark"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon devops-sentry-dark"
+              class="case_technologies-item__tech-icon case_technologies-item__devops-sentry-dark devops-sentry-dark"
             />
              
             <p
@@ -1239,27 +1075,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     Sentry
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__devops-elastic devops-elastic"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon devops-elastic"
+              class="case_technologies-item__tech-icon case_technologies-item__devops-elastic devops-elastic"
             />
              
             <p
@@ -1268,27 +1090,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     Elasticsearch
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__devops-logstash devops-logstash"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon devops-logstash"
+              class="case_technologies-item__tech-icon case_technologies-item__devops-logstash devops-logstash"
             />
              
             <p
@@ -1297,27 +1105,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     Logstash
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__devops-kibana devops-kibana"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon devops-kibana"
+              class="case_technologies-item__tech-icon case_technologies-item__devops-kibana devops-kibana"
             />
              
             <p
@@ -1326,78 +1120,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               
     Kibana
   
-<<<<<<< HEAD
             </p>
           </li>
           <li
             class="case_technologies-item"
-=======
-          </p>
-        </li>
-        <li
-          class="case_technologies-item"
-        >
-          <div
-            class="case_technologies-item__tech-icon case_technologies-item__devops-prometheus devops-prometheus"
-          />
-           
-          <p
-            class="case_technologies-item__tech-name"
-          >
-            
-    Prometheus
-  
-          </p>
-        </li>
-      </ul>
-       
-      <h3
-        class="case_title_h3 m-12_bottom"
-      >
-        
-        Custom small-scale version of the SJMC in Mad Devs’ office
-      
-      </h3>
-       
-      <p
-        class="case_paragraph m-24_bottom media-m-12_bottom"
-      >
-        
-        As thousands of kilometres separate the SJMC and Mad Devs’ office, a unique approach to the engineering
-        partnership was required.
-      
-      </p>
-       
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
-      >
-        
-        After purchasing the required equipment and reading code and documentation, in one month after understanding
-        the complexity of the SJMC, Mad Devs’ DevOps and back-end engineers built a custom small-scale version of the
-        SJMC complex multimedia environment. Thus, testing and deploying new content and changes in the Brain was made
-        possible even kilometres away from the real SJMC.
-      
-      </p>
-    </section>
-     
-    <section
-      class="container_full case_full-screen-slider"
-    >
-      <div
-        class="slider-content"
-      >
-        <div
-          class="swiper-container thumb-example"
-        >
-          <!---->
-           
-          <div
-            class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
-            style="cursor: grab;"
->>>>>>> 8aa506a87d82046f389686e1dd5eba891be5d2f9
           >
             <div
-              class="case_technologies-item__tech-icon devops-prometheus"
+              class="case_technologies-item__tech-icon case_technologies-item__devops-prometheus devops-prometheus"
             />
              
             <p
