@@ -9,7 +9,7 @@
         :alt="post.data.featured_image.alt"
         class="blog-post__image"
         width="400"
-        height="220"
+        height="217"
       >
       <div>
         <h2

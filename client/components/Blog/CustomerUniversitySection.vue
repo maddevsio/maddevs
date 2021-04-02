@@ -45,7 +45,7 @@
                     :field="cluster.primary.cover_image"
                     class="single-cluster__cover"
                     width="295"
-                    height="183"
+                    height="160"
                   />
                 </div>
                 <div class="single-cluster__data">
