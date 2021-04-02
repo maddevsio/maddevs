@@ -23,33 +23,96 @@ exports[`customer university header component is a Vue instance withk default pr
       <div
         class="col-12 col-lg-5 mt-0 cluster-navigation__select-wrapper"
       >
-        <v-select-stub
-          autocomplete="off"
-          autoscroll="true"
-          calculateposition="function(t,e,n){var o=n.width,i=n.top,s=n.left;t.style.top=i,t.style.left=s,t.style.width=o}"
-          class="cluster-navigation__select"
-          clearsearchonblur="function(t){var e=t.clearSearchOnSelect,n=t.multiple;return e&&!n}"
-          clearsearchonselect="true"
-          closeonselect="true"
-          components="[object Object]"
-          createoption="function(t){return\\"object\\"===r()(this.optionList[0])?l()({},this.label,t):t}"
+        <div
+          class="v-select cluster-navigation__select vs--single vs--unsearchable"
           dir="auto"
-          filter="function(t,e){var n=this;return t.filter((function(t){var o=n.getOptionLabel(t);return\\"number\\"==typeof o&&(o=o.toString()),n.filterBy(t,o,e)}))}"
-          filterby="function(t,e,n){return(e||\\"\\").toLowerCase().indexOf(n.toLowerCase())>-1}"
-          getoptionkey="function(t){if(\\"object\\"!==r()(t))return t;try{return t.hasOwnProperty(\\"id\\")?t.id:y(t)}catch(e){return console.warn(\\"[vue-select warn]: Could not stringify this option to generate unique key. Please provide'getOptionKey' prop to return a unique key for each option.\\\\nhttps://vue-select.org/api/props.html#getoptionkey\\",t,e)}}"
-          getoptionlabel="function(t){return\\"object\\"===r()(t)?t.hasOwnProperty(this.label)?t[this.label]:console.warn('[vue-select warn]: Label key \\"option.'.concat(this.label,'\\" does not')+\\" exist in options object \\".concat(JSON.stringify(t),\\".\\\\n\\")+\\"https://vue-select.org/api/props.html#getoptionlabel\\"):t}"
-          label="label"
-          mapkeydown="function(t,e){return t}"
-          ontab="function(){this.selectOnTab&&!this.isComposing&&this.typeAheadSelect()}"
-          options=""
-          placeholder=""
-          reduce="function(t){return t}"
-          searchinputqueryselector="[type=search]"
-          selectable="function(t){return!0}"
-          selectonkeycodes="13"
-          transition="vs__fade"
-          value="[object Object]"
-        />
+        >
+           
+          <div
+            aria-expanded="false"
+            aria-label="Search for option"
+            aria-owns="vs1__listbox"
+            class="vs__dropdown-toggle"
+            id="vs1__combobox"
+            role="combobox"
+          >
+            <div
+              class="vs__selected-options"
+            >
+              <span
+                class="vs__selected"
+              >
+                
+            Explore the chapters
+           
+                <!---->
+              </span>
+               
+              <input
+                aria-autocomplete="list"
+                aria-controls="vs1__listbox"
+                aria-labelledby="vs1__combobox"
+                autocomplete="off"
+                class="vs__search"
+                readonly="readonly"
+                type="search"
+              />
+            </div>
+             
+            <div
+              class="vs__actions"
+            >
+              <button
+                aria-label="Clear Selected"
+                class="vs__clear"
+                style="display: none;"
+                title="Clear Selected"
+                type="button"
+              >
+                <svg
+                  height="10"
+                  width="10"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.895455 5l2.842897-2.842898c.348864-.348863.348864-.914488 0-1.263636L9.106534.261648c-.348864-.348864-.914489-.348864-1.263636 0L5 3.104545 2.157102.261648c-.348863-.348864-.914488-.348864-1.263636 0L.261648.893466c-.348864.348864-.348864.914489 0 1.263636L3.104545 5 .261648 7.842898c-.348864.348863-.348864.914488 0 1.263636l.631818.631818c.348864.348864.914773.348864 1.263636 0L5 6.895455l2.842898 2.842897c.348863.348864.914772.348864 1.263636 0l.631818-.631818c.348864-.348864.348864-.914489 0-1.263636L6.895455 5z"
+                  />
+                </svg>
+              </button>
+               
+              <svg
+                class="vs__open-indicator"
+                height="8"
+                role="presentation"
+                viewBox="0 0 9 8"
+                width="9"
+              >
+                <path
+                  d="M0.447443 0.454545L4.53835 7.40909L8.62926 0.454545H0.447443Z"
+                  fill="#A0A0A1"
+                />
+              </svg>
+               
+              <div
+                class="vs__spinner"
+                style="display: none;"
+              >
+                Loading...
+              </div>
+            </div>
+          </div>
+           
+          <transition-stub
+            name="vs__fade"
+          >
+            <ul
+              id="vs1__listbox"
+              role="listbox"
+              style="display: none; visibility: hidden;"
+            />
+          </transition-stub>
+           
+        </div>
       </div>
        
       <div

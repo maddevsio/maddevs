@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container_full p-104_top p-100_bottom media-p-41_top media-p-24_bottom background-color-black-godee"
+    class="container_full p-104_top p-100_bottom media-p-41_top media-p-24_bottom background-color-black-primary-bg"
   >
     <section class="container_regular case_real-time-eta">
       <div class="case_real-time-eta-text-content">

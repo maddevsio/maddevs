@@ -31,14 +31,14 @@
       </div>
       <CaseFooter
         link="/case-studies/namba-food/"
-        class-name="godee-case"
+        class-name="namba-food"
       >
         <div
           slot="icon"
-          class="case_logotype"
+          class="case_logotype-namba-food"
         />
         Namba Food <br>
-        Top Delivery Service in <br class="case_mobile-screen-break">
+        Top Delivery Service in <br class="case_mobile-break-namba-food">
         Central Asia
       </CaseFooter>
       <!-- Добавил главный футер сайта, так как из-за того что скролл на странице находиться у элемента .main, нельзя доскроллить фо футера -->

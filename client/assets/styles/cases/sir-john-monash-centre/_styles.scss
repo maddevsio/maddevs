@@ -97,15 +97,7 @@
     }
   }
 
-  &_logotype {
-    @include nambafood-footer;
-    width: 200px;
-    height: 63px;
-    margin-bottom: 33px;
-  }
-
-  &_mobile-break,
-  &_mobile-screen-break { // Foooter text break
+  &_mobile-break {
     display: none;
   }
 
@@ -133,12 +125,6 @@
     &_sjmc-phone-video-section {
       padding: 50px 0;
     }
-
-    &_logotype {
-      width: 160px;
-      height: 60px;
-      margin-bottom: 25px;
-    }
   }
 
   @media screen and (max-width: 655px) {
@@ -146,12 +132,6 @@
       width: 143px;
       height: 65px;
       margin-bottom: 35px;
-    }
-  }
-
-  @media screen and (max-width: 520px) {
-    &_mobile-screen-break {
-      display: block;
     }
   }
 

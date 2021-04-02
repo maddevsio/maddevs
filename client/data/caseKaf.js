@@ -57,3 +57,76 @@ export const keyProjectMilestones = [
     background: 'black-primary-bg',
   },
 ]
+
+export const technologies = [
+  {
+    name: 'Golang',
+    className: 'backend-go',
+  },
+  {
+    name: 'Django',
+    className: 'backend-django',
+  },
+  {
+    name: 'PostgreSQL',
+    className: 'backend-postgresql',
+  },
+  {
+    name: 'Nimble Streamer',
+    className: 'other-nimble',
+  },
+  {
+    name: 'Plex Media Server',
+    className: 'other-plex',
+  },
+  {
+    name: 'jQuery',
+    className: 'frontend-jquery',
+  },
+  {
+    name: 'Video.js',
+    className: 'frontend-video-js',
+  },
+  {
+    name: 'Nginx',
+    className: 'devops-nginx-txt',
+  },
+]
+
+export const team = [
+  {
+    name: 'Rinat Shcherba',
+    position: 'Backend Developer',
+    image: {
+      file: 'rinat-shcherba',
+    },
+  },
+  {
+    name: 'Daniyar Chambylov',
+    position: 'Backend Developer',
+    image: {
+      file: 'daniyar-chambylov',
+    },
+  },
+  {
+    name: 'Vladimir Shebarshov',
+    position: 'Frontend Developer',
+    image: {
+      file: 'vladimir-shebarshov',
+    },
+  },
+  {
+    name: 'Andrew Minkin',
+    position: 'Tech Lead',
+    image: {
+      file: 'andrew-minkin',
+    },
+  },
+  {
+    name: 'Erik Sultanaliev',
+    position: 'Backend Developer',
+    image: {
+      file: 'erik-sultanaliev',
+    },
+  },
+]

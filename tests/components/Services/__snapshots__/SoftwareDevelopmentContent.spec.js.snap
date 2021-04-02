@@ -16,7 +16,7 @@ exports[`SoftwareDevelopmentContent component should render correctly 1`] = `
             class="item-title content-item__title"
           >
             
-          
+          some-title
         
           </h3>
            
@@ -24,10 +24,22 @@ exports[`SoftwareDevelopmentContent component should render correctly 1`] = `
             class="item-sub-title content-item__sub-title"
           >
             
-          
+          sub-title
         
           </h4>
            
+          <p
+            class="paragraph content-item__paragraph content-item__paragraph-some-type"
+            data-testid="test-paragraph"
+          >
+            first
+          </p>
+          <p
+            class="paragraph content-item__paragraph content-item__paragraph-some-type"
+            data-testid="test-paragraph"
+          >
+            second
+          </p>
         </client-only-stub>
       </div>
        

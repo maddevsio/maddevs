@@ -883,7 +883,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-go"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
           />
            
           <p
@@ -898,7 +898,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon mobile-swift"
+            class="case_technologies-item__tech-icon case_technologies-item__mobile-swift mobile-swift"
           />
            
           <p
@@ -913,7 +913,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon mobile-java"
+            class="case_technologies-item__tech-icon case_technologies-item__mobile-java mobile-java"
           />
            
           <p
@@ -928,7 +928,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon other-unity"
+            class="case_technologies-item__tech-icon case_technologies-item__other-unity other-unity"
           />
            
           <p
@@ -943,7 +943,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon infrastructure-aws"
+            class="case_technologies-item__tech-icon case_technologies-item__infrastructure-aws infrastructure-aws"
           />
            
           <p
@@ -958,7 +958,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon infrastructure-codecommit"
+            class="case_technologies-item__tech-icon case_technologies-item__infrastructure-codecommit infrastructure-codecommit"
           />
            
           <p
@@ -973,7 +973,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon other-windows"
+            class="case_technologies-item__tech-icon case_technologies-item__other-windows other-windows"
           />
            
           <p
@@ -988,7 +988,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon mobile-apple-black"
+            class="case_technologies-item__tech-icon case_technologies-item__mobile-apple-black mobile-apple-black"
           />
            
           <p
@@ -1003,7 +1003,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon mobile-android-black-text"
+            class="case_technologies-item__tech-icon case_technologies-item__mobile-android-black-text mobile-android-black-text"
           />
            
           <p
@@ -1018,7 +1018,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon other-ubuntu"
+            class="case_technologies-item__tech-icon case_technologies-item__other-ubuntu other-ubuntu"
           />
            
           <p
@@ -1033,7 +1033,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon devops-ansible"
+            class="case_technologies-item__tech-icon case_technologies-item__devops-ansible devops-ansible"
           />
            
           <p
@@ -1048,7 +1048,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon devops-sentry-dark"
+            class="case_technologies-item__tech-icon case_technologies-item__devops-sentry-dark devops-sentry-dark"
           />
            
           <p
@@ -1063,7 +1063,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon devops-elastic"
+            class="case_technologies-item__tech-icon case_technologies-item__devops-elastic devops-elastic"
           />
            
           <p
@@ -1078,7 +1078,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon devops-logstash"
+            class="case_technologies-item__tech-icon case_technologies-item__devops-logstash devops-logstash"
           />
            
           <p
@@ -1093,7 +1093,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon devops-kibana"
+            class="case_technologies-item__tech-icon case_technologies-item__devops-kibana devops-kibana"
           />
            
           <p
@@ -1108,7 +1108,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon devops-prometheus"
+            class="case_technologies-item__tech-icon case_technologies-item__devops-prometheus devops-prometheus"
           />
            
           <p
@@ -2965,11 +2965,11 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       class="case_footer container_full"
     >
       <div
-        class="case_logotype"
+        class="case_logotype-namba-food"
       />
        
       <h2
-        class="case_title case_title_h2 case_title-sjmc-case"
+        class="case_title case_title_h2 case_title-namba-food"
       >
         
       Namba Food 
@@ -2977,7 +2977,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         
       Top Delivery Service in 
         <br
-          class="case_mobile-screen-break"
+          class="case_mobile-break-namba-food"
         />
         
       Central Asia

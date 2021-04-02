@@ -31,6 +31,7 @@ describe('image attribute slice component', () => {
       props: {
         slice,
       },
+      stubs: ['prismic-image'],
       mocks: {
         $prismic: {
           asText: name => name,

@@ -48,11 +48,13 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                  
                 <p
                   class="paragraph content-item__paragraph content-item__paragraph-backend"
+                  data-testid="test-paragraph"
                 >
                   Let our positively mad team rescue you and create sensible server logic for your project. We'll cure your growth pains like good doctors – just tell us about them and only focus on your business.
                 </p>
                 <p
                   class="paragraph content-item__paragraph content-item__paragraph-backend"
+                  data-testid="test-paragraph"
                 >
                   At Mad Devs we know everything about:
                 </p>
@@ -149,6 +151,7 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                  
                 <p
                   class="paragraph content-item__paragraph content-item__paragraph-frontend"
+                  data-testid="test-paragraph"
                 >
                   Our wizards will take your UX magic to the next level where everything is intuitive and 
                   <span>
@@ -166,6 +169,7 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                 </p>
                 <p
                   class="paragraph content-item__paragraph content-item__paragraph-frontend"
+                  data-testid="test-paragraph"
                 >
                   We work with the best 
                   <span>
@@ -266,11 +270,13 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                  
                 <p
                   class="paragraph content-item__paragraph content-item__paragraph-mobile"
+                  data-testid="test-paragraph"
                 >
                   We understand that your success is our reputation, so we want your apps to be awesome. Our team will deliver an app that you'll be ecstatic to use yourself.
                 </p>
                 <p
                   class="paragraph content-item__paragraph content-item__paragraph-mobile"
+                  data-testid="test-paragraph"
                 >
                   We do both iOS and Android development using the following languages and frameworks:
                 </p>

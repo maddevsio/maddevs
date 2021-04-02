@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list technologies item renders correctly 1`] = `
+<li
+  class="case_technologies-item"
+>
+  <div
+    class="case_technologies-item__tech-icon case_technologies-item__iconClassName iconClassName"
+  />
+   
+  <p
+    class="case_technologies-item__tech-name"
+  >
+    
+    techName
+  
+  </p>
+</li>
+`;
