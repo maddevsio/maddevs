@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextQuoteAuthor component should render correctly 1`] = `
+<div>
+  <blockquote
+    alt="alt"
+    authorname="Author name"
+    authorposition="Author position"
+    class="case_blockquote-author m-auto"
+    fileextension="png"
+    filename="apple-iphone-xr-silver"
+    picturefolder="nambafood"
+  >
+    Main Content 
+    <div
+      class="case_blockquote-author__author-info m-24_top"
+    >
+      <div
+        class="case_blockquote-author__photo m-auto"
+      >
+        <picture>
+          <source
+            class="image"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt=""
+            class="image"
+            height="0"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="0"
+          />
+        </picture>
+      </div>
+       
+      <p
+        class="case_paragraph case_blockquote-author__name"
+      >
+        
+      
+    
+      </p>
+       
+      <p
+        class="case_blockquote-author__position"
+      >
+        
+      
+    
+      </p>
+    </div>
+  </blockquote>
+</div>
+`;
