@@ -15,7 +15,7 @@
     >
       <div class="container_regular">
         <Lottie
-          id="lottie-wrapp"
+          id="online-cinema"
           :options="lottieOptions"
           class="case_lottie"
           @animCreated="handleAnimation"
@@ -29,6 +29,12 @@
       <h3 class="case_title_h3 m-12_bottom">
         TV shows & TV series
       </h3>
+      <TextParagraph class="m-96_bottom media-m-48_bottom">
+        To support the rising demand for content, the platform needed to accommodate TV shows and series. Each
+        TV series collection was split into seasons for better navigation. Viewers could track their progress; some
+        series were marked as already watched, and the remaining were added to the suggested content. The
+        viewer could mark episodes as watched, or the platform did it automatically for them.
+      </TextParagraph>
     </div>
   </section>
 </template>
@@ -38,7 +44,7 @@ import TextParagraph from '@/components/Cases/TextParagraph'
 import TextQuote from '@/components/Cases/TextQuote'
 import Lottie from 'vue-lottie/src/lottie.vue'
 import animationData from '@/assets/lottie/yourcast/phase-online-cinema.json'
-import playLottieHelper from '@/helpers/playLottieHelper'
+import playLottie from '@/helpers/playLottie'
 
 export default {
   name: 'PhaseOnlineCinema',
@@ -59,7 +65,7 @@ export default {
 
   methods: {
     handleAnimation(animation) {
-      playLottieHelper(animation, 'lottie-wrapp')
+      playLottie(animation, 'online-cinema')
     },
   },
 }
