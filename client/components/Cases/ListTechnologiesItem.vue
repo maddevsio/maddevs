@@ -1,7 +1,7 @@
 <template>
   <li class="case_technologies-item">
     <div
-      :class="className"
+      :class="`case_technologies-item__${className} ${className}`"
       class="case_technologies-item__tech-icon"
     />
     <p class="case_technologies-item__tech-name">
