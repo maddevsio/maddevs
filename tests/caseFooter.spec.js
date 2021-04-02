@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Footer from '@/components/Cases/Footer'
+import Footer from '@/components/Cases/shared/CaseFooter'
 
 describe('footer', () => {
   let wrapper

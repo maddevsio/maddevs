@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import TextQuote from '@/components/Cases/TextQuote'
+import TextQuote from '@/components/Cases/shared/TextQuote'
 
 describe('text quote', () => {
   let wrapper

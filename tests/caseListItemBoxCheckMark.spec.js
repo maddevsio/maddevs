@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import ListItemBoxCheckMark from '@/components/Cases/ListItemBoxCheckMark'
+import ListItemBoxCheckMark from '@/components/Cases/shared/ListItemBoxCheckMark'
 
 describe('list item box checkMark', () => {
   let wrapper

@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import TextQuoteBox from '@/components/Cases/TextQuoteBox'
+import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
 
 describe('text quote box', () => {
   let wrapper

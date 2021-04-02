@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import CardUseCase from '@/components/Cases/cards/namba-food/CardUseCase'
+import CardUseCase from '@/components/Cases/nambafood/cards/CardUseCase'
 
 describe('cardUseCase', () => {
   let wrapper
@@ -18,6 +18,9 @@ describe('cardUseCase', () => {
   beforeEach(() => {
     wrapper = mount(CardUseCase, {
       propsData: props,
+      mocks: {
+        getMediaFromS3: () => 's3 image url',
+      },
       stubs: ['client-only'],
     })
   })

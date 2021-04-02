@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import CardGoDeeFeature from '@/components/Cases/cards/godee/CardGoDeeFeature'
+import CardGoDeeFeature from '@/components/Cases/godee/cards/CardGoDeeFeature'
 
 describe('cardGoDeeFeature', () => {
   let wrapper

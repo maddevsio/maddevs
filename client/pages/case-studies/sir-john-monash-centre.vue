@@ -1,8 +1,9 @@
 <template>
   <main class="main case">
     <CaseHeader
-      :header-logo="headerLogo"
-      video-name="sjmc/sjmc-main-video.b35a387.mp4"
+      :logo="logo"
+      video-name="/videos/sjmc/sjmc-main-video.b35a387.mp4"
+      video-fallback-path="/images/Cases/sjmc/jpg/sjmc-main-video-preview.jpg"
     >
       <h1
         slot="title"
@@ -29,12 +30,11 @@
       </button>
     </CaseHeader>
     <SJMCVideo />
-    <section class="case_body">
-      <div
+    <section>
+      <section
         id="case-first-section"
-        class="case_animation_block"
-      />
-      <section class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom">
+        class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom"
+      >
         <TextParagraph class="m-24_bottom media-m-12_bottom">
           The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front during the First World War in
           the words of those who served.
@@ -80,10 +80,10 @@
       </section>
       <section class="container_full case_full-screen-img">
         <Picture
-          :lazy-loading="true"
-          picture-folder="sjmc"
-          file-name="sjmc-team"
-          file-extension="jpg"
+          :lazy="true"
+          folder="sjmc"
+          file="sjmc-team"
+          extension="jpg"
           alt="The Mad Devs team in Sir John Monash Centre."
         />
       </section>
@@ -118,10 +118,10 @@
       <section class="container_full background-color-silver">
         <div class="container_full case_full-screen-img">
           <Picture
-            :lazy-loading="true"
-            picture-folder="sjmc"
-            file-name="multimedia-management"
-            file-extension="jpg"
+            :lazy="true"
+            folder="sjmc"
+            file="multimedia-management"
+            extension="jpg"
             alt="The SJMC: Multimedia Management System."
           />
         </div>
@@ -180,10 +180,10 @@
       <section class="container_full background-color-black-section">
         <div class="container_full case_full-screen-img">
           <Picture
-            :lazy-loading="true"
-            picture-folder="sjmc"
-            file-name="mobile-applications"
-            file-extension="jpg"
+            :lazy="true"
+            folder="sjmc"
+            file="mobile-applications"
+            extension="jpg"
             alt="The SJMC Mobile Applications."
           />
         </div>
@@ -210,10 +210,10 @@
       </section>
       <section class="container_regular">
         <Picture
-          :lazy-loading="true"
-          picture-folder="sjmc"
-          file-name="sjmc-map"
-          file-extension="jpg"
+          :lazy="true"
+          folder="sjmc"
+          file="sjmc-map"
+          extension="jpg"
           alt="Sir Jonh Monash Centre Map."
         />
         <p class="case_image-description m-8_top">
@@ -231,10 +231,10 @@
       </section>
       <section class="container_full case_full-screen-img">
         <Picture
-          :lazy-loading="true"
-          picture-folder="sjmc"
-          file-name="immersive-gallery"
-          file-extension="jpg"
+          :lazy="true"
+          folder="sjmc"
+          file="immersive-gallery"
+          extension="jpg"
           alt="The SJMC Immersive Gallery."
         />
       </section>
@@ -252,7 +252,7 @@
       <section class="container_full background-color-silver">
         <section class="container_middle">
           <img
-            src="../../assets/img/Cases/sjmc/gif/watchpax.gif"
+            :src="getMediaFromS3('/images/Cases/sjmc/gif/watchpax.gif')"
             class="case_gif"
             alt="WATCHOUT - Multi-Display Production and Presentation Software."
           >
@@ -271,7 +271,7 @@
       <section class="container_full background-color-silver">
         <section class="container_middle">
           <img
-            src="../../assets/img/Cases/sjmc/gif/brix.gif"
+            :src="getMediaFromS3('/images/Cases/sjmc/gif/brix.gif')"
             class="case_gif"
             alt="Ultra-Compact Multimedia Computer - BRIX."
           >
@@ -303,10 +303,11 @@
             playsinline
           >
             <source
-              :src="getPathToPhoneVideo"
+              :src="getMediaFromS3('/videos/bluetooth-beacons-video.9ca649c.mp4')"
               type="video/mp4"
             >
             Your browser does not support the video tag.
+            <img :src="getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')">
           </video>
         </div>
       </section>
@@ -350,10 +351,9 @@
         </h3>
         <ListTechnologies class="m-107_bottom media-m-48_bottom">
           <ListTechnologiesItem
-            v-for="(technologiesItem, i) in technologiesList"
-            :key="i"
-            :tech-name="technologiesItem.techName"
-            :class-name="technologiesItem.className"
+            v-for="technology in technologies"
+            :key="technology.name"
+            v-bind="technology"
           />
         </ListTechnologies>
         <h3 class="case_title_h3 m-12_bottom">
@@ -414,11 +414,11 @@
       </section>
       <section class="container_middle">
         <Picture
-          :box-shadow="true"
-          :lazy-loading="true"
-          picture-folder="sjmc"
-          file-name="kibana-reports"
-          file-extension="jpg"
+          :shadow="true"
+          :lazy="true"
+          folder="sjmc"
+          file="kibana-reports"
+          extension="jpg"
           alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
         />
       </section>
@@ -490,11 +490,11 @@
       </section>
       <section class="container_middle">
         <Picture
-          :box-shadow="true"
-          :lazy-loading="true"
-          picture-folder="sjmc"
-          file-name="kibana"
-          file-extension="jpg"
+          :shadow="true"
+          :lazy="true"
+          folder="sjmc"
+          file="kibana"
+          extension="jpg"
           alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
         />
       </section>
@@ -601,14 +601,9 @@
         <!-- Заменить фотографии -->
         <ListTeam class="m-96_bottom media-m-24_bottom">
           <ListTeamItem
-            v-for="(teamMember, i) in team"
-            :key="i"
-            :name="teamMember.name"
-            :position="teamMember.position"
-            :file-name="teamMember.fileName"
-            :file-extension="teamMember.fileExtension"
-            :alt="teamMember.name"
-            picture-folder="common"
+            v-for="member in team"
+            :key="member.name"
+            v-bind="member"
           />
         </ListTeam>
       </section>
@@ -629,12 +624,12 @@
         </TextParagraph>
         <TextQuoteAuthor
           class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
-          author-name="Wade Bartlett"
-          author-position="Former Technical and Operations Director, Sir John Monash Centre"
-          file-name="wade-bartlett"
-          file-extension="png"
+          author="Wade Bartlett"
+          position="Former Technical and Operations Director, Sir John Monash Centre"
+          file="wade-bartlett"
+          extension="png"
           alt="Wade Bartlett: Former Technical and Operations Director, Sir John Monash Centre."
-          picture-folder="sjmc"
+          folder="sjmc"
         >
           The Sir John Monash Centre operates within a bespoke multimedia framework, which requires high-level technical
           expertise to deliver the Centre's visitor experience. Mad Devs provide outstanding levels of support and
@@ -659,23 +654,23 @@
 </template>
 
 <script>
-import CaseHeader from '@/components/Cases/CaseHeader'
+import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import SJMCVideo from '@/components/Cases/SJMCVideo'
-import TextParagraph from '@/components/Cases/TextParagraph'
-import TextQuote from '@/components/Cases/TextQuote'
-import TextQuoteBox from '@/components/Cases/TextQuoteBox'
-import Picture from '@/components/Cases/Picture'
-import List from '@/components/Cases/List'
-import ListTeam from '@/components/Cases/ListTeam'
-import ListTeamItem from '@/components/Cases/ListTeamItem'
-import ListItemBoxCheckMark from '@/components/Cases/ListItemBoxCheckMark'
-import ListItemDot from '@/components/Cases/ListItemDot'
-import ListTechnologies from '@/components/Cases/ListTechnologies'
-import ListTechnologiesItem from '@/components/Cases/ListTechnologiesItem'
-import ListHyphenItemBox from '@/components/Cases/ListHyphenItemBox'
-import TextQuoteAuthor from '@/components/Cases/TextQuoteAuthor'
-import Swiper from '@/components/Cases/Swiper'
-import Footer from '@/components/Cases/Footer'
+import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextQuote from '@/components/Cases/shared/TextQuote'
+import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
+import Picture from '@/components/Cases/shared/Picture'
+import List from '@/components/Cases/shared/List'
+import ListTeam from '@/components/Cases/shared/ListTeam'
+import ListTeamItem from '@/components/Cases/shared/ListTeamItem'
+import ListItemBoxCheckMark from '@/components/Cases/shared/ListItemBoxCheckMark'
+import ListItemDot from '@/components/Cases/shared/ListItemDot'
+import ListTechnologies from '@/components/Cases/shared/ListTechnologies'
+import ListTechnologiesItem from '@/components/Cases/shared/ListTechnologiesItem'
+import ListHyphenItemBox from '@/components/Cases/shared/ListHyphenItemBox'
+import TextQuoteAuthor from '@/components/Cases/shared/TextQuoteAuthor'
+import Swiper from '@/components/Cases/shared/Swiper'
+import Footer from '@/components/Cases/shared/CaseFooter'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
@@ -727,69 +722,69 @@ export default {
         'Cooperating and communicating with numerous vendors working at SJMC.',
       ],
 
-      technologiesList: [
+      technologies: [
         {
-          techName: 'Go',
+          name: 'Go',
           className: 'backend-go',
         },
         {
-          techName: 'Swift',
+          name: 'Swift',
           className: 'mobile-swift',
         },
         {
-          techName: 'Java for Android',
+          name: 'Java for Android',
           className: 'mobile-java',
         },
         {
-          techName: 'Unity',
+          name: 'Unity',
           className: 'other-unity',
         },
         {
-          techName: 'AWS',
+          name: 'AWS',
           className: 'infrastructure-aws',
         },
         {
-          techName: 'CodeCommit',
+          name: 'CodeCommit',
           className: 'infrastructure-codecommit',
         },
         {
-          techName: 'Windows 10',
+          name: 'Windows 10',
           className: 'other-windows',
         },
         {
-          techName: 'iOS',
+          name: 'iOS',
           className: 'mobile-apple-black',
         },
         {
-          techName: 'Android',
+          name: 'Android',
           className: 'mobile-android-black-text',
         },
         {
-          techName: 'Ubuntu',
+          name: 'Ubuntu',
           className: 'other-ubuntu',
         },
         {
-          techName: 'Ansible',
+          name: 'Ansible',
           className: 'devops-ansible',
         },
         {
-          techName: 'Sentry',
+          name: 'Sentry',
           className: 'devops-sentry-dark',
         },
         {
-          techName: 'Elasticsearch',
+          name: 'Elasticsearch',
           className: 'devops-elastic',
         },
         {
-          techName: 'Logstash',
+          name: 'Logstash',
           className: 'devops-logstash',
         },
         {
-          techName: 'Kibana',
+          name: 'Kibana',
           className: 'devops-kibana',
         },
         {
-          techName: 'Prometheus',
+          name: 'Prometheus',
           className: 'devops-prometheus',
         },
       ],
@@ -798,86 +793,86 @@ export default {
         {
           name: 'Kirill Zinchenko',
           position: 'Project Manager',
-          fileName: 'zinchenko',
-          fileExtension: 'png',
-          alt: 'Kirill Zinchenko',
+          image: {
+            file: 'zinchenko',
+          },
         },
         {
           name: 'Vlad Andreev',
           position: 'DevOps Engineer',
-          fileName: 'vlad-andreev',
-          fileExtension: 'png',
-          alt: 'Vlad Andreev',
+          image: {
+            file: 'vlad-andreev',
+          },
         },
         {
           name: 'Aleksandr Zhitov',
           position: 'QA Manager',
-          fileName: 'zhitov',
-          fileExtension: 'png',
-          alt: 'Aleksandr Zhitov',
+          image: {
+            file: 'zhitov',
+          },
         },
         {
           name: 'Sergey Boyko',
           position: 'QA Tester',
-          fileName: 'boyko',
-          fileExtension: 'png',
-          alt: 'Sergey Boyko',
+          image: {
+            file: 'boyko',
+          },
         },
         {
           name: 'Andrew Minkin',
           position: 'Back-end Developer',
-          fileName: 'andrew-minkin',
-          fileExtension: 'png',
-          alt: 'Andrew Minkin',
+          image: {
+            file: 'andrew-minkin',
+          },
         },
         {
           name: 'Dmitri Khalezin',
           position: 'DevOps Engineer',
-          fileName: 'dmitrii-khalezin',
-          fileExtension: 'png',
-          alt: 'Dmitri Khalezin',
+          image: {
+            file: 'dmitrii-khalezin',
+          },
         },
         {
           name: 'Kirill Avdeev',
           position: 'Back-end Developer',
-          fileName: 'avdeev',
-          fileExtension: 'png',
-          alt: 'Kirill Avdeev',
+          image: {
+            file: 'avdeev',
+          },
         },
         {
           name: 'Stanislav Shcherbinin',
           position: 'Back-end Developer',
-          fileName: 'stanislav-shcherbinin',
-          fileExtension: 'png',
-          alt: 'Stanislav Shcherbinin',
+          image: {
+            file: 'stanislav-shcherbinin',
+          },
         },
         {
           name: 'Aleksandr Astashov',
           position: 'Back-end Developer',
-          fileName: 'astashov',
-          fileExtension: 'png',
-          alt: 'Aleksandr Astashov',
+          image: {
+            file: 'astashov',
+          },
         },
         {
           name: 'Ruslan Kasymov',
           position: 'Logistics Manager',
-          fileName: 'kasymov',
-          fileExtension: 'png',
-          alt: 'Ruslan Kasymov',
+          image: {
+            file: 'kasymov',
+          },
         },
         {
           name: 'Pavel Pushkarev',
           position: 'Mobile App Developer',
-          fileName: 'pushkarev',
-          fileExtension: 'png',
-          alt: 'Pavel Pushkarev',
+          image: {
+            file: 'pushkarev',
+          },
         },
         {
           name: 'Rustom Kulbatyrov',
           position: 'Mobile App Developer',
-          fileName: 'kulbatyrov',
-          fileExtension: 'png',
-          alt: 'Rustom Kulbatyrov',
+          image: {
+            file: 'kulbatyrov',
+          },
         },
       ],
 
@@ -983,11 +978,11 @@ export default {
         },
       ],
 
-      headerLogo: {
+      logo: {
         width: 242,
         height: 110,
-        pictureFolder: 'sjmc',
-        fileName: 'sjmc-logo',
+        folder: 'sjmc',
+        file: 'sjmc-logo',
         alt: 'SJMC logo',
       },
     }
@@ -998,10 +993,6 @@ export default {
       ...getMetadata('sjmc'),
       image: 'https://maddevs.io/sir-john-monash-centre.png',
     })
-  },
-
-  computed: {
-    getPathToPhoneVideo: () => `${process.env.awsUrl}/bluetooth-beacons-video.9ca649c.mp4`,
   },
 
   mounted() {

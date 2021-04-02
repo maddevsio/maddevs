@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import List from '@/components/Cases/List'
+import List from '@/components/Cases/shared/List'
 
 describe('list', () => {
   let wrapper

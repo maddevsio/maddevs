@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`phase online cinema renders correctly 1`] = `
+<section
+  class="container_full"
+>
+  <div
+    class="m-48_bottom media-m-24_bottom"
+  />
+</section>
+`;
