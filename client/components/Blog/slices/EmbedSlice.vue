@@ -48,6 +48,13 @@ export default {
         .replace('</h1>', '</div>')
         .replace(/<img[^>]*>/g, '')
         .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`)
+        /**
+         * replaces text inside <div class="embed__title"></div> tag
+         * split removes the " | Mad Devs Pagename" prefix
+         */
+        .replace(/(?<=<div class="embed__title">).*?(?=<\/div>)/, match => this.sliceData.items[0].embed_title || match.split(' | ')[0])
+        // replaces text inside <p></p> tag (description)
+        .replace(/(?<=<p>).*?(?=<\/p>)/, match => this.sliceData.items[0].embed_description || match)
     }
 
     if (this.sliceData.items[0].embed.type === 'video') {
@@ -68,6 +75,7 @@ export default {
 
   &.link {
     display: flex;
+    justify-content: space-between;
     margin: 25px 0;
     border: 1px solid $border-color--silver;
   }
@@ -95,7 +103,9 @@ export default {
   }
 
   &__link {
+    width: 100%;
     display: flex;
+    align-items: center;
     padding: 24px 0 24px 24px;
   }
 
@@ -113,6 +123,7 @@ export default {
     width: 100%;
     height: 100%;
     min-width: 136px;
+    min-height: 60px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
