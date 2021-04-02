@@ -470,7 +470,6 @@ exports[`kaf renders correctly 1`] = `
       >
         <li
           class="case_technologies-item"
-          tech-name="Golang"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
@@ -486,7 +485,6 @@ exports[`kaf renders correctly 1`] = `
         </li>
         <li
           class="case_technologies-item"
-          tech-name="Django"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__backend-django backend-django"
@@ -502,7 +500,6 @@ exports[`kaf renders correctly 1`] = `
         </li>
         <li
           class="case_technologies-item"
-          tech-name="PostgreSQL"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__backend-postgresql backend-postgresql"
@@ -518,7 +515,6 @@ exports[`kaf renders correctly 1`] = `
         </li>
         <li
           class="case_technologies-item"
-          tech-name="Nimble Streamer"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__other-nimble other-nimble"
@@ -534,7 +530,6 @@ exports[`kaf renders correctly 1`] = `
         </li>
         <li
           class="case_technologies-item"
-          tech-name="Plex Media Server"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__other-plex other-plex"
@@ -550,7 +545,6 @@ exports[`kaf renders correctly 1`] = `
         </li>
         <li
           class="case_technologies-item"
-          tech-name="jQuery"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__frontend-jquery frontend-jquery"
@@ -566,7 +560,6 @@ exports[`kaf renders correctly 1`] = `
         </li>
         <li
           class="case_technologies-item"
-          tech-name="Video.js"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__frontend-video-js frontend-video-js"
@@ -582,7 +575,6 @@ exports[`kaf renders correctly 1`] = `
         </li>
         <li
           class="case_technologies-item"
-          tech-name="Nginx"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__devops-nginx-txt devops-nginx-txt"
