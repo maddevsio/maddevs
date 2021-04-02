@@ -32,6 +32,7 @@ import PhaseUserAuthorisation from '@/components/Cases/yourcast/PhaseUserAuthori
 import WatchWhatYouLikeVideo from '@/components/Cases/yourcast/WatchWhatYouLikeVideo'
 import PlansForSimilarProjects from '@/components/Cases/yourcast/PlansForSimilarProjects'
 import Team from '@/components/Cases/yourcast/Team'
+import autoplayVideoMixin from '@/mixins/autoplayVideoMixin'
 
 export default {
   components: {
@@ -50,5 +51,12 @@ export default {
     PlansForSimilarProjects,
     Team,
   },
+
+  mixins: [autoplayVideoMixin(['yourcast-tv'], {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.8,
+  })],
+
 }
 </script>
