@@ -77,7 +77,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       </div>
        
       <img
-        alt="SJMC logo"
+        alt=""
         class="case_header-logo case_sjmc-logo"
         height="110"
         src="s3 image url"

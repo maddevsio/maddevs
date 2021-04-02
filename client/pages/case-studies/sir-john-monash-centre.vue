@@ -983,7 +983,7 @@ export default {
         height: 110,
         folder: 'sjmc',
         file: 'sjmc-logo',
-        alt: 'SJMC logo',
+        alt: '',
       },
     }
   },

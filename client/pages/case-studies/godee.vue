@@ -76,7 +76,7 @@ export default {
         height: 130,
         folder: 'godee',
         file: 'godee-logo',
-        alt: 'GoDee logo',
+        alt: '',
       },
     }
   },
