@@ -12,10 +12,10 @@
     </ListTeam>
     <TextQuoteAuthor
       class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
-      author-name="Andrew Minkin"
-      author-position="CTO, Mad Devs"
-      file-name="andrew-minkin"
-      file-extension="png"
+      author="Andrew Minkin"
+      position="CTO, Mad Devs"
+      file="andrew-minkin"
+      extension="png"
       alt="Andrew Minkin"
       folder="common"
     >

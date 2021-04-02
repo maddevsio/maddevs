@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`technology stack renders correctly 1`] = `
+exports[`technology renders correctly 1`] = `
 <section
   class="container_regular"
 >
@@ -17,6 +17,7 @@ exports[`technology stack renders correctly 1`] = `
   >
     <li
       class="case_technologies-item"
+      tech-name="Golang"
     >
       <div
         class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
@@ -26,12 +27,13 @@ exports[`technology stack renders correctly 1`] = `
         class="case_technologies-item__tech-name"
       >
         
-    Golang
+    
   
       </p>
     </li>
     <li
       class="case_technologies-item"
+      tech-name="Django"
     >
       <div
         class="case_technologies-item__tech-icon case_technologies-item__backend-django backend-django"
@@ -41,12 +43,13 @@ exports[`technology stack renders correctly 1`] = `
         class="case_technologies-item__tech-name"
       >
         
-    Django
+    
   
       </p>
     </li>
     <li
       class="case_technologies-item"
+      tech-name="PostgreSQL"
     >
       <div
         class="case_technologies-item__tech-icon case_technologies-item__backend-postgresql backend-postgresql"
@@ -56,12 +59,13 @@ exports[`technology stack renders correctly 1`] = `
         class="case_technologies-item__tech-name"
       >
         
-    PostgreSQL
+    
   
       </p>
     </li>
     <li
       class="case_technologies-item"
+      tech-name="Nimble Streamer"
     >
       <div
         class="case_technologies-item__tech-icon case_technologies-item__other-nimble other-nimble"
@@ -71,12 +75,13 @@ exports[`technology stack renders correctly 1`] = `
         class="case_technologies-item__tech-name"
       >
         
-    Nimble Streamer
+    
   
       </p>
     </li>
     <li
       class="case_technologies-item"
+      tech-name="Plex Media Server"
     >
       <div
         class="case_technologies-item__tech-icon case_technologies-item__other-plex other-plex"
@@ -86,12 +91,13 @@ exports[`technology stack renders correctly 1`] = `
         class="case_technologies-item__tech-name"
       >
         
-    Plex Media Server
+    
   
       </p>
     </li>
     <li
       class="case_technologies-item"
+      tech-name="jQuery"
     >
       <div
         class="case_technologies-item__tech-icon case_technologies-item__frontend-jquery frontend-jquery"
@@ -101,12 +107,13 @@ exports[`technology stack renders correctly 1`] = `
         class="case_technologies-item__tech-name"
       >
         
-    jQuery
+    
   
       </p>
     </li>
     <li
       class="case_technologies-item"
+      tech-name="Video.js"
     >
       <div
         class="case_technologies-item__tech-icon case_technologies-item__frontend-video-js frontend-video-js"
@@ -116,12 +123,13 @@ exports[`technology stack renders correctly 1`] = `
         class="case_technologies-item__tech-name"
       >
         
-    Video.js
+    
   
       </p>
     </li>
     <li
       class="case_technologies-item"
+      tech-name="Nginx"
     >
       <div
         class="case_technologies-item__tech-icon case_technologies-item__devops-nginx-txt devops-nginx-txt"
@@ -131,7 +139,7 @@ exports[`technology stack renders correctly 1`] = `
         class="case_technologies-item__tech-name"
       >
         
-    Nginx
+    
   
       </p>
     </li>

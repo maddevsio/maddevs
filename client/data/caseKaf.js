@@ -98,21 +98,21 @@ export const team = [
     name: 'Rinat Shcherba',
     position: 'Backend Developer',
     image: {
-      file: 'andrew-minkin',
+      file: 'rinat-shcherba',
     },
   },
   {
     name: 'Daniyar Chambylov',
     position: 'Backend Developer',
     image: {
-      file: 'andrew-minkin',
+      file: 'daniyar-chambylov',
     },
   },
   {
     name: 'Vladimir Shebarshov',
     position: 'Frontend Developer',
     image: {
-      file: 'andrew-minkin',
+      file: 'vladimir-shebarshov',
     },
   },
   {

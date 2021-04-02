@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`meet the team renders correctly 1`] = `
+exports[`team renders correctly 1`] = `
 <section
   class="container_regular"
 >
@@ -17,14 +17,13 @@ exports[`meet the team renders correctly 1`] = `
   >
     <li
       class="case_team-item"
-      file-name-retina="andrew-minkin@2x"
     >
       <picture
         class="case_team-item__image"
       >
         <source
           class="image grey-background"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="s3 image url ,s3 image url 2x"
           type="image/webp"
         />
          
@@ -33,8 +32,8 @@ exports[`meet the team renders correctly 1`] = `
           class="image grey-background"
           height="50"
           loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="s3 image url"
+          srcset="s3 image url 2x"
           width="50"
         />
       </picture>
@@ -61,14 +60,13 @@ exports[`meet the team renders correctly 1`] = `
     </li>
     <li
       class="case_team-item"
-      file-name-retina="andrew-minkin@2x"
     >
       <picture
         class="case_team-item__image"
       >
         <source
           class="image grey-background"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="s3 image url ,s3 image url 2x"
           type="image/webp"
         />
          
@@ -77,8 +75,8 @@ exports[`meet the team renders correctly 1`] = `
           class="image grey-background"
           height="50"
           loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="s3 image url"
+          srcset="s3 image url 2x"
           width="50"
         />
       </picture>
@@ -105,14 +103,13 @@ exports[`meet the team renders correctly 1`] = `
     </li>
     <li
       class="case_team-item"
-      file-name-retina="andrew-minkin@2x"
     >
       <picture
         class="case_team-item__image"
       >
         <source
           class="image grey-background"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="s3 image url ,s3 image url 2x"
           type="image/webp"
         />
          
@@ -121,8 +118,8 @@ exports[`meet the team renders correctly 1`] = `
           class="image grey-background"
           height="50"
           loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="s3 image url"
+          srcset="s3 image url 2x"
           width="50"
         />
       </picture>
@@ -149,14 +146,13 @@ exports[`meet the team renders correctly 1`] = `
     </li>
     <li
       class="case_team-item"
-      file-name-retina="andrew-minkin@2x"
     >
       <picture
         class="case_team-item__image"
       >
         <source
           class="image grey-background"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="s3 image url ,s3 image url 2x"
           type="image/webp"
         />
          
@@ -165,8 +161,8 @@ exports[`meet the team renders correctly 1`] = `
           class="image grey-background"
           height="50"
           loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="s3 image url"
+          srcset="s3 image url 2x"
           width="50"
         />
       </picture>
@@ -193,14 +189,13 @@ exports[`meet the team renders correctly 1`] = `
     </li>
     <li
       class="case_team-item"
-      file-name-retina="erik-sultanaliev@2x"
     >
       <picture
         class="case_team-item__image"
       >
         <source
           class="image grey-background"
-          srcset="[object Object] ,[object Object] 2x"
+          srcset="s3 image url ,s3 image url 2x"
           type="image/webp"
         />
          
@@ -209,8 +204,8 @@ exports[`meet the team renders correctly 1`] = `
           class="image grey-background"
           height="50"
           loading="lazy"
-          src="[object Object]"
-          srcset="[object Object] 2x"
+          src="s3 image url"
+          srcset="s3 image url 2x"
           width="50"
         />
       </picture>
@@ -238,7 +233,12 @@ exports[`meet the team renders correctly 1`] = `
   </ul>
    
   <blockquote
+    alt="Andrew Minkin"
+    author-name="Andrew Minkin"
+    author-position="CTO, Mad Devs"
     class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
+    file-extension="png"
+    file-name="andrew-minkin"
   >
     
     While working on this project, we acquired extensive hands-on experience in building modern livestreaming and VoD
@@ -255,17 +255,17 @@ exports[`meet the team renders correctly 1`] = `
         <picture>
           <source
             class="image"
-            srcset="[object Object] ,[object Object] 2x"
+            srcset="s3 image url ,s3 image url 2x"
             type="image/webp"
           />
            
           <img
-            alt="Andrew Minkin"
+            alt=""
             class="image"
             height="0"
             loading="lazy"
-            src="[object Object]"
-            srcset="[object Object] 2x"
+            src="s3 image url"
+            srcset="s3 image url 2x"
             width="0"
           />
         </picture>
@@ -275,7 +275,7 @@ exports[`meet the team renders correctly 1`] = `
         class="case_paragraph case_blockquote-author__name"
       >
         
-      Andrew Minkin
+      
     
       </p>
        
@@ -283,7 +283,7 @@ exports[`meet the team renders correctly 1`] = `
         class="case_blockquote-author__position"
       >
         
-      CTO, Mad Devs
+      
     
       </p>
     </div>

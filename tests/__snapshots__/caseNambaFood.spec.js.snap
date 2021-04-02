@@ -1559,7 +1559,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon case_technologies-item__devops-docker devops-docker"
+            class="case_technologies-item__tech-icon case_technologies-item__devops-docker case_technologies-item__docker devops-docker case_technologies-item__docker"
           />
            
           <p

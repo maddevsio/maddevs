@@ -491,6 +491,7 @@ exports[`kaf renders correctly 1`] = `
       >
         <li
           class="case_technologies-item"
+          tech-name="Golang"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
@@ -500,12 +501,13 @@ exports[`kaf renders correctly 1`] = `
             class="case_technologies-item__tech-name"
           >
             
-    Golang
+    
   
           </p>
         </li>
         <li
           class="case_technologies-item"
+          tech-name="Django"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__backend-django backend-django"
@@ -515,12 +517,13 @@ exports[`kaf renders correctly 1`] = `
             class="case_technologies-item__tech-name"
           >
             
-    Django
+    
   
           </p>
         </li>
         <li
           class="case_technologies-item"
+          tech-name="PostgreSQL"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__backend-postgresql backend-postgresql"
@@ -530,12 +533,13 @@ exports[`kaf renders correctly 1`] = `
             class="case_technologies-item__tech-name"
           >
             
-    PostgreSQL
+    
   
           </p>
         </li>
         <li
           class="case_technologies-item"
+          tech-name="Nimble Streamer"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__other-nimble other-nimble"
@@ -545,12 +549,13 @@ exports[`kaf renders correctly 1`] = `
             class="case_technologies-item__tech-name"
           >
             
-    Nimble Streamer
+    
   
           </p>
         </li>
         <li
           class="case_technologies-item"
+          tech-name="Plex Media Server"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__other-plex other-plex"
@@ -560,12 +565,13 @@ exports[`kaf renders correctly 1`] = `
             class="case_technologies-item__tech-name"
           >
             
-    Plex Media Server
+    
   
           </p>
         </li>
         <li
           class="case_technologies-item"
+          tech-name="jQuery"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__frontend-jquery frontend-jquery"
@@ -575,12 +581,13 @@ exports[`kaf renders correctly 1`] = `
             class="case_technologies-item__tech-name"
           >
             
-    jQuery
+    
   
           </p>
         </li>
         <li
           class="case_technologies-item"
+          tech-name="Video.js"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__frontend-video-js frontend-video-js"
@@ -590,12 +597,13 @@ exports[`kaf renders correctly 1`] = `
             class="case_technologies-item__tech-name"
           >
             
-    Video.js
+    
   
           </p>
         </li>
         <li
           class="case_technologies-item"
+          tech-name="Nginx"
         >
           <div
             class="case_technologies-item__tech-icon case_technologies-item__devops-nginx-txt devops-nginx-txt"
@@ -605,7 +613,7 @@ exports[`kaf renders correctly 1`] = `
             class="case_technologies-item__tech-name"
           >
             
-    Nginx
+    
   
           </p>
         </li>
@@ -1916,14 +1924,13 @@ exports[`kaf renders correctly 1`] = `
       >
         <li
           class="case_team-item"
-          file-name-retina="andrew-minkin@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -1932,8 +1939,8 @@ exports[`kaf renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -1960,14 +1967,13 @@ exports[`kaf renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="andrew-minkin@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -1976,8 +1982,8 @@ exports[`kaf renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -2004,14 +2010,13 @@ exports[`kaf renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="andrew-minkin@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -2020,8 +2025,8 @@ exports[`kaf renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -2048,14 +2053,13 @@ exports[`kaf renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="andrew-minkin@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -2064,8 +2068,8 @@ exports[`kaf renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -2092,14 +2096,13 @@ exports[`kaf renders correctly 1`] = `
         </li>
         <li
           class="case_team-item"
-          file-name-retina="erik-sultanaliev@2x"
         >
           <picture
             class="case_team-item__image"
           >
             <source
               class="image grey-background"
-              srcset="[object Object] ,[object Object] 2x"
+              srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
@@ -2108,8 +2111,8 @@ exports[`kaf renders correctly 1`] = `
               class="image grey-background"
               height="50"
               loading="lazy"
-              src="[object Object]"
-              srcset="[object Object] 2x"
+              src="img.jpg"
+              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -2137,7 +2140,12 @@ exports[`kaf renders correctly 1`] = `
       </ul>
        
       <blockquote
+        alt="Andrew Minkin"
+        author-name="Andrew Minkin"
+        author-position="CTO, Mad Devs"
         class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
+        file-extension="png"
+        file-name="andrew-minkin"
       >
         
     While working on this project, we acquired extensive hands-on experience in building modern livestreaming and VoD
@@ -2154,17 +2162,17 @@ exports[`kaf renders correctly 1`] = `
             <picture>
               <source
                 class="image"
-                srcset="[object Object] ,[object Object] 2x"
+                srcset="img.jpg ,img.jpg 2x"
                 type="image/webp"
               />
                
               <img
-                alt="Andrew Minkin"
+                alt=""
                 class="image"
                 height="0"
                 loading="lazy"
-                src="[object Object]"
-                srcset="[object Object] 2x"
+                src="img.jpg"
+                srcset="img.jpg 2x"
                 width="0"
               />
             </picture>
@@ -2174,7 +2182,7 @@ exports[`kaf renders correctly 1`] = `
             class="case_paragraph case_blockquote-author__name"
           >
             
-      Andrew Minkin
+      
     
           </p>
            
@@ -2182,7 +2190,7 @@ exports[`kaf renders correctly 1`] = `
             class="case_blockquote-author__position"
           >
             
-      CTO, Mad Devs
+      
     
           </p>
         </div>
