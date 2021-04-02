@@ -48,11 +48,11 @@ export default {
         .replace('</h1>', '</div>')
         .replace(/<img[^>]*>/g, '')
         .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`)
-        // replaces text inside <div class="embed__title"></div> tag
-        .replace(/(?<=<div class="embed__title">).*?(?=<\/div>)/, match => {
-          if (this.sliceData.items[0].embed_title) return this.sliceData.items[0].embed_title
-          return match.split(' | ')[0] // split removes the " | Mad Devs Pagename" prefix
-        })
+        /**
+         * replaces text inside <div class="embed__title"></div> tag
+         * split removes the " | Mad Devs Pagename" prefix
+         */
+        .replace(/(?<=<div class="embed__title">).*?(?=<\/div>)/, match => this.sliceData.items[0].embed_title || match.split(' | ')[0])
         // replaces text inside <p></p> tag (description)
         .replace(/(?<=<p>).*?(?=<\/p>)/, match => this.sliceData.items[0].embed_description || match)
     }
