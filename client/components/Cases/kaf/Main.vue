@@ -3,7 +3,7 @@
     <AboutKaf id="case-first-section" />
     <ProjectInNumbers />
     <SupportedGadgets />
-    <TechnologyStack />
+    <Technologies />
     <KeyProjectMilestones />
     <PhaseOnlineCinema />
     <PhaseLiveStreamingTechnology />
@@ -13,7 +13,7 @@
     <PhaseUserAuthorisation />
     <WatchWhatYouLikeVideo />
     <PlansForSimilarProjects />
-    <MeetTheTeam />
+    <Team />
   </section>
 </template>
 
@@ -21,7 +21,7 @@
 import AboutKaf from '@/components/Cases/kaf/AboutKaf'
 import ProjectInNumbers from '@/components/Cases/kaf/ProjectInNumbers'
 import SupportedGadgets from '@/components/Cases/kaf/SupportedGadgets'
-import TechnologyStack from '@/components/Cases/kaf/TechnologyStack'
+import Technologies from '@/components/Cases/kaf/Technologies'
 import KeyProjectMilestones from '@/components/Cases/kaf/KeyProjectMilestones'
 import PhaseOnlineCinema from '@/components/Cases/kaf/PhaseOnlineCinema'
 import PhaseLiveStreamingTechnology from '@/components/Cases/kaf/PhaseLiveStreamingTechnology'
@@ -31,14 +31,14 @@ import PhaseVideoOnDemand from '@/components/Cases/kaf/PhaseVideoOnDemand'
 import PhaseUserAuthorisation from '@/components/Cases/kaf/PhaseUserAuthorisation'
 import WatchWhatYouLikeVideo from '@/components/Cases/kaf/WatchWhatYouLikeVideo'
 import PlansForSimilarProjects from '@/components/Cases/kaf/PlansForSimilarProjects'
-import MeetTheTeam from '@/components/Cases/kaf/MeetTheTeam'
+import Team from '@/components/Cases/kaf/Team'
 
 export default {
   components: {
     AboutKaf,
     ProjectInNumbers,
     SupportedGadgets,
-    TechnologyStack,
+    Technologies,
     KeyProjectMilestones,
     PhaseOnlineCinema,
     PhaseLiveStreamingTechnology,
@@ -48,7 +48,7 @@ export default {
     PhaseUserAuthorisation,
     WatchWhatYouLikeVideo,
     PlansForSimilarProjects,
-    MeetTheTeam,
+    Team,
   },
 }
 </script>

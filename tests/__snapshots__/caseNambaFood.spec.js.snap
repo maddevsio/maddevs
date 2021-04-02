@@ -15,6 +15,7 @@ exports[`namba food renders correctly 1`] = `
     <video
       autoplay="autoplay"
       class="case_main-video"
+      data-testid="test-case_main-video"
       loop="loop"
       muted="muted"
     >
@@ -1514,7 +1515,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-mysql"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-mysql backend-mysql"
           />
            
           <p
@@ -1529,7 +1530,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-symfony"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-symfony backend-symfony"
           />
            
           <p
@@ -1544,7 +1545,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-laravel"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-laravel backend-laravel"
           />
            
           <p
@@ -1559,7 +1560,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon devops-docker case_technologies-item__docker"
+            class="case_technologies-item__tech-icon case_technologies-item__devops-docker case_technologies-item__docker devops-docker case_technologies-item__docker"
           />
            
           <p
@@ -1574,7 +1575,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon devops-nginx"
+            class="case_technologies-item__tech-icon case_technologies-item__devops-nginx devops-nginx"
           />
            
           <p
@@ -1589,7 +1590,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-redis"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-redis backend-redis"
           />
            
           <p
@@ -1604,7 +1605,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-python"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-python backend-python"
           />
            
           <p
@@ -1619,7 +1620,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-go"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
           />
            
           <p
@@ -1634,7 +1635,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon mobile-kotlin"
+            class="case_technologies-item__tech-icon case_technologies-item__mobile-kotlin mobile-kotlin"
           />
            
           <p
@@ -1649,7 +1650,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon mobile-java"
+            class="case_technologies-item__tech-icon case_technologies-item__mobile-java mobile-java"
           />
            
           <p
@@ -1664,7 +1665,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon mobile-swift"
+            class="case_technologies-item__tech-icon case_technologies-item__mobile-swift mobile-swift"
           />
            
           <p
@@ -1679,7 +1680,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon mobile-firebase"
+            class="case_technologies-item__tech-icon case_technologies-item__mobile-firebase mobile-firebase"
           />
            
           <p
@@ -1694,7 +1695,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon mobile-test-flight"
+            class="case_technologies-item__tech-icon case_technologies-item__mobile-test-flight mobile-test-flight"
           />
            
           <p
@@ -1709,7 +1710,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon other-open-street-map"
+            class="case_technologies-item__tech-icon case_technologies-item__other-open-street-map other-open-street-map"
           />
            
           <p
@@ -1724,7 +1725,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon backend-php"
+            class="case_technologies-item__tech-icon case_technologies-item__backend-php backend-php"
           />
            
           <p
@@ -1739,7 +1740,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon pm-jira-assistant-blue"
+            class="case_technologies-item__tech-icon case_technologies-item__pm-jira-assistant-blue pm-jira-assistant-blue"
           />
            
           <p
@@ -1754,7 +1755,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon devops-grafana"
+            class="case_technologies-item__tech-icon case_technologies-item__devops-grafana devops-grafana"
           />
            
           <p
@@ -1769,7 +1770,7 @@ exports[`namba food renders correctly 1`] = `
           class="case_technologies-item"
         >
           <div
-            class="case_technologies-item__tech-icon devops-sentry-dark"
+            class="case_technologies-item__tech-icon case_technologies-item__devops-sentry-dark devops-sentry-dark"
           />
            
           <p
@@ -2809,16 +2810,16 @@ exports[`namba food renders correctly 1`] = `
     class="case_footer container_full"
   >
     <div
-      class="case_logotype"
+      class="case_logotype-sjmc"
     />
      
     <h2
-      class="case_title case_title_h2 case_title-namba-food-case"
+      class="case_title case_title_h2 case_title-sjmc"
     >
       
     The maintenance 
       <br
-        class="case_mobile-break"
+        class="case_mobile-break-sjmc"
       />
       
     of memory: 
@@ -2826,7 +2827,7 @@ exports[`namba food renders correctly 1`] = `
       
     Sir John Monash 
       <br
-        class="case_mobile-break"
+        class="case_mobile-break-sjmc"
       />
       
     Centre

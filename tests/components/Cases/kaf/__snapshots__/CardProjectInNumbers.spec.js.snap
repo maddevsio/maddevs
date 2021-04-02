@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardProjectInNumbers component should render correctly 1`] = `
+<div>
+  <div
+    class="card-content"
+  >
+    <div
+      class="card-content_column-item"
+    >
+      <p
+        class="card-content_title"
+      >
+        
+      7500
+    
+      </p>
+       
+      <p
+        class="case_paragraph card-content_paragraph"
+      >
+        
+      viewers in the 
+        <br />
+        
+      database
+    
+      </p>
+    </div>
+     
+    <div
+      class="card-content_column-item"
+    >
+      <p
+        class="card-content_title"
+      >
+        
+      6000+
+    
+      </p>
+       
+      <p
+        class="case_paragraph card-content_paragraph"
+      >
+        
+      active / current
+      
+        <br />
+        
+      viewers
+    
+      </p>
+    </div>
+     
+    <div
+      class="card-content_column-item"
+    >
+      <p
+        class="card-content_title"
+      >
+        
+      500
+    
+      </p>
+       
+      <p
+        class="case_paragraph card-content_paragraph"
+      >
+        
+      viewers per day
+    
+      </p>
+    </div>
+     
+    <div
+      class="card-content_column-item"
+    >
+      <p
+        class="card-content_title"
+      >
+        
+      280–300
+    
+      </p>
+       
+      <p
+        class="case_paragraph card-content_paragraph"
+      >
+        
+      concurrent viewers
+    
+      </p>
+    </div>
+  </div>
+</div>
+`;

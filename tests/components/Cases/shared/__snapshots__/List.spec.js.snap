@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component should render correctly 1`] = `
+<div>
+  <ul
+    class="case_list"
+  >
+    <li>
+      List item
+    </li>
+  </ul>
+</div>
+`;
