@@ -9,7 +9,7 @@
         To add live-streaming technology, Mad Devs leveraged its existing open-source project, Yourcast.tv.
       </TextParagraph>
     </div>
-    <div class="container_full background-color-black-primary case_video-wrapp m-60_bottom media-m-48_bottom">
+    <div class="container_full background-color-black-primary case_video-wrapp">
       <video
         v-if="!isIphone"
         id="yourcast-tv"
@@ -37,6 +37,25 @@
           alt=""
         />
       </div>
+    </div>
+    <div class="container_regular case_posters-wrapp m-60_bottom media-m-48_bottom">
+      <p class="case_posters-title">
+        Posters:
+      </p>
+      <ul class="case_posters">
+        <li
+          v-for="poster in posters"
+          :key="poster.title"
+          class="case_poster"
+        >
+          <a
+            :href="poster.href"
+            class="case_poster-link"
+          >
+            {{ poster.title }}
+          </a>
+        </li>
+      </ul>
     </div>
     <div class="container_regular">
       <h3 class="case_title_h3">
@@ -82,6 +101,7 @@ import Lottie from 'vue-lottie/src/lottie.vue'
 import animationData from '@/assets/lottie/yourcast/streaming-technology.json'
 import isIphoneMixin from '@/mixins/isIphoneMixin'
 import playLottieMixin from '@/mixins/playLottieMixin'
+import { posters } from '@/data/caseYourcast'
 
 export default {
   name: 'PhaseLiveStreamingTechnology',
@@ -96,10 +116,18 @@ export default {
     animationData,
     autoplay: false,
   })],
+
+  data() {
+    return {
+      posters,
+    }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
+  @import '../../../assets/styles/vars';
+
   .case {
     &_lottie {
       max-width: 562px;
@@ -143,6 +171,40 @@ export default {
         padding-top: 8vw;
         top: 2.7vw;
       }
+    }
+
+    &_posters-wrapp {
+      margin-top: 15px;
+    }
+
+    &_posters-wrapp,
+    &_posters {
+      display: flex;
+      justify-content: center;
+    }
+
+    &_posters {
+      max-width: 545px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    &_poster-link,
+    &_posters-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 166%;
+      letter-spacing: -0.02em;
+      color: $text-color--grey-img-description;
+    }
+
+    &_poster-link {
+      text-align: center;
+    }
+
+    &_posters-title {
+      padding-top: 3px;
     }
   }
 </style>

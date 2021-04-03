@@ -8,7 +8,6 @@
     <PhaseOnlineCinema />
     <PhaseLiveStreamingTechnology />
     <PhaseRedesignAndOptimisations />
-    <FullPlatformArchitecture />
     <PhaseVideoOnDemand />
     <PhaseUserAuthorisation />
     <WatchWhatYouLikeVideo />
@@ -26,7 +25,6 @@ import KeyProjectMilestones from '@/components/Cases/yourcast/KeyProjectMileston
 import PhaseOnlineCinema from '@/components/Cases/yourcast/PhaseOnlineCinema'
 import PhaseLiveStreamingTechnology from '@/components/Cases/yourcast/PhaseLiveStreamingTechnology'
 import PhaseRedesignAndOptimisations from '@/components/Cases/yourcast/PhaseRedesignAndOptimisations'
-import FullPlatformArchitecture from '@/components/Cases/yourcast/FullPlatformArchitecture'
 import PhaseVideoOnDemand from '@/components/Cases/yourcast/PhaseVideoOnDemand'
 import PhaseUserAuthorisation from '@/components/Cases/yourcast/PhaseUserAuthorisation'
 import WatchWhatYouLikeVideo from '@/components/Cases/yourcast/WatchWhatYouLikeVideo'
@@ -44,7 +42,6 @@ export default {
     PhaseOnlineCinema,
     PhaseLiveStreamingTechnology,
     PhaseRedesignAndOptimisations,
-    FullPlatformArchitecture,
     PhaseVideoOnDemand,
     PhaseUserAuthorisation,
     WatchWhatYouLikeVideo,
