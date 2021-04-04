@@ -3,7 +3,11 @@ import WatchWhatYouLikeVideo from '../../../../client/components/Cases/yourcast/
 
 describe('WatchWhatYouLikeVideo component', () => {
   it('should render correctly', () => {
-    const { container } = render(WatchWhatYouLikeVideo)
+    const { container } = render(WatchWhatYouLikeVideo, {
+      mocks: {
+        getMediaFromS3: () => 'img.jpg',
+      },
+    })
     expect(container).toMatchSnapshot()
   })
 })

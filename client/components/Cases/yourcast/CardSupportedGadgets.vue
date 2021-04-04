@@ -118,7 +118,10 @@ export default {
   }
 
   @media screen and (max-width: 870px) {
-    align-items: center;
+    max-height: 257px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
 
     &_title {
       margin-bottom: 25px;
@@ -131,17 +134,25 @@ export default {
     &_gadget-picture-wrapp-mobile {
       display: block;
     }
-  }
 
-  @media screen and (min-width: 375px) and (max-width: 870px) {
+    &_gadget-picture-wrapp-mobile-macbook-pro {
+      width: 548.65px;
+    }
+
     &_gadget-picture-wrapp-mobile-iphonex {
-      max-width: 260px;
+      width: 226.44px;
+    }
+
+    &_gadget-picture-wrapp-mobile-ipad-pro {
+      width: 518px;
+      left: 76px;
+      position: relative;
     }
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 620px) {
     height: 350px;
-    align-items: flex-start;
+    grid-template-columns: repeat(1, 1fr);
 
     &_title {
       font-size: 26.56px;
@@ -160,6 +171,7 @@ export default {
 
     &_gadget-picture-wrapp-mobile-ipad-pro {
       width: 765px;
+      left: 0;
     }
   }
 }

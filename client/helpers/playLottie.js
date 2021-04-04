@@ -4,7 +4,7 @@ export default function playLottie(animation, lottieId) {
   })
 
   const observer = new IntersectionObserver(observerCallback, {
-    threshold: 1.0,
+    threshold: 0.6,
   })
 
   observer.observe(document.getElementById(lottieId))

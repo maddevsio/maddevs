@@ -24,7 +24,151 @@ exports[`PhaseLiveStreamingTechnology component should render correctly 1`] = `
       To add live-streaming technology, Mad Devs leveraged its existing open-source project, Yourcast.tv.
     
       </p>
-       
+    </div>
+     
+    <div
+      class="container_full background-color-black-primary case_video-wrapp"
+    >
+      <video
+        class="case_yourcast-tv"
+        id="yourcast-tv"
+        loop="loop"
+        muted="muted"
+      >
+        <source
+          src="img.jpg"
+          type="video/mp4"
+        />
+        
+      Your browser does not support the video tag.
+    
+      </video>
+    </div>
+     
+    <div
+      class="container_regular case_posters-wrapp m-60_bottom media-m-48_bottom"
+    >
+      <ul
+        class="case_posters"
+      >
+        <p
+          class="case_posters-title"
+        >
+          
+        Posters:
+      
+        </p>
+         
+        <li
+          class="case_poster"
+        >
+          <a
+            class="case_poster-link"
+            href="https://commons.wikimedia.org/wiki/File:African_Apocalypse_Poster.jpg"
+            target="_blank"
+          >
+            
+          African Apocalypse,
+        
+          </a>
+        </li>
+        <li
+          class="case_poster"
+        >
+          <a
+            class="case_poster-link"
+            href="https://commons.wikimedia.org/wiki/File:Gasmann_-_Plakat_.jpg"
+            target="_blank"
+          >
+            
+          Gasman,
+        
+          </a>
+        </li>
+        <li
+          class="case_poster"
+        >
+          <a
+            class="case_poster-link"
+            href="https://commons.wikimedia.org/wiki/File:Help2021_poster.jpg"
+            target="_blank"
+          >
+            
+          Help,
+        
+          </a>
+        </li>
+        <li
+          class="case_poster"
+        >
+          <a
+            class="case_poster-link"
+            href="https://commons.wikimedia.org/wiki/File:GENESIS_2.0.jpg"
+            target="_blank"
+          >
+            
+          Genesis 2.0,
+        
+          </a>
+        </li>
+        <li
+          class="case_poster"
+        >
+          <a
+            class="case_poster-link"
+            href="https://commons.wikimedia.org/wiki/File:Alberto_and_the_Concrete_Jungle_retro_travel_poster.jpg"
+            target="_blank"
+          >
+            
+          Alberto and the Concrete Jungle,
+        
+          </a>
+        </li>
+        <li
+          class="case_poster"
+        >
+          <a
+            class="case_poster-link"
+            href="https://commons.wikimedia.org/wiki/File:Black_Ruby_Poster.jpg"
+            target="_blank"
+          >
+            
+          Black Ruby,
+        
+          </a>
+        </li>
+        <li
+          class="case_poster"
+        >
+          <a
+            class="case_poster-link"
+            href="hhttps://commons.wikimedia.org/wiki/File:Creditors_Film_Poster.png"
+            target="_blank"
+          >
+            
+          Creditors Film,
+        
+          </a>
+        </li>
+        <li
+          class="case_poster"
+        >
+          <a
+            class="case_poster-link"
+            href="https://commons.wikimedia.org/wiki/File:FINAL_LEGIONARIOsmall.jpg"
+            target="_blank"
+          >
+            
+          FINAL LEGIONARIO
+        
+          </a>
+        </li>
+      </ul>
+    </div>
+     
+    <div
+      class="container_regular"
+    >
       <h3
         class="case_title_h3"
       >
