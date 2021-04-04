@@ -39,10 +39,10 @@
       </div>
     </div>
     <div class="container_regular case_posters-wrapp m-60_bottom media-m-48_bottom">
-      <p class="case_posters-title">
-        Posters:
-      </p>
       <ul class="case_posters">
+        <p class="case_posters-title">
+          Posters:
+        </p>
         <li
           v-for="poster in posters"
           :key="poster.title"
@@ -51,6 +51,7 @@
           <a
             :href="poster.href"
             class="case_poster-link"
+            target="_blank"
           >
             {{ poster.title }}
           </a>
@@ -191,12 +192,17 @@ export default {
 
     &_poster-link,
     &_posters-title {
+      margin-right: 3px;
       font-family: 'Inter', sans-serif;
       font-weight: 400;
       font-size: 13px;
       line-height: 166%;
       letter-spacing: -0.02em;
       color: $text-color--grey-img-description;
+
+      @media screen and (max-width: 360px) {
+        font-size: 11px;
+      }
     }
 
     &_poster-link {
@@ -204,7 +210,7 @@ export default {
     }
 
     &_posters-title {
-      padding-top: 3px;
+      margin-top: 2px;
     }
   }
 </style>
