@@ -3,25 +3,317 @@
 exports[`PhaseVideoOnDemand component should render correctly 1`] = `
 <div>
   <section
-    class="container_regular"
+    class="case_video-on-demand"
   >
-    <h2
-      class="case_title_h2 m-24_bottom media-m-12_bottom"
+    <div
+      class="container_regular"
     >
-      
-    Phase 4: Video on demand
-  
-    </h2>
+      <h2
+        class="case_title_h2 m-24_bottom media-m-12_bottom"
+      >
+        
+      Phase 4: Video on demand
+    
+      </h2>
+       
+      <p
+        class="case_paragraph m-48_bottom media-m-24_bottom"
+      >
+        
+      Video on Demand (VoD) functionality was added to the platform in 2019. To adapt it to the most current VoD
+      standards, Mad Devs leveraged Nimble Streamer and Nimble Transcoder. The viewers received access to the
+      present-day VoD experience, enabling on-the-go movie ordering and MD5 hotlink protection.
+    
+      </p>
+    </div>
      
-    <p
-      class="case_paragraph m-48_bottom media-m-24_bottom"
+    <div
+      class="container_full background-color-silver m-96_bottom media-m-48_bottom"
     >
-      
-    Video on Demand (VoD) functionality was added to the platform in 2019. To adapt it to the most current VoD
-    standards, Mad Devs leveraged Nimble Streamer and Nimble Transcoder. The viewers received access to the
-    present-day VoD experience, enabling on-the-go movie ordering and MD5 hotlink protection.
-  
-    </p>
+      <div
+        class="container_regular"
+      >
+        <div
+          class="case_lottie"
+          id="video-on-demand"
+          style="width: 100%; height: 100%; overflow: hidden; margin: 0px auto;"
+        >
+          <svg
+            height="448"
+            preserveAspectRatio="xMidYMid meet"
+            style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
+            viewBox="0 0 462 448"
+            width="462"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <clippath
+                id="__lottie_element_2"
+              >
+                <rect
+                  height="448"
+                  width="462"
+                  x="0"
+                  y="0"
+                />
+              </clippath>
+            </defs>
+            <g
+              clip-path="url(#__lottie_element_2)"
+            >
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+                <g>
+                  <path />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path
+                    fill-opacity="0"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="4"
+                  />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path
+                    fill-opacity="0"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="4"
+                  />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path
+                    fill-opacity="0"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path
+                    fill-opacity="0"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="4"
+                  />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path
+                    fill-opacity="0"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="4"
+                  />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path
+                    fill-opacity="0"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <g>
+                  <path
+                    fill-opacity="0"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path
+                    fill-opacity="0"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="4"
+                  />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path
+                    fill-opacity="0"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="4"
+                  />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path
+                    fill-opacity="0"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="4"
+                  />
+                </g>
+              </g>
+              <g
+                style="display: none;"
+              >
+                <g>
+                  <path
+                    fill-opacity="0"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </g>
+              <g
+                opacity="1"
+                style="display: block;"
+                transform="matrix(1,0,0,1,0,0)"
+              >
+                <g
+                  opacity="1"
+                  transform="matrix(1,0,0,1,231,61.5)"
+                >
+                  <path
+                    d="M0 0"
+                    fill-opacity="0"
+                    stroke="rgb(115,48,197)"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="4"
+                    stroke-opacity="1"
+                    stroke-width="1.5"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 `;
