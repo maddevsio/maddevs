@@ -29,14 +29,14 @@
               alt="Close modal"
             >
           </div>
-          <simplebar
+          <Simplebar
             ref="content"
             class="modal_content safari-only"
             @success="openSuccessModal"
           >
             <SuccessMessage v-if="isSuccess" />
             <slot v-else />
-          </simplebar>
+          </Simplebar>
         </div>
       </transition>
     </div>
@@ -44,12 +44,12 @@
 </template>
 
 <script>
-import simplebar from 'simplebar-vue'
+import Simplebar from 'simplebar-vue'
 import SuccessMessage from '@/components/core/modals/SuccessMessage'
 
 export default {
   name: 'Modal',
-  components: { simplebar, SuccessMessage },
+  components: { Simplebar, SuccessMessage },
   directives: {
     appendToBody: {
       inserted(el) {
