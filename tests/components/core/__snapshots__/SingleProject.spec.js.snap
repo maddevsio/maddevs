@@ -24,9 +24,7 @@ exports[`caseStudies component renders correctly 1`] = `
       <h3
         class="single-project__sub-title"
       >
-        
         Convenient shuttle bus service
-      
       </h3>
        
       <p
@@ -59,7 +57,7 @@ exports[`caseStudies component renders correctly 1`] = `
     </div>
      
     <div
-      class="single-project__background"
+      class="single-project__background single-project__godeeBackground"
     >
       <picture>
         <source

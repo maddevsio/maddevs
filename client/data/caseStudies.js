@@ -33,22 +33,19 @@ export const preview = [
     alt: 'General John Monash The Australian War Memorial`s Logo.',
   },
   {
-    name: 'guardrails',
-    logo: 'guardrails-icon',
-    logoWidth: 174,
+    name: 'yourcast',
+    logo: 'yourcast-icon',
+    logoWidth: 158,
     mdLogo: 'md-logo-white',
-    link:
-      'https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0',
-    isBlank: true,
-    background: 'guardrailsBackground',
+    link: '/case-studies/yourcast/',
+    isBlank: false,
+    background: 'yourcastBackground',
     extension: 'png',
-    color: '#0e1b27',
-    title: 'Cloud cybersecurity service',
-    description:
-      'Mad Devs was involved with Guardrails\' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.',
-
+    color: '#221f20',
+    title: 'The Evolution <br /> of Yourcast.TV',
+    description: 'Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.',
     contribution: 'Backend, Infrastructure, Frontend',
-    alt: 'Guardrails Cloud CyberSecurity Services Logo.',
+    alt: 'Yourcast.TV Logo.',
   },
   {
     name: 'godee',

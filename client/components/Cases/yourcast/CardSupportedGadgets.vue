@@ -1,8 +1,8 @@
 <template>
   <div class="card-content">
-    <h4 class="card-content_title case_title_h4">
+    <h3 class="card-content_title case_title_h4">
       {{ title }}
-    </h4>
+    </h3>
     <div
       class="card-content_gadget-picture-wrapp"
       :class="`card-content_gadget-picture-wrapp-${file}-card`"

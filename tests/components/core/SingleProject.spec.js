@@ -66,31 +66,4 @@ describe('caseStudies component', () => {
   it('shoud pass correct props', () => {
     expect(wrapper.props()).toStrictEqual(props)
   })
-
-  it('shoud add single-project__background_guardrails class to .single-project__background if projectName will be guardrails', () => {
-    props = {
-      ...props,
-      name: 'guardrails',
-    }
-
-    wrapper = mount(SingleProject, {
-      propsData: props,
-    })
-    const background = wrapper.findAll('.single-project__background').at(0)
-    expect(background.classes()).toContain('single-project__background_guardrails')
-  })
-
-  it('should not add class for card if projectName not equal guardrails', () => {
-    props = {
-      ...props,
-      name: 'godee',
-    }
-
-    wrapper = mount(SingleProject, {
-      propsData: props,
-    })
-
-    const background = wrapper.findAll('.single-project__background').at(0)
-    expect(background.classes()).not.toContain('single-project__background_guardrails')
-  })
 })
