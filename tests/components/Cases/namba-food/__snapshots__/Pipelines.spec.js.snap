@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pipelines component should render correctly 1`] = `
+<div>
+  <section>
+    <section
+      class="container_regular"
+    >
+      <h3
+        class="case_title_h3 m-96_top m-12_bottom media-m-48_top"
+      >
+        
+      Pipelines
+    
+      </h3>
+       
+      <p
+        class="case_paragraph m-24_bottom"
+      >
+        
+      At Mad Devs, we widely use pipelines. The deployment stage has been automated for the staging server, and
+      deployment on the production server is done manually. The pipeline for the Namba Food system is displayed below.
+    
+      </p>
+    </section>
+     
+    <section
+      class="container_full background-color-silver case_pipelines-image-desktop"
+    >
+      <section
+        class="container_full case_full-screen-image"
+      >
+        <picture>
+          <source
+            class="image"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Namba Food: Automated Deployment Stage Scheme."
+            class="image"
+            height="0"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="0"
+          />
+        </picture>
+      </section>
+    </section>
+     
+    <section
+      class="container_full case_pipelines-image-mobile"
+    >
+      <section
+        class="container_full case_full-screen-image"
+      >
+        <picture>
+          <source
+            class="image"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Namba Food: Automated Deployment Stage Scheme."
+            class="image"
+            height="0"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="0"
+          />
+        </picture>
+      </section>
+    </section>
+  </section>
+</div>
+`;

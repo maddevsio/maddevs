@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Swift component should render correctly 1`] = `
+<div>
+  <section>
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-96_top m-48_bottom media-m-48_top media-m-12_bottom"
+      >
+        
+      Swift admin panel — intelligent delivery control
+    
+      </h2>
+    </section>
+     
+    <section
+      class="container_middle"
+    >
+      <div
+        class="slider-content"
+      >
+        <div
+          class="swiper-container thumb-example box-shadow"
+        >
+          <picture>
+            <source
+              class="image"
+              srcset="img.jpg ,img.jpg 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Namba Food: Food and Grocery Delivery Service Website Header."
+              class="image"
+              height="0"
+              loading="lazy"
+              src="img.jpg"
+              srcset="img.jpg 2x"
+              width="0"
+            />
+          </picture>
+           
+          <div
+            class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
+            style="cursor: grab;"
+          >
+            <div
+              class="swiper-wrapper"
+              style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+            >
+              <div
+                class="swiper-slide"
+              >
+                <picture>
+                  <source
+                    class="image"
+                    srcset="img.jpg ,img.jpg 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
+                    class="image"
+                    height="0"
+                    loading="lazy"
+                    src="img.jpg"
+                    srcset="img.jpg 2x"
+                    width="0"
+                  />
+                </picture>
+              </div>
+              <div
+                class="swiper-slide"
+              >
+                <picture>
+                  <source
+                    class="image"
+                    srcset="img.jpg ,img.jpg 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt="Namba Food Delivery Control Dashboard."
+                    class="image"
+                    height="0"
+                    loading="lazy"
+                    src="img.jpg"
+                    srcset="img.jpg 2x"
+                    width="0"
+                  />
+                </picture>
+              </div>
+            </div>
+            <span
+              aria-atomic="true"
+              aria-live="assertive"
+              class="swiper-notification"
+            />
+          </div>
+        </div>
+         
+        <!---->
+         
+        <div
+          class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
+        >
+          <div
+            class="swiper-wrapper"
+            style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+          >
+            <div
+              class="swiper-slide"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="img.jpg ,img.jpg 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
+                  class="image"
+                  height="0"
+                  loading="lazy"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
+                  width="0"
+                />
+              </picture>
+            </div>
+            <div
+              class="swiper-slide"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="img.jpg ,img.jpg 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Namba Food Delivery Control Dashboard."
+                  class="image"
+                  height="0"
+                  loading="lazy"
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
+                  width="0"
+                />
+              </picture>
+            </div>
+          </div>
+          <span
+            aria-atomic="true"
+            aria-live="assertive"
+            class="swiper-notification"
+          />
+        </div>
+      </div>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <p
+        class="case_paragraph m-56_top media-m-24_top"
+      >
+        
+      The Swift microservice-based admin panel receives order information from the control panel and helps the
+      operators to overview and manage the delivery processes. It displays orders by statuses as diagrams.
+    
+      </p>
+       
+      <blockquote
+        class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
+      >
+        
+      The Swift admin panel helps operators to stay in touch with a courier if there is an issue on the way.
+    
+      </blockquote>
+       
+      <div
+        class="case_delivery-control-cards m-72_bottom media-m-48_bottom"
+      >
+        <div
+          class="background-color-silver case_delivery-control-card"
+        >
+          <p
+            class="case_paragraph"
+          >
+            
+          Track the couriers' locations on a map and provide statuses of all orders and couriers.
+        
+          </p>
+        </div>
+         
+        <div
+          class="background-color-silver case_delivery-control-card"
+        >
+          <p
+            class="case_paragraph"
+          >
+             Extract customers’ notes and communicate them to couriers. 
+          </p>
+        </div>
+         
+        <div
+          class="background-color-silver case_delivery-control-card"
+        >
+          <p
+            class="case_paragraph"
+          >
+             Assign orders and prepare reports. 
+          </p>
+        </div>
+         
+        <div
+          class="background-color-silver case_delivery-control-card"
+        >
+          <p
+            class="case_paragraph"
+          >
+             Call curriers using Free SWITCH microservice. 
+          </p>
+        </div>
+      </div>
+       
+      <h3
+        class="case_title_h3 m-12_bottom"
+      >
+        
+      Intelligent auto-assignment system for courier management
+    
+      </h3>
+       
+      <p
+        class="case_paragraph m-8_bottom"
+      >
+        
+      The intelligent auto-assignment of orders allows operators to assign couriers to orders, taking into
+      consideration the following factors:
+    
+      </p>
+       
+      <ul
+        class="case_list m-78_bottom media-m-48_bottom"
+      >
+        <li
+          class="list-item_dot"
+        >
+          Location of a courier, a cafe/restaurant and the end-user address.
+        </li>
+         
+        <li
+          class="list-item_dot"
+        >
+          
+        Courier's number of orders delivered during the current shift and in the last three hours.
+      
+        </li>
+         
+        <li
+          class="list-item_dot"
+        >
+          
+        End-user location in relation to couriers, who are already carrying the order, and in relation to the next
+        order’s pick-up point with the current order.
+      
+        </li>
+      </ul>
+       
+      <h3
+        class="case_title_h3 m-12_bottom"
+      >
+        
+      Auto-assignment system under the hood
+    
+      </h3>
+       
+      <p
+        class="case_paragraph m-8_bottom"
+      >
+        
+      Three open-source solutions work together as a cohesive and smart system to perform auto-assignment of orders.
+      This allows you to select the most suitable courier for each order, which reduces delivery time.
+    
+      </p>
+       
+      <ul
+        class="case_list m-78_bottom media-m-48_bottom"
+      >
+        <li
+          class="list-item_dot"
+        >
+          Ariadna parses open-source map data and inserts them into ElasticSearch.
+        </li>
+         
+        <li
+          class="list-item_dot"
+        >
+          ElasticSearch stores couriers’ current locations.
+        </li>
+         
+        <li
+          class="list-item_dot"
+        >
+          OSMR is a routing engine for the shortest paths and road networks.
+        </li>
+      </ul>
+       
+      <h3
+        class="case_title_h3 m-12_bottom"
+      >
+        
+      Geocoder Ariadna on ElasticSearch with OpenStreetMap
+    
+      </h3>
+       
+      <p
+        class="case_paragraph m-48_bottom"
+      >
+        <a
+          class="case_link"
+          href="https://github.com/maddevsio/ariadna"
+          target="_blank"
+        >
+          Ariadna
+        </a>
+         is an open-source
+      geocoder based on ElasticSearch with OpenStreetMap, in-house developed. The tool searches for coordinates by
+      synonyms and names of places, looking for crossroads and addresses in a certain radius, and knows how to reverse
+      geocoding and automatically update with new data from drivers.
+    
+      </p>
+    </section>
+     
+    <section
+      class="container_middle"
+    >
+      <div
+        class="case_map-video-wrapper"
+      >
+        <img
+          class="case_ios-map-video-image case_box-shadow"
+          data-testid="test-case_ios-map-video-image"
+          src="img.jpg"
+        />
+      </div>
+    </section>
+  </section>
+</div>
+`;

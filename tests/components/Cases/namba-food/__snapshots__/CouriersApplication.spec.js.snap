@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CouriersApplication component should render correctly 1`] = `
+<div>
+  <div
+    class="container_full background-color-black m-48_bottom case_black-section"
+  >
+    <div
+      class="case_black-section-content"
+    >
+      <section
+        class="container_regular"
+      >
+        <h2
+          class="case_title_h2 case_text-align-center m-48_bottom p-78_top media-m-8_bottom media-p-38_top"
+          style="color: rgb(255, 255, 255);"
+        >
+          
+        Android application for couriers
+      
+        </h2>
+         
+        <p
+          class="case_paragraph case_text-align-center m-56_bottom media-m-16_bottom"
+          style="color: rgb(255, 255, 255);"
+        >
+          
+        The Android app for couriers enables them to receive new orders assigned to them by operators via the control
+        panel. After a courier is assigned to the order, their app receives a push notification and displays the order
+        pick-up location. After getting the notification, the courier picks up the order from a cafe or a shop and
+        heads to the client.
+      
+        </p>
+      </section>
+       
+      <section
+        class="container_middle case_couriers-android-app-wrapper"
+      >
+        <picture>
+          <source
+            class="image"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Namba Food: Courier App for Android."
+            class="image"
+            height="0"
+            loading=""
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="0"
+          />
+        </picture>
+      </section>
+       
+      <div
+        class="case_black-gradient"
+      />
+    </div>
+  </div>
+</div>
+`;

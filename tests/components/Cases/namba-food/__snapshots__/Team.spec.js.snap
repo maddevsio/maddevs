@@ -1,0 +1,567 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Team component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular"
+  >
+    <h3
+      class="case_title_h3 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
+    >
+      
+    Meet the team
+  
+    </h3>
+     
+    <p
+      class="case_paragraph m-48_bottom media-m-24_bottom"
+    >
+      
+    There are now three members on the core development team; during the pre-launch phase, a larger team worked on the
+    Namba Food project. Over the course of the project, five full-time employees and two part-timers have worked
+    closely with the customer:
+  
+    </p>
+     
+    <ul
+      class="case_list-team"
+    >
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Vlad Andreev"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Vlad Andreev
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Team Lead
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Gulbustan Baudunova"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Gulbustan Baudunova
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Back-end Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Tamara Mun"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Tamara Mun
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Delivery Manager
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Aidai Atakulova"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Aidai Atakulova
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Project Manager
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Baurzhan Omuraliev"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Baurzhan Omuraliev
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Back-end Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Nakylai Taiirova"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Nakylai Taiirova
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Back-end Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Akylbek Djumaliev"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Akylbek Djumaliev
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Back-end Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Stanislav Shcherbinin"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Stanislav Shcherbinin
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Back-end Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Eldar Akkozov"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Eldar Akkozov
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Mobile App Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Altynai Toktomuratova"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Altynai Toktomuratova
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Mobile App Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Dmitrii Khalezin"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Dmitrii Khalezin
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      DevOps Engineer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Belek Abylov"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Belek Abylov
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Back-end Developer
+    
+          </p>
+        </div>
+      </li>
+    </ul>
+     
+    <h4
+      class="case_title_h4 m-72_top m-12_bottom media-m-41_top"
+    >
+      
+    Transparent communication
+  
+    </h4>
+     
+    <p
+      class="case_paragraph"
+    >
+      
+    Weekly calls with the customer's business representatives and monthly meetings to see what could be improved from
+    a development/IT viewpoint. Our staff members also work on the Namba Food premises several days a week to keep in
+    touch with the customer's employees. This keeps everyone on the same page. We can collect the most recent business
+    requirements and quickly respond to changes that a highly competitive delivery market may throw at us.
+  
+    </p>
+  </section>
+</div>
+`;

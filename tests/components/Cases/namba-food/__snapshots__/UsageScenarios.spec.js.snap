@@ -1,0 +1,321 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsageScenarios component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular"
+  >
+    <h2
+      class="case_title_h2 case_text-align-center m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
+    >
+      
+    Typical usage scenarios and user roles
+  
+    </h2>
+     
+    <p
+      class="case_paragraph case_text-align-center m-48_bottom media-m-24_bottom"
+    >
+      
+    Namba Food involves several user journeys for different roles. Each user journey required different sets of
+    functionalities and user interfaces.
+  
+    </p>
+     
+    <div
+      class="case_usage-scenarios"
+    >
+      <div
+        class="case_card case_usage-scenarios-card background-color-red"
+      >
+        <div
+          class="card-use-case"
+        >
+          <client-only-stub>
+            <h3
+              class="card-use-case__title case_title_h4 card-use-case__red-card-title"
+            >
+              Website, mobile 
+              <br />
+               application
+            </h3>
+          </client-only-stub>
+           
+          <div
+            class="card-use-case__description-wrapper card-use-case__red-card-description-wrapper"
+          >
+            <p
+              class="case_paragraph card-use-case__paragraph card-use-case__red-card-paragraph"
+            >
+              
+      Offers easy-to-use interface and fast navigation for Namba Food users.
+    
+            </p>
+             
+            <div
+              class="card-use-case__desktop-picture card-use-case__red-card-picture"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="img.jpg ,img.jpg 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Namba Food: Food and Grocery Delivery App for Iphone."
+                  class="image"
+                  height="0"
+                  loading=""
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
+                  width="0"
+                />
+              </picture>
+            </div>
+             
+            <div
+              class="card-use-case__mobile-picture card-use-case__red-card-mobile-picture"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="img.jpg ,img.jpg 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Namba Food: Food and Grocery Delivery App for Iphone."
+                  class="image"
+                  height="0"
+                  loading=""
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
+                  width="0"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="case_card case_usage-scenarios-card background-color-black"
+      >
+        <div
+          class="card-use-case"
+        >
+          <client-only-stub>
+            <h3
+              class="card-use-case__title case_title_h4 card-use-case__black-card-title"
+            >
+              Application for 
+              <br />
+               deliverymen
+            </h3>
+          </client-only-stub>
+           
+          <div
+            class="card-use-case__description-wrapper card-use-case__black-card-description-wrapper"
+          >
+            <p
+              class="case_paragraph card-use-case__paragraph card-use-case__black-card-paragraph"
+            >
+              
+      Allows planning a route and quickly getting information about orders.
+    
+            </p>
+             
+            <div
+              class="card-use-case__desktop-picture card-use-case__black-card-picture"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="img.jpg ,img.jpg 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Namba Food: Courier App for Android."
+                  class="image"
+                  height="0"
+                  loading=""
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
+                  width="0"
+                />
+              </picture>
+            </div>
+             
+            <div
+              class="card-use-case__mobile-picture card-use-case__black-card-mobile-picture"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="img.jpg ,img.jpg 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Namba Food: Courier App for Android."
+                  class="image"
+                  height="0"
+                  loading=""
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
+                  width="0"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="case_card case_usage-scenarios-card background-color-turquoise"
+      >
+        <div
+          class="card-use-case"
+        >
+          <client-only-stub>
+            <h3
+              class="card-use-case__title case_title_h4 card-use-case__turquoise-card-title"
+            >
+              Unified control system for operators
+            </h3>
+          </client-only-stub>
+           
+          <div
+            class="card-use-case__description-wrapper card-use-case__turquoise-card-description-wrapper"
+          >
+            <p
+              class="case_paragraph card-use-case__paragraph card-use-case__turquoise-card-paragraph"
+            >
+              
+      Includes full control of the ordering process from order acceptance to status tracking.
+    
+            </p>
+             
+            <div
+              class="card-use-case__desktop-picture card-use-case__turquoise-card-picture"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="img.jpg ,img.jpg 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery."
+                  class="image"
+                  height="0"
+                  loading=""
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
+                  width="0"
+                />
+              </picture>
+            </div>
+             
+            <div
+              class="card-use-case__mobile-picture card-use-case__turquoise-card-mobile-picture"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="img.jpg ,img.jpg 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery."
+                  class="image"
+                  height="0"
+                  loading=""
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
+                  width="0"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="case_card case_usage-scenarios-card background-color-silver"
+      >
+        <div
+          class="card-use-case"
+        >
+          <client-only-stub>
+            <h3
+              class="card-use-case__title case_title_h4 card-use-case__white-card-title"
+            >
+              Control panel for 
+              <br />
+               managers
+            </h3>
+          </client-only-stub>
+           
+          <div
+            class="card-use-case__description-wrapper card-use-case__white-card-description-wrapper"
+          >
+            <p
+              class="case_paragraph card-use-case__paragraph card-use-case__white-card-paragraph"
+            >
+              
+      Facilitates uploading the menu and updating information about services.
+    
+            </p>
+             
+            <div
+              class="card-use-case__desktop-picture card-use-case__white-card-picture"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="img.jpg ,img.jpg 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
+                  class="image"
+                  height="0"
+                  loading=""
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
+                  width="0"
+                />
+              </picture>
+            </div>
+             
+            <div
+              class="card-use-case__mobile-picture card-use-case__white-card-mobile-picture"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="img.jpg ,img.jpg 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
+                  class="image"
+                  height="0"
+                  loading=""
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
+                  width="0"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
