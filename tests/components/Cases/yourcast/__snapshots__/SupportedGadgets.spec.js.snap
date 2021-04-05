@@ -31,13 +31,13 @@ exports[`SupportedGadgets component should render correctly 1`] = `
         <div
           class="card-content"
         >
-          <h4
+          <h3
             class="card-content_title case_title_h4"
           >
             
     Laptops
   
-          </h4>
+          </h3>
            
           <div
             class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-macbook-pro-card"
@@ -92,13 +92,13 @@ exports[`SupportedGadgets component should render correctly 1`] = `
         <div
           class="card-content"
         >
-          <h4
+          <h3
             class="card-content_title case_title_h4"
           >
             
     Smartphones
   
-          </h4>
+          </h3>
            
           <div
             class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-iphonex-card"
@@ -153,13 +153,13 @@ exports[`SupportedGadgets component should render correctly 1`] = `
         <div
           class="card-content"
         >
-          <h4
+          <h3
             class="card-content_title case_title_h4"
           >
             
     Tablets
   
-          </h4>
+          </h3>
            
           <div
             class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-ipad-pro-card"
