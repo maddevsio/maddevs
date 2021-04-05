@@ -1685,9 +1685,7 @@ exports[`index page renders correctly 1`] = `
               <h3
                 class="single-project__sub-title"
               >
-                
-        Contactless Delivery Service
-      
+                Contactless Delivery Service
               </h3>
                
               <p
@@ -1720,7 +1718,7 @@ exports[`index page renders correctly 1`] = `
             </div>
              
             <div
-              class="single-project__background"
+              class="single-project__background single-project__nambafoodBackground"
             >
               <picture>
                 <source
@@ -1764,9 +1762,7 @@ exports[`index page renders correctly 1`] = `
               <h3
                 class="single-project__sub-title"
               >
-                
-        Australian National Interpretive Centre
-      
+                Australian National Interpretive Centre
               </h3>
                
               <p
@@ -1799,7 +1795,7 @@ exports[`index page renders correctly 1`] = `
             </div>
              
             <div
-              class="single-project__background"
+              class="single-project__background single-project__sjmcBackground"
             >
               <picture>
                 <source
@@ -1822,9 +1818,9 @@ exports[`index page renders correctly 1`] = `
         </a>
         <a
           class="single-project"
-          href="https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0"
-          style="background: rgb(14, 27, 39);"
-          target="_blank"
+          href="/case-studies/yourcast/"
+          style="background: rgb(34, 31, 32);"
+          target="_self"
         >
           <div
             class="single-project__container single-project_white-letters-theme"
@@ -1833,26 +1829,26 @@ exports[`index page renders correctly 1`] = `
               class="single-project__content-wrap"
             >
               <img
-                alt="Guardrails Cloud CyberSecurity Services Logo."
+                alt="Yourcast.TV Logo."
                 class="img_lazy single-project__logo"
                 data-src="[object Object]"
                 height="41"
-                width="174"
+                width="158"
               />
                
               <h3
                 class="single-project__sub-title"
               >
-                
-        Cloud cybersecurity service
-      
+                The Evolution 
+                <br />
+                 of Yourcast.TV
               </h3>
                
               <p
                 class="single-project__paragraph paragraph"
               >
                 
-        Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.
+        Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.
       
               </p>
                
@@ -1868,7 +1864,7 @@ exports[`index page renders correctly 1`] = `
                 />
                  
                 <span
-                  class="contribution-widget__content contribution-widget__content_guardrails"
+                  class="contribution-widget__content contribution-widget__content_yourcast"
                 >
                   
           contribution: Backend, Infrastructure, Frontend
@@ -1878,7 +1874,7 @@ exports[`index page renders correctly 1`] = `
             </div>
              
             <div
-              class="single-project__background single-project__background_guardrails"
+              class="single-project__background single-project__yourcastBackground"
             >
               <picture>
                 <source
@@ -1888,7 +1884,7 @@ exports[`index page renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="Guardrails Cloud CyberSecurity Services Logo."
+                  alt="Yourcast.TV Logo."
                   class="img_lazy"
                   data-src="[object Object]"
                   data-srcset="[object Object] 2x"
@@ -1922,9 +1918,7 @@ exports[`index page renders correctly 1`] = `
               <h3
                 class="single-project__sub-title"
               >
-                
-        Convenient shuttle bus service
-      
+                Convenient shuttle bus service
               </h3>
                
               <p
@@ -1957,7 +1951,7 @@ exports[`index page renders correctly 1`] = `
             </div>
              
             <div
-              class="single-project__background"
+              class="single-project__background single-project__godeeBackground"
             >
               <picture>
                 <source

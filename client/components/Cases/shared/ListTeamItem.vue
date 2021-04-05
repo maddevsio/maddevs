@@ -87,6 +87,8 @@ export default {
   &__image {
     width: 52px;
     height: 51px;
+    border-radius: 6px;
+    overflow: hidden;
     margin-right: 7.5px;
   }
 

@@ -197,13 +197,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card-content"
           >
-            <h4
+            <h3
               class="card-content_title case_title_h4"
             >
               
     Laptops
   
-            </h4>
+            </h3>
              
             <div
               class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-macbook-pro-card"
@@ -258,13 +258,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card-content"
           >
-            <h4
+            <h3
               class="card-content_title case_title_h4"
             >
               
     Smartphones
   
-            </h4>
+            </h3>
              
             <div
               class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-iphonex-card"
@@ -319,13 +319,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card-content"
           >
-            <h4
+            <h3
               class="card-content_title case_title_h4"
             >
               
     Tablets
   
-            </h4>
+            </h3>
              
             <div
               class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-ipad-pro-card"
@@ -646,13 +646,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card_text-content"
           >
-            <h4
+            <h3
               class="case_title_h4 card_title"
             >
               
       2016
     
-            </h4>
+            </h3>
              
             <p
               class="case_paragraph card_paragraph"
@@ -1115,13 +1115,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card_text-content"
           >
-            <h4
+            <h3
               class="case_title_h4 card_title"
             >
               
       2017
     
-            </h4>
+            </h3>
              
             <p
               class="case_paragraph card_paragraph"
@@ -1290,13 +1290,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card_text-content"
           >
-            <h4
+            <h3
               class="case_title_h4 card_title"
             >
               
       2018
     
-            </h4>
+            </h3>
              
             <p
               class="case_paragraph card_paragraph"
@@ -1399,13 +1399,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card_text-content"
           >
-            <h4
+            <h3
               class="case_title_h4 card_title"
             >
               
       2019
     
-            </h4>
+            </h3>
              
             <p
               class="case_paragraph card_paragraph"
@@ -1518,13 +1518,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card_text-content"
           >
-            <h4
+            <h3
               class="case_title_h4 card_title"
             >
               
       2020
     
-            </h4>
+            </h3>
              
             <p
               class="case_paragraph card_paragraph"
