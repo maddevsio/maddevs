@@ -2,7 +2,7 @@
   <div
     id="header"
     class="header-wrapper"
-    :class="{ 'is-transp': isTransp }"
+    :class="{ 'is-transparent-bg': isTransparentBG }"
   >
     <div
       id="overlay"
@@ -146,7 +146,7 @@ export default {
       showLogoText: true,
       isActiveMobileMenu: false,
       isCasePage: false,
-      isTransp: true,
+      isTransparentBG: true,
       caseHeader: null,
       headerWhiteLogoText: null,
       caseFirstSection: null,
@@ -242,14 +242,16 @@ export default {
         ? this.caseGoDeeScrollContainer.scrollTop
         : window.scrollY
       const area = document.querySelector('#case-header')
-      if (area) {
-        const topPointSection = scrollTop >= area.offsetTop // Top point of the section
-        const bottomPointSection = scrollTop <= (area.offsetTop + area.offsetHeight) - this.$refs.overlay.offsetHeight // Bottom point of the section
+      const areaHeight = (area.offsetTop + area.offsetHeight) - this.$refs.overlay.offsetHeight
 
-        if (topPointSection && bottomPointSection) {
-          this.isTransp = true
+      if (area) {
+        const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
+        const isBeforeBottomPointSection = scrollTop <= areaHeight // Before Bottom point of the section
+
+        if (isAfterTopPointSection && isBeforeBottomPointSection) {
+          this.isTransparentBG = true
         } else {
-          this.isTransp = false
+          this.isTransparentBG = false
         }
       }
     },
@@ -441,7 +443,7 @@ export default {
   transition: all 0.2s ease;
 }
 
-.is-transp {
+.is-transparent-bg {
   #overlay::before {
     height: 0;
     opacity: 0;
