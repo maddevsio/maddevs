@@ -59,6 +59,7 @@
       <div class="case_html-video-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow">
         <div
           v-if="isIphone"
+          data-testid="test-video-flex-wrapper"
           class="case_video-flex-wrapper"
         >
           <Picture
