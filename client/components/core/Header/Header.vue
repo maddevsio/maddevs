@@ -209,6 +209,7 @@ export default {
         })
       } else {
         this.enableScrollOnBody()
+        this.changeLogoState(window.pageYOffset)
         this.mobileHeaderScrollbar.removeEventListener('scroll', this.handleMobileMenuScroll)
       }
     },
