@@ -101,7 +101,7 @@
             <UIModalTriggerButton
               label="Contact me"
               color="red"
-              @click="$refs.contactMeModal.show()"
+              @click="$refs.modalContactMe.show()"
             />
           </div>
         </div>
