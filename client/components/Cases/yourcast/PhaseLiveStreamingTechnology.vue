@@ -32,6 +32,7 @@
           :lazy="true"
           :width="735"
           :height="449"
+          extension="png"
           folder="yourcast"
           file="macbook-pro"
           alt=""
