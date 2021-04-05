@@ -1,0 +1,590 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Team component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular m-72_bottom media-m-48_bottom"
+  >
+    <h2
+      class="case_title_h2 m-48_bottom media-m-24_bottom"
+    >
+      
+    Meet the team
+  
+    </h2>
+     
+    <ul
+      class="case_list-team m-72_bottom media-m-48_bottom"
+    >
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Oleg Puzanov"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Oleg Puzanov
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      CTO
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Ruslan Kasymov"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Ruslan Kasymov
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      QA Engineer and PM
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Rustom Kulbatyrov"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Rustom Kulbatyrov
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Android Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Vladimir Pan"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Vladimir Pan
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      QA Engineer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Belek Abylov"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Belek Abylov
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Backend Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Bakhtiyar Ganyev"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Bakhtiyar Ganyev
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      iOS Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Gennady Karev"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Gennady Karev
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Backend Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Aleksandr Krivov"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Aleksandr Krivov
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      UX/UI Specialist
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Vlada Arevkova"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Vlada Arevkova
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      UX/UI Specialist
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Erik Sultanaliev"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Erik Sultanaliev
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Backend Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Myrzabek Kylychev"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Myrzabek Kylychev
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Android Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background"
+            srcset="img.jpg ,img.jpg 2x"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Pavel Pushkarev"
+            class="image grey-background"
+            height="50"
+            loading="lazy"
+            src="img.jpg"
+            srcset="img.jpg 2x"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Pavel Pushkarev
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      iOS Developer
+    
+          </p>
+        </div>
+      </li>
+    </ul>
+     
+    <blockquote
+      alt="Ruslan Karabukaev"
+      class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
+    >
+      
+    We built the platforms from scratch with the Mad Devs team, who dedicatedly supported and guided us to take
+    proper action on several ideas and requirements. We have attracted 27,000 users so far, thanks to their
+    continuous support for improvement and development.
+   
+      <div
+        class="case_blockquote-author__author-info m-24_top"
+      >
+        <div
+          class="case_blockquote-author__photo m-auto"
+        >
+          <picture>
+            <source
+              class="image"
+              srcset="img.jpg ,img.jpg 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Ruslan Karabukaev"
+              class="image"
+              height="0"
+              loading="lazy"
+              src="img.jpg"
+              srcset="img.jpg 2x"
+              width="0"
+            />
+          </picture>
+        </div>
+         
+        <p
+          class="case_paragraph case_blockquote-author__name"
+        >
+          
+      Ruslan Karabukaev
+    
+        </p>
+         
+        <p
+          class="case_blockquote-author__position"
+        >
+          
+      Co-founder of GoDee
+    
+        </p>
+      </div>
+    </blockquote>
+  </section>
+</div>
+`;

@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PreviewCards component should render correctly 1`] = `
+<div>
+  <section
+    class="container_full background-color-black-primary-bg p-100_top p-100_bottom media-p-48_top media-p-48_bottom"
+  >
+    <div
+      class="container_regular"
+    >
+      <div
+        class="case_preview-cards"
+      >
+        <div
+          class="case_preview-cards-top-cards-wrapper"
+        >
+          <div
+            class="case_card background-color-godee-black-card"
+          >
+            <div
+              class="card-content card-content_application-for-passengers"
+            >
+              <div
+                class="card-content_text-wrapper"
+              >
+                <h4
+                  class="case_title_h4 card-content_title"
+                >
+                  
+      Mobile application for passengers
+    
+                </h4>
+                 
+                <p
+                  class="case_paragraph card-content_description"
+                >
+                  
+      Ticket booking process is intuitive — the passenger needs to select the pick up and drop off points, choose the departure time in the schedule, and book the ticket. The most suitable route will be found automatically.
+    
+                </p>
+              </div>
+               
+              <div
+                class="card-content_image-wrapper card-content_image-wrapper-application-for-passengers"
+              >
+                <picture
+                  class=""
+                >
+                  <source
+                    class="image"
+                    srcset="img.jpg ,img.jpg 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt="GoDee: Bus Transit App for Passengers."
+                    class="image"
+                    height="211"
+                    loading=""
+                    src="img.jpg"
+                    srcset="img.jpg 2x"
+                    width="334"
+                  />
+                </picture>
+                 
+                <!---->
+              </div>
+            </div>
+          </div>
+           
+          <div
+            class="case_card background-color-godee-black-card"
+          >
+            <div
+              class="card-content card-content_application-for-drivers"
+            >
+              <div
+                class="card-content_text-wrapper"
+              >
+                <h4
+                  class="case_title_h4 card-content_title"
+                >
+                  
+      Mobile applications for drivers
+    
+                </h4>
+                 
+                <p
+                  class="case_paragraph card-content_description"
+                >
+                  
+      The drivers’ transit app enables them to pick up passengers from bus stops, according to their previously booked tickets.
+    
+                </p>
+              </div>
+               
+              <div
+                class="card-content_image-wrapper card-content_image-wrapper-application-for-drivers"
+              >
+                <picture
+                  class=""
+                >
+                  <source
+                    class="image"
+                    srcset="img.jpg ,img.jpg 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt="GoDee: Bus Drivers App."
+                    class="image"
+                    height="280"
+                    loading=""
+                    src="img.jpg"
+                    srcset="img.jpg 2x"
+                    width="313"
+                  />
+                </picture>
+                 
+                <!---->
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        <div
+          class="case_card background-color-godee-black-card"
+        >
+          <div
+            class="card-content card-content_godee-admin-panel"
+          >
+            <div
+              class="card-content_text-wrapper"
+            >
+              <h4
+                class="case_title_h4 card-content_title"
+              >
+                
+      Intelligent management panel
+    
+              </h4>
+               
+              <p
+                class="case_paragraph card-content_description"
+              >
+                
+      Used to create routes, get reports and map current active routes.
+    
+              </p>
+            </div>
+             
+            <div
+              class="card-content_image-wrapper card-content_image-wrapper-godee-admin-panel"
+            >
+              <picture
+                class="card-content_desktop-image"
+              >
+                <source
+                  class="image"
+                  srcset="img.jpg ,img.jpg 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="GoDee: Bus App Management System."
+                  class="image"
+                  height="219"
+                  loading=""
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
+                  width="695"
+                />
+              </picture>
+               
+              <picture
+                class="card-content_mobile-image"
+              >
+                <source
+                  class="image"
+                  srcset="img.jpg ,img.jpg 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="GoDee: bus app management control panel"
+                  class="image"
+                  height="160"
+                  loading=""
+                  src="img.jpg"
+                  srcset="img.jpg 2x"
+                  width="307"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

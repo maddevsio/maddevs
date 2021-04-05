@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Monitoring component should render correctly 1`] = `
+<div>
+  <section>
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-12_bottom"
+      >
+        
+      Monitoring
+    
+      </h2>
+       
+      <p
+        class="case_paragraph m-48_bottom media-m-12_bottom"
+      >
+        
+      We believe that every production system requires proper monitoring. For this purpose, we use the Datadog
+      service, which allows us to discover possible issues before they affect our users.
+    
+      </p>
+       
+      <p
+        class="m-12_bottom case_monitoring-section-bold"
+      >
+        
+      Here is an example of our monitoring configuration for the GoDee project:
+    
+      </p>
+    </section>
+     
+    <section
+      class="container_middle m-96_bottom media-m-48_bottom"
+    >
+      <picture>
+        <source
+          class="image box-shadow grey-background"
+          srcset="img.jpg ,img.jpg 2x"
+          type="image/webp"
+        />
+         
+        <img
+          alt="GoDee: Monitoring Configuration for Transportation App."
+          class="image box-shadow grey-background"
+          height="463"
+          loading="lazy"
+          src="img.jpg"
+          srcset="img.jpg 2x"
+          width="1028"
+        />
+      </picture>
+    </section>
+  </section>
+</div>
+`;

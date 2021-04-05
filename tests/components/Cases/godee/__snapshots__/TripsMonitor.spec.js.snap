@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TripsMonitor component should render correctly 1`] = `
+<div>
+  <section>
+    <section
+      class="container_regular"
+    >
+      <h3
+        class="case_title_h3 m-12_bottom"
+      >
+        
+      Trips Monitor
+    
+      </h3>
+       
+      <p
+        class="case_paragraph"
+      >
+        
+      The Trips Monitor feature enables operators to track every bus in real time and collect data on late or
+      early arrivals. More importantly, the operator can contact drivers or passengers quickly if necessary.
+    
+      </p>
+    </section>
+     
+    <section
+      class="container_middle m-48_top media-m-24_top m-48_bottom media-m-24_bottom"
+    >
+      <div
+        class="case_html-video-wrapper case_box-shadow"
+      >
+        <div
+          class="case_video-flex-wrapper"
+          data-testid="test-case_video-flex-wrapper"
+        >
+          <picture>
+            <source
+              class="image grey-background"
+              srcset="img.jpg ,img.jpg 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="GoDee: Safari Browser Top Bar White."
+              class="image grey-background"
+              height="16.45"
+              loading="lazy"
+              src="img.jpg"
+              srcset="img.jpg 2x"
+              width="1026"
+            />
+          </picture>
+           
+          <img
+            alt="Trip Monitor"
+            class="case_img"
+            height="483.81"
+            loading="lazy"
+            src="img.jpg"
+            width="1028"
+          />
+        </div>
+      </div>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <p
+        class="case_paragraph m-12_bottom"
+      >
+        
+      The Trips Monitor dashboard displays the following information:
+    
+      </p>
+       
+      <ol
+        class="case-list_numbered m-96_bottom media-m-48_bottom"
+      >
+        <li
+          class="case_list-numbered_item"
+        >
+          
+        Drivers' locations on mini map in real-time
+      
+        </li>
+        <li
+          class="case_list-numbered_item"
+        >
+          
+        Late and early departures of buses
+      
+        </li>
+        <li
+          class="case_list-numbered_item"
+        >
+          
+        Complete bus schedule weeks in advance
+      
+        </li>
+        <li
+          class="case_list-numbered_item"
+        >
+          
+        Notice to driver that a GoDee client has not been picked up at a bus stop
+      
+        </li>
+        <li
+          class="case_list-numbered_item"
+        >
+          
+        Number of passengers assigned to each stop and driver
+      
+        </li>
+        <li
+          class="case_list-numbered_item"
+        >
+          
+        Historical information through filters
+      
+        </li>
+      </ol>
+    </section>
+  </section>
+</div>
+`;

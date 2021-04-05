@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RouteOptimisation component should render correctly 1`] = `
+<div>
+  <section>
+    <section
+      class="container_regular"
+    >
+      <h3
+        class="case_title_h3"
+      >
+        
+      Route optimization
+    
+      </h3>
+    </section>
+     
+    <section
+      class="container_middle m-24_top media-m-12_top m-48_bottom media-m-24_bottom"
+    >
+      <div
+        class="case_html-video-wrapper case_box-shadow"
+      >
+        <div
+          class="case_video-flex-wrapper"
+          data-testid="test-case_video-flex-wrapper"
+        >
+          <picture>
+            <source
+              class="image grey-background"
+              srcset="img.jpg ,img.jpg 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="GoDee: Safari Browser Top Bar White."
+              class="image grey-background"
+              height="16.45"
+              loading="lazy"
+              src="img.jpg"
+              srcset="img.jpg 2x"
+              width="1026"
+            />
+          </picture>
+           
+          <img
+            alt="Route Optimization"
+            class="case_img"
+            height="483.81"
+            loading="lazy"
+            src="img.jpg"
+            width="1028"
+          />
+        </div>
+      </div>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <p
+        class="case_paragraph"
+      >
+        
+      With the help of detailed drivers' performance data, Mad Devs’ Pifia microservice enables route managers to
+      optimize ETA (estimated time of arrival). Pifia shows more accurate arrival and departure times with just
+      one click.
+    
+      </p>
+       
+      <blockquote
+        class="case_blockquote-box m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
+      >
+        <span
+          class="case_text-quote-break m-24_bottom media-m-12_bottom"
+        >
+          Examples of early and late departure times:
+        </span>
+         
+        <span>
+          If Pifia determines that a minibus is usually late due to increased traffic at 5:35 pm and not 5:30 pm,
+        it alerts the route manager to shift the arrival time to 5:35 pm. Five minutes might sound minor, but
+        these small optimizations add up.
+        </span>
+      </blockquote>
+    </section>
+  </section>
+</div>
+`;
