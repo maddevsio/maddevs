@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import FooterForm from '@/components/core/Footer/FooterForm'
+import FooterForm from '@/components/core/forms/FooterForm'
 import FooterContacts from '@/components/core/Footer/FooterContacts'
 import FooterNavbar from '@/components/core/Footer/FooterNavbar'
 import FooterNavbarMobile from '@/components/core/Footer/FooterNavbarMobile'
