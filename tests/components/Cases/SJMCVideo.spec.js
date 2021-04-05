@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import SJMCVideo from '@/components/Cases/SJMCVideo'
+import SJMCVideo from '@/components/Cases/sjmc/SJMCVideo'
 
 global.document.exitFullscreen = () => {}
 

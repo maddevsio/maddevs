@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WatchWhatYouLikeVideo component should render correctly 1`] = `
+<div>
+  <section
+    class="container_full m-48_bottom media-m-24_bottom background-color-black-primary"
+  >
+    <div
+      class="case_image-wrapp"
+    >
+      <picture>
+        <source
+          class="image"
+          srcset="img.jpg ,img.jpg 2x"
+          type="image/webp"
+        />
+         
+        <img
+          alt="iPhone XS Max Gold"
+          class="image"
+          height="609.19"
+          loading=""
+          src="img.jpg"
+          srcset="img.jpg 2x"
+          width="305"
+        />
+      </picture>
+    </div>
+  </section>
+</div>
+`;

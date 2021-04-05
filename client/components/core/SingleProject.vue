@@ -17,7 +17,10 @@
           height="41"
           class="img_lazy single-project__logo"
         >
-        <h3 class="single-project__sub-title">
+        <h3
+          class="single-project__sub-title"
+          v-html="title"
+        >
           {{ title }}
         </h3>
         <p class="single-project__paragraph paragraph">
@@ -40,8 +43,8 @@
         </div>
       </div>
       <div
-        :class="backgroundModifierClasses"
         class="single-project__background"
+        :class="`single-project__${background}`"
       >
         <picture>
           <source
@@ -139,12 +142,8 @@ export default {
 
   computed: {
     colorTheme() {
-      if (this.name === 'sjmc' || this.name === 'guardrails') return 'single-project_white-letters-theme'
+      if (this.name === 'sjmc' || this.name === 'yourcast') return 'single-project_white-letters-theme'
       return 'single-project_black-letters-theme'
-    },
-
-    backgroundModifierClasses() {
-      return this.name === 'guardrails' ? 'single-project__background_guardrails' : ''
     },
   },
 }
@@ -263,9 +262,13 @@ export default {
   }
 
   &__background {
-    height: 322px;
+    height: 340px;
     width: 100%;
     position: relative;
+
+    @media screen and (max-width: 1360px) {
+      height: 322px;
+    }
 
     @media screen and (max-width: 1120px) {
       height: 270px;
@@ -309,6 +312,10 @@ export default {
 
   &_black-letters-theme {
     color: $text-color--black-lighter;
+  }
+
+  &__yourcastBackground {
+    opacity: 0.5;
   }
 }
 
@@ -357,8 +364,8 @@ export default {
       color: $text-color--black;
     }
 
-    &_guardrails,
-    &_sjmc {
+    &_sjmc,
+    &_yourcast {
       color: $text-color--white-darken;
     }
   }
