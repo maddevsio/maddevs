@@ -1,15 +1,19 @@
 import IntellegentManagementPanel from '@/components/Cases/godee/IntellegentManagementPanel.vue'
 import { render, screen } from '@testing-library/vue'
 
+const mocks = {
+  getMediaFromS3: () => 'img.jpg',
+}
+
+const props = {
+  isIphone: false,
+}
+
 describe('IntellegentManagementPanel component', () => {
   it('should render correctly', () => {
     const { container } = render(IntellegentManagementPanel, {
-      props: {
-        isIphone: false,
-      },
-      mocks: {
-        getMediaFromS3: () => 'img.jpg',
-      },
+      props,
+      mocks,
     })
 
     expect(container).toMatchSnapshot()
@@ -17,12 +21,8 @@ describe('IntellegentManagementPanel component', () => {
 
   it('should render with text', () => {
     render(IntellegentManagementPanel, {
-      props: {
-        isIphone: false,
-      },
-      mocks: {
-        getMediaFromS3: () => 'img.jpg',
-      },
+      props,
+      mocks,
     })
 
     expect(screen.getByText(/Intelligent management panel/i).className).toContain('case_title_h2')
@@ -30,13 +30,11 @@ describe('IntellegentManagementPanel component', () => {
 
   it('should render isIphone property', () => {
     render(IntellegentManagementPanel, {
-      props: {
-        isIphone: true,
-      },
-      mocks: {
-        getMediaFromS3: () => 'img.jpg',
-      },
+      props,
+      mocks,
     })
+
+    props.isIphone = true
 
     const element = screen.getByTestId('test-video-flex-wrapper')
 

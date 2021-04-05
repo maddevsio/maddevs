@@ -1,12 +1,14 @@
 import BeforeAfter from '@/components/Cases/godee/BeforeAfter.vue'
 import { render, screen } from '@testing-library/vue'
 
+const mocks = {
+  getMediaFromS3: () => 'img.jpg',
+}
+
 describe('BeforeAfter component', () => {
   it('should render correctly', () => {
     const { container } = render(BeforeAfter, {
-      mocks: {
-        getMediaFromS3: () => 'img.jpg',
-      },
+      mocks,
     })
 
     expect(container).toMatchSnapshot()
@@ -14,9 +16,7 @@ describe('BeforeAfter component', () => {
 
   it('should correctly display current date', () => {
     render(BeforeAfter, {
-      mocks: {
-        getMediaFromS3: () => 'img.jpg',
-      },
+      mocks,
     })
 
     expect(screen.getByText(/GoDee 2018 VS. GoDee/i).innerHTML.trim())

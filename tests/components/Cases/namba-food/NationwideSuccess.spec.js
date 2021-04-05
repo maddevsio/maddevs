@@ -9,7 +9,7 @@ describe('NationwideSuccess component', () => {
   it('should render correctly', () => {
     const { container } = render(NationwideSuccess, {
       mocks,
-      stubs: ['nuxt-link', 'NuxtLink'],
+      stubs: ['NuxtLink'],
     })
 
     expect(container).toMatchSnapshot()
@@ -18,7 +18,7 @@ describe('NationwideSuccess component', () => {
   it('should render with text', () => {
     render(NationwideSuccess, {
       mocks,
-      stubs: ['nuxt-link', 'NuxtLink'],
+      stubs: ['NuxtLink'],
     })
 
     expect(screen.getByText(/Nationwide success and day-to-day improvements/i).className).toContain('case_title_h2')

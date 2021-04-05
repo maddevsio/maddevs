@@ -20,14 +20,14 @@ exports[`NationwideSuccess component should render correctly 1`] = `
     Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision
     and understanding of its target audience, we were able to
     
-      <nuxt-link-stub
+      <nuxtlink-stub
         class="case_link"
         to="/services#software-development"
       >
         
       build a product
     
-      </nuxt-link-stub>
+      </nuxtlink-stub>
        that truly solves
     this customer’s problems. The year-over-year growth rate is hugely impressive.
   
