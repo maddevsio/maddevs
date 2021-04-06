@@ -242,17 +242,17 @@ export default {
         ? this.caseGoDeeScrollContainer.scrollTop
         : window.scrollY
       const area = document.querySelector('#case-header')
+
+      if (!area) return
+
       const areaHeight = (area.offsetTop + area.offsetHeight) - this.$refs.overlay.offsetHeight
+      const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
+      const isBeforeBottomPointSection = scrollTop <= areaHeight // Before Bottom point of the section
 
-      if (area) {
-        const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
-        const isBeforeBottomPointSection = scrollTop <= areaHeight // Before Bottom point of the section
-
-        if (isAfterTopPointSection && isBeforeBottomPointSection) {
-          this.isTransparentBG = true
-        } else {
-          this.isTransparentBG = false
-        }
+      if (isAfterTopPointSection && isBeforeBottomPointSection) {
+        this.isTransparentBG = true
+      } else {
+        this.isTransparentBG = false
       }
     },
 
