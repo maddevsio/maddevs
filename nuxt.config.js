@@ -74,7 +74,7 @@ module.exports = {
    */
   loading: {
     color: '#ec1c24',
-    height: '3px',
+    height: '2px',
   },
   plugins: ['~/plugins/vuelidate.js', '~/plugins/vue-social-sharing.js', '~/plugins/get-media-from-s3.js'],
   generate: {
