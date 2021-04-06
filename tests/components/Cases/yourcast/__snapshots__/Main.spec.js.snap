@@ -220,6 +220,7 @@ exports[`Main component should render correctly 1`] = `
                 <img
                   alt="Laptops"
                   class="image"
+                  data-testid="test-picture-img"
                   height="449"
                   loading=""
                   src="img.jpg"
@@ -242,6 +243,7 @@ exports[`Main component should render correctly 1`] = `
                 <img
                   alt="Laptops"
                   class="image"
+                  data-testid="test-picture-img"
                   height="449"
                   loading=""
                   src="img.jpg"
@@ -281,6 +283,7 @@ exports[`Main component should render correctly 1`] = `
                 <img
                   alt="Smartphones"
                   class="image"
+                  data-testid="test-picture-img"
                   height="627"
                   loading=""
                   src="img.jpg"
@@ -303,6 +306,7 @@ exports[`Main component should render correctly 1`] = `
                 <img
                   alt="Smartphones"
                   class="image"
+                  data-testid="test-picture-img"
                   height="627"
                   loading=""
                   src="img.jpg"
@@ -342,6 +346,7 @@ exports[`Main component should render correctly 1`] = `
                 <img
                   alt="Tablets"
                   class="image"
+                  data-testid="test-picture-img"
                   height="374"
                   loading=""
                   src="img.jpg"
@@ -364,6 +369,7 @@ exports[`Main component should render correctly 1`] = `
                 <img
                   alt="Tablets"
                   class="image"
+                  data-testid="test-picture-img"
                   height="374"
                   loading=""
                   src="img.jpg"
@@ -530,6 +536,7 @@ exports[`Main component should render correctly 1`] = `
       >
         <div
           class="card background-color-purple-light"
+          data-testid="test-card-project-milestone"
         >
           <div
             class="card_lottie"
@@ -665,6 +672,7 @@ exports[`Main component should render correctly 1`] = `
         </div>
         <div
           class="card background-color-purple-primary"
+          data-testid="test-card-project-milestone"
         >
           <div
             class="card_lottie"
@@ -1134,6 +1142,7 @@ exports[`Main component should render correctly 1`] = `
         </div>
         <div
           class="card background-color-purple-medium"
+          data-testid="test-card-project-milestone"
         >
           <div
             class="card_lottie"
@@ -1309,6 +1318,7 @@ exports[`Main component should render correctly 1`] = `
         </div>
         <div
           class="card background-color-purple-dark"
+          data-testid="test-card-project-milestone"
         >
           <div
             class="card_lottie"
@@ -1418,6 +1428,7 @@ exports[`Main component should render correctly 1`] = `
         </div>
         <div
           class="card background-color-black-primary-bg"
+          data-testid="test-card-project-milestone"
         >
           <div
             class="card_lottie"
@@ -3473,6 +3484,7 @@ exports[`Main component should render correctly 1`] = `
           <img
             alt="iPhone XS Max Gold"
             class="image"
+            data-testid="test-picture-img"
             height="609.19"
             loading=""
             src="img.jpg"
@@ -3545,6 +3557,7 @@ exports[`Main component should render correctly 1`] = `
             <img
               alt="Rinat Shcherba"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="img.jpg"
@@ -3588,6 +3601,7 @@ exports[`Main component should render correctly 1`] = `
             <img
               alt="Daniyar Chambylov"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="img.jpg"
@@ -3631,6 +3645,7 @@ exports[`Main component should render correctly 1`] = `
             <img
               alt="Vladimir Shebarshov"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="img.jpg"
@@ -3674,6 +3689,7 @@ exports[`Main component should render correctly 1`] = `
             <img
               alt="Andrew Minkin"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="img.jpg"
@@ -3717,6 +3733,7 @@ exports[`Main component should render correctly 1`] = `
             <img
               alt="Erik Sultanaliev"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="img.jpg"
@@ -3773,6 +3790,7 @@ exports[`Main component should render correctly 1`] = `
               <img
                 alt="Andrew Minkin"
                 class="image"
+                data-testid="test-picture-img"
                 height="0"
                 loading="lazy"
                 src="img.jpg"

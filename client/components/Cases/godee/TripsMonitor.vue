@@ -14,6 +14,7 @@
         <div
           v-if="isIphone"
           class="case_video-flex-wrapper"
+          data-testid="test-case_video-flex-wrapper"
         >
           <Picture
             :shadow="false"

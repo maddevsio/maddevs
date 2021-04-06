@@ -91,6 +91,7 @@
           v-if="isIphone"
           :src="getMediaFromS3('/images/Cases/nambafood/jpg/map-blank.jpg')"
           class="case_ios-map-video-image case_box-shadow"
+          data-testid="test-case_ios-map-video-image"
         >
         <video
           v-else

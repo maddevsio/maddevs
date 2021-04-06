@@ -42,6 +42,7 @@
           :srcset="[img.x2 + ' 2x']"
           :alt="img.alt"
           class="case_card-content_image"
+          data-testid="test-case_card-content_image"
         >
       </picture>
     </div>

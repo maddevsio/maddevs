@@ -40,6 +40,7 @@ exports[`CardGoDeePreview component should render correctly 1`] = `
         <img
           alt="godee"
           class="image"
+          data-testid="test-picture-img"
           height="50"
           loading=""
           src="img.jpg"
@@ -60,6 +61,7 @@ exports[`CardGoDeePreview component should render correctly 1`] = `
         <img
           alt="GoDee: bus app management control panel"
           class="image"
+          data-testid="test-picture-img"
           height="160"
           loading=""
           src="img.jpg"

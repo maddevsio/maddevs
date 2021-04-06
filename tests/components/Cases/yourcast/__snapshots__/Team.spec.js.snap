@@ -31,6 +31,7 @@ exports[`Team component should render correctly 1`] = `
           <img
             alt="Rinat Shcherba"
             class="image grey-background"
+            data-testid="test-picture-img"
             height="50"
             loading="lazy"
             src="img.jpg"
@@ -74,6 +75,7 @@ exports[`Team component should render correctly 1`] = `
           <img
             alt="Daniyar Chambylov"
             class="image grey-background"
+            data-testid="test-picture-img"
             height="50"
             loading="lazy"
             src="img.jpg"
@@ -117,6 +119,7 @@ exports[`Team component should render correctly 1`] = `
           <img
             alt="Vladimir Shebarshov"
             class="image grey-background"
+            data-testid="test-picture-img"
             height="50"
             loading="lazy"
             src="img.jpg"
@@ -160,6 +163,7 @@ exports[`Team component should render correctly 1`] = `
           <img
             alt="Andrew Minkin"
             class="image grey-background"
+            data-testid="test-picture-img"
             height="50"
             loading="lazy"
             src="img.jpg"
@@ -203,6 +207,7 @@ exports[`Team component should render correctly 1`] = `
           <img
             alt="Erik Sultanaliev"
             class="image grey-background"
+            data-testid="test-picture-img"
             height="50"
             loading="lazy"
             src="img.jpg"
@@ -259,6 +264,7 @@ exports[`Team component should render correctly 1`] = `
             <img
               alt="Andrew Minkin"
               class="image"
+              data-testid="test-picture-img"
               height="0"
               loading="lazy"
               src="img.jpg"

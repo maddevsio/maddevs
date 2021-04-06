@@ -18,6 +18,7 @@ exports[`Picture component should render correctly 1`] = `
         <img
           alt=""
           class="image"
+          data-testid="test-picture-img"
           height="0"
           loading="lazy"
           src="img.jpg"
@@ -47,6 +48,7 @@ exports[`Picture component should render correctly 1`] = `
               <img
                 alt=""
                 class="image"
+                data-testid="test-picture-img"
                 height="0"
                 loading="lazy"
                 src="img.jpg"
@@ -68,6 +70,7 @@ exports[`Picture component should render correctly 1`] = `
               <img
                 alt=""
                 class="image"
+                data-testid="test-picture-img"
                 height="0"
                 loading="lazy"
                 src="img.jpg"
@@ -113,6 +116,7 @@ exports[`Picture component should render correctly 1`] = `
             <img
               alt=""
               class="image"
+              data-testid="test-picture-img"
               height="0"
               loading="lazy"
               src="img.jpg"
@@ -134,6 +138,7 @@ exports[`Picture component should render correctly 1`] = `
             <img
               alt=""
               class="image"
+              data-testid="test-picture-img"
               height="0"
               loading="lazy"
               src="img.jpg"

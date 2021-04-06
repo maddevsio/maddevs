@@ -37,6 +37,7 @@ exports[`CardUseCase component should render correctly 1`] = `
           <img
             alt="alt"
             class="image"
+            data-testid="test-picture-img"
             height="0"
             loading=""
             src="img.jpg"
@@ -59,6 +60,7 @@ exports[`CardUseCase component should render correctly 1`] = `
           <img
             alt="alt"
             class="image"
+            data-testid="test-picture-img"
             height="0"
             loading=""
             src="img.jpg"

@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mvp component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular"
+  >
+    <h3
+      class="case_title_h3 m-12_bottom"
+    >
+      
+    Minimum viable product MVP
+  
+    </h3>
+     
+    <p
+      class="case_paragraph m-24_bottom media-m-12_bottom"
+    >
+      
+    Before investing a considerable amount of money in building software, hiring personnel and acquiring
+    minibuses, GoDee wanted to
+    
+      <nuxtlink-stub
+        class="case_link"
+        to="/services#software-development"
+      >
+        
+      develop an MVP
+    
+      </nuxtlink-stub>
+       to understand
+    the market fit potential.
+  
+    </p>
+     
+    <p
+      class="case_paragraph m-24_bottom"
+    >
+      
+    Although services such as GoDee exist in other parts of the world, simulating these programs in Ho Chi Minh
+    City was pointless because the city’s commuting culture is quite different. That’s why user feedback was
+    crucial to its improvement and key to its current rapid growth.
+  
+    </p>
+     
+    <div
+      class="case_minimum-viable-product-cards"
+    >
+      <div
+        class="case_card background-color-silver"
+      >
+        <div
+          class="card-content"
+        >
+          <div
+            class="card-content_icon card-content_live-chat-icon"
+          />
+           
+          <h4
+            class="case_title_h4 card-content_title"
+          >
+            
+    Live chat feature
+  
+          </h4>
+           
+          <p
+            class="case_paragraph"
+          >
+            
+          Over the time period of three months, our integrated live chat feature collected extensive feedback
+          from users to make white-collar workers’ commutes easier.
+        
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="case_card background-color-silver"
+      >
+        <div
+          class="card-content"
+        >
+          <div
+            class="card-content_icon card-content_trip-request-icon"
+          />
+           
+          <h4
+            class="case_title_h4 card-content_title"
+          >
+            
+    Trip request
+  
+          </h4>
+           
+          <p
+            class="case_paragraph"
+          >
+            
+          This feature enabled GoDee to analyse the actual demand for travel to various Ho Chi Minh City
+          districts.
+        
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
