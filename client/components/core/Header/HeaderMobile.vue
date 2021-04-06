@@ -98,6 +98,13 @@ export default {
     FooterContacts,
   },
 
+  props: {
+    enablePageScroll: {
+      type: Function,
+      default: () => {},
+    },
+  },
+
   data() {
     return {
       navigation,
@@ -121,8 +128,7 @@ export default {
         document.body.classList.contains('scrollDisabled')
         && document.documentElement.classList.contains('scrollDisabled')
       ) {
-        document.body.classList.remove('scrollDisabled')
-        document.documentElement.classList.remove('scrollDisabled')
+        this.enablePageScroll()
       }
     },
 
@@ -149,7 +155,7 @@ export default {
 .mobile-header {
   width: 100%;
   height: 100vh;
-  min-height: calc(100vh - (100vh - 100%));
+  min-height: calc(100vh - (100vh - 100%)); // 100vh height for mobile Safari browser
   padding-top: 48px; // height of sticky header
   position: fixed;
   top: 0;

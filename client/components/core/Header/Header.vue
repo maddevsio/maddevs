@@ -112,6 +112,7 @@
     <!-- Mobile header -->
     <HeaderMobile
       v-if="isActiveMobileMenu"
+      :enable-page-scroll="enablePageScroll"
       @changed-page="isActiveMobileMenu = false"
       @open-modal="$refs.modalContactMe.show()"
     />
@@ -180,14 +181,24 @@ export default {
       window.scrollTo(0, 0)
     },
 
-    enableScrollOnBody() {
-      document.body.classList.remove('scrollDisabled')
-      document.documentElement.classList.remove('scrollDisabled')
+    preventDefault(e) {
+      e.preventDefault()
     },
 
-    disableScrollOnBody() {
+    enablePageScroll() {
+      const scrollY = document.body.style.top
+      document.body.removeEventListener('touchmove', this.preventDefault)
+      document.body.classList.remove('scrollDisabled')
+      document.documentElement.classList.remove('scrollDisabled')
+      window.scrollTo(0, parseInt(scrollY || '0', 10) * -1)
+    },
+
+    disablePageScroll() {
+      const { scrollY } = window
+      document.body.addEventListener('touchmove', this.preventDefault, { passive: false })
       document.body.classList.add('scrollDisabled')
       document.documentElement.classList.add('scrollDisabled')
+      document.body.style.top = `-${scrollY}px`
     },
 
     setDefaultStateForHeader() {
@@ -198,21 +209,24 @@ export default {
       this.showLogoText = !(scrollTop >= 10)
     },
 
-    handleMobileMenuScroll() {
+    handleMobileMenuScroll(e) {
+      e.stopImmediatePropagation()
       this.changeLogoState(this.mobileHeaderScrollbar.scrollTop)
     },
 
     toggleMobileMenu() {
       this.isActiveMobileMenu = !this.isActiveMobileMenu
       if (this.isActiveMobileMenu) {
-        this.disableScrollOnBody()
+        this.disablePageScroll()
         this.$nextTick(() => {
           this.mobileHeaderScrollbar = document.getElementById('mobile-header-scrollbar')
           this.mobileHeaderScrollbar.addEventListener('scroll', this.handleMobileMenuScroll)
+          this.mobileHeaderScrollbar.addEventListener('touchmove', this.handleMobileMenuScroll)
         })
       } else {
-        this.enableScrollOnBody()
+        this.enablePageScroll()
         this.mobileHeaderScrollbar.removeEventListener('scroll', this.handleMobileMenuScroll)
+        this.mobileHeaderScrollbar.removeEventListener('touchmove', this.handleMobileMenuScroll)
       }
     },
 
@@ -242,13 +256,10 @@ export default {
         ? this.caseGoDeeScrollContainer.scrollTop
         : window.scrollY
       const area = document.querySelector('#case-header')
-
       if (!area) return
-
       const areaHeight = (area.offsetTop + area.offsetHeight) - this.$refs.overlay.offsetHeight
       const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
       const isBeforeBottomPointSection = scrollTop <= areaHeight // Before Bottom point of the section
-
       if (isAfterTopPointSection && isBeforeBottomPointSection) {
         this.isTransparentBG = true
       } else {
@@ -289,6 +300,8 @@ export default {
   height: 40px;
   padding: 11px 0;
   position: fixed;
+  top: -1px;
+  left: 0;
   z-index: 3;
   background-color: $bgcolor--black;
 
