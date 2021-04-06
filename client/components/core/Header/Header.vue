@@ -2,6 +2,7 @@
   <div
     id="header"
     class="header-wrapper"
+    :class="{ 'is-transparent-bg': isTransparentBG }"
   >
     <div
       id="overlay"
@@ -145,6 +146,7 @@ export default {
       showLogoText: true,
       isActiveMobileMenu: false,
       isCasePage: false,
+      isTransparentBG: true,
       caseHeader: null,
       headerWhiteLogoText: null,
       caseFirstSection: null,
@@ -166,6 +168,7 @@ export default {
   mounted() {
     this.getDOMSelectors()
     this.addEventListeners()
+    this.setStylesForHeader()
     if (this.isCasePage && this.$nuxt.$route.path.includes('/godee')) {
       this.setWidthForHeader()
     }
@@ -239,18 +242,21 @@ export default {
     },
 
     setStylesForHeader() {
-      const scrollFromTop = this.$nuxt.$route.path.includes('/godee')
+      const scrollTop = this.$nuxt.$route.path.includes('/godee')
         ? this.caseGoDeeScrollContainer.scrollTop
         : window.scrollY
-      if (this.$refs.overlay && this.headerWhiteLogoText) {
-        this.$refs.overlay.style.opacity = 1.6
-          - (this.$refs.overlay.offsetHeight
-            - (scrollFromTop - this.caseHeader.getBoundingClientRect().height)
-            - this.$refs.headerContainer.offsetHeight)
-            / this.$refs.overlay.offsetHeight
-        this.headerWhiteLogoText.style.opacity = -0.4
-          - (this.$refs.overlay.offsetHeight - this.caseFirstSection.getBoundingClientRect().top)
-            / this.$refs.overlay.offsetHeight
+      const area = document.querySelector('#case-header')
+      const areaHeight = (area.offsetTop + area.offsetHeight) - this.$refs.overlay.offsetHeight
+
+      if (area) {
+        const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
+        const isBeforeBottomPointSection = scrollTop <= areaHeight // Before Bottom point of the section
+
+        if (isAfterTopPointSection && isBeforeBottomPointSection) {
+          this.isTransparentBG = true
+        } else {
+          this.isTransparentBG = false
+        }
       }
     },
 
@@ -412,21 +418,50 @@ export default {
   }
 }
 
+// ------------ Overlay styles ------------- //
 #overlay {
   width: 100%;
   height: 40px;
   padding: 11px 0;
   position: fixed;
   z-index: 2;
-  background-color: $bgcolor--black;
-  opacity: 0;
-  transition: opacity 0.6s;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $bgcolor--black;
+    opacity: 1;
+  }
 
   @media screen and (max-width: 991px) {
     height: 48px;
     padding: 0;
   }
 }
+
+/deep/ #header-logo-text {
+  opacity: 0;
+  transform: translateY(-100px) translateX(5%) scale(0.9);
+  transition: all 0.2s ease;
+}
+
+.is-transparent-bg {
+  #overlay::before {
+    height: 0;
+    opacity: 0;
+  }
+
+  /deep/ #header-logo-text {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// ------------ END Overlay styles ------------- //
 
 .mobile-menu_is-open {
   width: 100%;
