@@ -536,6 +536,7 @@ exports[`Main component should render correctly 1`] = `
       >
         <div
           class="card background-color-purple-light"
+          data-testid="test-card-project-milestone"
         >
           <div
             class="card_lottie"
@@ -671,6 +672,7 @@ exports[`Main component should render correctly 1`] = `
         </div>
         <div
           class="card background-color-purple-primary"
+          data-testid="test-card-project-milestone"
         >
           <div
             class="card_lottie"
@@ -1140,6 +1142,7 @@ exports[`Main component should render correctly 1`] = `
         </div>
         <div
           class="card background-color-purple-medium"
+          data-testid="test-card-project-milestone"
         >
           <div
             class="card_lottie"
@@ -1315,6 +1318,7 @@ exports[`Main component should render correctly 1`] = `
         </div>
         <div
           class="card background-color-purple-dark"
+          data-testid="test-card-project-milestone"
         >
           <div
             class="card_lottie"
@@ -1424,6 +1428,7 @@ exports[`Main component should render correctly 1`] = `
         </div>
         <div
           class="card background-color-black-primary-bg"
+          data-testid="test-card-project-milestone"
         >
           <div
             class="card_lottie"

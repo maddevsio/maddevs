@@ -4,6 +4,7 @@ exports[`CardProjectMilestone component should render correctly 1`] = `
 <div>
   <div
     class="card background-color-background"
+    data-testid="test-card-project-milestone"
   >
     <div
       class="card_lottie"

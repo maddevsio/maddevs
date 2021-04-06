@@ -74,6 +74,7 @@
       <div
         ref="videoWrap"
         class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video"
+        data-testid="test-case_sjmc-phone"
         @click="videoSetState"
       >
         <video
