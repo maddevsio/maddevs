@@ -4,7 +4,7 @@ exports[`CaseHeader component should render correctly 1`] = `
 <div>
   <section
     alt="some-alt"
-    class="case_header"
+    class="case_header case_header-"
     file="some-filename"
     height="100"
     id="case-header"

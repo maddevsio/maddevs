@@ -5,7 +5,7 @@ exports[`namba food renders correctly 1`] = `
   class="main case"
 >
   <section
-    class="case_header"
+    class="case_header case_header-"
     id="case-header"
   >
     <div
