@@ -68,6 +68,7 @@ Temporary tokens for the correct operation of AmoCrm are stored in mLab
 Add a link to the DNS sentry, where the errors will be sent.
 
 * NODE_SENTRY_DSN
+* NODE_SENTRY_DSN_FRONT
 
 #### Domain
 
