@@ -2,7 +2,7 @@
   <section
     id="case-header"
     class="case_header"
-    :class="className"
+    :class="projectName"
   >
     <!-- Image placeholder fallback for Video -->
     <div
@@ -103,7 +103,7 @@ export default {
   },
 
   computed: {
-    className() {
+    projectName() {
       if (!this.isIphone) return `case_header-${this.$props.project}`
       return ''
     },
