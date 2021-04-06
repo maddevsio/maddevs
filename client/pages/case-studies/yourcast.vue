@@ -2,6 +2,7 @@
   <main class="case">
     <CaseHeader
       :logo="logo"
+      project="yourcast"
       video-name="/videos/yourcast-banner.mp4"
       video-fallback-path="/images/Cases/yourcast/png/banner-bg.png"
     >

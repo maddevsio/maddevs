@@ -2,6 +2,7 @@
   <section
     id="case-header"
     class="case_header"
+    :class="className"
   >
     <!-- Image placeholder fallback for Video -->
     <div
@@ -88,12 +89,24 @@ export default {
       type: String,
       default: '',
     },
+
+    project: {
+      type: String,
+      default: '',
+    },
   },
 
   data() {
     return {
       isIphone: false,
     }
+  },
+
+  computed: {
+    className() {
+      if (!this.isIphone) return `case_header-${this.$props.project}`
+      return ''
+    },
   },
 
   mounted() {
@@ -127,6 +140,10 @@ export default {
     &:after {
       display: none;
     }
+  }
+
+  &_header-yourcast {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   &_header-content {

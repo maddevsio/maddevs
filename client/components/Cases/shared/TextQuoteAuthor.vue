@@ -90,7 +90,7 @@ export default {
   }
 
   &__position {
-    @include default_text($text-color--grey-cases, 13px, 21.58px, -2%, normal);
+    @include default_text($text-color--grey-team-list, 13px, 21.58px, -2%, normal);
   }
 
   @media screen and (max-width: 768px) {

@@ -81,6 +81,10 @@
     >
       <i />
     </button>
+    <div
+      id="progress-bar"
+      ref="progressBar"
+    />
   </div>
 </template>
 
@@ -211,6 +215,8 @@ export default {
       } else {
         this.buttonIsActive = false
       }
+
+      this.calcProgress()
     },
 
     shareButtonsScroll() {
@@ -233,6 +239,13 @@ export default {
       } else {
         shareButtons.style.cssText = 'top: 100px'
       }
+    },
+
+    calcProgress() {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+      const scrolled = (winScroll / height) * 100
+      this.$refs.progressBar.style.width = `${scrolled}%`
     },
   },
 }
@@ -455,6 +468,19 @@ export default {
         background-color: $bgcolor--white-primary;
       }
     }
+  }
+}
+
+#progress-bar {
+  width: 0%;
+  height: 2px;
+  position: fixed;
+  top: 0;
+  background-color: $bgcolor--red;
+  z-index: 3;
+
+  @media only screen and (max-width: 768px) {
+    height: 1px;
   }
 }
 
