@@ -262,7 +262,7 @@ export default {
       const areaHeight = (area.offsetTop + area.offsetHeight) - this.$refs.overlay.offsetHeight
       const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
       const isBeforeBottomPointSection = scrollTop <= areaHeight // Before Bottom point of the section
-      
+
       if (isAfterTopPointSection && isBeforeBottomPointSection) {
         this.isTransparentBG = true
       } else {
