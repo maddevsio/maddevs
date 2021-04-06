@@ -89,14 +89,15 @@ export default {
 <style lang="scss" scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s;
+  transition: all 0.2s ease;
 }
 
 .header-logo-text {
-  transition: opacity 0.6s;
+  transition: opacity 0.2s;
 }
 
 .fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  transform: translateY(-100px) translateX(5%) scale(0.9);
   opacity: 0;
 }
 </style>
