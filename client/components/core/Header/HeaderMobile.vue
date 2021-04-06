@@ -117,13 +117,6 @@ export default {
   methods: {
     goToPage() {
       this.$emit('changed-page')
-      if (
-        document.body.classList.contains('scrollDisabled')
-        && document.documentElement.classList.contains('scrollDisabled')
-      ) {
-        document.body.classList.remove('scrollDisabled')
-        document.documentElement.classList.remove('scrollDisabled')
-      }
     },
 
     refreshImg() {

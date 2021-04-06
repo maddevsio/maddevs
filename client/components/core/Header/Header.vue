@@ -178,13 +178,17 @@ export default {
     },
 
     enableScrollOnBody() {
-      document.body.classList.remove('scrollDisabled')
-      document.documentElement.classList.remove('scrollDisabled')
+      const scrollY = document.body.style.top
+      document.body.style.removeProperty('overflow')
+      document.body.style.removeProperty('position')
+      window.scrollTo(0, parseInt(scrollY || '0', 10) * -1)
     },
 
     disableScrollOnBody() {
-      document.body.classList.add('scrollDisabled')
-      document.documentElement.classList.add('scrollDisabled')
+      const { scrollY } = window
+      document.body.style.overflow = 'hidden'
+      document.body.style.position = 'fixed'
+      document.body.style.top = `-${scrollY}px`
     },
 
     setDefaultStateForHeader() {
@@ -283,6 +287,8 @@ export default {
   height: 40px;
   padding: 11px 0;
   position: fixed;
+  left: 0;
+  top: 0;
   z-index: 3;
   background-color: $bgcolor--black;
 

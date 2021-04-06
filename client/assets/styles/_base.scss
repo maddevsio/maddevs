@@ -55,13 +55,6 @@ main {
   transition: opacity 0.3s ease-in;
 }
 
-.scrollDisabled {
-  width: 100%;
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-}
-
 /* poppins-400normal - latin */
 @font-face {
   font-family: 'Poppins-Regular';
