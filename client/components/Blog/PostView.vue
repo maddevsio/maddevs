@@ -82,8 +82,8 @@
       <i />
     </button>
     <div
-      class="progress-bar"
       ref="progressBar"
+      class="progress-bar"
     />
   </div>
 </template>
