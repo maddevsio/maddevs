@@ -7,7 +7,7 @@
       </div>
       <div class="customer-university__wrapper">
         <div class="customer-university__featured-post">
-          <router-link
+          <NuxtLink
             v-if="featured"
             :to="`/customer-university/${master.data.featured_cu.uid}/`"
             class="featured-post"
@@ -17,31 +17,31 @@
               {{ $prismic.asText(featured.title).replace(/^[0-9]*\. /, '') }}
             </h2>
             <p class="featured-post__text">
-              {{ getFirstParagraph(featured) }}
+              {{ firstParagraph }}
             </p>
-            <post-author :document="featured" />
+            <PostAuthor :document="featured" />
             <div class="featured-post__cover-wrapper">
-              <prismic-image
+              <PrismicImage
                 :field="featured.featured_image"
                 class="featured-post__cover"
                 width="560"
                 height="347"
               />
             </div>
-          </router-link>
+          </NuxtLink>
         </div>
         <div class="customer-university__list">
           <div class="customer-university__list-wrapper">
             <span class="customer-university__list-title">Series of articles:</span>
             <div>
-              <router-link
+              <NuxtLink
                 v-for="(cluster, i) in clustersToShow"
                 :key="i"
                 :to="cluster.items.length ? `/customer-university/${cluster.items[0].cu_post.uid}/` : ''"
                 class="customer-university__list-item single-cluster"
               >
                 <div class="single-cluster__cover-wrapper">
-                  <prismic-image
+                  <PrismicImage
                     :field="cluster.primary.cover_image"
                     class="single-cluster__cover"
                     width="295"
@@ -56,13 +56,13 @@
                     {{ $prismic.asText(cluster.primary.description) }}
                   </div>
                 </div>
-              </router-link>
+              </NuxtLink>
             </div>
             <div class="customer-university__list-show-more-wrapper">
               <button
                 v-if="clusters.length > 3 && !showAll"
                 class="customer-university__list-show-more"
-                @click="showMore"
+                @click="showAll = true"
               >
                 Browse all series
               </button>
@@ -75,7 +75,8 @@
 </template>
 
 <script>
-import PostAuthor from '@/components/Blog/PostAuthor'
+import PostAuthor from '@/components/Blog/shared/PostAuthor'
+import getFirstParagraph from '@/helpers/getFirstParagraph'
 
 export default {
   name: 'CustomerUniversitySection',
@@ -95,7 +96,8 @@ export default {
   async fetch() {
     const master = await this.$prismic.api.getSingle('cu_master')
     if (master.data.featured_cu.uid) {
-      this.featured = (await this.$prismic.api.getByUID('customer_university', master.data.featured_cu.uid)).data
+      const featured = await this.$prismic.api.getByUID('customer_university', master.data.featured_cu.uid)
+      this.featured = featured.data
       this.formattedDate = Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(
         new Date(this.featured.date),
       )
@@ -114,46 +116,18 @@ export default {
     clustersToShow() {
       return this.showAll ? this.clusters : this.clusters.slice(0, 3)
     },
-  },
 
-  methods: {
-    showMore() {
-      this.showAll = true
-    },
-
-    getFirstParagraph(post) {
-      const slices = post.body
-      let firstParagraph = ''
-      let haveFirstParagraph = false
-
-      slices.forEach(slice => {
-        if (!haveFirstParagraph && slice.slice_type === 'text') {
-          slice.primary.text.forEach(block => {
-            if (block.type === 'paragraph' && !haveFirstParagraph) {
-              firstParagraph += block.text
-              haveFirstParagraph = true
-            }
-          })
-        }
-      })
-      return this.sliceParagraph(firstParagraph)
-    },
-
-    sliceParagraph(paragraph) {
-      const textLimit = 150
-      const limitedText = paragraph.substr(0, textLimit)
-
-      if (paragraph.length > textLimit) {
-        return `${limitedText.substr(0, limitedText.lastIndexOf(' '))}...`
-      }
-      return paragraph
+    firstParagraph() {
+      const slices = this.featured.body
+      const limit = 150
+      return getFirstParagraph(slices, limit)
     },
   },
 }
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/styles/vars';
+@import '../../../assets/styles/vars';
 
 @mixin label {
   color: $text-color--grey-team-list;

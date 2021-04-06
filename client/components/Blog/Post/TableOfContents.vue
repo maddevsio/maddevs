@@ -58,8 +58,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-@import '../../assets/styles/cases/mixins';
+@import '../../../assets/styles/vars';
+@import '../../../assets/styles/cases/mixins';
 
 .table-of-contents {
   padding: 23px 24px;

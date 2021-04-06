@@ -12,7 +12,7 @@
     />
     <div class="blog-post__author-info">
       <p class="blog-post__author-name">
-        {{ $prismic.asText(document.author).substr(0, 100) }}
+        {{ shortTitle }}
       </p>
       <div class="blog-post__data-of-creation">
         <span class="blog-post__author-title">{{ document.author_title }}</span>
@@ -30,11 +30,17 @@ export default {
       required: true,
     },
   },
+
+  computed: {
+    shortTitle() {
+      return this.$prismic.asText(this.document.author).substr(0, 100)
+    },
+  },
 }
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/styles/vars';
+@import '../../../assets/styles/vars';
 .blog-post {
   &__author {
     display: flex;

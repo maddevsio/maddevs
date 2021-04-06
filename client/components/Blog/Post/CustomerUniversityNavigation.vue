@@ -9,7 +9,7 @@
       </div>
       <div class="cluster-navigation__inner">
         <ol class="cluster-navigation__column cluster-navigation__column--left">
-          <router-link
+          <NuxtLink
             v-for="(post, index) in leftColumnPosts"
             :key="post.cu_post.id"
             :to="`/customer-university/${post.cu_post.uid}/`"
@@ -22,13 +22,13 @@
             <div class="label">
               {{ $prismic.asText(post.chapter_name) }}
             </div>
-          </router-link>
+          </NuxtLink>
         </ol>
         <ol
           :start="leftColumnPosts.length + 1"
           class="cluster-navigation__column cluster-navigation__column--right"
         >
-          <router-link
+          <NuxtLink
             v-for="(post, index) in rightColumnPosts"
             :key="post.cu_post.id"
             :to="`/customer-university/${post.cu_post.uid}/`"
@@ -39,7 +39,7 @@
             <div class="label">
               {{ $prismic.asText(post.chapter_name) }}
             </div>
-          </router-link>
+          </NuxtLink>
         </ol>
       </div>
     </div>
@@ -48,7 +48,7 @@
 
 <script>
 export default {
-  name: 'CuNavigation',
+  name: 'CustomerUniversityNavigation',
   props: {
     clusterPosts: {
       type: Array,
@@ -85,7 +85,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/styles/vars';
+@import '../../../assets/styles/vars';
 
 .cluster-navigation {
   background: $bgcolor--silver;

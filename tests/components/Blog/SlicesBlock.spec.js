@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import SlicesBlock from '@/components/Blog/SlicesBlock'
+import SlicesBlock from '@/components/Blog/Post/SlicesBlock'
 
 describe('slice block component', () => {
   const slices = [

@@ -4,18 +4,18 @@
       :class="{ 'box-shadow': boxShadow }"
       class="swiper-container thumb-example"
     >
-      <swiper
+      <Swiper
         ref="swiperTop"
         :options="swiperOptionTop"
         class="swiper gallery-top"
       >
-        <swiper-slide
+        <SwiperSlide
           v-for="(element, index) in components"
           :key="index"
         >
-          <prismic-image :field="element.gallery_image" />
-        </swiper-slide>
-      </swiper>
+          <PrismicImage :field="element.gallery_image" />
+        </SwiperSlide>
+      </Swiper>
     </div>
     <p
       v-if="sliderDescription !== ''"
@@ -23,21 +23,21 @@
     >
       {{ sliderDescription }}
     </p>
-    <swiper
+    <Swiper
       ref="swiperThumbs"
       :options="swiperOptionThumbs"
       class="swiper gallery-thumbs"
     >
-      <swiper-slide
+      <SwiperSlide
         v-for="element in components"
         :key="element.fileName"
       >
-        <prismic-image
+        <PrismicImage
           v-if="element.gallery_image.Mobile"
           :field="element.gallery_image.Mobile"
         />
-      </swiper-slide>
-    </swiper>
+      </SwiperSlide>
+    </Swiper>
   </div>
 </template>
 
@@ -98,8 +98,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../assets/styles/cases/icons';
-@import '../../assets/styles/cases/mixins';
+@import '../../../assets/styles/cases/icons';
+@import '../../../assets/styles/cases/mixins';
 
 .thumb-example {
   img {

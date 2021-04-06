@@ -1,4 +1,4 @@
-import TableOfContents from '@/components/Blog/TableOfContents'
+import TableOfContents from '@/components/Blog/Post/TableOfContents'
 import { render, fireEvent, screen } from '@testing-library/vue'
 
 describe('table of contents block in single post page', () => {

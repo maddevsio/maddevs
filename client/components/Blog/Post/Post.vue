@@ -26,25 +26,25 @@
         />
       </div>
 
-      <customer-university-header
+      <CustomerUniversityHeader
         v-if="type === 'cu_post'"
         :id="id"
         :document="document"
         :post-list="clusterPosts || []"
         :cluster-name="cluster ? $prismic.asText(cluster.primary.cluster_name) : ''"
       />
-      <blog-header
+      <BlogHeader
         v-else
         :document="document"
         :tags="tags"
         :formatted-date="formattedDate"
       />
       <div class="blog-post__main-content">
-        <table-of-contents
+        <TableOfContents
           v-if="$prismic.asText(document.table_of_contents)"
           :content="document.table_of_contents"
         />
-        <slices-block
+        <SlicesBlock
           :slices="slices"
           class="blog-post__text-container"
         />
@@ -56,20 +56,20 @@
     >
       <div class="blog-post__recommended-posts-list container">
         <section
-          v-for="recommendedPost in recommendedPosts"
-          :key="recommendedPost.id"
-          :post="recommendedPost"
+          v-for="post in recommendedPosts"
+          :key="post.id"
+          :post="post"
           class="blog-post__recommended-post"
         >
-          <recommended-blog-widget
-            :post="recommendedPost"
+          <RecommendedBlogWidget
+            :post="post"
             class-name="recommended-post"
           />
         </section>
       </div>
     </div>
-    <cu-navigation
-      v-if="clusterPosts"
+    <CustomerUniversityNavigation
+      v-if="clusterPosts && cluster"
       :id="id"
       :cluster="cluster"
       :cluster-posts="clusterPosts"
@@ -85,13 +85,13 @@
 </template>
 
 <script>
-import SlicesBlock from '@/components/Blog/SlicesBlock.vue'
-import TableOfContents from '@/components/Blog/TableOfContents'
+import SlicesBlock from '@/components/Blog/Post/SlicesBlock.vue'
+import TableOfContents from '@/components/Blog/Post/TableOfContents'
 import BlogHeader from '@/components/Blog/header/Blog'
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity'
-import CuNavigation from '@/components/Blog/CuNavigation'
+import CustomerUniversityNavigation from '@/components/Blog/Post/CustomerUniversityNavigation'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
-import RecommendedBlogWidget from '@//components/Blog/RecommendedBlogWidget'
+import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
 
 export default {
   name: 'PostView',
@@ -101,7 +101,7 @@ export default {
     TableOfContents,
     BlogHeader,
     CustomerUniversityHeader,
-    CuNavigation,
+    CustomerUniversityNavigation,
   },
 
   mixins: [initLazyLoadMixin],
@@ -171,10 +171,7 @@ export default {
 
   computed: {
     clusterPosts() {
-      if (this.cluster !== null) {
-        return this.cluster.items
-      }
-      return null
+      return this.cluster ? this.cluster.items : []
     },
 
     wrapperClass() {
@@ -206,15 +203,12 @@ export default {
     },
 
     handleScroll(e) {
-      if (e.target.scrollingElement.scrollTop !== 0) {
-        this.buttonIsActive = true
-      } else {
-        this.buttonIsActive = false
-      }
+      this.buttonIsActive = Boolean(e.target.scrollingElement.scrollTop !== 0)
     },
 
     shareButtonsScroll() {
       const shareButtons = document.querySelector('.blog-post__share')
+
       if (window.pageYOffset < 650) {
         shareButtons.style.cssText = 'position: absolute; top: 580px; left: -183px;'
       } else if (
@@ -239,9 +233,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-@import '../../assets/styles/cases/mixins';
-@import '../../assets/styles/socialNetworkIcons';
+@import '../../../assets/styles/vars';
+@import '../../../assets/styles/cases/mixins';
+@import '../../../assets/styles/socialNetworkIcons';
 
 /deep/ h2 {
   @include title($text-color--black-cases, 32px, -0.04em);

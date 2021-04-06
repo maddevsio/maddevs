@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/styles/_vars';
+@import '../../../assets/styles/_vars';
 
 .post-tag {
   border-radius: 2px;

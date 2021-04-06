@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link
+  <NuxtLink
     :to="link"
     :class="{ 'latest-post': isRecentPost }"
   >
@@ -13,7 +13,19 @@
       >
       <div>
         <h2
-          class="blog-post__title"
+          class="blog-post__title blog-post__title--short"
+          :title="$prismic.asText(post.data.title)"
+        >
+          {{ shortTitle }}
+        </h2>
+        <h2
+          class="blog-post__title blog-post__title--very-short"
+          :title="$prismic.asText(post.data.title)"
+        >
+          {{ veryShortTitle }}
+        </h2>
+        <h2
+          class="blog-post__title blog-post__title--full"
           :title="$prismic.asText(post.data.title)"
         >
           {{ $prismic.asText(post.data.title) }}
@@ -22,7 +34,7 @@
           class="blog-post__paragraph"
           data-testid="test-blog-post"
         >
-          {{ getFirstParagraph(post) }}
+          {{ firstParagraph }}
         </p>
         <div class="blog-post__meta">
           <span class="created-at">{{ formattedDate }}</span>
@@ -31,15 +43,17 @@
             class="tag"
           >{{ post.tags[0] }}</span>
         </div>
-        <post-author :document="post.data" />
+        <PostAuthor :document="post.data" />
       </div>
     </div>
-  </nuxt-link>
+  </NuxtLink>
 </template>
 
 <script>
 import linkResolver from '@/plugins/link-resolver.js'
-import PostAuthor from '@/components/Blog/PostAuthor'
+import PostAuthor from '@/components/Blog/shared/PostAuthor'
+import getFirstParagraph from '@/helpers/getFirstParagraph'
+import textEllipsis from '@/helpers/textEllipsis'
 
 export default {
   name: 'RecommendedBlogWidget',
@@ -69,40 +83,32 @@ export default {
         new Date(this.post.data.date),
       )
     },
-  },
 
-  methods: {
-    // Function to get the first paragraph of text in a blog post and limit the displayed text at 300 characters
-    getFirstParagraph(post) {
-      const textLimit = 150
-      const slices = post.data.body
-      let firstParagraph = ''
-      let haveFirstParagraph = false
+    firstParagraph() {
+      const limit = 150
+      const slices = this.post.data.body
+      return getFirstParagraph(slices, limit)
+    },
 
-      slices.forEach(slice => {
-        if (!haveFirstParagraph && slice.slice_type === 'text') {
-          slice.primary.text.forEach(block => {
-            if (block.type === 'paragraph' && !haveFirstParagraph) {
-              firstParagraph += block.text
-              haveFirstParagraph = true
-            }
-          })
-        }
-      })
+    shortTitle() {
+      if (!this.post) return ''
+      const limit = 55
+      const title = this.$prismic.asText(this.post.data.title)
+      return textEllipsis(title, { limit })
+    },
 
-      const limitedText = firstParagraph.substr(0, textLimit)
-
-      if (firstParagraph.length > textLimit) {
-        return `${limitedText.substr(0, limitedText.lastIndexOf(' '))}...`
-      }
-      return firstParagraph
+    veryShortTitle() {
+      if (!this.post) return ''
+      const limit = 45
+      const title = this.$prismic.asText(this.post.data.title)
+      return textEllipsis(title, { limit })
     },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/_vars';
+@import '../../../assets/styles/_vars';
 
 .blog-post {
   color: $text-color--black;
@@ -152,6 +158,29 @@ export default {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    height: 54px;
+    &--short {
+      display: block;
+      @media screen and (max-width: 1196px) {
+        display: none;
+      }
+    }
+    &--very-short {
+      display: none;
+      @media screen and (max-width: 1196px) {
+        display: block;
+      }
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
+    }
+    &--full {
+      display: none;
+      height: auto;
+      @media screen and (max-width: 991px) {
+        display: block;
+      }
+    }
   }
 
   &__paragraph {

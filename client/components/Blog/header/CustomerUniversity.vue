@@ -1,5 +1,5 @@
 <template>
-  <common-header
+  <CommonHeader
     :title="$prismic.asText(document.title)"
     :subtitle="$prismic.asText(document.subtitle)"
     :cover-image-url="document.featured_image.url"
@@ -20,7 +20,7 @@
           &zwnj;
         </div>
         <div class="col-12 col-lg-5 mt-0 cluster-navigation__select-wrapper">
-          <v-select
+          <VueSelect
             :options="postOptions"
             :clearable="false"
             :filterable="false"
@@ -37,40 +37,40 @@
         </div>
         <div class="col-12 col-lg-7 mt-0 cluster-navigation__buttons-wrapper">
           <div class="cluster-navigation__buttons">
-            <router-link
+            <NuxtLink
               :to="prevArticleUrl"
               :class="prevArticleUrl === '#' ? 'disabled' : ''"
               class="cluster-navigation__link"
             >
               <span class="arrow prev" />
               Previous
-            </router-link>
+            </NuxtLink>
             <span class="cluster-navigation__divider" />
-            <router-link
+            <NuxtLink
               :to="nextArticleUrl"
               :class="nextArticleUrl === '#' ? 'disabled' : ''"
               class="cluster-navigation__link"
             >
               Next
               <span class="arrow next" />
-            </router-link>
+            </NuxtLink>
           </div>
         </div>
       </div>
     </template>
-  </common-header>
+  </CommonHeader>
 </template>
 
 <script>
 import CommonHeader from '@/components/Blog/header/Common'
-import VSelect from 'vue-select'
+import VueSelect from 'vue-select'
 import 'vue-select/dist/vue-select.css'
 
 export default {
   name: 'CustomerUniversity',
   components: {
     CommonHeader,
-    VSelect,
+    VueSelect,
   },
 
   props: {

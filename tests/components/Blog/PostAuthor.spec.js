@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import PostAuthor from '@/components/Blog/PostAuthor'
+import PostAuthor from '@/components/Blog/shared/PostAuthor'
 
 describe('text slice component', () => {
   it('is a Vue instance', () => {

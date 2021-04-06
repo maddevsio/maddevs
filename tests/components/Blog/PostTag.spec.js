@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import PostTag from '@/components/Blog/PostTag'
+import PostTag from '@/components/Blog/shared/PostTag'
 
 const TAG_NAME = 'post-tag'
 const THEME_COLOR = 'very-dark'

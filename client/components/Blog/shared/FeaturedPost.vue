@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link
+  <NuxtLink
     :to="link"
     class="featured-post"
   >
@@ -9,12 +9,12 @@
           {{ $prismic.asText(post.data.title) }}
         </h1>
         <p class="featured-post__paragraph">
-          {{ getFirstParagraph() }}
+          {{ firstParagraph }}
         </p>
         <div class="featured-post__data d-flex justify-content-between">
-          <post-author :document="post.data" />
+          <PostAuthor :document="post.data" />
           <div class="featured-post__meta">
-            <post-tag
+            <PostTag
               v-if="post.tags.length"
               :tag="post.tags[0]"
               theme="dark"
@@ -33,13 +33,14 @@
         >
       </div>
     </div>
-  </nuxt-link>
+  </NuxtLink>
 </template>
 
 <script>
-import PostAuthor from '@/components/Blog/PostAuthor'
-import PostTag from '@/components/Blog/PostTag'
-import linkResolver from '@/plugins/link-resolver.js'
+import PostAuthor from '@/components/Blog/shared/PostAuthor'
+import PostTag from '@/components/Blog/shared/PostTag'
+import linkResolver from '@/plugins/link-resolver'
+import getFirstParagraph from '@/helpers/getFirstParagraph'
 
 export default {
   name: 'FeaturedPost',
@@ -57,46 +58,25 @@ export default {
 
   computed: {
     formattedDate() {
-      const date = this ? this.post.data.date : ''
-
+      const date = this.post ? this.post.data.date : ''
       return Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(date))
     },
 
     link() {
       return linkResolver(this.post)
     },
-  },
 
-  methods: {
-    getFirstParagraph() {
-      const textLimit = 200
+    firstParagraph() {
+      const limit = 200
       const slices = this.post.data.body
-      let firstParagraph = ''
-      let haveFirstParagraph = false
-
-      slices.forEach(slice => {
-        if (!haveFirstParagraph && slice.slice_type === 'text') {
-          slice.primary.text.forEach(block => {
-            if (block.type === 'paragraph' && !haveFirstParagraph) {
-              firstParagraph += block.text
-              haveFirstParagraph = true
-            }
-          })
-        }
-      })
-
-      const limitedText = firstParagraph.substr(0, textLimit)
-
-      return firstParagraph.length > textLimit
-        ? `${limitedText.substr(0, limitedText.lastIndexOf(' '))}...`
-        : firstParagraph
+      return getFirstParagraph(slices, limit)
     },
   },
 }
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/styles/_vars';
+@import '../../../assets/styles/_vars';
 
 .featured-post {
   color: $text-color--white-primary;
