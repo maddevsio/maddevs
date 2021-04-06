@@ -22,7 +22,7 @@ exports[`cuNavigation is a Vue instance 1`] = `
         <ol
           class="cluster-navigation__column cluster-navigation__column--left"
         >
-          <nuxtlink
+          <nuxtlink-stub
             class="cluster-navigation__nav-item"
             to="/customer-university/cu-test/"
           >
@@ -41,14 +41,14 @@ exports[`cuNavigation is a Vue instance 1`] = `
             Chapter 1
           
             </div>
-          </nuxtlink>
+          </nuxtlink-stub>
         </ol>
          
         <ol
           class="cluster-navigation__column cluster-navigation__column--right"
           start="2"
         >
-          <nuxtlink
+          <nuxtlink-stub
             class="cluster-navigation__nav-item"
             to="/customer-university/cu-test-2/"
           >
@@ -65,7 +65,7 @@ exports[`cuNavigation is a Vue instance 1`] = `
             Chapter 2
           
             </div>
-          </nuxtlink>
+          </nuxtlink-stub>
         </ol>
       </div>
     </div>

@@ -45,7 +45,7 @@ describe('cuNavigation', () => {
 
   it('is a Vue instance', () => {
     const { container, html } = render(CustomerUniversityNavigation, {
-      stubs: ['router-link'],
+      stubs: ['NuxtLink'],
       props: {
         clusterPosts,
         cluster: {
@@ -70,7 +70,7 @@ describe('cuNavigation', () => {
 
   it('is a Vue instance with equal id', () => {
     const { html } = render(CustomerUniversityNavigation, {
-      stubs: ['router-link'],
+      stubs: ['NuxtLink'],
       props: {
         clusterPosts,
         cluster: {
