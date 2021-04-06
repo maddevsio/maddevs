@@ -171,12 +171,19 @@ export default {
       @media screen and (max-width: 991px) {
         display: none;
       }
+      @media screen and (max-width: 600px) {
+        display: block;
+        height: auto;
+      }
     }
     &--full {
       display: none;
       height: auto;
       @media screen and (max-width: 991px) {
         display: block;
+      }
+      @media screen and (max-width: 600px) {
+        display: none;
       }
     }
   }
