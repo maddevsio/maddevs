@@ -82,7 +82,7 @@
       <i />
     </button>
     <div
-      id="progress-bar"
+      class="progress-bar"
       ref="progressBar"
     />
   </div>
@@ -471,7 +471,7 @@ export default {
   }
 }
 
-#progress-bar {
+.progress-bar {
   width: 0%;
   height: 2px;
   position: fixed;
