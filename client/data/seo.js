@@ -74,10 +74,10 @@ export const meta = {
     jsonLd: '{"@context": "https://schema.org", "@type": "WebPage", "breadcrumb": "Projects > Case Studies > BYOD Solutions", "name": "Mad Devs Case Study: Sir John Monash Centre", "description": "BYOD Case Study. Read how Mad Devs enhanced and developed new features for the Sir John Monash Centre’s software, mobile applications, and technological debt.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}',
   },
   yourcast: {
-    title: 'Mad Devs Case Study: Yourcast.tv',
-    description: '',
+    title: 'Mad Devs Case Study: YourcastTV - online video streaming platform',
+    description: 'OTT-like streaming platform case study. Read how Mad Devs developed an online video streaming service for isolated groups of people feeling homesick.',
     url: 'https://maddevs.io/case-studies/yourcast/',
-    jsonLd: '',
+    jsonLd: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: YourcastTV - online video streaming platform", "description": "OTT-like streaming platform case study. Read how Mad Devs developed an online video streaming service for isolated groups of people feeling homesick.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}',
   },
 }
 

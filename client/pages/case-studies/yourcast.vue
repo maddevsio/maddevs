@@ -63,7 +63,7 @@ export default {
         height: 81.23,
         folder: 'yourcast',
         file: 'yourcast-logo',
-        alt: '',
+        alt: 'YourcastTV - Video Streaming Platform Logo.',
       },
     }
   },
