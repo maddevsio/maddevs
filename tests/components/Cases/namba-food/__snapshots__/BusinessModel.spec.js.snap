@@ -85,6 +85,7 @@ exports[`BusinessModel component should render correctly 1`] = `
              
             <img
               class="case_card-content_image"
+              data-testid="test-case_card-content_image"
               src="img.jpg"
               srcset="img.jpg 2x"
             />
