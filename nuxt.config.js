@@ -76,7 +76,6 @@ module.exports = {
     color: '#ec1c24',
     height: '3px',
   },
-  plugins: ['~/plugins/vuelidate.js', '~/plugins/vue-social-sharing.js', '~/plugins/get-media-from-s3.js'],
   generate: {
     async routes() {
       const getPosts = async pageUrl => {
@@ -150,6 +149,18 @@ module.exports = {
       }
     },
   },
+  /*
+  ** Plugins
+  */
+  plugins: [
+    '~/plugins/vuelidate.js',
+    '~/plugins/vue-social-sharing.js',
+    '~/plugins/get-media-from-s3.js',
+    { src: '~/plugins/sentry.js', mode: 'client' },
+  ],
+  /*
+  ** Nuxt Modules
+  */
   modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/prismic'],
   axios: {
     baseURL: '/',
@@ -165,9 +176,11 @@ module.exports = {
     preview: false,
   },
   env: {
+    environment: process.env.NODE_ENV,
     s3PublicUrl: process.env.NODE_S3_PUBLIC_URL,
     domain: process.env.NODE_DOMAIN,
     emailHR: process.env.NODE_EMAIL_HR,
     emailContact: process.env.NODE_EMAIL_CONTACT,
+    sentryDsnFront: process.env.NODE_SENTRY_DSN_FRONT,
   },
 }
