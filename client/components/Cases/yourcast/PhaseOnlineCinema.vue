@@ -57,6 +57,7 @@ export default {
   mixins: [playLottieMixin('online-cinema', {
     animationData,
     autoplay: false,
+    loop: false,
   })],
 }
 </script>

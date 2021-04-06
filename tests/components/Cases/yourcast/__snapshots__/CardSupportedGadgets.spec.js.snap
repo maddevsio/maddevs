@@ -5,13 +5,13 @@ exports[`CardSupportedGadgets component should render correctly 1`] = `
   <div
     class="card-content"
   >
-    <h3
+    <h4
       class="card-content_title case_title_h4"
     >
       
     title
   
-    </h3>
+    </h4>
      
     <div
       class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-macbook-pro-card"

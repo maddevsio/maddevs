@@ -5,13 +5,13 @@ exports[`Team component should render correctly 1`] = `
   <section
     class="container_regular"
   >
-    <h2
+    <h3
       class="case_title_h2 m-48_bottom media-m-38_bottom"
     >
       
     Meet the team
   
-    </h2>
+    </h3>
      
     <ul
       class="case_list-team m-72_bottom media-m-48_bottom"
