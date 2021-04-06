@@ -51,7 +51,7 @@ export default {
   props: {
     logo: {
       type: Object,
-      default: () => {},
+      required: true,
 
       width: {
         type: Number,

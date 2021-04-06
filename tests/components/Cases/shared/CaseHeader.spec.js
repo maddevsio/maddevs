@@ -1,5 +1,5 @@
 import CaseHeader from '@/components/Cases/shared/CaseHeader.vue'
-import { render } from '@testing-library/vue'
+import { render, screen } from '@testing-library/vue'
 
 const props = {
   logo: {
@@ -17,28 +17,29 @@ const props = {
   videoName: 'video-name',
 }
 
+const mocks = {
+  getMediaFromS3: img => img,
+}
+
 describe('CaseHeader component', () => {
   it('should render correctly', () => {
     const { container } = render(CaseHeader, {
       props,
-      mocks: {
-        getMediaFromS3: () => 'img.jpg',
-      },
+      mocks,
     })
 
     expect(container).toMatchSnapshot()
+    expect(screen.queryAllByTestId('test-case_main-video')).toHaveLength(1)
   })
 
-  it('should render with navigation type iphone', () => {
-    Object.defineProperty(window.navigator, 'userAgent', { value: 'iPhone' })
+  it('should render with navigation type iphone', async () => {
+    await Object.defineProperty(global.navigator, 'userAgent', { value: 'iPhone' })
 
-    const { html } = render(CaseHeader, {
+    await render(CaseHeader, {
       props,
-      mocks: {
-        getMediaFromS3: () => 'img.jpg',
-      },
+      mocks,
     })
 
-    expect(html()).toContain('case_main-video')
+    expect(screen.queryAllByTestId('test-case_main-video')).toHaveLength(0)
   })
 })
