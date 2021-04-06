@@ -46,6 +46,7 @@ exports[`CouriersApplication component should render correctly 1`] = `
           <img
             alt="Namba Food: Courier App for Android."
             class="image"
+            data-testid="test-picture-img"
             height="0"
             loading=""
             src="img.jpg"

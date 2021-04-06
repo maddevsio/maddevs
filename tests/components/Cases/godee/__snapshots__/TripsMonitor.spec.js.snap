@@ -44,6 +44,7 @@ exports[`TripsMonitor component should render correctly 1`] = `
             <img
               alt="GoDee: Safari Browser Top Bar White."
               class="image grey-background"
+              data-testid="test-picture-img"
               height="16.45"
               loading="lazy"
               src="img.jpg"

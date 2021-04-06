@@ -38,6 +38,7 @@ exports[`Grafana component should render correctly 1`] = `
         <img
           alt="Namba Food: Software Stability Monitoring with Grafana."
           class="image box-shadow"
+          data-testid="test-picture-img"
           height="0"
           loading="lazy"
           src="img.jpg"

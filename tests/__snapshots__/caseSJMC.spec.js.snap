@@ -227,6 +227,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <img
               alt="The Mad Devs team in Sir John Monash Centre."
               class="image"
+              data-testid="test-picture-img"
               height="0"
               loading="lazy"
               src="s3 image url"
@@ -357,6 +358,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <img
                 alt="The SJMC: Multimedia Management System."
                 class="image"
+                data-testid="test-picture-img"
                 height="0"
                 loading="lazy"
                 src="s3 image url"
@@ -489,6 +491,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               <img
                 alt="The SJMC Mobile Applications."
                 class="image"
+                data-testid="test-picture-img"
                 height="0"
                 loading="lazy"
                 src="s3 image url"
@@ -554,6 +557,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <img
               alt="Sir Jonh Monash Centre Map."
               class="image"
+              data-testid="test-picture-img"
               height="0"
               loading="lazy"
               src="s3 image url"
@@ -607,6 +611,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <img
               alt="The SJMC Immersive Gallery."
               class="image"
+              data-testid="test-picture-img"
               height="0"
               loading="lazy"
               src="s3 image url"
@@ -1205,6 +1210,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                         class="image"
+                        data-testid="test-picture-img"
                         height="0"
                         loading="lazy"
                         src="s3 image url"
@@ -1226,6 +1232,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                         class="image"
+                        data-testid="test-picture-img"
                         height="0"
                         loading="lazy"
                         src="s3 image url"
@@ -1247,6 +1254,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                         class="image"
+                        data-testid="test-picture-img"
                         height="0"
                         loading="lazy"
                         src="s3 image url"
@@ -1268,6 +1276,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                         class="image"
+                        data-testid="test-picture-img"
                         height="0"
                         loading="lazy"
                         src="s3 image url"
@@ -1289,6 +1298,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                         class="image"
+                        data-testid="test-picture-img"
                         height="0"
                         loading="lazy"
                         src="s3 image url"
@@ -1310,6 +1320,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                         class="image"
+                        data-testid="test-picture-img"
                         height="0"
                         loading="lazy"
                         src="s3 image url"
@@ -1349,6 +1360,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -1370,6 +1382,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -1391,6 +1404,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -1412,6 +1426,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -1433,6 +1448,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -1454,6 +1470,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -1564,6 +1581,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <img
               alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
               class="image box-shadow"
+              data-testid="test-picture-img"
               height="0"
               loading="lazy"
               src="s3 image url"
@@ -1706,6 +1724,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Safari Top Bar."
                   class="image"
+                  data-testid="test-picture-img"
                   height="0"
                   loading="lazy"
                   src="s3 image url"
@@ -1735,6 +1754,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       <img
                         alt="SJMC System Monitoring."
                         class="image"
+                        data-testid="test-picture-img"
                         height="0"
                         loading="lazy"
                         src="s3 image url"
@@ -1756,6 +1776,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       <img
                         alt="SJMC System Monitoring."
                         class="image"
+                        data-testid="test-picture-img"
                         height="0"
                         loading="lazy"
                         src="s3 image url"
@@ -1795,6 +1816,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     <img
                       alt="SJMC System Monitoring."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -1816,6 +1838,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     <img
                       alt="SJMC System Monitoring."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -1884,6 +1907,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <img
               alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
               class="image box-shadow"
+              data-testid="test-picture-img"
               height="0"
               loading="lazy"
               src="s3 image url"
@@ -2108,6 +2132,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
                         class="image"
+                        data-testid="test-picture-img"
                         height="0"
                         loading="lazy"
                         src="s3 image url"
@@ -2129,6 +2154,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
                         class="image"
+                        data-testid="test-picture-img"
                         height="0"
                         loading="lazy"
                         src="s3 image url"
@@ -2150,6 +2176,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
                         class="image"
+                        data-testid="test-picture-img"
                         height="0"
                         loading="lazy"
                         src="s3 image url"
@@ -2171,6 +2198,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
                         class="image"
+                        data-testid="test-picture-img"
                         height="0"
                         loading="lazy"
                         src="s3 image url"
@@ -2192,6 +2220,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
                         class="image"
+                        data-testid="test-picture-img"
                         height="0"
                         loading="lazy"
                         src="s3 image url"
@@ -2231,6 +2260,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -2252,6 +2282,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -2273,6 +2304,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -2294,6 +2326,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -2315,6 +2348,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -2400,6 +2434,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Kirill Zinchenko"
                   class="image grey-background"
+                  data-testid="test-picture-img"
                   height="50"
                   loading="lazy"
                   src="s3 image url"
@@ -2443,6 +2478,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Vlad Andreev"
                   class="image grey-background"
+                  data-testid="test-picture-img"
                   height="50"
                   loading="lazy"
                   src="s3 image url"
@@ -2486,6 +2522,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Aleksandr Zhitov"
                   class="image grey-background"
+                  data-testid="test-picture-img"
                   height="50"
                   loading="lazy"
                   src="s3 image url"
@@ -2529,6 +2566,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Sergey Boyko"
                   class="image grey-background"
+                  data-testid="test-picture-img"
                   height="50"
                   loading="lazy"
                   src="s3 image url"
@@ -2572,6 +2610,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Andrew Minkin"
                   class="image grey-background"
+                  data-testid="test-picture-img"
                   height="50"
                   loading="lazy"
                   src="s3 image url"
@@ -2615,6 +2654,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Dmitri Khalezin"
                   class="image grey-background"
+                  data-testid="test-picture-img"
                   height="50"
                   loading="lazy"
                   src="s3 image url"
@@ -2658,6 +2698,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Kirill Avdeev"
                   class="image grey-background"
+                  data-testid="test-picture-img"
                   height="50"
                   loading="lazy"
                   src="s3 image url"
@@ -2701,6 +2742,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Stanislav Shcherbinin"
                   class="image grey-background"
+                  data-testid="test-picture-img"
                   height="50"
                   loading="lazy"
                   src="s3 image url"
@@ -2744,6 +2786,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Aleksandr Astashov"
                   class="image grey-background"
+                  data-testid="test-picture-img"
                   height="50"
                   loading="lazy"
                   src="s3 image url"
@@ -2787,6 +2830,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Ruslan Kasymov"
                   class="image grey-background"
+                  data-testid="test-picture-img"
                   height="50"
                   loading="lazy"
                   src="s3 image url"
@@ -2830,6 +2874,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Pavel Pushkarev"
                   class="image grey-background"
+                  data-testid="test-picture-img"
                   height="50"
                   loading="lazy"
                   src="s3 image url"
@@ -2873,6 +2918,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Rustom Kulbatyrov"
                   class="image grey-background"
+                  data-testid="test-picture-img"
                   height="50"
                   loading="lazy"
                   src="s3 image url"
@@ -2963,6 +3009,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 <img
                   alt="Wade Bartlett"
                   class="image"
+                  data-testid="test-picture-img"
                   height="0"
                   loading="lazy"
                   src="s3 image url"

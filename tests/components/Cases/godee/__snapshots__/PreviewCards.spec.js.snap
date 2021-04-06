@@ -55,6 +55,7 @@ exports[`PreviewCards component should render correctly 1`] = `
                   <img
                     alt="GoDee: Bus Transit App for Passengers."
                     class="image"
+                    data-testid="test-picture-img"
                     height="211"
                     loading=""
                     src="img.jpg"
@@ -109,6 +110,7 @@ exports[`PreviewCards component should render correctly 1`] = `
                   <img
                     alt="GoDee: Bus Drivers App."
                     class="image"
+                    data-testid="test-picture-img"
                     height="280"
                     loading=""
                     src="img.jpg"
@@ -164,6 +166,7 @@ exports[`PreviewCards component should render correctly 1`] = `
                 <img
                   alt="GoDee: Bus App Management System."
                   class="image"
+                  data-testid="test-picture-img"
                   height="219"
                   loading=""
                   src="img.jpg"
@@ -184,6 +187,7 @@ exports[`PreviewCards component should render correctly 1`] = `
                 <img
                   alt="GoDee: bus app management control panel"
                   class="image"
+                  data-testid="test-picture-img"
                   height="160"
                   loading=""
                   src="img.jpg"

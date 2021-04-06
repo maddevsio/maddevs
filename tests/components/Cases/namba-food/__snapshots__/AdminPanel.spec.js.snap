@@ -46,6 +46,7 @@ exports[`AdminPanel component should render correctly 1`] = `
         <img
           alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
           class="image box-shadow"
+          data-testid="test-picture-img"
           height="0"
           loading="lazy"
           src="img.jpg"

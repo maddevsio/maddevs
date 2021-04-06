@@ -29,12 +29,11 @@ describe('IntellegentManagementPanel component', () => {
   })
 
   it('should render isIphone property', () => {
+    props.isIphone = true
     render(IntellegentManagementPanel, {
       props,
       mocks,
     })
-
-    props.isIphone = true
 
     const element = screen.getByTestId('test-video-flex-wrapper')
 

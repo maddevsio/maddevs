@@ -222,6 +222,7 @@ exports[`namba food renders correctly 1`] = `
               <img
                 alt="Namba Food: Food and Grocery Delivery Service Couriers."
                 class="image"
+                data-testid="test-picture-img"
                 height="0"
                 loading="lazy"
                 src="s3 image url"
@@ -430,6 +431,7 @@ exports[`namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food: Food and Grocery Delivery App for Iphone."
                     class="image"
+                    data-testid="test-picture-img"
                     height="0"
                     loading=""
                     src="s3 image url"
@@ -452,6 +454,7 @@ exports[`namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food: Food and Grocery Delivery App for Iphone."
                     class="image"
+                    data-testid="test-picture-img"
                     height="0"
                     loading=""
                     src="s3 image url"
@@ -503,6 +506,7 @@ exports[`namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food: Courier App for Android."
                     class="image"
+                    data-testid="test-picture-img"
                     height="0"
                     loading=""
                     src="s3 image url"
@@ -525,6 +529,7 @@ exports[`namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food: Courier App for Android."
                     class="image"
+                    data-testid="test-picture-img"
                     height="0"
                     loading=""
                     src="s3 image url"
@@ -574,6 +579,7 @@ exports[`namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery."
                     class="image"
+                    data-testid="test-picture-img"
                     height="0"
                     loading=""
                     src="s3 image url"
@@ -596,6 +602,7 @@ exports[`namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery."
                     class="image"
+                    data-testid="test-picture-img"
                     height="0"
                     loading=""
                     src="s3 image url"
@@ -647,6 +654,7 @@ exports[`namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
                     class="image"
+                    data-testid="test-picture-img"
                     height="0"
                     loading=""
                     src="s3 image url"
@@ -669,6 +677,7 @@ exports[`namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
                     class="image"
+                    data-testid="test-picture-img"
                     height="0"
                     loading=""
                     src="s3 image url"
@@ -868,6 +877,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Namba Food: Courier App for Android."
               class="image"
+              data-testid="test-picture-img"
               height="0"
               loading=""
               src="s3 image url"
@@ -927,6 +937,7 @@ exports[`namba food renders correctly 1`] = `
           <img
             alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
             class="image box-shadow"
+            data-testid="test-picture-img"
             height="0"
             loading="lazy"
             src="s3 image url"
@@ -1113,6 +1124,7 @@ exports[`namba food renders correctly 1`] = `
               <img
                 alt="Namba Food: Food and Grocery Delivery Service Website Header."
                 class="image"
+                data-testid="test-picture-img"
                 height="0"
                 loading="lazy"
                 src="s3 image url"
@@ -1142,6 +1154,7 @@ exports[`namba food renders correctly 1`] = `
                     <img
                       alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -1163,6 +1176,7 @@ exports[`namba food renders correctly 1`] = `
                     <img
                       alt="Namba Food Delivery Control Dashboard."
                       class="image"
+                      data-testid="test-picture-img"
                       height="0"
                       loading="lazy"
                       src="s3 image url"
@@ -1202,6 +1216,7 @@ exports[`namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food: Swift microservice-based admin panel which help to control food and grocery delivery."
                     class="image"
+                    data-testid="test-picture-img"
                     height="0"
                     loading="lazy"
                     src="s3 image url"
@@ -1223,6 +1238,7 @@ exports[`namba food renders correctly 1`] = `
                   <img
                     alt="Namba Food Delivery Control Dashboard."
                     class="image"
+                    data-testid="test-picture-img"
                     height="0"
                     loading="lazy"
                     src="s3 image url"
@@ -1478,6 +1494,7 @@ exports[`namba food renders correctly 1`] = `
           <img
             alt="Namba Food: Software Stability Monitoring with Grafana."
             class="image box-shadow"
+            data-testid="test-picture-img"
             height="0"
             loading="lazy"
             src="s3 image url"
@@ -1870,6 +1887,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Namba Food: Automated Deployment Stage Scheme."
               class="image"
+              data-testid="test-picture-img"
               height="0"
               loading="lazy"
               src="s3 image url"
@@ -1896,6 +1914,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Namba Food: Automated Deployment Stage Scheme."
               class="image"
+              data-testid="test-picture-img"
               height="0"
               loading="lazy"
               src="s3 image url"
@@ -1946,6 +1965,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Vlad Andreev"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="s3 image url"
@@ -1989,6 +2009,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Gulbustan Baudunova"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="s3 image url"
@@ -2032,6 +2053,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Tamara Mun"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="s3 image url"
@@ -2075,6 +2097,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Aidai Atakulova"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="s3 image url"
@@ -2118,6 +2141,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Baurzhan Omuraliev"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="s3 image url"
@@ -2161,6 +2185,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Nakylai Taiirova"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="s3 image url"
@@ -2204,6 +2229,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Akylbek Djumaliev"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="s3 image url"
@@ -2247,6 +2273,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Stanislav Shcherbinin"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="s3 image url"
@@ -2290,6 +2317,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Eldar Akkozov"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="s3 image url"
@@ -2333,6 +2361,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Altynai Toktomuratova"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="s3 image url"
@@ -2376,6 +2405,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Dmitrii Khalezin"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="s3 image url"
@@ -2419,6 +2449,7 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Belek Abylov"
               class="image grey-background"
+              data-testid="test-picture-img"
               height="50"
               loading="lazy"
               src="s3 image url"
@@ -2777,6 +2808,7 @@ exports[`namba food renders correctly 1`] = `
               <img
                 alt="Aziza Anarbekova"
                 class="image"
+                data-testid="test-picture-img"
                 height="0"
                 loading="lazy"
                 src="s3 image url"

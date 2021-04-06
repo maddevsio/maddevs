@@ -61,6 +61,7 @@ exports[`RealTimeETA component should render correctly 1`] = `
           <img
             alt="GoDee: Bus Transit App in Vietnam."
             class="image"
+            data-testid="test-picture-img"
             height="694.62"
             loading="lazy"
             src="img.jpg"

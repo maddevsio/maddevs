@@ -45,6 +45,7 @@ exports[`Monitoring component should render correctly 1`] = `
         <img
           alt="GoDee: Monitoring Configuration for Transportation App."
           class="image box-shadow grey-background"
+          data-testid="test-picture-img"
           height="463"
           loading="lazy"
           src="img.jpg"

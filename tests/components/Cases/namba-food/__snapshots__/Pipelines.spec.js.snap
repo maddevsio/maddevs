@@ -40,6 +40,7 @@ exports[`Pipelines component should render correctly 1`] = `
           <img
             alt="Namba Food: Automated Deployment Stage Scheme."
             class="image"
+            data-testid="test-picture-img"
             height="0"
             loading="lazy"
             src="img.jpg"
@@ -66,6 +67,7 @@ exports[`Pipelines component should render correctly 1`] = `
           <img
             alt="Namba Food: Automated Deployment Stage Scheme."
             class="image"
+            data-testid="test-picture-img"
             height="0"
             loading="lazy"
             src="img.jpg"
