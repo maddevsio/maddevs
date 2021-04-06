@@ -104,7 +104,7 @@ describe('slice block component', () => {
           asHtml: html => `<p>${html}</p>`,
         },
       },
-      stubs: ['prismic-image', 'prismic-rich-text'],
+      stubs: ['PrismicImage', 'PrismicRichText'],
     })
 
     expect(container).toMatchSnapshot()

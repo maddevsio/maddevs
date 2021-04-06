@@ -1,6 +1,6 @@
 import { render } from '@testing-library/vue'
-import FeaturedPost from '@/components/Blog/FeaturedPost'
-import blogPost from '../../__mocks__/blogPost'
+import FeaturedPost from '@/components/Blog/shared/FeaturedPost'
+import blogPost from '../../../__mocks__/blogPost'
 
 describe('featured post component', () => {
   it('is a Vue instance', () => {
@@ -8,7 +8,7 @@ describe('featured post component', () => {
       propsData: {
         post: blogPost,
       },
-      stubs: ['nuxt-link'],
+      stubs: ['NuxtLink'],
       mocks: {
         $prismic: {
           asText: text => text[0].text,

@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import CuNavigation from '@/components/Blog/CuNavigation'
+import CustomerUniversityNavigation from '@/components/Blog/Post/CustomerUniversityNavigation'
 
 describe('cuNavigation', () => {
   const clusterPosts = [
@@ -44,7 +44,7 @@ describe('cuNavigation', () => {
   ]
 
   it('is a Vue instance', () => {
-    const { container, html } = render(CuNavigation, {
+    const { container, html } = render(CustomerUniversityNavigation, {
       stubs: ['router-link'],
       props: {
         clusterPosts,
@@ -69,7 +69,7 @@ describe('cuNavigation', () => {
   })
 
   it('is a Vue instance with equal id', () => {
-    const { html } = render(CuNavigation, {
+    const { html } = render(CustomerUniversityNavigation, {
       stubs: ['router-link'],
       props: {
         clusterPosts,

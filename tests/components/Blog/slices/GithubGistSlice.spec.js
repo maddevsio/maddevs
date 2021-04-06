@@ -13,7 +13,7 @@ describe('github gist component', () => {
     const { container } = render(GithubGistSlice, {
       props: {
         slice,
-        stubs: ['prismic-image'],
+        stubs: ['PrismicImage'],
       },
       mocks: {
         $prismic: {

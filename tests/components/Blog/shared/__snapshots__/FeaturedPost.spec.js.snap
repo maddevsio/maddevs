@@ -2,7 +2,7 @@
 
 exports[`featured post component is a Vue instance 1`] = `
 <div>
-  <nuxt-link-stub
+  <nuxtlink-stub
     class="featured-post"
     to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
   >
@@ -97,6 +97,6 @@ exports[`featured post component is a Vue instance 1`] = `
         />
       </div>
     </div>
-  </nuxt-link-stub>
+  </nuxtlink-stub>
 </div>
 `;

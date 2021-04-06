@@ -1,4 +1,4 @@
-import SwiperBlog from '@/components/Blog/SwiperBlog'
+import SwiperBlog from '@/components/Blog/slices/SwiperBlog'
 import { render } from '@testing-library/vue'
 
 describe('swiper Blog component', () => {

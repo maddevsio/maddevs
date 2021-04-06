@@ -9,7 +9,7 @@ exports[`slice block component should render correctly 1`] = `
       <div
         class="post-part single"
       >
-        <prismic-rich-text-stub
+        <prismicrichtext-stub
           class="textslice"
           field="[object Object]"
         />
@@ -89,7 +89,7 @@ exports[`slice block component should render correctly 1`] = `
           <div
             class="block-img image-full-width"
           >
-            <prismic-image-stub
+            <prismicimage-stub
               class=""
               field="[object Object]"
             />
@@ -120,7 +120,7 @@ exports[`slice block component should render correctly 1`] = `
             href="https://blog.maddevs.io"
             target="_blank"
           >
-            <prismic-image-stub
+            <prismicimage-stub
               field="[object Object]"
               title="[object Object]"
             />

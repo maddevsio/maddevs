@@ -11,7 +11,7 @@ exports[`image attribute slice component is a Vue instance 1`] = `
         href="https://blog.maddevs.io"
         target="_blank"
       >
-        <prismic-image-stub
+        <prismicimage-stub
           field="[object Object]"
           title="[object Object]"
         />

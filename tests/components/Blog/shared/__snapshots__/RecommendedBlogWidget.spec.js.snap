@@ -2,9 +2,9 @@
 
 exports[`recommended blog widget component render with very long title 1`] = `
 <div>
-  <nuxt-link-stub
+  <nuxtlink-stub
     class=""
-    classname="test-long"
+    classname="test"
     to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
   >
     <div
@@ -19,7 +19,25 @@ exports[`recommended blog widget component render with very long title 1`] = `
        
       <div>
         <h2
-          class="blog-post__title"
+          class="blog-post__title blog-post__title--short"
+          title="The best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your website"
+        >
+          
+        The best practices for improving layout quality on...
+      
+        </h2>
+         
+        <h2
+          class="blog-post__title blog-post__title--very-short"
+          title="The best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your website"
+        >
+          
+        The best practices for improving layout...
+      
+        </h2>
+         
+        <h2
+          class="blog-post__title blog-post__title--full"
           title="The best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your website"
         >
           
@@ -85,13 +103,13 @@ exports[`recommended blog widget component render with very long title 1`] = `
         </div>
       </div>
     </div>
-  </nuxt-link-stub>
+  </nuxtlink-stub>
 </div>
 `;
 
 exports[`recommended blog widget component should render correctly with slot 1`] = `
 <div>
-  <nuxt-link-stub
+  <nuxtlink-stub
     class=""
     classname="test"
     to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
@@ -108,7 +126,25 @@ exports[`recommended blog widget component should render correctly with slot 1`]
        
       <div>
         <h2
-          class="blog-post__title"
+          class="blog-post__title blog-post__title--short"
+          title="The best practices for improving layout quality on your website"
+        >
+          
+        The best practices for improving layout quality on...
+      
+        </h2>
+         
+        <h2
+          class="blog-post__title blog-post__title--very-short"
+          title="The best practices for improving layout quality on your website"
+        >
+          
+        The best practices for improving layout...
+      
+        </h2>
+         
+        <h2
+          class="blog-post__title blog-post__title--full"
           title="The best practices for improving layout quality on your website"
         >
           
@@ -174,6 +210,6 @@ exports[`recommended blog widget component should render correctly with slot 1`]
         </div>
       </div>
     </div>
-  </nuxt-link-stub>
+  </nuxtlink-stub>
 </div>
 `;

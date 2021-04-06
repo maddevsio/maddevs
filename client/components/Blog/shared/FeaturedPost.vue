@@ -58,7 +58,7 @@ export default {
 
   computed: {
     formattedDate() {
-      const date = this.post ? this.post.data.date : ''
+      const { date } = this.post.data
       return Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(date))
     },
 

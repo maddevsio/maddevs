@@ -1,10 +1,10 @@
 import { render } from '@testing-library/vue'
-import CustomerUniversitySection from '@/components/Blog/CustomerUniversitySection'
+import CustomerUniversitySection from '@/components/Blog/Main/CustomerUniversitySection'
 
 describe('customer University section component', () => {
   it('is a Vue instance', () => {
     const { container } = render(CustomerUniversitySection, {
-      stubs: ['prismic-image'],
+      stubs: ['PrismicImage'],
       mocks: {
         $prismic: {
           asText: () => '',

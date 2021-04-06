@@ -1,4 +1,4 @@
-import SkeletonFeaturedPost from '@/components/Blog/SkeletonFeaturedPost'
+import SkeletonFeaturedPost from '@/components/Blog/skeletons/SkeletonFeaturedPost'
 import { render } from '@testing-library/vue'
 
 describe('skeleton post widget component', () => {

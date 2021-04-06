@@ -32,6 +32,7 @@
                 : { label: 'Explore the chapters', value: '' }
             "
             class="cluster-navigation__select"
+            data-testid="vue-select"
             @option:selected="handleChange"
           />
         </div>
@@ -97,7 +98,6 @@ export default {
 
   data() {
     return {
-      currentPostUid: '',
       OpenIndicator: {
         render: createElement => createElement('svg', {
           domProps: {
@@ -140,10 +140,7 @@ export default {
     },
 
     currentPostIndex() {
-      if (this.currentPost) {
-        return this.postList.indexOf(this.currentPost)
-      }
-      return undefined
+      return this.currentPost && this.postList.indexOf(this.currentPost)
     },
   },
 
