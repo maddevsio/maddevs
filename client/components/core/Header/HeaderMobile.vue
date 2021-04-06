@@ -102,6 +102,7 @@ export default {
     enablePageScroll: {
       type: Function,
       default: () => {},
+      required: true,
     },
   },
 
