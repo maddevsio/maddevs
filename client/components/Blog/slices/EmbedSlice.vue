@@ -4,7 +4,7 @@
     :class="slice.items[0].embed.type"
     class="embed"
   >
-    <prismic-embed
+    <PrismicEmbed
       :field="slice.items[0].embed"
       :class="`embed__${slice.items[0].embed.type}`"
       target="_blank"

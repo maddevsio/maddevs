@@ -17,7 +17,7 @@ describe('galary slice component', () => {
   it('is a Vue instance', () => {
     const { container } = render(GallerySlice, {
       props,
-      stubs: ['prismic-image'],
+      stubs: ['PrismicImage'],
       mocks: {
         $prismic: {
           asText: name => name,

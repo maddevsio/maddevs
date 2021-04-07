@@ -3,12 +3,12 @@
     <h3 v-if="galleryTitle">
       {{ galleryTitle }}
     </h3>
-    <swiper-blog :components="slice.items" />
+    <SwiperBlog :components="slice.items" />
   </div>
 </template>
 
 <script>
-import SwiperBlog from '@/components/Blog/SwiperBlog'
+import SwiperBlog from '@/components/Blog/slices/SwiperBlog'
 
 export default {
   name: 'GallerySlice',

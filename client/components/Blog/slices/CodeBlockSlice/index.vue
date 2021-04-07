@@ -1,6 +1,6 @@
 <template>
   <div class="post-part single">
-    <prism-editor
+    <PrismEditor
       v-model="code"
       :highlight="highlighter"
       class="code-sample"

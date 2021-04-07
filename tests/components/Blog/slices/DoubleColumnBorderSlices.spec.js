@@ -24,7 +24,7 @@ describe('double Column Bordered slice component', () => {
   it('is a Vue instance', () => {
     const { container } = render(DoubleColumnBorderedSlice, {
       props,
-      stubs: ['prismic-image'],
+      stubs: ['PrismicImage'],
       mocks: {
         $prismic: {
           asHtml: name => name,

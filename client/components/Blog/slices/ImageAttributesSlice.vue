@@ -7,7 +7,7 @@
           :target="target"
           class="block-img"
         >
-          <prismic-image
+          <PrismicImage
             :field="img"
             :title="$prismic.asText(title)"
           />
@@ -17,7 +17,7 @@
     <template v-else>
       <div class="post-part single">
         <div class="block-img">
-          <prismic-image
+          <PrismicImage
             :field="img"
             :title="$prismic.asText(title)"
           />
