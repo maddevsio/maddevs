@@ -60,6 +60,12 @@ import Team from '@/components/Cases/godee/Team'
 import isIphoneMixin from '@/mixins/isIphoneMixin'
 import autoplayVideoMixin from '@/mixins/autoplayVideoMixin'
 
+const observerOptions = {
+  root: null,
+  rootMargin: '0px 0px -2px 0px',
+  threshold: 0.8,
+}
+
 export default {
   name: 'Main',
   components: {
@@ -83,6 +89,6 @@ export default {
     Team,
   },
 
-  mixins: [isIphoneMixin, autoplayVideoMixin(['trip-request-map', 'trip-monitor', 'route-optimization'])],
+  mixins: [isIphoneMixin, autoplayVideoMixin(['trip-request-map', 'trip-monitor', 'route-optimization'], observerOptions)],
 }
 </script>

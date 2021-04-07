@@ -1,4 +1,4 @@
-export const categories = ['devOps', 'QA', 'Backend', 'Frontend', 'Mobile', 'PM', 'Infrastructure', 'UI/UX']
+export const categories = ['DevOps', 'QA', 'Backend', 'Frontend', 'Mobile', 'PM', 'Infrastructure', 'UI/UX']
 
 export const technologies = [
   {
