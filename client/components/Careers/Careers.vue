@@ -164,7 +164,6 @@
     </div>
     <ModalSuccess
       id="career-modal"
-      :display-time="3000"
       :visibled="isShowSuccessModal"
       @close="isShowSuccessModal = false"
     />
