@@ -89,7 +89,7 @@ export const getPageScripts = key => pageScripts[key] || []
 
 export const buildHead = ({
   title, description, url, jsonLd, image = 'https://maddevs.io/Open-Graph.png',
-}, scripts) => ({
+}, scripts = []) => ({
   title,
   meta: [
     { name: 'description', content: description },
