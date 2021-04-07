@@ -2,6 +2,7 @@
  ** scrollBehavior configuration - https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-router#scrollbehavior
  **
  ** Nuxt.js — Custom scrollBehavior fired after page loaded https://levelup.gitconnected.com/nuxt-js-custom-scrollbehavior-fired-after-page-loaded-cd94fd6ddd12
+ ** Nuxt.js Smooth Scrolling with Hash Links - https://zachcardoza.com/post/nuxtjs-smooth-scrolling-with-hash-links/
  */
 
 if (process.client) {
@@ -20,8 +21,20 @@ if (process.client) {
   }
 }
 
-export default function scrollBehavior(to, from, savedPosition) {
-  let position = savedPosition || { x: 0, y: 0 }
+export default async (to, from, savedPosition) => {
+  const position = savedPosition || { x: 0, y: 0 }
+
+  const findEl = async (hash, x) => document.querySelector(hash)
+      || new Promise(resolve => {
+        if (x > 50) resolve()
+        setTimeout(() => { resolve(findEl(hash, (x + 1) || 1)) }, 100)
+      })
+
+  if (to.hash) {
+    const hashEl = await findEl(to.hash)
+    if ('scrollBehavior' in document.documentElement.style) return window.scrollTo({ top: hashEl.offsetTop, behavior: 'smooth' })
+    return window.scrollTo(0, hashEl.offsetTop)
+  }
 
   // triggerScroll is only fired when a new component is loaded
   if (to.path === from.path && to.hash !== from.hash) {
@@ -30,23 +43,8 @@ export default function scrollBehavior(to, from, savedPosition) {
 
   return new Promise(resolve => {
     $nuxt.$once('triggerScroll', () => {
-      if (to.hash) {
-        let { hash } = to
-        // CSS.escape() is not supported with IE and Edge.
-        if (typeof window.CSS !== 'undefined' && typeof window.CSS.escape !== 'undefined') { hash = `#${window.CSS.escape(hash.substr(1))}` }
-        try {
-          if (document.querySelector(hash)) position = { selector: hash }
-        } catch (e) {
-          // eslint-disable-next-line
-          console.warn(
-            'Failed to save scroll position. Please add CSS.escape() polyfill (https://github.com/mathiasbynens/CSS.escape).',
-          )
-        }
-      }
-
       // section with filtered posts is rendered with a small delay, then offset heigh of the blog page changes
       if (to.name === 'blog') return setTimeout(() => resolve(position), 50)
-
       return resolve(position)
     })
   })
