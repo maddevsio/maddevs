@@ -24,7 +24,7 @@ exports[`galary slice component is a Vue instance 1`] = `
             <div
               class="swiper-slide"
             >
-              <prismic-image-stub
+              <prismicimage-stub
                 field="[object Object]"
               />
             </div>

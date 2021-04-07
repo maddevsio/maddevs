@@ -8,13 +8,13 @@ exports[`PhaseLiveStreamingTechnology component should render correctly 1`] = `
     <div
       class="container_regular"
     >
-      <h2
+      <h3
         class="case_title_h2 m-24_bottom media-m-20_bottom"
       >
         
       Phase 2: Live streaming technology
     
-      </h2>
+      </h3>
        
       <p
         class="case_paragraph m-48_bottom media-m-20_bottom"
@@ -169,13 +169,13 @@ exports[`PhaseLiveStreamingTechnology component should render correctly 1`] = `
     <div
       class="container_regular"
     >
-      <h3
+      <h4
         class="case_title_h3"
       >
         
       What is Yourcast.tv?
     
-      </h3>
+      </h4>
        
       <blockquote
         class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"

@@ -8,10 +8,13 @@ describe('embed slice component', () => {
       items: [
         {
           embed: {
+            title: 'Title',
+            url: 'https://test',
             type: 'video',
             html:
               '<div><img src="" height="300" width="300"/></div><h1>hello</h1><a href="http://maddevs.io">Hi</a> </div>',
           },
+          embed_title: 'Embed title',
         },
       ],
       primary: {
@@ -32,7 +35,7 @@ describe('embed slice component', () => {
   it('is a Vue instance', () => {
     const { container } = render(EmbedSlice, {
       props,
-      stubs: ['prismic-embed'],
+      stubs: ['PrismicEmbed'],
       mocks: {
         $prismic: {
           asHtml: name => name,
@@ -56,7 +59,7 @@ describe('embed slice component', () => {
           slice_type: 'codeblock',
         },
       },
-      stubs: ['prismic-embed'],
+      stubs: ['PrismicEmbed'],
     })
 
     expect(container).toMatchSnapshot()

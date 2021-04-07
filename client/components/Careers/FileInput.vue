@@ -48,6 +48,11 @@ export default {
       this.selectedFile = file
       this.$emit('input', file)
     },
+
+    reset() {
+      this.selectedFile = null
+      this.$refs.fileInput.value = null
+    },
   },
 }
 </script>

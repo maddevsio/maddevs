@@ -12,7 +12,7 @@ describe('UIBeforeAfterImage component', () => {
 
   it('should render correctly with slot', () => {
     const { container } = render(BeforeAfterImage, {
-      stubs: ['nuxt-link', 'NuxtLink', 'prismic-image'],
+      stubs: ['nuxt-link', 'NuxtLink', 'PrismicImage'],
       mocks: {
         getMediaFromS3: () => 'img.jpg',
       },
@@ -23,7 +23,7 @@ describe('UIBeforeAfterImage component', () => {
 
   it('should correctly change opacity when handle mouse move over', async () => {
     render(BeforeAfterImage, {
-      stubs: ['nuxt-link', 'NuxtLink', 'prismic-image'],
+      stubs: ['nuxt-link', 'NuxtLink', 'PrismicImage'],
       mocks: {
         getMediaFromS3: () => 'img.jpg',
       },
@@ -37,7 +37,7 @@ describe('UIBeforeAfterImage component', () => {
 
   it('should correctly change styles after 2500ms when mouseLeave', async () => {
     render(BeforeAfterImage, {
-      stubs: ['nuxt-link', 'NuxtLink', 'prismic-image'],
+      stubs: ['nuxt-link', 'NuxtLink', 'PrismicImage'],
       mocks: {
         getMediaFromS3: () => 'img.jpg',
       },
@@ -56,7 +56,7 @@ describe('UIBeforeAfterImage component', () => {
   it('should correctly change alt by properties', async () => {
     render(BeforeAfterImage, {
       props,
-      stubs: ['nuxt-link', 'NuxtLink', 'prismic-image'],
+      stubs: ['nuxt-link', 'NuxtLink', 'PrismicImage'],
       mocks: {
         getMediaFromS3: () => 'img.jpg',
       },

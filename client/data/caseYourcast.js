@@ -4,7 +4,7 @@ export const supportedGadgets = [
     width: 735,
     height: 449,
     file: 'macbook-pro',
-    alt: 'Laptops',
+    alt: 'OTT-like Online Video Streaming Platform on MacBook Pro Laptop.',
     color: 'purple-medium',
   },
   {
@@ -12,7 +12,7 @@ export const supportedGadgets = [
     width: 312,
     height: 627,
     file: 'iphonex',
-    alt: 'Smartphones',
+    alt: 'OTT-like Online Video Streaming Platform on IPhone X Smartphone.',
     color: 'black-primary-bg',
   },
   {
@@ -20,7 +20,7 @@ export const supportedGadgets = [
     width: 518,
     height: 374,
     file: 'ipad-pro',
-    alt: 'Tablets',
+    alt: 'OTT-like Online Video Streaming Platform on IPad Tablet.',
     color: 'purple-dark',
   },
 ]

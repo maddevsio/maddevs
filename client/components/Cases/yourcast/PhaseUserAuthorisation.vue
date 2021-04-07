@@ -1,8 +1,8 @@
 <template>
   <section class="container_regular m-48_bottom media-m-24_bottom">
-    <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+    <h3 class="case_title_h2 m-24_bottom media-m-12_bottom">
       Phase 5: User authorisation & personalised experience
-    </h2>
+    </h3>
     <TextParagraph class="m-24_bottom">
       In 2020, the platform launched individual user authorisation through email. With the statistics collected for each
       user, the project started to provide a more personalised experience based on people’s preferences. A number of new

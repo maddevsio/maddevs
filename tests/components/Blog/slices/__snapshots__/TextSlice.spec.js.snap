@@ -5,7 +5,7 @@ exports[`text slice component is a Vue instance 1`] = `
   <div
     class="post-part single"
   >
-    <prismic-rich-text-stub
+    <prismicrichtext-stub
       class="textslice"
       field="[object Object]"
     />

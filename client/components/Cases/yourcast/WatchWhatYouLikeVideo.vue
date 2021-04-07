@@ -11,7 +11,7 @@
         folder="yourcast"
         file="iphone-xs-max"
         extension="png"
-        alt="iPhone XS Max Gold"
+        alt="OTT-like Online Video Streaming Platform App."
       />
     </div>
   </section>
