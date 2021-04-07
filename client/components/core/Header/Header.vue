@@ -246,10 +246,10 @@ export default {
       if (!area) return
 
       const areaHeight = (area.offsetTop + area.offsetHeight) - this.$refs.overlay.offsetHeight
-      const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
+      // const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
       const isBeforeBottomPointSection = scrollTop <= areaHeight // Before Bottom point of the section
 
-      if (isAfterTopPointSection && isBeforeBottomPointSection) {
+      if (isBeforeBottomPointSection) {
         this.isTransparentBG = true
       } else {
         this.isTransparentBG = false
@@ -440,7 +440,7 @@ export default {
 /deep/ #header-logo-text {
   opacity: 0;
   transform: translateY(-100px) translateX(5%) scale(0.9);
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
 }
 
 .is-transparent-bg {
