@@ -53,7 +53,8 @@ import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import Main from '@/components/Cases/sjmc/Main'
 import CaseFooter from '@/components/Cases/shared/CaseFooter'
 import SJMCVideo from '@/components/Cases/sjmc/SJMCVideo'
-import { getMetadata, getPageScripts, buildHead } from '@/data/seo'
+import { getMetadata, buildHead } from '@/data/seo'
+import { getPageScripts } from '@/data/pageScripts'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {

@@ -1,5 +1,3 @@
-import pageScripts from './pageScripts'
-
 export const meta = {
   index: {
     title: 'Mad Devs: Custom Software Development Company',
@@ -84,8 +82,6 @@ export const meta = {
 }
 
 export const getMetadata = key => meta[key] || {}
-
-export const getPageScripts = key => pageScripts[key] || []
 
 export const buildHead = ({
   title, description, url, jsonLd, image = 'https://maddevs.io/Open-Graph.png',
