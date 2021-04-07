@@ -135,13 +135,13 @@ exports[`KeyProjectMilestones component should render correctly 1`] = `
         <div
           class="card_text-content"
         >
-          <h3
+          <h4
             class="case_title_h4 card_title"
           >
             
       2016
     
-          </h3>
+          </h4>
            
           <p
             class="case_paragraph card_paragraph"
@@ -605,13 +605,13 @@ exports[`KeyProjectMilestones component should render correctly 1`] = `
         <div
           class="card_text-content"
         >
-          <h3
+          <h4
             class="case_title_h4 card_title"
           >
             
       2017
     
-          </h3>
+          </h4>
            
           <p
             class="case_paragraph card_paragraph"
@@ -781,13 +781,13 @@ exports[`KeyProjectMilestones component should render correctly 1`] = `
         <div
           class="card_text-content"
         >
-          <h3
+          <h4
             class="case_title_h4 card_title"
           >
             
       2018
     
-          </h3>
+          </h4>
            
           <p
             class="case_paragraph card_paragraph"
@@ -891,13 +891,13 @@ exports[`KeyProjectMilestones component should render correctly 1`] = `
         <div
           class="card_text-content"
         >
-          <h3
+          <h4
             class="case_title_h4 card_title"
           >
             
       2019
     
-          </h3>
+          </h4>
            
           <p
             class="case_paragraph card_paragraph"
@@ -1011,13 +1011,13 @@ exports[`KeyProjectMilestones component should render correctly 1`] = `
         <div
           class="card_text-content"
         >
-          <h3
+          <h4
             class="case_title_h4 card_title"
           >
             
       2020
     
-          </h3>
+          </h4>
            
           <p
             class="case_paragraph card_paragraph"
