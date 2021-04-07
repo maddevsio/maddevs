@@ -81,7 +81,7 @@ export default {
   },
 
   head() {
-    return buildHead({ ...getMetadata('faq'), image: 'https://maddevs.io/sir-john-monash-centre.png' }, getPageScripts('sjmc'))
+    return buildHead({ ...getMetadata('sjmc'), image: 'https://maddevs.io/sir-john-monash-centre.png' }, getPageScripts('sjmc'))
   },
 
   methods: {
