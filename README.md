@@ -76,7 +76,7 @@ Set current domain
 
 * NODE_DOMAIN
 
-**All of these variables must be added to the Heroku server**
+**All of these variables must be added to the Heroku hosting**
 
 ## Instructions for using the AWS S3
 
