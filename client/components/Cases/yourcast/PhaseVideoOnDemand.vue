@@ -1,9 +1,9 @@
 <template>
   <section class="case_video-on-demand">
     <div class="container_regular">
-      <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+      <h3 class="case_title_h2 m-24_bottom media-m-12_bottom">
         Phase 4: Video on demand
-      </h2>
+      </h3>
       <TextParagraph class="m-48_bottom media-m-24_bottom">
         Video on Demand (VoD) functionality was added to the platform in 2019. To adapt it to the most current VoD
         standards, Mad Devs leveraged Nimble Streamer and Nimble Transcoder. The viewers received access to the

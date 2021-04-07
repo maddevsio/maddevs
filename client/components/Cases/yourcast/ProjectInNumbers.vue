@@ -1,8 +1,8 @@
 <template>
   <section class="container_regular">
-    <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+    <h3 class="case_title_h2 m-24_bottom media-m-12_bottom">
       Project in numbers
-    </h2>
+    </h3>
     <TextParagraph class="m-48_bottom media-m-24_bottom">
       Being a small, highly customised video streaming and online cinema platform, the service remains popular, with its
       audience sharing new feature requests for Mad Devs.

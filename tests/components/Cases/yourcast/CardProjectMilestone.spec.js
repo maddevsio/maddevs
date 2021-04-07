@@ -24,6 +24,6 @@ describe('CardProjectMilestone component', () => {
     render(CardProjectMilestone, {
       props,
     })
-    expect(screen.getByText(props.title).tagName).toBe('H3')
+    expect(screen.getByText(props.title).tagName).toBe('H4')
   })
 })

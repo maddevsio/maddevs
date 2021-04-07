@@ -44,6 +44,7 @@ import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/yourcast/Main'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
+import { getMetadata, buildHead } from '@/data/seo'
 
 export default {
   name: 'CaseYourcast',
@@ -62,9 +63,16 @@ export default {
         height: 81.23,
         folder: 'yourcast',
         file: 'yourcast-logo',
-        alt: '',
+        alt: 'YourcastTV - Video Streaming Platform Logo.',
       },
     }
+  },
+
+  head() {
+    return buildHead({
+      ...getMetadata('yourcast'),
+      image: 'https://maddevs.io/yourcast.jpg',
+    })
   },
 }
 </script>

@@ -10,7 +10,13 @@
     </TextParagraph>
     <TextParagraph>
       According to the Statement of Work, we ensured the platform’s 100% autonomous work and strictly followed the
-      security compliance requirements. However, due to an NDA, we are not authorised to share the how-tos and best
+      <NuxtLink
+        :to="`/customer-university/software-maintenance-costs/`"
+        class="case_link"
+      >
+        security compliance requirements.
+      </NuxtLink>
+      However, due to an NDA, we are not authorised to share the how-tos and best
       practices related to security.
     </TextParagraph>
     <TextQuote class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom">

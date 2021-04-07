@@ -5,13 +5,13 @@ exports[`PhaseUserAuthorisation component should render correctly 1`] = `
   <section
     class="container_regular m-48_bottom media-m-24_bottom"
   >
-    <h2
+    <h3
       class="case_title_h2 m-24_bottom media-m-12_bottom"
     >
       
     Phase 5: User authorisation & personalised experience
   
-    </h2>
+    </h3>
      
     <p
       class="case_paragraph m-24_bottom"

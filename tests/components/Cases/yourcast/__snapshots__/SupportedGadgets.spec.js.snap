@@ -5,13 +5,13 @@ exports[`SupportedGadgets component should render correctly 1`] = `
   <section
     class="container_regular"
   >
-    <h2
+    <h3
       class="case_title_h2 m-24_bottom media-m-12_bottom"
     >
       
     Supported gadgets
   
-    </h2>
+    </h3>
      
     <p
       class="case_paragraph m-48_bottom media-m-24_bottom"
@@ -31,13 +31,13 @@ exports[`SupportedGadgets component should render correctly 1`] = `
         <div
           class="card-content"
         >
-          <h3
+          <h4
             class="card-content_title case_title_h4"
           >
             
     Laptops
   
-          </h3>
+          </h4>
            
           <div
             class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-macbook-pro-card"
@@ -52,7 +52,7 @@ exports[`SupportedGadgets component should render correctly 1`] = `
               />
                
               <img
-                alt="Laptops"
+                alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
                 class="image"
                 data-testid="test-picture-img"
                 height="449"
@@ -75,7 +75,7 @@ exports[`SupportedGadgets component should render correctly 1`] = `
               />
                
               <img
-                alt="Laptops"
+                alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
                 class="image"
                 data-testid="test-picture-img"
                 height="449"
@@ -94,13 +94,13 @@ exports[`SupportedGadgets component should render correctly 1`] = `
         <div
           class="card-content"
         >
-          <h3
+          <h4
             class="card-content_title case_title_h4"
           >
             
     Smartphones
   
-          </h3>
+          </h4>
            
           <div
             class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-iphonex-card"
@@ -115,7 +115,7 @@ exports[`SupportedGadgets component should render correctly 1`] = `
               />
                
               <img
-                alt="Smartphones"
+                alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
                 class="image"
                 data-testid="test-picture-img"
                 height="627"
@@ -138,7 +138,7 @@ exports[`SupportedGadgets component should render correctly 1`] = `
               />
                
               <img
-                alt="Smartphones"
+                alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
                 class="image"
                 data-testid="test-picture-img"
                 height="627"
@@ -157,13 +157,13 @@ exports[`SupportedGadgets component should render correctly 1`] = `
         <div
           class="card-content"
         >
-          <h3
+          <h4
             class="card-content_title case_title_h4"
           >
             
     Tablets
   
-          </h3>
+          </h4>
            
           <div
             class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-ipad-pro-card"
@@ -178,7 +178,7 @@ exports[`SupportedGadgets component should render correctly 1`] = `
               />
                
               <img
-                alt="Tablets"
+                alt="OTT-like Online Video Streaming Platform on IPad Tablet."
                 class="image"
                 data-testid="test-picture-img"
                 height="374"
@@ -201,7 +201,7 @@ exports[`SupportedGadgets component should render correctly 1`] = `
               />
                
               <img
-                alt="Tablets"
+                alt="OTT-like Online Video Streaming Platform on IPad Tablet."
                 class="image"
                 data-testid="test-picture-img"
                 height="374"
