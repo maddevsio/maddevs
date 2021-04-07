@@ -53,7 +53,7 @@ import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import Main from '@/components/Cases/sjmc/Main'
 import CaseFooter from '@/components/Cases/shared/CaseFooter'
 import SJMCVideo from '@/components/Cases/sjmc/SJMCVideo'
-import { getMetadata, buildHead } from '@/data/seo'
+import { getMetadata, getPageScripts, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
@@ -80,10 +80,7 @@ export default {
   },
 
   head() {
-    return buildHead({
-      ...getMetadata('sjmc'),
-      image: 'https://maddevs.io/sir-john-monash-centre.png',
-    })
+    return buildHead({ ...getMetadata('faq'), image: 'https://maddevs.io/sir-john-monash-centre.png' }, getPageScripts('sjmc'))
   },
 
   methods: {
