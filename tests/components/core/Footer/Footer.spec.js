@@ -40,7 +40,7 @@ describe('Footer component', () => {
     expect(element.className).toBe(`footer ${ROUTE.name}`)
   })
 
-  it('correctly change class', () => {
+  it('correctly call update class function from watcher', () => {
     const wrapper = shallowMount(Footer, {
       localVue,
     })
