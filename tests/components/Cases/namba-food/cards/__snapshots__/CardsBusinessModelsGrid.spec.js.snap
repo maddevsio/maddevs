@@ -21,6 +21,7 @@ exports[`CardsBusinessModelsGrid component should render correctly 1`] = `
           <img
             alt="Namba Food: Food and Grocery Delivery Service Couriers."
             class="image"
+            data-testid="test-picture-img"
             height="0"
             loading="lazy"
             src="img.jpg"

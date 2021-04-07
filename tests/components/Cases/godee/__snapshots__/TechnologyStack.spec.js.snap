@@ -1,0 +1,397 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TechnologyStack component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular"
+  >
+    <h3
+      class="case_title_h3 m-24_bottom media-m-12_bottom"
+    >
+      
+    Technology stack
+  
+    </h3>
+     
+    <ul
+      class="case_list-technologies m-96_bottom media-m-48_bottom case_list-technologies-godee"
+    >
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__other-open-street-map other-open-street-map"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Open Street Map
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__other-google-maps other-google-maps"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Google Maps
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__backend-postgresql backend-postgresql"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    PostgreSQL
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__devops-docker case_technologies-item__docker devops-docker case_technologies-item__docker"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Docker
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__devops-nginx devops-nginx"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Nginx
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__backend-redis backend-redis"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Redis
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__backend-python backend-python"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Python (Django)
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Golang
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__mobile-kotlin mobile-kotlin"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Kotlin
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__pm-atlassian pm-atlassian"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Atlassian
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__mobile-swift mobile-swift"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Swift
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__mobile-firebase mobile-firebase"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Firebase
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__mobile-test-flight mobile-test-flight"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    TestFlight
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__infrastructure-datadog infrastructure-datadog"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Datadog
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__mobile-android-black-text mobile-android-black-text"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Android
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__devops-suite devops-suite"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Suite
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__pm-jira pm-jira"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Jira Software
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__backend-grpc case_technologies-item__grpc backend-grpc case_technologies-item__grpc"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    GRPC
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__mobile-apple-black mobile-apple-black"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    iOS
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__other-uptime-robot case_technologies-item__uptime-robot other-uptime-robot case_technologies-item__uptime-robot"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    UptimeRobot
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__frontend-mapbox frontend-mapbox"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Mapbox
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__frontend-vue frontend-vue"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Vue JS
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__devops-sentry-dark devops-sentry-dark"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Sentry
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__other-here other-here"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Here Traffic
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <div
+          class="case_technologies-item__tech-icon case_technologies-item__pm-basecamp-transparent-bg pm-basecamp-transparent-bg"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Basecamp
+  
+        </p>
+      </li>
+    </ul>
+  </section>
+</div>
+`;

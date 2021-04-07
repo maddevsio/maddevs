@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular"
+  >
+    <p
+      class="case_paragraph m-48_top media-m-24_top"
+    >
+      
+    GoDee is a reliable way to commute in Ho Chi Minh City, Vietnam. Its shuttle buses take express routes that
+    link the city’s major districts and popular destinations. GoDee helps riders save time, money and the planet
+    due to its lower ecological impact.
+  
+    </p>
+     
+    <blockquote
+      class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+    >
+      
+    The app-based system allows users to find a route, select the time, book a seat and pay for the ride online.
+  
+    </blockquote>
+  </section>
+</div>
+`;

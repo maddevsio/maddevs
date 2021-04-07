@@ -1,5 +1,5 @@
 import CardProjectMilestone from '@/components/Cases/yourcast/CardProjectMilestone'
-import { render, screen } from '@testing-library/vue'
+import { fireEvent, render, screen } from '@testing-library/vue'
 
 describe('CardProjectMilestone component', () => {
   const props = {
@@ -8,10 +8,15 @@ describe('CardProjectMilestone component', () => {
     background: 'background',
   }
 
-  it('should render correctly', () => {
+  it('should render correctly', async () => {
     const { container } = render(CardProjectMilestone, {
       props,
     })
+
+    const element = await screen.getByTestId('test-card-project-milestone')
+    await fireEvent.mouseOver(element)
+    await fireEvent.mouseOut(element)
+
     expect(container).toMatchSnapshot()
   })
 

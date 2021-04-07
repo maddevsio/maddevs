@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Applications component should render correctly 1`] = `
+<div>
+  <section>
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-96_top m-24_bottom media-m-48_top media-m-12_bottom"
+      >
+        
+      Web version and mobile applications for end-users
+    
+      </h2>
+       
+      <p
+        class="case_paragraph m-48_bottom media-m-24_bottom"
+      >
+        
+      Namba Food is not a simple catalogue of goods and services, as it aims to seamlessly blend into the modern, busy
+      lifestyle of its customers. Developing a convenient process for ordering products and making it stress-free was
+      key.
+    
+      </p>
+    </section>
+     
+    <section
+      class="container_full background-color-silver p-75_top p-75_bottom media-p-16_top media-p-16_bottom"
+    >
+      <div
+        class="case_full-screen-phone-video-wrapper"
+      >
+        <img
+          class="case_phone-ios-image"
+          data-testid="test-case_phone-ios-image"
+          src="img.jpg"
+        />
+      </div>
+    </section>
+  </section>
+</div>
+`;

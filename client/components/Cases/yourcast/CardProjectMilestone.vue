@@ -2,6 +2,7 @@
   <div
     class="card"
     :class="`background-color-${background}`"
+    data-testid="test-card-project-milestone"
     @mouseover="play"
     @mouseout="pause"
   >

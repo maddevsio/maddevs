@@ -19,6 +19,7 @@
       :loading="lazy ? 'lazy' : ''"
       :width="width"
       :height="height"
+      data-testid="test-picture-img"
       class="image"
       @load="onImageLoad($event)"
     >
