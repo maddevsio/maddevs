@@ -39,7 +39,6 @@ export default {
   mixins: [playLottieMixin('video-on-demand', {
     animationData,
     autoplay: false,
-    loop: false,
   })],
 }
 </script>
