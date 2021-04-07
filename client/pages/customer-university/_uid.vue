@@ -1,9 +1,9 @@
 <template>
-  <post-view v-bind="postData" />
+  <PostView v-bind="postData" />
 </template>
 
 <script>
-import PostView from '@/components/Blog/PostView'
+import PostView from '@/components/Blog/Post/Post'
 
 export default {
   name: 'Post',

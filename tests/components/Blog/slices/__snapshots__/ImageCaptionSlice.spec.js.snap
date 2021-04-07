@@ -9,7 +9,7 @@ exports[`image attribute slice component is a Vue instance 1`] = `
       <div
         class="block-img image-full-width"
       >
-        <prismic-image-stub
+        <prismicimage-stub
           class=""
           field="[object Object]"
         />

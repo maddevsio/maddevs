@@ -5,7 +5,7 @@
         :class="size"
         class="block-img"
       >
-        <prismic-image
+        <PrismicImage
           :field="img"
           :class="{ 'block-img-zoom': zoomEnabled }"
           @click="openModal"
@@ -14,7 +14,7 @@
           v-if="zoomEnabled"
           ref="zoom"
         >
-          <prismic-image :field="img" />
+          <PrismicImage :field="img" />
         </SimpleModal>
       </div>
       <p
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import SimpleModal from '@/components/Blog/SimpleModal'
+import SimpleModal from '@/components/Blog/slices/SimpleModal'
 
 export default {
   name: 'ImageCaptionSlice',

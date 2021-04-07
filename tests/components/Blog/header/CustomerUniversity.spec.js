@@ -1,5 +1,6 @@
 import CustomerUniversity from '@/components/Blog/header/CustomerUniversity'
 import { render, screen } from '@testing-library/vue'
+import { mount } from '@vue/test-utils'
 
 describe('customer university header component', () => {
   const postList = [
@@ -31,7 +32,7 @@ describe('customer university header component', () => {
         },
       ],
       cu_post: {
-        id: 'YAGi7REAACMAgV8d',
+        id: 'YAGi7REAACMAgV8d2',
         isBroken: false,
         lang: 'en-us',
         link_type: 'Document',
@@ -74,33 +75,69 @@ describe('customer university header component', () => {
     id: 'YAGi7REAACMAgV8d',
   }
 
-  it('is a Vue instance withk default props', () => {
+  const mocks = {
+    $prismic: {
+      asText: text => text[0].text,
+    },
+    $router: {
+      push: jest.fn(),
+    },
+  }
+
+  const stubs = ['PrismicImage', 'CommonHeader', 'NuxtLink']
+
+  it('should render correctly with default props', () => {
     const { container } = render(CustomerUniversity, {
       props,
-      mocks: {
-        $prismic: {
-          asText: text => text[0].text,
-        },
-      },
-      stubs: ['prismic-image', 'common-header', 'router-link'],
+      mocks,
+      stubs,
     })
     expect(container).toMatchSnapshot()
   })
 
-  it('is a Vue instance', () => {
+  it('should render correctly with custom props', () => {
+    props.id = 'YAGi7REAACMAgV8d'
     render(CustomerUniversity, {
       props: {
         ...props,
         clusterName,
         postList,
       },
-      mocks: {
-        $prismic: {
-          asText: text => text[0].text,
-        },
-      },
-      stubs: ['prismic-image', 'common-header', 'router-link'],
+      mocks,
+      stubs,
     })
     expect(screen.getByText(clusterName)).not.toBeNull()
+  })
+
+  it('should render correctly with custom props and id', () => {
+    props.id = 'YAGi7REAACMAgV8d2'
+    render(CustomerUniversity, {
+      props: {
+        ...props,
+        clusterName,
+        postList,
+      },
+      mocks,
+      stubs,
+    })
+
+    expect(screen.getByText(clusterName)).not.toBeNull()
+  })
+
+  it('should correctly called $router.push after calling handleChange', () => {
+    const wrapper = mount(CustomerUniversity, {
+      propsData: {
+        ...props,
+        clusterName,
+        postList,
+      },
+      mocks,
+      stubs,
+    })
+
+    wrapper.vm.handleChange({ value: 'cu-test-2', label: 'CUTest' })
+    expect(mocks.$router.push).toHaveBeenCalledTimes(0)
+    wrapper.vm.handleChange({ value: 'cu-test-333', label: 'CUTest' })
+    expect(mocks.$router.push).toHaveBeenCalledTimes(1)
   })
 })
