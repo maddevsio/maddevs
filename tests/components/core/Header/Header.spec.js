@@ -17,11 +17,6 @@ const GODEE_MOCK = {
       path: '/case-studies/godee',
     },
   },
-  $refs: {
-    overlay: {
-      offsetHeight: 20,
-    },
-  },
 }
 
 const stubs = ['RouterLink']
@@ -155,6 +150,27 @@ describe('Header', () => {
     await fireEvent.scroll(mobileScrollBar, { target: { scrollTop: 50 } })
 
     expect(screen.queryAllByTestId('test-logo-text')).toHaveLength(0)
+  })
+
+  it('not call remove handler in path not contain godee', () => {
+    const wrapper = shallowMount(Header, {
+      mocks,
+      stubs,
+      container: document.body.appendChild(containerToRender),
+    })
+
+    wrapper.vm.$options.methods.removeEventListeners.call({
+      caseGoDeeScrollContainer,
+      ...mocks,
+    })
+
+    wrapper.vm.$options.methods.setWidthForHeader.call({
+      caseGoDeeScrollContainer,
+      $refs: {},
+      ...GODEE_MOCK,
+    })
+
+    expect(caseGoDeeScrollContainer.removeEventListener).toHaveBeenCalledTimes(0)
   })
 
   it('correctly call remove handler in path include godee', () => {
