@@ -24,6 +24,11 @@ if (process.client) {
 export default async (to, from, savedPosition) => {
   const position = savedPosition || { x: 0, y: 0 }
 
+  // triggerScroll is only fired when a new component is loaded
+  if (to.path === from.path && to.hash !== from.hash) {
+    $nuxt.$nextTick(() => $nuxt.$emit('triggerScroll'))
+  }
+
   const findEl = async (hash, x) => document.querySelector(hash)
       || new Promise(resolve => {
         if (x > 50) resolve()
@@ -34,11 +39,6 @@ export default async (to, from, savedPosition) => {
     const hashEl = await findEl(to.hash)
     if ('scrollBehavior' in document.documentElement.style) return window.scrollTo({ top: hashEl.offsetTop, behavior: 'smooth' })
     return window.scrollTo(0, hashEl.offsetTop)
-  }
-
-  // triggerScroll is only fired when a new component is loaded
-  if (to.path === from.path && to.hash !== from.hash) {
-    $nuxt.$nextTick(() => $nuxt.$emit('triggerScroll'))
   }
 
   return new Promise(resolve => {
