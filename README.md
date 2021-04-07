@@ -194,14 +194,21 @@ Get file from bucket https://d6xkme6dcvajw.cloudfront.net/videos/main.ef19480.mp
 
 ## Run project
 
+### Install dependencies
+
 ``` bash
-# install dependencies
 $ npm install # Or yarn install
+```
 
-# serve with hot reload at localhost:3000
+### Serve with hot reload at localhost:3000
+
+``` bash
 $ npm run dev
+```
 
-# build for production and launch server
+### Build for production and launch server
+
+``` bash
 $ npm run build
 $ npm start
 ```
