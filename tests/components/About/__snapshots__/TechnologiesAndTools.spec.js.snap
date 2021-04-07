@@ -34,7 +34,7 @@ exports[`TechnologiesAndTools should render correctly 1`] = `
             data-testid="test-tech_legend__item"
           >
             
-          devOps
+          DevOps
         
           </div>
           <div
