@@ -40,25 +40,37 @@ export default {
 
   created() {
     this.sliceData = this.slice
-    if (!this.sliceData.items.length) return
+    const { items } = this.sliceData
+    if (!items.length) return
 
-    if (this.sliceData.items[0].embed.html) {
-      this.sliceData.items[0].embed.html = this.sliceData.items[0].embed.html
-        .replace('<h1>', '<div class="embed__title">')
-        .replace('</h1>', '</div>')
-        .replace(/<img[^>]*>/g, '')
-        .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`)
-        /**
-         * replaces text inside <div class="embed__title"></div> tag
-         * split removes the " | Mad Devs Pagename" prefix
-         */
-        .replace(/(?<=<div class="embed__title">).*?(?=<\/div>)/, match => this.sliceData.items[0].embed_title || match.split(' | ')[0])
-        // replaces text inside <p></p> tag (description)
-        .replace(/(?<=<p>).*?(?=<\/p>)/, match => this.sliceData.items[0].embed_description || match)
+    const {
+      embed: {
+        url,
+        title: rawTitle,
+        html: rawHtml,
+        type: embedType,
+      },
+      embed_title: embedTitle,
+    } = items[0]
+
+    if (rawHtml) {
+      const matchDescription = rawHtml.match('<p>(.*?)</p>')
+      const description = matchDescription ? matchDescription[1] || '' : ''
+
+      const html = `
+        <div data-type="website">
+          <a href="${url}" target="_blank">
+            <div class="embed__title">${embedTitle || rawTitle.split(' | ')[0]}</div>
+            <p>${description}</p>
+          </a>
+        </div>
+      `
+
+      this.sliceData.items[0].embed.html = html
     }
 
-    if (this.sliceData.items[0].embed.type === 'video') {
-      this.sliceData.items[0].embed.html = this.sliceData.items[0].embed.html
+    if (embedType === 'video') {
+      this.sliceData.items[0].embed.html = rawHtml
         .replace(/height="[0-9]*"/, 'height="500"')
         .replace(/width="[0-9]*"/, 'width="100%"')
     }
@@ -80,7 +92,7 @@ export default {
     border: 1px solid $border-color--silver;
   }
 
-  /deep/ > div {
+  /deep/ div {
     a {
       text-decoration: none;
     }
