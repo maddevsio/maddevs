@@ -7,7 +7,8 @@
       <div class="modal-field-item field-item">
         <p
           v-if="useLabels"
-          class="modal-field-name field-name required"
+          class="modal-field-name field-name"
+          :class="fullnameRequired ? 'required' : ''"
         >
           Full Name
         </p>
@@ -23,7 +24,7 @@
         <!-- Erros -->
         <div v-if="$v.fullName.$dirty">
           <span
-            v-if="!$v.fullName.required"
+            v-if="fullnameRequired && !$v.fullName.required"
             class="modal-error-text error-text"
           >This field is required.</span>
           <span
@@ -72,23 +73,38 @@
       <div class="modal-field-item field-item">
         <p
           v-if="useLabels"
-          class="modal-field-name field-name required"
+          class="modal-field-name field-name"
+          :class="emailRequired ? 'required' : ''"
         >
           Work email
         </p>
-        <input
-          v-model="email"
-          :class="{ invalid: $v.email.$error }"
-          data-testid="test-base-form-email"
-          type="text"
-          class="modal-entry-field entry-field"
-          placeholder="your@mail.com"
-          @input="$v.email.$touch"
+        <div v-if="useLabels">
+          <input
+            v-model="email"
+            :class="{ invalid: $v.email.$error }"
+            type="text"
+            data-testid="test-base-form-email"
+            placeholder="your@mail.com"
+            class="modal-entry-field entry-field"
+            @input="$v.email.$touch"
+          >
+        </div>
+        <div
+          v-else
+          v-PlaceholderAsterisk="'your@mail.com'"
         >
+          <input
+            v-model="email"
+            :class="{ invalid: $v.email.$error }"
+            type="text"
+            class="modal-entry-field entry-field"
+            @input="$v.email.$touch"
+          >
+        </div>
         <!-- Erros -->
         <div v-if="$v.email.$dirty">
           <span
-            v-if="!$v.email.required"
+            v-if="emailRequired && !$v.email.required"
             class="modal-error-text error-text"
           >This field is required.</span>
           <span
@@ -190,6 +206,7 @@ import { phone } from '@/helpers/validators'
 import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
 import UIButton from '@/components/shared/UIButton'
 import phoneHandlerMixin from '@/mixins/phoneHandlerMixin'
+import PlaceholderAsterisk from '@/directives/PlaceholderAsterisk'
 
 export default {
   name: 'BaseForm',
@@ -198,22 +215,27 @@ export default {
     UIButton,
   },
 
+  directives: {
+    PlaceholderAsterisk,
+  },
+
   mixins: [phoneHandlerMixin],
 
   validations() {
     const defaultFields = {
       fullName: {
-        required,
         maxLength: maxLength(50),
       },
 
       email: {
-        required,
         email,
       },
 
       validationGroup: ['fullName', 'email'],
     }
+
+    if (this.fullnameRequired) defaultFields.fullName.required = required
+    if (this.emailRequired) defaultFields.email.required = required
 
     if (this.usePhone) {
       defaultFields.phoneNumber = {
@@ -286,6 +308,16 @@ export default {
       type: Boolean,
       default: true,
     },
+
+    fullnameRequired: {
+      type: Boolean,
+      default: true,
+    },
+
+    emailRequired: {
+      type: Boolean,
+      default: true,
+    },
   },
 
   data() {
@@ -348,5 +380,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../../assets/styles/vars';
 
+.form {
+  /deep/ .v-placeholder-asterisk {
+    font-size: 16px;
+    font-family: 'Poppins-Regular', sans-serif;
+    color: $text-color--grey-form-placeholder;
+    left: 17px !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+}
 </style>
