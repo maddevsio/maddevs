@@ -61,12 +61,14 @@ exports[`ModalContactMe component should render correctly 1`] = `
       
         </p>
          
-        <input
-          class="modal-entry-field entry-field"
-          data-testid="test-base-form-email"
-          placeholder="your@mail.com"
-          type="text"
-        />
+        <div>
+          <input
+            class="modal-entry-field entry-field"
+            data-testid="test-base-form-email"
+            placeholder="your@mail.com"
+            type="text"
+          />
+        </div>
          
         <!---->
       </div>

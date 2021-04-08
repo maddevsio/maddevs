@@ -394,6 +394,7 @@ exports[`Footer component should render correctly 1`] = `
                    
                   <input
                     class="modal-entry-field entry-field"
+                    data-testid="test-base-form-full-name"
                     placeholder="John Smith"
                     type="text"
                   />
@@ -408,11 +409,23 @@ exports[`Footer component should render correctly 1`] = `
                 >
                   <!---->
                    
-                  <input
-                    class="modal-entry-field entry-field"
-                    placeholder="your@mail.com"
-                    type="text"
-                  />
+                  <div
+                    style="position: relative;"
+                  >
+                    <input
+                      class="modal-entry-field entry-field"
+                      type="text"
+                    />
+                    <div
+                      class="v-placeholder-asterisk"
+                      style="pointer-events: none; position: absolute; top: 0px; left: 0px; display: flex; align-items: center;"
+                    >
+                      <span />
+                      <div
+                        style="color: red; margin-left: 3px;"
+                      />
+                    </div>
+                  </div>
                    
                   <!---->
                 </div>
@@ -426,6 +439,7 @@ exports[`Footer component should render correctly 1`] = `
                    
                   <textarea
                     class="modal-entry-field entry-field textarea"
+                    data-testid="test-base-form-description"
                     placeholder="Describe your project..."
                     type="text"
                   />
