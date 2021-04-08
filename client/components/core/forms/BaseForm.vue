@@ -14,6 +14,7 @@
         <input
           v-model="fullName"
           :class="{ invalid: $v.fullName.$error }"
+          data-testid="test-base-form-full-name"
           type="text"
           class="modal-entry-field entry-field"
           placeholder="John Smith"
@@ -47,6 +48,7 @@
         <input
           v-model="company"
           :class="{ invalid: $v.company.$error }"
+          data-testid="test-base-form-company"
           type="text"
           class="modal-entry-field entry-field"
           placeholder="MyAwesomeCompany, Inc."
@@ -77,6 +79,7 @@
         <input
           v-model="email"
           :class="{ invalid: $v.email.$error }"
+          data-testid="test-base-form-email"
           type="text"
           class="modal-entry-field entry-field"
           placeholder="your@mail.com"
@@ -110,6 +113,7 @@
         <input
           :class="{ invalid: $v.phoneNumber.$error }"
           :value="phoneNumber"
+          data-testid="test-base-form-phone"
           type="text"
           class="modal-entry-field entry-field"
           placeholder="+X XXX XXX-XXXX"
@@ -145,6 +149,7 @@
         <textarea
           v-model="description"
           :class="{ invalid: $v.description.$error }"
+          data-testid="test-base-form-description"
           type="text"
           class="modal-entry-field entry-field textarea"
           placeholder="Describe your project..."
