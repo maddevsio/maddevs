@@ -1,9 +1,9 @@
 <template>
-  <div class="error-page">
+  <div class="error-page container">
     <Lottie
       id="404-code"
-      :options="options"
       class="error-page_lottie"
+      :options="options"
       @animCreated="handleAnimation"
     />
     <h1 class="error-page_title">
@@ -43,11 +43,14 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 210px;
+  padding-top: 250px;
   padding-bottom: 282px;
 
   &_lottie {
+    height: 12.1vw !important;
     max-width: 821px;
+    max-height: 170px;
+    min-height: 56px;
   }
 
   &_title {
@@ -74,6 +77,29 @@ export default {
     &:before {
       content: '←';
       font-size: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    padding-top: 150px;
+    padding-bottom: 90px;
+
+    &_title {
+      max-width: 327px;
+      margin-top: 31px;
+      margin-bottom: 65px;
+      font-size: 27px;
+      line-height: 142%;
+      letter-spacing: -1px;
+    }
+
+    &_link {
+      font-size: 16px;
+      line-height: 150%;
+
+      &:before {
+        font-size: 29px;
+      }
     }
   }
 }
