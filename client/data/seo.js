@@ -84,8 +84,8 @@ export const meta = {
 export const getMetadata = key => meta[key] || {}
 
 export const buildHead = ({
-  title, description, url, image, jsonLd = 'https://maddevs.io/Open-Graph.png',
-}) => ({
+  title, description, url, jsonLd, image = 'https://maddevs.io/Open-Graph.png',
+}, scripts = []) => ({
   title,
   meta: [
     { name: 'description', content: description },
@@ -107,5 +107,6 @@ export const buildHead = ({
       type: 'application/ld+json',
       innerHTML: jsonLd,
     },
+    ...scripts,
   ],
 })
