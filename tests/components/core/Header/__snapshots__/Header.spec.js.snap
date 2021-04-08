@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<div
+  class="header-wrapper is-transparent-bg"
+  id="header"
+>
+  <div
+    id="overlay"
+  />
+   
+  <header
+    class="header"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="header__left-nav_bar col-xl-6 col-lg-7"
+        >
+          <routerlink-stub
+            class="header__logo-icon"
+            to="/"
+          >
+            <headerlogo-stub
+              class="header__header-logo"
+              isshowtext="true"
+            />
+          </routerlink-stub>
+           
+          <nav
+            class="header__header-routes_links"
+          >
+            <routerlink-stub
+              class="header__navigation-link"
+              exact="true"
+              to="/"
+            >
+              
+              About
+            
+            </routerlink-stub>
+            <routerlink-stub
+              class="header__navigation-link"
+              to="/services/"
+            >
+              
+              Services
+            
+            </routerlink-stub>
+            <routerlink-stub
+              class="header__navigation-link"
+              to="/projects/"
+            >
+              
+              Projects
+            
+            </routerlink-stub>
+            <routerlink-stub
+              class="header__navigation-link"
+              to="/careers/"
+            >
+              
+              Careers
+            
+            </routerlink-stub>
+            <routerlink-stub
+              class="header__navigation-link"
+              to="/blog/"
+            >
+              
+              Blog
+            
+            </routerlink-stub>
+          </nav>
+           
+          <div
+            class="header__burger"
+          >
+            <svg
+              class="header__burger--open"
+              fill="none"
+              height="10"
+              viewBox="0 0 30 10"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0H30V1H0V0Z"
+                fill="#F5F7F9"
+              />
+               
+              <path
+                d="M0 9H30V10H0V9Z"
+                fill="#F5F7F9"
+              />
+            </svg>
+          </div>
+        </div>
+         
+        <div
+          class="header__right-content col-xl-6 col-lg-5"
+        >
+          <div
+            class="header__phone-wrapper"
+          >
+            <img
+              alt="United Kingdom"
+              class="header__phone-flag"
+              height="14"
+              src="@/assets/img/Home/flags/uk.svg"
+              width="19"
+            />
+             
+            <a
+              class="header__header-phone"
+              href="tel:+442039848555"
+            >
+              +44 20 3984 8555
+            </a>
+          </div>
+           
+          <uimodaltriggerbutton-stub
+            color="red"
+            label="Contact me"
+          />
+        </div>
+      </div>
+    </div>
+  </header>
+   
+  <!---->
+   
+  <modal-stub>
+    <contactmeform-stub />
+  </modal-stub>
+</div>
+`;

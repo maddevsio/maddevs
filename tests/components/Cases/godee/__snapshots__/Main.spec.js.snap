@@ -1,0 +1,3787 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main component should render correctly 1`] = `
+<div
+  data-testid="test-container"
+  id="case-scroll-container"
+>
+  <section>
+    <div
+      class="case_content-layer p-48_bottom media-p-24_bottom"
+    >
+      <div
+        class="case_animation_block"
+        id="case-first-section"
+      />
+       
+      <section
+        class="container_regular"
+      >
+        <p
+          class="case_paragraph m-48_top media-m-24_top"
+        >
+          
+    GoDee is a reliable way to commute in Ho Chi Minh City, Vietnam. Its shuttle buses take express routes that
+    link the city’s major districts and popular destinations. GoDee helps riders save time, money and the planet
+    due to its lower ecological impact.
+  
+        </p>
+         
+        <blockquote
+          class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+        >
+          
+    The app-based system allows users to find a route, select the time, book a seat and pay for the ride online.
+  
+        </blockquote>
+      </section>
+       
+      <section
+        class="container_regular"
+      >
+        <h2
+          class="case_title_h2 m-12_bottom"
+        >
+          
+    Issues and solution
+  
+        </h2>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+    Transportation has become a major issue in Vietnam cities due to the rapid increase (36%) in urbanization.
+    With its slow, unairconditioned, overcrowded public transport, commuters living in the suburbs were left
+    with only 3 other alternatives: personal cars, motorbikes and taxis.
+  
+        </p>
+      </section>
+    </div>
+     
+    <div
+      class="case_parallax-layer"
+    >
+      <div
+        class="case_parallax-image-wrapper"
+      >
+        <div
+          class="case_parallax-image"
+          data-testid="test-case_parallax-image"
+          style="background-image: url(/images/Cases/godee/jpg/parallax.jpg);"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="case_content-layer p-48_top media-p-24_top"
+    >
+      <section
+        class="container_regular"
+      >
+        <div
+          class="case_card case_issues-godee-card background-color-silver"
+        >
+          <div
+            class="card-content"
+          >
+            <div
+              class="card-content_card-description"
+            >
+              <div
+                class="card-content_description-item card-content_description-item-motorbike"
+              >
+                <h3
+                  class="case_title_h4 card-content_description-title"
+                >
+                  
+        Motorbike
+      
+                </h3>
+                 
+                <p
+                  class="case_paragraph card-content_paragraph"
+                >
+                  
+        They are fast and affordable, but they are not always convenient for white-collar workers wearing suits to
+        the office, especially on rainy days.
+      
+                </p>
+              </div>
+               
+              <div
+                class="card-content_description-item"
+              >
+                <h3
+                  class="case_title_h4 card-content_description-title"
+                >
+                  
+        Taxi
+      
+                </h3>
+                 
+                <p
+                  class="case_paragraph card-content_paragraph"
+                >
+                  
+        Taxis are safer and more comfortable, but less accessible because they cost much more.
+      
+                </p>
+              </div>
+            </div>
+             
+            <div
+              class="card-content_prices"
+            >
+              <h4
+                class="card-content_prices-title"
+              >
+                
+      $300
+                <span>
+                  / month
+                </span>
+              </h4>
+               
+              <div
+                class="card-content_price-item"
+              >
+                <p
+                  class="case_paragraph card-content_price-heading"
+                >
+                  
+        The basic fee
+      
+                </p>
+                 
+                <p
+                  class="case_paragraph card-content_price-number"
+                >
+                  
+        $0.51
+      
+                </p>
+              </div>
+               
+              <div
+                class="card-content_price-item"
+              >
+                <p
+                  class="case_paragraph card-content_price-heading"
+                >
+                  
+        The kilometer price
+      
+                </p>
+                 
+                <p
+                  class="case_paragraph card-content_price-number"
+                >
+                  
+        $0.56
+      
+                </p>
+              </div>
+               
+              <div
+                class="card-content_price-item"
+              >
+                <p
+                  class="case_paragraph card-content_price-heading"
+                >
+                  
+        Average kilometers
+      
+                </p>
+                 
+                <p
+                  class="case_paragraph card-content_price-number"
+                >
+                  
+        ~ 10
+      
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        <div
+          class="case_card background-color-orange"
+        >
+          <div
+            class="card-content"
+          >
+            <div
+              class="card-content_card-description"
+            >
+              <div
+                class="card-content_description-item"
+              >
+                <h3
+                  class="case_title_h4 card-content_description-title"
+                >
+                  
+        Solution: GoDee
+      
+                </h3>
+                 
+                <p
+                  class="case_paragraph card-content_paragraph card-content_paragraph-first"
+                >
+                  
+        GoDee’s founders decided to make buses smarter and more user-friendly. They tackled the problem by converting
+        traditional buses into a modern service provider offering a convenient and predictable ride that’s just one
+        click away.
+      
+                </p>
+                 
+                <p
+                  class="case_paragraph card-content_paragraph"
+                >
+                  
+        An innovative transportation solution that improves commuters’ daily lives, reduces environmental pollution
+        and provides affordable commutes and stress-free service.
+      
+                </p>
+              </div>
+            </div>
+             
+            <div
+              class="card-content_prices"
+            >
+              <h4
+                class="card-content_prices-title"
+              >
+                
+      $65
+                <span>
+                  / month
+                </span>
+              </h4>
+               
+              <div
+                class="card-content_price-item"
+              >
+                <p
+                  class="case_paragraph card-content_price-heading"
+                >
+                  
+        One trip
+      
+                </p>
+                 
+                <p
+                  class="case_paragraph card-content_price-number"
+                >
+                  
+        $1.29
+      
+                </p>
+              </div>
+               
+              <div
+                class="card-content_price-item"
+              >
+                <p
+                  class="case_paragraph card-content_price-heading"
+                >
+                  
+        Trips a day
+      
+                </p>
+                 
+                <p
+                  class="case_paragraph card-content_price-number"
+                >
+                  
+        2
+      
+                </p>
+              </div>
+               
+              <div
+                class="card-content_price-item"
+              >
+                <p
+                  class="case_paragraph card-content_price-heading"
+                >
+                  
+        Days a month
+      
+                </p>
+                 
+                <p
+                  class="case_paragraph card-content_price-number"
+                >
+                  
+        ~ 25
+      
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+      <section
+        class="container_full case_video-wrapper m-60_top media-m-24_top m-96_bottom media-m-48_bottom"
+      >
+        <iframe
+          allowfullscreen="allowfullscreen"
+          frameborder="0"
+          height="809"
+          src="https://www.youtube.com/embed/_XCRbXmTUwI"
+          width="1440"
+        />
+      </section>
+       
+      <section
+        class="container_regular m-48_bottom"
+      >
+        <h2
+          class="case_title_h2 m-12_bottom"
+        >
+          
+    Mad Devs & GoDee collaboration
+  
+        </h2>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+    Mad Devs consulted with GoDee in the project’s early stages to assist with the technology stack choice and
+    step-by-step planning. Then, several of our positively mad developers worked on GoDee’s smart urban bus
+    management system as an extended part of the team.
+  
+        </p>
+      </section>
+       
+      <section
+        class="container_regular"
+      >
+        <h3
+          class="case_title_h3 m-12_bottom"
+        >
+          
+    Minimum viable product MVP
+  
+        </h3>
+         
+        <p
+          class="case_paragraph m-24_bottom media-m-12_bottom"
+        >
+          
+    Before investing a considerable amount of money in building software, hiring personnel and acquiring
+    minibuses, GoDee wanted to
+    
+          <nuxtlink-stub
+            class="case_link"
+            to="/services#software-development"
+          >
+            
+      develop an MVP
+    
+          </nuxtlink-stub>
+           to understand
+    the market fit potential.
+  
+        </p>
+         
+        <p
+          class="case_paragraph m-24_bottom"
+        >
+          
+    Although services such as GoDee exist in other parts of the world, simulating these programs in Ho Chi Minh
+    City was pointless because the city’s commuting culture is quite different. That’s why user feedback was
+    crucial to its improvement and key to its current rapid growth.
+  
+        </p>
+         
+        <div
+          class="case_minimum-viable-product-cards"
+        >
+          <div
+            class="case_card background-color-silver"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="card-content_icon card-content_live-chat-icon"
+              />
+               
+              <h4
+                class="case_title_h4 card-content_title"
+              >
+                
+    Live chat feature
+  
+              </h4>
+               
+              <p
+                class="case_paragraph"
+              >
+                
+          Over the time period of three months, our integrated live chat feature collected extensive feedback
+          from users to make white-collar workers’ commutes easier.
+        
+              </p>
+            </div>
+          </div>
+           
+          <div
+            class="case_card background-color-silver"
+          >
+            <div
+              class="card-content"
+            >
+              <div
+                class="card-content_icon card-content_trip-request-icon"
+              />
+               
+              <h4
+                class="case_title_h4 card-content_title"
+              >
+                
+    Trip request
+  
+              </h4>
+               
+              <p
+                class="case_paragraph"
+              >
+                
+          This feature enabled GoDee to analyse the actual demand for travel to various Ho Chi Minh City
+          districts.
+        
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+      <section>
+        <section
+          class="container_full case_before-after-wrapper background-color-silver m-48_top media-m-20_top"
+        >
+          <h2
+            class="case_title_h2 m-24_bottom case_text-align-center"
+          >
+            
+      Before & After
+    
+          </h2>
+           
+          <div
+            class="container_regular"
+          >
+            <div
+              class="comparsion-container"
+              data-testid="track-img"
+            >
+              <div
+                class="comparsion-track-line"
+                data-testid="test-comparsion-track-line"
+              />
+               
+              <div
+                class="comparsion-view"
+              >
+                <div
+                  class="comparsion-image_before"
+                  data-testid="test-comparsion-image_before"
+                  style="background-image: url(/images/Cases/godee/png/application-before.png);"
+                />
+                 
+                <img
+                  alt="GoDee Public Transportation App at 2018 and now."
+                  class="comparsion-image_after"
+                  data-testid="test-comparsion-image_after"
+                  height="578.47"
+                  loading="lazy"
+                  src="/images/Cases/godee/png/application-after.png"
+                  width="1000"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+         
+        <p
+          class="case_image-description m-12_top m-104_bottom media-m-48_bottom"
+        >
+          
+    GoDee 2018 VS. GoDee 2021
+  
+        </p>
+      </section>
+       
+      <section
+        class="container_regular"
+      >
+        <h3
+          class="case_title_h2 m-24_bottom case_text-align-center"
+        >
+          
+    Development goals
+  
+        </h3>
+         
+        <div
+          class="case_development-goals p-96_bottom media-p-48_bottom"
+        >
+          <div
+            class="case_development-goals-left-column"
+          >
+            <div
+              class="case_card background-color-silver"
+            >
+              <div
+                class="card-content"
+              >
+                <div
+                  class="card-content_icon card-content_gps-icon"
+                />
+                 
+                <h4
+                  class="case_title_h4 card-content_title"
+                >
+                  
+    GPS
+  
+                </h4>
+                 
+                <p
+                  class="case_paragraph"
+                >
+                  
+            We use GPS data to track buses, and we have developed an algorithm that predicts bus travel/arrival time using a geocoding service that also calculates delays related to traffic jams and their severity. This predictor functionality calculates the estimated arrival time on specific routes. It allows our passengers to check whether their requested bus will arrive on time, considering traffic jams.
+          
+                </p>
+              </div>
+            </div>
+            <div
+              class="case_card background-color-silver"
+            >
+              <div
+                class="card-content"
+              >
+                <div
+                  class="card-content_icon card-content_payment-method-icon"
+                />
+                 
+                <h4
+                  class="case_title_h4 card-content_title"
+                >
+                  
+    Payment method
+  
+                </h4>
+                 
+                <p
+                  class="case_paragraph m-24_bottom media-m-12_bottom"
+                >
+                  
+            Cashless payments are becoming more popular in Vietnam, so we have integrated Stripe service into GoDee, enabling passengers to pay with credit cards easily and quickly.
+          
+                </p>
+                <p
+                  class="case_paragraph"
+                >
+                  
+            We have also developed an API for flawless third-party service integration. Visa/Mastercard, AmEx, MoMo and JCB are integrated into the GoDee user app to facilitate cashless payments.
+          
+                </p>
+              </div>
+            </div>
+          </div>
+           
+          <div
+            class="case_development-goals-right-column"
+          >
+            <div
+              class="case_card background-color-silver"
+            >
+              <div
+                class="card-content"
+              >
+                <div
+                  class="card-content_icon card-content_live-location-tacking-icon"
+                />
+                 
+                <h4
+                  class="case_title_h4 card-content_title"
+                >
+                  
+    Online time-tables & live location tracking
+  
+                </h4>
+                 
+                <p
+                  class="case_paragraph"
+                >
+                  
+            To help make the GoDee app easier to use, we created a system that tracks bus locations in real time. This means that every user can book a seat as their bus approaches their location.
+          
+                </p>
+              </div>
+            </div>
+            <div
+              class="case_card background-color-silver"
+            >
+              <div
+                class="card-content"
+              >
+                <div
+                  class="card-content_icon card-content_referrals-icon"
+                />
+                 
+                <h4
+                  class="case_title_h4 card-content_title"
+                >
+                  
+    Referrals
+  
+                </h4>
+                 
+                <p
+                  class="case_paragraph"
+                >
+                  
+            To add to the commuter experience, inside the shuttle bus application, users can share referrals and get free rides as bonuses. After receiving a referral code from a referrer, the user can input the code from the booking confirmation as a promo code and enjoy one free ride. Meanwhile, referrers also receive a reward with "an “X" number of free rides.
+          
+                </p>
+              </div>
+            </div>
+            <div
+              class="case_card background-color-silver"
+            >
+              <div
+                class="card-content"
+              >
+                <div
+                  class="card-content_icon card-content_possible-routes-icon"
+                />
+                 
+                <h4
+                  class="case_title_h4 card-content_title"
+                >
+                  
+    The best possible routes
+  
+                </h4>
+                 
+                <p
+                  class="case_paragraph"
+                >
+                  
+            Depending on passengers’ requests, the system allows drivers to construct the best possible routes automatically. If there are no orders from passengers, drivers will skip stops along the route.
+          
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+      <section
+        class="container_full background-color-black-primary-bg p-100_top p-100_bottom media-p-48_top media-p-48_bottom"
+      >
+        <div
+          class="container_regular"
+        >
+          <div
+            class="case_preview-cards"
+          >
+            <div
+              class="case_preview-cards-top-cards-wrapper"
+            >
+              <div
+                class="case_card background-color-godee-black-card"
+              >
+                <div
+                  class="card-content card-content_application-for-passengers"
+                >
+                  <div
+                    class="card-content_text-wrapper"
+                  >
+                    <h4
+                      class="case_title_h4 card-content_title"
+                    >
+                      
+      Mobile application for passengers
+    
+                    </h4>
+                     
+                    <p
+                      class="case_paragraph card-content_description"
+                    >
+                      
+      Ticket booking process is intuitive — the passenger needs to select the pick up and drop off points, choose the departure time in the schedule, and book the ticket. The most suitable route will be found automatically.
+    
+                    </p>
+                  </div>
+                   
+                  <div
+                    class="card-content_image-wrapper card-content_image-wrapper-application-for-passengers"
+                  >
+                    <picture
+                      class=""
+                    >
+                      <source
+                        class="image"
+                        srcset="/images/Cases/godee/webp/application-for-passengers-card.webp ,/images/Cases/godee/webp/application-for-passengers-card@2x.webp 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="GoDee: Bus Transit App for Passengers."
+                        class="image"
+                        data-testid="test-picture-img"
+                        height="211"
+                        loading=""
+                        src="/images/Cases/godee/png/application-for-passengers-card.png"
+                        srcset="/images/Cases/godee/png/application-for-passengers-card@2x.png 2x"
+                        width="334"
+                      />
+                    </picture>
+                     
+                    <!---->
+                  </div>
+                </div>
+              </div>
+               
+              <div
+                class="case_card background-color-godee-black-card"
+              >
+                <div
+                  class="card-content card-content_application-for-drivers"
+                >
+                  <div
+                    class="card-content_text-wrapper"
+                  >
+                    <h4
+                      class="case_title_h4 card-content_title"
+                    >
+                      
+      Mobile applications for drivers
+    
+                    </h4>
+                     
+                    <p
+                      class="case_paragraph card-content_description"
+                    >
+                      
+      The drivers’ transit app enables them to pick up passengers from bus stops, according to their previously booked tickets.
+    
+                    </p>
+                  </div>
+                   
+                  <div
+                    class="card-content_image-wrapper card-content_image-wrapper-application-for-drivers"
+                  >
+                    <picture
+                      class=""
+                    >
+                      <source
+                        class="image"
+                        srcset="/images/Cases/godee/webp/application-for-drivers-card.webp ,/images/Cases/godee/webp/application-for-drivers-card@2x.webp 2x"
+                        type="image/webp"
+                      />
+                       
+                      <img
+                        alt="GoDee: Bus Drivers App."
+                        class="image"
+                        data-testid="test-picture-img"
+                        height="280"
+                        loading=""
+                        src="/images/Cases/godee/png/application-for-drivers-card.png"
+                        srcset="/images/Cases/godee/png/application-for-drivers-card@2x.png 2x"
+                        width="313"
+                      />
+                    </picture>
+                     
+                    <!---->
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            <div
+              class="case_card background-color-godee-black-card"
+            >
+              <div
+                class="card-content card-content_godee-admin-panel"
+              >
+                <div
+                  class="card-content_text-wrapper"
+                >
+                  <h4
+                    class="case_title_h4 card-content_title"
+                  >
+                    
+      Intelligent management panel
+    
+                  </h4>
+                   
+                  <p
+                    class="case_paragraph card-content_description"
+                  >
+                    
+      Used to create routes, get reports and map current active routes.
+    
+                  </p>
+                </div>
+                 
+                <div
+                  class="card-content_image-wrapper card-content_image-wrapper-godee-admin-panel"
+                >
+                  <picture
+                    class="card-content_desktop-image"
+                  >
+                    <source
+                      class="image"
+                      srcset="/images/Cases/godee/webp/godee-admin-panel-card.webp ,/images/Cases/godee/webp/godee-admin-panel-card@2x.webp 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="GoDee: Bus App Management System."
+                      class="image"
+                      data-testid="test-picture-img"
+                      height="219"
+                      loading=""
+                      src="/images/Cases/godee/png/godee-admin-panel-card.png"
+                      srcset="/images/Cases/godee/png/godee-admin-panel-card@2x.png 2x"
+                      width="695"
+                    />
+                  </picture>
+                   
+                  <picture
+                    class="card-content_mobile-image"
+                  >
+                    <source
+                      class="image"
+                      srcset="/images/Cases/godee/webp/godee-admin-panel-card-mobile.webp ,/images/Cases/godee/webp/godee-admin-panel-card-mobile@2x.webp 2x"
+                      type="image/webp"
+                    />
+                     
+                    <img
+                      alt="GoDee: bus app management control panel"
+                      class="image"
+                      data-testid="test-picture-img"
+                      height="160"
+                      loading=""
+                      src="/images/Cases/godee/png/godee-admin-panel-card-mobile.png"
+                      srcset="/images/Cases/godee/png/godee-admin-panel-card-mobile@2x.png 2x"
+                      width="307"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+      <section>
+        <section
+          class="container_regular"
+        >
+          <h3
+            class="case_title_h2 m-96_top media-m-48_top m-12_bottom"
+          >
+            
+      Intelligent management panel
+    
+          </h3>
+           
+          <p
+            class="case_paragraph"
+          >
+            
+      GoDee's rapid growth since its early stages required easy-to-scale business processes and automated route
+      management. Although, in theory, everything can be done with an army of sales representatives and route
+      operators, GoDee wanted to automate routine operations so it could expand to other cities and countries.
+    
+          </p>
+           
+          <blockquote
+            class="case_blockquote-box m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
+          >
+            
+      One manager and one customer support representative can manage more than ~2500 trip requests per month and
+      ~25,000 passengers per month.
+    
+          </blockquote>
+           
+          <h3
+            class="case_title_h3 m-12_bottom"
+          >
+            
+      Smart route planning
+    
+          </h3>
+           
+          <p
+            class="case_paragraph case_paragraph--bold"
+          >
+            
+      How can we create profitable yet convenient user routes?
+    
+          </p>
+           
+          <p
+            class="case_paragraph m-24_bottom media-m-12_bottom"
+          >
+            
+      Let users send 
+            <span
+              class="case_red-text"
+            >
+              trip requests
+            </span>
+             and tell you what works for them. This
+      feature was available initially through the MVP phase, and it enables GoDee route managers to build
+      effective routes by understanding real commuter demand.
+    
+          </p>
+           
+          <p
+            class="case_paragraph"
+          >
+            
+      Inside the transportation application, users can submit a trip request with pick-up and drop-off locations
+      at the desired time. The request is added to the list on the managers' dashboard.
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_middle"
+        >
+          <div
+            class="case_image-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow"
+          >
+            <picture>
+              <source
+                class="image grey-background"
+                srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="GoDee: Safari Browser Top Bar White."
+                class="image grey-background"
+                data-testid="test-picture-img"
+                height="16.45"
+                loading=""
+                src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
+                srcset="/images/Cases/common/jpg/safari-top-bar-white@2x.jpg 2x"
+                width="1026"
+              />
+            </picture>
+             
+            <picture>
+              <source
+                class="image"
+                srcset="/images/Cases/godee/webp/godee-admin-panel.webp ,/images/Cases/godee/webp/godee-admin-panel@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="GoDee: Bus Transit App Admin Panel."
+                class="image"
+                data-testid="test-picture-img"
+                height="672"
+                loading=""
+                src="/images/Cases/godee/jpg/godee-admin-panel.jpg"
+                srcset="/images/Cases/godee/jpg/godee-admin-panel@2x.jpg 2x"
+                width="1026"
+              />
+            </picture>
+          </div>
+           
+          <div
+            class="card-content background-color-silver m-48_bottom media-m-24_bottom"
+          >
+            <div
+              class="card-content_left-item"
+            >
+              <h4
+                class="case_title_h4 m-12_bottom card-content_description-title"
+              >
+                
+      Prim's algorithm
+    
+              </h4>
+               
+              <p
+                class="case_paragraph"
+              >
+                
+      Prim's algorithm is used to effectively connect the dots on a map. This is how a trip request list is
+      transformed into a map, where new potential routes are displayed for easier overview. The algorithm connects the
+      dots and the map’s possible routes. Our aim is to connect as many dots as possible while keeping the longevity
+      under 20 km.
+    
+              </p>
+            </div>
+             
+            <div
+              class="card-content_right-item"
+            >
+              <div
+                style="width: 100%; height: 100%; overflow: hidden; margin: 0px auto;"
+              >
+                <svg
+                  height="900"
+                  preserveAspectRatio="xMidYMid meet"
+                  style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
+                  viewBox="0 0 900 900"
+                  width="900"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <clippath
+                      id="__lottie_element_2"
+                    >
+                      <rect
+                        height="900"
+                        width="900"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                  </defs>
+                  <g
+                    clip-path="url(#__lottie_element_2)"
+                  >
+                    <g
+                      opacity="1"
+                      style="display: block;"
+                      transform="matrix(1,0,0,1,57.811004638671875,51.208984375)"
+                    >
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,165.79299926757812,23.16699981689453)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652999877929688 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652999877929688 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,142.2449951171875,56.29499816894531)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,192.26699829101562,153.6199951171875)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652999877929688 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,281.5780029296875,234.96200561523438)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,250.24400329589844,313.64599609375)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,373.6830139160156,273.0610046386719)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652999877929688 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652999877929688 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,503.56298828125,227.0469970703125)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,494.2300109863281,125.0469970703125)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,467.56298828125,40.62900161743164)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,451.8970031738281,79.94400024414062)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.651000022888184,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.651000022888184,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,632.0880126953125,24.961999893188477)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652999877929688 8.652999877929688,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652999877929688 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652999877929688,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,590.9409790039062,90.2750015258789)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652999877929688 -8.652999877929688,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,612.1950073242188,257.3949890136719)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,537.864013671875,307.48699951171875)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,695.4749755859375,391.8169860839844)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652999877929688 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,622.2739868164062,429.8169860839844)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,773.6430053710938,567.3770141601562)"
+                      >
+                        <path
+                          d=" M15.666999816894531,-0.0010000000474974513 C15.666999816894531,8.651000022888184 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.651000022888184 -15.666999816894531,-0.0010000000474974513 C-15.666999816894531,-8.652999877929688 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,-0.0010000000474974513z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,622.2739868164062,551.708984375)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,542.0170288085938,589.3820190429688)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,456.0169982910156,478.0480041503906)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,420.2879943847656,509.3819885253906)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.651000022888184,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.651000022888184,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,260.4590148925781,551.708984375)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,244.79299926757812,592.5419921875)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,213.45899963378906,620.7150268554688)"
+                      >
+                        <path
+                          d=" M15.666999816894531,-0.0010000000474974513 C15.666999816894531,8.651000022888184 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.651000022888184 -15.666999816894531,-0.0010000000474974513 C-15.666999816894531,-8.652999877929688 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,-0.0010000000474974513z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,61.93199920654297,450.6619873046875)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652999877929688 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,23.16699981689453,466.3290100097656)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,54.5,513.2009887695312)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,161.62399291992188,681.843994140625)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666000366210938 -0.0010000000474974513,15.666000366210938 C-8.652999877929688,15.666000366210938 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652999877929688 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,242.0500030517578,789.7739868164062)"
+                      >
+                        <path
+                          d=" M15.666999816894531,-0.0010000000474974513 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 -0.0010000000474974513,15.666999816894531 C-8.652999877929688,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,-0.0010000000474974513 C-15.666999816894531,-8.652999877929688 -8.652999877929688,-15.666999816894531 -0.0010000000474974513,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652999877929688 15.666999816894531,-0.0010000000474974513z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                      <g
+                        opacity="1"
+                        transform="matrix(1,0,0,1,547.5250244140625,701.2470092773438)"
+                      >
+                        <path
+                          d=" M15.666999816894531,0 C15.666999816894531,8.652000427246094 8.652000427246094,15.666999816894531 0,15.666999816894531 C-8.652000427246094,15.666999816894531 -15.666999816894531,8.652000427246094 -15.666999816894531,0 C-15.666999816894531,-8.652000427246094 -8.652000427246094,-15.666999816894531 0,-15.666999816894531 C8.652000427246094,-15.666999816894531 15.666999816894531,-8.652000427246094 15.666999816894531,0z"
+                          fill-opacity="0"
+                          stroke="rgb(56,56,56)"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-opacity="1"
+                          stroke-width="3"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                    <g
+                      style="display: none;"
+                    >
+                      <g>
+                        <path
+                          fill-opacity="0"
+                          stroke-linecap="round"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+           
+          <div
+            class="case_html-video-wrapper m-48_top media-m-24_top m-60_bottom media-m-24_bottom case_box-shadow"
+          >
+            <div
+              class="case_video-flex-wrapper"
+            >
+              <picture>
+                <source
+                  class="image grey-background"
+                  srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="GoDee: Safari Browser Top Bar White."
+                  class="image grey-background"
+                  data-testid="test-picture-img"
+                  height="16.45"
+                  loading="lazy"
+                  src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
+                  srcset="/images/Cases/common/jpg/safari-top-bar-white@2x.jpg 2x"
+                  width="1026"
+                />
+              </picture>
+               
+              <video
+                class="case_html-video case_trip-request-video"
+                height="100%"
+                id="trip-request-map"
+                loop="loop"
+                muted="muted"
+                width="100%"
+              >
+                <source
+                  src="/videos/map-stops.mp4"
+                  type="video/mp4"
+                />
+                
+          Your browser does not support the video tag.
+        
+              </video>
+            </div>
+          </div>
+        </section>
+      </section>
+       
+      <section>
+        <section
+          class="container_regular"
+        >
+          <h3
+            class="case_title_h3 m-12_bottom"
+          >
+            
+      Trips Monitor
+    
+          </h3>
+           
+          <p
+            class="case_paragraph"
+          >
+            
+      The Trips Monitor feature enables operators to track every bus in real time and collect data on late or
+      early arrivals. More importantly, the operator can contact drivers or passengers quickly if necessary.
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_middle m-48_top media-m-24_top m-48_bottom media-m-24_bottom"
+        >
+          <div
+            class="case_html-video-wrapper case_box-shadow"
+          >
+            <div
+              class="case_video-flex-wrapper"
+            >
+              <picture>
+                <source
+                  class="image grey-background"
+                  srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="GoDee: Safari Browser Top Bar White."
+                  class="image grey-background"
+                  data-testid="test-picture-img"
+                  height="16.45"
+                  loading="lazy"
+                  src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
+                  srcset="/images/Cases/common/jpg/safari-top-bar-white@2x.jpg 2x"
+                  width="1026"
+                />
+              </picture>
+               
+              <video
+                class="case_html-video"
+                height="100%"
+                id="trip-monitor"
+                loop="loop"
+                muted="muted"
+                width="100%"
+              >
+                <source
+                  src="/videos/trip-monitor.f4a33e6.mp4"
+                  type="video/mp4"
+                />
+                
+          Your browser does not support the video tag.
+        
+              </video>
+            </div>
+          </div>
+        </section>
+         
+        <section
+          class="container_regular"
+        >
+          <p
+            class="case_paragraph m-12_bottom"
+          >
+            
+      The Trips Monitor dashboard displays the following information:
+    
+          </p>
+           
+          <ol
+            class="case-list_numbered m-96_bottom media-m-48_bottom"
+          >
+            <li
+              class="case_list-numbered_item"
+            >
+              
+        Drivers' locations on mini map in real-time
+      
+            </li>
+            <li
+              class="case_list-numbered_item"
+            >
+              
+        Late and early departures of buses
+      
+            </li>
+            <li
+              class="case_list-numbered_item"
+            >
+              
+        Complete bus schedule weeks in advance
+      
+            </li>
+            <li
+              class="case_list-numbered_item"
+            >
+              
+        Notice to driver that a GoDee client has not been picked up at a bus stop
+      
+            </li>
+            <li
+              class="case_list-numbered_item"
+            >
+              
+        Number of passengers assigned to each stop and driver
+      
+            </li>
+            <li
+              class="case_list-numbered_item"
+            >
+              
+        Historical information through filters
+      
+            </li>
+          </ol>
+        </section>
+      </section>
+       
+      <section>
+        <section
+          class="container_regular"
+        >
+          <h3
+            class="case_title_h3"
+          >
+            
+      Route optimization
+    
+          </h3>
+        </section>
+         
+        <section
+          class="container_middle m-24_top media-m-12_top m-48_bottom media-m-24_bottom"
+        >
+          <div
+            class="case_html-video-wrapper case_box-shadow"
+          >
+            <div
+              class="case_video-flex-wrapper"
+            >
+              <picture>
+                <source
+                  class="image grey-background"
+                  srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="GoDee: Safari Browser Top Bar White."
+                  class="image grey-background"
+                  data-testid="test-picture-img"
+                  height="16.45"
+                  loading="lazy"
+                  src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
+                  srcset="/images/Cases/common/jpg/safari-top-bar-white@2x.jpg 2x"
+                  width="1026"
+                />
+              </picture>
+               
+              <video
+                class="case_html-video"
+                height="100%"
+                id="route-optimization"
+                loop="loop"
+                muted="muted"
+                width="100%"
+              >
+                <source
+                  src="/videos/route-optimization.f5a2ff0.mp4"
+                  type="video/mp4"
+                />
+                
+          Your browser does not support the video tag.
+        
+              </video>
+            </div>
+          </div>
+        </section>
+         
+        <section
+          class="container_regular"
+        >
+          <p
+            class="case_paragraph"
+          >
+            
+      With the help of detailed drivers' performance data, Mad Devs’ Pifia microservice enables route managers to
+      optimize ETA (estimated time of arrival). Pifia shows more accurate arrival and departure times with just
+      one click.
+    
+          </p>
+           
+          <blockquote
+            class="case_blockquote-box m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
+          >
+            <span
+              class="case_text-quote-break m-24_bottom media-m-12_bottom"
+            >
+              Examples of early and late departure times:
+            </span>
+             
+            <span>
+              If Pifia determines that a minibus is usually late due to increased traffic at 5:35 pm and not 5:30 pm,
+        it alerts the route manager to shift the arrival time to 5:35 pm. Five minutes might sound minor, but
+        these small optimizations add up.
+            </span>
+          </blockquote>
+        </section>
+      </section>
+       
+      <section
+        class="container_full p-104_top p-100_bottom media-p-41_top media-p-24_bottom background-color-black-primary-bg"
+      >
+        <section
+          class="container_regular case_real-time-eta"
+        >
+          <div
+            class="case_real-time-eta-text-content"
+          >
+            <h2
+              class="case_title_h2 m-24_bottom media-m-8_bottom case_real-time-eta-title"
+            >
+              
+        Real-time ETA
+      
+            </h2>
+             
+            <p
+              class="case_paragraph m-24_bottom media-m-12_bottom"
+              style="color: rgb(160, 160, 161);"
+            >
+              
+        In addition, Pifia shows in real time the approximate late/early departures.
+      
+            </p>
+             
+            <p
+              class="case_paragraph m-24_bottom media-m-12_bottom"
+              style="color: rgb(160, 160, 161);"
+            >
+              
+        Thus passengers who are waiting for the ride always know whether the bus is coming late and how long it
+        will take.
+      
+            </p>
+             
+            <p
+              class="case_paragraph"
+              style="color: rgb(160, 160, 161);"
+            >
+              
+        The information is displayed on their mobile application.
+      
+            </p>
+          </div>
+           
+          <div
+            class="case_phone-wrapper-eta-section"
+          >
+            <picture>
+              <source
+                class="image"
+                srcset="/images/Cases/godee/webp/real-time-eta-phone.webp ,/images/Cases/godee/webp/real-time-eta-phone@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="GoDee: Bus Transit App in Vietnam."
+                class="image"
+                data-testid="test-picture-img"
+                height="694.62"
+                loading="lazy"
+                src="/images/Cases/godee/png/real-time-eta-phone.png"
+                srcset="/images/Cases/godee/png/real-time-eta-phone@2x.png 2x"
+                width="358.96"
+              />
+            </picture>
+          </div>
+        </section>
+      </section>
+       
+      <section>
+        <section
+          class="container_full case_infrastructure-scheme-wrapper background-color-silver m-48_bottom media-m-24_bottom"
+        >
+          <section
+            class="container_middle"
+          >
+            <h2
+              class="case_title_h2 m-24_bottom case_text-align-center"
+            >
+              
+        Infrastructure scheme
+      
+            </h2>
+             
+            <img
+              alt="GoDee Mobile App Infrastructure Scheme."
+              class="case_gif case_infrastructure-scheme-gif"
+              height="774.92"
+              loading="lazy"
+              src="/images/Cases/godee/gif/infrastructure-scheme.gif"
+              width="645"
+            />
+          </section>
+        </section>
+         
+        <section
+          class="container_regular"
+        >
+          <p
+            class="case_paragraph m-24_bottom media-m-12_bottom"
+          >
+            
+      The infrastructure is hosted on the Digital Ocean developer cloud.
+    
+          </p>
+           
+          <p
+            class="case_paragraph m-24_bottom media-m-12_bottom"
+          >
+            
+      Our applications send requests to the Nginx server, and then they are processed via the gRPC framework and
+      each application is addressed to separate APIs. These APIs refer to Redis quick-caching Streams and the
+      Georeferencing service, which allows bus drivers to be on track along their routes.
+    
+          </p>
+           
+          <p
+            class="case_paragraph m-72_bottom media-m-48_bottom"
+          >
+            
+      Then all information, collected and processed by these services, is controlled via the Web Admin panel,
+      which is connected to the PostgreSQL database, OSRM, Firebase and push notification services. We use Docker
+      containers throughout the development process.
+    
+          </p>
+        </section>
+      </section>
+       
+      <section
+        class="container_regular"
+      >
+        <h3
+          class="case_title_h3 m-24_bottom media-m-12_bottom"
+        >
+          
+    Technology stack
+  
+        </h3>
+         
+        <ul
+          class="case_list-technologies m-96_bottom media-m-48_bottom case_list-technologies-godee"
+        >
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__other-open-street-map other-open-street-map"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Open Street Map
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__other-google-maps other-google-maps"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Google Maps
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__backend-postgresql backend-postgresql"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    PostgreSQL
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__devops-docker case_technologies-item__docker devops-docker case_technologies-item__docker"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Docker
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__devops-nginx devops-nginx"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Nginx
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__backend-redis backend-redis"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Redis
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__backend-python backend-python"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Python (Django)
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Golang
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-kotlin mobile-kotlin"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Kotlin
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__pm-atlassian pm-atlassian"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Atlassian
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-swift mobile-swift"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Swift
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-firebase mobile-firebase"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Firebase
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-test-flight mobile-test-flight"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    TestFlight
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__infrastructure-datadog infrastructure-datadog"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Datadog
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-android-black-text mobile-android-black-text"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Android
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__devops-suite devops-suite"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Suite
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__pm-jira pm-jira"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Jira Software
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__backend-grpc case_technologies-item__grpc backend-grpc case_technologies-item__grpc"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    GRPC
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__mobile-apple-black mobile-apple-black"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    iOS
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__other-uptime-robot case_technologies-item__uptime-robot other-uptime-robot case_technologies-item__uptime-robot"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    UptimeRobot
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__frontend-mapbox frontend-mapbox"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Mapbox
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__frontend-vue frontend-vue"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Vue JS
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__devops-sentry-dark devops-sentry-dark"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Sentry
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__other-here other-here"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Here Traffic
+  
+            </p>
+          </li>
+          <li
+            class="case_technologies-item"
+          >
+            <div
+              class="case_technologies-item__tech-icon case_technologies-item__pm-basecamp-transparent-bg pm-basecamp-transparent-bg"
+            />
+             
+            <p
+              class="case_technologies-item__tech-name"
+            >
+              
+    Basecamp
+  
+            </p>
+          </li>
+        </ul>
+      </section>
+       
+      <section>
+        <section
+          class="container_regular"
+        >
+          <h2
+            class="case_title_h2 m-12_bottom"
+          >
+            
+      Monitoring
+    
+          </h2>
+           
+          <p
+            class="case_paragraph m-48_bottom media-m-12_bottom"
+          >
+            
+      We believe that every production system requires proper monitoring. For this purpose, we use the Datadog
+      service, which allows us to discover possible issues before they affect our users.
+    
+          </p>
+           
+          <p
+            class="m-12_bottom case_monitoring-section-bold"
+          >
+            
+      Here is an example of our monitoring configuration for the GoDee project:
+    
+          </p>
+        </section>
+         
+        <section
+          class="container_middle m-96_bottom media-m-48_bottom"
+        >
+          <picture>
+            <source
+              class="image box-shadow grey-background"
+              srcset="/images/Cases/godee/webp/datadog.webp ,/images/Cases/godee/webp/datadog@2x.webp 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt="GoDee: Monitoring Configuration for Transportation App."
+              class="image box-shadow grey-background"
+              data-testid="test-picture-img"
+              height="463"
+              loading="lazy"
+              src="/images/Cases/godee/jpg/datadog.jpg"
+              srcset="/images/Cases/godee/jpg/datadog@2x.jpg 2x"
+              width="1028"
+            />
+          </picture>
+        </section>
+      </section>
+       
+      <section
+        class="container_regular"
+      >
+        <h2
+          class="case_title_h2 m-12_bottom"
+        >
+          
+    Stable & Scalable solution
+  
+        </h2>
+         
+        <p
+          class="case_paragraph m-24_bottom media-m-12_bottom"
+        >
+          
+    Transportation and logistics software has zero tolerance to downtime. Imagine hundreds of passengers not
+    being able to book their tickets, drivers not knowing where to pick up/drop off passengers or operators
+    seeing empty screens.
+  
+        </p>
+         
+        <p
+          class="case_paragraph m-72_bottom media-m-48_bottom"
+        >
+          
+    GoDee’s microservice architecture and the quality of the solution make it easy for each Mad Devs developer
+    to deploy new features without causing spikes in downtime. On top of this, 75% of code is covered by various
+    tests and has detailed documentation and pull requests. GoDee's business model greatly benefits from
+    economies of scale. Thus, increased demand from Ho Chi Minh citizens is backed up by GoDee's unchanging low
+    cost for infrastructure.
+  
+        </p>
+         
+        <h2
+          class="case_title_h2 m-12_bottom"
+        >
+          
+    Impact
+  
+        </h2>
+         
+        <p
+          class="case_paragraph m-24_bottom"
+        >
+          
+    GoDee faced the challenge of changing people’s habits. To grow the user base, we needed to create an
+    extremely helpful and hassle-free solution that offers an alternative to expensive taxis and inconvenient
+    motorbikes. It was also key that it be predictable, affordable and ‘green’ by design.
+  
+        </p>
+         
+        <div
+          class="case_card background-color-orange m-118_bottom media-m-48_bottom"
+        >
+          <div
+            class="card-content"
+          >
+            <div
+              class="card-content_number-block"
+            >
+              <p
+                class="card-content_title"
+              >
+                
+      60
+    
+              </p>
+               
+              <p
+                class="case_paragraph"
+                style="color: rgb(255, 255, 255);"
+              >
+                
+      Total routes
+    
+              </p>
+            </div>
+             
+            <div
+              class="card-content_number-block"
+            >
+              <p
+                class="card-content_title"
+              >
+                
+      30
+    
+              </p>
+               
+              <p
+                class="case_paragraph"
+                style="color: rgb(255, 255, 255);"
+              >
+                
+      Active routes
+    
+              </p>
+            </div>
+             
+            <div
+              class="card-content_number-block"
+            >
+              <p
+                class="card-content_title"
+              >
+                
+      25K
+    
+              </p>
+               
+              <p
+                class="case_paragraph"
+                style="color: rgb(255, 255, 255);"
+              >
+                
+      Passengers per month
+    
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+      <section
+        class="container_regular m-72_bottom media-m-48_bottom"
+      >
+        <h2
+          class="case_title_h2 m-48_bottom media-m-24_bottom"
+        >
+          
+    Meet the team
+  
+        </h2>
+         
+        <ul
+          class="case_list-team m-72_bottom media-m-48_bottom"
+        >
+          <li
+            class="case_team-item"
+          >
+            <picture
+              class="case_team-item__image"
+            >
+              <source
+                class="image grey-background"
+                srcset="/images/Cases/common/webp/oleg-puzanov.webp ,/images/Cases/common/webp/oleg-puzanov@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Oleg Puzanov"
+                class="image grey-background"
+                data-testid="test-picture-img"
+                height="50"
+                loading="lazy"
+                src="/images/Cases/common/png/oleg-puzanov.png"
+                srcset="/images/Cases/common/png/oleg-puzanov@2x.png 2x"
+                width="50"
+              />
+            </picture>
+             
+            <div
+              class="case_team-item__info"
+            >
+              <p
+                class="case_team-item__name"
+              >
+                
+      Oleg Puzanov
+    
+              </p>
+               
+              <p
+                class="case_team-item__position"
+              >
+                
+      CTO
+    
+              </p>
+            </div>
+          </li>
+          <li
+            class="case_team-item"
+          >
+            <picture
+              class="case_team-item__image"
+            >
+              <source
+                class="image grey-background"
+                srcset="/images/Cases/common/webp/kasymov.webp ,/images/Cases/common/webp/kasymov@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Ruslan Kasymov"
+                class="image grey-background"
+                data-testid="test-picture-img"
+                height="50"
+                loading="lazy"
+                src="/images/Cases/common/png/kasymov.png"
+                srcset="/images/Cases/common/png/kasymov@2x.png 2x"
+                width="50"
+              />
+            </picture>
+             
+            <div
+              class="case_team-item__info"
+            >
+              <p
+                class="case_team-item__name"
+              >
+                
+      Ruslan Kasymov
+    
+              </p>
+               
+              <p
+                class="case_team-item__position"
+              >
+                
+      QA Engineer and PM
+    
+              </p>
+            </div>
+          </li>
+          <li
+            class="case_team-item"
+          >
+            <picture
+              class="case_team-item__image"
+            >
+              <source
+                class="image grey-background"
+                srcset="/images/Cases/common/webp/kulbatyrov.webp ,/images/Cases/common/webp/kulbatyrov@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Rustom Kulbatyrov"
+                class="image grey-background"
+                data-testid="test-picture-img"
+                height="50"
+                loading="lazy"
+                src="/images/Cases/common/png/kulbatyrov.png"
+                srcset="/images/Cases/common/png/kulbatyrov@2x.png 2x"
+                width="50"
+              />
+            </picture>
+             
+            <div
+              class="case_team-item__info"
+            >
+              <p
+                class="case_team-item__name"
+              >
+                
+      Rustom Kulbatyrov
+    
+              </p>
+               
+              <p
+                class="case_team-item__position"
+              >
+                
+      Android Developer
+    
+              </p>
+            </div>
+          </li>
+          <li
+            class="case_team-item"
+          >
+            <picture
+              class="case_team-item__image"
+            >
+              <source
+                class="image grey-background"
+                srcset="/images/Cases/common/webp/vladimir-pan.webp ,/images/Cases/common/webp/vladimir-pan@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Vladimir Pan"
+                class="image grey-background"
+                data-testid="test-picture-img"
+                height="50"
+                loading="lazy"
+                src="/images/Cases/common/png/vladimir-pan.png"
+                srcset="/images/Cases/common/png/vladimir-pan@2x.png 2x"
+                width="50"
+              />
+            </picture>
+             
+            <div
+              class="case_team-item__info"
+            >
+              <p
+                class="case_team-item__name"
+              >
+                
+      Vladimir Pan
+    
+              </p>
+               
+              <p
+                class="case_team-item__position"
+              >
+                
+      QA Engineer
+    
+              </p>
+            </div>
+          </li>
+          <li
+            class="case_team-item"
+          >
+            <picture
+              class="case_team-item__image"
+            >
+              <source
+                class="image grey-background"
+                srcset="/images/Cases/common/webp/belek-abylov.webp ,/images/Cases/common/webp/belek-abylov@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Belek Abylov"
+                class="image grey-background"
+                data-testid="test-picture-img"
+                height="50"
+                loading="lazy"
+                src="/images/Cases/common/png/belek-abylov.png"
+                srcset="/images/Cases/common/png/belek-abylov@2x.png 2x"
+                width="50"
+              />
+            </picture>
+             
+            <div
+              class="case_team-item__info"
+            >
+              <p
+                class="case_team-item__name"
+              >
+                
+      Belek Abylov
+    
+              </p>
+               
+              <p
+                class="case_team-item__position"
+              >
+                
+      Backend Developer
+    
+              </p>
+            </div>
+          </li>
+          <li
+            class="case_team-item"
+          >
+            <picture
+              class="case_team-item__image"
+            >
+              <source
+                class="image grey-background"
+                srcset="/images/Cases/common/webp/bakhtiyar-ganyev.webp ,/images/Cases/common/webp/bakhtiyar-ganyev@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Bakhtiyar Ganyev"
+                class="image grey-background"
+                data-testid="test-picture-img"
+                height="50"
+                loading="lazy"
+                src="/images/Cases/common/png/bakhtiyar-ganyev.png"
+                srcset="/images/Cases/common/png/bakhtiyar-ganyev@2x.png 2x"
+                width="50"
+              />
+            </picture>
+             
+            <div
+              class="case_team-item__info"
+            >
+              <p
+                class="case_team-item__name"
+              >
+                
+      Bakhtiyar Ganyev
+    
+              </p>
+               
+              <p
+                class="case_team-item__position"
+              >
+                
+      iOS Developer
+    
+              </p>
+            </div>
+          </li>
+          <li
+            class="case_team-item"
+          >
+            <picture
+              class="case_team-item__image"
+            >
+              <source
+                class="image grey-background"
+                srcset="/images/Cases/common/webp/gennady-karev.webp ,/images/Cases/common/webp/gennady-karev@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Gennady Karev"
+                class="image grey-background"
+                data-testid="test-picture-img"
+                height="50"
+                loading="lazy"
+                src="/images/Cases/common/png/gennady-karev.png"
+                srcset="/images/Cases/common/png/gennady-karev@2x.png 2x"
+                width="50"
+              />
+            </picture>
+             
+            <div
+              class="case_team-item__info"
+            >
+              <p
+                class="case_team-item__name"
+              >
+                
+      Gennady Karev
+    
+              </p>
+               
+              <p
+                class="case_team-item__position"
+              >
+                
+      Backend Developer
+    
+              </p>
+            </div>
+          </li>
+          <li
+            class="case_team-item"
+          >
+            <picture
+              class="case_team-item__image"
+            >
+              <source
+                class="image grey-background"
+                srcset="/images/Cases/common/webp/aleksandr-krivov.webp ,/images/Cases/common/webp/aleksandr-krivov@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Aleksandr Krivov"
+                class="image grey-background"
+                data-testid="test-picture-img"
+                height="50"
+                loading="lazy"
+                src="/images/Cases/common/png/aleksandr-krivov.png"
+                srcset="/images/Cases/common/png/aleksandr-krivov@2x.png 2x"
+                width="50"
+              />
+            </picture>
+             
+            <div
+              class="case_team-item__info"
+            >
+              <p
+                class="case_team-item__name"
+              >
+                
+      Aleksandr Krivov
+    
+              </p>
+               
+              <p
+                class="case_team-item__position"
+              >
+                
+      UX/UI Specialist
+    
+              </p>
+            </div>
+          </li>
+          <li
+            class="case_team-item"
+          >
+            <picture
+              class="case_team-item__image"
+            >
+              <source
+                class="image grey-background"
+                srcset="/images/Cases/common/webp/vlada-arevkova.webp ,/images/Cases/common/webp/vlada-arevkova@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Vlada Arevkova"
+                class="image grey-background"
+                data-testid="test-picture-img"
+                height="50"
+                loading="lazy"
+                src="/images/Cases/common/png/vlada-arevkova.png"
+                srcset="/images/Cases/common/png/vlada-arevkova@2x.png 2x"
+                width="50"
+              />
+            </picture>
+             
+            <div
+              class="case_team-item__info"
+            >
+              <p
+                class="case_team-item__name"
+              >
+                
+      Vlada Arevkova
+    
+              </p>
+               
+              <p
+                class="case_team-item__position"
+              >
+                
+      UX/UI Specialist
+    
+              </p>
+            </div>
+          </li>
+          <li
+            class="case_team-item"
+          >
+            <picture
+              class="case_team-item__image"
+            >
+              <source
+                class="image grey-background"
+                srcset="/images/Cases/common/webp/erik-sultanaliev.webp ,/images/Cases/common/webp/erik-sultanaliev@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Erik Sultanaliev"
+                class="image grey-background"
+                data-testid="test-picture-img"
+                height="50"
+                loading="lazy"
+                src="/images/Cases/common/png/erik-sultanaliev.png"
+                srcset="/images/Cases/common/png/erik-sultanaliev@2x.png 2x"
+                width="50"
+              />
+            </picture>
+             
+            <div
+              class="case_team-item__info"
+            >
+              <p
+                class="case_team-item__name"
+              >
+                
+      Erik Sultanaliev
+    
+              </p>
+               
+              <p
+                class="case_team-item__position"
+              >
+                
+      Backend Developer
+    
+              </p>
+            </div>
+          </li>
+          <li
+            class="case_team-item"
+          >
+            <picture
+              class="case_team-item__image"
+            >
+              <source
+                class="image grey-background"
+                srcset="/images/Cases/common/webp/myrzabek-kylychev.webp ,/images/Cases/common/webp/myrzabek-kylychev@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Myrzabek Kylychev"
+                class="image grey-background"
+                data-testid="test-picture-img"
+                height="50"
+                loading="lazy"
+                src="/images/Cases/common/png/myrzabek-kylychev.png"
+                srcset="/images/Cases/common/png/myrzabek-kylychev@2x.png 2x"
+                width="50"
+              />
+            </picture>
+             
+            <div
+              class="case_team-item__info"
+            >
+              <p
+                class="case_team-item__name"
+              >
+                
+      Myrzabek Kylychev
+    
+              </p>
+               
+              <p
+                class="case_team-item__position"
+              >
+                
+      Android Developer
+    
+              </p>
+            </div>
+          </li>
+          <li
+            class="case_team-item"
+          >
+            <picture
+              class="case_team-item__image"
+            >
+              <source
+                class="image grey-background"
+                srcset="/images/Cases/common/webp/pushkarev.webp ,/images/Cases/common/webp/pushkarev@2x.webp 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Pavel Pushkarev"
+                class="image grey-background"
+                data-testid="test-picture-img"
+                height="50"
+                loading="lazy"
+                src="/images/Cases/common/png/pushkarev.png"
+                srcset="/images/Cases/common/png/pushkarev@2x.png 2x"
+                width="50"
+              />
+            </picture>
+             
+            <div
+              class="case_team-item__info"
+            >
+              <p
+                class="case_team-item__name"
+              >
+                
+      Pavel Pushkarev
+    
+              </p>
+               
+              <p
+                class="case_team-item__position"
+              >
+                
+      iOS Developer
+    
+              </p>
+            </div>
+          </li>
+        </ul>
+         
+        <blockquote
+          alt="Ruslan Karabukaev"
+          class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
+        >
+          
+    We built the platforms from scratch with the Mad Devs team, who dedicatedly supported and guided us to take
+    proper action on several ideas and requirements. We have attracted 27,000 users so far, thanks to their
+    continuous support for improvement and development.
+   
+          <div
+            class="case_blockquote-author__author-info m-24_top"
+          >
+            <div
+              class="case_blockquote-author__photo m-auto"
+            >
+              <picture>
+                <source
+                  class="image"
+                  srcset="/images/Cases/godee/webp/ruslan-karabukaev.webp ,/images/Cases/godee/webp/ruslan-karabukaev@2x.webp 2x"
+                  type="image/webp"
+                />
+                 
+                <img
+                  alt="Ruslan Karabukaev"
+                  class="image"
+                  data-testid="test-picture-img"
+                  height="0"
+                  loading="lazy"
+                  src="/images/Cases/godee/png/ruslan-karabukaev.png"
+                  srcset="/images/Cases/godee/png/ruslan-karabukaev@2x.png 2x"
+                  width="0"
+                />
+              </picture>
+            </div>
+             
+            <p
+              class="case_paragraph case_blockquote-author__name"
+            >
+              
+      Ruslan Karabukaev
+    
+            </p>
+             
+            <p
+              class="case_blockquote-author__position"
+            >
+              
+      Co-founder of GoDee
+    
+            </p>
+          </div>
+        </blockquote>
+      </section>
+    </div>
+  </section>
+</div>
+`;

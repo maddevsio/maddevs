@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`galary slice component is a Vue instance 1`] = `
+<div>
+  <div
+    class="gallery-slice"
+  >
+    <!---->
+     
+    <div
+      class="slider-content"
+    >
+      <div
+        class="swiper-container thumb-example"
+      >
+        <div
+          class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
+          style="cursor: grab;"
+        >
+          <div
+            class="swiper-wrapper"
+            style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+          >
+            <div
+              class="swiper-slide"
+            >
+              <prismicimage-stub
+                field="[object Object]"
+              />
+            </div>
+          </div>
+          <span
+            aria-atomic="true"
+            aria-live="assertive"
+            class="swiper-notification"
+          />
+        </div>
+      </div>
+       
+      <p
+        class="slider-description"
+      >
+        
+    
+  
+      </p>
+       
+      <div
+        class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
+      >
+        <div
+          class="swiper-wrapper"
+          style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+        >
+          <div
+            class="swiper-slide"
+          />
+        </div>
+        <span
+          aria-atomic="true"
+          aria-live="assertive"
+          class="swiper-notification"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

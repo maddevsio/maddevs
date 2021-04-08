@@ -1,15 +1,11 @@
 .case {
-  &_header {
-    &:before {
-      background-image: url("../../assets/img/Cases/sjmc/jpg/sjmc-main-video-preview.jpg");
-    }
+  &_header::before {
+    background-color: $bgcolor--black-opacity-07;
   }
 
   &_sjmc-logo {
-    @include sjmc-header;
     width: 242px;
-    min-width: 242px;
-    height: 108px;
+    height: 110px;
     margin-left: 177px;
     margin-top: -95px;
   }
@@ -61,19 +57,22 @@
     position: relative;
     cursor: pointer;
 
-    &::before {
-      content: '';
-      width: calc(100% + 10px);
+    &_fallback {
+      width: 100%;
       height: 100%;
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: url("../../assets/img/Cases/sjmc/png/bluetooth-beacons-video-background.png");
       background-repeat: no-repeat;
       background-size: cover;
-      z-index: -1;
+      z-index: 0;
+    }
+
+    video {
+      position: relative;
+      z-index: 1;
     }
 
     &--on-pause {
@@ -89,6 +88,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 1;
         @include play-button-white;
       }
     }
@@ -98,15 +98,7 @@
     }
   }
 
-  &_logotype {
-    @include nambafood-footer;
-    width: 200px;
-    height: 63px;
-    margin-bottom: 33px;
-  }
-
-  &_mobile-break,
-  &_mobile-screen-break { // Foooter text break
+  &_mobile-break {
     display: none;
   }
 
@@ -120,9 +112,6 @@
     &_sjmc-logo {
       margin-top: 0;
       margin-left: 0;
-      min-width: auto;
-      width: 100%;
-      background-position: left;
       margin-bottom: 38px;
     }
   }
@@ -137,24 +126,13 @@
     &_sjmc-phone-video-section {
       padding: 50px 0;
     }
-
-    &_logotype {
-      width: 160px;
-      height: 60px;
-      margin-bottom: 25px;
-    }
   }
 
   @media screen and (max-width: 655px) {
     &_sjmc-logo {
+      width: 143px;
       height: 65px;
       margin-bottom: 35px;
-    }
-  }
-
-  @media screen and (max-width: 520px) {
-    &_mobile-screen-break {
-      display: block;
     }
   }
 

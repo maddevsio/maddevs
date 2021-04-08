@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular m-48_top m-96_bottom media-m-16_top media-m-48_bottom"
+  >
+    <p
+      class="case_paragraph"
+    >
+      
+    Mad Devs developed the Namba Food delivery service from scratch. The apps for couriers, end-users placing orders
+    and business owners work as a seamless system, ensuring a smooth delivery process for all types of goods.
+  
+    </p>
+     
+    <blockquote
+      class="case_blockquote-box m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
+    >
+      
+    Namba Food is a unique delivery service that combines speed, convenience and simplicity.
+  
+    </blockquote>
+     
+    <p
+      class="case_paragraph"
+    >
+      
+    Being first is hard. Namba Food’s success story focuses on how they took a global idea and successfully localised
+    and integrated it into the daily lives of Kyrgyzstan's people. Since 2013, the company has been on a mission to
+    bring value to both vendors and customers by conveniently delivering goods at the right time.
+  
+    </p>
+  </section>
+</div>
+`;

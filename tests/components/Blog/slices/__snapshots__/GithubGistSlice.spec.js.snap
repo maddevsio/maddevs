@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`github gist component is a Vue instance 1`] = `
+<div>
+  <div
+    stubs="PrismicImage"
+  >
+    <!---->
+  </div>
+</div>
+`;

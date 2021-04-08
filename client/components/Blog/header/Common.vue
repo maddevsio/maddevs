@@ -1,9 +1,13 @@
 <template>
   <div class="blog-post__introduction-container">
-    <slot name="beforeTitle"></slot>
-    <h1 class="blog-post__blog-title title">{{ title }}</h1>
-    <p class="blog-post__blog-sub-title">{{ subtitle }}</p>
-    <slot name="afterTitle"></slot>
+    <slot name="beforeTitle" />
+    <h1 class="blog-post__blog-title title">
+      {{ title }}
+    </h1>
+    <p class="blog-post__blog-sub-title">
+      {{ subtitle }}
+    </p>
+    <slot name="afterTitle" />
     <img
       v-if="coverImageUrl"
       :src="coverImageUrl"
@@ -12,7 +16,7 @@
       :width="coverImageWidth"
       :height="coverImageHeight"
       class="blog-post__introduction-image"
-    />
+    >
   </div>
 </template>
 

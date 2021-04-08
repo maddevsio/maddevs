@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ParallaxImage component should render correctly 1`] = `
+<div>
+  <div
+    class="case_parallax-layer"
+  >
+    <div
+      class="case_parallax-image-wrapper"
+    >
+      <div
+        class="case_parallax-image"
+        data-testid="test-case_parallax-image"
+        style="background-image: url(img.jpg);"
+      />
+    </div>
+  </div>
+</div>
+`;

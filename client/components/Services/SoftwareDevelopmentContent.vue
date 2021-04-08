@@ -3,19 +3,22 @@
     <div class="content-item__content-wrapper">
       <div class="content-item__text-content">
         <client-only>
-          <UIItemTitle :item-title="title" class="content-item__title" />
-          <UIItemSubTitle :item-sub-title="subTitle" class="content-item__sub-title" />
+          <UITitle class="content-item__title">
+            {{ title }}
+          </UITitle>
+          <UISubtitle class="content-item__sub-title">
+            {{ subtitle }}
+          </UISubtitle>
           <UIParagraph
-            :paragraph="firstParagraph"
-            :class="`content-item__paragraph-${title.toLowerCase()}`"
-            class="content-item__paragraph content-item__paragraph-first"
-            v-html="firstParagraph"
-          />
-          <UIParagraph
-            :paragraph="secondParagraph"
-            class="content-item__paragraph content-item__paragraph-second"
-            v-html="secondParagraph"
-          />
+            v-for="paragraph in paragraphs"
+            :key="paragraph"
+            :class="`content-item__paragraph-${type}`"
+            class="content-item__paragraph"
+            data-testid="test-paragraph"
+            v-html="paragraph"
+          >
+            {{ paragraph }}
+          </UIParagraph>
         </client-only>
       </div>
       <SoftwareDevelopmentIcons :icons="icons" />
@@ -24,39 +27,39 @@
 </template>
 
 <script>
-import UIParagraph from '@/components/ui/Services/UIParagraph'
-import UIItemTitle from '@/components/ui/Services/UIItemTitle'
-import UIItemSubTitle from '@/components/ui/Services/UIItemSubTitle'
+import UIParagraph from '@/components/Services/UIParagraph'
+import UITitle from '@/components/Services/UITitle'
+import UISubtitle from '@/components/Services/UISubtitle'
 import SoftwareDevelopmentIcons from '@/components/Services/SoftwareDevelopmentIcons'
 
 export default {
   name: 'SoftwareDevelopmentContent',
   components: {
-    UIItemTitle,
-    UIItemSubTitle,
+    UITitle,
+    UISubtitle,
     UIParagraph,
     SoftwareDevelopmentIcons,
   },
 
   props: {
+    type: {
+      type: String,
+      default: '',
+    },
+
     title: {
       type: String,
       default: '',
     },
 
-    subTitle: {
+    subtitle: {
       type: String,
       default: '',
     },
 
-    firstParagraph: {
-      type: String,
-      default: '',
-    },
-
-    secondParagraph: {
-      type: String,
-      default: '',
+    paragraphs: {
+      type: Array,
+      default: () => [],
     },
 
     icons: {
@@ -98,15 +101,14 @@ export default {
     }
   }
 
-  &__paragraph-first {
+  &__paragraph {
     margin-bottom: 30px;
-  }
+    &:last-child {
+      margin-bottom: 22px;
 
-  &__paragraph-second {
-    margin-bottom: 22px;
-
-    @media screen and (min-width: 400px) and (max-width: 991px) {
-      margin-bottom: 11px;
+      @media screen and (min-width: 400px) and (max-width: 991px) {
+        margin-bottom: 11px;
+      }
     }
   }
 

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`post tag component is a Vue instance 1`] = `
+<div>
+  <div
+    class="post-tag light"
+  >
+    <span
+      class="tag"
+      data-testid="test-tag"
+    >
+      post-tag
+    </span>
+  </div>
+</div>
+`;

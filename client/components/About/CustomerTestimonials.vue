@@ -1,7 +1,12 @@
 <template>
-  <section id="customer-testimonials" class="customer-testimonials">
+  <section
+    id="customer-testimonials"
+    class="customer-testimonials"
+  >
     <div class="container">
-      <h2 class="customer-testimonials__title">Customer Testimonials</h2>
+      <h2 class="customer-testimonials__title">
+        Customer Testimonials
+      </h2>
       <div class="customer-testimonials__content-wrap">
         <div class="customer-testimonials__widget-col">
           <client-only>
@@ -14,12 +19,16 @@
                 data-expandifr="true"
                 data-height="auto"
                 data-clutchcompany-id="258762"
-              ></div>
+              />
             </div>
           </client-only>
         </div>
         <div class="customer-testimonials__testimonials-list">
-          <div v-for="(testimonial, i) in testimonials" :key="i" class="customer-testimonials__testimonials-item">
+          <div
+            v-for="(testimonial, i) in testimonials"
+            :key="i"
+            class="customer-testimonials__testimonials-item"
+          >
             <blockquote class="customer-testimonials__testimonials-text paragraph-md">
               {{ testimonial.testimonialText }}
             </blockquote>
@@ -31,13 +40,17 @@
                   class="customer-testimonials__customer-image img_lazy"
                   width="42"
                   height="42"
-                />
+                >
                 <span class="customer-testimonials__customer-name paragraph-sm">
                   {{ testimonial.customerName }} <span>{{ testimonial.customerCountry }}</span>
                 </span>
               </div>
               <div class="customer-testimonials__project">
-                <a :href="testimonial.link" target="_blank" rel="nofollow">
+                <a
+                  :href="testimonial.link"
+                  target="_blank"
+                  rel="nofollow"
+                >
                   <img
                     :width="testimonial.logoWidth"
                     :data-src="require(`@/assets/img/Home/svg/testimonials/${testimonial.customerProject}.svg`)"
@@ -45,7 +58,7 @@
                     :alt="testimonial.alt"
                     height="31"
                     class="img_lazy single-project__logo"
-                  />
+                  >
                 </a>
               </div>
             </div>
@@ -57,49 +70,13 @@
 </template>
 
 <script>
+import { customerTestimonials as testimonials } from '@/data/customerTestimonials'
+
 export default {
   name: 'CustomerTestimonials',
   data() {
     return {
-      testimonials: [
-        {
-          customerName: 'Atif Mahmood,',
-          customerCountry: 'The UK',
-          customerProject: 'teacherly',
-          customerImageName: 'atif',
-          testimonialText:
-            'Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.',
-
-          link: 'https://teacherly.io/',
-          alt: 'Atif Mahmood - CEO and Founder at Teacherly.',
-          logoWidth: 91,
-        },
-        {
-          customerName: 'Daniel Vartanov,',
-          customerCountry: 'The UK',
-          customerProject: 'veeqo',
-          customerImageName: 'daniel',
-          testimonialText:
-            'We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.',
-
-          link: 'https://veeqo.com/',
-          alt: 'Daniel Vartanov - CTO at Veeqo.com.',
-          logoWidth: 83,
-        },
-        {
-          customerName: 'Stefan Streichsbier,',
-          customerCountry: 'Singapore',
-          customerProject: 'guardrails',
-          customerImageName: 'stefan',
-          testimonialText:
-            'I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.',
-
-          link: 'https://guardrails.io/',
-          alt: 'Stefan Streichsbier - CEO and Founder at GuardRails.io.',
-          logoWidth: 160,
-        },
-      ],
-
+      testimonials,
       script: null,
     }
   },
@@ -108,6 +85,7 @@ export default {
     const clutchLoader = () => {
       this.script = document.createElement('script')
       this.script.setAttribute('src', 'https://widget.clutch.co/static/js/widget.js')
+      this.script.setAttribute('data-testid', 'test-clutch-script')
       document.body.appendChild(this.script)
       this.script.onload = () => {
         window.CLUTCHCO.Init()
@@ -118,9 +96,7 @@ export default {
   },
 
   destroyed() {
-    if (this.script !== null) {
-      this.script.remove()
-    }
+    if (this.script && this.script.remove) this.script.remove()
   },
 }
 </script>

@@ -5,24 +5,35 @@
       class="block-quotation"
       v-html="$prismic.asHtml(slice.primary.quote)"
     />
-    <text-quote v-if="slice.primary.quotation_design === 'brackets'" class="post-quote">
+    <TextQuote
+      v-if="slice.primary.quotation_design === 'brackets'"
+      class="post-quote"
+    >
       {{ $prismic.asText(slice.primary.quote) }}
-    </text-quote>
+    </TextQuote>
     <div
       v-if="slice.primary.portrait_author.url || authorName"
       :class="`p-${slice.primary.quotation_design}`"
       class="author"
     >
-      <div v-if="slice.primary.portrait_author.url" class="author__image">
-        <prismic-image :field="slice.primary.portrait_author.mobile" />
+      <div
+        v-if="slice.primary.portrait_author.url"
+        class="author__image"
+      >
+        <PrismicImage :field="slice.primary.portrait_author.mobile" />
       </div>
-      <div v-if="authorName" class="author__name">{{ authorName }}</div>
+      <div
+        v-if="authorName"
+        class="author__name"
+      >
+        {{ authorName }}
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import TextQuote from '@/components/Cases/TextQuote'
+import TextQuote from '@/components/Cases/shared/TextQuote'
 
 export default {
   name: 'QuoteSlice',

@@ -2,15 +2,25 @@
   <div>
     <template v-if="$prismic.asText(url)">
       <div class="post-part single">
-        <a :href="$prismic.asText(url)" :target="target" class="block-img">
-          <prismic-image :field="img" :title="$prismic.asText(title)" />
+        <a
+          :href="$prismic.asText(url)"
+          :target="target"
+          class="block-img"
+        >
+          <PrismicImage
+            :field="img"
+            :title="$prismic.asText(title)"
+          />
         </a>
       </div>
     </template>
     <template v-else>
       <div class="post-part single">
         <div class="block-img">
-          <prismic-image :field="img" :title="$prismic.asText(title)" />
+          <PrismicImage
+            :field="img"
+            :title="$prismic.asText(title)"
+          />
         </div>
       </div>
     </template>

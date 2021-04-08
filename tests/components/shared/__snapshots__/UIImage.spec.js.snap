@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UIImage should render correctly 1`] = `
+<div>
+  <picture>
+    <source
+      class="multi-image"
+      data-srcset="[object Object] ,[object Object] 2x"
+      type="image/webp"
+    />
+     
+    <img
+      alt="marat"
+      class="multi-image img_lazy"
+      data-src="[object Object]"
+      data-srcset="[object Object] 2x"
+      data-testid="test-multi-image"
+      height="500"
+      width="1000"
+    />
+  </picture>
+</div>
+`;

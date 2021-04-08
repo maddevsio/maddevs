@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`customer University section component is a Vue instance 1`] = `
+<div>
+  <section
+    class="customer-university"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="customer-university__title"
+      >
+        
+      Customer
+        <br />
+         
+        <span>
+          University
+        </span>
+      </div>
+       
+      <div
+        class="customer-university__wrapper"
+      >
+        <div
+          class="customer-university__featured-post"
+        >
+          <!---->
+        </div>
+         
+        <div
+          class="customer-university__list"
+        >
+          <div
+            class="customer-university__list-wrapper"
+          >
+            <span
+              class="customer-university__list-title"
+            >
+              Series of articles:
+            </span>
+             
+            <div />
+             
+            <div
+              class="customer-university__list-show-more-wrapper"
+            >
+              <!---->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

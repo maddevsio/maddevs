@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`list item box checkMark renders correctly 1`] = `
-<li
-  class="list-item_box"
->
-  Main Content
-</li>
-`;

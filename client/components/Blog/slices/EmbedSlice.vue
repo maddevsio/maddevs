@@ -1,9 +1,20 @@
 <template>
-  <div v-if="slice.items.length" :class="slice.items[0].embed.type" class="embed">
-    <prismic-embed :field="slice.items[0].embed" :class="`embed__${slice.items[0].embed.type}`" target="_blank" />
+  <div
+    v-if="slice.items.length"
+    :class="slice.items[0].embed.type"
+    class="embed"
+  >
+    <PrismicEmbed
+      :field="slice.items[0].embed"
+      :class="`embed__${slice.items[0].embed.type}`"
+      target="_blank"
+    />
     <template v-if="slice.items[0].embed.type === 'link'">
       <div class="embed__image-wrapper">
-        <div :style="{ backgroundImage: `url(${slice.items[0].embed.thumbnail_url})` }" class="embed__image" />
+        <div
+          :style="{ backgroundImage: `url(${slice.items[0].embed.thumbnail_url})` }"
+          class="embed__image"
+        />
       </div>
     </template>
   </div>
@@ -29,18 +40,37 @@ export default {
 
   created() {
     this.sliceData = this.slice
-    if (!this.sliceData.items.length) return
+    const { items } = this.sliceData
+    if (!items.length) return
 
-    if (this.sliceData.items[0].embed.html) {
-      this.sliceData.items[0].embed.html = this.sliceData.items[0].embed.html
-        .replace('<h1>', '<div class="embed__title">')
-        .replace('</h1>', '</div>')
-        .replace(/<img[^>]*>/g, '')
-        .replace(/<a href="http[^"]*"/, match => `${match} target="_blank"`)
+    const {
+      embed: {
+        url,
+        title: rawTitle,
+        html: rawHtml,
+        type: embedType,
+      },
+      embed_title: embedTitle,
+    } = items[0]
+
+    if (rawHtml) {
+      const matchDescription = rawHtml.match('<p>(.*?)</p>')
+      const description = matchDescription ? matchDescription[1] || '' : ''
+
+      const html = `
+        <div data-type="website">
+          <a href="${url}" target="_blank">
+            <div class="embed__title">${embedTitle || rawTitle.split(' | ')[0]}</div>
+            <p>${description}</p>
+          </a>
+        </div>
+      `
+
+      this.sliceData.items[0].embed.html = html
     }
 
-    if (this.sliceData.items[0].embed.type === 'video') {
-      this.sliceData.items[0].embed.html = this.sliceData.items[0].embed.html
+    if (embedType === 'video') {
+      this.sliceData.items[0].embed.html = rawHtml
         .replace(/height="[0-9]*"/, 'height="500"')
         .replace(/width="[0-9]*"/, 'width="100%"')
     }
@@ -57,11 +87,12 @@ export default {
 
   &.link {
     display: flex;
+    justify-content: space-between;
     margin: 25px 0;
     border: 1px solid $border-color--silver;
   }
 
-  /deep/ > div {
+  /deep/ div {
     a {
       text-decoration: none;
     }
@@ -84,7 +115,9 @@ export default {
   }
 
   &__link {
+    width: 100%;
     display: flex;
+    align-items: center;
     padding: 24px 0 24px 24px;
   }
 
@@ -102,6 +135,7 @@ export default {
     width: 100%;
     height: 100%;
     min-width: 136px;
+    min-height: 60px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

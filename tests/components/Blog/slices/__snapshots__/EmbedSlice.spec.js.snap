@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`embed slice component is a Vue instance 1`] = `
+<div>
+  <div
+    class="embed video"
+  >
+    <prismicembed-stub
+      class="embed__video"
+      field="[object Object]"
+      target="_blank"
+    />
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`embed slice component must replace tags 1`] = `
+<div>
+  <!---->
+</div>
+`;

@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Picture component should render correctly 1`] = `
+<div>
+  <div
+    class="slider-content"
+  >
+    <div
+      class="swiper-container thumb-example box-shadow"
+    >
+      <picture>
+        <source
+          class="image"
+          srcset="img.jpg ,img.jpg 2x"
+          type="image/webp"
+        />
+         
+        <img
+          alt=""
+          class="image"
+          data-testid="test-picture-img"
+          height="0"
+          loading="lazy"
+          src="img.jpg"
+          srcset="img.jpg 2x"
+          width="0"
+        />
+      </picture>
+       
+      <div
+        class="swiper-container swiper gallery-top swiper-container-initialized swiper-container-horizontal"
+        style="cursor: grab;"
+      >
+        <div
+          class="swiper-wrapper"
+          style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+        >
+          <div
+            class="swiper-slide"
+          >
+            <picture>
+              <source
+                class="image"
+                srcset="img.jpg ,img.jpg 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt=""
+                class="image"
+                data-testid="test-picture-img"
+                height="0"
+                loading="lazy"
+                src="img.jpg"
+                srcset="img.jpg 2x"
+                width="0"
+              />
+            </picture>
+          </div>
+          <div
+            class="swiper-slide"
+          >
+            <picture>
+              <source
+                class="image"
+                srcset="img.jpg ,img.jpg 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt=""
+                class="image"
+                data-testid="test-picture-img"
+                height="0"
+                loading="lazy"
+                src="img.jpg"
+                srcset="img.jpg 2x"
+                width="0"
+              />
+            </picture>
+          </div>
+        </div>
+        <span
+          aria-atomic="true"
+          aria-live="assertive"
+          class="swiper-notification"
+        />
+      </div>
+    </div>
+     
+    <p
+      class="slider-description"
+    >
+      
+    some-description
+  
+    </p>
+     
+    <div
+      class="swiper-container swiper gallery-thumbs swiper-container-initialized swiper-container-horizontal"
+    >
+      <div
+        class="swiper-wrapper"
+        style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
+      >
+        <div
+          class="swiper-slide"
+        >
+          <picture>
+            <source
+              class="image"
+              srcset="img.jpg ,img.jpg 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt=""
+              class="image"
+              data-testid="test-picture-img"
+              height="0"
+              loading="lazy"
+              src="img.jpg"
+              srcset="img.jpg 2x"
+              width="0"
+            />
+          </picture>
+        </div>
+        <div
+          class="swiper-slide"
+        >
+          <picture>
+            <source
+              class="image"
+              srcset="img.jpg ,img.jpg 2x"
+              type="image/webp"
+            />
+             
+            <img
+              alt=""
+              class="image"
+              data-testid="test-picture-img"
+              height="0"
+              loading="lazy"
+              src="img.jpg"
+              srcset="img.jpg 2x"
+              width="0"
+            />
+          </picture>
+        </div>
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="swiper-notification"
+      />
+    </div>
+  </div>
+</div>
+`;

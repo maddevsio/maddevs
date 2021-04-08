@@ -1,15 +1,21 @@
 <template>
-  <list-numbered-box>
-    <div v-if="hasListIntroduction" v-html="$prismic.asHtml(slice.primary.list_introduction)" />
-    <list-numbered-item-box v-for="(item, index) in slice.items" :key="index">
+  <ListNumberedBox>
+    <div
+      v-if="hasListIntroduction"
+      v-html="$prismic.asHtml(slice.primary.list_introduction)"
+    />
+    <ListNumberedItemBox
+      v-for="(item, index) in slice.items"
+      :key="index"
+    >
       {{ $prismic.asText(item.list_item) }}
-    </list-numbered-item-box>
-  </list-numbered-box>
+    </ListNumberedItemBox>
+  </ListNumberedBox>
 </template>
 
 <script>
-import ListNumberedBox from '@/components/Cases/ListNumberedBox'
-import ListNumberedItemBox from '@/components/Cases/ListNumberedItemBox'
+import ListNumberedBox from '@/components/Cases/shared/ListNumberedBox'
+import ListNumberedItemBox from '@/components/Cases/shared/ListNumberedItemBox'
 
 export default {
   name: 'OrderedList',

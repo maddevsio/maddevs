@@ -1,6 +1,10 @@
 <template>
   <div class="post-part single">
-    <prismic-rich-text :class="className" :field="slice.primary.text" class="textslice" />
+    <PrismicRichText
+      :class="className"
+      :field="slice.primary.text"
+      class="textslice"
+    />
   </div>
 </template>
 
@@ -21,7 +25,7 @@ export default {
   },
 
   mounted() {
-    if (this.$props.slice.primary.text[0].type === 'heading1') {
+    if (this.$props.slice.primary.text[0] && this.$props.slice.primary.text[0].type === 'heading1') {
       this.className = this.$props.slice.primary.text[0].text.toLowerCase().replace(/\s/g, '-')
     }
   },

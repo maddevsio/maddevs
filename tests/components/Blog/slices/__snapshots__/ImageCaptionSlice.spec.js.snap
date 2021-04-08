@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`image attribute slice component is a Vue instance 1`] = `
+<div>
+  <div>
+    <div
+      class="post-part single"
+    >
+      <div
+        class="block-img image-full-width"
+      >
+        <prismicimage-stub
+          class=""
+          field="[object Object]"
+        />
+         
+        <!---->
+      </div>
+       
+      <p
+        class="image-label"
+        data-testid="test-image-label"
+      >
+        
+      caption
+    
+      </p>
+    </div>
+  </div>
+</div>
+`;

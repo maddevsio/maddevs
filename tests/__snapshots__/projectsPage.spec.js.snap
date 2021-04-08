@@ -24,15 +24,18 @@ exports[`projects page renders correctly 1`] = `
             class="banner__main-title-white_part main-title-white_part"
           >
             
-          50+ 
+          50+
+          
             <br
               class="banner__small-screen-break"
             />
             
-          implemented 
+          implemented
+          
             <br />
             
           projects!
+        
           </span>
         </h1>
       </div>
@@ -43,33 +46,38 @@ exports[`projects page renders correctly 1`] = `
         <nav
           class="navigation-list navigation-list-"
         >
-          <nuxt-link-stub
+          <nuxtlink-stub
             class="navigation-item"
             to="#case-studies"
           >
-            Case studies
-          </nuxt-link-stub>
-           
-          <nuxt-link-stub
+            
+      Case studies
+    
+          </nuxtlink-stub>
+          <nuxtlink-stub
             class="navigation-item"
             to="#customers"
           >
-            Our customers
-          </nuxt-link-stub>
-           
-          <nuxt-link-stub
+            
+      Our customers
+    
+          </nuxtlink-stub>
+          <nuxtlink-stub
             class="navigation-item"
             to="#open-source"
           >
-            Open-source pet projects
-          </nuxt-link-stub>
+            
+      Open-source pet projects
+    
+          </nuxtlink-stub>
+           
         </nav>
       </div>
     </div>
   </div>
    
   <section
-    class="case-studies"
+    class="case-studies case-studies--projects"
     id="case-studies"
   >
     <div
@@ -77,17 +85,19 @@ exports[`projects page renders correctly 1`] = `
     >
       <div>
         <h2
-          class="case-studies__main-title case-studies__main-title-"
+          class="case-studies__main-title case-studies__main-title-projects"
         >
           
         Case 
-          <!---->
+          <br />
           
         Studies
       
         </h2>
          
-        <!---->
+        <div
+          class="case-studies__fire-icon"
+        />
       </div>
        
       <div
@@ -116,9 +126,7 @@ exports[`projects page renders correctly 1`] = `
               <h3
                 class="single-project__sub-title"
               >
-                
-        Contactless Delivery Service
-      
+                Contactless Delivery Service
               </h3>
                
               <p
@@ -144,14 +152,14 @@ exports[`projects page renders correctly 1`] = `
                   class="contribution-widget__content contribution-widget__content_nambafood"
                 >
                   
-    contribution: Backend, Infrastructure, Frontend
-  
+          contribution: Backend, Infrastructure, Frontend
+        
                 </span>
               </div>
             </div>
              
             <div
-              class="single-project__background"
+              class="single-project__background single-project__nambafoodBackground"
             >
               <picture>
                 <source
@@ -195,9 +203,7 @@ exports[`projects page renders correctly 1`] = `
               <h3
                 class="single-project__sub-title"
               >
-                
-        Australian National Interpretive Centre
-      
+                Australian National Interpretive Centre
               </h3>
                
               <p
@@ -223,14 +229,14 @@ exports[`projects page renders correctly 1`] = `
                   class="contribution-widget__content contribution-widget__content_sjmc"
                 >
                   
-    contribution: Backend, Infrastructure, Frontend
-  
+          contribution: Backend, Infrastructure, Frontend
+        
                 </span>
               </div>
             </div>
              
             <div
-              class="single-project__background"
+              class="single-project__background single-project__sjmcBackground"
             >
               <picture>
                 <source
@@ -253,9 +259,9 @@ exports[`projects page renders correctly 1`] = `
         </a>
         <a
           class="single-project"
-          href="https://blog.maddevs.io/guardrails-helps-800-development-teams-to-establish-devsecops-with-automated-security-reviews-806c3c1d516b?source=friends_link&sk=15f4cdb98f9410b27b9d76dfd94ad1d0"
-          style="background: rgb(14, 27, 39);"
-          target="_blank"
+          href="/case-studies/yourcast/"
+          style="background: rgb(34, 31, 32);"
+          target="_self"
         >
           <div
             class="single-project__container single-project_white-letters-theme"
@@ -264,26 +270,26 @@ exports[`projects page renders correctly 1`] = `
               class="single-project__content-wrap"
             >
               <img
-                alt="Guardrails Cloud CyberSecurity Services Logo."
+                alt="Yourcast.TV Logo."
                 class="img_lazy single-project__logo"
                 data-src="[object Object]"
                 height="41"
-                width="174"
+                width="158"
               />
                
               <h3
                 class="single-project__sub-title"
               >
-                
-        Cloud cybersecurity service
-      
+                The Evolution 
+                <br />
+                 of Yourcast.TV
               </h3>
                
               <p
                 class="single-project__paragraph paragraph"
               >
                 
-        Mad Devs was involved with Guardrails' security check service as a development contractor with exceptional knowledge of GitHub and GitLab processes.
+        Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.
       
               </p>
                
@@ -299,17 +305,17 @@ exports[`projects page renders correctly 1`] = `
                 />
                  
                 <span
-                  class="contribution-widget__content contribution-widget__content_guardrails"
+                  class="contribution-widget__content contribution-widget__content_yourcast"
                 >
                   
-    contribution: Backend, Infrastructure, Frontend
-  
+          contribution: Backend, Infrastructure, Frontend
+        
                 </span>
               </div>
             </div>
              
             <div
-              class="single-project__background single-project__background_guardrails"
+              class="single-project__background single-project__yourcastBackground"
             >
               <picture>
                 <source
@@ -319,7 +325,7 @@ exports[`projects page renders correctly 1`] = `
                 />
                  
                 <img
-                  alt="Guardrails Cloud CyberSecurity Services Logo."
+                  alt="Yourcast.TV Logo."
                   class="img_lazy"
                   data-src="[object Object]"
                   data-srcset="[object Object] 2x"
@@ -353,9 +359,7 @@ exports[`projects page renders correctly 1`] = `
               <h3
                 class="single-project__sub-title"
               >
-                
-        Convenient shuttle bus service
-      
+                Convenient shuttle bus service
               </h3>
                
               <p
@@ -381,14 +385,14 @@ exports[`projects page renders correctly 1`] = `
                   class="contribution-widget__content contribution-widget__content_godee"
                 >
                   
-    contribution: Backend, Infrastructure, Mobile Apps
-  
+          contribution: Backend, Infrastructure, Mobile Apps
+        
                 </span>
               </div>
             </div>
              
             <div
-              class="single-project__background"
+              class="single-project__background single-project__godeeBackground"
             >
               <picture>
                 <source
@@ -426,7 +430,9 @@ exports[`projects page renders correctly 1`] = `
         <h2
           class="customers__main-title"
         >
-          Our valued customers
+          
+        Our valued customers
+      
         </h2>
          
         <p
@@ -585,7 +591,9 @@ exports[`projects page renders correctly 1`] = `
         <h3
           class="open-source__main-title"
         >
-          Our code - available in open source - is used by many other companies.
+          
+        Our code - available in open source - is used by many other companies.
+      
         </h3>
          
         <div

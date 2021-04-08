@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`customer university header component should render correctly with default props 1`] = `
+<div>
+  <commonheader-stub
+    coverimageheight="533"
+    coverimageurl="https://images.prismic.io/superpupertest/82f90d05-8c22-49c1-bf1e-8721a0e3eda6_Constructing+a+Map+in+the+Mercator+Projection+for+Android.png?auto=compress,format"
+    coverimagewidth="982"
+    subtitle="adadadad"
+    title="adadadad"
+  >
+    <div
+      class="row cluster-navigation"
+    >
+      <div
+        class="cluster-navigation__name"
+      >
+        
+        ‌
+      
+      </div>
+       
+      <div
+        class="col-12 col-lg-5 mt-0 cluster-navigation__select-wrapper"
+      >
+        <div
+          class="v-select cluster-navigation__select vs--single vs--unsearchable"
+          data-testid="vue-select"
+          dir="auto"
+        >
+           
+          <div
+            aria-expanded="false"
+            aria-label="Search for option"
+            aria-owns="vs1__listbox"
+            class="vs__dropdown-toggle"
+            id="vs1__combobox"
+            role="combobox"
+          >
+            <div
+              class="vs__selected-options"
+            >
+              <span
+                class="vs__selected"
+              >
+                
+            Explore the chapters
+           
+                <!---->
+              </span>
+               
+              <input
+                aria-autocomplete="list"
+                aria-controls="vs1__listbox"
+                aria-labelledby="vs1__combobox"
+                autocomplete="off"
+                class="vs__search"
+                readonly="readonly"
+                type="search"
+              />
+            </div>
+             
+            <div
+              class="vs__actions"
+            >
+              <button
+                aria-label="Clear Selected"
+                class="vs__clear"
+                style="display: none;"
+                title="Clear Selected"
+                type="button"
+              >
+                <svg
+                  height="10"
+                  width="10"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.895455 5l2.842897-2.842898c.348864-.348863.348864-.914488 0-1.263636L9.106534.261648c-.348864-.348864-.914489-.348864-1.263636 0L5 3.104545 2.157102.261648c-.348863-.348864-.914488-.348864-1.263636 0L.261648.893466c-.348864.348864-.348864.914489 0 1.263636L3.104545 5 .261648 7.842898c-.348864.348863-.348864.914488 0 1.263636l.631818.631818c.348864.348864.914773.348864 1.263636 0L5 6.895455l2.842898 2.842897c.348863.348864.914772.348864 1.263636 0l.631818-.631818c.348864-.348864.348864-.914489 0-1.263636L6.895455 5z"
+                  />
+                </svg>
+              </button>
+               
+              <svg
+                class="vs__open-indicator"
+                height="8"
+                role="presentation"
+                viewBox="0 0 9 8"
+                width="9"
+              >
+                <path
+                  d="M0.447443 0.454545L4.53835 7.40909L8.62926 0.454545H0.447443Z"
+                  fill="#A0A0A1"
+                />
+              </svg>
+               
+              <div
+                class="vs__spinner"
+                style="display: none;"
+              >
+                Loading...
+              </div>
+            </div>
+          </div>
+           
+          <transition-stub
+            name="vs__fade"
+          >
+            <ul
+              id="vs1__listbox"
+              role="listbox"
+              style="display: none; visibility: hidden;"
+            />
+          </transition-stub>
+           
+        </div>
+      </div>
+       
+      <div
+        class="col-12 col-lg-7 mt-0 cluster-navigation__buttons-wrapper"
+      >
+        <div
+          class="cluster-navigation__buttons"
+        >
+          <nuxtlink-stub
+            class="cluster-navigation__link disabled"
+            to="#"
+          >
+            <span
+              class="arrow prev"
+            />
+            
+            Previous
+          
+          </nuxtlink-stub>
+           
+          <span
+            class="cluster-navigation__divider"
+          />
+           
+          <nuxtlink-stub
+            class="cluster-navigation__link disabled"
+            to="#"
+          >
+            
+            Next
+            
+            <span
+              class="arrow next"
+            />
+          </nuxtlink-stub>
+        </div>
+      </div>
+    </div>
+  </commonheader-stub>
+</div>
+`;

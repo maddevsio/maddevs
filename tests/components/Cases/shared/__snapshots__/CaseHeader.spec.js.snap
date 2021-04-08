@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CaseHeader component should render correctly 1`] = `
+<div>
+  <section
+    alt="some-alt"
+    class="case_header case_header-"
+    file="some-filename"
+    height="100"
+    id="case-header"
+    picturefolder=""
+    width="100"
+  >
+    <div
+      class="case_main-video_fallback"
+      style="background-image: url();"
+    />
+     
+    <video
+      autoplay="autoplay"
+      class="case_main-video"
+      data-testid="test-case_main-video"
+      loop="loop"
+      muted="muted"
+    >
+      <source
+        src="video-name"
+        type="video/mp4"
+      />
+      
+    Your browser does not support the video tag.
+  
+    </video>
+     
+    <div
+      class="case_header-content"
+    >
+      <div
+        class="case_header-text"
+      >
+        <div
+          class="case_case-study-item"
+        >
+          
+        Case Study
+      
+        </div>
+           
+      </div>
+       
+      <img
+        alt="some-logo-alt"
+        class="case_header-logo case_godee-logo"
+        height="100"
+        src="/images/Cases/undefined/svg/godee-logo.svg"
+        width="100"
+      />
+    </div>
+  </section>
+</div>
+`;

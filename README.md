@@ -1,6 +1,6 @@
 # Mad Devs
 
-> Mad Devs is a full stack team for development and administration of IT projects. We specialize in projects requiring the individual technical solutions.
+> Mad Devs develops enterprise-level custom software solutions & mobile apps for finance, transportation, logistics, security, edtech, cloudtech & advertising industries.
 
 ## Code coverage with tests
 ![Coverage statements](client/static/badge-statements.svg) 
@@ -12,69 +12,216 @@
 
 ### Environment variables
 
-### Heroku
+#### Sendpulse
 
-To run puppeteer in heroku you need this buildpack https://github.com/jontewks/puppeteer-heroku-buildpack
+Service for sending letters. Data from the forms are processed and sent to SendPulse
 
-## Build Setup
+* NODE_SENDPULSE_API_USER_ID 
+* NODE_SENDPULSE_API_KEY
+
+#### Emails
+
+SendPulse will send email to these emails
+
+* NODE_EMAIL_HR
+* NODE_EMAIL_CONTACT
+
+#### Prismic
+
+* NODE_PRISMIC_API
+
+#### AmoCrm
+
+Data from the forms are sent not only to SendPulse, but also to AmoCrm
+
+* NODE_AMOCRM_URL
+* NODE_AMOCRM_REDIRECT_URL
+* NODE_AMOCRM_SECRET
+* NODE_AMOCRM_ID
+* NODE_AMOCRM_PHONE_FIELD_ID
+* NODE_AMOCRM_EMAIL_FIELD_ID
+* NODE_AMOCRM_RESPONSIBLE_USER_ID
+* NODE_AMOCRM_SOURCE_FIELD_ID
+* NODE_AMOCRM_SOURCE_FIELD_VALUE
+
+#### Slack
+
+Sending messages using Incoming Webhooks
+
+* NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL
+* NODE_PAGESPEED_SLACK_WEBHOOK_URL
+
+#### Googleapis
+
+We use googlePageSpeed api to run check site speed using github actions after each merge into the new-develop or master branch
+
+* NODE_GOOGLEAPIS_KEY
+
+#### Mongo
+
+Temporary tokens for the correct operation of AmoCrm are stored in mLab 
+
+* NODE_MONGO_URL
+
+#### Sentry
+
+Add a link to the DNS sentry, where the errors will be sent.
+
+* NODE_SENTRY_DSN
+* NODE_SENTRY_DSN_FRONT
+
+#### Domain
+
+Set current domain
+
+* NODE_DOMAIN
+
+**All of these variables must be added to the Heroku hosting**
+
+## Instructions for using the AWS S3
+
+[Amazon S3](https://aws.amazon.com/s3/) is used to store video files and pictures of the site. 
+
+### Install aws cli
+
+> Link to official documentation https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
 
 ``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+sudo apt install awscli
 ```
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
-## Deploy to the production server 
-
-1. In the file server/sendpulse/controllers.js, set new value for key `email` on line 38. New value: `req.body.variables.emailTo`
-
-2. Create pull request from new-develop to master. If all checks passed successfully, you can merge new-develop to master
-
-3. After deploy, set old test email for staging in file server/sendpulse/controllers.js
-
-## Instructions for working with video files
-
-> For work with AWS S3 we use [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
+Or download zip bundle
 
 ``` bash
-# install awscli 
-$ pip install awscli --upgrade --user
-$ aws --version
+curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" \&& unzip awscli-bundle.zip \&& sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws \&& rm -rf awscli-bundle*
+```
+
+The result should be
+
+``` bash
+aws --version
 aws-cli/1.16.161
+```
 
-# install awscli using bundle
-$ curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" \ && unzip awscli-bundle.zip \ && sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws \ && rm -rf awscli-bundle*
+### Setup
 
-# authorization
-$ aws configure
+The current **AWS Access Key ID** and **AWS Secret Access Key** can be requested from Team.
+
+```bash
+aws configure
+```
+
+aws will ask for the keys to specify the settings 
+
+``` bash
 AWS Access Key ID: Key
 AWS Secret Access Key: Key
 Default region name: us-west-1
 Default output format: json
-
-# view files in the bucket
-$ aws s3 ls s3://maddevsio-videos/
-
-# delete video
-$ aws s3 rm s3://maddevsio-videos/main.ef19480.mp4
-
-# upload all videos from the catalog in Bucket with read permission set
-$ aws s3 sync --acl public-read ./videos s3://maddevsio-videos/
-
-# upload a single file in bucket with read permissions set
-$ aws s3 cp --acl public-read ./videos/main.ef19480.mp4 s3://maddevsio-videos/
 ```
-For get access keys write merynes345@gmail.com
+
+Or just export the keys, in which case the access will only be in the terminal where the export is made.
+
+``` bash
+export AWS_ACCESS_KEY_ID="key"
+```
+
+``` bash
+export AWS_SECRET_ACCESS_KEY="key"
+```
+
+It remains to update the environment variable and run the site.  
+
+In the root of the project should be a file .env, where you insert the variable **NODE_S3_PUBLIC_URL** 
+
+This variable must contain the url, which will be used to access s3 files. 
+
+The link through which we will get pictures and videos **https://d6xkme6dcvajw.cloudfront.net/**
+
+### Commands
+
+Show available folders & files
+
+``` bash
+aws s3 ls s3://maddevsio/
+```
+
+Result:
+
+``` bash
+aws s3 ls s3://maddevsio/
+PRE images/
+PRE videos/
+```
+
+Upload folder
+
+``` bash
+aws s3 cp --acl public-read folder s3://maddevsio/folder/ --recursive
+```
+
+Rename folder
+
+``` bash
+aws s3 --recursive mv s3://maddevsio/folder/ s3://maddevsio/folder_2/
+```
+
+Remove folder
+
+``` bash
+aws s3 rm --recursive s3://maddevsio/folder/    
+```
+
+Upload file to folder
+
+``` bash
+aws s3 cp --acl public-read ./folder/name.jpg s3://maddevsio/folder/
+```
+
+Remove file
+
+``` bash
+aws s3 rm s3://maddevsio/folder/name.jpg
+```
+
+Update files
+
+``` bash
+aws s3 sync --acl public-read ./folder s3://maddevsio/folder/
+```
+
+Get file from bucket https://d6xkme6dcvajw.cloudfront.net/videos/main.ef19480.mp4
+
+## Run project
+
+### Install dependencies
+
+``` bash
+$ npm install # Or yarn install
+```
+
+### Serve with hot reload at localhost:3000
+
+``` bash
+$ npm run dev
+```
+
+### Build for production and launch server
+
+``` bash
+$ npm run build
+$ npm start
+```
+
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
+## Deploy to the staging server
+
+To send changes to the staging server, you should merge your branch to the **new-develop** branch 
+
+## Deploy to the production server
+
+To send changes to the staging server, you should merge **new-develop** branch to **master** branch
 
 ## Errors
 
@@ -106,73 +253,4 @@ npm ERR! code 1
 npm ERR! path /home/denisoed/projects/maddevs
 npm ERR! command failed
 npm ERR! command sh -c nuxt
-```
-
-## Configure amoCRM API
-
-### Main info
-
-* AmoCRM Official Documentation https://www.amocrm.com/developers/content/oauth/step-by-step
-* For parsing tokens from amocrm site we use https://www.npmjs.com/package/puppeteer
-
-### Run for develop 
-
-1. Add new env variable to `.env` file in root project
-
-```
-NODE_API_URL=http://localhost:5000
-NODE_AMOCRM_API_URL=Link to your account
-NODE_AMOCRM_LOGIN=***
-NODE_AMOCRM_PASSWORD=***
-NODE_AMOCRM_INTEGRATION_ID=The id of the button that opens the popup with the tokens
-NODE_AMOCRM_REDIRECT_URI=We also specify it in the amoCRM settings
-NODE_EMAIL_HR=***
-NODE_EMAIL_CONTACT=***
-```
-
-2. Run command for start server
-
-```bash
-npm start
-```
-
-3. The server will be up and available at http://localhost:3000
-
-4. Run a test request to create a new lead in postman
-
-5. The middleware logic is connected in the server /middleware/rest.js file
-
-* POST http://localhost:3000/amocrm/leads
-* Body
-```
-[
-	{
-		"name": "New lead"
-	}
-]
-```
-
-Result
-
-```
-{
-    "_links": {
-        "self": {
-            "href": "https://denisoed.amocrm.ru/api/v4/leads"
-        }
-    },
-    "_embedded": {
-        "leads": [
-            {
-                "id": 1260997,
-                "request_id": "0",
-                "_links": {
-                    "self": {
-                        "href": "https://denisoed.amocrm.ru/api/v4/leads/1260997"
-                    }
-                }
-            }
-        ]
-    }
-}
 ```

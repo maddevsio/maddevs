@@ -1,14 +1,10 @@
 .case {
-  &_header {
-    &:before {
-      background-image: url("../../assets/img/Cases/nambafood/jpg/blank.jpg");
-    }
+  &_header::before {
+    background-color: $bgcolor--black-opacity-07;
   }
 
   &_nambafood-logo {
-    @include nambafood-header;
     width: 259px;
-    min-width: 259px;
     height: 82px;
     margin-left: 164px;
   }
@@ -97,17 +93,6 @@
     max-height: 544px;
   }
 
-  &_logotype {
-    @include sjmc-footer;
-    width: 253px;
-    height: 113px;
-    margin-bottom: 35px;
-  }
-
-  &_mobile-break {
-    display: none;
-  }
-
   @media screen and (min-width: 1440px) {
     &_full-screen-video {
       border-radius: 51px;
@@ -131,11 +116,9 @@
 
   @media screen and (max-width: 1170px) {
     &_nambafood-logo {
+      width: 208px;
       margin-left: 0;
-      min-width: auto;
-      width: 100%;
       margin-bottom: 38px;
-      background-position: -26px;
     }
   }
 
@@ -191,18 +174,12 @@
     &_pipelines-image-mobile {
       display: block;
     }
-
-    &_logotype {
-      width: 212px;
-      height: 94px;
-      margin-bottom: 25px;
-    }
   }
 
   @media screen and (max-width: 655px) {
     &_nambafood-logo {
+      width: 164px;
       height: 65px;
-      background-position: -21px;
       margin-bottom: 35px;
     }
   }
@@ -228,12 +205,6 @@
 
     &_black-gradient {
       min-height: 0;
-    }
-  }
-
-  @media screen and (max-width: 420px) {
-    &_mobile-break {
-      display: block;
     }
   }
 
