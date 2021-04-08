@@ -7,6 +7,7 @@
       :use-description="true"
       :use-phone="false"
       :use-labels="false"
+      :fullname-required="false"
       button-class-name="ui-button--transparent-bgc submit-button"
       class-name="footer-form"
       @submit="handleSubmit"
