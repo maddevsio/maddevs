@@ -254,3 +254,4 @@ npm ERR! path /home/denisoed/projects/maddevs
 npm ERR! command failed
 npm ERR! command sh -c nuxt
 ```
+
