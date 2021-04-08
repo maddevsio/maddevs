@@ -12,6 +12,7 @@
               :key="link"
               :exact="exact"
               class="mobile-header__nav-link"
+              data-testid="test-header-nav-link"
               :to="link"
               @click.native="goToPage"
             >
@@ -115,10 +116,8 @@ export default {
   },
 
   created() {
-    if (process.client) {
-      if (document) {
-        this.$nextTick(() => this.refreshImg())
-      }
+    if (process.client && document) {
+      this.$nextTick(() => this.refreshImg())
     }
   },
 
@@ -141,10 +140,6 @@ export default {
         img.classList.remove('img_lazy');
         /* eslint-enable */
       })
-    },
-
-    getImageUrl(messenger) {
-      return require(`@/assets/img/Footer/svg/${messenger.key}.svg`)
     },
   },
 }

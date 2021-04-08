@@ -42,7 +42,7 @@ mobileScrollBar.setAttribute('data-testid', 'test-mobile-header-scrollbar')
 containerToRender.append(mobileScrollBar)
 
 containerToRender.append(caseHeaderForRender)
-describe('Header', () => {
+describe('Header component', () => {
   it('correctly call update class function from watcher', () => {
     const wrapper = shallowMount(Header, {
       mocks,
