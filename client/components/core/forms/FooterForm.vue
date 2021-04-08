@@ -7,6 +7,7 @@
       :use-description="true"
       :use-phone="false"
       :use-labels="false"
+      :fullname-required="false"
       button-class-name="ui-button--transparent-bgc submit-button"
       class-name="footer-form"
       @submit="handleSubmit"
@@ -84,17 +85,6 @@ export default {
 
 .footer-form {
   width: 100%;
-
-  &_email {
-    /deep/ .v-placeholder-asterisk {
-      font-size: 16px;
-      font-family: 'Poppins-Regular', sans-serif;
-      color: $text-color--grey-form-placeholder;
-      left: 17px !important;
-      top: 50% !important;
-      transform: translateY(-50%);
-    }
-  }
 
   .submit-button {
     width: 100%;
