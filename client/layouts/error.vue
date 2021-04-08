@@ -1,30 +1,38 @@
 <template>
   <div class="error-page">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="80"
-      height="80"
-      fill="#fff"
-      viewBox="0 0 48 48"
-    >
-      <path
-        d="M22 30h4v4h-4zm0-16h4v12h-4zm1.99-10C12.94 4 4 12.95 4 24s8.94 20 19.99 20S44 35.05 44 24 35.04 4 23.99 4zM24 40c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16z"
-      />
-    </svg>
-    <h1 class="error-page__title title-md">
-      Page not found
+    <Lottie
+      id="404-code"
+      :options="options"
+      class="error-page_lottie"
+      @animCreated="handleAnimation"
+    />
+    <h1 class="error-page_title">
+      The page you were looking for doesn’t exist.
     </h1>
-    <nuxt-link
+    <NuxtLink
       to="/"
-      class="error-page__to-home-page paragraph"
+      class="error-page_link"
     >
-      Back to the home page
-    </nuxt-link>
+      Back to our site
+    </NuxtLink>
   </div>
 </template>
 
 <script>
+import Lottie from 'vue-lottie/src/lottie.vue'
+import animationData from '@/assets/lottie/error/404.json'
+import playLottieMixin from '@/mixins/playLottieMixin'
+
 export default {
+  components: {
+    Lottie,
+  },
+
+  mixins: [playLottieMixin('404-code', {
+    animationData,
+    autoplay: true,
+  })],
+
   layout: 'error-layout',
 }
 </script>
@@ -32,20 +40,41 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/styles/_vars';
 .error-page {
-  width: max-content;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 210px;
+  padding-bottom: 282px;
 
-  &__title,
-  &__to-home-page {
+  &_lottie {
+    max-width: 821px;
+  }
+
+  &_title {
+    max-width: 610px;
+    margin-top: 40px;
+    margin-bottom: 55px;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: -1px;
+    text-align: center;
     color: $text-color--white;
   }
-  &__to-home-page {
-    display: block;
-    margin-top: 15px;
+
+  &_link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 166%;
+    letter-spacing: -0.035em;
+    text-decoration: none;
+    color: $text-color--white-primary;
+
+    &:before {
+      content: '←';
+      font-size: 30px;
+    }
   }
 }
 </style>
