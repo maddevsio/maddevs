@@ -22,13 +22,14 @@
 import Lottie from 'vue-lottie/src/lottie.vue'
 import animationData from '@/assets/lottie/error/404.json'
 import playLottieMixin from '@/mixins/playLottieMixin'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   components: {
     Lottie,
   },
 
-  mixins: [playLottieMixin('404-code', {
+  mixins: [initLazyLoadMixin, playLottieMixin('404-code', {
     animationData,
     autoplay: true,
   })],
@@ -66,6 +67,7 @@ export default {
   }
 
   &_link {
+    position: relative;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 17px;
@@ -75,8 +77,13 @@ export default {
     color: $text-color--white-primary;
 
     &:before {
-      content: '←';
-      font-size: 30px;
+      content: '';
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+CiAgICA8ZyBzdHJva2UtbGluZWNhcD0ic3F1YXJlIj4KICAgICAgPHBhdGggZD0iTTU3LjEgMTAzLjNMMTcuOCA2NE0xNy44IDY0bDM5LjMtMzkuMyIvPgogICAgPC9nPgogICAgPHBhdGggZD0iTTE3LjggNjRoMTAwLjQiLz4KICA8L2c+Cjwvc3ZnPgo=) no-repeat;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      left: -22px;
+      top: 6px;
     }
   }
 
@@ -97,8 +104,11 @@ export default {
       font-size: 16px;
       line-height: 150%;
 
-      &:before {
-        font-size: 29px;
+      &::before {
+        width: 14px;
+        height: 14px;
+        left: -21px;
+        top: 5px;
       }
     }
   }
