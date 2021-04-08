@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vue-embed-gist
+    <VueEmbedGist
       v-if="isMounted"
       :gist-id="$prismic.asText(slice.primary.gist_id)"
       :file="$prismic.asText(slice.primary.file_name)"

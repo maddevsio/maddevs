@@ -1,8 +1,8 @@
 <template>
   <section class="container_regular">
-    <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
+    <h3 class="case_title_h2 m-24_bottom media-m-12_bottom">
       Supported gadgets
-    </h2>
+    </h3>
     <TextParagraph class="m-48_bottom media-m-24_bottom">
       The platform is available on any device and remains equally friendly to both web and mobile users. Since 2016, the
       project has been continuously improving to provide more options for each category of viewers.

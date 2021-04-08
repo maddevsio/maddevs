@@ -1,5 +1,5 @@
 <template>
-  <common-header
+  <CommonHeader
     :title="$prismic.asText(document.title)"
     :subtitle="$prismic.asText(document.subtitle)"
     :cover-image-url="document.featured_image.url"
@@ -9,7 +9,7 @@
   >
     <template #afterTitle>
       <div class="blog-post__post-info">
-        <post-author :document="document" />
+        <PostAuthor :document="document" />
         <div class="blog-post__date-tag">
           <div class="blog-post__date">
             {{ formattedDate }}
@@ -23,11 +23,11 @@
         </div>
       </div>
     </template>
-  </common-header>
+  </CommonHeader>
 </template>
 
 <script>
-import PostAuthor from '@/components/Blog/PostAuthor'
+import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import CommonHeader from '@/components/Blog/header/Common'
 
 export default {

@@ -16,7 +16,7 @@ exports[`WatchWhatYouLikeVideo component should render correctly 1`] = `
         />
          
         <img
-          alt="iPhone XS Max Gold"
+          alt="OTT-like Online Video Streaming Platform App."
           class="image"
           data-testid="test-picture-img"
           height="609.19"

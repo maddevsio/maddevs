@@ -1,16 +1,16 @@
 <template>
-  <list-numbered-box>
+  <ListNumberedBox>
     <div
       v-if="hasListIntroduction"
       v-html="$prismic.asHtml(slice.primary.list_introduction)"
     />
-    <list-numbered-item-box
+    <ListNumberedItemBox
       v-for="(item, index) in slice.items"
       :key="index"
     >
       {{ $prismic.asText(item.list_item) }}
-    </list-numbered-item-box>
-  </list-numbered-box>
+    </ListNumberedItemBox>
+  </ListNumberedBox>
 </template>
 
 <script>

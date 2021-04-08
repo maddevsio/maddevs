@@ -15,9 +15,9 @@
       />
     </div>
     <div class="card_text-content">
-      <h3 class="case_title_h4 card_title">
+      <h4 class="case_title_h4 card_title">
         {{ title }}
-      </h3>
+      </h4>
       <TextParagraph class="card_paragraph">
         {{ description }}
       </TextParagraph>

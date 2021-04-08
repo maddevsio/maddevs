@@ -3,7 +3,9 @@ import { render, screen } from '@testing-library/vue'
 
 describe('AboutYourcast component', () => {
   it('should render correctly', () => {
-    const { container } = render(AboutYourcast)
+    const { container } = render(AboutYourcast, {
+      stubs: ['NuxtLink'],
+    })
     expect(container).toMatchSnapshot()
   })
 

@@ -18,7 +18,7 @@ describe('text slice component', () => {
       props: {
         slice,
       },
-      stubs: ['prismic-rich-text'],
+      stubs: ['PrismicRichText'],
     })
 
     expect(container).toMatchSnapshot()

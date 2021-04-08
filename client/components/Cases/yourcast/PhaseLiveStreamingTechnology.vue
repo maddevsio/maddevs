@@ -1,9 +1,9 @@
 <template>
   <section class="live-streaming-technology">
     <div class="container_regular">
-      <h2 class="case_title_h2 m-24_bottom media-m-20_bottom">
+      <h3 class="case_title_h2 m-24_bottom media-m-20_bottom">
         Phase 2: Live streaming technology
-      </h2>
+      </h3>
       <TextParagraph class="m-48_bottom media-m-20_bottom">
         To provide viewers with access to their favourite TV channels, the platform needed to emulate the TV experience.
         To add live-streaming technology, Mad Devs leveraged its existing open-source project, Yourcast.tv.
@@ -35,7 +35,7 @@
           extension="png"
           folder="yourcast"
           file="macbook-pro"
-          alt=""
+          alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
         />
       </div>
     </div>
@@ -60,9 +60,9 @@
       </ul>
     </div>
     <div class="container_regular">
-      <h3 class="case_title_h3">
+      <h4 class="case_title_h3">
         What is Yourcast.tv?
-      </h3>
+      </h4>
       <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
         Yourcast.tv by Mad Devs is used to create TV-like streams using YouTube video content. All you need is to create a
         list of YouTube videos that you want to stream. The streaming starts a few seconds after you save your list of

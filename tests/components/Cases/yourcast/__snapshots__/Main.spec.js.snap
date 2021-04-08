@@ -32,7 +32,17 @@ exports[`Main component should render correctly 1`] = `
       >
         
     According to the Statement of Work, we ensured the platform’s 100% autonomous work and strictly followed the
-    security compliance requirements. However, due to an NDA, we are not authorised to share the how-tos and best
+    
+        <nuxtlink
+          class="case_link"
+          to="/customer-university/software-maintenance-costs/"
+        >
+          
+      security compliance requirements.
+    
+        </nuxtlink>
+        
+    However, due to an NDA, we are not authorised to share the how-tos and best
     practices related to security.
   
       </p>
@@ -50,13 +60,13 @@ exports[`Main component should render correctly 1`] = `
     <section
       class="container_regular"
     >
-      <h2
+      <h3
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
         
     Project in numbers
   
-      </h2>
+      </h3>
        
       <p
         class="case_paragraph m-48_bottom media-m-24_bottom"
@@ -171,13 +181,13 @@ exports[`Main component should render correctly 1`] = `
     <section
       class="container_regular"
     >
-      <h2
+      <h3
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
         
     Supported gadgets
   
-      </h2>
+      </h3>
        
       <p
         class="case_paragraph m-48_bottom media-m-24_bottom"
@@ -197,13 +207,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card-content"
           >
-            <h3
+            <h4
               class="card-content_title case_title_h4"
             >
               
     Laptops
   
-            </h3>
+            </h4>
              
             <div
               class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-macbook-pro-card"
@@ -218,7 +228,7 @@ exports[`Main component should render correctly 1`] = `
                 />
                  
                 <img
-                  alt="Laptops"
+                  alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
                   class="image"
                   data-testid="test-picture-img"
                   height="449"
@@ -241,7 +251,7 @@ exports[`Main component should render correctly 1`] = `
                 />
                  
                 <img
-                  alt="Laptops"
+                  alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
                   class="image"
                   data-testid="test-picture-img"
                   height="449"
@@ -260,13 +270,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card-content"
           >
-            <h3
+            <h4
               class="card-content_title case_title_h4"
             >
               
     Smartphones
   
-            </h3>
+            </h4>
              
             <div
               class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-iphonex-card"
@@ -281,7 +291,7 @@ exports[`Main component should render correctly 1`] = `
                 />
                  
                 <img
-                  alt="Smartphones"
+                  alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
                   class="image"
                   data-testid="test-picture-img"
                   height="627"
@@ -304,7 +314,7 @@ exports[`Main component should render correctly 1`] = `
                 />
                  
                 <img
-                  alt="Smartphones"
+                  alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
                   class="image"
                   data-testid="test-picture-img"
                   height="627"
@@ -323,13 +333,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card-content"
           >
-            <h3
+            <h4
               class="card-content_title case_title_h4"
             >
               
     Tablets
   
-            </h3>
+            </h4>
              
             <div
               class="card-content_gadget-picture-wrapp card-content_gadget-picture-wrapp-ipad-pro-card"
@@ -344,7 +354,7 @@ exports[`Main component should render correctly 1`] = `
                 />
                  
                 <img
-                  alt="Tablets"
+                  alt="OTT-like Online Video Streaming Platform on IPad Tablet."
                   class="image"
                   data-testid="test-picture-img"
                   height="374"
@@ -367,7 +377,7 @@ exports[`Main component should render correctly 1`] = `
                 />
                  
                 <img
-                  alt="Tablets"
+                  alt="OTT-like Online Video Streaming Platform on IPad Tablet."
                   class="image"
                   data-testid="test-picture-img"
                   height="374"
@@ -386,13 +396,13 @@ exports[`Main component should render correctly 1`] = `
     <section
       class="container_regular"
     >
-      <h2
+      <h3
         class="case_title_h2 m-24_bottom"
       >
         
     Technology stack
   
-      </h2>
+      </h3>
        
       <ul
         class="case_list-technologies m-96_bottom media-m-48_bottom"
@@ -523,13 +533,13 @@ exports[`Main component should render correctly 1`] = `
     <section
       class="container_regular"
     >
-      <h2
+      <h3
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
         
     Key project milestones
   
-      </h2>
+      </h3>
        
       <div
         class="m-96_bottom media-m-48_bottom case_key-project-milestones"
@@ -653,13 +663,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card_text-content"
           >
-            <h3
+            <h4
               class="case_title_h4 card_title"
             >
               
       2016
     
-            </h3>
+            </h4>
              
             <p
               class="case_paragraph card_paragraph"
@@ -1123,13 +1133,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card_text-content"
           >
-            <h3
+            <h4
               class="case_title_h4 card_title"
             >
               
       2017
     
-            </h3>
+            </h4>
              
             <p
               class="case_paragraph card_paragraph"
@@ -1299,13 +1309,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card_text-content"
           >
-            <h3
+            <h4
               class="case_title_h4 card_title"
             >
               
       2018
     
-            </h3>
+            </h4>
              
             <p
               class="case_paragraph card_paragraph"
@@ -1409,13 +1419,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card_text-content"
           >
-            <h3
+            <h4
               class="case_title_h4 card_title"
             >
               
       2019
     
-            </h3>
+            </h4>
              
             <p
               class="case_paragraph card_paragraph"
@@ -1529,13 +1539,13 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card_text-content"
           >
-            <h3
+            <h4
               class="case_title_h4 card_title"
             >
               
       2020
     
-            </h3>
+            </h4>
              
             <p
               class="case_paragraph card_paragraph"
@@ -1555,13 +1565,13 @@ exports[`Main component should render correctly 1`] = `
       <div
         class="container_regular"
       >
-        <h2
+        <h3
           class="case_title_h2 m-24_bottom media-m-12_bottom"
         >
           
       Phase 1: Online cinema
     
-        </h2>
+        </h3>
          
         <p
           class="case_paragraph m-24_bottom"
@@ -2069,13 +2079,13 @@ exports[`Main component should render correctly 1`] = `
     
         </blockquote>
          
-        <h3
+        <h4
           class="case_title_h3 m-12_bottom"
         >
           
       TV shows & TV series
     
-        </h3>
+        </h4>
          
         <p
           class="case_paragraph m-96_bottom media-m-48_bottom"
@@ -2096,13 +2106,13 @@ exports[`Main component should render correctly 1`] = `
       <div
         class="container_regular"
       >
-        <h2
+        <h3
           class="case_title_h2 m-24_bottom media-m-20_bottom"
         >
           
       Phase 2: Live streaming technology
     
-        </h2>
+        </h3>
          
         <p
           class="case_paragraph m-48_bottom media-m-20_bottom"
@@ -2257,13 +2267,13 @@ exports[`Main component should render correctly 1`] = `
       <div
         class="container_regular"
       >
-        <h3
+        <h4
           class="case_title_h3"
         >
           
       What is Yourcast.tv?
     
-        </h3>
+        </h4>
          
         <blockquote
           class="case_blockquote-box m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom"
@@ -2654,13 +2664,13 @@ exports[`Main component should render correctly 1`] = `
       <div
         class="container_regular"
       >
-        <h2
+        <h3
           class="case_title_h2 m-24_bottom media-m-12_bottom"
         >
           
       Phase 3: Redesign & optimisations
     
-        </h2>
+        </h3>
          
         <p
           class="case_paragraph m-24_bottom media-m-12_bottom"
@@ -3110,13 +3120,13 @@ exports[`Main component should render correctly 1`] = `
       <div
         class="container_regular"
       >
-        <h2
+        <h3
           class="case_title_h2 m-24_bottom media-m-12_bottom"
         >
           
       Phase 4: Video on demand
     
-        </h2>
+        </h3>
          
         <p
           class="case_paragraph m-48_bottom media-m-24_bottom"
@@ -3421,13 +3431,13 @@ exports[`Main component should render correctly 1`] = `
     <section
       class="container_regular m-48_bottom media-m-24_bottom"
     >
-      <h2
+      <h3
         class="case_title_h2 m-24_bottom media-m-12_bottom"
       >
         
     Phase 5: User authorisation & personalised experience
   
-      </h2>
+      </h3>
        
       <p
         class="case_paragraph m-24_bottom"
@@ -3482,7 +3492,7 @@ exports[`Main component should render correctly 1`] = `
           />
            
           <img
-            alt="iPhone XS Max Gold"
+            alt="OTT-like Online Video Streaming Platform App."
             class="image"
             data-testid="test-picture-img"
             height="609.19"
@@ -3508,13 +3518,13 @@ exports[`Main component should render correctly 1`] = `
   
       </p>
        
-      <h3
+      <h2
         class="case_title_h3 m-24_bottom media-m-12_bottom"
       >
         
     Plans for similar projects
   
-      </h3>
+      </h2>
        
       <p
         class="case_paragraph m-96_bottom media-m-48_bottom"
@@ -3531,13 +3541,13 @@ exports[`Main component should render correctly 1`] = `
     <section
       class="container_regular"
     >
-      <h2
+      <h3
         class="case_title_h2 m-48_bottom media-m-38_bottom"
       >
         
     Meet the team
   
-      </h2>
+      </h3>
        
       <ul
         class="case_list-team m-72_bottom media-m-48_bottom"

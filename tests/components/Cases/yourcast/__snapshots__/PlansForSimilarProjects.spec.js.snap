@@ -15,13 +15,13 @@ exports[`PlansForSimilarProjects component should render correctly 1`] = `
   
     </p>
      
-    <h3
+    <h2
       class="case_title_h3 m-24_bottom media-m-12_bottom"
     >
       
     Plans for similar projects
   
-    </h3>
+    </h2>
      
     <p
       class="case_paragraph m-96_bottom media-m-48_bottom"

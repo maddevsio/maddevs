@@ -6,7 +6,7 @@
         v-html="$prismic.asHtml(slice.primary.left_column)"
       />
       <div class="column_right col-12 col-lg-3">
-        <prismic-image :field="slice.primary.right_column" />
+        <PrismicImage :field="slice.primary.right_column" />
       </div>
     </div>
   </div>
