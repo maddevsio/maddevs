@@ -1,36 +1,10 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
 import ModalGetExpertAdvice from '@/components/core/modals/ModalGetExpertAdvice'
+import formBaseProps from '../../../__mocks__/formBaseProps'
 
-const mocks = {
-  $v: {
-    fullName: {
-      $touch: jest.fn(),
-    },
-    company: {
-      $touch: jest.fn(),
-    },
-    email: {
-      $touch: jest.fn(),
-    },
-    phoneNumber: {
-      $touch: jest.fn(),
-    },
-    description: {
-      $touch: jest.fn(),
-    },
-    validationGroup: {
-      $invalid: false,
-    },
-    questionsOnItConsulting: {
-      $touch: jest.fn(),
-    },
-    $reset: jest.fn(),
-  },
-
-  $store: {
-    dispatch: jest.fn(),
-  },
-
+const mocks = formBaseProps
+mocks.$v.questionsOnItConsulting = {
+  $touch: jest.fn(),
 }
 
 describe('ModalGetExpertAdvice component', () => {

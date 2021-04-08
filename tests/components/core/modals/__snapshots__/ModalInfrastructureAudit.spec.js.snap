@@ -1,0 +1,524 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalIndividuals component should render correctly 1`] = `
+<div>
+  <div
+    class="form"
+  >
+    <div
+      class="fields-list"
+    >
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name required"
+        >
+          
+        Full Name
+      
+        </p>
+         
+        <input
+          class="modal-entry-field entry-field"
+          data-testid="test-base-form-full-name"
+          placeholder="John Smith"
+          type="text"
+        />
+         
+        <!---->
+      </div>
+       
+      <!---->
+       
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name required"
+        >
+          
+        Work email
+      
+        </p>
+         
+        <div>
+          <input
+            class="modal-entry-field entry-field"
+            data-testid="test-base-form-email"
+            placeholder="your@mail.com"
+            type="text"
+          />
+        </div>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name"
+        >
+          
+        Phone number
+      
+        </p>
+         
+        <input
+          class="modal-entry-field entry-field"
+          data-testid="test-base-form-phone"
+          placeholder="+X XXX XXX-XXXX"
+          type="text"
+        />
+         
+        <!---->
+      </div>
+       
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name"
+        >
+          
+        Project description
+      
+        </p>
+         
+        <textarea
+          class="modal-entry-field entry-field textarea"
+          data-testid="test-base-form-description"
+          placeholder="Describe your project..."
+          type="text"
+        />
+         
+        <!---->
+      </div>
+       
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name"
+        >
+          
+      Expertise you are interested in
+    
+        </p>
+         
+        <input
+          class="modal-entry-field entry-field"
+          placeholder="React development, Heroku Postgres, etc"
+          type="text"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="form-checkboxes"
+    >
+      <label
+        class="form-checkbox-label required"
+        for="privacy-policy-individuals-form"
+      >
+        I confirm that I have read and accepted
+    
+        <div>
+          Mad Devs’
+        </div>
+         
+        <a
+          href="/privacy/"
+          target="_blank"
+        >
+          Privacy Policy
+        </a>
+         
+        <input
+          class="form-checkbox-input"
+          data-testid="test-privacy-policy-checkbox-input"
+          id="privacy-policy-individuals-form"
+          name="Privacy policy"
+          type="checkbox"
+        />
+         
+        <div
+          class="checkmark"
+        />
+      </label>
+       
+      <label
+        class="form-checkbox-label"
+        for="marketing-communications-individuals-form"
+      >
+        I agree to get
+    
+        <div>
+          Mad Devs’
+        </div>
+        
+    discount offers and other marketing communications.
+    
+        <input
+          class="form-checkbox-input"
+          data-testid="test-form-checkbox-input"
+          id="marketing-communications-individuals-form"
+          name="Marketing communications"
+          type="checkbox"
+        />
+         
+        <div
+          class="checkmark"
+        />
+      </label>
+    </div>
+     
+    <button
+      class="ui-button ui-button--disabled modal-button"
+    >
+      
+    Get individual proactive rockets
+  
+    </button>
+  </div>
+</div>
+`;
+
+exports[`ModalInfrastructureAudit component should render correctly 1`] = `
+<div>
+  <div
+    class="form"
+  >
+    <div
+      class="fields-list"
+    >
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name required"
+        >
+          
+        Full Name
+      
+        </p>
+         
+        <input
+          class="modal-entry-field entry-field"
+          data-testid="test-base-form-full-name"
+          placeholder="John Smith"
+          type="text"
+        />
+         
+        <!---->
+      </div>
+       
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name required"
+        >
+          
+        Company
+      
+        </p>
+         
+        <input
+          class="modal-entry-field entry-field"
+          data-testid="test-base-form-company"
+          placeholder="MyAwesomeCompany, Inc."
+          type="text"
+        />
+         
+        <!---->
+      </div>
+       
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name required"
+        >
+          
+        Work email
+      
+        </p>
+         
+        <div>
+          <input
+            class="modal-entry-field entry-field"
+            data-testid="test-base-form-email"
+            placeholder="your@mail.com"
+            type="text"
+          />
+        </div>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name"
+        >
+          
+        Phone number
+      
+        </p>
+         
+        <input
+          class="modal-entry-field entry-field"
+          data-testid="test-base-form-phone"
+          placeholder="+X XXX XXX-XXXX"
+          type="text"
+        />
+         
+        <!---->
+      </div>
+       
+      <!---->
+       
+      <div
+        class="radio-buttons"
+      >
+        <div
+          class="radio-buttons__field-name field-name"
+        >
+          
+    Where is your project hosted?
+  
+        </div>
+         
+        <div
+          class="radio-buttons__radio-list"
+        >
+          <label
+            class="radio-buttons__radio-label"
+            for="on-premises-infrastructure-audit"
+          >
+            <input
+              class="radio-buttons__radio-input"
+              data-testid="test-radio-buttons"
+              id="on-premises-infrastructure-audit"
+              name="infrastructure-audit"
+              type="radio"
+            />
+             
+            <span
+              class="radio-buttons__checkmark-radio"
+            />
+             
+            <p
+              class="radio-buttons__radio-text_item"
+            >
+              On-premises
+            </p>
+          </label>
+          <label
+            class="radio-buttons__radio-label"
+            for="amazon-infrastructure-audit"
+          >
+            <input
+              class="radio-buttons__radio-input"
+              data-testid="test-radio-buttons"
+              id="amazon-infrastructure-audit"
+              name="infrastructure-audit"
+              type="radio"
+            />
+             
+            <span
+              class="radio-buttons__checkmark-radio"
+            />
+             
+            <p
+              class="radio-buttons__radio-text_item"
+            >
+              Amazon Web Services
+            </p>
+          </label>
+          <label
+            class="radio-buttons__radio-label"
+            for="google-cloud-infrastructure-audit"
+          >
+            <input
+              class="radio-buttons__radio-input"
+              data-testid="test-radio-buttons"
+              id="google-cloud-infrastructure-audit"
+              name="infrastructure-audit"
+              type="radio"
+            />
+             
+            <span
+              class="radio-buttons__checkmark-radio"
+            />
+             
+            <p
+              class="radio-buttons__radio-text_item"
+            >
+              Google Cloud Platform
+            </p>
+          </label>
+          <label
+            class="radio-buttons__radio-label"
+            for="microsoft-azure-infrastructure-audit"
+          >
+            <input
+              class="radio-buttons__radio-input"
+              data-testid="test-radio-buttons"
+              id="microsoft-azure-infrastructure-audit"
+              name="infrastructure-audit"
+              type="radio"
+            />
+             
+            <span
+              class="radio-buttons__checkmark-radio"
+            />
+             
+            <p
+              class="radio-buttons__radio-text_item"
+            >
+              Microsoft Azure
+            </p>
+          </label>
+          <label
+            class="radio-buttons__radio-label"
+            for="heroku-infrastructure-audit"
+          >
+            <input
+              class="radio-buttons__radio-input"
+              data-testid="test-radio-buttons"
+              id="heroku-infrastructure-audit"
+              name="infrastructure-audit"
+              type="radio"
+            />
+             
+            <span
+              class="radio-buttons__checkmark-radio"
+            />
+             
+            <p
+              class="radio-buttons__radio-text_item"
+            >
+              Heroku
+            </p>
+          </label>
+          <label
+            class="radio-buttons__radio-label"
+            for="digital-ocean-infrastructure-audit"
+          >
+            <input
+              class="radio-buttons__radio-input"
+              data-testid="test-radio-buttons"
+              id="digital-ocean-infrastructure-audit"
+              name="infrastructure-audit"
+              type="radio"
+            />
+             
+            <span
+              class="radio-buttons__checkmark-radio"
+            />
+             
+            <p
+              class="radio-buttons__radio-text_item"
+            >
+              Digital Ocean
+            </p>
+          </label>
+          <label
+            class="radio-buttons__radio-label"
+            for="other-infrastructure-audit"
+          >
+            <input
+              class="radio-buttons__radio-input"
+              data-testid="test-radio-buttons"
+              id="other-infrastructure-audit"
+              name="infrastructure-audit"
+              type="radio"
+            />
+             
+            <span
+              class="radio-buttons__checkmark-radio"
+            />
+             
+            <p
+              class="radio-buttons__radio-text_item"
+            >
+              Other
+            </p>
+          </label>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="form-checkboxes"
+    >
+      <label
+        class="form-checkbox-label required"
+        for="privacy-policy-infrastructure-audit-form"
+      >
+        I confirm that I have read and accepted
+    
+        <div>
+          Mad Devs’
+        </div>
+         
+        <a
+          href="/privacy/"
+          target="_blank"
+        >
+          Privacy Policy
+        </a>
+         
+        <input
+          class="form-checkbox-input"
+          data-testid="test-privacy-policy-checkbox-input"
+          id="privacy-policy-infrastructure-audit-form"
+          name="Privacy policy"
+          type="checkbox"
+        />
+         
+        <div
+          class="checkmark"
+        />
+      </label>
+       
+      <label
+        class="form-checkbox-label"
+        for="marketing-communications-infrastructure-audit-form"
+      >
+        I agree to get
+    
+        <div>
+          Mad Devs’
+        </div>
+        
+    discount offers and other marketing communications.
+    
+        <input
+          class="form-checkbox-input"
+          data-testid="test-form-checkbox-input"
+          id="marketing-communications-infrastructure-audit-form"
+          name="Marketing communications"
+          type="checkbox"
+        />
+         
+        <div
+          class="checkmark"
+        />
+      </label>
+    </div>
+     
+    <button
+      class="ui-button ui-button--disabled modal-button"
+    >
+      
+    Get an infrastructure audit
+  
+    </button>
+  </div>
+</div>
+`;

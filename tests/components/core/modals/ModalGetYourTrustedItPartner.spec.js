@@ -1,35 +1,10 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
 import ModalGetYourTrustedItPartner from '@/components/core/modals/ModalGetYourTrustedItPartner'
+import formBaseProps from '../../../__mocks__/formBaseProps'
 
-const mocks = {
-  $v: {
-    fullName: {
-      $touch: jest.fn(),
-    },
-    company: {
-      $touch: jest.fn(),
-    },
-    email: {
-      $touch: jest.fn(),
-    },
-    phoneNumber: {
-      $touch: jest.fn(),
-    },
-    description: {
-      $touch: jest.fn(),
-    },
-    validationGroup: {
-      $invalid: false,
-    },
-    needAssistanceWith: {
-    },
-    $reset: jest.fn(),
-  },
-
-  $store: {
-    dispatch: jest.fn(),
-  },
-
+const mocks = formBaseProps
+mocks.$v.needAssistanceWith = {
+  $touch: jest.fn(),
 }
 
 describe('ModalGetYourTrustedItPartner component', () => {
