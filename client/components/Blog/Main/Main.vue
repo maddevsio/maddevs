@@ -38,7 +38,7 @@ export default {
   },
 
   methods: {
-    ...mapActions(['getHomePageContent', 'getBlogPosts']),
+    ...mapActions(['getHomePageContent', 'getBlogPosts', 'getBlogAuthors']),
 
     getContent() {
       // Query to get blog home content
@@ -46,6 +46,7 @@ export default {
 
       // Query to get posts content to preview
       this.getBlogPosts()
+      this.getBlogAuthors()
     },
   },
 }
