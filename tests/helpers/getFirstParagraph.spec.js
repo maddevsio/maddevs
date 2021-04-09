@@ -4,7 +4,7 @@ import postDataArray from '../__mocks__/postDataArray'
 const LIMIT = 100
 
 describe('getFirstParagraph helper', () => {
-  it('should return the correct string with the extension of the image from prismic', () => {
+  it('should correct found first paragraph', () => {
     const paragraph = getFirstParagraph(postDataArray, LIMIT)
 
     expect(paragraph).toBe(`${postDataArray[0].primary.text[0].text.slice(0, LIMIT - 1)}...`)
