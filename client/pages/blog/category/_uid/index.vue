@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex'
 import CategorySection from '@/components/Blog/Main/CategorySection'
 
 export default {
@@ -23,6 +24,18 @@ export default {
       // Returns error page
       return error({ statusCode: 404, message: 'Page not found' })
     }
+  },
+
+  created() {
+    this.getCategoryPosts(this.blogCategory)
+  },
+
+  methods: {
+    ...mapActions(['getCategoryPosts']),
+  },
+
+  computed: {
+    ...mapGetters(['blogCategory', 'categoryPosts']),
   },
 }
 </script>
