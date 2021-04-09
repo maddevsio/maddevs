@@ -33,7 +33,6 @@ export default {
 .post-tag {
   border-radius: 2px;
   padding: 4px 16px;
-  margin-left: 24px;
   transition: 0.2s;
 
   &.light {

@@ -1,31 +1,33 @@
 <template>
-  <div class="blog-post__author">
-    <img
-      v-if="document.author_image.url !== undefined"
-      :src="document.author_image.url"
-      :alt="$prismic.asText(document.author)"
-      class="blog-post__author-image"
-    >
-    <div
-      v-else
-      class="blog-post__none-image"
-    />
-    <div class="blog-post__author-info">
-      <p class="blog-post__author-name">
-        {{ shortTitle }}
-      </p>
-      <div class="blog-post__data-of-creation">
-        <span class="blog-post__author-title">{{ document.author_title }}</span>
+  <NuxtLink :to="`/blog/author/${author.uid}`">
+    <div class="blog-post__author">
+      <img
+        v-if="author.image.url !== undefined"
+        :src="author.image.url"
+        :alt="author.image.alt"
+        class="blog-post__author-image"
+      >
+      <div
+        v-else
+        class="blog-post__none-image"
+      />
+      <div class="blog-post__author-info">
+        <p class="blog-post__author-name">
+          {{ shortTitle }}
+        </p>
+        <div class="blog-post__data-of-creation">
+          <span class="blog-post__author-title">{{ author.position }}</span>
+        </div>
       </div>
     </div>
-  </div>
+  </NuxtLink>
 </template>
 
 <script>
 export default {
   name: 'PostAuthor',
   props: {
-    document: {
+    author: {
       type: Object,
       required: true,
     },
@@ -33,7 +35,7 @@ export default {
 
   computed: {
     shortTitle() {
-      return this.$prismic.asText(this.document.author).substr(0, 100)
+      return this.author.name.substr(0, 100)
     },
   },
 }
@@ -45,6 +47,7 @@ export default {
   &__author {
     display: flex;
     align-items: center;
+    margin-right: 24px;
   }
 
   &__author-info {

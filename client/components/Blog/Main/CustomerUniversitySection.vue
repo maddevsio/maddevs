@@ -19,7 +19,10 @@
             <p class="featured-post__text">
               {{ firstParagraph }}
             </p>
-            <PostAuthor :document="featured" />
+            <PostAuthor
+              v-if="featuredPostAuthor"
+              :author="featuredPostAuthor"
+            />
             <div class="featured-post__cover-wrapper">
               <PrismicImage
                 :field="featured.featured_image"
@@ -75,6 +78,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
 
@@ -106,6 +110,13 @@ export default {
   },
 
   computed: {
+    ...mapGetters(['allAuthors']),
+
+    featuredPostAuthor() {
+      if (!this.allAuthors) return null
+      return this.allAuthors.find(a => a.id === this.featured.post_author.id)
+    },
+
     clusters() {
       if (this.master.data) {
         return this.master.data.body
