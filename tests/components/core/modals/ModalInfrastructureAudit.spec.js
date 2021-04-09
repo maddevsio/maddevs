@@ -1,6 +1,7 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
 import ModalInfrastructureAudit from '@/components/core/modals/ModalInfrastructureAudit'
 import formBaseProps from '../../../__mocks__/formBaseProps'
+import delay from '../../../../client/helpers/delay'
 
 const mocks = formBaseProps
 
@@ -25,7 +26,7 @@ describe('ModalInfrastructureAudit component', () => {
     await fireEvent.click(screen.queryByTestId('test-privacy-policy-checkbox-input'))
     await fireEvent.click(screen.getByText(/Get an infrastructure audit/))
 
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    await delay(1000)
     expect(mocks.$v.$reset).toHaveBeenCalledTimes(1)
   })
 })

@@ -1,5 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/vue'
 import ModalSuccess from '@/components/core/modals/ModalSuccess'
+import delay from '../../../../client/helpers/delay'
 
 const props = {
   visibled: true,
@@ -38,7 +39,7 @@ describe('ModalSuccess component', () => {
       displayTime: 1000,
     })
 
-    await new Promise(resolve => setTimeout(resolve, 1500))
+    await delay(1500)
 
     expect(emitted().close).toHaveLength(1)
   })
@@ -55,7 +56,7 @@ describe('ModalSuccess component', () => {
       displayTime: 1000,
     })
 
-    await new Promise(resolve => setTimeout(resolve, 1500))
+    await delay(1500)
 
     expect(!!emitted().close).toBeFalsy()
   })
