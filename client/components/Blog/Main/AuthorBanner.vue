@@ -22,7 +22,7 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  name: 'AuthorSection',
+  name: 'AuthorBanner',
 
   computed: {
     ...mapGetters(['blogAuthor']),

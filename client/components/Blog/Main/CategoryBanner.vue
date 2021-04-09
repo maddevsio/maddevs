@@ -15,7 +15,7 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  name: 'CategorySection',
+  name: 'CategoryBanner',
   computed: {
     ...mapGetters(['blogCategory', 'categoryPostsCount']),
   },

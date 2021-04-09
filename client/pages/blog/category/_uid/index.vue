@@ -1,17 +1,17 @@
 <template>
   <section class="category">
-    <CategorySection />
+    <CategoryBanner />
   </section>
 </template>
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
-import CategorySection from '@/components/Blog/Main/CategorySection'
+import CategoryBanner from '@/components/Blog/Main/CategoryBanner'
 
 export default {
   name: 'Category',
   components: {
-    CategorySection,
+    CategoryBanner,
   },
 
   async asyncData({ store, params, error }) {
@@ -26,16 +26,16 @@ export default {
     }
   },
 
+  computed: {
+    ...mapGetters(['blogCategory', 'categoryPosts']),
+  },
+
   created() {
     this.getCategoryPosts(this.blogCategory)
   },
 
   methods: {
     ...mapActions(['getCategoryPosts']),
-  },
-
-  computed: {
-    ...mapGetters(['blogCategory', 'categoryPosts']),
   },
 }
 </script>

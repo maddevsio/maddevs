@@ -1,17 +1,17 @@
 <template>
   <section class="author">
-    <AuthorSection />
+    <AuthorBanner />
   </section>
 </template>
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
-import AuthorSection from '@/components/Blog/Main/AuthorSection'
+import AuthorBanner from '@/components/Blog/Main/AuthorBanner'
 
 export default {
   name: 'Author',
   components: {
-    AuthorSection,
+    AuthorBanner,
   },
 
   async asyncData({ store, params, error }) {
@@ -26,16 +26,16 @@ export default {
     }
   },
 
+  computed: {
+    ...mapGetters(['blogAuthor', 'authorPosts']),
+  },
+
   created() {
     this.getAuthorPosts(this.blogAuthor.id)
   },
 
   methods: {
     ...mapActions(['getAuthorPosts']),
-  },
-
-  computed: {
-    ...mapGetters(['blogAuthor', 'authorPosts']),
   },
 }
 </script>
