@@ -1,6 +1,7 @@
 export default {
   state: () => ({
     authors: [],
+    author: {},
   }),
   mutations: {
     SET_ALL_AUTHORS(state, data) {
@@ -12,6 +13,16 @@ export default {
         name: author.data.name,
         position: author.data.position,
       }))
+    },
+    SET_AUTHOR(state, author) {
+      state.author = {
+        id: author.id,
+        uid: author.uid,
+        name: author.data.name,
+        position: author.data.position,
+        metaImage: author.data.meta_image,
+        image: author.data.image,
+      }
     },
   },
   actions: {
@@ -26,10 +37,21 @@ export default {
         if (err) throw err
       }
     },
+    async getBlogAuthor({ commit }, payload) {
+      try {
+        const author = await this.$prismic.api.getByUID('author', payload)
+        commit('SET_AUTHOR', author)
+      } catch (err) {
+        if (err) throw err
+      }
+    },
   },
   getters: {
     allAuthors(state) {
       return state.authors
+    },
+    blogAuthor(state) {
+      return state.author
     },
   },
 }
