@@ -10,7 +10,7 @@ describe('ServicesBanner', () => {
 
   it('should render correctly', () => {
     const { container } = render(ServicesBanner, {
-      stubs: ['nuxt-link', 'NuxtLink'],
+      stubs: ['NuxtLink'],
     })
 
     expect(screen.getByText('IT Partner')).not.toBeNull()

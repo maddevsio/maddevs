@@ -7,10 +7,12 @@
     >
       <slot />
     </h2>
-    <a
-      :href="link"
+    <NuxtLink
+      :to="link"
       class="case_next-project-button"
-    >Read next project</a>
+    >
+      Read next project
+    </NuxtLink>
   </section>
 </template>
 

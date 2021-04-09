@@ -9,7 +9,7 @@
       </h2>
       <div class="customer-testimonials__content-wrap">
         <div class="customer-testimonials__widget-col">
-          <client-only>
+          <ClientOnly>
             <div class="customer-testimonials__widget-wrap">
               <div
                 ref="clutch"
@@ -21,7 +21,7 @@
                 data-clutchcompany-id="258762"
               />
             </div>
-          </client-only>
+          </ClientOnly>
         </div>
         <div class="customer-testimonials__testimonials-list">
           <div

@@ -6,12 +6,12 @@
     <TextParagraph>
       Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision
       and understanding of its target audience, we were able to
-      <nuxt-link
+      <NuxtLink
         :to="`/services#software-development`"
         class="case_link"
       >
         build a product
-      </nuxt-link> that truly solves
+      </NuxtLink> that truly solves
       this customer’s problems. The year-over-year growth rate is hugely impressive.
     </TextParagraph>
     <TextQuoteBox class="m-auto m-48_top m-48_bottom media-m-24_top media-m-24_bottom">
