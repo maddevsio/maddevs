@@ -1,6 +1,7 @@
 <template>
   <NuxtLink
     :to="link"
+    class="blog-post__wrapper"
     :class="{ 'latest-post': isRecentPost }"
   >
     <div class="blog-post">
@@ -121,7 +122,6 @@ export default {
 
 .blog-post {
   color: $text-color--black;
-  text-decoration: none;
 
   p {
     margin-top: 5px;
@@ -139,6 +139,10 @@ export default {
   }
 
   a {
+    text-decoration: none;
+  }
+
+  &__wrapper {
     text-decoration: none;
   }
 

@@ -24,6 +24,8 @@ export default {
 @import '../../../assets/styles/_vars';
 
 .load-more-button {
+  display: block;
+  margin: 0 auto;
   padding: 12px 156px;
   border: 1px solid $border-color--black;
   font-size: 16px;

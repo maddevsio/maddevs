@@ -34,8 +34,8 @@ export default {
   @import '../../../assets/styles/_vars';
 
   .current-author {
-    margin-top: 82px;
-    margin-bottom: 55px;
+    padding-top: 82px;
+    padding-bottom: 55px;
     display: flex;
     flex-direction: column;
     align-items: center;

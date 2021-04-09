@@ -26,8 +26,8 @@ export default {
   @import '../../../assets/styles/_vars';
 
   .current-category {
-    margin-top: 117px;
-    margin-bottom: 97px;
+    padding-top: 117px;
+    padding-bottom: 97px;
     color: $text-color--white-primary;
 
     &__title {

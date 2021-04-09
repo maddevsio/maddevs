@@ -5,6 +5,7 @@ export default {
     category: '',
     categoryPosts: [],
     categoryPostsLoaded: false,
+    categoryPostsPage: 1,
   }),
   mutations: {
     SET_CATEGORY(state, category) {
@@ -15,6 +16,9 @@ export default {
     },
     SET_CATEGORY_POSTS_LOADED(state, value) {
       state.categoryPostsLoaded = value
+    },
+    SET_CATEGORY_POSTS_PAGE(state, page) {
+      state.categoryPostsPage = page
     },
   },
   actions: {
@@ -30,6 +34,9 @@ export default {
       commit('SET_CATEGORY_POSTS', posts)
       commit('SET_CATEGORY_POSTS_LOADED', true)
     },
+    getMoreCategoryPosts({ commit, state }) {
+      commit('SET_CATEGORY_POSTS_PAGE', state.categoryPostsPage + 1)
+    },
   },
   getters: {
     blogCategory(state) {
@@ -43,6 +50,9 @@ export default {
     },
     categoryPostsLoaded(state) {
       return state.categoryPostsLoaded
+    },
+    categoryPostsPage(state) {
+      return state.categoryPostsPage
     },
   },
 }
