@@ -5,7 +5,7 @@
         {{ blogCategory }}
       </h1>
       <p class="current-category__posts-count">
-        category posts count
+        A collection of {{ categoryPostsCount }} posts
       </p>
     </div>
   </div>
@@ -17,7 +17,7 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'CategorySection',
   computed: {
-    ...mapGetters(['blogCategory']),
+    ...mapGetters(['blogCategory', 'categoryPostsCount']),
   },
 }
 </script>
@@ -28,12 +28,12 @@ export default {
   .current-category {
     margin-top: 117px;
     margin-bottom: 97px;
+    color: $text-color--white-primary;
 
     &__title {
       font-size: 52px;
       line-height: 130%;
       letter-spacing: -2px;
-      color: $text-color--white-primary;
     }
 
     &__posts-count {

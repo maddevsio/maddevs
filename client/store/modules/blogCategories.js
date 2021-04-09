@@ -33,5 +33,8 @@ export default {
     categoryPosts(state) {
       return state.categoryPosts
     },
+    categoryPostsCount(state) {
+      return state.categoryPosts.length
+    },
   },
 }
