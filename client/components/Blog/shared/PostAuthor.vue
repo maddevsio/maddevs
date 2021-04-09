@@ -2,9 +2,9 @@
   <NuxtLink :to="`/blog/author/${author.uid}`">
     <div class="blog-post__author">
       <img
-        v-if="author.image.url !== undefined"
-        :src="author.image.url"
-        :alt="author.image.alt"
+        v-if="author.metaImage.url !== undefined"
+        :src="author.metaImage.url"
+        :alt="author.metaImage.alt"
         class="blog-post__author-image"
       >
       <div

@@ -44,8 +44,8 @@
           >{{ post.tags[0] }}</span>
         </div>
         <PostAuthor
-          v-if="postAuthor"
-          :author="postAuthor"
+          v-if="author"
+          :author="author"
         />
       </div>
     </div>
@@ -53,7 +53,6 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import linkResolver from '@/plugins/link-resolver.js'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
@@ -75,16 +74,14 @@ export default {
       type: Object,
       required: true,
     },
+
+    author: {
+      type: Object,
+      required: true,
+    },
   },
 
   computed: {
-    ...mapGetters(['allAuthors']),
-
-    postAuthor() {
-      if (!this.allAuthors && !this.allAuthors.length) return null
-      return this.allAuthors.find(a => a.id === this.post.data.post_author.id)
-    },
-
     link() {
       return linkResolver(this.post)
     },

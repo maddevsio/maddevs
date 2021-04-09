@@ -13,8 +13,8 @@
         </p>
         <div class="featured-post__data d-flex justify-content-between">
           <PostAuthor
-            v-if="postAuthor"
-            :author="postAuthor"
+            v-if="author"
+            :author="author"
           />
           <div class="featured-post__meta">
             <PostTag
@@ -40,7 +40,6 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import PostTag from '@/components/Blog/shared/PostTag'
 import linkResolver from '@/plugins/link-resolver'
@@ -58,16 +57,14 @@ export default {
       type: Object,
       required: true,
     },
+
+    author: {
+      type: Object,
+      required: true,
+    },
   },
 
   computed: {
-    ...mapGetters(['allAuthors']),
-
-    postAuthor() {
-      if (!this.allAuthors && !this.allAuthors.length) return null
-      return this.allAuthors.find(a => a.id === this.post.data.post_author.id)
-    },
-
     formattedDate() {
       const { date } = this.post.data
       return Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(date))

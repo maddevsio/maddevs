@@ -44,6 +44,7 @@
           <div class="single-post__wrapper">
             <RecommendedBlogWidget
               :post="post"
+              :author="findAuthor(post.data.post_author.id)"
               class-name="filtered-post"
             />
           </div>
@@ -86,6 +87,7 @@ export default {
     ...mapGetters([
       'homePageContent',
       'allPosts',
+      'allAuthors',
       'filteredPosts',
       'postsCategory',
       'postsPage',
@@ -118,6 +120,11 @@ export default {
 
   methods: {
     ...mapActions(['changePostsCategory', 'getMorePosts']),
+
+    findAuthor(authorId) {
+      if (!this.allAuthors && !this.allAuthors.length) return null
+      return this.allAuthors.find(a => a.id === authorId)
+    },
 
     handleFilterChange(e) {
       this.changePostsCategory(e.target.value)

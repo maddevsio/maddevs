@@ -31,37 +31,7 @@ exports[`featured post component is a Vue instance 1`] = `
         <div
           class="featured-post__data d-flex justify-content-between"
         >
-          <div
-            class="blog-post__author"
-          >
-            <img
-              alt="Alisa Manakova"
-              class="blog-post__author-image"
-              src="https://images.prismic.io/superpupertest/255624bf-6a97-48ff-a3b6-337434ba4d33_2_orMuDx-7_VWwpnRL1Q1rxw.jpeg?auto=compress,format"
-            />
-             
-            <div
-              class="blog-post__author-info"
-            >
-              <p
-                class="blog-post__author-name"
-              >
-                
-      Alisa Manakova
-    
-              </p>
-               
-              <div
-                class="blog-post__data-of-creation"
-              >
-                <span
-                  class="blog-post__author-title"
-                >
-                  Chief Strategy Officer
-                </span>
-              </div>
-            </div>
-          </div>
+          <!---->
            
           <div
             class="featured-post__meta"

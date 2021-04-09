@@ -7,7 +7,8 @@ export default {
       state.authors = data.map(author => ({
         id: author.id,
         uid: author.uid,
-        image: author.data.meta_image,
+        metaImage: author.data.meta_image,
+        image: author.data.image,
         name: author.data.name,
         position: author.data.position,
       }))

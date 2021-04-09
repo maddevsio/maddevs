@@ -29,6 +29,7 @@
                 v-else
                 :is-recent-post="true"
                 :post="post"
+                :author="findAuthor(post.data.post_author.id)"
               />
             </div>
           </section>
@@ -62,7 +63,14 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['postsLoaded', 'recentPosts']),
+    ...mapGetters(['postsLoaded', 'recentPosts', 'allAuthors']),
+  },
+
+  methods: {
+    findAuthor(authorId) {
+      if (!this.allAuthors && !this.allAuthors.length) return null
+      return this.allAuthors.find(a => a.id === authorId)
+    },
   },
 }
 </script>

@@ -3,6 +3,7 @@
     <FeaturedPost
       v-if="postsLoaded && featuredPost"
       :post="featuredPost"
+      :author="findAuthor(featuredPost.data.post_author.id)"
     />
     <SkeletonFeaturedPost
       v-else
@@ -23,7 +24,14 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['featuredPost', 'postsLoaded']),
+    ...mapGetters(['featuredPost', 'postsLoaded', 'allAuthors']),
+  },
+
+  methods: {
+    findAuthor(authorId) {
+      if (!this.allAuthors && !this.allAuthors.length) return null
+      return this.allAuthors.find(a => a.id === authorId)
+    },
   },
 }
 </script>
