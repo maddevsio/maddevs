@@ -1,17 +1,17 @@
 <template>
   <div class="container">
-    <div class="author-info">
+    <div class="current-author">
       <img
         :src="blogAuthor.image.url"
         :alt="blogAuthor.image.alt"
         width="170"
         height="170"
-        class="author-info__image"
+        class="current-author__image"
       >
-      <h1 class="author-info__name">
+      <h1 class="current-author__name">
         {{ blogAuthor.name }}
       </h1>
-      <p class="author-info__position">
+      <p class="current-author__position">
         {{ blogAuthor.position }}
       </p>
     </div>
@@ -33,7 +33,7 @@ export default {
 <style lang="scss" scoped>
   @import '../../../assets/styles/_vars';
 
-  .author-info {
+  .current-author {
     margin-top: 82px;
     margin-bottom: 55px;
     display: flex;
