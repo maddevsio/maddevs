@@ -25,4 +25,38 @@ describe('ModalSuccess component', () => {
 
     expect(emitted().close).toHaveLength(1)
   })
+
+  it('should correct work auto close handler', async () => {
+    props.visibled = false
+    const { emitted, updateProps } = render(ModalSuccess, {
+      props,
+    })
+
+    await updateProps({
+      visibled: true,
+      id: 'modal-id',
+      displayTime: 1000,
+    })
+
+    await new Promise(resolve => setTimeout(resolve, 1500))
+
+    expect(emitted().close).toHaveLength(1)
+  })
+
+  it('the timer should be reset if the modal was closed early', async () => {
+    props.visibled = true
+    const { emitted, updateProps } = render(ModalSuccess, {
+      props,
+    })
+
+    await updateProps({
+      visibled: false,
+      id: 'modal-id',
+      displayTime: 1000,
+    })
+
+    await new Promise(resolve => setTimeout(resolve, 1500))
+
+    expect(!!emitted().close).toBeFalsy()
+  })
 })
