@@ -394,6 +394,7 @@ exports[`Footer component should render correctly 1`] = `
                    
                   <input
                     class="modal-entry-field entry-field"
+                    data-testid="test-base-form-full-name"
                     placeholder="John Smith"
                     type="text"
                   />
@@ -438,6 +439,7 @@ exports[`Footer component should render correctly 1`] = `
                    
                   <textarea
                     class="modal-entry-field entry-field textarea"
+                    data-testid="test-base-form-description"
                     placeholder="Describe your project..."
                     type="text"
                   />
