@@ -1,13 +1,11 @@
 <template>
-  <div class="body-content">
+  <div class="container">
     <FeaturedPost
       v-if="postsLoaded && featuredPost"
       :post="featuredPost"
-      class="container"
     />
     <SkeletonFeaturedPost
       v-else
-      class="container"
     />
   </div>
 </template>
@@ -29,10 +27,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
-}
-</style>
