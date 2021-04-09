@@ -54,12 +54,7 @@
         v-if="totalPages > postsPage"
         class="load-more-button__wrapper"
       >
-        <button
-          class="load-more-button"
-          @click="getMorePosts"
-        >
-          See more
-        </button>
+        <LoadMoreButton :click-handler="getMorePosts" />
       </div>
     </div>
   </div>
@@ -68,12 +63,14 @@
 <script>
 import { mapActions, mapGetters } from 'vuex'
 import Simplebar from 'simplebar-vue'
+import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
 import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
 
 export default {
   name: 'AllPostsSection',
   components: {
     Simplebar,
+    LoadMoreButton,
     RecommendedBlogWidget,
   },
 
@@ -247,23 +244,10 @@ export default {
   border-color: #cc4247;
 }
 
-.load-more-button {
-  padding: 12px 156px;
-  border: 1px solid $border-color--black;
-  font-size: 16px;
-  line-height: 26px;
-  background-color: transparent;
+.load-more-button__wrapper {
+  text-align: center;
   margin-top: 36px;
   margin-bottom: 53px;
-  cursor: pointer;
-
-  &:hover {
-    color: $text-color--red;
-  }
-
-  &__wrapper {
-    text-align: center;
-  }
 }
 
 .single-post {
@@ -400,11 +384,9 @@ export default {
     }
   }
 
-  .load-more-button {
-    padding: 12px 0;
+  .load-more-button__wrapper {
     margin-top: 11px;
     margin-bottom: 16px;
-    width: 100%;
   }
 }
 
