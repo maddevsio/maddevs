@@ -3,6 +3,7 @@ export default {
     authors: [],
     author: {},
     authorPosts: [],
+    authorPostsLoaded: false,
   }),
   mutations: {
     SET_ALL_AUTHORS(state, data) {
@@ -27,6 +28,9 @@ export default {
     },
     SET_AUTHOR_POSTS(state, posts) {
       state.authorPosts = posts
+    },
+    SET_AUTHOR_POSTS_LOADED(state, value) {
+      state.authorPostsLoaded = value
     },
   },
   actions: {
@@ -59,8 +63,8 @@ export default {
           orderings: '[my.post.date desc]',
           pageSize: 100,
         })
-
         commit('SET_AUTHOR_POSTS', posts)
+        commit('SET_AUTHOR_POSTS_LOADED', true)
       } catch (err) {
         if (err) throw err
       }
@@ -75,6 +79,9 @@ export default {
     },
     authorPosts(state) {
       return state.authorPosts
+    },
+    authorPostsLoaded(state) {
+      return state.authorPostsLoaded
     },
   },
 }

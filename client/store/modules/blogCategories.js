@@ -4,6 +4,7 @@ export default {
   state: () => ({
     category: '',
     categoryPosts: [],
+    categoryPostsLoaded: false,
   }),
   mutations: {
     SET_CATEGORY(state, category) {
@@ -11,6 +12,9 @@ export default {
     },
     SET_CATEGORY_POSTS(state, posts) {
       state.categoryPosts = posts
+    },
+    SET_CATEGORY_POSTS_LOADED(state, value) {
+      state.categoryPostsLoaded = value
     },
   },
   actions: {
@@ -24,6 +28,7 @@ export default {
         pageSize: 100,
       })).results
       commit('SET_CATEGORY_POSTS', posts)
+      commit('SET_CATEGORY_POSTS_LOADED', true)
     },
   },
   getters: {
@@ -35,6 +40,9 @@ export default {
     },
     categoryPostsCount(state) {
       return state.categoryPosts.length
+    },
+    categoryPostsLoaded(state) {
+      return state.categoryPostsLoaded
     },
   },
 }
