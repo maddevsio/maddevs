@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex'
 import AuthorSection from '@/components/Blog/Main/AuthorSection'
 
 export default {
@@ -23,6 +24,18 @@ export default {
       // Returns error page
       return error({ statusCode: 404, message: 'Page not found' })
     }
+  },
+
+  created() {
+    this.getAuthorPosts(this.blogAuthor.id)
+  },
+
+  methods: {
+    ...mapActions(['getAuthorPosts']),
+  },
+
+  computed: {
+    ...mapGetters(['blogAuthor', 'authorPosts']),
   },
 }
 </script>

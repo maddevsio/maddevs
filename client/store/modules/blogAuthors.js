@@ -2,6 +2,7 @@ export default {
   state: () => ({
     authors: [],
     author: {},
+    authorPosts: [],
   }),
   mutations: {
     SET_ALL_AUTHORS(state, data) {
@@ -24,6 +25,9 @@ export default {
         image: author.data.image,
       }
     },
+    SET_AUTHOR_POSTS(state, posts) {
+      state.authorPosts = posts
+    },
   },
   actions: {
     async getBlogAuthors({ commit }) {
@@ -40,7 +44,23 @@ export default {
     async getBlogAuthor({ commit }, payload) {
       try {
         const author = await this.$prismic.api.getByUID('author', payload)
+
         commit('SET_AUTHOR', author)
+      } catch (err) {
+        if (err) throw err
+      }
+    },
+    async getAuthorPosts({ commit }, payload) {
+      try {
+        const posts = await this.$prismic.api.query([
+          this.$prismic.predicates.at('document.type', 'post'),
+          this.$prismic.predicates.at('my.post.post_author', payload),
+        ], {
+          orderings: '[my.post.date desc]',
+          pageSize: 100,
+        })
+
+        commit('SET_AUTHOR_POSTS', posts)
       } catch (err) {
         if (err) throw err
       }
@@ -52,6 +72,9 @@ export default {
     },
     blogAuthor(state) {
       return state.author
+    },
+    authorPosts(state) {
+      return state.authorPosts
     },
   },
 }
