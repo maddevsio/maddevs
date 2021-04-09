@@ -1,6 +1,7 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
 import ModalContactMe from '@/components/core/modals/ModalContactMe'
 import formBaseProps from '../../../__mocks__/formBaseProps'
+import delay from '../../../../client/helpers/delay'
 
 const mocks = formBaseProps
 
@@ -26,7 +27,7 @@ describe('ModalContactMe component', () => {
     await fireEvent.click(screen.queryByTestId('test-privacy-policy-checkbox-input'))
     await fireEvent.click(screen.getByText('Сontact Me'))
 
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    await delay(1000)
     expect(mocks.$v.$reset).toHaveBeenCalledTimes(1)
   })
 })

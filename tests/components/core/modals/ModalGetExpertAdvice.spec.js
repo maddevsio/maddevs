@@ -1,6 +1,7 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
 import ModalGetExpertAdvice from '@/components/core/modals/ModalGetExpertAdvice'
 import formBaseProps from '../../../__mocks__/formBaseProps'
+import delay from '../../../../client/helpers/delay'
 
 const mocks = formBaseProps
 mocks.$v.questionsOnItConsulting = {
@@ -28,7 +29,7 @@ describe('ModalGetExpertAdvice component', () => {
     await fireEvent.click(screen.queryByTestId('test-privacy-policy-checkbox-input'))
     await fireEvent.click(screen.getByText('Get expert advice'))
 
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    await delay(1000)
     // Called in BaseForm and GetExpertAdviceForm components
     expect(mocks.$v.$reset).toHaveBeenCalledTimes(2)
   })
