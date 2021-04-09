@@ -38,10 +38,11 @@
         </p>
         <div class="blog-post__meta">
           <span class="created-at">{{ formattedDate }}</span>
-          <span
+          <PostTag
             v-if="post.tags.length"
-            class="tag"
-          >{{ post.tags[0] }}</span>
+            :tag="post.tags[0]"
+            class="light"
+          />
         </div>
         <PostAuthor
           v-if="author"
@@ -55,6 +56,7 @@
 <script>
 import linkResolver from '@/plugins/link-resolver.js'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
+import PostTag from '@/components/Blog/shared/PostTag'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
 import textEllipsis from '@/helpers/textEllipsis'
 
@@ -62,6 +64,7 @@ export default {
   name: 'RecommendedBlogWidget',
   components: {
     PostAuthor,
+    PostTag,
   },
 
   props: {

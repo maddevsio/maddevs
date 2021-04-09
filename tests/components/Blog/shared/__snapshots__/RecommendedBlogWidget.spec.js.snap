@@ -63,11 +63,21 @@ exports[`recommended blog widget component render with very long title 1`] = `
             Aug 25, 2020
           </span>
            
-          <span
-            class="tag"
+          <nuxtlink-stub
+            class="light"
+            to="/blog/category/markup"
           >
-            markup
-          </span>
+            <div
+              class="post-tag light"
+            >
+              <span
+                class="tag"
+                data-testid="test-tag"
+              >
+                markup
+              </span>
+            </div>
+          </nuxtlink-stub>
         </div>
          
         <!---->
@@ -140,11 +150,21 @@ exports[`recommended blog widget component should render correctly with slot 1`]
             Aug 25, 2020
           </span>
            
-          <span
-            class="tag"
+          <nuxtlink-stub
+            class="light"
+            to="/blog/category/markup"
           >
-            markup
-          </span>
+            <div
+              class="post-tag light"
+            >
+              <span
+                class="tag"
+                data-testid="test-tag"
+              >
+                markup
+              </span>
+            </div>
+          </nuxtlink-stub>
         </div>
          
         <!---->

@@ -2,15 +2,19 @@
 
 exports[`post tag component is a Vue instance 1`] = `
 <div>
-  <div
-    class="post-tag light"
+  <nuxtlink
+    to="/blog/category/posttag"
   >
-    <span
-      class="tag"
-      data-testid="test-tag"
+    <div
+      class="post-tag light"
     >
-      post-tag
-    </span>
-  </div>
+      <span
+        class="tag"
+        data-testid="test-tag"
+      >
+        post-tag
+      </span>
+    </div>
+  </nuxtlink>
 </div>
 `;

@@ -1,16 +1,20 @@
 <template>
-  <div
-    :class="theme"
-    class="post-tag"
-  >
-    <span
-      data-testid="test-tag"
-      class="tag"
-    >{{ tag }}</span>
-  </div>
+  <NuxtLink :to="`/blog/category/${tagUID}`">
+    <div
+      :class="theme"
+      class="post-tag"
+    >
+      <span
+        data-testid="test-tag"
+        class="tag"
+      >{{ tag }}</span>
+    </div>
+  </NuxtLink>
 </template>
 
 <script>
+import convertStringToSlug from '@/helpers/convertStringToSlug'
+
 export default {
   name: 'PostTag',
   props: {
@@ -22,6 +26,12 @@ export default {
     theme: {
       type: String,
       default: 'light',
+    },
+  },
+
+  computed: {
+    tagUID() {
+      return convertStringToSlug(this.tag)
     },
   },
 }
