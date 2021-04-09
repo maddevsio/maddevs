@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`caseStudies component renders correctly 1`] = `
-<a
+<nuxtlink
   class="single-project"
-  href="/case-studies/godee/"
   style="background: rgb(255, 106, 1);"
   target="_self"
+  to="/case-studies/godee/"
 >
   <div
     class="single-project__container single-project_black-letters-theme"
@@ -77,5 +77,5 @@ exports[`caseStudies component renders correctly 1`] = `
       </picture>
     </div>
   </div>
-</a>
+</nuxtlink>
 `;

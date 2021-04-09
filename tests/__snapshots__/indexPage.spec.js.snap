@@ -1662,11 +1662,11 @@ exports[`index page renders correctly 1`] = `
       <div
         class="projects"
       >
-        <a
+        <nuxtlink-stub
           class="single-project"
-          href="/case-studies/namba-food/"
           style="background: rgb(248, 247, 246);"
           target="_self"
+          to="/case-studies/namba-food/"
         >
           <div
             class="single-project__container single-project_black-letters-theme"
@@ -1738,12 +1738,12 @@ exports[`index page renders correctly 1`] = `
               </picture>
             </div>
           </div>
-        </a>
-        <a
+        </nuxtlink-stub>
+        <nuxtlink-stub
           class="single-project"
-          href="/case-studies/sir-john-monash-centre/"
           style="background: rgb(34, 31, 32);"
           target="_self"
+          to="/case-studies/sir-john-monash-centre/"
         >
           <div
             class="single-project__container single-project_white-letters-theme"
@@ -1815,12 +1815,12 @@ exports[`index page renders correctly 1`] = `
               </picture>
             </div>
           </div>
-        </a>
-        <a
+        </nuxtlink-stub>
+        <nuxtlink-stub
           class="single-project"
-          href="/case-studies/yourcast/"
           style="background: rgb(34, 31, 32);"
           target="_self"
+          to="/case-studies/yourcast/"
         >
           <div
             class="single-project__container single-project_white-letters-theme"
@@ -1894,12 +1894,12 @@ exports[`index page renders correctly 1`] = `
               </picture>
             </div>
           </div>
-        </a>
-        <a
+        </nuxtlink-stub>
+        <nuxtlink-stub
           class="single-project"
-          href="/case-studies/godee/"
           style="background: rgb(255, 106, 1);"
           target="_self"
+          to="/case-studies/godee/"
         >
           <div
             class="single-project__container single-project_black-letters-theme"
@@ -1971,7 +1971,7 @@ exports[`index page renders correctly 1`] = `
               </picture>
             </div>
           </div>
-        </a>
+        </nuxtlink-stub>
       </div>
     </div>
   </section>
@@ -2231,7 +2231,7 @@ exports[`index page renders correctly 1`] = `
         <div
           class="customer-testimonials__widget-col"
         >
-          <client-only-stub>
+          <clientonly-stub>
             <div
               class="customer-testimonials__widget-wrap"
             >
@@ -2244,7 +2244,7 @@ exports[`index page renders correctly 1`] = `
                 data-widget-type="4"
               />
             </div>
-          </client-only-stub>
+          </clientonly-stub>
         </div>
          
         <div
