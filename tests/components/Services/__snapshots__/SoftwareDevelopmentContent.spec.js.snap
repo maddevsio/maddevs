@@ -11,7 +11,7 @@ exports[`SoftwareDevelopmentContent component should render correctly 1`] = `
       <div
         class="content-item__text-content"
       >
-        <client-only-stub>
+        <clientonly-stub>
           <h3
             class="item-title content-item__title"
           >
@@ -40,7 +40,7 @@ exports[`SoftwareDevelopmentContent component should render correctly 1`] = `
           >
             second
           </p>
-        </client-only-stub>
+        </clientonly-stub>
       </div>
        
       <ul

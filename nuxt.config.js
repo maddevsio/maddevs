@@ -76,6 +76,7 @@ module.exports = {
     color: '#ec1c24',
     height: '2px',
   },
+  components: true,
   generate: {
     async routes() {
       const getPosts = async pageUrl => {

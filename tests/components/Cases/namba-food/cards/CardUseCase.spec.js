@@ -14,7 +14,7 @@ describe('CardUseCase component', () => {
   it('should render correctly', () => {
     const { container } = render(CardUseCase, {
       props,
-      stubs: ['client-only'],
+      stubs: ['ClientOnly'],
       mocks: {
         getMediaFromS3: () => 'img.jpg',
       },
@@ -32,7 +32,7 @@ describe('CardUseCase component', () => {
         ...props,
         classList,
       },
-      stubs: ['client-only'],
+      stubs: ['ClientOnly'],
       mocks: {
         getMediaFromS3: () => 'img.jpg',
       },

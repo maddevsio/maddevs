@@ -9,7 +9,7 @@ describe('UsageScenarios component', () => {
   it('should render correctly', () => {
     const { container } = render(UsageScenarios, {
       mocks,
-      stubs: ['client-only'],
+      stubs: ['ClientOnly'],
     })
 
     expect(container).toMatchSnapshot()
@@ -18,7 +18,7 @@ describe('UsageScenarios component', () => {
   it('should render with text', () => {
     render(UsageScenarios, {
       mocks,
-      stubs: ['client-only'],
+      stubs: ['ClientOnly'],
     })
 
     expect(screen.getByText(/Typical usage scenarios and user roles/i).className).toContain('case_title_h2')

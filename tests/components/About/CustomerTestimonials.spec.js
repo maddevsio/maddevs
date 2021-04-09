@@ -4,7 +4,7 @@ import { fireEvent, render, screen } from '@testing-library/vue'
 describe('CustomerTestimonials', () => {
   it('should render correctly', () => {
     const { container } = render(CustomerTestimonials, {
-      stubs: ['client-only'],
+      stubs: ['ClientOnly'],
     })
 
     expect(screen.getByText('Daniel Vartanov,')).not.toBeNull()
@@ -13,7 +13,7 @@ describe('CustomerTestimonials', () => {
 
   it('widget show in DOM when page load', () => {
     const { container } = render(CustomerTestimonials, {
-      stubs: ['client-only'],
+      stubs: ['ClientOnly'],
     })
 
     const widget = container.getElementsByClassName('.clutch-widget')
@@ -21,7 +21,7 @@ describe('CustomerTestimonials', () => {
   })
   it('correctly length of elements in DOM', () => {
     const { container } = render(CustomerTestimonials, {
-      stubs: ['client-only'],
+      stubs: ['ClientOnly'],
     })
 
     const contentItems = container.querySelectorAll('.customer-testimonials__testimonials-item')
@@ -30,7 +30,7 @@ describe('CustomerTestimonials', () => {
 
   it('correctly call script after mounting', async () => {
     const { getAllByTestId } = render(CustomerTestimonials, {
-      stubs: ['client-only'],
+      stubs: ['ClientOnly'],
     })
 
     await fireEvent.scroll(global, { target: { scrollY: 100 } })
