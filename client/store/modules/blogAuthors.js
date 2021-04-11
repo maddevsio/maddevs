@@ -4,6 +4,7 @@ export default {
     author: {},
     authorPosts: [],
     authorPostsLoaded: false,
+    authorPostsPage: 1,
   }),
   mutations: {
     SET_ALL_AUTHORS(state, data) {
@@ -32,13 +33,18 @@ export default {
     SET_AUTHOR_POSTS_LOADED(state, value) {
       state.authorPostsLoaded = value
     },
+    SET_AUTHOR_POSTS_PAGE(state, page) {
+      state.authorPostsPage = page
+    },
   },
   actions: {
     async getBlogAuthors({ commit }) {
       try {
-        const authors = (await this.$prismic.api.query(this.$prismic.predicates.at('document.type', 'author'), {
-          pageSize: 100,
-        })).results
+        const authors = (await this.$prismic.api.query(
+          this.$prismic.predicates.at('document.type', 'author'),
+          { pageSize: 100 },
+        )
+        ).results
 
         commit('SET_ALL_AUTHORS', authors)
       } catch (err) {
@@ -55,19 +61,27 @@ export default {
       }
     },
     async getAuthorPosts({ commit }, payload) {
+      commit('SET_AUTHOR_POSTS_LOADED', false)
+      commit('SET_AUTHOR_POSTS', [])
       try {
-        const posts = await this.$prismic.api.query([
-          this.$prismic.predicates.at('document.type', 'post'),
-          this.$prismic.predicates.at('my.post.post_author', payload),
-        ], {
-          orderings: '[my.post.date desc]',
-          pageSize: 100,
-        })
+        const posts = (
+          await this.$prismic.api.query([
+            this.$prismic.predicates.at('document.type', 'post'),
+            this.$prismic.predicates.at('my.post.post_author', payload),
+          ], {
+            orderings: '[my.post.date desc]',
+            pageSize: 100,
+          })
+        ).results
+
         commit('SET_AUTHOR_POSTS', posts)
         commit('SET_AUTHOR_POSTS_LOADED', true)
       } catch (err) {
         if (err) throw err
       }
+    },
+    getMoreAuthorPosts({ commit, state }) {
+      commit('SET_AUTHOR_POSTS_PAGE', state.authorPostsPage + 1)
     },
   },
   getters: {
@@ -82,6 +96,9 @@ export default {
     },
     authorPostsLoaded(state) {
       return state.authorPostsLoaded
+    },
+    authorPostsPage(state) {
+      return state.authorPostsPage
     },
   },
 }

@@ -1,17 +1,20 @@
 <template>
   <section class="author">
     <AuthorBanner />
+    <AuthorPostsSection />
   </section>
 </template>
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
 import AuthorBanner from '@/components/Blog/Main/AuthorBanner'
+import AuthorPostsSection from '@/components/Blog/Main/AuthorPostsSection'
 
 export default {
   name: 'Author',
   components: {
     AuthorBanner,
+    AuthorPostsSection,
   },
 
   async asyncData({ store, params, error }) {
@@ -27,7 +30,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogAuthor', 'authorPosts']),
+    ...mapGetters(['blogAuthor']),
   },
 
   created() {
