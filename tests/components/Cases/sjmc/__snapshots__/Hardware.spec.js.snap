@@ -151,7 +151,7 @@ exports[`Hardware component should render correctly 1`] = `
     </section>
      
     <section
-      class="container_full case_sjmc-phone-video-section background-color-black-primary"
+      class="container_full video-section background-color-black-primary"
     >
       <div
         class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video"
