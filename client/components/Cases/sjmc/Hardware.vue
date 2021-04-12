@@ -153,5 +153,8 @@ export default {
 .video-section {
   position: relative;
   padding: 60px 0;
+  @media screen and (max-width: 768px) {
+    padding: 50px 0;
+  }
 }
 </style>
