@@ -1,7 +1,7 @@
 import blog from './modules/blog'
 import blogPost from './modules/blogPost'
 import blogAuthors from './modules/blogAuthors'
-import blogCategories from './modules/blogCategories'
+import blogTags from './modules/blogTags'
 import leads from './modules/leads'
 import emails from './modules/emails'
 
@@ -9,7 +9,7 @@ export const modules = {
   blog,
   blogPost,
   blogAuthors,
-  blogCategories,
+  blogTags,
   leads,
   emails,
 }

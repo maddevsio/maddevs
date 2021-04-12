@@ -27,7 +27,6 @@
               </div>
               <RecommendedBlogWidget
                 v-else
-                :is-recent-post="true"
                 :post="post"
                 :author="findAuthor(post.data.post_author.id)"
               />

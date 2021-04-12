@@ -1,13 +1,13 @@
 <template>
-  <div class="category-posts">
+  <div class="tag-posts">
     <div class="container">
-      <div class="row category-posts__wrapper">
-        <template v-if="categoryPostsLoaded">
+      <div class="row tag-posts__wrapper">
+        <template v-if="tagPostsLoaded">
           <section
-            v-for="post in categoryPostsToShow"
+            v-for="post in tagPostsToShow"
             :key="post.id"
             :post="post"
-            class="category-posts__single-post"
+            class="tag-posts__single-post"
           >
             <div class="single-post__wrapper">
               <RecommendedBlogWidget
@@ -21,7 +21,7 @@
           <section
             v-for="i in 6"
             :key="i"
-            class="category-posts__single-post"
+            class="tag-posts__single-post"
           >
             <div class="single-post__wrapper">
               <SkeletonBlogWidget />
@@ -30,8 +30,8 @@
         </template>
       </div>
       <LoadMoreButton
-        v-if="totalPages > categoryPostsPage"
-        :click-handler="getMoreCategoryPosts"
+        v-if="totalPages > tagPostsPage"
+        :click-handler="getMoreTagPosts"
       />
     </div>
   </div>
@@ -44,7 +44,7 @@ import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidge
 import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
 
 export default {
-  name: 'CategoryPostsSection',
+  name: 'TagPostsSection',
   components: {
     SkeletonBlogWidget,
     RecommendedBlogWidget,
@@ -58,19 +58,19 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['categoryPosts', 'categoryPostsLoaded', 'allAuthors', 'categoryPostsPage']),
+    ...mapGetters(['tagPosts', 'tagPostsLoaded', 'allAuthors', 'tagPostsPage']),
 
-    categoryPostsToShow() {
-      return this.categoryPosts.slice(0, this.pageSize * this.categoryPostsPage)
+    tagPostsToShow() {
+      return this.tagPosts.slice(0, this.pageSize * this.tagPostsPage)
     },
 
     totalPages() {
-      return Math.ceil(this.categoryPosts.length / this.pageSize)
+      return Math.ceil(this.tagPosts.length / this.pageSize)
     },
   },
 
   methods: {
-    ...mapActions(['getMoreCategoryPosts']),
+    ...mapActions(['getMoreTagPosts']),
 
     findAuthor(authorId) {
       if (!this.allAuthors && !this.allAuthors.length) return null
@@ -83,7 +83,7 @@ export default {
 <style lang="scss" scoped>
   @import '../../../assets/styles/_vars';
 
-  .category-posts {
+  .tag-posts {
     background-color: $bgcolor--white-primary;
     padding: 60px 0;
 

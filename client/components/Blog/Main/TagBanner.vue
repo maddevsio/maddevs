@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <div class="current-category">
-      <h1 class="current-category__title">
-        {{ blogCategory }}
+    <div class="current-tag">
+      <h1 class="current-tag__title">
+        {{ blogTag }}
       </h1>
-      <p class="current-category__posts-count">
-        A collection of {{ categoryPostsCount }} posts
+      <p class="current-tag__posts-count">
+        A collection of {{ tagPostsCount }} posts
       </p>
     </div>
   </div>
@@ -15,9 +15,9 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  name: 'CategoryBanner',
+  name: 'TagBanner',
   computed: {
-    ...mapGetters(['blogCategory', 'categoryPostsCount']),
+    ...mapGetters(['blogTag', 'tagPostsCount']),
   },
 }
 </script>
@@ -25,7 +25,7 @@ export default {
 <style lang="scss" scoped>
   @import '../../../assets/styles/_vars';
 
-  .current-category {
+  .current-tag {
     padding-top: 117px;
     padding-bottom: 97px;
     color: $text-color--white-primary;

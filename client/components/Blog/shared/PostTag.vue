@@ -35,7 +35,7 @@ export default {
   computed: {
     tagLink() {
       if (!this.tag) return null
-      return `/blog/category/${convertStringToSlug(this.tag)}`
+      return `/blog/tag/${convertStringToSlug(this.tag)}`
     },
   },
 }
