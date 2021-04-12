@@ -40,7 +40,7 @@
           <span class="created-at">{{ formattedDate }}</span>
           <PostTag
             v-if="post.tags && post.tags.length"
-            :tag="post.tags[0]"
+            :tag="tag || post.tags[0]"
             class="light"
           />
         </div>
@@ -74,10 +74,16 @@ export default {
       type: Object,
       required: true,
     },
+
+    tag: {
+      type: String,
+      default: '',
+    },
   },
 
   computed: {
     link() {
+      console.log(linkResolver(this.post))
       return linkResolver(this.post)
     },
 

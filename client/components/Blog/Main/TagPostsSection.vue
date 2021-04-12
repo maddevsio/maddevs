@@ -12,6 +12,7 @@
             <div class="single-post__wrapper">
               <RecommendedBlogWidget
                 :post="post"
+                :tag="blogTag"
                 :author="findAuthor(post.data.post_author.id)"
               />
             </div>
@@ -58,7 +59,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['tagPosts', 'tagPostsLoaded', 'allAuthors', 'tagPostsPage']),
+    ...mapGetters(['blogTag', 'tagPosts', 'tagPostsLoaded', 'allAuthors', 'tagPostsPage']),
 
     tagPostsToShow() {
       return this.tagPosts.slice(0, this.pageSize * this.tagPostsPage)
