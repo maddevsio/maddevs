@@ -13,7 +13,6 @@
               <RecommendedBlogWidget
                 :post="post"
                 :author="findAuthor(post.data.post_author.id)"
-                :tag-link-is-disabled="true"
               />
             </div>
           </section>

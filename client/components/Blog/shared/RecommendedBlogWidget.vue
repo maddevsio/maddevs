@@ -2,7 +2,6 @@
   <NuxtLink
     :to="link"
     class="blog-post__wrapper"
-    :class="{ 'latest-post': isRecentPost }"
   >
     <div class="blog-post">
       <img
@@ -39,17 +38,30 @@
         </p>
         <div class="blog-post__meta">
           <span class="created-at">{{ formattedDate }}</span>
+          <NuxtLink
+            v-if="tagLink && !tagLinkIsDisabled"
+            :to="tagLink"
+          >
+            <PostTag
+              :tag="post.tags[0]"
+              class="light"
+            />
+          </NuxtLink>
           <PostTag
-            v-if="post.tags.length"
+            v-else
             :tag="post.tags[0]"
-            :tag-link-is-disabled="tagLinkIsDisabled"
             class="light"
           />
         </div>
+        <NuxtLink
+          v-if="authorLink && !authorLinkIsDisabled"
+          :to="authorLink"
+        >
+          <PostAuthor :author="author" />
+        </NuxtLink>
         <PostAuthor
-          v-if="author"
+          v-else
           :author="author"
-          :author-link-is-disabled="authorLinkIsDisabled"
         />
       </div>
     </div>
@@ -62,6 +74,7 @@ import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import PostTag from '@/components/Blog/shared/PostTag'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
 import textEllipsis from '@/helpers/textEllipsis'
+import convertStringToSlug from '@/helpers/convertStringToSlug'
 
 export default {
   name: 'RecommendedBlogWidget',
@@ -71,17 +84,12 @@ export default {
   },
 
   props: {
-    isRecentPost: {
-      type: Boolean,
-      default: () => false,
-    },
-
-    authorLinkIsDisabled: {
+    tagLinkIsDisabled: {
       type: Boolean,
       default: false,
     },
 
-    tagLinkIsDisabled: {
+    authorLinkIsDisabled: {
       type: Boolean,
       default: false,
     },
@@ -100,6 +108,17 @@ export default {
   computed: {
     link() {
       return linkResolver(this.post)
+    },
+
+    tagLink() {
+      if (!(this.post.tags && this.post.tags.length)) return null
+      const tagUID = convertStringToSlug(this.post.tags[0])
+      return `/blog/category/${tagUID}`
+    },
+
+    authorLink() {
+      if (!this.author.uid) return null
+      return `/blog/author/${this.author.uid}`
     },
 
     formattedDate() {
