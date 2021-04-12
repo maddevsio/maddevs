@@ -70,7 +70,7 @@
         available content nearby challenging.
       </TextParagraph>
     </section>
-    <section class="container_full case_sjmc-phone-video-section background-color-black-primary">
+    <section class="container_full video-section background-color-black-primary">
       <div
         ref="videoWrap"
         class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video"
@@ -148,3 +148,10 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.video-section {
+  position: relative;
+  padding: 60px 0;
+}
+</style>
