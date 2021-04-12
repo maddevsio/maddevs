@@ -1,6 +1,12 @@
 <template>
   <div class="author-posts">
     <div class="container">
+      <FeaturedPost
+        v-if="authorPostsLoaded && featuredPost"
+        :post="featuredPost"
+        :author="blogAuthor"
+        :theme="'light'"
+      />
       <div class="row author-posts__wrapper">
         <template v-if="authorPostsLoaded">
           <section
@@ -39,6 +45,7 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
+import FeaturedPost from '@/components/Blog/shared/FeaturedPost'
 import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
 import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
 import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
@@ -46,6 +53,7 @@ import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
 export default {
   name: 'AuthorPostsSection',
   components: {
+    FeaturedPost,
     SkeletonBlogWidget,
     RecommendedBlogWidget,
     LoadMoreButton,
@@ -59,6 +67,10 @@ export default {
 
   computed: {
     ...mapGetters(['blogAuthor', 'authorPosts', 'authorPostsLoaded', 'authorPostsPage']),
+
+    featuredPost() {
+      return this.authorPosts.find(post => post.tags.includes('Featured post'))
+    },
 
     authorPostsToShow() {
       return this.authorPosts.slice(0, this.pageSize * this.authorPostsPage)

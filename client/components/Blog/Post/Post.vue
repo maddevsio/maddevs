@@ -55,7 +55,7 @@
         >
           <RecommendedBlogWidget
             :post="post"
-            :author="blogAuthor"
+            :author="findAuthor(post.data.post_author.id)"
             class-name="recommended-post"
           />
         </section>
@@ -128,7 +128,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogPost', 'blogAuthor']),
+    ...mapGetters(['blogPost', 'blogAuthor', 'allAuthors']),
 
     clusterPosts() {
       return this.cluster ? this.cluster.items : []
@@ -154,6 +154,11 @@ export default {
   },
 
   methods: {
+    findAuthor(authorId) {
+      if (!this.allAuthors && !this.allAuthors.length) return null
+      return this.allAuthors.find(a => a.id === authorId)
+    },
+
     scrollToTop() {
       window.scrollTo({
         top: 0,

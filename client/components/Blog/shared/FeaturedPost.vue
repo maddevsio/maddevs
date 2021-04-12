@@ -1,6 +1,7 @@
 <template>
   <NuxtLink
     :to="link"
+    :class="theme"
     class="featured-post"
   >
     <div class="row featured-post__wrapper">
@@ -17,7 +18,7 @@
             <PostTag
               v-if="post.tags && post.tags.length"
               :tag="tag || post.tags[0]"
-              theme="dark"
+              :theme="theme"
             />
             <span class="created-at">{{ formattedDate }}</span>
           </div>
@@ -64,6 +65,11 @@ export default {
       type: String,
       default: null,
     },
+
+    theme: {
+      type: String,
+      default: 'dark',
+    },
   },
 
   computed: {
@@ -89,9 +95,21 @@ export default {
 @import '../../../assets/styles/_vars';
 
 .featured-post {
-  color: $text-color--white-primary;
   text-decoration: none;
   display: block;
+
+  &.dark {
+    color: $text-color--white-primary;
+  }
+
+  &.light {
+    color: $text-color--black;
+    /deep/ .blog-post {
+      &__author-name {
+        color: $text-color--black;
+      }
+    }
+  }
 
   a {
     text-decoration: none;

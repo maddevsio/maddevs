@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 import PostView from '@/components/Blog/Post/Post'
 
 export default {
@@ -96,6 +96,14 @@ export default {
 
   computed: {
     ...mapGetters(['blogPost']),
+  },
+
+  created() {
+    this.getBlogAuthors()
+  },
+
+  methods: {
+    ...mapActions(['getBlogAuthors']),
   },
 }
 </script>

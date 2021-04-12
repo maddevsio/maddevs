@@ -1,3 +1,12 @@
+const extractAuthorData = author => ({
+  id: author.id,
+  uid: author.uid,
+  name: author.data.name,
+  position: author.data.position,
+  metaImage: author.data.meta_image,
+  image: author.data.image,
+})
+
 export default {
   state: () => ({
     authors: [],
@@ -8,24 +17,10 @@ export default {
   }),
   mutations: {
     SET_ALL_AUTHORS(state, data) {
-      state.authors = data.map(author => ({
-        id: author.id,
-        uid: author.uid,
-        metaImage: author.data.meta_image,
-        image: author.data.image,
-        name: author.data.name,
-        position: author.data.position,
-      }))
+      state.authors = data.map(author => extractAuthorData(author))
     },
     SET_AUTHOR(state, author) {
-      state.author = {
-        id: author.id,
-        uid: author.uid,
-        name: author.data.name,
-        position: author.data.position,
-        metaImage: author.data.meta_image,
-        image: author.data.image,
-      }
+      state.author = extractAuthorData(author)
     },
     SET_AUTHOR_POSTS(state, posts) {
       state.authorPosts = posts
