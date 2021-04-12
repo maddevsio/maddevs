@@ -104,7 +104,7 @@ export default {
 
   computed: {
     projectName() {
-      if (!this.isIphone) return `case_header-${this.$props.project}`
+      if (!this.isIphone) return `case_header-${this.project}`
       return ''
     },
   },

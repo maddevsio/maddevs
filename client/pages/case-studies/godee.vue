@@ -9,6 +9,7 @@
       <div class="case_content-layer p-48_bottom media-p-24_bottom">
         <CaseHeader
           :logo="logo"
+          project="godee"
           video-name="/videos/godee-case-main-video.mp4"
           video-fallback-path="/images/Cases/godee/jpg/godee-case-preview.jpg"
         >

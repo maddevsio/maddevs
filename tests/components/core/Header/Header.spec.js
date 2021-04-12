@@ -19,7 +19,7 @@ const GODEE_MOCK = {
   },
 }
 
-const stubs = ['RouterLink']
+const stubs = ['NuxtLink']
 
 const setDefaultStateForHeader = jest.fn()
 const removeEventListeners = jest.fn()
