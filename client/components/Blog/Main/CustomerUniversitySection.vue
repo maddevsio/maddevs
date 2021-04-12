@@ -236,6 +236,10 @@ export default {
   display: block;
   padding-right: 60px;
 
+  a {
+    text-decoration: none;
+  }
+
   &__date {
     display: block;
     @include label;

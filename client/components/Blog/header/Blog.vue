@@ -52,6 +52,11 @@ export default {
     align-items: center;
     margin-top: 7px;
     margin-bottom: 43px;
+    text-decoration: none;
+
+    a {
+      text-decoration: none;
+    }
 
     /deep/ .blog-post__author-image {
       width: 30px;

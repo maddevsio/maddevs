@@ -88,6 +88,10 @@ export default {
   text-decoration: none;
   display: block;
 
+  a {
+    text-decoration: none;
+  }
+
   &__wrapper {
     margin: 95px 0;
     align-items: center;
