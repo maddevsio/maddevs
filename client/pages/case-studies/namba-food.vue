@@ -2,6 +2,7 @@
   <main class="main case">
     <CaseHeader
       :logo="logo"
+      project="nambafood"
       video-name="/videos/main.ef19480.mp4"
       video-fallback-path="/images/Cases/nambafood/jpg/blank.jpg"
     >
