@@ -24,7 +24,7 @@ exports[`Header component should render correctly 1`] = `
           <div
             class="header__left-nav_bar col-xl-6 col-lg-7"
           >
-            <routerlink-stub
+            <nuxtlink-stub
               class="header__logo-icon"
               to="/"
             >
@@ -56,12 +56,12 @@ exports[`Header component should render correctly 1`] = `
                   </g>
                 </svg>
               </div>
-            </routerlink-stub>
+            </nuxtlink-stub>
              
             <nav
               class="header__header-routes_links"
             >
-              <routerlink-stub
+              <nuxtlink-stub
                 class="header__navigation-link"
                 data-testid="test-navigation-link"
                 exact="true"
@@ -70,8 +70,8 @@ exports[`Header component should render correctly 1`] = `
                 
               About
             
-              </routerlink-stub>
-              <routerlink-stub
+              </nuxtlink-stub>
+              <nuxtlink-stub
                 class="header__navigation-link"
                 data-testid="test-navigation-link"
                 to="/services/"
@@ -79,8 +79,8 @@ exports[`Header component should render correctly 1`] = `
                 
               Services
             
-              </routerlink-stub>
-              <routerlink-stub
+              </nuxtlink-stub>
+              <nuxtlink-stub
                 class="header__navigation-link"
                 data-testid="test-navigation-link"
                 to="/projects/"
@@ -88,8 +88,8 @@ exports[`Header component should render correctly 1`] = `
                 
               Projects
             
-              </routerlink-stub>
-              <routerlink-stub
+              </nuxtlink-stub>
+              <nuxtlink-stub
                 class="header__navigation-link"
                 data-testid="test-navigation-link"
                 to="/careers/"
@@ -97,8 +97,8 @@ exports[`Header component should render correctly 1`] = `
                 
               Careers
             
-              </routerlink-stub>
-              <routerlink-stub
+              </nuxtlink-stub>
+              <nuxtlink-stub
                 class="header__navigation-link"
                 data-testid="test-navigation-link"
                 to="/blog/"
@@ -106,7 +106,7 @@ exports[`Header component should render correctly 1`] = `
                 
               Blog
             
-              </routerlink-stub>
+              </nuxtlink-stub>
             </nav>
              
             <div

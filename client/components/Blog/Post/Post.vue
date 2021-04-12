@@ -146,7 +146,6 @@ export default {
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
     window.addEventListener('scroll', this.shareButtonsScroll)
-    window.scroll()
   },
 
   destroyed() {
