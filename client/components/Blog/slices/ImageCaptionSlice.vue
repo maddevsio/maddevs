@@ -5,16 +5,22 @@
         :class="size"
         class="block-img"
       >
-        <PrismicImage
-          :field="img"
+        <img
+          class="img_lazy"
           :class="{ 'block-img-zoom': zoomEnabled }"
+          :data-src="img.url"
+          :alt="img.alt"
           @click="openModal"
-        />
+        >
         <SimpleModal
           v-if="zoomEnabled"
           ref="zoom"
         >
-          <PrismicImage :field="img" />
+          <img
+            class="img_lazy"
+            :data-src="img.url"
+            :alt="img.alt"
+          >
         </SimpleModal>
       </div>
       <p

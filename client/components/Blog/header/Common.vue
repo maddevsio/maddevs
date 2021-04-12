@@ -10,12 +10,12 @@
     <slot name="afterTitle" />
     <img
       v-if="coverImageUrl"
-      :src="coverImageUrl"
+      :data-src="coverImageUrl"
       :class="getImageClass"
       :alt="coverImageAltText"
       :width="coverImageWidth"
       :height="coverImageHeight"
-      class="blog-post__introduction-image"
+      class="blog-post__introduction-image img_lazy"
     >
   </div>
 </template>
