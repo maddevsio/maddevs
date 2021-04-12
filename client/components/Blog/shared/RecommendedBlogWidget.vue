@@ -38,31 +38,13 @@
         </p>
         <div class="blog-post__meta">
           <span class="created-at">{{ formattedDate }}</span>
-          <NuxtLink
-            v-if="tagLink && !tagLinkIsDisabled"
-            :to="tagLink"
-          >
-            <PostTag
-              :tag="post.tags[0]"
-              class="light"
-            />
-          </NuxtLink>
           <PostTag
-            v-else
+            v-if="post.tags && post.tags.length"
             :tag="post.tags[0]"
             class="light"
           />
         </div>
-        <NuxtLink
-          v-if="authorLink && !authorLinkIsDisabled"
-          :to="authorLink"
-        >
-          <PostAuthor :author="author" />
-        </NuxtLink>
-        <PostAuthor
-          v-else
-          :author="author"
-        />
+        <PostAuthor :author="author" />
       </div>
     </div>
   </NuxtLink>
@@ -74,7 +56,6 @@ import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import PostTag from '@/components/Blog/shared/PostTag'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
 import textEllipsis from '@/helpers/textEllipsis'
-import convertStringToSlug from '@/helpers/convertStringToSlug'
 
 export default {
   name: 'RecommendedBlogWidget',
@@ -84,16 +65,6 @@ export default {
   },
 
   props: {
-    tagLinkIsDisabled: {
-      type: Boolean,
-      default: false,
-    },
-
-    authorLinkIsDisabled: {
-      type: Boolean,
-      default: false,
-    },
-
     post: {
       type: Object,
       required: true,
@@ -108,17 +79,6 @@ export default {
   computed: {
     link() {
       return linkResolver(this.post)
-    },
-
-    tagLink() {
-      if (!(this.post.tags && this.post.tags.length)) return null
-      const tagUID = convertStringToSlug(this.post.tags[0])
-      return `/blog/category/${tagUID}`
-    },
-
-    authorLink() {
-      if (!this.author.uid) return null
-      return `/blog/author/${this.author.uid}`
     },
 
     formattedDate() {

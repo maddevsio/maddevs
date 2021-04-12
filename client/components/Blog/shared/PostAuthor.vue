@@ -1,24 +1,29 @@
 <template>
-  <div class="blog-post__author">
-    <img
-      v-if="author.metaImage.url"
-      :src="author.metaImage.url"
-      :alt="author.metaImage.alt"
-      class="blog-post__author-image"
-    >
-    <div
-      v-else
-      class="blog-post__none-image"
-    />
-    <div class="blog-post__author-info">
-      <p class="blog-post__author-name">
-        {{ shortTitle }}
-      </p>
-      <div class="blog-post__data-of-creation">
-        <span class="blog-post__author-title">{{ author.position }}</span>
+  <NuxtLink
+    v-if="author"
+    :to="authorLink"
+  >
+    <div class="blog-post__author">
+      <img
+        v-if="author.metaImage.url"
+        :src="author.metaImage.url"
+        :alt="author.metaImage.alt"
+        class="blog-post__author-image"
+      >
+      <div
+        v-else
+        class="blog-post__none-image"
+      />
+      <div class="blog-post__author-info">
+        <p class="blog-post__author-name">
+          {{ shortTitle }}
+        </p>
+        <div class="blog-post__data-of-creation">
+          <span class="blog-post__author-title">{{ author.position }}</span>
+        </div>
       </div>
     </div>
-  </div>
+  </NuxtLink>
 </template>
 
 <script>
@@ -32,6 +37,11 @@ export default {
   },
 
   computed: {
+    authorLink() {
+      if (!this.author.uid) return null
+      return `/blog/author/${this.author.uid}`
+    },
+
     shortTitle() {
       return this.author.name.substr(0, 100)
     },
