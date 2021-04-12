@@ -45,11 +45,6 @@
     max-width: 1440px;
   }
 
-  &_sjmc-phone-video-section {
-    position: relative;
-    padding: 60px 0;
-  }
-
   &_sjmc-phone-video-wrapper {
     width: 23%;
     max-width: 340px;
@@ -119,12 +114,6 @@
   @media screen and (max-width: 1024px) {
     &_play-button {
       display: none;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    &_sjmc-phone-video-section {
-      padding: 50px 0;
     }
   }
 
