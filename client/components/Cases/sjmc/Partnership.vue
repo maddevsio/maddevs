@@ -12,7 +12,7 @@
       <TextParagraph>
         After conducting an
         <NuxtLink
-          :to="`/services#it-consulting`"
+          :to="`/services/#it-consulting`"
           class="case_link"
         >
           independent audit
