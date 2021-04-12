@@ -6,17 +6,15 @@
     >
       <div
         ref="soundIcon"
-        class="case_sound-icon case_sound-icon--sound-off"
+        class="case_sound-icon"
+        data-testid="test-case_sound-icon"
         :class="soundMode"
       />
       <p class="case_sound-control-desc">
         Enable sound to the best expirience
       </p>
     </div>
-    <div
-      class="case_video-wrapper case_full-screen-video"
-      data-testid="test-case_sjmc-phone"
-    >
+    <div class="case_video-wrapper case_full-screen-video">
       <video
         id="iphone-video"
         ref="video"

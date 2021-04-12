@@ -1,17 +1,13 @@
 import HardwareVideoOnlyIos from '@/components/Cases/sjmc/HardwareVideoOnlyIos.vue'
 import { fireEvent, render, screen } from '@testing-library/vue'
 import '../../../__mocks__/intersectionObserverMock'
+import '../../../__mocks__/htmlMediaElement'
 
 const mocks = {
   getMediaFromS3: image => image,
 }
 
 describe('HardwareVideoOnlyIos component', () => {
-  window.HTMLMediaElement.prototype.load = () => { /* do nothing */ }
-  window.HTMLMediaElement.prototype.play = () => { /* do nothing */ }
-  window.HTMLMediaElement.prototype.pause = () => { /* do nothing */ }
-  window.HTMLMediaElement.prototype.addTextTrack = () => { /* do nothing */ }
-
   it('should render correctly', () => {
     const { container } = render(HardwareVideoOnlyIos, {
       mocks,
