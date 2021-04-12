@@ -271,7 +271,7 @@ export default {
 
     addEventListeners() {
       window.addEventListener('scroll', this.scrollHandler)
-      if (!this.isCasePage && this.isGodeePage) return
+      if (!this.isGodeePage) return
 
       window.addEventListener('resize', this.setWidthForHeader)
       if (this.caseGoDeeScrollContainer) this.caseGoDeeScrollContainer.addEventListener('scroll', this.scrollHandler)
