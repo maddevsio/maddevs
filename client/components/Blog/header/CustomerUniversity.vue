@@ -1,9 +1,9 @@
 <template>
   <CommonHeader
-    :title="$prismic.asText(document.title)"
-    :subtitle="$prismic.asText(document.subtitle)"
-    :cover-image-url="document.featured_image.url"
-    :cover-image-alt-text="document.featured_image.alt"
+    :title="blogPost.title"
+    :subtitle="blogPost.subtitle"
+    :cover-image-url="blogPost.featuredImage.url"
+    :cover-image-alt-text="blogPost.featuredImage.alt"
   >
     <template #beforeTitle>
       <div class="row cluster-navigation">
@@ -63,6 +63,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import CommonHeader from '@/components/Blog/header/Common'
 import VueSelect from 'vue-select'
 import 'vue-select/dist/vue-select.css'
@@ -75,11 +76,6 @@ export default {
   },
 
   props: {
-    document: {
-      type: Object,
-      required: true,
-    },
-
     postList: {
       type: Array,
       default: () => [],
@@ -88,11 +84,6 @@ export default {
     clusterName: {
       type: String,
       default: () => '',
-    },
-
-    id: {
-      type: String,
-      required: true,
     },
   },
 
@@ -114,6 +105,8 @@ export default {
   },
 
   computed: {
+    ...mapGetters(['blogPost']),
+
     postOptions() {
       return this.postList.map(post => ({
         label: this.$prismic.asText(post.chapter_name),
@@ -122,7 +115,7 @@ export default {
     },
 
     currentPost() {
-      return this.postList.find(post => post.cu_post.id === this.id)
+      return this.postList.find(post => post.cu_post.id === this.blogPost.id)
     },
 
     nextArticleUrl() {

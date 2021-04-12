@@ -8,44 +8,36 @@
       <div class="blog-post__share">
         <ShareNetwork
           :url="openGraphUrl"
-          :title="title"
+          :title="blogPost.metaTitle"
           network="facebook"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
         />
         <ShareNetwork
           :url="openGraphUrl"
-          :title="title"
+          :title="blogPost.metaTitle"
           network="twitter"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
         />
         <ShareNetwork
           :url="openGraphUrl"
-          :title="title"
+          :title="blogPost.metaTitle"
           network="linkedin"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
         />
       </div>
-
       <CustomerUniversityHeader
         v-if="type === 'cu_post'"
-        :id="id"
-        :document="document"
         :post-list="clusterPosts || []"
         :cluster-name="cluster ? $prismic.asText(cluster.primary.cluster_name) : ''"
       />
-      <BlogHeader
-        v-else
-        :document="document"
-        :tags="tags"
-        :formatted-date="formattedDate"
-      />
+      <BlogHeader v-else />
       <div class="blog-post__main-content">
         <TableOfContents
-          v-if="$prismic.asText(document.table_of_contents)"
-          :content="document.table_of_contents"
+          v-if="$prismic.asText(blogPost.tableOfContents)"
+          :content="blogPost.tableOfContents"
         />
         <SlicesBlock
-          :slices="slices"
+          :slices="blogPost.slices"
           class="blog-post__text-container"
         />
       </div>
@@ -56,13 +48,14 @@
     >
       <div class="blog-post__recommended-posts-list container">
         <section
-          v-for="post in recommendedPosts"
+          v-for="post in blogPost.recommendedPosts"
           :key="post.id"
           :post="post"
           class="blog-post__recommended-post"
         >
           <RecommendedBlogWidget
             :post="post"
+            :author="blogAuthor"
             class-name="recommended-post"
           />
         </section>
@@ -70,7 +63,7 @@
     </div>
     <CustomerUniversityNavigation
       v-if="clusterPosts && cluster"
-      :id="id"
+      :id="blogPost.id"
       :cluster="cluster"
       :cluster-posts="clusterPosts"
     />
@@ -89,6 +82,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import SlicesBlock from '@/components/Blog/Post/SlicesBlock.vue'
 import TableOfContents from '@/components/Blog/Post/TableOfContents'
 import BlogHeader from '@/components/Blog/header/Blog'
@@ -116,47 +110,7 @@ export default {
       default: () => 'blog_post',
     },
 
-    title: {
-      type: String,
-      default: '',
-    },
-
-    id: {
-      type: String,
-      default: '',
-    },
-
-    document: {
-      type: Object,
-      default: () => ({}),
-    },
-
-    slices: {
-      type: Array,
-      default: () => [],
-    },
-
-    formattedDate: {
-      type: String,
-      default: '',
-    },
-
-    recommendedPosts: {
-      type: Array,
-      default: () => [],
-    },
-
-    tags: {
-      type: Array,
-      default: () => [],
-    },
-
     openGraphUrl: {
-      type: String,
-      default: '',
-    },
-
-    jsonLd: {
       type: String,
       default: '',
     },
@@ -174,16 +128,18 @@ export default {
   },
 
   computed: {
+    ...mapGetters(['blogPost', 'blogAuthor']),
+
     clusterPosts() {
       return this.cluster ? this.cluster.items : []
     },
 
     wrapperClass() {
-      return this.recommendedPosts.length || this.type === 'cu_post' ? 'with-recommended' : ''
+      return (this.blogPost.recommendedPosts && this.blogPost.recommendedPosts.length) || this.type === 'cu_post' ? 'with-recommended' : ''
     },
 
     showRecommended() {
-      return this.type !== 'cu_post' && this.recommendedPosts.length !== 0
+      return this.type !== 'cu_post' && (this.blogPost.recommendedPosts && this.blogPost.recommendedPosts.length !== 0)
     },
   },
 
