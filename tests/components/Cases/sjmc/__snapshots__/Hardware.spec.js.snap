@@ -160,7 +160,8 @@ exports[`Hardware component should render correctly 1`] = `
           class="case_sound-control"
         >
           <div
-            class="case_sound-icon case_sound-icon--sound-off case_sound-icon--sound-off"
+            class="case_sound-icon case_sound-icon--sound-off"
+            data-testid="test-case_sound-icon"
           />
            
           <p
@@ -174,7 +175,6 @@ exports[`Hardware component should render correctly 1`] = `
          
         <div
           class="case_video-wrapper case_full-screen-video"
-          data-testid="test-case_sjmc-phone"
         >
           <video
             height="100%"
