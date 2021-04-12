@@ -2,6 +2,7 @@
   <main class="main case">
     <CaseHeader
       :logo="logo"
+      project="sjmc"
       video-name="/videos/sjmc/sjmc-main-video.b35a387.mp4"
       video-fallback-path="/images/Cases/sjmc/jpg/sjmc-main-video-preview.jpg"
     >
