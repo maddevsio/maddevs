@@ -13,6 +13,7 @@
               <RecommendedBlogWidget
                 :post="post"
                 :author="blogAuthor"
+                :author-link-is-disabled="true"
               />
             </div>
           </section>

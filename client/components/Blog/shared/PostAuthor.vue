@@ -1,5 +1,9 @@
 <template>
-  <NuxtLink :to="`/blog/author/${author.uid}`">
+  <NuxtLink
+    :tag="authorLinkIsDisabled ? 'span' : 'a'"
+    :event="authorLinkIsDisabled ? '' : 'click'"
+    :to="`/blog/author/${author.uid}`"
+  >
     <div class="blog-post__author">
       <img
         v-if="author.metaImage.url !== undefined"
@@ -27,6 +31,11 @@
 export default {
   name: 'PostAuthor',
   props: {
+    authorLinkIsDisabled: {
+      type: Boolean,
+      default: false,
+    },
+
     author: {
       type: Object,
       required: true,

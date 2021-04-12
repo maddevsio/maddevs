@@ -42,12 +42,14 @@
           <PostTag
             v-if="post.tags.length"
             :tag="post.tags[0]"
+            :tag-link-is-disabled="tagLinkIsDisabled"
             class="light"
           />
         </div>
         <PostAuthor
           v-if="author"
           :author="author"
+          :author-link-is-disabled="authorLinkIsDisabled"
         />
       </div>
     </div>
@@ -72,6 +74,16 @@ export default {
     isRecentPost: {
       type: Boolean,
       default: () => false,
+    },
+
+    authorLinkIsDisabled: {
+      type: Boolean,
+      default: false,
+    },
+
+    tagLinkIsDisabled: {
+      type: Boolean,
+      default: false,
     },
 
     post: {

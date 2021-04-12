@@ -1,5 +1,9 @@
 <template>
-  <NuxtLink :to="`/blog/category/${tagUID}`">
+  <NuxtLink
+    :tag="tagLinkIsDisabled ? 'span' : 'a'"
+    :event="tagLinkIsDisabled ? '' : 'click'"
+    :to="`/blog/category/${tagUID}`"
+  >
     <div
       :class="theme"
       class="post-tag"
@@ -18,6 +22,11 @@ import convertStringToSlug from '@/helpers/convertStringToSlug'
 export default {
   name: 'PostTag',
   props: {
+    tagLinkIsDisabled: {
+      type: Boolean,
+      default: false,
+    },
+
     tag: {
       type: String,
       required: true,
