@@ -3,7 +3,7 @@
 exports[`recommended blog widget component render with very long title 1`] = `
 <div>
   <nuxtlink-stub
-    class=""
+    class="blog-post__wrapper"
     classname="test"
     to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
   >
@@ -65,6 +65,8 @@ exports[`recommended blog widget component render with very long title 1`] = `
            
           <nuxtlink-stub
             class="light"
+            event="click"
+            tag="a"
             to="/blog/category/markup"
           >
             <div
@@ -90,7 +92,7 @@ exports[`recommended blog widget component render with very long title 1`] = `
 exports[`recommended blog widget component should render correctly with slot 1`] = `
 <div>
   <nuxtlink-stub
-    class=""
+    class="blog-post__wrapper"
     classname="test"
     to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
   >
@@ -152,6 +154,8 @@ exports[`recommended blog widget component should render correctly with slot 1`]
            
           <nuxtlink-stub
             class="light"
+            event="click"
+            tag="a"
             to="/blog/category/markup"
           >
             <div
