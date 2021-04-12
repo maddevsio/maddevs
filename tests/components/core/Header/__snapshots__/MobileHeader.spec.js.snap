@@ -18,7 +18,7 @@ exports[`MobileHeader component should render correctly 1`] = `
           <nav
             class="mobile-header__header-routes_links"
           >
-            <routerlink-stub
+            <nuxtlink-stub
               class="mobile-header__nav-link"
               data-testid="test-header-nav-link"
               exact="true"
@@ -27,8 +27,8 @@ exports[`MobileHeader component should render correctly 1`] = `
               
             About
           
-            </routerlink-stub>
-            <routerlink-stub
+            </nuxtlink-stub>
+            <nuxtlink-stub
               class="mobile-header__nav-link"
               data-testid="test-header-nav-link"
               to="/services/"
@@ -36,8 +36,8 @@ exports[`MobileHeader component should render correctly 1`] = `
               
             Services
           
-            </routerlink-stub>
-            <routerlink-stub
+            </nuxtlink-stub>
+            <nuxtlink-stub
               class="mobile-header__nav-link"
               data-testid="test-header-nav-link"
               to="/projects/"
@@ -45,8 +45,8 @@ exports[`MobileHeader component should render correctly 1`] = `
               
             Projects
           
-            </routerlink-stub>
-            <routerlink-stub
+            </nuxtlink-stub>
+            <nuxtlink-stub
               class="mobile-header__nav-link"
               data-testid="test-header-nav-link"
               to="/careers/"
@@ -54,8 +54,8 @@ exports[`MobileHeader component should render correctly 1`] = `
               
             Careers
           
-            </routerlink-stub>
-            <routerlink-stub
+            </nuxtlink-stub>
+            <nuxtlink-stub
               class="mobile-header__nav-link"
               data-testid="test-header-nav-link"
               to="/blog/"
@@ -63,7 +63,7 @@ exports[`MobileHeader component should render correctly 1`] = `
               
             Blog
           
-            </routerlink-stub>
+            </nuxtlink-stub>
           </nav>
            
           <div

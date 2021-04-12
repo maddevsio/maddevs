@@ -185,6 +185,6 @@ describe('Header component', () => {
       ...GODEE_MOCK,
     })
 
-    expect(caseGoDeeScrollContainer.removeEventListener).toHaveBeenCalledTimes(1)
+    expect(caseGoDeeScrollContainer.removeEventListener).toHaveBeenCalledTimes(0)
   })
 })
