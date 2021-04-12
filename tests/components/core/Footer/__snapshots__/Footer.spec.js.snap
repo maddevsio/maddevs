@@ -337,42 +337,42 @@ exports[`Footer component should render correctly 1`] = `
             <div
               class="footer-navbar__nav-list"
             >
-              <a
+              <nuxtlink
                 class="footer-navbar__nav-item"
-                href="/gdpr/"
                 target="_blank"
+                to="/gdpr/"
               >
                 
       GDPR Compliance Commitment
     
-              </a>
-              <a
+              </nuxtlink>
+              <nuxtlink
                 class="footer-navbar__nav-item"
-                href="/nda/"
                 target="_blank"
+                to="/nda/"
               >
                 
       Non-Disclosure Agreement (NDA)
     
-              </a>
-              <a
+              </nuxtlink>
+              <nuxtlink
                 class="footer-navbar__nav-item"
-                href="/privacy/"
                 target="_blank"
+                to="/privacy/"
               >
                 
       Privacy Policy
     
-              </a>
-              <a
+              </nuxtlink>
+              <nuxtlink
                 class="footer-navbar__nav-item"
-                href="/faq/"
                 target="_blank"
+                to="/faq/"
               >
                 
       FAQ
     
-              </a>
+              </nuxtlink>
             </div>
           </div>
         </div>
@@ -394,6 +394,7 @@ exports[`Footer component should render correctly 1`] = `
                    
                   <input
                     class="modal-entry-field entry-field"
+                    data-testid="test-base-form-full-name"
                     placeholder="John Smith"
                     type="text"
                   />
@@ -438,6 +439,7 @@ exports[`Footer component should render correctly 1`] = `
                    
                   <textarea
                     class="modal-entry-field entry-field textarea"
+                    data-testid="test-base-form-description"
                     placeholder="Describe your project..."
                     type="text"
                   />
@@ -686,42 +688,42 @@ exports[`Footer component should render correctly 1`] = `
           <div
             class="footer-navbar-mobile__nav-list"
           >
-            <a
+            <nuxtlink
               class="footer-navbar-mobile__nav-link"
-              href="/gdpr/"
               target="_blank"
+              to="/gdpr/"
             >
               
       GDPR Compliance Commitment
     
-            </a>
-            <a
+            </nuxtlink>
+            <nuxtlink
               class="footer-navbar-mobile__nav-link"
-              href="/nda/"
               target="_blank"
+              to="/nda/"
             >
               
       Non-Disclosure Agreement (NDA)
     
-            </a>
-            <a
+            </nuxtlink>
+            <nuxtlink
               class="footer-navbar-mobile__nav-link"
-              href="/privacy/"
               target="_blank"
+              to="/privacy/"
             >
               
       Privacy Policy
     
-            </a>
-            <a
+            </nuxtlink>
+            <nuxtlink
               class="footer-navbar-mobile__nav-link"
-              href="/faq/"
               target="_blank"
+              to="/faq/"
             >
               
       FAQ
     
-            </a>
+            </nuxtlink>
           </div>
         </div>
       </div>

@@ -14,8 +14,8 @@
                 v-if="post.id === 'banner'"
                 class="banner"
               >
-                <a
-                  :href="post.link.url"
+                <NuxtLink
+                  :to="post.link.url"
                   :target="post.link.target"
                   class="latest-post"
                 >
@@ -23,7 +23,7 @@
                     :src="post.banner.url"
                     :alt="post.id"
                   >
-                </a>
+                </NuxtLink>
               </div>
               <RecommendedBlogWidget
                 v-else
