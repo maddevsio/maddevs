@@ -11,7 +11,7 @@ describe('CareersBanner', () => {
 
   it('should render correctly', () => {
     render(CareersBanner, {
-      stubs: ['nuxt-link', 'NuxtLink'],
+      stubs: ['NuxtLink'],
     })
 
     expect(screen.getByText('Mad Devs\'')).not.toBeNull()

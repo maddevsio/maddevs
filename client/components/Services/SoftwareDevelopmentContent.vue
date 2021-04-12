@@ -2,7 +2,7 @@
   <div class="content-item col-xl-4 col-lg-4">
     <div class="content-item__content-wrapper">
       <div class="content-item__text-content">
-        <client-only>
+        <ClientOnly>
           <UITitle class="content-item__title">
             {{ title }}
           </UITitle>
@@ -19,7 +19,7 @@
           >
             {{ paragraph }}
           </UIParagraph>
-        </client-only>
+        </ClientOnly>
       </div>
       <SoftwareDevelopmentIcons :icons="icons" />
     </div>

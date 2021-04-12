@@ -3,6 +3,7 @@
 > Mad Devs develops enterprise-level custom software solutions & mobile apps for finance, transportation, logistics, security, edtech, cloudtech & advertising industries.
 
 ## Code coverage with tests
+
 ![Coverage statements](client/static/badge-statements.svg) 
 ![Coverage branches](client/static/badge-branches.svg)
 ![Coverage functions](client/static/badge-functions.svg)
@@ -75,6 +76,12 @@ Add a link to the DNS sentry, where the errors will be sent.
 Set current domain
 
 * NODE_DOMAIN
+
+#### Feature Flags envs
+
+Set current environment for feature flags
+
+* FF_ENVIRONMENT
 
 **All of these variables must be added to the Heroku hosting**
 
@@ -255,3 +262,58 @@ npm ERR! command failed
 npm ERR! command sh -c nuxt
 ```
 
+## Feature Flags
+
+We're used feature-flags for display/hide some features on different environments.
+
+### Create flag
+
+For create a new feature flag, you need to open `@/featureFlags/config.js` file and add your flag into config with the following syntax:
+
+```javascript
+export const config = {
+   myFeatureFlag: ['development', 'staging']
+}
+```
+
+The name of your feature flag should be key in the `config`. Environments where your flag should return true should be value of your flag. It's an array of environments. At the moment we have 3 available environments:
+
+* `development` - for local development
+* `staging` - for staging(maddevs.co)
+* `production` - for production(maddevs.io)
+
+### Usage
+
+#### with `<Feature>` component
+
+The better option. You can simple use your feature-flag in the templates using globally registered component. Example:
+
+```javascript
+<Feature flag="myFeatureFlag">
+   Some content
+</Feature>
+```
+
+#### with `featureFlag()` method
+
+Also you can use global method in your template:
+
+```javascript
+<div v-if="featureFlag('myFeatureFlag')">
+   Some content
+</div>
+```
+
+or in the component's code:
+
+```javascript
+   ...
+   methods: {
+      send() {
+         if(featureFlag('myFeatureFlag')) {
+            // ...do something
+         }
+      }
+   }
+   ...
+```

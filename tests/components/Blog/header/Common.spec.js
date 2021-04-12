@@ -12,7 +12,7 @@ describe('header Common', () => {
   it('is a Vue instance', () => {
     const { container, html } = render(Common, {
       props,
-      stubs: ['nuxt-link', 'NuxtLink'],
+      stubs: ['NuxtLink'],
     })
 
     expect(screen.getByText(props.title)).not.toBeNull()
@@ -26,7 +26,7 @@ describe('header Common', () => {
         title: 'some title',
         coverImageUrl: 'some-url.gif',
       },
-      stubs: ['nuxt-link', 'NuxtLink'],
+      stubs: ['NuxtLink'],
     })
 
     expect(html()).not.toContain(IMAGE_JPG_CLASS)

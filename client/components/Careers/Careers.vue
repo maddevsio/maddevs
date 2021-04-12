@@ -272,7 +272,7 @@ export default {
           email: this.email,
           emailTo: process.env.emailHR,
           linkedinProfile: this.linkedin,
-          positionValue: this.grade.type,
+          positionValue: this.grade.value,
           positionTitle: this.position,
           subject: `Job Candidate Application for ${this.position}`,
           modalTitle: 'Mad Devs Website Carrers Form',
