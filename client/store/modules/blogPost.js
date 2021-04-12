@@ -1,6 +1,6 @@
 export default {
   state: () => ({
-    blogPost: {},
+    post: {},
   }),
   mutations: {
     SET_BLOG_POST(state, post) {
@@ -25,7 +25,7 @@ export default {
         if (recommendedPosts.length > 3) recommendedPosts = recommendedPosts.slice(0, 3)
       }
 
-      state.blogPost = {
+      state.post = {
         id: post.id,
         uid: post.uid,
         title: this.$prismic.asText(post.data.title),
@@ -66,7 +66,7 @@ export default {
   },
   getters: {
     blogPost(state) {
-      return state.blogPost
+      return state.post
     },
   },
 }
