@@ -1,57 +1,43 @@
 <template>
   <CommonHeader
-    :title="$prismic.asText(document.title)"
-    :subtitle="$prismic.asText(document.subtitle)"
-    :cover-image-url="document.featured_image.url"
-    :cover-image-alt-text="document.featured_image.alt"
-    :cover-image-width="document.featured_image.dimensions.width"
-    :cover-image-height="document.featured_image.dimensions.height"
+    :title="blogPost.title"
+    :subtitle="blogPost.subtitle"
+    :cover-image-url="blogPost.featuredImage.url"
+    :cover-image-alt-text="blogPost.featuredImage.alt"
+    :cover-image-width="blogPost.featuredImage.dimensions.width"
+    :cover-image-height="blogPost.featuredImage.dimensions.height"
   >
     <template #afterTitle>
       <div class="blog-post__post-info">
-        <PostAuthor :document="document" />
-        <div class="blog-post__date-tag">
-          <div class="blog-post__date">
-            {{ formattedDate }}
-          </div>
-          <div
-            v-if="tags.length"
-            class="blog-post__tag"
-          >
-            {{ tags[0] }}
-          </div>
-        </div>
+        <PostAuthor
+          :author="blogAuthor"
+        />
+        <PostTag
+          v-if="blogPost.tags && blogPost.tags.length"
+          :tag="blogPost.tags[0]"
+          theme="dark"
+        />
       </div>
     </template>
   </CommonHeader>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
+import PostTag from '@/components/Blog/shared/PostTag'
 import CommonHeader from '@/components/Blog/header/Common'
 
 export default {
   name: 'Blog',
   components: {
     PostAuthor,
+    PostTag,
     CommonHeader,
   },
 
-  props: {
-    document: {
-      type: Object,
-      required: true,
-    },
-
-    tags: {
-      type: Array,
-      required: true,
-    },
-
-    formattedDate: {
-      type: String,
-      required: true,
-    },
+  computed: {
+    ...mapGetters(['blogPost', 'blogAuthor']),
   },
 }
 </script>
