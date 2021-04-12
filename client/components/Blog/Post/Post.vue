@@ -250,23 +250,23 @@ export default {
 @import '../../../assets/styles/socialNetworkIcons';
 
 /deep/ h2 {
-  @include title($text-color--black-cases, 32px, -0.04em);
+  @include title($text-color--black-oil, 32px, -0.04em);
 }
 
 /deep/ h3 {
-  @include title($text-color--black-cases, 26px, -0.04em);
+  @include title($text-color--black-oil, 26px, -0.04em);
 }
 
 /deep/ h4 {
-  @include title($text-color--black-cases, 21px, -0.04em);
+  @include title($text-color--black-oil, 21px, -0.04em);
 }
 
 /deep/ h5 {
-  @include title($text-color--black-cases, 17px, -0.04em);
+  @include title($text-color--black-oil, 17px, -0.04em);
 }
 
 /deep/ h6 {
-  @include title($text-color--black-cases, 14px, -0.04em);
+  @include title($text-color--black-oil, 14px, -0.04em);
 }
 
 /deep/ ul {
@@ -362,7 +362,7 @@ export default {
     margin: 25px 0;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    color: $text-color--black-cases;
+    color: $text-color--black-oil;
     font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;
@@ -422,7 +422,7 @@ export default {
   /deep/ .textslice {
     span,
     p {
-      color: $text-color--black-cases;
+      color: $text-color--black-oil;
     }
   }
 

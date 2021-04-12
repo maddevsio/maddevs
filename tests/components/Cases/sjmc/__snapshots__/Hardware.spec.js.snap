@@ -151,28 +151,48 @@ exports[`Hardware component should render correctly 1`] = `
     </section>
      
     <section
-      class="container_full case_sjmc-phone-video-section background-color-black-primary"
+      class="container_full case_sec-container background-color-black-primary"
     >
       <div
-        class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video"
-        data-testid="test-case_sjmc-phone"
+        class="case_default-video"
       >
-        <video
-          height="100%"
-          playsinline=""
-          width="100%"
+        <div
+          class="case_sound-control"
         >
-          <source
-            src="/videos/bluetooth-beacons-video.9ca649c.mp4"
-            type="video/mp4"
+          <div
+            class="case_sound-icon case_sound-icon--sound-off case_sound-icon--sound-off"
           />
-          
-        Your browser does not support the video tag.
-        
-          <img
-            src="/images/Cases/sjmc/png/bluetooth-beacons-video-background.png"
-          />
-        </video>
+           
+          <p
+            class="case_sound-control-desc"
+          >
+            
+      Enable sound to the best expirience
+    
+          </p>
+        </div>
+         
+        <div
+          class="case_video-wrapper case_full-screen-video"
+          data-testid="test-case_sjmc-phone"
+        >
+          <video
+            height="100%"
+            id="iphone-video"
+            loop="loop"
+            muted="muted"
+            playsinline=""
+            width="100%"
+          >
+            <source
+              src="/videos/bluetooth-beacons-video.9ca649c.mp4"
+              type="video/mp4"
+            />
+            
+      Your browser does not support the video tag.
+    
+          </video>
+        </div>
       </div>
     </section>
      
