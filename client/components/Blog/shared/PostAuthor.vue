@@ -1,41 +1,30 @@
 <template>
-  <NuxtLink
-    :tag="authorLinkIsDisabled ? 'span' : 'a'"
-    :event="authorLinkIsDisabled ? '' : 'click'"
-    :to="`/blog/author/${author.uid}`"
-  >
-    <div class="blog-post__author">
-      <img
-        v-if="author.metaImage.url !== undefined"
-        :src="author.metaImage.url"
-        :alt="author.metaImage.alt"
-        class="blog-post__author-image"
-      >
-      <div
-        v-else
-        class="blog-post__none-image"
-      />
-      <div class="blog-post__author-info">
-        <p class="blog-post__author-name">
-          {{ shortTitle }}
-        </p>
-        <div class="blog-post__data-of-creation">
-          <span class="blog-post__author-title">{{ author.position }}</span>
-        </div>
+  <div class="blog-post__author">
+    <img
+      v-if="author.metaImage.url"
+      :src="author.metaImage.url"
+      :alt="author.metaImage.alt"
+      class="blog-post__author-image"
+    >
+    <div
+      v-else
+      class="blog-post__none-image"
+    />
+    <div class="blog-post__author-info">
+      <p class="blog-post__author-name">
+        {{ shortTitle }}
+      </p>
+      <div class="blog-post__data-of-creation">
+        <span class="blog-post__author-title">{{ author.position }}</span>
       </div>
     </div>
-  </NuxtLink>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'PostAuthor',
   props: {
-    authorLinkIsDisabled: {
-      type: Boolean,
-      default: false,
-    },
-
     author: {
       type: Object,
       required: true,
@@ -52,6 +41,7 @@ export default {
 
 <style scoped lang="scss">
 @import '../../../assets/styles/vars';
+
 .blog-post {
   &__author {
     display: flex;

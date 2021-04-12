@@ -5,7 +5,7 @@
     class="embed"
   >
     <PrismicEmbed
-      :field="this.embedFieldData"
+      :field="embedFieldData"
       :class="`embed__${slice.items[0].embed.type}`"
       target="_blank"
     />
