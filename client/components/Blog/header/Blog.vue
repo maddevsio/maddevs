@@ -14,7 +14,7 @@
         />
         <PostTag
           v-if="blogPost.tags && blogPost.tags.length"
-          :tag="blogPost.tags[0]"
+          :tag="blogTag || blogPost.tags[0]"
           theme="dark"
         />
       </div>
@@ -37,7 +37,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogPost', 'blogAuthor']),
+    ...mapGetters(['blogPost', 'blogAuthor', 'blogTag']),
   },
 }
 </script>

@@ -15,8 +15,8 @@
           <PostAuthor :author="author" />
           <div class="featured-post__meta">
             <PostTag
-              v-if="post.tags.length"
-              :tag="post.tags[0]"
+              v-if="post.tags && post.tags.length"
+              :tag="tag || post.tags[0]"
               theme="dark"
             />
             <span class="created-at">{{ formattedDate }}</span>
@@ -58,6 +58,11 @@ export default {
     author: {
       type: Object,
       required: true,
+    },
+
+    tag: {
+      type: String,
+      default: null,
     },
   },
 
