@@ -1,6 +1,6 @@
 <template>
-  <a
-    :href="link"
+  <NuxtLink
+    :to="link"
     :style="{ background: color }"
     :target="isBlank ? '_blank' : '_self'"
     class="single-project"
@@ -66,7 +66,7 @@
         </picture>
       </div>
     </div>
-  </a>
+  </NuxtLink>
 </template>
 
 <script>

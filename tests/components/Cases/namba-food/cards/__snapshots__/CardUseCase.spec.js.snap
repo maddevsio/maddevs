@@ -5,13 +5,13 @@ exports[`CardUseCase component should render correctly 1`] = `
   <div
     class="card-use-case"
   >
-    <client-only-stub>
+    <clientonly-stub>
       <h3
         class="card-use-case__title case_title_h4 card-use-case__undefined-title"
       >
         some-title
       </h3>
-    </client-only-stub>
+    </clientonly-stub>
      
     <div
       class="card-use-case__description-wrapper card-use-case__undefined-description-wrapper"

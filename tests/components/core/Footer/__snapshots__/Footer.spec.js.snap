@@ -1,0 +1,733 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should render correctly 1`] = `
+<div>
+  <footer
+    class="footer "
+    data-testid="test-footer"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="footer__content row"
+      >
+        <div
+          class="footer__left-content col-xl-8 col-lg-7 col-md-6"
+        >
+          <h2
+            class="footer__main-title"
+          >
+            
+          Get In Touch
+        
+          </h2>
+           
+          <div
+            class="footer-contacts"
+          >
+            <div
+              class="footer-contacts__head-content"
+            >
+              <div
+                class="footer-contacts__contact-item"
+              >
+                <p
+                  class="footer-contacts__contact-title"
+                >
+                  
+        Text us:
+      
+                </p>
+                 
+                <a
+                  class="footer-contacts__contact-link footer-contacts__contact-mail"
+                  href="mailto:undefined"
+                >
+                  
+                </a>
+              </div>
+               
+              <div
+                class="footer-contacts__contact-item"
+              >
+                <div
+                  class="footer-contacts__contact-title-wrapper"
+                >
+                  <div
+                    class="footer-contacts__contact-title-flag"
+                  >
+                    <img
+                      alt="United Kingdom"
+                      class="img_lazy"
+                      data-src="[object Object]"
+                      height="14"
+                      width="19"
+                    />
+                  </div>
+                   
+                  <p
+                    class="footer-contacts__contact-title"
+                  >
+                    
+          Call us:
+        
+                  </p>
+                </div>
+                 
+                <a
+                  class="footer-contacts__contact-link footer-contacts__contact-phone-number"
+                  href="tel:+442039848555"
+                >
+                  +44 20 3984 8555
+                </a>
+              </div>
+            </div>
+             
+            <div
+              class="footer-contacts__lists-wrapper"
+            >
+              <ul
+                class="footer-contacts__messengers-list"
+              >
+                <li>
+                  <a
+                    class="footer-contacts__messenger-item-wrapper"
+                    href="https://facebook.com/maddevsllc"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Messenger"
+                      class="img_lazy"
+                      data-src="[object Object]"
+                      height="42"
+                      width="42"
+                    />
+                     
+                    <p
+                      class="footer-contacts__messenger-name"
+                    >
+                      Messenger
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="footer-contacts__messenger-item-wrapper"
+                    href="https://wa.me/message/KPJAW6J7BF7EK1"
+                    target="_blank"
+                  >
+                    <img
+                      alt="WhatsApp"
+                      class="img_lazy"
+                      data-src="[object Object]"
+                      height="42"
+                      width="42"
+                    />
+                     
+                    <p
+                      class="footer-contacts__messenger-name"
+                    >
+                      WhatsApp
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="footer-contacts__messenger-item-wrapper"
+                    href="https://t.me/MadDevs_io"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Telegram"
+                      class="img_lazy"
+                      data-src="[object Object]"
+                      height="42"
+                      width="42"
+                    />
+                     
+                    <p
+                      class="footer-contacts__messenger-name"
+                    >
+                      Telegram
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="footer-contacts__messenger-item-wrapper"
+                    href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
+                    target="_blank"
+                  >
+                    <img
+                      alt="WeChat"
+                      class="img_lazy"
+                      data-src="[object Object]"
+                      height="42"
+                      width="42"
+                    />
+                     
+                    <p
+                      class="footer-contacts__messenger-name"
+                    >
+                      WeChat
+                    </p>
+                  </a>
+                </li>
+              </ul>
+               
+              <div
+                class="footer-contacts__social-network-list-desktop"
+              >
+                <ul
+                  class="footerSocialNetworkList"
+                >
+                  <li
+                    class="footerSocialNetworkList__social-network-link-wrapper"
+                  >
+                    <a
+                      class="footerSocialNetworkList__social-network-link"
+                      href="https://github.com/maddevsio"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Github"
+                        class="img_lazy"
+                        data-src="[object Object]"
+                        height="42"
+                        width="42"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="footerSocialNetworkList__social-network-link-wrapper"
+                  >
+                    <a
+                      class="footerSocialNetworkList__social-network-link"
+                      href="https://www.facebook.com/maddevsllc"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Facebook"
+                        class="img_lazy"
+                        data-src="[object Object]"
+                        height="42"
+                        width="42"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="footerSocialNetworkList__social-network-link-wrapper"
+                  >
+                    <a
+                      class="footerSocialNetworkList__social-network-link"
+                      href="https://twitter.com/MadDevsIO"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Twitter"
+                        class="img_lazy"
+                        data-src="[object Object]"
+                        height="42"
+                        width="42"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="footerSocialNetworkList__social-network-link-wrapper"
+                  >
+                    <a
+                      class="footerSocialNetworkList__social-network-link"
+                      href="https://www.linkedin.com/company/mad-devs"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Linkedin"
+                        class="img_lazy"
+                        data-src="[object Object]"
+                        height="42"
+                        width="42"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="footerSocialNetworkList__social-network-link-wrapper"
+                  >
+                    <a
+                      class="footerSocialNetworkList__social-network-link"
+                      href="https://www.instagram.com/maddevsio"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Instagram"
+                        class="img_lazy"
+                        data-src="[object Object]"
+                        height="42"
+                        width="42"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="footerSocialNetworkList__social-network-link-wrapper"
+                  >
+                    <a
+                      class="footerSocialNetworkList__social-network-link"
+                      href="https://medium.com/maddevs-io"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Medium"
+                        class="img_lazy"
+                        data-src="[object Object]"
+                        height="42"
+                        width="42"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="footerSocialNetworkList__social-network-link-wrapper"
+                  >
+                    <a
+                      class="footerSocialNetworkList__social-network-link"
+                      href="https://www.behance.net/maddevs"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Behance"
+                        class="img_lazy"
+                        data-src="[object Object]"
+                        height="42"
+                        width="42"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="footerSocialNetworkList__social-network-link-wrapper"
+                  >
+                    <a
+                      class="footerSocialNetworkList__social-network-link"
+                      href="https://dev.to/maddevs"
+                      target="_blank"
+                    >
+                      <img
+                        alt="DEV"
+                        class="img_lazy"
+                        data-src="[object Object]"
+                        height="42"
+                        width="42"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+           
+          <div
+            class="footer-navbar footer__navbar-desktop"
+          >
+            <p
+              class="footer-navbar__company-name"
+            >
+              
+    © Mad Devs - 2021
+  
+            </p>
+             
+            <div
+              class="footer-navbar__nav-list"
+            >
+              <nuxtlink
+                class="footer-navbar__nav-item"
+                target="_blank"
+                to="/gdpr/"
+              >
+                
+      GDPR Compliance Commitment
+    
+              </nuxtlink>
+              <nuxtlink
+                class="footer-navbar__nav-item"
+                target="_blank"
+                to="/nda/"
+              >
+                
+      Non-Disclosure Agreement (NDA)
+    
+              </nuxtlink>
+              <nuxtlink
+                class="footer-navbar__nav-item"
+                target="_blank"
+                to="/privacy/"
+              >
+                
+      Privacy Policy
+    
+              </nuxtlink>
+              <nuxtlink
+                class="footer-navbar__nav-item"
+                target="_blank"
+                to="/faq/"
+              >
+                
+      FAQ
+    
+              </nuxtlink>
+            </div>
+          </div>
+        </div>
+         
+        <div
+          class="footer__form-wrap col-xl-4 col-lg-5 col-md-5"
+        >
+          <section>
+            <div
+              class="form footer-form"
+            >
+              <div
+                class="fields-list"
+              >
+                <div
+                  class="modal-field-item field-item"
+                >
+                  <!---->
+                   
+                  <input
+                    class="modal-entry-field entry-field"
+                    data-testid="test-base-form-full-name"
+                    placeholder="John Smith"
+                    type="text"
+                  />
+                   
+                  <!---->
+                </div>
+                 
+                <!---->
+                 
+                <div
+                  class="modal-field-item field-item"
+                >
+                  <!---->
+                   
+                  <div
+                    style="position: relative;"
+                  >
+                    <input
+                      class="modal-entry-field entry-field"
+                      type="text"
+                    />
+                    <div
+                      class="v-placeholder-asterisk"
+                      style="pointer-events: none; position: absolute; top: 0px; left: 0px; display: flex; align-items: center;"
+                    >
+                      <span />
+                      <div
+                        style="color: red; margin-left: 3px;"
+                      />
+                    </div>
+                  </div>
+                   
+                  <!---->
+                </div>
+                 
+                <!---->
+                 
+                <div
+                  class="modal-field-item field-item"
+                >
+                  <!---->
+                   
+                  <textarea
+                    class="modal-entry-field entry-field textarea"
+                    data-testid="test-base-form-description"
+                    placeholder="Describe your project..."
+                    type="text"
+                  />
+                   
+                  <!---->
+                </div>
+                 
+              </div>
+               
+              <div
+                class="form-checkboxes"
+              >
+                <label
+                  class="form-checkbox-label required"
+                  for="privacy-policy-footer-form"
+                >
+                  I confirm that I have read and accepted
+    
+                  <div>
+                    Mad Devs’
+                  </div>
+                   
+                  <a
+                    href="/privacy/"
+                    target="_blank"
+                  >
+                    Privacy Policy
+                  </a>
+                   
+                  <input
+                    class="form-checkbox-input"
+                    data-testid="test-privacy-policy-checkbox-input"
+                    id="privacy-policy-footer-form"
+                    name="Privacy policy"
+                    type="checkbox"
+                  />
+                   
+                  <div
+                    class="checkmark"
+                  />
+                </label>
+                 
+                <label
+                  class="form-checkbox-label"
+                  for="marketing-communications-footer-form"
+                >
+                  I agree to get
+    
+                  <div>
+                    Mad Devs’
+                  </div>
+                  
+    discount offers and other marketing communications.
+    
+                  <input
+                    class="form-checkbox-input"
+                    data-testid="test-form-checkbox-input"
+                    id="marketing-communications-footer-form"
+                    name="Marketing communications"
+                    type="checkbox"
+                  />
+                   
+                  <div
+                    class="checkmark"
+                  />
+                </label>
+              </div>
+               
+              <button
+                class="ui-button ui-button--disabled ui-button--transparent-bgc submit-button"
+              >
+                
+    Order a project now
+  
+              </button>
+            </div>
+             
+            <transition-stub
+              name="fade"
+            >
+              <!---->
+            </transition-stub>
+          </section>
+        </div>
+      </div>
+       
+      <div
+        class="footer__mobile-content footer__social-network-list-mobile"
+      >
+        <ul
+          class="footerSocialNetworkList"
+        >
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://github.com/maddevsio"
+              target="_blank"
+            >
+              <img
+                alt="Github"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://www.facebook.com/maddevsllc"
+              target="_blank"
+            >
+              <img
+                alt="Facebook"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://twitter.com/MadDevsIO"
+              target="_blank"
+            >
+              <img
+                alt="Twitter"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://www.linkedin.com/company/mad-devs"
+              target="_blank"
+            >
+              <img
+                alt="Linkedin"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://www.instagram.com/maddevsio"
+              target="_blank"
+            >
+              <img
+                alt="Instagram"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://medium.com/maddevs-io"
+              target="_blank"
+            >
+              <img
+                alt="Medium"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://www.behance.net/maddevs"
+              target="_blank"
+            >
+              <img
+                alt="Behance"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://dev.to/maddevs"
+              target="_blank"
+            >
+              <img
+                alt="DEV"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+       
+      <div
+        class="footer__mobile-content"
+      >
+        <div
+          class="footer-navbar-mobile"
+        >
+          <p
+            class="footer-navbar-mobile__company-name"
+          >
+            
+    © Mad Devs - 2021
+  
+          </p>
+           
+          <div
+            class="footer-navbar-mobile__nav-list"
+          >
+            <nuxtlink
+              class="footer-navbar-mobile__nav-link"
+              target="_blank"
+              to="/gdpr/"
+            >
+              
+      GDPR Compliance Commitment
+    
+            </nuxtlink>
+            <nuxtlink
+              class="footer-navbar-mobile__nav-link"
+              target="_blank"
+              to="/nda/"
+            >
+              
+      Non-Disclosure Agreement (NDA)
+    
+            </nuxtlink>
+            <nuxtlink
+              class="footer-navbar-mobile__nav-link"
+              target="_blank"
+              to="/privacy/"
+            >
+              
+      Privacy Policy
+    
+            </nuxtlink>
+            <nuxtlink
+              class="footer-navbar-mobile__nav-link"
+              target="_blank"
+              to="/faq/"
+            >
+              
+      FAQ
+    
+            </nuxtlink>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

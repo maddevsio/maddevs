@@ -13,7 +13,7 @@ const props = {
 describe('SoftwareDevelopmentIcons component', () => {
   it('should render correctly', () => {
     const { container } = render(SoftwareDevelopmentIcons, {
-      stubs: ['client-only'],
+      stubs: ['ClientOnly'],
     })
 
     expect(container).toMatchSnapshot()
@@ -22,7 +22,7 @@ describe('SoftwareDevelopmentIcons component', () => {
   it('should render correctly with icons array', () => {
     const { html } = render(SoftwareDevelopmentIcons, {
       props,
-      stubs: ['client-only'],
+      stubs: ['ClientOnly'],
     })
 
     expect(html()).toContain(props.icons[0].className)

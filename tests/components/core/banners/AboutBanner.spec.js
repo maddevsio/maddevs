@@ -10,7 +10,7 @@ describe('AboutBanner', () => {
 
   it('should render correctly', () => {
     const { container } = render(AboutBanner, {
-      stubs: ['nuxt-link', 'NuxtLink'],
+      stubs: ['NuxtLink'],
     })
 
     expect(screen.getByText('Mad Devs')).not.toBeNull()

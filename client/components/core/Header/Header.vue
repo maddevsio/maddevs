@@ -2,6 +2,7 @@
   <div
     id="header"
     class="header-wrapper"
+    data-testid="test-header-wrapper"
     :class="{ 'is-transparent-bg': isTransparentBG }"
   >
     <div
@@ -10,6 +11,7 @@
     />
     <header
       ref="header"
+      data-testid="test-header"
       :class="{ transparent: isCasePage && !isActiveMobileMenu }"
       class="header"
     >
@@ -36,6 +38,7 @@
                 :key="link"
                 :exact="exact"
                 class="header__navigation-link"
+                data-testid="test-navigation-link"
                 :to="link"
                 @click.native="goToTopPage"
               >
@@ -45,11 +48,13 @@
             <!-- Burget btn -->
             <div
               class="header__burger"
+              data-testid="test-burger"
               @click="toggleMobileMenu"
             >
               <svg
                 v-if="isActiveMobileMenu"
                 class="header__burger--close"
+                data-testid="test-burger--close"
                 width="20"
                 height="20"
                 viewBox="0 0 20 20"
@@ -186,11 +191,11 @@ export default {
     },
 
     enablePageScroll() {
-      const scrollY = document.body.style.top
+      const scrollY = document.body.style.top || '0'
       document.body.removeEventListener('touchmove', this.preventDefault)
       document.body.classList.remove('scrollDisabled')
       document.documentElement.classList.remove('scrollDisabled')
-      window.scrollTo(0, parseInt(scrollY || '0', 10) * -1)
+      window.scrollTo(0, parseInt(scrollY, 10) * -1)
     },
 
     disablePageScroll() {
@@ -259,7 +264,7 @@ export default {
 
       if (!area) return
 
-      const areaHeight = (area.offsetTop + area.offsetHeight) - this.$refs.overlay.offsetHeight
+      const areaHeight = (area.offsetTop + area.offsetHeight) - (this.$refs.overlay && this.$refs.overlay.offsetHeight)
       // const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
       const isBeforeBottomPointSection = scrollTop <= areaHeight // Before Bottom point of the section
 

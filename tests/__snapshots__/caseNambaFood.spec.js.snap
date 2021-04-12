@@ -398,7 +398,7 @@ exports[`namba food renders correctly 1`] = `
           <div
             class="card-use-case"
           >
-            <client-only-stub>
+            <clientonly-stub>
               <h3
                 class="card-use-case__title case_title_h4 card-use-case__red-card-title"
               >
@@ -406,7 +406,7 @@ exports[`namba food renders correctly 1`] = `
                 <br />
                  application
               </h3>
-            </client-only-stub>
+            </clientonly-stub>
              
             <div
               class="card-use-case__description-wrapper card-use-case__red-card-description-wrapper"
@@ -473,7 +473,7 @@ exports[`namba food renders correctly 1`] = `
           <div
             class="card-use-case"
           >
-            <client-only-stub>
+            <clientonly-stub>
               <h3
                 class="card-use-case__title case_title_h4 card-use-case__black-card-title"
               >
@@ -481,7 +481,7 @@ exports[`namba food renders correctly 1`] = `
                 <br />
                  deliverymen
               </h3>
-            </client-only-stub>
+            </clientonly-stub>
              
             <div
               class="card-use-case__description-wrapper card-use-case__black-card-description-wrapper"
@@ -548,13 +548,13 @@ exports[`namba food renders correctly 1`] = `
           <div
             class="card-use-case"
           >
-            <client-only-stub>
+            <clientonly-stub>
               <h3
                 class="card-use-case__title case_title_h4 card-use-case__turquoise-card-title"
               >
                 Unified control system for operators
               </h3>
-            </client-only-stub>
+            </clientonly-stub>
              
             <div
               class="card-use-case__description-wrapper card-use-case__turquoise-card-description-wrapper"
@@ -621,7 +621,7 @@ exports[`namba food renders correctly 1`] = `
           <div
             class="card-use-case"
           >
-            <client-only-stub>
+            <clientonly-stub>
               <h3
                 class="card-use-case__title case_title_h4 card-use-case__white-card-title"
               >
@@ -629,7 +629,7 @@ exports[`namba food renders correctly 1`] = `
                 <br />
                  managers
               </h3>
-            </client-only-stub>
+            </clientonly-stub>
              
             <div
               class="card-use-case__description-wrapper card-use-case__white-card-description-wrapper"
@@ -2519,14 +2519,14 @@ exports[`namba food renders correctly 1`] = `
     Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision
     and understanding of its target audience, we were able to
     
-        <nuxt-link-stub
+        <nuxtlink-stub
           class="case_link"
           to="/services#software-development"
         >
           
       build a product
     
-        </nuxt-link-stub>
+        </nuxtlink-stub>
          that truly solves
     this customer’s problems. The year-over-year growth rate is hugely impressive.
   
@@ -2867,12 +2867,14 @@ exports[`namba food renders correctly 1`] = `
   
     </h2>
      
-    <a
+    <nuxtlink-stub
       class="case_next-project-button"
-      href="/case-studies/sir-john-monash-centre/"
+      to="/case-studies/sir-john-monash-centre/"
     >
-      Read next project
-    </a>
+      
+    Read next project
+  
+    </nuxtlink-stub>
   </section>
 </main>
 `;
