@@ -7,7 +7,7 @@ import { mapGetters } from 'vuex'
 import PostView from '@/components/Blog/Post/Post'
 
 export default {
-  name: 'Post',
+  name: 'AuthorPost',
   components: {
     PostView,
   },
@@ -20,15 +20,15 @@ export default {
        * https://community.prismic.io/t/when-does-cache-expire-uid-history/874 - about this issue
        */
       if (to.params.uid !== vm.uid && typeof vm.uid === 'string') {
-        next({ path: `/blog/${vm.uid}/` })
+        next({ path: `/blog/tag/${vm.uid}/${vm.postUID}/` })
       }
     })
   },
 
   async asyncData({ store, params, error }) {
-    const openGraphUrl = `${process.env.domain}/blog/${params.uid}/`
+    const openGraphUrl = `${process.env.domain}/blog/tag/${params.uid}/${params.postUID}`
     try {
-      await store.dispatch('getBlogPost', { type: 'post', uid: params.uid })
+      await store.dispatch('getBlogPost', { type: 'post', uid: params.postUID })
       if (store.state.blogPost.post.postAuthor.uid) {
         await store.dispatch('getBlogAuthor', store.state.blogPost.post.postAuthor.uid)
       }

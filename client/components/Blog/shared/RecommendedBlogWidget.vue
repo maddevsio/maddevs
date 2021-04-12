@@ -72,18 +72,17 @@ export default {
 
     author: {
       type: Object,
-      required: true,
+      default: null,
     },
 
     tag: {
       type: String,
-      default: '',
+      default: null,
     },
   },
 
   computed: {
     link() {
-      console.log(linkResolver(this.post))
       return linkResolver(this.post)
     },
 

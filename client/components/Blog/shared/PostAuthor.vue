@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    v-if="author"
+    v-if="author && author.name"
     :to="authorLink"
   >
     <div class="blog-post__author">

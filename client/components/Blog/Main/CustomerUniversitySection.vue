@@ -19,10 +19,7 @@
             <p class="featured-post__text">
               {{ firstParagraph }}
             </p>
-            <PostAuthor
-              v-if="featuredPostAuthor"
-              :author="featuredPostAuthor"
-            />
+            <PostAuthor :author="featuredPostAuthor" />
             <div class="featured-post__cover-wrapper">
               <PrismicImage
                 :field="featured.featured_image"

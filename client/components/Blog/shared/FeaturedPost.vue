@@ -12,10 +12,7 @@
           {{ firstParagraph }}
         </p>
         <div class="featured-post__data d-flex justify-content-between">
-          <PostAuthor
-            v-if="author"
-            :author="author"
-          />
+          <PostAuthor :author="author" />
           <div class="featured-post__meta">
             <PostTag
               v-if="post.tags.length"

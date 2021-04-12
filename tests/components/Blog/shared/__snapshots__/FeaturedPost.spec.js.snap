@@ -37,9 +37,7 @@ exports[`featured post component is a Vue instance 1`] = `
             class="featured-post__meta"
           >
             <nuxtlink-stub
-              event="click"
-              tag="a"
-              to="/blog/category/markup"
+              to="/blog/tag/markup"
             >
               <div
                 class="post-tag dark"
