@@ -378,7 +378,7 @@ exports[`Main component should render correctly 1`] = `
     
           <nuxtlink-stub
             class="case_link"
-            to="/services#software-development"
+            to="/services/#software-development"
           >
             
       develop an MVP

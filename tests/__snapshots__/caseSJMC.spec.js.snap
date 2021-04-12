@@ -193,7 +193,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       
             <nuxtlink-stub
               class="case_link"
-              to="/services#it-consulting"
+              to="/services/#it-consulting"
             >
               
         independent audit

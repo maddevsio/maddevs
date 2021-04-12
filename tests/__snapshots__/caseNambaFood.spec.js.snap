@@ -2521,7 +2521,7 @@ exports[`namba food renders correctly 1`] = `
     
         <nuxtlink-stub
           class="case_link"
-          to="/services#software-development"
+          to="/services/#software-development"
         >
           
       build a product
