@@ -110,6 +110,10 @@ export default {
 
   watch: {
     master() {
+      /*
+        Callback for async fetch() function
+        Add lazy for images in customer university posts after async data rendering on page
+      */
       this.$nextTick(() => initializeLazyLoad())
     },
   },
