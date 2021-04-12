@@ -7,7 +7,7 @@
       <div class="mobile-header__content-wrap">
         <div class="mobile-header__nav-wrap">
           <nav class="mobile-header__header-routes_links">
-            <RouterLink
+            <NuxtLink
               v-for="{ title, link, exact } in navigation"
               :key="link"
               :exact="exact"
@@ -17,7 +17,7 @@
               @click.native="goToPage"
             >
               {{ title }}
-            </RouterLink>
+            </NuxtLink>
           </nav>
           <div class="mobile-header__contacts mobile-header__large-phone-content">
             <div class="mobile-header__contact-item mobile-header__contact-item-email">

@@ -42,7 +42,7 @@ export const preview = [
     background: 'yourcastBackground',
     extension: 'png',
     color: '#221f20',
-    title: 'The Evolution <br /> of Yourcast.TV',
+    title: 'The Evolution <br> of Yourcast.TV',
     description: 'Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.',
     contribution: 'Backend, Infrastructure, Frontend',
     alt: 'Yourcast.TV Logo.',

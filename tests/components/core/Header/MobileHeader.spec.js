@@ -5,7 +5,7 @@ const props = {
   enablePageScroll: jest.fn(),
 }
 
-const stubs = ['RouterLink']
+const stubs = ['NuxtLink']
 
 describe('MobileHeader component', () => {
   it('should render correctly', () => {

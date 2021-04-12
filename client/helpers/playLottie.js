@@ -7,5 +7,6 @@ export default function playLottie(animation, lottieId) {
     threshold: 0.6,
   })
 
-  observer.observe(document.getElementById(lottieId))
+  const element = document.getElementById(lottieId)
+  if (element) observer.observe(element)
 }
