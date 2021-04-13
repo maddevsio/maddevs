@@ -2,13 +2,13 @@
   <div class="case_default-video">
     <div
       class="case_sound-control"
+      data-testid="test-case_sound-control"
       @click="toggleSound"
     >
       <div class="case_sound-icon-wrap">
         <div class="case_lottie">
           <Lottie
             id="sound-icon"
-            data-testid="test-case_video"
             :options="options"
             @animCreated="animCreatedHandler"
           />
@@ -22,6 +22,7 @@
       <video
         id="iphone-video"
         ref="video"
+        data-testid="test-case_video"
         width="100%"
         height="100%"
         muted
