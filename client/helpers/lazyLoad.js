@@ -14,7 +14,7 @@ function initializeLazyLoad() {
   const images = Array.from(document.querySelectorAll('img.img_lazy'))
 
   const options = {
-    threshold: 1,
+    threshold: 0.1,
   }
 
   if ('IntersectionObserver' in window) {

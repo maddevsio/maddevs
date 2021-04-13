@@ -22,7 +22,7 @@ export default {
   display: flex;
   position: relative;
   padding-left: 62px;
-  @include default_text($text-color--black-cases, 30px, 166%, -0.02em, normal);
+  @include default_text($text-color--black-oil, 30px, 166%, -0.02em, normal);
 
   &-mark {
     content: '';
@@ -36,7 +36,7 @@ export default {
 
   @media screen and (max-width: 768px) {
     padding-left: 37px;
-    @include default_text($text-color--black-cases, 24px, 150%, -0.02em, normal);
+    @include default_text($text-color--black-oil, 24px, 150%, -0.02em, normal);
 
     &-mark {
       width: 32px;

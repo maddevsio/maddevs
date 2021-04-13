@@ -70,27 +70,9 @@
         available content nearby challenging.
       </TextParagraph>
     </section>
-    <section class="container_full video-section background-color-black-primary">
-      <div
-        ref="videoWrap"
-        class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video"
-        data-testid="test-case_sjmc-phone"
-        @click="videoSetState"
-      >
-        <video
-          ref="video"
-          width="100%"
-          height="100%"
-          playsinline
-        >
-          <source
-            :src="getMediaFromS3('/videos/bluetooth-beacons-video.9ca649c.mp4')"
-            type="video/mp4"
-          >
-          Your browser does not support the video tag.
-          <img :src="getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')">
-        </video>
-      </div>
+    <section class="container_full case_sec-container background-color-black-primary">
+      <HardwareVideoOnlyIos v-if="isIphone" />
+      <HardwareVideo v-else />
     </section>
     <section class="container_regular">
       <p class="case_image-description m-34_top media-m-24_top">
@@ -121,40 +103,32 @@
 <script>
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import Picture from '@/components/Cases/shared/Picture'
+import HardwareVideo from '@/components/Cases/sjmc/HardwareVideo'
+import HardwareVideoOnlyIos from '@/components/Cases/sjmc/HardwareVideoOnlyIos'
+import isIphoneMixin from '@/mixins/isIphoneMixin'
 
 export default {
   name: 'Hardware',
   components: {
     TextParagraph,
     Picture,
+    HardwareVideo,
+    HardwareVideoOnlyIos,
   },
 
-  mounted() {
-    this.$refs.video.onended = () => {
-      this.showIcon = true
-    }
-  },
-
-  methods: {
-    videoSetState() {
-      if (this.$refs.video.paused) {
-        this.$refs.video.play()
-        this.$refs.videoWrap.classList.remove('case_sjmc-phone-video-wrapper--on-pause')
-      } else {
-        this.$refs.video.pause()
-        this.$refs.videoWrap.classList.add('case_sjmc-phone-video-wrapper--on-pause')
-      }
-    },
-  },
+  mixins: [isIphoneMixin],
 }
 </script>
 
 <style lang="scss" scoped>
-.video-section {
-  position: relative;
-  padding: 60px 0;
-  @media screen and (max-width: 768px) {
-    padding: 50px 0;
+  .case {
+    &_sec-container {
+      position: relative;
+      padding: 60px 0;
+
+      @media screen and (max-width: 768px) {
+        padding: 50px 0;
+      }
+    }
   }
-}
 </style>

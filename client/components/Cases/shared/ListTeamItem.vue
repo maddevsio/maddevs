@@ -77,11 +77,11 @@ export default {
   }
 
   &__name {
-    @include default_text($text-color--black-cases, 18px, 22px, -0.035em, 600);
+    @include default_text($text-color--black-oil, 18px, 22px, -0.035em, 600);
   }
 
   &__position {
-    @include default_text($text-color--grey-team-list, 13px, 20px, -0.02em, normal);
+    @include default_text($text-color--grey-opacity-40-percent, 13px, 20px, -0.02em, normal);
   }
 
   &__image {
@@ -101,7 +101,7 @@ export default {
     }
 
     &__name {
-      @include default_text($text-color--black-cases, 14px, 16px, -0.035em, 600);
+      @include default_text($text-color--black-oil, 14px, 16px, -0.035em, 600);
     }
 
     &__position {

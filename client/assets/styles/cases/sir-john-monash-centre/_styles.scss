@@ -44,54 +44,6 @@
     max-width: 1440px;
   }
 
-  &_sjmc-phone-video-wrapper {
-    width: 23%;
-    max-width: 340px;
-    min-width: 225px;
-    position: relative;
-    cursor: pointer;
-
-    &_fallback {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 0;
-    }
-
-    video {
-      position: relative;
-      z-index: 1;
-    }
-
-    &--on-pause {
-      &::after {
-        content: '';
-        width: 8vw;
-        height: 8vw;
-        max-width: 110px;
-        max-height: 110px;
-        min-width: 80px;
-        min-height: 80px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        // @include play-button-white;
-      }
-    }
-
-    @media screen and (max-width: 360px) {
-      min-width: 280px;
-    }
-  }
-
   &_mobile-break {
     display: none;
   }

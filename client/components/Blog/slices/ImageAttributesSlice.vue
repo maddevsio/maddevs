@@ -7,20 +7,22 @@
           :target="target"
           class="block-img"
         >
-          <PrismicImage
-            :field="img"
-            :title="$prismic.asText(title)"
-          />
+          <img
+            class="img_lazy"
+            :data-src="img.url"
+            :alt="img.alt"
+          >
         </a>
       </div>
     </template>
     <template v-else>
       <div class="post-part single">
         <div class="block-img">
-          <PrismicImage
-            :field="img"
-            :title="$prismic.asText(title)"
-          />
+          <img
+            class="img_lazy"
+            :data-src="img.url"
+            :alt="img.alt"
+          >
         </div>
       </div>
     </template>

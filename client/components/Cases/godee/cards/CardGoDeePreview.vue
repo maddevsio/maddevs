@@ -129,7 +129,7 @@ export default {
   }
 
   &_description {
-    color: $text-color--grey-team-list;
+    color: $text-color--grey-opacity-40-percent;
   }
 
   &_image-wrapper {

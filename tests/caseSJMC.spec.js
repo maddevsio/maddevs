@@ -1,5 +1,6 @@
 import { mount } from '@vue/test-utils'
 import SirJohnMonashCentre from '../client/pages/case-studies/sir-john-monash-centre'
+import './__mocks__/intersectionObserverMock'
 
 global.document.exitFullscreen = () => {}
 
