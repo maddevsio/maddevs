@@ -1,0 +1,3192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About page should render correctly 1`] = `
+<div>
+  <main
+    class="main"
+  >
+    <div
+      class="banner-container"
+    >
+      <div
+        class="banner-content"
+      >
+        <div
+          class="text-content_wrapper container"
+        >
+          <div
+            class="main-title-wrapper col-xxl-7 col-xl-7 col-lg-7"
+          >
+            <h1
+              class="banner-main_title"
+            >
+              <span
+                class="main-title-black_part"
+              >
+                Mad Devs
+              </span>
+               
+              <span
+                class="main-title-white_part"
+              >
+                <br />
+                Engineering
+                <br />
+                Your Growth
+              </span>
+            </h1>
+          </div>
+           
+          <div
+            class="icon-item col-xxl-4 col-xl-5 col-lg-5"
+          >
+            <div
+              class="animation-img-wrap"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <div
+        class="navigation-wrap container navigation-wrap-"
+      >
+        <nav
+          class="navigation-list navigation-list-"
+        >
+          <nuxtlink-stub
+            class="navigation-item"
+            to="services/#remote-tech-staff"
+          >
+            
+      Remote Tech Staff
+    
+          </nuxtlink-stub>
+          <nuxtlink-stub
+            class="navigation-item"
+            to="services/#software-development"
+          >
+            
+      Software Development
+    
+          </nuxtlink-stub>
+          <nuxtlink-stub
+            class="navigation-item"
+            to="services/#infrastructure-optimisation"
+          >
+            
+      Infrastructure Optimization
+    
+          </nuxtlink-stub>
+          <nuxtlink-stub
+            class="navigation-item"
+            to="services/#it-consulting"
+          >
+            
+      IT Consulting
+    
+          </nuxtlink-stub>
+           
+        </nav>
+      </div>
+    </div>
+     
+    <section
+      class="weCreateItProject"
+      data-testid="test-weCreateItProject"
+      id="weCreateItProject"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="weCreateItProject__content-wrapper"
+        >
+          <h2
+            class="weCreateItProject__main-title"
+          >
+            
+        We create 
+            <br />
+            
+        IT projects for:
+      
+          </h2>
+           
+          <div
+            class="weCreateItProject__projects-type_list row gy-0"
+          >
+            <div
+              class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            >
+              <p
+                class="weCreateItProject__paragraph"
+              >
+                
+            Content Streaming
+            
+                <br />
+                
+            Transportation
+          
+              </p>
+            </div>
+            <div
+              class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            >
+              <p
+                class="weCreateItProject__paragraph"
+              >
+                
+            HealthTech
+            
+                <br />
+                
+            IoTs
+          
+              </p>
+            </div>
+            <div
+              class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            >
+              <p
+                class="weCreateItProject__paragraph"
+              >
+                
+            E-Commerce
+            
+                <br />
+                
+            AdTech
+          
+              </p>
+            </div>
+            <div
+              class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            >
+              <p
+                class="weCreateItProject__paragraph"
+              >
+                
+            E-Learning
+            
+                <br />
+                
+            FinTech
+          
+              </p>
+            </div>
+            <div
+              class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            >
+              <p
+                class="weCreateItProject__paragraph"
+              >
+                
+            Serverless
+            
+                <br />
+                
+            BYOD
+          
+              </p>
+            </div>
+            <div
+              class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            >
+              <p
+                class="weCreateItProject__paragraph"
+              >
+                
+            Blockchain
+            
+                <br />
+                
+            FoodTech
+          
+              </p>
+            </div>
+          </div>
+           
+          <ul
+            class="weCreateItProject__flags-list"
+          >
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="usa"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="australia"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="vietnam"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="france"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="uk"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="indonesia"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="germany"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="austria"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="switzerland"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="canada"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="latvia"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="kazakhstan"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="sweden"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="finland"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="uae"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="denmark"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="japan"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="norway"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="portugal"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="katar"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="south_africa"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+            <li
+              class="weCreateItProject__flag-item"
+            >
+              <img
+                alt="netherlands"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="32"
+                width="32"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+     
+    <section
+      class="technologies-and_tools"
+      id="technologies-and-tools"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="technologies-and_tools__content-wrap"
+        >
+          <h2
+            class="technologies-and_tools__main-title"
+          >
+            
+        Technologies 
+            <span>
+              &
+            </span>
+             
+            <span>
+              Tools
+            </span>
+          </h2>
+           
+          <div
+            class="tech_legend tech_legend-"
+          >
+            <div
+              class="tech_legend__item legend-devops"
+              data-testid="test-tech_legend__item"
+            >
+              
+          DevOps
+        
+            </div>
+            <div
+              class="tech_legend__item legend-qa"
+              data-testid="test-tech_legend__item"
+            >
+              
+          QA
+        
+            </div>
+            <div
+              class="tech_legend__item legend-backend"
+              data-testid="test-tech_legend__item"
+            >
+              
+          Backend
+        
+            </div>
+            <div
+              class="tech_legend__item legend-frontend"
+              data-testid="test-tech_legend__item"
+            >
+              
+          Frontend
+        
+            </div>
+            <div
+              class="tech_legend__item legend-mobile"
+              data-testid="test-tech_legend__item"
+            >
+              
+          Mobile
+        
+            </div>
+            <div
+              class="tech_legend__item legend-pm"
+              data-testid="test-tech_legend__item"
+            >
+              
+          PM
+        
+            </div>
+            <div
+              class="tech_legend__item legend-infrastructure"
+              data-testid="test-tech_legend__item"
+            >
+              
+          Infrastructure
+        
+            </div>
+            <div
+              class="tech_legend__item legend-uiux"
+              data-testid="test-tech_legend__item"
+            >
+              
+          UI/UX
+        
+            </div>
+          </div>
+           
+          <div
+            class="tech_container"
+          >
+            <div
+              class="tech_item devops-ansible devops"
+            >
+              <img
+                alt="Ansible"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Ansible
+              </span>
+            </div>
+            <div
+              class="tech_item devops-terraform devops"
+            >
+              <img
+                alt="Terraform"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Terraform
+              </span>
+            </div>
+            <div
+              class="tech_item devops-cloud-formation devops"
+            >
+              <img
+                alt="CloudFormation"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                CloudFormation
+              </span>
+            </div>
+            <div
+              class="tech_item devops-jenkins devops"
+            >
+              <img
+                alt="Jenkins"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Jenkins
+              </span>
+            </div>
+            <div
+              class="tech_item devops-bamboo devops"
+            >
+              <img
+                alt="Bamboo"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Bamboo
+              </span>
+            </div>
+            <div
+              class="tech_item devops-gitlab devops"
+            >
+              <img
+                alt="GitlabCI"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                GitlabCI
+              </span>
+            </div>
+            <div
+              class="tech_item devops-travis-ci devops"
+            >
+              <img
+                alt="TravisCI"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                TravisCI
+              </span>
+            </div>
+            <div
+              class="tech_item devops-elastic devops"
+            >
+              <img
+                alt="ELK"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                ELK
+              </span>
+            </div>
+            <div
+              class="tech_item devops-circle-ci devops"
+            >
+              <img
+                alt="CircleCI"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                CircleCI
+              </span>
+            </div>
+            <div
+              class="tech_item devops-sentry devops"
+            >
+              <img
+                alt="Sentry"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Sentry
+              </span>
+            </div>
+            <div
+              class="tech_item devops-cloud-watch devops"
+            >
+              <img
+                alt="CloudWatch"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                CloudWatch
+              </span>
+            </div>
+            <div
+              class="tech_item devops-prometheus devops"
+            >
+              <img
+                alt="Prometheus"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Prometheus
+              </span>
+            </div>
+            <div
+              class="tech_item infrastructure-aws infrastructure"
+            >
+              <img
+                alt="AWS"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                AWS
+              </span>
+            </div>
+            <div
+              class="tech_item infrastructure-gcp infrastructure"
+            >
+              <img
+                alt="GCP"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                GCP
+              </span>
+            </div>
+            <div
+              class="tech_item infrastructure-digital-ocean infrastructure"
+            >
+              <img
+                alt="Digital Ocean"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Digital Ocean
+              </span>
+            </div>
+            <div
+              class="tech_item infrastructure-azure infrastructure"
+            >
+              <img
+                alt="Azure"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Azure
+              </span>
+            </div>
+            <div
+              class="tech_item infrastructure-cloud-native infrastructure"
+            >
+              <img
+                alt="CloudNative"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                CloudNative
+              </span>
+            </div>
+            <div
+              class="tech_item infrastructure-heroku infrastructure"
+            >
+              <img
+                alt="Heroku"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Heroku
+              </span>
+            </div>
+            <div
+              class="tech_item infrastructure-netlify infrastructure"
+            >
+              <img
+                alt="Netlify"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Netlify
+              </span>
+            </div>
+            <div
+              class="tech_item infrastructure-cloudflare infrastructure"
+            >
+              <img
+                alt="CloudFlare"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                CloudFlare
+              </span>
+            </div>
+            <div
+              class="tech_item mobile-kotlin mobile"
+            >
+              <img
+                alt="Kotlin"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Kotlin
+              </span>
+            </div>
+            <div
+              class="tech_item mobile-java mobile"
+            >
+              <img
+                alt="Java"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Java
+              </span>
+            </div>
+            <div
+              class="tech_item mobile-obj-c mobile"
+            >
+              <img
+                alt="Objective-C"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Objective-C
+              </span>
+            </div>
+            <div
+              class="tech_item mobile-swift mobile"
+            >
+              <img
+                alt="Swift"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Swift
+              </span>
+            </div>
+            <div
+              class="tech_item mobile-apple mobile"
+            >
+              <img
+                alt="IOS"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                IOS
+              </span>
+            </div>
+            <div
+              class="tech_item mobile-android mobile"
+            >
+              <img
+                alt="Android"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Android
+              </span>
+            </div>
+            <div
+              class="tech_item pm-jira pm"
+            >
+              <img
+                alt="Jira"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Jira
+              </span>
+            </div>
+            <div
+              class="tech_item pm-slack pm"
+            >
+              <img
+                alt="Slack"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Slack
+              </span>
+            </div>
+            <div
+              class="tech_item pm-meet pm"
+            >
+              <img
+                alt="Meet"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Meet
+              </span>
+            </div>
+            <div
+              class="tech_item pm-zoom pm"
+            >
+              <img
+                alt="Zoom"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Zoom
+              </span>
+            </div>
+            <div
+              class="tech_item pm-miro pm"
+            >
+              <img
+                alt="Miro"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Miro
+              </span>
+            </div>
+            <div
+              class="tech_item pm-trello pm"
+            >
+              <img
+                alt="Trello"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Trello
+              </span>
+            </div>
+            <div
+              class="tech_item pm-loom pm"
+            >
+              <img
+                alt="Loom"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Loom
+              </span>
+            </div>
+            <div
+              class="tech_item pm-jira-assistant pm"
+            >
+              <img
+                alt="Jira Assistant"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Jira Assistant
+              </span>
+            </div>
+            <div
+              class="tech_item pm-service-desk pm"
+            >
+              <img
+                alt="Service Desk"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Service Desk
+              </span>
+            </div>
+            <div
+              class="tech_item pm-basecamp pm"
+            >
+              <img
+                alt="Basecamp"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Basecamp
+              </span>
+            </div>
+            <div
+              class="tech_item pm-notion pm"
+            >
+              <img
+                alt="Notion"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Notion
+              </span>
+            </div>
+            <div
+              class="tech_item pm-zapier pm"
+            >
+              <img
+                alt="Zapier"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Zapier
+              </span>
+            </div>
+            <div
+              class="tech_item backend-python backend"
+            >
+              <img
+                alt="Python"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Python
+              </span>
+            </div>
+            <div
+              class="tech_item backend-go backend"
+            >
+              <img
+                alt="Go"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Go
+              </span>
+            </div>
+            <div
+              class="tech_item backend-node backend"
+            >
+              <img
+                alt="Node.js"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Node.js
+              </span>
+            </div>
+            <div
+              class="tech_item backend-js backend"
+            >
+              <img
+                alt="JavaScript"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                JavaScript
+              </span>
+            </div>
+            <div
+              class="tech_item backend-typescript backend"
+            >
+              <img
+                alt="TypeScript"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                TypeScript
+              </span>
+            </div>
+            <div
+              class="tech_item backend-php backend"
+            >
+              <img
+                alt="PHP"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                PHP
+              </span>
+            </div>
+            <div
+              class="tech_item backend-ruby backend"
+            >
+              <img
+                alt="Ruby"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Ruby
+              </span>
+            </div>
+            <div
+              class="tech_item backend-c backend"
+            >
+              <img
+                alt="C"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                C
+              </span>
+            </div>
+            <div
+              class="tech_item backend-c-plus backend"
+            >
+              <img
+                alt="C++"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                C++
+              </span>
+            </div>
+            <div
+              class="tech_item uiux-figma uiux"
+            >
+              <img
+                alt="Figma"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Figma
+              </span>
+            </div>
+            <div
+              class="tech_item uiux-adobe uiux"
+            >
+              <img
+                alt="Adobe Suite"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Adobe Suite
+              </span>
+            </div>
+            <div
+              class="tech_item uiux-sketch uiux"
+            >
+              <img
+                alt="Sketch"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Sketch
+              </span>
+            </div>
+            <div
+              class="tech_item uiux-invision uiux"
+            >
+              <img
+                alt="InVision"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                InVision
+              </span>
+            </div>
+            <div
+              class="tech_item uiux-zeplin uiux"
+            >
+              <img
+                alt="Zeplin"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Zeplin
+              </span>
+            </div>
+            <div
+              class="tech_item uiux-balsamic uiux"
+            >
+              <img
+                alt="Balsamic"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Balsamic
+              </span>
+            </div>
+            <div
+              class="tech_item uiux-principle-app uiux"
+            >
+              <img
+                alt="Principle"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Principle
+              </span>
+            </div>
+            <div
+              class="tech_item frontend-post-css frontend"
+            >
+              <img
+                alt="PostCSS"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                PostCSS
+              </span>
+            </div>
+            <div
+              class="tech_item frontend-typescript frontend"
+            >
+              <img
+                alt="TypeScript"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                TypeScript
+              </span>
+            </div>
+            <div
+              class="tech_item frontend-angular frontend"
+            >
+              <img
+                alt="Angular"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Angular
+              </span>
+            </div>
+            <div
+              class="tech_item frontend-webpack frontend"
+            >
+              <img
+                alt="Webpack"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Webpack
+              </span>
+            </div>
+            <div
+              class="tech_item frontend-next frontend"
+            >
+              <img
+                alt="Next.js"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Next.js
+              </span>
+            </div>
+            <div
+              class="tech_item frontend-nuxt frontend"
+            >
+              <img
+                alt="Nuxt.js"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Nuxt.js
+              </span>
+            </div>
+            <div
+              class="tech_item frontend-js frontend"
+            >
+              <img
+                alt="JavaScript"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                JavaScript
+              </span>
+            </div>
+            <div
+              class="tech_item frontend-react frontend"
+            >
+              <img
+                alt="React"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                React
+              </span>
+            </div>
+            <div
+              class="tech_item frontend-babel frontend"
+            >
+              <img
+                alt="Babel"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Babel
+              </span>
+            </div>
+            <div
+              class="tech_item frontend-vue frontend"
+            >
+              <img
+                alt="Vue"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Vue
+              </span>
+            </div>
+            <div
+              class="tech_item frontend-sass frontend"
+            >
+              <img
+                alt="SASS"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                SASS
+              </span>
+            </div>
+            <div
+              class="tech_item qa-jasmine qa"
+            >
+              <img
+                alt="Jasmine"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Jasmine
+              </span>
+            </div>
+            <div
+              class="tech_item qa-selenoid qa"
+            >
+              <img
+                alt="Selenoid"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Selenoid
+              </span>
+            </div>
+            <div
+              class="tech_item qa-appium qa"
+            >
+              <img
+                alt="Appium"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Appium
+              </span>
+            </div>
+            <div
+              class="tech_item qa-cucumber qa"
+            >
+              <img
+                alt="Cucumber"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Cucumber
+              </span>
+            </div>
+            <div
+              class="tech_item qa-pytest qa"
+            >
+              <img
+                alt="PyTest"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                PyTest
+              </span>
+            </div>
+            <div
+              class="tech_item qa-selenium qa"
+            >
+              <img
+                alt="Selenium"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Selenium
+              </span>
+            </div>
+            <div
+              class="tech_item qa-selenium-grid qa"
+            >
+              <img
+                alt="Selenium Grid"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="26"
+                width="26"
+              />
+               
+              <span>
+                Selenium Grid
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     
+    <section
+      class="case-studies"
+      id="case-studies"
+    >
+      <div
+        class="container"
+      >
+        <div>
+          <h2
+            class="case-studies__main-title case-studies__main-title-index"
+          >
+            
+        Case 
+            <!---->
+            
+        Studies
+      
+          </h2>
+           
+          <!---->
+        </div>
+         
+        <div
+          class="projects"
+        >
+          <a
+            class="single-project"
+            href="/case-studies/namba-food/"
+            style="background: rgb(248, 247, 246);"
+            target="_self"
+          >
+            <div
+              class="single-project__container single-project_black-letters-theme"
+            >
+              <div
+                class="single-project__content-wrap"
+              >
+                <img
+                  alt="Namba Food Contactless Delivery Service\`s Logo."
+                  class="img_lazy single-project__logo"
+                  data-src="[object Object]"
+                  height="41"
+                  width="104"
+                />
+                 
+                <h3
+                  class="single-project__sub-title"
+                >
+                  Contactless Delivery Service
+                </h3>
+                 
+                <p
+                  class="single-project__paragraph paragraph"
+                >
+                  
+        Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.
+      
+                </p>
+                 
+                <div
+                  class="contribution-widget"
+                >
+                  <img
+                    alt="Mad Devs logo"
+                    class="contribution-widget__img img_lazy"
+                    data-src="[object Object]"
+                    height="18"
+                    width="20"
+                  />
+                   
+                  <span
+                    class="contribution-widget__content contribution-widget__content_nambafood"
+                  >
+                    
+          contribution: Backend, Infrastructure, Frontend
+        
+                  </span>
+                </div>
+              </div>
+               
+              <div
+                class="single-project__background single-project__nambafoodBackground"
+              >
+                <picture>
+                  <source
+                    class="multi-image"
+                    data-srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt="Namba Food Contactless Delivery Service\`s Logo."
+                    class="img_lazy"
+                    data-src="[object Object]"
+                    data-srcset="[object Object] 2x"
+                    height="294"
+                    width="610"
+                  />
+                </picture>
+              </div>
+            </div>
+          </a>
+          <a
+            class="single-project"
+            href="/case-studies/sir-john-monash-centre/"
+            style="background: rgb(34, 31, 32);"
+            target="_self"
+          >
+            <div
+              class="single-project__container single-project_white-letters-theme"
+            >
+              <div
+                class="single-project__content-wrap"
+              >
+                <img
+                  alt="General John Monash The Australian War Memorial\`s Logo."
+                  class="img_lazy single-project__logo"
+                  data-src="[object Object]"
+                  height="41"
+                  width="91.5"
+                />
+                 
+                <h3
+                  class="single-project__sub-title"
+                >
+                  Australian National Interpretive Centre
+                </h3>
+                 
+                <p
+                  class="single-project__paragraph paragraph"
+                >
+                  
+        Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.
+      
+                </p>
+                 
+                <div
+                  class="contribution-widget"
+                >
+                  <img
+                    alt="Mad Devs logo"
+                    class="contribution-widget__img img_lazy"
+                    data-src="[object Object]"
+                    height="18"
+                    width="20"
+                  />
+                   
+                  <span
+                    class="contribution-widget__content contribution-widget__content_sjmc"
+                  >
+                    
+          contribution: Backend, Infrastructure, Frontend
+        
+                  </span>
+                </div>
+              </div>
+               
+              <div
+                class="single-project__background single-project__sjmcBackground"
+              >
+                <picture>
+                  <source
+                    class="multi-image"
+                    data-srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt="General John Monash The Australian War Memorial\`s Logo."
+                    class="img_lazy"
+                    data-src="[object Object]"
+                    data-srcset="[object Object] 2x"
+                    height="294"
+                    width="610"
+                  />
+                </picture>
+              </div>
+            </div>
+          </a>
+          <a
+            class="single-project"
+            href="/case-studies/yourcast/"
+            style="background: rgb(34, 31, 32);"
+            target="_self"
+          >
+            <div
+              class="single-project__container single-project_white-letters-theme"
+            >
+              <div
+                class="single-project__content-wrap"
+              >
+                <img
+                  alt="Yourcast.TV Logo."
+                  class="img_lazy single-project__logo"
+                  data-src="[object Object]"
+                  height="41"
+                  width="158"
+                />
+                 
+                <h3
+                  class="single-project__sub-title"
+                >
+                  The Evolution 
+                  <br />
+                   of Yourcast.TV
+                </h3>
+                 
+                <p
+                  class="single-project__paragraph paragraph"
+                >
+                  
+        Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.
+      
+                </p>
+                 
+                <div
+                  class="contribution-widget"
+                >
+                  <img
+                    alt="Mad Devs logo"
+                    class="contribution-widget__img img_lazy"
+                    data-src="[object Object]"
+                    height="18"
+                    width="20"
+                  />
+                   
+                  <span
+                    class="contribution-widget__content contribution-widget__content_yourcast"
+                  >
+                    
+          contribution: Backend, Infrastructure, Frontend
+        
+                  </span>
+                </div>
+              </div>
+               
+              <div
+                class="single-project__background single-project__yourcastBackground"
+              >
+                <picture>
+                  <source
+                    class="multi-image"
+                    data-srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt="Yourcast.TV Logo."
+                    class="img_lazy"
+                    data-src="[object Object]"
+                    data-srcset="[object Object] 2x"
+                    height="294"
+                    width="610"
+                  />
+                </picture>
+              </div>
+            </div>
+          </a>
+          <a
+            class="single-project"
+            href="/case-studies/godee/"
+            style="background: rgb(255, 106, 1);"
+            target="_self"
+          >
+            <div
+              class="single-project__container single-project_black-letters-theme"
+            >
+              <div
+                class="single-project__content-wrap"
+              >
+                <img
+                  alt="GoDee Bus Transportation Services Logo."
+                  class="img_lazy single-project__logo"
+                  data-src="[object Object]"
+                  height="41"
+                  width="121"
+                />
+                 
+                <h3
+                  class="single-project__sub-title"
+                >
+                  Convenient shuttle bus service
+                </h3>
+                 
+                <p
+                  class="single-project__paragraph paragraph"
+                >
+                  
+        Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.
+      
+                </p>
+                 
+                <div
+                  class="contribution-widget"
+                >
+                  <img
+                    alt="Mad Devs logo"
+                    class="contribution-widget__img img_lazy"
+                    data-src="[object Object]"
+                    height="18"
+                    width="20"
+                  />
+                   
+                  <span
+                    class="contribution-widget__content contribution-widget__content_godee"
+                  >
+                    
+          contribution: Backend, Infrastructure, Mobile Apps
+        
+                  </span>
+                </div>
+              </div>
+               
+              <div
+                class="single-project__background single-project__godeeBackground"
+              >
+                <picture>
+                  <source
+                    class="multi-image"
+                    data-srcset="[object Object] ,[object Object] 2x"
+                    type="image/webp"
+                  />
+                   
+                  <img
+                    alt="GoDee Bus Transportation Services Logo."
+                    class="img_lazy"
+                    data-src="[object Object]"
+                    data-srcset="[object Object] 2x"
+                    height="294"
+                    width="610"
+                  />
+                </picture>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+     
+    <section
+      class="quickProjectStart"
+      id="quickProjectStart"
+    >
+      <div
+        class="container"
+      >
+        <h2
+          class="quickProjectStart__main-title"
+        >
+          
+      Quick Project Start
+    
+        </h2>
+         
+        <div
+          class="quickProjectStart__content-list row"
+        >
+          <div
+            class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_contact"
+          >
+            <div
+              class="quickProjectStart__icons-group"
+            >
+              <img
+                alt="contact"
+                class="quickProjectStart__main-icon img_lazy"
+                data-src="[object Object]"
+                height="73"
+                width="52"
+              />
+               
+              <img
+                class="quickProjectStart__arrow-icon img_lazy"
+                data-src="[object Object]"
+              />
+            </div>
+             
+            <div
+              class="quickProjectStart__list-item-text-wrapper"
+            >
+              <h3
+                class="quickProjectStart__title"
+              >
+                
+            contact
+          
+              </h3>
+               
+              <p
+                class="quickProjectStart__description"
+              >
+                
+            Submit your project request or project idea to us.
+          
+              </p>
+            </div>
+          </div>
+          <div
+            class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_analysis"
+          >
+            <div
+              class="quickProjectStart__icons-group"
+            >
+              <img
+                alt="analysis"
+                class="quickProjectStart__main-icon img_lazy"
+                data-src="[object Object]"
+                height="73"
+                width="52"
+              />
+               
+              <img
+                class="quickProjectStart__arrow-icon img_lazy"
+                data-src="[object Object]"
+              />
+            </div>
+             
+            <div
+              class="quickProjectStart__list-item-text-wrapper"
+            >
+              <h3
+                class="quickProjectStart__title"
+              >
+                
+            analysis
+          
+              </h3>
+               
+              <p
+                class="quickProjectStart__description"
+              >
+                
+            We will contact you to clarify your project requirements.
+          
+              </p>
+            </div>
+          </div>
+          <div
+            class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_proposal"
+          >
+            <div
+              class="quickProjectStart__icons-group"
+            >
+              <img
+                alt="proposal"
+                class="quickProjectStart__main-icon img_lazy"
+                data-src="[object Object]"
+                height="73"
+                width="52"
+              />
+               
+              <img
+                class="quickProjectStart__arrow-icon img_lazy"
+                data-src="[object Object]"
+              />
+            </div>
+             
+            <div
+              class="quickProjectStart__list-item-text-wrapper"
+            >
+              <h3
+                class="quickProjectStart__title"
+              >
+                
+            proposal
+          
+              </h3>
+               
+              <p
+                class="quickProjectStart__description"
+              >
+                
+            We will provide you with our free, non-binding bid or a tailored proposal.
+          
+              </p>
+            </div>
+          </div>
+          <div
+            class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_team"
+          >
+            <div
+              class="quickProjectStart__icons-group"
+            >
+              <img
+                alt="team"
+                class="quickProjectStart__main-icon img_lazy"
+                data-src="[object Object]"
+                height="73"
+                width="52"
+              />
+               
+              <img
+                class="quickProjectStart__arrow-icon img_lazy"
+                data-src="[object Object]"
+              />
+            </div>
+             
+            <div
+              class="quickProjectStart__list-item-text-wrapper"
+            >
+              <h3
+                class="quickProjectStart__title"
+              >
+                
+            team
+          
+              </h3>
+               
+              <p
+                class="quickProjectStart__description"
+              >
+                
+            We will assemble and prepare a team for your project.
+          
+              </p>
+            </div>
+          </div>
+          <div
+            class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_start"
+          >
+            <div
+              class="quickProjectStart__icons-group"
+            >
+              <img
+                alt="start"
+                class="quickProjectStart__main-icon img_lazy"
+                data-src="[object Object]"
+                height="73"
+                width="52"
+              />
+               
+              <!---->
+            </div>
+             
+            <div
+              class="quickProjectStart__list-item-text-wrapper"
+            >
+              <h3
+                class="quickProjectStart__title"
+              >
+                
+            start
+          
+              </h3>
+               
+              <p
+                class="quickProjectStart__description"
+              >
+                
+            You will get to know the team and we’ll start the project work.Submit your project request or project idea to us.
+          
+              </p>
+            </div>
+          </div>
+        </div>
+         
+        <button
+          class="ui-button-modal-trigger quickProjectStart__button ui-button-modal-trigger--red"
+        >
+          
+  Submit your project
+
+        </button>
+      </div>
+       
+      <transition-stub
+        mode="out-in"
+        name="main-fade"
+      >
+        <!---->
+      </transition-stub>
+    </section>
+     
+    <section
+      class="customer-testimonials"
+      id="customer-testimonials"
+    >
+      <div
+        class="container"
+      >
+        <h2
+          class="customer-testimonials__title"
+        >
+          
+      Customer Testimonials
+    
+        </h2>
+         
+        <div
+          class="customer-testimonials__content-wrap"
+        >
+          <div
+            class="customer-testimonials__widget-col"
+          >
+            <client-only-stub>
+              <div
+                class="customer-testimonials__widget-wrap"
+              >
+                <div
+                  class="clutch-widget"
+                  data-clutchcompany-id="258762"
+                  data-expandifr="true"
+                  data-height="auto"
+                  data-url="https://widget.clutch.co"
+                  data-widget-type="4"
+                />
+              </div>
+            </client-only-stub>
+          </div>
+           
+          <div
+            class="customer-testimonials__testimonials-list"
+          >
+            <div
+              class="customer-testimonials__testimonials-item"
+            >
+              <blockquote
+                class="customer-testimonials__testimonials-text paragraph-md"
+              >
+                
+            Being a small team without a project manager we have never regretted of the collaboration with Mad Devs. The team shared the product ownership and responsibility for its development.
+          
+              </blockquote>
+               
+              <div
+                class="customer-testimonials__customer-info"
+              >
+                <div
+                  class="customer-testimonials__profile"
+                >
+                  <img
+                    alt="Atif Mahmood - CEO and Founder at Teacherly."
+                    class="customer-testimonials__customer-image img_lazy"
+                    data-src="[object Object]"
+                    height="42"
+                    width="42"
+                  />
+                   
+                  <span
+                    class="customer-testimonials__customer-name paragraph-sm"
+                  >
+                    
+                Atif Mahmood, 
+                    <span>
+                      The UK
+                    </span>
+                  </span>
+                </div>
+                 
+                <div
+                  class="customer-testimonials__project"
+                >
+                  <a
+                    href="https://teacherly.io/"
+                    rel="nofollow"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Atif Mahmood - CEO and Founder at Teacherly."
+                      class="img_lazy single-project__logo customer-testimonials__teacherly"
+                      data-src="[object Object]"
+                      height="31"
+                      width="91"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="customer-testimonials__testimonials-item"
+            >
+              <blockquote
+                class="customer-testimonials__testimonials-text paragraph-md"
+              >
+                
+            We would never had a better deal on the labour market on our own. Buying from Mad Devs was our best way of finding a top-notch DevOps engineer.
+          
+              </blockquote>
+               
+              <div
+                class="customer-testimonials__customer-info"
+              >
+                <div
+                  class="customer-testimonials__profile"
+                >
+                  <img
+                    alt="Daniel Vartanov - CTO at Veeqo.com."
+                    class="customer-testimonials__customer-image img_lazy"
+                    data-src="[object Object]"
+                    height="42"
+                    width="42"
+                  />
+                   
+                  <span
+                    class="customer-testimonials__customer-name paragraph-sm"
+                  >
+                    
+                Daniel Vartanov, 
+                    <span>
+                      The UK
+                    </span>
+                  </span>
+                </div>
+                 
+                <div
+                  class="customer-testimonials__project"
+                >
+                  <a
+                    href="https://veeqo.com/"
+                    rel="nofollow"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Daniel Vartanov - CTO at Veeqo.com."
+                      class="img_lazy single-project__logo customer-testimonials__veeqo"
+                      data-src="[object Object]"
+                      height="31"
+                      width="83"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="customer-testimonials__testimonials-item"
+            >
+              <blockquote
+                class="customer-testimonials__testimonials-text paragraph-md"
+              >
+                
+            I am very happy with Mad Devs services so far. Looking forward to a long and fruitful partnership.
+          
+              </blockquote>
+               
+              <div
+                class="customer-testimonials__customer-info"
+              >
+                <div
+                  class="customer-testimonials__profile"
+                >
+                  <img
+                    alt="Stefan Streichsbier - CEO and Founder at GuardRails.io."
+                    class="customer-testimonials__customer-image img_lazy"
+                    data-src="[object Object]"
+                    height="42"
+                    width="42"
+                  />
+                   
+                  <span
+                    class="customer-testimonials__customer-name paragraph-sm"
+                  >
+                    
+                Stefan Streichsbier, 
+                    <span>
+                      Singapore
+                    </span>
+                  </span>
+                </div>
+                 
+                <div
+                  class="customer-testimonials__project"
+                >
+                  <a
+                    href="https://guardrails.io/"
+                    rel="nofollow"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Stefan Streichsbier - CEO and Founder at GuardRails.io."
+                      class="img_lazy single-project__logo customer-testimonials__guardrails"
+                      data-src="[object Object]"
+                      height="31"
+                      width="160"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     
+    <section
+      class="customer-rates"
+      id="customer-rates"
+    >
+      <div
+        class="container"
+      >
+        <h2
+          class="customer-rates__main-title"
+        >
+          <span>
+            Fantastic
+          </span>
+           
+          <br />
+          
+      customer   
+          <span
+            class="customer-rates__title-icon"
+          >
+            rates:
+          </span>
+        </h2>
+         
+        <div
+          class="customer-rates__top-row row"
+        >
+          <div
+            class="col-xl-4 col-md-4"
+          >
+            <div
+              class="customer-rates__rates-block customer-rates__rates-block-top-row"
+            >
+              <p
+                class="customer-rates__number-item customer-rates__number-item-top-row"
+              >
+                
+            92%
+          
+              </p>
+               
+              <p
+                class="customer-rates__description customer-rates__description-top-row"
+              >
+                
+            recommend us
+            
+                <br
+                  class="customer-rates__line-break"
+                />
+                
+            to others.
+          
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-md-4"
+          >
+            <div
+              class="customer-rates__rates-block customer-rates__rates-block-top-row"
+            >
+              <p
+                class="customer-rates__number-item customer-rates__number-item-top-row"
+              >
+                
+            87%
+          
+              </p>
+               
+              <p
+                class="customer-rates__description customer-rates__description-top-row"
+              >
+                
+            stay with us for
+            
+                <br
+                  class="customer-rates__line-break"
+                />
+                
+            more than 2 years.
+          
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-md-4"
+          >
+            <div
+              class="customer-rates__rates-block customer-rates__rates-block-top-row"
+            >
+              <p
+                class="customer-rates__number-item customer-rates__number-item-top-row"
+              >
+                
+            98%
+          
+              </p>
+               
+              <p
+                class="customer-rates__description customer-rates__description-top-row"
+              >
+                
+            are satisfied with
+            
+                <br
+                  class="customer-rates__line-break"
+                />
+                
+            our pricing.
+          
+              </p>
+            </div>
+          </div>
+        </div>
+         
+        <div
+          class="customer-rates__bottom-row"
+        >
+          <h3
+            class="customer-rates__section-sub-title"
+          >
+            
+        Mad Devs' key metrics:
+      
+          </h3>
+           
+          <div
+            class="row"
+          >
+            <div
+              class="col-xl-2 col-lg-4 col-md-4 col-6"
+            >
+              <div
+                class="customer-rates__rates-block customer-rates__rates-block-bottom-row"
+              >
+                <p
+                  class="customer-rates__number-item customer-rates__number-item-bottom-row"
+                >
+                  
+              10M+
+            
+                </p>
+                 
+                <p
+                  class="customer-rates__description customer-rates__description-bottom-row"
+                >
+                  
+              US dollars raised by 5 customer startups in 2019.
+            
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-4 col-6"
+            >
+              <div
+                class="customer-rates__rates-block customer-rates__rates-block-bottom-row"
+              >
+                <p
+                  class="customer-rates__number-item customer-rates__number-item-bottom-row"
+                >
+                  
+              75%
+            
+                </p>
+                 
+                <p
+                  class="customer-rates__description customer-rates__description-bottom-row"
+                >
+                  
+              of customers are now paying 50% less for IT infrastructure.
+            
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-4 col-6"
+            >
+              <div
+                class="customer-rates__rates-block customer-rates__rates-block-bottom-row"
+              >
+                <p
+                  class="customer-rates__number-item customer-rates__number-item-bottom-row"
+                >
+                  
+              30+
+            
+                </p>
+                 
+                <p
+                  class="customer-rates__description customer-rates__description-bottom-row"
+                >
+                  
+              tech bloggers and conference speakers in our team.
+            
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-4 col-6"
+            >
+              <div
+                class="customer-rates__rates-block customer-rates__rates-block-bottom-row"
+              >
+                <p
+                  class="customer-rates__number-item customer-rates__number-item-bottom-row"
+                >
+                  
+              50+
+            
+                </p>
+                 
+                <p
+                  class="customer-rates__description customer-rates__description-bottom-row"
+                >
+                  
+              projects delivered to customers by our team.
+            
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-4 col-6"
+            >
+              <div
+                class="customer-rates__rates-block customer-rates__rates-block-bottom-row"
+              >
+                <p
+                  class="customer-rates__number-item customer-rates__number-item-bottom-row"
+                >
+                  
+              100+
+            
+                </p>
+                 
+                <p
+                  class="customer-rates__description customer-rates__description-bottom-row"
+                >
+                  
+              staff members work for Mad Devs.
+            
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-4 col-6"
+            >
+              <div
+                class="customer-rates__rates-block customer-rates__rates-block-bottom-row"
+              >
+                <p
+                  class="customer-rates__number-item customer-rates__number-item-bottom-row"
+                >
+                  
+              70+
+            
+                </p>
+                 
+                <p
+                  class="customer-rates__description customer-rates__description-bottom-row"
+                >
+                  
+              open-source projects on GitHub.
+            
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     
+    <section
+      class="meet-our_experts"
+      id="meet-our-experts"
+    >
+      <div
+        class="container"
+      >
+        <h3
+          class="meet-our_experts__main-title"
+        >
+          
+      Meet our experts
+    
+        </h3>
+         
+        <div
+          class="meet-our_experts__experts-list row"
+        >
+          <div
+            class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                data-srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Marat Bediev - Senior DevOps Engineer at Mad Devs Software and Mobile App Development Company."
+                class="multi-image img_lazy"
+                data-src="[object Object]"
+                data-srcset="[object Object] 2x"
+                data-testid="test-multi-image"
+                height="401"
+                width="295"
+              />
+            </picture>
+             
+            <div
+              class="meet-our_experts__expert-bottom_content"
+            >
+              <div
+                class="meet-our_experts__expert-info"
+              >
+                <div
+                  class="meet-our_experts__expert-name"
+                >
+                  
+              Marat Bediev
+            
+                </div>
+                 
+                <div
+                  class="meet-our_experts__expert-position"
+                >
+                  
+              Senior DevOps Engineer
+            
+                </div>
+              </div>
+            </div>
+             
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin-link img_lazy"
+              data-src="[object Object]"
+              height="24"
+              width="24"
+            />
+             
+            <a
+              href="https://www.linkedin.com/in/marat-bediev-a973171b/"
+              rel="nofollow"
+              target="_blank"
+            />
+          </div>
+          <div
+            class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                data-srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Tamara Mun - Delivery Manager at Mad Devs Software and Mobile App Development Company."
+                class="multi-image img_lazy"
+                data-src="[object Object]"
+                data-srcset="[object Object] 2x"
+                data-testid="test-multi-image"
+                height="401"
+                width="295"
+              />
+            </picture>
+             
+            <div
+              class="meet-our_experts__expert-bottom_content"
+            >
+              <div
+                class="meet-our_experts__expert-info"
+              >
+                <div
+                  class="meet-our_experts__expert-name"
+                >
+                  
+              Tamara Mun
+            
+                </div>
+                 
+                <div
+                  class="meet-our_experts__expert-position"
+                >
+                  
+              Delivery Manager
+            
+                </div>
+              </div>
+            </div>
+             
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin-link img_lazy"
+              data-src="[object Object]"
+              height="24"
+              width="24"
+            />
+             
+            <a
+              href="https://www.linkedin.com/in/tamara-mun/"
+              rel="nofollow"
+              target="_blank"
+            />
+          </div>
+          <div
+            class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                data-srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Andrew \\"Сhuck\\" Minkin - CTO and Co-Founder at Mad Devs Software and Mobile App Development Company."
+                class="multi-image img_lazy"
+                data-src="[object Object]"
+                data-srcset="[object Object] 2x"
+                data-testid="test-multi-image"
+                height="401"
+                width="295"
+              />
+            </picture>
+             
+            <div
+              class="meet-our_experts__expert-bottom_content"
+            >
+              <div
+                class="meet-our_experts__expert-info"
+              >
+                <div
+                  class="meet-our_experts__expert-name"
+                >
+                  
+              Andrew "Chuck" Minkin
+            
+                </div>
+                 
+                <div
+                  class="meet-our_experts__expert-position"
+                >
+                  
+              CTO, Co-Founder
+            
+                </div>
+              </div>
+            </div>
+             
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin-link img_lazy"
+              data-src="[object Object]"
+              height="24"
+              width="24"
+            />
+             
+            <a
+              href="https://www.linkedin.com/in/andrew-minkin-700a2523/"
+              rel="nofollow"
+              target="_blank"
+            />
+          </div>
+          <div
+            class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                data-srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Nakylai Taiirova - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
+                class="multi-image img_lazy"
+                data-src="[object Object]"
+                data-srcset="[object Object] 2x"
+                data-testid="test-multi-image"
+                height="401"
+                width="295"
+              />
+            </picture>
+             
+            <div
+              class="meet-our_experts__expert-bottom_content"
+            >
+              <div
+                class="meet-our_experts__expert-info"
+              >
+                <div
+                  class="meet-our_experts__expert-name"
+                >
+                  
+              Nakylai Taiirova
+            
+                </div>
+                 
+                <div
+                  class="meet-our_experts__expert-position"
+                >
+                  
+              Senior Full-Stack Developer
+            
+                </div>
+              </div>
+            </div>
+             
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin-link img_lazy"
+              data-src="[object Object]"
+              height="24"
+              width="24"
+            />
+             
+            <a
+              href="https://www.linkedin.com/in/nakylai-taiirova-28bab859/"
+              rel="nofollow"
+              target="_blank"
+            />
+          </div>
+          <div
+            class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                data-srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Daria Utesheva - Head of HR Department at Mad Devs Software and Mobile App Development Company."
+                class="multi-image img_lazy"
+                data-src="[object Object]"
+                data-srcset="[object Object] 2x"
+                data-testid="test-multi-image"
+                height="401"
+                width="295"
+              />
+            </picture>
+             
+            <div
+              class="meet-our_experts__expert-bottom_content"
+            >
+              <div
+                class="meet-our_experts__expert-info"
+              >
+                <div
+                  class="meet-our_experts__expert-name"
+                >
+                  
+              Daria Utesheva
+            
+                </div>
+                 
+                <div
+                  class="meet-our_experts__expert-position"
+                >
+                  
+              Head of HR Department
+            
+                </div>
+              </div>
+            </div>
+             
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin-link img_lazy"
+              data-src="[object Object]"
+              height="24"
+              width="24"
+            />
+             
+            <a
+              href="https://www.linkedin.com/in/daria-utesheva-47804198/"
+              rel="nofollow"
+              target="_blank"
+            />
+          </div>
+          <div
+            class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                data-srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Nuradil Alymkulov - Senior Full-Stack Developer at Mad Devs Software and Mobile App Development Company."
+                class="multi-image img_lazy"
+                data-src="[object Object]"
+                data-srcset="[object Object] 2x"
+                data-testid="test-multi-image"
+                height="401"
+                width="295"
+              />
+            </picture>
+             
+            <div
+              class="meet-our_experts__expert-bottom_content"
+            >
+              <div
+                class="meet-our_experts__expert-info"
+              >
+                <div
+                  class="meet-our_experts__expert-name"
+                >
+                  
+              Nuradil Alymkulov
+            
+                </div>
+                 
+                <div
+                  class="meet-our_experts__expert-position"
+                >
+                  
+              Senior Full-Stack Developer
+            
+                </div>
+              </div>
+            </div>
+             
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin-link img_lazy"
+              data-src="[object Object]"
+              height="24"
+              width="24"
+            />
+             
+            <a
+              href="https://www.linkedin.com/in/nuradil-alymkulov/"
+              rel="nofollow"
+              target="_blank"
+            />
+          </div>
+          <div
+            class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                data-srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Alice Jang - Project Manager at Mad Devs Software and Mobile App Development Company."
+                class="multi-image img_lazy"
+                data-src="[object Object]"
+                data-srcset="[object Object] 2x"
+                data-testid="test-multi-image"
+                height="401"
+                width="295"
+              />
+            </picture>
+             
+            <div
+              class="meet-our_experts__expert-bottom_content"
+            >
+              <div
+                class="meet-our_experts__expert-info"
+              >
+                <div
+                  class="meet-our_experts__expert-name"
+                >
+                  
+              Alice Jang
+            
+                </div>
+                 
+                <div
+                  class="meet-our_experts__expert-position"
+                >
+                  
+              Project Manager
+            
+                </div>
+              </div>
+            </div>
+             
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin-link img_lazy"
+              data-src="[object Object]"
+              height="24"
+              width="24"
+            />
+             
+            <a
+              href="https://www.linkedin.com/in/alice-jang-b235b240/"
+              rel="nofollow"
+              target="_blank"
+            />
+          </div>
+          <div
+            class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          >
+            <picture>
+              <source
+                class="multi-image"
+                data-srcset="[object Object] ,[object Object] 2x"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company."
+                class="multi-image img_lazy"
+                data-src="[object Object]"
+                data-srcset="[object Object] 2x"
+                data-testid="test-multi-image"
+                height="401"
+                width="295"
+              />
+            </picture>
+             
+            <div
+              class="meet-our_experts__expert-bottom_content"
+            >
+              <div
+                class="meet-our_experts__expert-info"
+              >
+                <div
+                  class="meet-our_experts__expert-name"
+                >
+                  
+              Arthur Elizavetenkov
+            
+                </div>
+                 
+                <div
+                  class="meet-our_experts__expert-position"
+                >
+                  
+              Project Manager
+            
+                </div>
+              </div>
+            </div>
+             
+            <img
+              alt="Linkedin"
+              class="meet-our_experts__expert-linkedin-link img_lazy"
+              data-src="[object Object]"
+              height="24"
+              width="24"
+            />
+             
+            <a
+              href="https://www.linkedin.com/in/earthurkg/"
+              rel="nofollow"
+              target="_blank"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+`;
