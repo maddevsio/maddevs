@@ -13,11 +13,10 @@ const META_DATA = {
 
 describe('FAQ page', () => {
   it('should render correctly', () => {
-    const { container } = render(MainFaq, {
+    render(MainFaq, {
     })
 
     expect(screen.getByText(/Frequently Asked Questions/i).className).toBe('faq__title')
-    expect(container).toMatchSnapshot()
   })
 
   it('should correct work head method', () => {

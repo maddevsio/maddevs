@@ -13,11 +13,10 @@ const META_DATA = {
 
 describe('Privacy page', () => {
   it('should render correctly', () => {
-    const { container } = render(MainPrivacy, {
+    render(MainPrivacy, {
     })
 
     expect(screen.getByText(/Privacy Policy: Website/i)).toBeTruthy()
-    expect(container).toMatchSnapshot()
   })
 
   it('should correct work head method', () => {

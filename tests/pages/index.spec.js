@@ -21,12 +21,11 @@ describe('About page', () => {
   }
 
   it('should render correctly', () => {
-    const { container } = render(About, {
+    render(About, {
       stubs,
     })
 
     expect(screen.getByText(/Your Growth/i)).toBeTruthy()
-    expect(container).toMatchSnapshot()
   })
 
   it('should correct work head method', () => {

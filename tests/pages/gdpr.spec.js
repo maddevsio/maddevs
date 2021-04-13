@@ -13,10 +13,9 @@ const META_DATA = {
 
 describe('Gdpr page', () => {
   it('should render correctly', () => {
-    const { container } = render(MainGdpr, {})
+    render(MainGdpr, {})
 
     expect(screen.getByText(/Compliance Commitment/i).className).toBe('gdpr__title')
-    expect(container).toMatchSnapshot()
   })
 
   it('should correct work head method', () => {

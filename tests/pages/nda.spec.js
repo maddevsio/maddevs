@@ -13,11 +13,10 @@ const META_DATA = {
 
 describe('Nda page', () => {
   it('should render correctly', () => {
-    const { container } = render(Mainnda, {
+    render(Mainnda, {
     })
 
     expect(screen.getByText(/All staff members, including contractors and consultants working for/i)).toBeTruthy()
-    expect(container).toMatchSnapshot()
   })
 
   it('should correct work head method', () => {

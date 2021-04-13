@@ -21,12 +21,11 @@ describe('Services page', () => {
   }
 
   it('should render correctly', () => {
-    const { container } = render(MainServices, {
+    render(MainServices, {
       stubs,
     })
 
     expect(screen.getByText(/Get your trusted IT partner/i)).toBeTruthy()
-    expect(container).toMatchSnapshot()
   })
 
   it('should correct work head method', () => {
