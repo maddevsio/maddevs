@@ -1604,452 +1604,466 @@ exports[`Main component should render correctly 1`] = `
                     y="0"
                   />
                 </clippath>
+                <clippath
+                  id="__lottie_element_50"
+                >
+                  <path
+                    d="M0,0 L463,0 L463,753 L0,753z"
+                  />
+                </clippath>
               </defs>
               <g
                 clip-path="url(#__lottie_element_48)"
               >
                 <g
+                  clip-path="url(#__lottie_element_50)"
                   opacity="1"
                   style="display: block;"
-                  transform="matrix(1,0,0,1,0.25,-0.75)"
+                  transform="matrix(1,0,0,1,0,0)"
                 >
                   <g
                     opacity="1"
-                    transform="matrix(1,0,0,1,231.75,48.75)"
+                    style="display: block;"
+                    transform="matrix(1,0,0,1,0.25,-0.75)"
                   >
-                    <path
-                      d="M0 0"
-                      fill-opacity="0"
-                      stroke="rgb(115,48,197)"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                      stroke-opacity="1"
-                      stroke-width="1.5"
-                    />
+                    <g
+                      opacity="1"
+                      transform="matrix(1,0,0,1,231.75,48.75)"
+                    >
+                      <path
+                        d="M0 0"
+                        fill-opacity="0"
+                        stroke="rgb(115,48,197)"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                        stroke-opacity="1"
+                        stroke-width="1.5"
+                      />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
                   </g>
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
                   </g>
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
                   </g>
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
                   </g>
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
                   </g>
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="bevel"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <g>
+                      <path />
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
+                    <g>
+                      <path />
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
                   </g>
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
                   </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
                   </g>
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
                   </g>
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
                   </g>
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
                   </g>
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
                   </g>
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="bevel"
-                    />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
                   </g>
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <g>
-                    <path />
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                  <g>
-                    <path />
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
                   </g>
                 </g>
               </g>
@@ -2322,7 +2336,7 @@ exports[`Main component should render correctly 1`] = `
             >
               <defs>
                 <clippath
-                  id="__lottie_element_143"
+                  id="__lottie_element_147"
                 >
                   <rect
                     height="448"
@@ -2332,14 +2346,14 @@ exports[`Main component should render correctly 1`] = `
                   />
                 </clippath>
                 <clippath
-                  id="__lottie_element_178"
+                  id="__lottie_element_182"
                 >
                   <path
                     d="M0,0 L519,0 L519,448 L0,448z"
                   />
                 </clippath>
                 <clippath
-                  id="__lottie_element_221"
+                  id="__lottie_element_225"
                 >
                   <path
                     d="M0,0 L519,0 L519,448 L0,448z"
@@ -2347,7 +2361,7 @@ exports[`Main component should render correctly 1`] = `
                 </clippath>
               </defs>
               <g
-                clip-path="url(#__lottie_element_143)"
+                clip-path="url(#__lottie_element_147)"
               >
                 <g
                   opacity="1"
@@ -2371,7 +2385,7 @@ exports[`Main component should render correctly 1`] = `
                   </g>
                 </g>
                 <g
-                  clip-path="url(#__lottie_element_221)"
+                  clip-path="url(#__lottie_element_225)"
                   style="display: none;"
                 >
                   <g
@@ -2500,7 +2514,7 @@ exports[`Main component should render correctly 1`] = `
                   </g>
                 </g>
                 <g
-                  clip-path="url(#__lottie_element_178)"
+                  clip-path="url(#__lottie_element_182)"
                   style="display: none;"
                 >
                   <g
@@ -2705,7 +2719,7 @@ exports[`Main component should render correctly 1`] = `
             >
               <defs>
                 <clippath
-                  id="__lottie_element_246"
+                  id="__lottie_element_250"
                 >
                   <rect
                     height="570"
@@ -2714,379 +2728,393 @@ exports[`Main component should render correctly 1`] = `
                     y="0"
                   />
                 </clippath>
+                <clippath
+                  id="__lottie_element_252"
+                >
+                  <path
+                    d="M0,0 L463,0 L463,570 L0,570z"
+                  />
+                </clippath>
               </defs>
               <g
-                clip-path="url(#__lottie_element_246)"
+                clip-path="url(#__lottie_element_250)"
               >
                 <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                  <g>
-                    <path />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                    />
-                  </g>
-                </g>
-                <g
-                  style="display: none;"
-                >
-                  <g>
-                    <path
-                      fill-opacity="0"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <g
+                  clip-path="url(#__lottie_element_252)"
                   opacity="1"
                   style="display: block;"
                   transform="matrix(1,0,0,1,0,0)"
                 >
                   <g
-                    opacity="1"
-                    transform="matrix(1,0,0,1,231.5,29.5)"
+                    style="display: none;"
                   >
-                    <path
-                      d="M0 0"
-                      fill-opacity="0"
-                      stroke="rgb(115,48,197)"
-                      stroke-linecap="butt"
-                      stroke-linejoin="miter"
-                      stroke-miterlimit="4"
-                      stroke-opacity="1"
-                      stroke-width="1.5"
-                    />
+                    <g>
+                      <path />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                    <g>
+                      <path />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    style="display: none;"
+                  >
+                    <g>
+                      <path
+                        fill-opacity="0"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    opacity="1"
+                    style="display: block;"
+                    transform="matrix(1,0,0,1,0,0)"
+                  >
+                    <g
+                      opacity="1"
+                      transform="matrix(1,0,0,1,231.5,29.5)"
+                    >
+                      <path
+                        d="M0 0"
+                        fill-opacity="0"
+                        stroke="rgb(115,48,197)"
+                        stroke-linecap="butt"
+                        stroke-linejoin="miter"
+                        stroke-miterlimit="4"
+                        stroke-opacity="1"
+                        stroke-width="1.5"
+                      />
+                    </g>
                   </g>
                 </g>
               </g>
@@ -3141,26 +3169,26 @@ exports[`Main component should render correctly 1`] = `
             style="width: 100%; height: 100%; overflow: hidden; margin: 0px auto;"
           >
             <svg
-              height="1440"
+              height="448"
               preserveAspectRatio="xMidYMid meet"
               style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
-              viewBox="0 0 1440 1440"
-              width="1440"
+              viewBox="0 0 462 448"
+              width="462"
               xmlns="http://www.w3.org/2000/svg"
             >
               <defs>
                 <clippath
-                  id="__lottie_element_326"
+                  id="__lottie_element_334"
                 >
                   <rect
-                    height="1440"
-                    width="1440"
+                    height="448"
+                    width="462"
                     x="0"
                     y="0"
                   />
                 </clippath>
                 <clippath
-                  id="__lottie_element_328"
+                  id="__lottie_element_336"
                 >
                   <path
                     d="M0,0 L462,0 L462,448 L0,448z"
@@ -3168,13 +3196,13 @@ exports[`Main component should render correctly 1`] = `
                 </clippath>
               </defs>
               <g
-                clip-path="url(#__lottie_element_326)"
+                clip-path="url(#__lottie_element_334)"
               >
                 <g
-                  clip-path="url(#__lottie_element_328)"
+                  clip-path="url(#__lottie_element_336)"
                   opacity="1"
                   style="display: block;"
-                  transform="matrix(2.990000009536743,0,0,2.990000009536743,29.30999755859375,50.239990234375)"
+                  transform="matrix(1,0,0,1,0,0)"
                 >
                   <g
                     style="display: none;"

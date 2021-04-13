@@ -39,11 +39,11 @@ exports[`PhaseVideoOnDemand component should render correctly 1`] = `
           style="width: 100%; height: 100%; overflow: hidden; margin: 0px auto;"
         >
           <svg
-            height="1440"
+            height="448"
             preserveAspectRatio="xMidYMid meet"
             style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
-            viewBox="0 0 1440 1440"
-            width="1440"
+            viewBox="0 0 462 448"
+            width="462"
             xmlns="http://www.w3.org/2000/svg"
           >
             <defs>
@@ -51,8 +51,8 @@ exports[`PhaseVideoOnDemand component should render correctly 1`] = `
                 id="__lottie_element_2"
               >
                 <rect
-                  height="1440"
-                  width="1440"
+                  height="448"
+                  width="462"
                   x="0"
                   y="0"
                 />
@@ -72,7 +72,7 @@ exports[`PhaseVideoOnDemand component should render correctly 1`] = `
                 clip-path="url(#__lottie_element_4)"
                 opacity="1"
                 style="display: block;"
-                transform="matrix(2.990000009536743,0,0,2.990000009536743,29.30999755859375,50.239990234375)"
+                transform="matrix(1,0,0,1,0,0)"
               >
                 <g
                   style="display: none;"
