@@ -7,8 +7,8 @@ exports[`text slice component is a Vue instance 1`] = `
   >
     <img
       alt="some-author"
-      class="blog-post__author-image"
-      src="some-url"
+      class="blog-post__author-image img_lazy"
+      data-src="some-url"
     />
      
     <div

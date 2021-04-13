@@ -25,11 +25,11 @@
       </div>
       <div class="col-12 col-lg-6 featured-post__image-wrapper">
         <img
-          :src="post.data.featured_image.url"
+          :data-src="post.data.featured_image.url"
           :alt="post.data.featured_image.alt"
           :width="post.data.featured_image.dimensions.width"
           :height="post.data.featured_image.dimensions.height"
-          class="featured-post__image"
+          class="featured-post__image img_lazy"
         >
       </div>
     </div>
