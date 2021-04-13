@@ -32,7 +32,7 @@ export default {
   props: {
     author: {
       type: Object,
-      required: true,
+      default: () => ({}),
     },
   },
 

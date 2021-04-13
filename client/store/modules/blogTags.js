@@ -27,10 +27,14 @@ export default {
       commit('SET_TAG', currentTag)
     },
     async getTagPosts({ commit }, payload) {
+      commit('SET_TAG_POSTS_LOADED', false)
+      commit('SET_TAG_POSTS', [])
+
       const posts = (await this.$prismic.api.query(this.$prismic.predicates.at('document.tags', [payload]), {
         orderings: '[my.post.date desc]',
         pageSize: 100,
       })).results
+
       commit('SET_TAG_POSTS', posts)
       commit('SET_TAG_POSTS_LOADED', true)
     },
