@@ -67,6 +67,9 @@ export default {
     }
 
     @media only screen and (max-width: 991px) {
+      padding-top: 92px;
+      padding-bottom: 49px;
+
       &__image {
         width: 128px;
         height: 128px;

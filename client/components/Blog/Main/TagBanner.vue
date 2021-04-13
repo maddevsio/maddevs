@@ -45,6 +45,9 @@ export default {
     }
 
     @media only screen and (max-width: 991px) {
+      padding-top: 134px;
+      padding-bottom: 48px;
+
       &__title {
         font-size: 35px;
         letter-spacing: -1px;
