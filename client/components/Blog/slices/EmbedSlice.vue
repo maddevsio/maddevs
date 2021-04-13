@@ -5,7 +5,7 @@
     class="embed"
   >
     <PrismicEmbed
-      :field="embedFieldData"
+      :field="embedDataField"
       :class="`embed__${slice.items[0].embed.type}`"
       target="_blank"
     />
@@ -32,7 +32,7 @@ export default {
 
   data() {
     return {
-      embedFieldData: {},
+      embedDataField: {},
     }
   },
 
@@ -63,7 +63,7 @@ export default {
         </div>
       `
 
-      this.embedFieldData = {
+      this.embedDataField = {
         ...this.slice.embed,
         html,
       }
@@ -74,7 +74,7 @@ export default {
         .replace(/height="[0-9]*"/, 'height="500"')
         .replace(/width="[0-9]*"/, 'width="100%"')
 
-      this.embedFieldData = {
+      this.embedDataField = {
         ...this.slice.embed,
         html,
       }
