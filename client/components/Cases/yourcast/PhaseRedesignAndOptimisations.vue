@@ -48,6 +48,7 @@ export default {
   mixins: [playLottieMixin('redesign-and-optimisations', {
     animationData,
     autoplay: false,
+    loop: false,
   })],
 }
 </script>

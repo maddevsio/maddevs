@@ -17,7 +17,7 @@ describe('projects page', () => {
     }
     wrapper = mount(ProjectsPage, {
       localVue,
-      stubs: ['nuxt-link', 'NuxtLink'],
+      stubs: ['NuxtLink'],
     })
   })
 

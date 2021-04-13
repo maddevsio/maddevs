@@ -13,7 +13,7 @@ describe('SoftwareDevelopmentContent component', () => {
   it('should render correctly', () => {
     const { container } = render(SoftwareDevelopmentContent, {
       props,
-      stubs: ['client-only'],
+      stubs: ['ClientOnly'],
     })
 
     expect(container).toMatchSnapshot()
@@ -22,7 +22,7 @@ describe('SoftwareDevelopmentContent component', () => {
   it('should correct render title', () => {
     render(SoftwareDevelopmentContent, {
       props,
-      stubs: ['client-only'],
+      stubs: ['ClientOnly'],
     })
 
     expect(screen.getAllByText(props.title)).toBeTruthy()

@@ -22,8 +22,10 @@ function autoplayVideoMixin(videoIds, observerOptions = observerDefaultOptions) 
               }
             })
           }
+          const element = document.getElementById(video)
+          if (!element) return
           const observer = new IntersectionObserver(callback, observerOptions)
-          observer.observe(document.getElementById(video))
+          observer.observe(element)
         })
       },
     },

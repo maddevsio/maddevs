@@ -12,12 +12,14 @@ exports[`CaseFooter component should render correctly 1`] = `
       Main Content
     </h2>
      
-    <a
+    <nuxtlink
       class="case_next-project-button"
-      href=""
+      to=""
     >
-      Read next project
-    </a>
+      
+    Read next project
+  
+    </nuxtlink>
   </section>
 </div>
 `;

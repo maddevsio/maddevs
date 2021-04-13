@@ -2,6 +2,7 @@
   <main class="main case">
     <CaseHeader
       :logo="logo"
+      project="sjmc"
       video-name="/videos/sjmc/sjmc-main-video.b35a387.mp4"
       video-fallback-path="/images/Cases/sjmc/jpg/sjmc-main-video-preview.jpg"
     >
@@ -81,7 +82,7 @@ export default {
   },
 
   head() {
-    return buildHead({ ...getMetadata('sjmc'), image: 'https://maddevs.io/sir-john-monash-centre.png' }, getPageScripts('sjmc'))
+    return buildHead({ ...getMetadata('sjmc'), image: 'https://maddevs.io/sjmc-case.png' }, getPageScripts('sjmc'))
   },
 
   methods: {

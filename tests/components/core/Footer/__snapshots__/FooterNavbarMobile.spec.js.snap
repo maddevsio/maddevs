@@ -16,42 +16,42 @@ exports[`FooterNavbarMobile component should render correctly 1`] = `
     <div
       class="footer-navbar-mobile__nav-list"
     >
-      <a
+      <nuxtlink
         class="footer-navbar-mobile__nav-link"
-        href="/gdpr/"
         target="_blank"
+        to="/gdpr/"
       >
         
       GDPR Compliance Commitment
     
-      </a>
-      <a
+      </nuxtlink>
+      <nuxtlink
         class="footer-navbar-mobile__nav-link"
-        href="/nda/"
         target="_blank"
+        to="/nda/"
       >
         
       Non-Disclosure Agreement (NDA)
     
-      </a>
-      <a
+      </nuxtlink>
+      <nuxtlink
         class="footer-navbar-mobile__nav-link"
-        href="/privacy/"
         target="_blank"
+        to="/privacy/"
       >
         
       Privacy Policy
     
-      </a>
-      <a
+      </nuxtlink>
+      <nuxtlink
         class="footer-navbar-mobile__nav-link"
-        href="/faq/"
         target="_blank"
+        to="/faq/"
       >
         
       FAQ
     
-      </a>
+      </nuxtlink>
     </div>
   </div>
 </div>

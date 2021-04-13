@@ -19,7 +19,7 @@ const GODEE_MOCK = {
   },
 }
 
-const stubs = ['RouterLink']
+const stubs = ['NuxtLink']
 
 const setDefaultStateForHeader = jest.fn()
 const removeEventListeners = jest.fn()
@@ -185,6 +185,6 @@ describe('Header component', () => {
       ...GODEE_MOCK,
     })
 
-    expect(caseGoDeeScrollContainer.removeEventListener).toHaveBeenCalledTimes(1)
+    expect(caseGoDeeScrollContainer.removeEventListener).toHaveBeenCalledTimes(0)
   })
 })

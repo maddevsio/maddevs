@@ -8,6 +8,7 @@
       <div class="success-modal_content">
         <button
           class="close-modal"
+          data-testid="test-close-modal"
           type="button"
           @click="handleClose"
         >

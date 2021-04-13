@@ -15,7 +15,7 @@ describe('sirJohnMonashCentre', () => {
         },
         getMediaFromS3: () => 's3 image url',
       },
-      stubs: ['nuxt-link', 'NuxtLink'],
+      stubs: ['NuxtLink'],
     })
     wrapper.vm.$refs = {
       video: {
