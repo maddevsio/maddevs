@@ -27,16 +27,16 @@
 export default {
   name: 'HardwareVideoOnlyIos',
   mounted() {
-    this.$refs.video.addEventListener('onended', this.onEndedHandler)
+    this.$refs.video.addEventListener('ended', this.onEndedHandler)
   },
 
   beforeDestroy() {
-    this.$refs.video.removeEventListener('onended', this.onEndedHandler)
+    this.$refs.video.removeEventListener('ended', this.onEndedHandler)
   },
 
   methods: {
     onEndedHandler() {
-      this.$refs.video.paused = true
+      this.$refs.videoWrap.classList.add('case_video-wrapper--paused')
     },
 
     toggleVideoState() {

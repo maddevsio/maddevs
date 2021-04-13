@@ -4,12 +4,15 @@
       class="case_sound-control"
       @click="toggleSound"
     >
-      <div
-        ref="soundIcon"
-        class="case_sound-icon"
-        data-testid="test-case_sound-icon"
-        :class="soundMode"
-      />
+      <div class="case_sound-icon-wrap">
+        <div class="case_lottie">
+          <Lottie
+            id="sound-icon"
+            :options="options"
+            @animCreated="animCreatedHandler"
+          />
+        </div>
+      </div>
       <p class="case_sound-control-desc">
         Enable sound to the best expirience
       </p>
@@ -36,27 +39,44 @@
 
 <script>
 import autoplayVideoMixin from '@/mixins/autoplayVideoMixin'
+import Lottie from 'vue-lottie/src/lottie.vue'
+import animationData from '@/assets/lottie/sjmc/sound-icon.json'
 
 export default {
   name: 'HardwareVideo',
+  components: {
+    Lottie,
+  },
 
-  mixins: [autoplayVideoMixin(['iphone-video'])],
+  mixins: [autoplayVideoMixin(['iphone-video'], {
+    threshold: 0.5,
+  })],
 
   data() {
     return {
-      isActiveSound: false,
+      animation: null,
+      options: {
+        animationData,
+        autoplay: false,
+        loop: false,
+      },
     }
   },
 
-  computed: {
-    soundMode() {
-      return this.isActiveSound ? 'case_sound-icon--sound-on' : 'case_sound-icon--sound-off'
-    },
-  },
-
   methods: {
+    animCreatedHandler(animation) {
+      this.animation = animation
+      this.animation.playSegments([0, 28], true) // Set default state for lottie icon
+    },
+
     toggleSound() {
-      this.isActiveSound = this.$refs.video.muted
+      this.$refs.video.muted = !this.$refs.video.muted
+
+      if (this.$refs.video.muted) {
+        this.animation.playSegments([10, 28], true)
+      } else {
+        this.animation.playSegments([0, 10], true)
+      }
     },
   },
 }
@@ -83,37 +103,15 @@ export default {
       cursor: pointer;
     }
 
-    &_sound-icon {
-      height: 30px;
+    &_sound-icon-wrap {
       width: 33px;
+      height: 30px;
       position: relative;
       margin: 3px 0 3px 3px;
       border: none;
       border-radius: 100%;
       background-color: $bgcolor--black-oil;
       cursor: pointer;
-
-      &--sound-off,
-      &--sound-on {
-         &::before {
-          content: '';
-          width: 17px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-
-      &--sound-off::before {
-        height: 17px;
-        background: url('@/assets/img/Cases/sjmc/sound-off.svg') no-repeat;
-      }
-
-      &--sound-on::before {
-        height: 14px;
-        background: url('@/assets/img/Cases/sjmc/sound-on.svg') no-repeat;
-      }
     }
 
     &_sound-control-desc {
@@ -122,6 +120,15 @@ export default {
       line-height: 20px;
       letter-spacing: -0.41px;
       color: $text-color--grey-opacity-40-percent;
+    }
+
+    &_lottie {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     @media only screen and (max-width: 1180px) {
