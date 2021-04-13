@@ -18,7 +18,7 @@ const mocks = {
   },
 }
 
-describe('projects page', () => {
+describe('Projects page', () => {
   global.$nuxt = {
     $route: {
       name: '/',
