@@ -108,16 +108,6 @@ export default {
     this.master = master
   },
 
-  watch: {
-    master() {
-      /*
-        Callback for async fetch() function
-        Add lazy for images in customer university posts after async data rendering on page
-      */
-      this.$nextTick(() => initializeLazyLoad())
-    },
-  },
-
   computed: {
     clusters() {
       if (this.master.data) {
@@ -134,6 +124,13 @@ export default {
       const slices = this.featured.body
       const limit = 150
       return getFirstParagraph(slices, limit)
+    },
+  },
+
+  watch: {
+    master() {
+      // Callback for async fetch(), add lazy for images in customer university posts after async data render on page
+      this.$nextTick(() => initializeLazyLoad())
     },
   },
 }
