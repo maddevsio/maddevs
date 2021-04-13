@@ -11,12 +11,13 @@ const META_DATA = {
   'og:image': 'https://maddevs.io/Open-Graph.png',
 }
 
-const stubs = ['nuxt-link', 'NuxtLink']
 const mocks = {
   $nuxt: {
     $emit: jest.fn(),
   },
 }
+
+const stubs = ['client-only', 'NuxtLink']
 
 describe('Projects page', () => {
   global.$nuxt = {
