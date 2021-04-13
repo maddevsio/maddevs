@@ -8,6 +8,7 @@
         <div class="case_lottie">
           <Lottie
             id="sound-icon"
+            data-testid="test-case_video"
             :options="options"
             @animCreated="animCreatedHandler"
           />
