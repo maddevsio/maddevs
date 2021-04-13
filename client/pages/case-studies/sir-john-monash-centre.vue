@@ -26,7 +26,11 @@
         type="button"
         @click="openFullscreen()"
       >
-        <div class="case_play-icon" />
+        <img
+          :data-src="require(`@/assets/img/Studies/svg/play-icon.svg`)"
+          alt="Play"
+          class="case_play-icon img_lazy"
+        >
         View video about SJMC
       </button>
     </CaseHeader>

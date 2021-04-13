@@ -11,13 +11,31 @@
         <TextParagraph class="card-content_paragraph card-content_paragraph--bold">
           Yearly increase in orders:
         </TextParagraph>
-        <div class="card-content_chart card-content_yearly-increase" />
+        <img
+          :data-src="require(`@/assets/img/Studies/svg/yearly-increase.svg`)"
+          alt="Yearly increase"
+          class="card-content_chart card-content_yearly-increase img_lazy"
+        >
+        <img
+          :data-src="require(`@/assets/img/Studies/svg/yearly-increase--mobile.svg`)"
+          alt="Yearly increase"
+          class="card-content_chart card-content_yearly-increase--mobile img_lazy"
+        >
       </div>
       <div class="card-content_row">
         <TextParagraph class="card-content_paragraph card-content_paragraph--bold">
           Increase in sales:
         </TextParagraph>
-        <div class="card-content_chart card-content_increase-in-sales" />
+        <img
+          :data-src="require(`@/assets/img/Studies/svg/increase-in-sales.svg`)"
+          alt="Increase in sales"
+          class="card-content_chart card-content_increase-in-sales img_lazy"
+        >
+        <img
+          :data-src="require(`@/assets/img/Studies/svg/increase-in-sales--mobile.svg`)"
+          alt="Increase in sales"
+          class="card-content_chart card-content_increase-in-sales--mobile img_lazy"
+        >
       </div>
     </div>
   </div>
@@ -53,16 +71,20 @@ export default {
   }
 
   &_chart {
-    width: auto;
+    width: 100%;
     height: 120px;
   }
 
   &_yearly-increase {
-    @include yearly-increase-in-orders;
+    &--mobile {
+      display: none;
+    }
   }
 
   &_increase-in-sales {
-    @include increase-in-sales;
+    &--mobile {
+      display: none;
+    }
   }
 
   @media screen and (max-width: 940px) {
@@ -99,11 +121,19 @@ export default {
     }
 
     &_yearly-increase {
-      @include yearly-increase-in-orders-mobile;
+      display: none;
+
+      &--mobile {
+        display: block;
+      }
     }
 
     &_increase-in-sales {
-      @include increase-in-sales-mobile;
+      display: none;
+
+      &--mobile {
+        display: block;
+      }
     }
 
     &_yearly-increase,

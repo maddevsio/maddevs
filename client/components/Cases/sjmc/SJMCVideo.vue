@@ -94,8 +94,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/cases/_icons';
-
 .main-video {
   position: absolute;
   top: 0;
@@ -114,7 +112,7 @@ export default {
   right: 52px;
   background-color: transparent;
   cursor: pointer;
-  @include close-icon;
+  // @include close-icon;
 }
 
 .pause-icon {
@@ -124,7 +122,7 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @include play-button-white;
+  // @include play-button-white;
   z-index: 1;
 }
 </style>
