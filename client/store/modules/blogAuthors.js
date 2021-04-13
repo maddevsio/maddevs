@@ -1,4 +1,5 @@
 const extractAuthorData = author => ({
+  type: author.type,
   id: author.id,
   uid: author.uid,
   name: author.data.name,

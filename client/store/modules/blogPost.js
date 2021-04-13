@@ -26,6 +26,7 @@ export default {
       }
 
       state.post = {
+        type: post.type,
         id: post.id,
         uid: post.uid,
         title: this.$prismic.asText(post.data.title),

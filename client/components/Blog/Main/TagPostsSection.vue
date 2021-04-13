@@ -5,6 +5,7 @@
         <div class="tag-posts__featured-post">
           <FeaturedPost
             v-if="tagPostsLoaded"
+            :to="postLink(featuredPost.uid)"
             :post="featuredPost"
             :author="findAuthor(featuredPost.data.post_author.id)"
             :theme="'light'"
@@ -25,6 +26,7 @@
           >
             <div class="single-post__wrapper">
               <RecommendedBlogWidget
+                :to="postLink(post.uid)"
                 :post="post"
                 :tag="blogTag"
                 :author="findAuthor(post.data.post_author.id)"
@@ -59,6 +61,7 @@ import SkeletonFeaturedPost from '@/components/Blog/skeletons/SkeletonFeaturedPo
 import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
 import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
 import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
+import convertStringToSlug from '@/helpers/convertStringToSlug'
 
 export default {
   name: 'TagPostsSection',
@@ -94,6 +97,10 @@ export default {
 
   methods: {
     ...mapActions(['getMoreTagPosts']),
+
+    postLink(uid) {
+      return `/blog/tag/${convertStringToSlug(this.blogTag)}/${uid}/`
+    },
 
     findAuthor(authorId) {
       if (!this.allAuthors && !this.allAuthors.length) return null

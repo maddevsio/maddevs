@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     v-if="tag"
-    :to="tagLink"
+    :to="link"
   >
     <div
       :class="theme"
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import linkResolver from '@/plugins/link-resolver.js'
 import convertStringToSlug from '@/helpers/convertStringToSlug'
 
 export default {
@@ -33,9 +34,8 @@ export default {
   },
 
   computed: {
-    tagLink() {
-      if (!this.tag) return null
-      return `/blog/tag/${convertStringToSlug(this.tag)}`
+    link() {
+      return linkResolver({ type: 'tag', uid: convertStringToSlug(this.tag) })
     },
   },
 }

@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     v-if="author && author.name"
-    :to="authorLink"
+    :to="link"
   >
     <div class="blog-post__author">
       <img
@@ -27,6 +27,8 @@
 </template>
 
 <script>
+import linkResolver from '@/plugins/link-resolver.js'
+
 export default {
   name: 'PostAuthor',
   props: {
@@ -37,9 +39,8 @@ export default {
   },
 
   computed: {
-    authorLink() {
-      if (!this.author.uid) return null
-      return `/blog/author/${this.author.uid}`
+    link() {
+      return linkResolver(this.author)
     },
 
     shortTitle() {
