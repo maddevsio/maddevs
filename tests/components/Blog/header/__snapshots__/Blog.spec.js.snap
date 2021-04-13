@@ -80,9 +80,9 @@ exports[`header Blog is a Vue instance 1`] = `
      
     <img
       alt="Why Your Project Needs a Senior Developer."
-      class="blog-post__introduction-image img_lazy blog-post__introduction-image--with-background"
-      data-src="https://images.prismic.io/superpupertest/7d7f267a-a36f-4e21-bbd5-af537be3a022_Frame+1941.jpg?auto=compress,format"
+      class="blog-post__introduction-image blog-post__introduction-image--with-background"
       height="1086"
+      src="https://images.prismic.io/superpupertest/7d7f267a-a36f-4e21-bbd5-af537be3a022_Frame+1941.jpg?auto=compress,format"
       width="2000"
     />
   </div>
