@@ -36,7 +36,7 @@ const mocks = {
   },
 }
 
-describe('CustomerRates', () => {
+describe('Careers page', () => {
   it('should render correctly', () => {
     const { container } = render(MainCareers, {
       mocks,
