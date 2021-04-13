@@ -17,8 +17,7 @@
           ref="zoom"
         >
           <img
-            class="img_lazy"
-            :data-src="img.url"
+            :src="img.url"
             :alt="img.alt"
           >
         </SimpleModal>
