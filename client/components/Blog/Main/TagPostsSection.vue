@@ -1,12 +1,20 @@
 <template>
   <div class="tag-posts">
     <div class="container">
-      <FeaturedPost
-        v-if="tagPostsLoaded && featuredPost"
-        :post="featuredPost"
-        :author="findAuthor(featuredPost.data.post_author.id)"
-        :theme="'light'"
-      />
+      <template v-if="featuredPost">
+        <div class="tag-posts__featured-post">
+          <FeaturedPost
+            v-if="tagPostsLoaded"
+            :post="featuredPost"
+            :author="findAuthor(featuredPost.data.post_author.id)"
+            :theme="'light'"
+          />
+          <SkeletonFeaturedPost
+            v-else
+            :theme="'light'"
+          />
+        </div>
+      </template>
       <div class="row tag-posts__wrapper">
         <template v-if="tagPostsLoaded">
           <section
@@ -47,6 +55,7 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 import FeaturedPost from '@/components/Blog/shared/FeaturedPost'
+import SkeletonFeaturedPost from '@/components/Blog/skeletons/SkeletonFeaturedPost'
 import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
 import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
 import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
@@ -55,6 +64,7 @@ export default {
   name: 'TagPostsSection',
   components: {
     FeaturedPost,
+    SkeletonFeaturedPost,
     SkeletonBlogWidget,
     RecommendedBlogWidget,
     LoadMoreButton,
@@ -100,6 +110,10 @@ export default {
     background-color: $bgcolor--white-primary;
     padding: 60px 0;
 
+    &__featured-post {
+      margin-bottom: 137px;
+    }
+
     &__wrapper {
       margin: 0 -10px;
     }
@@ -113,6 +127,16 @@ export default {
         /deep/ .blog-post__author-name {
           color: $text-color--black;
         }
+      }
+    }
+
+    @media only screen and (max-width: 991px) {
+      &__single-post {
+        width: 100%;
+      }
+
+      &__featured-post {
+        display: none;
       }
     }
   }

@@ -53,17 +53,37 @@ export default {
 
     &__name {
       margin-top: 29px;
-      margin-bottom: 8px;
       font-size: 41.5px;
       line-height: 130%;
       letter-spacing: -0.04em;
     }
 
     &__position {
+      margin-top: 8px;
       font-size: 17px;
       line-height: 166%;
       letter-spacing: -0.035em;
       color: $text-color--grey-pale;
+    }
+
+    @media only screen and (max-width: 991px) {
+      &__image {
+        width: 128px;
+        height: 128px;
+      }
+
+      &__name {
+        margin-top: 31px;
+        font-size: 35px;
+        letter-spacing: -1px;
+      }
+
+      &__posts-count {
+        margin-top: 7px;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+      }
     }
   }
 </style>

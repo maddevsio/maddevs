@@ -1,13 +1,15 @@
 <template>
   <div class="container">
-    <FeaturedPost
-      v-if="postsLoaded && featuredPost"
-      :post="featuredPost"
-      :author="findAuthor(featuredPost.data.post_author.id)"
-    />
-    <SkeletonFeaturedPost
-      v-else
-    />
+    <div class="last-post">
+      <FeaturedPost
+        v-if="postsLoaded && featuredPost"
+        :post="featuredPost"
+        :author="findAuthor(featuredPost.data.post_author.id)"
+      />
+      <SkeletonFeaturedPost
+        v-else
+      />
+    </div>
   </div>
 </template>
 
@@ -35,3 +37,13 @@ export default {
   },
 }
 </script>
+
+<style scoped lang="scss">
+  .last-post {
+    margin: 95px 0;
+    @media only screen and (max-width: 991px) {
+      margin-top: 0;
+      margin-bottom: 36px;
+    }
+  }
+</style>

@@ -1,9 +1,18 @@
 <template>
-  <div class="featured-post">
+  <div
+    class="featured-post"
+    :class="theme"
+  >
     <div class="row featured-post__wrapper">
       <div class="col-12 col-lg-6 featured-post__main">
-        <h1 class="featured-post__title background-grey animated" />
-        <p class="featured-post__paragraph background-grey animated" />
+        <h1
+          class="featured-post__title background-grey animated"
+          :class="theme"
+        />
+        <p
+          class="featured-post__paragraph background-grey animated"
+          :class="theme"
+        />
         <div class="featured-post__data d-flex justify-content-between">
           <div class="featured-post__meta">
             <span class="created-at" />
@@ -11,7 +20,10 @@
         </div>
       </div>
       <div class="col-12 col-lg-6 featured-post__image-wrapper">
-        <div class="featured-post__image background-grey animated" />
+        <div
+          class="featured-post__image background-grey animated"
+          :class="theme"
+        />
       </div>
     </div>
   </div>
@@ -20,6 +32,12 @@
 <script>
 export default {
   name: 'SkeletonFeaturedPost',
+  props: {
+    theme: {
+      type: String,
+      default: 'dark',
+    },
+  },
 }
 </script>
 
@@ -40,22 +58,35 @@ export default {
 }
 
 .background-grey {
-  background-color: $bgcolor--black-light;
-  background-image: linear-gradient(
-    90deg,
-    $bgcolor--black-lighten,
-    $bgcolor--black-lighten-pale,
-    $bgcolor--black-lighten
-  );
+  &.dark {
+    background-color: $bgcolor--black-light;
+    background-image: linear-gradient(
+      90deg,
+      $bgcolor--black-lighten,
+      $bgcolor--black-lighten-pale,
+      $bgcolor--black-lighten
+    );
+  }
+
+  &.light {
+    background-color: $bgcolor--silver;
+    background-image: linear-gradient(90deg, $bgcolor--grey-extra-dark, $bgcolor--silver, $bgcolor--grey-extra-dark);
+  }
 }
 
 .featured-post {
-  color: $text-color--white-primary;
   text-decoration: none;
   display: block;
 
+  &.dark {
+    color: $text-color--white-primary;
+  }
+
+  &.light {
+    color: $text-color--black;
+  }
+
   &__wrapper {
-    margin: 95px 0;
     align-items: center;
   }
 

@@ -43,5 +43,17 @@ export default {
       letter-spacing: -0.035em;
       color: $text-color--grey-pale;
     }
+
+    @media only screen and (max-width: 991px) {
+      &__title {
+        font-size: 35px;
+        letter-spacing: -1px;
+      }
+
+      &__posts-count {
+        font-size: 17px;
+        margin-top: 12px;
+      }
+    }
   }
 </style>

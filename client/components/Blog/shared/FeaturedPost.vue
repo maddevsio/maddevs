@@ -116,7 +116,6 @@ export default {
   }
 
   &__wrapper {
-    margin: 95px 0;
     align-items: center;
   }
 
@@ -182,11 +181,6 @@ export default {
 
 @media only screen and (max-width: 991px) {
   .featured-post {
-    &__wrapper {
-      margin-top: 0;
-      margin-bottom: 36px;
-    }
-
     &__main {
       padding: 0;
       margin-top: 0;
