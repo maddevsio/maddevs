@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CustomerRates should render correctly 1`] = `
+exports[`Careers page should render correctly 1`] = `
 <div>
   <main
     class="main"
