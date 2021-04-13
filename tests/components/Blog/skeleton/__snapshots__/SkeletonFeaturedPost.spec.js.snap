@@ -3,7 +3,7 @@
 exports[`skeleton post widget component should render correctly 1`] = `
 <div>
   <div
-    class="featured-post"
+    class="featured-post dark"
   >
     <div
       class="row featured-post__wrapper"
@@ -12,11 +12,11 @@ exports[`skeleton post widget component should render correctly 1`] = `
         class="col-12 col-lg-6 featured-post__main"
       >
         <h1
-          class="featured-post__title background-grey animated"
+          class="featured-post__title background-grey animated dark"
         />
          
         <p
-          class="featured-post__paragraph background-grey animated"
+          class="featured-post__paragraph background-grey animated dark"
         />
          
         <div
@@ -36,7 +36,7 @@ exports[`skeleton post widget component should render correctly 1`] = `
         class="col-12 col-lg-6 featured-post__image-wrapper"
       >
         <div
-          class="featured-post__image background-grey animated"
+          class="featured-post__image background-grey animated dark"
         />
       </div>
     </div>

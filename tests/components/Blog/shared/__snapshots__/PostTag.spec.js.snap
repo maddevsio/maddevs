@@ -3,7 +3,7 @@
 exports[`post tag component is a Vue instance 1`] = `
 <div>
   <nuxtlink
-    to="/blog/tag/posttag"
+    to="/blog/tag/posttag/"
   >
     <div
       class="post-tag light"
