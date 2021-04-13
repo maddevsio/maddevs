@@ -2,8 +2,6 @@ import { mount } from '@vue/test-utils'
 
 import SingleProject from '@/components/core/SingleProject'
 
-const stubs = ['client-only', 'NuxtLink']
-
 describe('caseStudies component', () => {
   let wrapper
   let props = {
@@ -26,7 +24,6 @@ describe('caseStudies component', () => {
   beforeEach(() => {
     wrapper = mount(SingleProject, {
       propsData: props,
-      stubs,
     })
   })
 
@@ -60,7 +57,6 @@ describe('caseStudies component', () => {
 
     wrapper = mount(SingleProject, {
       propsData: props,
-      stubs,
     })
 
     const container = wrapper.findAll('.single-project__container').at(0)
