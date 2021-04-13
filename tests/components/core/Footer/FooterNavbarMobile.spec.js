@@ -1,21 +1,15 @@
 import FooterNavbarMobile from '@/components/core/Footer/FooterNavbarMobile'
 import { render } from '@testing-library/vue'
 
-const stubs = ['client-only', 'NuxtLink']
-
 describe('FooterNavbarMobile component', () => {
   it('should render correctly', () => {
-    const { container } = render(FooterNavbarMobile, {
-      stubs,
-    })
+    const { container } = render(FooterNavbarMobile)
 
     expect(container).toMatchSnapshot()
   })
 
   it('should render with current year', () => {
-    const { html } = render(FooterNavbarMobile, {
-      stubs,
-    })
+    const { html } = render(FooterNavbarMobile)
 
     expect(html()).toContain(` © Mad Devs - ${new Date().getFullYear()}`)
   })

@@ -12,8 +12,6 @@ const ROUTE = {
   path: '/home',
 }
 
-const stubs = ['client-only', 'NuxtLink']
-
 const TEST_ID = 'test-footer'
 const updateClassName = jest.fn()
 
@@ -28,7 +26,6 @@ describe('Footer component', () => {
       $nuxt: {
         $route: ROUTE,
       },
-      stubs,
     })
 
     expect(container).toMatchSnapshot()
@@ -37,7 +34,6 @@ describe('Footer component', () => {
   it('correctly sets the route when mounted', async () => {
     await render(Footer, {
       localVue,
-      stubs,
     })
 
     const element = await screen.getByTestId('test-footer')
@@ -47,7 +43,6 @@ describe('Footer component', () => {
   it('correctly call update class function from watcher', () => {
     const wrapper = shallowMount(Footer, {
       localVue,
-      stubs,
     })
 
     wrapper.vm.$options.watch.$route.call({
@@ -64,7 +59,6 @@ describe('Footer component', () => {
     }
     await render(Footer, {
       localVue,
-      stubs,
     })
 
     const element = await screen.getByTestId(TEST_ID)
