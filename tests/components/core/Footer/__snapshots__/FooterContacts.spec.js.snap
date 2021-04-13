@@ -1,0 +1,305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FooterContacts component should render correctly 1`] = `
+<div>
+  <div
+    class="footer-contacts"
+  >
+    <div
+      class="footer-contacts__head-content"
+    >
+      <div
+        class="footer-contacts__contact-item"
+      >
+        <p
+          class="footer-contacts__contact-title"
+        >
+          
+        Text us:
+      
+        </p>
+         
+        <a
+          class="footer-contacts__contact-link footer-contacts__contact-mail"
+          href="mailto:undefined"
+        >
+          
+        </a>
+      </div>
+       
+      <div
+        class="footer-contacts__contact-item"
+      >
+        <div
+          class="footer-contacts__contact-title-wrapper"
+        >
+          <div
+            class="footer-contacts__contact-title-flag"
+          >
+            <img
+              alt="United Kingdom"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="14"
+              width="19"
+            />
+          </div>
+           
+          <p
+            class="footer-contacts__contact-title"
+          >
+            
+          Call us:
+        
+          </p>
+        </div>
+         
+        <a
+          class="footer-contacts__contact-link footer-contacts__contact-phone-number"
+          href="tel:+442039848555"
+        >
+          +44 20 3984 8555
+        </a>
+      </div>
+    </div>
+     
+    <div
+      class="footer-contacts__lists-wrapper"
+    >
+      <ul
+        class="footer-contacts__messengers-list"
+      >
+        <li>
+          <a
+            class="footer-contacts__messenger-item-wrapper"
+            href="https://facebook.com/maddevsllc"
+            target="_blank"
+          >
+            <img
+              alt="Messenger"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="42"
+              width="42"
+            />
+             
+            <p
+              class="footer-contacts__messenger-name"
+            >
+              Messenger
+            </p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-contacts__messenger-item-wrapper"
+            href="https://wa.me/message/KPJAW6J7BF7EK1"
+            target="_blank"
+          >
+            <img
+              alt="WhatsApp"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="42"
+              width="42"
+            />
+             
+            <p
+              class="footer-contacts__messenger-name"
+            >
+              WhatsApp
+            </p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-contacts__messenger-item-wrapper"
+            href="https://t.me/MadDevs_io"
+            target="_blank"
+          >
+            <img
+              alt="Telegram"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="42"
+              width="42"
+            />
+             
+            <p
+              class="footer-contacts__messenger-name"
+            >
+              Telegram
+            </p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-contacts__messenger-item-wrapper"
+            href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FICWluRgJH8tu0IisMQ1eEFo=wc"
+            target="_blank"
+          >
+            <img
+              alt="WeChat"
+              class="img_lazy"
+              data-src="[object Object]"
+              height="42"
+              width="42"
+            />
+             
+            <p
+              class="footer-contacts__messenger-name"
+            >
+              WeChat
+            </p>
+          </a>
+        </li>
+      </ul>
+       
+      <div
+        class="footer-contacts__social-network-list-desktop"
+      >
+        <ul
+          class="footerSocialNetworkList"
+        >
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://github.com/maddevsio"
+              target="_blank"
+            >
+              <img
+                alt="Github"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://www.facebook.com/maddevsllc"
+              target="_blank"
+            >
+              <img
+                alt="Facebook"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://twitter.com/MadDevsIO"
+              target="_blank"
+            >
+              <img
+                alt="Twitter"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://www.linkedin.com/company/mad-devs"
+              target="_blank"
+            >
+              <img
+                alt="Linkedin"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://www.instagram.com/maddevsio"
+              target="_blank"
+            >
+              <img
+                alt="Instagram"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://medium.com/maddevs-io"
+              target="_blank"
+            >
+              <img
+                alt="Medium"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://www.behance.net/maddevs"
+              target="_blank"
+            >
+              <img
+                alt="Behance"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+          <li
+            class="footerSocialNetworkList__social-network-link-wrapper"
+          >
+            <a
+              class="footerSocialNetworkList__social-network-link"
+              href="https://dev.to/maddevs"
+              target="_blank"
+            >
+              <img
+                alt="DEV"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="42"
+                width="42"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;

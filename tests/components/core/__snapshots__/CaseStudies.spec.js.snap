@@ -27,11 +27,11 @@ exports[`CaseStudies should render correctly 1`] = `
       <div
         class="projects"
       >
-        <a
+        <nuxtlink
           class="single-project"
-          href="/case-studies/namba-food/"
           style="background: rgb(248, 247, 246);"
           target="_self"
+          to="/case-studies/namba-food/"
         >
           <div
             class="single-project__container single-project_black-letters-theme"
@@ -103,12 +103,12 @@ exports[`CaseStudies should render correctly 1`] = `
               </picture>
             </div>
           </div>
-        </a>
-        <a
+        </nuxtlink>
+        <nuxtlink
           class="single-project"
-          href="/case-studies/sir-john-monash-centre/"
           style="background: rgb(34, 31, 32);"
           target="_self"
+          to="/case-studies/sir-john-monash-centre/"
         >
           <div
             class="single-project__container single-project_white-letters-theme"
@@ -180,12 +180,12 @@ exports[`CaseStudies should render correctly 1`] = `
               </picture>
             </div>
           </div>
-        </a>
-        <a
+        </nuxtlink>
+        <nuxtlink
           class="single-project"
-          href="/case-studies/yourcast/"
           style="background: rgb(34, 31, 32);"
           target="_self"
+          to="/case-studies/yourcast/"
         >
           <div
             class="single-project__container single-project_white-letters-theme"
@@ -259,12 +259,12 @@ exports[`CaseStudies should render correctly 1`] = `
               </picture>
             </div>
           </div>
-        </a>
-        <a
+        </nuxtlink>
+        <nuxtlink
           class="single-project"
-          href="/case-studies/godee/"
           style="background: rgb(255, 106, 1);"
           target="_self"
+          to="/case-studies/godee/"
         >
           <div
             class="single-project__container single-project_black-letters-theme"
@@ -336,7 +336,7 @@ exports[`CaseStudies should render correctly 1`] = `
               </picture>
             </div>
           </div>
-        </a>
+        </nuxtlink>
       </div>
     </div>
   </section>
@@ -372,11 +372,11 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
       <div
         class="projects"
       >
-        <a
+        <nuxtlink
           class="single-project"
-          href="/case-studies/namba-food/"
           style="background: rgb(248, 247, 246);"
           target="_self"
+          to="/case-studies/namba-food/"
         >
           <div
             class="single-project__container single-project_black-letters-theme"
@@ -448,12 +448,12 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
               </picture>
             </div>
           </div>
-        </a>
-        <a
+        </nuxtlink>
+        <nuxtlink
           class="single-project"
-          href="/case-studies/sir-john-monash-centre/"
           style="background: rgb(34, 31, 32);"
           target="_self"
+          to="/case-studies/sir-john-monash-centre/"
         >
           <div
             class="single-project__container single-project_white-letters-theme"
@@ -525,12 +525,12 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
               </picture>
             </div>
           </div>
-        </a>
-        <a
+        </nuxtlink>
+        <nuxtlink
           class="single-project"
-          href="/case-studies/yourcast/"
           style="background: rgb(34, 31, 32);"
           target="_self"
+          to="/case-studies/yourcast/"
         >
           <div
             class="single-project__container single-project_white-letters-theme"
@@ -604,12 +604,12 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
               </picture>
             </div>
           </div>
-        </a>
-        <a
+        </nuxtlink>
+        <nuxtlink
           class="single-project"
-          href="/case-studies/godee/"
           style="background: rgb(255, 106, 1);"
           target="_self"
+          to="/case-studies/godee/"
         >
           <div
             class="single-project__container single-project_black-letters-theme"
@@ -681,7 +681,7 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
               </picture>
             </div>
           </div>
-        </a>
+        </nuxtlink>
       </div>
     </div>
   </section>

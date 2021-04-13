@@ -2,6 +2,7 @@
   <main class="main case">
     <CaseHeader
       :logo="logo"
+      project="sjmc"
       video-name="/videos/sjmc/sjmc-main-video.b35a387.mp4"
       video-fallback-path="/images/Cases/sjmc/jpg/sjmc-main-video-preview.jpg"
     >
@@ -54,6 +55,7 @@ import Main from '@/components/Cases/sjmc/Main'
 import CaseFooter from '@/components/Cases/shared/CaseFooter'
 import SJMCVideo from '@/components/Cases/sjmc/SJMCVideo'
 import { getMetadata, buildHead } from '@/data/seo'
+import { getPageScripts } from '@/data/pageScripts'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
@@ -80,10 +82,7 @@ export default {
   },
 
   head() {
-    return buildHead({
-      ...getMetadata('sjmc'),
-      image: 'https://maddevs.io/sir-john-monash-centre.png',
-    })
+    return buildHead({ ...getMetadata('sjmc'), image: 'https://maddevs.io/sjmc-case.png' }, getPageScripts('sjmc'))
   },
 
   methods: {

@@ -5,7 +5,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
   class="main case"
 >
   <section
-    class="case_header case_header-"
+    class="case_header case_header-sjmc"
     id="case-header"
   >
     <div
@@ -725,7 +725,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         </section>
          
         <section
-          class="container_full case_sjmc-phone-video-section background-color-black-primary"
+          class="container_full video-section background-color-black-primary"
         >
           <div
             class="case_sjmc-phone-video-wrapper case_sjmc-phone-video-wrapper--on-pause case_full-screen-video"
@@ -3063,12 +3063,14 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
     
       </h2>
        
-      <a
+      <nuxtlink-stub
         class="case_next-project-button"
-        href="/case-studies/namba-food/"
+        to="/case-studies/namba-food/"
       >
-        Read next project
-      </a>
+        
+    Read next project
+  
+      </nuxtlink-stub>
     </section>
   </section>
 </main>

@@ -7,16 +7,17 @@
       <div class="mobile-header__content-wrap">
         <div class="mobile-header__nav-wrap">
           <nav class="mobile-header__header-routes_links">
-            <RouterLink
+            <NuxtLink
               v-for="{ title, link, exact } in navigation"
               :key="link"
               :exact="exact"
               class="mobile-header__nav-link"
+              data-testid="test-header-nav-link"
               :to="link"
               @click.native="goToPage"
             >
               {{ title }}
-            </RouterLink>
+            </NuxtLink>
           </nav>
           <div class="mobile-header__contacts mobile-header__large-phone-content">
             <div class="mobile-header__contact-item mobile-header__contact-item-email">
@@ -115,10 +116,8 @@ export default {
   },
 
   created() {
-    if (process.client) {
-      if (document) {
-        this.$nextTick(() => this.refreshImg())
-      }
+    if (process.client && document) {
+      this.$nextTick(() => this.refreshImg())
     }
   },
 
@@ -141,10 +140,6 @@ export default {
         img.classList.remove('img_lazy');
         /* eslint-enable */
       })
-    },
-
-    getImageUrl(messenger) {
-      return require(`@/assets/img/Footer/svg/${messenger.key}.svg`)
     },
   },
 }

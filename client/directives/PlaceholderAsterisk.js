@@ -32,8 +32,9 @@ const PlaceholderAsterisk = {
     const input = el.querySelector('input')
     input.addEventListener('input', listenInputEvent)
   },
-  update(el) {
+  componentUpdated(el) {
     const input = el.querySelector('input')
+
     if (input.value === null || input.value === '') {
       const pl = el.querySelector('.v-placeholder-asterisk')
       pl.style.opacity = 1

@@ -76,6 +76,7 @@ module.exports = {
     color: '#ec1c24',
     height: '2px',
   },
+  components: true,
   generate: {
     async routes() {
       const getPosts = async pageUrl => {
@@ -156,6 +157,7 @@ module.exports = {
     '~/plugins/vuelidate.js',
     '~/plugins/vue-social-sharing.js',
     '~/plugins/get-media-from-s3.js',
+    '~/plugins/feature-flags.js',
     { src: '~/plugins/sentry.js', mode: 'client' },
   ],
   /*
@@ -182,5 +184,6 @@ module.exports = {
     emailHR: process.env.NODE_EMAIL_HR,
     emailContact: process.env.NODE_EMAIL_CONTACT,
     sentryDsnFront: process.env.NODE_SENTRY_DSN_FRONT,
+    ffEnvironment: process.env.FF_ENVIRONMENT,
   },
 }

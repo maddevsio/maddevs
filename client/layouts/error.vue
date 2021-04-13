@@ -1,30 +1,39 @@
 <template>
-  <div class="error-page">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="80"
-      height="80"
-      fill="#fff"
-      viewBox="0 0 48 48"
-    >
-      <path
-        d="M22 30h4v4h-4zm0-16h4v12h-4zm1.99-10C12.94 4 4 12.95 4 24s8.94 20 19.99 20S44 35.05 44 24 35.04 4 23.99 4zM24 40c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16z"
-      />
-    </svg>
-    <h1 class="error-page__title title-md">
-      Page not found
+  <div class="error-page container">
+    <Lottie
+      id="404-code"
+      class="error-page_lottie"
+      :options="options"
+      @animCreated="handleAnimation"
+    />
+    <h1 class="error-page_title">
+      The page you were looking for doesn’t exist.
     </h1>
-    <nuxt-link
+    <NuxtLink
       to="/"
-      class="error-page__to-home-page paragraph"
+      class="error-page_link"
     >
-      Back to the home page
-    </nuxt-link>
+      Back to our site
+    </NuxtLink>
   </div>
 </template>
 
 <script>
+import Lottie from 'vue-lottie/src/lottie.vue'
+import animationData from '@/assets/lottie/error/404.json'
+import playLottieMixin from '@/mixins/playLottieMixin'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
+
 export default {
+  components: {
+    Lottie,
+  },
+
+  mixins: [initLazyLoadMixin, playLottieMixin('404-code', {
+    animationData,
+    autoplay: true,
+  })],
+
   layout: 'error-layout',
 }
 </script>
@@ -32,20 +41,76 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/styles/_vars';
 .error-page {
-  width: max-content;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 250px;
+  padding-bottom: 282px;
 
-  &__title,
-  &__to-home-page {
+  &_lottie {
+    height: 12.1vw !important;
+    max-width: 821px;
+    max-height: 170px;
+    min-height: 56px;
+  }
+
+  &_title {
+    max-width: 610px;
+    margin-top: 40px;
+    margin-bottom: 55px;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: -1px;
+    text-align: center;
     color: $text-color--white;
   }
-  &__to-home-page {
-    display: block;
-    margin-top: 15px;
+
+  &_link {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 166%;
+    letter-spacing: -0.035em;
+    text-decoration: none;
+    color: $text-color--white-primary;
+
+    &:before {
+      content: '';
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij4KICA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+CiAgICA8ZyBzdHJva2UtbGluZWNhcD0ic3F1YXJlIj4KICAgICAgPHBhdGggZD0iTTU3LjEgMTAzLjNMMTcuOCA2NE0xNy44IDY0bDM5LjMtMzkuMyIvPgogICAgPC9nPgogICAgPHBhdGggZD0iTTE3LjggNjRoMTAwLjQiLz4KICA8L2c+Cjwvc3ZnPgo=) no-repeat;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      left: -22px;
+      top: 6px;
+    }
+  }
+
+  @media only screen and (max-width: 880px) {
+    padding-top: 150px;
+    padding-bottom: 90px;
+
+    &_title {
+      max-width: 327px;
+      margin-top: 31px;
+      margin-bottom: 65px;
+      font-size: 27px;
+      line-height: 142%;
+      letter-spacing: -1px;
+    }
+
+    &_link {
+      font-size: 16px;
+      line-height: 150%;
+
+      &::before {
+        width: 14px;
+        height: 14px;
+        left: -21px;
+        top: 5px;
+      }
+    }
   }
 }
 </style>

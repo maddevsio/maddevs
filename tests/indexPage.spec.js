@@ -17,7 +17,7 @@ describe('index page', () => {
     }
     wrapper = mount(IndexPage, {
       localVue,
-      stubs: ['client-only', 'nuxt-link', 'NuxtLink'],
+      stubs: ['ClientOnly', 'NuxtLink'],
     })
   })
 

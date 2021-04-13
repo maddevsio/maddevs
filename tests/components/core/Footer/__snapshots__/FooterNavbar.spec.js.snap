@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FooterNavbar component should render correctly 1`] = `
+<div>
+  <div
+    class="footer-navbar"
+  >
+    <p
+      class="footer-navbar__company-name"
+    >
+      
+    © Mad Devs - 2021
+  
+    </p>
+     
+    <div
+      class="footer-navbar__nav-list"
+    >
+      <nuxtlink
+        class="footer-navbar__nav-item"
+        target="_blank"
+        to="/gdpr/"
+      >
+        
+      GDPR Compliance Commitment
+    
+      </nuxtlink>
+      <nuxtlink
+        class="footer-navbar__nav-item"
+        target="_blank"
+        to="/nda/"
+      >
+        
+      Non-Disclosure Agreement (NDA)
+    
+      </nuxtlink>
+      <nuxtlink
+        class="footer-navbar__nav-item"
+        target="_blank"
+        to="/privacy/"
+      >
+        
+      Privacy Policy
+    
+      </nuxtlink>
+      <nuxtlink
+        class="footer-navbar__nav-item"
+        target="_blank"
+        to="/faq/"
+      >
+        
+      FAQ
+    
+      </nuxtlink>
+    </div>
+  </div>
+</div>
+`;

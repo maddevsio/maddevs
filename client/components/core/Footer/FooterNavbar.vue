@@ -4,15 +4,15 @@
       © Mad Devs - {{ currentYear }}
     </p>
     <div class="footer-navbar__nav-list">
-      <a
+      <NuxtLink
         v-for="item in navigation"
         :key="item.link"
-        :href="item.link"
+        :to="item.link"
         target="_blank"
         class="footer-navbar__nav-item"
       >
         {{ item.title }}
-      </a>
+      </NuxtLink>
     </div>
   </div>
 </template>

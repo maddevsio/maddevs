@@ -23,7 +23,7 @@ exports[`CustomerTestimonials should render correctly 1`] = `
         <div
           class="customer-testimonials__widget-col"
         >
-          <client-only-stub>
+          <clientonly-stub>
             <div
               class="customer-testimonials__widget-wrap"
             >
@@ -36,7 +36,7 @@ exports[`CustomerTestimonials should render correctly 1`] = `
                 data-widget-type="4"
               />
             </div>
-          </client-only-stub>
+          </clientonly-stub>
         </div>
          
         <div

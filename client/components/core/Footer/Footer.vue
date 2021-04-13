@@ -1,5 +1,8 @@
 <template>
-  <footer :class="`footer ${pageName}`">
+  <footer
+    data-testid="test-footer"
+    :class="`footer ${pageName}`"
+  >
     <div class="container">
       <div class="footer__content row">
         <div class="footer__left-content col-xl-8 col-lg-7 col-md-6">
