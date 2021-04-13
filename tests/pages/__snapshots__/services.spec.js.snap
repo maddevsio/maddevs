@@ -237,7 +237,7 @@ exports[`Services page should render correctly 1`] = `
               <div
                 class="content-item__text-content"
               >
-                <client-only-stub>
+                <clientonly-stub>
                   <h3
                     class="item-title content-item__title"
                   >
@@ -266,7 +266,7 @@ exports[`Services page should render correctly 1`] = `
                   >
                     At Mad Devs we know everything about:
                   </p>
-                </client-only-stub>
+                </clientonly-stub>
               </div>
                
               <ul
@@ -340,7 +340,7 @@ exports[`Services page should render correctly 1`] = `
               <div
                 class="content-item__text-content"
               >
-                <client-only-stub>
+                <clientonly-stub>
                   <h3
                     class="item-title content-item__title"
                   >
@@ -385,7 +385,7 @@ exports[`Services page should render correctly 1`] = `
                     </span>
                      frontend stack:
                   </p>
-                </client-only-stub>
+                </clientonly-stub>
               </div>
                
               <ul
@@ -459,7 +459,7 @@ exports[`Services page should render correctly 1`] = `
               <div
                 class="content-item__text-content"
               >
-                <client-only-stub>
+                <clientonly-stub>
                   <h3
                     class="item-title content-item__title"
                   >
@@ -488,7 +488,7 @@ exports[`Services page should render correctly 1`] = `
                   >
                     We do both iOS and Android development using the following languages and frameworks:
                   </p>
-                </client-only-stub>
+                </clientonly-stub>
               </div>
                
               <ul
@@ -705,7 +705,7 @@ exports[`Services page should render correctly 1`] = `
             <div
               class="it-consulting-item__text-content"
             >
-              <client-only-stub>
+              <clientonly-stub>
                 <h3
                   class="item-title it-consulting-item__title"
                 >
@@ -731,7 +731,7 @@ exports[`Services page should render correctly 1`] = `
         We'll help you resolve this with minimal changes using proper optimisations, updates and code refactoring.
       
                 </p>
-              </client-only-stub>
+              </clientonly-stub>
             </div>
           </div>
           <div
@@ -741,7 +741,7 @@ exports[`Services page should render correctly 1`] = `
             <div
               class="it-consulting-item__text-content"
             >
-              <client-only-stub>
+              <clientonly-stub>
                 <h3
                   class="item-title it-consulting-item__title"
                 >
@@ -766,7 +766,7 @@ exports[`Services page should render correctly 1`] = `
         Your process probably just lacks transparency and reasonable control. We know how to avoid this and check who does what right now.
       
                 </p>
-              </client-only-stub>
+              </clientonly-stub>
             </div>
           </div>
           <div
@@ -776,7 +776,7 @@ exports[`Services page should render correctly 1`] = `
             <div
               class="it-consulting-item__text-content"
             >
-              <client-only-stub>
+              <clientonly-stub>
                 <h3
                   class="item-title it-consulting-item__title"
                 >
@@ -798,7 +798,7 @@ exports[`Services page should render correctly 1`] = `
         Hire good people and get rid of underperformers. Easier said than done, right? Get assessments for the skills and seniority level of your staff. Our positively mad engineers and PMs know how to do this.
       
                 </p>
-              </client-only-stub>
+              </clientonly-stub>
             </div>
           </div>
         </div>

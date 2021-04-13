@@ -12,7 +12,7 @@ const ROUTE = {
   path: '/home',
 }
 
-const stubs = ['client-only']
+const stubs = ['client-only', 'NuxtLink']
 
 const TEST_ID = 'test-footer'
 const updateClassName = jest.fn()

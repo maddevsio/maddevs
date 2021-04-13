@@ -11,7 +11,7 @@ const META_DATA = {
   'og:image': 'https://maddevs.io/Open-Graph.png',
 }
 
-const stubs = ['client-only', 'NuxtLink']
+const stubs = ['ClientOnly', 'NuxtLink']
 
 describe('Services page', () => {
   global.$nuxt = {

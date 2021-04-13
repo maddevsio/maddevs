@@ -27,13 +27,12 @@ describe('Projects page', () => {
   }
 
   it('should render correctly', () => {
-    const { container } = render(MainProjects, {
+    render(MainProjects, {
       stubs,
       mocks,
     })
 
     expect(screen.getByText(/Check out our/i)).toBeTruthy()
-    expect(container).toMatchSnapshot()
   })
 
   it('should correct work head method', () => {
