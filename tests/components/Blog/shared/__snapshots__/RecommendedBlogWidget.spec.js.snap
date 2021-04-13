@@ -11,9 +11,9 @@ exports[`recommended blog widget component render with very long title 1`] = `
       class="blog-post"
     >
       <img
-        class="blog-post__image"
+        class="blog-post__image img_lazy"
+        data-src="https://images.prismic.io/superpupertest/e746f4e6-ce33-47b7-b828-5f315fea2bbb_1_bmF_K9TNqtHpHzUUiI_y5Q.jpeg?auto=compress,format"
         height="217"
-        src="https://images.prismic.io/superpupertest/e746f4e6-ce33-47b7-b828-5f315fea2bbb_1_bmF_K9TNqtHpHzUUiI_y5Q.jpeg?auto=compress,format"
         width="400"
       />
        
@@ -65,7 +65,7 @@ exports[`recommended blog widget component render with very long title 1`] = `
            
           <nuxtlink-stub
             class="light"
-            to="/blog/tag/markup"
+            to="/blog/tag/markup/"
           >
             <div
               class="post-tag light"
@@ -98,9 +98,9 @@ exports[`recommended blog widget component should render correctly with slot 1`]
       class="blog-post"
     >
       <img
-        class="blog-post__image"
+        class="blog-post__image img_lazy"
+        data-src="https://images.prismic.io/superpupertest/e746f4e6-ce33-47b7-b828-5f315fea2bbb_1_bmF_K9TNqtHpHzUUiI_y5Q.jpeg?auto=compress,format"
         height="217"
-        src="https://images.prismic.io/superpupertest/e746f4e6-ce33-47b7-b828-5f315fea2bbb_1_bmF_K9TNqtHpHzUUiI_y5Q.jpeg?auto=compress,format"
         width="400"
       />
        
@@ -152,7 +152,7 @@ exports[`recommended blog widget component should render correctly with slot 1`]
            
           <nuxtlink-stub
             class="light"
-            to="/blog/tag/markup"
+            to="/blog/tag/markup/"
           >
             <div
               class="post-tag light"

@@ -5,9 +5,9 @@
   >
     <div class="blog-post">
       <img
-        :src="post.data.featured_image.url"
+        :data-src="post.data.featured_image.url"
         :alt="post.data.featured_image.alt"
-        class="blog-post__image"
+        class="blog-post__image img_lazy"
         width="400"
         height="217"
       >

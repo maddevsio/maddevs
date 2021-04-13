@@ -3,7 +3,7 @@
 exports[`featured post component is a Vue instance 1`] = `
 <div>
   <nuxtlink-stub
-    class="featured-post"
+    class="featured-post dark"
     to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
   >
     <div
@@ -37,7 +37,7 @@ exports[`featured post component is a Vue instance 1`] = `
             class="featured-post__meta"
           >
             <nuxtlink-stub
-              to="/blog/tag/markup"
+              to="/blog/tag/markup/"
             >
               <div
                 class="post-tag dark"
@@ -64,9 +64,9 @@ exports[`featured post component is a Vue instance 1`] = `
         class="col-12 col-lg-6 featured-post__image-wrapper"
       >
         <img
-          class="featured-post__image"
+          class="featured-post__image img_lazy"
+          data-src="https://images.prismic.io/superpupertest/e746f4e6-ce33-47b7-b828-5f315fea2bbb_1_bmF_K9TNqtHpHzUUiI_y5Q.jpeg?auto=compress,format"
           height="380"
-          src="https://images.prismic.io/superpupertest/e746f4e6-ce33-47b7-b828-5f315fea2bbb_1_bmF_K9TNqtHpHzUUiI_y5Q.jpeg?auto=compress,format"
           width="700"
         />
       </div>

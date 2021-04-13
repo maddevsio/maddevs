@@ -21,12 +21,13 @@
             </p>
             <PostAuthor :author="featuredPostAuthor" />
             <div class="featured-post__cover-wrapper">
-              <PrismicImage
-                :field="featured.featured_image"
-                class="featured-post__cover"
+              <img
+                class="featured-post__cover img_lazy"
                 width="560"
                 height="347"
-              />
+                :data-src="featured.featured_image.url"
+                :alt="featured.featured_image.alt"
+              >
             </div>
           </NuxtLink>
         </div>
@@ -41,12 +42,13 @@
                 class="customer-university__list-item single-cluster"
               >
                 <div class="single-cluster__cover-wrapper">
-                  <PrismicImage
-                    :field="cluster.primary.cover_image"
-                    class="single-cluster__cover"
+                  <img
+                    class="single-cluster__cover img_lazy"
                     width="295"
                     height="160"
-                  />
+                    :data-src="cluster.primary.cover_image.url"
+                    :alt="cluster.primary.cover_image.alt"
+                  >
                 </div>
                 <div class="single-cluster__data">
                   <h3 class="single-cluster__title">
@@ -78,6 +80,7 @@
 import { mapGetters } from 'vuex'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
+import initializeLazyLoad from '@/helpers/lazyLoad'
 
 export default {
   name: 'CustomerUniversitySection',
@@ -129,6 +132,13 @@ export default {
       const slices = this.featured.body
       const limit = 150
       return getFirstParagraph(slices, limit)
+    },
+  },
+
+  watch: {
+    master() {
+      // Callback for async fetch(), add lazy for images in customer university posts after async data render on page
+      this.$nextTick(() => initializeLazyLoad())
     },
   },
 }

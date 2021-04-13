@@ -30,8 +30,8 @@ exports[`header Blog is a Vue instance 1`] = `
       >
         <img
           alt="Tamara Mun"
-          class="blog-post__author-image"
-          src="https://images.prismic.io/superpupertest/c3b0ca2f-b28b-455c-b75b-fa880ee66c82_01.jpeg?auto=compress,format"
+          class="blog-post__author-image img_lazy"
+          data-src="https://images.prismic.io/superpupertest/c3b0ca2f-b28b-455c-b75b-fa880ee66c82_01.jpeg?auto=compress,format"
         />
          
         <div

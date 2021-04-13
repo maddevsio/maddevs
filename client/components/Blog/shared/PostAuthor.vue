@@ -6,7 +6,7 @@
     <div class="blog-post__author">
       <img
         v-if="author.metaImage.url"
-        :src="author.metaImage.url"
+        :data-src="author.metaImage.url"
         :alt="author.metaImage.alt"
         class="blog-post__author-image"
       >
