@@ -1,6 +1,7 @@
 <template>
   <div class="card-content">
     <img
+      v-if="iconName"
       :data-src="require(`@/assets/img/Studies/svg/${iconName}.svg`)"
       :alt="iconName"
       class="card-content_icon img_lazy"
@@ -18,7 +19,7 @@ export default {
   props: {
     iconName: {
       type: String,
-      default: '',
+      default: null,
     },
 
     title: {
