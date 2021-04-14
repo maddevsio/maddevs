@@ -19,7 +19,7 @@
       autoplay="true"
     >
       <source
-        :src="getMediaFromS3($props.videoName)"
+        :src="getMediaFromS3(videoName)"
         type="video/mp4"
       >
       Your browser does not support the video tag.
@@ -104,7 +104,7 @@ export default {
 
   computed: {
     projectName() {
-      if (!this.isIphone) return `case_header-${this.$props.project}`
+      if (!this.isIphone) return `case_header-${this.project}`
       return ''
     },
   },

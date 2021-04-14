@@ -1,6 +1,6 @@
 <template>
   <div class="card-use-case">
-    <client-only>
+    <ClientOnly>
       <h3
         :class="`card-use-case__${classList.uniqueСlass}-title`"
         class="card-use-case__title case_title_h4"
@@ -8,7 +8,7 @@
       >
         {{ title }}
       </h3>
-    </client-only>
+    </ClientOnly>
     <div
       :class="`card-use-case__${classList.uniqueСlass}-description-wrapper`"
       class="card-use-case__description-wrapper"
@@ -124,7 +124,7 @@ export default {
 
   &__white-card-title,
   &__white-card-paragraph {
-    color: $text-color--black-cases;
+    color: $text-color--black-oil;
   }
 
   &__desktop-picture {

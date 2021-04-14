@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseInput should render correctly 1`] = `
+<div>
+  <div
+    class="modal-field-item field-item"
+  >
+    <p
+      class="modal-field-name field-name"
+    >
+      
+    Custom label
+  
+    </p>
+     
+    <div>
+      <input
+        class="modal-entry-field entry-field"
+        data-testid="test-base-form-input"
+        placeholder="custom placeholder"
+        type="text"
+      />
+       
+      <!---->
+    </div>
+     
+    <!---->
+  </div>
+</div>
+`;

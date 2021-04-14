@@ -22,68 +22,68 @@ export const keyGoalsList = [
 
 export const technologies = [
   {
-    name: 'Go',
-    className: 'backend-go',
+    alt: 'Go',
+    name: 'go',
   },
   {
-    name: 'Swift',
-    className: 'mobile-swift',
+    alt: 'Swift',
+    name: 'swift',
   },
   {
-    name: 'Java for Android',
-    className: 'mobile-java',
+    alt: 'Java for Android',
+    name: 'java',
   },
   {
-    name: 'Unity',
-    className: 'other-unity',
+    alt: 'Unity',
+    name: 'unity',
   },
   {
-    name: 'AWS',
-    className: 'infrastructure-aws',
+    alt: 'AWS',
+    name: 'aws',
   },
   {
-    name: 'CodeCommit',
-    className: 'infrastructure-codecommit',
+    alt: 'CodeCommit',
+    name: 'codecommit',
   },
   {
-    name: 'Windows 10',
-    className: 'other-windows',
+    alt: 'Windows 10',
+    name: 'windows',
   },
   {
-    name: 'iOS',
-    className: 'mobile-apple-black',
+    alt: 'iOS',
+    name: 'apple-black',
   },
   {
-    name: 'Android',
-    className: 'mobile-android-black-text',
+    alt: 'Android',
+    name: 'android-black-text',
   },
   {
-    name: 'Ubuntu',
-    className: 'other-ubuntu',
+    alt: 'Ubuntu',
+    name: 'ubuntu',
   },
   {
-    name: 'Ansible',
-    className: 'devops-ansible',
+    alt: 'Ansible',
+    name: 'ansible',
   },
   {
-    name: 'Sentry',
-    className: 'devops-sentry-dark',
+    alt: 'Sentry',
+    name: 'sentry-black',
   },
   {
-    name: 'Elasticsearch',
-    className: 'devops-elastic',
+    alt: 'Elasticsearch',
+    name: 'elastic',
   },
   {
-    name: 'Logstash',
-    className: 'devops-logstash',
+    alt: 'Logstash',
+    name: 'logstash',
   },
   {
-    name: 'Kibana',
-    className: 'devops-kibana',
+    alt: 'Kibana',
+    name: 'kibana',
   },
   {
-    name: 'Prometheus',
-    className: 'devops-prometheus',
+    alt: 'Prometheus',
+    name: 'prometheus',
   },
 ]
 

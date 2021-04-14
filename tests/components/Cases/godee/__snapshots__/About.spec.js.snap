@@ -18,7 +18,12 @@ exports[`About component should render correctly 1`] = `
     <blockquote
       class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
     >
-      
+      <img
+        alt="blockquote"
+        class="case_blockquote-mark img_lazy"
+        data-src="[object Object]"
+      />
+       
     The app-based system allows users to find a route, select the time, book a seat and pay for the ride online.
   
     </blockquote>

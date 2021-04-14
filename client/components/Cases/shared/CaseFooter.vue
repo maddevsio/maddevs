@@ -7,10 +7,12 @@
     >
       <slot />
     </h2>
-    <a
-      :href="link"
+    <NuxtLink
+      :to="link"
       class="case_next-project-button"
-    >Read next project</a>
+    >
+      Read next project
+    </NuxtLink>
   </section>
 </template>
 
@@ -69,9 +71,9 @@ export default {
 
   // --------- NambaFood footer styles --------- //
   &_logotype-namba-food {
-    @include nambafood-footer;
     width: 200px;
     height: 63px;
+    display: block;
     margin-bottom: 33px;
   }
 
@@ -89,9 +91,9 @@ export default {
 
   // --------- SJMC footer styles --------- //
   &_logotype-sjmc {
-    @include sjmc-footer;
     width: 253px;
     height: 113px;
+    display: block;
     margin-bottom: 35px;
   }
 

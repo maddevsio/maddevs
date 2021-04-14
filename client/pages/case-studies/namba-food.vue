@@ -2,6 +2,7 @@
   <main class="main case">
     <CaseHeader
       :logo="logo"
+      project="nambafood"
       video-name="/videos/main.ef19480.mp4"
       video-fallback-path="/images/Cases/nambafood/jpg/blank.jpg"
     >
@@ -24,10 +25,12 @@
       link="/case-studies/sir-john-monash-centre/"
       class-name="sjmc"
     >
-      <div
+      <img
         slot="icon"
-        class="case_logotype-sjmc"
-      />
+        :data-src="require(`@/assets/img/Studies/svg/sjmc-footer.svg`)"
+        alt="SJMC"
+        class="case_logotype-sjmc img_lazy"
+      >
       The maintenance <br class="case_mobile-break-sjmc">
       of memory: <br>
       Sir John Monash <br class="case_mobile-break-sjmc">

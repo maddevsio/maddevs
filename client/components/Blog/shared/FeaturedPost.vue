@@ -25,11 +25,11 @@
       </div>
       <div class="col-12 col-lg-6 featured-post__image-wrapper">
         <img
-          :src="post.data.featured_image.url"
+          :data-src="post.data.featured_image.url"
           :alt="post.data.featured_image.alt"
           :width="post.data.featured_image.dimensions.width"
           :height="post.data.featured_image.dimensions.height"
-          class="featured-post__image"
+          class="featured-post__image img_lazy"
         >
       </div>
     </div>
@@ -41,6 +41,7 @@ import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import PostTag from '@/components/Blog/shared/PostTag'
 import linkResolver from '@/plugins/link-resolver'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
+import formatDate from '@/helpers/formatDate'
 
 export default {
   name: 'FeaturedPost',
@@ -59,7 +60,7 @@ export default {
   computed: {
     formattedDate() {
       const { date } = this.post.data
-      return Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(date))
+      return formatDate(date)
     },
 
     link() {

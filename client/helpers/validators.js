@@ -1,13 +1,8 @@
 // valid simbols 0-9, +, -
 export const phone = value => {
-  if (!value) {
-    return true
-  }
+  if (!value) return true
   const regex = /^[0-9\s- +]*$/g
-  if (value.match(regex)) {
-    return true
-  }
-  return false
+  return Boolean(value.match(regex))
 }
 
 export const fileSizeValidation = value => {

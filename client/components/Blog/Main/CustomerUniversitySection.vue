@@ -21,12 +21,13 @@
             </p>
             <PostAuthor :document="featured" />
             <div class="featured-post__cover-wrapper">
-              <PrismicImage
-                :field="featured.featured_image"
-                class="featured-post__cover"
+              <img
+                class="featured-post__cover img_lazy"
                 width="560"
                 height="347"
-              />
+                :data-src="featured.featured_image.url"
+                :alt="featured.featured_image.alt"
+              >
             </div>
           </NuxtLink>
         </div>
@@ -41,12 +42,13 @@
                 class="customer-university__list-item single-cluster"
               >
                 <div class="single-cluster__cover-wrapper">
-                  <PrismicImage
-                    :field="cluster.primary.cover_image"
-                    class="single-cluster__cover"
+                  <img
+                    class="single-cluster__cover img_lazy"
                     width="295"
                     height="160"
-                  />
+                    :data-src="cluster.primary.cover_image.url"
+                    :alt="cluster.primary.cover_image.alt"
+                  >
                 </div>
                 <div class="single-cluster__data">
                   <h3 class="single-cluster__title">
@@ -77,6 +79,8 @@
 <script>
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
+import initializeLazyLoad from '@/helpers/lazyLoad'
+import formatDate from '@/helpers/formatDate'
 
 export default {
   name: 'CustomerUniversitySection',
@@ -98,9 +102,7 @@ export default {
     if (master.data.featured_cu.uid) {
       const featured = await this.$prismic.api.getByUID('customer_university', master.data.featured_cu.uid)
       this.featured = featured.data
-      this.formattedDate = Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(
-        new Date(this.featured.date),
-      )
+      this.formattedDate = formatDate(this.featured.date)
     }
     this.master = master
   },
@@ -123,6 +125,13 @@ export default {
       return getFirstParagraph(slices, limit)
     },
   },
+
+  watch: {
+    master() {
+      // Callback for async fetch(), add lazy for images in customer university posts after async data render on page
+      this.$nextTick(() => initializeLazyLoad())
+    },
+  },
 }
 </script>
 
@@ -130,7 +139,7 @@ export default {
 @import '../../../assets/styles/vars';
 
 @mixin label {
-  color: $text-color--grey-team-list;
+  color: $text-color--grey-opacity-40-percent;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -157,7 +166,7 @@ export default {
 }
 
 .customer-university {
-  background-color: $text-color--black-cases;
+  background-color: $text-color--black-oil;
   padding: 90px 0;
 
   &__wrapper {
@@ -172,8 +181,8 @@ export default {
     font-size: 120px;
     line-height: 96%;
     letter-spacing: -0.04em;
-    -webkit-text-stroke: 1.13px $text-color--grey-team-list;
-    color: $text-color--black-cases;
+    -webkit-text-stroke: 1.13px $text-color--grey-opacity-40-percent;
+    color: $text-color--black-oil;
     margin-bottom: 78px;
 
     span {

@@ -1,22 +1,22 @@
 .case {
   &_title_h2 {
-    @include title($text-color--black-cases, 41.5px, -0.04em);
+    @include title($text-color--black-oil, 41.5px, -0.04em);
   }
 
   &_title_h3 {
-    @include title($text-color--black-cases, 33.2px, -0.04em);
+    @include title($text-color--black-oil, 33.2px, -0.04em);
   }
 
   &_title_h4 {
-    @include title($text-color--black-cases, 26.56px, -0.03em);
+    @include title($text-color--black-oil, 26.56px, -0.03em);
   }
 
   &_title_h5 {
-    @include title($text-color--black-cases, 21.25px, -0.02em);
+    @include title($text-color--black-oil, 21.25px, -0.02em);
   }
 
   &_link {
-    @include default_text($text-color--black-cases, 17px, 166%, -0.035em, normal);
+    @include default_text($text-color--black-oil, 17px, 166%, -0.035em, normal);
   }
 
   &_full-screen-video,

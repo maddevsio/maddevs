@@ -5,7 +5,12 @@ exports[`TextQuote component should render correctly 1`] = `
   <blockquote
     class="case_blockquote"
   >
-    Main Content
+    <img
+      alt="blockquote"
+      class="case_blockquote-mark img_lazy"
+      data-src="[object Object]"
+    />
+     Main Content
   </blockquote>
 </div>
 `;

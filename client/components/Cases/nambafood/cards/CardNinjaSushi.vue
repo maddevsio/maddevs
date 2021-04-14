@@ -26,7 +26,11 @@
       </TextParagraph>
     </div>
     <div class="case_card-content_right-column">
-      <div class="case_card-content_macbook-frame" />
+      <img
+        :src="require(`@/assets/img/Studies/svg/macbook-frame.svg`)"
+        alt="Macbook frame"
+        class="case_card-content_macbook-frame"
+      >
       <picture>
         <source
           v-if="source"
@@ -111,7 +115,6 @@ export default {
 
 <style scoped lang="scss">
 @import '../../../../assets/styles/cases/_mixins';
-@import '../../../../assets/styles/cases/_icons';
 
 .case_card-content {
   @include grid(repeat(2, 1fr), auto, 0, 0);
@@ -134,7 +137,8 @@ export default {
     width: 1441px;
     height: 790px;
     position: absolute;
-    @include macbook-frame;
+    top: 0;
+    left: 0;
   }
 
   &_image {

@@ -31,7 +31,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
         <div
           class="card-use-case"
         >
-          <client-only-stub>
+          <clientonly-stub>
             <h3
               class="card-use-case__title case_title_h4 card-use-case__red-card-title"
             >
@@ -39,7 +39,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <br />
                application
             </h3>
-          </client-only-stub>
+          </clientonly-stub>
            
           <div
             class="card-use-case__description-wrapper card-use-case__red-card-description-wrapper"
@@ -106,7 +106,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
         <div
           class="card-use-case"
         >
-          <client-only-stub>
+          <clientonly-stub>
             <h3
               class="card-use-case__title case_title_h4 card-use-case__black-card-title"
             >
@@ -114,7 +114,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <br />
                deliverymen
             </h3>
-          </client-only-stub>
+          </clientonly-stub>
            
           <div
             class="card-use-case__description-wrapper card-use-case__black-card-description-wrapper"
@@ -181,13 +181,13 @@ exports[`UsageScenarios component should render correctly 1`] = `
         <div
           class="card-use-case"
         >
-          <client-only-stub>
+          <clientonly-stub>
             <h3
               class="card-use-case__title case_title_h4 card-use-case__turquoise-card-title"
             >
               Unified control system for operators
             </h3>
-          </client-only-stub>
+          </clientonly-stub>
            
           <div
             class="card-use-case__description-wrapper card-use-case__turquoise-card-description-wrapper"
@@ -254,7 +254,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
         <div
           class="card-use-case"
         >
-          <client-only-stub>
+          <clientonly-stub>
             <h3
               class="card-use-case__title case_title_h4 card-use-case__white-card-title"
             >
@@ -262,7 +262,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <br />
                managers
             </h3>
-          </client-only-stub>
+          </clientonly-stub>
            
           <div
             class="card-use-case__description-wrapper card-use-case__white-card-description-wrapper"

@@ -5,10 +5,9 @@
     </h3>
     <ListTechnologies class="m-96_bottom media-m-48_bottom">
       <ListTechnologiesItem
-        v-for="technologie in technologies"
-        :key="technologie.techName"
-        :tech-name="technologie.techName"
-        :class-name="technologie.className"
+        v-for="technology in technologies"
+        :key="technology.name"
+        v-bind="technology"
       />
     </ListTechnologies>
   </section>

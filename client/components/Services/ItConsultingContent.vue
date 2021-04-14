@@ -1,7 +1,7 @@
 <template>
   <div class="it-consulting-item col-xl-4 col-lg-4">
     <div class="it-consulting-item__text-content">
-      <client-only>
+      <ClientOnly>
         <UITitle
           class="it-consulting-item__title"
           v-html="title"
@@ -18,7 +18,7 @@
         <UIParagraph class="it-consulting-item__paragraph">
           {{ paragraph }}
         </UIParagraph>
-      </client-only>
+      </ClientOnly>
     </div>
   </div>
 </template>

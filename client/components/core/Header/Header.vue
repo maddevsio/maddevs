@@ -21,7 +21,7 @@
       >
         <div class="row">
           <div class="header__left-nav_bar col-xl-6 col-lg-7">
-            <RouterLink
+            <NuxtLink
               :to="`/`"
               class="header__logo-icon"
             >
@@ -31,9 +31,9 @@
                 :is-active-mobile-menu="isActiveMobileMenu"
                 class="header__header-logo"
               />
-            </RouterLink>
+            </NuxtLink>
             <nav class="header__header-routes_links">
-              <RouterLink
+              <NuxtLink
                 v-for="{ title, link, exact } in navigation"
                 :key="link"
                 :exact="exact"
@@ -43,7 +43,7 @@
                 @click.native="goToTopPage"
               >
                 {{ title }}
-              </RouterLink>
+              </NuxtLink>
             </nav>
             <!-- Burget btn -->
             <div
@@ -153,11 +153,14 @@ export default {
       isActiveMobileMenu: false,
       isCasePage: false,
       isTransparentBG: true,
-      caseHeader: null,
-      headerWhiteLogoText: null,
-      caseFirstSection: null,
       caseGoDeeScrollContainer: null,
     }
+  },
+
+  computed: {
+    isGodeePage() {
+      return this.$nuxt.$route.path.includes('/godee')
+    },
   },
 
   watch: {
@@ -172,12 +175,10 @@ export default {
   },
 
   mounted() {
-    this.getDOMSelectors()
+    this.caseGoDeeScrollContainer = document.getElementById('case-scroll-container')
     this.addEventListeners()
     this.setStylesForHeader()
-    if (this.isCasePage && this.$nuxt.$route.path.includes('/godee')) {
-      this.setWidthForHeader()
-    }
+    if (this.isCasePage && this.isGodeePage) this.setWidthForHeader()
   },
 
   methods: {
@@ -211,7 +212,7 @@ export default {
     },
 
     changeLogoState(scrollTop) {
-      this.showLogoText = !(scrollTop >= 10)
+      this.showLogoText = Boolean(scrollTop < 10)
     },
 
     handleMobileMenuScroll(e) {
@@ -235,15 +236,8 @@ export default {
       }
     },
 
-    // Methods of case pages
-    getDOMSelectors() {
-      this.caseHeader = document.getElementById('case-header')
-      this.headerWhiteLogoText = document.getElementById('header-logo-text')
-      this.caseFirstSection = document.getElementById('case-first-section')
-      this.caseGoDeeScrollContainer = document.getElementById('case-scroll-container')
-    },
-
     setWidthForHeader() {
+      if (!this.caseGoDeeScrollContainer) return
       const scrollBarWidth = this.caseGoDeeScrollContainer.offsetWidth - this.caseGoDeeScrollContainer.clientWidth
       if (this.$refs.header && this.$refs.overlay) {
         if (window.innerWidth >= 991) {
@@ -257,44 +251,37 @@ export default {
     },
 
     setStylesForHeader() {
-      const scrollTop = this.$nuxt.$route.path.includes('/godee')
+      const scrollTop = this.isGodeePage && this.caseGoDeeScrollContainer
         ? this.caseGoDeeScrollContainer.scrollTop
         : window.scrollY
       const area = document.querySelector('#case-header')
-
       if (!area) return
 
       const areaHeight = (area.offsetTop + area.offsetHeight) - (this.$refs.overlay && this.$refs.overlay.offsetHeight)
       // const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
       const isBeforeBottomPointSection = scrollTop <= areaHeight // Before Bottom point of the section
 
-      if (isBeforeBottomPointSection) {
-        this.isTransparentBG = true
-      } else {
-        this.isTransparentBG = false
-      }
+      this.isTransparentBG = isBeforeBottomPointSection
     },
 
     scrollHandler() {
-      if (this.$nuxt.$route.path.includes('/case-studies/')) {
-        this.setStylesForHeader()
-      }
+      if (this.$nuxt.$route.path.includes('/case-studies/')) this.setStylesForHeader()
       this.changeLogoState(window.pageYOffset)
     },
 
     addEventListeners() {
       window.addEventListener('scroll', this.scrollHandler)
-      if (this.isCasePage && this.$nuxt.$route.path.includes('/godee')) {
-        window.addEventListener('resize', this.setWidthForHeader)
-        this.caseGoDeeScrollContainer.addEventListener('scroll', this.scrollHandler)
-      }
+      if (!this.isGodeePage) return
+
+      window.addEventListener('resize', this.setWidthForHeader)
+      if (this.caseGoDeeScrollContainer) this.caseGoDeeScrollContainer.addEventListener('scroll', this.scrollHandler)
     },
 
     removeEventListeners() {
-      if (this.$nuxt.$route.path.includes('/godee')) {
-        window.removeEventListener('resize', this.setWidthForHeader)
-        this.caseGoDeeScrollContainer.removeEventListener('scroll', this.scrollHandler)
-      }
+      if (!this.isGodeePage) return
+
+      window.removeEventListener('resize', this.setWidthForHeader)
+      if (this.caseGoDeeScrollContainer) this.caseGoDeeScrollContainer.removeEventListener('scroll', this.scrollHandler)
     },
   },
 }
