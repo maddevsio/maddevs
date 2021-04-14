@@ -2,9 +2,9 @@
   <div class="blog-post__author">
     <img
       v-if="document.author_image.url !== undefined"
+      ref="authorImage"
       :data-src="document.author_image.url"
       :alt="$prismic.asText(document.author)"
-      ref="authorImage"
       class="blog-post__author-image img_lazy"
     >
     <div
