@@ -8,6 +8,7 @@
   >
     <BaseInput
       v-model="questionsOnItConsulting"
+      name="questionsOnItConsulting"
       label="Your questions on IT consulting"
       placeholder="Tell us how we can help you…"
       :validation="$v.questionsOnItConsulting"

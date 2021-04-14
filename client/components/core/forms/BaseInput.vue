@@ -10,7 +10,7 @@
     <div v-if="showLabel">
       <input
         v-if="elementType === 'input'"
-        data-testid="test-base-form-full-name"
+        :data-testid="`test-base-form-${name}`"
         class="modal-entry-field entry-field"
         :value="value"
         :class="{ invalid: validation.$error }"
@@ -20,7 +20,7 @@
       >
       <textarea
         v-if="elementType === 'textarea'"
-        data-testid="test-base-form-description"
+        :data-testid="`test-base-form-${name}`"
         class="modal-entry-field entry-field textarea"
         :value="value"
         :class="{ invalid: validation.$error }"
@@ -34,7 +34,7 @@
     >
       <input
         v-if="elementType === 'input'"
-        data-testid="test-base-form-full-name"
+        :data-testid="`test-base-form-${name}`"
         class="modal-entry-field entry-field"
         :value="value"
         :class="{ invalid: validation.$error }"
@@ -47,7 +47,7 @@
     >
       <input
         v-if="elementType === 'input'"
-        data-testid="test-base-form-full-name"
+        :data-testid="`test-base-form-${name}`"
         class="modal-entry-field entry-field"
         :placeholder="placeholder"
         :value="value"
@@ -57,7 +57,7 @@
       >
       <textarea
         v-if="elementType === 'textarea'"
-        data-testid="test-base-form-description"
+        :data-testid="`test-base-form-${name}`"
         class="modal-entry-field entry-field textarea"
         :placeholder="placeholder"
         :value="value"
@@ -94,6 +94,11 @@ export default {
   },
 
   props: {
+    name: {
+      type: String,
+      default: 'name',
+    },
+
     elementType: {
       type: String,
       default: 'input',

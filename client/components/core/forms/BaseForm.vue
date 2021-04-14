@@ -6,6 +6,7 @@
     <div class="fields-list">
       <BaseInput
         v-model="fullName"
+        name="fullName"
         :show-label="useLabels"
         label="Full Name"
         placeholder="John Smith"
@@ -15,6 +16,7 @@
       <BaseInput
         v-if="useCompany"
         v-model="company"
+        name="company"
         :show-label="useLabels"
         label="Company"
         placeholder="MyAwesomeCompany, Inc."
@@ -23,6 +25,7 @@
       />
       <BaseInput
         v-model="email"
+        name="email"
         :show-label="useLabels"
         label="Work email"
         placeholder="your@mail.com"
@@ -31,6 +34,7 @@
       />
       <BaseInput
         v-if="usePhone"
+        name="phoneNumber"
         :value="phoneNumber"
         :show-label="useLabels"
         label="Phone number"
@@ -42,6 +46,7 @@
       <BaseInput
         v-if="useDescription"
         v-model="description"
+        name="description"
         :show-label="useLabels"
         label="Project description"
         placeholder="Describe your project..."

@@ -8,6 +8,7 @@
   >
     <BaseInput
       v-model="expertise"
+      name="questionsOnItConsulting"
       label="Expertise you are interested in"
       placeholder="React development, Heroku Postgres, etc"
     />

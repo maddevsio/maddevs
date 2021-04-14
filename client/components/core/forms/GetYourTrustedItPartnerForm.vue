@@ -8,6 +8,7 @@
   >
     <BaseInput
       v-model="needAssistanceWith"
+      name="questionsOnItConsulting"
       label="Expertise you are interested in"
       placeholder="I need assistance with..."
       :validation="$v.needAssistanceWith"
