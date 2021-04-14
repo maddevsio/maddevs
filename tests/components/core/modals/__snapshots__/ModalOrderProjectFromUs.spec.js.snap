@@ -15,16 +15,20 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
           class="modal-field-name field-name required"
         >
           
-        Full Name
-      
+    Full Name
+  
         </p>
          
-        <input
-          class="modal-entry-field entry-field"
-          data-testid="test-base-form-full-name"
-          placeholder="John Smith"
-          type="text"
-        />
+        <div>
+          <input
+            class="modal-entry-field entry-field"
+            data-testid="test-base-form-fullName"
+            placeholder="John Smith"
+            type="text"
+          />
+           
+          <!---->
+        </div>
          
         <!---->
       </div>
@@ -36,16 +40,20 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
           class="modal-field-name field-name required"
         >
           
-        Company
-      
+    Company
+  
         </p>
          
-        <input
-          class="modal-entry-field entry-field"
-          data-testid="test-base-form-company"
-          placeholder="MyAwesomeCompany, Inc."
-          type="text"
-        />
+        <div>
+          <input
+            class="modal-entry-field entry-field"
+            data-testid="test-base-form-company"
+            placeholder="MyAwesomeCompany, Inc."
+            type="text"
+          />
+           
+          <!---->
+        </div>
          
         <!---->
       </div>
@@ -57,8 +65,8 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
           class="modal-field-name field-name required"
         >
           
-        Work email
-      
+    Work email
+  
         </p>
          
         <div>
@@ -68,6 +76,8 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
             placeholder="your@mail.com"
             type="text"
           />
+           
+          <!---->
         </div>
          
         <!---->
@@ -80,16 +90,20 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
           class="modal-field-name field-name"
         >
           
-        Phone number
-      
+    Phone number
+  
         </p>
          
-        <input
-          class="modal-entry-field entry-field"
-          data-testid="test-base-form-phone"
-          placeholder="+X XXX XXX-XXXX"
-          type="text"
-        />
+        <div>
+          <input
+            class="modal-entry-field entry-field"
+            data-testid="test-base-form-phoneNumber"
+            placeholder="+X XXX XXX-XXXX"
+            type="text"
+          />
+           
+          <!---->
+        </div>
          
         <!---->
       </div>
@@ -101,16 +115,19 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
           class="modal-field-name field-name"
         >
           
-        Project description
-      
+    Project description
+  
         </p>
          
-        <textarea
-          class="modal-entry-field entry-field textarea"
-          data-testid="test-base-form-description"
-          placeholder="Describe your project..."
-          type="text"
-        />
+        <div>
+          <!---->
+           
+          <textarea
+            class="modal-entry-field entry-field textarea"
+            data-testid="test-base-form-description"
+            placeholder="Describe your project..."
+          />
+        </div>
          
         <!---->
       </div>
