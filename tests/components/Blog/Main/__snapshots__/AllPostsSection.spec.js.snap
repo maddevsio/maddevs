@@ -5,3 +5,88 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
   <!---->
 </div>
 `;
+
+exports[`AllPostsSection component should correct render posts 1`] = `
+<div>
+  <div
+    class="filtered-posts"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="filter"
+      >
+        <div
+          data-simplebar="init"
+        >
+          <div
+            class="simplebar-wrapper"
+          >
+            <div
+              class="simplebar-height-auto-observer-wrapper"
+            >
+              <div
+                class="simplebar-height-auto-observer"
+              />
+            </div>
+             
+            <div
+              class="simplebar-mask"
+            >
+              <div
+                class="simplebar-offset"
+                style="right: 0px; bottom: 0px;"
+              >
+                <div
+                  class="simplebar-content-wrapper"
+                  style="height: auto; overflow-x: hidden; overflow-y: hidden;"
+                >
+                  <div
+                    class="simplebar-content"
+                  >
+                    <ul
+                      class="filter-list"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            <div
+              class="simplebar-placeholder"
+              style="width: 0px; height: 0px;"
+            />
+          </div>
+           
+          <div
+            class="simplebar-track simplebar-horizontal"
+            style="visibility: hidden;"
+          >
+            <div
+              class="simplebar-scrollbar"
+              style="width: 0px; display: none;"
+            />
+          </div>
+           
+          <div
+            class="simplebar-track simplebar-vertical"
+            style="visibility: hidden;"
+          >
+            <div
+              class="simplebar-scrollbar"
+              style="height: 0px; display: none;"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <div
+        class="filtered-posts__wrapper"
+      />
+       
+      <!---->
+    </div>
+  </div>
+</div>
+`;

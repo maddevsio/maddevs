@@ -41,7 +41,10 @@
           :post="post"
           class="filtered-posts__single-post"
         >
-          <div class="single-post__wrapper">
+          <div
+            data-testid="test-single-post"
+            class="single-post__wrapper"
+          >
             <RecommendedBlogWidget
               :post="post"
               class-name="filtered-post"
