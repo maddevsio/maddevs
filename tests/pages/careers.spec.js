@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import MainCareers from '@/pages/careers.vue'
+import MainCareers from '@/pages/careers'
 import { shallowMount } from '@vue/test-utils'
 
 const META_DATA = {

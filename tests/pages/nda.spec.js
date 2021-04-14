@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/vue'
-import Mainnda from '@/pages/nda.vue'
+import Mainnda from '@/pages/nda'
 import { shallowMount } from '@vue/test-utils'
 
 const META_DATA = {

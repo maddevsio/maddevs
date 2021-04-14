@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/vue'
-import About from '@/pages/index.vue'
+import About from '@/pages/index'
 import { shallowMount } from '@vue/test-utils'
 
 const META_DATA = {

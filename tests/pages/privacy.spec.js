@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/vue'
-import MainPrivacy from '@/pages/privacy.vue'
+import MainPrivacy from '@/pages/privacy'
 import { shallowMount } from '@vue/test-utils'
 
 const META_DATA = {
