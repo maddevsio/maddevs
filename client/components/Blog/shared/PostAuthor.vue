@@ -2,6 +2,7 @@
   <div class="blog-post__author">
     <img
       v-if="document.author_image.url !== undefined"
+      ref="authorImage"
       :data-src="document.author_image.url"
       :alt="$prismic.asText(document.author)"
       class="blog-post__author-image img_lazy"
@@ -34,6 +35,13 @@ export default {
   computed: {
     shortTitle() {
       return this.$prismic.asText(this.document.author).substr(0, 100)
+    },
+  },
+
+  watch: {
+    document() {
+      this.$refs.authorImage.classList.remove('img_lazy-fade')
+      this.$refs.authorImage.classList.add('img_lazy')
     },
   },
 }
