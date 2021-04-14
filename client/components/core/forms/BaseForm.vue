@@ -79,7 +79,6 @@ import BaseInput from '@/components/core/forms/BaseInput'
 import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
 import UIButton from '@/components/shared/UIButton'
 import phoneHandlerMixin from '@/mixins/phoneHandlerMixin'
-import PlaceholderAsterisk from '@/directives/PlaceholderAsterisk'
 
 export default {
   name: 'BaseForm',
@@ -87,10 +86,6 @@ export default {
     BaseInput,
     UIFormCheckboxes,
     UIButton,
-  },
-
-  directives: {
-    PlaceholderAsterisk,
   },
 
   mixins: [phoneHandlerMixin],
