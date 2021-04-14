@@ -60,36 +60,36 @@ export const keyProjectMilestones = [
 
 export const technologies = [
   {
-    name: 'Golang',
-    className: 'backend-go',
+    name: 'go',
+    alt: 'Golang',
   },
   {
-    name: 'Django',
-    className: 'backend-django',
+    name: 'django',
+    alt: 'Django',
   },
   {
-    name: 'PostgreSQL',
-    className: 'backend-postgresql',
+    name: 'postgresql',
+    alt: 'PostgreSQL',
   },
   {
-    name: 'Nimble Streamer',
-    className: 'other-nimble',
+    name: 'nimble',
+    alt: 'Nimble Streamer',
   },
   {
-    name: 'Plex Media Server',
-    className: 'other-plex',
+    name: 'plex',
+    alt: 'Plex Media Server',
   },
   {
-    name: 'jQuery',
-    className: 'frontend-jquery',
+    name: 'jquery',
+    alt: 'jQuery',
   },
   {
-    name: 'Video.js',
-    className: 'frontend-video-js',
+    name: 'video-js',
+    alt: 'Video.js',
   },
   {
-    name: 'Nginx',
-    className: 'devops-nginx-txt',
+    name: 'nginx-txt',
+    alt: 'Nginx',
   },
 ]
 

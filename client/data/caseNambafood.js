@@ -66,76 +66,77 @@ export const adminPanel = [
 
 export const technologies = [
   {
-    name: 'MySQL',
-    className: 'backend-mysql',
+    name: 'mysql',
+    alt: 'MySQL',
   },
   {
-    name: 'PHP Symfony2',
-    className: 'backend-symfony',
+    name: 'symfony',
+    alt: 'PHP Symfony2',
   },
   {
-    name: 'Laravel',
-    className: 'backend-laravel',
+    name: 'laravel',
+    alt: 'Laravel',
   },
   {
-    name: 'Docker',
-    className: 'devops-docker case_technologies-item__docker',
+    name: 'docker',
+    alt: 'Docker',
+    className: 'case_technologies-item__docker',
   },
   {
-    name: 'Nginx',
-    className: 'devops-nginx',
+    name: 'nginx',
+    alt: 'Nginx',
   },
   {
-    name: 'Redis',
-    className: 'backend-redis',
+    name: 'redis',
+    alt: 'Redis',
   },
   {
-    name: 'Python (Django)',
-    className: 'backend-python',
+    name: 'python',
+    alt: 'Python (Django)',
   },
   {
-    name: 'Golang',
-    className: 'backend-go',
+    name: 'go',
+    alt: 'Golang',
   },
   {
-    name: 'Kotlin',
-    className: 'mobile-kotlin',
+    name: 'kotlin',
+    alt: 'Kotlin',
   },
   {
-    name: 'Java',
-    className: 'mobile-java',
+    name: 'java',
+    alt: 'Java',
   },
   {
-    name: 'Swift',
-    className: 'mobile-swift',
+    name: 'swift',
+    alt: 'Swift',
   },
   {
-    name: 'Firebase',
-    className: 'mobile-firebase',
+    name: 'firebase',
+    alt: 'Firebase',
   },
   {
-    name: 'TestFlight',
-    className: 'mobile-test-flight',
+    name: 'test-flight',
+    alt: 'TestFlight',
   },
   {
-    name: 'OpenStreetMap',
-    className: 'other-open-street-map',
+    name: 'open-street-map',
+    alt: 'OpenStreetMap',
   },
   {
-    name: 'PHP',
-    className: 'backend-php',
+    name: 'php',
+    alt: 'PHP',
   },
   {
-    name: 'Jira Assistant',
-    className: 'pm-jira-assistant-blue',
+    name: 'jira-assistant-blue',
+    alt: 'Jira Assistant',
   },
   {
-    name: 'Grafana',
-    className: 'devops-grafana',
+    name: 'grafana',
+    alt: 'Grafana',
   },
   {
-    name: 'Sentry',
-    className: 'devops-sentry-dark',
+    name: 'sentry-black',
+    alt: 'Sentry',
   },
 ]
 
