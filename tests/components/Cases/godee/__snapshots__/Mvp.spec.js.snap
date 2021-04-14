@@ -52,8 +52,10 @@ exports[`Mvp component should render correctly 1`] = `
         <div
           class="card-content"
         >
-          <div
-            class="card-content_icon card-content_live-chat-icon"
+          <img
+            alt="live-chat"
+            class="card-content_icon img_lazy"
+            data-src="[object Object]"
           />
            
           <h4
@@ -81,8 +83,10 @@ exports[`Mvp component should render correctly 1`] = `
         <div
           class="card-content"
         >
-          <div
-            class="card-content_icon card-content_trip-request-icon"
+          <img
+            alt="trip-request"
+            class="card-content_icon img_lazy"
+            data-src="[object Object]"
           />
            
           <h4

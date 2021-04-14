@@ -30,7 +30,12 @@ exports[`Main component should render correctly 1`] = `
         <blockquote
           class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
         >
-          
+          <img
+            alt="blockquote"
+            class="case_blockquote-mark img_lazy"
+            data-src="[object Object]"
+          />
+           
     The app-based system allows users to find a route, select the time, book a seat and pay for the ride online.
   
         </blockquote>
@@ -408,8 +413,10 @@ exports[`Main component should render correctly 1`] = `
             <div
               class="card-content"
             >
-              <div
-                class="card-content_icon card-content_live-chat-icon"
+              <img
+                alt="live-chat"
+                class="card-content_icon img_lazy"
+                data-src="[object Object]"
               />
                
               <h4
@@ -437,8 +444,10 @@ exports[`Main component should render correctly 1`] = `
             <div
               class="card-content"
             >
-              <div
-                class="card-content_icon card-content_trip-request-icon"
+              <img
+                alt="trip-request"
+                class="card-content_icon img_lazy"
+                data-src="[object Object]"
               />
                
               <h4
@@ -541,8 +550,10 @@ exports[`Main component should render correctly 1`] = `
               <div
                 class="card-content"
               >
-                <div
-                  class="card-content_icon card-content_gps-icon"
+                <img
+                  alt="gps"
+                  class="card-content_icon img_lazy"
+                  data-src="[object Object]"
                 />
                  
                 <h4
@@ -568,8 +579,10 @@ exports[`Main component should render correctly 1`] = `
               <div
                 class="card-content"
               >
-                <div
-                  class="card-content_icon card-content_payment-method-icon"
+                <img
+                  alt="payment-method"
+                  class="card-content_icon img_lazy"
+                  data-src="[object Object]"
                 />
                  
                 <h4
@@ -607,8 +620,10 @@ exports[`Main component should render correctly 1`] = `
               <div
                 class="card-content"
               >
-                <div
-                  class="card-content_icon card-content_live-location-tacking-icon"
+                <img
+                  alt="live-location-tacking"
+                  class="card-content_icon img_lazy"
+                  data-src="[object Object]"
                 />
                  
                 <h4
@@ -634,8 +649,10 @@ exports[`Main component should render correctly 1`] = `
               <div
                 class="card-content"
               >
-                <div
-                  class="card-content_icon card-content_referrals-icon"
+                <img
+                  alt="referrals"
+                  class="card-content_icon img_lazy"
+                  data-src="[object Object]"
                 />
                  
                 <h4
@@ -661,8 +678,10 @@ exports[`Main component should render correctly 1`] = `
               <div
                 class="card-content"
               >
-                <div
-                  class="card-content_icon card-content_possible-routes-icon"
+                <img
+                  alt="possible-routes"
+                  class="card-content_icon img_lazy"
+                  data-src="[object Object]"
                 />
                  
                 <h4

@@ -36,7 +36,12 @@ exports[`AboutYourcast component should render correctly 1`] = `
     <blockquote
       class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
     >
-      
+      <img
+        alt="blockquote"
+        class="case_blockquote-mark img_lazy"
+        data-src="[object Object]"
+      />
+       
     We respect the customer’s request to keep this project under the NDA and will not disclose the project name while
     sharing its details.
   

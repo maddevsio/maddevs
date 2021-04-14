@@ -68,8 +68,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_play-button"
           type="button"
         >
-          <div
-            class="case_play-icon"
+          <img
+            alt="Play"
+            class="case_play-icon img_lazy"
+            data-src="[object Object]"
           />
           
       View video about SJMC
@@ -110,7 +112,12 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
      
     <button
       class="exit"
-    />
+    >
+      <img
+        alt="Close"
+        src="@/assets/img/Studies/svg/close-icon.svg"
+      />
+    </button>
   </div>
    
   <section>
@@ -156,7 +163,12 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         <blockquote
           class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
         >
-          
+          <img
+            alt="blockquote"
+            class="case_blockquote-mark img_lazy"
+            data-src="[object Object]"
+          />
+           
     World-class BYOD technology delivers an enhanced understanding of the nature and context of the Australian
     contribution to the First World War.
   
@@ -399,7 +411,12 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <blockquote
             class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
           >
-            
+            <img
+              alt="blockquote"
+              class="case_blockquote-mark img_lazy"
+              data-src="[object Object]"
+            />
+             
       The MMIT Brain is a coherent solution that brings together the monitoring and management of two information
       systems.
     
@@ -1814,7 +1831,12 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <blockquote
             class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
           >
-            
+            <img
+              alt="blockquote"
+              class="case_blockquote-mark img_lazy"
+              data-src="[object Object]"
+            />
+             
       Sophisticated system monitoring is the fight life of defence against downtime.
     
           </blockquote>
@@ -3175,8 +3197,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
     <section
       class="case_footer container_full"
     >
-      <div
-        class="case_logotype-namba-food"
+      <img
+        alt="Namba Food"
+        class="case_logotype-namba-food img_lazy"
+        data-src="[object Object]"
       />
        
       <h2
