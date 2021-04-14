@@ -1,8 +1,16 @@
 import CustomerUniversity from '@/components/Blog/header/CustomerUniversity'
 import { render, screen } from '@testing-library/vue'
-import { mount } from '@vue/test-utils'
+import { mount, createLocalVue } from '@vue/test-utils'
+import Vuex from 'vuex'
+
+import mockedStore from '../../../__mocks__/store'
+
+const localVue = createLocalVue()
+localVue.use(Vuex)
 
 describe('customer university header component', () => {
+  const store = mockedStore
+
   const postList = [
     {
       chapter_name: [
@@ -13,7 +21,7 @@ describe('customer university header component', () => {
         },
       ],
       cu_post: {
-        id: 'YAGi7REAACMAgV8d',
+        id: 'unknownId',
         isBroken: false,
         lang: 'en-us',
         link_type: 'Document',
@@ -32,7 +40,7 @@ describe('customer university header component', () => {
         },
       ],
       cu_post: {
-        id: 'YAGi7REAACMAgV8d2',
+        id: store.modules.blogPost.state.post.id,
         isBroken: false,
         lang: 'en-us',
         link_type: 'Document',
@@ -43,37 +51,8 @@ describe('customer university header component', () => {
       },
     },
   ]
-  const clusterName = 'Pricing strategies in custom software development'
 
-  const props = {
-    document: {
-      featured_image: {
-        alt: null,
-        copyright: null,
-        dimensions: {
-          height: 452,
-          width: 780,
-        },
-        url:
-          'https://images.prismic.io/superpupertest/82f90d05-8c22-49c1-bf1e-8721a0e3eda6_Constructing+a+Map+in+the+Mercator+Projection+for+Android.png?auto=compress,format',
-      },
-      subtitle: [
-        {
-          spans: [],
-          text: 'adadadad',
-          type: 'heading1',
-        },
-      ],
-      title: [
-        {
-          spans: [],
-          text: 'adadadad',
-          type: 'heading1',
-        },
-      ],
-    },
-    id: 'YAGi7REAACMAgV8d',
-  }
+  const clusterName = 'Pricing strategies in custom software development'
 
   const mocks = {
     $prismic: {
@@ -88,37 +67,35 @@ describe('customer university header component', () => {
 
   it('should render correctly with default props', () => {
     const { container } = render(CustomerUniversity, {
-      props,
       mocks,
       stubs,
+      store,
     })
     expect(container).toMatchSnapshot()
   })
 
   it('should render correctly with custom props', () => {
-    props.id = 'YAGi7REAACMAgV8d'
     render(CustomerUniversity, {
       props: {
-        ...props,
         clusterName,
         postList,
       },
       mocks,
       stubs,
+      store,
     })
     expect(screen.getByText(clusterName)).not.toBeNull()
   })
 
   it('should render correctly with custom props and id', () => {
-    props.id = 'YAGi7REAACMAgV8d2'
     render(CustomerUniversity, {
       props: {
-        ...props,
         clusterName,
         postList,
       },
       mocks,
       stubs,
+      store,
     })
 
     expect(screen.getByText(clusterName)).not.toBeNull()
@@ -127,12 +104,13 @@ describe('customer university header component', () => {
   it('should correctly called $router.push after calling handleChange', () => {
     const wrapper = mount(CustomerUniversity, {
       propsData: {
-        ...props,
         clusterName,
         postList,
       },
       mocks,
       stubs,
+      store: new Vuex.Store(mockedStore),
+      localVue,
     })
 
     wrapper.vm.handleChange({ value: 'cu-test-2', label: 'CUTest' })

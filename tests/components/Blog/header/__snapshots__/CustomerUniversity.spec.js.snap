@@ -3,11 +3,12 @@
 exports[`customer university header component should render correctly with default props 1`] = `
 <div>
   <commonheader-stub
+    coverimagealttext="How to Handover a Software Project to Another Team."
     coverimageheight="533"
-    coverimageurl="https://images.prismic.io/superpupertest/82f90d05-8c22-49c1-bf1e-8721a0e3eda6_Constructing+a+Map+in+the+Mercator+Projection+for+Android.png?auto=compress,format"
+    coverimageurl="https://images.prismic.io/superpupertest/afa41339-f2f8-4f1d-8640-4b89d5d9d509_SPH.jpg?auto=compress,format&rect=0,1,2000,1084&w=983&h=533"
     coverimagewidth="982"
-    subtitle="adadadad"
-    title="adadadad"
+    subtitle="How to switch to another team painlessly"
+    title="A software project handover"
   >
     <div
       class="row cluster-navigation"

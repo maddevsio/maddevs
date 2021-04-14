@@ -1,23 +1,15 @@
 import Blog from '@/components/Blog/header/Blog'
 import { render, screen } from '@testing-library/vue'
-import { blogDoc } from './mocked/blog-document'
-
-const props = {
-  document: blogDoc,
-  tags: ['Project Management', 'Featured post'],
-  formattedDate: 'Mar 23, 2021',
-}
+import mockedStore from '../../../__mocks__/store'
 
 describe('header Blog', () => {
+  const store = mockedStore
+
   it('is a Vue instance', () => {
-    const { container } = render(Blog, {
-      props,
-      mocks: {
-        $prismic: {
-          asText: text => text[0].text,
-        },
-      },
-    })
+    // reset/override mocked store here
+    store.modules.blogPost.state.post.tags = ['Project Management']
+
+    const { container } = render(Blog, { store })
 
     expect(screen.getByText('Project Management')).not.toBeNull()
     expect(container).toMatchSnapshot()

@@ -10,7 +10,7 @@ exports[`header Blog is a Vue instance 1`] = `
       class="blog-post__blog-title title"
     >
       
-    Three reasons why your project needs a senior developer
+    A software project handover
   
     </h1>
      
@@ -18,72 +18,37 @@ exports[`header Blog is a Vue instance 1`] = `
       class="blog-post__blog-sub-title"
     >
       
-    
+    How to switch to another team painlessly
   
     </p>
      
     <div
       class="blog-post__post-info"
     >
-      <div
-        class="blog-post__author"
-      >
-        <img
-          alt="Tamara Mun"
-          class="blog-post__author-image img_lazy"
-          data-src="https://images.prismic.io/superpupertest/c3b0ca2f-b28b-455c-b75b-fa880ee66c82_01.jpeg?auto=compress,format"
-        />
-         
-        <div
-          class="blog-post__author-info"
-        >
-          <p
-            class="blog-post__author-name"
-          >
-            
-      Tamara Mun
-    
-          </p>
-           
-          <div
-            class="blog-post__data-of-creation"
-          >
-            <span
-              class="blog-post__author-title"
-            >
-              Delivery manager
-            </span>
-          </div>
-        </div>
-      </div>
+      <!---->
        
-      <div
-        class="blog-post__date-tag"
+      <nuxtlink
+        to="/blog/tag/project-management/"
       >
         <div
-          class="blog-post__date"
+          class="post-tag dark"
         >
-          
-          Mar 23, 2021
-        
+          <span
+            class="tag"
+            data-testid="test-tag"
+          >
+            Project Management
+          </span>
         </div>
-         
-        <div
-          class="blog-post__tag"
-        >
-          
-          Project Management
-        
-        </div>
-      </div>
+      </nuxtlink>
     </div>
      
     <img
-      alt="Why Your Project Needs a Senior Developer."
+      alt="How to Handover a Software Project to Another Team."
       class="blog-post__introduction-image blog-post__introduction-image--with-background"
-      height="1086"
-      src="https://images.prismic.io/superpupertest/7d7f267a-a36f-4e21-bbd5-af537be3a022_Frame+1941.jpg?auto=compress,format"
-      width="2000"
+      height="200"
+      src="https://images.prismic.io/superpupertest/afa41339-f2f8-4f1d-8640-4b89d5d9d509_SPH.jpg?auto=compress,format&rect=0,1,2000,1084&w=983&h=533"
+      width="100"
     />
   </div>
 </div>
