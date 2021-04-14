@@ -6,41 +6,27 @@
     :additional-valid="!$v.validationGroup.$invalid"
     @submit="handleSubmit"
   >
-    <div class="modal-field-item field-item">
-      <p class="modal-field-name field-name">
-        Your questions on IT consulting
-      </p>
-      <textarea
-        v-model="questionsOnItConsulting"
-        :class="{ invalid: $v.questionsOnItConsulting.$error }"
-        type="text"
-        class="modal-entry-field entry-field textarea"
-        placeholder="Tell us how we can help you…"
-        @input="$v.questionsOnItConsulting.$touch"
-      />
-      <!-- Erros -->
-      <div v-if="$v.questionsOnItConsulting.$dirty">
-        <span
-          v-if="!$v.questionsOnItConsulting.maxLength"
-          class="modal-error-text error-text"
-        >
-          Sorry, the number of characters in this field should not exceed 500.
-        </span>
-      </div>
-      <!-- End Errors -->
-    </div>
+    <BaseInput
+      v-model="questionsOnItConsulting"
+      label="Your questions on IT consulting"
+      placeholder="Tell us how we can help you…"
+      :validation="$v.questionsOnItConsulting"
+      element-type="textarea"
+    />
   </BaseForm>
 </template>
 
 <script>
 import { maxLength } from 'vuelidate/lib/validators'
 import BaseForm from '@/components/core/forms/BaseForm'
+import BaseInput from '@/components/core/forms/BaseInput'
 import sendEmailMixin from '@/mixins/sendEmailMixin'
 
 export default {
   name: 'GetExpertAdviceForm',
   components: {
     BaseForm,
+    BaseInput,
   },
 
   mixins: [sendEmailMixin(304641, 'Get Expert Advice')],

@@ -6,22 +6,17 @@
     :use-description="true"
     @submit="handleSubmit"
   >
-    <div class="modal-field-item field-item">
-      <p class="modal-field-name field-name">
-        Expertise you are interested in
-      </p>
-      <input
-        v-model="expertise"
-        type="text"
-        class="modal-entry-field entry-field"
-        placeholder="React development, Heroku Postgres, etc"
-      >
-    </div>
+    <BaseInput
+      v-model="expertise"
+      label="Expertise you are interested in"
+      placeholder="React development, Heroku Postgres, etc"
+    />
   </BaseForm>
 </template>
 
 <script>
 import BaseForm from '@/components/core/forms/BaseForm'
+import BaseInput from '@/components/core/forms/BaseInput'
 import sendEmailMixin from '@/mixins/sendEmailMixin'
 import exceptKeys from '@/helpers/exceptKeys'
 
@@ -29,6 +24,7 @@ export default {
   name: 'IndividualsForm',
   components: {
     BaseForm,
+    BaseInput,
   },
 
   mixins: [sendEmailMixin(304625, 'Individuals')],
