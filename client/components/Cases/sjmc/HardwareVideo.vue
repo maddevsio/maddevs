@@ -68,7 +68,7 @@ export default {
   methods: {
     animCreatedHandler(animation) {
       this.animation = animation
-      this.animation.playSegments([0, 28], true) // Set default state for lottie icon
+      this.animation.goToAndStop(28, true) // Set default state for lottie
     },
 
     toggleSound() {
@@ -119,6 +119,8 @@ export default {
     &_sound-control-desc {
       padding: 8px 20px;
       font-size: 17px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
       line-height: 20px;
       letter-spacing: -0.41px;
       color: $text-color--grey-opacity-40-percent;
@@ -134,7 +136,7 @@ export default {
     }
 
     @media only screen and (max-width: 1180px) {
-      &_sound-icon {
+      &_sound-icon-wrap {
         width: 29px;
         height: 26px;
       }
@@ -142,6 +144,10 @@ export default {
       &_sound-control-desc {
         padding: 6px 12px;
         font-size: 14px;
+      }
+
+      &_lottie {
+        width: 17px;
       }
     }
   }
