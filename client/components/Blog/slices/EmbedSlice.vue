@@ -132,7 +132,7 @@ export default {
     font-size: 21px;
     font-family: 'Poppins-Bold', sans-serif;
     font-weight: 600;
-    color: $text-color--black-cases;
+    color: $text-color--black-oil;
     line-height: 27.34px;
   }
 

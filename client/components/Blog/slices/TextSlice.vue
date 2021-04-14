@@ -40,7 +40,7 @@ export default {
   /deep/ p,
   /deep/ h1,
   /deep/ li {
-    color: $text-color--black-cases;
+    color: $text-color--black-oil;
   }
 
   /deep/ h1,

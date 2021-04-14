@@ -124,7 +124,7 @@ export default {
 
   &__white-card-title,
   &__white-card-paragraph {
-    color: $text-color--black-cases;
+    color: $text-color--black-oil;
   }
 
   &__desktop-picture {
