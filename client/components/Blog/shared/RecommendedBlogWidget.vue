@@ -5,6 +5,7 @@
   >
     <div class="blog-post">
       <img
+        ref="recommendedImage"
         :data-src="post.data.featured_image.url"
         :alt="post.data.featured_image.alt"
         class="blog-post__image img_lazy"
@@ -100,6 +101,14 @@ export default {
       const limit = 45
       const title = this.$prismic.asText(this.post.data.title)
       return textEllipsis(title, { limit })
+    },
+  },
+
+  // Refresh class names for image when post has been updated
+  watch: {
+    post() {
+      this.$refs.recommendedImage.classList.remove('img_lazy-fade')
+      this.$refs.recommendedImage.classList.add('img_lazy')
     },
   },
 }
