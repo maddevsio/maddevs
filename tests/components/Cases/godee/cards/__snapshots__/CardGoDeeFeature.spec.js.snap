@@ -11,7 +11,7 @@ exports[`CardGoDeeFeature component should render correctly 1`] = `
       class="case_title_h4 card-content_title"
     >
       
-    feature-title
+    
   
     </h4>
      
