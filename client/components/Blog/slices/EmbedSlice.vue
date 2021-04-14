@@ -38,7 +38,7 @@ export default {
 
   created() {
     const { items } = this.slice
-    if (!items && !items.length) return
+    if (!(items && items.length)) return
 
     const {
       embed: {
