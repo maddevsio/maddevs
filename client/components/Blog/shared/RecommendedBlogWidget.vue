@@ -54,6 +54,7 @@ import linkResolver from '@/plugins/link-resolver.js'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
 import textEllipsis from '@/helpers/textEllipsis'
+import formatDate from '@/helpers/formatDate'
 
 export default {
   name: 'RecommendedBlogWidget',
@@ -79,9 +80,7 @@ export default {
     },
 
     formattedDate() {
-      return Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(
-        new Date(this.post.data.date),
-      )
+      return formatDate(this.post.data.date)
     },
 
     firstParagraph() {

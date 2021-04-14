@@ -41,6 +41,7 @@ import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import PostTag from '@/components/Blog/shared/PostTag'
 import linkResolver from '@/plugins/link-resolver'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
+import formatDate from '@/helpers/formatDate'
 
 export default {
   name: 'FeaturedPost',
@@ -59,7 +60,7 @@ export default {
   computed: {
     formattedDate() {
       const { date } = this.post.data
-      return Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(date))
+      return formatDate(date)
     },
 
     link() {
