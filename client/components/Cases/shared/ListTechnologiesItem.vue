@@ -73,11 +73,8 @@ export default {
   @media screen and (max-width: 768px) {
     &__tech-icon {
       margin-bottom: 8px;
-
-      &::before {
-        width: 20px;
-        height: 20px;
-      }
+      width: 20px;
+      height: 20px;
     }
 
     &__docker,
