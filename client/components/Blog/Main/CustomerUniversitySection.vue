@@ -140,7 +140,7 @@ export default {
 @import '../../../assets/styles/vars';
 
 @mixin label {
-  color: $text-color--grey-team-list;
+  color: $text-color--grey-opacity-40-percent;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -167,7 +167,7 @@ export default {
 }
 
 .customer-university {
-  background-color: $text-color--black-cases;
+  background-color: $text-color--black-oil;
   padding: 90px 0;
 
   &__wrapper {
@@ -182,8 +182,8 @@ export default {
     font-size: 120px;
     line-height: 96%;
     letter-spacing: -0.04em;
-    -webkit-text-stroke: 1.13px $text-color--grey-team-list;
-    color: $text-color--black-cases;
+    -webkit-text-stroke: 1.13px $text-color--grey-opacity-40-percent;
+    color: $text-color--black-oil;
     margin-bottom: 78px;
 
     span {

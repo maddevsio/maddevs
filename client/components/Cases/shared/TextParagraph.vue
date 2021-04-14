@@ -33,10 +33,10 @@ export default {
 
 .case {
   &_paragraph {
-    @include default_text($text-color--black-cases, 17px, 166%, -0.035em, normal);
+    @include default_text($text-color--black-oil, 17px, 166%, -0.035em, normal);
 
     @media screen and (max-width: 768px) {
-      @include default_text($text-color--black-cases, 16px, 150%, -0.02em, normal);
+      @include default_text($text-color--black-oil, 16px, 150%, -0.02em, normal);
     }
 
     &--bold {
