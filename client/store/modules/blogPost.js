@@ -1,3 +1,5 @@
+import formatDate from '@/helpers/formatDate'
+
 export default {
   state: () => ({
     post: {},
@@ -37,9 +39,7 @@ export default {
         slices: post.data.body,
         metaTitle: this.$prismic.asText(post.data.meta_title) || post.data.title[0].text,
         metaDescription: this.$prismic.asText(post.data.meta_description),
-        formattedDate: Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(
-          new Date(post.data.date),
-        ),
+        formattedDate: formatDate(post.data.date),
         tags: post.tags,
         recommendedPosts,
         jsonLd,
