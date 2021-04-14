@@ -113,13 +113,15 @@ export default {
         postItemEl.scrollIntoView({ block: 'start' })
         window.scrollTo(0, window.scrollY - 120) // scroll for distance between the post and the top of the screen
       }
-
-      // Set lazy for new filtered posts
-      this.$nextTick(() => initializeLazyLoad())
     },
 
     // Set lazy when new posts has been loaded after click on see more button
     postsPage() {
+      this.$nextTick(() => initializeLazyLoad())
+    },
+
+    postsCategory() {
+      // Refresh recommended blog posts and author images
       this.$nextTick(() => initializeLazyLoad())
     },
   },

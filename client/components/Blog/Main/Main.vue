@@ -8,11 +8,12 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 import TheLastPostSection from '@/components/Blog/Main/TheLastPostSection'
 import LatestPostsSection from '@/components/Blog/Main/LatestPostsSection'
 import CustomerUniversitySection from '@/components/Blog/Main/CustomerUniversitySection'
 import AllPostsSection from '@/components/Blog/Main/AllPostsSection'
+import initializeLazyLoad from '@/helpers/lazyLoad'
 
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
@@ -31,6 +32,19 @@ export default {
     return {
       pageSize: 12,
     }
+  },
+
+  computed: {
+    ...mapGetters([
+      'allPosts',
+    ]),
+  },
+
+  watch: {
+    allPosts() {
+      // Add lazy loading for async posts
+      this.$nextTick(() => initializeLazyLoad())
+    },
   },
 
   created() {

@@ -24,6 +24,11 @@ exports[`SJMCVideo component renders correctly 1`] = `
    
   <button
     class="exit"
-  />
+  >
+    <img
+      alt="Close"
+      src="@/assets/img/Studies/svg/close-icon.svg"
+    />
+  </button>
 </div>
 `;

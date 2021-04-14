@@ -19,8 +19,8 @@ export default {
 
   computed: {
     textColor() {
-      if (this.$props.color) {
-        return `color: ${this.$props.color}`
+      if (this.color) {
+        return `color: ${this.color}`
       }
       return null
     },

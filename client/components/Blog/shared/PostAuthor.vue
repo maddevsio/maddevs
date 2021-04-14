@@ -47,6 +47,13 @@ export default {
       return this.author.name.substr(0, 100)
     },
   },
+
+  watch: {
+    document() {
+      this.$refs.authorImage.classList.remove('img_lazy-fade')
+      this.$refs.authorImage.classList.add('img_lazy')
+    },
+  },
 }
 </script>
 

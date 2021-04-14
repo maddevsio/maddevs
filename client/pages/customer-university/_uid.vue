@@ -9,6 +9,7 @@
 <script>
 import { mapGetters } from 'vuex'
 import PostView from '@/components/Blog/Post/Post'
+import formatDate from '@/helpers/formatDate'
 
 export default {
   name: 'Post',

@@ -451,127 +451,262 @@ exports[`projects page renders correctly 1`] = `
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__godee-icon"
+          <img
+            alt="godee"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__guardrails-icon"
+          <img
+            alt="guardrails"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__teacherly-icon"
+          <img
+            alt="teacherly"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__triggermesh-icon"
+          <img
+            alt="triggermesh"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__clutch-icon"
+          <img
+            alt="clutch"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__eatigo-icon"
+          <img
+            alt="eatigo"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__veeqo-icon"
+          <img
+            alt="veeqo"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__admitad-icon"
+          <img
+            alt="admitad"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__iotsploit-icon"
+          <img
+            alt="iotsploit"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__sir-jonas-icon"
+          <img
+            alt="sjmc"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__progressay-icon"
+          <img
+            alt="progressay"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__kickoico-icon"
+          <img
+            alt="kickoico"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__nambafood-icon"
+          <img
+            alt="nambafood"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__showmebishkek-icon"
+          <img
+            alt="showmebishkek"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__mythril-icon"
+          <img
+            alt="mythril"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__seso-icon"
+          <img
+            alt="seso"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__tengri-icon"
+          <img
+            alt="tengri"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
         <div
           class="icon-wrapper"
         >
-          <div
-            class="icon-wrapper__icon icon-wrapper__peklo-icon"
+          <img
+            alt="peklo"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
+          />
+        </div>
+        <div
+          class="icon-wrapper"
+        >
+          <img
+            alt="bandpay"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
+          />
+        </div>
+        <div
+          class="icon-wrapper"
+        >
+          <img
+            alt="nambataxi"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
+          />
+        </div>
+        <div
+          class="icon-wrapper"
+        >
+          <img
+            alt="alfa-bank"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
+          />
+        </div>
+        <div
+          class="icon-wrapper"
+        >
+          <img
+            alt="edumall"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
+          />
+        </div>
+        <div
+          class="icon-wrapper"
+        >
+          <img
+            alt="dzing"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
+          />
+        </div>
+        <div
+          class="icon-wrapper"
+        >
+          <img
+            alt="topica"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
+          />
+        </div>
+        <div
+          class="icon-wrapper"
+        >
+          <img
+            alt="terbine"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
+          />
+        </div>
+        <div
+          class="icon-wrapper"
+        >
+          <img
+            alt="silk-road"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
+          />
+        </div>
+        <div
+          class="icon-wrapper"
+        >
+          <img
+            alt="vms"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
+          />
+        </div>
+        <div
+          class="icon-wrapper"
+        >
+          <img
+            alt="ase"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
+          />
+        </div>
+        <div
+          class="icon-wrapper"
+        >
+          <img
+            alt="iothub"
+            class="icon-wrapper__icon img_lazy"
+            data-src="[object Object]"
           />
         </div>
       </div>

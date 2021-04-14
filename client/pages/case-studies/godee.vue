@@ -34,10 +34,12 @@
         link="/case-studies/namba-food/"
         class-name="namba-food"
       >
-        <div
+        <img
           slot="icon"
-          class="case_logotype-namba-food"
-        />
+          :data-src="require(`@/assets/img/Studies/svg/nambafood-footer.svg`)"
+          alt="Namba Food"
+          class="case_logotype-namba-food img_lazy"
+        >
         Namba Food <br>
         Top Delivery Service in <br class="case_mobile-break-namba-food">
         Central Asia

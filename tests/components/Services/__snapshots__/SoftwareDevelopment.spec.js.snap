@@ -65,57 +65,105 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
               class="icons-list"
             >
               <li
-                class="icons-list__icon-item backend-python"
+                class="icons-list__icon-item python"
               >
+                <img
+                  alt="Python"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Python
                 </span>
               </li>
               <li
-                class="icons-list__icon-item backend-go"
+                class="icons-list__icon-item go"
               >
+                <img
+                  alt="Go"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Go
                 </span>
               </li>
               <li
-                class="icons-list__icon-item backend-node"
+                class="icons-list__icon-item node"
               >
+                <img
+                  alt="Node.js"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Node.js
                 </span>
               </li>
               <li
-                class="icons-list__icon-item backend-c"
+                class="icons-list__icon-item c"
               >
+                <img
+                  alt="C"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   C
                 </span>
               </li>
               <li
-                class="icons-list__icon-item frontend-typescript"
+                class="icons-list__icon-item typescript"
               >
+                <img
+                  alt="TypeScript"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   TypeScript
                 </span>
               </li>
               <li
-                class="icons-list__icon-item backend-php"
+                class="icons-list__icon-item php"
               >
+                <img
+                  alt="PHP"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   PHP
                 </span>
               </li>
               <li
-                class="icons-list__icon-item backend-ruby"
+                class="icons-list__icon-item ruby"
               >
+                <img
+                  alt="Ruby"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Ruby
                 </span>
               </li>
               <li
-                class="icons-list__icon-item backend-c-plus"
+                class="icons-list__icon-item c-plus"
               >
+                <img
+                  alt="C++"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   C++
                 </span>
@@ -184,57 +232,105 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
               class="icons-list"
             >
               <li
-                class="icons-list__icon-item frontend-js"
+                class="icons-list__icon-item js"
               >
+                <img
+                  alt="JavaScript"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   JavaScript
                 </span>
               </li>
               <li
-                class="icons-list__icon-item frontend-react"
+                class="icons-list__icon-item react"
               >
+                <img
+                  alt="React"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   React
                 </span>
               </li>
               <li
-                class="icons-list__icon-item frontend-babel"
+                class="icons-list__icon-item babel"
               >
+                <img
+                  alt="Babel"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Babel
                 </span>
               </li>
               <li
-                class="icons-list__icon-item frontend-vue"
+                class="icons-list__icon-item vue"
               >
+                <img
+                  alt="Vue"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Vue
                 </span>
               </li>
               <li
-                class="icons-list__icon-item frontend-post-css"
+                class="icons-list__icon-item post-css"
               >
+                <img
+                  alt="PostCSS"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   PostCSS
                 </span>
               </li>
               <li
-                class="icons-list__icon-item frontend-angular"
+                class="icons-list__icon-item angular"
               >
+                <img
+                  alt="Angular"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Angular
                 </span>
               </li>
               <li
-                class="icons-list__icon-item frontend-nuxt"
+                class="icons-list__icon-item nuxt"
               >
+                <img
+                  alt="Nuxt.js"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Nuxt.js
                 </span>
               </li>
               <li
-                class="icons-list__icon-item frontend-sass"
+                class="icons-list__icon-item sass"
               >
+                <img
+                  alt="SASS"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   SASS
                 </span>
@@ -287,57 +383,105 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
               class="icons-list"
             >
               <li
-                class="icons-list__icon-item mobile-android"
+                class="icons-list__icon-item android"
               >
+                <img
+                  alt="Android"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Android
                 </span>
               </li>
               <li
-                class="icons-list__icon-item mobile-kotlin"
+                class="icons-list__icon-item kotlin"
               >
+                <img
+                  alt="Kotlin"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Kotlin
                 </span>
               </li>
               <li
-                class="icons-list__icon-item mobile-java"
+                class="icons-list__icon-item java"
               >
+                <img
+                  alt="Java"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Java
                 </span>
               </li>
               <li
-                class="icons-list__icon-item mobile-firebase"
+                class="icons-list__icon-item firebase"
               >
+                <img
+                  alt="Firebase"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Firebase
                 </span>
               </li>
               <li
-                class="icons-list__icon-item mobile-apple"
+                class="icons-list__icon-item apple"
               >
+                <img
+                  alt="iOS"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   iOS
                 </span>
               </li>
               <li
-                class="icons-list__icon-item mobile-obj-c"
+                class="icons-list__icon-item obj-c"
               >
+                <img
+                  alt="Objective-C"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Objective-C
                 </span>
               </li>
               <li
-                class="icons-list__icon-item mobile-swift"
+                class="icons-list__icon-item swift"
               >
+                <img
+                  alt="Swift"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Swift
                 </span>
               </li>
               <li
-                class="icons-list__icon-item mobile-flutter"
+                class="icons-list__icon-item flutter"
               >
+                <img
+                  alt="Flutter"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+                 
                 <span>
                   Flutter
                 </span>
