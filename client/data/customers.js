@@ -8,7 +8,7 @@ export const customers = [
   'veeqo',
   'admitad',
   'iotsploit',
-  'sir-jonas',
+  'sjmc',
   'progressay',
   'kickoico',
   'nambafood',
@@ -17,6 +17,17 @@ export const customers = [
   'seso',
   'tengri',
   'peklo',
+  'bandpay',
+  'nambataxi',
+  'alfa-bank',
+  'edumall',
+  'dzing',
+  'topica',
+  'terbine',
+  'silk-road',
+  'vms',
+  'ase',
+  'iothub',
 ]
 
 export const ratesPercentages = [
