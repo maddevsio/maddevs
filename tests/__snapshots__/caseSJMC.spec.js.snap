@@ -749,6 +749,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <div
               class="case_sound-control"
+              data-testid="test-case_sound-control"
             >
               <div
                 class="case_sound-icon-wrap"
@@ -757,7 +758,6 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   class="case_lottie"
                 >
                   <div
-                    data-testid="test-case_video"
                     id="sound-icon"
                     style="width: 100%; height: 100%; overflow: hidden; margin: 0px auto;"
                   >
@@ -880,6 +880,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="case_video-wrapper case_full-screen-video"
             >
               <video
+                data-testid="test-case_video"
                 height="100%"
                 id="iphone-video"
                 loop="loop"
