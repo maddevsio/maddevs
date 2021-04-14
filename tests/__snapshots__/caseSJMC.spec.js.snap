@@ -68,8 +68,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           class="case_play-button"
           type="button"
         >
-          <div
-            class="case_play-icon"
+          <img
+            alt="Play"
+            class="case_play-icon img_lazy"
+            data-src="[object Object]"
           />
           
       View video about SJMC
@@ -110,7 +112,12 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
      
     <button
       class="exit"
-    />
+    >
+      <img
+        alt="Close"
+        src="@/assets/img/Studies/svg/close-icon.svg"
+      />
+    </button>
   </div>
    
   <section>
@@ -156,7 +163,12 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         <blockquote
           class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
         >
-          
+          <img
+            alt="blockquote"
+            class="case_blockquote-mark img_lazy"
+            data-src="[object Object]"
+          />
+           
     World-class BYOD technology delivers an enhanced understanding of the nature and context of the Australian
     contribution to the First World War.
   
@@ -399,7 +411,12 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <blockquote
             class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
           >
-            
+            <img
+              alt="blockquote"
+              class="case_blockquote-mark img_lazy"
+              data-src="[object Object]"
+            />
+             
       The MMIT Brain is a coherent solution that brings together the monitoring and management of two information
       systems.
     
@@ -1059,8 +1076,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
+            <img
+              alt="Go"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
+              data-src="[object Object]"
             />
              
             <p
@@ -1074,8 +1093,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__mobile-swift mobile-swift"
+            <img
+              alt="Swift"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__swift swift"
+              data-src="[object Object]"
             />
              
             <p
@@ -1089,8 +1110,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__mobile-java mobile-java"
+            <img
+              alt="Java for Android"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__java java"
+              data-src="[object Object]"
             />
              
             <p
@@ -1104,8 +1127,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__other-unity other-unity"
+            <img
+              alt="Unity"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__unity unity"
+              data-src="[object Object]"
             />
              
             <p
@@ -1119,8 +1144,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__infrastructure-aws infrastructure-aws"
+            <img
+              alt="AWS"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__aws aws"
+              data-src="[object Object]"
             />
              
             <p
@@ -1134,8 +1161,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__infrastructure-codecommit infrastructure-codecommit"
+            <img
+              alt="CodeCommit"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__codecommit codecommit"
+              data-src="[object Object]"
             />
              
             <p
@@ -1149,8 +1178,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__other-windows other-windows"
+            <img
+              alt="Windows 10"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__windows windows"
+              data-src="[object Object]"
             />
              
             <p
@@ -1164,8 +1195,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__mobile-apple-black mobile-apple-black"
+            <img
+              alt="iOS"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__apple-black apple-black"
+              data-src="[object Object]"
             />
              
             <p
@@ -1179,8 +1212,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__mobile-android-black-text mobile-android-black-text"
+            <img
+              alt="Android"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__android-black-text android-black-text"
+              data-src="[object Object]"
             />
              
             <p
@@ -1194,8 +1229,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__other-ubuntu other-ubuntu"
+            <img
+              alt="Ubuntu"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__ubuntu ubuntu"
+              data-src="[object Object]"
             />
              
             <p
@@ -1209,8 +1246,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__devops-ansible devops-ansible"
+            <img
+              alt="Ansible"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__ansible ansible"
+              data-src="[object Object]"
             />
              
             <p
@@ -1224,8 +1263,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__devops-sentry-dark devops-sentry-dark"
+            <img
+              alt="Sentry"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
+              data-src="[object Object]"
             />
              
             <p
@@ -1239,8 +1280,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__devops-elastic devops-elastic"
+            <img
+              alt="Elasticsearch"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__elastic elastic"
+              data-src="[object Object]"
             />
              
             <p
@@ -1254,8 +1297,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__devops-logstash devops-logstash"
+            <img
+              alt="Logstash"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__logstash logstash"
+              data-src="[object Object]"
             />
              
             <p
@@ -1269,8 +1314,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__devops-kibana devops-kibana"
+            <img
+              alt="Kibana"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__kibana kibana"
+              data-src="[object Object]"
             />
              
             <p
@@ -1284,8 +1331,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__devops-prometheus devops-prometheus"
+            <img
+              alt="Prometheus"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__prometheus prometheus"
+              data-src="[object Object]"
             />
              
             <p
@@ -1835,7 +1884,12 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           <blockquote
             class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
           >
-            
+            <img
+              alt="blockquote"
+              class="case_blockquote-mark img_lazy"
+              data-src="[object Object]"
+            />
+             
       Sophisticated system monitoring is the fight life of defence against downtime.
     
           </blockquote>
@@ -3196,8 +3250,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
     <section
       class="case_footer container_full"
     >
-      <div
-        class="case_logotype-namba-food"
+      <img
+        alt="Namba Food"
+        class="case_logotype-namba-food img_lazy"
+        data-src="[object Object]"
       />
        
       <h2

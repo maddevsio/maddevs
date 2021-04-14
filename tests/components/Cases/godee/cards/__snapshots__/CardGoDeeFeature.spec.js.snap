@@ -5,15 +5,13 @@ exports[`CardGoDeeFeature component should render correctly 1`] = `
   <div
     class="card-content"
   >
-    <div
-      class="card-content_icon card-content_some-icon-icon"
-    />
+    <!---->
      
     <h4
       class="case_title_h4 card-content_title"
     >
       
-    feature-title
+    
   
     </h4>
      
