@@ -398,7 +398,7 @@ export default {
     padding: 12px 14px 4px;
     position: fixed;
     left: 36px;
-    bottom: 36px;
+    bottom: 20px;
     background-color: $bgcolor--red;
     border: 1px solid $border-color--red;
     border-radius: 2px;
