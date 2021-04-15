@@ -6,9 +6,12 @@
   >
     <div class="row featured-post__wrapper">
       <div class="col-12 col-lg-6 featured-post__main">
-        <h1 class="featured-post__title">
+        <component
+          :is="titleTag"
+          class="featured-post__title"
+        >
           {{ $prismic.asText(post.data.title) }}
-        </h1>
+        </component>
         <p class="featured-post__paragraph">
           {{ firstParagraph }}
         </p>
@@ -60,6 +63,11 @@ export default {
     to: {
       type: String,
       default: '',
+    },
+
+    titleTag: {
+      type: String,
+      default: 'h2',
     },
 
     author: {
