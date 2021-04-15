@@ -187,13 +187,8 @@ export default {
       window.scrollTo(0, 0)
     },
 
-    preventDefault(e) {
-      e.preventDefault()
-    },
-
     enablePageScroll() {
       const scrollY = document.body.style.top || '0'
-      document.body.removeEventListener('touchmove', this.preventDefault)
       document.body.classList.remove('scrollDisabled')
       document.documentElement.classList.remove('scrollDisabled')
       window.scrollTo(0, parseInt(scrollY, 10) * -1)
@@ -201,7 +196,6 @@ export default {
 
     disablePageScroll() {
       const { scrollY } = window
-      document.body.addEventListener('touchmove', this.preventDefault, { passive: false })
       document.body.classList.add('scrollDisabled')
       document.documentElement.classList.add('scrollDisabled')
       document.body.style.top = `-${scrollY}px`
