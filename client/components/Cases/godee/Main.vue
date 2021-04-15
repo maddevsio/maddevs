@@ -1,5 +1,30 @@
 <template>
-  <section>
+  <main
+    id="case-scroll-container"
+    ref="main"
+    class="case case_parallax"
+  >
+    <CaseHeader
+      :logo="logo"
+      project="godee"
+      video-name="/videos/godee-case-main-video.mp4"
+      video-fallback-path="/images/Cases/godee/jpg/godee-case-preview.jpg"
+    >
+      <h1
+        slot="title"
+        class="case_header-title"
+      >
+        Convenient shuttle <br>
+        bus service
+      </h1>
+      <p
+        slot="description"
+        class="case_header-description"
+      >
+        Mad Devs helped GoDee with developing feature-rich software to re-invent <br>
+        public mobility by building new smart ways of a daily commute.
+      </p>
+    </CaseHeader>
     <div class="case_content-layer p-48_bottom media-p-24_bottom">
       <div
         id="case-first-section"
@@ -35,10 +60,27 @@
       <StableScalableSolution />
       <Team />
     </div>
-  </section>
+    <CaseFooter
+      link="/case-studies/namba-food/"
+      class-name="namba-food"
+    >
+      <img
+        slot="icon"
+        :data-src="require(`@/assets/img/Studies/svg/nambafood-footer.svg`)"
+        alt="Namba Food"
+        class="case_logotype-namba-food img_lazy"
+      >
+      Namba Food <br>
+      Top Delivery Service in <br class="case_mobile-break-namba-food">
+      Central Asia
+    </CaseFooter>
+    <!-- Добавил главный футер сайта, так как из-за того что скролл на странице находиться у элемента .main, нельзя доскроллить фо футера -->
+    <Footer class="background-color-black" />
+  </main>
 </template>
 
 <script>
+import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import About from '@/components/Cases/godee/About'
 import IssuesAndSolution from '@/components/Cases/godee/IssuesAndSolution'
 import ParallaxImage from '@/components/Cases/godee/ParallaxImage'
@@ -57,6 +99,8 @@ import TechnologyStack from '@/components/Cases/godee/TechnologyStack'
 import Monitoring from '@/components/Cases/godee/Monitoring'
 import StableScalableSolution from '@/components/Cases/godee/StableScalableSolution'
 import Team from '@/components/Cases/godee/Team'
+import CaseFooter from '@/components/Cases/shared/CaseFooter'
+import Footer from '@/components/core/Footer/Footer'
 import isIphoneMixin from '@/mixins/isIphoneMixin'
 import autoplayVideoMixin from '@/mixins/autoplayVideoMixin'
 
@@ -69,6 +113,7 @@ const observerOptions = {
 export default {
   name: 'Main',
   components: {
+    CaseHeader,
     About,
     IssuesAndSolution,
     ParallaxImage,
@@ -87,8 +132,22 @@ export default {
     Monitoring,
     StableScalableSolution,
     Team,
+    CaseFooter,
+    Footer,
   },
 
   mixins: [isIphoneMixin, autoplayVideoMixin(['trip-request-map', 'trip-monitor', 'route-optimization'], observerOptions)],
+
+  data() {
+    return {
+      logo: {
+        width: 293,
+        height: 130,
+        folder: 'godee',
+        file: 'godee-logo',
+        alt: '',
+      },
+    }
+  },
 }
 </script>
