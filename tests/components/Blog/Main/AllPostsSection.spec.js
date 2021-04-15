@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/vue'
 import AllPostsSection from '@/components/Blog/Main/AllPostsSection'
 import Vuex from 'vuex'
-import { createLocalVue } from '@vue/test-utils'
+import { createLocalVue, shallowMount } from '@vue/test-utils'
 import allPosts from '../../../__mocks__/allPosts'
 import * as homeContent from '../../../__mocks__/homePageContent'
 
@@ -33,6 +33,10 @@ const store = {
     getMorePosts: jest.fn(),
   },
 }
+
+const containerToRender = document.createElement('a')
+containerToRender.setAttribute('href', 'Hardware')
+containerToRender.setAttribute('data-testid', 'test-href')
 
 describe('AllPostsSection component', () => {
   it('is a Vue instance', () => {
@@ -68,5 +72,18 @@ describe('AllPostsSection component', () => {
     const input = screen.getAllByTestId('test-post-input')
     await fireEvent.update(input[0], 'Hardware')
     expect(store.actions.changePostsCategory).toHaveBeenCalledTimes(1)
+  })
+
+  it('correctly call update class function from watcher', () => {
+    mocks.visitedPost = 'Hardware'
+    const wrapper = shallowMount(AllPostsSection, {
+      localVue,
+      mocks,
+      stubs,
+      store,
+      container: document.body.appendChild(containerToRender),
+    })
+
+    expect(wrapper.vm.$options.watch.filteredPosts()).toBeTruthy()
   })
 })

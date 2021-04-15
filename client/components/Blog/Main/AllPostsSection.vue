@@ -109,6 +109,7 @@ export default {
     // Fixes scroll position for async filtered posts list
     filteredPosts() {
       const visitedLinkEl = document.querySelector(`a[href='${this.visitedPost}']`)
+      console.log('hello', visitedLinkEl, this.visitedPost)
       if (
         visitedLinkEl
         && !visitedLinkEl.classList.contains('featured-post')
