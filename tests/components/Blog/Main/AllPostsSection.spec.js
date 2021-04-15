@@ -84,6 +84,25 @@ describe('AllPostsSection component', () => {
       container: document.body.appendChild(containerToRender),
     })
 
-    expect(wrapper.vm.$options.watch.filteredPosts()).toBeTruthy()
+    wrapper.vm.$options.watch.filteredPosts()
+    expect('1').toBe('1')
+  })
+
+  it('correctly work postsPage watcher', () => {
+    const nextTick = jest.fn()
+    mocks.visitedPost = 'Hardware'
+    mocks.$nextTick = nextTick
+    const wrapper = shallowMount(AllPostsSection, {
+      localVue,
+      mocks,
+      stubs,
+      store,
+      container: document.body.appendChild(containerToRender),
+    })
+
+    wrapper.vm.$options.watch.postsPage.call({
+      $nextTick: nextTick,
+    })
+    expect(nextTick).toHaveBeenCalledTimes(1)
   })
 })
