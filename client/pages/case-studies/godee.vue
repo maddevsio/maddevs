@@ -6,30 +6,28 @@
       ref="main"
       class="case case_parallax"
     >
-      <div class="case_content-layer p-48_bottom media-p-24_bottom">
-        <CaseHeader
-          :logo="logo"
-          project="godee"
-          video-name="/videos/godee-case-main-video.mp4"
-          video-fallback-path="/images/Cases/godee/jpg/godee-case-preview.jpg"
+      <CaseHeader
+        :logo="logo"
+        project="godee"
+        video-name="/videos/godee-case-main-video.mp4"
+        video-fallback-path="/images/Cases/godee/jpg/godee-case-preview.jpg"
+      >
+        <h1
+          slot="title"
+          class="case_header-title"
         >
-          <h1
-            slot="title"
-            class="case_header-title"
-          >
-            Convenient shuttle <br>
-            bus service
-          </h1>
-          <p
-            slot="description"
-            class="case_header-description"
-          >
-            Mad Devs helped GoDee with developing feature-rich software to re-invent <br>
-            public mobility by building new smart ways of a daily commute.
-          </p>
-        </CaseHeader>
-        <Main />
-      </div>
+          Convenient shuttle <br>
+          bus service
+        </h1>
+        <p
+          slot="description"
+          class="case_header-description"
+        >
+          Mad Devs helped GoDee with developing feature-rich software to re-invent <br>
+          public mobility by building new smart ways of a daily commute.
+        </p>
+      </CaseHeader>
+      <Main />
       <CaseFooter
         link="/case-studies/namba-food/"
         class-name="namba-food"
