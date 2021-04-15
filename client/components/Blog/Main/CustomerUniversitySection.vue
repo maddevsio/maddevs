@@ -119,12 +119,12 @@ export default {
 
   watch: {
     customerContent() {
-      // Callback for async fetch(), add lazy for images in customer university posts after async data render on page
+      // Callback for async customerContent getter, add lazy for images in customer university posts after async data render on page
       this.$nextTick(() => initializeLazyLoad())
     },
 
     featuredCUPost() {
-      // Callback for async fetch(), add lazy for images in customer university posts after async data render on page
+      // Callback for async featuredCUPost getter, add lazy for images in customer university posts after async data render on page
       this.$nextTick(() => initializeLazyLoad())
     },
   },
