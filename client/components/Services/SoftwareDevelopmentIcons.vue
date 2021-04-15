@@ -48,7 +48,6 @@ export default {
     background-color: $software-icon-background;
 
     img {
-      content: '';
       width: 26px;
       height: 26px;
       display: block;
