@@ -1,3 +1,18 @@
+export const blog = {
+  state: {
+    customerContent: {},
+    featuredCUPost: null,
+  },
+  getters: {
+    customerContent(state) {
+      return state.customerContent
+    },
+    featuredCUPost(state) {
+      return state.featuredCUPost
+    },
+  },
+}
+
 export const blogPost = {
   state: {
     post: {
@@ -43,6 +58,7 @@ export const blogPost = {
 
 export default {
   modules: {
+    blog,
     blogPost,
   },
 }

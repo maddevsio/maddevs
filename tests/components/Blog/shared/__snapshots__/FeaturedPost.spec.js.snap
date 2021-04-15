@@ -12,13 +12,13 @@ exports[`featured post component is a Vue instance 1`] = `
       <div
         class="col-12 col-lg-6 featured-post__main"
       >
-        <h1
+        <h2
           class="featured-post__title"
         >
           
         The best practices for improving layout quality on your website
       
-        </h1>
+        </h2>
          
         <p
           class="featured-post__paragraph"
