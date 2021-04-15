@@ -45,10 +45,12 @@
           </section>
         </template>
       </div>
-      <LoadMoreButton
-        v-if="totalPages > authorPostsPage"
-        :click-handler="getMoreAuthorPosts"
-      />
+      <div class="author-posts__load-more">
+        <LoadMoreButton
+          v-if="totalPages > authorPostsPage"
+          :click-handler="getMoreAuthorPosts"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -128,6 +130,10 @@ export default {
           color: $text-color--black;
         }
       }
+    }
+
+    &__load-more {
+      margin-top: 36px;
     }
 
     @media only screen and (max-width: 991px) {
