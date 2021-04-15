@@ -1,5 +1,5 @@
 <template>
-  <div class="case_root">
+  <div class="case_root case--godee">
     <Header />
     <Main />
   </div>

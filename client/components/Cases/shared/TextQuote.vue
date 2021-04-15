@@ -1,7 +1,7 @@
 <template>
   <blockquote class="case_blockquote">
     <img
-      :data-src="require(`@/assets/img/Studies/svg/qmark.svg`)"
+      :data-src="require('@/assets/img/Studies/svg/qmark.svg')"
       alt="blockquote"
       class="case_blockquote-mark img_lazy"
     >
@@ -25,7 +25,6 @@ export default {
   @include default_text($text-color--black-oil, 30px, 166%, -0.02em, normal);
 
   &-mark {
-    content: '';
     width: 50px;
     height: 50px;
     position: absolute;
@@ -41,7 +40,6 @@ export default {
     &-mark {
       width: 32px;
       height: 33px;
-      top: 4px;
     }
   }
 }

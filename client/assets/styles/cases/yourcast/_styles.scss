@@ -1,35 +1,37 @@
-.case {
-  &_header-yourcast::before {
-    background: $bgcolor--yourcast-banner;
-    z-index: -1 !important;
-  }
-
-  &_yourcast-logo {
-    width: 387px;
-    height: 82px;
-    margin-left: 101px;
-
-    @media screen and (max-width: 1320px) {
-      margin-left: 51px;
+.case--yourcast {
+  .case {
+    &_header-yourcast::before {
+      background: $bgcolor--yourcast-banner;
+      z-index: -1 !important;
     }
-
-    @media screen and (max-width: 1220px) {
-      margin-left: 31px;
-    }
-
-    @media screen and (max-width: 1170px) {
-      margin-bottom: 38px;
-      margin-left: 0;
-    }
-
-    @media screen and (max-width: 655px) {
-      width: 249px;
-      height: 51px;
-      margin-bottom: 31px;
-    }
-
-    @media screen and (max-width: 370px) {
-      margin-bottom: 25px;
+  
+    &_yourcast-logo {
+      width: 387px;
+      height: 82px;
+      margin-left: 101px;
+  
+      @media screen and (max-width: 1320px) {
+        margin-left: 51px;
+      }
+  
+      @media screen and (max-width: 1220px) {
+        margin-left: 31px;
+      }
+  
+      @media screen and (max-width: 1170px) {
+        margin-bottom: 38px;
+        margin-left: 0;
+      }
+  
+      @media screen and (max-width: 655px) {
+        width: 249px;
+        height: 51px;
+        margin-bottom: 31px;
+      }
+  
+      @media screen and (max-width: 370px) {
+        margin-bottom: 25px;
+      }
     }
   }
 }

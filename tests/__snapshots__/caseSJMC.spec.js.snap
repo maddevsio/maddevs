@@ -2,7 +2,7 @@
 
 exports[`sirJohnMonashCentre renders correctly 1`] = `
 <main
-  class="main case"
+  class="main case case--sjmc"
 >
   <section
     class="case_header case_header-sjmc"

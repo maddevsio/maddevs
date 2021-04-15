@@ -1,5 +1,5 @@
 <template>
-  <main class="main case">
+  <main class="main case case--sjmc">
     <CaseHeader
       :logo="logo"
       project="sjmc"
