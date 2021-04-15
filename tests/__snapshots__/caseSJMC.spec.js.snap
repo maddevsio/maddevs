@@ -165,8 +165,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <img
             alt="blockquote"
-            class="case_blockquote-mark"
-            src="@/assets/img/Studies/svg/qmark.svg"
+            class="case_blockquote-mark img_lazy"
+            data-src="[object Object]"
           />
            
     World-class BYOD technology delivers an enhanced understanding of the nature and context of the Australian
@@ -413,8 +413,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="blockquote"
-              class="case_blockquote-mark"
-              src="@/assets/img/Studies/svg/qmark.svg"
+              class="case_blockquote-mark img_lazy"
+              data-src="[object Object]"
             />
              
       The MMIT Brain is a coherent solution that brings together the monitoring and management of two information
@@ -1886,8 +1886,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="blockquote"
-              class="case_blockquote-mark"
-              src="@/assets/img/Studies/svg/qmark.svg"
+              class="case_blockquote-mark img_lazy"
+              data-src="[object Object]"
             />
              
       Sophisticated system monitoring is the fight life of defence against downtime.

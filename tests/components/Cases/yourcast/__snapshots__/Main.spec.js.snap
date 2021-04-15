@@ -42,8 +42,8 @@ exports[`Main component should render correctly 1`] = `
       >
         <img
           alt="blockquote"
-          class="case_blockquote-mark"
-          src="@/assets/img/Studies/svg/qmark.svg"
+          class="case_blockquote-mark img_lazy"
+          data-src="[object Object]"
         />
          
     We respect the customer’s request to keep this project under the NDA and will not disclose the project name while
@@ -2101,8 +2101,8 @@ exports[`Main component should render correctly 1`] = `
         >
           <img
             alt="blockquote"
-            class="case_blockquote-mark"
-            src="@/assets/img/Studies/svg/qmark.svg"
+            class="case_blockquote-mark img_lazy"
+            data-src="[object Object]"
           />
            
       Mad Devs integrated the platform with Plex Media Server, which provides free movie descriptions via an API.

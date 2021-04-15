@@ -7,8 +7,8 @@ exports[`TextQuote component should render correctly 1`] = `
   >
     <img
       alt="blockquote"
-      class="case_blockquote-mark"
-      src="@/assets/img/Studies/svg/qmark.svg"
+      class="case_blockquote-mark img_lazy"
+      data-src="[object Object]"
     />
      Main Content
   </blockquote>
