@@ -1,6 +1,10 @@
+import formatDate from '@/helpers/formatDate'
+
 export default {
   state: () => ({
     homePageContent: {},
+    customerContent: {},
+    featuredCUPost: null,
     posts: [],
     featuredPost: null,
     postsCategory: null,
@@ -21,6 +25,13 @@ export default {
         bannerLink: data.banner_link,
         categories,
       }
+    },
+    SET_CUSTOMER_CONTENT(state, data) {
+      state.customerContent = data
+    },
+    SET_FEATURED_CUSTOMER_POST(state, post) {
+      state.featuredCUPost = post
+      state.featuredCUPost.date = formatDate(post.date)
     },
     SET_POSTS(state, data) {
       state.posts = data
@@ -43,6 +54,18 @@ export default {
         commit('SET_BLOG_PAGE_CONTENT', pageContent)
         if (!state.postsCategory) {
           commit('SET_POSTS_CATEGORY', state.homePageContent.categories[0].title)
+        }
+      } catch (err) {
+        if (err) throw err
+      }
+    },
+    async getCustomerUniversityContent({ commit }) {
+      try {
+        const master = (await this.$prismic.api.getSingle('cu_master')).data
+        commit('SET_CUSTOMER_CONTENT', master)
+        if (master.featured_cu.uid) {
+          const featuredPost = (await this.$prismic.api.getByUID('customer_university', master.featured_cu.uid)).data
+          commit('SET_FEATURED_CUSTOMER_POST', featuredPost)
         }
       } catch (err) {
         if (err) throw err
@@ -74,6 +97,12 @@ export default {
   getters: {
     homePageContent(state) {
       return state.homePageContent
+    },
+    customerContent(state) {
+      return state.customerContent
+    },
+    featuredCUPost(state) {
+      return state.featuredCUPost
     },
     allPosts(state) {
       return state.posts

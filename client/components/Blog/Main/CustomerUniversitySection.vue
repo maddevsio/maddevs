@@ -8,13 +8,13 @@
       <div class="customer-university__wrapper">
         <div class="customer-university__featured-post">
           <NuxtLink
-            v-if="featured"
-            :to="`/customer-university/${master.data.featured_cu.uid}/`"
+            v-if="featuredCUPost"
+            :to="`/customer-university/${customerContent.featured_cu.uid}/`"
             class="featured-post"
           >
-            <span class="featured-post__date">{{ formattedDate }}</span>
+            <span class="featured-post__date">{{ featuredCUPost.date }}</span>
             <h2 class="featured-post__title">
-              {{ $prismic.asText(featured.title).replace(/^[0-9]*\. /, '') }}
+              {{ $prismic.asText(featuredCUPost.title).replace(/^[0-9]*\. /, '') }}
             </h2>
             <p class="featured-post__text">
               {{ firstParagraph }}
@@ -25,8 +25,8 @@
                 class="featured-post__cover img_lazy"
                 width="560"
                 height="347"
-                :data-src="featured.featured_image.url"
-                :alt="featured.featured_image.alt"
+                :data-src="featuredCUPost.featured_image.url"
+                :alt="featuredCUPost.featured_image.alt"
               >
             </div>
           </NuxtLink>
@@ -81,7 +81,6 @@ import { mapGetters } from 'vuex'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
 import initializeLazyLoad from '@/helpers/lazyLoad'
-import formatDate from '@/helpers/formatDate'
 
 export default {
   name: 'CustomerUniversitySection',
@@ -91,36 +90,20 @@ export default {
 
   data() {
     return {
-      master: {},
-      featured: null,
-      formattedDate: '',
       showAll: false,
     }
   },
 
-  async fetch() {
-    const master = await this.$prismic.api.getSingle('cu_master')
-    if (master.data.featured_cu.uid) {
-      const featured = await this.$prismic.api.getByUID('customer_university', master.data.featured_cu.uid)
-      this.featured = featured.data
-      this.formattedDate = formatDate(this.featured.date)
-    }
-    this.master = master
-  },
-
   computed: {
-    ...mapGetters(['allAuthors']),
+    ...mapGetters(['customerContent', 'featuredCUPost', 'allAuthors']),
 
     featuredPostAuthor() {
       if (!this.allAuthors) return null
-      return this.allAuthors.find(a => a.id === this.featured.post_author.id)
+      return this.allAuthors.find(a => a.id === this.featuredCUPost.post_author.id)
     },
 
     clusters() {
-      if (this.master.data) {
-        return this.master.data.body
-      }
-      return []
+      return this.customerContent.body || []
     },
 
     clustersToShow() {
@@ -128,14 +111,19 @@ export default {
     },
 
     firstParagraph() {
-      const slices = this.featured.body
+      const slices = this.featuredCUPost.body
       const limit = 150
       return getFirstParagraph(slices, limit)
     },
   },
 
   watch: {
-    master() {
+    customerContent() {
+      // Callback for async fetch(), add lazy for images in customer university posts after async data render on page
+      this.$nextTick(() => initializeLazyLoad())
+    },
+
+    featuredCUPost() {
       // Callback for async fetch(), add lazy for images in customer university posts after async data render on page
       this.$nextTick(() => initializeLazyLoad())
     },
