@@ -38,8 +38,8 @@ exports[`AboutYourcast component should render correctly 1`] = `
     >
       <img
         alt="blockquote"
-        class="case_blockquote-mark img_lazy"
-        data-src="[object Object]"
+        class="case_blockquote-mark"
+        src="@/assets/img/Studies/svg/qmark.svg"
       />
        
     We respect the customer’s request to keep this project under the NDA and will not disclose the project name while

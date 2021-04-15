@@ -1,9 +1,9 @@
 <template>
   <blockquote class="case_blockquote">
     <img
-      :data-src="require(`@/assets/img/Studies/svg/qmark.svg`)"
+      src="@/assets/img/Studies/svg/qmark.svg"
       alt="blockquote"
-      class="case_blockquote-mark img_lazy"
+      class="case_blockquote-mark"
     >
     <slot />
   </blockquote>
@@ -41,7 +41,6 @@ export default {
     &-mark {
       width: 32px;
       height: 33px;
-      top: 4px;
     }
   }
 }

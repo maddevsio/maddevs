@@ -1,5 +1,5 @@
 <template>
-  <main class="main case">
+  <main class="main case case--nambafood">
     <CaseHeader
       :logo="logo"
       project="nambafood"

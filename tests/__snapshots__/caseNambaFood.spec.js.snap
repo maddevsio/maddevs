@@ -2,7 +2,7 @@
 
 exports[`namba food renders correctly 1`] = `
 <main
-  class="main case"
+  class="main case case--nambafood"
 >
   <section
     class="case_header case_header-nambafood"
@@ -969,8 +969,8 @@ exports[`namba food renders correctly 1`] = `
       >
         <img
           alt="blockquote"
-          class="case_blockquote-mark img_lazy"
-          data-src="[object Object]"
+          class="case_blockquote-mark"
+          src="@/assets/img/Studies/svg/qmark.svg"
         />
          
     Namba Food automatically categorises data inside the managers' dashboard panel. More than 4000 products can be
