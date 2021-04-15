@@ -17,6 +17,7 @@
                   :id="category.title"
                   :value="category.title"
                   :checked="postsCategory === category.title"
+                  data-testid="test-post-input"
                   type="radio"
                   name="Tag"
                   class="radio-input"
