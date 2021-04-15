@@ -119,7 +119,7 @@ export default {
 
   &__nav-item {
     text-decoration: none;
-    color: $text-color--black-cases;
+    color: $text-color--black-oil;
     display: flex;
     background: $bgcolor--white-primary;
     border-radius: 8px;

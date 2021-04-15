@@ -71,9 +71,9 @@ export default {
 
   // --------- NambaFood footer styles --------- //
   &_logotype-namba-food {
-    @include nambafood-footer;
     width: 200px;
     height: 63px;
+    display: block;
     margin-bottom: 33px;
   }
 
@@ -91,9 +91,9 @@ export default {
 
   // --------- SJMC footer styles --------- //
   &_logotype-sjmc {
-    @include sjmc-footer;
     width: 253px;
     height: 113px;
+    display: block;
     margin-bottom: 35px;
   }
 

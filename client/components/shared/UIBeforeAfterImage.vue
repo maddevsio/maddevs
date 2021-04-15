@@ -76,17 +76,17 @@ export default {
 
   computed: {
     beforeImageStyle() {
-      return this.$props.beforeImage
-        ? `background-image: url(${this.getMediaFromS3(this.$props.beforeImage)});`
+      return this.beforeImage
+        ? `background-image: url(${this.getMediaFromS3(this.beforeImage)});`
         : null
     },
 
     afterImageSrc() {
-      return this.$props.afterImage ? this.getMediaFromS3(this.$props.afterImage) : null
+      return this.afterImage ? this.getMediaFromS3(this.afterImage) : null
     },
 
     afterImageAlt() {
-      return this.$props.alt || null
+      return this.alt || null
     },
   },
 

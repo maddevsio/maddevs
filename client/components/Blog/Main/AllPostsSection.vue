@@ -68,6 +68,7 @@
 import { mapActions, mapGetters } from 'vuex'
 import Simplebar from 'simplebar-vue'
 import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
+import initializeLazyLoad from '@/helpers/lazyLoad'
 
 export default {
   name: 'AllPostsSection',
@@ -113,6 +114,16 @@ export default {
         postItemEl.scrollIntoView({ block: 'start' })
         window.scrollTo(0, window.scrollY - 120) // scroll for distance between the post and the top of the screen
       }
+    },
+
+    // Set lazy when new posts has been loaded after click on see more button
+    postsPage() {
+      this.$nextTick(() => initializeLazyLoad())
+    },
+
+    postsCategory() {
+      // Refresh recommended blog posts and author images
+      this.$nextTick(() => initializeLazyLoad())
     },
   },
 

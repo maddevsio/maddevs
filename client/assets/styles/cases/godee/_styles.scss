@@ -1,272 +1,274 @@
-.case {
-  &_header::before {
-    background-color: $bgcolor--black-opacity-07;
-  }
-
-  &_godee-logo {
-    width: 292px;
-    height: 130px;
-    margin-left: 155px;
-  }
-
-  &_text-quote-break {
-    display: block;
-  }
-
-  &_issues-godee-card {
-    margin-bottom: 20px;
-  }
+.case--godee {
+  .case {
+    &_header::before {
+      background-color: $bgcolor--black-opacity-07;
+    }
   
-  &_infrastructure-scheme-wrapper {
-    padding-top: 92px;
-    padding-bottom: 60px;
-  }
-
-  &_infrastructure-scheme-gif {
-    max-width: 645px;
-  }
-
-  &_before-after-wrapper {
-    padding: 50px 0;
-
-    @media screen and (max-width: 995px) {
-      padding-top: 31px;
-      padding-bottom: 38px;
+    &_godee-logo {
+      width: 292px;
+      height: 130px;
+      margin-left: 155px;
     }
-
-    @media screen and (max-width: 360px) {
-      padding-top: 21px;
-      padding-bottom: 38px;
-    }
-  }
   
-  &_minimum-viable-product-cards {
-    @include grid(repeat(2, 1fr), auto, 24px, 0);
-  }
-
-  &_preview-cards {
-    display: grid;
-    @include grid(repeat(1, 1fr), auto, 0, 20px);
-  }
-
-  &_preview-cards-top-cards-wrapper {
-    @include grid(repeat(2, 1fr), auto, 20px, 0);
-  }
-
-  &_real-time-eta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &_real-time-eta-title {
-    color: $text-color--silver !important;
-  }
-
-  &_real-time-eta-text-content {
-    max-width: 398px;
-    padding-right: 40px;
-  }
-
-  &_phone-wrapper-eta-section {
-    min-width: 245px;
-    min-height: 475px;
-  }
-
-  &_development-goals {
-    @include grid(repeat(2, 1fr), auto, 24px, 0);
-  }
-
-  &_development-goals-left-column,
-  &_development-goals-right-column {
-    display: grid;
-    grid-row-gap: 24px;
-    height: max-content;
-  }
-
-  &_monitoring-section-bold {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 21.25px;
-    line-height: 27.62px;
-    letter-spacing: -0.02em;
-    color: $text-color--black-cases;
-  }
-
-  &_video-wrapper {
-    width: 1440px;
-    height: 809px;
-
-    iframe {
-      width: 100%;
-      height: 100%;
+    &_text-quote-break {
+      display: block;
     }
-  }
-
-  &_parallax {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 300px;
-    perspective: 300px;
-  }
-
-  &_content-layer {
-    position: relative;
-    z-index: 1;
-    background: #fff;
-  }
-
-  &_parallax-layer {
-    z-index: -9;
-    height: 576px;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
-
-  &_parallax-image-wrapper {
-    position: relative;
-    height: 100vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
-
-  &_parallax-image {
-    position: absolute;
-    top: 0;
-    left: -5px;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    background-position: center;
-    -webkit-transform: translateZ(-300px) scale(2);
-    transform: translateZ(-300px) scale(2);
-  }
-
-  &_html-video-wrapper,
-  &_image-wrapper {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    overflow: hidden;
-  }
-
-  &_html-video {
-    margin: 0px 0px -6px 0px;
-  }
-
-  &_video-flex-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &_trip-request-video {
-    width: calc(100% - -2px); // Скрываю черную полосу у видео с правой стороны
-  }
-
-  @media screen and (max-width: 1440px) {
+  
+    &_issues-godee-card {
+      margin-bottom: 20px;
+    }
+    
+    &_infrastructure-scheme-wrapper {
+      padding-top: 92px;
+      padding-bottom: 60px;
+    }
+  
+    &_infrastructure-scheme-gif {
+      max-width: 645px;
+    }
+  
+    &_before-after-wrapper {
+      padding: 50px 0;
+  
+      @media screen and (max-width: 995px) {
+        padding-top: 31px;
+        padding-bottom: 38px;
+      }
+  
+      @media screen and (max-width: 360px) {
+        padding-top: 21px;
+        padding-bottom: 38px;
+      }
+    }
+    
+    &_minimum-viable-product-cards {
+      @include grid(repeat(2, 1fr), auto, 24px, 0);
+    }
+  
+    &_preview-cards {
+      display: grid;
+      @include grid(repeat(1, 1fr), auto, 0, 20px);
+    }
+  
+    &_preview-cards-top-cards-wrapper {
+      @include grid(repeat(2, 1fr), auto, 20px, 0);
+    }
+  
+    &_real-time-eta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    &_real-time-eta-title {
+      color: $text-color--silver !important;
+    }
+  
+    &_real-time-eta-text-content {
+      max-width: 398px;
+      padding-right: 40px;
+    }
+  
+    &_phone-wrapper-eta-section {
+      min-width: 245px;
+      min-height: 475px;
+    }
+  
+    &_development-goals {
+      @include grid(repeat(2, 1fr), auto, 24px, 0);
+    }
+  
+    &_development-goals-left-column,
+    &_development-goals-right-column {
+      display: grid;
+      grid-row-gap: 24px;
+      height: max-content;
+    }
+  
+    &_monitoring-section-bold {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 21.25px;
+      line-height: 27.62px;
+      letter-spacing: -0.02em;
+      color: $text-color--black-oil;
+    }
+  
     &_video-wrapper {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 */
-      height: 0;
-
+      width: 1440px;
+      height: 809px;
+  
       iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
       }
     }
-  }
-
-  @media screen and (max-width: 1250px) {
-    &_godee-logo {
-      margin-left: 80px;
+  
+    &_parallax {
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-perspective: 300px;
+      perspective: 300px;
     }
-  }
-
-  @media screen and (max-width: 1170px) {
-    &_godee-logo {
-      width: 293px;
-      margin-left: 0;
-      margin-bottom: 6px;
+  
+    &_content-layer {
+      position: relative;
+      z-index: 1;
+      background: #fff;
     }
-  }
-
-  @media screen and (max-width: 880px) {
-    &_minimum-viable-product-cards,
-    &_development-goals {
-      @include grid(repeat(1, 1fr), auto, 0, 20px);
-    } 
-
-    &_development-goals-left-column,
-    &_development-goals-right-column {
-      grid-row-gap: 20px;
+  
+    &_parallax-layer {
+      z-index: -9;
+      height: 576px;
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
     }
-  }
-
-  @media screen and (max-width: 825px) {
-    &_preview-cards-top-cards-wrapper {
-      @include grid(repeat(1, 1fr), auto, 0, 20px);
+  
+    &_parallax-image-wrapper {
+      position: relative;
+      height: 100vh;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
     }
-  }
-
-  @media screen and (max-width: 768px) {
-    &_real-time-eta {
+  
+    &_parallax-image {
+      position: absolute;
+      top: 0;
+      left: -5px;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: center;
+      -webkit-transform: translateZ(-300px) scale(2);
+      transform: translateZ(-300px) scale(2);
+    }
+  
+    &_html-video-wrapper,
+    &_image-wrapper {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      overflow: hidden;
+    }
+  
+    &_html-video {
+      margin: 0px 0px -6px 0px;
+    }
+  
+    &_video-flex-wrapper {
+      display: flex;
       flex-direction: column;
     }
-
-    &_infrastructure-scheme-wrapper {
-      padding: 48px 0;
+  
+    &_trip-request-video {
+      width: calc(100% - -2px); // Скрываю черную полосу у видео с правой стороны
     }
-
-    &_phone-wrapper-eta-section {
-      width: 327px;
-      height: 633px;
+  
+    @media screen and (max-width: 1440px) {
+      &_video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+  
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
-
-    &_real-time-eta-text-content {
-      margin-bottom: 24px;
+  
+    @media screen and (max-width: 1250px) {
+      &_godee-logo {
+        margin-left: 80px;
+      }
     }
-
-    &_monitoring-section-bold {
-      font-size: 18px;
-      line-height: 24.3px;
-      letter-spacing: -1px;
+  
+    @media screen and (max-width: 1170px) {
+      &_godee-logo {
+        width: 293px;
+        margin-left: 0;
+        margin-bottom: 6px;
+      }
     }
-
-    &_issues-godee-card {
-      margin-bottom: 12px;
-    }  
-  }
-
-  @media screen and (max-width: 655px) {
-    &_godee-logo {
-      width: 147px;
-      height: 65px;
-      margin-bottom: 20px;
+  
+    @media screen and (max-width: 880px) {
+      &_minimum-viable-product-cards,
+      &_development-goals {
+        @include grid(repeat(1, 1fr), auto, 0, 20px);
+      } 
+  
+      &_development-goals-left-column,
+      &_development-goals-right-column {
+        grid-row-gap: 20px;
+      }
     }
-  }
-
-  @media screen and (max-width: 375px) {
-    &_real-time-eta {
-      align-items: flex-start;
+  
+    @media screen and (max-width: 825px) {
+      &_preview-cards-top-cards-wrapper {
+        @include grid(repeat(1, 1fr), auto, 0, 20px);
+      }
     }
-  }
-
-  @media screen and (max-width: 370px) {
-    &_godee-logo {
-      margin-bottom: 10px;
+  
+    @media screen and (max-width: 768px) {
+      &_real-time-eta {
+        flex-direction: column;
+      }
+  
+      &_infrastructure-scheme-wrapper {
+        padding: 48px 0;
+      }
+  
+      &_phone-wrapper-eta-section {
+        width: 327px;
+        height: 633px;
+      }
+  
+      &_real-time-eta-text-content {
+        margin-bottom: 24px;
+      }
+  
+      &_monitoring-section-bold {
+        font-size: 18px;
+        line-height: 24.3px;
+        letter-spacing: -1px;
+      }
+  
+      &_issues-godee-card {
+        margin-bottom: 12px;
+      }  
     }
-
-    &_phone-wrapper-eta-section {
-      width: 270px;
-      height: 515px;
+  
+    @media screen and (max-width: 655px) {
+      &_godee-logo {
+        width: 147px;
+        height: 65px;
+        margin-bottom: 20px;
+      }
+    }
+  
+    @media screen and (max-width: 375px) {
+      &_real-time-eta {
+        align-items: flex-start;
+      }
+    }
+  
+    @media screen and (max-width: 370px) {
+      &_godee-logo {
+        margin-bottom: 10px;
+      }
+  
+      &_phone-wrapper-eta-section {
+        width: 270px;
+        height: 515px;
+      }
     }
   }
 }

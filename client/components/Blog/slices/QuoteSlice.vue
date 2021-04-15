@@ -67,7 +67,7 @@ export default {
   margin: 24px 0;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: $text-color--black-cases;
+  color: $text-color--black-oil;
   border-left: 2px solid $border-color--red;
   padding-left: 35px;
 
@@ -116,7 +116,7 @@ export default {
   &__name {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    color: $text-color--grey-team-list;
+    color: $text-color--grey-opacity-40-percent;
     font-style: italic;
     font-size: 16px;
     line-height: 166%;

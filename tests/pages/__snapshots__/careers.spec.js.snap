@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Careers page should render correctly 1`] = `
+<div>
+  <main
+    class="main"
+  >
+    <div
+      class="banner-container"
+    >
+      <div
+        class="banner__banner-content banner-content"
+      >
+        <div
+          class="banner__main-title-wrapper main-title-wrapper container"
+        >
+          <h1
+            class="banner__banner-main_title banner-main_title banner-main_title-test"
+          >
+            
+        Look! 
+            <br />
+            
+        A new 
+            <span>
+              Mad Devs'
+            </span>
+             
+            <br />
+            
+        ranger is here!
+      
+          </h1>
+           
+          <div
+            class="banner__logo"
+          />
+        </div>
+      </div>
+    </div>
+     
+    <section
+      class="careers"
+      id="careers"
+    >
+      <div
+        class="careers__container container"
+      >
+        <div
+          class="careers__wrapper"
+        >
+          <form
+            class="careers__form"
+          >
+            <label
+              class="careers__form-name-label"
+            >
+              
+          Hello, my name is
+          
+              <span>
+                <input
+                  autofocus="autofocus"
+                  class="careers__form-input careers__form-name-input"
+                  placeholder="John Smith"
+                  type="text"
+                />
+                 
+                <!---->
+              </span>
+            </label>
+             
+            <h2
+              class="careers__form-description"
+            >
+              
+          I want to work for you as a
+          
+              <span>
+                <input
+                  class="careers__form-input careers__form-position-input"
+                  placeholder="desired position."
+                  type="text"
+                />
+                 
+                <!---->
+              </span>
+            </h2>
+             
+            <h2
+              class="careers__form-description radio-buttons"
+            >
+              
+          You can also consider me for 
+              <br />
+              
+          your other
+        
+            </h2>
+             
+            <div>
+              <ul
+                class="careers__position-list"
+              >
+                <div
+                  class="ui-radio-buttons"
+                >
+                  <div
+                    class="ui-radio-buttons_item"
+                  >
+                    <div
+                      class="ui-radio-buttons_item-circle"
+                    />
+                     
+                    <div
+                      class="ui-radio-buttons_item-label"
+                    >
+                      
+      Senior,
+    
+                    </div>
+                  </div>
+                  <div
+                    class="ui-radio-buttons_item"
+                  >
+                    <div
+                      class="ui-radio-buttons_item-circle"
+                    />
+                     
+                    <div
+                      class="ui-radio-buttons_item-label"
+                    >
+                      
+      Middle,
+    
+                    </div>
+                  </div>
+                  <div
+                    class="ui-radio-buttons_item"
+                  >
+                    <div
+                      class="ui-radio-buttons_item-circle"
+                    />
+                     
+                    <div
+                      class="ui-radio-buttons_item-label"
+                    >
+                      
+      Junior,
+    
+                    </div>
+                  </div>
+                  <div
+                    class="ui-radio-buttons_item"
+                  >
+                    <div
+                      class="ui-radio-buttons_item-circle"
+                    />
+                     
+                    <div
+                      class="ui-radio-buttons_item-label"
+                    >
+                      
+      Intern
+    
+                    </div>
+                  </div>
+                </div>
+              </ul>
+               
+              <!---->
+            </div>
+             
+            <h2
+              class="careers__form-description careers__form-description-email-title"
+            >
+              
+          Please reply to
+          
+              <span>
+                <input
+                  class="careers__form-input careers__form-email-input"
+                  placeholder="your@mail.com"
+                  type="email"
+                />
+                 
+                <!---->
+              </span>
+            </h2>
+             
+            <h2
+              class="careers__form-description"
+            >
+              
+          To get more information on my 
+              <br />
+              
+          skills, please
+        
+            </h2>
+             
+            <ul
+              class="careers__form-list"
+            >
+              <li
+                class="careers__form-list-item careers__form-list-item-linkedin"
+              >
+                
+            – check out my
+            
+                <input
+                  class="careers__form-input careers__form-linkedin-input"
+                  placeholder="LinkedIn profile"
+                  type="text"
+                />
+              </li>
+               
+              <li
+                class="careers__form-list-item careers__file-attach"
+              >
+                <div>
+                  <div
+                    class="file-input"
+                  >
+                    <input
+                      accept=".pdf,.cv,.doc,.odt,.docx,.txt"
+                      class="file-input__uploader"
+                      data-testid="test-file"
+                      id="file"
+                      name="file"
+                      type="file"
+                    />
+                     
+                    <span
+                      class="none-decorated-dash"
+                    >
+                      –
+                    </span>
+                     
+                    <label
+                      class="file-input__cv file-input__cv--attachable"
+                      data-testid="test-file-label"
+                      for="file"
+                    >
+                      
+    find attached my CV
+  
+                    </label>
+                  </div>
+                   
+                  <!---->
+                </div>
+              </li>
+            </ul>
+             
+            <button
+              class="button"
+              id="careers-btn"
+              type="submit"
+            >
+              
+          I want to work for Mad Devs!
+        
+            </button>
+          </form>
+        </div>
+      </div>
+       
+      <transition-stub
+        name="fade"
+      >
+        <!---->
+      </transition-stub>
+    </section>
+  </main>
+</div>
+`;

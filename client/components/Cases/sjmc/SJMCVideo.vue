@@ -7,10 +7,12 @@
       class="video-wrapper"
       @click="videoSetState"
     >
-      <div
+      <img
         v-if="showIcon"
         class="pause-icon"
-      />
+        src="@/assets/img/Studies/svg/pause-icon.svg"
+        alt="Pause"
+      >
       <video
         ref="video"
         class="main-video"
@@ -25,7 +27,12 @@
     <button
       class="exit"
       @click="exitFullscreen"
-    />
+    >
+      <img
+        src="@/assets/img/Studies/svg/close-icon.svg"
+        alt="Close"
+      >
+    </button>
   </div>
 </template>
 
@@ -94,8 +101,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/cases/_icons';
-
 .main-video {
   position: absolute;
   top: 0;
@@ -114,7 +119,13 @@ export default {
   right: 52px;
   background-color: transparent;
   cursor: pointer;
-  @include close-icon;
+  padding: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 }
 
 .pause-icon {
@@ -124,7 +135,6 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @include play-button-white;
   z-index: 1;
 }
 </style>

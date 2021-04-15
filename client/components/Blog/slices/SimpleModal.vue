@@ -138,7 +138,7 @@ export default {
   left: 0;
   top: 0;
   bottom: 0;
-  z-index: 10000000;
+  z-index: 9999999999999;
   background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   box-sizing: border-box;

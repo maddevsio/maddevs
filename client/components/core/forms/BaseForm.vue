@@ -4,184 +4,56 @@
     :class="className"
   >
     <div class="fields-list">
-      <div class="modal-field-item field-item">
-        <p
-          v-if="useLabels"
-          class="modal-field-name field-name"
-          :class="fullnameRequired ? 'required' : ''"
-        >
-          Full Name
-        </p>
-        <input
-          v-model="fullName"
-          :class="{ invalid: $v.fullName.$error }"
-          data-testid="test-base-form-full-name"
-          type="text"
-          class="modal-entry-field entry-field"
-          placeholder="John Smith"
-          @input="$v.fullName.$touch"
-        >
-        <!-- Erros -->
-        <div v-if="$v.fullName.$dirty">
-          <span
-            v-if="fullnameRequired && !$v.fullName.required"
-            class="modal-error-text error-text"
-          >This field is required.</span>
-          <span
-            v-if="!$v.fullName.maxLength"
-            class="modal-error-text error-text"
-          >
-            Sorry, the number of characters in this field should not exceed 50.
-          </span>
-        </div>
-        <!-- End Erros -->
-      </div>
-      <div
+      <BaseInput
+        v-model="fullName"
+        name="fullName"
+        :show-label="useLabels"
+        label="Full Name"
+        placeholder="John Smith"
+        :required="fullnameRequired"
+        :validation="$v.fullName"
+      />
+      <BaseInput
         v-if="useCompany"
-        class="modal-field-item field-item"
-      >
-        <p
-          v-if="useLabels"
-          class="modal-field-name field-name required"
-        >
-          Company
-        </p>
-        <input
-          v-model="company"
-          :class="{ invalid: $v.company.$error }"
-          data-testid="test-base-form-company"
-          type="text"
-          class="modal-entry-field entry-field"
-          placeholder="MyAwesomeCompany, Inc."
-          @input="$v.company.$touch"
-        >
-        <!-- Erros -->
-        <div v-if="$v.company.$dirty">
-          <span
-            v-if="!$v.company.required"
-            class="modal-error-text error-text"
-          >This field is required.</span>
-          <span
-            v-if="!$v.company.maxLength"
-            class="modal-error-text error-text"
-          >
-            Sorry, the number of characters in this field should not exceed 300.
-          </span>
-        </div>
-        <!-- End Erros -->
-      </div>
-      <div class="modal-field-item field-item">
-        <p
-          v-if="useLabels"
-          class="modal-field-name field-name"
-          :class="emailRequired ? 'required' : ''"
-        >
-          Work email
-        </p>
-        <div v-if="useLabels">
-          <input
-            v-model="email"
-            :class="{ invalid: $v.email.$error }"
-            type="text"
-            data-testid="test-base-form-email"
-            placeholder="your@mail.com"
-            class="modal-entry-field entry-field"
-            @input="$v.email.$touch"
-          >
-        </div>
-        <div
-          v-else
-          v-PlaceholderAsterisk="'your@mail.com'"
-        >
-          <input
-            v-model="email"
-            :class="{ invalid: $v.email.$error }"
-            type="text"
-            class="modal-entry-field entry-field"
-            @input="$v.email.$touch"
-          >
-        </div>
-        <!-- Erros -->
-        <div v-if="$v.email.$dirty">
-          <span
-            v-if="emailRequired && !$v.email.required"
-            class="modal-error-text error-text"
-          >This field is required.</span>
-          <span
-            v-if="!$v.email.email"
-            class="modal-error-text error-text"
-          >
-            Invalid email address. Please use your work email.
-          </span>
-        </div>
-        <!-- End Erros -->
-      </div>
-      <div
+        v-model="company"
+        name="company"
+        :show-label="useLabels"
+        label="Company"
+        placeholder="MyAwesomeCompany, Inc."
+        :required="true"
+        :validation="$v.company"
+      />
+      <BaseInput
+        v-model="email"
+        name="email"
+        :show-label="useLabels"
+        label="Work email"
+        placeholder="your@mail.com"
+        :required="emailRequired"
+        :validation="$v.email"
+      />
+      <BaseInput
         v-if="usePhone"
-        class="modal-field-item field-item"
-      >
-        <p
-          v-if="useLabels"
-          class="modal-field-name field-name"
-        >
-          Phone number
-        </p>
-        <input
-          :class="{ invalid: $v.phoneNumber.$error }"
-          :value="phoneNumber"
-          data-testid="test-base-form-phone"
-          type="text"
-          class="modal-entry-field entry-field"
-          placeholder="+X XXX XXX-XXXX"
-          @input="phoneChangeHandler"
-        >
-        <!-- Erros -->
-        <div v-if="$v.phoneNumber.$dirty">
-          <span
-            v-if="!$v.phoneNumber.phone"
-            class="modal-error-text error-text"
-          >
-            Sorry, this field can only contain numbers and characters specific for phone numbers.
-          </span>
-          <span
-            v-if="!$v.phoneNumber.maxLength"
-            class="modal-error-text error-text"
-          >
-            Sorry, the number of characters in this field should not exceed 50.
-          </span>
-        </div>
-        <!-- End Erros -->
-      </div>
-      <div
+        name="phoneNumber"
+        :value="phoneNumber"
+        :show-label="useLabels"
+        label="Phone number"
+        placeholder="+X XXX XXX-XXXX"
+        :required="false"
+        :validation="$v.phoneNumber"
+        @input="phoneChangeHandler"
+      />
+      <BaseInput
         v-if="useDescription"
-        class="modal-field-item field-item"
-      >
-        <p
-          v-if="useLabels"
-          class="modal-field-name field-name"
-        >
-          Project description
-        </p>
-        <textarea
-          v-model="description"
-          :class="{ invalid: $v.description.$error }"
-          data-testid="test-base-form-description"
-          type="text"
-          class="modal-entry-field entry-field textarea"
-          placeholder="Describe your project..."
-          @input="$v.description.$touch"
-        />
-        <!-- Erros -->
-        <div v-if="$v.description.$dirty">
-          <span
-            v-if="!$v.description.maxLength"
-            class="modal-error-text error-text"
-          >
-            Sorry, the number of characters in this field should not exceed 500.
-          </span>
-        </div>
-        <!-- End Erros -->
-      </div>
+        v-model="description"
+        name="description"
+        :show-label="useLabels"
+        label="Project description"
+        placeholder="Describe your project..."
+        :required="false"
+        :validation="$v.description"
+        element-type="textarea"
+      />
       <slot />
     </div>
     <UIFormCheckboxes
@@ -203,20 +75,17 @@
 <script>
 import { required, email, maxLength } from 'vuelidate/lib/validators'
 import { phone } from '@/helpers/validators'
+import BaseInput from '@/components/core/forms/BaseInput'
 import UIFormCheckboxes from '@/components/shared/UIFormCheckboxes'
 import UIButton from '@/components/shared/UIButton'
 import phoneHandlerMixin from '@/mixins/phoneHandlerMixin'
-import PlaceholderAsterisk from '@/directives/PlaceholderAsterisk'
 
 export default {
   name: 'BaseForm',
   components: {
+    BaseInput,
     UIFormCheckboxes,
     UIButton,
-  },
-
-  directives: {
-    PlaceholderAsterisk,
   },
 
   mixins: [phoneHandlerMixin],

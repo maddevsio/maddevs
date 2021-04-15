@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HardwareVideoOnlyIos component should render correctly 1`] = `
+<div>
+  <div
+    class="case_only-ios-video"
+  >
+    <div
+      class="case_video-wrapper case_full-screen-video case_video-wrapper--paused"
+      data-testid="test-case_sjmc-phone"
+    >
+      <video
+        data-testid="test-case_video"
+        height="100%"
+        playsinline=""
+        width="100%"
+      >
+        <source
+          src="/videos/bluetooth-beacons-video.9ca649c.mp4"
+          type="video/mp4"
+        />
+        
+      Your browser does not support the video tag.
+    
+      </video>
+    </div>
+  </div>
+</div>
+`;

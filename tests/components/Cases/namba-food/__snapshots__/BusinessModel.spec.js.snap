@@ -72,8 +72,10 @@ exports[`BusinessModel component should render correctly 1`] = `
         <div
           class="case_card-content_right-column"
         >
-          <div
+          <img
+            alt="Macbook frame"
             class="case_card-content_macbook-frame"
+            src="[object Object]"
           />
            
           <picture>

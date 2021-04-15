@@ -5,9 +5,10 @@
   >
     <div class="blog-post">
       <img
-        :src="post.data.featured_image.url"
+        ref="recommendedImage"
+        :data-src="post.data.featured_image.url"
         :alt="post.data.featured_image.alt"
-        class="blog-post__image"
+        class="blog-post__image img_lazy"
         width="400"
         height="217"
       >
@@ -54,6 +55,7 @@ import linkResolver from '@/plugins/link-resolver.js'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
 import textEllipsis from '@/helpers/textEllipsis'
+import formatDate from '@/helpers/formatDate'
 
 export default {
   name: 'RecommendedBlogWidget',
@@ -79,9 +81,7 @@ export default {
     },
 
     formattedDate() {
-      return Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(
-        new Date(this.post.data.date),
-      )
+      return formatDate(this.post.data.date)
     },
 
     firstParagraph() {
@@ -100,6 +100,14 @@ export default {
       const limit = 45
       const title = this.$prismic.asText(this.post.data.title)
       return textEllipsis(title, { limit })
+    },
+  },
+
+  // Refresh class names for image when post has been updated
+  watch: {
+    post() {
+      this.$refs.recommendedImage.classList.remove('img_lazy-fade')
+      this.$refs.recommendedImage.classList.add('img_lazy')
     },
   },
 }

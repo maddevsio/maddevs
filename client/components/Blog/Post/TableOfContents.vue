@@ -66,7 +66,7 @@ export default {
   background-color: $bgcolor--silver;
 
   &__title {
-    @include title($text-color--black-cases, 21px, -0.04em);
+    @include title($text-color--black-oil, 21px, -0.04em);
     margin-bottom: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -83,7 +83,7 @@ export default {
 
       a {
         text-decoration: none;
-        color: $text-color--black-cases;
+        color: $text-color--black-oil;
 
         &:hover {
           text-decoration: underline;

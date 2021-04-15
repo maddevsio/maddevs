@@ -117,6 +117,7 @@ export default {
   mixins: [isIphoneMixin, playLottieMixin('streaming-technology', {
     animationData,
     autoplay: false,
+    loop: false,
   })],
 
   data() {

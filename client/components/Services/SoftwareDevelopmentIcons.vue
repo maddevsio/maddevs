@@ -3,10 +3,15 @@
     <li
       v-for="(icon, i) in icons"
       :key="i"
-      :class="icon.className"
+      :class="icon.name"
       class="icons-list__icon-item"
     >
-      <span>{{ icon.title }}</span>
+      <img
+        :data-src="require(`@/assets/img/Home/svg/technologies/${icon.name}.svg`)"
+        :alt="icon.alt"
+        class="img_lazy"
+      >
+      <span>{{ icon.alt }}</span>
     </li>
   </ul>
 </template>
@@ -25,7 +30,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/styles/vars';
-@import '../../assets/styles/_techIcons';
 
 .icons-list {
   display: grid;
@@ -43,8 +47,7 @@ export default {
     transition: opacity 0.2s linear;
     background-color: $software-icon-background;
 
-    &::before {
-      content: '';
+    img {
       width: 26px;
       height: 26px;
       display: block;
@@ -80,7 +83,7 @@ export default {
     &__icon-item {
       height: 54px;
 
-      &::before {
+      img {
         width: 20px;
         height: 20px;
       }

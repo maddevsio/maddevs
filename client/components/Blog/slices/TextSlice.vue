@@ -25,8 +25,8 @@ export default {
   },
 
   mounted() {
-    if (this.$props.slice.primary.text[0] && this.$props.slice.primary.text[0].type === 'heading1') {
-      this.className = this.$props.slice.primary.text[0].text.toLowerCase().replace(/\s/g, '-')
+    if (this.slice.primary.text[0] && this.slice.primary.text[0].type === 'heading1') {
+      this.className = this.slice.primary.text[0].text.toLowerCase().replace(/\s/g, '-')
     }
   },
 }
@@ -40,7 +40,7 @@ export default {
   /deep/ p,
   /deep/ h1,
   /deep/ li {
-    color: $text-color--black-cases;
+    color: $text-color--black-oil;
   }
 
   /deep/ h1,

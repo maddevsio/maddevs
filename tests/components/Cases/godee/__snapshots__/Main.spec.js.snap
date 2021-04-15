@@ -5,7 +5,83 @@ exports[`Main component should render correctly 1`] = `
   data-testid="test-container"
   id="case-scroll-container"
 >
-  <section>
+  <main
+    class="case case_parallax"
+    id="case-scroll-container"
+  >
+    <section
+      class="case_header case_header-godee"
+      id="case-header"
+    >
+      <div
+        class="case_main-video_fallback"
+        style="background-image: url(/images/Cases/godee/jpg/godee-case-preview.jpg);"
+      />
+       
+      <video
+        autoplay="autoplay"
+        class="case_main-video"
+        data-testid="test-case_main-video"
+        loop="loop"
+        muted="muted"
+      >
+        <source
+          src="/videos/godee-case-main-video.mp4"
+          type="video/mp4"
+        />
+        
+    Your browser does not support the video tag.
+  
+      </video>
+       
+      <div
+        class="case_header-content"
+      >
+        <div
+          class="case_header-text"
+        >
+          <div
+            class="case_case-study-item"
+          >
+            
+        Case Study
+      
+          </div>
+           
+          <h1
+            class="case_header-title"
+          >
+            
+      Convenient shuttle 
+            <br />
+            
+      bus service
+    
+          </h1>
+           
+          <p
+            class="case_header-description"
+          >
+            
+      Mad Devs helped GoDee with developing feature-rich software to re-invent 
+            <br />
+            
+      public mobility by building new smart ways of a daily commute.
+    
+          </p>
+           
+        </div>
+         
+        <img
+          alt=""
+          class="case_header-logo case_godee-logo"
+          height="130"
+          src="/images/Cases/godee/svg/godee-logo.svg"
+          width="293"
+        />
+      </div>
+    </section>
+     
     <div
       class="case_content-layer p-48_bottom media-p-24_bottom"
     >
@@ -30,7 +106,12 @@ exports[`Main component should render correctly 1`] = `
         <blockquote
           class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
         >
-          
+          <img
+            alt="blockquote"
+            class="case_blockquote-mark img_lazy"
+            data-src="[object Object]"
+          />
+           
     The app-based system allows users to find a route, select the time, book a seat and pay for the ride online.
   
         </blockquote>
@@ -408,8 +489,10 @@ exports[`Main component should render correctly 1`] = `
             <div
               class="card-content"
             >
-              <div
-                class="card-content_icon card-content_live-chat-icon"
+              <img
+                alt="live-chat"
+                class="card-content_icon img_lazy"
+                data-src="[object Object]"
               />
                
               <h4
@@ -437,8 +520,10 @@ exports[`Main component should render correctly 1`] = `
             <div
               class="card-content"
             >
-              <div
-                class="card-content_icon card-content_trip-request-icon"
+              <img
+                alt="trip-request"
+                class="card-content_icon img_lazy"
+                data-src="[object Object]"
               />
                
               <h4
@@ -541,8 +626,10 @@ exports[`Main component should render correctly 1`] = `
               <div
                 class="card-content"
               >
-                <div
-                  class="card-content_icon card-content_gps-icon"
+                <img
+                  alt="gps"
+                  class="card-content_icon img_lazy"
+                  data-src="[object Object]"
                 />
                  
                 <h4
@@ -568,8 +655,10 @@ exports[`Main component should render correctly 1`] = `
               <div
                 class="card-content"
               >
-                <div
-                  class="card-content_icon card-content_payment-method-icon"
+                <img
+                  alt="payment-method"
+                  class="card-content_icon img_lazy"
+                  data-src="[object Object]"
                 />
                  
                 <h4
@@ -607,8 +696,10 @@ exports[`Main component should render correctly 1`] = `
               <div
                 class="card-content"
               >
-                <div
-                  class="card-content_icon card-content_live-location-tacking-icon"
+                <img
+                  alt="live-location-tacking"
+                  class="card-content_icon img_lazy"
+                  data-src="[object Object]"
                 />
                  
                 <h4
@@ -634,8 +725,10 @@ exports[`Main component should render correctly 1`] = `
               <div
                 class="card-content"
               >
-                <div
-                  class="card-content_icon card-content_referrals-icon"
+                <img
+                  alt="referrals"
+                  class="card-content_icon img_lazy"
+                  data-src="[object Object]"
                 />
                  
                 <h4
@@ -661,8 +754,10 @@ exports[`Main component should render correctly 1`] = `
               <div
                 class="card-content"
               >
-                <div
-                  class="card-content_icon card-content_possible-routes-icon"
+                <img
+                  alt="possible-routes"
+                  class="card-content_icon img_lazy"
+                  data-src="[object Object]"
                 />
                  
                 <h4
@@ -2632,8 +2727,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__other-open-street-map other-open-street-map"
+            <img
+              alt="Open Street Map"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__open-street-map open-street-map"
+              data-src="[object Object]"
             />
              
             <p
@@ -2647,8 +2744,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__other-google-maps other-google-maps"
+            <img
+              alt="Google Maps"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__google-maps google-maps"
+              data-src="[object Object]"
             />
              
             <p
@@ -2662,8 +2761,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__backend-postgresql backend-postgresql"
+            <img
+              alt="PostgreSQL"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
+              data-src="[object Object]"
             />
              
             <p
@@ -2676,9 +2777,12 @@ exports[`Main component should render correctly 1`] = `
           </li>
           <li
             class="case_technologies-item"
+            classname="case_technologies-item__docker"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__devops-docker case_technologies-item__docker devops-docker case_technologies-item__docker"
+            <img
+              alt="Docker"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__docker docker"
+              data-src="[object Object]"
             />
              
             <p
@@ -2692,8 +2796,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__devops-nginx devops-nginx"
+            <img
+              alt="Nginx"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__nginx nginx"
+              data-src="[object Object]"
             />
              
             <p
@@ -2707,8 +2813,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__backend-redis backend-redis"
+            <img
+              alt="Redis"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__redis redis"
+              data-src="[object Object]"
             />
              
             <p
@@ -2722,8 +2830,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__backend-python backend-python"
+            <img
+              alt="Python (Django)"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__python python"
+              data-src="[object Object]"
             />
              
             <p
@@ -2737,8 +2847,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__backend-go backend-go"
+            <img
+              alt="Golang"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
+              data-src="[object Object]"
             />
              
             <p
@@ -2752,8 +2864,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__mobile-kotlin mobile-kotlin"
+            <img
+              alt="Kotlin"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__kotlin kotlin"
+              data-src="[object Object]"
             />
              
             <p
@@ -2767,8 +2881,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__pm-atlassian pm-atlassian"
+            <img
+              alt="Atlassian"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__atlassian atlassian"
+              data-src="[object Object]"
             />
              
             <p
@@ -2782,8 +2898,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__mobile-swift mobile-swift"
+            <img
+              alt="Swift"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__swift swift"
+              data-src="[object Object]"
             />
              
             <p
@@ -2797,8 +2915,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__mobile-firebase mobile-firebase"
+            <img
+              alt="Firebase"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__firebase firebase"
+              data-src="[object Object]"
             />
              
             <p
@@ -2812,8 +2932,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__mobile-test-flight mobile-test-flight"
+            <img
+              alt="TestFlight"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__test-flight test-flight"
+              data-src="[object Object]"
             />
              
             <p
@@ -2827,8 +2949,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__infrastructure-datadog infrastructure-datadog"
+            <img
+              alt="Datadog"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__datadog datadog"
+              data-src="[object Object]"
             />
              
             <p
@@ -2842,8 +2966,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__mobile-android-black-text mobile-android-black-text"
+            <img
+              alt="Android"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__android-black-text android-black-text"
+              data-src="[object Object]"
             />
              
             <p
@@ -2857,8 +2983,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__devops-suite devops-suite"
+            <img
+              alt="Suite"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__suite suite"
+              data-src="[object Object]"
             />
              
             <p
@@ -2872,8 +3000,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__pm-jira pm-jira"
+            <img
+              alt="Jira Software"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__jira-software jira-software"
+              data-src="[object Object]"
             />
              
             <p
@@ -2886,9 +3016,12 @@ exports[`Main component should render correctly 1`] = `
           </li>
           <li
             class="case_technologies-item"
+            classname="case_technologies-item__grpc"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__backend-grpc case_technologies-item__grpc backend-grpc case_technologies-item__grpc"
+            <img
+              alt="GRPC"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__grpc grpc"
+              data-src="[object Object]"
             />
              
             <p
@@ -2902,8 +3035,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__mobile-apple-black mobile-apple-black"
+            <img
+              alt="iOS"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__apple-black apple-black"
+              data-src="[object Object]"
             />
              
             <p
@@ -2916,9 +3051,12 @@ exports[`Main component should render correctly 1`] = `
           </li>
           <li
             class="case_technologies-item"
+            classname="case_technologies-item__uptime-robot"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__other-uptime-robot case_technologies-item__uptime-robot other-uptime-robot case_technologies-item__uptime-robot"
+            <img
+              alt="UptimeRobot"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__uptime-robot uptime-robot"
+              data-src="[object Object]"
             />
              
             <p
@@ -2932,8 +3070,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__frontend-mapbox frontend-mapbox"
+            <img
+              alt="Mapbox"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__map-box map-box"
+              data-src="[object Object]"
             />
              
             <p
@@ -2947,8 +3087,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__frontend-vue frontend-vue"
+            <img
+              alt="Vue JS"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__vue vue"
+              data-src="[object Object]"
             />
              
             <p
@@ -2962,8 +3104,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__devops-sentry-dark devops-sentry-dark"
+            <img
+              alt="Sentry"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
+              data-src="[object Object]"
             />
              
             <p
@@ -2977,8 +3121,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__other-here other-here"
+            <img
+              alt="Here Traffic"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__here here"
+              data-src="[object Object]"
             />
              
             <p
@@ -2992,8 +3138,10 @@ exports[`Main component should render correctly 1`] = `
           <li
             class="case_technologies-item"
           >
-            <div
-              class="case_technologies-item__tech-icon case_technologies-item__pm-basecamp-transparent-bg pm-basecamp-transparent-bg"
+            <img
+              alt="Basecamp"
+              class="img_lazy case_technologies-item__tech-icon case_technologies-item__basecamp-transparent basecamp-transparent"
+              data-src="[object Object]"
             />
              
             <p
@@ -3782,6 +3930,45 @@ exports[`Main component should render correctly 1`] = `
         </blockquote>
       </section>
     </div>
-  </section>
+     
+    <section
+      class="case_footer container_full"
+    >
+      <img
+        alt="Namba Food"
+        class="case_logotype-namba-food img_lazy"
+        data-src="[object Object]"
+      />
+       
+      <h2
+        class="case_title case_title_h2 case_title-namba-food"
+      >
+        
+    Namba Food 
+        <br />
+        
+    Top Delivery Service in 
+        <br
+          class="case_mobile-break-namba-food"
+        />
+        
+    Central Asia
+  
+      </h2>
+       
+      <nuxtlink-stub
+        class="case_next-project-button"
+        to="/case-studies/namba-food/"
+      >
+        
+    Read next project
+  
+      </nuxtlink-stub>
+    </section>
+     
+    <footer-stub
+      class="background-color-black"
+    />
+  </main>
 </div>
 `;

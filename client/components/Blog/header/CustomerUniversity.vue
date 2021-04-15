@@ -168,7 +168,7 @@ export default {
     font-size: 16px;
     line-height: 166%;
     letter-spacing: -0.035em;
-    color: $text-color--grey-team-list;
+    color: $text-color--grey-opacity-40-percent;
     margin-bottom: 24px;
   }
 
@@ -198,7 +198,7 @@ export default {
         line-height: 160%;
         letter-spacing: -0.02em;
         padding: 12px 16px 12px 10px;
-        color: $text-color--black-cases;
+        color: $text-color--black-oil;
         display: list-item;
         white-space: normal;
         position: relative;
@@ -240,7 +240,7 @@ export default {
         }
 
         &__selected {
-          color: $text-color--black-cases;
+          color: $text-color--black-oil;
         }
       }
     }

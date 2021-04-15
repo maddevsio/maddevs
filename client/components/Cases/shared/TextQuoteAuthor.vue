@@ -69,7 +69,7 @@ export default {
   flex-direction: column;
   align-items: center;
   position: relative;
-  @include italic_text($text-color--black-cases, 30px, 166%, -0.02em);
+  @include italic_text($text-color--black-oil, 30px, 166%, -0.02em);
 
   &::before {
     content: '';
@@ -90,11 +90,11 @@ export default {
   }
 
   &__position {
-    @include default_text($text-color--grey-team-list, 13px, 21.58px, -2%, normal);
+    @include default_text($text-color--grey-opacity-40-percent, 13px, 21.58px, -2%, normal);
   }
 
   @media screen and (max-width: 768px) {
-    @include italic_text($text-color--black-cases, 21px, 150%, -0.02em);
+    @include italic_text($text-color--black-oil, 21px, 150%, -0.02em);
 
     &::before {
       width: 327px;
