@@ -4,6 +4,10 @@
       background: $bgcolor--yourcast-banner;
       z-index: -1 !important;
     }
+
+    &_main-video_fallback {
+      background-color: $bgcolor--black;
+    }
   
     &_yourcast-logo {
       width: 387px;
