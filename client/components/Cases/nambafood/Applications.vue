@@ -14,8 +14,8 @@
       <div class="case_full-screen-phone-video-wrapper">
         <img
           v-if="isIphone"
-          :data-src="$getMediaFromS3('/images/Cases/nambafood/png/iphone-video-preview.png')"
-          class="case_phone-ios-image img_lazy"
+          :src="$getMediaFromS3('/images/Cases/nambafood/png/iphone-video-preview.png')"
+          class="case_phone-ios-image"
           data-testid="test-case_phone-ios-image"
         >
         <video

@@ -89,8 +89,8 @@
       >
         <img
           v-if="isIphone"
-          :data-src="$getMediaFromS3('/images/Cases/nambafood/jpg/map-blank.jpg')"
-          class="case_ios-map-video-image case_box-shadow img_lazy"
+          :src="$getMediaFromS3('/images/Cases/nambafood/jpg/map-blank.jpg')"
+          class="case_ios-map-video-image case_box-shadow"
           data-testid="test-case_ios-map-video-image"
         >
         <video

@@ -5,57 +5,47 @@ export default ({ app }, inject) => { // eslint-disable-line
     threshold: 0.1,
   }
 
-  // Refresh lazy elements when updated DOM
-  function refreshLazy() {
-    const elements = document.querySelectorAll(`.${options.className}`)
-    elements.forEach(element => {
-      element.src = element.dataset.src
-      element.classList.remove(options.className)
-      element.classList.remove(options.classNameFade)
-    })
-  }
-
-  // In progress...
-  function destroyLazy() {
-    const elements = document.querySelectorAll(`.${options.className}`)
-    elements.forEach(element => {
-      element.src = element.dataset.src
-      element.classList.remove(options.className)
-    })
-  }
-
-  function handleVideo(target) {
-    const videoSource = target.children[0]
-    if (typeof videoSource.tagName === 'string' && videoSource.tagName === 'SOURCE') {
-      videoSource.src = videoSource.dataset.src
-    }
-    target.load()
-  }
-
-  function handleImg(target) {
-    target.src = target.dataset.src
-    if (target.dataset.srcset) {
-      target.srcset = target.dataset.srcset
+  // Replace data-src to src
+  function replaceAttrs(target) {
+    if (target.tagName === 'VIDEO') {
+      const videoSource = target.children[0]
+      if (typeof videoSource.tagName === 'string' && videoSource.tagName === 'SOURCE') {
+        videoSource.src = videoSource.dataset.src
+        videoSource.removeAttribute('data-src')
+      }
+      target.load()
+    } else {
+      target.src = target.dataset.src
+      if (target.dataset.srcset) {
+        target.srcset = target.dataset.srcset
+        target.removeAttribute('data-src')
+      }
     }
   }
 
   const observerCallback = entries => entries.forEach(({ isIntersecting, target }) => {
     if (!isIntersecting) return
-
-    if (target.tagName === 'VIDEO') {
-      handleVideo(target)
-    } else {
-      handleImg(target)
-    }
-
+    replaceAttrs(target)
     target.classList.remove(options.className)
     target.classList.add(options.classNameFade)
   })
 
+  // Disable lazy loading
+  function destroyLazy() {
+    const elements = document.querySelectorAll(`.${options.className}`)
+    elements.forEach(element => {
+      replaceAttrs(element)
+      element.classList.remove(options.className)
+      element.classList.remove(options.classNameFade)
+    })
+  }
+
+  // Get all elements and init plugin
   function initializeLazyLoad(customOptions) {
     options = { ...options, ...customOptions }
 
     const elements = Array.from(document.querySelectorAll(`.${options.className}`))
+    console.log(elements)
 
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver(observerCallback, options)
@@ -65,7 +55,6 @@ export default ({ app }, inject) => { // eslint-disable-line
 
   const LazyLoad = {
     init: initializeLazyLoad,
-    refresh: refreshLazy,
     destroy: destroyLazy,
   }
 
