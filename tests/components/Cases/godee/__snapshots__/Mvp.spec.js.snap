@@ -56,6 +56,8 @@ exports[`Mvp component should render correctly 1`] = `
             alt="live-chat"
             class="card-content_icon img_lazy"
             data-src="[object Object]"
+            height="51.94"
+            width="51.94"
           />
            
           <h4
@@ -87,6 +89,8 @@ exports[`Mvp component should render correctly 1`] = `
             alt="trip-request"
             class="card-content_icon img_lazy"
             data-src="[object Object]"
+            height="51.94"
+            width="51.94"
           />
            
           <h4
