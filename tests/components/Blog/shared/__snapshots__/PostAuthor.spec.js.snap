@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`text slice component is a Vue instance 1`] = `
+exports[`text slice component should render correctly 1`] = `
 <div>
   <div
     class="blog-post__author"
