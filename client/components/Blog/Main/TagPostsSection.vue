@@ -82,10 +82,6 @@ export default {
     }
   },
 
-  updated() {
-    this.$nextTick(() => initializeLazyLoad())
-  },
-
   computed: {
     ...mapGetters(['blogTag', 'tagPosts', 'tagPostsLoaded', 'allAuthors', 'tagPostsPage']),
 
@@ -100,6 +96,10 @@ export default {
     totalPages() {
       return Math.ceil(this.tagPosts.length / this.pageSize)
     },
+  },
+
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
   },
 
   methods: {

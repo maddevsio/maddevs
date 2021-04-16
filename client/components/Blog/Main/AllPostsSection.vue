@@ -81,10 +81,6 @@ export default {
     }
   },
 
-  updated() {
-    this.$nextTick(() => initializeLazyLoad())
-  },
-
   computed: {
     ...mapGetters([
       'homePageContent',
@@ -118,6 +114,10 @@ export default {
         window.scrollTo(0, window.scrollY - 120) // scroll for distance between the post and the top of the screen
       }
     },
+  },
+
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
   },
 
   methods: {

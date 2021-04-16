@@ -94,10 +94,6 @@ export default {
     }
   },
 
-  updated() {
-    this.$nextTick(() => initializeLazyLoad())
-  },
-
   computed: {
     ...mapGetters(['customerContent', 'featuredCUPost', 'allAuthors']),
 
@@ -119,6 +115,10 @@ export default {
       const limit = 150
       return getFirstParagraph(slices, limit)
     },
+  },
+
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
   },
 }
 </script>
