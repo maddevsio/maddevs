@@ -49,10 +49,15 @@ export default {
       }
 
       // from mixin
-      this.submitLead(variables)
+      this.submitEmail(variables)
+
+      const lead = {
+        ...formData,
+        description: this.buildLeadDescription('Project description:', formData.description),
+      }
 
       // from mixin
-      this.submitEmail(variables)
+      this.submitLead(lead)
 
       this.disableScrollOnBody()
       this.isSuccess = true

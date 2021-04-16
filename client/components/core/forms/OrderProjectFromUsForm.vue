@@ -12,6 +12,7 @@
 <script>
 import BaseForm from '@/components/core/forms/BaseForm'
 import sendEmailMixin from '@/mixins/sendEmailMixin'
+import createNewLeadMixin from '@/mixins/createNewLeadMixin'
 import exceptKeys from '@/helpers/exceptKeys'
 
 export default {
@@ -20,15 +21,25 @@ export default {
     BaseForm,
   },
 
-  mixins: [sendEmailMixin(304632, 'Order Project From Us')],
+  mixins: [sendEmailMixin(304632, 'Order Project From Us'), createNewLeadMixin('order-project-from-us')],
 
   methods: {
     handleSubmit(formData) {
-      // from mixin
-      this.submitEmail({
+      const variables = {
         ...exceptKeys(formData, 'description'),
         projectDescription: formData.description,
-      })
+      }
+
+      // from mixin
+      this.submitEmail(variables)
+
+      const lead = {
+        ...formData,
+        description: this.buildLeadDescription('Project description:', formData.description),
+      }
+
+      // from mixin
+      this.submitLead(lead)
     },
 
     reset() {
