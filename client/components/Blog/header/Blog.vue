@@ -12,11 +12,16 @@
         <PostAuthor
           :author="blogAuthor"
         />
-        <PostTag
-          v-if="blogPost.tags && blogPost.tags.length"
-          :tag="blogTag || blogPost.tags[0]"
-          theme="dark"
-        />
+        <div class="blog-post__date-tag">
+          <div class="blog-post__date">
+            {{ blogPost.date }}
+          </div>
+          <PostTag
+            v-if="blogPost.tags && blogPost.tags.length"
+            :tag="blogTag || blogPost.tags[0]"
+            theme="dark"
+          />
+        </div>
       </div>
     </template>
   </CommonHeader>
@@ -74,14 +79,7 @@ export default {
 
     .blog-post__date {
       color: $text-color--grey-pale;
-    }
-
-    .blog-post__tag {
-      color: $text-color--white-transparent;
-      background: #404143;
-      border-radius: 2px;
-      padding: 4px 16px;
-      margin-left: 24px;
+      margin-right: 24px;
     }
   }
 }
@@ -99,11 +97,7 @@ export default {
 
       .blog-post__date {
         order: 2;
-      }
-
-      .blog-post__tag {
-        order: 1;
-        margin-left: 0;
+        margin-right: 0;
       }
     }
   }

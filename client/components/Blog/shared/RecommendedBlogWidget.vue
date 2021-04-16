@@ -119,8 +119,10 @@ export default {
   // Refresh class names for image when post has been updated
   watch: {
     post() {
-      this.$refs.recommendedImage.classList.remove('img_lazy-fade')
-      this.$refs.recommendedImage.classList.add('img_lazy')
+      if (this.$refs.recommendedImage) {
+        this.$refs.recommendedImage.classList.remove('img_lazy-fade')
+        this.$refs.recommendedImage.classList.add('img_lazy')
+      }
     },
   },
 }

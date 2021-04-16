@@ -39,7 +39,7 @@ export default {
         slices: post.data.body,
         metaTitle: this.$prismic.asText(post.data.meta_title) || post.data.title[0].text,
         metaDescription: this.$prismic.asText(post.data.meta_description),
-        formattedDate: formatDate(post.data.date),
+        date: formatDate(post.data.date),
         tags: post.tags,
         recommendedPosts,
         jsonLd,
