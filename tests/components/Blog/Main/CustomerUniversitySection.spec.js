@@ -63,4 +63,49 @@ describe('customer University section component', () => {
     })
     expect(nextTick).toHaveBeenCalledTimes(1)
   })
+
+  it('correctly work api method', () => {
+    const getSingleFunction = jest.fn()
+
+    const callObject = {
+      $prismic: {
+        api: {
+          getSingle: () => {
+            getSingleFunction()
+            return {
+              data: {
+                featured_cu: {
+                  uid: '12',
+                },
+              },
+            }
+          },
+          getByUID: () => ({
+            data: {
+              date: '2021-01-21',
+            },
+          }),
+        },
+      },
+    }
+    const wrapper = shallowMount(CustomerUniversitySection, {
+      mocks,
+    })
+
+    wrapper.vm.$options.fetch.call(callObject)
+    expect(getSingleFunction).toHaveBeenCalledTimes(1)
+  })
+
+  it('should correct work computed firstParagraph with empty body', () => {
+    const wrapper = shallowMount(CustomerUniversitySection, {
+      mocks,
+    })
+
+    const callParams = {
+      master: {
+      },
+    }
+    const result = wrapper.vm.$options.computed.clusters.call(callParams)
+    expect(result).toHaveLength(0)
+  })
 })
