@@ -6,12 +6,12 @@
   >
     <div class="row featured-post__wrapper">
       <div class="col-12 col-lg-6 featured-post__main">
-        <component
+        <Component
           :is="titleTag"
           class="featured-post__title"
         >
           {{ $prismic.asText(post.data.title) }}
-        </component>
+        </Component>
         <p class="featured-post__paragraph">
           {{ firstParagraph }}
         </p>
