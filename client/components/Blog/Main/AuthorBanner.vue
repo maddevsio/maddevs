@@ -2,11 +2,12 @@
   <div class="container">
     <div class="current-author">
       <img
-        :src="blogAuthor.image.url"
+        ref="authorImage"
+        :data-src="blogAuthor.image.url"
         :alt="blogAuthor.image.alt"
         width="170"
         height="170"
-        class="current-author__image"
+        class="current-author__image img_lazy"
       >
       <h1 class="current-author__name">
         {{ blogAuthor.name }}
@@ -26,6 +27,15 @@ export default {
 
   computed: {
     ...mapGetters(['blogAuthor']),
+  },
+
+  watch: {
+    blogAuthor() {
+      if (this.$refs.authorImage) {
+        this.$refs.authorImage.classList.remove('img_lazy-fade')
+        this.$refs.authorImage.classList.add('img_lazy')
+      }
+    },
   },
 }
 </script>
@@ -47,7 +57,6 @@ export default {
       border-radius: 50%;
       overflow: hidden;
       object-fit: cover;
-      background-color: $bgcolor--grey-pale;
       -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
     }
 
