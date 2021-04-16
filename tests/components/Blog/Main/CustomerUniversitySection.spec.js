@@ -10,7 +10,7 @@ const mocks = {
   },
 }
 
-describe('customer University section component', () => {
+describe('CustomerUniversitySection component', () => {
   it('should render correctly', () => {
     const { container } = render(CustomerUniversitySection, {
       stubs: ['PrismicImage'],

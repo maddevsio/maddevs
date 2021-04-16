@@ -1,0 +1,336 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LatestPostsSection component should render correctly 1`] = `
+<div>
+  <div
+    class="latest-posts"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="latest-posts__wrapper"
+      >
+        <section
+          class="latest-posts__single-post"
+        >
+          <div
+            class="single-post__wrapper"
+          >
+            <div
+              class="blog-post"
+            >
+              <div
+                class="blog-post__cover-image animated background-grey"
+              />
+               
+              <div>
+                <h2
+                  class="blog-post__title animated background-grey"
+                />
+                 
+                <p
+                  class="blog-post__paragraph background-grey animated"
+                />
+                 
+                <div
+                  class="blog-post__meta"
+                >
+                  <span
+                    class="created-at background-grey"
+                  />
+                   
+                  <span
+                    class="tag"
+                  />
+                </div>
+                 
+                <div
+                  class="blog-post__author"
+                >
+                  <div
+                    class="blog-post__none-image background-grey"
+                  />
+                   
+                  <div
+                    class="blog-post__author-info background-grey"
+                  >
+                    <p
+                      class="blog-post__author-name background-grey"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="latest-posts__single-post"
+        >
+          <div
+            class="single-post__wrapper"
+          >
+            <div
+              class="blog-post"
+            >
+              <div
+                class="blog-post__cover-image animated background-grey"
+              />
+               
+              <div>
+                <h2
+                  class="blog-post__title animated background-grey"
+                />
+                 
+                <p
+                  class="blog-post__paragraph background-grey animated"
+                />
+                 
+                <div
+                  class="blog-post__meta"
+                >
+                  <span
+                    class="created-at background-grey"
+                  />
+                   
+                  <span
+                    class="tag"
+                  />
+                </div>
+                 
+                <div
+                  class="blog-post__author"
+                >
+                  <div
+                    class="blog-post__none-image background-grey"
+                  />
+                   
+                  <div
+                    class="blog-post__author-info background-grey"
+                  >
+                    <p
+                      class="blog-post__author-name background-grey"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="latest-posts__single-post"
+        >
+          <div
+            class="single-post__wrapper"
+          >
+            <div
+              class="blog-post"
+            >
+              <div
+                class="blog-post__cover-image animated background-grey"
+              />
+               
+              <div>
+                <h2
+                  class="blog-post__title animated background-grey"
+                />
+                 
+                <p
+                  class="blog-post__paragraph background-grey animated"
+                />
+                 
+                <div
+                  class="blog-post__meta"
+                >
+                  <span
+                    class="created-at background-grey"
+                  />
+                   
+                  <span
+                    class="tag"
+                  />
+                </div>
+                 
+                <div
+                  class="blog-post__author"
+                >
+                  <div
+                    class="blog-post__none-image background-grey"
+                  />
+                   
+                  <div
+                    class="blog-post__author-info background-grey"
+                  >
+                    <p
+                      class="blog-post__author-name background-grey"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="latest-posts__single-post"
+        >
+          <div
+            class="single-post__wrapper"
+          >
+            <div
+              class="blog-post"
+            >
+              <div
+                class="blog-post__cover-image animated background-grey"
+              />
+               
+              <div>
+                <h2
+                  class="blog-post__title animated background-grey"
+                />
+                 
+                <p
+                  class="blog-post__paragraph background-grey animated"
+                />
+                 
+                <div
+                  class="blog-post__meta"
+                >
+                  <span
+                    class="created-at background-grey"
+                  />
+                   
+                  <span
+                    class="tag"
+                  />
+                </div>
+                 
+                <div
+                  class="blog-post__author"
+                >
+                  <div
+                    class="blog-post__none-image background-grey"
+                  />
+                   
+                  <div
+                    class="blog-post__author-info background-grey"
+                  >
+                    <p
+                      class="blog-post__author-name background-grey"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="latest-posts__single-post"
+        >
+          <div
+            class="single-post__wrapper"
+          >
+            <div
+              class="blog-post"
+            >
+              <div
+                class="blog-post__cover-image animated background-grey"
+              />
+               
+              <div>
+                <h2
+                  class="blog-post__title animated background-grey"
+                />
+                 
+                <p
+                  class="blog-post__paragraph background-grey animated"
+                />
+                 
+                <div
+                  class="blog-post__meta"
+                >
+                  <span
+                    class="created-at background-grey"
+                  />
+                   
+                  <span
+                    class="tag"
+                  />
+                </div>
+                 
+                <div
+                  class="blog-post__author"
+                >
+                  <div
+                    class="blog-post__none-image background-grey"
+                  />
+                   
+                  <div
+                    class="blog-post__author-info background-grey"
+                  >
+                    <p
+                      class="blog-post__author-name background-grey"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="latest-posts__single-post"
+        >
+          <div
+            class="single-post__wrapper"
+          >
+            <div
+              class="blog-post"
+            >
+              <div
+                class="blog-post__cover-image animated background-grey"
+              />
+               
+              <div>
+                <h2
+                  class="blog-post__title animated background-grey"
+                />
+                 
+                <p
+                  class="blog-post__paragraph background-grey animated"
+                />
+                 
+                <div
+                  class="blog-post__meta"
+                >
+                  <span
+                    class="created-at background-grey"
+                  />
+                   
+                  <span
+                    class="tag"
+                  />
+                </div>
+                 
+                <div
+                  class="blog-post__author"
+                >
+                  <div
+                    class="blog-post__none-image background-grey"
+                  />
+                   
+                  <div
+                    class="blog-post__author-info background-grey"
+                  >
+                    <p
+                      class="blog-post__author-name background-grey"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
