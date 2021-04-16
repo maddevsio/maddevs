@@ -76,14 +76,14 @@ export default {
     LoadMoreButton,
   },
 
-  updated() {
-    this.$nextTick(() => initializeLazyLoad())
-  },
-
   data() {
     return {
       pageSize: 12,
     }
+  },
+
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
   },
 
   computed: {
