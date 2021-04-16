@@ -83,6 +83,23 @@ describe('AllPostsSection component', () => {
     expect(store.actions.changePostsCategory).toHaveBeenCalledTimes(1)
   })
 
+  it('correctly call update class function from watcher if haven\'t parent node or not found attribute', () => {
+    mocks.visitedPost = 'Hardware'
+    const singleLink = document.createElement('a')
+    singleLink.setAttribute('href', mocks.visitedPost)
+    const wrapper = shallowMount(AllPostsSection, {
+      localVue,
+      mocks,
+      stubs,
+      store,
+      container: document.body.appendChild(singleLink),
+    })
+
+    wrapper.vm.$options.watch.filteredPosts()
+    expect(scroll).toHaveBeenCalledTimes(0)
+    expect(windowsScroll).toHaveBeenCalledTimes(0)
+  })
+
   it('correctly call update class function from watcher', () => {
     mocks.visitedPost = 'Hardware'
     const wrapper = shallowMount(AllPostsSection, {
@@ -113,5 +130,39 @@ describe('AllPostsSection component', () => {
       $nextTick: nextTick,
     })
     expect(nextTick).toHaveBeenCalledTimes(1)
+  })
+
+  it('correctly work postsCategory watcher', () => {
+    const nextTick = jest.fn()
+    mocks.visitedPost = 'Hardware'
+    mocks.$nextTick = nextTick
+    const wrapper = shallowMount(AllPostsSection, {
+      localVue,
+      mocks,
+      stubs,
+      store,
+    })
+
+    wrapper.vm.$options.watch.postsCategory.call({
+      $nextTick: nextTick,
+    })
+    expect(nextTick).toHaveBeenCalledTimes(1)
+  })
+
+  it('should correct work get more posts handler', () => {
+    const nextTick = jest.fn()
+    mocks.$nextTick = nextTick
+    store.getters.filteredPosts = () => [...allPosts, ...allPosts]
+    render(AllPostsSection, {
+      localVue,
+      mocks,
+      stubs,
+      store,
+    })
+
+    const button = screen.getByTestId('test-load-more-button')
+    fireEvent.click(button)
+
+    expect(store.actions.getMorePosts).toHaveBeenCalledTimes(1)
   })
 })

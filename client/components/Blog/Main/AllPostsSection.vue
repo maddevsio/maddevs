@@ -59,6 +59,7 @@
       >
         <button
           class="load-more-button"
+          data-testid="test-load-more-button"
           @click="getMorePosts"
         >
           See more
