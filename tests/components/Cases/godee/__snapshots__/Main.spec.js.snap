@@ -5,7 +5,83 @@ exports[`Main component should render correctly 1`] = `
   data-testid="test-container"
   id="case-scroll-container"
 >
-  <section>
+  <main
+    class="case case_parallax"
+    id="case-scroll-container"
+  >
+    <section
+      class="case_header case_header-godee"
+      id="case-header"
+    >
+      <div
+        class="case_main-video_fallback"
+        style="background-image: url(/images/Cases/godee/jpg/godee-case-preview.jpg);"
+      />
+       
+      <video
+        autoplay="autoplay"
+        class="case_main-video"
+        data-testid="test-case_main-video"
+        loop="loop"
+        muted="muted"
+      >
+        <source
+          src="/videos/godee-case-main-video.mp4"
+          type="video/mp4"
+        />
+        
+    Your browser does not support the video tag.
+  
+      </video>
+       
+      <div
+        class="case_header-content"
+      >
+        <div
+          class="case_header-text"
+        >
+          <div
+            class="case_case-study-item"
+          >
+            
+        Case Study
+      
+          </div>
+           
+          <h1
+            class="case_header-title"
+          >
+            
+      Convenient shuttle 
+            <br />
+            
+      bus service
+    
+          </h1>
+           
+          <p
+            class="case_header-description"
+          >
+            
+      Mad Devs helped GoDee with developing feature-rich software to re-invent 
+            <br />
+            
+      public mobility by building new smart ways of a daily commute.
+    
+          </p>
+           
+        </div>
+         
+        <img
+          alt=""
+          class="case_header-logo case_godee-logo"
+          height="130"
+          src="/images/Cases/godee/svg/godee-logo.svg"
+          width="293"
+        />
+      </div>
+    </section>
+     
     <div
       class="case_content-layer p-48_bottom media-p-24_bottom"
     >
@@ -3854,6 +3930,45 @@ exports[`Main component should render correctly 1`] = `
         </blockquote>
       </section>
     </div>
-  </section>
+     
+    <section
+      class="case_footer container_full"
+    >
+      <img
+        alt="Namba Food"
+        class="case_logotype-namba-food img_lazy"
+        data-src="[object Object]"
+      />
+       
+      <h2
+        class="case_title case_title_h2 case_title-namba-food"
+      >
+        
+    Namba Food 
+        <br />
+        
+    Top Delivery Service in 
+        <br
+          class="case_mobile-break-namba-food"
+        />
+        
+    Central Asia
+  
+      </h2>
+       
+      <nuxtlink-stub
+        class="case_next-project-button"
+        to="/case-studies/namba-food/"
+      >
+        
+    Read next project
+  
+      </nuxtlink-stub>
+    </section>
+     
+    <footer-stub
+      class="background-color-black"
+    />
+  </main>
 </div>
 `;
