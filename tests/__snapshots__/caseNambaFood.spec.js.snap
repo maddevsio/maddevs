@@ -2,7 +2,7 @@
 
 exports[`namba food renders correctly 1`] = `
 <main
-  class="main case"
+  class="main case case--nambafood"
 >
   <section
     class="case_header case_header-nambafood"
