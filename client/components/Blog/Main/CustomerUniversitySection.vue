@@ -94,6 +94,10 @@ export default {
     }
   },
 
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
+  },
+
   computed: {
     ...mapGetters(['customerContent', 'featuredCUPost', 'allAuthors']),
 
@@ -114,18 +118,6 @@ export default {
       const slices = this.featuredCUPost.body
       const limit = 150
       return getFirstParagraph(slices, limit)
-    },
-  },
-
-  watch: {
-    customerContent() {
-      // Callback for async customerContent getter, add lazy for images in customer university posts after async data render on page
-      this.$nextTick(() => initializeLazyLoad())
-    },
-
-    featuredCUPost() {
-      // Callback for async featuredCUPost getter, add lazy for images in customer university posts after async data render on page
-      this.$nextTick(() => initializeLazyLoad())
     },
   },
 }
