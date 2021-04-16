@@ -9,6 +9,8 @@ const localVue = createLocalVue()
 localVue.use(Vuex)
 
 const recipeMock = jest.fn()
+const scroll = jest.fn()
+const windowsScroll = jest.fn()
 recipeMock.mockReturnValue('homePageContent')
 
 const mocks = {
@@ -34,11 +36,18 @@ const store = {
   },
 }
 
-const containerToRender = document.createElement('a')
-containerToRender.setAttribute('href', 'Hardware')
-containerToRender.setAttribute('data-testid', 'test-href')
+const containerToRender = document.createElement('div')
+containerToRender.setAttribute('id', 'case-scroll-container')
+containerToRender.setAttribute('data-testid', 'test-container')
+containerToRender.scrollIntoView = scroll
+
+const link = document.createElement('a')
+link.setAttribute('href', 'undefined')
+link.setAttribute('data-testid', 'test-href')
+containerToRender.append(link)
 
 describe('AllPostsSection component', () => {
+  window.scrollTo = windowsScroll
   it('is a Vue instance', () => {
     const { container } = render(AllPostsSection, {
       localVue,
@@ -85,7 +94,8 @@ describe('AllPostsSection component', () => {
     })
 
     wrapper.vm.$options.watch.filteredPosts()
-    expect('1').toBe('1')
+    expect(scroll).toHaveBeenCalledTimes(1)
+    expect(windowsScroll).toHaveBeenCalledTimes(1)
   })
 
   it('correctly work postsPage watcher', () => {
@@ -97,7 +107,6 @@ describe('AllPostsSection component', () => {
       mocks,
       stubs,
       store,
-      container: document.body.appendChild(containerToRender),
     })
 
     wrapper.vm.$options.watch.postsPage.call({
