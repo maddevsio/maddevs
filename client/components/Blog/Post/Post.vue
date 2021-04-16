@@ -60,6 +60,7 @@
           :key="post.id"
           :post="post"
           class="blog-post__recommended-post"
+          data-testid="test-recommended-post"
         >
           <RecommendedBlogWidget
             :post="post"
@@ -77,6 +78,7 @@
     <button
       v-if="buttonIsActive"
       class="blog-post__back-to-list"
+      data-testid="test-back-list"
       @click="scrollToTop()"
     >
       <i />
@@ -128,7 +130,7 @@ export default {
 
     document: {
       type: Object,
-      default: () => ({}),
+      required: true,
     },
 
     slices: {

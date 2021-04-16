@@ -16,6 +16,7 @@
           </div>
           <div
             v-if="tags.length"
+            data-testid="test-tag-post"
             class="blog-post__tag"
           >
             {{ tags[0] }}
