@@ -88,8 +88,10 @@ import TableOfContents from '@/components/Blog/Post/TableOfContents'
 import BlogHeader from '@/components/Blog/header/Blog'
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity'
 import CustomerUniversityNavigation from '@/components/Blog/Post/CustomerUniversityNavigation'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
+import initializeLazyLoad from '@/helpers/lazyLoad'
+
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'PostView',
@@ -141,6 +143,10 @@ export default {
     showRecommended() {
       return this.type !== 'cu_post' && (this.blogPost.recommendedPosts && this.blogPost.recommendedPosts.length !== 0)
     },
+  },
+
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
   },
 
   mounted() {
