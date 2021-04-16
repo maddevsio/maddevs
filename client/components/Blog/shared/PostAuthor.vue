@@ -6,9 +6,10 @@
     <div class="blog-post__author">
       <img
         v-if="author.metaImage.url"
+        ref="authorImage"
         :data-src="author.metaImage.url"
         :alt="author.metaImage.alt"
-        class="blog-post__author-image"
+        class="blog-post__author-image img_lazy"
       >
       <div
         v-else
@@ -49,9 +50,11 @@ export default {
   },
 
   watch: {
-    document() {
-      this.$refs.authorImage.classList.remove('img_lazy-fade')
-      this.$refs.authorImage.classList.add('img_lazy')
+    author() {
+      if (this.$refs.authorImage) {
+        this.$refs.authorImage.classList.remove('img_lazy-fade')
+        this.$refs.authorImage.classList.add('img_lazy')
+      }
     },
   },
 }
