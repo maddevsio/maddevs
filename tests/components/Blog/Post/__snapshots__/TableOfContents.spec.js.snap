@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`table of contents block in single post page should render correctly 1`] = `
+exports[`TableOfContents component should render correctly 1`] = `
 <div>
   <div
     class="table-of-contents"
