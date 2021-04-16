@@ -11,7 +11,7 @@ const mocks = {
 }
 
 describe('customer University section component', () => {
-  it('is a Vue instance', () => {
+  it('should render correctly', () => {
     const { container } = render(CustomerUniversitySection, {
       stubs: ['PrismicImage'],
       mocks,
@@ -100,7 +100,7 @@ describe('customer University section component', () => {
     expect(getByUIDFunction).toHaveBeenCalledTimes(0)
   })
 
-  it('correctly work api method', async () => {
+  it('correctly work api method if return featured_cu', async () => {
     const getSingleFunction = jest.fn()
     const getByUIDFunction = jest.fn()
 

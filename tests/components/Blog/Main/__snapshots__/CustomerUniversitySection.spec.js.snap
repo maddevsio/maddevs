@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`customer University section component is a Vue instance 1`] = `
+exports[`customer University section component should render correctly 1`] = `
 <div>
   <section
     class="customer-university"
