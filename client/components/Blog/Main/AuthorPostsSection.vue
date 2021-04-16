@@ -62,6 +62,7 @@ import SkeletonFeaturedPost from '@/components/Blog/skeletons/SkeletonFeaturedPo
 import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
 import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
 import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
+import initializeLazyLoad from '@/helpers/lazyLoad'
 
 export default {
   name: 'AuthorPostsSection',
@@ -71,6 +72,10 @@ export default {
     SkeletonBlogWidget,
     RecommendedBlogWidget,
     LoadMoreButton,
+  },
+
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
   },
 
   data() {

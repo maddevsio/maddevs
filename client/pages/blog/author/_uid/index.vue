@@ -10,12 +10,16 @@ import { mapActions, mapGetters } from 'vuex'
 import AuthorBanner from '@/components/Blog/Main/AuthorBanner'
 import AuthorPostsSection from '@/components/Blog/Main/AuthorPostsSection'
 
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
+
 export default {
   name: 'Author',
   components: {
     AuthorBanner,
     AuthorPostsSection,
   },
+
+  mixins: [initLazyLoadMixin],
 
   async asyncData({ store, params, error }) {
     try {

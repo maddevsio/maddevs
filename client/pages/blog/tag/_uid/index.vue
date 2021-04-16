@@ -10,12 +10,16 @@ import { mapActions, mapGetters } from 'vuex'
 import TagBanner from '@/components/Blog/Main/TagBanner'
 import TagPostsSection from '@/components/Blog/Main/TagPostsSection'
 
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
+
 export default {
   name: 'Tag',
   components: {
     TagBanner,
     TagPostsSection,
   },
+
+  mixins: [initLazyLoadMixin],
 
   async asyncData({ store, params, error }) {
     try {
