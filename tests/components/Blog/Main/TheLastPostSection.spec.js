@@ -1,8 +1,7 @@
 import { render } from '@testing-library/vue'
-import Main from '@/components/Blog/Main/Main'
+import TheLastPostSection from '@/components/Blog/Main/TheLastPostSection'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
-import * as homeContent from '../../../__mocks__/homePageContent'
 import allPosts from '../../../__mocks__/allPosts'
 
 const localVue = createLocalVue()
@@ -12,9 +11,6 @@ const mocks = {
   $prismic: {
     asText: () => 'text',
     asHtml: html => `<p>${html}</p>`,
-    api: {
-      getSingle: () => ({ data: {} }),
-    },
   },
 }
 
@@ -22,22 +18,14 @@ const stubs = ['NuxtLink']
 
 const store = {
   getters: {
-    filteredPosts: () => allPosts,
-    allPosts: () => allPosts,
+    featuredPost: () => allPosts[0],
     postsLoaded: () => true,
-    postsCategory: jest.fn(),
-    postsPage: () => 2,
-    homePageContent: () => homeContent.default,
-  },
-  actions: {
-    getHomePageContent: jest.fn(),
-    getBlogPosts: () => jest.fn(),
   },
 }
 
-describe('Main component', () => {
+describe('TheLastPostSection component', () => {
   it('should render correctly', () => {
-    const { container } = render(Main, {
+    const { container } = render(TheLastPostSection, {
       stubs,
       mocks,
       store,
