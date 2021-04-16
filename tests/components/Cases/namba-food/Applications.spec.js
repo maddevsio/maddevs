@@ -2,7 +2,7 @@ import Applications from '@/components/Cases/nambafood/Applications.vue'
 import { render, screen } from '@testing-library/vue'
 
 const mocks = {
-  getMediaFromS3: () => 'img.jpg',
+  $getMediaFromS3: () => 'img.jpg',
 }
 
 const props = {
@@ -25,6 +25,6 @@ describe('Applications component', () => {
       props,
     })
 
-    expect(screen.getByTestId('test-case_phone-ios-image').src).toBe(global.location.href + mocks.getMediaFromS3())
+    expect(screen.getByTestId('test-case_phone-ios-image').dataset.src).toBe(mocks.$getMediaFromS3())
   })
 })

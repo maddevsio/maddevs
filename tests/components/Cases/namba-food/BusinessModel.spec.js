@@ -2,7 +2,7 @@ import BusinessModel from '@/components/Cases/nambafood/BusinessModel.vue'
 import { render, screen } from '@testing-library/vue'
 
 const mocks = {
-  getMediaFromS3: () => 'img.jpg',
+  $getMediaFromS3: () => 'img.jpg',
 }
 
 describe('BusinessModel component', () => {

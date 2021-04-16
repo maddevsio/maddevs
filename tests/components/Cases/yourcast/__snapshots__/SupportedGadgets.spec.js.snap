@@ -47,18 +47,17 @@ exports[`SupportedGadgets component should render correctly 1`] = `
             >
               <source
                 class="image"
-                srcset="img.jpg ,img.jpg 2x"
+                data-srcset="img.jpg ,img.jpg 2x"
                 type="image/webp"
               />
                
               <img
                 alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
-                class="image"
+                class="image img_lazy"
+                data-src="img.jpg"
+                data-srcset="img.jpg 2x"
                 data-testid="test-picture-img"
                 height="449"
-                loading=""
-                src="img.jpg"
-                srcset="img.jpg 2x"
                 width="735"
               />
             </picture>
@@ -70,18 +69,17 @@ exports[`SupportedGadgets component should render correctly 1`] = `
             <picture>
               <source
                 class="image"
-                srcset="img.jpg ,img.jpg 2x"
+                data-srcset="img.jpg ,img.jpg 2x"
                 type="image/webp"
               />
                
               <img
                 alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
-                class="image"
+                class="image img_lazy"
+                data-src="img.jpg"
+                data-srcset="img.jpg 2x"
                 data-testid="test-picture-img"
                 height="449"
-                loading=""
-                src="img.jpg"
-                srcset="img.jpg 2x"
                 width="735"
               />
             </picture>
@@ -110,18 +108,17 @@ exports[`SupportedGadgets component should render correctly 1`] = `
             >
               <source
                 class="image"
-                srcset="img.jpg ,img.jpg 2x"
+                data-srcset="img.jpg ,img.jpg 2x"
                 type="image/webp"
               />
                
               <img
                 alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
-                class="image"
+                class="image img_lazy"
+                data-src="img.jpg"
+                data-srcset="img.jpg 2x"
                 data-testid="test-picture-img"
                 height="627"
-                loading=""
-                src="img.jpg"
-                srcset="img.jpg 2x"
                 width="312"
               />
             </picture>
@@ -133,18 +130,17 @@ exports[`SupportedGadgets component should render correctly 1`] = `
             <picture>
               <source
                 class="image"
-                srcset="img.jpg ,img.jpg 2x"
+                data-srcset="img.jpg ,img.jpg 2x"
                 type="image/webp"
               />
                
               <img
                 alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
-                class="image"
+                class="image img_lazy"
+                data-src="img.jpg"
+                data-srcset="img.jpg 2x"
                 data-testid="test-picture-img"
                 height="627"
-                loading=""
-                src="img.jpg"
-                srcset="img.jpg 2x"
                 width="312"
               />
             </picture>
@@ -173,18 +169,17 @@ exports[`SupportedGadgets component should render correctly 1`] = `
             >
               <source
                 class="image"
-                srcset="img.jpg ,img.jpg 2x"
+                data-srcset="img.jpg ,img.jpg 2x"
                 type="image/webp"
               />
                
               <img
                 alt="OTT-like Online Video Streaming Platform on IPad Tablet."
-                class="image"
+                class="image img_lazy"
+                data-src="img.jpg"
+                data-srcset="img.jpg 2x"
                 data-testid="test-picture-img"
                 height="374"
-                loading=""
-                src="img.jpg"
-                srcset="img.jpg 2x"
                 width="518"
               />
             </picture>
@@ -196,18 +191,17 @@ exports[`SupportedGadgets component should render correctly 1`] = `
             <picture>
               <source
                 class="image"
-                srcset="img.jpg ,img.jpg 2x"
+                data-srcset="img.jpg ,img.jpg 2x"
                 type="image/webp"
               />
                
               <img
                 alt="OTT-like Online Video Streaming Platform on IPad Tablet."
-                class="image"
+                class="image img_lazy"
+                data-src="img.jpg"
+                data-srcset="img.jpg 2x"
                 data-testid="test-picture-img"
                 height="374"
-                loading=""
-                src="img.jpg"
-                srcset="img.jpg 2x"
                 width="518"
               />
             </picture>

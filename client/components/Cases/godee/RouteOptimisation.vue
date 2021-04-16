@@ -25,7 +25,7 @@
             alt="GoDee: Safari Browser Top Bar White."
           />
           <img
-            :src="getMediaFromS3('/images/Cases/godee/jpg/route-optimization.jpg')"
+            :src="$getMediaFromS3('/images/Cases/godee/jpg/route-optimization.jpg')"
             class="case_img"
             alt="Route Optimization"
             loading="lazy"
@@ -58,7 +58,7 @@
             muted="true"
           >
             <source
-              :src="getMediaFromS3('/videos/route-optimization.f5a2ff0.mp4')"
+              :src="$getMediaFromS3('/videos/route-optimization.f5a2ff0.mp4')"
               type="video/mp4"
             >
             Your browser does not support the video tag.

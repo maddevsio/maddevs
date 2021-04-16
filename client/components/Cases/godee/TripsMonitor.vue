@@ -29,7 +29,7 @@
             alt="GoDee: Safari Browser Top Bar White."
           />
           <img
-            :src="getMediaFromS3('/images/Cases/godee/jpg/trip-monitor.jpg')"
+            :src="$getMediaFromS3('/images/Cases/godee/jpg/trip-monitor.jpg')"
             class="case_img"
             alt="Trip Monitor"
             loading="lazy"
@@ -62,7 +62,7 @@
             muted="true"
           >
             <source
-              :src="getMediaFromS3('/videos/trip-monitor.f4a33e6.mp4')"
+              :src="$getMediaFromS3('/videos/trip-monitor.f4a33e6.mp4')"
               type="video/mp4"
             >
             Your browser does not support the video tag.

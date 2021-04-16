@@ -20,7 +20,7 @@ describe('CardGoDeePreview component', () => {
     const { container } = render(CardGoDeePreview, {
       props,
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
 
@@ -31,7 +31,7 @@ describe('CardGoDeePreview component', () => {
     const { html } = render(CardGoDeePreview, {
       props,
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
 

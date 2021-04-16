@@ -15,7 +15,7 @@ const props = {
 }
 
 const mocks = {
-  getMediaFromS3: () => '../../../../client/assets/img/Home/jpg/experts/Alice.jpg',
+  $getMediaFromS3: () => '../../../../client/assets/img/Home/jpg/experts/Alice.jpg',
 }
 
 describe('Picture component', () => {

@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/vue'
 import '../../../__mocks__/intersectionObserverMock'
 
 const mocks = {
-  getMediaFromS3: image => image,
+  $getMediaFromS3: image => image,
 }
 
 describe('Hardware component', () => {

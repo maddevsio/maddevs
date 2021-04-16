@@ -14,7 +14,10 @@ describe('namba food', () => {
     wrapper = mount(NambaFood, {
       stubs: ['ClientOnly', 'NuxtLink'],
       mocks: {
-        getMediaFromS3: () => 's3 image url',
+        $getMediaFromS3: () => 's3 image url',
+        $LazyLoad: {
+          init: () => {},
+        },
       },
     })
   })

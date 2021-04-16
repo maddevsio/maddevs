@@ -4,7 +4,7 @@ import '../../../__mocks__/intersectionObserverMock'
 import '../../../__mocks__/htmlMediaElement'
 
 const mocks = {
-  getMediaFromS3: image => image,
+  $getMediaFromS3: image => image,
 }
 
 describe('HardwareVideo component', () => {

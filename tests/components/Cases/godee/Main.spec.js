@@ -7,7 +7,7 @@ containerToRender.setAttribute('id', 'case-scroll-container')
 containerToRender.setAttribute('data-testid', 'test-container')
 
 const mocks = {
-  getMediaFromS3: img => img,
+  $getMediaFromS3: img => img,
 }
 
 describe('Main component', () => {

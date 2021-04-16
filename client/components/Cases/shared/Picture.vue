@@ -2,25 +2,24 @@
   <picture>
     <source
       :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
-      :srcset="[
-        getMediaFromS3(`/images/Cases/${folder}/webp/${file}.webp`) + ' ',
-        getMediaFromS3(`/images/Cases/${folder}/webp/${file}@2x.webp`) + ' 2x',
+      :data-srcset="[
+        $getMediaFromS3(`/images/Cases/${folder}/webp/${file}.webp`) + ' ',
+        $getMediaFromS3(`/images/Cases/${folder}/webp/${file}@2x.webp`) + ' 2x',
       ]"
       class="image"
       type="image/webp"
     >
     <img
       :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
-      :src="[getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}.${extension}`)]"
-      :srcset="[
-        getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}@2x.${extension}`) + ' 2x',
+      :data-src="[$getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}.${extension}`)]"
+      :data-srcset="[
+        $getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}@2x.${extension}`) + ' 2x',
       ]"
       :alt="alt"
-      :loading="lazy ? 'lazy' : ''"
       :width="width"
       :height="height"
       data-testid="test-picture-img"
-      class="image"
+      class="image img_lazy"
       @load="onImageLoad($event)"
     >
   </picture>

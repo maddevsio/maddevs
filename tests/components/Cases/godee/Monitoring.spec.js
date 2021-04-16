@@ -2,7 +2,7 @@ import Monitoring from '@/components/Cases/godee/Monitoring.vue'
 import { render, screen } from '@testing-library/vue'
 
 const mocks = {
-  getMediaFromS3: () => 'img.jpg',
+  $getMediaFromS3: () => 'img.jpg',
 }
 
 describe('Monitoring component', () => {

@@ -32,9 +32,9 @@ exports[`Applications component should render correctly 1`] = `
         class="case_full-screen-phone-video-wrapper"
       >
         <img
-          class="case_phone-ios-image"
+          class="case_phone-ios-image img_lazy"
+          data-src="img.jpg"
           data-testid="test-case_phone-ios-image"
-          src="img.jpg"
         />
       </div>
     </section>
