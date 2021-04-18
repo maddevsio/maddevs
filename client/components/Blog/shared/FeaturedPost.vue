@@ -1,13 +1,17 @@
 <template>
   <NuxtLink
-    :to="link"
+    :to="to || link"
+    :class="theme"
     class="featured-post"
   >
     <div class="row featured-post__wrapper">
       <div class="col-12 col-lg-6 featured-post__main">
-        <h1 class="featured-post__title">
+        <Component
+          :is="titleTag"
+          class="featured-post__title"
+        >
           {{ $prismic.asText(post.data.title) }}
-        </h1>
+        </Component>
         <p class="featured-post__paragraph">
           {{ firstParagraph }}
         </p>
@@ -55,6 +59,21 @@ export default {
       type: Object,
       required: true,
     },
+
+    to: {
+      type: String,
+      default: '',
+    },
+
+    titleTag: {
+      type: String,
+      default: 'h2',
+    },
+
+    theme: {
+      type: String,
+      default: 'dark',
+    },
   },
 
   computed: {
@@ -80,12 +99,27 @@ export default {
 @import '../../../assets/styles/_vars';
 
 .featured-post {
-  color: $text-color--white-primary;
   text-decoration: none;
   display: block;
 
+  &.dark {
+    color: $text-color--white-primary;
+  }
+
+  &.light {
+    color: $text-color--black;
+    /deep/ .blog-post {
+      &__author-name {
+        color: $text-color--black;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
   &__wrapper {
-    margin: 95px 0;
     align-items: center;
   }
 
@@ -151,11 +185,6 @@ export default {
 
 @media only screen and (max-width: 991px) {
   .featured-post {
-    &__wrapper {
-      margin-top: 0;
-      margin-bottom: 36px;
-    }
-
     &__main {
       padding: 0;
       margin-top: 0;

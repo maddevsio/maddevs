@@ -1,14 +1,16 @@
 <template>
-  <div class="body-content">
-    <FeaturedPost
-      v-if="postsLoaded && featuredPost"
-      :post="featuredPost"
-      class="container"
-    />
-    <SkeletonFeaturedPost
-      v-else
-      class="container"
-    />
+  <div class="container">
+    <div class="last-post">
+      <FeaturedPost
+        v-if="postsLoaded && featuredPost"
+        :post="featuredPost"
+        class="container"
+      />
+      <SkeletonFeaturedPost
+        v-else
+        class="container"
+      />
+    </div>
   </div>
 </template>
 
@@ -30,9 +32,12 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
-}
+<style scoped lang="scss">
+  .last-post {
+    margin: 95px 0;
+    @media only screen and (max-width: 991px) {
+      margin-top: 0;
+      margin-bottom: 36px;
+    }
+  }
 </style>
