@@ -4,11 +4,9 @@
       <FeaturedPost
         v-if="postsLoaded && featuredPost"
         :post="featuredPost"
-        class="container"
       />
       <SkeletonFeaturedPost
         v-else
-        class="container"
       />
     </div>
   </div>
