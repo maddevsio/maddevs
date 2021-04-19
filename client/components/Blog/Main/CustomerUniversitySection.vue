@@ -19,7 +19,7 @@
             <p class="featured-post__text">
               {{ firstParagraph }}
             </p>
-            <!-- <PostAuthor :author="featuredPostAuthor" /> -->
+            <PostAuthor v-bind="findAuthor(featuredCUPost.post_author.id, allAuthors)" />
             <div class="featured-post__cover-wrapper">
               <img
                 class="featured-post__cover img_lazy"
@@ -78,15 +78,20 @@
 
 <script>
 import { mapGetters } from 'vuex'
-// import PostAuthor from '@/components/Blog/shared/PostAuthor'
+import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
 import initializeLazyLoad from '@/helpers/lazyLoad'
 
+import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
+
 export default {
   name: 'CustomerUniversitySection',
-  // components: {
-  //   PostAuthor,
-  // },
+  components: {
+    PostAuthor,
+  },
+
+  mixins: [findPostAuthorMixin],
+
   data() {
     return {
       showAll: false,
@@ -94,7 +99,8 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['customerContent', 'featuredCUPost']),
+    ...mapGetters(['customerContent', 'featuredCUPost', 'allAuthors']),
+
     clusters() {
       return this.customerContent.body || []
     },
@@ -118,6 +124,7 @@ export default {
 
 <style scoped lang="scss">
 @import '../../../assets/styles/vars';
+
 @mixin label {
   color: $text-color--grey-opacity-40-percent;
   font-family: Inter, sans-serif;
