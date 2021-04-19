@@ -481,7 +481,7 @@ export default {
     }
 
     /deep/ .blog-post__meta {
-      .tag {
+      .post-tag {
         background-color: $bgcolor--white-primary;
       }
     }
