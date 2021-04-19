@@ -49,12 +49,12 @@ export default ({ app }, inject) => { // eslint-disable-line
     }
   }
 
-  const LazyLoad = {
+  const lazyLoad = {
     init: initializeLazyLoad,
     destroy: destroyLazy,
     reset: resetLazy,
   }
 
   // Inject global method
-  inject('LazyLoad', LazyLoad)
+  inject('lazyLoad', lazyLoad)
 }

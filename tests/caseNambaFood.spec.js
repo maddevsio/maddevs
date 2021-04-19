@@ -15,7 +15,7 @@ describe('namba food', () => {
       stubs: ['ClientOnly', 'NuxtLink'],
       mocks: {
         $getMediaFromS3: () => 's3 image url',
-        $LazyLoad: {
+        $lazyLoad: {
           init: () => {},
         },
       },
