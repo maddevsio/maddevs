@@ -2,36 +2,6 @@
 
 exports[`text slice component is a Vue instance 1`] = `
 <div>
-  <div
-    class="blog-post__author"
-  >
-    <img
-      alt="some-author"
-      class="blog-post__author-image img_lazy"
-      data-src="some-url"
-    />
-     
-    <div
-      class="blog-post__author-info"
-    >
-      <p
-        class="blog-post__author-name"
-      >
-        
-      some-author
-    
-      </p>
-       
-      <div
-        class="blog-post__data-of-creation"
-      >
-        <span
-          class="blog-post__author-title"
-        >
-          author_title
-        </span>
-      </div>
-    </div>
-  </div>
+  <!---->
 </div>
 `;

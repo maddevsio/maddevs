@@ -16,6 +16,13 @@ const createNewLeadMixin = type => ({
 
       this.createNewLead(lead)
     },
+
+    buildLeadDescription(title, description) {
+      return `
+        ${title}
+        ${description}
+      `
+    },
   },
 })
 

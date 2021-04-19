@@ -28,10 +28,10 @@ export default {
       }
 
       // from mixin
-      this.submitLead(variables)
+      this.submitEmail(variables)
 
       // from mixin
-      this.submitEmail(variables)
+      this.submitLead(variables)
     },
 
     reset() {

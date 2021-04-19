@@ -493,6 +493,8 @@ exports[`Main component should render correctly 1`] = `
                 alt="live-chat"
                 class="card-content_icon img_lazy"
                 data-src="[object Object]"
+                height="51.94"
+                width="51.94"
               />
                
               <h4
@@ -524,6 +526,8 @@ exports[`Main component should render correctly 1`] = `
                 alt="trip-request"
                 class="card-content_icon img_lazy"
                 data-src="[object Object]"
+                height="51.94"
+                width="51.94"
               />
                
               <h4
@@ -630,6 +634,8 @@ exports[`Main component should render correctly 1`] = `
                   alt="gps"
                   class="card-content_icon img_lazy"
                   data-src="[object Object]"
+                  height="51.94"
+                  width="51.94"
                 />
                  
                 <h4
@@ -659,6 +665,8 @@ exports[`Main component should render correctly 1`] = `
                   alt="payment-method"
                   class="card-content_icon img_lazy"
                   data-src="[object Object]"
+                  height="51.94"
+                  width="51.94"
                 />
                  
                 <h4
@@ -700,6 +708,8 @@ exports[`Main component should render correctly 1`] = `
                   alt="live-location-tacking"
                   class="card-content_icon img_lazy"
                   data-src="[object Object]"
+                  height="51.94"
+                  width="51.94"
                 />
                  
                 <h4
@@ -729,6 +739,8 @@ exports[`Main component should render correctly 1`] = `
                   alt="referrals"
                   class="card-content_icon img_lazy"
                   data-src="[object Object]"
+                  height="51.94"
+                  width="51.94"
                 />
                  
                 <h4
@@ -758,6 +770,8 @@ exports[`Main component should render correctly 1`] = `
                   alt="possible-routes"
                   class="card-content_icon img_lazy"
                   data-src="[object Object]"
+                  height="51.94"
+                  width="51.94"
                 />
                  
                 <h4
