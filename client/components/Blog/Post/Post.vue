@@ -66,6 +66,7 @@
           class="blog-post__recommended-post"
         >
           <RecommendedBlogWidget
+            :to="getRecommendedPostUrl(post.uid)"
             :post="post"
             :author="findAuthor(post.data.post_author.id, allAuthors)"
             class-name="recommended-post"
@@ -101,6 +102,7 @@ import BlogHeader from '@/components/Blog/header/Blog'
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity'
 import CustomerUniversityNavigation from '@/components/Blog/Post/CustomerUniversityNavigation'
 import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
+import initializeLazyLoad from '@/helpers/lazyLoad'
 
 import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
@@ -212,6 +214,10 @@ export default {
     },
   },
 
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
+  },
+
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
     window.addEventListener('scroll', this.shareButtonsScroll)
@@ -223,6 +229,12 @@ export default {
   },
 
   methods: {
+    getRecommendedPostUrl(postUID) {
+      if (postUID && this.$route.name === 'blog-tag-uid-postUID') return `/blog/tag/${this.$route.params.uid}/${postUID}`
+      if (postUID && this.$route.name === 'blog-author-uid-postUID') return `/blog/author/${this.$route.params.uid}/${postUID}`
+      return null
+    },
+
     scrollToTop() {
       window.scrollTo({
         top: 0,
