@@ -48,18 +48,17 @@ exports[`PreviewCards component should render correctly 1`] = `
                 >
                   <source
                     class="image"
-                    srcset="img.jpg ,img.jpg 2x"
+                    data-srcset="img.jpg ,img.jpg 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="GoDee: Bus Transit App for Passengers."
-                    class="image"
+                    class="image img_lazy"
+                    data-src="img.jpg"
+                    data-srcset="img.jpg 2x"
                     data-testid="test-picture-img"
                     height="211"
-                    loading=""
-                    src="img.jpg"
-                    srcset="img.jpg 2x"
                     width="334"
                   />
                 </picture>
@@ -103,18 +102,17 @@ exports[`PreviewCards component should render correctly 1`] = `
                 >
                   <source
                     class="image"
-                    srcset="img.jpg ,img.jpg 2x"
+                    data-srcset="img.jpg ,img.jpg 2x"
                     type="image/webp"
                   />
                    
                   <img
                     alt="GoDee: Bus Drivers App."
-                    class="image"
+                    class="image img_lazy"
+                    data-src="img.jpg"
+                    data-srcset="img.jpg 2x"
                     data-testid="test-picture-img"
                     height="280"
-                    loading=""
-                    src="img.jpg"
-                    srcset="img.jpg 2x"
                     width="313"
                   />
                 </picture>
@@ -159,18 +157,17 @@ exports[`PreviewCards component should render correctly 1`] = `
               >
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="GoDee: Bus App Management System."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="219"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="695"
                 />
               </picture>
@@ -180,18 +177,17 @@ exports[`PreviewCards component should render correctly 1`] = `
               >
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="GoDee: bus app management control panel"
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="160"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="307"
                 />
               </picture>

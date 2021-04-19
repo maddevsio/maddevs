@@ -74,6 +74,10 @@ export default {
       image: 'https://maddevs.io/namba-food.png',
     })
   },
+
+  mounted() {
+    this.$lazyLoad.init()
+  },
 }
 </script>
 

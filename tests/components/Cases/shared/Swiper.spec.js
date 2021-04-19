@@ -26,7 +26,7 @@ describe('Picture component', () => {
     const { container } = render(Swiper, {
       props,
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
     expect(container).toMatchSnapshot()
@@ -36,7 +36,7 @@ describe('Picture component', () => {
     const { html } = render(Swiper, {
       props,
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
 

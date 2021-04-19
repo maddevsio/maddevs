@@ -58,18 +58,17 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Namba Food: Food and Grocery Delivery App for Iphone."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="0"
                 />
               </picture>
@@ -81,18 +80,17 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Namba Food: Food and Grocery Delivery App for Iphone."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="0"
                 />
               </picture>
@@ -133,18 +131,17 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Namba Food: Courier App for Android."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="0"
                 />
               </picture>
@@ -156,18 +153,17 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Namba Food: Courier App for Android."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="0"
                 />
               </picture>
@@ -206,18 +202,17 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="0"
                 />
               </picture>
@@ -229,18 +224,17 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Namba Food: Admin Panel Which Help to Control and Track Food and Grocery Delivery."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="0"
                 />
               </picture>
@@ -281,18 +275,17 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="0"
                 />
               </picture>
@@ -304,18 +297,17 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Namba Food: Admin Panel Which Help to Manage Food and Grocery Delivery."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="0"
                 />
               </picture>

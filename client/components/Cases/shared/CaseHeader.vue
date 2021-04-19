@@ -7,19 +7,19 @@
     <!-- Image placeholder fallback for Video -->
     <div
       class="case_main-video_fallback"
-      :style="{ backgroundImage: `url(${getMediaFromS3(videoFallbackPath)})` }"
+      :style="{ backgroundImage: `url(${$getMediaFromS3(videoFallbackPath)})` }"
     />
     <!-- End Image placeholder fallback for Video -->
     <video
       v-if="!isIphone"
-      class="case_main-video"
+      class="case_main-video media_lazy"
       data-testid="test-case_main-video"
       loop="true"
       muted="true"
       autoplay="true"
     >
       <source
-        :src="getMediaFromS3(videoName)"
+        :data-src="$getMediaFromS3(videoName)"
         type="video/mp4"
       >
       Your browser does not support the video tag.
@@ -36,10 +36,10 @@
       <img
         :width="logo.width"
         :height="logo.height"
-        :src="getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
+        :data-src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
         :alt="logo.alt"
         :class="`case_${logo.file}`"
-        class="case_header-logo"
+        class="case_header-logo img_lazy"
       >
     </div>
   </section>

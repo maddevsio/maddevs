@@ -77,12 +77,12 @@ export default {
   computed: {
     beforeImageStyle() {
       return this.beforeImage
-        ? `background-image: url(${this.getMediaFromS3(this.beforeImage)});`
+        ? `background-image: url(${this.$getMediaFromS3(this.beforeImage)});`
         : null
     },
 
     afterImageSrc() {
-      return this.afterImage ? this.getMediaFromS3(this.afterImage) : null
+      return this.afterImage ? this.$getMediaFromS3(this.afterImage) : null
     },
 
     afterImageAlt() {

@@ -19,7 +19,7 @@ const PICTURES = [
 ]
 
 const mocks = {
-  getMediaFromS3: fileName => fileName,
+  $getMediaFromS3: fileName => fileName,
 }
 
 describe('CardNinjaSushi component', () => {
@@ -39,7 +39,7 @@ describe('CardNinjaSushi component', () => {
     await new Promise(resolve => setTimeout(resolve, 2000))
 
     expect(screen.getByTestId('test-case_card-content_image').alt).toBe(PICTURES[DEFAULT_INDEX].alt)
-    expect(screen.getByTestId('test-case_card-content_image').src)
-      .toBe(`${global.location.href}images/Cases/nambafood/jpg/${PICTURES[DEFAULT_INDEX].img}.jpg`)
+    expect(screen.getByTestId('test-case_card-content_image').dataset.src)
+      .toBe(`/images/Cases/nambafood/jpg/${PICTURES[DEFAULT_INDEX].img}.jpg`)
   })
 })
