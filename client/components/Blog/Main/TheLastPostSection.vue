@@ -3,7 +3,9 @@
     <div class="last-post">
       <FeaturedPost
         v-if="postsLoaded && featuredPost"
+        title-tag="h1"
         :post="featuredPost"
+        :author="findAuthor(featuredPost.data.post_author.id, allAuthors)"
       />
       <SkeletonFeaturedPost
         v-else
@@ -17,6 +19,8 @@ import { mapGetters } from 'vuex'
 import FeaturedPost from '@/components/Blog/shared/FeaturedPost'
 import SkeletonFeaturedPost from '@/components/Blog/skeletons/SkeletonFeaturedPost'
 
+import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
+
 export default {
   name: 'TheLastPostSection',
   components: {
@@ -24,8 +28,10 @@ export default {
     SkeletonFeaturedPost,
   },
 
+  mixins: [findPostAuthorMixin],
+
   computed: {
-    ...mapGetters(['featuredPost', 'postsLoaded']),
+    ...mapGetters(['featuredPost', 'postsLoaded', 'allAuthors']),
   },
 }
 </script>

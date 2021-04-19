@@ -67,6 +67,7 @@
         >
           <RecommendedBlogWidget
             :post="post"
+            :author="findAuthor(post.data.post_author.id, allAuthors)"
             class-name="recommended-post"
           />
         </section>
@@ -93,13 +94,16 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import SlicesBlock from '@/components/Blog/Post/SlicesBlock.vue'
 import TableOfContents from '@/components/Blog/Post/TableOfContents'
 import BlogHeader from '@/components/Blog/header/Blog'
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity'
 import CustomerUniversityNavigation from '@/components/Blog/Post/CustomerUniversityNavigation'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
+
+import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'PostView',
@@ -112,7 +116,7 @@ export default {
     CustomerUniversityNavigation,
   },
 
-  mixins: [initLazyLoadMixin],
+  mixins: [initLazyLoadMixin, findPostAuthorMixin],
 
   props: {
     type: {
@@ -146,6 +150,11 @@ export default {
     },
 
     featuredImage: {
+      type: Object,
+      default: () => {},
+    },
+
+    postAuthor: {
       type: Object,
       default: () => {},
     },
@@ -188,6 +197,8 @@ export default {
   },
 
   computed: {
+    ...mapGetters(['allAuthors']),
+
     clusterPosts() {
       return this.cluster ? this.cluster.items : []
     },

@@ -66,8 +66,10 @@ export default {
 
   watch: {
     thumbnailImage() {
-      this.$refs.authorImage.classList.remove('img_lazy-fade')
-      this.$refs.authorImage.classList.add('img_lazy')
+      if (this.$refs.authorImage) {
+        this.$refs.authorImage.classList.remove('img_lazy-fade')
+        this.$refs.authorImage.classList.add('img_lazy')
+      }
     },
   },
 }

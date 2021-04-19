@@ -44,6 +44,7 @@
           <div class="single-post__wrapper">
             <RecommendedBlogWidget
               :post="post"
+              :author="findAuthor(post.data.post_author.id, allAuthors)"
               class-name="filtered-post"
             />
           </div>
@@ -66,6 +67,8 @@ import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidge
 import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
 import initializeLazyLoad from '@/helpers/lazyLoad'
 
+import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
+
 export default {
   name: 'AllPostsSection',
   components: {
@@ -73,6 +76,8 @@ export default {
     RecommendedBlogWidget,
     LoadMoreButton,
   },
+
+  mixins: [findPostAuthorMixin],
 
   data() {
     return {
@@ -84,6 +89,7 @@ export default {
     ...mapGetters([
       'homePageContent',
       'allPosts',
+      'allAuthors',
       'filteredPosts',
       'postsCategory',
       'postsPage',
