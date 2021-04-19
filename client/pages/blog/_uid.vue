@@ -17,9 +17,5 @@ export default {
   },
 
   mixins: [buildPostPageMixin()],
-
-  mounted() {
-    this.$store.dispatch('getBlogAuthors')
-  },
 }
 </script>

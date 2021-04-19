@@ -116,6 +116,10 @@ const buildPostPageMixin = (pageName = 'blog', postType = 'post') => ({
       ],
     }
   },
+
+  mounted() {
+    this.$store.dispatch('getBlogAuthors')
+  },
 })
 
 export default buildPostPageMixin
