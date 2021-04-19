@@ -1,11 +1,19 @@
 import Blog from '@/components/Blog/header/Blog'
 import { render, screen } from '@testing-library/vue'
-import { blogDoc } from './mocked/blog-document'
 
 const props = {
-  document: blogDoc,
+  title: 'title',
+  subtitle: 'subtitle',
+  featuredImage: {
+    url: 'url',
+    alt: 'alt',
+    dimensions: {
+      width: '200',
+      height: '300',
+    },
+  },
   tags: ['Project Management', 'Featured post'],
-  formattedDate: 'Mar 23, 2021',
+  date: 'Mar 23, 2021',
 }
 
 describe('header Blog', () => {
@@ -15,6 +23,30 @@ describe('header Blog', () => {
       mocks: {
         $prismic: {
           asText: text => text[0].text,
+        },
+      },
+      store: {
+        modules: {
+          blogAuthor: {
+            state: {
+              blogAuthor: {},
+            },
+            getters: {
+              blogAuthor(state) {
+                return state.blogAuthor
+              },
+            },
+          },
+          blogTag: {
+            state: {
+              blogTag: '',
+            },
+            getters: {
+              blogTag(state) {
+                return state.blogTag
+              },
+            },
+          },
         },
       },
     })

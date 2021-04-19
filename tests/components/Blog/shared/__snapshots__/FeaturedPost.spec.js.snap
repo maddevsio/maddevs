@@ -3,7 +3,7 @@
 exports[`featured post component is a Vue instance 1`] = `
 <div>
   <nuxtlink-stub
-    class="featured-post"
+    class="featured-post dark"
     to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
   >
     <div
@@ -12,13 +12,13 @@ exports[`featured post component is a Vue instance 1`] = `
       <div
         class="col-12 col-lg-6 featured-post__main"
       >
-        <h1
+        <h2
           class="featured-post__title"
         >
           
         The best practices for improving layout quality on your website
       
-        </h1>
+        </h2>
          
         <p
           class="featured-post__paragraph"
@@ -31,51 +31,27 @@ exports[`featured post component is a Vue instance 1`] = `
         <div
           class="featured-post__data d-flex justify-content-between"
         >
-          <div
-            class="blog-post__author"
-          >
-            <img
-              alt="Alisa Manakova"
-              class="blog-post__author-image img_lazy"
-              data-src="https://images.prismic.io/superpupertest/255624bf-6a97-48ff-a3b6-337434ba4d33_2_orMuDx-7_VWwpnRL1Q1rxw.jpeg?auto=compress,format"
-            />
-             
-            <div
-              class="blog-post__author-info"
-            >
-              <p
-                class="blog-post__author-name"
-              >
-                
-      Alisa Manakova
-    
-              </p>
-               
-              <div
-                class="blog-post__data-of-creation"
-              >
-                <span
-                  class="blog-post__author-title"
-                >
-                  Chief Strategy Officer
-                </span>
-              </div>
-            </div>
-          </div>
+          <!---->
            
           <div
             class="featured-post__meta"
           >
-            <div
-              class="post-tag dark"
+            <nuxtlink-stub
+              to="/blog/tag/markup/"
             >
-              <span
-                class="tag"
-                data-testid="test-tag"
+              <div
+                class="post-tag dark"
               >
-                markup
-              </span>
-            </div>
+                <span
+                  class="tag"
+                  data-testid="test-tag"
+                >
+                  
+      markup
+    
+                </span>
+              </div>
+            </nuxtlink-stub>
              
             <span
               class="created-at"
