@@ -21,6 +21,21 @@ export default {
 
   mixins: [initLazyLoadMixin],
 
+  beforeRouteEnter(to, from, next) {
+    next(vm => {
+      const { post: { postAuthor } = {} } = vm
+      const { params } = to
+      /**
+       * Prismic saves all previous UID and they both still resolve
+       * This condition checks the current uid and redirects to it
+       * https://community.prismic.io/t/when-does-cache-expire-uid-history/874 - about this issue
+       */
+      if (params.uid !== postAuthor.uid && typeof postAuthor.uid === 'string') {
+        next({ path: `/blog/author/${postAuthor.uid}/` })
+      }
+    })
+  },
+
   async asyncData({ store, params, error }) {
     try {
       await store.dispatch('getBlogAuthor', params.uid)

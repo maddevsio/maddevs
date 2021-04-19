@@ -1,4 +1,3 @@
-import { mapActions } from 'vuex'
 import formatDate from '@/helpers/formatDate'
 
 const buildPostPageMixin = (pageName = 'blog', postType = 'post') => ({
@@ -10,7 +9,7 @@ const buildPostPageMixin = (pageName = 'blog', postType = 'post') => ({
 
     // Open graph url
     if (pageName === 'author' || pageName === 'tag') openGraphUrl = `${process.env.domain}/blog/${pageName}/${params.uid}/${params.postUID}`
-    if (pageName === 'customer-university') openGraphUrl = `${process.env.domain}/${pageName}/${params.uid}`
+    if (pageName === 'customer-university') openGraphUrl = `${process.env.domain}/customer-university/${params.uid}`
 
     try {
       const post = await store.dispatch('getBlogPost', { type: postType, uid: (params.postUID || params.uid) })
@@ -68,7 +67,6 @@ const buildPostPageMixin = (pageName = 'blog', postType = 'post') => ({
     return {
       openGraphUrl: '',
       schemaOrgSnippet: '',
-      cluster: null,
     }
   },
 
@@ -117,16 +115,6 @@ const buildPostPageMixin = (pageName = 'blog', postType = 'post') => ({
         { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en' },
       ],
     }
-  },
-
-  async mounted() {
-    if (pageName === 'customer-university') {
-      this.cluster = await this.getClusterData(this.post.id)
-    }
-  },
-
-  methods: {
-    ...mapActions(['getClusterData']),
   },
 })
 
