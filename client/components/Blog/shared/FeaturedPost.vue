@@ -16,7 +16,10 @@
           {{ firstParagraph }}
         </p>
         <div class="featured-post__data d-flex justify-content-between">
-          <PostAuthor v-bind="author" />
+          <PostAuthor
+            v-bind="author"
+            :theme="theme"
+          />
           <div class="featured-post__meta">
             <PostTag
               v-if="post.tags && post.tags.length"

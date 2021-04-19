@@ -47,6 +47,7 @@ export default {
       border-radius: 50%;
       overflow: hidden;
       object-fit: cover;
+      background: $bgcolor--black-light;
       -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
     }
     &__name {

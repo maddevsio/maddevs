@@ -14,6 +14,7 @@
       <div
         v-else
         class="blog-post__none-image"
+        :class="theme"
       />
       <div class="blog-post__author-info">
         <p class="blog-post__author-name">
@@ -51,6 +52,11 @@ export default {
     thumbnailImage: {
       type: Object,
       default: () => ({}),
+    },
+
+    theme: {
+      type: String,
+      default: 'dark',
     },
   },
 
@@ -109,7 +115,12 @@ export default {
   }
 
   &__none-image {
-    background-color: $bgcolor--black-light;
+    &.dark {
+      background-color: $bgcolor--black-light;
+    }
+    &.light {
+      background-color: $bgcolor--silver;
+    }
   }
 
   &__author-title {

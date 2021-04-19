@@ -497,6 +497,10 @@ export default {
         background-color: $bgcolor--white-primary;
       }
     }
+
+    /deep/ .blog-post__none-image {
+      background-color: $bgcolor--white-primary;
+    }
   }
 }
 

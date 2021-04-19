@@ -45,7 +45,10 @@
             class="light"
           />
         </div>
-        <PostAuthor v-bind="author" />
+        <PostAuthor
+          v-bind="author"
+          theme="light"
+        />
       </div>
     </div>
   </NuxtLink>
