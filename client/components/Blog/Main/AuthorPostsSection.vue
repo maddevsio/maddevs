@@ -103,8 +103,8 @@ export default {
   methods: {
     ...mapActions(['getMoreAuthorPosts']),
 
-    postLink(uid) {
-      return `/blog/author/${this.blogAuthor.uid}/${uid}/`
+    postLink(postUID) {
+      return `/blog/author/${this.blogAuthor.uid}/${postUID}/`
     },
   },
 }

@@ -109,8 +109,8 @@ export default {
   methods: {
     ...mapActions(['getMoreTagPosts']),
 
-    postLink(uid) {
-      return `/blog/tag/${convertStringToSlug(this.blogTag)}/${uid}/`
+    postLink(postUID) {
+      return `/blog/tag/${convertStringToSlug(this.blogTag)}/${postUID}/`
     },
   },
 }
