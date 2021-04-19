@@ -4,6 +4,8 @@
       v-if="iconName"
       :data-src="require(`@/assets/img/Studies/svg/${iconName}.svg`)"
       :alt="iconName"
+      width="51.94"
+      height="51.94"
       class="card-content_icon img_lazy"
     >
     <h4 class="case_title_h4 card-content_title">
@@ -41,6 +43,7 @@ export default {
   &_icon {
     width: 51.94px;
     height: 51.94px;
+    display: block;
     margin-bottom: 13px;
   }
 
