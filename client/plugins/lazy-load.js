@@ -5,20 +5,20 @@ export default ({ app }, inject) => { // eslint-disable-line
     threshold: 0.1,
   }
 
+  let observer = null
+
   // Replace data-src to src
   function replaceAttrs(target) {
     if (target.tagName === 'VIDEO') {
       const videoSource = target.children[0]
       if (typeof videoSource.tagName === 'string' && videoSource.tagName === 'SOURCE') {
         videoSource.src = videoSource.dataset.src
-        videoSource.removeAttribute('data-src')
       }
       target.load()
     } else {
       target.src = target.dataset.src
       if (target.dataset.srcset) {
         target.srcset = target.dataset.srcset
-        target.removeAttribute('data-src')
       }
     }
   }
@@ -28,27 +28,23 @@ export default ({ app }, inject) => { // eslint-disable-line
     replaceAttrs(target)
     target.classList.remove(options.className)
     target.classList.add(options.classNameFade)
+    observer.unobserve(target)
   })
 
   // Disable lazy loading
-  function destroyLazy() {
-    const elements = document.querySelectorAll(`.${options.className}`)
-    elements.forEach(element => {
-      replaceAttrs(element)
-      element.classList.remove(options.className)
-      element.classList.remove(options.classNameFade)
-    })
-  }
+  function resetLazy() {}
+
+  // Disable lazy loading
+  function destroyLazy() {}
 
   // Get all elements and init plugin
   function initializeLazyLoad(customOptions) {
     options = { ...options, ...customOptions }
 
     const elements = Array.from(document.querySelectorAll(`.${options.className}`))
-    console.log(elements)
 
     if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(observerCallback, options)
+      observer = new IntersectionObserver(observerCallback, options)
       elements.forEach(element => observer.observe(element))
     }
   }
@@ -56,6 +52,7 @@ export default ({ app }, inject) => { // eslint-disable-line
   const LazyLoad = {
     init: initializeLazyLoad,
     destroy: destroyLazy,
+    reset: resetLazy,
   }
 
   // Inject global method

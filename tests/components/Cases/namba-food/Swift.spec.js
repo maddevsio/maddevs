@@ -33,6 +33,6 @@ describe('Swift component', () => {
       props,
     })
 
-    expect(screen.getByTestId('test-case_ios-map-video-image').dataset.src).toBe(mocks.$getMediaFromS3())
+    expect(screen.getByTestId('test-case_ios-map-video-image').src).toBe(global.location.href + mocks.$getMediaFromS3())
   })
 })

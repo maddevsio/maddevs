@@ -344,9 +344,9 @@ exports[`Swift component should render correctly 1`] = `
         class="case_map-video-wrapper"
       >
         <img
-          class="case_ios-map-video-image case_box-shadow img_lazy"
-          data-src="img.jpg"
+          class="case_ios-map-video-image case_box-shadow"
           data-testid="test-case_ios-map-video-image"
+          src="img.jpg"
         />
       </div>
     </section>
