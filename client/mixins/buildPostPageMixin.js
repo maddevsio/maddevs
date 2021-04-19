@@ -14,6 +14,9 @@ const buildPostPageMixin = (pageName = 'blog', postType = 'post') => ({
 
     try {
       const post = await store.dispatch('getBlogPost', { type: postType, uid: (params.postUID || params.uid) })
+      if (post.data.post_author) {
+        await store.dispatch('getBlogAuthor', post.data.post_author.uid)
+      }
 
       // Schema org snippet
       if (
