@@ -9,7 +9,7 @@
   >
     <template #afterTitle>
       <div class="blog-post__post-info">
-        <!-- <PostAuthor :document="document" /> -->
+        <PostAuthor v-bind="blogAuthor" />
         <div class="blog-post__date-tag">
           <div class="blog-post__date">
             {{ date }}
@@ -27,13 +27,14 @@
 </template>
 
 <script>
-// import PostAuthor from '@/components/Blog/shared/PostAuthor'
+import { mapGetters } from 'vuex'
+import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import CommonHeader from '@/components/Blog/header/Common'
 
 export default {
   name: 'Blog',
   components: {
-    // PostAuthor,
+    PostAuthor,
     CommonHeader,
   },
 
@@ -62,6 +63,10 @@ export default {
       type: String,
       required: true,
     },
+  },
+
+  computed: {
+    ...mapGetters(['blogAuthor']),
   },
 }
 </script>
