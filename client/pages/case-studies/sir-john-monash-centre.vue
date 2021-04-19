@@ -92,7 +92,7 @@ export default {
   },
 
   mounted() {
-    this.$LazyLoad.init()
+    this.$lazyLoad.init()
   },
 
   methods: {

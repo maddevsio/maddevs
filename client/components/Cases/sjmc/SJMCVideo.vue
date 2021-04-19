@@ -9,8 +9,8 @@
     >
       <img
         v-if="showIcon"
-        class="pause-icon media_lazy"
-        :data-src="require('@/assets/img/Studies/svg/pause-icon.svg')"
+        class="pause-icon"
+        :src="require('@/assets/img/Studies/svg/pause-icon.svg')"
         alt="Pause"
       >
       <video
