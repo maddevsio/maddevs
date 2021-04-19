@@ -3,11 +3,11 @@ import MainPrivacy from '@/pages/privacy'
 import { shallowMount } from '@vue/test-utils'
 
 const META_DATA = {
-  description: 'Mad Devs’ Privacy Policy: Website Acceptable Use Terms.',
+  description: 'Mad Devs Privacy Policy: Website Acceptable Use Terms. We respect your privacy and are committed to protecting your personal information.',
   'og:url': 'https://maddevs.io/privacy/',
   'og:type': 'website',
   'og:title': 'Mad Devs Privacy Policy',
-  'og:description': 'Mad Devs’ Privacy Policy: Website Acceptable Use Terms.',
+  'og:description': 'Mad Devs Privacy Policy: Website Acceptable Use Terms. We respect your privacy and are committed to protecting your personal information.',
   'og:image': 'https://maddevs.io/Open-Graph.png',
 }
 
