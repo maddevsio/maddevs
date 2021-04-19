@@ -29,11 +29,11 @@ describe('header Blog', () => {
         modules: {
           blogAuthor: {
             state: {
-              blogAuthor: {},
+              author: {},
             },
             getters: {
               blogAuthor(state) {
-                return state.blogAuthor
+                return state.author
               },
             },
           },

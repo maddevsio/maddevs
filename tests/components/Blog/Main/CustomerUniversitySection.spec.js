@@ -40,11 +40,11 @@ describe('customer University section component', () => {
           },
           blogAuthors: {
             state: {
-              allAuthors: [],
+              authors: [],
             },
             getters: {
               allAuthors(state) {
-                return state.allAuthors
+                return state.authors
               },
             },
           },
