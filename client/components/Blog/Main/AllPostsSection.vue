@@ -36,8 +36,8 @@
         class="filtered-posts__wrapper"
       >
         <section
-          v-for="(post, i) in filteredPostsToShow"
-          :key="i"
+          v-for="(post) in filteredPostsToShow"
+          :key="post.id"
           :post="post"
           class="filtered-posts__single-post"
         >
@@ -54,7 +54,7 @@
         v-if="totalPages > postsPage"
         class="load-more-button__wrapper"
       >
-        <LoadMoreButton :click="getMorePosts" />
+        <LoadMoreButton @click="getMorePosts" />
       </div>
     </div>
   </div>

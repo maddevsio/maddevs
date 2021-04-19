@@ -49,7 +49,7 @@
       <div class="tag-posts__load-more">
         <LoadMoreButton
           v-if="totalPages > tagPostsPage"
-          :click="getMoreTagPosts"
+          @click="getMoreTagPosts"
         />
       </div>
     </div>

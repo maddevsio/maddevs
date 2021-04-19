@@ -48,7 +48,7 @@
       <div class="author-posts__load-more">
         <LoadMoreButton
           v-if="totalPages > authorPostsPage"
-          :click="getMoreAuthorPosts"
+          @click="getMoreAuthorPosts"
         />
       </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <button
     class="load-more-button"
-    @click="click"
+    @click="handleClick"
   >
     See more
   </button>
@@ -10,10 +10,9 @@
 <script>
 export default {
   name: 'LoadMoreButton',
-  props: {
-    click: {
-      type: Function,
-      default: () => {},
+  methods: {
+    handleClick(event) {
+      this.$emit('click', event)
     },
   },
 }
