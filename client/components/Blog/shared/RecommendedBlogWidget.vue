@@ -115,16 +115,6 @@ export default {
       return textEllipsis(title, { limit })
     },
   },
-
-  // Refresh class names for image when post has been updated
-  watch: {
-    post() {
-      if (this.$refs.recommendedImage) {
-        this.$refs.recommendedImage.classList.remove('img_lazy-fade')
-        this.$refs.recommendedImage.classList.add('img_lazy')
-      }
-    },
-  },
 }
 </script>
 

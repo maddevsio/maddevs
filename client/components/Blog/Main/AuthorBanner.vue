@@ -28,15 +28,6 @@ export default {
   computed: {
     ...mapGetters(['blogAuthor']),
   },
-
-  watch: {
-    blogAuthor() {
-      if (this.$refs.authorImage) {
-        this.$refs.authorImage.classList.remove('img_lazy-fade')
-        this.$refs.authorImage.classList.add('img_lazy')
-      }
-    },
-  },
 }
 </script>
 
