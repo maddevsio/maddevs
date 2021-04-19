@@ -8,41 +8,45 @@
       <div class="blog-post__share">
         <ShareNetwork
           :url="openGraphUrl"
-          :title="title"
+          :title="metaTitle"
           network="facebook"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
         />
         <ShareNetwork
           :url="openGraphUrl"
-          :title="title"
+          :title="metaTitle"
           network="twitter"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
         />
         <ShareNetwork
           :url="openGraphUrl"
-          :title="title"
+          :title="metaTitle"
           network="linkedin"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
         />
       </div>
 
       <CustomerUniversityHeader
-        v-if="type === 'cu_post'"
+        v-if="type === 'customer_university'"
         :id="id"
-        :document="document"
+        :title="title"
+        :subtitle="subtitle"
+        :featured-image="featuredImage"
         :post-list="clusterPosts || []"
         :cluster-name="cluster ? $prismic.asText(cluster.primary.cluster_name) : ''"
       />
       <BlogHeader
         v-else
-        :document="document"
+        :title="title"
+        :subtitle="subtitle"
+        :featured-image="featuredImage"
         :tags="tags"
-        :formatted-date="formattedDate"
+        :date="date"
       />
       <div class="blog-post__main-content">
         <TableOfContents
-          v-if="$prismic.asText(document.table_of_contents)"
-          :content="document.table_of_contents"
+          v-if="$prismic.asText(tableOfContents)"
+          :content="tableOfContents"
         />
         <SlicesBlock
           :slices="slices"
@@ -113,11 +117,6 @@ export default {
   props: {
     type: {
       type: String,
-      default: () => 'blog_post',
-    },
-
-    title: {
-      type: String,
       default: '',
     },
 
@@ -126,22 +125,32 @@ export default {
       default: '',
     },
 
-    document: {
-      type: Object,
-      default: () => ({}),
-    },
-
-    slices: {
-      type: Array,
-      default: () => [],
-    },
-
-    formattedDate: {
+    title: {
       type: String,
       default: '',
     },
 
-    recommendedPosts: {
+    subtitle: {
+      type: String,
+      default: '',
+    },
+
+    date: {
+      type: String,
+      default: '',
+    },
+
+    metaTitle: {
+      type: String,
+      default: '',
+    },
+
+    featuredImage: {
+      type: Object,
+      default: () => {},
+    },
+
+    slices: {
       type: Array,
       default: () => [],
     },
@@ -151,12 +160,17 @@ export default {
       default: () => [],
     },
 
-    openGraphUrl: {
-      type: String,
-      default: '',
+    tableOfContents: {
+      type: Array,
+      default: () => [],
     },
 
-    jsonLd: {
+    recommendedPosts: {
+      type: Array,
+      default: () => [],
+    },
+
+    openGraphUrl: {
       type: String,
       default: '',
     },
@@ -179,11 +193,11 @@ export default {
     },
 
     wrapperClass() {
-      return this.recommendedPosts.length || this.type === 'cu_post' ? 'with-recommended' : ''
+      return this.recommendedPosts.length || this.type === 'customer_university' ? 'with-recommended' : ''
     },
 
     showRecommended() {
-      return this.type !== 'cu_post' && this.recommendedPosts.length !== 0
+      return this.type !== 'customer_university' && this.recommendedPosts.length !== 0
     },
   },
 

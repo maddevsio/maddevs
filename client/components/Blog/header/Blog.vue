@@ -1,21 +1,21 @@
 <template>
   <CommonHeader
-    :title="$prismic.asText(document.title)"
-    :subtitle="$prismic.asText(document.subtitle)"
-    :cover-image-url="document.featured_image.url"
-    :cover-image-alt-text="document.featured_image.alt"
-    :cover-image-width="document.featured_image.dimensions.width"
-    :cover-image-height="document.featured_image.dimensions.height"
+    :title="title"
+    :subtitle="subtitle"
+    :cover-image-url="featuredImage.url"
+    :cover-image-alt-text="featuredImage.alt"
+    :cover-image-width="featuredImage.dimensions.width"
+    :cover-image-height="featuredImage.dimensions.height"
   >
     <template #afterTitle>
       <div class="blog-post__post-info">
-        <PostAuthor :document="document" />
+        <!-- <PostAuthor :document="document" /> -->
         <div class="blog-post__date-tag">
           <div class="blog-post__date">
-            {{ formattedDate }}
+            {{ date }}
           </div>
           <div
-            v-if="tags.length"
+            v-if="tags && tags.length"
             class="blog-post__tag"
           >
             {{ tags[0] }}
@@ -27,20 +27,30 @@
 </template>
 
 <script>
-import PostAuthor from '@/components/Blog/shared/PostAuthor'
+// import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import CommonHeader from '@/components/Blog/header/Common'
 
 export default {
   name: 'Blog',
   components: {
-    PostAuthor,
+    // PostAuthor,
     CommonHeader,
   },
 
   props: {
-    document: {
+    title: {
+      type: String,
+      default: '',
+    },
+
+    subtitle: {
+      type: String,
+      default: '',
+    },
+
+    featuredImage: {
       type: Object,
-      required: true,
+      default: () => {},
     },
 
     tags: {
@@ -48,7 +58,7 @@ export default {
       required: true,
     },
 
-    formattedDate: {
+    date: {
       type: String,
       required: true,
     },
