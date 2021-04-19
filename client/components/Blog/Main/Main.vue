@@ -40,15 +40,12 @@ export default {
     ]),
   },
 
-  watch: {
-    allPosts() {
-      // Add lazy loading for async posts
-      this.$nextTick(() => initializeLazyLoad())
-    },
-  },
-
   created() {
     this.getContent()
+  },
+
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
   },
 
   methods: {

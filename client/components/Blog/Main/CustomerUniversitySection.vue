@@ -126,11 +126,8 @@ export default {
     },
   },
 
-  watch: {
-    master() {
-      // Callback for async fetch(), add lazy for images in customer university posts after async data render on page
-      this.$nextTick(() => initializeLazyLoad())
-    },
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
   },
 }
 </script>
