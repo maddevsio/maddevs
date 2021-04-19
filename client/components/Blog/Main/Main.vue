@@ -49,7 +49,7 @@ export default {
   },
 
   methods: {
-    ...mapActions(['getHomePageContent', 'getBlogPosts', 'getCustomerUniversityContent']),
+    ...mapActions(['getHomePageContent', 'getBlogPosts', 'getBlogAuthors', 'getCustomerUniversityContent']),
 
     getContent() {
       // Query to get blog home content
@@ -58,6 +58,7 @@ export default {
 
       // Query to get posts content to preview
       this.getBlogPosts()
+      this.getBlogAuthors()
     },
   },
 }
