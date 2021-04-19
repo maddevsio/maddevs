@@ -73,8 +73,8 @@
     <section class="container_full case_sec-container background-color-black-primary">
       <img
         v-if="isIphone"
-        :src="$getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')"
-        class="case_img-ios-only"
+        :data-src="$getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')"
+        class="case_img-ios-only media_lazy"
       >
       <HardwareVideo v-else />
     </section>

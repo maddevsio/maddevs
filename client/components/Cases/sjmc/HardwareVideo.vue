@@ -28,9 +28,10 @@
         muted
         playsinline
         loop
+        class="media_lazy"
       >
         <source
-          :src="$getMediaFromS3('/videos/bluetooth-beacons-video.9ca649c.mp4')"
+          :data-src="$getMediaFromS3('/videos/bluetooth-beacons-video.9ca649c.mp4')"
           type="video/mp4"
         >
         Your browser does not support the video tag.
