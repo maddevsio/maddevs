@@ -190,6 +190,7 @@ export default {
 
     .single-post__wrapper {
       padding: 0 10px;
+      height: 100%;
     }
   }
 }
@@ -273,6 +274,7 @@ export default {
 .single-post {
   &__wrapper {
     /deep/ .blog-post {
+      height: 100%;
       &__author-name {
         color: $text-color--black;
       }
@@ -352,7 +354,7 @@ export default {
         }
 
         &__image {
-          width: 124px;
+          width: 235px;
           flex-shrink: 0;
           margin-right: 16px;
         }
@@ -412,13 +414,35 @@ export default {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 600px) {
   .filtered-posts {
     &__wrapper {
       /deep/ .blog-post {
         &__image {
-          width: 120px;
+          width: 180px;
           margin-right: 10px;
+        }
+        &__title {
+          -webkit-line-clamp: 2;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .filtered-posts {
+    &__wrapper {
+      /deep/ .blog-post {
+        &__image {
+          width: 145px;
+          margin-right: 10px;
+          object-fit: cover;
+          object-position: -2px;
+          height: 100%;
+        }
+        &__title {
+          -webkit-line-clamp: 2;
         }
       }
     }
