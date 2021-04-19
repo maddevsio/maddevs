@@ -7,8 +7,8 @@
     </section>
     <section class="container_full background-color-silver">
       <img
-        :src="getMediaFromS3('/images/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif')"
-        class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif"
+        :data-src="$getMediaFromS3('/images/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif')"
+        class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif img_lazy"
         alt="Namba Food: Website and Mobile App Infrastructure Scheme."
       >
     </section>

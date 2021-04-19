@@ -35,17 +35,17 @@
         <source
           v-if="source"
           ref="source"
-          :srcset="[source.x1 + ' ', source.x2 + ' 2x']"
+          :data-srcset="[source.x1 + ' ', source.x2 + ' 2x']"
           class="case_card-content_image"
           type="image/webp"
         >
         <img
           v-if="img"
           ref="img"
-          :src="[img.x1]"
-          :srcset="[img.x2 + ' 2x']"
+          :data-src="[img.x1]"
+          :data-srcset="[img.x2 + ' 2x']"
           :alt="img.alt"
-          class="case_card-content_image"
+          class="case_card-content_image img_lazy"
           data-testid="test-case_card-content_image"
         >
       </picture>
@@ -66,14 +66,14 @@ export default {
     return {
       imgIndex: 0,
       img: {
-        x1: this.getMediaFromS3('/images/Cases/nambafood/webp/ninja-sushi-slide.webp'),
-        x2: this.getMediaFromS3('/images/Cases/nambafood/webp/ninja-sushi-slide@2x.webp'),
+        x1: this.$getMediaFromS3('/images/Cases/nambafood/webp/ninja-sushi-slide.webp'),
+        x2: this.$getMediaFromS3('/images/Cases/nambafood/webp/ninja-sushi-slide@2x.webp'),
         alt: null,
       },
 
       source: {
-        x1: this.getMediaFromS3('/images/Cases/nambafood/jpg/ninja-sushi-slide.jpg'),
-        x2: this.getMediaFromS3('/images/Cases/nambafood/jpg/ninja-sushi-slide@2x.jpg'),
+        x1: this.$getMediaFromS3('/images/Cases/nambafood/jpg/ninja-sushi-slide.jpg'),
+        x2: this.$getMediaFromS3('/images/Cases/nambafood/jpg/ninja-sushi-slide@2x.jpg'),
       },
     }
   },
@@ -102,11 +102,11 @@ export default {
           alt: 'Namba Food: Coffee House.',
         },
       ]
-      this.img.x1 = this.getMediaFromS3(`/images/Cases/nambafood/jpg/${pictures[this.imgIndex].img}.jpg`)
-      this.img.x2 = this.getMediaFromS3(`/images/Cases/nambafood/jpg/${pictures[this.imgIndex].img}@2x.jpg`)
+      this.img.x1 = this.$getMediaFromS3(`/images/Cases/nambafood/jpg/${pictures[this.imgIndex].img}.jpg`)
+      this.img.x2 = this.$getMediaFromS3(`/images/Cases/nambafood/jpg/${pictures[this.imgIndex].img}@2x.jpg`)
       this.img.alt = pictures[this.imgIndex].alt
-      this.source.x1 = this.getMediaFromS3(`/images/Cases/nambafood/webp/${pictures[this.imgIndex].img}.webp`)
-      this.source.x2 = this.getMediaFromS3(`/images/Cases/nambafood/webp/${pictures[this.imgIndex].img}@2x.webp`)
+      this.source.x1 = this.$getMediaFromS3(`/images/Cases/nambafood/webp/${pictures[this.imgIndex].img}.webp`)
+      this.source.x2 = this.$getMediaFromS3(`/images/Cases/nambafood/webp/${pictures[this.imgIndex].img}@2x.webp`)
       this.imgIndex = (this.imgIndex + 1) % pictures.length // update the counter
     },
   },

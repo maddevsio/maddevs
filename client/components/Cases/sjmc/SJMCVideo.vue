@@ -18,7 +18,7 @@
         class="main-video"
       >
         <source
-          :src="getMediaFromS3('/videos/sjmc/sjmc-modal-video.00bd869.mp4')"
+          :src="$getMediaFromS3('/videos/sjmc/sjmc-modal-video.00bd869.mp4')"
           type="video/mp4"
         >
         Your browser does not support the video tag.

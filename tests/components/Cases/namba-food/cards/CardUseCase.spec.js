@@ -16,7 +16,7 @@ describe('CardUseCase component', () => {
       props,
       stubs: ['ClientOnly'],
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
 
@@ -34,7 +34,7 @@ describe('CardUseCase component', () => {
       },
       stubs: ['ClientOnly'],
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
 

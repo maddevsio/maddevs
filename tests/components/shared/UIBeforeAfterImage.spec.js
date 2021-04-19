@@ -14,7 +14,7 @@ describe('UIBeforeAfterImage component', () => {
     const { container } = render(BeforeAfterImage, {
       stubs: ['NuxtLink', 'PrismicImage'],
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
 
@@ -25,7 +25,7 @@ describe('UIBeforeAfterImage component', () => {
     render(BeforeAfterImage, {
       stubs: ['NuxtLink', 'PrismicImage'],
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
 
@@ -39,7 +39,7 @@ describe('UIBeforeAfterImage component', () => {
     render(BeforeAfterImage, {
       stubs: ['NuxtLink', 'PrismicImage'],
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
 
@@ -58,7 +58,7 @@ describe('UIBeforeAfterImage component', () => {
       props,
       stubs: ['NuxtLink', 'PrismicImage'],
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
 

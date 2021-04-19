@@ -8,25 +8,25 @@
       <div class="customer-university__wrapper">
         <div class="customer-university__featured-post">
           <NuxtLink
-            v-if="featured"
-            :to="`/customer-university/${master.data.featured_cu.uid}/`"
+            v-if="featuredCUPost"
+            :to="`/customer-university/${customerContent.featured_cu.uid}/`"
             class="featured-post"
           >
-            <span class="featured-post__date">{{ formattedDate }}</span>
+            <span class="featured-post__date">{{ featuredCUPost.date }}</span>
             <h2 class="featured-post__title">
-              {{ $prismic.asText(featured.title).replace(/^[0-9]*\. /, '') }}
+              {{ $prismic.asText(featuredCUPost.title).replace(/^[0-9]*\. /, '') }}
             </h2>
             <p class="featured-post__text">
               {{ firstParagraph }}
             </p>
-            <PostAuthor :document="featured" />
+            <PostAuthor v-bind="findAuthor(featuredCUPost.post_author.id, allAuthors)" />
             <div class="featured-post__cover-wrapper">
               <img
                 class="featured-post__cover img_lazy"
                 width="560"
                 height="347"
-                :data-src="featured.featured_image.url"
-                :alt="featured.featured_image.alt"
+                :data-src="featuredCUPost.featured_image.url"
+                :alt="featuredCUPost.featured_image.alt"
               >
             </div>
           </NuxtLink>
@@ -77,10 +77,12 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
 import initializeLazyLoad from '@/helpers/lazyLoad'
-import formatDate from '@/helpers/formatDate'
+
+import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
 
 export default {
   name: 'CustomerUniversitySection',
@@ -88,31 +90,19 @@ export default {
     PostAuthor,
   },
 
+  mixins: [findPostAuthorMixin],
+
   data() {
     return {
-      master: {},
-      featured: null,
-      formattedDate: '',
       showAll: false,
     }
   },
 
-  async fetch() {
-    const master = await this.$prismic.api.getSingle('cu_master')
-    if (master.data.featured_cu.uid) {
-      const featured = await this.$prismic.api.getByUID('customer_university', master.data.featured_cu.uid)
-      this.featured = featured.data
-      this.formattedDate = formatDate(this.featured.date)
-    }
-    this.master = master
-  },
-
   computed: {
+    ...mapGetters(['customerContent', 'featuredCUPost', 'allAuthors']),
+
     clusters() {
-      if (this.master.data) {
-        return this.master.data.body
-      }
-      return []
+      return this.customerContent.body || []
     },
 
     clustersToShow() {
@@ -120,17 +110,14 @@ export default {
     },
 
     firstParagraph() {
-      const slices = this.featured.body
+      const slices = this.featuredCUPost.body
       const limit = 150
       return getFirstParagraph(slices, limit)
     },
   },
 
-  watch: {
-    master() {
-      // Callback for async fetch(), add lazy for images in customer university posts after async data render on page
-      this.$nextTick(() => initializeLazyLoad())
-    },
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
   },
 }
 </script>
@@ -148,32 +135,25 @@ export default {
   letter-spacing: -0.02em;
   margin-bottom: 16px;
 }
-
 .d-flex {
   display: flex;
 }
-
 .justify-content-between {
   justify-content: space-between;
 }
-
 .w-50 {
   width: 50%;
 }
-
 .pl-2 {
   padding-left: 60px;
 }
-
 .customer-university {
   background-color: $text-color--black-oil;
   padding: 90px 0;
-
   &__wrapper {
     display: flex;
     justify-content: space-between;
   }
-
   &__title {
     font-family: 'Poppins-Bold', sans-serif;
     font-style: normal;
@@ -184,30 +164,24 @@ export default {
     -webkit-text-stroke: 1.13px $text-color--grey-opacity-40-percent;
     color: $text-color--black-oil;
     margin-bottom: 78px;
-
     span {
       color: $bgcolor--silver;
       -webkit-text-stroke: 0;
     }
   }
-
   &__featured-post {
     width: 50%;
   }
-
   &__list-wrapper {
     padding-left: 60px;
   }
-
   &__list {
     width: 50%;
   }
-
   &__list-title {
     display: block;
     @include label;
   }
-
   &__list-show-more {
     font-family: Inter, sans-serif;
     font-style: normal;
@@ -221,27 +195,25 @@ export default {
     border: 1px solid $text-color--red;
     background-color: transparent;
     cursor: pointer;
-
     &-wrapper {
       margin-top: 36px;
     }
   }
-
   &__list-item {
     text-decoration: none;
   }
 }
-
 .featured-post {
   text-decoration: none;
   display: block;
   padding-right: 60px;
-
+  a {
+    text-decoration: none;
+  }
   &__date {
     display: block;
     @include label;
   }
-
   &__title {
     font-family: 'Poppins-Medium', sans-serif;
     font-style: normal;
@@ -253,7 +225,6 @@ export default {
     margin-bottom: 28px;
     color: $text-color--white-primary;
   }
-
   &__text {
     font-family: Inter, sans-serif;
     font-style: normal;
@@ -264,34 +235,28 @@ export default {
     margin-bottom: 28px;
     color: $text-color--grey-pale;
   }
-
   &__cover {
     width: 100%;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
-
     &-wrapper {
       margin-top: 33px;
       text-align: center;
     }
   }
 }
-
 .single-cluster {
   margin-bottom: 31px;
   display: flex;
-
   &:last-child {
     margin-bottom: 0;
   }
-
   &__cover {
     width: 100%;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
-
     &-wrapper {
       width: 52.68%;
       margin-right: 20px;
@@ -299,7 +264,6 @@ export default {
       text-align: center;
     }
   }
-
   &__title {
     font-family: 'Poppins-Medium', sans-serif;
     font-style: normal;
@@ -311,7 +275,6 @@ export default {
     color: $text-color--white-primary;
     margin-bottom: 6px;
   }
-
   &__description {
     font-family: Inter, sans-serif;
     font-style: normal;
@@ -327,15 +290,12 @@ export default {
     text-overflow: ellipsis;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .customer-university {
     padding: 34px 0 69px;
-
     &__wrapper {
       display: block;
     }
-
     &__title {
       font-size: 50px;
       line-height: 101%;
@@ -343,14 +303,11 @@ export default {
       font-feature-settings: 'ss02' on;
       margin-bottom: 38px;
     }
-
     &__list {
       width: 100%;
-
       &-wrapper {
         padding-left: 0;
       }
-
       &-show-more {
         font-weight: normal;
         font-size: 16px;
@@ -360,55 +317,45 @@ export default {
         border-color: rgba(236, 28, 36, 0.4);
       }
     }
-
     &__featured-post {
       width: 100%;
       margin-bottom: 31px;
     }
-
     &__list-title {
       display: none;
     }
   }
-
   .featured-post {
     display: flex;
     flex-direction: column;
     padding-right: 0;
-
     &__date,
     .blog-post__author {
       display: none;
     }
-
     &__title {
       order: 1;
       margin-bottom: 6px;
       font-size: 22.78px;
     }
-
     &__text {
       order: 2;
       margin-bottom: 0;
     }
-
     &__cover-wrapper {
       order: 0;
       margin-top: 0;
       margin-bottom: 14px;
     }
   }
-
   .single-cluster {
     display: block;
-
     &__cover {
       &-wrapper {
         width: 100%;
         margin-bottom: 14px;
       }
     }
-
     &__title {
       color: $text-color--grey-cases;
       font-size: 22.78px;
@@ -416,7 +363,6 @@ export default {
       letter-spacing: -1px;
       font-feature-settings: 'zero' on, 'ordn' on, 'ss02' on, 'ss05' on;
     }
-
     &__description {
       font-weight: normal;
       font-size: 16px;

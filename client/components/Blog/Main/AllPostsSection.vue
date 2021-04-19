@@ -37,8 +37,8 @@
         class="filtered-posts__wrapper"
       >
         <section
-          v-for="(post, i) in filteredPostsToShow"
-          :key="i"
+          v-for="(post) in filteredPostsToShow"
+          :key="post.id"
           :post="post"
           class="filtered-posts__single-post"
         >
@@ -48,6 +48,7 @@
           >
             <RecommendedBlogWidget
               :post="post"
+              :author="findAuthor(post.data.post_author.id, allAuthors)"
               class-name="filtered-post"
             />
           </div>
@@ -57,13 +58,7 @@
         v-if="totalPages > postsPage"
         class="load-more-button__wrapper"
       >
-        <button
-          class="load-more-button"
-          data-testid="test-load-more-button"
-          @click="getMorePosts"
-        >
-          See more
-        </button>
+        <LoadMoreButton @click="getMorePosts" />
       </div>
     </div>
   </div>
@@ -73,14 +68,20 @@
 import { mapActions, mapGetters } from 'vuex'
 import Simplebar from 'simplebar-vue'
 import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
+import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
 import initializeLazyLoad from '@/helpers/lazyLoad'
+
+import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
 
 export default {
   name: 'AllPostsSection',
   components: {
     Simplebar,
     RecommendedBlogWidget,
+    LoadMoreButton,
   },
+
+  mixins: [findPostAuthorMixin],
 
   data() {
     return {
@@ -92,6 +93,7 @@ export default {
     ...mapGetters([
       'homePageContent',
       'allPosts',
+      'allAuthors',
       'filteredPosts',
       'postsCategory',
       'postsPage',
@@ -120,16 +122,10 @@ export default {
         window.scrollTo(0, window.scrollY - 120) // scroll for distance between the post and the top of the screen
       }
     },
+  },
 
-    // Set lazy when new posts has been loaded after click on see more button
-    postsPage() {
-      this.$nextTick(() => initializeLazyLoad())
-    },
-
-    postsCategory() {
-      // Refresh recommended blog posts and author images
-      this.$nextTick(() => initializeLazyLoad())
-    },
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
   },
 
   methods: {
@@ -256,23 +252,10 @@ export default {
   border-color: #cc4247;
 }
 
-.load-more-button {
-  padding: 12px 156px;
-  border: 1px solid $border-color--black;
-  font-size: 16px;
-  line-height: 26px;
-  background-color: transparent;
+.load-more-button__wrapper {
+  text-align: center;
   margin-top: 36px;
   margin-bottom: 53px;
-  cursor: pointer;
-
-  &:hover {
-    color: $text-color--red;
-  }
-
-  &__wrapper {
-    text-align: center;
-  }
 }
 
 .single-post {
@@ -409,11 +392,9 @@ export default {
     }
   }
 
-  .load-more-button {
-    padding: 12px 0;
+  .load-more-button__wrapper {
     margin-top: 11px;
     margin-bottom: 16px;
-    width: 100%;
   }
 }
 

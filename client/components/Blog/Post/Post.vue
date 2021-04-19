@@ -8,41 +8,45 @@
       <div class="blog-post__share">
         <ShareNetwork
           :url="openGraphUrl"
-          :title="title"
+          :title="metaTitle"
           network="facebook"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
         />
         <ShareNetwork
           :url="openGraphUrl"
-          :title="title"
+          :title="metaTitle"
           network="twitter"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
         />
         <ShareNetwork
           :url="openGraphUrl"
-          :title="title"
+          :title="metaTitle"
           network="linkedin"
           class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
         />
       </div>
 
       <CustomerUniversityHeader
-        v-if="type === 'cu_post'"
+        v-if="type === 'customer_university'"
         :id="id"
-        :document="document"
+        :title="title"
+        :subtitle="subtitle"
+        :featured-image="featuredImage"
         :post-list="clusterPosts || []"
         :cluster-name="cluster ? $prismic.asText(cluster.primary.cluster_name) : ''"
       />
       <BlogHeader
         v-else
-        :document="document"
+        :title="title"
+        :subtitle="subtitle"
+        :featured-image="featuredImage"
         :tags="tags"
-        :formatted-date="formattedDate"
+        :date="date"
       />
       <div class="blog-post__main-content">
         <TableOfContents
-          v-if="$prismic.asText(document.table_of_contents)"
-          :content="document.table_of_contents"
+          v-if="$prismic.asText(tableOfContents)"
+          :content="tableOfContents"
         />
         <SlicesBlock
           :slices="slices"
@@ -63,7 +67,9 @@
           data-testid="test-recommended-post"
         >
           <RecommendedBlogWidget
+            :to="getRecommendedPostUrl(post.uid)"
             :post="post"
+            :author="findAuthor(post.data.post_author.id, allAuthors)"
             class-name="recommended-post"
           />
         </section>
@@ -91,13 +97,17 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import SlicesBlock from '@/components/Blog/Post/SlicesBlock.vue'
 import TableOfContents from '@/components/Blog/Post/TableOfContents'
 import BlogHeader from '@/components/Blog/header/Blog'
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity'
 import CustomerUniversityNavigation from '@/components/Blog/Post/CustomerUniversityNavigation'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
+import initializeLazyLoad from '@/helpers/lazyLoad'
+
+import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 export default {
   name: 'PostView',
@@ -110,15 +120,10 @@ export default {
     CustomerUniversityNavigation,
   },
 
-  mixins: [initLazyLoadMixin],
+  mixins: [initLazyLoadMixin, findPostAuthorMixin],
 
   props: {
     type: {
-      type: String,
-      default: () => 'blog_post',
-    },
-
-    title: {
       type: String,
       default: '',
     },
@@ -128,22 +133,37 @@ export default {
       default: '',
     },
 
-    document: {
-      type: Object,
-      required: true,
-    },
-
-    slices: {
-      type: Array,
-      default: () => [],
-    },
-
-    formattedDate: {
+    title: {
       type: String,
       default: '',
     },
 
-    recommendedPosts: {
+    subtitle: {
+      type: String,
+      default: '',
+    },
+
+    date: {
+      type: String,
+      default: '',
+    },
+
+    metaTitle: {
+      type: String,
+      default: '',
+    },
+
+    featuredImage: {
+      type: Object,
+      default: () => {},
+    },
+
+    postAuthor: {
+      type: Object,
+      default: () => {},
+    },
+
+    slices: {
       type: Array,
       default: () => [],
     },
@@ -153,12 +173,17 @@ export default {
       default: () => [],
     },
 
-    openGraphUrl: {
-      type: String,
-      default: '',
+    tableOfContents: {
+      type: Array,
+      default: () => [],
     },
 
-    jsonLd: {
+    recommendedPosts: {
+      type: Array,
+      default: () => [],
+    },
+
+    openGraphUrl: {
       type: String,
       default: '',
     },
@@ -176,17 +201,23 @@ export default {
   },
 
   computed: {
+    ...mapGetters(['allAuthors']),
+
     clusterPosts() {
       return this.cluster ? this.cluster.items : []
     },
 
     wrapperClass() {
-      return this.recommendedPosts.length || this.type === 'cu_post' ? 'with-recommended' : ''
+      return this.recommendedPosts.length || this.type === 'customer_university' ? 'with-recommended' : ''
     },
 
     showRecommended() {
-      return this.type !== 'cu_post' && this.recommendedPosts.length !== 0
+      return this.type !== 'customer_university' && this.recommendedPosts.length !== 0
     },
+  },
+
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
   },
 
   mounted() {
@@ -200,6 +231,12 @@ export default {
   },
 
   methods: {
+    getRecommendedPostUrl(postUID) {
+      if (postUID && this.$route.name === 'blog-tag-uid-postUID') return `/blog/tag/${this.$route.params.uid}/${postUID}`
+      if (postUID && this.$route.name === 'blog-author-uid-postUID') return `/blog/author/${this.$route.params.uid}/${postUID}`
+      return null
+    },
+
     scrollToTop() {
       window.scrollTo({
         top: 0,
@@ -458,9 +495,13 @@ export default {
     }
 
     /deep/ .blog-post__meta {
-      .tag {
+      .post-tag {
         background-color: $bgcolor--white-primary;
       }
+    }
+
+    /deep/ .blog-post__none-image {
+      background-color: $bgcolor--white-primary;
     }
   }
 }

@@ -1,23 +1,30 @@
 <template>
   <NuxtLink
-    :to="link"
+    :to="to || link"
+    :class="theme"
     class="featured-post"
   >
     <div class="row featured-post__wrapper">
       <div class="col-12 col-lg-6 featured-post__main">
-        <h1 class="featured-post__title">
+        <Component
+          :is="titleTag"
+          class="featured-post__title"
+        >
           {{ $prismic.asText(post.data.title) }}
-        </h1>
+        </Component>
         <p class="featured-post__paragraph">
           {{ firstParagraph }}
         </p>
         <div class="featured-post__data d-flex justify-content-between">
-          <PostAuthor :document="post.data" />
+          <PostAuthor
+            v-bind="author"
+            :theme="theme"
+          />
           <div class="featured-post__meta">
             <PostTag
-              v-if="post.tags.length"
-              :tag="post.tags[0]"
-              theme="dark"
+              v-if="post.tags && post.tags.length"
+              :tag="tag || post.tags[0]"
+              :theme="theme"
             />
             <span class="created-at">{{ formattedDate }}</span>
           </div>
@@ -55,6 +62,31 @@ export default {
       type: Object,
       required: true,
     },
+
+    to: {
+      type: String,
+      default: '',
+    },
+
+    titleTag: {
+      type: String,
+      default: 'h2',
+    },
+
+    author: {
+      type: Object,
+      required: true,
+    },
+
+    tag: {
+      type: String,
+      default: null,
+    },
+
+    theme: {
+      type: String,
+      default: 'dark',
+    },
   },
 
   computed: {
@@ -78,21 +110,29 @@ export default {
 
 <style scoped lang="scss">
 @import '../../../assets/styles/_vars';
-
 .featured-post {
-  color: $text-color--white-primary;
   text-decoration: none;
   display: block;
-
+  &.dark {
+    color: $text-color--white-primary;
+  }
+  &.light {
+    color: $text-color--black;
+    /deep/ .blog-post {
+      &__author-name {
+        color: $text-color--black;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+  }
   &__wrapper {
-    margin: 95px 0;
     align-items: center;
   }
-
   &__main {
     margin-top: 0;
   }
-
   &__title {
     font-size: 52px;
     line-height: 130%;
@@ -100,7 +140,6 @@ export default {
     letter-spacing: -2px;
     font-family: 'Poppins-Medium', sans-serif;
   }
-
   &__paragraph {
     font-size: 17px;
     line-height: 28px;
@@ -109,38 +148,31 @@ export default {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
   }
-
   &__data {
     display: flex;
     justify-content: space-between;
-
     /deep/ .blog-post__author-name {
       color: $text-color--white-primary;
     }
-
     /deep/ .blog-post__author-image {
       width: 40px;
       height: 40px;
     }
   }
-
   &__meta {
     display: flex;
     align-items: center;
     font-size: 13px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-
     .created-at {
       margin-left: 24px;
       color: $text-color--grey;
     }
   }
-
   &__image-wrapper {
     text-align: right;
     margin-top: 0;
-
     img {
       max-width: 90%;
       height: auto;
@@ -148,61 +180,46 @@ export default {
     }
   }
 }
-
 @media only screen and (max-width: 991px) {
   .featured-post {
-    &__wrapper {
-      margin-top: 0;
-      margin-bottom: 36px;
-    }
-
     &__main {
       padding: 0;
       margin-top: 0;
       order: 2;
     }
-
     &__paragraph {
       margin-bottom: 38px;
       font-size: 16px;
       line-height: 150%;
       letter-spacing: -0.02em;
     }
-
     &__data {
       display: block;
-
       /deep/ .blog-post__author {
         margin-bottom: 16px;
       }
-
       /deep/ .blog-post__author-image {
         width: 30px;
         height: 30px;
       }
     }
-
     &__title {
       font-size: 35px;
     }
-
     &__meta {
       justify-content: space-between;
-
       /deep/ .post-tag {
         padding: 8px 16px;
         line-height: 22px;
         margin-left: 0;
       }
     }
-
     &__image-wrapper {
       padding: 0;
       order: 1;
       margin-bottom: 17px;
       margin-top: 0;
       text-align: center;
-
       img {
         max-width: 100%;
       }
