@@ -14,12 +14,11 @@
           <div class="blog-post__date">
             {{ date }}
           </div>
-          <div
-            v-if="tags && tags.length"
-            class="blog-post__tag"
-          >
-            {{ tags[0] }}
-          </div>
+          <PostTag
+            v-if="tags.length"
+            :tag="blogTag || tags[0]"
+            theme="dark"
+          />
         </div>
       </div>
     </template>
@@ -28,12 +27,14 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import PostTag from '@/components/Blog/shared/PostTag'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import CommonHeader from '@/components/Blog/header/Common'
 
 export default {
   name: 'Blog',
   components: {
+    PostTag,
     PostAuthor,
     CommonHeader,
   },
@@ -66,7 +67,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogAuthor']),
+    ...mapGetters(['blogAuthor', 'blogTag']),
   },
 }
 </script>
@@ -81,6 +82,11 @@ export default {
     align-items: center;
     margin-top: 7px;
     margin-bottom: 43px;
+    text-decoration: none;
+
+    a {
+      text-decoration: none;
+    }
 
     /deep/ .blog-post__author-image {
       width: 30px;
@@ -98,14 +104,7 @@ export default {
 
     .blog-post__date {
       color: $text-color--grey-pale;
-    }
-
-    .blog-post__tag {
-      color: $text-color--white-transparent;
-      background: #404143;
-      border-radius: 2px;
-      padding: 4px 16px;
-      margin-left: 24px;
+      margin-right: 24px;
     }
   }
 }
@@ -123,11 +122,7 @@ export default {
 
       .blog-post__date {
         order: 2;
-      }
-
-      .blog-post__tag {
-        order: 1;
-        margin-left: 0;
+        margin-right: 0;
       }
     }
   }
