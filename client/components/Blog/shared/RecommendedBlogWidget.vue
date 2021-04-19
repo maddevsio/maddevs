@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
-    :to="link"
-    :class="{ 'latest-post': isRecentPost }"
+    :to="to || link"
+    class="blog-post__wrapper"
   >
     <div class="blog-post">
       <img
@@ -39,12 +39,13 @@
         </p>
         <div class="blog-post__meta">
           <span class="created-at">{{ formattedDate }}</span>
-          <span
-            v-if="post.tags.length"
-            class="tag"
-          >{{ post.tags[0] }}</span>
+          <PostTag
+            v-if="post.tags && post.tags.length"
+            :tag="tag || post.tags[0]"
+            class="light"
+          />
         </div>
-        <PostAuthor :document="post.data" />
+        <PostAuthor v-bind="author" />
       </div>
     </div>
   </NuxtLink>
@@ -53,6 +54,7 @@
 <script>
 import linkResolver from '@/plugins/link-resolver.js'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
+import PostTag from '@/components/Blog/shared/PostTag'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
 import textEllipsis from '@/helpers/textEllipsis'
 import formatDate from '@/helpers/formatDate'
@@ -61,17 +63,28 @@ export default {
   name: 'RecommendedBlogWidget',
   components: {
     PostAuthor,
+    PostTag,
   },
 
   props: {
-    isRecentPost: {
-      type: Boolean,
-      default: () => false,
-    },
-
     post: {
       type: Object,
       required: true,
+    },
+
+    to: {
+      type: String,
+      default: '',
+    },
+
+    author: {
+      type: Object,
+      default: null,
+    },
+
+    tag: {
+      type: String,
+      default: null,
     },
   },
 
@@ -106,8 +119,10 @@ export default {
   // Refresh class names for image when post has been updated
   watch: {
     post() {
-      this.$refs.recommendedImage.classList.remove('img_lazy-fade')
-      this.$refs.recommendedImage.classList.add('img_lazy')
+      if (this.$refs.recommendedImage) {
+        this.$refs.recommendedImage.classList.remove('img_lazy-fade')
+        this.$refs.recommendedImage.classList.add('img_lazy')
+      }
     },
   },
 }
@@ -115,30 +130,26 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../../assets/styles/_vars';
-
 .blog-post {
   color: $text-color--black;
-  text-decoration: none;
-
   p {
     margin-top: 5px;
   }
-
   p,
   span {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     opacity: 0.8;
   }
-
   span {
     letter-spacing: -0.02em;
   }
-
   a {
     text-decoration: none;
   }
-
+  &__wrapper {
+    text-decoration: none;
+  }
   &__image {
     display: block;
     width: 100%;
@@ -146,12 +157,10 @@ export default {
     height: auto;
     margin-bottom: 16px;
   }
-
   &__featured-image {
     max-width: 100%;
     height: auto;
   }
-
   &__title {
     font-size: 21px;
     line-height: 130%;
@@ -195,7 +204,6 @@ export default {
       }
     }
   }
-
   &__paragraph {
     font-size: 16px;
     line-height: 166%;
@@ -203,7 +211,6 @@ export default {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
   }
-
   &__meta {
     display: flex;
     align-items: center;
@@ -211,12 +218,10 @@ export default {
     font-size: 13px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-
     .created-at {
       margin-right: 24px;
       color: $text-color--grey;
     }
-
     .tag {
       background-color: $bgcolor--silver;
       padding: 4px 16px;
