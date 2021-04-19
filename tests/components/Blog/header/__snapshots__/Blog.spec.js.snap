@@ -10,7 +10,7 @@ exports[`header Blog is a Vue instance 1`] = `
       class="blog-post__blog-title title"
     >
       
-    Three reasons why your project needs a senior developer
+    title
   
     </h1>
      
@@ -18,44 +18,14 @@ exports[`header Blog is a Vue instance 1`] = `
       class="blog-post__blog-sub-title"
     >
       
-    
+    subtitle
   
     </p>
      
     <div
       class="blog-post__post-info"
     >
-      <div
-        class="blog-post__author"
-      >
-        <img
-          alt="Tamara Mun"
-          class="blog-post__author-image img_lazy"
-          data-src="https://images.prismic.io/superpupertest/c3b0ca2f-b28b-455c-b75b-fa880ee66c82_01.jpeg?auto=compress,format"
-        />
-         
-        <div
-          class="blog-post__author-info"
-        >
-          <p
-            class="blog-post__author-name"
-          >
-            
-      Tamara Mun
-    
-          </p>
-           
-          <div
-            class="blog-post__data-of-creation"
-          >
-            <span
-              class="blog-post__author-title"
-            >
-              Delivery manager
-            </span>
-          </div>
-        </div>
-      </div>
+      <!---->
        
       <div
         class="blog-post__date-tag"
@@ -68,22 +38,31 @@ exports[`header Blog is a Vue instance 1`] = `
         
         </div>
          
-        <div
-          class="blog-post__tag"
+        <nuxtlink
+          to="/blog/tag/project-management/"
         >
-          
-          Project Management
-        
-        </div>
+          <div
+            class="post-tag dark"
+          >
+            <span
+              class="tag"
+              data-testid="test-tag"
+            >
+              
+      Project Management
+    
+            </span>
+          </div>
+        </nuxtlink>
       </div>
     </div>
      
     <img
-      alt="Why Your Project Needs a Senior Developer."
-      class="blog-post__introduction-image blog-post__introduction-image--with-background"
-      height="1086"
-      src="https://images.prismic.io/superpupertest/7d7f267a-a36f-4e21-bbd5-af537be3a022_Frame+1941.jpg?auto=compress,format"
-      width="2000"
+      alt="alt"
+      class="blog-post__introduction-image"
+      height="300"
+      src="url"
+      width="200"
     />
   </div>
 </div>

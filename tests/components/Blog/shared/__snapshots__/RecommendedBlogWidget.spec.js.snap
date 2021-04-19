@@ -3,7 +3,7 @@
 exports[`recommended blog widget component render with very long title 1`] = `
 <div>
   <nuxtlink-stub
-    class=""
+    class="blog-post__wrapper"
     classname="test"
     to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
   >
@@ -63,44 +63,26 @@ exports[`recommended blog widget component render with very long title 1`] = `
             Aug 25, 2020
           </span>
            
-          <span
-            class="tag"
+          <nuxtlink-stub
+            class="light"
+            to="/blog/tag/markup/"
           >
-            markup
-          </span>
-        </div>
-         
-        <div
-          class="blog-post__author"
-        >
-          <img
-            alt="Alisa Manakova"
-            class="blog-post__author-image img_lazy"
-            data-src="https://images.prismic.io/superpupertest/255624bf-6a97-48ff-a3b6-337434ba4d33_2_orMuDx-7_VWwpnRL1Q1rxw.jpeg?auto=compress,format"
-          />
-           
-          <div
-            class="blog-post__author-info"
-          >
-            <p
-              class="blog-post__author-name"
-            >
-              
-      Alisa Manakova
-    
-            </p>
-             
             <div
-              class="blog-post__data-of-creation"
+              class="post-tag light"
             >
               <span
-                class="blog-post__author-title"
+                class="tag"
+                data-testid="test-tag"
               >
-                Chief Strategy Officer
+                
+      markup
+    
               </span>
             </div>
-          </div>
+          </nuxtlink-stub>
         </div>
+         
+        <!---->
       </div>
     </div>
   </nuxtlink-stub>
@@ -110,7 +92,7 @@ exports[`recommended blog widget component render with very long title 1`] = `
 exports[`recommended blog widget component should render correctly with slot 1`] = `
 <div>
   <nuxtlink-stub
-    class=""
+    class="blog-post__wrapper"
     classname="test"
     to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
   >
@@ -170,44 +152,26 @@ exports[`recommended blog widget component should render correctly with slot 1`]
             Aug 25, 2020
           </span>
            
-          <span
-            class="tag"
+          <nuxtlink-stub
+            class="light"
+            to="/blog/tag/markup/"
           >
-            markup
-          </span>
-        </div>
-         
-        <div
-          class="blog-post__author"
-        >
-          <img
-            alt="Alisa Manakova"
-            class="blog-post__author-image img_lazy"
-            data-src="https://images.prismic.io/superpupertest/255624bf-6a97-48ff-a3b6-337434ba4d33_2_orMuDx-7_VWwpnRL1Q1rxw.jpeg?auto=compress,format"
-          />
-           
-          <div
-            class="blog-post__author-info"
-          >
-            <p
-              class="blog-post__author-name"
-            >
-              
-      Alisa Manakova
-    
-            </p>
-             
             <div
-              class="blog-post__data-of-creation"
+              class="post-tag light"
             >
               <span
-                class="blog-post__author-title"
+                class="tag"
+                data-testid="test-tag"
               >
-                Chief Strategy Officer
+                
+      markup
+    
               </span>
             </div>
-          </div>
+          </nuxtlink-stub>
         </div>
+         
+        <!---->
       </div>
     </div>
   </nuxtlink-stub>
