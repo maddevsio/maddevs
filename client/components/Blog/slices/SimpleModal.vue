@@ -21,6 +21,7 @@
         >
           <div
             class="modal_close"
+            data-testid="test-modal-close"
             @click="close"
           >
             <img
