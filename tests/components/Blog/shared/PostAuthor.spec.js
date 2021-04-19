@@ -28,27 +28,31 @@ describe('text slice component', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('should correct work watcher', () => {
-    const remove = jest.fn()
-    const add = jest.fn()
+  it('should correct work link method', () => {
     const callObject = {
-      $refs: {
-        authorImage: {
-          classList: {
-            remove,
-            add,
-          },
-        },
-      },
+      uid: 'uid',
     }
     const wrapper = shallowMount(PostAuthor, {
       propsData: props,
       mocks,
     })
 
-    wrapper.vm.$options.watch.document.call(callObject)
+    const result = wrapper.vm.$options.computed.link.call(callObject)
 
-    expect(remove).toHaveBeenCalledTimes(1)
-    expect(add).toHaveBeenCalledTimes(1)
+    expect(result).toBe(`/blog/author/${callObject.uid}/`)
+  })
+
+  it('should correct work shortTitle method', () => {
+    const callObject = {
+      name: 'name',
+    }
+    const wrapper = shallowMount(PostAuthor, {
+      propsData: props,
+      mocks,
+    })
+
+    const result = wrapper.vm.$options.computed.shortTitle.call(callObject)
+
+    expect(result).toBe(callObject.name)
   })
 })

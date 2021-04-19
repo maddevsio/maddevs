@@ -29,6 +29,7 @@ const store = {
     postsCategory: jest.fn(),
     postsPage: () => 2,
     homePageContent: () => homeContent.default,
+    allAuthors: jest.fn(),
   },
   actions: {
     changePostsCategory: jest.fn(),
@@ -113,40 +114,6 @@ describe('AllPostsSection component', () => {
     wrapper.vm.$options.watch.filteredPosts()
     expect(scroll).toHaveBeenCalledTimes(1)
     expect(windowsScroll).toHaveBeenCalledTimes(1)
-  })
-
-  it('correctly work postsPage watcher', () => {
-    const nextTick = jest.fn()
-    mocks.visitedPost = 'Hardware'
-    mocks.$nextTick = nextTick
-    const wrapper = shallowMount(AllPostsSection, {
-      localVue,
-      mocks,
-      stubs,
-      store,
-    })
-
-    wrapper.vm.$options.watch.postsPage.call({
-      $nextTick: nextTick,
-    })
-    expect(nextTick).toHaveBeenCalledTimes(1)
-  })
-
-  it('correctly work postsCategory watcher', () => {
-    const nextTick = jest.fn()
-    mocks.visitedPost = 'Hardware'
-    mocks.$nextTick = nextTick
-    const wrapper = shallowMount(AllPostsSection, {
-      localVue,
-      mocks,
-      stubs,
-      store,
-    })
-
-    wrapper.vm.$options.watch.postsCategory.call({
-      $nextTick: nextTick,
-    })
-    expect(nextTick).toHaveBeenCalledTimes(1)
   })
 
   it('should correct work get more posts handler', () => {

@@ -6,46 +6,15 @@ exports[`Main component should render correctly 1`] = `
     class="home"
   >
     <div
-      class="body-content"
+      class="container"
     >
       <div
-        class="featured-post container"
+        class="last-post"
       >
-        <div
-          class="row featured-post__wrapper"
-        >
-          <div
-            class="col-12 col-lg-6 featured-post__main"
-          >
-            <h1
-              class="featured-post__title background-grey animated"
-            />
-             
-            <p
-              class="featured-post__paragraph background-grey animated"
-            />
-             
-            <div
-              class="featured-post__data d-flex justify-content-between"
-            >
-              <div
-                class="featured-post__meta"
-              >
-                <span
-                  class="created-at"
-                />
-              </div>
-            </div>
-          </div>
-           
-          <div
-            class="col-12 col-lg-6 featured-post__image-wrapper"
-          >
-            <div
-              class="featured-post__image background-grey animated"
-            />
-          </div>
-        </div>
+        <featuredpost-stub
+          post="[object Object]"
+          title-tag="h1"
+        />
       </div>
     </div>
      
@@ -61,57 +30,7 @@ exports[`Main component should render correctly 1`] = `
       </div>
     </div>
      
-    <section
-      class="customer-university"
-    >
-      <div
-        class="container"
-      >
-        <div
-          class="customer-university__title"
-        >
-          
-      Customer
-          <br />
-           
-          <span>
-            University
-          </span>
-        </div>
-         
-        <div
-          class="customer-university__wrapper"
-        >
-          <div
-            class="customer-university__featured-post"
-          >
-            <!---->
-          </div>
-           
-          <div
-            class="customer-university__list"
-          >
-            <div
-              class="customer-university__list-wrapper"
-            >
-              <span
-                class="customer-university__list-title"
-              >
-                Series of articles:
-              </span>
-               
-              <div />
-               
-              <div
-                class="customer-university__list-show-more-wrapper"
-              >
-                <!---->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <customeruniversitysection-stub />
      
     <div
       class="filtered-posts"
@@ -337,7 +256,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/software-architecture-design/"
               >
@@ -398,44 +317,26 @@ exports[`Main component should render correctly 1`] = `
                         Dec 17, 2020
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/backend-development/"
                       >
-                        Backend development
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/002ba1c8-1a49-4213-bdd0-84764643fcf0_Nuradil.jpg?auto=compress,format&rect=451,0,3277,3277&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Senior full-stack developer
+                            
+      Backend development
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>
@@ -450,7 +351,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/how-to-make-three-paid-eta-services-one-free/"
               >
@@ -511,44 +412,26 @@ exports[`Main component should render correctly 1`] = `
                         Dec 17, 2020
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/mobile-development/"
                       >
-                        Mobile Development
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/c30a343a-6be0-4fdf-8278-423440811478_Meder+Akkozov.jpg?auto=compress,format&rect=0,37,4016,4016&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Backend developer
+                            
+      Mobile Development
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>
@@ -563,7 +446,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/web-app-deploy-to-glitch/"
               >
@@ -624,44 +507,26 @@ exports[`Main component should render correctly 1`] = `
                         Dec 01, 2020
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/frontend-development/"
                       >
-                        Frontend development
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/a4638fd8-2510-44f4-b5a7-471836923dca_1_eVhokCn81jDjA64R5plVuA.png?auto=compress,format&rect=0,0,262,262&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Full stack developer
+                            
+      Frontend development
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>
@@ -676,7 +541,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/effective-refactoring-of-heavy-database-interface/"
               >
@@ -737,44 +602,26 @@ exports[`Main component should render correctly 1`] = `
                         Jul 14, 2020
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/backend-development/"
                       >
-                        Backend development
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/d40d9f3c-cc9d-42b8-a10b-61b6a1fb1220_Anatoliy+Fedorenko.jpg?auto=compress,format&rect=307,0,3076,3076&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Backend developer
+                            
+      Backend development
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>
@@ -789,7 +636,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/running-geo-django-on-elasticbeanstalk/"
               >
@@ -850,44 +697,26 @@ exports[`Main component should render correctly 1`] = `
                         Jun 11, 2020
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/backend-development/"
                       >
-                        Backend development
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/a812fb91-3f18-46ef-9442-c118b6b474b3_Andrew.jpeg?auto=compress,format&rect=0,0,553,553&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Chief technology officer
+                            
+      Backend development
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>
@@ -902,7 +731,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/guaranteed-delivery-with-grpc-streams/"
               >
@@ -963,44 +792,26 @@ exports[`Main component should render correctly 1`] = `
                         Nov 26, 2019
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/backend-development/"
                       >
-                        Backend development
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/a812fb91-3f18-46ef-9442-c118b6b474b3_Andrew.jpeg?auto=compress,format&rect=0,0,553,553&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Chief technology officer
+                            
+      Backend development
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>
@@ -1015,7 +826,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/how-to-start-with-logging-in-golang-projects-part-1/"
               >
@@ -1076,44 +887,26 @@ exports[`Main component should render correctly 1`] = `
                         Nov 05, 2019
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/backend-development/"
                       >
-                        Backend development
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/d40d9f3c-cc9d-42b8-a10b-61b6a1fb1220_Anatoliy+Fedorenko.jpg?auto=compress,format&rect=355,0,3076,3076&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Backend developer
+                            
+      Backend development
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>
@@ -1128,7 +921,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/how-to-start-developing-for-raspberry-pi-with-qt/"
               >
@@ -1189,44 +982,26 @@ exports[`Main component should render correctly 1`] = `
                         Oct 21, 2019
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/hardware/"
                       >
-                        Hardware
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/c006a713-498b-4e39-821d-b32e5a2482d6_Kirill+Avdeev.jpg?auto=compress,format&rect=0,133,3355,3355&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Backend developer
+                            
+      Hardware
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>
@@ -1241,7 +1016,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/a-bit-about-event-delegation-in-pure-js/"
               >
@@ -1302,44 +1077,26 @@ exports[`Main component should render correctly 1`] = `
                         Oct 10, 2019
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/frontend-development/"
                       >
-                        Frontend development
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/a4638fd8-2510-44f4-b5a7-471836923dca_1_eVhokCn81jDjA64R5plVuA.png?auto=compress,format&rect=0,0,262,262&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Full stack developer
+                            
+      Frontend development
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>
@@ -1354,7 +1111,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/a-bit-about-event-delegation-in-react/"
               >
@@ -1415,44 +1172,26 @@ exports[`Main component should render correctly 1`] = `
                         Sep 30, 2019
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/frontend-development/"
                       >
-                        Frontend development
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/a4638fd8-2510-44f4-b5a7-471836923dca_1_eVhokCn81jDjA64R5plVuA.png?auto=compress,format&rect=0,0,262,262&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Full stack developer
+                            
+      Frontend development
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>
@@ -1467,7 +1206,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/best-ci-for-js-projects-with-puppeteer-tests/"
               >
@@ -1528,44 +1267,26 @@ exports[`Main component should render correctly 1`] = `
                         Jul 19, 2019
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/backend-development/"
                       >
-                        Backend development
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/c4ec3c11-04d9-4e0d-b1f1-50f00883a0af_1_eVhokCn81jDjA64R5plVuA.png?auto=compress,format&rect=0,0,262,262&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Full stack developer
+                            
+      Backend development
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>
@@ -1580,7 +1301,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/mad-fake-slack/"
               >
@@ -1641,44 +1362,26 @@ exports[`Main component should render correctly 1`] = `
                         Jul 03, 2019
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/backend-development/"
                       >
-                        Backend development
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/c4ec3c11-04d9-4e0d-b1f1-50f00883a0af_1_eVhokCn81jDjA64R5plVuA.png?auto=compress,format&rect=0,0,262,262&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Full stack developer
+                            
+      Backend development
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>
@@ -1693,7 +1396,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/comedian-slack-standup-bot/"
               >
@@ -1754,44 +1457,26 @@ exports[`Main component should render correctly 1`] = `
                         Oct 01, 2018
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/software-development/"
                       >
-                        Software Development 
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/d40d9f3c-cc9d-42b8-a10b-61b6a1fb1220_Anatoliy+Fedorenko.jpg?auto=compress,format&rect=355,0,3076,3076&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Backend developer
+                            
+      Software Development 
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>
@@ -1806,7 +1491,7 @@ exports[`Main component should render correctly 1`] = `
               data-testid="test-single-post"
             >
               <nuxtlink-stub
-                class=""
+                class="blog-post__wrapper"
                 class-name="filtered-post"
                 to="/blog/best-architecture-for-the-react-project/"
               >
@@ -1867,44 +1552,26 @@ exports[`Main component should render correctly 1`] = `
                         Jul 06, 2018
                       </span>
                        
-                      <span
-                        class="tag"
+                      <nuxtlink-stub
+                        class="light"
+                        to="/blog/tag/backend-development/"
                       >
-                        Backend development
-                      </span>
-                    </div>
-                     
-                    <div
-                      class="blog-post__author"
-                    >
-                      <img
-                        alt="text"
-                        class="blog-post__author-image img_lazy"
-                        data-src="https://images.prismic.io/superpupertest/a46734d2-35f8-4508-a7e3-7c8c39160979_1_eVhokCn81jDjA64R5plVuA.png?auto=compress,format&rect=0,0,96,96&w=40&h=40"
-                      />
-                       
-                      <div
-                        class="blog-post__author-info"
-                      >
-                        <p
-                          class="blog-post__author-name"
-                        >
-                          
-      text
-    
-                        </p>
-                         
                         <div
-                          class="blog-post__data-of-creation"
+                          class="post-tag light"
                         >
                           <span
-                            class="blog-post__author-title"
+                            class="tag"
+                            data-testid="test-tag"
                           >
-                            Full stack developer
+                            
+      Backend development
+    
                           </span>
                         </div>
-                      </div>
+                      </nuxtlink-stub>
                     </div>
+                     
+                    <!---->
                   </div>
                 </div>
               </nuxtlink-stub>

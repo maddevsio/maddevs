@@ -16,22 +16,30 @@ const mocks = {
       getSingle: () => ({ data: {} }),
     },
   },
+  getBlogAuthors: jest.fn(),
 }
 
-const stubs = ['NuxtLink']
+const stubs = ['NuxtLink', 'FeaturedPost', 'CustomerUniversitySection']
 
 const store = {
   getters: {
     filteredPosts: () => allPosts,
+    featuredPost: () => allPosts[0],
     allPosts: () => allPosts,
+    allAuthors: () => [{}],
     postsLoaded: () => true,
     postsCategory: jest.fn(),
+    recentPosts: jest.fn(),
+    featuredCUPost: jest.fn(),
+    customerContent: () => {},
     postsPage: () => 2,
     homePageContent: () => homeContent.default,
   },
   actions: {
     getHomePageContent: jest.fn(),
     getBlogPosts: () => jest.fn(),
+    getCustomerUniversityContent: jest.fn(),
+    getBlogAuthors: jest.fn(),
   },
 }
 
