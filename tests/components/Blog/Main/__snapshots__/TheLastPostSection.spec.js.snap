@@ -3,105 +3,85 @@
 exports[`TheLastPostSection component should render correctly 1`] = `
 <div>
   <div
-    class="body-content"
+    class="container"
   >
-    <nuxtlink-stub
-      class="featured-post container"
-      to="/blog/software-architecture-design/"
+    <div
+      class="last-post"
     >
-      <div
-        class="row featured-post__wrapper"
+      <nuxtlink-stub
+        class="featured-post dark"
+        to="/blog/software-architecture-design/"
       >
         <div
-          class="col-12 col-lg-6 featured-post__main"
+          class="row featured-post__wrapper"
         >
-          <h1
-            class="featured-post__title"
+          <div
+            class="col-12 col-lg-6 featured-post__main"
           >
-            
+            <h1
+              class="featured-post__title"
+            >
+              
         text
       
-          </h1>
-           
-          <p
-            class="featured-post__paragraph"
-          >
-            
+            </h1>
+             
+            <p
+              class="featured-post__paragraph"
+            >
+              
         Hello, everyone!Today, I would like to introduce you to the world of application design.Designing applications can be called a multidisciplinary task, and it includes:I want to consider the question...
       
-          </p>
-           
-          <div
-            class="featured-post__data d-flex justify-content-between"
-          >
-            <div
-              class="blog-post__author"
-            >
-              <img
-                alt="text"
-                class="blog-post__author-image img_lazy"
-                data-src="https://images.prismic.io/superpupertest/002ba1c8-1a49-4213-bdd0-84764643fcf0_Nuradil.jpg?auto=compress,format&rect=451,0,3277,3277&w=40&h=40"
-              />
-               
-              <div
-                class="blog-post__author-info"
-              >
-                <p
-                  class="blog-post__author-name"
-                >
-                  
-      text
-    
-                </p>
-                 
-                <div
-                  class="blog-post__data-of-creation"
-                >
-                  <span
-                    class="blog-post__author-title"
-                  >
-                    Senior full-stack developer
-                  </span>
-                </div>
-              </div>
-            </div>
+            </p>
              
             <div
-              class="featured-post__meta"
+              class="featured-post__data d-flex justify-content-between"
             >
+              <!---->
+               
               <div
-                class="post-tag dark"
+                class="featured-post__meta"
               >
-                <span
-                  class="tag"
-                  data-testid="test-tag"
+                <nuxtlink-stub
+                  to="/blog/tag/backend-development/"
                 >
-                  Backend development
+                  <div
+                    class="post-tag dark"
+                  >
+                    <span
+                      class="tag"
+                      data-testid="test-tag"
+                    >
+                      
+      Backend development
+    
+                    </span>
+                  </div>
+                </nuxtlink-stub>
+                 
+                <span
+                  class="created-at"
+                >
+                  Dec 17, 2020
                 </span>
               </div>
-               
-              <span
-                class="created-at"
-              >
-                Dec 17, 2020
-              </span>
             </div>
           </div>
+           
+          <div
+            class="col-12 col-lg-6 featured-post__image-wrapper"
+          >
+            <img
+              alt="Application Design Proccess."
+              class="featured-post__image img_lazy"
+              data-src="https://images.prismic.io/superpupertest/93d447b6-2865-4da7-ad2c-5cd07c98d4e3_8.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
+              height="533"
+              width="983"
+            />
+          </div>
         </div>
-         
-        <div
-          class="col-12 col-lg-6 featured-post__image-wrapper"
-        >
-          <img
-            alt="Application Design Proccess."
-            class="featured-post__image img_lazy"
-            data-src="https://images.prismic.io/superpupertest/93d447b6-2865-4da7-ad2c-5cd07c98d4e3_8.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
-            height="533"
-            width="983"
-          />
-        </div>
-      </div>
-    </nuxtlink-stub>
+      </nuxtlink-stub>
+    </div>
   </div>
 </div>
 `;
