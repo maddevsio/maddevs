@@ -121,7 +121,7 @@ export default {
 
   .tag-posts {
     background-color: $bgcolor--white-primary;
-    padding-top: 60px;
+    padding: 60px 0;
     &__featured-post {
       margin-bottom: 137px;
       &--mb-0 {

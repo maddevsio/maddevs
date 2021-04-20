@@ -112,7 +112,7 @@ export default {
 
   .author-posts {
     background-color: $bgcolor--white-primary;
-    padding-top: 60px;
+    padding: 60px 0;
     &__wrapper {
       margin: 0 -10px;
     }
