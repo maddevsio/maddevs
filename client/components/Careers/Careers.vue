@@ -244,7 +244,6 @@ export default {
 
     async submitForm() {
       if (this.$v.validationGroup.$invalid) return
-
       const emailToSent = await this.buildEmail()
       this.$store.dispatch('sendEmail', emailToSent)
       this.isShowSuccessModal = true

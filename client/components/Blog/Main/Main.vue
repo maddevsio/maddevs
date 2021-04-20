@@ -40,26 +40,25 @@ export default {
     ]),
   },
 
-  watch: {
-    allPosts() {
-      // Add lazy loading for async posts
-      this.$nextTick(() => initializeLazyLoad())
-    },
-  },
-
   created() {
     this.getContent()
   },
 
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
+  },
+
   methods: {
-    ...mapActions(['getHomePageContent', 'getBlogPosts']),
+    ...mapActions(['getHomePageContent', 'getBlogPosts', 'getBlogAuthors', 'getCustomerUniversityContent']),
 
     getContent() {
       // Query to get blog home content
       this.getHomePageContent()
+      this.getCustomerUniversityContent()
 
       // Query to get posts content to preview
       this.getBlogPosts()
+      this.getBlogAuthors()
     },
   },
 }

@@ -1,47 +1,72 @@
 <template>
-  <div class="blog-post__author">
-    <img
-      v-if="document.author_image.url !== undefined"
-      ref="authorImage"
-      :data-src="document.author_image.url"
-      :alt="$prismic.asText(document.author)"
-      class="blog-post__author-image img_lazy"
-    >
-    <div
-      v-else
-      class="blog-post__none-image"
-    />
-    <div class="blog-post__author-info">
-      <p class="blog-post__author-name">
-        {{ shortTitle }}
-      </p>
-      <div class="blog-post__data-of-creation">
-        <span class="blog-post__author-title">{{ document.author_title }}</span>
+  <NuxtLink
+    v-if="name"
+    :to="link"
+  >
+    <div class="blog-post__author">
+      <img
+        v-if="thumbnailImage.url !== undefined"
+        ref="authorImage"
+        :data-src="thumbnailImage.url"
+        :alt="thumbnailImage.alt"
+        class="blog-post__author-image img_lazy"
+      >
+      <div
+        v-else
+        class="blog-post__none-image"
+        :class="theme"
+      />
+      <div class="blog-post__author-info">
+        <p class="blog-post__author-name">
+          {{ shortTitle }}
+        </p>
+        <div class="blog-post__data-of-creation">
+          <span class="blog-post__author-title">{{ position }}</span>
+        </div>
       </div>
     </div>
-  </div>
+  </NuxtLink>
 </template>
 
 <script>
+import linkResolver from '@/plugins/link-resolver'
+
 export default {
   name: 'PostAuthor',
   props: {
-    document: {
+    uid: {
+      type: String,
+      default: '',
+    },
+
+    name: {
+      type: String,
+      default: '',
+    },
+
+    position: {
+      type: String,
+      default: '',
+    },
+
+    thumbnailImage: {
       type: Object,
-      required: true,
+      default: () => ({}),
+    },
+
+    theme: {
+      type: String,
+      default: 'dark',
     },
   },
 
   computed: {
-    shortTitle() {
-      return this.$prismic.asText(this.document.author).substr(0, 100)
+    link() {
+      return linkResolver({ type: 'author', uid: this.uid })
     },
-  },
 
-  watch: {
-    document() {
-      this.$refs.authorImage.classList.remove('img_lazy-fade')
-      this.$refs.authorImage.classList.add('img_lazy')
+    shortTitle() {
+      return this.name.substr(0, 100)
     },
   },
 }
@@ -53,6 +78,7 @@ export default {
   &__author {
     display: flex;
     align-items: center;
+    margin-right: 24px;
   }
 
   &__author-info {
@@ -89,7 +115,12 @@ export default {
   }
 
   &__none-image {
-    background-color: $bgcolor--black-light;
+    &.dark {
+      background-color: $bgcolor--black-light;
+    }
+    &.light {
+      background-color: $bgcolor--silver;
+    }
   }
 
   &__author-title {

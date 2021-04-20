@@ -2,7 +2,7 @@ import SystemOverview from '@/components/Cases/nambafood/SystemOverview.vue'
 import { render, screen } from '@testing-library/vue'
 
 const mocks = {
-  getMediaFromS3: () => 'img.jpg',
+  $getMediaFromS3: () => 'img.jpg',
 }
 
 describe('SystemOverview component', () => {

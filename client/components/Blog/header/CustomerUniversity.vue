@@ -1,9 +1,9 @@
 <template>
   <CommonHeader
-    :title="$prismic.asText(document.title)"
-    :subtitle="$prismic.asText(document.subtitle)"
-    :cover-image-url="document.featured_image.url"
-    :cover-image-alt-text="document.featured_image.alt"
+    :title="title"
+    :subtitle="subtitle"
+    :cover-image-url="featuredImage.url"
+    :cover-image-alt-text="featuredImage.alt"
   >
     <template #beforeTitle>
       <div class="row cluster-navigation">
@@ -75,9 +75,24 @@ export default {
   },
 
   props: {
-    document: {
-      type: Object,
+    id: {
+      type: String,
       required: true,
+    },
+
+    title: {
+      type: String,
+      default: '',
+    },
+
+    subtitle: {
+      type: String,
+      default: '',
+    },
+
+    featuredImage: {
+      type: Object,
+      default: () => {},
     },
 
     postList: {
@@ -88,11 +103,6 @@ export default {
     clusterName: {
       type: String,
       default: () => '',
-    },
-
-    id: {
-      type: String,
-      required: true,
     },
   },
 

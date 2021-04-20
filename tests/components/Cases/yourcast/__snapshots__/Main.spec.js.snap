@@ -218,18 +218,17 @@ exports[`Main component should render correctly 1`] = `
               >
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="449"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="735"
                 />
               </picture>
@@ -241,18 +240,17 @@ exports[`Main component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="OTT-like Online Video Streaming Platform on MacBook Pro Laptop."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="449"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="735"
                 />
               </picture>
@@ -281,18 +279,17 @@ exports[`Main component should render correctly 1`] = `
               >
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="627"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="312"
                 />
               </picture>
@@ -304,18 +301,17 @@ exports[`Main component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="OTT-like Online Video Streaming Platform on IPhone X Smartphone."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="627"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="312"
                 />
               </picture>
@@ -344,18 +340,17 @@ exports[`Main component should render correctly 1`] = `
               >
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="OTT-like Online Video Streaming Platform on IPad Tablet."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="374"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="518"
                 />
               </picture>
@@ -367,18 +362,17 @@ exports[`Main component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  data-srcset="img.jpg ,img.jpg 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="OTT-like Online Video Streaming Platform on IPad Tablet."
-                  class="image"
+                  class="image img_lazy"
+                  data-src="img.jpg"
+                  data-srcset="img.jpg 2x"
                   data-testid="test-picture-img"
                   height="374"
-                  loading=""
-                  src="img.jpg"
-                  srcset="img.jpg 2x"
                   width="518"
                 />
               </picture>
@@ -3545,18 +3539,17 @@ exports[`Main component should render correctly 1`] = `
         <picture>
           <source
             class="image"
-            srcset="img.jpg ,img.jpg 2x"
+            data-srcset="img.jpg ,img.jpg 2x"
             type="image/webp"
           />
            
           <img
             alt="OTT-like Online Video Streaming Platform App."
-            class="image"
+            class="image img_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg 2x"
             data-testid="test-picture-img"
             height="609.19"
-            loading=""
-            src="img.jpg"
-            srcset="img.jpg 2x"
             width="305"
           />
         </picture>
@@ -3618,18 +3611,17 @@ exports[`Main component should render correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="img.jpg ,img.jpg 2x"
+              data-srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
             <img
               alt="Rinat Shcherba"
-              class="image grey-background"
+              class="image img_lazy grey-background"
+              data-src="img.jpg"
+              data-srcset="img.jpg 2x"
               data-testid="test-picture-img"
               height="50"
-              loading="lazy"
-              src="img.jpg"
-              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -3662,18 +3654,17 @@ exports[`Main component should render correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="img.jpg ,img.jpg 2x"
+              data-srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
             <img
               alt="Daniyar Chambylov"
-              class="image grey-background"
+              class="image img_lazy grey-background"
+              data-src="img.jpg"
+              data-srcset="img.jpg 2x"
               data-testid="test-picture-img"
               height="50"
-              loading="lazy"
-              src="img.jpg"
-              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -3706,18 +3697,17 @@ exports[`Main component should render correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="img.jpg ,img.jpg 2x"
+              data-srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
             <img
               alt="Vladimir Shebarshov"
-              class="image grey-background"
+              class="image img_lazy grey-background"
+              data-src="img.jpg"
+              data-srcset="img.jpg 2x"
               data-testid="test-picture-img"
               height="50"
-              loading="lazy"
-              src="img.jpg"
-              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -3750,18 +3740,17 @@ exports[`Main component should render correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="img.jpg ,img.jpg 2x"
+              data-srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
             <img
               alt="Andrew Minkin"
-              class="image grey-background"
+              class="image img_lazy grey-background"
+              data-src="img.jpg"
+              data-srcset="img.jpg 2x"
               data-testid="test-picture-img"
               height="50"
-              loading="lazy"
-              src="img.jpg"
-              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -3794,18 +3783,17 @@ exports[`Main component should render correctly 1`] = `
           >
             <source
               class="image grey-background"
-              srcset="img.jpg ,img.jpg 2x"
+              data-srcset="img.jpg ,img.jpg 2x"
               type="image/webp"
             />
              
             <img
               alt="Erik Sultanaliev"
-              class="image grey-background"
+              class="image img_lazy grey-background"
+              data-src="img.jpg"
+              data-srcset="img.jpg 2x"
               data-testid="test-picture-img"
               height="50"
-              loading="lazy"
-              src="img.jpg"
-              srcset="img.jpg 2x"
               width="50"
             />
           </picture>
@@ -3851,18 +3839,17 @@ exports[`Main component should render correctly 1`] = `
             <picture>
               <source
                 class="image"
-                srcset="img.jpg ,img.jpg 2x"
+                data-srcset="img.jpg ,img.jpg 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Andrew Minkin"
-                class="image"
+                class="image img_lazy"
+                data-src="img.jpg"
+                data-srcset="img.jpg 2x"
                 data-testid="test-picture-img"
                 height="0"
-                loading="lazy"
-                src="img.jpg"
-                srcset="img.jpg 2x"
                 width="0"
               />
             </picture>

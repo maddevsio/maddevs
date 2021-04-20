@@ -1,25 +1,24 @@
 <template>
   <CommonHeader
-    :title="$prismic.asText(document.title)"
-    :subtitle="$prismic.asText(document.subtitle)"
-    :cover-image-url="document.featured_image.url"
-    :cover-image-alt-text="document.featured_image.alt"
-    :cover-image-width="document.featured_image.dimensions.width"
-    :cover-image-height="document.featured_image.dimensions.height"
+    :title="title"
+    :subtitle="subtitle"
+    :cover-image-url="featuredImage.url"
+    :cover-image-alt-text="featuredImage.alt"
+    :cover-image-width="featuredImage.dimensions.width"
+    :cover-image-height="featuredImage.dimensions.height"
   >
     <template #afterTitle>
       <div class="blog-post__post-info">
-        <PostAuthor :document="document" />
+        <PostAuthor v-bind="blogAuthor" />
         <div class="blog-post__date-tag">
           <div class="blog-post__date">
-            {{ formattedDate }}
+            {{ date }}
           </div>
-          <div
+          <PostTag
             v-if="tags.length"
-            class="blog-post__tag"
-          >
-            {{ tags[0] }}
-          </div>
+            :tag="tags[0]"
+            theme="dark"
+          />
         </div>
       </div>
     </template>
@@ -27,20 +26,33 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+import PostTag from '@/components/Blog/shared/PostTag'
 import PostAuthor from '@/components/Blog/shared/PostAuthor'
 import CommonHeader from '@/components/Blog/header/Common'
 
 export default {
   name: 'Blog',
   components: {
+    PostTag,
     PostAuthor,
     CommonHeader,
   },
 
   props: {
-    document: {
+    title: {
+      type: String,
+      default: '',
+    },
+
+    subtitle: {
+      type: String,
+      default: '',
+    },
+
+    featuredImage: {
       type: Object,
-      required: true,
+      default: () => {},
     },
 
     tags: {
@@ -48,10 +60,14 @@ export default {
       required: true,
     },
 
-    formattedDate: {
+    date: {
       type: String,
       required: true,
     },
+  },
+
+  computed: {
+    ...mapGetters(['blogAuthor', 'blogTag']),
   },
 }
 </script>
@@ -66,6 +82,11 @@ export default {
     align-items: center;
     margin-top: 7px;
     margin-bottom: 43px;
+    text-decoration: none;
+
+    a {
+      text-decoration: none;
+    }
 
     /deep/ .blog-post__author-image {
       width: 30px;
@@ -83,14 +104,7 @@ export default {
 
     .blog-post__date {
       color: $text-color--grey-pale;
-    }
-
-    .blog-post__tag {
-      color: $text-color--white-transparent;
-      background: #404143;
-      border-radius: 2px;
-      padding: 4px 16px;
-      margin-left: 24px;
+      margin-right: 24px;
     }
   }
 }
@@ -108,11 +122,7 @@ export default {
 
       .blog-post__date {
         order: 2;
-      }
-
-      .blog-post__tag {
-        order: 1;
-        margin-left: 0;
+        margin-right: 0;
       }
     }
   }

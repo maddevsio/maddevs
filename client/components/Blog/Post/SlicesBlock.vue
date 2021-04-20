@@ -4,6 +4,7 @@
     <section
       v-for="(slice, index) in slices"
       :key="'slice-' + index"
+      data-testid="test-slice-post"
       :class="slice.slice_type === 'quote' ? 'quote' : ''"
     >
       <!-- Text slice template -->

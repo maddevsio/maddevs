@@ -32,7 +32,7 @@
     <section class="container_full background-color-silver">
       <section class="container_middle">
         <img
-          :src="getMediaFromS3('/images/Cases/sjmc/gif/watchpax.gif')"
+          :src="$getMediaFromS3('/images/Cases/sjmc/gif/watchpax.gif')"
           class="case_gif"
           alt="WATCHOUT - Multi-Display Production and Presentation Software."
         >
@@ -51,8 +51,8 @@
     <section class="container_full background-color-silver">
       <section class="container_middle">
         <img
-          :src="getMediaFromS3('/images/Cases/sjmc/gif/brix.gif')"
-          class="case_gif"
+          :data-src="$getMediaFromS3('/images/Cases/sjmc/gif/brix.gif')"
+          class="case_gif media_lazy"
           alt="Ultra-Compact Multimedia Computer - BRIX."
         >
       </section>
@@ -73,7 +73,7 @@
     <section class="container_full case_sec-container background-color-black-primary">
       <img
         v-if="isIphone"
-        :src="getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')"
+        :src="$getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')"
         class="case_img-ios-only"
       >
       <HardwareVideo v-else />

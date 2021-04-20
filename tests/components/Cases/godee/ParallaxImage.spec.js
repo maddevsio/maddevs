@@ -2,7 +2,7 @@ import ParallaxImage from '@/components/Cases/godee/ParallaxImage.vue'
 import { render, screen } from '@testing-library/vue'
 
 const mocks = {
-  getMediaFromS3: () => 'img.jpg',
+  $getMediaFromS3: () => 'img.jpg',
 }
 
 describe('ParallaxImage component', () => {
@@ -19,6 +19,6 @@ describe('ParallaxImage component', () => {
       mocks,
     })
 
-    expect(screen.getByTestId('test-case_parallax-image').style.background).toBe(`url(${mocks.getMediaFromS3()})`)
+    expect(screen.getByTestId('test-case_parallax-image').style.background).toBe(`url(${mocks.$getMediaFromS3()})`)
   })
 })

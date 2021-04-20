@@ -5,6 +5,7 @@ exports[`slice block component should render correctly 1`] = `
   <section>
     <section
       class=""
+      data-testid="test-slice-post"
     >
       <div
         class="post-part single"
@@ -17,6 +18,7 @@ exports[`slice block component should render correctly 1`] = `
     </section>
     <section
       class="quote"
+      data-testid="test-slice-post"
     >
       <div
         class="post-part single"
@@ -48,6 +50,7 @@ exports[`slice block component should render correctly 1`] = `
     </section>
     <section
       class=""
+      data-testid="test-slice-post"
     >
       <div
         class="post-part single"
@@ -81,6 +84,7 @@ exports[`slice block component should render correctly 1`] = `
     </section>
     <section
       class=""
+      data-testid="test-slice-post"
     >
       <div>
         <div
@@ -111,6 +115,7 @@ exports[`slice block component should render correctly 1`] = `
     </section>
     <section
       class=""
+      data-testid="test-slice-post"
     >
       <div>
         <div
@@ -132,6 +137,7 @@ exports[`slice block component should render correctly 1`] = `
     </section>
     <section
       class=""
+      data-testid="test-slice-post"
     >
       <ol
         class="case-list_numbered"

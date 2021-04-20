@@ -2,7 +2,7 @@ import Grafana from '@/components/Cases/nambafood/Grafana.vue'
 import { render, screen } from '@testing-library/vue'
 
 const mocks = {
-  getMediaFromS3: () => 'img.jpg',
+  $getMediaFromS3: () => 'img.jpg',
 }
 
 describe('Grafana component', () => {

@@ -17,6 +17,7 @@
                   :id="category.title"
                   :value="category.title"
                   :checked="postsCategory === category.title"
+                  data-testid="test-post-input"
                   type="radio"
                   name="Tag"
                   class="radio-input"
@@ -36,14 +37,18 @@
         class="filtered-posts__wrapper"
       >
         <section
-          v-for="(post, i) in filteredPostsToShow"
-          :key="i"
+          v-for="(post) in filteredPostsToShow"
+          :key="post.id"
           :post="post"
           class="filtered-posts__single-post"
         >
-          <div class="single-post__wrapper">
+          <div
+            data-testid="test-single-post"
+            class="single-post__wrapper"
+          >
             <RecommendedBlogWidget
               :post="post"
+              :author="findAuthor(post.data.post_author.id, allAuthors)"
               class-name="filtered-post"
             />
           </div>
@@ -53,12 +58,7 @@
         v-if="totalPages > postsPage"
         class="load-more-button__wrapper"
       >
-        <button
-          class="load-more-button"
-          @click="getMorePosts"
-        >
-          See more
-        </button>
+        <LoadMoreButton @click="getMorePosts" />
       </div>
     </div>
   </div>
@@ -68,14 +68,20 @@
 import { mapActions, mapGetters } from 'vuex'
 import Simplebar from 'simplebar-vue'
 import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
+import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
 import initializeLazyLoad from '@/helpers/lazyLoad'
+
+import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
 
 export default {
   name: 'AllPostsSection',
   components: {
     Simplebar,
     RecommendedBlogWidget,
+    LoadMoreButton,
   },
+
+  mixins: [findPostAuthorMixin],
 
   data() {
     return {
@@ -87,6 +93,7 @@ export default {
     ...mapGetters([
       'homePageContent',
       'allPosts',
+      'allAuthors',
       'filteredPosts',
       'postsCategory',
       'postsPage',
@@ -115,16 +122,10 @@ export default {
         window.scrollTo(0, window.scrollY - 120) // scroll for distance between the post and the top of the screen
       }
     },
+  },
 
-    // Set lazy when new posts has been loaded after click on see more button
-    postsPage() {
-      this.$nextTick(() => initializeLazyLoad())
-    },
-
-    postsCategory() {
-      // Refresh recommended blog posts and author images
-      this.$nextTick(() => initializeLazyLoad())
-    },
+  updated() {
+    this.$nextTick(() => initializeLazyLoad())
   },
 
   methods: {
@@ -190,6 +191,7 @@ export default {
 
     .single-post__wrapper {
       padding: 0 10px;
+      height: 100%;
     }
   }
 }
@@ -251,28 +253,16 @@ export default {
   border-color: #cc4247;
 }
 
-.load-more-button {
-  padding: 12px 156px;
-  border: 1px solid $border-color--black;
-  font-size: 16px;
-  line-height: 26px;
-  background-color: transparent;
+.load-more-button__wrapper {
+  text-align: center;
   margin-top: 36px;
   margin-bottom: 53px;
-  cursor: pointer;
-
-  &:hover {
-    color: $text-color--red;
-  }
-
-  &__wrapper {
-    text-align: center;
-  }
 }
 
 .single-post {
   &__wrapper {
     /deep/ .blog-post {
+      height: 100%;
       &__author-name {
         color: $text-color--black;
       }
@@ -352,7 +342,7 @@ export default {
         }
 
         &__image {
-          width: 124px;
+          width: 235px;
           flex-shrink: 0;
           margin-right: 16px;
         }
@@ -404,21 +394,41 @@ export default {
     }
   }
 
-  .load-more-button {
-    padding: 12px 0;
+  .load-more-button__wrapper {
     margin-top: 11px;
     margin-bottom: 16px;
-    width: 100%;
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 600px) {
   .filtered-posts {
     &__wrapper {
       /deep/ .blog-post {
         &__image {
-          width: 120px;
+          width: 180px;
           margin-right: 10px;
+        }
+        &__title {
+          -webkit-line-clamp: 2;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .filtered-posts {
+    &__wrapper {
+      /deep/ .blog-post {
+        &__image {
+          width: 145px;
+          margin-right: 10px;
+          object-fit: cover;
+          object-position: -2px;
+          height: 100%;
+        }
+        &__title {
+          -webkit-line-clamp: 2;
         }
       }
     }

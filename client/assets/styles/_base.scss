@@ -55,6 +55,14 @@ main {
   transition: opacity 0.3s ease-in;
 }
 
+.media_lazy {
+  opacity: 0;
+}
+
+.media_lazy-fade {
+  transition: opacity 0.3s ease-in;
+}
+
 .scrollDisabled {
   width: 100%;
   position: fixed;

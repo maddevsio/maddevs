@@ -18,7 +18,7 @@ const props = {
 }
 
 const mocks = {
-  getMediaFromS3: img => img,
+  $getMediaFromS3: img => img,
 }
 
 describe('CaseHeader component', () => {

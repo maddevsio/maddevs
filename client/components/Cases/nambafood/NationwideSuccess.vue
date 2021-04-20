@@ -7,7 +7,7 @@
       Launched in 2013, Namba Food became a fully self-supported service in just two years. Due to Namba Food’s vision
       and understanding of its target audience, we were able to
       <NuxtLink
-        :to="`/services#software-development`"
+        :to="`/services/#software-development`"
         class="case_link"
       >
         build a product

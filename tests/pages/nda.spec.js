@@ -3,11 +3,11 @@ import Mainnda from '@/pages/nda'
 import { shallowMount } from '@vue/test-utils'
 
 const META_DATA = {
-  description: 'Non-Disclosure Agreement at Mad Devs',
+  description: 'Signing an NDA has been a standard practice at Mad Devs for each employee on the first day of work: we understand the importance of confidentiality in our clients\' projects.',
   'og:url': 'https://maddevs.io/nda/',
   'og:type': 'website',
   'og:title': 'Mad Devs: Work Under NDA',
-  'og:description': 'Non-Disclosure Agreement at Mad Devs',
+  'og:description': 'Signing an NDA has been a standard practice at Mad Devs for each employee on the first day of work: we understand the importance of confidentiality in our clients\' projects.',
   'og:image': 'https://maddevs.io/Open-Graph.png',
 }
 

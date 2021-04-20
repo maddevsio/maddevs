@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimpleModal component should render correctly 1`] = `
+<div>
+  <transition-stub
+    components=""
+    mode="out-in"
+    name="main-fade"
+  >
+    <!---->
+  </transition-stub>
+</div>
+`;

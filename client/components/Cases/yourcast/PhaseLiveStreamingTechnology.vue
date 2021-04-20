@@ -18,7 +18,7 @@
         class="case_yourcast-tv"
       >
         <source
-          :src="getMediaFromS3('/videos/yourcast-tv.mp4')"
+          :src="$getMediaFromS3('/videos/yourcast-tv.mp4')"
           type="video/mp4"
         >
         Your browser does not support the video tag.
