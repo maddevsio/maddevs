@@ -518,7 +518,7 @@ exports[`Footer component should render correctly 1`] = `
               </div>
                
               <button
-                class="ui-button ui-button--disabled ui-button--transparent-bgc submit-button"
+                class="ui-button ui-button--disabled ui-button--transparent-bgc ui-button_submit-button-footer"
               >
                 
     Order a project now
