@@ -3,11 +3,11 @@ import MainGdpr from '@/pages/gdpr'
 import { shallowMount } from '@vue/test-utils'
 
 const META_DATA = {
-  description: 'Mad Devs’ General Data Protection Regulation (GDPR) Compliance Commitment.',
+  description: 'Mad Devs is committed to complying with the data protection and privacy rules in the EU General Data Protection Regulation (GDPR).',
   'og:url': 'https://maddevs.io/gdpr/',
   'og:type': 'website',
   'og:title': 'Mad Devs GDPR Compliance',
-  'og:description': 'Mad Devs’ General Data Protection Regulation (GDPR) Compliance Commitment.',
+  'og:description': 'Mad Devs is committed to complying with the data protection and privacy rules in the EU General Data Protection Regulation (GDPR).',
   'og:image': 'https://maddevs.io/Open-Graph.png',
 }
 

@@ -7,7 +7,7 @@
       Before investing a considerable amount of money in building software, hiring personnel and acquiring
       minibuses, GoDee wanted to
       <NuxtLink
-        :to="`/services#software-development`"
+        :to="`/services/#software-development`"
         class="case_link"
       >
         develop an MVP
