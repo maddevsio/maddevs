@@ -1,7 +1,7 @@
 export const getBlogAuthors = async prismic => {
   try {
     const response = await prismic.api.query(
-      this.$prismic.predicates.at('document.type', 'author'),
+      prismic.predicates.at('document.type', 'author'),
       { pageSize: 100 },
     )
     return response.results

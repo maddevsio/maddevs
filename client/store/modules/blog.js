@@ -71,7 +71,7 @@ export const actions = {
     const master = await getCustomerUniversityMaster(this.$prismic)
     commit('SET_CUSTOMER_CONTENT', master)
     if (master.featured_cu.uid) {
-      const featuredPost = getCustomerUniversityFeaturedPost(this.$prismic, master)
+      const featuredPost = await getCustomerUniversityFeaturedPost(this.$prismic, master)
       commit('SET_FEATURED_CUSTOMER_POST', featuredPost)
     }
   },
