@@ -1,11 +1,16 @@
 <template>
-  <div class="author-slice">
+  <div
+    v-if="blogAuthor"
+    class="author-slice"
+  >
     <div class="author-slice__info">
-      <img
-        :src="blogAuthor.image.url"
-        :alt="blogAuthor.image.alt"
-        class="author-slice__image"
-      >
+      <div class="author-slice__image">
+        <img
+          :data-src="blogAuthor.image.url"
+          :alt="blogAuthor.image.alt"
+          class="img_lazy"
+        >
+      </div>
       <div>
         <p class="author-slice__name">
           {{ blogAuthor.name }}
@@ -56,14 +61,20 @@
             :target="contributor.link.target"
           >
             <img
-              :src="contributor.image.url"
+              :data-src="contributor.image.url"
               :alt="contributor.image.alt"
+              width="26"
+              height="26"
+              class="img_lazy"
             >
           </a>
           <img
             v-else
-            :src="contributor.image.url"
+            :data-src="contributor.image.url"
             :alt="contributor.image.alt"
+            width="26"
+            height="26"
+            class="img_lazy"
           >
         </li>
       </ul>
@@ -116,8 +127,14 @@ export default {
     width: 68px;
     height: 68px;
     border-radius: 50%;
+    background-color: $bgcolor--silver;
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   &__name {
     font-weight: 600;
@@ -141,8 +158,8 @@ export default {
       flex-flow: row wrap;
     }
     &-item {
-      width: 28px;
-      height: 28px;
+      width: 29px;
+      height: 29px;
       border-radius: 6px;
       background: $bgcolor--silver;
       margin-right: 16px;
@@ -174,8 +191,8 @@ export default {
     }
     &-item {
       margin-left: -6px;
-      width: 29px;
-      height: 29px;
+      width: 28px;
+      height: 28px;
       background: $bgcolor--silver;
       border: 2px solid $border-color--white;
       border-radius: 50%;
