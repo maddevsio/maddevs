@@ -1,11 +1,14 @@
 <template>
   <div class="author-posts">
     <div class="container">
-      <div class="author-posts__featured-post">
+      <div
+        class="author-posts__featured-post"
+        :class="[authorPosts.length === 1 ? 'author-posts__featured-post--mb-0' : '']"
+      >
         <FeaturedPost
           v-if="authorPostsLoaded"
-          :to="postLink(authorPostsToShow[0].uid)"
-          :post="authorPostsToShow[0]"
+          :to="postLink(authorPosts[0].uid)"
+          :post="authorPosts[0]"
           :author="blogAuthor"
           theme="light"
         />
@@ -115,10 +118,16 @@ export default {
     }
     &__featured-post {
       margin-bottom: 137px;
+      &--mb-0 {
+        margin-bottom: 0;
+      }
     }
     &__single-post {
       width: 33.3333%;
       margin-bottom: 48px;
+      &:first-of-type {
+        display: none;
+      }
       .single-post__wrapper {
         padding: 0 10px;
         /deep/ .blog-post__author-name {
@@ -132,6 +141,9 @@ export default {
     @media only screen and (max-width: 991px) {
       &__single-post {
         width: 100%;
+        &:first-of-type {
+          display: block;
+        }
       }
       &__featured-post {
         display: none;
