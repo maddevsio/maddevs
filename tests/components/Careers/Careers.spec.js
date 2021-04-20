@@ -51,6 +51,17 @@ describe('Careers component', () => {
     expect(container).toMatchSnapshot()
   })
 
+  it('should work touch handler without file', () => {
+    const wrapper = shallowMount(Careers, {
+      localVue,
+      mocks,
+    })
+
+    wrapper.vm.$options.methods.handleFileSelect.call({ $v: {} })
+
+    expect(mocks.$v.cvFile.$touch).toHaveBeenCalledTimes(0)
+  })
+
   it('should work touch handler', () => {
     const wrapper = shallowMount(Careers, {
       localVue,
@@ -62,7 +73,22 @@ describe('Careers component', () => {
     expect(mocks.$v.cvFile.$touch).toHaveBeenCalledTimes(1)
   })
 
+  it('should not work send form if have invaid param', async () => {
+    const wrapper = shallowMount(Careers, {
+      localVue,
+      mocks,
+    })
+
+    mocks.$v.validationGroup.$invalid = true
+    wrapper.vm.$options.methods.submitForm.call(mocks)
+
+    await expect(mocks.buildEmail).toHaveBeenCalledTimes(0)
+    expect(mocks.resetForm).toHaveBeenCalledTimes(0)
+    expect(mocks.$store.dispatch).toHaveBeenCalledTimes(0)
+  })
+
   it('should work send form', async () => {
+    mocks.$v.validationGroup.$invalid = false
     const wrapper = shallowMount(Careers, {
       localVue,
       mocks,
