@@ -113,12 +113,19 @@ export default {
       // На разрешении экрана 880 происходит перестройка секции и анимация не должна больше отрабатывать
       const BREAKPOINT = 880
 
-      if (!this.mainElement) return null
-      if (window.innerWidth <= BREAKPOINT) return this.setDefaultStylesForCards()
+      if (!this.mainElement) {
+        return null
+      }
+      if (window.innerWidth <= BREAKPOINT) {
+        return this.setDefaultStylesForCards()
+      }
 
       this.currentScroll = this.mainElement.scrollTop
-      if (this.currentScroll > this.previousScroll) this.handleScrollDown()
-      else this.handleScrollUp()
+      if (this.currentScroll > this.previousScroll) {
+        this.handleScrollDown()
+      } else {
+        this.handleScrollUp()
+      }
 
       this.previousScroll = this.currentScroll
       return null
