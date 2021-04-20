@@ -50,9 +50,12 @@
           </section>
         </template>
       </div>
-      <div class="tag-posts__load-more">
+      <div
+        v-if="totalPages > tagPostsPage"
+        class="tag-posts__load-more"
+      >
         <LoadMoreButton
-          v-if="totalPages > tagPostsPage"
+
           @click="getMoreTagPosts"
         />
       </div>

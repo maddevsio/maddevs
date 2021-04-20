@@ -46,9 +46,12 @@
           </section>
         </template>
       </div>
-      <div class="author-posts__load-more">
+      <div
+        v-if="totalPages > authorPostsPage"
+        class="author-posts__load-more"
+      >
         <LoadMoreButton
-          v-if="totalPages > authorPostsPage"
+
           @click="getMoreAuthorPosts"
         />
       </div>
