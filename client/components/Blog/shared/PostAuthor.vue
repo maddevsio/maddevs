@@ -21,7 +21,7 @@
           {{ shortTitle }}
         </p>
         <div class="blog-post__data-of-creation">
-          <span class="blog-post__author-title">{{ name }}</span>
+          <span class="blog-post__author-title">{{ position }}</span>
         </div>
       </div>
     </div>
