@@ -20,6 +20,7 @@ exports[`TheLastPostSection component should render correctly 1`] = `
           >
             <h1
               class="featured-post__title"
+              title="text"
             >
               
         text
