@@ -91,4 +91,30 @@ describe('DevelopmentGoals component', () => {
     wrapper.vm.$options.methods.handleScroll.call(callObject)
     expect(callObject.handleScrollUp).toHaveBeenCalledTimes(1)
   })
+
+  it('getColumnOffset method should return 0 if ref param empty', () => {
+    const wrapper = shallowMount(DevelopmentGoals, {
+      container: document.body.appendChild(containerToRender),
+    })
+
+    const result = wrapper.vm.$options.methods.getColumnOffset.call()
+    expect(result).toBe(0)
+  })
+
+  it('getColumnOffset method should return abs if ref params correct', () => {
+    const refObject = {
+      getBoundingClientRect: () => ({ bottom: 100 }),
+    }
+
+    const rootBounding = {
+      bottom: 50,
+    }
+
+    const wrapper = shallowMount(DevelopmentGoals, {
+      container: document.body.appendChild(containerToRender),
+    })
+
+    const result = wrapper.vm.$options.methods.getColumnOffset.call({}, refObject, rootBounding)
+    expect(result).toBe(Math.abs(50))
+  })
 })
