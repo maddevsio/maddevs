@@ -93,7 +93,9 @@ export default {
 
   .submit-button {
     width: 100%;
-    height: 64px;
+    height: 54px;
+    line-height: 27px;
+    letter-spacing: -0.1px;
   }
 
   .textarea {
@@ -104,12 +106,13 @@ export default {
 
   .fields-list {
     display: grid;
-    margin-bottom: 18px;
+    margin-bottom: 9px;
   }
 
   .form-checkboxes {
     margin-top: 10px;
-    margin-bottom: 22px;
+    margin-bottom: 36px;
+    border-radius: 6px;
   }
 
   .field-item {
@@ -128,41 +131,57 @@ export default {
 
   .entry-field {
     padding: 12px 19px 13px;
-    border: 1px solid $border-color--grey-form;
-    border-radius: 4px;
+    border: 1px solid $border-color--grey-input;
+    border-radius: 6px;
     background-color: transparent;
-    color: $text-color--white-darken;
-    font-size: 16px;
-    line-height: 27px;
+    color: $text-color--white-primary;
 
     &::placeholder {
-      color: $text-color--grey-form-placeholder;
+      color: $text-color--grey-pale;
     }
 
     &.textarea {
       font-size: 16px;
-      line-height: 27px;
+      line-height: 24px;
     }
   }
 
+  .submit-button,
+  .entry-field {
+    font-size: 16px;
+  }
+
+  .submit-button,
   .entry-field,
-  .error-text {
-    font-family: 'Poppins-Regular', sans-serif;
+  .error-text,
+  /deep/ .form-checkbox-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  }
+
+  .entry-field,
+  .error-text,
+  /deep/ .form-checkbox-label {
+    letter-spacing: -0.013em;
+    line-height: 24px;
   }
 
   .error-text {
-    font-size: 14px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: $text-color--red;
   }
 
   .invalid {
-    border-color: $input-invalid--bg;
+    border-color: $border-color--red;
   }
 
   /deep/ .form-checkbox-label {
     padding-left: 30px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.02em;
+
+    &:first-child {
+      margin-bottom: 25px;
+    }
   }
 }
 

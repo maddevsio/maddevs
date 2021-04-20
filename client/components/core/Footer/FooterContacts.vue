@@ -122,10 +122,11 @@ export default {
 
   &__contact-title,
   &__messenger-name {
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
+    font-weight: 400;
     line-height: 24px;
-    letter-spacing: -0.02em;
-    font-family: 'Poppins-Regular', sans-serif;
+    letter-spacing: -0.013em;
   }
 
   &__contact-title-flag {
@@ -150,7 +151,7 @@ export default {
     font-size: 34px;
     line-height: 100%;
     font-weight: 600;
-    font-family: 'Poppins-Medium', sans-serif;
+    font-family: 'Inter', sans-serif;
     letter-spacing: -1px;
     border-bottom: 1px solid $text-color--red-opacity;
     text-decoration: none;
