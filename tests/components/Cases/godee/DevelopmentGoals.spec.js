@@ -6,6 +6,8 @@ const containerToRender = document.createElement('div')
 containerToRender.setAttribute('id', 'case-scroll-container')
 containerToRender.setAttribute('data-testid', 'test-container')
 
+const getColumnOffset = (ref, rootBounding) => Math.abs(ref.getBoundingClientRect().bottom - rootBounding.bottom)
+
 describe('DevelopmentGoals component', () => {
   it('should render correctly', () => {
     const { container } = render(DevelopmentGoals, {
@@ -116,5 +118,112 @@ describe('DevelopmentGoals component', () => {
 
     const result = wrapper.vm.$options.methods.getColumnOffset.call({}, refObject, rootBounding)
     expect(result).toBe(Math.abs(50))
+  })
+
+  it('handleScrollDown method should work if incorrect sizes', () => {
+    const callObject = {
+      getColumnOffset,
+      $refs: {
+        cardsRootElem: {
+          getBoundingClientRect: () => ({
+            top: 100,
+            bottom: 100,
+            left: 0,
+            right: 10,
+          }),
+        },
+        cardsLeftColumn: {
+          getBoundingClientRect: () => ({
+            top: 120,
+            bottom: 90,
+            left: 10,
+            right: 0,
+          }),
+        },
+        cardsRightColumn: {
+          getBoundingClientRect: () => ({
+            top: 20,
+            bottom: 10,
+            left: 20,
+            right: 20,
+          }),
+          style: {},
+        },
+        developmentGoalsTitle: {
+          style: {
+            transform: '',
+          },
+        },
+        cardsContainer: {
+          style: {
+            height: '',
+          },
+        },
+      },
+      headerHeight: 200,
+    }
+
+    const wrapper = shallowMount(DevelopmentGoals, {
+      container: document.body.appendChild(containerToRender),
+    })
+
+    wrapper.vm.$options.methods.handleScrollDown.call(callObject)
+
+    expect(callObject.$refs.developmentGoalsTitle.style.transform).toBe('')
+    expect(callObject.$refs.cardsContainer.style.height).toBe('')
+  })
+
+  it('handleScrollDown method should work correct', () => {
+    const callObject = {
+      getColumnOffset,
+      scrollSpeed: 2,
+      paddingBottom: 20,
+      cardsContainerHeight: 200,
+      $refs: {
+        cardsRootElem: {
+          getBoundingClientRect: () => ({
+            top: 100,
+            bottom: 100,
+            left: 0,
+            right: 10,
+          }),
+        },
+        cardsLeftColumn: {
+          getBoundingClientRect: () => ({
+            top: 20,
+            bottom: 10,
+            left: 20,
+            right: 20,
+          }),
+        },
+        cardsRightColumn: {
+          getBoundingClientRect: () => ({
+            top: 120,
+            bottom: 90,
+            left: 10,
+            right: 0,
+          }),
+          style: {},
+        },
+        developmentGoalsTitle: {
+          style: {},
+        },
+        cardsContainer: {
+          style: {},
+        },
+      },
+      headerHeight: 200,
+    }
+
+    const wrapper = shallowMount(DevelopmentGoals, {
+      container: document.body.appendChild(containerToRender),
+    })
+
+    wrapper.vm.$options.methods.handleScrollDown.call(callObject)
+
+    expect(callObject.newHeight).toBe(130)
+    expect(callObject.$refs.cardsRightColumn.style.transform).toBe('translateY(-50px)')
+    expect(callObject.$refs.developmentGoalsTitle.style.transform).toBe('translateY(-50px)')
+    expect(callObject.$refs.cardsContainer.style.height).toBe('130px')
   })
 })
