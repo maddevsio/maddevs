@@ -3,7 +3,7 @@
     <div class="container">
       <div
         class="tag-posts__featured-post"
-        :class="[tagPosts.length === 1 ? 'tag-posts__featured-post--mb-0' : '']"
+        :class="[tagPosts.length === 1 ? 'tag-posts__featured-post--mb-48' : '']"
       >
         <FeaturedPost
           v-if="tagPostsLoaded"
@@ -124,11 +124,11 @@ export default {
 
   .tag-posts {
     background-color: $bgcolor--white-primary;
-    padding: 60px 0;
+    padding: 60px 0 12px;
     &__featured-post {
       margin-bottom: 137px;
-      &--mb-0 {
-        margin-bottom: 0;
+      &--mb-48 {
+        margin-bottom: 48px;
       }
     }
     &__wrapper {
@@ -149,6 +149,7 @@ export default {
     }
     &__load-more {
       margin-top: 36px;
+      margin-bottom: 48px;
     }
     @media only screen and (max-width: 991px) {
       &__single-post {

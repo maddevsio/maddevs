@@ -3,7 +3,7 @@
     <div class="container">
       <div
         class="author-posts__featured-post"
-        :class="[authorPosts.length === 1 ? 'author-posts__featured-post--mb-0' : '']"
+        :class="[authorPosts.length === 1 ? 'author-posts__featured-post--mb-48' : '']"
       >
         <FeaturedPost
           v-if="authorPostsLoaded"
@@ -115,14 +115,14 @@ export default {
 
   .author-posts {
     background-color: $bgcolor--white-primary;
-    padding: 60px 0;
+    padding: 60px 0 12px;
     &__wrapper {
       margin: 0 -10px;
     }
     &__featured-post {
       margin-bottom: 137px;
-      &--mb-0 {
-        margin-bottom: 0;
+      &--mb-48 {
+        margin-bottom: 48px;
       }
     }
     &__single-post {
@@ -140,6 +140,7 @@ export default {
     }
     &__load-more {
       margin-top: 36px;
+      margin-bottom: 48px;
     }
     @media only screen and (max-width: 991px) {
       &__single-post {
