@@ -66,7 +66,7 @@
           class="blog-post__recommended-post"
         >
           <RecommendedBlogWidget
-            :to="getRecommendedPostUrl(post.uid)"
+            :to="getRecommendedPostUrl(post.uid, post.data.post_author.uid)"
             :post="post"
             :author="findAuthor(post.data.post_author.id, allAuthors)"
             class-name="recommended-post"
@@ -199,7 +199,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['allAuthors']),
+    ...mapGetters(['allAuthors', 'blogTag']),
 
     clusterPosts() {
       return this.cluster ? this.cluster.items : []
@@ -229,9 +229,9 @@ export default {
   },
 
   methods: {
-    getRecommendedPostUrl(postUID) {
+    getRecommendedPostUrl(postUID, authorUID) {
       if (postUID && this.$route.name === 'blog-tag-uid-postUID') return `/blog/tag/${this.$route.params.uid}/${postUID}`
-      if (postUID && this.$route.name === 'blog-author-uid-postUID') return `/blog/author/${this.$route.params.uid}/${postUID}`
+      if (postUID && this.$route.name === 'blog-author-uid-postUID') return `/blog/author/${authorUID}/${postUID}`
       return null
     },
 

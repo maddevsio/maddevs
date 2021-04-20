@@ -16,7 +16,7 @@
           </div>
           <PostTag
             v-if="tags.length"
-            :tag="blogTag || tags[0]"
+            :tag="tags[0]"
             theme="dark"
           />
         </div>
