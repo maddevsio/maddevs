@@ -1,12 +1,23 @@
-const extractAuthorData = author => ({
-  type: author.type,
-  id: author.id,
-  uid: author.uid,
-  name: author.data.name,
-  position: author.data.position,
-  thumbnailImage: author.data.thumbnail_image,
-  image: author.data.image,
-})
+const extractAuthorData = author => {
+  const socialNetworks = author.data.social_networks
+    .filter(item => item.network && item.link.url)
+    .map(item => ({
+      key: item.network.toLowerCase(),
+      title: item.network,
+      link: item.link,
+    }))
+
+  return {
+    type: author.type,
+    id: author.id,
+    uid: author.uid,
+    name: author.data.name,
+    position: author.data.position,
+    thumbnailImage: author.data.thumbnail_image,
+    image: author.data.image,
+    socialNetworks,
+  }
+}
 
 export default {
   state: () => ({
