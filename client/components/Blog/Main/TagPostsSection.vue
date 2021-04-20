@@ -1,21 +1,19 @@
 <template>
   <div class="tag-posts">
     <div class="container">
-      <template v-if="featuredPost">
-        <div class="tag-posts__featured-post">
-          <FeaturedPost
-            v-if="tagPostsLoaded"
-            :to="postLink(featuredPost.uid)"
-            :post="featuredPost"
-            :author="findAuthor(featuredPost.data.post_author.id, allAuthors)"
-            theme="light"
-          />
-          <SkeletonFeaturedPost
-            v-else
-            theme="light"
-          />
-        </div>
-      </template>
+      <div class="tag-posts__featured-post">
+        <FeaturedPost
+          v-if="tagPostsLoaded"
+          :to="postLink(tagPostsToShow[0].uid)"
+          :post="tagPostsToShow[0]"
+          :author="findAuthor(tagPostsToShow[0].data.post_author.id, allAuthors)"
+          theme="light"
+        />
+        <SkeletonFeaturedPost
+          v-else
+          theme="light"
+        />
+      </div>
       <div class="row tag-posts__wrapper">
         <template v-if="tagPostsLoaded">
           <section
@@ -88,10 +86,6 @@ export default {
 
   computed: {
     ...mapGetters(['blogTag', 'tagPosts', 'tagPostsLoaded', 'allAuthors', 'tagPostsPage']),
-
-    featuredPost() {
-      return this.tagPosts.find(post => post.tags.includes('Featured post'))
-    },
 
     tagPostsToShow() {
       return this.tagPosts.slice(0, this.pageSize * this.tagPostsPage)
