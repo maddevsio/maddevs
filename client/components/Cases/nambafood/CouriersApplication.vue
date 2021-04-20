@@ -20,7 +20,8 @@
       </section>
       <section class="container_middle case_couriers-android-app-wrapper">
         <Picture
-          :lazy="false"
+          :width="1230"
+          :height="771"
           folder="nambafood"
           file="couriers-android-app"
           extension="png"
