@@ -113,7 +113,7 @@ export default {
     },
 
     veryShortTitle() {
-      const limit = 40
+      const limit = 35
       const title = this.$prismic.asText(this.post.data.title)
       return textEllipsis(title, { limit })
     },

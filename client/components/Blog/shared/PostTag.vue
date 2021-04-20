@@ -2,18 +2,15 @@
   <NuxtLink
     v-if="tag"
     :to="link"
+    :class="theme"
+    class="post-tag"
   >
-    <div
-      :class="theme"
-      class="post-tag"
+    <span
+      data-testid="test-tag"
+      class="tag"
     >
-      <span
-        data-testid="test-tag"
-        class="tag"
-      >
-        {{ tag }}
-      </span>
-    </div>
+      {{ tag }}
+    </span>
   </NuxtLink>
 </template>
 
