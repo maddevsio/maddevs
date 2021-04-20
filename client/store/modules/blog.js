@@ -1,7 +1,15 @@
 /* eslint-disable no-shadow */
 
+import formatDate from '@/helpers/formatDate'
+
+import {
+  getHomePageContent, getBlogPosts, getCustomerUniversityMaster, getCustomerUniversityFeaturedPost,
+} from '@/api/blog'
+
 export const state = () => ({
   homePageContent: {},
+  customerContent: {},
+  featuredCUPost: null,
   posts: [],
   featuredPost: null,
   postsCategory: null,
@@ -24,6 +32,13 @@ export const mutations = {
       categories,
     }
   },
+  SET_CUSTOMER_CONTENT(state, data) {
+    state.customerContent = data
+  },
+  SET_FEATURED_CUSTOMER_POST(state, post) {
+    state.featuredCUPost = post
+    state.featuredCUPost.date = formatDate(post.date)
+  },
   SET_POSTS(state, data) {
     state.posts = data
     state.featuredPost = data.find(post => post.tags.includes('Featured post'))
@@ -41,29 +56,23 @@ export const mutations = {
 
 export const actions = {
   async getHomePageContent({ commit, state }) {
-    try {
-      const pageContent = (await this.$prismic.api.getSingle('blog_home')).data
-      commit('SET_BLOG_PAGE_CONTENT', pageContent)
-      if (!state.postsCategory) {
-        commit('SET_POSTS_CATEGORY', state.homePageContent.categories[0].title)
-      }
-    } catch (err) {
-      if (err) throw err
+    const pageContent = await getHomePageContent(this.$prismic)
+    commit('SET_BLOG_PAGE_CONTENT', pageContent)
+    if (!state.postsCategory) {
+      commit('SET_POSTS_CATEGORY', state.homePageContent.categories[0].title)
     }
   },
   async getBlogPosts({ commit }) {
-    try {
-      const posts = (
-        await this.$prismic.api.query(this.$prismic.predicates.at('document.type', 'post'), {
-          orderings: '[my.post.date desc]',
-          pageSize: 100,
-        })
-      ).results
-
-      commit('SET_POSTS', posts)
-      commit('SET_POSTS_LOADED', true)
-    } catch (err) {
-      if (err) throw err
+    const posts = await getBlogPosts(this.$prismic)
+    commit('SET_POSTS', posts)
+    commit('SET_POSTS_LOADED', true)
+  },
+  async getCustomerUniversityContent({ commit }) {
+    const master = await getCustomerUniversityMaster(this.$prismic)
+    commit('SET_CUSTOMER_CONTENT', master)
+    if (master.featured_cu.uid) {
+      const featuredPost = getCustomerUniversityFeaturedPost(this.$prismic, master)
+      commit('SET_FEATURED_CUSTOMER_POST', featuredPost)
     }
   },
   getMorePosts({ commit, state }) {
@@ -78,6 +87,12 @@ export const actions = {
 export const getters = {
   homePageContent(state) {
     return state.homePageContent
+  },
+  customerContent(state) {
+    return state.customerContent
+  },
+  featuredCUPost(state) {
+    return state.featuredCUPost
   },
   allPosts(state) {
     return state.posts
