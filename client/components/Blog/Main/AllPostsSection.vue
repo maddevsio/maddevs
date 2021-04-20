@@ -350,7 +350,7 @@ export default {
         &__meta {
           margin: 8px 0;
 
-          .tag {
+          .post-tag {
             display: none;
           }
 
@@ -406,7 +406,6 @@ export default {
       /deep/ .blog-post {
         &__image {
           width: 180px;
-          margin-right: 10px;
         }
         &__title {
           -webkit-line-clamp: 2;
@@ -422,7 +421,6 @@ export default {
       /deep/ .blog-post {
         &__image {
           width: 145px;
-          margin-right: 10px;
           object-fit: cover;
           object-position: -2px;
           height: 100%;

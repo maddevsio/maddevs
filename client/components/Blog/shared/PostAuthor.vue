@@ -2,27 +2,26 @@
   <NuxtLink
     v-if="name"
     :to="link"
+    class="blog-post__author"
   >
-    <div class="blog-post__author">
-      <img
-        v-if="thumbnailImage.url !== undefined"
-        ref="authorImage"
-        :data-src="thumbnailImage.url"
-        :alt="thumbnailImage.alt"
-        class="blog-post__author-image img_lazy"
-      >
-      <div
-        v-else
-        class="blog-post__none-image"
-        :class="theme"
-      />
-      <div class="blog-post__author-info">
-        <p class="blog-post__author-name">
-          {{ shortTitle }}
-        </p>
-        <div class="blog-post__data-of-creation">
-          <span class="blog-post__author-title">{{ position }}</span>
-        </div>
+    <img
+      v-if="thumbnailImage.url !== undefined"
+      ref="authorImage"
+      :data-src="thumbnailImage.url"
+      :alt="thumbnailImage.alt"
+      class="blog-post__author-image img_lazy"
+    >
+    <div
+      v-else
+      class="blog-post__none-image"
+      :class="theme"
+    />
+    <div class="blog-post__author-info">
+      <p class="blog-post__author-name">
+        {{ shortTitle }}
+      </p>
+      <div class="blog-post__data-of-creation">
+        <span class="blog-post__author-title">{{ position }}</span>
       </div>
     </div>
   </NuxtLink>
