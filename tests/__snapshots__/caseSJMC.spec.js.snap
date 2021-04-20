@@ -242,8 +242,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               data-src="s3 image url"
               data-srcset="s3 image url 2x"
               data-testid="test-picture-img"
-              height="0"
-              width="0"
+              height="869"
+              width="1440"
             />
           </picture>
         </section>
@@ -372,8 +372,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 data-src="s3 image url"
                 data-srcset="s3 image url 2x"
                 data-testid="test-picture-img"
-                height="0"
-                width="0"
+                height="705"
+                width="1440"
               />
             </picture>
           </div>
@@ -509,8 +509,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 data-src="s3 image url"
                 data-srcset="s3 image url 2x"
                 data-testid="test-picture-img"
-                height="0"
-                width="0"
+                height="662"
+                width="1440"
               />
             </picture>
           </div>
@@ -574,8 +574,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               data-src="s3 image url"
               data-srcset="s3 image url 2x"
               data-testid="test-picture-img"
-              height="0"
-              width="0"
+              height="459"
+              width="817"
             />
           </picture>
            
@@ -627,8 +627,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               data-src="s3 image url"
               data-srcset="s3 image url 2x"
               data-testid="test-picture-img"
-              height="0"
-              width="0"
+              height="726"
+              width="1440"
             />
           </picture>
         </section>
@@ -1771,8 +1771,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               data-src="s3 image url"
               data-srcset="s3 image url 2x"
               data-testid="test-picture-img"
-              height="0"
-              width="0"
+              height="516"
+              width="1025"
             />
           </picture>
         </section>
@@ -2096,8 +2096,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               data-src="s3 image url"
               data-srcset="s3 image url 2x"
               data-testid="test-picture-img"
-              height="0"
-              width="0"
+              height="525"
+              width="1025"
             />
           </picture>
         </section>

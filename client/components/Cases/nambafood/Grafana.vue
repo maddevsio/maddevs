@@ -13,7 +13,8 @@
     <section class="container_middle">
       <Picture
         :shadow="true"
-        :lazy="true"
+        :width="1026"
+        :height="593"
         folder="nambafood"
         file="grafana"
         extension="jpg"

@@ -39,20 +39,17 @@ exports[`header Blog is a Vue instance 1`] = `
         </div>
          
         <nuxtlink
+          class="post-tag dark"
           to="/blog/tag/project-management/"
         >
-          <div
-            class="post-tag dark"
+          <span
+            class="tag"
+            data-testid="test-tag"
           >
-            <span
-              class="tag"
-              data-testid="test-tag"
-            >
-              
-      Project Management
-    
-            </span>
-          </div>
+            
+    Project Management
+  
+          </span>
         </nuxtlink>
       </div>
     </div>

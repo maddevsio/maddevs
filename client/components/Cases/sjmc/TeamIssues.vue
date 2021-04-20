@@ -38,7 +38,8 @@
     <section class="container_middle">
       <Picture
         :shadow="true"
-        :lazy="true"
+        :width="1025"
+        :height="516"
         folder="sjmc"
         file="kibana-reports"
         extension="jpg"
