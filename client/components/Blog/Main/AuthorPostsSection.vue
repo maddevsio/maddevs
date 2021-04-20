@@ -77,7 +77,7 @@ export default {
 
   data() {
     return {
-      pageSize: 12,
+      pageSize: 13,
     }
   },
 
