@@ -4,13 +4,17 @@
     :to="link"
     class="blog-post__author"
   >
-    <img
+    <div
       v-if="thumbnailImage.url !== undefined"
-      ref="authorImage"
-      :data-src="thumbnailImage.url"
-      :alt="thumbnailImage.alt"
-      class="blog-post__author-image img_lazy"
+      class="blog-post__author-image"
+      :class="theme"
     >
+      <img
+        :data-src="thumbnailImage.url"
+        :alt="thumbnailImage.alt"
+        class="img_lazy"
+      >
+    </div>
     <div
       v-else
       class="blog-post__none-image"
@@ -110,15 +114,21 @@ export default {
   &__none-image {
     width: 36px;
     height: 36px;
-    border-radius: 100%;
-  }
-
-  &__none-image {
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
     &.dark {
       background-color: $bgcolor--black-light;
+      color: $text-color--white-primary;
     }
     &.light {
       background-color: $bgcolor--silver;
+      color: $text-color--black;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
