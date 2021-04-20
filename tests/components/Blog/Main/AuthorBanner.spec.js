@@ -23,7 +23,6 @@ const store = {
 describe('AuthorBanner component', () => {
   it('should render correctly', () => {
     const { container } = render(AuthorBanner, {
-      stubs: ['PrismicImage'],
       mocks,
       store,
     })

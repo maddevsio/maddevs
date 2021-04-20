@@ -74,16 +74,6 @@ const store = {
 const stubs = ['NuxtLink']
 
 describe('AuthorSlice component', () => {
-  it('should render correctly', () => {
-    const { container } = render(AuthorSlice, {
-      stubs,
-      store,
-      props,
-    })
-
-    expect(container).toMatchSnapshot()
-  })
-
   it('should render social links correctly', () => {
     render(AuthorSlice, {
       stubs,
