@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`image attribute slice component is a Vue instance 1`] = `
+exports[`ImageCaptionSlice component should render correct 1`] = `
 <div>
   <div>
     <div

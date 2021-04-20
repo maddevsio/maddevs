@@ -17,6 +17,7 @@
                   :id="category.title"
                   :value="category.title"
                   :checked="postsCategory === category.title"
+                  data-testid="test-post-input"
                   type="radio"
                   name="Tag"
                   class="radio-input"
@@ -41,7 +42,10 @@
           :post="post"
           class="filtered-posts__single-post"
         >
-          <div class="single-post__wrapper">
+          <div
+            data-testid="test-single-post"
+            class="single-post__wrapper"
+          >
             <RecommendedBlogWidget
               :post="post"
               :author="findAuthor(post.data.post_author.id, allAuthors)"

@@ -1,6 +1,7 @@
 <template>
   <button
     class="load-more-button"
+    data-testid="test-load-more-button"
     @click="handleClick"
   >
     See more
