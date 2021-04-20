@@ -12,15 +12,16 @@ exports[`UIFormCheckboxes should render correctly with id prop 1`] = `
       I confirm that I have read and accepted
     
       <div>
-        Mad Devs’
+        
+      Mad Devs’
+      
+        <a
+          href="/privacy/"
+          target="_blank"
+        >
+          Privacy Policy
+        </a>
       </div>
-       
-      <a
-        href="/privacy/"
-        target="_blank"
-      >
-        Privacy Policy
-      </a>
        
       <input
         class="form-checkbox-input"
@@ -75,15 +76,16 @@ exports[`UIFormCheckboxes should render correctly with slot 1`] = `
       I confirm that I have read and accepted
     
       <div>
-        Mad Devs’
+        
+      Mad Devs’
+      
+        <a
+          href="/privacy/"
+          target="_blank"
+        >
+          Privacy Policy
+        </a>
       </div>
-       
-      <a
-        href="/privacy/"
-        target="_blank"
-      >
-        Privacy Policy
-      </a>
        
       <input
         class="form-checkbox-input"
