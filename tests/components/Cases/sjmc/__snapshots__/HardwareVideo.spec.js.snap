@@ -158,6 +158,7 @@ exports[`HardwareVideo component should render correctly 1`] = `
       class="case_video-wrapper case_full-screen-video"
     >
       <video
+        class="media_lazy"
         data-testid="test-case_video"
         height="100%"
         id="iphone-video"
@@ -167,7 +168,7 @@ exports[`HardwareVideo component should render correctly 1`] = `
         width="100%"
       >
         <source
-          src="/videos/bluetooth-beacons-video.9ca649c.mp4"
+          data-src="/videos/bluetooth-beacons-video.9ca649c.mp4"
           type="video/mp4"
         />
         

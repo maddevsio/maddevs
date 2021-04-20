@@ -14,6 +14,9 @@ describe('sirJohnMonashCentre', () => {
           $on: jest.fn(),
         },
         $getMediaFromS3: () => 's3 image url',
+        $lazyLoad: {
+          init: () => {},
+        },
       },
       stubs: ['NuxtLink'],
     })

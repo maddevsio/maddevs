@@ -64,6 +64,7 @@
           :key="post.id"
           :post="post"
           class="blog-post__recommended-post"
+          data-testid="test-recommended-post"
         >
           <RecommendedBlogWidget
             :to="getRecommendedPostUrl(post.uid, post.data.post_author.uid)"
@@ -83,6 +84,7 @@
     <button
       v-if="buttonIsActive"
       class="blog-post__back-to-list"
+      data-testid="test-back-list"
       @click="scrollToTop()"
     >
       <i />

@@ -51,8 +51,8 @@
     <section class="container_full background-color-silver">
       <section class="container_middle">
         <img
-          :src="$getMediaFromS3('/images/Cases/sjmc/gif/brix.gif')"
-          class="case_gif"
+          :data-src="$getMediaFromS3('/images/Cases/sjmc/gif/brix.gif')"
+          class="case_gif media_lazy"
           alt="Ultra-Compact Multimedia Computer - BRIX."
         >
       </section>

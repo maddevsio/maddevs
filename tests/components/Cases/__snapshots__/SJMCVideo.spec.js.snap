@@ -10,10 +10,10 @@ exports[`SJMCVideo component renders correctly 1`] = `
     <!---->
      
     <video
-      class="main-video"
+      class="main-video media_lazy"
     >
       <source
-        src="s3 image url"
+        data-src="s3 image url"
         type="video/mp4"
       />
       
