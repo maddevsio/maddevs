@@ -40,8 +40,8 @@ exports[`Hardware component should render correctly 1`] = `
           data-src="/images/Cases/sjmc/jpg/immersive-gallery.jpg"
           data-srcset="/images/Cases/sjmc/jpg/immersive-gallery@2x.jpg 2x"
           data-testid="test-picture-img"
-          height="0"
-          width="0"
+          height="726"
+          width="1440"
         />
       </picture>
     </section>
