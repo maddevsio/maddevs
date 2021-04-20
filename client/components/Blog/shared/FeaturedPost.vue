@@ -8,9 +8,10 @@
       <div class="col-12 col-lg-6 featured-post__main">
         <Component
           :is="titleTag"
+          :title="$prismic.asText(post.data.title)"
           class="featured-post__title"
         >
-          {{ $prismic.asText(post.data.title) }}
+          {{ shortTitle }}
         </Component>
         <p class="featured-post__paragraph">
           {{ firstParagraph }}
@@ -49,6 +50,7 @@ import PostTag from '@/components/Blog/shared/PostTag'
 import linkResolver from '@/plugins/link-resolver'
 import getFirstParagraph from '@/helpers/getFirstParagraph'
 import formatDate from '@/helpers/formatDate'
+import textEllipsis from '@/helpers/textEllipsis'
 
 export default {
   name: 'FeaturedPost',
@@ -97,6 +99,12 @@ export default {
 
     link() {
       return linkResolver(this.post)
+    },
+
+    shortTitle() {
+      const limit = 50
+      const title = this.$prismic.asText(this.post.data.title)
+      return textEllipsis(title, { limit })
     },
 
     firstParagraph() {

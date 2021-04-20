@@ -1,21 +1,22 @@
 <template>
   <div class="author-posts">
     <div class="container">
-      <template v-if="featuredPost">
-        <div class="author-posts__featured-post">
-          <FeaturedPost
-            v-if="authorPostsLoaded"
-            :to="postLink(featuredPost.uid)"
-            :post="featuredPost"
-            :author="blogAuthor"
-            theme="light"
-          />
-          <SkeletonFeaturedPost
-            v-else
-            theme="light"
-          />
-        </div>
-      </template>
+      <div
+        class="author-posts__featured-post"
+        :class="[authorPosts.length === 1 ? 'author-posts__featured-post--mb-0' : '']"
+      >
+        <FeaturedPost
+          v-if="authorPostsLoaded"
+          :to="postLink(authorPosts[0].uid)"
+          :post="authorPosts[0]"
+          :author="blogAuthor"
+          theme="light"
+        />
+        <SkeletonFeaturedPost
+          v-else
+          theme="light"
+        />
+      </div>
       <div class="row author-posts__wrapper">
         <template v-if="authorPostsLoaded">
           <section
@@ -83,10 +84,6 @@ export default {
   computed: {
     ...mapGetters(['blogAuthor', 'authorPosts', 'authorPostsLoaded', 'authorPostsPage']),
 
-    featuredPost() {
-      return this.authorPosts.find(post => post.tags.includes('Featured post'))
-    },
-
     authorPostsToShow() {
       return this.authorPosts.slice(0, this.pageSize * this.authorPostsPage)
     },
@@ -121,10 +118,16 @@ export default {
     }
     &__featured-post {
       margin-bottom: 137px;
+      &--mb-0 {
+        margin-bottom: 0;
+      }
     }
     &__single-post {
       width: 33.3333%;
       margin-bottom: 48px;
+      &:first-of-type {
+        display: none;
+      }
       .single-post__wrapper {
         padding: 0 10px;
         /deep/ .blog-post__author-name {
@@ -138,6 +141,9 @@ export default {
     @media only screen and (max-width: 991px) {
       &__single-post {
         width: 100%;
+        &:first-of-type {
+          display: block;
+        }
       }
       &__featured-post {
         display: none;

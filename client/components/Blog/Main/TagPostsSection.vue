@@ -1,22 +1,26 @@
 <template>
   <div class="tag-posts">
     <div class="container">
-      <template v-if="featuredPost">
-        <div class="tag-posts__featured-post">
-          <FeaturedPost
-            v-if="tagPostsLoaded"
-            :to="postLink(featuredPost.uid)"
-            :post="featuredPost"
-            :author="findAuthor(featuredPost.data.post_author.id, allAuthors)"
-            theme="light"
-          />
-          <SkeletonFeaturedPost
-            v-else
-            theme="light"
-          />
-        </div>
-      </template>
-      <div class="row tag-posts__wrapper">
+      <div
+        class="tag-posts__featured-post"
+        :class="[tagPosts.length === 1 ? 'tag-posts__featured-post--mb-0' : '']"
+      >
+        <FeaturedPost
+          v-if="tagPostsLoaded"
+          :to="postLink(tagPosts[0].uid)"
+          :post="tagPosts[0]"
+          :author="findAuthor(tagPosts[0].data.post_author.id, allAuthors)"
+          theme="light"
+        />
+        <SkeletonFeaturedPost
+          v-else
+          theme="light"
+        />
+      </div>
+      <div
+        class="row tag-posts__wrapper"
+        :class="[tagPosts.length === 1 ? 'tag-posts__wrapper--one-post' : '']"
+      >
         <template v-if="tagPostsLoaded">
           <section
             v-for="post in tagPostsToShow"
@@ -89,10 +93,6 @@ export default {
   computed: {
     ...mapGetters(['blogTag', 'tagPosts', 'tagPostsLoaded', 'allAuthors', 'tagPostsPage']),
 
-    featuredPost() {
-      return this.tagPosts.find(post => post.tags.includes('Featured post'))
-    },
-
     tagPostsToShow() {
       return this.tagPosts.slice(0, this.pageSize * this.tagPostsPage)
     },
@@ -124,6 +124,9 @@ export default {
     padding: 60px 0;
     &__featured-post {
       margin-bottom: 137px;
+      &--mb-0 {
+        margin-bottom: 0;
+      }
     }
     &__wrapper {
       margin: 0 -10px;
@@ -131,6 +134,9 @@ export default {
     &__single-post {
       width: 33.3333%;
       margin-bottom: 48px;
+      &:first-of-type {
+        display: none;
+      }
       .single-post__wrapper {
         padding: 0 10px;
         /deep/ .blog-post__author-name {
@@ -144,6 +150,9 @@ export default {
     @media only screen and (max-width: 991px) {
       &__single-post {
         width: 100%;
+        &:first-of-type {
+          display: block;
+        }
       }
       &__featured-post {
         display: none;

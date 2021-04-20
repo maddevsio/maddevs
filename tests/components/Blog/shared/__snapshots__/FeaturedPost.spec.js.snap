@@ -14,9 +14,10 @@ exports[`featured post component is a Vue instance 1`] = `
       >
         <h2
           class="featured-post__title"
+          title="The best practices for improving layout quality on your website"
         >
           
-        The best practices for improving layout quality on your website
+        The best practices for improving layout quality...
       
         </h2>
          
