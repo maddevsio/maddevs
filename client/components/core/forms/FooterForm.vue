@@ -8,7 +8,7 @@
       :use-phone="false"
       :use-labels="false"
       :fullname-required="false"
-      button-class-name="ui-button--transparent-bgc submit-button"
+      button-class-name="ui-button--transparent-bgc ui-button_submit-button-footer"
       class-name="footer-form"
       @submit="handleSubmit"
     />
@@ -91,13 +91,6 @@ export default {
 .footer-form {
   width: 100%;
 
-  .submit-button {
-    width: 100%;
-    height: 54px;
-    line-height: 27px;
-    letter-spacing: -0.1px;
-  }
-
   .textarea {
     height: 192px;
     max-height: 192px;
@@ -146,12 +139,10 @@ export default {
     }
   }
 
-  .submit-button,
   .entry-field {
     font-size: 16px;
   }
 
-  .submit-button,
   .entry-field,
   .error-text,
   /deep/ .form-checkbox-label {

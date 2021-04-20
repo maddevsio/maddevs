@@ -79,6 +79,16 @@ export default {
     color: $text-color--red;
   }
 
+  &_submit-button-footer {
+    width: 100%;
+    height: 54px;
+    line-height: 27px;
+    letter-spacing: -0.1px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
   @media only screen and (max-width: 360px) {
     font-size: 14px;
   }
