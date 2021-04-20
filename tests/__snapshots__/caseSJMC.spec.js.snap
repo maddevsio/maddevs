@@ -98,10 +98,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <!---->
        
       <video
-        class="main-video"
+        class="main-video media_lazy"
       >
         <source
-          src="s3 image url"
+          data-src="s3 image url"
           type="video/mp4"
         />
         
@@ -700,8 +700,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Ultra-Compact Multimedia Computer - BRIX."
-              class="case_gif"
-              src="s3 image url"
+              class="case_gif media_lazy"
+              data-src="s3 image url"
             />
           </section>
         </section>
@@ -895,6 +895,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="case_video-wrapper case_full-screen-video"
             >
               <video
+                class="media_lazy"
                 data-testid="test-case_video"
                 height="100%"
                 id="iphone-video"
@@ -904,7 +905,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 width="100%"
               >
                 <source
-                  src="s3 image url"
+                  data-src="s3 image url"
                   type="video/mp4"
                 />
                 
