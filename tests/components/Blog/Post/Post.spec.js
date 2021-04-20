@@ -5,6 +5,8 @@ import Vuex from 'vuex'
 import blogDocument from '../../../__mocks__/blogDocument'
 import recomendedPosts from '../../../__mocks__/recomendedPosts'
 import blogSlices from '../../../__mocks__/blogSlices'
+import allPosts from '../../../__mocks__/allPosts'
+import * as homeContent from '../../../__mocks__/homePageContent'
 
 const props = {
   cluster: {},
@@ -31,9 +33,27 @@ const mocks = {
     asText: () => 'text',
     asHtml: html => `<p>${html}</p>`,
   },
+  $route: {
+    name: 'test-route',
+  },
 }
 
-const stubs = ['NuxtLink', 'ShareNetwork', 'PrismicRichText', 'PrismicEmbed']
+const store = {
+  getters: {
+    filteredPosts: () => allPosts,
+    allPosts: () => allPosts,
+    postsCategory: jest.fn(),
+    postsPage: () => 2,
+    homePageContent: () => homeContent.default,
+    allAuthors: jest.fn(),
+  },
+  actions: {
+    changePostsCategory: jest.fn(),
+    getMorePosts: jest.fn(),
+  },
+}
+
+const stubs = ['NuxtLink', 'ShareNetwork', 'PrismicRichText', 'PrismicEmbed', 'BlogHeader']
 
 const WINDOW_SCROLL_TO = jest.fn()
 
@@ -46,22 +66,10 @@ describe('Post component', () => {
       props: {
         document: blogDocument,
       },
+      store,
     })
 
     expect(container).toMatchSnapshot()
-  })
-
-  it('should render correctly with props', () => {
-    render(Post, {
-      stubs,
-      mocks,
-      props,
-    })
-
-    expect(screen.getByText(props.formattedDate)).toBeTruthy()
-    expect(screen.getAllByTestId('test-recommended-post')).toHaveLength(props.recommendedPosts.length)
-    expect(screen.getAllByTestId('test-slice-post')).toHaveLength(props.slices.length)
-    expect(screen.getByTestId('test-tag-post').innerHTML.trim()).toBe(props.tags[0])
   })
 
   it('should correct call scroll top', async () => {
@@ -70,6 +78,7 @@ describe('Post component', () => {
       stubs,
       mocks,
       props,
+      store,
     })
 
     expect(queryAllByTestId('test-back-list')).toHaveLength(0)

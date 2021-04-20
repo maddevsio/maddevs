@@ -4,6 +4,7 @@ exports[`Post component should render correctly with default props 1`] = `
 <div>
   <div
     class="blog-post"
+    document="[object Object]"
   >
     <div
       class="blog-post__background"
@@ -37,84 +38,12 @@ exports[`Post component should render correctly with default props 1`] = `
         />
       </div>
        
-      <div
-        class="blog-post__introduction-container"
-      >
-         
-        <h1
-          class="blog-post__blog-title title"
-        >
-          
-    text
-  
-        </h1>
-         
-        <p
-          class="blog-post__blog-sub-title"
-        >
-          
-    text
-  
-        </p>
-         
-        <div
-          class="blog-post__post-info"
-        >
-          <div
-            class="blog-post__author"
-          >
-            <img
-              alt="text"
-              class="blog-post__author-image img_lazy"
-              data-src="https://images.prismic.io/superpupertest/c3b0ca2f-b28b-455c-b75b-fa880ee66c82_01.jpeg?auto=compress,format&rect=0,1,797,797&w=40&h=40"
-            />
-             
-            <div
-              class="blog-post__author-info"
-            >
-              <p
-                class="blog-post__author-name"
-              >
-                
-      text
-    
-              </p>
-               
-              <div
-                class="blog-post__data-of-creation"
-              >
-                <span
-                  class="blog-post__author-title"
-                >
-                  Delivery manager
-                </span>
-              </div>
-            </div>
-          </div>
-           
-          <div
-            class="blog-post__date-tag"
-          >
-            <div
-              class="blog-post__date"
-            >
-              
-          
-        
-            </div>
-             
-            <!---->
-          </div>
-        </div>
-         
-        <img
-          alt="How to Handover a Software Project to Another Team."
-          class="blog-post__introduction-image blog-post__introduction-image--with-background"
-          height="533"
-          src="https://images.prismic.io/superpupertest/afa41339-f2f8-4f1d-8640-4b89d5d9d509_SPH.jpg?auto=compress,format&rect=0,1,2000,1084&w=983&h=533"
-          width="983"
-        />
-      </div>
+      <blogheader-stub
+        date=""
+        subtitle=""
+        tags=""
+        title=""
+      />
        
       <div
         class="blog-post__main-content"
