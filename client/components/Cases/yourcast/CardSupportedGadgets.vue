@@ -8,7 +8,6 @@
       :class="`card-content_gadget-picture-wrapp-${file}-card`"
     >
       <Picture
-        :lazy="false"
         :shadow="false"
         :background="false"
         :width="width"
@@ -25,7 +24,6 @@
       :class="`card-content_gadget-picture-wrapp-mobile-${file}`"
     >
       <Picture
-        :lazy="false"
         :shadow="false"
         :background="false"
         :width="width"

@@ -35,17 +35,17 @@
         <source
           v-if="source"
           ref="source"
-          :data-srcset="[source.x1 + ' ', source.x2 + ' 2x']"
+          :srcset="[source.x1 + ' ', source.x2 + ' 2x']"
           class="case_card-content_image"
           type="image/webp"
         >
         <img
           v-if="img"
           ref="img"
-          :data-src="[img.x1]"
-          :data-srcset="[img.x2 + ' 2x']"
+          :src="[img.x1]"
+          :srcset="[img.x2 + ' 2x']"
           :alt="img.alt"
-          class="case_card-content_image img_lazy"
+          class="case_card-content_image"
           data-testid="test-case_card-content_image"
         >
       </picture>

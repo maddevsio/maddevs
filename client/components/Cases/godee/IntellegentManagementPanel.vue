@@ -64,7 +64,6 @@
         >
           <Picture
             :shadow="false"
-            :lazy="true"
             :radius="false"
             :width="1026"
             :height="16.45"
@@ -89,7 +88,6 @@
         >
           <Picture
             :shadow="false"
-            :lazy="true"
             :radius="false"
             :width="1026"
             :height="16.45"
