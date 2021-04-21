@@ -89,11 +89,20 @@ export const buildHead = ({
   title,
   meta: [
     { name: 'description', content: description },
+    // Facebook / Open Graph
     { property: 'og:url', content: url },
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: title },
     { property: 'og:description', content: description },
     { property: 'og:image', content: image },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' },
+    // Twitter / Twitter Card
+    { property: 'twitter:card', content: 'summary_large_image' },
+    { property: 'twitter:text:title', content: title },
+    { property: 'twitter:description', content: description },
+    { property: 'twitter:image:src', content: image },
+    { property: 'twitter:url', content: url },
   ],
   link: [
     {
