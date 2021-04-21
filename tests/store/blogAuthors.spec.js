@@ -42,6 +42,15 @@ describe('BlogAuthors module mutations', () => {
       position: 'position',
       thumbnail_image: 'image',
       image: '123',
+      meta_title: 'Meta title',
+      meta_description: 'Meta description',
+      social_networks: [
+        {
+          network: 'LinkedIn',
+          link: { url: 'https://' },
+        },
+      ],
+      schema_org_snippets: [],
     },
   }
 
@@ -53,6 +62,18 @@ describe('BlogAuthors module mutations', () => {
     position: mockedAuthor.data.position,
     thumbnailImage: mockedAuthor.data.thumbnail_image,
     image: mockedAuthor.data.image,
+    metaTitle: mockedAuthor.data.meta_title,
+    metaDescription: mockedAuthor.data.meta_description,
+    socialNetworks: [
+      {
+        key: 'linkedin',
+        title: 'LinkedIn',
+        link: {
+          url: 'https://',
+        },
+      },
+    ],
+    schemaOrgSnippet: '',
   }
 
   it('should correct mutate state after calling SET_ALL_AUTHORS mutation', () => {
