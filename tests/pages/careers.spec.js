@@ -9,6 +9,13 @@ const META_DATA = {
   'og:title': 'Mad Devs Careers: Work with Us',
   'og:description': 'Join our team of 100+ staff members working on unique projects, master new IT skills, and build a fantastic career path in software engineering, DevOps, or mobile app development.',
   'og:image': 'https://maddevs.io/Open-Graph.png',
+  'og:image:width': '1200',
+  'og:image:height': '630',
+  'twitter:card': 'summary_large_image',
+  'twitter:text:title': 'Mad Devs Careers: Work with Us',
+  'twitter:description': 'Join our team of 100+ staff members working on unique projects, master new IT skills, and build a fantastic career path in software engineering, DevOps, or mobile app development.',
+  'twitter:image:src': 'https://maddevs.io/Open-Graph.png',
+  'twitter:url': 'https://maddevs.io/careers/',
 }
 
 const mocks = {

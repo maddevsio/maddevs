@@ -9,6 +9,13 @@ const META_DATA = {
   'og:title': 'Mad Devs GDPR Compliance',
   'og:description': 'Mad Devs is committed to complying with the data protection and privacy rules in the EU General Data Protection Regulation (GDPR).',
   'og:image': 'https://maddevs.io/Open-Graph.png',
+  'og:image:width': '1200',
+  'og:image:height': '630',
+  'twitter:card': 'summary_large_image',
+  'twitter:text:title': 'Mad Devs GDPR Compliance',
+  'twitter:description': 'Mad Devs is committed to complying with the data protection and privacy rules in the EU General Data Protection Regulation (GDPR).',
+  'twitter:image:src': 'https://maddevs.io/Open-Graph.png',
+  'twitter:url': 'https://maddevs.io/gdpr/',
 }
 
 describe('Gdpr page', () => {

@@ -9,6 +9,13 @@ const META_DATA = {
   'og:title': 'Mad Devs: Custom Software Development and Mobile App Creation Services',
   'og:description': 'We deliver software engineering and mobile app development services, software testing and QA services, DevOps and IT consulting services to businesses of any size.',
   'og:image': 'https://maddevs.io/Open-Graph.png',
+  'og:image:width': '1200',
+  'og:image:height': '630',
+  'twitter:card': 'summary_large_image',
+  'twitter:text:title': 'Mad Devs: Custom Software Development and Mobile App Creation Services',
+  'twitter:description': 'We deliver software engineering and mobile app development services, software testing and QA services, DevOps and IT consulting services to businesses of any size.',
+  'twitter:image:src': 'https://maddevs.io/Open-Graph.png',
+  'twitter:url': 'https://maddevs.io/services/',
 }
 
 const stubs = ['ClientOnly', 'NuxtLink']
