@@ -29,4 +29,12 @@ module.exports = {
   coveragePathIgnorePatterns: ['<rootDir>/server/sentry', '<rootDir>/server/db', '<rootDir>/server/routes', '<rootDir>/server/index.js'],
   coverageReporters: ['json-summary', 'text', 'lcov'],
   setupFiles: ['jest-canvas-mock'],
+  coverageThreshold: {
+    global: {
+      branches: 54,
+      statements: 78,
+      functions: 75,
+      lines: 79,
+    },
+  },
 }
