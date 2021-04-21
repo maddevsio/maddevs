@@ -54,6 +54,53 @@ export default {
     }
   },
 
+  head() {
+    return {
+      title: this.blogAuthor.metaTitle || '',
+      meta: [
+        { name: 'description', content: this.blogAuthor.metaDescription || '' },
+        // Facebook / Open Graph
+        { property: 'og:site_name', content: 'Mad Devs: Software & Mobile App Development Company' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: this.openGraphUrl },
+        {
+          property: 'og:title',
+          content: this.blogAuthor.metaTitle || '',
+        },
+        { property: 'og:description', content: this.blogAuthor.metaDescription || '' },
+        {
+          property: 'og:image',
+          content: this.blogAuthor.image.url ? this.blogAuthor.image.url : 'https://maddevs.io/blog.png',
+        },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        // Twitter / Twitter Card
+        { property: 'twitter:card', content: 'summary_large_image' },
+        {
+          property: 'twitter:text:title',
+          content: this.blogAuthor.metaTitle || '',
+        },
+        { property: 'twitter:description', content: this.blogAuthor.metaDescription || '' },
+        {
+          property: 'twitter:image:src',
+          content: this.blogAuthor.image.url ? this.blogAuthor.image.url : 'https://maddevs.io/blog.png',
+        },
+        { property: 'twitter:url', content: this.openGraphUrl },
+      ],
+
+      link: [{ rel: 'canonical', href: this.openGraphUrl }],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: this.blogAuthor.schemaOrgSnippet,
+        },
+        // Need for supported Safari9 and IE11 https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Intl
+        { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en' },
+      ],
+    }
+  },
+
   computed: {
     ...mapGetters(['blogAuthor']),
   },
