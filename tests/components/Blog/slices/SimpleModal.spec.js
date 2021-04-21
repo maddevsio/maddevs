@@ -13,39 +13,60 @@ describe('SimpleModal component', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('should correctly work show handler', () => {
+  it('should correctly work close handler', async () => {
     jest.useFakeTimers()
-    const disableScrollOnBody = jest.fn()
+
+    const callObject = {
+      enableScrollOnBody: jest.fn(),
+      isVisible: true,
+      contentLoaded: true,
+      isOverlay: true,
+      isSuccess: true,
+      $emit: jest.fn(),
+    }
+
     const wrapper = shallowMount(Modal, {
       props: {
         components: [],
       },
     })
 
-    wrapper.vm.$options.methods.show.call({
-      disableScrollOnBody,
-    })
+    wrapper.vm.$options.methods.close.call(callObject)
+    jest.runOnlyPendingTimers()
 
-    expect(disableScrollOnBody).toHaveBeenCalledTimes(1)
-    expect(setTimeout).toHaveBeenCalledTimes(2)
+    expect(setTimeout).toHaveBeenCalledTimes(3)
     expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 100)
+    expect(callObject.$emit).toHaveBeenCalledTimes(1)
+    expect(callObject.enableScrollOnBody).toHaveBeenCalledTimes(1)
   })
 
-  it('should correctly work close handler', () => {
+  it('should correctly work show handler', async () => {
     jest.useFakeTimers()
-    const enableScrollOnBody = jest.fn()
-    const wrapper = mount(Modal, {
+
+    const callObject = {
+      disableScrollOnBody: jest.fn(),
+      isVisible: false,
+      contentLoaded: false,
+      isOverlay: false,
+      $emit: jest.fn(),
+    }
+
+    const wrapper = shallowMount(Modal, {
       props: {
         components: [],
       },
     })
 
-    wrapper.vm.$options.methods.close.call({
-      enableScrollOnBody,
-    })
+    wrapper.vm.$options.methods.show.call(callObject)
+    jest.runOnlyPendingTimers()
 
-    expect(setTimeout).toHaveBeenCalledTimes(3)
+    expect(setTimeout).toHaveBeenCalledTimes(2)
     expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 100)
+    expect(callObject.$emit).toHaveBeenCalledTimes(1)
+    expect(callObject.disableScrollOnBody).toHaveBeenCalledTimes(1)
+    expect(callObject.isOverlay).toBeTruthy()
+    expect(callObject.isVisible).toBeTruthy()
+    expect(callObject.contentLoaded).toBeTruthy()
   })
 
   it('should correctly work on key press handler', () => {
@@ -70,5 +91,32 @@ describe('SimpleModal component', () => {
     }, event)
 
     expect(close).toHaveBeenCalledTimes(1)
+  })
+
+  it('should correctly work enableScrollOnBody handler', async () => {
+    const wrapper = mount(Modal, {
+      props: {
+        components: [],
+      },
+    })
+
+    expect(document.body.style.top).toBe('')
+    expect(document.body.style.overflow).toBe('')
+    await wrapper.vm.$options.methods.enableScrollOnBody()
+    expect(document.body.style.overflow).toBe('auto')
+  })
+
+  it('should correctly work disableScrollOnBody handler', async () => {
+    const wrapper = mount(Modal, {
+      props: {
+        components: [],
+      },
+    })
+
+    expect(document.body.style.top).toBe('')
+    expect(document.body.style.overflow).toBe('auto')
+    await wrapper.vm.$options.methods.disableScrollOnBody()
+    expect(document.body.style.overflow).toBe('hidden')
+    expect(document.body.style.top).toBe('-0px')
   })
 })
