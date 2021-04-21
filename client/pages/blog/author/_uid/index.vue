@@ -9,6 +9,7 @@
 import { mapActions, mapGetters } from 'vuex'
 import AuthorBanner from '@/components/Blog/Main/AuthorBanner'
 import AuthorPostsSection from '@/components/Blog/Main/AuthorPostsSection'
+import { buildHead } from '@/data/seo'
 
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
@@ -55,50 +56,17 @@ export default {
   },
 
   head() {
-    return {
+    return buildHead({
       title: this.blogAuthor.metaTitle || 'Mad Devs: Software & Mobile App Development Company | Blog',
-      meta: [
-        { name: 'description', content: this.blogAuthor.metaDescription || '' },
-        // Facebook / Open Graph
-        { property: 'og:site_name', content: 'Mad Devs: Software & Mobile App Development Company' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: this.openGraphUrl },
-        {
-          property: 'og:title',
-          content: this.blogAuthor.metaTitle || 'Blog',
-        },
-        { property: 'og:description', content: this.blogAuthor.metaDescription || '' },
-        {
-          property: 'og:image',
-          content: this.blogAuthor.image.url ? this.blogAuthor.image.url : 'https://maddevs.io/blog.png',
-        },
-        { property: 'og:image:width', content: '1200' },
-        { property: 'og:image:height', content: '630' },
-        // Twitter / Twitter Card
-        { property: 'twitter:card', content: 'summary_large_image' },
-        {
-          property: 'twitter:text:title',
-          content: this.blogAuthor.metaTitle || 'Blog',
-        },
-        { property: 'twitter:description', content: this.blogAuthor.metaDescription || '' },
-        {
-          property: 'twitter:image:src',
-          content: this.blogAuthor.image.url ? this.blogAuthor.image.url : 'https://maddevs.io/blog.png',
-        },
-        { property: 'twitter:url', content: this.openGraphUrl },
-      ],
-
-      link: [{ rel: 'canonical', href: this.openGraphUrl }],
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          type: 'application/ld+json',
-          innerHTML: this.blogAuthor.schemaOrgSnippet,
-        },
+      description: this.blogAuthor.metaDescription || '',
+      url: this.openGraphUrl,
+      jsonLd: this.blogAuthor.schemaOrgSnippet,
+      image: this.blogAuthor.image.url ? this.blogAuthor.image.url : 'https://maddevs.io/blog.png',
+      scripts: [
         // Need for supported Safari9 and IE11 https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Intl
         { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en' },
       ],
-    }
+    })
   },
 
   computed: {
