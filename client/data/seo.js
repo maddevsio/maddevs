@@ -92,6 +92,7 @@ export const buildHead = ({
     // Facebook / Open Graph
     { property: 'og:url', content: url },
     { property: 'og:type', content: 'website' },
+    { property: 'og:site_name', content: 'Mad Devs: Software & Mobile App Development Company' },
     { property: 'og:title', content: title },
     { property: 'og:description', content: description },
     { property: 'og:image', content: image },

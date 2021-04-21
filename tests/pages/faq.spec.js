@@ -6,6 +6,7 @@ const META_DATA = {
   description: 'FAQs. Have a question? Find answers on our Frequently asked questions page. Discover more about Mad Devs\' team, expertise, pricing, and more.',
   'og:url': 'https://maddevs.io/faq/',
   'og:type': 'website',
+  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
   'og:title': 'Mad Devs: Frequently Asked Questions',
   'og:description': 'FAQs. Have a question? Find answers on our Frequently asked questions page. Discover more about Mad Devs\' team, expertise, pricing, and more.',
   'og:image': 'https://maddevs.io/Open-Graph.png',
