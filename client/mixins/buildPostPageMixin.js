@@ -1,4 +1,5 @@
 import formatDate from '@/helpers/formatDate'
+import extractSchemaOrg from '@/helpers/extractSchemaOrg'
 
 const buildPostPageMixin = (pageName = 'blog', postType = 'post') => ({
   async asyncData({
@@ -18,18 +19,7 @@ const buildPostPageMixin = (pageName = 'blog', postType = 'post') => ({
       }
 
       // Schema org snippet
-      if (
-        post.data.schema_org_snippets
-        && post.data.schema_org_snippets.length
-        && post.data.schema_org_snippets[0].single_snippet.length
-        && post.data.schema_org_snippets[0].single_snippet[0].text
-      ) {
-        schemaOrgSnippet = post.data.schema_org_snippets[0].single_snippet[0].text
-        schemaOrgSnippet = schemaOrgSnippet.substring(schemaOrgSnippet.indexOf('{'), schemaOrgSnippet.lastIndexOf('}') + 1) // extracting only JSON object from a snippet without extra characters
-      } else {
-        // eslint-disable-next-line
-        console.log('Schema.org is not defined');
-      }
+      schemaOrgSnippet = extractSchemaOrg(post.data.schema_org_snippets)
 
       // Recommended posts
       if (post.recommendedPosts && post.recommendedPosts.length) {
