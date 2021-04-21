@@ -1,4 +1,4 @@
-export const sendEmail = async (payload, axios) => {
+export const sendEmail = async (axios, payload) => {
   try {
     const response = await axios.post('api/send-email', payload)
     return response

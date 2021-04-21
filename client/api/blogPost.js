@@ -15,7 +15,11 @@ export const getBlogPost = async (prismic, payload) => {
 }
 
 export const getClusterData = async prismic => {
-  const response = await prismic.api.getSingle('cu_master')
-  const { data: { body } } = response
-  return body
+  try {
+    const response = await prismic.api.getSingle('cu_master')
+    const { data: { body } } = response
+    return body
+  } catch (error) {
+    return error
+  }
 }
