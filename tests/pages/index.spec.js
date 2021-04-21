@@ -6,9 +6,17 @@ const META_DATA = {
   description: 'Mad Devs develops enterprise-level custom software solutions & mobile apps for finance, transportation, logistics, security, edtech, cloudtech & advertising industries.',
   'og:url': 'https://maddevs.io/',
   'og:type': 'website',
+  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
   'og:title': 'Mad Devs: Custom Software Development Company',
   'og:description': 'Mad Devs develops enterprise-level custom software solutions & mobile apps for finance, transportation, logistics, security, edtech, cloudtech & advertising industries.',
   'og:image': 'https://maddevs.io/Open-Graph.png',
+  'og:image:width': '1200',
+  'og:image:height': '630',
+  'twitter:card': 'summary_large_image',
+  'twitter:text:title': 'Mad Devs: Custom Software Development Company',
+  'twitter:description': 'Mad Devs develops enterprise-level custom software solutions & mobile apps for finance, transportation, logistics, security, edtech, cloudtech & advertising industries.',
+  'twitter:image:src': 'https://maddevs.io/Open-Graph.png',
+  'twitter:url': 'https://maddevs.io/',
 }
 
 const stubs = ['client-only', 'NuxtLink']
