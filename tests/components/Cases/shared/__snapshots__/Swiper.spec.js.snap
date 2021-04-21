@@ -10,16 +10,16 @@ exports[`Picture component should render correctly 1`] = `
     >
       <picture>
         <source
-          class="image"
-          data-srcset="img.jpg ,img.jpg 2x"
+          class="image media_lazy"
+          data-srcset="img.jpg,img.jpg"
           type="image/webp"
         />
          
         <img
           alt=""
-          class="image img_lazy"
+          class="image media_lazy"
           data-src="img.jpg"
-          data-srcset="img.jpg 2x"
+          data-srcset="img.jpg"
           data-testid="test-picture-img"
           height="0"
           width="0"
@@ -39,16 +39,16 @@ exports[`Picture component should render correctly 1`] = `
           >
             <picture>
               <source
-                class="image"
-                data-srcset="img.jpg ,img.jpg 2x"
+                class="image media_lazy"
+                data-srcset="img.jpg,img.jpg"
                 type="image/webp"
               />
                
               <img
                 alt=""
-                class="image img_lazy"
+                class="image media_lazy"
                 data-src="img.jpg"
-                data-srcset="img.jpg 2x"
+                data-srcset="img.jpg"
                 data-testid="test-picture-img"
                 height="0"
                 width="0"
@@ -60,16 +60,16 @@ exports[`Picture component should render correctly 1`] = `
           >
             <picture>
               <source
-                class="image"
-                data-srcset="img.jpg ,img.jpg 2x"
+                class="image media_lazy"
+                data-srcset="img.jpg,img.jpg"
                 type="image/webp"
               />
                
               <img
                 alt=""
-                class="image img_lazy"
+                class="image media_lazy"
                 data-src="img.jpg"
-                data-srcset="img.jpg 2x"
+                data-srcset="img.jpg"
                 data-testid="test-picture-img"
                 height="0"
                 width="0"
@@ -105,16 +105,16 @@ exports[`Picture component should render correctly 1`] = `
         >
           <picture>
             <source
-              class="image"
-              data-srcset="img.jpg ,img.jpg 2x"
+              class="image media_lazy"
+              data-srcset="img.jpg,img.jpg"
               type="image/webp"
             />
              
             <img
               alt=""
-              class="image img_lazy"
+              class="image media_lazy"
               data-src="img.jpg"
-              data-srcset="img.jpg 2x"
+              data-srcset="img.jpg"
               data-testid="test-picture-img"
               height="0"
               width="0"
@@ -126,16 +126,16 @@ exports[`Picture component should render correctly 1`] = `
         >
           <picture>
             <source
-              class="image"
-              data-srcset="img.jpg ,img.jpg 2x"
+              class="image media_lazy"
+              data-srcset="img.jpg,img.jpg"
               type="image/webp"
             />
              
             <img
               alt=""
-              class="image img_lazy"
+              class="image media_lazy"
               data-src="img.jpg"
-              data-srcset="img.jpg 2x"
+              data-srcset="img.jpg"
               data-testid="test-picture-img"
               height="0"
               width="0"

@@ -59,15 +59,15 @@ exports[`CardNinjaSushi component should render correctly 1`] = `
       <picture>
         <source
           class="case_card-content_image"
-          data-srcset="/images/Cases/nambafood/jpg/ninja-sushi-slide.jpg ,/images/Cases/nambafood/jpg/ninja-sushi-slide@2x.jpg 2x"
+          srcset="/images/Cases/nambafood/jpg/ninja-sushi-slide.jpg ,/images/Cases/nambafood/jpg/ninja-sushi-slide@2x.jpg 2x"
           type="image/webp"
         />
          
         <img
-          class="case_card-content_image img_lazy"
-          data-src="/images/Cases/nambafood/webp/ninja-sushi-slide.webp"
-          data-srcset="/images/Cases/nambafood/webp/ninja-sushi-slide@2x.webp 2x"
+          class="case_card-content_image"
           data-testid="test-case_card-content_image"
+          src="/images/Cases/nambafood/webp/ninja-sushi-slide.webp"
+          srcset="/images/Cases/nambafood/webp/ninja-sushi-slide@2x.webp 2x"
         />
       </picture>
     </div>
