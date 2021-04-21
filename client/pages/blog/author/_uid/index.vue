@@ -56,7 +56,7 @@ export default {
 
   head() {
     return {
-      title: this.blogAuthor.metaTitle || '',
+      title: this.blogAuthor.metaTitle || 'Mad Devs: Software & Mobile App Development Company | Blog',
       meta: [
         { name: 'description', content: this.blogAuthor.metaDescription || '' },
         // Facebook / Open Graph
@@ -65,7 +65,7 @@ export default {
         { property: 'og:url', content: this.openGraphUrl },
         {
           property: 'og:title',
-          content: this.blogAuthor.metaTitle || '',
+          content: this.blogAuthor.metaTitle || 'Blog',
         },
         { property: 'og:description', content: this.blogAuthor.metaDescription || '' },
         {
@@ -78,7 +78,7 @@ export default {
         { property: 'twitter:card', content: 'summary_large_image' },
         {
           property: 'twitter:text:title',
-          content: this.blogAuthor.metaTitle || '',
+          content: this.blogAuthor.metaTitle || 'Blog',
         },
         { property: 'twitter:description', content: this.blogAuthor.metaDescription || '' },
         {
