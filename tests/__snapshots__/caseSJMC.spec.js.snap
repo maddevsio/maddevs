@@ -98,10 +98,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       <!---->
        
       <video
-        class="main-video media_lazy"
+        class="main-video"
       >
         <source
-          data-src="s3 image url"
+          src="s3 image url"
           type="video/mp4"
         />
         

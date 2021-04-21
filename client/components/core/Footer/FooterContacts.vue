@@ -142,7 +142,7 @@ export default {
 
   &__contact-title,
   &__contact-link {
-    color: $text-color--white;
+    color: $text-color--white-primary;
   }
 
   &__contact-link {
