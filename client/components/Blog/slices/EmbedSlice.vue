@@ -48,6 +48,7 @@ export default {
         type: embedType,
       },
       embed_title: embedTitle,
+      embed_description: embedDescription,
     } = items[0]
 
     if (rawHtml) {
@@ -58,7 +59,7 @@ export default {
         <div data-type="website">
           <a href="${url}" target="_blank">
             <div class="embed__title">${embedTitle || rawTitle.split(' | ')[0]}</div>
-            <p>${description}</p>
+            <p>${embedDescription || description}</p>
           </a>
         </div>
       `
