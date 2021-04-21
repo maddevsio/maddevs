@@ -33,7 +33,7 @@ exports[`CustomerTestimonials should render correctly 1`] = `
                 data-expandifr="true"
                 data-height="auto"
                 data-url="https://widget.clutch.co"
-                data-widget-type="4"
+                data-widget-type="8"
               />
             </div>
           </clientonly-stub>
