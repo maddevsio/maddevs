@@ -39,7 +39,7 @@ export default {
   created() {
     const { items } = this.slice
     if (!(items && items.length)) return
-    console.log(items[0])
+
     const {
       embed: {
         url,
