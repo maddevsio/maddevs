@@ -11,7 +11,8 @@
     </section>
     <section class="container_full case_full-screen-img">
       <Picture
-        :lazy="true"
+        :width="1440"
+        :height="726"
         folder="sjmc"
         file="immersive-gallery"
         extension="jpg"

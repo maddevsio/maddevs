@@ -20,6 +20,7 @@ exports[`TheLastPostSection component should render correctly 1`] = `
           >
             <h1
               class="featured-post__title"
+              title="text"
             >
               
         text
@@ -43,20 +44,17 @@ exports[`TheLastPostSection component should render correctly 1`] = `
                 class="featured-post__meta"
               >
                 <nuxtlink-stub
+                  class="post-tag dark"
                   to="/blog/tag/backend-development/"
                 >
-                  <div
-                    class="post-tag dark"
+                  <span
+                    class="tag"
+                    data-testid="test-tag"
                   >
-                    <span
-                      class="tag"
-                      data-testid="test-tag"
-                    >
-                      
-      Backend development
-    
-                    </span>
-                  </div>
+                    
+    Backend development
+  
+                  </span>
                 </nuxtlink-stub>
                  
                 <span

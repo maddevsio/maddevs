@@ -6,9 +6,17 @@ const META_DATA = {
   description: 'Check out our software engineering and mobile app development projects for companies from transportation, logistic, edtech, cloudtech, security, advertising, finance, and other industries.',
   'og:url': 'https://maddevs.io/projects/',
   'og:type': 'website',
+  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
   'og:title': 'Mad Devs Portfolio: Key Clients, Case Studies and Open Source Projects',
   'og:description': 'Check out our software engineering and mobile app development projects for companies from transportation, logistic, edtech, cloudtech, security, advertising, finance, and other industries.',
   'og:image': 'https://maddevs.io/Open-Graph.png',
+  'og:image:width': '1200',
+  'og:image:height': '630',
+  'twitter:card': 'summary_large_image',
+  'twitter:text:title': 'Mad Devs Portfolio: Key Clients, Case Studies and Open Source Projects',
+  'twitter:description': 'Check out our software engineering and mobile app development projects for companies from transportation, logistic, edtech, cloudtech, security, advertising, finance, and other industries.',
+  'twitter:image:src': 'https://maddevs.io/Open-Graph.png',
+  'twitter:url': 'https://maddevs.io/projects/',
 }
 
 const mocks = {

@@ -15,8 +15,9 @@
     </section>
     <section class="container_middle m-72_bottom media-m-48_bottom">
       <Picture
+        :width="1026"
+        :height="616"
         :shadow="true"
-        :lazy="true"
         folder="nambafood"
         file="sjms-analytics"
         extension="jpg"

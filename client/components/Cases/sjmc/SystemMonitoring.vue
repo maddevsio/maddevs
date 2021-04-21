@@ -49,7 +49,8 @@
     <section class="container_middle">
       <Picture
         :shadow="true"
-        :lazy="true"
+        :width="1025"
+        :height="525"
         folder="sjmc"
         file="kibana"
         extension="jpg"

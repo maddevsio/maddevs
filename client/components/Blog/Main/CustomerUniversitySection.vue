@@ -19,7 +19,10 @@
             <p class="featured-post__text">
               {{ firstParagraph }}
             </p>
-            <PostAuthor v-bind="findAuthor(featuredCUPost.post_author.id, allAuthors)" />
+            <PostAuthor
+              v-bind="findAuthor(featuredCUPost.post_author.id, allAuthors)"
+              theme="dark"
+            />
             <div class="featured-post__cover-wrapper">
               <img
                 class="featured-post__cover img_lazy"

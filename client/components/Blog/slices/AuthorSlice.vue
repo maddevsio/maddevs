@@ -127,6 +127,7 @@ export default {
   &__image {
     margin-right: 17px;
     width: 68px;
+    min-width: 68px;
     height: 68px;
     border-radius: 50%;
     background-color: $bgcolor--silver;
@@ -178,6 +179,7 @@ export default {
     }
   }
   &__contributors {
+    margin-left: 20px;
     &-title {
       font-size: 13px;
       line-height: 166%;
@@ -242,6 +244,7 @@ export default {
       justify-content: center;
     }
     &__contributors {
+      margin-left: 0;
       margin-top: 22px;
       &-list {
         justify-content: center;

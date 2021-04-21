@@ -49,8 +49,8 @@ exports[`CouriersApplication component should render correctly 1`] = `
             data-src="img.jpg"
             data-srcset="img.jpg 2x"
             data-testid="test-picture-img"
-            height="0"
-            width="0"
+            height="771"
+            width="1230"
           />
         </picture>
       </section>

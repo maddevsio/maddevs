@@ -14,9 +14,10 @@ exports[`featured post component is a Vue instance 1`] = `
       >
         <h2
           class="featured-post__title"
+          title="The best practices for improving layout quality on your website"
         >
           
-        The best practices for improving layout quality on your website
+        The best practices for improving layout quality...
       
         </h2>
          
@@ -37,20 +38,17 @@ exports[`featured post component is a Vue instance 1`] = `
             class="featured-post__meta"
           >
             <nuxtlink-stub
+              class="post-tag dark"
               to="/blog/tag/markup/"
             >
-              <div
-                class="post-tag dark"
+              <span
+                class="tag"
+                data-testid="test-tag"
               >
-                <span
-                  class="tag"
-                  data-testid="test-tag"
-                >
-                  
-      markup
-    
-                </span>
-              </div>
+                
+    markup
+  
+              </span>
             </nuxtlink-stub>
              
             <span

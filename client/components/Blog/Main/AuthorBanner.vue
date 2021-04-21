@@ -1,14 +1,13 @@
 <template>
   <div class="container">
     <div class="current-author">
-      <img
-        ref="authorImage"
-        :data-src="blogAuthor.image.url"
-        :alt="blogAuthor.image.alt"
-        width="170"
-        height="170"
-        class="current-author__image img_lazy"
-      >
+      <div class="current-author__image">
+        <img
+          :data-src="blogAuthor.image.url"
+          :alt="blogAuthor.image.alt"
+          class="img_lazy"
+        >
+      </div>
       <h1 class="current-author__name">
         {{ blogAuthor.name }}
       </h1>
@@ -46,9 +45,14 @@ export default {
       height: 165px;
       border-radius: 50%;
       overflow: hidden;
-      object-fit: cover;
       background: $bgcolor--black-light;
       -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
     &__name {
       margin-top: 29px;

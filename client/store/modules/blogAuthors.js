@@ -1,3 +1,5 @@
+import extractSchemaOrg from '@/helpers/extractSchemaOrg'
+
 const extractAuthorData = author => {
   const socialNetworks = author.data.social_networks
     .filter(item => item.network && item.link.url)
@@ -15,6 +17,9 @@ const extractAuthorData = author => {
     position: author.data.position,
     thumbnailImage: author.data.thumbnail_image,
     image: author.data.image,
+    metaTitle: author.data.meta_title,
+    metaDescription: author.data.meta_description,
+    schemaOrgSnippet: extractSchemaOrg(author.data.schema_org_snippets),
     socialNetworks,
   }
 }

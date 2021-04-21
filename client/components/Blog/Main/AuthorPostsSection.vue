@@ -1,21 +1,22 @@
 <template>
   <div class="author-posts">
     <div class="container">
-      <template v-if="featuredPost">
-        <div class="author-posts__featured-post">
-          <FeaturedPost
-            v-if="authorPostsLoaded"
-            :to="postLink(featuredPost.uid)"
-            :post="featuredPost"
-            :author="blogAuthor"
-            theme="light"
-          />
-          <SkeletonFeaturedPost
-            v-else
-            theme="light"
-          />
-        </div>
-      </template>
+      <div
+        class="author-posts__featured-post"
+        :class="[authorPosts.length === 1 ? 'author-posts__featured-post--mb-48' : '']"
+      >
+        <FeaturedPost
+          v-if="authorPostsLoaded"
+          :to="postLink(authorPosts[0].uid)"
+          :post="authorPosts[0]"
+          :author="blogAuthor"
+          theme="light"
+        />
+        <SkeletonFeaturedPost
+          v-else
+          theme="light"
+        />
+      </div>
       <div class="row author-posts__wrapper">
         <template v-if="authorPostsLoaded">
           <section
@@ -45,9 +46,12 @@
           </section>
         </template>
       </div>
-      <div class="author-posts__load-more">
+      <div
+        v-if="totalPages > authorPostsPage"
+        class="author-posts__load-more"
+      >
         <LoadMoreButton
-          v-if="totalPages > authorPostsPage"
+
           @click="getMoreAuthorPosts"
         />
       </div>
@@ -76,16 +80,12 @@ export default {
 
   data() {
     return {
-      pageSize: 12,
+      pageSize: 13,
     }
   },
 
   computed: {
     ...mapGetters(['blogAuthor', 'authorPosts', 'authorPostsLoaded', 'authorPostsPage']),
-
-    featuredPost() {
-      return this.authorPosts.find(post => post.tags.includes('Featured post'))
-    },
 
     authorPostsToShow() {
       return this.authorPosts.slice(0, this.pageSize * this.authorPostsPage)
@@ -115,16 +115,22 @@ export default {
 
   .author-posts {
     background-color: $bgcolor--white-primary;
-    padding: 60px 0;
+    padding: 60px 0 12px;
     &__wrapper {
       margin: 0 -10px;
     }
     &__featured-post {
       margin-bottom: 137px;
+      &--mb-48 {
+        margin-bottom: 48px;
+      }
     }
     &__single-post {
       width: 33.3333%;
       margin-bottom: 48px;
+      &:first-of-type {
+        display: none;
+      }
       .single-post__wrapper {
         padding: 0 10px;
         /deep/ .blog-post__author-name {
@@ -134,10 +140,14 @@ export default {
     }
     &__load-more {
       margin-top: 36px;
+      margin-bottom: 48px;
     }
     @media only screen and (max-width: 991px) {
       &__single-post {
         width: 100%;
+        &:first-of-type {
+          display: block;
+        }
       }
       &__featured-post {
         display: none;

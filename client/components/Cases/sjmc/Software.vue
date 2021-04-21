@@ -18,7 +18,8 @@
     <section class="container_full background-color-silver">
       <div class="container_full case_full-screen-img">
         <Picture
-          :lazy="true"
+          :width="1440"
+          :height="705"
           folder="sjmc"
           file="multimedia-management"
           extension="jpg"

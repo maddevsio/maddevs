@@ -467,15 +467,16 @@ exports[`Footer component should render correctly 1`] = `
                   I confirm that I have read and accepted
     
                   <div>
-                    Mad Devs’
+                    
+      Mad Devs’
+      
+                    <a
+                      href="/privacy/"
+                      target="_blank"
+                    >
+                      Privacy Policy
+                    </a>
                   </div>
-                   
-                  <a
-                    href="/privacy/"
-                    target="_blank"
-                  >
-                    Privacy Policy
-                  </a>
                    
                   <input
                     class="form-checkbox-input"
@@ -517,7 +518,7 @@ exports[`Footer component should render correctly 1`] = `
               </div>
                
               <button
-                class="ui-button ui-button--disabled ui-button--transparent-bgc submit-button"
+                class="ui-button ui-button--disabled ui-button--transparent-bgc ui-button_submit-button-footer"
               >
                 
     Order a project now

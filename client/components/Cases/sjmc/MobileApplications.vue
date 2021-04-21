@@ -11,7 +11,8 @@
     <section class="container_full background-color-black-section">
       <div class="container_full case_full-screen-img">
         <Picture
-          :lazy="true"
+          :width="1440"
+          :height="662"
           folder="sjmc"
           file="mobile-applications"
           extension="jpg"
@@ -41,7 +42,8 @@
     </section>
     <section class="container_regular">
       <Picture
-        :lazy="true"
+        :width="817"
+        :height="459"
         folder="sjmc"
         file="sjmc-map"
         extension="jpg"

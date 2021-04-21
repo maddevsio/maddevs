@@ -4,11 +4,13 @@
       :for="`privacy-policy-${id}`"
       class="form-checkbox-label required"
     >I confirm that I have read and accepted
-      <div>Mad Devs’</div>
-      <a
-        href="/privacy/"
-        target="_blank"
-      >Privacy Policy</a>
+      <div>
+        Mad Devs’
+        <a
+          href="/privacy/"
+          target="_blank"
+        >Privacy Policy</a>
+      </div>
       <input
         :id="`privacy-policy-${id}`"
         v-model="privacy"

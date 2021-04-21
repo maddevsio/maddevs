@@ -44,10 +44,12 @@ export default {
 
   &__nav-item,
   &__company-name {
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
+    font-weight: 400;
     line-height: 24px;
     color: $text-color--grey;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.013em;
   }
 
   &__company-name {

@@ -318,21 +318,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/backend-development/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Backend development
-    
-                          </span>
-                        </div>
+                          
+    Backend development
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      
@@ -413,21 +409,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/mobile-development/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Mobile Development
-    
-                          </span>
-                        </div>
+                          
+    Mobile Development
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      
@@ -508,21 +500,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/frontend-development/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Frontend development
-    
-                          </span>
-                        </div>
+                          
+    Frontend development
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      
@@ -603,21 +591,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/backend-development/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Backend development
-    
-                          </span>
-                        </div>
+                          
+    Backend development
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      
@@ -698,21 +682,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/backend-development/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Backend development
-    
-                          </span>
-                        </div>
+                          
+    Backend development
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      
@@ -793,21 +773,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/backend-development/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Backend development
-    
-                          </span>
-                        </div>
+                          
+    Backend development
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      
@@ -888,21 +864,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/backend-development/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Backend development
-    
-                          </span>
-                        </div>
+                          
+    Backend development
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      
@@ -983,21 +955,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/hardware/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Hardware
-    
-                          </span>
-                        </div>
+                          
+    Hardware
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      
@@ -1078,21 +1046,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/frontend-development/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Frontend development
-    
-                          </span>
-                        </div>
+                          
+    Frontend development
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      
@@ -1173,21 +1137,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/frontend-development/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Frontend development
-    
-                          </span>
-                        </div>
+                          
+    Frontend development
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      
@@ -1268,21 +1228,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/backend-development/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Backend development
-    
-                          </span>
-                        </div>
+                          
+    Backend development
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      
@@ -1363,21 +1319,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/backend-development/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Backend development
-    
-                          </span>
-                        </div>
+                          
+    Backend development
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      
@@ -1458,21 +1410,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/software-development/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Software Development 
-    
-                          </span>
-                        </div>
+                          
+    Software Development 
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      
@@ -1553,21 +1501,17 @@ exports[`Main component should render correctly 1`] = `
                       </span>
                        
                       <nuxtlink-stub
-                        class="light"
+                        class="post-tag light light"
                         to="/blog/tag/backend-development/"
                       >
-                        <div
-                          class="post-tag light"
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
                         >
-                          <span
-                            class="tag"
-                            data-testid="test-tag"
-                          >
-                            
-      Backend development
-    
-                          </span>
-                        </div>
+                          
+    Backend development
+  
+                        </span>
                       </nuxtlink-stub>
                     </div>
                      

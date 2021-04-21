@@ -15,10 +15,10 @@
       >
       <video
         ref="video"
-        class="main-video media_lazy"
+        class="main-video"
       >
         <source
-          :data-src="$getMediaFromS3('/videos/sjmc/sjmc-modal-video.00bd869.mp4')"
+          :src="$getMediaFromS3('/videos/sjmc/sjmc-modal-video.00bd869.mp4')"
           type="video/mp4"
         >
         Your browser does not support the video tag.

@@ -26,7 +26,8 @@
     </section>
     <section class="container_full case_full-screen-img">
       <Picture
-        :lazy="true"
+        :width="1440"
+        :height="869"
         folder="sjmc"
         file="sjmc-team"
         extension="jpg"
