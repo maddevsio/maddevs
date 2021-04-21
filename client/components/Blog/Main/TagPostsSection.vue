@@ -1,22 +1,26 @@
 <template>
   <div class="tag-posts">
     <div class="container">
-      <template v-if="featuredPost">
-        <div class="tag-posts__featured-post">
-          <FeaturedPost
-            v-if="tagPostsLoaded"
-            :to="postLink(featuredPost.uid)"
-            :post="featuredPost"
-            :author="findAuthor(featuredPost.data.post_author.id, allAuthors)"
-            theme="light"
-          />
-          <SkeletonFeaturedPost
-            v-else
-            theme="light"
-          />
-        </div>
-      </template>
-      <div class="row tag-posts__wrapper">
+      <div
+        class="tag-posts__featured-post"
+        :class="[tagPosts.length === 1 ? 'tag-posts__featured-post--mb-48' : '']"
+      >
+        <FeaturedPost
+          v-if="tagPostsLoaded"
+          :to="postLink(tagPosts[0].uid)"
+          :post="tagPosts[0]"
+          :author="findAuthor(tagPosts[0].data.post_author.id, allAuthors)"
+          theme="light"
+        />
+        <SkeletonFeaturedPost
+          v-else
+          theme="light"
+        />
+      </div>
+      <div
+        class="row tag-posts__wrapper"
+        :class="[tagPosts.length === 1 ? 'tag-posts__wrapper--one-post' : '']"
+      >
         <template v-if="tagPostsLoaded">
           <section
             v-for="post in tagPostsToShow"
@@ -46,9 +50,12 @@
           </section>
         </template>
       </div>
-      <div class="tag-posts__load-more">
+      <div
+        v-if="totalPages > tagPostsPage"
+        class="tag-posts__load-more"
+      >
         <LoadMoreButton
-          v-if="totalPages > tagPostsPage"
+
           @click="getMoreTagPosts"
         />
       </div>
@@ -82,16 +89,12 @@ export default {
 
   data() {
     return {
-      pageSize: 12,
+      pageSize: 13,
     }
   },
 
   computed: {
     ...mapGetters(['blogTag', 'tagPosts', 'tagPostsLoaded', 'allAuthors', 'tagPostsPage']),
-
-    featuredPost() {
-      return this.tagPosts.find(post => post.tags.includes('Featured post'))
-    },
 
     tagPostsToShow() {
       return this.tagPosts.slice(0, this.pageSize * this.tagPostsPage)
@@ -121,9 +124,12 @@ export default {
 
   .tag-posts {
     background-color: $bgcolor--white-primary;
-    padding: 60px 0;
+    padding: 60px 0 12px;
     &__featured-post {
       margin-bottom: 137px;
+      &--mb-48 {
+        margin-bottom: 48px;
+      }
     }
     &__wrapper {
       margin: 0 -10px;
@@ -131,6 +137,9 @@ export default {
     &__single-post {
       width: 33.3333%;
       margin-bottom: 48px;
+      &:first-of-type {
+        display: none;
+      }
       .single-post__wrapper {
         padding: 0 10px;
         /deep/ .blog-post__author-name {
@@ -140,10 +149,14 @@ export default {
     }
     &__load-more {
       margin-top: 36px;
+      margin-bottom: 48px;
     }
     @media only screen and (max-width: 991px) {
       &__single-post {
         width: 100%;
+        &:first-of-type {
+          display: block;
+        }
       }
       &__featured-post {
         display: none;

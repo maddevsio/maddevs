@@ -32,7 +32,7 @@ exports[`recommended blog widget component render with very long title 1`] = `
           title="The best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your website"
         >
           
-        The best practices for improving layout...
+        The best practices for improving...
       
         </h2>
          
@@ -64,21 +64,17 @@ exports[`recommended blog widget component render with very long title 1`] = `
           </span>
            
           <nuxtlink-stub
-            class="light"
+            class="post-tag light light"
             to="/blog/tag/markup/"
           >
-            <div
-              class="post-tag light"
+            <span
+              class="tag"
+              data-testid="test-tag"
             >
-              <span
-                class="tag"
-                data-testid="test-tag"
-              >
-                
-      markup
-    
-              </span>
-            </div>
+              
+    markup
+  
+            </span>
           </nuxtlink-stub>
         </div>
          
@@ -121,7 +117,7 @@ exports[`recommended blog widget component should render correctly with slot 1`]
           title="The best practices for improving layout quality on your website"
         >
           
-        The best practices for improving layout...
+        The best practices for improving...
       
         </h2>
          
@@ -153,21 +149,17 @@ exports[`recommended blog widget component should render correctly with slot 1`]
           </span>
            
           <nuxtlink-stub
-            class="light"
+            class="post-tag light light"
             to="/blog/tag/markup/"
           >
-            <div
-              class="post-tag light"
+            <span
+              class="tag"
+              data-testid="test-tag"
             >
-              <span
-                class="tag"
-                data-testid="test-tag"
-              >
-                
-      markup
-    
-              </span>
-            </div>
+              
+    markup
+  
+            </span>
           </nuxtlink-stub>
         </div>
          
