@@ -1,12 +1,8 @@
-export default {
-  actions: {
-    async createNewLead(_, payload) {
-      try {
-        const response = this.$axios.post('api/leads', payload)
-        return response.data
-      } catch (error) {
-        return error
-      }
-    },
+import { createNewLead } from '@/api/leads'
+
+export const actions = {
+  async createNewLead(_, payload) {
+    const data = await createNewLead(this.$axios, payload)
+    return data
   },
 }
