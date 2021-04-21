@@ -8,13 +8,15 @@ exports[`AuthorBanner component should render correctly 1`] = `
     <div
       class="current-author"
     >
-      <img
-        alt="alt"
-        class="current-author__image img_lazy"
-        data-src="someurl"
-        height="170"
-        width="170"
-      />
+      <div
+        class="current-author__image"
+      >
+        <img
+          alt="alt"
+          class="img_lazy"
+          data-src="someurl"
+        />
+      </div>
        
       <h1
         class="current-author__name"

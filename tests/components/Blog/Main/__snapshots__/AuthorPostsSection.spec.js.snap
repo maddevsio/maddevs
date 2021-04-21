@@ -8,7 +8,112 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     <div
       class="container"
     >
-      <!---->
+      <div
+        class="author-posts__featured-post"
+      >
+        <nuxtlink-stub
+          class="featured-post light"
+          to="/blog/author/undefined/software-architecture-design/"
+        >
+          <div
+            class="row featured-post__wrapper"
+          >
+            <div
+              class="col-12 col-lg-6 featured-post__main"
+            >
+              <h2
+                class="featured-post__title"
+                title="img.png"
+              >
+                
+        img.png
+      
+              </h2>
+               
+              <p
+                class="featured-post__paragraph"
+              >
+                
+        Hello, everyone!Today, I would like to introduce you to the world of application design.Designing applications can be called a multidisciplinary task, and it includes:I want to consider the question...
+      
+              </p>
+               
+              <div
+                class="featured-post__data d-flex justify-content-between"
+              >
+                <nuxtlink-stub
+                  class="blog-post__author"
+                  image="[object Object]"
+                  postition="position"
+                  to="/blog/author//"
+                >
+                  <div
+                    class="blog-post__none-image light"
+                  />
+                   
+                  <div
+                    class="blog-post__author-info"
+                  >
+                    <p
+                      class="blog-post__author-name"
+                    >
+                      
+      Maddevs
+    
+                    </p>
+                     
+                    <div
+                      class="blog-post__data-of-creation"
+                    >
+                      <span
+                        class="blog-post__author-title"
+                      >
+                        
+                      </span>
+                    </div>
+                  </div>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="featured-post__meta"
+                >
+                  <nuxtlink-stub
+                    class="post-tag light"
+                    to="/blog/tag/backend-development/"
+                  >
+                    <span
+                      class="tag"
+                      data-testid="test-tag"
+                    >
+                      
+    Backend development
+  
+                    </span>
+                  </nuxtlink-stub>
+                   
+                  <span
+                    class="created-at"
+                  >
+                    Dec 17, 2020
+                  </span>
+                </div>
+              </div>
+            </div>
+             
+            <div
+              class="col-12 col-lg-6 featured-post__image-wrapper"
+            >
+              <img
+                alt="Application Design Proccess."
+                class="featured-post__image img_lazy"
+                data-src="https://images.prismic.io/superpupertest/93d447b6-2865-4da7-ad2c-5cd07c98d4e3_8.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
+                height="533"
+                width="983"
+              />
+            </div>
+          </div>
+        </nuxtlink-stub>
+      </div>
        
       <div
         class="row author-posts__wrapper"
@@ -82,56 +187,49 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     </span>
                      
                     <nuxtlink-stub
-                      class="light"
+                      class="post-tag light light"
                       to="/blog/tag/backend-development/"
                     >
-                      <div
-                        class="post-tag light"
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
                       >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-      Backend development
-    
-                        </span>
-                      </div>
+                        
+    Backend development
+  
+                      </span>
                     </nuxtlink-stub>
                   </div>
                    
                   <nuxtlink-stub
+                    class="blog-post__author"
                     image="[object Object]"
                     postition="position"
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__author"
+                      class="blog-post__none-image light"
+                    />
+                     
+                    <div
+                      class="blog-post__author-info"
                     >
-                      <div
-                        class="blog-post__none-image light"
-                      />
+                      <p
+                        class="blog-post__author-name"
+                      >
+                        
+      Maddevs
+    
+                      </p>
                        
                       <div
-                        class="blog-post__author-info"
+                        class="blog-post__data-of-creation"
                       >
-                        <p
-                          class="blog-post__author-name"
+                        <span
+                          class="blog-post__author-title"
                         >
                           
-        Maddevs
-      
-                        </p>
-                         
-                        <div
-                          class="blog-post__data-of-creation"
-                        >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                        </span>
                       </div>
                     </div>
                   </nuxtlink-stub>
@@ -209,56 +307,49 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     </span>
                      
                     <nuxtlink-stub
-                      class="light"
+                      class="post-tag light light"
                       to="/blog/tag/mobile-development/"
                     >
-                      <div
-                        class="post-tag light"
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
                       >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-      Mobile Development
-    
-                        </span>
-                      </div>
+                        
+    Mobile Development
+  
+                      </span>
                     </nuxtlink-stub>
                   </div>
                    
                   <nuxtlink-stub
+                    class="blog-post__author"
                     image="[object Object]"
                     postition="position"
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__author"
+                      class="blog-post__none-image light"
+                    />
+                     
+                    <div
+                      class="blog-post__author-info"
                     >
-                      <div
-                        class="blog-post__none-image light"
-                      />
+                      <p
+                        class="blog-post__author-name"
+                      >
+                        
+      Maddevs
+    
+                      </p>
                        
                       <div
-                        class="blog-post__author-info"
+                        class="blog-post__data-of-creation"
                       >
-                        <p
-                          class="blog-post__author-name"
+                        <span
+                          class="blog-post__author-title"
                         >
                           
-        Maddevs
-      
-                        </p>
-                         
-                        <div
-                          class="blog-post__data-of-creation"
-                        >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                        </span>
                       </div>
                     </div>
                   </nuxtlink-stub>
@@ -336,56 +427,49 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     </span>
                      
                     <nuxtlink-stub
-                      class="light"
+                      class="post-tag light light"
                       to="/blog/tag/frontend-development/"
                     >
-                      <div
-                        class="post-tag light"
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
                       >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-      Frontend development
-    
-                        </span>
-                      </div>
+                        
+    Frontend development
+  
+                      </span>
                     </nuxtlink-stub>
                   </div>
                    
                   <nuxtlink-stub
+                    class="blog-post__author"
                     image="[object Object]"
                     postition="position"
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__author"
+                      class="blog-post__none-image light"
+                    />
+                     
+                    <div
+                      class="blog-post__author-info"
                     >
-                      <div
-                        class="blog-post__none-image light"
-                      />
+                      <p
+                        class="blog-post__author-name"
+                      >
+                        
+      Maddevs
+    
+                      </p>
                        
                       <div
-                        class="blog-post__author-info"
+                        class="blog-post__data-of-creation"
                       >
-                        <p
-                          class="blog-post__author-name"
+                        <span
+                          class="blog-post__author-title"
                         >
                           
-        Maddevs
-      
-                        </p>
-                         
-                        <div
-                          class="blog-post__data-of-creation"
-                        >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                        </span>
                       </div>
                     </div>
                   </nuxtlink-stub>
@@ -463,56 +547,49 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     </span>
                      
                     <nuxtlink-stub
-                      class="light"
+                      class="post-tag light light"
                       to="/blog/tag/backend-development/"
                     >
-                      <div
-                        class="post-tag light"
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
                       >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-      Backend development
-    
-                        </span>
-                      </div>
+                        
+    Backend development
+  
+                      </span>
                     </nuxtlink-stub>
                   </div>
                    
                   <nuxtlink-stub
+                    class="blog-post__author"
                     image="[object Object]"
                     postition="position"
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__author"
+                      class="blog-post__none-image light"
+                    />
+                     
+                    <div
+                      class="blog-post__author-info"
                     >
-                      <div
-                        class="blog-post__none-image light"
-                      />
+                      <p
+                        class="blog-post__author-name"
+                      >
+                        
+      Maddevs
+    
+                      </p>
                        
                       <div
-                        class="blog-post__author-info"
+                        class="blog-post__data-of-creation"
                       >
-                        <p
-                          class="blog-post__author-name"
+                        <span
+                          class="blog-post__author-title"
                         >
                           
-        Maddevs
-      
-                        </p>
-                         
-                        <div
-                          class="blog-post__data-of-creation"
-                        >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                        </span>
                       </div>
                     </div>
                   </nuxtlink-stub>
@@ -590,56 +667,49 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     </span>
                      
                     <nuxtlink-stub
-                      class="light"
+                      class="post-tag light light"
                       to="/blog/tag/backend-development/"
                     >
-                      <div
-                        class="post-tag light"
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
                       >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-      Backend development
-    
-                        </span>
-                      </div>
+                        
+    Backend development
+  
+                      </span>
                     </nuxtlink-stub>
                   </div>
                    
                   <nuxtlink-stub
+                    class="blog-post__author"
                     image="[object Object]"
                     postition="position"
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__author"
+                      class="blog-post__none-image light"
+                    />
+                     
+                    <div
+                      class="blog-post__author-info"
                     >
-                      <div
-                        class="blog-post__none-image light"
-                      />
+                      <p
+                        class="blog-post__author-name"
+                      >
+                        
+      Maddevs
+    
+                      </p>
                        
                       <div
-                        class="blog-post__author-info"
+                        class="blog-post__data-of-creation"
                       >
-                        <p
-                          class="blog-post__author-name"
+                        <span
+                          class="blog-post__author-title"
                         >
                           
-        Maddevs
-      
-                        </p>
-                         
-                        <div
-                          class="blog-post__data-of-creation"
-                        >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                        </span>
                       </div>
                     </div>
                   </nuxtlink-stub>
@@ -717,56 +787,49 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     </span>
                      
                     <nuxtlink-stub
-                      class="light"
+                      class="post-tag light light"
                       to="/blog/tag/backend-development/"
                     >
-                      <div
-                        class="post-tag light"
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
                       >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-      Backend development
-    
-                        </span>
-                      </div>
+                        
+    Backend development
+  
+                      </span>
                     </nuxtlink-stub>
                   </div>
                    
                   <nuxtlink-stub
+                    class="blog-post__author"
                     image="[object Object]"
                     postition="position"
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__author"
+                      class="blog-post__none-image light"
+                    />
+                     
+                    <div
+                      class="blog-post__author-info"
                     >
-                      <div
-                        class="blog-post__none-image light"
-                      />
+                      <p
+                        class="blog-post__author-name"
+                      >
+                        
+      Maddevs
+    
+                      </p>
                        
                       <div
-                        class="blog-post__author-info"
+                        class="blog-post__data-of-creation"
                       >
-                        <p
-                          class="blog-post__author-name"
+                        <span
+                          class="blog-post__author-title"
                         >
                           
-        Maddevs
-      
-                        </p>
-                         
-                        <div
-                          class="blog-post__data-of-creation"
-                        >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                        </span>
                       </div>
                     </div>
                   </nuxtlink-stub>
@@ -844,56 +907,49 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     </span>
                      
                     <nuxtlink-stub
-                      class="light"
+                      class="post-tag light light"
                       to="/blog/tag/backend-development/"
                     >
-                      <div
-                        class="post-tag light"
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
                       >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-      Backend development
-    
-                        </span>
-                      </div>
+                        
+    Backend development
+  
+                      </span>
                     </nuxtlink-stub>
                   </div>
                    
                   <nuxtlink-stub
+                    class="blog-post__author"
                     image="[object Object]"
                     postition="position"
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__author"
+                      class="blog-post__none-image light"
+                    />
+                     
+                    <div
+                      class="blog-post__author-info"
                     >
-                      <div
-                        class="blog-post__none-image light"
-                      />
+                      <p
+                        class="blog-post__author-name"
+                      >
+                        
+      Maddevs
+    
+                      </p>
                        
                       <div
-                        class="blog-post__author-info"
+                        class="blog-post__data-of-creation"
                       >
-                        <p
-                          class="blog-post__author-name"
+                        <span
+                          class="blog-post__author-title"
                         >
                           
-        Maddevs
-      
-                        </p>
-                         
-                        <div
-                          class="blog-post__data-of-creation"
-                        >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                        </span>
                       </div>
                     </div>
                   </nuxtlink-stub>
@@ -971,56 +1027,49 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     </span>
                      
                     <nuxtlink-stub
-                      class="light"
+                      class="post-tag light light"
                       to="/blog/tag/hardware/"
                     >
-                      <div
-                        class="post-tag light"
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
                       >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-      Hardware
-    
-                        </span>
-                      </div>
+                        
+    Hardware
+  
+                      </span>
                     </nuxtlink-stub>
                   </div>
                    
                   <nuxtlink-stub
+                    class="blog-post__author"
                     image="[object Object]"
                     postition="position"
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__author"
+                      class="blog-post__none-image light"
+                    />
+                     
+                    <div
+                      class="blog-post__author-info"
                     >
-                      <div
-                        class="blog-post__none-image light"
-                      />
+                      <p
+                        class="blog-post__author-name"
+                      >
+                        
+      Maddevs
+    
+                      </p>
                        
                       <div
-                        class="blog-post__author-info"
+                        class="blog-post__data-of-creation"
                       >
-                        <p
-                          class="blog-post__author-name"
+                        <span
+                          class="blog-post__author-title"
                         >
                           
-        Maddevs
-      
-                        </p>
-                         
-                        <div
-                          class="blog-post__data-of-creation"
-                        >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                        </span>
                       </div>
                     </div>
                   </nuxtlink-stub>
@@ -1098,56 +1147,49 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     </span>
                      
                     <nuxtlink-stub
-                      class="light"
+                      class="post-tag light light"
                       to="/blog/tag/frontend-development/"
                     >
-                      <div
-                        class="post-tag light"
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
                       >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-      Frontend development
-    
-                        </span>
-                      </div>
+                        
+    Frontend development
+  
+                      </span>
                     </nuxtlink-stub>
                   </div>
                    
                   <nuxtlink-stub
+                    class="blog-post__author"
                     image="[object Object]"
                     postition="position"
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__author"
+                      class="blog-post__none-image light"
+                    />
+                     
+                    <div
+                      class="blog-post__author-info"
                     >
-                      <div
-                        class="blog-post__none-image light"
-                      />
+                      <p
+                        class="blog-post__author-name"
+                      >
+                        
+      Maddevs
+    
+                      </p>
                        
                       <div
-                        class="blog-post__author-info"
+                        class="blog-post__data-of-creation"
                       >
-                        <p
-                          class="blog-post__author-name"
+                        <span
+                          class="blog-post__author-title"
                         >
                           
-        Maddevs
-      
-                        </p>
-                         
-                        <div
-                          class="blog-post__data-of-creation"
-                        >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                        </span>
                       </div>
                     </div>
                   </nuxtlink-stub>
@@ -1225,56 +1267,49 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     </span>
                      
                     <nuxtlink-stub
-                      class="light"
+                      class="post-tag light light"
                       to="/blog/tag/frontend-development/"
                     >
-                      <div
-                        class="post-tag light"
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
                       >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-      Frontend development
-    
-                        </span>
-                      </div>
+                        
+    Frontend development
+  
+                      </span>
                     </nuxtlink-stub>
                   </div>
                    
                   <nuxtlink-stub
+                    class="blog-post__author"
                     image="[object Object]"
                     postition="position"
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__author"
+                      class="blog-post__none-image light"
+                    />
+                     
+                    <div
+                      class="blog-post__author-info"
                     >
-                      <div
-                        class="blog-post__none-image light"
-                      />
+                      <p
+                        class="blog-post__author-name"
+                      >
+                        
+      Maddevs
+    
+                      </p>
                        
                       <div
-                        class="blog-post__author-info"
+                        class="blog-post__data-of-creation"
                       >
-                        <p
-                          class="blog-post__author-name"
+                        <span
+                          class="blog-post__author-title"
                         >
                           
-        Maddevs
-      
-                        </p>
-                         
-                        <div
-                          class="blog-post__data-of-creation"
-                        >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                        </span>
                       </div>
                     </div>
                   </nuxtlink-stub>
@@ -1352,56 +1387,49 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     </span>
                      
                     <nuxtlink-stub
-                      class="light"
+                      class="post-tag light light"
                       to="/blog/tag/backend-development/"
                     >
-                      <div
-                        class="post-tag light"
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
                       >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-      Backend development
-    
-                        </span>
-                      </div>
+                        
+    Backend development
+  
+                      </span>
                     </nuxtlink-stub>
                   </div>
                    
                   <nuxtlink-stub
+                    class="blog-post__author"
                     image="[object Object]"
                     postition="position"
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__author"
+                      class="blog-post__none-image light"
+                    />
+                     
+                    <div
+                      class="blog-post__author-info"
                     >
-                      <div
-                        class="blog-post__none-image light"
-                      />
+                      <p
+                        class="blog-post__author-name"
+                      >
+                        
+      Maddevs
+    
+                      </p>
                        
                       <div
-                        class="blog-post__author-info"
+                        class="blog-post__data-of-creation"
                       >
-                        <p
-                          class="blog-post__author-name"
+                        <span
+                          class="blog-post__author-title"
                         >
                           
-        Maddevs
-      
-                        </p>
-                         
-                        <div
-                          class="blog-post__data-of-creation"
-                        >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                        </span>
                       </div>
                     </div>
                   </nuxtlink-stub>
@@ -1479,56 +1507,169 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     </span>
                      
                     <nuxtlink-stub
-                      class="light"
+                      class="post-tag light light"
                       to="/blog/tag/backend-development/"
                     >
-                      <div
-                        class="post-tag light"
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
                       >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-      Backend development
-    
-                        </span>
-                      </div>
+                        
+    Backend development
+  
+                      </span>
                     </nuxtlink-stub>
                   </div>
                    
                   <nuxtlink-stub
+                    class="blog-post__author"
                     image="[object Object]"
                     postition="position"
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__author"
+                      class="blog-post__none-image light"
+                    />
+                     
+                    <div
+                      class="blog-post__author-info"
                     >
-                      <div
-                        class="blog-post__none-image light"
-                      />
+                      <p
+                        class="blog-post__author-name"
+                      >
+                        
+      Maddevs
+    
+                      </p>
                        
                       <div
-                        class="blog-post__author-info"
+                        class="blog-post__data-of-creation"
                       >
-                        <p
-                          class="blog-post__author-name"
+                        <span
+                          class="blog-post__author-title"
                         >
                           
-        Maddevs
+                        </span>
+                      </div>
+                    </div>
+                  </nuxtlink-stub>
+                </div>
+              </div>
+            </nuxtlink-stub>
+          </div>
+        </section>
+        <section
+          class="author-posts__single-post"
+          post="[object Object]"
+        >
+          <div
+            class="single-post__wrapper"
+          >
+            <nuxtlink-stub
+              class="blog-post__wrapper"
+              to="/blog/author/undefined/comedian-slack-standup-bot/"
+            >
+              <div
+                class="blog-post"
+              >
+                <img
+                  alt="Standup."
+                  class="blog-post__image img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/d765c67a-821c-4f88-abf7-7a6822df8ede_1_bNuvXMgfV9hkVO-U-gQQ2g.png?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+                 
+                <div>
+                  <h2
+                    class="blog-post__title blog-post__title--short"
+                    title="img.png"
+                  >
+                    
+        img.png
       
-                        </p>
-                         
-                        <div
-                          class="blog-post__data-of-creation"
+                  </h2>
+                   
+                  <h2
+                    class="blog-post__title blog-post__title--very-short"
+                    title="img.png"
+                  >
+                    
+        img.png
+      
+                  </h2>
+                   
+                  <h2
+                    class="blog-post__title blog-post__title--full"
+                    title="img.png"
+                  >
+                    
+        img.png
+      
+                  </h2>
+                   
+                  <p
+                    class="blog-post__paragraph"
+                    data-testid="test-blog-post"
+                  >
+                    
+        Any business always strives to effectively use the time and skills of its employees since it directly affects the profit. Therefore, a business...
+      
+                  </p>
+                   
+                  <div
+                    class="blog-post__meta"
+                  >
+                    <span
+                      class="created-at"
+                    >
+                      Oct 01, 2018
+                    </span>
+                     
+                    <nuxtlink-stub
+                      class="post-tag light light"
+                      to="/blog/tag/software-development/"
+                    >
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
+                      >
+                        
+    Software Development 
+  
+                      </span>
+                    </nuxtlink-stub>
+                  </div>
+                   
+                  <nuxtlink-stub
+                    class="blog-post__author"
+                    image="[object Object]"
+                    postition="position"
+                    to="/blog/author//"
+                  >
+                    <div
+                      class="blog-post__none-image light"
+                    />
+                     
+                    <div
+                      class="blog-post__author-info"
+                    >
+                      <p
+                        class="blog-post__author-name"
+                      >
+                        
+      Maddevs
+    
+                      </p>
+                       
+                      <div
+                        class="blog-post__data-of-creation"
+                      >
+                        <span
+                          class="blog-post__author-title"
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </div>
                   </nuxtlink-stub>
