@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorSlice component should render correctly 1`] = `
+<div>
+  <div
+    class="author-slice"
+  >
+    <div
+      class="author-slice__info"
+    >
+      <div
+        class="author-slice__image"
+      >
+        <img
+          alt="alt"
+          class="img_lazy"
+          data-src="someurl"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="author-slice__name"
+        >
+          
+        Maddevs
+      
+        </p>
+         
+        <span
+          class="author-slice__position"
+        >
+          
+        
+      
+        </span>
+         
+        <ul
+          class="author-slice__social-list"
+        >
+          <li
+            class="author-slice__social-item author-slice__social-item--facebook"
+            data-testid="test-social"
+          >
+            <a
+              href="someurl"
+              target="_blank"
+            >
+              <img
+                alt="facebook"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="22"
+                width="22"
+              />
+            </a>
+          </li>
+          <li
+            class="author-slice__social-item author-slice__social-item--instagram"
+            data-testid="test-social"
+          >
+            <a
+              href="instagram"
+              target="_blank"
+            >
+              <img
+                alt="instagram"
+                class="img_lazy"
+                data-src="[object Object]"
+                height="22"
+                width="22"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+     
+    <div
+      class="author-slice__contributors"
+    >
+      <span
+        class="author-slice__contributors-title"
+      >
+        Contributors:
+      </span>
+       
+      <ul
+        class="author-slice__contributors-list"
+      >
+        <li
+          class="author-slice__contributors-item"
+          data-testid="test-contributors"
+        >
+          <img
+            class="img_lazy"
+            data-src="some-url"
+            height="26"
+            width="26"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
