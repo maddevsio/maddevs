@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+import { getBlogAuthors, getBlogAuthor, getAuthorPosts } from '@/api/blogAuthors'
 import extractSchemaOrg from '@/helpers/extractSchemaOrg'
 
 const extractAuthorData = author => {
@@ -24,87 +26,67 @@ const extractAuthorData = author => {
   }
 }
 
-export default {
-  state: () => ({
-    authors: [],
-    author: {},
-    authorPosts: [],
-    authorPostsLoaded: false,
-    authorPostsPage: 1,
-  }),
-  mutations: {
-    SET_ALL_AUTHORS(state, authors) {
-      state.authors = authors.map(author => extractAuthorData(author))
-    },
-    SET_AUTHOR(state, author) {
-      state.author = extractAuthorData(author)
-    },
-    SET_AUTHOR_POSTS(state, posts) {
-      state.authorPosts = posts
-    },
-    SET_AUTHOR_POSTS_LOADED(state, value) {
-      state.authorPostsLoaded = value
-    },
-    SET_AUTHOR_POSTS_PAGE(state, page) {
-      state.authorPostsPage = page
-    },
+export const state = () => ({
+  authors: [],
+  author: {},
+  authorPosts: [],
+  authorPostsLoaded: false,
+  authorPostsPage: 1,
+})
+
+export const mutations = {
+  SET_ALL_AUTHORS(state, authors) {
+    state.authors = authors.map(author => extractAuthorData(author))
   },
-  actions: {
-    async getBlogAuthors({ commit }) {
-      try {
-        const response = await this.$prismic.api.query(
-          this.$prismic.predicates.at('document.type', 'author'),
-          { pageSize: 100 },
-        )
-        commit('SET_ALL_AUTHORS', response.results)
-      } catch (err) {
-        if (err) throw err
-      }
-    },
-    async getBlogAuthor({ commit }, payload) {
-      try {
-        const response = await this.$prismic.api.getByUID('author', payload)
-        commit('SET_AUTHOR', response)
-      } catch (err) {
-        if (err) throw err
-      }
-    },
-    async getAuthorPosts({ commit }, payload) {
-      commit('SET_AUTHOR_POSTS_LOADED', false)
-      commit('SET_AUTHOR_POSTS', [])
-      try {
-        const response = await this.$prismic.api.query([
-          this.$prismic.predicates.at('document.type', 'post'),
-          this.$prismic.predicates.at('my.post.post_author', payload),
-        ], {
-          orderings: '[my.post.date desc]',
-          pageSize: 100,
-        })
-        commit('SET_AUTHOR_POSTS', response.results)
-        commit('SET_AUTHOR_POSTS_LOADED', true)
-      } catch (err) {
-        if (err) throw err
-      }
-    },
-    getMoreAuthorPosts({ commit, state }) {
-      commit('SET_AUTHOR_POSTS_PAGE', state.authorPostsPage + 1)
-    },
+  SET_AUTHOR(state, author) {
+    state.author = extractAuthorData(author)
   },
-  getters: {
-    allAuthors(state) {
-      return state.authors
-    },
-    blogAuthor(state) {
-      return state.author
-    },
-    authorPosts(state) {
-      return state.authorPosts
-    },
-    authorPostsLoaded(state) {
-      return state.authorPostsLoaded
-    },
-    authorPostsPage(state) {
-      return state.authorPostsPage
-    },
+  SET_AUTHOR_POSTS(state, posts) {
+    state.authorPosts = posts
+  },
+  SET_AUTHOR_POSTS_LOADED(state, value) {
+    state.authorPostsLoaded = value
+  },
+  SET_AUTHOR_POSTS_PAGE(state, page) {
+    state.authorPostsPage = page
+  },
+}
+
+export const actions = {
+  async getBlogAuthors({ commit }) {
+    const authors = await getBlogAuthors(this.$prismic)
+    commit('SET_ALL_AUTHORS', authors)
+  },
+  async getBlogAuthor({ commit }, payload) {
+    const author = await getBlogAuthor(this.$prismic, payload)
+    commit('SET_AUTHOR', author)
+  },
+  async getAuthorPosts({ commit }, payload) {
+    commit('SET_AUTHOR_POSTS_LOADED', false)
+    commit('SET_AUTHOR_POSTS', [])
+    const posts = await getAuthorPosts(this.$prismic, payload)
+    commit('SET_AUTHOR_POSTS', posts)
+    commit('SET_AUTHOR_POSTS_LOADED', true)
+  },
+  getMoreAuthorPosts({ commit, state }) {
+    commit('SET_AUTHOR_POSTS_PAGE', state.authorPostsPage + 1)
+  },
+}
+
+export const getters = {
+  allAuthors(state) {
+    return state.authors
+  },
+  blogAuthor(state) {
+    return state.author
+  },
+  authorPosts(state) {
+    return state.authorPosts
+  },
+  authorPostsLoaded(state) {
+    return state.authorPostsLoaded
+  },
+  authorPostsPage(state) {
+    return state.authorPostsPage
   },
 }
