@@ -40,6 +40,7 @@ exports[`header Blog is a Vue instance 1`] = `
          
         <nuxtlink
           class="post-tag dark"
+          event="click"
           to="/blog/tag/project-management/"
         >
           <span

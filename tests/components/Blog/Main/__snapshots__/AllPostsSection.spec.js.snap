@@ -289,6 +289,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/backend-development/"
                     >
                       <span
@@ -380,6 +381,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/mobile-development/"
                     >
                       <span
@@ -471,6 +473,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/frontend-development/"
                     >
                       <span
@@ -562,6 +565,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/backend-development/"
                     >
                       <span
@@ -653,6 +657,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/backend-development/"
                     >
                       <span
@@ -744,6 +749,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/backend-development/"
                     >
                       <span
@@ -835,6 +841,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/backend-development/"
                     >
                       <span
@@ -926,6 +933,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/hardware/"
                     >
                       <span
@@ -1017,6 +1025,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/frontend-development/"
                     >
                       <span
@@ -1108,6 +1117,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/frontend-development/"
                     >
                       <span
@@ -1199,6 +1209,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/backend-development/"
                     >
                       <span
@@ -1290,6 +1301,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/backend-development/"
                     >
                       <span
@@ -1381,6 +1393,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/software-development/"
                     >
                       <span
@@ -1472,6 +1485,7 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event="click"
                       to="/blog/tag/backend-development/"
                     >
                       <span
