@@ -57,11 +57,11 @@ export default {
 
   head() {
     return buildHead({
-      title: this.blogAuthor.metaTitle || 'Mad Devs: Software & Mobile App Development Company | Blog',
+      title: this.blogAuthor.metaTitle || `${this.blogAuthor.name} | Blog`,
       description: this.blogAuthor.metaDescription || '',
       url: this.openGraphUrl,
       jsonLd: this.blogAuthor.schemaOrgSnippet,
-      image: this.blogAuthor.image.url ? this.blogAuthor.image.url : 'https://maddevs.io/blog.png',
+      image: 'https://maddevs.io/blog.png',
       scripts: [
         // Need for supported Safari9 and IE11 https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Intl
         { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en' },
