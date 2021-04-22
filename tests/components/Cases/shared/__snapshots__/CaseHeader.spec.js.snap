@@ -50,7 +50,7 @@ exports[`CaseHeader component should render correctly 1`] = `
        
       <img
         alt="some-logo-alt"
-        class="case_header-logo img_lazy case_godee-logo"
+        class="case_header-logo media_lazy case_godee-logo"
         data-src="/images/Cases/undefined/svg/godee-logo.svg"
         height="100"
         width="100"
