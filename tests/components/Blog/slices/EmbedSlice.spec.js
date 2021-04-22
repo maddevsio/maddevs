@@ -2,7 +2,7 @@
 import EmbedSlice from '@/components/Blog/slices/EmbedSlice'
 import { render } from '@testing-library/vue'
 
-describe('embed slice component', () => {
+describe('EmbedSlice component', () => {
   const props = {
     slice: {
       items: [
@@ -32,7 +32,7 @@ describe('embed slice component', () => {
       slice_type: 'codeblock',
     },
   }
-  it('is a Vue instance', () => {
+  it('should render correctly', () => {
     const { container } = render(EmbedSlice, {
       props,
       stubs: ['PrismicEmbed'],
