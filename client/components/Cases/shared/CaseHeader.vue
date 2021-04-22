@@ -39,7 +39,7 @@
         :data-src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
         :alt="logo.alt"
         :class="`case_${logo.file}`"
-        class="case_header-logo img_lazy"
+        class="case_header-logo media_lazy"
       >
     </div>
   </section>

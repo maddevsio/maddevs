@@ -24,11 +24,12 @@
         ref="video"
         data-testid="test-case_video"
         width="100%"
-        height="100%"
+        :height="884"
         muted
         playsinline
         loop
         class="media_lazy"
+        :poster="$getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')"
       >
         <source
           :data-src="$getMediaFromS3('/videos/bluetooth-beacons-video.9ca649c.mp4')"

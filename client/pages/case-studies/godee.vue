@@ -28,6 +28,10 @@ export default {
       image: 'https://maddevs.io/godee.png',
     })
   },
+
+  mounted() {
+    this.$lazyLoad.init()
+  },
 }
 </script>
 
