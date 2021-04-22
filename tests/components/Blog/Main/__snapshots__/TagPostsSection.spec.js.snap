@@ -12,6 +12,7 @@ exports[`TagPostsSection component should render correctly 1`] = `
         class="tag-posts__featured-post"
       >
         <featuredpost-stub
+          disable-tag-link="true"
           post="[object Object]"
           theme="light"
           titletag="h2"
@@ -92,6 +93,7 @@ exports[`TagPostsSection component should render correctly 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event=""
                       to="/blog/tag/blog-tag/"
                     >
                       <span
@@ -181,6 +183,7 @@ exports[`TagPostsSection component should render correctly 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event=""
                       to="/blog/tag/blog-tag/"
                     >
                       <span
@@ -270,6 +273,7 @@ exports[`TagPostsSection component should render correctly 1`] = `
                      
                     <nuxtlink-stub
                       class="post-tag light light"
+                      event=""
                       to="/blog/tag/blog-tag/"
                     >
                       <span
