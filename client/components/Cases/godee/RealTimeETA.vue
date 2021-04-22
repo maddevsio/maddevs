@@ -27,7 +27,6 @@
       <div class="case_phone-wrapper-eta-section">
         <Picture
           :shadow="false"
-          :lazy="true"
           :width="358.96"
           :height="694.62"
           :background="false"

@@ -45,6 +45,7 @@ exports[`TheLastPostSection component should render correctly 1`] = `
               >
                 <nuxtlink-stub
                   class="post-tag dark"
+                  event="click"
                   to="/blog/tag/backend-development/"
                 >
                   <span

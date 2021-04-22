@@ -84,7 +84,7 @@ export const meta = {
 export const getMetadata = key => meta[key] || {}
 
 export const buildHead = ({
-  title, description, url, jsonLd, image = 'https://maddevs.io/Open-Graph.png',
+  title, description, url, jsonLd, image = 'https://maddevs.io/Open-Graph.png', metaTitle,
 }, scripts = []) => ({
   title,
   meta: [
@@ -93,14 +93,14 @@ export const buildHead = ({
     { property: 'og:url', content: url },
     { property: 'og:type', content: 'website' },
     { property: 'og:site_name', content: 'Mad Devs: Software & Mobile App Development Company' },
-    { property: 'og:title', content: title },
+    { property: 'og:title', content: metaTitle || title },
     { property: 'og:description', content: description },
     { property: 'og:image', content: image },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
     // Twitter / Twitter Card
     { property: 'twitter:card', content: 'summary_large_image' },
-    { property: 'twitter:text:title', content: title },
+    { property: 'twitter:text:title', content: metaTitle || title },
     { property: 'twitter:description', content: description },
     { property: 'twitter:image:src', content: image },
     { property: 'twitter:url', content: url },

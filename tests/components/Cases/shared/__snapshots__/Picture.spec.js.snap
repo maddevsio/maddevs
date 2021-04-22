@@ -5,17 +5,17 @@ exports[`Picture component should render correctly 1`] = `
   <picture>
     <source
       class="image box-shadow"
-      data-srcset="../../../../client/assets/img/Home/jpg/experts/Alice.jpg ,../../../../client/assets/img/Home/jpg/experts/Alice.jpg 2x"
+      srcset="../../../../client/assets/img/Home/jpg/experts/Alice.jpg,../../../../client/assets/img/Home/jpg/experts/Alice.jpg"
       type="image/webp"
     />
      
     <img
       alt="alt"
-      class="image img_lazy box-shadow"
-      data-src="../../../../client/assets/img/Home/jpg/experts/Alice.jpg"
-      data-srcset="../../../../client/assets/img/Home/jpg/experts/Alice.jpg 2x"
+      class="image box-shadow"
       data-testid="test-picture-img"
       height="0"
+      src="../../../../client/assets/img/Home/jpg/experts/Alice.jpg"
+      srcset="../../../../client/assets/img/Home/jpg/experts/Alice.jpg"
       width="0"
     />
   </picture>

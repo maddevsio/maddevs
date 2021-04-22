@@ -841,17 +841,17 @@ exports[`Main component should render correctly 1`] = `
                     >
                       <source
                         class="image"
-                        data-srcset="/images/Cases/godee/webp/application-for-passengers-card.webp ,/images/Cases/godee/webp/application-for-passengers-card@2x.webp 2x"
+                        srcset="/images/Cases/godee/webp/application-for-passengers-card.webp ,/images/Cases/godee/webp/application-for-passengers-card@2x.webp 2x"
                         type="image/webp"
                       />
                        
                       <img
                         alt="GoDee: Bus Transit App for Passengers."
-                        class="image img_lazy"
-                        data-src="/images/Cases/godee/png/application-for-passengers-card.png"
-                        data-srcset="/images/Cases/godee/png/application-for-passengers-card@2x.png 2x"
+                        class="image"
                         data-testid="test-picture-img"
                         height="211"
+                        src="/images/Cases/godee/png/application-for-passengers-card.png"
+                        srcset="/images/Cases/godee/png/application-for-passengers-card.png"
                         width="334"
                       />
                     </picture>
@@ -895,17 +895,17 @@ exports[`Main component should render correctly 1`] = `
                     >
                       <source
                         class="image"
-                        data-srcset="/images/Cases/godee/webp/application-for-drivers-card.webp ,/images/Cases/godee/webp/application-for-drivers-card@2x.webp 2x"
+                        srcset="/images/Cases/godee/webp/application-for-drivers-card.webp ,/images/Cases/godee/webp/application-for-drivers-card@2x.webp 2x"
                         type="image/webp"
                       />
                        
                       <img
                         alt="GoDee: Bus Drivers App."
-                        class="image img_lazy"
-                        data-src="/images/Cases/godee/png/application-for-drivers-card.png"
-                        data-srcset="/images/Cases/godee/png/application-for-drivers-card@2x.png 2x"
+                        class="image"
                         data-testid="test-picture-img"
                         height="280"
+                        src="/images/Cases/godee/png/application-for-drivers-card.png"
+                        srcset="/images/Cases/godee/png/application-for-drivers-card.png"
                         width="313"
                       />
                     </picture>
@@ -950,17 +950,17 @@ exports[`Main component should render correctly 1`] = `
                   >
                     <source
                       class="image"
-                      data-srcset="/images/Cases/godee/webp/godee-admin-panel-card.webp ,/images/Cases/godee/webp/godee-admin-panel-card@2x.webp 2x"
+                      srcset="/images/Cases/godee/webp/godee-admin-panel-card.webp ,/images/Cases/godee/webp/godee-admin-panel-card@2x.webp 2x"
                       type="image/webp"
                     />
                      
                     <img
                       alt="GoDee: Bus App Management System."
-                      class="image img_lazy"
-                      data-src="/images/Cases/godee/png/godee-admin-panel-card.png"
-                      data-srcset="/images/Cases/godee/png/godee-admin-panel-card@2x.png 2x"
+                      class="image"
                       data-testid="test-picture-img"
                       height="219"
+                      src="/images/Cases/godee/png/godee-admin-panel-card.png"
+                      srcset="/images/Cases/godee/png/godee-admin-panel-card.png"
                       width="695"
                     />
                   </picture>
@@ -970,17 +970,17 @@ exports[`Main component should render correctly 1`] = `
                   >
                     <source
                       class="image"
-                      data-srcset="/images/Cases/godee/webp/godee-admin-panel-card-mobile.webp ,/images/Cases/godee/webp/godee-admin-panel-card-mobile@2x.webp 2x"
+                      srcset="/images/Cases/godee/webp/godee-admin-panel-card-mobile.webp ,/images/Cases/godee/webp/godee-admin-panel-card-mobile@2x.webp 2x"
                       type="image/webp"
                     />
                      
                     <img
                       alt="GoDee: bus app management control panel"
-                      class="image img_lazy"
-                      data-src="/images/Cases/godee/png/godee-admin-panel-card-mobile.png"
-                      data-srcset="/images/Cases/godee/png/godee-admin-panel-card-mobile@2x.png 2x"
+                      class="image"
                       data-testid="test-picture-img"
                       height="160"
+                      src="/images/Cases/godee/png/godee-admin-panel-card-mobile.png"
+                      srcset="/images/Cases/godee/png/godee-admin-panel-card-mobile.png"
                       width="307"
                     />
                   </picture>
@@ -1073,17 +1073,17 @@ exports[`Main component should render correctly 1`] = `
             <picture>
               <source
                 class="image grey-background"
-                data-srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
+                srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="GoDee: Safari Browser Top Bar White."
-                class="image img_lazy grey-background"
-                data-src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
-                data-srcset="/images/Cases/common/jpg/safari-top-bar-white@2x.jpg 2x"
+                class="image grey-background"
                 data-testid="test-picture-img"
                 height="16.45"
+                src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
+                srcset="/images/Cases/common/jpg/safari-top-bar-white.jpg"
                 width="1026"
               />
             </picture>
@@ -1091,17 +1091,17 @@ exports[`Main component should render correctly 1`] = `
             <picture>
               <source
                 class="image"
-                data-srcset="/images/Cases/godee/webp/godee-admin-panel.webp ,/images/Cases/godee/webp/godee-admin-panel@2x.webp 2x"
+                srcset="/images/Cases/godee/webp/godee-admin-panel.webp ,/images/Cases/godee/webp/godee-admin-panel@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="GoDee: Bus Transit App Admin Panel."
-                class="image img_lazy"
-                data-src="/images/Cases/godee/jpg/godee-admin-panel.jpg"
-                data-srcset="/images/Cases/godee/jpg/godee-admin-panel@2x.jpg 2x"
+                class="image"
                 data-testid="test-picture-img"
                 height="672"
+                src="/images/Cases/godee/jpg/godee-admin-panel.jpg"
+                srcset="/images/Cases/godee/jpg/godee-admin-panel.jpg"
                 width="1026"
               />
             </picture>
@@ -2328,16 +2328,16 @@ exports[`Main component should render correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
                   data-srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="GoDee: Safari Browser Top Bar White."
-                  class="image img_lazy grey-background"
+                  class="image grey-background media_lazy"
                   data-src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
-                  data-srcset="/images/Cases/common/jpg/safari-top-bar-white@2x.jpg 2x"
+                  data-srcset="/images/Cases/common/jpg/safari-top-bar-white.jpg"
                   data-testid="test-picture-img"
                   height="16.45"
                   width="1026"
@@ -2398,16 +2398,16 @@ exports[`Main component should render correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
                   data-srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="GoDee: Safari Browser Top Bar White."
-                  class="image img_lazy grey-background"
+                  class="image grey-background media_lazy"
                   data-src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
-                  data-srcset="/images/Cases/common/jpg/safari-top-bar-white@2x.jpg 2x"
+                  data-srcset="/images/Cases/common/jpg/safari-top-bar-white.jpg"
                   data-testid="test-picture-img"
                   height="16.45"
                   width="1026"
@@ -2518,16 +2518,16 @@ exports[`Main component should render correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
                   data-srcset="/images/Cases/common/webp/safari-top-bar-white.webp ,/images/Cases/common/webp/safari-top-bar-white@2x.webp 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="GoDee: Safari Browser Top Bar White."
-                  class="image img_lazy grey-background"
+                  class="image grey-background media_lazy"
                   data-src="/images/Cases/common/jpg/safari-top-bar-white.jpg"
-                  data-srcset="/images/Cases/common/jpg/safari-top-bar-white@2x.jpg 2x"
+                  data-srcset="/images/Cases/common/jpg/safari-top-bar-white.jpg"
                   data-testid="test-picture-img"
                   height="16.45"
                   width="1026"
@@ -2636,16 +2636,16 @@ exports[`Main component should render correctly 1`] = `
           >
             <picture>
               <source
-                class="image"
+                class="image media_lazy"
                 data-srcset="/images/Cases/godee/webp/real-time-eta-phone.webp ,/images/Cases/godee/webp/real-time-eta-phone@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="GoDee: Bus Transit App in Vietnam."
-                class="image img_lazy"
+                class="image media_lazy"
                 data-src="/images/Cases/godee/png/real-time-eta-phone.png"
-                data-srcset="/images/Cases/godee/png/real-time-eta-phone@2x.png 2x"
+                data-srcset="/images/Cases/godee/png/real-time-eta-phone.png"
                 data-testid="test-picture-img"
                 height="694.62"
                 width="358.96"
@@ -3194,16 +3194,16 @@ exports[`Main component should render correctly 1`] = `
         >
           <picture>
             <source
-              class="image box-shadow grey-background"
+              class="image box-shadow grey-background media_lazy"
               data-srcset="/images/Cases/godee/webp/datadog.webp ,/images/Cases/godee/webp/datadog@2x.webp 2x"
               type="image/webp"
             />
              
             <img
               alt="GoDee: Monitoring Configuration for Transportation App."
-              class="image img_lazy box-shadow grey-background"
+              class="image box-shadow grey-background media_lazy"
               data-src="/images/Cases/godee/jpg/datadog.jpg"
-              data-srcset="/images/Cases/godee/jpg/datadog@2x.jpg 2x"
+              data-srcset="/images/Cases/godee/jpg/datadog.jpg"
               data-testid="test-picture-img"
               height="463"
               width="1028"
@@ -3356,16 +3356,16 @@ exports[`Main component should render correctly 1`] = `
               class="case_team-item__image"
             >
               <source
-                class="image grey-background"
+                class="image grey-background media_lazy"
                 data-srcset="/images/Cases/common/webp/oleg-puzanov.webp ,/images/Cases/common/webp/oleg-puzanov@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Oleg Puzanov"
-                class="image img_lazy grey-background"
+                class="image grey-background media_lazy"
                 data-src="/images/Cases/common/png/oleg-puzanov.png"
-                data-srcset="/images/Cases/common/png/oleg-puzanov@2x.png 2x"
+                data-srcset="/images/Cases/common/png/oleg-puzanov.png"
                 data-testid="test-picture-img"
                 height="50"
                 width="50"
@@ -3399,16 +3399,16 @@ exports[`Main component should render correctly 1`] = `
               class="case_team-item__image"
             >
               <source
-                class="image grey-background"
+                class="image grey-background media_lazy"
                 data-srcset="/images/Cases/common/webp/kasymov.webp ,/images/Cases/common/webp/kasymov@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Ruslan Kasymov"
-                class="image img_lazy grey-background"
+                class="image grey-background media_lazy"
                 data-src="/images/Cases/common/png/kasymov.png"
-                data-srcset="/images/Cases/common/png/kasymov@2x.png 2x"
+                data-srcset="/images/Cases/common/png/kasymov.png"
                 data-testid="test-picture-img"
                 height="50"
                 width="50"
@@ -3442,16 +3442,16 @@ exports[`Main component should render correctly 1`] = `
               class="case_team-item__image"
             >
               <source
-                class="image grey-background"
+                class="image grey-background media_lazy"
                 data-srcset="/images/Cases/common/webp/kulbatyrov.webp ,/images/Cases/common/webp/kulbatyrov@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Rustom Kulbatyrov"
-                class="image img_lazy grey-background"
+                class="image grey-background media_lazy"
                 data-src="/images/Cases/common/png/kulbatyrov.png"
-                data-srcset="/images/Cases/common/png/kulbatyrov@2x.png 2x"
+                data-srcset="/images/Cases/common/png/kulbatyrov.png"
                 data-testid="test-picture-img"
                 height="50"
                 width="50"
@@ -3485,16 +3485,16 @@ exports[`Main component should render correctly 1`] = `
               class="case_team-item__image"
             >
               <source
-                class="image grey-background"
+                class="image grey-background media_lazy"
                 data-srcset="/images/Cases/common/webp/vladimir-pan.webp ,/images/Cases/common/webp/vladimir-pan@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Vladimir Pan"
-                class="image img_lazy grey-background"
+                class="image grey-background media_lazy"
                 data-src="/images/Cases/common/png/vladimir-pan.png"
-                data-srcset="/images/Cases/common/png/vladimir-pan@2x.png 2x"
+                data-srcset="/images/Cases/common/png/vladimir-pan.png"
                 data-testid="test-picture-img"
                 height="50"
                 width="50"
@@ -3528,16 +3528,16 @@ exports[`Main component should render correctly 1`] = `
               class="case_team-item__image"
             >
               <source
-                class="image grey-background"
+                class="image grey-background media_lazy"
                 data-srcset="/images/Cases/common/webp/belek-abylov.webp ,/images/Cases/common/webp/belek-abylov@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Belek Abylov"
-                class="image img_lazy grey-background"
+                class="image grey-background media_lazy"
                 data-src="/images/Cases/common/png/belek-abylov.png"
-                data-srcset="/images/Cases/common/png/belek-abylov@2x.png 2x"
+                data-srcset="/images/Cases/common/png/belek-abylov.png"
                 data-testid="test-picture-img"
                 height="50"
                 width="50"
@@ -3571,16 +3571,16 @@ exports[`Main component should render correctly 1`] = `
               class="case_team-item__image"
             >
               <source
-                class="image grey-background"
+                class="image grey-background media_lazy"
                 data-srcset="/images/Cases/common/webp/bakhtiyar-ganyev.webp ,/images/Cases/common/webp/bakhtiyar-ganyev@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Bakhtiyar Ganyev"
-                class="image img_lazy grey-background"
+                class="image grey-background media_lazy"
                 data-src="/images/Cases/common/png/bakhtiyar-ganyev.png"
-                data-srcset="/images/Cases/common/png/bakhtiyar-ganyev@2x.png 2x"
+                data-srcset="/images/Cases/common/png/bakhtiyar-ganyev.png"
                 data-testid="test-picture-img"
                 height="50"
                 width="50"
@@ -3614,16 +3614,16 @@ exports[`Main component should render correctly 1`] = `
               class="case_team-item__image"
             >
               <source
-                class="image grey-background"
+                class="image grey-background media_lazy"
                 data-srcset="/images/Cases/common/webp/gennady-karev.webp ,/images/Cases/common/webp/gennady-karev@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Gennady Karev"
-                class="image img_lazy grey-background"
+                class="image grey-background media_lazy"
                 data-src="/images/Cases/common/png/gennady-karev.png"
-                data-srcset="/images/Cases/common/png/gennady-karev@2x.png 2x"
+                data-srcset="/images/Cases/common/png/gennady-karev.png"
                 data-testid="test-picture-img"
                 height="50"
                 width="50"
@@ -3657,16 +3657,16 @@ exports[`Main component should render correctly 1`] = `
               class="case_team-item__image"
             >
               <source
-                class="image grey-background"
+                class="image grey-background media_lazy"
                 data-srcset="/images/Cases/common/webp/aleksandr-krivov.webp ,/images/Cases/common/webp/aleksandr-krivov@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Aleksandr Krivov"
-                class="image img_lazy grey-background"
+                class="image grey-background media_lazy"
                 data-src="/images/Cases/common/png/aleksandr-krivov.png"
-                data-srcset="/images/Cases/common/png/aleksandr-krivov@2x.png 2x"
+                data-srcset="/images/Cases/common/png/aleksandr-krivov.png"
                 data-testid="test-picture-img"
                 height="50"
                 width="50"
@@ -3700,16 +3700,16 @@ exports[`Main component should render correctly 1`] = `
               class="case_team-item__image"
             >
               <source
-                class="image grey-background"
+                class="image grey-background media_lazy"
                 data-srcset="/images/Cases/common/webp/vlada-arevkova.webp ,/images/Cases/common/webp/vlada-arevkova@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Vlada Arevkova"
-                class="image img_lazy grey-background"
+                class="image grey-background media_lazy"
                 data-src="/images/Cases/common/png/vlada-arevkova.png"
-                data-srcset="/images/Cases/common/png/vlada-arevkova@2x.png 2x"
+                data-srcset="/images/Cases/common/png/vlada-arevkova.png"
                 data-testid="test-picture-img"
                 height="50"
                 width="50"
@@ -3743,16 +3743,16 @@ exports[`Main component should render correctly 1`] = `
               class="case_team-item__image"
             >
               <source
-                class="image grey-background"
+                class="image grey-background media_lazy"
                 data-srcset="/images/Cases/common/webp/erik-sultanaliev.webp ,/images/Cases/common/webp/erik-sultanaliev@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Erik Sultanaliev"
-                class="image img_lazy grey-background"
+                class="image grey-background media_lazy"
                 data-src="/images/Cases/common/png/erik-sultanaliev.png"
-                data-srcset="/images/Cases/common/png/erik-sultanaliev@2x.png 2x"
+                data-srcset="/images/Cases/common/png/erik-sultanaliev.png"
                 data-testid="test-picture-img"
                 height="50"
                 width="50"
@@ -3786,16 +3786,16 @@ exports[`Main component should render correctly 1`] = `
               class="case_team-item__image"
             >
               <source
-                class="image grey-background"
+                class="image grey-background media_lazy"
                 data-srcset="/images/Cases/common/webp/myrzabek-kylychev.webp ,/images/Cases/common/webp/myrzabek-kylychev@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Myrzabek Kylychev"
-                class="image img_lazy grey-background"
+                class="image grey-background media_lazy"
                 data-src="/images/Cases/common/png/myrzabek-kylychev.png"
-                data-srcset="/images/Cases/common/png/myrzabek-kylychev@2x.png 2x"
+                data-srcset="/images/Cases/common/png/myrzabek-kylychev.png"
                 data-testid="test-picture-img"
                 height="50"
                 width="50"
@@ -3829,16 +3829,16 @@ exports[`Main component should render correctly 1`] = `
               class="case_team-item__image"
             >
               <source
-                class="image grey-background"
+                class="image grey-background media_lazy"
                 data-srcset="/images/Cases/common/webp/pushkarev.webp ,/images/Cases/common/webp/pushkarev@2x.webp 2x"
                 type="image/webp"
               />
                
               <img
                 alt="Pavel Pushkarev"
-                class="image img_lazy grey-background"
+                class="image grey-background media_lazy"
                 data-src="/images/Cases/common/png/pushkarev.png"
-                data-srcset="/images/Cases/common/png/pushkarev@2x.png 2x"
+                data-srcset="/images/Cases/common/png/pushkarev.png"
                 data-testid="test-picture-img"
                 height="50"
                 width="50"
@@ -3884,16 +3884,16 @@ exports[`Main component should render correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image"
+                  class="image media_lazy"
                   data-srcset="/images/Cases/godee/webp/ruslan-karabukaev.webp ,/images/Cases/godee/webp/ruslan-karabukaev@2x.webp 2x"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Ruslan Karabukaev"
-                  class="image img_lazy"
+                  class="image media_lazy"
                   data-src="/images/Cases/godee/png/ruslan-karabukaev.png"
-                  data-srcset="/images/Cases/godee/png/ruslan-karabukaev@2x.png 2x"
+                  data-srcset="/images/Cases/godee/png/ruslan-karabukaev.png"
                   data-testid="test-picture-img"
                   height="0"
                   width="0"

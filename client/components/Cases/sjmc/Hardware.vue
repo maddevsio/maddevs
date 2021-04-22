@@ -36,6 +36,8 @@
           :src="$getMediaFromS3('/images/Cases/sjmc/gif/watchpax.gif')"
           class="case_gif"
           alt="WATCHOUT - Multi-Display Production and Presentation Software."
+          :width="1026"
+          :height="653"
         >
       </section>
     </section>
@@ -55,6 +57,8 @@
           :data-src="$getMediaFromS3('/images/Cases/sjmc/gif/brix.gif')"
           class="case_gif media_lazy"
           alt="Ultra-Compact Multimedia Computer - BRIX."
+          :width="1026"
+          :height="367"
         >
       </section>
     </section>

@@ -42,11 +42,13 @@
           <PostTag
             v-if="post.tags && post.tags.length"
             :tag="tag || post.tags[0]"
+            :disabled="disableTagLink"
             class="light"
           />
         </div>
         <PostAuthor
           v-bind="author"
+          :disabled="disableAuthorLink"
           theme="light"
         />
       </div>
@@ -88,6 +90,16 @@ export default {
     tag: {
       type: String,
       default: null,
+    },
+
+    disableAuthorLink: {
+      type: Boolean,
+      default: false,
+    },
+
+    disableTagLink: {
+      type: Boolean,
+      default: false,
     },
   },
 

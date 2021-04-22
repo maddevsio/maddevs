@@ -319,6 +319,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/backend-development/"
                       >
                         <span
@@ -410,6 +411,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/mobile-development/"
                       >
                         <span
@@ -501,6 +503,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/frontend-development/"
                       >
                         <span
@@ -592,6 +595,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/backend-development/"
                       >
                         <span
@@ -683,6 +687,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/backend-development/"
                       >
                         <span
@@ -774,6 +779,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/backend-development/"
                       >
                         <span
@@ -865,6 +871,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/backend-development/"
                       >
                         <span
@@ -956,6 +963,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/hardware/"
                       >
                         <span
@@ -1047,6 +1055,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/frontend-development/"
                       >
                         <span
@@ -1138,6 +1147,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/frontend-development/"
                       >
                         <span
@@ -1229,6 +1239,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/backend-development/"
                       >
                         <span
@@ -1320,6 +1331,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/backend-development/"
                       >
                         <span
@@ -1411,6 +1423,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/software-development/"
                       >
                         <span
@@ -1502,6 +1515,7 @@ exports[`Main component should render correctly 1`] = `
                        
                       <nuxtlink-stub
                         class="post-tag light light"
+                        event="click"
                         to="/blog/tag/backend-development/"
                       >
                         <span

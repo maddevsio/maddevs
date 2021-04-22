@@ -29,7 +29,6 @@
       >
         <Picture
           :shadow="true"
-          :lazy="true"
           :width="735"
           :height="449"
           extension="png"
