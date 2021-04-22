@@ -1,6 +1,7 @@
 <template>
   <NuxtLink
     v-if="name"
+    :event="disabled ? '' : 'click'"
     :to="link"
     class="blog-post__author"
   >
@@ -40,6 +41,11 @@ export default {
     uid: {
       type: String,
       default: '',
+    },
+
+    disabled: {
+      type: Boolean,
+      default: false,
     },
 
     name: {

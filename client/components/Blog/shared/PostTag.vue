@@ -1,6 +1,7 @@
 <template>
   <NuxtLink
     v-if="tag"
+    :event="disabled ? '' : 'click'"
     :to="link"
     :class="theme"
     class="post-tag"
@@ -24,6 +25,11 @@ export default {
     tag: {
       type: String,
       default: '',
+    },
+
+    disabled: {
+      type: Boolean,
+      default: false,
     },
 
     theme: {
