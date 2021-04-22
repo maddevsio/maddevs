@@ -83,7 +83,7 @@ exports[`Main component should render correctly 1`] = `
     </section>
      
     <div
-      class="case_content-layer p-48_bottom media-p-24_bottom"
+      class="case_content-layer p-48_bottom media-p-24_bottom media-p-24_top"
     >
       <div
         class="case_animation_block"
