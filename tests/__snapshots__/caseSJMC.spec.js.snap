@@ -14,13 +14,13 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
      
     <video
       autoplay="autoplay"
-      class="case_main-video"
+      class="case_main-video media_lazy"
       data-testid="test-case_main-video"
       loop="loop"
       muted="muted"
     >
       <source
-        src="s3 image url"
+        data-src="s3 image url"
         type="video/mp4"
       />
       
@@ -81,9 +81,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
        
       <img
         alt=""
-        class="case_header-logo case_sjmc-logo"
+        class="case_header-logo media_lazy case_sjmc-logo"
+        data-src="s3 image url"
         height="110"
-        src="s3 image url"
         width="242"
       />
     </div>
@@ -205,7 +205,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       
             <nuxtlink-stub
               class="case_link"
-              to="/services#it-consulting"
+              to="/services/#it-consulting"
             >
               
         independent audit
@@ -231,20 +231,19 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image"
-              srcset="s3 image url ,s3 image url 2x"
+              class="image media_lazy"
+              data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="The Mad Devs team in Sir John Monash Centre."
-              class="image"
+              class="image media_lazy"
+              data-src="s3 image url"
+              data-srcset="s3 image url"
               data-testid="test-picture-img"
-              height="0"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="0"
+              height="869"
+              width="1440"
             />
           </picture>
         </section>
@@ -362,20 +361,19 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <picture>
               <source
-                class="image"
-                srcset="s3 image url ,s3 image url 2x"
+                class="image media_lazy"
+                data-srcset="s3 image url,s3 image url"
                 type="image/webp"
               />
                
               <img
                 alt="The SJMC: Multimedia Management System."
-                class="image"
+                class="image media_lazy"
+                data-src="s3 image url"
+                data-srcset="s3 image url"
                 data-testid="test-picture-img"
-                height="0"
-                loading="lazy"
-                src="s3 image url"
-                srcset="s3 image url 2x"
-                width="0"
+                height="705"
+                width="1440"
               />
             </picture>
           </div>
@@ -500,20 +498,19 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <picture>
               <source
-                class="image"
-                srcset="s3 image url ,s3 image url 2x"
+                class="image media_lazy"
+                data-srcset="s3 image url,s3 image url"
                 type="image/webp"
               />
                
               <img
                 alt="The SJMC Mobile Applications."
-                class="image"
+                class="image media_lazy"
+                data-src="s3 image url"
+                data-srcset="s3 image url"
                 data-testid="test-picture-img"
-                height="0"
-                loading="lazy"
-                src="s3 image url"
-                srcset="s3 image url 2x"
-                width="0"
+                height="662"
+                width="1440"
               />
             </picture>
           </div>
@@ -566,20 +563,19 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image"
-              srcset="s3 image url ,s3 image url 2x"
+              class="image media_lazy"
+              data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Sir Jonh Monash Centre Map."
-              class="image"
+              class="image media_lazy"
+              data-src="s3 image url"
+              data-srcset="s3 image url"
               data-testid="test-picture-img"
-              height="0"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="0"
+              height="459"
+              width="817"
             />
           </picture>
            
@@ -620,20 +616,19 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image"
-              srcset="s3 image url ,s3 image url 2x"
+              class="image media_lazy"
+              data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="The SJMC Immersive Gallery."
-              class="image"
+              class="image media_lazy"
+              data-src="s3 image url"
+              data-srcset="s3 image url"
               data-testid="test-picture-img"
-              height="0"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="0"
+              height="726"
+              width="1440"
             />
           </picture>
         </section>
@@ -670,7 +665,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             <img
               alt="WATCHOUT - Multi-Display Production and Presentation Software."
               class="case_gif"
+              height="653"
               src="s3 image url"
+              width="1026"
             />
           </section>
         </section>
@@ -705,8 +702,10 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
           >
             <img
               alt="Ultra-Compact Multimedia Computer - BRIX."
-              class="case_gif"
-              src="s3 image url"
+              class="case_gif media_lazy"
+              data-src="s3 image url"
+              height="367"
+              width="1026"
             />
           </section>
         </section>
@@ -900,16 +899,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               class="case_video-wrapper case_full-screen-video"
             >
               <video
+                class="media_lazy"
                 data-testid="test-case_video"
-                height="100%"
+                height="884"
                 id="iphone-video"
                 loop="loop"
                 muted="muted"
                 playsinline=""
+                poster="s3 image url"
                 width="100%"
               >
                 <source
-                  src="s3 image url"
+                  data-src="s3 image url"
                   type="video/mp4"
                 />
                 
@@ -1405,19 +1406,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image"
-                        srcset="s3 image url ,s3 image url 2x"
+                        class="image media_lazy"
+                        data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                        class="image"
+                        class="image media_lazy"
+                        data-src="s3 image url"
+                        data-srcset="s3 image url"
                         data-testid="test-picture-img"
                         height="0"
-                        loading="lazy"
-                        src="s3 image url"
-                        srcset="s3 image url 2x"
                         width="0"
                       />
                     </picture>
@@ -1427,19 +1427,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image"
-                        srcset="s3 image url ,s3 image url 2x"
+                        class="image media_lazy"
+                        data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                        class="image"
+                        class="image media_lazy"
+                        data-src="s3 image url"
+                        data-srcset="s3 image url"
                         data-testid="test-picture-img"
                         height="0"
-                        loading="lazy"
-                        src="s3 image url"
-                        srcset="s3 image url 2x"
                         width="0"
                       />
                     </picture>
@@ -1449,19 +1448,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image"
-                        srcset="s3 image url ,s3 image url 2x"
+                        class="image media_lazy"
+                        data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                        class="image"
+                        class="image media_lazy"
+                        data-src="s3 image url"
+                        data-srcset="s3 image url"
                         data-testid="test-picture-img"
                         height="0"
-                        loading="lazy"
-                        src="s3 image url"
-                        srcset="s3 image url 2x"
                         width="0"
                       />
                     </picture>
@@ -1471,19 +1469,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image"
-                        srcset="s3 image url ,s3 image url 2x"
+                        class="image media_lazy"
+                        data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                        class="image"
+                        class="image media_lazy"
+                        data-src="s3 image url"
+                        data-srcset="s3 image url"
                         data-testid="test-picture-img"
                         height="0"
-                        loading="lazy"
-                        src="s3 image url"
-                        srcset="s3 image url 2x"
                         width="0"
                       />
                     </picture>
@@ -1493,19 +1490,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image"
-                        srcset="s3 image url ,s3 image url 2x"
+                        class="image media_lazy"
+                        data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                        class="image"
+                        class="image media_lazy"
+                        data-src="s3 image url"
+                        data-srcset="s3 image url"
                         data-testid="test-picture-img"
                         height="0"
-                        loading="lazy"
-                        src="s3 image url"
-                        srcset="s3 image url 2x"
                         width="0"
                       />
                     </picture>
@@ -1515,19 +1511,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image"
-                        srcset="s3 image url ,s3 image url 2x"
+                        class="image media_lazy"
+                        data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                        class="image"
+                        class="image media_lazy"
+                        data-src="s3 image url"
+                        data-srcset="s3 image url"
                         data-testid="test-picture-img"
                         height="0"
-                        loading="lazy"
-                        src="s3 image url"
-                        srcset="s3 image url 2x"
                         width="0"
                       />
                     </picture>
@@ -1555,19 +1550,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image"
-                      srcset="s3 image url ,s3 image url 2x"
+                      class="image media_lazy"
+                      data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                      class="image"
+                      class="image media_lazy"
+                      data-src="s3 image url"
+                      data-srcset="s3 image url"
                       data-testid="test-picture-img"
                       height="0"
-                      loading="lazy"
-                      src="s3 image url"
-                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -1577,19 +1571,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image"
-                      srcset="s3 image url ,s3 image url 2x"
+                      class="image media_lazy"
+                      data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                      class="image"
+                      class="image media_lazy"
+                      data-src="s3 image url"
+                      data-srcset="s3 image url"
                       data-testid="test-picture-img"
                       height="0"
-                      loading="lazy"
-                      src="s3 image url"
-                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -1599,19 +1592,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image"
-                      srcset="s3 image url ,s3 image url 2x"
+                      class="image media_lazy"
+                      data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                      class="image"
+                      class="image media_lazy"
+                      data-src="s3 image url"
+                      data-srcset="s3 image url"
                       data-testid="test-picture-img"
                       height="0"
-                      loading="lazy"
-                      src="s3 image url"
-                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -1621,19 +1613,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image"
-                      srcset="s3 image url ,s3 image url 2x"
+                      class="image media_lazy"
+                      data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                      class="image"
+                      class="image media_lazy"
+                      data-src="s3 image url"
+                      data-srcset="s3 image url"
                       data-testid="test-picture-img"
                       height="0"
-                      loading="lazy"
-                      src="s3 image url"
-                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -1643,19 +1634,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image"
-                      srcset="s3 image url ,s3 image url 2x"
+                      class="image media_lazy"
+                      data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                      class="image"
+                      class="image media_lazy"
+                      data-src="s3 image url"
+                      data-srcset="s3 image url"
                       data-testid="test-picture-img"
                       height="0"
-                      loading="lazy"
-                      src="s3 image url"
-                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -1665,19 +1655,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image"
-                      srcset="s3 image url ,s3 image url 2x"
+                      class="image media_lazy"
+                      data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                      class="image"
+                      class="image media_lazy"
+                      data-src="s3 image url"
+                      data-srcset="s3 image url"
                       data-testid="test-picture-img"
                       height="0"
-                      loading="lazy"
-                      src="s3 image url"
-                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -1776,20 +1765,19 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image box-shadow"
-              srcset="s3 image url ,s3 image url 2x"
+              class="image box-shadow media_lazy"
+              data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
-              class="image box-shadow"
+              class="image box-shadow media_lazy"
+              data-src="s3 image url"
+              data-srcset="s3 image url"
               data-testid="test-picture-img"
-              height="0"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="0"
+              height="516"
+              width="1025"
             />
           </picture>
         </section>
@@ -1924,19 +1912,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Safari Top Bar."
-                  class="image"
+                  class="image media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>
@@ -1954,19 +1941,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image"
-                        srcset="s3 image url ,s3 image url 2x"
+                        class="image media_lazy"
+                        data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="SJMC System Monitoring."
-                        class="image"
+                        class="image media_lazy"
+                        data-src="s3 image url"
+                        data-srcset="s3 image url"
                         data-testid="test-picture-img"
                         height="0"
-                        loading="lazy"
-                        src="s3 image url"
-                        srcset="s3 image url 2x"
                         width="0"
                       />
                     </picture>
@@ -1976,19 +1962,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image"
-                        srcset="s3 image url ,s3 image url 2x"
+                        class="image media_lazy"
+                        data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="SJMC System Monitoring."
-                        class="image"
+                        class="image media_lazy"
+                        data-src="s3 image url"
+                        data-srcset="s3 image url"
                         data-testid="test-picture-img"
                         height="0"
-                        loading="lazy"
-                        src="s3 image url"
-                        srcset="s3 image url 2x"
                         width="0"
                       />
                     </picture>
@@ -2016,19 +2001,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image"
-                      srcset="s3 image url ,s3 image url 2x"
+                      class="image media_lazy"
+                      data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="SJMC System Monitoring."
-                      class="image"
+                      class="image media_lazy"
+                      data-src="s3 image url"
+                      data-srcset="s3 image url"
                       data-testid="test-picture-img"
                       height="0"
-                      loading="lazy"
-                      src="s3 image url"
-                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -2038,19 +2022,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image"
-                      srcset="s3 image url ,s3 image url 2x"
+                      class="image media_lazy"
+                      data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="SJMC System Monitoring."
-                      class="image"
+                      class="image media_lazy"
+                      data-src="s3 image url"
+                      data-srcset="s3 image url"
                       data-testid="test-picture-img"
                       height="0"
-                      loading="lazy"
-                      src="s3 image url"
-                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -2107,20 +2090,19 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         >
           <picture>
             <source
-              class="image box-shadow"
-              srcset="s3 image url ,s3 image url 2x"
+              class="image box-shadow media_lazy"
+              data-srcset="s3 image url,s3 image url"
               type="image/webp"
             />
              
             <img
               alt="Kibana Reports Which Help to Manage SJMC Hardware in a Single Dashboard."
-              class="image box-shadow"
+              class="image box-shadow media_lazy"
+              data-src="s3 image url"
+              data-srcset="s3 image url"
               data-testid="test-picture-img"
-              height="0"
-              loading="lazy"
-              src="s3 image url"
-              srcset="s3 image url 2x"
-              width="0"
+              height="525"
+              width="1025"
             />
           </picture>
         </section>
@@ -2332,19 +2314,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image"
-                        srcset="s3 image url ,s3 image url 2x"
+                        class="image media_lazy"
+                        data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
-                        class="image"
+                        class="image media_lazy"
+                        data-src="s3 image url"
+                        data-srcset="s3 image url"
                         data-testid="test-picture-img"
                         height="0"
-                        loading="lazy"
-                        src="s3 image url"
-                        srcset="s3 image url 2x"
                         width="0"
                       />
                     </picture>
@@ -2354,19 +2335,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image"
-                        srcset="s3 image url ,s3 image url 2x"
+                        class="image media_lazy"
+                        data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
-                        class="image"
+                        class="image media_lazy"
+                        data-src="s3 image url"
+                        data-srcset="s3 image url"
                         data-testid="test-picture-img"
                         height="0"
-                        loading="lazy"
-                        src="s3 image url"
-                        srcset="s3 image url 2x"
                         width="0"
                       />
                     </picture>
@@ -2376,19 +2356,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image"
-                        srcset="s3 image url ,s3 image url 2x"
+                        class="image media_lazy"
+                        data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
-                        class="image"
+                        class="image media_lazy"
+                        data-src="s3 image url"
+                        data-srcset="s3 image url"
                         data-testid="test-picture-img"
                         height="0"
-                        loading="lazy"
-                        src="s3 image url"
-                        srcset="s3 image url 2x"
                         width="0"
                       />
                     </picture>
@@ -2398,19 +2377,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image"
-                        srcset="s3 image url ,s3 image url 2x"
+                        class="image media_lazy"
+                        data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
-                        class="image"
+                        class="image media_lazy"
+                        data-src="s3 image url"
+                        data-srcset="s3 image url"
                         data-testid="test-picture-img"
                         height="0"
-                        loading="lazy"
-                        src="s3 image url"
-                        srcset="s3 image url 2x"
                         width="0"
                       />
                     </picture>
@@ -2420,19 +2398,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   >
                     <picture>
                       <source
-                        class="image"
-                        srcset="s3 image url ,s3 image url 2x"
+                        class="image media_lazy"
+                        data-srcset="s3 image url,s3 image url"
                         type="image/webp"
                       />
                        
                       <img
                         alt="Mad Devs’ Team Trip to the SJMC."
-                        class="image"
+                        class="image media_lazy"
+                        data-src="s3 image url"
+                        data-srcset="s3 image url"
                         data-testid="test-picture-img"
                         height="0"
-                        loading="lazy"
-                        src="s3 image url"
-                        srcset="s3 image url 2x"
                         width="0"
                       />
                     </picture>
@@ -2460,19 +2437,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image"
-                      srcset="s3 image url ,s3 image url 2x"
+                      class="image media_lazy"
+                      data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
-                      class="image"
+                      class="image media_lazy"
+                      data-src="s3 image url"
+                      data-srcset="s3 image url"
                       data-testid="test-picture-img"
                       height="0"
-                      loading="lazy"
-                      src="s3 image url"
-                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -2482,19 +2458,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image"
-                      srcset="s3 image url ,s3 image url 2x"
+                      class="image media_lazy"
+                      data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
-                      class="image"
+                      class="image media_lazy"
+                      data-src="s3 image url"
+                      data-srcset="s3 image url"
                       data-testid="test-picture-img"
                       height="0"
-                      loading="lazy"
-                      src="s3 image url"
-                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -2504,19 +2479,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image"
-                      srcset="s3 image url ,s3 image url 2x"
+                      class="image media_lazy"
+                      data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
-                      class="image"
+                      class="image media_lazy"
+                      data-src="s3 image url"
+                      data-srcset="s3 image url"
                       data-testid="test-picture-img"
                       height="0"
-                      loading="lazy"
-                      src="s3 image url"
-                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -2526,19 +2500,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image"
-                      srcset="s3 image url ,s3 image url 2x"
+                      class="image media_lazy"
+                      data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
-                      class="image"
+                      class="image media_lazy"
+                      data-src="s3 image url"
+                      data-srcset="s3 image url"
                       data-testid="test-picture-img"
                       height="0"
-                      loading="lazy"
-                      src="s3 image url"
-                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -2548,19 +2521,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 >
                   <picture>
                     <source
-                      class="image"
-                      srcset="s3 image url ,s3 image url 2x"
+                      class="image media_lazy"
+                      data-srcset="s3 image url,s3 image url"
                       type="image/webp"
                     />
                      
                     <img
                       alt="Mad Devs’ Team Trip to the SJMC."
-                      class="image"
+                      class="image media_lazy"
+                      data-src="s3 image url"
+                      data-srcset="s3 image url"
                       data-testid="test-picture-img"
                       height="0"
-                      loading="lazy"
-                      src="s3 image url"
-                      srcset="s3 image url 2x"
                       width="0"
                     />
                   </picture>
@@ -2634,19 +2606,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image grey-background media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Kirill Zinchenko"
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="50"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="50"
                 />
               </picture>
@@ -2678,19 +2649,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image grey-background media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Vlad Andreev"
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="50"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="50"
                 />
               </picture>
@@ -2722,19 +2692,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image grey-background media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Aleksandr Zhitov"
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="50"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="50"
                 />
               </picture>
@@ -2766,19 +2735,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image grey-background media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Sergey Boyko"
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="50"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="50"
                 />
               </picture>
@@ -2810,19 +2778,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image grey-background media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Andrew Minkin"
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="50"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="50"
                 />
               </picture>
@@ -2854,19 +2821,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image grey-background media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Dmitri Khalezin"
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="50"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="50"
                 />
               </picture>
@@ -2898,19 +2864,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image grey-background media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Kirill Avdeev"
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="50"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="50"
                 />
               </picture>
@@ -2942,19 +2907,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image grey-background media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Stanislav Shcherbinin"
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="50"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="50"
                 />
               </picture>
@@ -2986,19 +2950,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image grey-background media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Aleksandr Astashov"
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="50"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="50"
                 />
               </picture>
@@ -3030,19 +2993,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image grey-background media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Ruslan Kasymov"
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="50"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="50"
                 />
               </picture>
@@ -3074,19 +3036,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image grey-background media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Pavel Pushkarev"
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="50"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="50"
                 />
               </picture>
@@ -3118,19 +3079,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="case_team-item__image"
               >
                 <source
-                  class="image grey-background"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image grey-background media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Rustom Kulbatyrov"
-                  class="image grey-background"
+                  class="image grey-background media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="50"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="50"
                 />
               </picture>
@@ -3209,19 +3169,18 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             >
               <picture>
                 <source
-                  class="image"
-                  srcset="s3 image url ,s3 image url 2x"
+                  class="image media_lazy"
+                  data-srcset="s3 image url,s3 image url"
                   type="image/webp"
                 />
                  
                 <img
                   alt="Wade Bartlett"
-                  class="image"
+                  class="image media_lazy"
+                  data-src="s3 image url"
+                  data-srcset="s3 image url"
                   data-testid="test-picture-img"
                   height="0"
-                  loading="lazy"
-                  src="s3 image url"
-                  srcset="s3 image url 2x"
                   width="0"
                 />
               </picture>

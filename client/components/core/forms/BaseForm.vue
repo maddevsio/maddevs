@@ -62,7 +62,7 @@
       @change="handleCheckboxesChange"
     />
     <UIButton
-      :disabled="!isValid"
+      :disabled="!isValid || isSubmitted"
       :loading="isSubmitted"
       :class="buttonClassName"
       @click="handleSubmit"
@@ -253,9 +253,13 @@ export default {
 
 .form {
   /deep/ .v-placeholder-asterisk {
+    padding-left: 4px;
+    padding-bottom: 2px;
     font-size: 16px;
-    font-family: 'Poppins-Regular', sans-serif;
-    color: $text-color--grey-form-placeholder;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.013em;
+    color: $text-color--grey-pale;
     left: 17px !important;
     top: 50% !important;
     transform: translateY(-50%);

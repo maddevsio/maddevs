@@ -1,9 +1,17 @@
-import blog from './modules/blog'
-import leads from './modules/leads'
-import emails from './modules/emails'
+import * as blog from './modules/blog'
+import * as blogAuthors from './modules/blogAuthors'
+import * as blogPost from './modules/blogPost'
+import * as blogTags from './modules/blogTags'
+import * as emails from './modules/emails'
+import * as leads from './modules/leads'
 
-export const modules = {
-  blog,
-  leads,
-  emails,
+export default {
+  modules: {
+    blog,
+    blogAuthors,
+    blogPost,
+    blogTags,
+    emails,
+    leads,
+  },
 }

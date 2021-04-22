@@ -159,6 +159,7 @@ module.exports = {
     '~/plugins/get-media-from-s3.js',
     '~/plugins/feature-flags.js',
     { src: '~/plugins/sentry.js', mode: 'client' },
+    { src: '~/plugins/lazy-load.js', mode: 'client' },
   ],
   /*
   ** Nuxt Modules

@@ -11,7 +11,8 @@
     </section>
     <section class="container_full case_full-screen-img">
       <Picture
-        :lazy="true"
+        :width="1440"
+        :height="726"
         folder="sjmc"
         file="immersive-gallery"
         extension="jpg"
@@ -32,9 +33,11 @@
     <section class="container_full background-color-silver">
       <section class="container_middle">
         <img
-          :src="getMediaFromS3('/images/Cases/sjmc/gif/watchpax.gif')"
+          :src="$getMediaFromS3('/images/Cases/sjmc/gif/watchpax.gif')"
           class="case_gif"
           alt="WATCHOUT - Multi-Display Production and Presentation Software."
+          :width="1026"
+          :height="653"
         >
       </section>
     </section>
@@ -51,9 +54,11 @@
     <section class="container_full background-color-silver">
       <section class="container_middle">
         <img
-          :src="getMediaFromS3('/images/Cases/sjmc/gif/brix.gif')"
-          class="case_gif"
+          :data-src="$getMediaFromS3('/images/Cases/sjmc/gif/brix.gif')"
+          class="case_gif media_lazy"
           alt="Ultra-Compact Multimedia Computer - BRIX."
+          :width="1026"
+          :height="367"
         >
       </section>
     </section>
@@ -73,7 +78,7 @@
     <section class="container_full case_sec-container background-color-black-primary">
       <img
         v-if="isIphone"
-        :src="getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')"
+        :src="$getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')"
         class="case_img-ios-only"
       >
       <HardwareVideo v-else />

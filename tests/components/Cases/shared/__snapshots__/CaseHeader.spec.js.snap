@@ -18,13 +18,13 @@ exports[`CaseHeader component should render correctly 1`] = `
      
     <video
       autoplay="autoplay"
-      class="case_main-video"
+      class="case_main-video media_lazy"
       data-testid="test-case_main-video"
       loop="loop"
       muted="muted"
     >
       <source
-        src="video-name"
+        data-src="video-name"
         type="video/mp4"
       />
       
@@ -50,9 +50,9 @@ exports[`CaseHeader component should render correctly 1`] = `
        
       <img
         alt="some-logo-alt"
-        class="case_header-logo case_godee-logo"
+        class="case_header-logo media_lazy case_godee-logo"
+        data-src="/images/Cases/undefined/svg/godee-logo.svg"
         height="100"
-        src="/images/Cases/undefined/svg/godee-logo.svg"
         width="100"
       />
     </div>

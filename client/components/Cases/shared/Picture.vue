@@ -1,22 +1,15 @@
 <template>
   <picture>
     <source
-      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
-      :srcset="[
-        getMediaFromS3(`/images/Cases/${folder}/webp/${file}.webp`) + ' ',
-        getMediaFromS3(`/images/Cases/${folder}/webp/${file}@2x.webp`) + ' 2x',
-      ]"
+      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background, 'media_lazy': lazy }"
+      v-bind="attrsSource"
       class="image"
       type="image/webp"
     >
     <img
-      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background }"
-      :src="[getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}.${extension}`)]"
-      :srcset="[
-        getMediaFromS3(`/images/Cases/${folder}/${extension}/${file}@2x.${extension}`) + ' 2x',
-      ]"
+      :class="{ 'box-shadow': shadow, 'border-radius': radius, 'grey-background': background, 'media_lazy': lazy }"
+      v-bind="attrsImg"
       :alt="alt"
-      :loading="lazy ? 'lazy' : ''"
       :width="width"
       :height="height"
       data-testid="test-picture-img"
@@ -52,7 +45,7 @@ export default {
 
     lazy: {
       type: Boolean,
-      default: false,
+      default: true,
     },
 
     shadow: {
@@ -78,6 +71,35 @@ export default {
     background: {
       type: Boolean,
       default: false,
+    },
+  },
+
+  computed: {
+    attrsImg() {
+      const path = `/images/Cases/${this.folder}/${this.extension}/${this.file}.${this.extension}`
+      if (this.lazy) {
+        return {
+          'data-src': [this.$getMediaFromS3(path)],
+          'data-srcset': [this.$getMediaFromS3(path)],
+        }
+      }
+      return {
+        src: [this.$getMediaFromS3(path)],
+        srcset: [this.$getMediaFromS3(path)],
+      }
+    },
+
+    attrsSource() {
+      const path = `/images/Cases/${this.folder}/webp/${this.file}.webp `
+      const path2x = `/images/Cases/${this.folder}/webp/${this.file}@2x.webp 2x`
+      if (this.lazy) {
+        return {
+          'data-srcset': [this.$getMediaFromS3(path), this.$getMediaFromS3(path2x)],
+        }
+      }
+      return {
+        srcset: [this.$getMediaFromS3(path), this.$getMediaFromS3(path2x)],
+      }
     },
   },
 

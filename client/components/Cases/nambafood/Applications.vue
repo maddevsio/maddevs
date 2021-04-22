@@ -14,21 +14,21 @@
       <div class="case_full-screen-phone-video-wrapper">
         <img
           v-if="isIphone"
-          :src="getMediaFromS3('/images/Cases/nambafood/png/iphone-video-preview.png')"
+          :src="$getMediaFromS3('/images/Cases/nambafood/png/iphone-video-preview.png')"
           class="case_phone-ios-image"
           data-testid="test-case_phone-ios-image"
         >
         <video
           v-else
           id="iphone-silver-video"
-          class="case_full-screen-video"
+          class="case_full-screen-video media_lazy"
           width="100%"
           height="100%"
           loop="true"
           muted="true"
         >
           <source
-            :src="getMediaFromS3('/videos/mobile-applications-for-end-users.faaab2d.mp4')"
+            :data-src="$getMediaFromS3('/videos/mobile-applications-for-end-users.faaab2d.mp4')"
             type="video/mp4"
           >
           Your browser does not support the video tag.

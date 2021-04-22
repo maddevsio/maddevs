@@ -15,7 +15,7 @@
                 ref="clutch"
                 class="clutch-widget"
                 data-url="https://widget.clutch.co"
-                data-widget-type="4"
+                data-widget-type="8"
                 data-expandifr="true"
                 data-height="auto"
                 data-clutchcompany-id="258762"
@@ -116,7 +116,7 @@ export default {
     justify-content: space-between;
     padding-bottom: 77px;
 
-    @media screen and (max-width: 1169px) {
+    @media screen and (max-width: 1080px) {
       flex-direction: column;
       padding-bottom: 53px;
     }
@@ -130,7 +130,7 @@ export default {
     &-list {
       max-width: 315px;
 
-      @media screen and (max-width: 1169px) {
+      @media screen and (max-width: 1080px) {
         max-width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -146,7 +146,7 @@ export default {
     &-item {
       margin-bottom: 62px;
 
-      @media screen and (max-width: 1169px) {
+      @media screen and (max-width: 1080px) {
         margin-bottom: 0;
       }
 
@@ -171,11 +171,11 @@ export default {
       margin: 0 0 16px;
 
       @media screen and (min-width: 768px) {
-        @media screen and (max-width: 1169px) {
+        @media screen and (max-width: 1080px) {
           height: 144px;
         }
 
-        @media screen and (max-width: 1090px) {
+        @media screen and (max-width: 1080px) {
           height: 166px;
         }
 
@@ -235,7 +235,7 @@ export default {
       align-items: flex-start;
       justify-content: space-between;
 
-      @media screen and (max-width: 1169px) {
+      @media screen and (max-width: 1080px) {
         flex-direction: column;
 
         .customer-testimonials__project {
@@ -277,19 +277,13 @@ export default {
       overflow: hidden;
 
       .clutch-widget {
-        @media only screen and (min-width: 992px) {
-          margin: 0 -30px;
-        }
+        margin: 0 -32px;
 
-        @media only screen and (max-width: 991px) and (min-width: 911px) {
-          margin: 0 -30px;
-        }
-
-        @media only screen and (max-width: 1279px) and (min-width: 1170px) {
+        @media only screen and (max-width: 1260px) and (min-width: 1081px) {
           margin: 0;
         }
 
-        @media only screen and (max-width: 910px) {
+        @media only screen and (max-width: 884px) {
           margin: 0;
         }
       }
@@ -297,9 +291,9 @@ export default {
 
     &-col {
       width: 100%;
-      margin-right: 4.45vw;
+      margin-right: 62px;
 
-      @media screen and (max-width: 1169px) {
+      @media screen and (max-width: 1080px) {
         margin-bottom: 34px;
       }
     }
@@ -323,7 +317,7 @@ export default {
     width: 91px;
     height: 29px;
 
-    @media screen and (max-width: 1169px) and (min-width: 768px) {
+    @media screen and (max-width: 1080px) and (min-width: 768px) {
       width: 50px;
       height: 16px;
       background-size: contain;
@@ -334,7 +328,7 @@ export default {
     width: 83px;
     height: 31px;
 
-    @media screen and (max-width: 1169px) and (min-width: 768px) {
+    @media screen and (max-width: 1080px) and (min-width: 768px) {
       width: 43px;
       height: 16px;
       background-size: contain;
@@ -345,7 +339,7 @@ export default {
     width: 160px;
     height: 32px;
 
-    @media screen and (max-width: 1169px) {
+    @media screen and (max-width: 1080px) {
       width: 80px;
       height: 16px;
       background-size: contain;

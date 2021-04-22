@@ -12,7 +12,7 @@ describe('post tag component', () => {
       },
     })
 
-    expect(getByTestId('test-tag').innerHTML).toBe(TAG_NAME)
+    expect(getByTestId('test-tag').innerHTML.trim()).toBe(TAG_NAME)
     expect(container).toMatchSnapshot()
   })
 

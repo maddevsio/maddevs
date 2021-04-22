@@ -22,11 +22,19 @@ module.exports = {
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
   collectCoverage: true,
   collectCoverageFrom: [
-    '<rootDir>/client/components/**/*.vue',
-    '<rootDir>/client/pages/*.vue',
+    '<rootDir>/client/**/*.vue',
+    '<rootDir>/client/**/*.js',
     '<rootDir>/server/**/*.js',
   ],
-  coveragePathIgnorePatterns: ['<rootDir>/server/db', '<rootDir>/server/routes', '<rootDir>/server/index.js'],
+  coveragePathIgnorePatterns: ['<rootDir>/server/sentry', '<rootDir>/server/db', '<rootDir>/server/routes', '<rootDir>/server/index.js'],
   coverageReporters: ['json-summary', 'text', 'lcov'],
   setupFiles: ['jest-canvas-mock'],
+  coverageThreshold: {
+    global: {
+      branches: 54,
+      statements: 78,
+      functions: 74,
+      lines: 79,
+    },
+  },
 }

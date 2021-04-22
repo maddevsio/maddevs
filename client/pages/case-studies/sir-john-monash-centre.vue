@@ -91,6 +91,10 @@ export default {
     return buildHead({ ...getMetadata('sjmc'), image: 'https://maddevs.io/sjmc-case.png' }, getPageScripts('sjmc'))
   },
 
+  mounted() {
+    this.$lazyLoad.init()
+  },
+
   methods: {
     openFullscreen() {
       this.$nuxt.$emit('open-fullscreen')

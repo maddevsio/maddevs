@@ -2,7 +2,7 @@ import TrackStatuses from '@/components/Cases/nambafood/TrackStatuses.vue'
 import { render, screen } from '@testing-library/vue'
 
 const mocks = {
-  getMediaFromS3: () => 'img.jpg',
+  $getMediaFromS3: () => 'img.jpg',
 }
 
 describe('TrackStatuses component', () => {

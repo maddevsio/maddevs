@@ -2,7 +2,7 @@ import InfrastructureSchema from '@/components/Cases/nambafood/InfrastructureSch
 import { render, screen } from '@testing-library/vue'
 
 const mocks = {
-  getMediaFromS3: () => 'img.jpg',
+  $getMediaFromS3: () => 'img.jpg',
 }
 
 describe('InfrastructureSchema component', () => {

@@ -19,7 +19,7 @@ const PICTURES = [
 ]
 
 const mocks = {
-  getMediaFromS3: fileName => fileName,
+  $getMediaFromS3: fileName => fileName,
 }
 
 describe('CardNinjaSushi component', () => {

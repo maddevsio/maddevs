@@ -14,7 +14,7 @@ describe('CardSupportedGadgets component', () => {
     const { container } = render(CardSupportedGadgets, {
       props,
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
     expect(container).toMatchSnapshot()
@@ -24,7 +24,7 @@ describe('CardSupportedGadgets component', () => {
     render(CardSupportedGadgets, {
       props,
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
     expect(screen.getByText(props.title).className).toContain('card-content_title case_title_h4')

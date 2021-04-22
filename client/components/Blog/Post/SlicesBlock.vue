@@ -4,6 +4,7 @@
     <section
       v-for="(slice, index) in slices"
       :key="'slice-' + index"
+      data-testid="test-slice-post"
       :class="slice.slice_type === 'quote' ? 'quote' : ''"
     >
       <!-- Text slice template -->
@@ -46,6 +47,9 @@
       <template v-else-if="slice.slice_type === 'section_id'">
         <SectionIdSlice :slice="slice" />
       </template>
+      <template v-else-if="slice.slice_type === 'author'">
+        <AuthorSlice :slice="slice" />
+      </template>
     </section>
   </section>
 </template>
@@ -63,6 +67,7 @@ import OrderedList from '@/components/Blog/slices/OrderedList'
 import DoubleColumnBorderedSlice from '@/components/Blog/slices/DoubleColumnBorderedSlice'
 import GithubGistSlice from '@/components/Blog/slices/GithubGistSlice'
 import GallerySlice from '@/components/Blog/slices/GallerySlice'
+import AuthorSlice from '@/components/Blog/slices/AuthorSlice'
 
 export default {
   name: 'SlicesBlock',
@@ -79,6 +84,7 @@ export default {
     GithubGistSlice,
     GallerySlice,
     SectionIdSlice,
+    AuthorSlice,
   },
 
   props: {

@@ -1,47 +1,81 @@
 <template>
-  <div class="blog-post__author">
-    <img
-      v-if="document.author_image.url !== undefined"
-      ref="authorImage"
-      :data-src="document.author_image.url"
-      :alt="$prismic.asText(document.author)"
-      class="blog-post__author-image img_lazy"
+  <NuxtLink
+    v-if="name"
+    :event="disabled ? '' : 'click'"
+    :to="link"
+    class="blog-post__author"
+  >
+    <div
+      v-if="thumbnailImage.url !== undefined"
+      class="blog-post__author-image"
+      :class="theme"
     >
+      <img
+        :data-src="thumbnailImage.url"
+        :alt="thumbnailImage.alt"
+        class="img_lazy"
+      >
+    </div>
     <div
       v-else
       class="blog-post__none-image"
+      :class="theme"
     />
     <div class="blog-post__author-info">
       <p class="blog-post__author-name">
         {{ shortTitle }}
       </p>
       <div class="blog-post__data-of-creation">
-        <span class="blog-post__author-title">{{ document.author_title }}</span>
+        <span class="blog-post__author-title">{{ position }}</span>
       </div>
     </div>
-  </div>
+  </NuxtLink>
 </template>
 
 <script>
+import linkResolver from '@/plugins/link-resolver'
+
 export default {
   name: 'PostAuthor',
   props: {
-    document: {
+    uid: {
+      type: String,
+      default: '',
+    },
+
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
+
+    name: {
+      type: String,
+      default: '',
+    },
+
+    position: {
+      type: String,
+      default: '',
+    },
+
+    thumbnailImage: {
       type: Object,
-      required: true,
+      default: () => ({}),
+    },
+
+    theme: {
+      type: String,
+      default: 'dark',
     },
   },
 
   computed: {
-    shortTitle() {
-      return this.$prismic.asText(this.document.author).substr(0, 100)
+    link() {
+      return linkResolver({ type: 'author', uid: this.uid })
     },
-  },
 
-  watch: {
-    document() {
-      this.$refs.authorImage.classList.remove('img_lazy-fade')
-      this.$refs.authorImage.classList.add('img_lazy')
+    shortTitle() {
+      return this.name.substr(0, 100)
     },
   },
 }
@@ -53,6 +87,7 @@ export default {
   &__author {
     display: flex;
     align-items: center;
+    margin-right: 24px;
   }
 
   &__author-info {
@@ -85,11 +120,22 @@ export default {
   &__none-image {
     width: 36px;
     height: 36px;
-    border-radius: 100%;
-  }
-
-  &__none-image {
-    background-color: $bgcolor--black-light;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
+    &.dark {
+      background-color: $bgcolor--black-light;
+      color: $text-color--white-primary;
+    }
+    &.light {
+      background-color: $bgcolor--silver;
+      color: $text-color--black;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__author-title {

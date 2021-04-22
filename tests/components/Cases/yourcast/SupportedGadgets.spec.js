@@ -5,7 +5,7 @@ describe('SupportedGadgets component', () => {
   it('should render correctly', () => {
     const { container } = render(SupportedGadgets, {
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
     expect(container).toMatchSnapshot()
@@ -14,7 +14,7 @@ describe('SupportedGadgets component', () => {
   it('title should include classname', () => {
     render(SupportedGadgets, {
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
     expect(screen.getByText(/Supported gadgets/i).className).toContain('case_title_h2')

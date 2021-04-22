@@ -1,11 +1,11 @@
 <template>
   <div
-    v-if="slice.items.length"
+    v-if="slice.items && slice.items.length"
     :class="slice.items[0].embed.type"
     class="embed"
   >
     <PrismicEmbed
-      :field="slice.items[0].embed"
+      :field="embedFieldData"
       :class="`embed__${slice.items[0].embed.type}`"
       target="_blank"
     />
@@ -26,22 +26,19 @@ export default {
   props: {
     slice: {
       type: Object,
-      default: null,
+      default: () => ({}),
     },
   },
 
   data() {
     return {
-      sliceData: {
-        items: [],
-      },
+      embedFieldData: {},
     }
   },
 
   created() {
-    this.sliceData = this.slice
-    const { items } = this.sliceData
-    if (!items.length) return
+    const { items } = this.slice
+    if (!(items && items.length)) return
 
     const {
       embed: {
@@ -51,6 +48,7 @@ export default {
         type: embedType,
       },
       embed_title: embedTitle,
+      embed_description: embedDescription,
     } = items[0]
 
     if (rawHtml) {
@@ -61,18 +59,26 @@ export default {
         <div data-type="website">
           <a href="${url}" target="_blank">
             <div class="embed__title">${embedTitle || rawTitle.split(' | ')[0]}</div>
-            <p>${description}</p>
+            <p>${embedDescription || description}</p>
           </a>
         </div>
       `
 
-      this.sliceData.items[0].embed.html = html
+      this.embedFieldData = {
+        ...this.slice.embed,
+        html,
+      }
     }
 
     if (embedType === 'video') {
-      this.sliceData.items[0].embed.html = rawHtml
+      const html = rawHtml
         .replace(/height="[0-9]*"/, 'height="500"')
         .replace(/width="[0-9]*"/, 'width="100%"')
+
+      this.embedFieldData = {
+        ...this.slice.embed,
+        html,
+      }
     }
   },
 }

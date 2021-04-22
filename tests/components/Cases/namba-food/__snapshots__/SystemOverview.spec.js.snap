@@ -31,8 +31,10 @@ exports[`SystemOverview component should render correctly 1`] = `
     >
       <img
         alt="Namba Food: Website and Mobile App Infrastructure Scheme."
-        class="case_gif case_high-level-system-overview-gif"
-        src="img.jpg"
+        class="case_gif case_high-level-system-overview-gif img_lazy"
+        data-src="img.jpg"
+        height="776"
+        width="817"
       />
     </section>
   </section>

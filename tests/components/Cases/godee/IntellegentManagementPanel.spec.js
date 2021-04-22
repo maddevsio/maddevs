@@ -2,7 +2,7 @@ import IntellegentManagementPanel from '@/components/Cases/godee/IntellegentMana
 import { render, screen } from '@testing-library/vue'
 
 const mocks = {
-  getMediaFromS3: () => 'img.jpg',
+  $getMediaFromS3: () => 'img.jpg',
 }
 
 const props = {

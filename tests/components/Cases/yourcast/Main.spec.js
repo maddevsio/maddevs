@@ -6,7 +6,7 @@ describe('Main component', () => {
   it('should render correctly', () => {
     const { container } = render(Main, {
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
       stubs: ['NuxtLink'],
     })

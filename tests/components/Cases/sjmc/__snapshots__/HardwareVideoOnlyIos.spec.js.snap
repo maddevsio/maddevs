@@ -10,13 +10,14 @@ exports[`HardwareVideoOnlyIos component should render correctly 1`] = `
       data-testid="test-case_sjmc-phone"
     >
       <video
+        class="media_lazy"
         data-testid="test-case_video"
         height="100%"
         playsinline=""
         width="100%"
       >
         <source
-          src="/videos/bluetooth-beacons-video.9ca649c.mp4"
+          data-src="/videos/bluetooth-beacons-video.9ca649c.mp4"
           type="video/mp4"
         />
         

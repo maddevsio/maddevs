@@ -2,7 +2,7 @@ import Mvp from '@/components/Cases/godee/Mvp.vue'
 import { render, screen } from '@testing-library/vue'
 
 const mocks = {
-  getMediaFromS3: () => 'img.jpg',
+  $getMediaFromS3: () => 'img.jpg',
 }
 
 describe('Mvp component', () => {

@@ -48,7 +48,7 @@ exports[`PreviewCards component should render correctly 1`] = `
                 >
                   <source
                     class="image"
-                    srcset="img.jpg ,img.jpg 2x"
+                    srcset="img.jpg,img.jpg"
                     type="image/webp"
                   />
                    
@@ -57,9 +57,8 @@ exports[`PreviewCards component should render correctly 1`] = `
                     class="image"
                     data-testid="test-picture-img"
                     height="211"
-                    loading=""
                     src="img.jpg"
-                    srcset="img.jpg 2x"
+                    srcset="img.jpg"
                     width="334"
                   />
                 </picture>
@@ -103,7 +102,7 @@ exports[`PreviewCards component should render correctly 1`] = `
                 >
                   <source
                     class="image"
-                    srcset="img.jpg ,img.jpg 2x"
+                    srcset="img.jpg,img.jpg"
                     type="image/webp"
                   />
                    
@@ -112,9 +111,8 @@ exports[`PreviewCards component should render correctly 1`] = `
                     class="image"
                     data-testid="test-picture-img"
                     height="280"
-                    loading=""
                     src="img.jpg"
-                    srcset="img.jpg 2x"
+                    srcset="img.jpg"
                     width="313"
                   />
                 </picture>
@@ -159,7 +157,7 @@ exports[`PreviewCards component should render correctly 1`] = `
               >
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
@@ -168,9 +166,8 @@ exports[`PreviewCards component should render correctly 1`] = `
                   class="image"
                   data-testid="test-picture-img"
                   height="219"
-                  loading=""
                   src="img.jpg"
-                  srcset="img.jpg 2x"
+                  srcset="img.jpg"
                   width="695"
                 />
               </picture>
@@ -180,7 +177,7 @@ exports[`PreviewCards component should render correctly 1`] = `
               >
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
@@ -189,9 +186,8 @@ exports[`PreviewCards component should render correctly 1`] = `
                   class="image"
                   data-testid="test-picture-img"
                   height="160"
-                  loading=""
                   src="img.jpg"
-                  srcset="img.jpg 2x"
+                  srcset="img.jpg"
                   width="307"
                 />
               </picture>

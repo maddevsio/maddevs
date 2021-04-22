@@ -13,9 +13,11 @@
     </section>
     <section class="container_full background-color-silver">
       <img
-        :src="getMediaFromS3('/images/Cases/nambafood/gif/high-level-system-overview.gif')"
-        class="case_gif case_high-level-system-overview-gif"
+        :data-src="$getMediaFromS3('/images/Cases/nambafood/gif/high-level-system-overview.gif')"
+        class="case_gif case_high-level-system-overview-gif img_lazy"
         alt="Namba Food: Website and Mobile App Infrastructure Scheme."
+        :width="817"
+        :height="776"
       >
     </section>
   </section>

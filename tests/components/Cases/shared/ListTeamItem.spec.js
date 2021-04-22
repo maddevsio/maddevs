@@ -18,7 +18,7 @@ describe('ListTeamItem component', () => {
     const { container } = render(ListTeamItem, {
       props,
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
 

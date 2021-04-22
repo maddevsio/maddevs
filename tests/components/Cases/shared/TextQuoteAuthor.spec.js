@@ -20,7 +20,7 @@ describe('TextQuoteAuthor component', () => {
       slots,
       props,
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
 
@@ -32,7 +32,7 @@ describe('TextQuoteAuthor component', () => {
       slots,
       props,
       mocks: {
-        getMediaFromS3: () => 'img.jpg',
+        $getMediaFromS3: () => 'img.jpg',
       },
     })
 

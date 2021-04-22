@@ -29,20 +29,19 @@ exports[`Hardware component should render correctly 1`] = `
     >
       <picture>
         <source
-          class="image"
-          srcset="/images/Cases/sjmc/webp/immersive-gallery.webp ,/images/Cases/sjmc/webp/immersive-gallery@2x.webp 2x"
+          class="image media_lazy"
+          data-srcset="/images/Cases/sjmc/webp/immersive-gallery.webp ,/images/Cases/sjmc/webp/immersive-gallery@2x.webp 2x"
           type="image/webp"
         />
          
         <img
           alt="The SJMC Immersive Gallery."
-          class="image"
+          class="image media_lazy"
+          data-src="/images/Cases/sjmc/jpg/immersive-gallery.jpg"
+          data-srcset="/images/Cases/sjmc/jpg/immersive-gallery.jpg"
           data-testid="test-picture-img"
-          height="0"
-          loading="lazy"
-          src="/images/Cases/sjmc/jpg/immersive-gallery.jpg"
-          srcset="/images/Cases/sjmc/jpg/immersive-gallery@2x.jpg 2x"
-          width="0"
+          height="726"
+          width="1440"
         />
       </picture>
     </section>
@@ -79,7 +78,9 @@ exports[`Hardware component should render correctly 1`] = `
         <img
           alt="WATCHOUT - Multi-Display Production and Presentation Software."
           class="case_gif"
+          height="653"
           src="/images/Cases/sjmc/gif/watchpax.gif"
+          width="1026"
         />
       </section>
     </section>
@@ -114,8 +115,10 @@ exports[`Hardware component should render correctly 1`] = `
       >
         <img
           alt="Ultra-Compact Multimedia Computer - BRIX."
-          class="case_gif"
-          src="/images/Cases/sjmc/gif/brix.gif"
+          class="case_gif media_lazy"
+          data-src="/images/Cases/sjmc/gif/brix.gif"
+          height="367"
+          width="1026"
         />
       </section>
     </section>
@@ -309,16 +312,18 @@ exports[`Hardware component should render correctly 1`] = `
           class="case_video-wrapper case_full-screen-video"
         >
           <video
+            class="media_lazy"
             data-testid="test-case_video"
-            height="100%"
+            height="884"
             id="iphone-video"
             loop="loop"
             muted="muted"
             playsinline=""
+            poster="/images/Cases/sjmc/png/bluetooth-beacons-video-background.png"
             width="100%"
           >
             <source
-              src="/videos/bluetooth-beacons-video.9ca649c.mp4"
+              data-src="/videos/bluetooth-beacons-video.9ca649c.mp4"
               type="video/mp4"
             />
             

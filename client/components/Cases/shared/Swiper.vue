@@ -8,7 +8,6 @@
         v-if="safariTopBar"
         :file="safariTopBarImage"
         :alt="safariTopBarAlt"
-        :lazy="true"
         folder="common"
         extension="jpg"
       />
@@ -16,6 +15,7 @@
         ref="swiperTop"
         :options="swiperOptionTop"
         class="swiper gallery-top"
+        @slideChangeTransitionEnd="removeLazy"
       >
         <swiper-slide
           v-for="element in components"
@@ -25,8 +25,8 @@
             :folder="element.pictureFolder"
             :file="element.fileName"
             :extension="element.fileExtension"
-            :lazy="true"
             :alt="element.alt"
+            :lazy="lazy"
           />
         </swiper-slide>
       </swiper>
@@ -50,7 +50,6 @@
           :folder="element.pictureFolder"
           :file="element.fileName"
           :extension="element.fileExtension"
-          :lazy="true"
           :alt="element.alt"
         />
       </swiper-slide>
@@ -106,6 +105,8 @@ export default {
 
   data() {
     return {
+      lazy: true,
+
       swiperOptionTop: {
         loop: false,
         loopedSlides: 0, // looped slides should be the same
@@ -132,6 +133,12 @@ export default {
       swiperTop.controller.control = swiperThumbs
       swiperThumbs.controller.control = swiperTop
     })
+  },
+
+  methods: {
+    removeLazy() {
+      this.lazy = false
+    },
   },
 }
 </script>

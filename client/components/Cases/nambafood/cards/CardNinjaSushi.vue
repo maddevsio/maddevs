@@ -66,14 +66,14 @@ export default {
     return {
       imgIndex: 0,
       img: {
-        x1: this.getMediaFromS3('/images/Cases/nambafood/webp/ninja-sushi-slide.webp'),
-        x2: this.getMediaFromS3('/images/Cases/nambafood/webp/ninja-sushi-slide@2x.webp'),
+        x1: this.$getMediaFromS3('/images/Cases/nambafood/webp/ninja-sushi-slide.webp'),
+        x2: this.$getMediaFromS3('/images/Cases/nambafood/webp/ninja-sushi-slide@2x.webp'),
         alt: null,
       },
 
       source: {
-        x1: this.getMediaFromS3('/images/Cases/nambafood/jpg/ninja-sushi-slide.jpg'),
-        x2: this.getMediaFromS3('/images/Cases/nambafood/jpg/ninja-sushi-slide@2x.jpg'),
+        x1: this.$getMediaFromS3('/images/Cases/nambafood/jpg/ninja-sushi-slide.jpg'),
+        x2: this.$getMediaFromS3('/images/Cases/nambafood/jpg/ninja-sushi-slide@2x.jpg'),
       },
     }
   },
@@ -102,11 +102,11 @@ export default {
           alt: 'Namba Food: Coffee House.',
         },
       ]
-      this.img.x1 = this.getMediaFromS3(`/images/Cases/nambafood/jpg/${pictures[this.imgIndex].img}.jpg`)
-      this.img.x2 = this.getMediaFromS3(`/images/Cases/nambafood/jpg/${pictures[this.imgIndex].img}@2x.jpg`)
+      this.img.x1 = this.$getMediaFromS3(`/images/Cases/nambafood/jpg/${pictures[this.imgIndex].img}.jpg`)
+      this.img.x2 = this.$getMediaFromS3(`/images/Cases/nambafood/jpg/${pictures[this.imgIndex].img}@2x.jpg`)
       this.img.alt = pictures[this.imgIndex].alt
-      this.source.x1 = this.getMediaFromS3(`/images/Cases/nambafood/webp/${pictures[this.imgIndex].img}.webp`)
-      this.source.x2 = this.getMediaFromS3(`/images/Cases/nambafood/webp/${pictures[this.imgIndex].img}@2x.webp`)
+      this.source.x1 = this.$getMediaFromS3(`/images/Cases/nambafood/webp/${pictures[this.imgIndex].img}.webp`)
+      this.source.x2 = this.$getMediaFromS3(`/images/Cases/nambafood/webp/${pictures[this.imgIndex].img}@2x.webp`)
       this.imgIndex = (this.imgIndex + 1) % pictures.length // update the counter
     },
   },

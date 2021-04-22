@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`customer University section component is a Vue instance 1`] = `
+exports[`CustomerUniversitySection component should render correctly 1`] = `
 <div>
   <section
     class="customer-university"
@@ -26,7 +26,45 @@ exports[`customer University section component is a Vue instance 1`] = `
         <div
           class="customer-university__featured-post"
         >
-          <!---->
+          <nuxtlink-stub
+            class="featured-post"
+            to="/customer-university/uid/"
+          >
+            <span
+              class="featured-post__date"
+            >
+              
+            </span>
+             
+            <h2
+              class="featured-post__title"
+            >
+              
+            img.png
+          
+            </h2>
+             
+            <p
+              class="featured-post__text"
+            >
+              
+            
+          
+            </p>
+             
+            <!---->
+             
+            <div
+              class="featured-post__cover-wrapper"
+            >
+              <img
+                class="featured-post__cover img_lazy"
+                data-src=""
+                height="347"
+                width="560"
+              />
+            </div>
+          </nuxtlink-stub>
         </div>
          
         <div

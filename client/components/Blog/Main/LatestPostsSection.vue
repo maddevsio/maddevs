@@ -28,8 +28,8 @@
               </div>
               <RecommendedBlogWidget
                 v-else
-                :is-recent-post="true"
                 :post="post"
+                :author="findAuthor(post.data.post_author.id, allAuthors)"
               />
             </div>
           </section>
@@ -55,6 +55,8 @@ import { mapGetters } from 'vuex'
 import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
 import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
 
+import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
+
 export default {
   name: 'LatestPostsSection',
   components: {
@@ -62,8 +64,10 @@ export default {
     RecommendedBlogWidget,
   },
 
+  mixins: [findPostAuthorMixin],
+
   computed: {
-    ...mapGetters(['postsLoaded', 'recentPosts']),
+    ...mapGetters(['postsLoaded', 'recentPosts', 'allAuthors']),
   },
 }
 </script>

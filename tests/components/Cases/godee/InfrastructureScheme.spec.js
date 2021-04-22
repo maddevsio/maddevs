@@ -2,7 +2,7 @@ import InfrastructureScheme from '@/components/Cases/godee/InfrastructureScheme.
 import { render, screen } from '@testing-library/vue'
 
 const mocks = {
-  getMediaFromS3: () => 'img.jpg',
+  $getMediaFromS3: () => 'img.jpg',
 }
 
 describe('InfrastructureScheme component', () => {

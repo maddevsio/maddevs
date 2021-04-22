@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`namba food renders correctly 1`] = `
+<transition-stub
+  mode="out-in"
+  name="main-fade"
+>
+  <!---->
+</transition-stub>
+`;

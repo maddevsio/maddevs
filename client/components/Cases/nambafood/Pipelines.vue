@@ -12,7 +12,8 @@
     <section class="container_full background-color-silver case_pipelines-image-desktop">
       <section class="container_full case_full-screen-image">
         <Picture
-          :lazy="true"
+          :width="1440"
+          :height="340"
           folder="nambafood"
           file="pipelines"
           extension="jpg"
@@ -23,7 +24,6 @@
     <section class="container_full case_pipelines-image-mobile">
       <section class="container_full case_full-screen-image">
         <Picture
-          :lazy="true"
           folder="nambafood"
           file="pipelines-mobile"
           extension="jpg"

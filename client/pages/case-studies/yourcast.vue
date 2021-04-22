@@ -76,6 +76,10 @@ export default {
       image: 'https://maddevs.io/yourcast.jpg',
     })
   },
+
+  mounted() {
+    this.$lazyLoad.init()
+  },
 }
 </script>
 

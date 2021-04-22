@@ -1,27 +1,46 @@
 <template>
-  <div
+  <NuxtLink
+    v-if="tag"
+    :event="disabled ? '' : 'click'"
+    :to="link"
     :class="theme"
     class="post-tag"
   >
     <span
       data-testid="test-tag"
       class="tag"
-    >{{ tag }}</span>
-  </div>
+    >
+      {{ tag }}
+    </span>
+  </NuxtLink>
 </template>
 
 <script>
+import linkResolver from '@/plugins/link-resolver.js'
+import convertStringToSlug from '@/helpers/convertStringToSlug'
+
 export default {
   name: 'PostTag',
   props: {
     tag: {
       type: String,
-      required: true,
+      default: '',
+    },
+
+    disabled: {
+      type: Boolean,
+      default: false,
     },
 
     theme: {
       type: String,
       default: 'light',
+    },
+  },
+
+  computed: {
+    link() {
+      return linkResolver({ type: 'tag', uid: convertStringToSlug(this.tag) })
     },
   },
 }
@@ -33,7 +52,6 @@ export default {
 .post-tag {
   border-radius: 2px;
   padding: 4px 16px;
-  margin-left: 24px;
   transition: 0.2s;
 
   &.light {

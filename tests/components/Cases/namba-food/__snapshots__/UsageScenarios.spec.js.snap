@@ -58,7 +58,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
@@ -67,9 +67,8 @@ exports[`UsageScenarios component should render correctly 1`] = `
                   class="image"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
                   src="img.jpg"
-                  srcset="img.jpg 2x"
+                  srcset="img.jpg"
                   width="0"
                 />
               </picture>
@@ -81,7 +80,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
@@ -90,9 +89,8 @@ exports[`UsageScenarios component should render correctly 1`] = `
                   class="image"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
                   src="img.jpg"
-                  srcset="img.jpg 2x"
+                  srcset="img.jpg"
                   width="0"
                 />
               </picture>
@@ -133,7 +131,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
@@ -142,9 +140,8 @@ exports[`UsageScenarios component should render correctly 1`] = `
                   class="image"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
                   src="img.jpg"
-                  srcset="img.jpg 2x"
+                  srcset="img.jpg"
                   width="0"
                 />
               </picture>
@@ -156,7 +153,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
@@ -165,9 +162,8 @@ exports[`UsageScenarios component should render correctly 1`] = `
                   class="image"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
                   src="img.jpg"
-                  srcset="img.jpg 2x"
+                  srcset="img.jpg"
                   width="0"
                 />
               </picture>
@@ -206,7 +202,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
@@ -215,9 +211,8 @@ exports[`UsageScenarios component should render correctly 1`] = `
                   class="image"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
                   src="img.jpg"
-                  srcset="img.jpg 2x"
+                  srcset="img.jpg"
                   width="0"
                 />
               </picture>
@@ -229,7 +224,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
@@ -238,9 +233,8 @@ exports[`UsageScenarios component should render correctly 1`] = `
                   class="image"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
                   src="img.jpg"
-                  srcset="img.jpg 2x"
+                  srcset="img.jpg"
                   width="0"
                 />
               </picture>
@@ -281,7 +275,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
@@ -290,9 +284,8 @@ exports[`UsageScenarios component should render correctly 1`] = `
                   class="image"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
                   src="img.jpg"
-                  srcset="img.jpg 2x"
+                  srcset="img.jpg"
                   width="0"
                 />
               </picture>
@@ -304,7 +297,7 @@ exports[`UsageScenarios component should render correctly 1`] = `
               <picture>
                 <source
                   class="image"
-                  srcset="img.jpg ,img.jpg 2x"
+                  srcset="img.jpg,img.jpg"
                   type="image/webp"
                 />
                  
@@ -313,9 +306,8 @@ exports[`UsageScenarios component should render correctly 1`] = `
                   class="image"
                   data-testid="test-picture-img"
                   height="0"
-                  loading=""
                   src="img.jpg"
-                  srcset="img.jpg 2x"
+                  srcset="img.jpg"
                   width="0"
                 />
               </picture>
