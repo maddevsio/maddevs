@@ -65,6 +65,7 @@ exports[`recommended blog widget component render with very long title 1`] = `
            
           <nuxtlink-stub
             class="post-tag light light"
+            event="click"
             to="/blog/tag/markup/"
           >
             <span
@@ -150,6 +151,7 @@ exports[`recommended blog widget component should render correctly with slot 1`]
            
           <nuxtlink-stub
             class="post-tag light light"
+            event="click"
             to="/blog/tag/markup/"
           >
             <span

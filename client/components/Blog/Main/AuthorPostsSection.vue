@@ -11,6 +11,7 @@
           :post="authorPosts[0]"
           :author="blogAuthor"
           theme="light"
+          :disable-author-link="true"
         />
         <SkeletonFeaturedPost
           v-else
@@ -30,6 +31,7 @@
                 :to="postLink(post.uid)"
                 :post="post"
                 :author="blogAuthor"
+                :disable-author-link="true"
               />
             </div>
           </section>
@@ -51,7 +53,6 @@
         class="author-posts__load-more"
       >
         <LoadMoreButton
-
           @click="getMoreAuthorPosts"
         />
       </div>
