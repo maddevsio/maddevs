@@ -91,41 +91,46 @@ export default {
   },
 
   methods: {
-    trackLocation(e) {
-      e.preventDefault()
-      e.stopPropagation()
-      clearTimeout(this.trackLeaveTimeout)
-      this.$refs.beforeImage.style.transition = null
-      this.$refs.trackLine.style.transition = '0.3s ease-out opacity'
-      this.$refs.trackLine.style.opacity = '0.25'
-      const trackContainerRect = this.$refs.trackContainer.getBoundingClientRect()
-      const afterImageRect = this.$refs.afterImage.getBoundingClientRect()
-      /**
-       *  This calculation is the formula for finding the percentage of the total amount
-       *  e.pageX - cursor position from the left edge of the screen
-       *  afterImageRect.left - position of the afterImage element from the left edge of the screen
-       *  (e.pageX - afterImageRect.left) - this result is a part of the total amount of the picture width (unknown%)
-       *  this.$refs.afterImage.offsetWidth - total amount of the picture width (100%)
-       */
-      this.beforeImageWidth = ((e.pageX - afterImageRect.left) / this.$refs.afterImage.offsetWidth) * 100
-      this.trackLinePosition = ((e.pageX - trackContainerRect.left) / this.$refs.trackContainer.offsetWidth) * 100
-      this.$refs.beforeImage.style.width = `${this.beforeImageWidth}%`
-      this.$refs.trackLine.style.left = `${this.trackLinePosition}%`
-      if (this.beforeImageWidth > 100) this.$refs.beforeImage.style.width = '100%'
-      if (this.beforeImageWidth < 0) this.$refs.beforeImage.style.width = '0%'
-      if (this.trackLinePosition > 100) this.$refs.trackLine.style.left = '100%'
-      if (this.trackLinePosition < 0) this.$refs.trackLine.style.left = '0%'
+    trackLocation(event) {
+      if (this.$refs.beforeImage && this.$refs.trackContainer && this.$refs.trackLine && this.$refs.afterImage) {
+        const cursorPositionX = event.pageX || (event.targetTouches && event.targetTouches[0].pageX)
+        event.preventDefault()
+        event.stopPropagation()
+        clearTimeout(this.trackLeaveTimeout)
+        this.$refs.beforeImage.style.transition = null
+        this.$refs.trackLine.style.transition = '0.3s ease-out opacity'
+        this.$refs.trackLine.style.opacity = '0.25'
+        const trackContainerRect = this.$refs.trackContainer.getBoundingClientRect()
+        const afterImageRect = this.$refs.afterImage.getBoundingClientRect()
+        /**
+         *  This calculation is the formula for finding the percentage of the total amount
+         *  cursorPositionX - cursor position from the left edge of the screen
+         *  afterImageRect.left - position of the afterImage element from the left edge of the screen
+         *  (cursorPositionX - afterImageRect.left) - this result is a part of the total amount of the picture width (unknown%)
+         *  this.$refs.afterImage.offsetWidth - total amount of the picture width (100%)
+         */
+        this.beforeImageWidth = ((cursorPositionX - afterImageRect.left) / this.$refs.afterImage.offsetWidth) * 100
+        this.trackLinePosition = ((cursorPositionX - trackContainerRect.left) / this.$refs.trackContainer.offsetWidth) * 100
+        this.$refs.beforeImage.style.width = `${this.beforeImageWidth}%`
+        this.$refs.trackLine.style.left = `${this.trackLinePosition}%`
+        if (this.beforeImageWidth > 100) this.$refs.beforeImage.style.width = '100%'
+        if (this.beforeImageWidth < 0) this.$refs.beforeImage.style.width = '0%'
+        if (this.trackLinePosition > 100) this.$refs.trackLine.style.left = '100%'
+        if (this.trackLinePosition < 0) this.$refs.trackLine.style.left = '0%'
+      }
     },
 
     trackLeave() {
       this.trackLeaveTimeout = setTimeout(() => {
-        this.beforeImageWidth = 50
-        this.trackLinePosition = 50
-        this.$refs.beforeImage.style.transition = '0.3s ease-out width'
-        this.$refs.trackLine.style.transition = '0.3s ease-out left, 0.3s ease-in opacity'
-        this.$refs.beforeImage.style.width = '50%'
-        this.$refs.trackLine.style.left = '50%'
-        this.$refs.trackLine.style.opacity = '1'
+        if (this.$refs.beforeImage && this.$refs.trackLine) {
+          this.beforeImageWidth = 50
+          this.trackLinePosition = 50
+          this.$refs.beforeImage.style.transition = '0.3s ease-out width'
+          this.$refs.trackLine.style.transition = '0.3s ease-out left, 0.3s ease-in opacity'
+          this.$refs.beforeImage.style.width = '50%'
+          this.$refs.trackLine.style.left = '50%'
+          this.$refs.trackLine.style.opacity = '1'
+        }
       }, 2500)
     },
   },
