@@ -16,7 +16,6 @@
     <section class="container_middle m-96_bottom media-m-48_bottom">
       <Picture
         :shadow="true"
-        :lazy="true"
         :width="1028"
         :height="463"
         :background="true"

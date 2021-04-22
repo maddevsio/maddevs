@@ -23,16 +23,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Rinat Shcherba"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -66,16 +66,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Daniyar Chambylov"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -109,16 +109,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Vladimir Shebarshov"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -152,16 +152,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Andrew Minkin"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -195,16 +195,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Erik Sultanaliev"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -251,16 +251,16 @@ exports[`Team component should render correctly 1`] = `
         >
           <picture>
             <source
-              class="image"
-              data-srcset="img.jpg ,img.jpg 2x"
+              class="image media_lazy"
+              data-srcset="img.jpg,img.jpg"
               type="image/webp"
             />
              
             <img
               alt="Andrew Minkin"
-              class="image img_lazy"
+              class="image media_lazy"
               data-src="img.jpg"
-              data-srcset="img.jpg 2x"
+              data-srcset="img.jpg"
               data-testid="test-picture-img"
               height="0"
               width="0"

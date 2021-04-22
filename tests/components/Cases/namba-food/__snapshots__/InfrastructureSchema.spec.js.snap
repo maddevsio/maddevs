@@ -22,6 +22,8 @@ exports[`InfrastructureSchema component should render correctly 1`] = `
         alt="Namba Food: Website and Mobile App Infrastructure Scheme."
         class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif img_lazy"
         data-src="img.jpg"
+        height="615"
+        width="817"
       />
     </section>
      

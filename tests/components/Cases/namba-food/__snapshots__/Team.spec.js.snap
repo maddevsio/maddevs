@@ -33,16 +33,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Vlad Andreev"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -76,16 +76,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Gulbustan Baudunova"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -119,16 +119,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Tamara Mun"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -162,16 +162,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Aidai Atakulova"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -205,16 +205,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Baurzhan Omuraliev"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -248,16 +248,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Nakylai Taiirova"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -291,16 +291,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Akylbek Djumaliev"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -334,16 +334,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Stanislav Shcherbinin"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -377,16 +377,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Eldar Akkozov"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -420,16 +420,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Altynai Toktomuratova"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -463,16 +463,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Dmitrii Khalezin"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"
@@ -506,16 +506,16 @@ exports[`Team component should render correctly 1`] = `
           class="case_team-item__image"
         >
           <source
-            class="image grey-background"
-            data-srcset="img.jpg ,img.jpg 2x"
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
             type="image/webp"
           />
            
           <img
             alt="Belek Abylov"
-            class="image img_lazy grey-background"
+            class="image grey-background media_lazy"
             data-src="img.jpg"
-            data-srcset="img.jpg 2x"
+            data-srcset="img.jpg"
             data-testid="test-picture-img"
             height="50"
             width="50"

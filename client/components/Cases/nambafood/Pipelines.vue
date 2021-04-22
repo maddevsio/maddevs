@@ -24,7 +24,6 @@
     <section class="container_full case_pipelines-image-mobile">
       <section class="container_full case_full-screen-image">
         <Picture
-          :lazy="true"
           folder="nambafood"
           file="pipelines-mobile"
           extension="jpg"

@@ -5,7 +5,6 @@
       :file="image.file"
       :extension="image.extension || 'png'"
       :alt="name"
-      :lazy="true"
       :width="50"
       :height="50"
       :background="true"

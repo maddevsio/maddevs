@@ -2,7 +2,7 @@ export default ({ app }, inject) => { // eslint-disable-line
   let options = {
     className: 'media_lazy',
     classNameFade: 'media_lazy-fade',
-    threshold: 0.1,
+    threshold: 0.25,
   }
 
   let observer = null

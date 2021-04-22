@@ -29,16 +29,16 @@ exports[`Hardware component should render correctly 1`] = `
     >
       <picture>
         <source
-          class="image"
+          class="image media_lazy"
           data-srcset="/images/Cases/sjmc/webp/immersive-gallery.webp ,/images/Cases/sjmc/webp/immersive-gallery@2x.webp 2x"
           type="image/webp"
         />
          
         <img
           alt="The SJMC Immersive Gallery."
-          class="image img_lazy"
+          class="image media_lazy"
           data-src="/images/Cases/sjmc/jpg/immersive-gallery.jpg"
-          data-srcset="/images/Cases/sjmc/jpg/immersive-gallery@2x.jpg 2x"
+          data-srcset="/images/Cases/sjmc/jpg/immersive-gallery.jpg"
           data-testid="test-picture-img"
           height="726"
           width="1440"
@@ -78,7 +78,9 @@ exports[`Hardware component should render correctly 1`] = `
         <img
           alt="WATCHOUT - Multi-Display Production and Presentation Software."
           class="case_gif"
+          height="653"
           src="/images/Cases/sjmc/gif/watchpax.gif"
+          width="1026"
         />
       </section>
     </section>
@@ -115,6 +117,8 @@ exports[`Hardware component should render correctly 1`] = `
           alt="Ultra-Compact Multimedia Computer - BRIX."
           class="case_gif media_lazy"
           data-src="/images/Cases/sjmc/gif/brix.gif"
+          height="367"
+          width="1026"
         />
       </section>
     </section>
