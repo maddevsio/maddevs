@@ -11,6 +11,7 @@
           :post="tagPosts[0]"
           :author="findAuthor(tagPosts[0].data.post_author.id, allAuthors)"
           theme="light"
+          :disable-tag-link="true"
         />
         <SkeletonFeaturedPost
           v-else
@@ -34,6 +35,7 @@
                 :post="post"
                 :tag="blogTag"
                 :author="findAuthor(post.data.post_author.id, allAuthors)"
+                :disable-tag-link="true"
               />
             </div>
           </section>

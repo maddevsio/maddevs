@@ -4,6 +4,7 @@ exports[`post tag component is a Vue instance 1`] = `
 <div>
   <nuxtlink
     class="post-tag light"
+    event="click"
     to="/blog/tag/posttag/"
   >
     <span

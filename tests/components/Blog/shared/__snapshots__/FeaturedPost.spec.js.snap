@@ -39,6 +39,7 @@ exports[`featured post component is a Vue instance 1`] = `
           >
             <nuxtlink-stub
               class="post-tag dark"
+              event="click"
               to="/blog/tag/markup/"
             >
               <span
