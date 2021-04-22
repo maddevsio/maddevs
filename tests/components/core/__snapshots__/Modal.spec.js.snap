@@ -1,13 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Modal component should render correctly 1`] = `
-<div>
-  <transition-stub
-    components=""
-    mode="out-in"
-    name="main-fade"
-  >
-    <!---->
-  </transition-stub>
-</div>
+exports[`namba food renders correctly 1`] = `
+<transition-stub
+  mode="out-in"
+  name="main-fade"
+>
+  <!---->
+</transition-stub>
 `;

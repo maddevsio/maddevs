@@ -1,138 +1,39 @@
-import { render } from '@testing-library/vue'
-import { mount, shallowMount } from '@vue/test-utils'
-import Modal from '../../../client/components/core/Modal'
+import { mount } from '@vue/test-utils'
+import Modal from '@/components/core/Modal.vue'
 
-describe('Modal component', () => {
-  it('should render correctly', () => {
-    const { container } = render(Modal, {
-      props: {
-        components: [],
+describe('namba food', () => {
+  let wrapper
+
+  beforeEach(() => {
+    global.$nuxt = {
+      $route: {
+        name: null,
       },
-    })
-
-    expect(container).toMatchSnapshot()
-  })
-
-  it('should correctly work close handler', async () => {
-    jest.useFakeTimers()
-
-    const callObject = {
-      enableScrollOnBody: jest.fn(),
-      isVisible: true,
-      contentLoaded: true,
-      isOverlay: true,
-      isSuccess: true,
-      $emit: jest.fn(),
     }
-
-    const wrapper = shallowMount(Modal, {
-      props: {
-        components: [],
+    wrapper = mount(Modal, {
+      stubs: ['ClientOnly', 'NuxtLink'],
+      mocks: {
+        $getMediaFromS3: () => 's3 image url',
+        $lazyLoad: {
+          init: () => {},
+        },
       },
     })
-
-    wrapper.vm.$options.methods.close.call(callObject)
-    jest.runOnlyPendingTimers()
-
-    expect(setTimeout).toHaveBeenCalledTimes(3)
-    expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 100)
-    expect(callObject.$emit).toHaveBeenCalledTimes(1)
-    expect(callObject.enableScrollOnBody).toHaveBeenCalledTimes(1)
   })
 
-  it('should correctly work show handler', async () => {
-    jest.useFakeTimers()
-
-    const callObject = {
-      disableScrollOnBody: jest.fn(),
-      isVisible: false,
-      contentLoaded: false,
-      isOverlay: false,
-      $emit: jest.fn(),
-    }
-
-    const wrapper = shallowMount(Modal, {
-      props: {
-        components: [],
-      },
-    })
-
-    wrapper.vm.$options.methods.show.call(callObject)
-    jest.runOnlyPendingTimers()
-
-    expect(setTimeout).toHaveBeenCalledTimes(2)
-    expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 100)
-    expect(callObject.$emit).toHaveBeenCalledTimes(1)
-    expect(callObject.disableScrollOnBody).toHaveBeenCalledTimes(1)
-    expect(callObject.isOverlay).toBeTruthy()
-    expect(callObject.isVisible).toBeTruthy()
-    expect(callObject.contentLoaded).toBeTruthy()
+  // ------ IMPORTANT ----- //
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
   })
 
-  it('should correctly work on key press handler', () => {
-    const close = jest.fn()
-    const event = {
-      keyCode: 27,
-    }
-    const wrapper = mount(Modal, {
-      props: {
-        components: [],
-      },
-    })
-
-    wrapper.vm.$options.methods.onKeydown.call({
-      close,
-    }, {})
-
-    expect(close).toHaveBeenCalledTimes(0)
-
-    wrapper.vm.$options.methods.onKeydown.call({
-      close,
-    }, event)
-
-    expect(close).toHaveBeenCalledTimes(1)
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
   })
+  // --------------------- //
 
-  it('should correctly work open success modal handler', () => {
-    const callObject = {
-      isSuccess: false,
-    }
-
-    const wrapper = mount(Modal, {
-      props: {
-        components: [],
-      },
-    })
-
-    expect(callObject.isSuccess).toBeFalsy()
-    wrapper.vm.$options.methods.openSuccessModal.call(callObject)
-    expect(callObject.isSuccess).toBeTruthy()
-  })
-
-  it('should correctly work enableScrollOnBody handler', async () => {
-    const wrapper = mount(Modal, {
-      props: {
-        components: [],
-      },
-    })
-
-    expect(document.body.style.top).toBe('')
-    expect(document.body.style.overflow).toBe('')
-    await wrapper.vm.$options.methods.enableScrollOnBody()
-    expect(document.body.style.overflow).toBe('auto')
-  })
-
-  it('should correctly work disableScrollOnBody handler', async () => {
-    const wrapper = mount(Modal, {
-      props: {
-        components: [],
-      },
-    })
-
-    expect(document.body.style.top).toBe('')
-    expect(document.body.style.overflow).toBe('auto')
-    await wrapper.vm.$options.methods.disableScrollOnBody()
-    expect(document.body.style.overflow).toBe('hidden')
-    expect(document.body.style.top).toBe('-0px')
+  it('if call method openSuccessModal > data isSuccess will be true', () => {
+    expect(wrapper.vm.isSuccess).toBeFalsy()
+    wrapper.vm.openSuccessModal()
+    expect(wrapper.vm.isSuccess).toBeTruthy()
   })
 })

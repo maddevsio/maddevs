@@ -62,7 +62,7 @@
       @change="handleCheckboxesChange"
     />
     <UIButton
-      :disabled="!isValid"
+      :disabled="!isValid || isSubmitted"
       :loading="isSubmitted"
       :class="buttonClassName"
       @click="handleSubmit"

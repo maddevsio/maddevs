@@ -25,7 +25,7 @@
         public mobility by building new smart ways of a daily commute.
       </p>
     </CaseHeader>
-    <div class="case_content-layer p-48_bottom media-p-24_bottom">
+    <div class="case_content-layer p-48_bottom media-p-24_bottom media-p-24_top">
       <div
         id="case-first-section"
         class="case_animation_block"
