@@ -57,7 +57,8 @@ export default {
 
   head() {
     return buildHead({
-      title: this.blogAuthor.metaTitle || `${this.blogAuthor.name} | Blog`,
+      title: 'Mad Devs: Software & Mobile App Development Company | Blog Author',
+      metaTitle: this.blogAuthor.metaTitle || `${this.blogAuthor.name} | Blog`,
       description: this.blogAuthor.metaDescription || '',
       url: this.openGraphUrl,
       jsonLd: this.blogAuthor.schemaOrgSnippet,
