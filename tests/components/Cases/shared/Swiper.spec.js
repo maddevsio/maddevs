@@ -1,5 +1,6 @@
 import Swiper from '@/components/Cases/shared/Swiper'
 import { render } from '@testing-library/vue'
+import { mount } from '@vue/test-utils'
 
 const props = {
   components: [
@@ -41,5 +42,15 @@ describe('Picture component', () => {
     })
 
     expect(html()).toContain(props.sliderDescription)
+  })
+})
+
+describe('Picture methods', () => {
+  const wrapper = mount(Swiper)
+
+  it('if call method removeLazy > data lazy will be false', () => {
+    expect(wrapper.vm.lazy).toBeTruthy()
+    wrapper.vm.removeLazy()
+    expect(wrapper.vm.lazy).toBeFalsy()
   })
 })
