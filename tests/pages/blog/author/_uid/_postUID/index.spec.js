@@ -1,8 +1,8 @@
 import { render } from '@testing-library/vue'
-import Post from '@/pages/blog/_uid.vue'
+import AuthorPost from '@/pages/blog/author/_uid/_postUID/'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
 import Vuelidate from 'vuelidate'
-import blogPost from '../../__mocks__/blogPost'
+import blogPost from '../../../../../__mocks__/blogPost'
 
 const DESCRIPTION = 'test description'
 
@@ -29,9 +29,9 @@ localVue.use(Vuelidate)
 
 const stubs = ['ShareNetwork', 'PostView']
 
-describe('Post _uid component', () => {
+describe('AuthorPost _uid component', () => {
   it('should render correctly', () => {
-    const { container } = render(Post, {
+    const { container } = render(AuthorPost, {
       store,
       mocks,
       stubs,
@@ -46,7 +46,7 @@ describe('Post _uid component', () => {
     const callObject = {
       next: jest.fn(),
     }
-    const wrapper = shallowMount(Post, {
+    const wrapper = shallowMount(AuthorPost, {
       store,
       mocks,
       stubs,
@@ -77,7 +77,7 @@ describe('Post _uid component', () => {
         }
       }),
     }
-    const wrapper = shallowMount(Post, {
+    const wrapper = shallowMount(AuthorPost, {
       store,
       mocks,
       stubs,
@@ -87,7 +87,7 @@ describe('Post _uid component', () => {
     wrapper.vm.$options.beforeRouteEnter(callObject.to, callObject.from, callObject.next)
 
     expect(callObject.next).toHaveBeenCalledTimes(2)
-    expect(callObject.next).toHaveBeenLastCalledWith({ path: `/blog/${vm.post.uid}/` })
+    expect(callObject.next).toHaveBeenLastCalledWith({ path: `/blog/author/ 2/${vm.post.uid}/` })
   })
 
   it('should correctly work beforeRouteEnter method if from and to equals', () => {
@@ -110,7 +110,7 @@ describe('Post _uid component', () => {
         }
       }),
     }
-    const wrapper = shallowMount(Post, {
+    const wrapper = shallowMount(AuthorPost, {
       store,
       mocks,
       stubs,
@@ -120,6 +120,5 @@ describe('Post _uid component', () => {
     wrapper.vm.$options.beforeRouteEnter(callObject.to, callObject.from, callObject.next)
 
     expect(callObject.next).toHaveBeenCalledTimes(1)
-    expect(callObject.next).toHaveBeenCalledWith('[Function anonymous]')
   })
 })
