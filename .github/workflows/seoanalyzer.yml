@@ -21,4 +21,6 @@ jobs:
     - run: npm run generate
     - run: node ./.github/scripts/SEOAnalyzer.js
       env:
+        NODE_PRISMIC_API: ${{ secrets.NODE_PRISMIC_API }}
         CI: true
+        
