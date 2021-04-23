@@ -7,22 +7,34 @@
     "jest/globals": true
   },
   "plugins": [
-    "vue",
-    "jest"
+    "vue"
   ],
   "parserOptions": {
     "parser": "@babel/eslint-parser"
   },
   "extends": [
     "airbnb-base",
-    "plugin:vue/recommended",
-    "plugin:jest/all"
+    "plugin:vue/recommended"
   ],
   "rules": {
     "no-tabs": ["error"],
     "semi": ["error", "never"],
     "quotes": ["error", "single"],
     "max-len": "off",
+    "global-require": "off",
+    "no-param-reassign": "off",
+    "no-unused-vars": [
+      "error"
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-dynamic-require": "off",
+    "import/prefer-default-export": 0,
     "vue/max-len": ["warn", {
       "code": 120,
       "tabWidth": 2,
@@ -33,16 +45,6 @@
       "ignoreHTMLAttributeValues": true,
       "ignoreHTMLTextContents": true
     }],
-    "jest/prefer-expect-assertions": "off",
-    "jest/no-hooks": "off",
-    "jest/prefer-strict-equal": "off",
-    "jest/no-mocks-import": "off",
-    "jest/lowercase-name": "off",
-    "import/no-unresolved": "off",
-    "import/extensions": "off",
-    "import/no-extraneous-dependencies": "off",
-    "import/no-dynamic-require": "off",
-    "global-require": "off",
     "vue/attribute-hyphenation": [
       "error",
       "always"
@@ -65,16 +67,7 @@
       {
         "minLineOfMultilineProperty": 2
       }
-    ],
-    "no-param-reassign": "off",
-    "no-unused-vars": [
-      "error"
-    ],
-    "arrow-parens": [
-      "error",
-      "as-needed"
-    ],
-    "import/prefer-default-export": 0
+    ]
   },
   "settings": {
     "import/extensions": [
@@ -84,5 +77,77 @@
   },
   "globals": {
     "$nuxt": true
-  }
+  },
+  "overrides": [
+    {
+      "files": ["tests/**/*.test.js", "tests/**/*.spec.js"],
+      "plugins": [
+        "jest"
+      ],
+      "extends": [
+        "airbnb-base",
+        "plugin:jest/all"
+      ],
+      "rules": {
+        "no-tabs": ["error"],
+        "semi": ["error", "never"],
+        "quotes": ["error", "single"],
+        "max-len": "off",
+        "global-require": "off",
+        "no-param-reassign": "off",
+        "no-unused-vars": [
+          "error"
+        ],
+        "arrow-parens": [
+          "error",
+          "as-needed"
+        ],
+        "jest/prefer-expect-assertions": "off",
+        "jest/no-hooks": "off",
+        "jest/prefer-strict-equal": "off",
+        "jest/no-mocks-import": "off",
+        "jest/lowercase-name": "off",
+        "import/no-unresolved": "off",
+        "import/extensions": "off",
+        "import/no-extraneous-dependencies": "off",
+        "import/no-dynamic-require": "off",
+        "import/prefer-default-export": 0
+      }
+    },
+    {
+      "files": ["cypress/**/*.test.js", "cypress/**/*.spec.js"],
+      "plugins": [
+        "cypress"
+      ],
+      "extends": [
+        "airbnb-base",
+        "plugin:cypress/recommended"
+      ],
+      "rules": {
+        "no-tabs": ["error"],
+        "semi": ["error", "never"],
+        "quotes": ["error", "single"],
+        "max-len": "off",
+        "global-require": "off",
+        "no-param-reassign": "off",
+        "no-unused-vars": [
+          "error"
+        ],
+        "arrow-parens": [
+          "error",
+          "as-needed"
+        ],
+        "jest/prefer-expect-assertions": "off",
+        "jest/no-hooks": "off",
+        "jest/prefer-strict-equal": "off",
+        "jest/no-mocks-import": "off",
+        "jest/lowercase-name": "off",
+        "import/no-unresolved": "off",
+        "import/extensions": "off",
+        "import/no-extraneous-dependencies": "off",
+        "import/no-dynamic-require": "off",
+        "import/prefer-default-export": 0
+      }
+    }
+  ]
 }
