@@ -1,6 +1,6 @@
 import Swiper from '@/components/Cases/shared/Swiper'
 import { render } from '@testing-library/vue'
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 
 const props = {
   components: [
@@ -22,7 +22,11 @@ const props = {
   safariTopBarAlt: '',
 }
 
-describe('Picture component', () => {
+describe('Swiper component', () => {
+  const wrapper = shallowMount(Swiper, {
+    props,
+  })
+
   it('should render correctly', () => {
     const { container } = render(Swiper, {
       props,
@@ -43,10 +47,6 @@ describe('Picture component', () => {
 
     expect(html()).toContain(props.sliderDescription)
   })
-})
-
-describe('Picture methods', () => {
-  const wrapper = mount(Swiper)
 
   it('if call method removeLazy > data lazy will be false', () => {
     expect(wrapper.vm.lazy).toBeTruthy()
