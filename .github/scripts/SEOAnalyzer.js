@@ -38,6 +38,8 @@ function analyzeFile(pathFile) {
     },
   })
     .read(fs.createReadStream(pathFile))
+    .addRule('ImgTagWithAltAttritube')
+    .addRule('NoMoreThanOneH1Tag')
     .write(fs.createWriteStream('report.txt')))
 }
 
