@@ -111,6 +111,7 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
     margin-bottom: -32px;
+    max-height: 192px;
   }
 
   &__title {
