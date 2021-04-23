@@ -1,4 +1,4 @@
-name: SEO Analizer CI
+name: SEO Analyzer CI
 
 on: [pull_request]
 
@@ -21,5 +21,6 @@ jobs:
     - run: npm run generate
       env:
         NODE_PRISMIC_API: ${{ secrets.NODE_PRISMIC_API }}
+        NUXT_TARGET: ${{ secrets.NUXT_TARGET }}
         CI: true
     - run: node ./.github/scripts/SEOAnalyzer.js

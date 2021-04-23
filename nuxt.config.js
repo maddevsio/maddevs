@@ -4,7 +4,7 @@ require('dotenv').config()
 
 module.exports = {
   srcDir: 'client/',
-  target: 'static',
+  target: process.env.NUXT_TARGET || 'server',
   /*
    ** Server settings
    */
