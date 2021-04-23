@@ -120,6 +120,5 @@ describe('Post _uid component', () => {
     wrapper.vm.$options.beforeRouteEnter(callObject.to, callObject.from, callObject.next)
 
     expect(callObject.next).toHaveBeenCalledTimes(1)
-    expect(callObject.next).toHaveBeenCalledWith('[Function anonymous]')
   })
 })
