@@ -8,16 +8,20 @@
       {{ subtitle }}
     </p>
     <slot name="afterTitle" />
-    <img
+    <div
       v-if="coverImageUrl"
-      :data-src="coverImageUrl"
-      :data-srcset="[imageWithoutCrop + ' 2x']"
-      :class="getImageClass"
-      :alt="coverImageAltText"
-      :width="coverImageWidth"
-      :height="coverImageHeight"
-      class="blog-post__introduction-image img_lazy"
+      class="blog-post__introduction-image"
+      :class="getImageBackground"
     >
+      <img
+        :data-src="coverImageUrl"
+        :data-srcset="[imageWithoutCrop + ' 2x']"
+        :alt="coverImageAltText"
+        :width="coverImageWidth"
+        :height="coverImageHeight"
+        class="img_lazy"
+      >
+    </div>
   </div>
 </template>
 
@@ -64,7 +68,7 @@ export default {
       return this.coverImageUrl.split('?auto')[0] // get image witout crop for retina display
     },
 
-    getImageClass() {
+    getImageBackground() {
       const allowedExtensions = ['jpeg', 'jpg']
       const extension = extractFileExtension(this.coverImageUrl)
       return allowedExtensions.includes(extension) ? 'blog-post__introduction-image--with-background' : ''
@@ -96,13 +100,16 @@ export default {
   }
 
   &__introduction-image {
-    display: block;
-    max-width: 983px;
-    height: auto;
+    width: 983px;
     margin-left: -10%;
-    vertical-align: middle;
     &--with-background {
       background-color: $bgcolor--silver;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
     }
   }
 }
@@ -127,9 +134,10 @@ export default {
 
     &__introduction-image {
       width: 100%;
-      max-width: 100%;
       margin: 0;
-      vertical-align: bottom;
+      img {
+        vertical-align: bottom;
+      }
     }
   }
 }
