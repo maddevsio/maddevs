@@ -91,9 +91,10 @@ export default {
   }
 
   &__introduction-image {
-    width: 120%;
-    margin-left: -10%;
+    display: block;
+    max-width: 983px;
     height: auto;
+    margin-left: -10%;
     vertical-align: middle;
     &--with-background {
       background-color: $bgcolor--silver;
@@ -121,6 +122,7 @@ export default {
 
     &__introduction-image {
       width: 100%;
+      max-width: none;
       margin: 0;
       vertical-align: bottom;
     }
