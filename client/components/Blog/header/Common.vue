@@ -11,6 +11,7 @@
     <img
       v-if="coverImageUrl"
       :src="coverImageUrl"
+      :srcset="[imageWithoutCrop + ' 2x']"
       :class="getImageClass"
       :alt="coverImageAltText"
       :width="coverImageWidth"
@@ -59,6 +60,10 @@ export default {
   },
 
   computed: {
+    imageWithoutCrop() {
+      return this.coverImageUrl.split('?auto')[0] // get image witout crop for retina display
+    },
+
     getImageClass() {
       const allowedExtensions = ['jpeg', 'jpg']
       const extension = extractFileExtension(this.coverImageUrl)
