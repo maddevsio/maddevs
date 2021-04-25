@@ -122,7 +122,7 @@ export default {
 
     &__introduction-image {
       width: 100%;
-      max-width: none;
+      max-width: 100%;
       margin: 0;
       vertical-align: bottom;
     }
