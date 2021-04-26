@@ -25,6 +25,7 @@ module.exports = {
     '<rootDir>/client/**/*.vue',
     '<rootDir>/client/**/*.js',
     '<rootDir>/server/**/*.js',
+    '<rootDir>/radiator/**/*.js',
   ],
   coveragePathIgnorePatterns: ['<rootDir>/server/sentry', '<rootDir>/server/db', '<rootDir>/server/routes', '<rootDir>/server/index.js'],
   coverageReporters: ['json-summary', 'text', 'lcov'],
