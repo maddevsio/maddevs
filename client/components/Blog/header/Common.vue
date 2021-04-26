@@ -14,8 +14,7 @@
       :class="imageBackgroundClass"
     >
       <img
-        :data-src="coverImageUrl"
-        :data-srcset="[imageWithoutCrop + ' 2x']"
+        :data-src="imageWithoutCrop"
         :width="coverImageWidth"
         :height="coverImageHeight"
         :alt="coverImageAltText"
@@ -65,7 +64,7 @@ export default {
 
   computed: {
     imageWithoutCrop() {
-      return this.coverImageUrl.split('?auto')[0] // get image witout crop for retina display
+      return this.coverImageUrl.split('?auto')[0] // get image without crop and compress params
     },
 
     imageBackgroundClass() {
