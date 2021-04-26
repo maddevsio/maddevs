@@ -30,7 +30,7 @@ exports[`header Common is a Vue instance 1`] = `
         class="img_lazy"
         data-src="some-url.jpg"
         data-srcset="some-url.jpg 2x"
-        height="533"
+        height="534"
         width="983"
       />
     </div>
