@@ -62,7 +62,6 @@ exports[`header Blog is a Vue instance 1`] = `
         alt="alt"
         class="img_lazy"
         data-src="url"
-        data-srcset="url 2x"
         height="300"
         width="200"
       />
