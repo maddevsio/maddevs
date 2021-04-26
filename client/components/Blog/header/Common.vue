@@ -59,7 +59,7 @@ export default {
 
     coverImageHeight: {
       type: Number,
-      default: 533,
+      default: 534,
     },
   },
 
