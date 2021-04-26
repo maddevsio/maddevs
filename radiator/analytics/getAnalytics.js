@@ -10,7 +10,7 @@ const googleAnalytics = google.analyticsreporting('v4')
  * @param {Object} requestParams
  * @returns {*}
  */
-async function getAnalytics({ metrics = [], dimensions = [] }) {
+async function getAnalytics({ metrics = [], dimensions = [] } = {}) {
   const response = await googleAnalytics.reports.batchGet({
     requestBody: {
       reportRequests: [

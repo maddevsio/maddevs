@@ -66,7 +66,7 @@ function buildMessage({
         color: getColor(),
       },
       {
-        text: `:telephone_receiver: Contacts: *${goals.contact.value}* (${goals.contact.previous})`,
+        text: `:telephone_receiver: Leads: *${goals.contact.value}* (${goals.contact.previous})`,
         color: getColor(goals.contact.isBetter),
       },
       {
@@ -77,19 +77,19 @@ function buildMessage({
   }
 }
 
-function sendMessage(message) {
+async function sendMessage(message) {
   const data = {
     ...config,
     ...message,
   }
 
-  axios.post(process.env.RADIATOR_WEBHOOK_URL, data)
+  await axios.post(process.env.RADIATOR_WEBHOOK_URL, data)
 }
 
 async function main() {
   const data = await getAnalyticsData()
   const message = buildMessage(data)
-  sendMessage(message)
+  await sendMessage(message)
 }
 
-main()
+module.exports = main

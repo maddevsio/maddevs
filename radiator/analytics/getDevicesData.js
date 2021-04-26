@@ -15,7 +15,7 @@ function prettify(rawData) {
 
   const devices = rawData.reports[0].data.rows
     .map(row => ({
-      title: row.dimensions[0],
+      title: row.dimensions[0].toLowerCase(),
       value: getPercentage(Number(row.metrics[0].values[0]), total, false),
       previous: getPercentage(Number(row.metrics[1].values[0]), totalPrev, false),
     }))
@@ -28,6 +28,14 @@ function prettify(rawData) {
       ...acc,
       [device.title]: device,
     }), {})
+
+  if (!devices.tablet) {
+    devices.tablet = {
+      title: 'tablet',
+      value: 0,
+      previous: 0,
+    }
+  }
 
   return devices
 }
