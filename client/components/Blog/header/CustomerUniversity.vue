@@ -4,6 +4,8 @@
     :subtitle="subtitle"
     :cover-image-url="featuredImage.url"
     :cover-image-alt-text="featuredImage.alt"
+    :cover-image-width="featuredImage.dimensions.width"
+    :cover-image-height="featuredImage.dimensions.height"
   >
     <template #beforeTitle>
       <div class="row cluster-navigation">
