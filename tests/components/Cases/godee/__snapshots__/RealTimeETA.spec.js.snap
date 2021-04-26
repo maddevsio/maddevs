@@ -46,6 +46,16 @@ exports[`RealTimeETA component should render correctly 1`] = `
         The information is displayed on their mobile application.
       
         </p>
+         
+        <nuxtlink
+          class="case_real-time-eta-more-link"
+          target="_blank"
+          to="/blog/how-to-make-three-paid-eta-services-one-free/"
+        >
+          
+        Find out more
+      
+        </nuxtlink>
       </div>
        
       <div

@@ -23,6 +23,13 @@
         <TextParagraph color="#a0a0a1">
           The information is displayed on their mobile application.
         </TextParagraph>
+        <NuxtLink
+          to="/blog/how-to-make-three-paid-eta-services-one-free/"
+          target="_blank"
+          class="case_real-time-eta-more-link"
+        >
+          Find out more
+        </NuxtLink>
       </div>
       <div class="case_phone-wrapper-eta-section">
         <Picture
