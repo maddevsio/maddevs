@@ -18,14 +18,14 @@ exports[`TheLastPostSection component should render correctly 1`] = `
           <div
             class="col-12 col-lg-6 featured-post__main"
           >
-            <h1
+            <h2
               class="featured-post__title"
               title="text"
             >
               
         text
       
-            </h1>
+            </h2>
              
             <p
               class="featured-post__paragraph"

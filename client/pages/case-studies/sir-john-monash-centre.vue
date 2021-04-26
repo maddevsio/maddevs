@@ -82,7 +82,7 @@ export default {
         height: 110,
         folder: 'sjmc',
         file: 'sjmc-logo',
-        alt: '',
+        alt: 'Sjmc Logo',
       },
     }
   },

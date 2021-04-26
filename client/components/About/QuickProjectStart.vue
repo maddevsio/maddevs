@@ -26,6 +26,7 @@
               v-if="idx !== steps.length - 1"
               :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)"
               class="quickProjectStart__arrow-icon img_lazy"
+              alt="Arrow"
             >
           </div>
           <div class="quickProjectStart__list-item-text-wrapper">

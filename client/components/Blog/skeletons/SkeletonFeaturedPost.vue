@@ -5,7 +5,7 @@
   >
     <div class="row featured-post__wrapper">
       <div class="col-12 col-lg-6 featured-post__main">
-        <h1
+        <h2
           class="featured-post__title background-grey animated"
           :class="theme"
         />

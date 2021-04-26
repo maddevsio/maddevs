@@ -80,7 +80,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
       </div>
        
       <img
-        alt=""
+        alt="Sjmc Logo"
         class="case_header-logo media_lazy case_sjmc-logo"
         data-src="s3 image url"
         height="110"

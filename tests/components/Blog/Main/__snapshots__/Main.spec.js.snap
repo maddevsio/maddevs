@@ -13,7 +13,6 @@ exports[`Main component should render correctly 1`] = `
       >
         <featuredpost-stub
           post="[object Object]"
-          title-tag="h1"
         />
       </div>
     </div>
