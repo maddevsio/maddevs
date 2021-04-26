@@ -26,7 +26,7 @@
         <NuxtLink
           to="/blog/how-to-make-three-paid-eta-services-one-free/"
           target="_blank"
-          class="case_real-time-eta-more-link"
+          class="case_real-time-eta-more-button"
         >
           Find out more
         </NuxtLink>
