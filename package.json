@@ -20,7 +20,8 @@
     "prepare": "npm run snyk-protect",
     "test": "jest --config=./jest/develop.config.js",
     "test:coverage": "jest --config=./jest/develop.config.js && node ./jest/coverageBadges.js -output './client/static'",
-    "test:staging": "jest --config=./jest/staging.config.js"
+    "test:staging": "jest --config=./jest/staging.config.js",
+    "radiator": "node -e 'require(\"./radiator\")()'"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
@@ -64,6 +65,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.3.2",
     "eslint-plugin-vue": "^7.9.0",
+    "googleapis": "^72.0.0",
     "husky": "^4.3.0",
     "jest": "^26.6.3",
     "jest-canvas-mock": "^2.3.1",
