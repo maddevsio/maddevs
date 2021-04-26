@@ -1,0 +1,302 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TagPostsSection component should render correctly 1`] = `
+<div>
+  <div
+    class="tag-posts"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="tag-posts__featured-post"
+      >
+        <featuredpost-stub
+          disable-tag-link="true"
+          post="[object Object]"
+          theme="light"
+          titletag="h2"
+          to="/blog/tag/blog-tag/how-to-configure-ssg-and-ssr-on-nuxt/"
+        />
+      </div>
+       
+      <div
+        class="row tag-posts__wrapper"
+      >
+        <section
+          class="tag-posts__single-post"
+          post="[object Object]"
+        >
+          <div
+            class="single-post__wrapper"
+          >
+            <nuxtlink-stub
+              class="blog-post__wrapper"
+              to="/blog/tag/blog-tag/how-to-configure-ssg-and-ssr-on-nuxt/"
+            >
+              <div
+                class="blog-post"
+              >
+                <img
+                  alt="How to Configure SSG and SSR on Nuxt."
+                  class="blog-post__image img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/60f7cc05-4f36-4e26-82a9-69bd3370cceb_SSRonNuxten.jpg?auto=compress,format&rect=0,1,2000,1084&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+                 
+                <div>
+                  <h2
+                    class="blog-post__title blog-post__title--short"
+                    title="img.png"
+                  >
+                    
+        img.png
+      
+                  </h2>
+                   
+                  <h2
+                    class="blog-post__title blog-post__title--very-short"
+                    title="img.png"
+                  >
+                    
+        img.png
+      
+                  </h2>
+                   
+                  <h2
+                    class="blog-post__title blog-post__title--full"
+                    title="img.png"
+                  >
+                    
+        img.png
+      
+                  </h2>
+                   
+                  <p
+                    class="blog-post__paragraph"
+                    data-testid="test-blog-post"
+                  >
+                    
+        When I started learning Vue, I was pleasantly surprised by this framework. It turned out to be very simple and easy to learn. Its API had enough...
+      
+                  </p>
+                   
+                  <div
+                    class="blog-post__meta"
+                  >
+                    <span
+                      class="created-at"
+                    >
+                      Apr 20, 2021
+                    </span>
+                     
+                    <nuxtlink-stub
+                      class="post-tag light light"
+                      event=""
+                      to="/blog/tag/blog-tag/"
+                    >
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
+                      >
+                        
+    Blog tag
+  
+                      </span>
+                    </nuxtlink-stub>
+                  </div>
+                   
+                  <!---->
+                </div>
+              </div>
+            </nuxtlink-stub>
+          </div>
+        </section>
+        <section
+          class="tag-posts__single-post"
+          post="[object Object]"
+        >
+          <div
+            class="single-post__wrapper"
+          >
+            <nuxtlink-stub
+              class="blog-post__wrapper"
+              to="/blog/tag/blog-tag/amazing-template-for-react-application/"
+            >
+              <div
+                class="blog-post"
+              >
+                <img
+                  alt="React Boilerplate."
+                  class="blog-post__image img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/9c72c729-40ce-498f-aa2f-483962a72413_boilerplate-react.jpg?auto=compress,format&rect=1,0,1997,1086&w=980&h=533"
+                  height="217"
+                  width="400"
+                />
+                 
+                <div>
+                  <h2
+                    class="blog-post__title blog-post__title--short"
+                    title="img.png"
+                  >
+                    
+        img.png
+      
+                  </h2>
+                   
+                  <h2
+                    class="blog-post__title blog-post__title--very-short"
+                    title="img.png"
+                  >
+                    
+        img.png
+      
+                  </h2>
+                   
+                  <h2
+                    class="blog-post__title blog-post__title--full"
+                    title="img.png"
+                  >
+                    
+        img.png
+      
+                  </h2>
+                   
+                  <p
+                    class="blog-post__paragraph"
+                    data-testid="test-blog-post"
+                  >
+                    
+        When creating a new React project, I faced the same problems every time. I need to build it manually because \`create-react-app\` do not provide...
+      
+                  </p>
+                   
+                  <div
+                    class="blog-post__meta"
+                  >
+                    <span
+                      class="created-at"
+                    >
+                      Apr 01, 2021
+                    </span>
+                     
+                    <nuxtlink-stub
+                      class="post-tag light light"
+                      event=""
+                      to="/blog/tag/blog-tag/"
+                    >
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
+                      >
+                        
+    Blog tag
+  
+                      </span>
+                    </nuxtlink-stub>
+                  </div>
+                   
+                  <!---->
+                </div>
+              </div>
+            </nuxtlink-stub>
+          </div>
+        </section>
+        <section
+          class="tag-posts__single-post"
+          post="[object Object]"
+        >
+          <div
+            class="single-post__wrapper"
+          >
+            <nuxtlink-stub
+              class="blog-post__wrapper"
+              to="/blog/tag/blog-tag/boilerplate-to-set-up-a-vue-project/"
+            >
+              <div
+                class="blog-post"
+              >
+                <img
+                  alt="Vue Boilerplate."
+                  class="blog-post__image img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/e6da4751-a91e-49fb-a5f1-10cc4c6974e4_boilerplate-vue.jpg?auto=compress,format&rect=0,1,2000,1084&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+                 
+                <div>
+                  <h2
+                    class="blog-post__title blog-post__title--short"
+                    title="img.png"
+                  >
+                    
+        img.png
+      
+                  </h2>
+                   
+                  <h2
+                    class="blog-post__title blog-post__title--very-short"
+                    title="img.png"
+                  >
+                    
+        img.png
+      
+                  </h2>
+                   
+                  <h2
+                    class="blog-post__title blog-post__title--full"
+                    title="img.png"
+                  >
+                    
+        img.png
+      
+                  </h2>
+                   
+                  <p
+                    class="blog-post__paragraph"
+                    data-testid="test-blog-post"
+                  >
+                    
+        When starting a project in Vue, I constantly faced the fact that I had to set up the store again and again, add the basic structure of styles, look...
+      
+                  </p>
+                   
+                  <div
+                    class="blog-post__meta"
+                  >
+                    <span
+                      class="created-at"
+                    >
+                      Mar 29, 2021
+                    </span>
+                     
+                    <nuxtlink-stub
+                      class="post-tag light light"
+                      event=""
+                      to="/blog/tag/blog-tag/"
+                    >
+                      <span
+                        class="tag"
+                        data-testid="test-tag"
+                      >
+                        
+    Blog tag
+  
+                      </span>
+                    </nuxtlink-stub>
+                  </div>
+                   
+                  <!---->
+                </div>
+              </div>
+            </nuxtlink-stub>
+          </div>
+        </section>
+      </div>
+       
+      <!---->
+    </div>
+  </div>
+</div>
+`;

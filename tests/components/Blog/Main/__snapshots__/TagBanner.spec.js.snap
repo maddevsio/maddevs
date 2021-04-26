@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TagBanner component should render correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="current-tag"
+    >
+      <h1
+        class="current-tag__title"
+      >
+        
+      Blog tag
+    
+      </h1>
+       
+      <p
+        class="current-tag__posts-count"
+      >
+        
+      A collection of 5 posts
+    
+      </p>
+    </div>
+  </div>
+</div>
+`;

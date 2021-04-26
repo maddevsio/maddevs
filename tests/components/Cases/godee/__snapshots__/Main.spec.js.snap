@@ -2629,6 +2629,16 @@ exports[`Main component should render correctly 1`] = `
         The information is displayed on their mobile application.
       
             </p>
+             
+            <nuxtlink-stub
+              class="case_real-time-eta-more-button"
+              target="_blank"
+              to="/blog/how-to-make-three-paid-eta-services-one-free/"
+            >
+              
+        Find out more
+      
+            </nuxtlink-stub>
           </div>
            
           <div

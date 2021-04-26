@@ -26,6 +26,7 @@
             v-for="network in blogAuthor.socialNetworks"
             :key="network.key"
             :class="`author-slice__social-item--${network.key}`"
+            data-testid="test-social"
             class="author-slice__social-item"
           >
             <a
@@ -53,6 +54,7 @@
         <li
           v-for="contributor in contributors"
           :key="contributor.image.url"
+          data-testid="test-contributors"
           class="author-slice__contributors-item"
         >
           <a
@@ -90,7 +92,7 @@ export default {
   props: {
     slice: {
       type: Object,
-      default: () => ({}),
+      required: true,
     },
   },
 

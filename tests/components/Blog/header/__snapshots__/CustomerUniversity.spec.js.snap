@@ -3,9 +3,9 @@
 exports[`customer university header component should render correctly with default props 1`] = `
 <div>
   <commonheader-stub
-    coverimageheight="533"
+    coverimageheight="452"
     coverimageurl="https://images.prismic.io/superpupertest/82f90d05-8c22-49c1-bf1e-8721a0e3eda6_Constructing+a+Map+in+the+Mercator+Projection+for+Android.png?auto=compress,format"
-    coverimagewidth="982"
+    coverimagewidth="780"
     subtitle="[object Object]"
     title="[object Object]"
   >

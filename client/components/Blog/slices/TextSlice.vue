@@ -50,7 +50,7 @@ export default {
   }
 
   /deep/ strong {
-    font-family: 'Inter-Bold', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
   }
 

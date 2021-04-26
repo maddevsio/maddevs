@@ -68,6 +68,28 @@
       max-width: 398px;
       padding-right: 40px;
     }
+
+    &_real-time-eta-more-button {
+      box-sizing: border-box;
+      text-decoration: none;
+      margin-top: 45px;
+      width: 100%;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $text-color--grey-cases;
+      border: 1px solid $border-color--grey-20-percent;
+      border-radius: 6px;
+      transition: 0.4s;
+      font-size: 15px;
+      line-height: 166%;
+      letter-spacing: -0.1px;
+      &:hover {
+        background-color: $border-color--grey-20-percent;
+        color: $text-color--black;
+      }
+    }
   
     &_phone-wrapper-eta-section {
       max-width: 379px;
@@ -222,6 +244,10 @@
       &_real-time-eta {
         flex-direction: column;
       }
+
+      &_real-time-eta-more-button {
+        margin-top: 31px;
+      }
   
       &_infrastructure-scheme-wrapper {
         padding: 48px 0;
@@ -234,6 +260,7 @@
   
       &_real-time-eta-text-content {
         margin-bottom: 24px;
+        padding-right: 0;
       }
   
       &_monitoring-section-bold {

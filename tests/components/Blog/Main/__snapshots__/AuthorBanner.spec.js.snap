@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorBanner component should render correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="current-author"
+    >
+      <div
+        class="current-author__image"
+      >
+        <img
+          alt="alt"
+          class="img_lazy"
+          data-src="someurl"
+        />
+      </div>
+       
+      <h1
+        class="current-author__name"
+      >
+        
+      Maddevs
+    
+      </h1>
+       
+      <p
+        class="current-author__position"
+      >
+        
+      
+    
+      </p>
+    </div>
+  </div>
+</div>
+`;
