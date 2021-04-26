@@ -55,13 +55,17 @@ exports[`header Blog is a Vue instance 1`] = `
       </div>
     </div>
      
-    <img
-      alt="alt"
+    <div
       class="blog-post__introduction-image"
-      height="300"
-      src="url"
-      width="200"
-    />
+    >
+      <img
+        alt="alt"
+        class="img_lazy"
+        data-src="url"
+        height="300"
+        width="200"
+      />
+    </div>
   </div>
 </div>
 `;

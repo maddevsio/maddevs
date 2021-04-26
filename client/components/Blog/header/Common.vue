@@ -8,15 +8,19 @@
       {{ subtitle }}
     </p>
     <slot name="afterTitle" />
-    <img
+    <div
       v-if="coverImageUrl"
-      :src="coverImageUrl"
-      :class="getImageClass"
-      :alt="coverImageAltText"
-      :width="coverImageWidth"
-      :height="coverImageHeight"
       class="blog-post__introduction-image"
+      :class="imageBackgroundClass"
     >
+      <img
+        :data-src="imageWithoutCrop"
+        :width="coverImageWidth"
+        :height="coverImageHeight"
+        :alt="coverImageAltText"
+        class="img_lazy"
+      >
+    </div>
   </div>
 </template>
 
@@ -49,17 +53,21 @@ export default {
 
     coverImageWidth: {
       type: Number,
-      default: 982,
+      default: 983,
     },
 
     coverImageHeight: {
       type: Number,
-      default: 533,
+      default: 534,
     },
   },
 
   computed: {
-    getImageClass() {
+    imageWithoutCrop() {
+      return this.coverImageUrl.split('?auto')[0] // get image without crop and compress params
+    },
+
+    imageBackgroundClass() {
       const allowedExtensions = ['jpeg', 'jpg']
       const extension = extractFileExtension(this.coverImageUrl)
       return allowedExtensions.includes(extension) ? 'blog-post__introduction-image--with-background' : ''
@@ -91,12 +99,16 @@ export default {
   }
 
   &__introduction-image {
-    width: 120%;
-    margin-left: -10%;
-    height: auto;
-    vertical-align: middle;
+    width: 983px;
+    margin-left: -82.5px;
     &--with-background {
       background-color: $bgcolor--silver;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      vertical-align: middle;
     }
   }
 }
@@ -122,7 +134,9 @@ export default {
     &__introduction-image {
       width: 100%;
       margin: 0;
-      vertical-align: bottom;
+      img {
+        vertical-align: bottom;
+      }
     }
   }
 }
