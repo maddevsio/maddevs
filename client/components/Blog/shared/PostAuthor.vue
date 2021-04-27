@@ -85,7 +85,7 @@ export default {
 @import '../../../assets/styles/vars';
 .blog-post {
   &__author {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     margin-right: 24px;
   }
