@@ -1,7 +1,25 @@
 const params = {
-  MetaOpenGraphRule: {
+  MetaSocialRule: {
     enabled: true,
-    ogList: ['og:url', 'og:type', 'og:site_name', 'og:title', 'og:description', 'og:image', 'og:image:width', 'og:image:height'],
+    properties: [
+      'og:url',
+      'og:type',
+      'og:site_name',
+      'og:title',
+      'og:description',
+      'og:image',
+      'og:image:width',
+      'og:image:height',
+      'twitter:card',
+      'twitter:text:title',
+      'twitter:description',
+      'twitter:image:src',
+      'twitter:url',
+    ],
+  },
+  MetaBaseRule: {
+    enabled: true,
+    names: ['description', 'viewport'],
   },
 }
 

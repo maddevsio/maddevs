@@ -5,7 +5,8 @@ const cliProgress = require('cli-progress')
 const params = require('./params')
 
 // Rules
-const MetaOpenGraphRule = require('./rules/MetaOpenGraphRule')
+const MetaSocialRule = require('./rules/MetaSocialRule')
+const MetaBaseRule = require('./rules/MetaBaseRule')
 
 async function asyncSome(arr, predicate) {
   for (const e of arr) {
@@ -42,7 +43,8 @@ function analyzeFile(pathFile) {
     },
   })
     .read(fs.createReadStream(pathFile))
-    .addRule('MetaOpenGraphRule', { object: new MetaOpenGraphRule(params.MetaOpenGraphRule.enabled, params.MetaOpenGraphRule.ogList) })
+    .addRule('MetaSocialRule', { object: new MetaSocialRule(params.MetaSocialRule.enabled, params.MetaSocialRule.properties) })
+    .addRule('MetaBaseRule', { object: new MetaBaseRule(params.MetaBaseRule.enabled, params.MetaBaseRule.names) })
     .addRule('ImgTagWithAltAttritube')
     .addRule('NoMoreThanOneH1Tag')
     .write(fs.createWriteStream('report.txt')))
