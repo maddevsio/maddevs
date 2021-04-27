@@ -9,9 +9,9 @@ function buildMessage({ analytics, range, lighthouse }) {
 
   return {
     blocks: [
-      header(`<!here> :calendar: Отчет радиатора по ключевым метрикам за ${range}`),
+      header(`:calendar: Отчет радиатора по ключевым метрикам за ${range}`),
       divider(),
-      section(`За вчера сайт <https://maddevs.io|maddevs.io> посетило *${core.users.value} пользователей*. Всего *${core.sessions.value} сессий*, средняя длительность 1 сессии составляет *${core.duration.value}*. *${core.bounceRate.value}%* пользователей закрыли сайт никак с ним не провзаимодействовав.`),
+      section(`<!here> За вчера сайт <https://maddevs.io|maddevs.io> посетило *${core.users.value} пользователей*. Всего *${core.sessions.value} сессий*, средняя длительность 1 сессии составляет *${core.duration.value}*. *${core.bounceRate.value}%* пользователей закрыли сайт никак с ним не провзаимодействовав.`),
       section(list(
         listItem(core.users, 'Users', 'technologist', 'difference', '', '%'),
         listItem(core.sessions, 'Sessions', 'elevator', 'difference', '', '%'),
