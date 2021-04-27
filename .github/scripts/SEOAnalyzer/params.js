@@ -21,6 +21,10 @@ const params = {
     enabled: true,
     names: ['description', 'viewport'],
   },
+  JsonLdRule: {
+    enabled: true,
+    keys: ['@context', '@type'],
+  },
 }
 
 module.exports = params
