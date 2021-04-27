@@ -21,7 +21,7 @@ function prettify(rawData) {
     }))
     .map(device => ({
       ...device,
-      isBetter: device.value > device.previous,
+      rate: device.value >= device.previous ? 'good' : 'neutral',
     }))
     .sort((a, b) => b.value - a.value)
     .reduce((acc, device) => ({

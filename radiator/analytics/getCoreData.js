@@ -1,3 +1,4 @@
+/* eslint-disable vue/max-len */
 const getAnalytics = require('./getAnalytics')
 const getPercentage = require('../utils/getPercentage')
 const formatTime = require('../utils/formatTime')
@@ -13,30 +14,35 @@ function prettify(rawData) {
   const [users, sessions, bounceRate, duration] = rawData.reports[0].data.totals[0].values.map(n => Number(Number(n).toFixed(2)))
   const [usersPrev, sessionsPrev, bounceRatePrev, durationPrev] = rawData.reports[0].data.totals[1].values.map(n => Number(Number(n).toFixed(2)))
 
+  const usersDifference = getPercentage(users, usersPrev)
+  const sessionsDifference = getPercentage(sessions, sessionsPrev)
+  const bounceRateDifference = getPercentage(bounceRate, bounceRatePrev)
+  const durationDifference = getPercentage(duration, durationPrev)
+
   return {
     users: {
       value: users,
       previous: usersPrev,
-      difference: getPercentage(users, usersPrev),
-      isBetter: getPercentage(users, usersPrev) > 0,
+      difference: usersDifference > 0 ? `+${usersDifference}` : usersDifference,
+      rate: usersDifference > 0 ? 'good' : 'bad',
     },
     sessions: {
       value: sessions,
       previous: sessionsPrev,
-      difference: getPercentage(sessions, sessionsPrev),
-      isBetter: getPercentage(sessions, sessionsPrev) > 0,
+      difference: sessionsDifference > 0 ? `+${sessionsDifference}` : sessionsDifference,
+      rate: sessionsDifference > 0 ? 'good' : 'bad',
     },
     bounceRate: {
       value: bounceRate,
       previous: bounceRatePrev,
-      difference: getPercentage(bounceRate, bounceRatePrev),
-      isBetter: getPercentage(bounceRate, bounceRatePrev) < 0,
+      difference: bounceRateDifference > 0 ? `+${bounceRateDifference}` : bounceRateDifference,
+      rate: bounceRateDifference < 0 ? 'good' : 'bad',
     },
     duration: {
       value: formatTime(duration),
       previous: formatTime(durationPrev),
-      difference: getPercentage(duration, durationPrev),
-      isBetter: getPercentage(duration, durationPrev) > 0,
+      difference: durationDifference > 0 ? `+${durationDifference}` : durationDifference,
+      rate: durationDifference > 0 ? 'good' : 'bad',
     },
   }
 }
