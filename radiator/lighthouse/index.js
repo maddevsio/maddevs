@@ -22,7 +22,7 @@ function prettify(rawData) {
       ...acc,
       [curr.id]: {
         title: curr.title,
-        value: curr.score * 100,
+        value: Math.round(curr.score * 100),
         rate,
       },
     }
