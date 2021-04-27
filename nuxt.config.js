@@ -119,6 +119,14 @@ module.exports = {
       const tagPageRoutes = prismicTags
         .map(tag => `/blog/tag/${convertStringToSlug(tag)}`)
 
+      const tagPostPageRoutes = prismicTags
+        .reduce((acc, tag) => {
+          const tagPostsRoutes = prismicPosts
+            .filter(post => (post.type === 'post' && post.tags.includes(tag)))
+            .map(post => `/blog/tag/${convertStringToSlug(tag)}/${post.uid}`)
+          return [...acc, ...tagPostsRoutes]
+        }, [])
+
       const routes = [
         '/',
         '/services',
@@ -136,6 +144,7 @@ module.exports = {
         ...authorPageRoutes,
         ...authorPostPageRoutes,
         ...tagPageRoutes,
+        ...tagPostPageRoutes,
       ]
 
       return routes
