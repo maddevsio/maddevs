@@ -91,7 +91,7 @@ module.exports = {
         return posts
       }
 
-      // Get data from prismic
+      // Getting data from prismic
       const prismicData = await axios.get(process.env.NODE_PRISMIC_API)
       const prismicTags = prismicData.data.tags
 
@@ -112,6 +112,10 @@ module.exports = {
         .filter(post => post.type === 'author')
         .map(author => `/blog/author/${author.uid}`)
 
+      const authorPostPageRoutes = prismicPosts
+        .filter(post => post.type === 'post')
+        .map(post => `/blog/author/${post.data.post_author.uid}/${post.uid}`)
+
       const tagPageRoutes = prismicTags
         .map(tag => `/blog/tag/${convertStringToSlug(tag)}`)
 
@@ -130,6 +134,7 @@ module.exports = {
         ...blogPageRoutes,
         ...cuPageRoutes,
         ...authorPageRoutes,
+        ...authorPostPageRoutes,
         ...tagPageRoutes,
       ]
 
