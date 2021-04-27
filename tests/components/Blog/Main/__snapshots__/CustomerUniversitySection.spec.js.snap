@@ -26,9 +26,8 @@ exports[`CustomerUniversitySection component should render correctly 1`] = `
         <div
           class="customer-university__featured-post"
         >
-          <nuxtlink-stub
+          <div
             class="featured-post"
-            to="/customer-university/uid/"
           >
             <span
               class="featured-post__date"
@@ -36,26 +35,32 @@ exports[`CustomerUniversitySection component should render correctly 1`] = `
               
             </span>
              
-            <h2
-              class="featured-post__title"
+            <nuxtlink-stub
+              class="featured-post__content-wrapper"
+              to="/customer-university/uid/"
             >
-              
-            img.png
-          
-            </h2>
-             
-            <p
-              class="featured-post__text"
-            >
+              <h2
+                class="featured-post__title"
+              >
+                
+              img.png
+            
+              </h2>
+               
+              <p
+                class="featured-post__text"
+              >
+                
               
             
-          
-            </p>
+              </p>
+            </nuxtlink-stub>
              
             <!---->
              
-            <div
+            <nuxtlink-stub
               class="featured-post__cover-wrapper"
+              to="/customer-university/uid/"
             >
               <img
                 class="featured-post__cover img_lazy"
@@ -63,8 +68,8 @@ exports[`CustomerUniversitySection component should render correctly 1`] = `
                 height="347"
                 width="560"
               />
-            </div>
-          </nuxtlink-stub>
+            </nuxtlink-stub>
+          </div>
         </div>
          
         <div

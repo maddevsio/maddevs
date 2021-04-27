@@ -7,23 +7,30 @@
       </div>
       <div class="customer-university__wrapper">
         <div class="customer-university__featured-post">
-          <NuxtLink
+          <div
             v-if="featuredCUPost"
-            :to="`/customer-university/${customerContent.featured_cu.uid}/`"
             class="featured-post"
           >
             <span class="featured-post__date">{{ featuredCUPost.date }}</span>
-            <h2 class="featured-post__title">
-              {{ $prismic.asText(featuredCUPost.title).replace(/^[0-9]*\. /, '') }}
-            </h2>
-            <p class="featured-post__text">
-              {{ firstParagraph }}
-            </p>
+            <NuxtLink
+              :to="`/customer-university/${customerContent.featured_cu.uid}/`"
+              class="featured-post__content-wrapper"
+            >
+              <h2 class="featured-post__title">
+                {{ $prismic.asText(featuredCUPost.title).replace(/^[0-9]*\. /, '') }}
+              </h2>
+              <p class="featured-post__text">
+                {{ firstParagraph }}
+              </p>
+            </NuxtLink>
             <PostAuthor
               v-bind="findAuthor(featuredCUPost.post_author.id, allAuthors)"
               theme="dark"
             />
-            <div class="featured-post__cover-wrapper">
+            <NuxtLink
+              :to="`/customer-university/${customerContent.featured_cu.uid}/`"
+              class="featured-post__cover-wrapper"
+            >
               <img
                 class="featured-post__cover img_lazy"
                 width="560"
@@ -31,8 +38,8 @@
                 :data-src="featuredCUPost.featured_image.url"
                 :alt="featuredCUPost.featured_image.alt"
               >
-            </div>
-          </NuxtLink>
+            </NuxtLink>
+          </div>
         </div>
         <div class="customer-university__list">
           <div class="customer-university__list-wrapper">
@@ -239,11 +246,13 @@ export default {
     color: $text-color--grey-pale;
   }
   &__cover {
+    display: block;
     width: 100%;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
     &-wrapper {
+      display: block;
       margin-top: 33px;
       text-align: center;
     }
@@ -256,11 +265,13 @@ export default {
     margin-bottom: 0;
   }
   &__cover {
+    display: block;
     width: 100%;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
     &-wrapper {
+      display: block;
       width: 52.68%;
       margin-right: 20px;
       flex-shrink: 0;
@@ -337,13 +348,14 @@ export default {
       display: none;
     }
     &__title {
-      order: 1;
       margin-bottom: 6px;
       font-size: 22.78px;
     }
     &__text {
-      order: 2;
       margin-bottom: 0;
+    }
+    &__content-wrapper {
+      order: 1;
     }
     &__cover-wrapper {
       order: 0;
