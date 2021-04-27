@@ -23,7 +23,7 @@ const section = (text, type = 'mrkdwn') => ({
 
 const list = (...args) => [...args].join('\n\n')
 
-const listItem = (entity, title, smile, parensKey, valueType = '') => `${getColorSmile(entity.rate)} :${smile}: ${title}: *${entity.value}${valueType}* (${entity[parensKey]}${valueType})`
+const listItem = (entity, title, smile, parensKey, valueType = '', parensType = '') => `${getColorSmile(entity.rate)} :${smile}: ${title}: *${entity.value}${valueType}* (${entity[parensKey]}${parensType})`
 
 const countryListItem = ({ title, percentage }) => {
   const flags = {
