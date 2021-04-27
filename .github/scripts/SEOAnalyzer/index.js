@@ -2,6 +2,10 @@ const fs = require('fs')
 const path = require('path')
 const SeoInspector = require('seo-inspector')
 const cliProgress = require('cli-progress')
+const params = require('./params')
+
+// Rules
+const MetaOpenGraphRule = require('./rules/MetaOpenGraphRule')
 
 async function asyncSome(arr, predicate) {
   for (const e of arr) {
@@ -27,7 +31,7 @@ async function log(report) {
     }
   }
 
-  return process.exit(1) // Stop process in termonal
+  return process.exit(1) // Stop process in terminal
 }
 
 function analyzeFile(pathFile) {
@@ -38,6 +42,7 @@ function analyzeFile(pathFile) {
     },
   })
     .read(fs.createReadStream(pathFile))
+    .addRule('MetaOpenGraphRule', { object: new MetaOpenGraphRule(params.MetaOpenGraphRule.enabled, params.MetaOpenGraphRule.ogList) })
     .addRule('ImgTagWithAltAttritube')
     .addRule('NoMoreThanOneH1Tag')
     .write(fs.createWriteStream('report.txt')))
