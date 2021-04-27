@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`fAQ renders correctly 1`] = `
+exports[`feature flag function renders correctly 1`] = `
 <!--function (el) {
       var obj;
 
