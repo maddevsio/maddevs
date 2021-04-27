@@ -187,13 +187,14 @@ export default {
     }
   }
   &__image-wrapper {
-    text-align: right;
     margin-top: 0;
     a {
       display: block;
     }
     img {
+      margin-left: auto;
       display: block;
+      width: 100%;
       max-width: 90%;
       height: auto;
       vertical-align: middle;
@@ -242,6 +243,7 @@ export default {
       text-align: center;
       img {
         max-width: 100%;
+        margin: 0;
       }
     }
   }

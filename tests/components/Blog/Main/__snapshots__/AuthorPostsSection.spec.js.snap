@@ -110,11 +110,12 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               class="col-12 col-lg-6 featured-post__image-wrapper"
             >
               <nuxtlink-stub
+                class="featured-post__image"
                 to="/blog/author/undefined/software-architecture-design/"
               >
                 <img
                   alt="Application Design Proccess."
-                  class="featured-post__image img_lazy"
+                  class="img_lazy"
                   data-src="https://images.prismic.io/superpupertest/93d447b6-2865-4da7-ad2c-5cd07c98d4e3_8.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
                   height="533"
                   width="983"
