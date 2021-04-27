@@ -2,9 +2,8 @@
 
 exports[`featured post component is a Vue instance 1`] = `
 <div>
-  <nuxtlink-stub
+  <div
     class="featured-post dark"
-    to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
   >
     <div
       class="row featured-post__wrapper"
@@ -12,22 +11,26 @@ exports[`featured post component is a Vue instance 1`] = `
       <div
         class="col-12 col-lg-6 featured-post__main"
       >
-        <h2
-          class="featured-post__title"
-          title="The best practices for improving layout quality on your website"
+        <nuxtlink-stub
+          to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
         >
-          
-        The best practices for improving layout quality...
-      
-        </h2>
-         
-        <p
-          class="featured-post__paragraph"
-        >
-          
-        Let’s start with a partial list of how a valid and semantic layout can improve any project:
-      
-        </p>
+          <h2
+            class="featured-post__title"
+            title="The best practices for improving layout quality on your website"
+          >
+            
+          The best practices for improving layout quality...
+        
+          </h2>
+           
+          <p
+            class="featured-post__paragraph"
+          >
+            
+          Let’s start with a partial list of how a valid and semantic layout can improve any project:
+        
+          </p>
+        </nuxtlink-stub>
          
         <div
           class="featured-post__data d-flex justify-content-between"
@@ -64,14 +67,18 @@ exports[`featured post component is a Vue instance 1`] = `
       <div
         class="col-12 col-lg-6 featured-post__image-wrapper"
       >
-        <img
-          class="featured-post__image img_lazy"
-          data-src="https://images.prismic.io/superpupertest/e746f4e6-ce33-47b7-b828-5f315fea2bbb_1_bmF_K9TNqtHpHzUUiI_y5Q.jpeg?auto=compress,format"
-          height="380"
-          width="700"
-        />
+        <nuxtlink-stub
+          to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
+        >
+          <img
+            class="featured-post__image img_lazy"
+            data-src="https://images.prismic.io/superpupertest/e746f4e6-ce33-47b7-b828-5f315fea2bbb_1_bmF_K9TNqtHpHzUUiI_y5Q.jpeg?auto=compress,format"
+            height="380"
+            width="700"
+          />
+        </nuxtlink-stub>
       </div>
     </div>
-  </nuxtlink-stub>
+  </div>
 </div>
 `;

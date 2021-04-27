@@ -1,21 +1,22 @@
 <template>
-  <NuxtLink
-    :to="to || link"
+  <div
     :class="theme"
     class="featured-post"
   >
     <div class="row featured-post__wrapper">
       <div class="col-12 col-lg-6 featured-post__main">
-        <Component
-          :is="titleTag"
-          :title="$prismic.asText(post.data.title)"
-          class="featured-post__title"
-        >
-          {{ shortTitle }}
-        </Component>
-        <p class="featured-post__paragraph">
-          {{ firstParagraph }}
-        </p>
+        <NuxtLink :to="to || link">
+          <Component
+            :is="titleTag"
+            :title="$prismic.asText(post.data.title)"
+            class="featured-post__title"
+          >
+            {{ shortTitle }}
+          </Component>
+          <p class="featured-post__paragraph">
+            {{ firstParagraph }}
+          </p>
+        </NuxtLink>
         <div class="featured-post__data d-flex justify-content-between">
           <PostAuthor
             v-bind="author"
@@ -32,16 +33,18 @@
         </div>
       </div>
       <div class="col-12 col-lg-6 featured-post__image-wrapper">
-        <img
-          :data-src="post.data.featured_image.url"
-          :alt="post.data.featured_image.alt"
-          :width="post.data.featured_image.dimensions.width"
-          :height="post.data.featured_image.dimensions.height"
-          class="featured-post__image img_lazy"
-        >
+        <NuxtLink :to="to || link">
+          <img
+            :data-src="post.data.featured_image.url"
+            :alt="post.data.featured_image.alt"
+            :width="post.data.featured_image.dimensions.width"
+            :height="post.data.featured_image.dimensions.height"
+            class="featured-post__image img_lazy"
+          >
+        </NuxtLink>
       </div>
     </div>
-  </NuxtLink>
+  </div>
 </template>
 
 <script>
@@ -119,13 +122,15 @@ export default {
 <style scoped lang="scss">
 @import '../../../assets/styles/_vars';
 .featured-post {
-  text-decoration: none;
-  display: block;
   &.dark {
-    color: $text-color--white-primary;
+    * {
+      color: $text-color--white-primary;
+    }
   }
   &.light {
-    color: $text-color--black;
+    * {
+      color: $text-color--black;
+    }
     /deep/ .blog-post {
       &__author-name {
         color: $text-color--black;
@@ -181,6 +186,9 @@ export default {
   &__image-wrapper {
     text-align: right;
     margin-top: 0;
+    a {
+      display: block;
+    }
     img {
       max-width: 90%;
       height: auto;
