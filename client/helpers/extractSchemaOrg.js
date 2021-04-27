@@ -12,7 +12,7 @@ function extractSchemaOrg(schemaOrgSnippets) {
     return schemaOrgSnippet
   }
   // eslint-disable-next-line
-  console.log('Schema.org is not defined');
+  console.warn('Schema.org is not defined');
   return schemaOrgSnippet
 }
 

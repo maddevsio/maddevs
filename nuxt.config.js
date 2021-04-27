@@ -1,4 +1,4 @@
-import axios from 'axios'
+import getRoutesList from './client/helpers/getRoutesList'
 
 require('dotenv').config()
 
@@ -78,41 +78,7 @@ module.exports = {
   },
   components: true,
   generate: {
-    async routes() {
-      const getPosts = async pageUrl => {
-        let posts = []
-        const response = await axios.get(pageUrl)
-        posts = posts.concat(response.data.results)
-
-        if (response.data.next_page) {
-          posts = posts.concat(await getPosts(response.data.next_page))
-        }
-        return posts
-      }
-
-      const routes = [
-        '/',
-        '/services',
-        '/projects',
-        '/careers',
-        '/gdpr',
-        '/nda',
-        '/privacy',
-        '/faq',
-        '/case-studies/namba-food',
-        '/case-studies/sir-john-monash-centre',
-        '/blog',
-      ]
-      const prismicData = await axios.get(process.env.NODE_PRISMIC_API)
-      const { ref } = prismicData.data.refs[0]
-      const blogPosts = await getPosts(`${process.env.NODE_PRISMIC_API}/documents/search?ref=${ref}#format=json`)
-      const postRoutes = blogPosts.map(blogPost => {
-        const urlPrefix = blogPost.type === 'customer_university' ? 'customer-university' : 'blog'
-        return `/${urlPrefix}/${blogPost.uid}`
-      })
-
-      return routes.concat(postRoutes)
-    },
+    routes: () => getRoutesList(),
     fallback: '404.html',
   },
   css: [
