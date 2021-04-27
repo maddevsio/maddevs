@@ -1,42 +1,47 @@
 <template>
-  <NuxtLink
-    :to="to || link"
+  <div
     class="blog-post__wrapper"
   >
     <div class="blog-post">
-      <img
-        ref="recommendedImage"
-        :data-src="post.data.featured_image.url"
-        :alt="post.data.featured_image.alt"
-        class="blog-post__image img_lazy"
-        width="400"
-        height="217"
+      <NuxtLink
+        :to="to || link"
+        class="blog-post__image"
       >
+        <img
+          :data-src="post.data.featured_image.url"
+          :alt="post.data.featured_image.alt"
+          class="img_lazy"
+          width="400"
+          height="217"
+        >
+      </NuxtLink>
       <div>
-        <h2
-          class="blog-post__title blog-post__title--short"
-          :title="$prismic.asText(post.data.title)"
-        >
-          {{ shortTitle }}
-        </h2>
-        <h2
-          class="blog-post__title blog-post__title--very-short"
-          :title="$prismic.asText(post.data.title)"
-        >
-          {{ veryShortTitle }}
-        </h2>
-        <h2
-          class="blog-post__title blog-post__title--full"
-          :title="$prismic.asText(post.data.title)"
-        >
-          {{ $prismic.asText(post.data.title) }}
-        </h2>
-        <p
-          class="blog-post__paragraph"
-          data-testid="test-blog-post"
-        >
-          {{ firstParagraph }}
-        </p>
+        <NuxtLink :to="to || link">
+          <h2
+            class="blog-post__title blog-post__title--short"
+            :title="$prismic.asText(post.data.title)"
+          >
+            {{ shortTitle }}
+          </h2>
+          <h2
+            class="blog-post__title blog-post__title--very-short"
+            :title="$prismic.asText(post.data.title)"
+          >
+            {{ veryShortTitle }}
+          </h2>
+          <h2
+            class="blog-post__title blog-post__title--full"
+            :title="$prismic.asText(post.data.title)"
+          >
+            {{ $prismic.asText(post.data.title) }}
+          </h2>
+          <p
+            class="blog-post__paragraph"
+            data-testid="test-blog-post"
+          >
+            {{ firstParagraph }}
+          </p>
+        </NuxtLink>
         <div class="blog-post__meta">
           <span class="created-at">{{ formattedDate }}</span>
           <PostTag
@@ -53,7 +58,7 @@
         />
       </div>
     </div>
-  </NuxtLink>
+  </div>
 </template>
 
 <script>
@@ -136,7 +141,9 @@ export default {
 <style lang="scss" scoped>
 @import '../../../assets/styles/_vars';
 .blog-post {
-  color: $text-color--black;
+  * {
+    color: $text-color--black;
+  }
   p {
     margin-top: 5px;
   }
@@ -158,13 +165,13 @@ export default {
   &__image {
     display: block;
     width: 100%;
-    max-width: 100%;
-    height: auto;
     margin-bottom: 16px;
-  }
-  &__featured-image {
-    max-width: 100%;
-    height: auto;
+    img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
   }
   &__title {
     font-size: 21px;
