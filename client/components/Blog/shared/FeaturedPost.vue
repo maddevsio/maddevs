@@ -33,13 +33,16 @@
         </div>
       </div>
       <div class="col-12 col-lg-6 featured-post__image-wrapper">
-        <NuxtLink :to="to || link">
+        <NuxtLink
+          :to="to || link"
+          class="featured-post__image"
+        >
           <img
             :data-src="post.data.featured_image.url"
             :alt="post.data.featured_image.alt"
             :width="post.data.featured_image.dimensions.width"
             :height="post.data.featured_image.dimensions.height"
-            class="featured-post__image img_lazy"
+            class="img_lazy"
           >
         </NuxtLink>
       </div>
@@ -190,6 +193,7 @@ export default {
       display: block;
     }
     img {
+      display: block;
       max-width: 90%;
       height: auto;
       vertical-align: middle;
