@@ -1,3 +1,4 @@
+/* eslint-disable vue/max-len */
 const getColorSmile = require('./getColorSmile')
 
 const header = text => ({
