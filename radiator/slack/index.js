@@ -1,8 +1,8 @@
 const buildMessage = require('./buildMessage')
 const sendMessage = require('./sendMessage')
 
-async function main(data, range) {
-  const message = buildMessage(data, range)
+async function main(data) {
+  const message = buildMessage(data)
   await sendMessage(message)
 }
 

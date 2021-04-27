@@ -86,6 +86,9 @@ require('dotenv').config();
     request(options);
   };
   const resp = await axios.get(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://maddevs.io&key=${googleapisKey}`);
+
+  console.log(resp)
+
   const reportResult = {
     'first-contentful-paint': {
       sec: resp.data.lighthouseResult.audits['first-contentful-paint'].displayValue,
@@ -108,5 +111,5 @@ require('dotenv').config();
       color: getColorCumulativeLayoutShift(resp.data.lighthouseResult.audits['cumulative-layout-shift'].numericValue)
     }
   };
-  sendMessageToSlack(reportResult);
+  // sendMessageToSlack(reportResult);
 })();

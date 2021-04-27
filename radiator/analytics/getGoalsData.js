@@ -32,9 +32,9 @@ function prettify({ rawLeads, rawCareers, rawContacts }) {
     },
   }
 
-  goals.leads.isBetter = goals.leads.value > goals.leads.previous
-  goals.career.isBetter = goals.career.value > goals.career.previous
-  goals.contacts.isBetter = goals.contacts.value > goals.contacts.previous
+  goals.leads.rate = goals.leads.value > goals.leads.previous ? 'good' : 'bad'
+  goals.career.rate = goals.career.value > goals.career.previous ? 'good' : 'bad'
+  goals.contacts.rate = goals.contacts.value > goals.contacts.previous ? 'good' : 'bad'
 
   return goals
 }

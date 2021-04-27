@@ -1,13 +1,15 @@
 const {
-  header, divider, section, list, listItem, countryListItem,
+  header, divider, section, list, listItem, countryListItem, performanceListItem,
 } = require('./blocks')
 
-function buildMessage({
-  core, countries, devices, goals,
-}, range) {
+function buildMessage({ analytics, range, lighthouse }) {
+  const {
+    core, devices, goals, countries,
+  } = analytics
+
   return {
     blocks: [
-      header(`:calendar: Radiator report on marketing metrics for ${range}`),
+      header(`:calendar: Отчет радиатора по ключевым метрикам за ${range}`),
       divider(),
       section(`За вчера сайт <https://maddevs.io|maddevs.io> посетило *${core.users.value} пользователей*. Всего *${core.sessions.value} сессий*, средняя длительность 1 сессии составляет *${core.duration.value}*. *${core.bounceRate.value}%* пользователей закрыли сайт никак с ним не провзаимодействовав.`),
       section(list(
@@ -32,6 +34,15 @@ function buildMessage({
         listItem(goals.leads, 'Leads', 'zap', 'previous'),
         listItem(goals.contacts, 'Contacts', 'telephone_receiver', 'previous'),
         listItem(goals.career, 'Careers', 'briefcase', 'previous'),
+      )),
+      divider(),
+      section('Производительность сайта от Google PageSpeed:'),
+      section(list(
+        performanceListItem(lighthouse.performance, 'chart_with_upwards_trend'),
+        performanceListItem(lighthouse.accessibility, 'man_in_manual_wheelchair'),
+        performanceListItem(lighthouse['best-practices'], 'the_horns'),
+        performanceListItem(lighthouse.seo, 'sports_medal'),
+        performanceListItem(lighthouse.pwa, 'iphone'),
       )),
       divider(),
     ],

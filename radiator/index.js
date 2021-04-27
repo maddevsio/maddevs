@@ -1,13 +1,15 @@
 require('dotenv').config()
 const getAnalyticsData = require('./analytics')
+const getLighthouseData = require('./lighthouse')
 const sendMessageToSlack = require('./slack')
 const getYesterday = require('./utils/getYesterday')
 
 async function main() {
   const range = getYesterday()
-  const data = await getAnalyticsData()
+  const analytics = await getAnalyticsData()
+  const lighthouse = await getLighthouseData()
 
-  await sendMessageToSlack(data, range)
+  await sendMessageToSlack({ analytics, range, lighthouse })
 }
 
 module.exports = main

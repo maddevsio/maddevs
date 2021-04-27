@@ -23,9 +23,9 @@ const section = (text, type = 'mrkdwn') => ({
 
 const list = (...args) => [...args].join('\n\n')
 
-const listItem = (entity, title, smile, parensKey, valueType = '') => `${getColorSmile(entity.isBetter)} :${smile}: ${title}: *${entity.value}${valueType}* (${entity[parensKey]}${valueType})`
+const listItem = (entity, title, smile, parensKey, valueType = '') => `${getColorSmile(entity.rate)} :${smile}: ${title}: *${entity.value}${valueType}* (${entity[parensKey]}${valueType})`
 
-const countryListItem = ({ title, value, percentage }) => {
+const countryListItem = ({ title, percentage }) => {
   const flags = {
     'United States': 'us',
     India: 'in',
@@ -39,8 +39,11 @@ const countryListItem = ({ title, value, percentage }) => {
     Japan: 'jp',
   }
 
-  return `:flag-${flags[title]}: ${title}: *${value}* (${percentage}%)`
+  const flag = flags[title] ? `flag-${flags[title]}` : 'flags'
+  return `:${flag}: ${title}: *${percentage}%* от всех посетителей сайта`
 }
+
+const performanceListItem = (entity, smile) => `${getColorSmile(entity.rate)} :${smile}: ${entity.title}: *${entity.value}%*`
 
 module.exports = {
   header,
@@ -49,4 +52,5 @@ module.exports = {
   list,
   listItem,
   countryListItem,
+  performanceListItem,
 }

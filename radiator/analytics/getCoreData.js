@@ -19,25 +19,25 @@ function prettify(rawData) {
       value: users,
       previous: usersPrev,
       difference: getPercentage(users, usersPrev),
-      isBetter: getPercentage(users, usersPrev) > 0,
+      rate: getPercentage(users, usersPrev) > 0 ? 'good' : 'bad',
     },
     sessions: {
       value: sessions,
       previous: sessionsPrev,
       difference: getPercentage(sessions, sessionsPrev),
-      isBetter: getPercentage(sessions, sessionsPrev) > 0,
+      rate: getPercentage(sessions, sessionsPrev) > 0 ? 'good' : 'bad',
     },
     bounceRate: {
       value: bounceRate,
       previous: bounceRatePrev,
       difference: getPercentage(bounceRate, bounceRatePrev),
-      isBetter: getPercentage(bounceRate, bounceRatePrev) < 0,
+      rate: getPercentage(bounceRate, bounceRatePrev) < 0 ? 'good' : 'bad',
     },
     duration: {
       value: formatTime(duration),
       previous: formatTime(durationPrev),
       difference: getPercentage(duration, durationPrev),
-      isBetter: getPercentage(duration, durationPrev) > 0,
+      rate: getPercentage(duration, durationPrev) > 0 ? 'good' : 'bad',
     },
   }
 }
