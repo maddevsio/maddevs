@@ -74,7 +74,6 @@ describe('Radiator > analytics > getCoreData', () => {
 
     const data = await getCoreData()
 
-    expect(getAnalytics).toHaveBeenCalledTimes(1)
     expect(data).toEqual({
       bounceRate: {
         difference: -50,
