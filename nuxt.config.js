@@ -104,7 +104,7 @@ module.exports = {
         .filter(post => post.type === 'post')
         .map(post => `/blog/${post.uid}`)
 
-      const CUPageRoutes = prismicPosts
+      const cuPageRoutes = prismicPosts
         .filter(post => post.type === 'customer_university')
         .map(post => `/customer-university/${post.uid}`)
 
@@ -128,7 +128,7 @@ module.exports = {
         '/case-studies/sir-john-monash-centre',
         '/blog',
         ...blogPageRoutes,
-        ...CUPageRoutes,
+        ...cuPageRoutes,
         ...authorPageRoutes,
         ...tagPageRoutes,
       ]
