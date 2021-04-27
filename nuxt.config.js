@@ -1,4 +1,5 @@
 import axios from 'axios'
+import convertStringToSlug from './client/helpers/convertStringToSlug'
 
 require('dotenv').config()
 
@@ -90,6 +91,30 @@ module.exports = {
         return posts
       }
 
+      // Get data from prismic
+      const prismicData = await axios.get(process.env.NODE_PRISMIC_API)
+      const prismicTags = prismicData.data.tags
+
+      // Getting posts of all types from prismic
+      const { ref } = prismicData.data.refs[0]
+      const prismicPosts = await getPosts(`${process.env.NODE_PRISMIC_API}/documents/search?ref=${ref}#format=json`)
+
+      // Creating a list of routes
+      const blogPageRoutes = prismicPosts
+        .filter(post => post.type === 'post')
+        .map(post => `/blog/${post.uid}`)
+
+      const cuPageRoutes = prismicPosts
+        .filter(post => post.type === 'customer_university')
+        .map(post => `/customer-university/${post.uid}`)
+
+      const authorPageRoutes = prismicPosts
+        .filter(post => post.type === 'author')
+        .map(author => `/blog/author/${author.uid}`)
+
+      const tagPageRoutes = prismicTags
+        .map(tag => `/blog/tag/${convertStringToSlug(tag)}`)
+
       const routes = [
         '/',
         '/services',
@@ -102,16 +127,13 @@ module.exports = {
         '/case-studies/namba-food',
         '/case-studies/sir-john-monash-centre',
         '/blog',
+        ...blogPageRoutes,
+        ...cuPageRoutes,
+        ...authorPageRoutes,
+        ...tagPageRoutes,
       ]
-      const prismicData = await axios.get(process.env.NODE_PRISMIC_API)
-      const { ref } = prismicData.data.refs[0]
-      const blogPosts = await getPosts(`${process.env.NODE_PRISMIC_API}/documents/search?ref=${ref}#format=json`)
-      const postRoutes = blogPosts.map(blogPost => {
-        const urlPrefix = blogPost.type === 'customer_university' ? 'customer-university' : 'blog'
-        return `/${urlPrefix}/${blogPost.uid}`
-      })
 
-      return routes.concat(postRoutes)
+      return routes
     },
     fallback: '404.html',
   },
