@@ -3,7 +3,7 @@ const axios = require('axios')
 function buildSearchParams() {
   const searchParams = new URLSearchParams()
   searchParams.append('url', 'https://maddevs.io')
-  searchParams.append('key', process.env.NODE_GOOGLEAPIS_KEY)
+  searchParams.append('key', process.env.RADIATOR_GOOGLEAPIS_KEY)
   searchParams.append('category', 'seo')
   searchParams.append('category', 'accessibility')
   searchParams.append('category', 'best-practices')
