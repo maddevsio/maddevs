@@ -1,7 +1,7 @@
 const colors = {
-  good: '#43a047',
-  bad: '#e53935',
-  neutral: '#e0e0e0',
+  good: ':yum:',
+  bad: ':face_with_symbols_on_mouth:',
+  neutral: ':neutral_face:',
 }
 
 /**
@@ -9,9 +9,9 @@ const colors = {
  * @param {Boolean|string} isBetter
  * @returns {string} color
  */
-const getColor = (isBetter = 'neutral') => {
+const getColorSmile = (isBetter = 'neutral') => {
   if (isBetter === 'neutral') return colors.neutral
   return isBetter ? colors.good : colors.bad
 }
 
-module.exports = getColor
+module.exports = getColorSmile

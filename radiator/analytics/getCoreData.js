@@ -1,3 +1,4 @@
+/* eslint-disable vue/max-len */
 const getAnalytics = require('./getAnalytics')
 const getPercentage = require('../utils/getPercentage')
 const formatTime = require('../utils/formatTime')

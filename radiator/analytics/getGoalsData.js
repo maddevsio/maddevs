@@ -1,32 +1,49 @@
 const getAnalytics = require('./getAnalytics')
 
-const GOALS_IDS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const LEADS_GOALS = [1, 2, 3, 4, 5, 6, 7, 8]
+const CAREER_GOALS = [9]
+const CONTACT_GOALS = [10, 11, 12, 13, 14, 15]
 
-const metrics = GOALS_IDS.map(id => ({
+const leadsMetrics = LEADS_GOALS.map(id => ({
   expression: `ga:goal${id}Completions`,
 }))
 
-function prettify(rawData) {
+const careerMetrics = CAREER_GOALS.map(id => ({
+  expression: `ga:goal${id}Completions`,
+}))
+
+const contactMetrics = CONTACT_GOALS.map(id => ({
+  expression: `ga:goal${id}Completions`,
+}))
+
+function prettify({ rawLeads, rawCareers, rawContacts }) {
   const goals = {
-    contact: {
-      value: rawData.reports[0].data.totals[0].values.slice(0, -1).reduce((acc, curr) => acc + Number(curr), 0),
-      previous: rawData.reports[0].data.totals[1].values.slice(0, -1).reduce((acc, curr) => acc + Number(curr), 0),
+    leads: {
+      value: rawLeads.reports[0].data.totals[0].values.reduce((acc, curr) => acc + Number(curr), 0),
+      previous: rawLeads.reports[0].data.totals[1].values.reduce((acc, curr) => acc + Number(curr), 0),
     },
     career: {
-      value: rawData.reports[0].data.totals[0].values.slice(-1).reduce((acc, curr) => acc + Number(curr), 0),
-      previous: rawData.reports[0].data.totals[1].values.slice(-1).reduce((acc, curr) => acc + Number(curr), 0),
+      value: rawCareers.reports[0].data.totals[0].values.reduce((acc, curr) => acc + Number(curr), 0),
+      previous: rawCareers.reports[0].data.totals[1].values.reduce((acc, curr) => acc + Number(curr), 0),
+    },
+    contacts: {
+      value: rawContacts.reports[0].data.totals[0].values.reduce((acc, curr) => acc + Number(curr), 0),
+      previous: rawContacts.reports[0].data.totals[1].values.reduce((acc, curr) => acc + Number(curr), 0),
     },
   }
 
-  goals.contact.isBetter = goals.contact.value > goals.contact.previous
+  goals.leads.isBetter = goals.leads.value > goals.leads.previous
   goals.career.isBetter = goals.career.value > goals.career.previous
+  goals.contacts.isBetter = goals.contacts.value > goals.contacts.previous
 
   return goals
 }
 
 async function main() {
-  const rawData = await getAnalytics({ metrics })
-  return prettify(rawData)
+  const rawLeads = await getAnalytics({ metrics: leadsMetrics })
+  const rawCareers = await getAnalytics({ metrics: careerMetrics })
+  const rawContacts = await getAnalytics({ metrics: contactMetrics })
+  return prettify({ rawLeads, rawCareers, rawContacts })
 }
 
 module.exports = main

@@ -1,4 +1,4 @@
-import getColor from '../../../radiator/utils/getColor'
+import getColor from '../../../radiator/slack/getColorSmile'
 
 describe('getColor utility', () => {
   it('should correctly return neutral color if there are no argument', () => {
