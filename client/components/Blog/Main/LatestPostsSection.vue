@@ -1,48 +1,40 @@
 <template>
   <div class="latest-posts">
     <div class="container">
-      <div class="latest-posts__wrapper">
+      <div class="latest-posts__list">
         <template v-if="postsLoaded">
           <section
             v-for="post in recentPosts"
             :key="post.id"
             :post="post"
-            class="latest-posts__single-post"
+            class="latest-posts__list-item"
           >
-            <div class="single-post__wrapper">
-              <div
-                v-if="post.id === 'banner'"
-                class="banner"
+            <a
+              v-if="post.id === 'banner'"
+              :href="post.link.url"
+              :target="post.link.target"
+              class="latest-posts__banner"
+            >
+              <img
+                class="img_lazy"
+                :data-src="post.banner.url"
+                :alt="post.id"
               >
-                <a
-                  :href="post.link.url"
-                  :target="post.link.target"
-                  class="latest-post"
-                >
-                  <img
-                    class="img_lazy"
-                    :data-src="post.banner.url"
-                    :alt="post.id"
-                  >
-                </a>
-              </div>
-              <RecommendedBlogWidget
-                v-else
-                :post="post"
-                :author="findAuthor(post.data.post_author.id, allAuthors)"
-              />
-            </div>
+            </a>
+            <PostCard
+              v-else
+              :post="post"
+              :author="findAuthor(post.data.post_author.id, allAuthors)"
+            />
           </section>
         </template>
         <template v-else>
           <section
             v-for="i in 6"
             :key="i"
-            class="latest-posts__single-post"
+            class="latest-posts__list-item"
           >
-            <div class="single-post__wrapper">
-              <SkeletonBlogWidget />
-            </div>
+            <SkeletonBlogWidget />
           </section>
         </template>
       </div>
@@ -52,16 +44,16 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import PostCard from '@/components/Blog/shared/PostCard'
 import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
-import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
 
 import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
 
 export default {
   name: 'LatestPostsSection',
   components: {
+    PostCard,
     SkeletonBlogWidget,
-    RecommendedBlogWidget,
   },
 
   mixins: [findPostAuthorMixin],
@@ -74,70 +66,48 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../../assets/styles/_vars';
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
-}
 
 .latest-posts {
-  background-color: $text-color--white-primary;
-  display: flex;
-  justify-content: space-between;
+  padding: 96px 0;
+  background-color: $bgcolor--white-primary;
 
-  &__wrapper {
+  &__list {
     display: flex;
-    flex-wrap: wrap;
-    margin: 96px -10px 0;
-
-    a {
-      text-decoration: none;
-    }
+    flex-flow: row wrap;
+    margin: 0 -10px;
   }
 
-  &__single-post {
+  &__list-item {
+    box-sizing: border-box;
     width: 33.3333%;
     margin-bottom: 80px;
-
-    .single-post {
-      &__wrapper {
-        padding: 0 10px;
-
-        .banner {
-          text-align: center;
-
-          img {
-            max-width: 100%;
-            height: auto;
-          }
-        }
+    padding: 0 10px;
+    @media only screen and (min-width: 991px) {
+      &:nth-last-child(-n+3) {
+        margin-bottom: 0;
       }
     }
   }
-}
 
-.single-post {
-  &__wrapper {
-    /deep/ .blog-post {
-      &__author-name {
-        color: $text-color--black;
+  &__banner {
+    display: block;
+    max-width: 100%;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    padding: 29px 0;
+    &__list-item {
+      width: 100%;
+      margin-bottom: 56px;
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }
-}
-
-@media only screen and (max-width: 991px) {
-  .latest-posts .latest-posts__wrapper .latest-posts__single-post {
-    width: 100%;
-  }
-
-  .latest-posts .latest-posts__wrapper .latest-posts__single-post {
-    margin-bottom: 56px;
-  }
-
-  .latest-posts {
-      &__wrapper {
-        margin-top: 29px;
-      }
-    }
 }
 </style>
