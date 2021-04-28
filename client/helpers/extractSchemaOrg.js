@@ -9,7 +9,7 @@ function extractSchemaOrg(schemaOrgSnippets) {
     schemaOrgSnippet = schemaOrgSnippets[0].single_snippet[0].text
     // extracting only JSON object from a snippet without extra characters
     schemaOrgSnippet = schemaOrgSnippet.substring(schemaOrgSnippet.indexOf('{'), schemaOrgSnippet.lastIndexOf('}') + 1)
-    return schemaOrgSnippet
+    return schemaOrgSnippet.replace(/(\r\n|\n|\r)/gm, '')
   }
   // eslint-disable-next-line
   console.warn('Schema.org is not defined');

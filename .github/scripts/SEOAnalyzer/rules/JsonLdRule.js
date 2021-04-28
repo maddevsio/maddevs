@@ -11,8 +11,11 @@ module.exports = class JsonLdRule {
     if (!schema) {
       return report = 'This HTML without <script type="application/ld+json">'
     }
+    if (schema.textContent.trim() === '') {
+      return report = 'The meta <script type="application/ld+json"></script> is empty'
+    }
     try {
-      const obj = JSON.parse(schema.textContent.replace(/[\n\r]+|[\s]{2,}/g, ' ').trim())
+      const obj = JSON.parse(schema.textContent)
       this.keys.forEach(key => {
         if (!obj[key] || !obj[key].length) {
           report.push(`This ${key} key is missing or invalid.`)
@@ -24,4 +27,3 @@ module.exports = class JsonLdRule {
     return report.join('\n')
   }
 }
-
