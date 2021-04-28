@@ -3,12 +3,12 @@
     v-if="name"
     :event="disabled ? '' : 'click'"
     :to="link"
-    class="blog-post__author"
+    class="post-author"
   >
     <div
       v-if="thumbnailImage.url !== undefined"
-      class="blog-post__author-image"
-      :class="theme"
+      class="post-author__image"
+      :class="`post-author__image--${theme}`"
     >
       <img
         :data-src="thumbnailImage.url"
@@ -18,14 +18,14 @@
     </div>
     <div
       v-else
-      class="blog-post__author-none-image"
-      :class="theme"
+      class="post-author__none-image"
+      :class="`post-author__none-image--${theme}`"
     />
-    <div class="blog-post__author-info">
-      <p class="blog-post__author-name">
+    <div class="post-author__info">
+      <p class="post-author__name">
         {{ shortTitle }}
       </p>
-      <span class="blog-post__author-position">{{ position }}</span>
+      <span class="post-author__position">{{ position }}</span>
     </div>
   </NuxtLink>
 </template>
@@ -81,28 +81,25 @@ export default {
 
 <style scoped lang="scss">
 @import '../../../assets/styles/vars';
-.blog-post__author {
+
+.post-author {
   display: flex;
   align-items: center;
   margin-right: 24px;
 
-  &-image {
-    object-fit: cover;
-  }
-
-  &-image,
-  &-none-image {
+  &__image,
+  &__none-image {
     width: 36px;
     min-width: 36px;
     height: 36px;
     border-radius: 50%;
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
-    &.dark {
+    &--dark {
       background-color: $bgcolor--black-light;
       color: $text-color--white-primary;
     }
-    &.light {
+    &--light {
       background-color: $bgcolor--silver;
       color: $text-color--black;
     }
@@ -113,12 +110,12 @@ export default {
     }
   }
 
-  &-info {
+  &__info {
     margin-left: 9px;
   }
 
-  &-name,
-  &-position {
+  &__name,
+  &__position {
     display: block;
     font-size: 13px;
     font-family: 'Inter', sans-serif;
@@ -127,12 +124,12 @@ export default {
     letter-spacing: -0.02em;
   }
 
-  &-name {
+  &__name {
     margin-bottom: 4px;
     color: $text-color--white;
   }
 
-  &-position {
+  &__position {
     color: $text-color--grey-pale;
   }
 }
