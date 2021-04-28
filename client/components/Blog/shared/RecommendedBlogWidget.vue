@@ -118,7 +118,7 @@ export default {
     },
 
     firstParagraph() {
-      const limit = 140
+      const limit = 170
       const slices = this.post.data.body
       return getFirstParagraph(slices, limit)
     },
