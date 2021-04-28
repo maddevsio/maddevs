@@ -119,6 +119,7 @@ export default {
   &__author-image,
   &__none-image {
     width: 36px;
+    min-width: 36px;
     height: 36px;
     border-radius: 50%;
     overflow: hidden;

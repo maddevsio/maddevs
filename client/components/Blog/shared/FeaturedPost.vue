@@ -170,9 +170,13 @@ export default {
     /deep/ .blog-post__author-name {
       color: $text-color--white-primary;
     }
-    /deep/ .blog-post__author-image {
-      width: 40px;
-      height: 40px;
+    /deep/ .blog-post {
+      &__author-image,
+      &__none-image {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+      }
     }
   }
   &__meta {
@@ -219,9 +223,13 @@ export default {
       /deep/ .blog-post__author {
         margin-bottom: 16px;
       }
-      /deep/ .blog-post__author-image {
-        width: 30px;
-        height: 30px;
+      /deep/ .blog-post {
+        &__author-image,
+        &__none-image {
+          width: 30px;
+          min-width: 30px;
+          height: 30px;
+        }
       }
     }
     &__title {

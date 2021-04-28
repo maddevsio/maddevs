@@ -88,9 +88,13 @@ export default {
       text-decoration: none;
     }
 
-    /deep/ .blog-post__author-image {
-      width: 30px;
-      height: 30px;
+    /deep/ .blog-post {
+      &__author-image,
+      &__none-image {
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+      }
     }
   }
 

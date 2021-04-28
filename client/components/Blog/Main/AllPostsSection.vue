@@ -376,8 +376,10 @@ export default {
           align-items: unset;
         }
 
-        &__author-image {
+        &__author-image,
+        &__none-image {
           width: 20px;
+          min-width: 20px;
           height: 20px;
         }
 
