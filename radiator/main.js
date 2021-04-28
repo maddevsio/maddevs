@@ -18,6 +18,7 @@ async function main({
   }
 
   if (telegram) {
+    console.warn('There is no telegram implementation for now.')
     // TODO: Add telegram implementation
   }
 }

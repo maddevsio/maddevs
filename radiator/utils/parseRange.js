@@ -26,7 +26,7 @@ const getLastMonth = () => {
   return `${day}/${month}/${year} - ${end}`
 }
 
-const parseRange = range => {
+const parseRange = (range = 'day') => {
   if (range === 'day') {
     return {
       range,

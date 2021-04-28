@@ -27,7 +27,7 @@ module.exports = {
     '<rootDir>/server/**/*.js',
     '<rootDir>/radiator/**/*.js',
   ],
-  coveragePathIgnorePatterns: ['<rootDir>/server/sentry', '<rootDir>/server/db', '<rootDir>/server/routes', '<rootDir>/server/index.js'],
+  coveragePathIgnorePatterns: ['<rootDir>/server/sentry', '<rootDir>/server/db', '<rootDir>/server/routes', '<rootDir>/server/index.js', '<rootDir>/radiator/index.js'],
   coverageReporters: ['json-summary', 'text', 'lcov'],
   setupFiles: ['jest-canvas-mock'],
   coverageThreshold: {
