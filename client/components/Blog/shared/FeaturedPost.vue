@@ -186,6 +186,7 @@ export default {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     .created-at {
+      white-space: nowrap;
       margin-left: 24px;
       color: $text-color--grey;
     }
