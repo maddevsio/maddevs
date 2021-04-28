@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import 'regenerator-runtime'
 import getAnalyticsData from '../../radiator/analytics'
 import getLighthouseData from '../../radiator/lighthouse'

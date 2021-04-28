@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 require('dotenv').config()
 const getAnalyticsData = require('./analytics')
 const getLighthouseData = require('./lighthouse')
