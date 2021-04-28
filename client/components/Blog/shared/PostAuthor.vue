@@ -22,12 +22,16 @@
       :class="theme"
     />
     <div class="blog-post__author-info">
-      <p class="blog-post__author-name">
+      <p
+        class="blog-post__author-name"
+        :title="shortTitle"
+      >
         {{ shortTitle }}
       </p>
-      <div class="blog-post__data-of-creation">
-        <span class="blog-post__author-title">{{ position }}</span>
-      </div>
+      <span
+        class="blog-post__author-position"
+        :title="position"
+      >{{ position }}</span>
     </div>
   </NuxtLink>
 </template>
@@ -87,29 +91,14 @@ export default {
   &__author {
     display: inline-flex;
     align-items: center;
-    margin-right: 24px;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   &__author-info {
+    flex: 1;
     margin-left: 9px;
-  }
-
-  &__author-name {
-    color: $text-color--white;
-  }
-
-  &__author-title,
-  &__author-name {
-    display: block;
-    font-size: 13px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    line-height: 129%;
-    letter-spacing: -0.02em;
-  }
-
-  &__author-name {
-    margin-bottom: 4px;
+    overflow: hidden;
   }
 
   &__author-image {
@@ -139,7 +128,25 @@ export default {
     }
   }
 
-  &__author-title {
+  &__author-name,
+  &__author-position {
+    display: block;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__author-name {
+    color: $text-color--white;
+    margin-bottom: 4px;
+  }
+
+  &__author-position {
     color: $text-color--grey-pale;
   }
 }
