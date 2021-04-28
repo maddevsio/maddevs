@@ -24,7 +24,7 @@
         ref="video"
         data-testid="test-case_video"
         width="100%"
-        :height="884"
+        height="100%"
         muted
         playsinline
         loop

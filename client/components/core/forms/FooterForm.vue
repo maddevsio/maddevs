@@ -133,6 +133,10 @@ export default {
       color: $text-color--grey-pale;
     }
 
+    &::-moz-placeholder {
+      opacity: 1;
+    }
+
     &.textarea {
       font-size: 16px;
       line-height: 24px;
