@@ -59,7 +59,7 @@ exports[`recommended blog widget component render with very long title 1`] = `
             data-testid="test-blog-post"
           >
             
-          Let’s start with a partial list of how a valid and semantic layout can improve any project:The best practices for improving layout quality...
+          Let’s start with a partial list of how a valid and semantic layout can improve any project:The best practices for improving layout quality on your websiteThe best...
         
           </p>
         </nuxtlink-stub>

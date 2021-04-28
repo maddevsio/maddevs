@@ -53,7 +53,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                   to="/blog/author//"
                 >
                   <div
-                    class="blog-post__none-image light"
+                    class="blog-post__author-none-image light"
                   />
                    
                   <div
@@ -61,21 +61,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                   >
                     <p
                       class="blog-post__author-name"
+                      title="Maddevs"
                     >
                       
       Maddevs
     
                     </p>
                      
-                    <div
-                      class="blog-post__data-of-creation"
+                    <span
+                      class="blog-post__author-position"
+                      title=""
                     >
-                      <span
-                        class="blog-post__author-title"
-                      >
-                        
-                      </span>
-                    </div>
+                      
+                    </span>
                   </div>
                 </nuxtlink-stub>
                  
@@ -193,7 +191,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          Hello, everyone!Today, I would like to introduce you to the world of application design.Designing applications can be called a...
+          Hello, everyone!Today, I would like to introduce you to the world of application design.Designing applications can be called a multidisciplinary task, and it includes:I...
         
                     </p>
                   </nuxtlink-stub>
@@ -234,7 +232,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       to="/blog/author//"
                     >
                       <div
-                        class="blog-post__none-image light"
+                        class="blog-post__author-none-image light"
                       />
                        
                       <div
@@ -242,21 +240,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       >
                         <p
                           class="blog-post__author-name"
+                          title="Maddevs"
                         >
                           
       Maddevs
     
                         </p>
                          
-                        <div
-                          class="blog-post__data-of-creation"
+                        <span
+                          class="blog-post__author-position"
+                          title=""
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </nuxtlink-stub>
                   </div>
@@ -329,7 +325,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          This is a story on how to not spend even a penny by using three ETA (estimated time of arrival) services instead of one. Everything is...
+          This is a story on how to not spend even a penny by using three ETA (estimated time of arrival) services instead of one. Everything is based on my personal experience...
         
                     </p>
                   </nuxtlink-stub>
@@ -370,7 +366,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       to="/blog/author//"
                     >
                       <div
-                        class="blog-post__none-image light"
+                        class="blog-post__author-none-image light"
                       />
                        
                       <div
@@ -378,21 +374,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       >
                         <p
                           class="blog-post__author-name"
+                          title="Maddevs"
                         >
                           
       Maddevs
     
                         </p>
                          
-                        <div
-                          class="blog-post__data-of-creation"
+                        <span
+                          class="blog-post__author-position"
+                          title=""
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </nuxtlink-stub>
                   </div>
@@ -465,7 +459,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          So, this is the second part of my interaction with Glitch.com and in this part, we will talk about deployment methods, both standard and...
+          So, this is the second part of my interaction with Glitch.com and in this part, we will talk about deployment methods, both standard and non-standard (which suits me...
         
                     </p>
                   </nuxtlink-stub>
@@ -506,7 +500,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       to="/blog/author//"
                     >
                       <div
-                        class="blog-post__none-image light"
+                        class="blog-post__author-none-image light"
                       />
                        
                       <div
@@ -514,21 +508,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       >
                         <p
                           class="blog-post__author-name"
+                          title="Maddevs"
                         >
                           
       Maddevs
     
                         </p>
                          
-                        <div
-                          class="blog-post__data-of-creation"
+                        <span
+                          class="blog-post__author-position"
+                          title=""
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </nuxtlink-stub>
                   </div>
@@ -601,7 +593,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          This story is about pain, agony, and denial of ready-made solutions. It is also about changes that improve the code’s readability and help...
+          This story is about pain, agony, and denial of ready-made solutions. It is also about changes that improve the code’s readability and help the development team stay...
         
                     </p>
                   </nuxtlink-stub>
@@ -642,7 +634,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       to="/blog/author//"
                     >
                       <div
-                        class="blog-post__none-image light"
+                        class="blog-post__author-none-image light"
                       />
                        
                       <div
@@ -650,21 +642,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       >
                         <p
                           class="blog-post__author-name"
+                          title="Maddevs"
                         >
                           
       Maddevs
     
                         </p>
                          
-                        <div
-                          class="blog-post__data-of-creation"
+                        <span
+                          class="blog-post__author-position"
+                          title=""
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </nuxtlink-stub>
                   </div>
@@ -737,7 +727,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          I want to tell you this story because I wasted about 14 hours to realize how to achieve it correctly.NB!: Sometimes working with Elastic...
+          I want to tell you this story because I wasted about 14 hours to realize how to achieve it correctly.NB!: Sometimes working with Elastic Beanstalk can be like this.
         
                     </p>
                   </nuxtlink-stub>
@@ -778,7 +768,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       to="/blog/author//"
                     >
                       <div
-                        class="blog-post__none-image light"
+                        class="blog-post__author-none-image light"
                       />
                        
                       <div
@@ -786,21 +776,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       >
                         <p
                           class="blog-post__author-name"
+                          title="Maddevs"
                         >
                           
       Maddevs
     
                         </p>
                          
-                        <div
-                          class="blog-post__data-of-creation"
+                        <span
+                          class="blog-post__author-position"
+                          title=""
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </nuxtlink-stub>
                   </div>
@@ -873,7 +861,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          Let’s take a look at the minimum requirements for web developers in the 2000s. In the good old days, you could build more or less working...
+          Let’s take a look at the minimum requirements for web developers in the 2000s. In the good old days, you could build more or less working website with a backend...
         
                     </p>
                   </nuxtlink-stub>
@@ -914,7 +902,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       to="/blog/author//"
                     >
                       <div
-                        class="blog-post__none-image light"
+                        class="blog-post__author-none-image light"
                       />
                        
                       <div
@@ -922,21 +910,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       >
                         <p
                           class="blog-post__author-name"
+                          title="Maddevs"
                         >
                           
       Maddevs
     
                         </p>
                          
-                        <div
-                          class="blog-post__data-of-creation"
+                        <span
+                          class="blog-post__author-position"
+                          title=""
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </nuxtlink-stub>
                   </div>
@@ -1009,7 +995,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          Logs are recorded events that your software produces. They are essential to every IT project since they provide the context to help...
+          Logs are recorded events that your software produces. They are essential to every IT project since they provide the context to help debugging and solving problems in the...
         
                     </p>
                   </nuxtlink-stub>
@@ -1050,7 +1036,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       to="/blog/author//"
                     >
                       <div
-                        class="blog-post__none-image light"
+                        class="blog-post__author-none-image light"
                       />
                        
                       <div
@@ -1058,21 +1044,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       >
                         <p
                           class="blog-post__author-name"
+                          title="Maddevs"
                         >
                           
       Maddevs
     
                         </p>
                          
-                        <div
-                          class="blog-post__data-of-creation"
+                        <span
+                          class="blog-post__author-position"
+                          title=""
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </nuxtlink-stub>
                   </div>
@@ -1145,7 +1129,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          One fine day, it became necessary to finish the project for an international mining company. The workers regularly complained about the...
+          One fine day, it became necessary to finish the project for an international mining company. The workers regularly complained about the quality of the… uh… internets in...
         
                     </p>
                   </nuxtlink-stub>
@@ -1186,7 +1170,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       to="/blog/author//"
                     >
                       <div
-                        class="blog-post__none-image light"
+                        class="blog-post__author-none-image light"
                       />
                        
                       <div
@@ -1194,21 +1178,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       >
                         <p
                           class="blog-post__author-name"
+                          title="Maddevs"
                         >
                           
       Maddevs
     
                         </p>
                          
-                        <div
-                          class="blog-post__data-of-creation"
+                        <span
+                          class="blog-post__author-position"
+                          title=""
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </nuxtlink-stub>
                   </div>
@@ -1281,7 +1263,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          In the previous article, I talked about Event Delegation in React. On this one, I will tell you how you can use this pattern in the world...
+          In the previous article, I talked about Event Delegation in React. On this one, I will tell you how you can use this pattern in the world of events in order to...
         
                     </p>
                   </nuxtlink-stub>
@@ -1322,7 +1304,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       to="/blog/author//"
                     >
                       <div
-                        class="blog-post__none-image light"
+                        class="blog-post__author-none-image light"
                       />
                        
                       <div
@@ -1330,21 +1312,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       >
                         <p
                           class="blog-post__author-name"
+                          title="Maddevs"
                         >
                           
       Maddevs
     
                         </p>
                          
-                        <div
-                          class="blog-post__data-of-creation"
+                        <span
+                          class="blog-post__author-position"
+                          title=""
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </nuxtlink-stub>
                   </div>
@@ -1417,7 +1397,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          Unfortunately, in our modern world, there is no way to delve into the little things and how frameworks work.We use many tools and like how...
+          Unfortunately, in our modern world, there is no way to delve into the little things and how frameworks work.We use many tools and like how easy it is to work with them....
         
                     </p>
                   </nuxtlink-stub>
@@ -1458,7 +1438,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       to="/blog/author//"
                     >
                       <div
-                        class="blog-post__none-image light"
+                        class="blog-post__author-none-image light"
                       />
                        
                       <div
@@ -1466,21 +1446,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       >
                         <p
                           class="blog-post__author-name"
+                          title="Maddevs"
                         >
                           
       Maddevs
     
                         </p>
                          
-                        <div
-                          class="blog-post__data-of-creation"
+                        <span
+                          class="blog-post__author-position"
+                          title=""
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </nuxtlink-stub>
                   </div>
@@ -1553,7 +1531,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          For the first time, it was conceptualized and proposed by Grady Booch in 1991. It is one of the main elements of extreme programming...
+          For the first time, it was conceptualized and proposed by Grady Booch in 1991. It is one of the main elements of extreme programming practice.I already have such a...
         
                     </p>
                   </nuxtlink-stub>
@@ -1594,7 +1572,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       to="/blog/author//"
                     >
                       <div
-                        class="blog-post__none-image light"
+                        class="blog-post__author-none-image light"
                       />
                        
                       <div
@@ -1602,21 +1580,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       >
                         <p
                           class="blog-post__author-name"
+                          title="Maddevs"
                         >
                           
       Maddevs
     
                         </p>
                          
-                        <div
-                          class="blog-post__data-of-creation"
+                        <span
+                          class="blog-post__author-position"
+                          title=""
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </nuxtlink-stub>
                   </div>
@@ -1689,7 +1665,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          Mad-fake-slack is primarily a tool for testing your bot, without using real slack servers. In the future, it will be a powerful tool for...
+          Mad-fake-slack is primarily a tool for testing your bot, without using real slack servers. In the future, it will be a powerful tool for integration and e2e tests. As...
         
                     </p>
                   </nuxtlink-stub>
@@ -1730,7 +1706,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       to="/blog/author//"
                     >
                       <div
-                        class="blog-post__none-image light"
+                        class="blog-post__author-none-image light"
                       />
                        
                       <div
@@ -1738,21 +1714,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       >
                         <p
                           class="blog-post__author-name"
+                          title="Maddevs"
                         >
                           
       Maddevs
     
                         </p>
                          
-                        <div
-                          class="blog-post__data-of-creation"
+                        <span
+                          class="blog-post__author-position"
+                          title=""
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </nuxtlink-stub>
                   </div>
@@ -1825,7 +1799,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          Any business always strives to effectively use the time and skills of its employees since it directly affects the profit. Therefore, a...
+          Any business always strives to effectively use the time and skills of its employees since it directly affects the profit. Therefore, a business intends to solve...
         
                     </p>
                   </nuxtlink-stub>
@@ -1866,7 +1840,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       to="/blog/author//"
                     >
                       <div
-                        class="blog-post__none-image light"
+                        class="blog-post__author-none-image light"
                       />
                        
                       <div
@@ -1874,21 +1848,19 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                       >
                         <p
                           class="blog-post__author-name"
+                          title="Maddevs"
                         >
                           
       Maddevs
     
                         </p>
                          
-                        <div
-                          class="blog-post__data-of-creation"
+                        <span
+                          class="blog-post__author-position"
+                          title=""
                         >
-                          <span
-                            class="blog-post__author-title"
-                          >
-                            
-                          </span>
-                        </div>
+                          
+                        </span>
                       </div>
                     </nuxtlink-stub>
                   </div>
