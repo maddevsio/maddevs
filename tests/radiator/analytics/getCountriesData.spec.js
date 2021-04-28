@@ -21,6 +21,14 @@ jest.mock('../../../radiator/analytics/getAnalytics', () => jest.fn(() => new Pr
             ],
           },
           {
+            dimensions: ['(not set)'],
+            metrics: [
+              {
+                values: [3],
+              },
+            ],
+          },
+          {
             dimensions: ['Russia'],
             metrics: [
               {
@@ -68,16 +76,19 @@ describe('Radiator > analytics > getCountriesData', () => {
         percentage: 25,
         title: 'United States',
         value: 50,
+        rate: 'neutral',
       },
       {
         percentage: 15,
         title: 'Russia',
         value: 30,
+        rate: 'neutral',
       },
       {
         percentage: 5,
         title: 'France',
         value: 10,
+        rate: 'neutral',
       },
     ])
   })
