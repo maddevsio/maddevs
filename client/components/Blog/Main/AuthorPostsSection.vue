@@ -27,7 +27,7 @@
             class="author-posts__single-post"
           >
             <div class="single-post__wrapper">
-              <RecommendedBlogWidget
+              <PostCard
                 :to="postLink(post.uid)"
                 :post="post"
                 :author="blogAuthor"
@@ -65,7 +65,7 @@ import { mapGetters, mapActions } from 'vuex'
 import FeaturedPost from '@/components/Blog/shared/FeaturedPost'
 import SkeletonFeaturedPost from '@/components/Blog/skeletons/SkeletonFeaturedPost'
 import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
-import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
+import PostCard from '@/components/Blog/shared/PostCard'
 import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
 import initializeLazyLoad from '@/helpers/lazyLoad'
 
@@ -75,7 +75,7 @@ export default {
     FeaturedPost,
     SkeletonFeaturedPost,
     SkeletonBlogWidget,
-    RecommendedBlogWidget,
+    PostCard,
     LoadMoreButton,
   },
 

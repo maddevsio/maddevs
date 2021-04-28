@@ -66,7 +66,7 @@
           class="blog-post__recommended-post"
           data-testid="test-recommended-post"
         >
-          <RecommendedBlogWidget
+          <PostCard
             :to="getRecommendedPostUrl(post.uid, post.data.post_author.uid)"
             :post="post"
             :author="findAuthor(post.data.post_author.id, allAuthors)"
@@ -103,7 +103,7 @@ import TableOfContents from '@/components/Blog/Post/TableOfContents'
 import BlogHeader from '@/components/Blog/header/Blog'
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity'
 import CustomerUniversityNavigation from '@/components/Blog/Post/CustomerUniversityNavigation'
-import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
+import PostCard from '@/components/Blog/shared/PostCard'
 import initializeLazyLoad from '@/helpers/lazyLoad'
 
 import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
@@ -113,7 +113,7 @@ export default {
   name: 'PostView',
   components: {
     SlicesBlock,
-    RecommendedBlogWidget,
+    PostCard,
     TableOfContents,
     BlogHeader,
     CustomerUniversityHeader,

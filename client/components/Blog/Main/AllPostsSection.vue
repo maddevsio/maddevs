@@ -46,7 +46,7 @@
             data-testid="test-single-post"
             class="single-post__wrapper"
           >
-            <RecommendedBlogWidget
+            <PostCard
               :post="post"
               :author="findAuthor(post.data.post_author.id, allAuthors)"
               class-name="filtered-post"
@@ -67,7 +67,7 @@
 <script>
 import { mapActions, mapGetters } from 'vuex'
 import Simplebar from 'simplebar-vue'
-import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
+import PostCard from '@/components/Blog/shared/PostCard'
 import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
 import initializeLazyLoad from '@/helpers/lazyLoad'
 
@@ -77,7 +77,7 @@ export default {
   name: 'AllPostsSection',
   components: {
     Simplebar,
-    RecommendedBlogWidget,
+    PostCard,
     LoadMoreButton,
   },
 
