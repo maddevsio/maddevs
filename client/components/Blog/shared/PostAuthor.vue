@@ -18,16 +18,14 @@
     </div>
     <div
       v-else
-      class="blog-post__none-image"
+      class="blog-post__author-none-image"
       :class="theme"
     />
     <div class="blog-post__author-info">
       <p class="blog-post__author-name">
         {{ shortTitle }}
       </p>
-      <div class="blog-post__data-of-creation">
-        <span class="blog-post__author-title">{{ position }}</span>
-      </div>
+      <span class="blog-post__author-position">{{ position }}</span>
     </div>
   </NuxtLink>
 </template>
@@ -83,42 +81,19 @@ export default {
 
 <style scoped lang="scss">
 @import '../../../assets/styles/vars';
-.blog-post {
-  &__author {
-    display: flex;
-    align-items: center;
-    margin-right: 24px;
-  }
+.blog-post__author {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
 
-  &__author-info {
-    margin-left: 9px;
-  }
-
-  &__author-name {
-    color: $text-color--white;
-  }
-
-  &__author-title,
-  &__author-name {
-    display: block;
-    font-size: 13px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    line-height: 129%;
-    letter-spacing: -0.02em;
-  }
-
-  &__author-name {
-    margin-bottom: 4px;
-  }
-
-  &__author-image {
+  &-image {
     object-fit: cover;
   }
 
-  &__author-image,
-  &__none-image {
+  &-image,
+  &-none-image {
     width: 36px;
+    min-width: 36px;
     height: 36px;
     border-radius: 50%;
     overflow: hidden;
@@ -138,7 +113,26 @@ export default {
     }
   }
 
-  &__author-title {
+  &-info {
+    margin-left: 9px;
+  }
+
+  &-name,
+  &-position {
+    display: block;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+  }
+
+  &-name {
+    margin-bottom: 4px;
+    color: $text-color--white;
+  }
+
+  &-position {
     color: $text-color--grey-pale;
   }
 }

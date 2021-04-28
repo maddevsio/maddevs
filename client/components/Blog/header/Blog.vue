@@ -90,6 +90,7 @@ export default {
 
     /deep/ .blog-post__author-image {
       width: 30px;
+      min-width: 30px;
       height: 30px;
     }
   }

@@ -164,6 +164,7 @@ export default {
     }
     /deep/ .blog-post__author-image {
       width: 40px;
+      min-width: 40px;
       height: 40px;
     }
   }
@@ -208,6 +209,7 @@ export default {
       }
       /deep/ .blog-post__author-image {
         width: 30px;
+        min-width: 30px;
         height: 30px;
       }
     }

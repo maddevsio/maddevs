@@ -50,7 +50,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                   to="/blog/author//"
                 >
                   <div
-                    class="blog-post__none-image light"
+                    class="blog-post__author-none-image light"
                   />
                    
                   <div
@@ -64,15 +64,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                     </p>
                      
-                    <div
-                      class="blog-post__data-of-creation"
+                    <span
+                      class="blog-post__author-position"
                     >
-                      <span
-                        class="blog-post__author-title"
-                      >
-                        
-                      </span>
-                    </div>
+                      
+                    </span>
                   </div>
                 </nuxtlink-stub>
                  
@@ -213,7 +209,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__none-image light"
+                      class="blog-post__author-none-image light"
                     />
                      
                     <div
@@ -227,15 +223,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                       </p>
                        
-                      <div
-                        class="blog-post__data-of-creation"
+                      <span
+                        class="blog-post__author-position"
                       >
-                        <span
-                          class="blog-post__author-title"
-                        >
-                          
-                        </span>
-                      </div>
+                        
+                      </span>
                     </div>
                   </nuxtlink-stub>
                 </div>
@@ -335,7 +327,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__none-image light"
+                      class="blog-post__author-none-image light"
                     />
                      
                     <div
@@ -349,15 +341,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                       </p>
                        
-                      <div
-                        class="blog-post__data-of-creation"
+                      <span
+                        class="blog-post__author-position"
                       >
-                        <span
-                          class="blog-post__author-title"
-                        >
-                          
-                        </span>
-                      </div>
+                        
+                      </span>
                     </div>
                   </nuxtlink-stub>
                 </div>
@@ -457,7 +445,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__none-image light"
+                      class="blog-post__author-none-image light"
                     />
                      
                     <div
@@ -471,15 +459,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                       </p>
                        
-                      <div
-                        class="blog-post__data-of-creation"
+                      <span
+                        class="blog-post__author-position"
                       >
-                        <span
-                          class="blog-post__author-title"
-                        >
-                          
-                        </span>
-                      </div>
+                        
+                      </span>
                     </div>
                   </nuxtlink-stub>
                 </div>
@@ -579,7 +563,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__none-image light"
+                      class="blog-post__author-none-image light"
                     />
                      
                     <div
@@ -593,15 +577,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                       </p>
                        
-                      <div
-                        class="blog-post__data-of-creation"
+                      <span
+                        class="blog-post__author-position"
                       >
-                        <span
-                          class="blog-post__author-title"
-                        >
-                          
-                        </span>
-                      </div>
+                        
+                      </span>
                     </div>
                   </nuxtlink-stub>
                 </div>
@@ -701,7 +681,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__none-image light"
+                      class="blog-post__author-none-image light"
                     />
                      
                     <div
@@ -715,15 +695,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                       </p>
                        
-                      <div
-                        class="blog-post__data-of-creation"
+                      <span
+                        class="blog-post__author-position"
                       >
-                        <span
-                          class="blog-post__author-title"
-                        >
-                          
-                        </span>
-                      </div>
+                        
+                      </span>
                     </div>
                   </nuxtlink-stub>
                 </div>
@@ -823,7 +799,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__none-image light"
+                      class="blog-post__author-none-image light"
                     />
                      
                     <div
@@ -837,15 +813,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                       </p>
                        
-                      <div
-                        class="blog-post__data-of-creation"
+                      <span
+                        class="blog-post__author-position"
                       >
-                        <span
-                          class="blog-post__author-title"
-                        >
-                          
-                        </span>
-                      </div>
+                        
+                      </span>
                     </div>
                   </nuxtlink-stub>
                 </div>
@@ -945,7 +917,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__none-image light"
+                      class="blog-post__author-none-image light"
                     />
                      
                     <div
@@ -959,15 +931,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                       </p>
                        
-                      <div
-                        class="blog-post__data-of-creation"
+                      <span
+                        class="blog-post__author-position"
                       >
-                        <span
-                          class="blog-post__author-title"
-                        >
-                          
-                        </span>
-                      </div>
+                        
+                      </span>
                     </div>
                   </nuxtlink-stub>
                 </div>
@@ -1067,7 +1035,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__none-image light"
+                      class="blog-post__author-none-image light"
                     />
                      
                     <div
@@ -1081,15 +1049,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                       </p>
                        
-                      <div
-                        class="blog-post__data-of-creation"
+                      <span
+                        class="blog-post__author-position"
                       >
-                        <span
-                          class="blog-post__author-title"
-                        >
-                          
-                        </span>
-                      </div>
+                        
+                      </span>
                     </div>
                   </nuxtlink-stub>
                 </div>
@@ -1189,7 +1153,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__none-image light"
+                      class="blog-post__author-none-image light"
                     />
                      
                     <div
@@ -1203,15 +1167,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                       </p>
                        
-                      <div
-                        class="blog-post__data-of-creation"
+                      <span
+                        class="blog-post__author-position"
                       >
-                        <span
-                          class="blog-post__author-title"
-                        >
-                          
-                        </span>
-                      </div>
+                        
+                      </span>
                     </div>
                   </nuxtlink-stub>
                 </div>
@@ -1311,7 +1271,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__none-image light"
+                      class="blog-post__author-none-image light"
                     />
                      
                     <div
@@ -1325,15 +1285,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                       </p>
                        
-                      <div
-                        class="blog-post__data-of-creation"
+                      <span
+                        class="blog-post__author-position"
                       >
-                        <span
-                          class="blog-post__author-title"
-                        >
-                          
-                        </span>
-                      </div>
+                        
+                      </span>
                     </div>
                   </nuxtlink-stub>
                 </div>
@@ -1433,7 +1389,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__none-image light"
+                      class="blog-post__author-none-image light"
                     />
                      
                     <div
@@ -1447,15 +1403,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                       </p>
                        
-                      <div
-                        class="blog-post__data-of-creation"
+                      <span
+                        class="blog-post__author-position"
                       >
-                        <span
-                          class="blog-post__author-title"
-                        >
-                          
-                        </span>
-                      </div>
+                        
+                      </span>
                     </div>
                   </nuxtlink-stub>
                 </div>
@@ -1555,7 +1507,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__none-image light"
+                      class="blog-post__author-none-image light"
                     />
                      
                     <div
@@ -1569,15 +1521,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                       </p>
                        
-                      <div
-                        class="blog-post__data-of-creation"
+                      <span
+                        class="blog-post__author-position"
                       >
-                        <span
-                          class="blog-post__author-title"
-                        >
-                          
-                        </span>
-                      </div>
+                        
+                      </span>
                     </div>
                   </nuxtlink-stub>
                 </div>
@@ -1677,7 +1625,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                     to="/blog/author//"
                   >
                     <div
-                      class="blog-post__none-image light"
+                      class="blog-post__author-none-image light"
                     />
                      
                     <div
@@ -1691,15 +1639,11 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
     
                       </p>
                        
-                      <div
-                        class="blog-post__data-of-creation"
+                      <span
+                        class="blog-post__author-position"
                       >
-                        <span
-                          class="blog-post__author-title"
-                        >
-                          
-                        </span>
-                      </div>
+                        
+                      </span>
                     </div>
                   </nuxtlink-stub>
                 </div>

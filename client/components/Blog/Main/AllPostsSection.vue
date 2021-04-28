@@ -377,10 +377,11 @@ export default {
 
         &__author-image {
           width: 20px;
+          min-width: 20px;
           height: 20px;
         }
 
-        &__author-title,
+        &__author-position,
         &__author-name {
           font-size: 11px;
           line-height: 16px;
