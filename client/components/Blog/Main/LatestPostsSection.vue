@@ -101,6 +101,7 @@ export default {
     .single-post {
       &__wrapper {
         padding: 0 10px;
+        height: 100%;
 
         .banner {
           text-align: center;

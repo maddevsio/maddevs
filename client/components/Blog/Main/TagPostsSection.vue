@@ -144,6 +144,7 @@ export default {
       }
       .single-post__wrapper {
         padding: 0 10px;
+        height: 100%;
         /deep/ .blog-post__author-name {
           color: $text-color--black;
         }

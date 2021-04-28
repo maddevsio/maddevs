@@ -141,6 +141,8 @@ export default {
 <style lang="scss" scoped>
 @import '../../../assets/styles/_vars';
 .blog-post {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   * {
