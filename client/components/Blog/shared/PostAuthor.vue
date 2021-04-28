@@ -18,7 +18,7 @@
     </div>
     <div
       v-else
-      class="blog-post__none-image"
+      class="blog-post__author-none-image"
       :class="theme"
     />
     <div class="blog-post__author-info">
@@ -87,26 +87,25 @@ export default {
 
 <style scoped lang="scss">
 @import '../../../assets/styles/vars';
-.blog-post {
-  &__author {
-    display: inline-flex;
-    align-items: center;
-    max-width: 100%;
-    overflow: hidden;
-  }
 
-  &__author-info {
+.blog-post__author {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+
+  &-info {
     flex: 1;
     margin-left: 9px;
     overflow: hidden;
   }
 
-  &__author-image {
+  &-image {
     object-fit: cover;
   }
 
-  &__author-image,
-  &__none-image {
+  &-image,
+  &-none-image {
     width: 36px;
     min-width: 36px;
     height: 36px;
@@ -128,8 +127,8 @@ export default {
     }
   }
 
-  &__author-name,
-  &__author-position {
+  &-name,
+  &-position {
     display: block;
     font-size: 13px;
     font-family: 'Inter', sans-serif;
@@ -141,12 +140,12 @@ export default {
     overflow: hidden;
   }
 
-  &__author-name {
+  &-name {
     color: $text-color--white;
     margin-bottom: 4px;
   }
 
-  &__author-position {
+  &-position {
     color: $text-color--grey-pale;
   }
 }
