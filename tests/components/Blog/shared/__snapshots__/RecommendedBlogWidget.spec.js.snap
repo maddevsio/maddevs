@@ -21,7 +21,9 @@ exports[`recommended blog widget component render with very long title 1`] = `
         />
       </nuxtlink-stub>
        
-      <div>
+      <div
+        class="blog-post__content"
+      >
         <nuxtlink-stub
           to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
         >
@@ -57,37 +59,41 @@ exports[`recommended blog widget component render with very long title 1`] = `
             data-testid="test-blog-post"
           >
             
-          Let’s start with a partial list of how a valid and semantic layout can improve any project:The best practices for improving layout quality on your...
+          Let’s start with a partial list of how a valid and semantic layout can improve any project:The best practices for improving layout quality...
         
           </p>
         </nuxtlink-stub>
          
         <div
-          class="blog-post__meta"
+          class="blog-post__meta-wrapper"
         >
-          <span
-            class="created-at"
-          >
-            Aug 25, 2020
-          </span>
-           
-          <nuxtlink-stub
-            class="post-tag light light"
-            event="click"
-            to="/blog/tag/markup/"
+          <div
+            class="blog-post__meta"
           >
             <span
-              class="tag"
-              data-testid="test-tag"
+              class="created-at"
             >
-              
+              Aug 25, 2020
+            </span>
+             
+            <nuxtlink-stub
+              class="post-tag light light"
+              event="click"
+              to="/blog/tag/markup/"
+            >
+              <span
+                class="tag"
+                data-testid="test-tag"
+              >
+                
     markup
   
-            </span>
-          </nuxtlink-stub>
+              </span>
+            </nuxtlink-stub>
+          </div>
+           
+          <!---->
         </div>
-         
-        <!---->
       </div>
     </div>
   </div>
@@ -115,7 +121,9 @@ exports[`recommended blog widget component should render correctly with slot 1`]
         />
       </nuxtlink-stub>
        
-      <div>
+      <div
+        class="blog-post__content"
+      >
         <nuxtlink-stub
           to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
         >
@@ -157,31 +165,35 @@ exports[`recommended blog widget component should render correctly with slot 1`]
         </nuxtlink-stub>
          
         <div
-          class="blog-post__meta"
+          class="blog-post__meta-wrapper"
         >
-          <span
-            class="created-at"
-          >
-            Aug 25, 2020
-          </span>
-           
-          <nuxtlink-stub
-            class="post-tag light light"
-            event="click"
-            to="/blog/tag/markup/"
+          <div
+            class="blog-post__meta"
           >
             <span
-              class="tag"
-              data-testid="test-tag"
+              class="created-at"
             >
-              
+              Aug 25, 2020
+            </span>
+             
+            <nuxtlink-stub
+              class="post-tag light light"
+              event="click"
+              to="/blog/tag/markup/"
+            >
+              <span
+                class="tag"
+                data-testid="test-tag"
+              >
+                
     markup
   
-            </span>
-          </nuxtlink-stub>
+              </span>
+            </nuxtlink-stub>
+          </div>
+           
+          <!---->
         </div>
-         
-        <!---->
       </div>
     </div>
   </div>

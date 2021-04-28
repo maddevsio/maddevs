@@ -49,7 +49,9 @@ exports[`TagPostsSection component should render correctly 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/tag/blog-tag/how-to-configure-ssg-and-ssr-on-nuxt/"
                   >
@@ -85,37 +87,41 @@ exports[`TagPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          When I started learning Vue, I was pleasantly surprised by this framework. It turned out to be very simple and easy to learn. Its API had enough...
+          When I started learning Vue, I was pleasantly surprised by this framework. It turned out to be very simple and easy to learn. Its API had...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Apr 20, 2021
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event=""
-                      to="/blog/tag/blog-tag/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Apr 20, 2021
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event=""
+                        to="/blog/tag/blog-tag/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Blog tag
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -147,7 +153,9 @@ exports[`TagPostsSection component should render correctly 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/tag/blog-tag/amazing-template-for-react-application/"
                   >
@@ -183,37 +191,41 @@ exports[`TagPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          When creating a new React project, I faced the same problems every time. I need to build it manually because \`create-react-app\` do not provide...
+          When creating a new React project, I faced the same problems every time. I need to build it manually because \`create-react-app\` do not...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Apr 01, 2021
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event=""
-                      to="/blog/tag/blog-tag/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Apr 01, 2021
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event=""
+                        to="/blog/tag/blog-tag/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Blog tag
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -245,7 +257,9 @@ exports[`TagPostsSection component should render correctly 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/tag/blog-tag/boilerplate-to-set-up-a-vue-project/"
                   >
@@ -281,37 +295,41 @@ exports[`TagPostsSection component should render correctly 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          When starting a project in Vue, I constantly faced the fact that I had to set up the store again and again, add the basic structure of styles, look...
+          When starting a project in Vue, I constantly faced the fact that I had to set up the store again and again, add the basic structure of...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Mar 29, 2021
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event=""
-                      to="/blog/tag/blog-tag/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Mar 29, 2021
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event=""
+                        to="/blog/tag/blog-tag/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Blog tag
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>

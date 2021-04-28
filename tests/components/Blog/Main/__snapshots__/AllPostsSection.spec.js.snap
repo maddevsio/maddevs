@@ -245,7 +245,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/software-architecture-design/"
                   >
@@ -281,37 +283,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          Hello, everyone!Today, I would like to introduce you to the world of application design.Designing applications can be called a multidisciplinary...
+          Hello, everyone!Today, I would like to introduce you to the world of application design.Designing applications can be called a...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Dec 17, 2020
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/backend-development/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Dec 17, 2020
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/backend-development/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Backend development
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -345,7 +351,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/how-to-make-three-paid-eta-services-one-free/"
                   >
@@ -381,37 +389,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          This is a story on how to not spend even a penny by using three ETA (estimated time of arrival) services instead of one. Everything is based on my...
+          This is a story on how to not spend even a penny by using three ETA (estimated time of arrival) services instead of one. Everything is...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Dec 17, 2020
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/mobile-development/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Dec 17, 2020
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/mobile-development/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Mobile Development
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -445,7 +457,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/web-app-deploy-to-glitch/"
                   >
@@ -481,37 +495,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          So, this is the second part of my interaction with Glitch.com and in this part, we will talk about deployment methods, both standard and non-standard...
+          So, this is the second part of my interaction with Glitch.com and in this part, we will talk about deployment methods, both standard and...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Dec 01, 2020
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/frontend-development/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Dec 01, 2020
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/frontend-development/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Frontend development
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -545,7 +563,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/effective-refactoring-of-heavy-database-interface/"
                   >
@@ -581,37 +601,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          This story is about pain, agony, and denial of ready-made solutions. It is also about changes that improve the code’s readability and help the...
+          This story is about pain, agony, and denial of ready-made solutions. It is also about changes that improve the code’s readability and help...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Jul 14, 2020
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/backend-development/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Jul 14, 2020
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/backend-development/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Backend development
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -645,7 +669,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/running-geo-django-on-elasticbeanstalk/"
                   >
@@ -681,37 +707,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          I want to tell you this story because I wasted about 14 hours to realize how to achieve it correctly.NB!: Sometimes working with Elastic Beanstalk...
+          I want to tell you this story because I wasted about 14 hours to realize how to achieve it correctly.NB!: Sometimes working with Elastic...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Jun 11, 2020
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/backend-development/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Jun 11, 2020
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/backend-development/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Backend development
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -745,7 +775,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/guaranteed-delivery-with-grpc-streams/"
                   >
@@ -781,37 +813,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          Let’s take a look at the minimum requirements for web developers in the 2000s. In the good old days, you could build more or less working website...
+          Let’s take a look at the minimum requirements for web developers in the 2000s. In the good old days, you could build more or less working...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Nov 26, 2019
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/backend-development/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Nov 26, 2019
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/backend-development/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Backend development
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -845,7 +881,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/how-to-start-with-logging-in-golang-projects-part-1/"
                   >
@@ -881,37 +919,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          Logs are recorded events that your software produces. They are essential to every IT project since they provide the context to help debugging and...
+          Logs are recorded events that your software produces. They are essential to every IT project since they provide the context to help...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Nov 05, 2019
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/backend-development/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Nov 05, 2019
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/backend-development/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Backend development
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -945,7 +987,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/how-to-start-developing-for-raspberry-pi-with-qt/"
                   >
@@ -981,37 +1025,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          One fine day, it became necessary to finish the project for an international mining company. The workers regularly complained about the quality of...
+          One fine day, it became necessary to finish the project for an international mining company. The workers regularly complained about the...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Oct 21, 2019
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/hardware/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Oct 21, 2019
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/hardware/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Hardware
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -1045,7 +1093,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/a-bit-about-event-delegation-in-pure-js/"
                   >
@@ -1081,37 +1131,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          In the previous article, I talked about Event Delegation in React. On this one, I will tell you how you can use this pattern in the world of events...
+          In the previous article, I talked about Event Delegation in React. On this one, I will tell you how you can use this pattern in the world...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Oct 10, 2019
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/frontend-development/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Oct 10, 2019
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/frontend-development/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Frontend development
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -1145,7 +1199,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/a-bit-about-event-delegation-in-react/"
                   >
@@ -1181,37 +1237,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          Unfortunately, in our modern world, there is no way to delve into the little things and how frameworks work.We use many tools and like how easy it is...
+          Unfortunately, in our modern world, there is no way to delve into the little things and how frameworks work.We use many tools and like how...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Sep 30, 2019
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/frontend-development/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Sep 30, 2019
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/frontend-development/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Frontend development
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -1245,7 +1305,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/best-ci-for-js-projects-with-puppeteer-tests/"
                   >
@@ -1281,37 +1343,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          For the first time, it was conceptualized and proposed by Grady Booch in 1991. It is one of the main elements of extreme programming practice.I...
+          For the first time, it was conceptualized and proposed by Grady Booch in 1991. It is one of the main elements of extreme programming...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Jul 19, 2019
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/backend-development/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Jul 19, 2019
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/backend-development/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Backend development
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -1345,7 +1411,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/mad-fake-slack/"
                   >
@@ -1381,37 +1449,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          Mad-fake-slack is primarily a tool for testing your bot, without using real slack servers. In the future, it will be a powerful tool for integration...
+          Mad-fake-slack is primarily a tool for testing your bot, without using real slack servers. In the future, it will be a powerful tool for...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Jul 03, 2019
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/backend-development/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Jul 03, 2019
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/backend-development/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Backend development
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -1445,7 +1517,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/comedian-slack-standup-bot/"
                   >
@@ -1481,37 +1555,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          Any business always strives to effectively use the time and skills of its employees since it directly affects the profit. Therefore, a business...
+          Any business always strives to effectively use the time and skills of its employees since it directly affects the profit. Therefore, a...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Oct 01, 2018
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/software-development/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Oct 01, 2018
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/software-development/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Software Development 
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
@@ -1545,7 +1623,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                   />
                 </nuxtlink-stub>
                  
-                <div>
+                <div
+                  class="blog-post__content"
+                >
                   <nuxtlink-stub
                     to="/blog/best-architecture-for-the-react-project/"
                   >
@@ -1581,37 +1661,41 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
                       data-testid="test-blog-post"
                     >
                       
-          Usually, at the preparatory stages of project developers think of the project skeleton to avoid a lot of mistakes and reworks in the future.What is...
+          Usually, at the preparatory stages of project developers think of the project skeleton to avoid a lot of mistakes and reworks in the...
         
                     </p>
                   </nuxtlink-stub>
                    
                   <div
-                    class="blog-post__meta"
+                    class="blog-post__meta-wrapper"
                   >
-                    <span
-                      class="created-at"
-                    >
-                      Jul 06, 2018
-                    </span>
-                     
-                    <nuxtlink-stub
-                      class="post-tag light light"
-                      event="click"
-                      to="/blog/tag/backend-development/"
+                    <div
+                      class="blog-post__meta"
                     >
                       <span
-                        class="tag"
-                        data-testid="test-tag"
+                        class="created-at"
                       >
-                        
+                        Jul 06, 2018
+                      </span>
+                       
+                      <nuxtlink-stub
+                        class="post-tag light light"
+                        event="click"
+                        to="/blog/tag/backend-development/"
+                      >
+                        <span
+                          class="tag"
+                          data-testid="test-tag"
+                        >
+                          
     Backend development
   
-                      </span>
-                    </nuxtlink-stub>
+                        </span>
+                      </nuxtlink-stub>
+                    </div>
+                     
+                    <!---->
                   </div>
-                   
-                  <!---->
                 </div>
               </div>
             </div>
