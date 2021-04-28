@@ -17,6 +17,7 @@ function prettify(rawData) {
       title: row.dimensions[0] === '(not set)' ? 'Other' : row.dimensions[0],
       value: Number(row.metrics[0].values[0]),
       percentage: getPercentage(Number(row.metrics[0].values[0]), total, false),
+      rate: 'neutral',
     }))
     .sort((a, b) => b.value - a.value)
     .slice(0, 3)

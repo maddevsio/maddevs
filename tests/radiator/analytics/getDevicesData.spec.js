@@ -63,19 +63,19 @@ describe('Radiator > analytics > getDevicesData', () => {
     expect(getAnalytics).toHaveBeenCalledTimes(1)
     expect(data).toEqual({
       desktop: {
-        isBetter: true,
+        rate: 'good',
         previous: 125,
         title: 'desktop',
         value: 130,
       },
       mobile: {
-        isBetter: false,
+        rate: 'neutral',
         previous: 100,
         title: 'mobile',
         value: 60,
       },
       tablet: {
-        isBetter: false,
+        rate: 'neutral',
         previous: 25,
         title: 'tablet',
         value: 10,
@@ -129,13 +129,13 @@ describe('Radiator > analytics > getDevicesData', () => {
 
     expect(data).toEqual({
       desktop: {
-        isBetter: true,
+        rate: 'good',
         previous: 125,
         title: 'desktop',
         value: 130,
       },
       mobile: {
-        isBetter: false,
+        rate: 'neutral',
         previous: 100,
         title: 'mobile',
         value: 60,
