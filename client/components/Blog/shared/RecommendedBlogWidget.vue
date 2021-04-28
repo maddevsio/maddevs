@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="blog-post__wrapper"
-  >
+  <div class="blog-post__wrapper">
     <div class="blog-post">
       <NuxtLink
         :to="to || link"
@@ -15,7 +13,7 @@
           height="217"
         >
       </NuxtLink>
-      <div>
+      <div class="blog-post__content">
         <NuxtLink :to="to || link">
           <h2
             class="blog-post__title blog-post__title--short"
@@ -42,20 +40,22 @@
             {{ firstParagraph }}
           </p>
         </NuxtLink>
-        <div class="blog-post__meta">
-          <span class="created-at">{{ formattedDate }}</span>
-          <PostTag
-            v-if="post.tags && post.tags.length"
-            :tag="tag || post.tags[0]"
-            :disabled="disableTagLink"
-            class="light"
+        <div class="blog-post__meta-wrapper">
+          <div class="blog-post__meta">
+            <span class="created-at">{{ formattedDate }}</span>
+            <PostTag
+              v-if="post.tags && post.tags.length"
+              :tag="tag || post.tags[0]"
+              :disabled="disableTagLink"
+              class="light"
+            />
+          </div>
+          <PostAuthor
+            v-bind="author"
+            :disabled="disableAuthorLink"
+            theme="light"
           />
         </div>
-        <PostAuthor
-          v-bind="author"
-          :disabled="disableAuthorLink"
-          theme="light"
-        />
       </div>
     </div>
   </div>
@@ -118,7 +118,7 @@ export default {
     },
 
     firstParagraph() {
-      const limit = 150
+      const limit = 140
       const slices = this.post.data.body
       return getFirstParagraph(slices, limit)
     },
@@ -141,6 +141,8 @@ export default {
 <style lang="scss" scoped>
 @import '../../../assets/styles/_vars';
 .blog-post {
+  display: flex;
+  flex-direction: column;
   * {
     color: $text-color--black;
   }
@@ -160,7 +162,8 @@ export default {
     text-decoration: none;
   }
   &__wrapper {
-    text-decoration: none;
+    width: 100%;
+    height: 100%;
   }
   &__image {
     display: block;
@@ -172,6 +175,12 @@ export default {
       max-width: 100%;
       height: auto;
     }
+  }
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   &__title {
     font-size: 21px;
@@ -222,6 +231,10 @@ export default {
     letter-spacing: -0.035em;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   &__meta {
     display: flex;
@@ -231,7 +244,9 @@ export default {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     .created-at {
-      margin-right: 24px;
+      flex-basis: 93px;
+      margin-right: 5px;
+      white-space: nowrap;
       color: $text-color--grey;
     }
     .tag {

@@ -334,6 +334,7 @@ export default {
 
       /deep/ .blog-post {
         display: flex;
+        flex-direction: row;
         align-items: flex-start;
         margin-bottom: 18px;
 
@@ -421,9 +422,12 @@ export default {
       /deep/ .blog-post {
         &__image {
           width: 145px;
-          object-fit: cover;
-          object-position: -2px;
           height: 100%;
+          img {
+            height: 100%;
+            object-fit: cover;
+            object-position: -2px;
+          }
         }
         &__title {
           -webkit-line-clamp: 2;

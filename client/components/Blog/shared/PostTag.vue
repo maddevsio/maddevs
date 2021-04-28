@@ -50,6 +50,7 @@ export default {
 @import '../../../assets/styles/_vars';
 
 .post-tag {
+  white-space: nowrap;
   border-radius: 2px;
   padding: 4px 16px;
   transition: 0.2s;
