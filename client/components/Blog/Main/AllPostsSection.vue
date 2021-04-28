@@ -4,29 +4,25 @@
     class="filtered-posts"
   >
     <div class="container">
-      <div class="filter">
+      <div class="posts-filter">
         <Simplebar>
-          <ul class="filter-list">
+          <ul class="posts-filter__list">
             <li
               v-for="(category, i) in homePageContent.categories"
               :key="i"
-              class="filter-item__wrapper"
+              class="posts-filter__item-wrapper"
             >
-              <div class="filter-item">
+              <div class="posts-filter__item">
                 <input
                   :id="category.title"
-                  :value="category.title"
-                  :checked="postsCategory === category.title"
-                  data-testid="test-post-input"
                   type="radio"
                   name="Tag"
-                  class="radio-input"
+                  data-testid="test-post-input"
+                  :value="category.title"
+                  :checked="postsCategory === category.title"
                   @change="handleFilterChange"
                 >
-                <label
-                  :for="category.title"
-                  class="filter-label"
-                >{{ category.title }}</label>
+                <label :for="category.title">{{ category.title }}</label>
               </div>
             </li>
           </ul>
@@ -141,9 +137,83 @@ export default {
 <style lang="scss" scoped>
 @import '../../../assets/styles/_vars';
 
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
+.posts-filter {
+  margin-bottom: 48px;
+  min-width: 150px;
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    &-wrapper {
+      width: calc(16.6666% - 16px);
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    input[type="radio"] {
+      display: none;
+    }
+    label {
+      cursor: pointer;
+      box-shadow: none;
+      display: flex;
+      align-items: flex-end;
+      padding: 47px 22px 22px;
+      color: $text-color--black;
+      background-color: $bgcolor--silver;
+      font-family: 'Poppins-Medium', sans-serif;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 700;
+      min-height: 44px;
+      border-radius: 2px;
+      transition: 0.2s;
+    }
+    input[type="radio"]:checked + label {
+      border-color: $border-color--red;
+      color: $text-color--red;
+    }
+  }
+
+  /deep/ .ps__rail-x {
+    display: none;
+  }
+
+  /deep/ .simplebar-track {
+    display: none;
+  }
+
+  @media screen and (max-width: 1200px) {
+    &__list {
+      margin: 0 -4px;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    &__item {
+      width: 148px;
+      &-wrapper {
+        width: auto;
+        margin-right: 8px;
+      }
+      label {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 16px;
+        min-height: 40px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    &__item label:hover {
+      border-color: $border-color--red;
+      color: $text-color--red;
+    }
+  }
 }
 
 .filtered-posts {
