@@ -1,15 +1,30 @@
-require('dotenv').config()
-const getAnalyticsData = require('./analytics')
-const getLighthouseData = require('./lighthouse')
-const sendMessageToSlack = require('./slack')
-const getYesterday = require('./utils/getYesterday')
+const yargs = require('yargs/yargs')
+const { hideBin } = require('yargs/helpers')
+const main = require('./main')
 
-async function main() {
-  const range = getYesterday()
-  const analytics = await getAnalyticsData()
-  const lighthouse = await getLighthouseData()
+function index() {
+  const { argv } = yargs(hideBin(process.argv))
 
-  await sendMessageToSlack({ analytics, range, lighthouse })
+  const {
+    slack = false, telegram = false, period = 'day', channel,
+  } = argv
+
+  if (!slack && !telegram) {
+    throw new Error('You need to add --slack or --telegram argument')
+  }
+
+  if (period !== 'day' && period !== 'week' && period !== 'month') {
+    throw new Error(`Only allowed values for --period arg is "day(default)", "week", "month", got: ${period}`)
+  }
+
+  main({
+    slack,
+    telegram,
+    period,
+    channel,
+  })
 }
 
-module.exports = main
+index()
+
+// main()

@@ -9,9 +9,9 @@ function buildMessage({ analytics, range, lighthouse }) {
 
   return {
     blocks: [
-      header(`:calendar: Отчет радиатора по ключевым метрикам за ${range}`),
+      header(`:calendar: Отчет радиатора по ключевым метрикам за ${range.text}`),
       divider(),
-      section(`<!here> За вчера сайт <https://maddevs.io|maddevs.io> посетило *${core.users.value} пользователей*. Всего *${core.sessions.value} сессий*, средняя длительность 1 сессии составляет *${core.duration.value}*. *${core.bounceRate.value}%* пользователей закрыли сайт никак с ним не провзаимодействовав.`),
+      section(`<!here> За отчетный период сайт <https://maddevs.io|maddevs.io> посетило *${core.users.value} пользователей*. Всего *${core.sessions.value} сессий*, средняя длительность 1 сессии составляет *${core.duration.value}*. *${core.bounceRate.value}%* пользователей закрыли сайт никак с ним не провзаимодействовав.`),
       section(list(
         listItem(core.users, 'Users', 'technologist', 'difference', '', '%'),
         listItem(core.sessions, 'Sessions', 'elevator', 'difference', '', '%'),
@@ -19,7 +19,7 @@ function buildMessage({ analytics, range, lighthouse }) {
         listItem(core.duration, 'Session Duration', 'clock1', 'difference', '', '%'),
       )),
       divider(),
-      section('Сайт просматривают на разных устройствах. Вот соотношение за вчерашний день:'),
+      section('Сайт просматривают на разных устройствах. Соотношение:'),
       section(list(
         listItem(devices.desktop, 'Desktop', 'computer', 'previous', '%', '%'),
         listItem(devices.mobile, 'Mobile', 'iphone', 'previous', '%', '%'),

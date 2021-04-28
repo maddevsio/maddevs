@@ -1,4 +1,4 @@
-import getYesterday from '../../../radiator/utils/getYesterday'
+import getYesterday from '../../../radiator/utils/parseRange'
 
 class MockedDate {
   constructor() {
@@ -8,7 +8,7 @@ class MockedDate {
   }
 }
 
-describe('getYesterday utility', () => {
+describe('parseRange utility', () => {
   it('should correctly return yesterday in the correct format', () => {
     global.Date = MockedDate
     expect(getYesterday()).toBe('25/4/2021')
