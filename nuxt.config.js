@@ -89,14 +89,14 @@ module.exports = {
         }
         return posts
       }
-      const convertToSlug = text => text.toLowerCase()
-        .trim()
-        .replace(/[^\w ]+/g, '')
-        .replace(/ +/g, '-')
+      // const convertToSlug = text => text.toLowerCase()
+      //   .trim()
+      //   .replace(/[^\w ]+/g, '')
+      //   .replace(/ +/g, '-')
 
       // Getting data from prismic
       const prismicData = await axios.get(process.env.NODE_PRISMIC_API)
-      const prismicTags = prismicData.data.tags
+      // const prismicTags = prismicData.data.tags
 
       // Getting posts of all types from prismic
       const { ref } = prismicData.data.refs[0]
@@ -111,24 +111,25 @@ module.exports = {
         .filter(post => post.type === 'customer_university')
         .map(post => `/customer-university/${post.uid}`)
 
-      const authorPageRoutes = prismicPosts
-        .filter(post => post.type === 'author')
-        .map(author => `/blog/author/${author.uid}`)
+      // ------ NOTE: These routers will be needed if you will run the site in SSG mode ------- //
+      // const authorPageRoutes = prismicPosts
+      //   .filter(post => post.type === 'author')
+      //   .map(author => `/blog/author/${author.uid}`)
 
-      const authorPostPageRoutes = prismicPosts
-        .filter(post => post.type === 'post')
-        .map(post => `/blog/author/${post.data.post_author.uid}/${post.uid}`)
+      // const authorPostPageRoutes = prismicPosts
+      //   .filter(post => post.type === 'post')
+      //   .map(post => `/blog/author/${post.data.post_author.uid}/${post.uid}`)
 
-      const tagPageRoutes = prismicTags
-        .map(tag => `/blog/tag/${convertToSlug(tag)}`)
+      // const tagPageRoutes = prismicTags
+      //   .map(tag => `/blog/tag/${convertToSlug(tag)}`)
 
-      const tagPostPageRoutes = prismicTags
-        .reduce((acc, tag) => {
-          const tagPostsRoutes = prismicPosts
-            .filter(post => (post.type === 'post' && post.tags.includes(tag)))
-            .map(post => `/blog/tag/${convertToSlug(tag)}/${post.uid}`)
-          return [...acc, ...tagPostsRoutes]
-        }, [])
+      // const tagPostPageRoutes = prismicTags
+      //   .reduce((acc, tag) => {
+      //     const tagPostsRoutes = prismicPosts
+      //       .filter(post => (post.type === 'post' && post.tags.includes(tag)))
+      //       .map(post => `/blog/tag/${convertToSlug(tag)}/${post.uid}`)
+      //     return [...acc, ...tagPostsRoutes]
+      //   }, [])
 
       const routes = [
         '/',
@@ -144,10 +145,11 @@ module.exports = {
         '/blog',
         ...blogPageRoutes,
         ...cuPageRoutes,
-        ...authorPageRoutes,
-        ...authorPostPageRoutes,
-        ...tagPageRoutes,
-        ...tagPostPageRoutes,
+        // ------ NOTE: These routers will be needed if you will run the site in SSG mode ------- //
+        // ...authorPageRoutes,
+        // ...authorPostPageRoutes,
+        // ...tagPageRoutes,
+        // ...tagPostPageRoutes,
       ]
 
       return routes

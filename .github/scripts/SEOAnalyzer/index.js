@@ -8,6 +8,7 @@ const params = require('./params')
 const MetaSocialRule = require('./rules/MetaSocialRule')
 const MetaBaseRule = require('./rules/MetaBaseRule')
 const JsonLdRule = require('./rules/JsonLdRule')
+const CanonicalLinkRule = require('./rules/CanonicalLinkRule')
 
 async function asyncSome(arr, predicate) {
   for (const e of arr) {
@@ -44,6 +45,7 @@ function analyzeFile(pathFile) {
     },
   })
     .read(fs.createReadStream(pathFile))
+    .addRule('CanonicalLinkRule', { object: new CanonicalLinkRule() })
     .addRule('JsonLdRule', { object: new JsonLdRule(params.JsonLdRule.enabled, params.JsonLdRule.keys) })
     .addRule('MetaSocialRule', { object: new MetaSocialRule(params.MetaSocialRule.enabled, params.MetaSocialRule.properties) })
     .addRule('MetaBaseRule', { object: new MetaBaseRule(params.MetaBaseRule.enabled, params.MetaBaseRule.names) })
