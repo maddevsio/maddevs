@@ -39,10 +39,10 @@ function prettify({ rawLeads, rawCareers, rawContacts }) {
   return goals
 }
 
-async function main() {
-  const rawLeads = await getAnalytics({ metrics: leadsMetrics })
-  const rawCareers = await getAnalytics({ metrics: careerMetrics })
-  const rawContacts = await getAnalytics({ metrics: contactMetrics })
+async function main(range) {
+  const rawLeads = await getAnalytics({ metrics: leadsMetrics, range })
+  const rawCareers = await getAnalytics({ metrics: careerMetrics, range })
+  const rawContacts = await getAnalytics({ metrics: contactMetrics, range })
   return prettify({ rawLeads, rawCareers, rawContacts })
 }
 
