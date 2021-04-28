@@ -205,9 +205,7 @@ export default {
       vertical-align: middle;
     }
   }
-}
-@media only screen and (max-width: 991px) {
-  .featured-post {
+  @media only screen and (max-width: 991px) {
     &__main {
       padding: 0;
       margin-top: 0;

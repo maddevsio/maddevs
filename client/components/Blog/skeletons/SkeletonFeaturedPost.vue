@@ -96,6 +96,7 @@ export default {
     margin-top: 0;
   }
   &__image {
+    max-width: 100%;
     width: 540px;
     height: 293px;
     display: inline-block;
