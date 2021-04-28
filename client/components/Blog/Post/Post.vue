@@ -476,7 +476,6 @@ export default {
 
   &__recommended-post {
     width: 33.33333%;
-    height: max-content;
     border-radius: 3px;
     transition: 0.2s;
     margin-right: 20px;
