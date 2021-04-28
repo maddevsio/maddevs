@@ -54,16 +54,17 @@ function analyzeFile(pathFile) {
     .write(fs.createWriteStream('report.txt')))
 }
 
-function getFilesFromDist(base, ext, listFiles, result) {
+function getFilesFromFolder(base, ext, listFiles, result) {
   const files = listFiles || fs.readdirSync(base)
   let res = result || []
   files.forEach(file => {
     const filePath = path.join(base, file)
     if (fs.statSync(filePath).isDirectory()) {
-      res = getFilesFromDist(filePath, ext, fs.readdirSync(filePath), res)
+      res = getFilesFromFolder(filePath, ext, fs.readdirSync(filePath), res)
       return res
     }
     if (file.substr(-1 * (ext.length + 1)) === `.${ext}`) {
+      if (params.ignoreFiles.some(path => path === filePath)) return
       return res.push(filePath)
     }
     return res
@@ -87,5 +88,5 @@ async function analyzeFiles(array) {
   log(report)
 }
 
-const listFiles = getFilesFromDist('dist', 'html')
+const listFiles = getFilesFromFolder('dist', 'html')
 analyzeFiles(listFiles)

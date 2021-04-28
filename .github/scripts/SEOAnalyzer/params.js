@@ -1,4 +1,5 @@
 const params = {
+  ignoreFiles: ['dist/404.html'],
   MetaSocialRule: {
     enabled: true,
     properties: [
