@@ -285,7 +285,8 @@ export default {
 
       /deep/ .post-author {
         align-items: unset;
-        &__image {
+        &__image,
+        &__none-image {
           width: 20px;
           min-width: 20px;
           height: 20px;
