@@ -14,7 +14,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
         <nuxtlink-stub
           class="featured-post light"
           disable-author-link="true"
-          to="/blog/author/undefined/software-architecture-design/"
+          to="/blog/software-architecture-design/"
         >
           <div
             class="row featured-post__wrapper"
@@ -130,7 +130,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/author/undefined/software-architecture-design/"
+              to="/blog/software-architecture-design/"
             >
               <div
                 class="blog-post"
@@ -252,7 +252,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/author/undefined/how-to-make-three-paid-eta-services-one-free/"
+              to="/blog/how-to-make-three-paid-eta-services-one-free/"
             >
               <div
                 class="blog-post"
@@ -374,7 +374,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/author/undefined/web-app-deploy-to-glitch/"
+              to="/blog/web-app-deploy-to-glitch/"
             >
               <div
                 class="blog-post"
@@ -496,7 +496,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/author/undefined/effective-refactoring-of-heavy-database-interface/"
+              to="/blog/effective-refactoring-of-heavy-database-interface/"
             >
               <div
                 class="blog-post"
@@ -618,7 +618,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/author/undefined/running-geo-django-on-elasticbeanstalk/"
+              to="/blog/running-geo-django-on-elasticbeanstalk/"
             >
               <div
                 class="blog-post"
@@ -740,7 +740,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/author/undefined/guaranteed-delivery-with-grpc-streams/"
+              to="/blog/guaranteed-delivery-with-grpc-streams/"
             >
               <div
                 class="blog-post"
@@ -862,7 +862,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/author/undefined/how-to-start-with-logging-in-golang-projects-part-1/"
+              to="/blog/how-to-start-with-logging-in-golang-projects-part-1/"
             >
               <div
                 class="blog-post"
@@ -984,7 +984,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/author/undefined/how-to-start-developing-for-raspberry-pi-with-qt/"
+              to="/blog/how-to-start-developing-for-raspberry-pi-with-qt/"
             >
               <div
                 class="blog-post"
@@ -1106,7 +1106,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/author/undefined/a-bit-about-event-delegation-in-pure-js/"
+              to="/blog/a-bit-about-event-delegation-in-pure-js/"
             >
               <div
                 class="blog-post"
@@ -1228,7 +1228,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/author/undefined/a-bit-about-event-delegation-in-react/"
+              to="/blog/a-bit-about-event-delegation-in-react/"
             >
               <div
                 class="blog-post"
@@ -1350,7 +1350,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/author/undefined/best-ci-for-js-projects-with-puppeteer-tests/"
+              to="/blog/best-ci-for-js-projects-with-puppeteer-tests/"
             >
               <div
                 class="blog-post"
@@ -1472,7 +1472,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/author/undefined/mad-fake-slack/"
+              to="/blog/mad-fake-slack/"
             >
               <div
                 class="blog-post"
@@ -1594,7 +1594,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/author/undefined/comedian-slack-standup-bot/"
+              to="/blog/comedian-slack-standup-bot/"
             >
               <div
                 class="blog-post"

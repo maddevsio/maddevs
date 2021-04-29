@@ -14,7 +14,7 @@ jest.mock('googleapis', () => ({
 
 describe('Radiator > analytics > getAnalytics', () => {
   it('shoult correctly called googleAnalytics method and returns data', async () => {
-    const data = await getAnalytics()
+    const data = await getAnalytics({ metrics: [], dimensions: [], range: { originalRange: '', previousRange: '' } })
     expect(data).toBe('data')
     expect(google.analyticsreporting).toHaveBeenCalledTimes(1)
   })

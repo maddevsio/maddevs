@@ -4,13 +4,13 @@ const getCountriesData = require('./getCountriesData')
 const getDevicesData = require('./getDevicesData')
 const getGoalsData = require('./getGoalsData')
 
-async function main() {
+async function main(range) {
   const finish = await authorize()
 
-  const core = await getCoreData()
-  const countries = await getCountriesData()
-  const devices = await getDevicesData()
-  const goals = await getGoalsData()
+  const core = await getCoreData(range)
+  const countries = await getCountriesData(range)
+  const devices = await getDevicesData(range)
+  const goals = await getGoalsData(range)
 
   const data = {
     core,

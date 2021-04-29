@@ -5,10 +5,11 @@ const config = {
   icon_emoji: ':radio:',
 }
 
-async function sendMessage(message) {
+async function sendMessage(message, channel) {
   const data = {
     ...config,
     ...message,
+    channel,
   }
 
   await axios.post(process.env.RADIATOR_WEBHOOK_URL, data)

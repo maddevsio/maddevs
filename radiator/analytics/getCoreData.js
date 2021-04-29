@@ -47,8 +47,8 @@ function prettify(rawData) {
   }
 }
 
-async function main() {
-  const rawData = await getAnalytics({ metrics })
+async function main(range) {
+  const rawData = await getAnalytics({ metrics, range })
   return prettify(rawData)
 }
 

@@ -354,3 +354,18 @@ File: dist/case-studies/namba-food/index.html
 SEO defects found: 
 There are 1 <img> tag without alt attribute
 ```
+## Radiator
+We have advanced tool for collect some metrics from google analytics and google page speed and send it to our slack/telegram channels.
+
+### Usage
+For run radiator you need to execute the following command:
+```bash
+$ node radiator --slack
+```
+Radiator script will collect all needed data and send it to slack.
+
+### Arguments
+* `--slack` - use this arg for send collected data to slack
+* `--channel` - use this arg for send collected data to a specific slack channel
+* `--telegram` - use this arg for send collected data to telegram
+* `--period` - collect data for selected period. Available values: `day`, `week`, `month`

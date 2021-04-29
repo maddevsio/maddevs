@@ -10,21 +10,15 @@ const googleAnalytics = google.analyticsreporting('v4')
  * @param {Object} requestParams
  * @returns {*}
  */
-async function getAnalytics({ metrics = [], dimensions = [] } = {}) {
+async function getAnalytics({ metrics = [], dimensions = [], range } = {}) {
   const response = await googleAnalytics.reports.batchGet({
     requestBody: {
       reportRequests: [
         {
           viewId: '230523659',
           dateRanges: [
-            {
-              startDate: 'yesterday',
-              endDate: 'yesterday',
-            },
-            {
-              startDate: '2DaysAgo',
-              endDate: '2DaysAgo',
-            },
+            range.originalRange,
+            range.previousRange,
           ],
           metrics,
           dimensions,
