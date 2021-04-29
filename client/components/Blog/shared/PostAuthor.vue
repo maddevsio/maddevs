@@ -3,12 +3,12 @@
     v-if="name"
     :event="disabled ? '' : 'click'"
     :to="link"
+    :class="`post-author--${theme}-theme`"
     class="post-author"
   >
     <div
       v-if="thumbnailImage.url !== undefined"
       class="post-author__image"
-      :class="`post-author__image--${theme}`"
     >
       <img
         :data-src="thumbnailImage.url"
@@ -19,7 +19,6 @@
     <div
       v-else
       class="post-author__none-image"
-      :class="`post-author__none-image--${theme}`"
     />
     <div class="post-author__info">
       <p class="post-author__name">
@@ -63,7 +62,7 @@ export default {
 
     theme: {
       type: String,
-      default: 'dark',
+      default: 'light',
     },
   },
 
@@ -86,6 +85,28 @@ export default {
   display: flex;
   align-items: center;
   margin-right: 24px;
+  &--dark-theme {
+    .post-author {
+      &__image,
+      &__none-image {
+        background-color: $bgcolor--black-light;
+      }
+      &__name {
+        color: $text-color--white;
+      }
+    }
+  }
+  &--light-theme {
+    .post-author {
+      &__image,
+      &__none-image {
+        background-color: $bgcolor--silver;
+      }
+      &__name {
+        color: $text-color--black;
+      }
+    }
+  }
 
   &__image,
   &__none-image {
@@ -95,14 +116,6 @@ export default {
     border-radius: 50%;
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
-    &--dark {
-      background-color: $bgcolor--black-light;
-      color: $text-color--white-primary;
-    }
-    &--light {
-      background-color: $bgcolor--silver;
-      color: $text-color--black;
-    }
     img {
       width: 100%;
       height: 100%;
@@ -126,7 +139,6 @@ export default {
 
   &__name {
     margin-bottom: 4px;
-    color: $text-color--white;
   }
 
   &__position {

@@ -241,12 +241,6 @@ export default {
     .post-card {
       height: 100%;
     }
-
-    /deep/ .post-author {
-      &__name {
-        color: $text-color--black;
-      }
-    }
   }
 
   &__load-more {
