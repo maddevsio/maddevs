@@ -115,20 +115,8 @@ module.exports = {
         .filter(post => post.type === 'author')
         .map(author => `/blog/author/${author.uid}`)
 
-      const authorPostPageRoutes = prismicPosts
-        .filter(post => post.type === 'post')
-        .map(post => `/blog/author/${post.data.post_author.uid}/${post.uid}`)
-
       const tagPageRoutes = prismicTags
         .map(tag => `/blog/tag/${convertToSlug(tag)}`)
-
-      const tagPostPageRoutes = prismicTags
-        .reduce((acc, tag) => {
-          const tagPostsRoutes = prismicPosts
-            .filter(post => (post.type === 'post' && post.tags.includes(tag)))
-            .map(post => `/blog/tag/${convertToSlug(tag)}/${post.uid}`)
-          return [...acc, ...tagPostsRoutes]
-        }, [])
 
       const routes = [
         '/',
@@ -145,9 +133,7 @@ module.exports = {
         ...blogPageRoutes,
         ...cuPageRoutes,
         ...authorPageRoutes,
-        ...authorPostPageRoutes,
         ...tagPageRoutes,
-        ...tagPostPageRoutes,
       ]
 
       return routes
