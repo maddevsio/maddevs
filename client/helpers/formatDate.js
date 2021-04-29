@@ -1,8 +1,8 @@
+const options = { year: 'numeric', month: 'short', day: '2-digit' }
+
 function formatDate(raw) {
-  if (!Intl) return raw
-  return Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit' }).format(
-    new Date(raw),
-  )
+  const data = new Date(raw)
+  return data.toLocaleString('en-US', options)
 }
 
 export default formatDate
