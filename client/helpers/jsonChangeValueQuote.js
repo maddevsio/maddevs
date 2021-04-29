@@ -10,23 +10,27 @@
  */
 
 // Order important
-const pattern1 = { get: /\\",\\n\\"|\\",\\n\s+\\"|\\",\s+\\n\s+\\"|\\",\s+\\n\\"/g, to: '\\\', \\\'' } // Find this \", \n \"
-const pattern2 = { get: /},\\n\s+\\"|},\s+\\n\\"|},\s+\\n\s+\\"|},\\n\\"/g, to: '}, \\\'' } // Find this },\n \"
-const pattern3 = { get: /\\":\s+\\"/g, to: '\\\': \\\'' } // Find this \": \"
-const pattern4 = { get: /\\":\s+{/g, to: '\\\': {' } // Find this \": {
-const pattern5 = { get: /{\s+\\"|{\\"|{\\n\\"|{\s+\\n\\"|{\s+\\n\s+\\"|{\\n\s+\\"/g, to: '{ \\\'' } // Find this { \n \"
-const pattern6 = { get: /\\"\s+\\n\s+}|\\"\s+\\n}|\\"\\n\s+}|\\"\\n}/g, to: '\\\' }' } // Find this \"\n }
+const pattern = { findBy: /":\s+{\s+}/g, replaceTo: '": {}' } // Find this \", \n \"
+const pattern0 = { findBy: /":\n"/g, replaceTo: '": "' } // Find this \", \n \"
+const pattern1 = { findBy: /\\",\\n\\"|\\",\\n\s+\\"|\\",\s+\\n\s+\\"|\\",\s+\\n\\"/g, replaceTo: '\\\', \\\'' } // Find this \", \n \"
+const pattern2 = { findBy: /},\\n\s+\\"|},\s+\\n\\"|},\s+\\n\s+\\"|},\\n\\"/g, replaceTo: '}, \\\'' } // Find this },\n \"
+const pattern3 = { findBy: /\\":\s+\\"/g, replaceTo: '\\\': \\\'' } // Find this \": \"
+const pattern4 = { findBy: /\\":\s+{/g, replaceTo: '\\\': {' } // Find this \": {
+const pattern5 = { findBy: /{\s+\\"|{\\"|{\\n\\"|{\s+\\n\\"|{\s+\\n\s+\\"|{\\n\s+\\"/g, replaceTo: '{ \\\'' } // Find this { \n \"
+const pattern6 = { findBy: /\\"\s+\\n\s+}|\\"\s+\\n}|\\"\\n\s+}|\\"\\n}/g, replaceTo: '\\\' }' } // Find this \"\n }
 
-export default (json, quote = '“') => {
-  let Json = JSON.stringify(json)
-  Json = Json
-    .replace(pattern1.get, pattern1.to)
-    .replace(pattern2.get, pattern2.to)
-    .replace(pattern3.get, pattern3.to)
-    .replace(pattern4.get, pattern4.to)
-    .replace(pattern5.get, pattern5.to)
-    .replace(pattern6.get, pattern6.to)
+export default (json = {}, quote = '“') => {
+  let result = JSON.stringify(json)
+  result = result
+    .replace(pattern.findBy, pattern.replaceTo)
+    .replace(pattern0.findBy, pattern0.replaceTo)
+    .replace(pattern1.findBy, pattern1.replaceTo)
+    .replace(pattern2.findBy, pattern2.replaceTo)
+    .replace(pattern3.findBy, pattern3.replaceTo)
+    .replace(pattern4.findBy, pattern4.replaceTo)
+    .replace(pattern5.findBy, pattern5.replaceTo)
+    .replace(pattern6.findBy, pattern6.replaceTo)
     .replace(/\\"/g, quote) // change all \" to new quote
     .replace(/\\'/g, '\\"') // change all \' to \" and after will be parse to Json
-  return JSON.parse(Json)
+  return JSON.parse(result)
 }

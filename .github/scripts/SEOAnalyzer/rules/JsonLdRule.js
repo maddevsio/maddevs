@@ -15,7 +15,7 @@ module.exports = class JsonLdRule {
       return report = 'The meta <script type="application/ld+json"></script> is empty'
     }
     try {
-      const obj = JSON.parse(schema.textContent)
+      const obj = JSON.parse(schema.textContent.replace(/(\r\n|\n|\r)/gm, ''))
       this.keys.forEach(key => {
         if (!obj[key] || !obj[key].length) {
           report.push(`This ${key} key is missing or invalid.`)
