@@ -42,7 +42,6 @@ export default ({ app }, inject) => { // eslint-disable-line
     options = { ...options, ...customOptions }
 
     const elements = Array.from(document.querySelectorAll(`.${options.className}`))
-    console.log(elements)
 
     if ('IntersectionObserver' in window) {
       observer = new IntersectionObserver(observerCallback, options)
