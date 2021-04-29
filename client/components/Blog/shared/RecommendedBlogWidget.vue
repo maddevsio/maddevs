@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    :to="to || link"
+    :to="link"
     class="blog-post__wrapper"
   >
     <div class="blog-post">
@@ -75,11 +75,6 @@ export default {
     post: {
       type: Object,
       required: true,
-    },
-
-    to: {
-      type: String,
-      default: '',
     },
 
     author: {
