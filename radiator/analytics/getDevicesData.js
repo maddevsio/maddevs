@@ -40,8 +40,8 @@ function prettify(rawData) {
   return devices
 }
 
-async function main() {
-  const rawData = await getAnalytics({ metrics, dimensions })
+async function main(range) {
+  const rawData = await getAnalytics({ metrics, dimensions, range })
   return prettify(rawData)
 }
 

@@ -87,7 +87,9 @@ describe('Radiator > slack > buildMessage', () => {
         },
       },
     }
-    const range = '25/04/2021'
+    const range = {
+      text: '25/04/2021',
+    }
     const lighthouse = {
       performance: {
         title: 'Performance',
@@ -135,7 +137,7 @@ describe('Radiator > slack > buildMessage', () => {
           type: 'section',
           text: {
             type: 'mrkdwn',
-            text: '<!here> За вчера сайт <https://maddevs.io|maddevs.io> посетило *10 пользователей*. Всего *20 сессий*, средняя длительность 1 сессии составляет *40s*. *30%* пользователей закрыли сайт никак с ним не провзаимодействовав.\n\n',
+            text: '<!here> За отчетный период сайт <https://maddevs.io|maddevs.io> посетило *10 пользователей*. Всего *20 сессий*, средняя длительность 1 сессии составляет *40s*. *30%* пользователей закрыли сайт никак с ним не провзаимодействовав.\n\n',
           },
         },
         {
@@ -152,7 +154,7 @@ describe('Radiator > slack > buildMessage', () => {
           type: 'section',
           text: {
             type: 'mrkdwn',
-            text: 'Сайт просматривают на разных устройствах. Вот соотношение за вчерашний день:\n\n',
+            text: 'Сайт просматривают на разных устройствах. Соотношение:\n\n',
           },
         },
         {
