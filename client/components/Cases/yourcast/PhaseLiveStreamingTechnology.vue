@@ -31,6 +31,7 @@
           :shadow="true"
           :width="735"
           :height="449"
+          :lazy="false"
           extension="png"
           folder="yourcast"
           file="macbook-pro"
