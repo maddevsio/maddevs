@@ -9,7 +9,10 @@
   >
     <template #afterTitle>
       <div class="blog-post__post-info">
-        <PostAuthor v-bind="blogAuthor" />
+        <PostAuthor
+          v-bind="blogAuthor"
+          theme="dark"
+        />
         <div class="blog-post__date-tag">
           <div class="blog-post__date">
             {{ date }}
