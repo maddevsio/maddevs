@@ -274,6 +274,7 @@ export default {
           width: 235px;
           flex-shrink: 0;
           margin-right: 16px;
+          margin-bottom: 0;
         }
 
         &__title {
