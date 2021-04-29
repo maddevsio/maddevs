@@ -94,8 +94,6 @@ export default {
       width: 23%;
       max-width: 460px;
       min-width: 270px;
-      position: relative;
-      cursor: pointer;
     }
 
     &_sound-control {
