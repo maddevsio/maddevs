@@ -89,9 +89,14 @@ module.exports = {
         }
         return posts
       }
+      const convertToSlug = text => text.toLowerCase()
+        .trim()
+        .replace(/[^\w ]+/g, '')
+        .replace(/ +/g, '-')
 
       // Getting data from prismic
       const prismicData = await axios.get(process.env.NODE_PRISMIC_API)
+      const prismicTags = prismicData.data.tags
 
       // Getting posts of all types from prismic
       const { ref } = prismicData.data.refs[0]
@@ -105,6 +110,13 @@ module.exports = {
       const cuPageRoutes = prismicPosts
         .filter(post => post.type === 'customer_university')
         .map(post => `/customer-university/${post.uid}`)
+
+      const authorPageRoutes = prismicPosts
+        .filter(post => post.type === 'author')
+        .map(author => `/blog/author/${author.uid}`)
+
+      const tagPageRoutes = prismicTags
+        .map(tag => `/blog/tag/${convertToSlug(tag)}`)
 
       const routes = [
         '/',
@@ -120,6 +132,8 @@ module.exports = {
         '/blog',
         ...blogPageRoutes,
         ...cuPageRoutes,
+        ...authorPageRoutes,
+        ...tagPageRoutes,
       ]
 
       return routes
