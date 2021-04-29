@@ -3,7 +3,7 @@
     <div class="container">
       <div
         class="author-posts__featured-post"
-        :class="[authorPosts.length === 1 ? 'author-posts__featured-post--mb-48' : '']"
+        :class="[authorPosts.length === 1 ? 'author-posts__featured-post--mb-0' : '']"
       >
         <FeaturedPost
           v-if="authorPostsLoaded"
@@ -18,33 +18,29 @@
           theme="light"
         />
       </div>
-      <div class="row author-posts__wrapper">
+      <div class="author-posts__list">
         <template v-if="authorPostsLoaded">
           <section
             v-for="post in authorPostsToShow"
             :key="post.id"
             :post="post"
-            class="author-posts__single-post"
+            class="author-posts__list-item"
           >
-            <div class="single-post__wrapper">
-              <PostCard
-                :to="postLink(post.uid)"
-                :post="post"
-                :author="blogAuthor"
-                :disable-author-link="true"
-              />
-            </div>
+            <PostCard
+              :to="postLink(post.uid)"
+              :post="post"
+              :author="blogAuthor"
+              :disable-author-link="true"
+            />
           </section>
         </template>
         <template v-else>
           <section
             v-for="i in 6"
             :key="i"
-            class="author-posts__single-post"
+            class="author-posts__list-item"
           >
-            <div class="single-post__wrapper">
-              <SkeletonBlogWidget />
-            </div>
+            <SkeletonBlogWidget />
           </section>
         </template>
       </div>
@@ -116,42 +112,53 @@ export default {
 
   .author-posts {
     background-color: $bgcolor--white-primary;
-    padding: 60px 0 12px;
-    &__wrapper {
-      margin: 0 -10px;
-    }
+    padding: 60px 0;
+
     &__featured-post {
       margin-bottom: 137px;
-      &--mb-48 {
-        margin-bottom: 48px;
+      &--mb-0 {
+        margin-bottom: 0;
       }
     }
-    &__single-post {
+
+    &__list {
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0 -10px;
+    }
+
+    &__list-item {
+      box-sizing: border-box;
       width: 33.3333%;
+      padding: 0 10px;
       margin-bottom: 48px;
       &:first-of-type {
         display: none;
       }
-      .single-post__wrapper {
-        padding: 0 10px;
-        /deep/ .blog-post__author-name {
-          color: $text-color--black;
+      @media only screen and (min-width: 991px) {
+        &:nth-last-child(-n+3) {
+          margin-bottom: 0;
         }
       }
     }
+
     &__load-more {
       margin-top: 36px;
-      margin-bottom: 48px;
     }
+
     @media only screen and (max-width: 991px) {
-      &__single-post {
+      &__featured-post {
+        display: none;
+      }
+
+      &__list-item {
         width: 100%;
         &:first-of-type {
           display: block;
         }
-      }
-      &__featured-post {
-        display: none;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
