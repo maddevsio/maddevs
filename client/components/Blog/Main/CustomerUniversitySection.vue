@@ -69,9 +69,11 @@
               </div>
             </div>
           </NuxtLink>
-          <div class="customer-university__show-more-wrapper">
+          <div
+            v-if="clusters.length > 3 && !showAll"
+            class="customer-university__show-more-wrapper"
+          >
             <button
-              v-if="clusters.length > 3 && !showAll"
               class="customer-university__show-more"
               @click="showAll = true"
             >
