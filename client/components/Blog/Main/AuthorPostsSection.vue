@@ -7,7 +7,6 @@
       >
         <FeaturedPost
           v-if="authorPostsLoaded"
-          :to="postLink(authorPosts[0].uid)"
           :post="authorPosts[0]"
           :author="blogAuthor"
           theme="light"
@@ -28,7 +27,6 @@
           >
             <div class="single-post__wrapper">
               <RecommendedBlogWidget
-                :to="postLink(post.uid)"
                 :post="post"
                 :author="blogAuthor"
                 :disable-author-link="true"
@@ -103,10 +101,6 @@ export default {
 
   methods: {
     ...mapActions(['getMoreAuthorPosts']),
-
-    postLink(postUID) {
-      return `/blog/author/${this.blogAuthor.uid}/${postUID}/`
-    },
   },
 }
 </script>
