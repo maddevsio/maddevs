@@ -30,29 +30,24 @@
       </div>
       <div
         v-if="filteredPosts.length !== 0"
-        class="filtered-posts__wrapper"
+        class="filtered-posts__list"
       >
         <section
           v-for="(post) in filteredPostsToShow"
           :key="post.id"
           :post="post"
-          class="filtered-posts__single-post"
+          class="filtered-posts__list-item"
+          data-testid="test-single-post"
         >
-          <div
-            data-testid="test-single-post"
-            class="single-post__wrapper"
-          >
-            <PostCard
-              :post="post"
-              :author="findAuthor(post.data.post_author.id, allAuthors)"
-              class-name="filtered-post"
-            />
-          </div>
+          <PostCard
+            :post="post"
+            :author="findAuthor(post.data.post_author.id, allAuthors)"
+          />
         </section>
       </div>
       <div
         v-if="totalPages > postsPage"
-        class="load-more-button__wrapper"
+        class="filtered-posts__load-more"
       >
         <LoadMoreButton @click="getMorePosts" />
       </div>
@@ -154,9 +149,11 @@ export default {
         margin-right: 0;
       }
     }
+
     input[type="radio"] {
       display: none;
     }
+
     label {
       cursor: pointer;
       box-shadow: none;
@@ -173,6 +170,7 @@ export default {
       border-radius: 2px;
       transition: 0.2s;
     }
+
     input[type="radio"]:checked + label {
       border-color: $border-color--red;
       color: $text-color--red;
@@ -193,12 +191,15 @@ export default {
       flex-wrap: nowrap;
       justify-content: space-between;
     }
+
     &__item {
       width: 148px;
+
       &-wrapper {
         width: auto;
         margin-right: 8px;
       }
+
       label {
         font-size: 16px;
         line-height: 19px;
@@ -217,222 +218,62 @@ export default {
 }
 
 .filtered-posts {
-  background-color: $text-color--white-primary;
-  padding-top: 48px;
-  padding-bottom: 20px;
+  background-color: $bgcolor--white-primary;
+  padding: 48px 0;
 
-  /deep/ .simplebar-track {
-    display: none;
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 50px -10px 0;
   }
 
-  .filter {
+  &__list-item {
+    box-sizing: border-box;
+    width: 33.3333%;
+    padding: 0 10px;
     margin-bottom: 48px;
-
-    .filter-list {
-      display: flex;
-      justify-content: flex-start;
-    }
-
-    .filter-item {
-      &__wrapper {
-        width: calc(16.6666% - 16px);
-        margin-right: 20px;
-
-        &:last-child {
-          margin-right: 0;
-        }
+    @media only screen and (min-width: 991px) {
+      &:nth-last-child(-n+3) {
+        margin-bottom: 0;
       }
     }
-  }
 
-  &__wrapper {
-    display: flex;
-    margin: 50px -10px 0;
-    flex-wrap: wrap;
-
-    a {
-      text-decoration: none;
-    }
-  }
-
-  &__single-post {
-    width: 33.3333%;
-    margin-bottom: 48px;
-
-    .single-post__wrapper {
-      padding: 0 10px;
+    .post-card {
       height: 100%;
     }
-  }
-}
 
-.filter-label,
-.reset-filter {
-  color: $text-color--black;
-}
-
-.filter {
-  min-width: 150px;
-
-  /deep/ .ps__rail-x {
-    display: none;
-  }
-}
-
-.radio-input {
-  display: none;
-}
-
-.radio-input:checked + .filter-label {
-  border-color: $border-color--red;
-  color: $text-color--red;
-}
-
-.filter-label,
-.reset-filter {
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.filter-label {
-  display: flex;
-  align-items: flex-end;
-  padding: 47px 22px 22px;
-  box-shadow: none;
-  background-color: $bgcolor--silver;
-  transition: 0.2s;
-  font-family: 'Poppins-Medium', sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 700;
-  min-height: 44px;
-}
-
-.reset-filter {
-  width: 100%;
-  margin-top: 10px;
-  padding: 8px 7px;
-  font-family: 'Poppins-Bold', sans-serif;
-  font-weight: 700;
-  background-color: $bgcolor--red;
-  border: none;
-}
-
-.reset-filter:active {
-  background-color: #cc4247;
-  border-color: #cc4247;
-}
-
-.load-more-button__wrapper {
-  text-align: center;
-  margin-top: 36px;
-  margin-bottom: 53px;
-}
-
-.single-post {
-  &__wrapper {
-    /deep/ .blog-post {
-      height: 100%;
-      &__author-name {
+    /deep/ .post-author {
+      &__name {
         color: $text-color--black;
       }
     }
   }
-}
 
-@media screen and (max-width: 1200px) {
-  .filtered-posts {
-    .filter {
-      .filter-list {
-        flex-wrap: nowrap;
-        margin: 0 -4px;
-        justify-content: space-between;
-
-        .filter-item {
-          width: 148px;
-
-          &__wrapper {
-            width: auto;
-            margin-right: 8px;
-
-            .filter-label {
-              font-size: 16px;
-              line-height: 19px;
-              padding: 16px;
-              min-height: 40px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .filter-label {
-    &:hover {
-      border-color: $border-color--red;
-      color: $text-color--red;
-    }
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .filtered-posts .filtered-posts__wrapper .filtered-posts__single-post {
-    width: 100%;
+  &__load-more {
+    text-align: center;
+    margin-top: 85px;
   }
 
-  .filtered-posts {
-    margin-bottom: 56px;
-  }
-
-  .filtered-posts__wrapper {
-    margin-bottom: 0;
-  }
-
-  .filtered-posts__single-post {
-    margin-bottom: 16px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .filtered-posts {
-    &__wrapper {
+  @media only screen and (max-width: 991px) {
+    &__list {
       margin-top: 0;
+    }
 
-      /deep/ .blog-post {
+    &__list-item {
+      width: 100%;
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      /deep/ .post-card {
         display: flex;
         align-items: flex-start;
-        margin-bottom: 18px;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
 
         &__image {
           width: 235px;
           flex-shrink: 0;
           margin-right: 16px;
-        }
-
-        &__meta {
-          margin: 8px 0;
-
-          .post-tag {
-            display: none;
-          }
-
-          .created-at {
-            font-size: 11px;
-            line-height: 16px;
-            letter-spacing: -0.02em;
-          }
-        }
-
-        &__paragraph {
-          display: none;
         }
 
         &__title {
@@ -441,64 +282,78 @@ export default {
           letter-spacing: -0.03em;
         }
 
-        &__author {
-          align-items: unset;
+        &__paragraph {
+          display: none;
         }
 
-        &__author-image {
+        &__meta {
+          margin: 8px 0;
+          .post-tag {
+            display: none;
+          }
+        }
+
+        &__date {
+          font-size: 11px;
+          line-height: 16px;
+          letter-spacing: -0.02em;
+        }
+      }
+
+      /deep/ .post-author {
+        align-items: unset;
+
+        &__image {
           width: 20px;
           min-width: 20px;
           height: 20px;
+          margin-bottom: 0;
         }
 
-        &__author-position,
-        &__author-name {
+        &__name,
+        &__position {
           font-size: 11px;
           line-height: 16px;
           letter-spacing: -0.02em;
         }
 
-        &__author-name {
+        &__name {
           margin-bottom: 0;
         }
       }
     }
+
+    &__load-more {
+      margin-top: 28px;
+    }
   }
 
-  .load-more-button__wrapper {
-    margin-top: 11px;
-    margin-bottom: 16px;
-  }
-}
+  @media only screen and (max-width: 600px) {
+    &__list-item /deep/ .post-card {
+      &__image {
+        width: 180px;
+      }
 
-@media only screen and (max-width: 600px) {
-  .filtered-posts {
-    &__wrapper {
-      /deep/ .blog-post {
-        &__image {
-          width: 180px;
-        }
-        &__title {
-          -webkit-line-clamp: 2;
-        }
+      &__title {
+        -webkit-line-clamp: 2;
       }
     }
   }
-}
 
-@media only screen and (max-width: 400px) {
-  .filtered-posts {
-    &__wrapper {
-      /deep/ .blog-post {
-        &__image {
-          width: 145px;
+  @media only screen and (max-width: 400px) {
+    &__list-item /deep/ .post-card {
+      &__image {
+        width: 145px;
+        height: 100%;
+        img {
+          height: 100%;
           object-fit: cover;
           object-position: -2px;
-          height: 100%;
         }
-        &__title {
-          -webkit-line-clamp: 2;
-        }
+      }
+
+      &__title {
+        -webkit-line-clamp: 2;
       }
     }
   }
