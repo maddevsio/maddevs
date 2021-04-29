@@ -135,12 +135,10 @@ export default {
 .posts-filter {
   margin-bottom: 48px;
   min-width: 150px;
-
   &__list {
     display: flex;
     justify-content: flex-start;
   }
-
   &__item {
     &-wrapper {
       width: calc(16.6666% - 16px);
@@ -149,11 +147,9 @@ export default {
         margin-right: 0;
       }
     }
-
     input[type="radio"] {
       display: none;
     }
-
     label {
       cursor: pointer;
       box-shadow: none;
@@ -170,7 +166,6 @@ export default {
       border-radius: 2px;
       transition: 0.2s;
     }
-
     input[type="radio"]:checked + label {
       border-color: $border-color--red;
       color: $text-color--red;
@@ -194,12 +189,10 @@ export default {
 
     &__item {
       width: 148px;
-
       &-wrapper {
         width: auto;
         margin-right: 8px;
       }
-
       label {
         font-size: 16px;
         line-height: 19px;
@@ -263,31 +256,26 @@ export default {
       /deep/ .post-card {
         display: flex;
         align-items: flex-start;
-
         &__image {
           width: 235px;
           flex-shrink: 0;
           margin-right: 16px;
           margin-bottom: 0;
         }
-
         &__title {
           font-size: 15px;
           line-height: 18.6px;
           letter-spacing: -0.03em;
         }
-
         &__paragraph {
           display: none;
         }
-
         &__meta {
           margin: 8px 0;
           .post-tag {
             display: none;
           }
         }
-
         &__date {
           font-size: 11px;
           line-height: 16px;
@@ -297,21 +285,18 @@ export default {
 
       /deep/ .post-author {
         align-items: unset;
-
         &__image {
           width: 20px;
           min-width: 20px;
           height: 20px;
           margin-bottom: 0;
         }
-
         &__name,
         &__position {
           font-size: 11px;
           line-height: 16px;
           letter-spacing: -0.02em;
         }
-
         &__name {
           margin-bottom: 0;
         }
