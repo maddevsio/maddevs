@@ -52,12 +52,6 @@ Sending messages using Incoming Webhooks
 * NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL
 * NODE_PAGESPEED_SLACK_WEBHOOK_URL
 
-#### Googleapis
-
-We use googlePageSpeed api to run check site speed using github actions after each merge into the new-develop or master branch
-
-* NODE_GOOGLEAPIS_KEY
-
 #### Mongo
 
 Temporary tokens for the correct operation of AmoCrm are stored in mLab 
@@ -82,6 +76,21 @@ Set current domain
 Set current environment for feature flags
 
 * FF_ENVIRONMENT
+
+#### Radiator envs
+
+* RADIATOR_AUTH_TYPE
+* RADIATOR_PROJECT_ID
+* RADIATOR_PRIVATE_KEY_ID
+* RADIATOR_PRIVATE_KEY
+* RADIATOR_CLIENT_EMAIL
+* RADIATOR_CLIENT_ID
+* RADIATOR_AUTH_URI
+* RADIATOR_TOKEN_URI
+* RADIATOR_PROVIDER_CERT_URL
+* RADIATOR_CLIENT_CERT_URL
+* RADIATOR_WEBHOOK_URL - slack webhook url
+* RADIATOR_GOOGLEAPIS_KEY - key for google api(pagespeed)
 
 **All of these variables must be added to the Heroku hosting**
 
@@ -318,3 +327,18 @@ or in the component's code:
    ...
 ```
 
+## Radiator
+We have advanced tool for collect some metrics from google analytics and google page speed and send it to our slack/telegram channels.
+
+### Usage
+For run radiator you need to execute the following command:
+```bash
+$ node radiator --slack
+```
+Radiator script will collect all needed data and send it to slack.
+
+### Arguments
+* `--slack` - use this arg for send collected data to slack
+* `--channel` - use this arg for send collected data to a specific slack channel
+* `--telegram` - use this arg for send collected data to telegram
+* `--period` - collect data for selected period. Available values: `day`, `week`, `month`

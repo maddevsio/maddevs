@@ -52,7 +52,7 @@ export const experts = [
     name: 'Arthur Elizavetenkov',
     position: 'Project Manager',
     image: 'Arthur',
-    linkedin: 'https://www.linkedin.com/in/earthurkg/',
+    linkedin: 'https://www.linkedin.com/in/earthur-in/',
     alt: 'Arthur Elizavetnikov - Project Manager at Mad Devs Software and Mobile App Development Company.',
   },
 ]

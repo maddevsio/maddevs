@@ -67,7 +67,6 @@
           data-testid="test-recommended-post"
         >
           <RecommendedBlogWidget
-            :to="getRecommendedPostUrl(post.uid, post.data.post_author.uid)"
             :post="post"
             :author="findAuthor(post.data.post_author.id, allAuthors)"
             class-name="recommended-post"
@@ -231,12 +230,6 @@ export default {
   },
 
   methods: {
-    getRecommendedPostUrl(postUID, authorUID) {
-      if (postUID && this.$route.name === 'blog-tag-uid-postUID') return `/blog/tag/${this.$route.params.uid}/${postUID}`
-      if (postUID && this.$route.name === 'blog-author-uid-postUID') return `/blog/author/${authorUID}/${postUID}`
-      return null
-    },
-
     scrollToTop() {
       window.scrollTo({
         top: 0,

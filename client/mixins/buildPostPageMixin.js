@@ -6,11 +6,11 @@ const buildPostPageMixin = (pageName = 'blog', postType = 'post') => ({
     $prismic, store, params, error,
   }) {
     let schemaOrgSnippet = ''
-    let openGraphUrl = `${process.env.domain}/blog/${params.uid}`
+    let openGraphUrl = `${process.env.domain}/blog/${params.uid}/`
 
     // Open graph url
-    if (pageName === 'author' || pageName === 'tag') openGraphUrl = `${process.env.domain}/blog/${pageName}/${params.uid}/${params.postUID}`
-    if (pageName === 'customer-university') openGraphUrl = `${process.env.domain}/customer-university/${params.uid}`
+    if (pageName === 'author' || pageName === 'tag') openGraphUrl = `${process.env.domain}/blog/${pageName}/${params.uid}/${params.postUID}/`
+    if (pageName === 'customer-university') openGraphUrl = `${process.env.domain}/customer-university/${params.uid}/`
 
     try {
       const post = await store.dispatch('getBlogPost', { type: postType, uid: (params.postUID || params.uid) })

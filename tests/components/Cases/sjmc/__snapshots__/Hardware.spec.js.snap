@@ -314,7 +314,7 @@ exports[`Hardware component should render correctly 1`] = `
           <video
             class="media_lazy"
             data-testid="test-case_video"
-            height="884"
+            height="100%"
             id="iphone-video"
             loop="loop"
             muted="muted"

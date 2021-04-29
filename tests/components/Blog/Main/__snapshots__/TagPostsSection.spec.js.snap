@@ -16,7 +16,6 @@ exports[`TagPostsSection component should render correctly 1`] = `
           post="[object Object]"
           theme="light"
           titletag="h2"
-          to="/blog/tag/blog-tag/how-to-configure-ssg-and-ssr-on-nuxt/"
         />
       </div>
        
@@ -32,7 +31,7 @@ exports[`TagPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/tag/blog-tag/how-to-configure-ssg-and-ssr-on-nuxt/"
+              to="/blog/how-to-configure-ssg-and-ssr-on-nuxt/"
             >
               <div
                 class="blog-post"
@@ -122,7 +121,7 @@ exports[`TagPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/tag/blog-tag/amazing-template-for-react-application/"
+              to="/blog/amazing-template-for-react-application/"
             >
               <div
                 class="blog-post"
@@ -212,7 +211,7 @@ exports[`TagPostsSection component should render correctly 1`] = `
           >
             <nuxtlink-stub
               class="blog-post__wrapper"
-              to="/blog/tag/blog-tag/boilerplate-to-set-up-a-vue-project/"
+              to="/blog/boilerplate-to-set-up-a-vue-project/"
             >
               <div
                 class="blog-post"
