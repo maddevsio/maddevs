@@ -1,7 +1,7 @@
 <template>
   <div class="post-card">
     <NuxtLink
-      :to="to || link"
+      :to="link"
       class="post-card__image"
     >
       <img
@@ -13,7 +13,7 @@
       >
     </NuxtLink>
     <div>
-      <NuxtLink :to="to || link">
+      <NuxtLink :to="link">
         <h2
           class="post-card__title post-card__title--short"
           :title="$prismic.asText(post.data.title)"
@@ -76,11 +76,6 @@ export default {
     post: {
       type: Object,
       required: true,
-    },
-
-    to: {
-      type: String,
-      default: '',
     },
 
     author: {

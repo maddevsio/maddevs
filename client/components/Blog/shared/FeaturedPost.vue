@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    :to="to || link"
+    :to="link"
     :class="theme"
     class="featured-post"
   >
@@ -63,11 +63,6 @@ export default {
     post: {
       type: Object,
       required: true,
-    },
-
-    to: {
-      type: String,
-      default: '',
     },
 
     titleTag: {

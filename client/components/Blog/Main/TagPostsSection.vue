@@ -7,7 +7,6 @@
       >
         <FeaturedPost
           v-if="tagPostsLoaded"
-          :to="postLink(tagPosts[0].uid)"
           :post="tagPosts[0]"
           :author="findAuthor(tagPosts[0].data.post_author.id, allAuthors)"
           theme="light"
@@ -27,7 +26,6 @@
             class="tag-posts__list-item"
           >
             <PostCard
-              :to="postLink(post.uid)"
               :post="post"
               :tag="blogTag"
               :author="findAuthor(post.data.post_author.id, allAuthors)"
@@ -64,7 +62,6 @@ import SkeletonFeaturedPost from '@/components/Blog/skeletons/SkeletonFeaturedPo
 import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
 import PostCard from '@/components/Blog/shared/PostCard'
 import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
-import convertStringToSlug from '@/helpers/convertStringToSlug'
 import initializeLazyLoad from '@/helpers/lazyLoad'
 
 import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
@@ -105,10 +102,6 @@ export default {
 
   methods: {
     ...mapActions(['getMoreTagPosts']),
-
-    postLink(postUID) {
-      return `/blog/tag/${convertStringToSlug(this.blogTag)}/${postUID}/`
-    },
   },
 }
 </script>

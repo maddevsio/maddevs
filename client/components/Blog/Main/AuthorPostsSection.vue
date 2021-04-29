@@ -7,7 +7,6 @@
       >
         <FeaturedPost
           v-if="authorPostsLoaded"
-          :to="postLink(authorPosts[0].uid)"
           :post="authorPosts[0]"
           :author="blogAuthor"
           theme="light"
@@ -27,7 +26,6 @@
             class="author-posts__list-item"
           >
             <PostCard
-              :to="postLink(post.uid)"
               :post="post"
               :author="blogAuthor"
               :disable-author-link="true"
@@ -99,10 +97,6 @@ export default {
 
   methods: {
     ...mapActions(['getMoreAuthorPosts']),
-
-    postLink(postUID) {
-      return `/blog/author/${this.blogAuthor.uid}/${postUID}/`
-    },
   },
 }
 </script>
