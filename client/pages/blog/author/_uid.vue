@@ -63,10 +63,6 @@ export default {
       url: this.openGraphUrl,
       jsonLd: this.blogAuthor.schemaOrgSnippet,
       image: 'https://maddevs.io/blog.png',
-      scripts: [
-        // Need for supported Safari9 and IE11 https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Intl
-        { src: 'https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en' },
-      ],
     })
   },
 
