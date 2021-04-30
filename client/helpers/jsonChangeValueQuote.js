@@ -10,20 +10,16 @@
  */
 
 // Order important
-const pattern = { findBy: /":\s+{\s+}/g, replaceTo: '": {}' } // Find this \", \n \"
-const pattern0 = { findBy: /":\n"/g, replaceTo: '": "' } // Find this \", \n \"
-const pattern1 = { findBy: /\\",\\n\\"|\\",\\n\s+\\"|\\",\s+\\n\s+\\"|\\",\s+\\n\\"/g, replaceTo: '\\\', \\\'' } // Find this \", \n \"
-const pattern2 = { findBy: /},\\n\s+\\"|},\s+\\n\\"|},\s+\\n\s+\\"|},\\n\\"/g, replaceTo: '}, \\\'' } // Find this },\n \"
-const pattern3 = { findBy: /\\":\s+\\"/g, replaceTo: '\\\': \\\'' } // Find this \": \"
+const pattern1 = { findBy: /\\",(.*?)\\"/g, replaceTo: '\\\', \\\'' } // Find this \", \"
+const pattern2 = { findBy: /},(.*?)\\"/g, replaceTo: '}, \\\'' } // Find this }, \"
+const pattern3 = { findBy: /\\":(.*?)\\"/g, replaceTo: '\\\': \\\'' } // Find this \": \"
 const pattern4 = { findBy: /\\":\s+{/g, replaceTo: '\\\': {' } // Find this \": {
-const pattern5 = { findBy: /{\s+\\"|{\\"|{\\n\\"|{\s+\\n\\"|{\s+\\n\s+\\"|{\\n\s+\\"/g, replaceTo: '{ \\\'' } // Find this { \n \"
-const pattern6 = { findBy: /\\"\s+\\n\s+}|\\"\s+\\n}|\\"\\n\s+}|\\"\\n}/g, replaceTo: '\\\' }' } // Find this \"\n }
+const pattern5 = { findBy: /{(.*?)\\"/g, replaceTo: '{ \\\'' } // Find this { \"
+const pattern6 = { findBy: /\\"([\\r\\n\s+].*?)}/g, replaceTo: '\\\' }' } // Find this \" }
 
-export default (json = {}, quote = '“') => {
+module.exports = (json = {}, quote = '“') => {
   let result = JSON.stringify(json)
   result = result
-    .replace(pattern.findBy, pattern.replaceTo)
-    .replace(pattern0.findBy, pattern0.replaceTo)
     .replace(pattern1.findBy, pattern1.replaceTo)
     .replace(pattern2.findBy, pattern2.replaceTo)
     .replace(pattern3.findBy, pattern3.replaceTo)
