@@ -169,6 +169,7 @@ export default {
       display: flex;
       justify-content: space-between;
       /deep/ .post-author {
+        margin-right: 24px;
         &__image,
         &__none-image {
           width: 40px;
@@ -179,6 +180,7 @@ export default {
     }
   }
   &__date {
+    white-space: nowrap;
     margin-left: 24px;
     color: $text-color--grey;
   }
@@ -222,6 +224,7 @@ export default {
       &-wrapper {
         display: block;
         /deep/ .post-author {
+          margin-right: 0;
           margin-bottom: 16px;
           &__image,
           &__none-image {

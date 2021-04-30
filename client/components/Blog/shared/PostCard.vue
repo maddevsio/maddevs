@@ -12,7 +12,7 @@
         height="217"
       >
     </NuxtLink>
-    <div>
+    <div class="post-card__info">
       <NuxtLink :to="link">
         <h2
           class="post-card__title post-card__title--short"
@@ -133,6 +133,8 @@ export default {
 @import '../../../assets/styles/_vars';
 
 .post-card {
+  width: 100%;
+  height: 100%;
   * {
     color: $text-color--black;
   }
@@ -161,6 +163,10 @@ export default {
       width: 100%;
       height: auto;
     }
+  }
+  &__info {
+    max-width: 100%;
+    overflow: hidden;
   }
   &__title {
     max-width: 100%;
@@ -210,6 +216,11 @@ export default {
     letter-spacing: -0.035em;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &__meta {
     display: flex;
@@ -220,7 +231,9 @@ export default {
     font-weight: 400;
   }
   &__date {
-    margin-right: 24px;
+    margin-right: 5px;
+    flex-basis: 95px;
+    white-space: nowrap;
     color: $text-color--grey;
   }
 }

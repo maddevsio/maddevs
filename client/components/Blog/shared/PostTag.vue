@@ -46,6 +46,7 @@ export default {
 @import '../../../assets/styles/_vars';
 
 .post-tag {
+  white-space: nowrap;
   font-size: 13px;
   line-height: 22px;
   padding: 4px 16px;
