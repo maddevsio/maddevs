@@ -230,10 +230,6 @@ export default {
         margin-bottom: 0;
       }
     }
-
-    .post-card {
-      height: 100%;
-    }
   }
 
   &__load-more {
