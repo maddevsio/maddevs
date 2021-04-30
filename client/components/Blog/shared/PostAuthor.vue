@@ -21,10 +21,16 @@
       class="post-author__none-image"
     />
     <div class="post-author__info">
-      <p class="post-author__name">
+      <p
+        class="post-author__name"
+        :title="name"
+      >
         {{ shortTitle }}
       </p>
-      <span class="post-author__position">{{ position }}</span>
+      <span
+        class="post-author__position"
+        :title="position"
+      >{{ position }}</span>
     </div>
   </NuxtLink>
 </template>
@@ -82,9 +88,9 @@ export default {
 @import '../../../assets/styles/vars';
 
 .post-author {
-  display: flex;
+  max-width: 100%;
+  display: inline-flex;
   align-items: center;
-  margin-right: 24px;
   &--dark-theme {
     .post-author {
       &__image,
@@ -124,7 +130,9 @@ export default {
   }
 
   &__info {
+    max-width: 100%;
     margin-left: 9px;
+    overflow: hidden;
   }
 
   &__name,
@@ -135,6 +143,9 @@ export default {
     font-weight: 400;
     line-height: 129%;
     letter-spacing: -0.02em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   &__name {
