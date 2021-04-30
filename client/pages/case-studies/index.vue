@@ -3,6 +3,7 @@
     <TitleDesc />
     <CasesList />
     <Customers light />
+    <BuildDevTeam />
   </main>
 </template>
 
@@ -10,6 +11,7 @@
 import TitleDesc from '@/components/Cases/TitleDesc'
 import CasesList from '@/components/Cases/CasesList'
 import Customers from '@/components/Projects/Customers'
+import BuildDevTeam from '@/components/Cases/BuildDevTeam'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
@@ -19,6 +21,7 @@ export default {
     TitleDesc,
     CasesList,
     Customers,
+    BuildDevTeam,
   },
 
   mixins: [initLazyLoadMixin],
