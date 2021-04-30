@@ -62,6 +62,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                   >
                     <p
                       class="post-author__name"
+                      title="Maddevs"
                     >
                       
       Maddevs
@@ -70,6 +71,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                      
                     <span
                       class="post-author__position"
+                      title=""
                     >
                       
                     </span>
@@ -142,7 +144,9 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/software-architecture-design/"
               >
@@ -220,6 +224,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 >
                   <p
                     class="post-author__name"
+                    title="Maddevs"
                   >
                     
       Maddevs
@@ -228,6 +233,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                    
                   <span
                     class="post-author__position"
+                    title=""
                   >
                     
                   </span>
@@ -256,7 +262,9 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/how-to-make-three-paid-eta-services-one-free/"
               >
@@ -334,6 +342,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 >
                   <p
                     class="post-author__name"
+                    title="Maddevs"
                   >
                     
       Maddevs
@@ -342,6 +351,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                    
                   <span
                     class="post-author__position"
+                    title=""
                   >
                     
                   </span>
@@ -370,7 +380,9 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/web-app-deploy-to-glitch/"
               >
@@ -448,6 +460,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 >
                   <p
                     class="post-author__name"
+                    title="Maddevs"
                   >
                     
       Maddevs
@@ -456,6 +469,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                    
                   <span
                     class="post-author__position"
+                    title=""
                   >
                     
                   </span>
@@ -484,7 +498,9 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/effective-refactoring-of-heavy-database-interface/"
               >
@@ -562,6 +578,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 >
                   <p
                     class="post-author__name"
+                    title="Maddevs"
                   >
                     
       Maddevs
@@ -570,6 +587,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                    
                   <span
                     class="post-author__position"
+                    title=""
                   >
                     
                   </span>
@@ -598,7 +616,9 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/running-geo-django-on-elasticbeanstalk/"
               >
@@ -676,6 +696,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 >
                   <p
                     class="post-author__name"
+                    title="Maddevs"
                   >
                     
       Maddevs
@@ -684,6 +705,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                    
                   <span
                     class="post-author__position"
+                    title=""
                   >
                     
                   </span>
@@ -712,7 +734,9 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/guaranteed-delivery-with-grpc-streams/"
               >
@@ -790,6 +814,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 >
                   <p
                     class="post-author__name"
+                    title="Maddevs"
                   >
                     
       Maddevs
@@ -798,6 +823,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                    
                   <span
                     class="post-author__position"
+                    title=""
                   >
                     
                   </span>
@@ -826,7 +852,9 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/how-to-start-with-logging-in-golang-projects-part-1/"
               >
@@ -904,6 +932,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 >
                   <p
                     class="post-author__name"
+                    title="Maddevs"
                   >
                     
       Maddevs
@@ -912,6 +941,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                    
                   <span
                     class="post-author__position"
+                    title=""
                   >
                     
                   </span>
@@ -940,7 +970,9 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/how-to-start-developing-for-raspberry-pi-with-qt/"
               >
@@ -1018,6 +1050,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 >
                   <p
                     class="post-author__name"
+                    title="Maddevs"
                   >
                     
       Maddevs
@@ -1026,6 +1059,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                    
                   <span
                     class="post-author__position"
+                    title=""
                   >
                     
                   </span>
@@ -1054,7 +1088,9 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/a-bit-about-event-delegation-in-pure-js/"
               >
@@ -1132,6 +1168,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 >
                   <p
                     class="post-author__name"
+                    title="Maddevs"
                   >
                     
       Maddevs
@@ -1140,6 +1177,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                    
                   <span
                     class="post-author__position"
+                    title=""
                   >
                     
                   </span>
@@ -1168,7 +1206,9 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/a-bit-about-event-delegation-in-react/"
               >
@@ -1246,6 +1286,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 >
                   <p
                     class="post-author__name"
+                    title="Maddevs"
                   >
                     
       Maddevs
@@ -1254,6 +1295,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                    
                   <span
                     class="post-author__position"
+                    title=""
                   >
                     
                   </span>
@@ -1282,7 +1324,9 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/best-ci-for-js-projects-with-puppeteer-tests/"
               >
@@ -1360,6 +1404,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 >
                   <p
                     class="post-author__name"
+                    title="Maddevs"
                   >
                     
       Maddevs
@@ -1368,6 +1413,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                    
                   <span
                     class="post-author__position"
+                    title=""
                   >
                     
                   </span>
@@ -1396,7 +1442,9 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/mad-fake-slack/"
               >
@@ -1474,6 +1522,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 >
                   <p
                     class="post-author__name"
+                    title="Maddevs"
                   >
                     
       Maddevs
@@ -1482,6 +1531,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                    
                   <span
                     class="post-author__position"
+                    title=""
                   >
                     
                   </span>
@@ -1510,7 +1560,9 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/comedian-slack-standup-bot/"
               >
@@ -1588,6 +1640,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 >
                   <p
                     class="post-author__name"
+                    title="Maddevs"
                   >
                     
       Maddevs
@@ -1596,6 +1649,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                    
                   <span
                     class="post-author__position"
+                    title=""
                   >
                     
                   </span>

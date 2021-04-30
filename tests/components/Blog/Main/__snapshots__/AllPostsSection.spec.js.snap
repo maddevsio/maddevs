@@ -226,7 +226,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/software-architecture-design/"
               >
@@ -313,7 +315,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/how-to-make-three-paid-eta-services-one-free/"
               >
@@ -400,7 +404,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/web-app-deploy-to-glitch/"
               >
@@ -487,7 +493,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/effective-refactoring-of-heavy-database-interface/"
               >
@@ -574,7 +582,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/running-geo-django-on-elasticbeanstalk/"
               >
@@ -661,7 +671,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/guaranteed-delivery-with-grpc-streams/"
               >
@@ -748,7 +760,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/how-to-start-with-logging-in-golang-projects-part-1/"
               >
@@ -835,7 +849,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/how-to-start-developing-for-raspberry-pi-with-qt/"
               >
@@ -922,7 +938,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/a-bit-about-event-delegation-in-pure-js/"
               >
@@ -1009,7 +1027,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/a-bit-about-event-delegation-in-react/"
               >
@@ -1096,7 +1116,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/best-ci-for-js-projects-with-puppeteer-tests/"
               >
@@ -1183,7 +1205,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/mad-fake-slack/"
               >
@@ -1270,7 +1294,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/comedian-slack-standup-bot/"
               >
@@ -1357,7 +1383,9 @@ exports[`AllPostsSection component is a Vue instance 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/best-architecture-for-the-react-project/"
               >

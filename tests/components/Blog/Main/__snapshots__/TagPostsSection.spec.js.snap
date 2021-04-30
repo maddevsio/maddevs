@@ -42,7 +42,9 @@ exports[`TagPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/how-to-configure-ssg-and-ssr-on-nuxt/"
               >
@@ -128,7 +130,9 @@ exports[`TagPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/amazing-template-for-react-application/"
               >
@@ -214,7 +218,9 @@ exports[`TagPostsSection component should render correctly 1`] = `
               />
             </nuxtlink-stub>
              
-            <div>
+            <div
+              class="post-card__info"
+            >
               <nuxtlink-stub
                 to="/blog/boilerplate-to-set-up-a-vue-project/"
               >
