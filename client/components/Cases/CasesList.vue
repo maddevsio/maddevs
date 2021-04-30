@@ -11,6 +11,7 @@
         :title="item.title"
         :desc="item.desc"
         :width="item.width"
+        :link="item.link"
       />
     </section>
     <!-- NOTE: Temporarily commented -->
@@ -30,14 +31,6 @@ export default {
   components: { CasesListItem },
   data() {
     return {
-      logo: {
-        width: 259,
-        height: 82,
-        folder: 'nambafood',
-        file: 'nambafood-logo',
-        alt: '',
-      },
-
       cases: [
         {
           width: 'full',
@@ -49,9 +42,9 @@ export default {
           logo: {
             width: 259,
             height: 82,
-            folder: 'nambafood',
-            file: 'nambafood-logo',
-            alt: '',
+            folder: 'sjmc',
+            file: 'sjmc-logo',
+            alt: 'SJMC logo',
           },
         },
         {
@@ -66,7 +59,7 @@ export default {
             height: 82,
             folder: 'nambafood',
             file: 'nambafood-logo',
-            alt: '',
+            alt: 'Namba Food logo',
           },
         },
         {
@@ -79,14 +72,14 @@ export default {
           logo: {
             width: 259,
             height: 82,
-            folder: 'nambafood',
-            file: 'nambafood-logo',
-            alt: '',
+            folder: 'yourcast',
+            file: 'yourcast-logo',
+            alt: 'Yourcast logo',
           },
         },
         {
           width: 'small',
-          link: '/case-studies/veequ/',
+          link: '/case-studies/veeqo/',
           video: '/videos/main.ef19480.mp4',
           subtitle: 'BYOD',
           title: 'Veeqo – platform for e-commerce',
@@ -94,9 +87,9 @@ export default {
           logo: {
             width: 259,
             height: 82,
-            folder: 'nambafood',
-            file: 'nambafood-logo',
-            alt: '',
+            folder: 'veeqo',
+            file: 'veeqo-logo',
+            alt: 'Veeqo logo',
           },
         },
         {
@@ -109,9 +102,9 @@ export default {
           logo: {
             width: 259,
             height: 82,
-            folder: 'nambafood',
-            file: 'nambafood-logo',
-            alt: '',
+            folder: 'godee',
+            file: 'godee-logo',
+            alt: 'Godee logo',
           },
         },
       ],
@@ -124,7 +117,7 @@ export default {
   .cases-list {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: dense;
     gap: 30px;
 

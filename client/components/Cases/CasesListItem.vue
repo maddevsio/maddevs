@@ -10,7 +10,7 @@
     @mouseover="play"
     @mouseout="pause"
   >
-    <NuxtLink to="/">
+    <NuxtLink :to="link">
       <!-- Video BG -->
       <video
         ref="video"
@@ -76,6 +76,11 @@ export default {
       default: null,
     },
 
+    link: {
+      type: String,
+      default: '/',
+    },
+
     subtitle: {
       type: String,
       default: null,
@@ -89,7 +94,7 @@ export default {
 
   methods: {
     play() {
-      this.$refs.video.play()
+      // this.$refs.video.play()
     },
 
     pause() {
@@ -127,15 +132,15 @@ export default {
     }
 
     &--full {
-      grid-column: auto / span 4;
-    }
-
-    &--big {
       grid-column: auto / span 3;
     }
 
-    &--middle {
+    &--big {
       grid-column: auto / span 2;
+    }
+
+    &--middle {
+      grid-column: auto / span 1;
     }
 
     &--small {
