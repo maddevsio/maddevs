@@ -143,7 +143,6 @@ export default {
 
     &__load-more {
       margin-top: 36px;
-      margin-bottom: 48px;
     }
 
     @media only screen and (max-width: 991px) {
