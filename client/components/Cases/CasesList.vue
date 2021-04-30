@@ -2,40 +2,13 @@
   <div class="container">
     <section class="cases-list">
       <!-- Card -->
-      <NuxtLink
-        to="/"
-        class="cases-list_card cases-list_card-full"
-      >
-        <!-- Video BG -->
-        <video
-          loop="true"
-          muted="true"
-          autoplay="true"
-        >
-          <source
-            :src="$getMediaFromS3('/videos/main.ef19480.mp4')"
-            type="video/mp4"
-          >
-          Your browser does not support the video tag.
-        </video>
-        <!-- END Video BG -->
-        <!-- Card info -->
-        <div class="cases-list_card-info">
-          <img
-            :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
-            :alt="logo.alt"
-          >
-          <span>FOODTECH</span>
-          <h3>Sir John Monash Centre</h3>
-          <p>Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.</p>
-          <NuxtLink
-            to="/"
-          >
-            Explore
-          </NuxtLink>
-        </div>
-        <!-- END Card info  -->
-      </NuxtLink>
+        <CasesListItem
+          :video-file-name="sjmc.video"
+          :logo="sjmc.logo"
+          :subtitle="sjmc.subtitle"
+          :title="sjmc.title"
+          :desc="sjmc.desc"
+        />
       <!-- Card -->
       <NuxtLink
         to="/"
@@ -60,7 +33,7 @@
             :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
             :alt="logo.alt"
           >
-          <span>FOODTECH</span>
+          <span>Foodtech</span>
           <h3>Contactless Delivery Service</h3>
           <p>Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.</p>
           <NuxtLink
@@ -83,7 +56,7 @@
           autoplay="true"
         >
           <source
-            :src="$getMediaFromS3('/videos/main.ef19480.mp4')"
+            :src="$getMediaFromS3('/videos/yourcast-banner.mp4')"
             type="video/mp4"
           >
           Your browser does not support the video tag.
@@ -95,9 +68,9 @@
             :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
             :alt="logo.alt"
           >
-          <span>FOODTECH</span>
+          <span>Content Streaming</span>
           <h3>The Evolution of Yourcast.TV</h3>
-          <p>Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.</p>
+          <p>Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.</p>
           <NuxtLink
             to="/"
           >
@@ -130,7 +103,7 @@
             :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
             :alt="logo.alt"
           >
-          <span>FOODTECH</span>
+          <span>BYOD</span>
           <h3>Veeqo – platform for e-commerce</h3>
           <p>Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.</p>
           <NuxtLink
@@ -153,7 +126,7 @@
           autoplay="true"
         >
           <source
-            :src="$getMediaFromS3('/videos/main.ef19480.mp4')"
+            :src="$getMediaFromS3('/videos/godee-case-main-video.mp4')"
             type="video/mp4"
           >
           Your browser does not support the video tag.
@@ -165,9 +138,9 @@
             :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
             :alt="logo.alt"
           >
-          <span>FOODTECH</span>
+          <span>Transportation</span>
           <h3>Convenient shuttle bus service</h3>
-          <p>Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.</p>
+          <p>Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.</p>
           <NuxtLink
             to="/"
           >
@@ -187,8 +160,11 @@
 </template>
 
 <script>
+import CasesListItem from '@/components/Cases/CasesListItem'
+
 export default {
   name: 'CasesList',
+  components: { CasesListItem },
   data() {
     return {
       logo: {
@@ -198,7 +174,36 @@ export default {
         file: 'nambafood-logo',
         alt: '',
       },
+
+      nambafood: '/videos/main.ef19480.mp4',
+      yourcast: '/videos/yourcast-banner.mp4',
+      veequ: '/videos/main.ef19480.mp4',
+      godee: '/videos/godee-case-main-video.mp4',
+
+      sjmc: {
+        video: '/videos/sjmc/sjmc-main-video.b35a387.mp4',
+        subtitle: 'SJMC',
+        title: 'Sir John Monash Centre',
+        desc: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
+        logo: {
+          width: 259,
+          height: 82,
+          folder: 'nambafood',
+          file: 'nambafood-logo',
+          alt: '',
+        },
+      },
     }
+  },
+
+  methods: {
+    play() {
+      this.$refs.video.play()
+    },
+
+    pause() {
+      this.$refs.video.pause()
+    },
   },
 }
 </script>
@@ -226,6 +231,10 @@ export default {
       box-sizing: border-box;
       overflow: hidden;
       text-decoration: none;
+
+      a {
+        text-decoration: none;
+      }
 
       &-full {
         grid-column: auto / span 4;
@@ -267,6 +276,8 @@ export default {
         left: 0;
         z-index: 0;
         background-color: rgba(0, 0, 0, 0.25);
+        user-select: none;
+        pointer-events: none;
       }
 
       &-info {
