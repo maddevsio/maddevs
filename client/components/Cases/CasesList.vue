@@ -177,6 +177,12 @@
         <!-- END Card info  -->
       </NuxtLink>
     </section>
+    <!-- NOTE: Temporarily commented -->
+    <!-- <button
+      class="cases-list_see-more"
+    >
+      <span>See More</span> ↓
+    </button> -->
   </div>
 </template>
 
@@ -331,9 +337,43 @@ export default {
         }
       }
     }
+
+    &_see-more {
+      color: #EC1C24;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: -0.013em;
+      margin: 50px auto 0;
+      font-family: 'Inter', sans-serif;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+
+      span {
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 100%;
+          height: 1px;
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: #EC1C24;
+        }
+      }
+    }
   }
 
   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: start;
+    padding-bottom: 120px;
+
     @media screen and (max-width: 375px) {
       padding: 0;
     }
