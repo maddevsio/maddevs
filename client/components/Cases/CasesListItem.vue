@@ -1,6 +1,12 @@
 <template>
   <div
-    class="cases-list_item cases-list_item-full"
+    class="cases-list_item"
+    :class="{
+      'cases-list_item--full': width === 'full',
+      'cases-list_item--big': width === 'big',
+      'cases-list_item--middle': width === 'middle',
+      'cases-list_item--small': width === 'small',
+    }"
     @mouseover="play"
     @mouseout="pause"
   >
@@ -44,6 +50,11 @@
 <script>
 export default {
   props: {
+    width: {
+      type: String,
+      default: 'full',
+    },
+
     videoFileName: {
       type: String,
       default: null,
@@ -115,19 +126,19 @@ export default {
       }
     }
 
-    &-full {
+    &--full {
       grid-column: auto / span 4;
     }
 
-    &-big {
+    &--big {
       grid-column: auto / span 3;
     }
 
-    &-middle {
+    &--middle {
       grid-column: auto / span 2;
     }
 
-    &-small {
+    &--small {
       grid-column: auto / span 1;
     }
 
@@ -209,8 +220,8 @@ export default {
         line-height: 140%;
         font-weight: normal;
         overflow: hidden;
-        transition: all 0.3s ease;
-        transform: translateY(100px);
+        transition: all 0.4s ease;
+        transform: translateY(50px);
       }
 
       > a {
@@ -223,7 +234,7 @@ export default {
         padding: 0 8px;
         border-radius: 4px;
         overflow: hidden;
-        transition: all 0.3s ease;
+        transition: all 0.4s ease;
         transform: translateY(100px);
 
         @media screen and (max-width: 375px) {

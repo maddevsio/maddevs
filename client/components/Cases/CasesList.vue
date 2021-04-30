@@ -2,153 +2,16 @@
   <div class="container">
     <section class="cases-list">
       <!-- Card -->
-        <CasesListItem
-          :video-file-name="sjmc.video"
-          :logo="sjmc.logo"
-          :subtitle="sjmc.subtitle"
-          :title="sjmc.title"
-          :desc="sjmc.desc"
-        />
-      <!-- Card -->
-      <NuxtLink
-        to="/"
-        class="cases-list_card cases-list_card-big"
-      >
-        <!-- Video BG -->
-        <video
-          loop="true"
-          muted="true"
-          autoplay="true"
-        >
-          <source
-            :src="$getMediaFromS3('/videos/main.ef19480.mp4')"
-            type="video/mp4"
-          >
-          Your browser does not support the video tag.
-        </video>
-        <!-- END Video BG -->
-        <!-- Card info -->
-        <div class="cases-list_card-info">
-          <img
-            :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
-            :alt="logo.alt"
-          >
-          <span>Foodtech</span>
-          <h3>Contactless Delivery Service</h3>
-          <p>Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.</p>
-          <NuxtLink
-            to="/"
-          >
-            Explore
-          </NuxtLink>
-        </div>
-        <!-- END Card info  -->
-      </NuxtLink>
-      <!-- Card -->
-      <NuxtLink
-        to="/"
-        class="cases-list_card cases-list_card-small"
-      >
-        <!-- Video BG -->
-        <video
-          loop="true"
-          muted="true"
-          autoplay="true"
-        >
-          <source
-            :src="$getMediaFromS3('/videos/yourcast-banner.mp4')"
-            type="video/mp4"
-          >
-          Your browser does not support the video tag.
-        </video>
-        <!-- END Video BG -->
-        <!-- Card info -->
-        <div class="cases-list_card-info">
-          <img
-            :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
-            :alt="logo.alt"
-          >
-          <span>Content Streaming</span>
-          <h3>The Evolution of Yourcast.TV</h3>
-          <p>Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.</p>
-          <NuxtLink
-            to="/"
-          >
-            Explore
-          </NuxtLink>
-        </div>
-        <!-- END Card info  -->
-      </NuxtLink>
-      <!-- Card -->
-      <NuxtLink
-        to="/"
-        class="cases-list_card cases-list_card-small"
-      >
-        <!-- Video BG -->
-        <video
-          loop="true"
-          muted="true"
-          autoplay="true"
-        >
-          <source
-            :src="$getMediaFromS3('/videos/main.ef19480.mp4')"
-            type="video/mp4"
-          >
-          Your browser does not support the video tag.
-        </video>
-        <!-- END Video BG -->
-        <!-- Card info -->
-        <div class="cases-list_card-info">
-          <img
-            :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
-            :alt="logo.alt"
-          >
-          <span>BYOD</span>
-          <h3>Veeqo – platform for e-commerce</h3>
-          <p>Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.</p>
-          <NuxtLink
-            to="/"
-          >
-            Explore
-          </NuxtLink>
-        </div>
-        <!-- END Card info  -->
-      </NuxtLink>
-      <!-- Card -->
-      <NuxtLink
-        to="/"
-        class="cases-list_card cases-list_card-big"
-      >
-        <!-- Video BG -->
-        <video
-          loop="true"
-          muted="true"
-          autoplay="true"
-        >
-          <source
-            :src="$getMediaFromS3('/videos/godee-case-main-video.mp4')"
-            type="video/mp4"
-          >
-          Your browser does not support the video tag.
-        </video>
-        <!-- END Video BG -->
-        <!-- Card info -->
-        <div class="cases-list_card-info">
-          <img
-            :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
-            :alt="logo.alt"
-          >
-          <span>Transportation</span>
-          <h3>Convenient shuttle bus service</h3>
-          <p>Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.</p>
-          <NuxtLink
-            to="/"
-          >
-            Explore
-          </NuxtLink>
-        </div>
-        <!-- END Card info  -->
-      </NuxtLink>
+      <CasesListItem
+        v-for="(item, i) of cases"
+        :key="`case_list_item_${i}`"
+        :video-file-name="item.video"
+        :logo="item.logo"
+        :subtitle="item.subtitle"
+        :title="item.title"
+        :desc="item.desc"
+        :width="item.width"
+      />
     </section>
     <!-- NOTE: Temporarily commented -->
     <!-- <button
@@ -175,35 +38,84 @@ export default {
         alt: '',
       },
 
-      nambafood: '/videos/main.ef19480.mp4',
-      yourcast: '/videos/yourcast-banner.mp4',
-      veequ: '/videos/main.ef19480.mp4',
-      godee: '/videos/godee-case-main-video.mp4',
-
-      sjmc: {
-        video: '/videos/sjmc/sjmc-main-video.b35a387.mp4',
-        subtitle: 'SJMC',
-        title: 'Sir John Monash Centre',
-        desc: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
-        logo: {
-          width: 259,
-          height: 82,
-          folder: 'nambafood',
-          file: 'nambafood-logo',
-          alt: '',
+      cases: [
+        {
+          width: 'full',
+          link: '/case-studies/sir-john-monash-centre/',
+          video: '/videos/sjmc/sjmc-main-video.b35a387.mp4',
+          subtitle: 'SJMC',
+          title: 'Sir John Monash Centre',
+          desc: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
+          logo: {
+            width: 259,
+            height: 82,
+            folder: 'nambafood',
+            file: 'nambafood-logo',
+            alt: '',
+          },
         },
-      },
+        {
+          width: 'big',
+          link: '/case-studies/namba-food/',
+          video: '/videos/main.ef19480.mp4',
+          subtitle: 'Foodtech',
+          title: 'Contactless Delivery Service',
+          desc: 'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
+          logo: {
+            width: 259,
+            height: 82,
+            folder: 'nambafood',
+            file: 'nambafood-logo',
+            alt: '',
+          },
+        },
+        {
+          width: 'small',
+          link: '/case-studies/yourcast/',
+          video: '/videos/yourcast-banner.mp4',
+          subtitle: 'Content Streaming',
+          title: 'The Evolution of Yourcast.TV',
+          desc: 'Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.',
+          logo: {
+            width: 259,
+            height: 82,
+            folder: 'nambafood',
+            file: 'nambafood-logo',
+            alt: '',
+          },
+        },
+        {
+          width: 'small',
+          link: '/case-studies/veequ/',
+          video: '/videos/main.ef19480.mp4',
+          subtitle: 'BYOD',
+          title: 'Veeqo – platform for e-commerce',
+          desc: 'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
+          logo: {
+            width: 259,
+            height: 82,
+            folder: 'nambafood',
+            file: 'nambafood-logo',
+            alt: '',
+          },
+        },
+        {
+          width: 'big',
+          link: '/case-studies/godee/',
+          video: '/videos/godee-case-main-video.mp4',
+          subtitle: 'Transportation',
+          title: 'Convenient shuttle bus service',
+          desc: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
+          logo: {
+            width: 259,
+            height: 82,
+            folder: 'nambafood',
+            file: 'nambafood-logo',
+            alt: '',
+          },
+        },
+      ],
     }
-  },
-
-  methods: {
-    play() {
-      this.$refs.video.play()
-    },
-
-    pause() {
-      this.$refs.video.pause()
-    },
   },
 }
 </script>
