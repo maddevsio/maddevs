@@ -1,5 +1,5 @@
 import '@testing-library/vue'
-import Author from '@/pages/blog/author/_uid/'
+import Author from '@/pages/blog/author/_uid.vue'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
 import Vuex from 'vuex'
 

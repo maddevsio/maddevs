@@ -1,5 +1,5 @@
 import '@testing-library/vue'
-import Tag from '@/pages/blog/tag/_uid/'
+import Tag from '@/pages/blog/tag/_uid.vue'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
 import Vuex from 'vuex'
 
