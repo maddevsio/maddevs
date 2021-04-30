@@ -8,35 +8,39 @@ exports[`TheLastPostSection component should render correctly 1`] = `
     <div
       class="last-post"
     >
-      <nuxtlink-stub
-        class="featured-post dark"
-        to="/blog/software-architecture-design/"
+      <div
+        class="featured-post featured-post--dark-theme"
       >
         <div
           class="row featured-post__wrapper"
         >
           <div
-            class="col-12 col-lg-6 featured-post__main"
+            class="col-12 col-lg-6 featured-post__info-wrapper"
           >
-            <h1
-              class="featured-post__title"
-              title="text"
+            <nuxtlink-stub
+              class="featured-post__info"
+              to="/blog/software-architecture-design/"
             >
-              
-        text
-      
-            </h1>
-             
-            <p
-              class="featured-post__paragraph"
-            >
-              
-        Hello, everyone!Today, I would like to introduce you to the world of application design.Designing applications can be called a multidisciplinary task, and it includes:I want to consider the question...
-      
-            </p>
+              <h1
+                class="featured-post__title"
+                title="text"
+              >
+                
+          text
+        
+              </h1>
+               
+              <p
+                class="featured-post__paragraph"
+              >
+                
+          Hello, everyone!Today, I would like to introduce you to the world of application design.Designing applications can be called a multidisciplinary task, and it includes:I want to consider the question...
+        
+              </p>
+            </nuxtlink-stub>
              
             <div
-              class="featured-post__data d-flex justify-content-between"
+              class="featured-post__meta-wrapper"
             >
               <!---->
                
@@ -44,22 +48,18 @@ exports[`TheLastPostSection component should render correctly 1`] = `
                 class="featured-post__meta"
               >
                 <nuxtlink-stub
-                  class="post-tag dark"
+                  class="post-tag post-tag--dark"
+                  data-testid="test-tag"
                   event="click"
                   to="/blog/tag/backend-development/"
                 >
-                  <span
-                    class="tag"
-                    data-testid="test-tag"
-                  >
-                    
-    Backend development
-  
-                  </span>
+                  
+  Backend development
+
                 </nuxtlink-stub>
                  
                 <span
-                  class="created-at"
+                  class="featured-post__date"
                 >
                   Dec 17, 2020
                 </span>
@@ -70,16 +70,21 @@ exports[`TheLastPostSection component should render correctly 1`] = `
           <div
             class="col-12 col-lg-6 featured-post__image-wrapper"
           >
-            <img
-              alt="Application Design Proccess."
-              class="featured-post__image img_lazy"
-              data-src="https://images.prismic.io/superpupertest/93d447b6-2865-4da7-ad2c-5cd07c98d4e3_8.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
-              height="533"
-              width="983"
-            />
+            <nuxtlink-stub
+              class="featured-post__image"
+              to="/blog/software-architecture-design/"
+            >
+              <img
+                alt="Application Design Proccess."
+                class="img_lazy"
+                data-src="https://images.prismic.io/superpupertest/93d447b6-2865-4da7-ad2c-5cd07c98d4e3_8.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
+                height="533"
+                width="983"
+              />
+            </nuxtlink-stub>
           </div>
         </div>
-      </nuxtlink-stub>
+      </div>
     </div>
   </div>
 </div>

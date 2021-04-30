@@ -25,7 +25,7 @@ exports[`Main component should render correctly 1`] = `
         class="container"
       >
         <div
-          class="latest-posts__wrapper"
+          class="latest-posts__list"
         />
       </div>
     </div>
@@ -39,7 +39,7 @@ exports[`Main component should render correctly 1`] = `
         class="container"
       >
         <div
-          class="filter"
+          class="posts-filter"
         >
           <div
             data-simplebar="init"
@@ -70,16 +70,15 @@ exports[`Main component should render correctly 1`] = `
                       class="simplebar-content"
                     >
                       <ul
-                        class="filter-list"
+                        class="posts-filter__list"
                       >
                         <li
-                          class="filter-item__wrapper"
+                          class="posts-filter__item-wrapper"
                         >
                           <div
-                            class="filter-item"
+                            class="posts-filter__item"
                           >
                             <input
-                              class="radio-input"
                               data-testid="test-post-input"
                               id="Editors Pick"
                               name="Tag"
@@ -88,7 +87,6 @@ exports[`Main component should render correctly 1`] = `
                             />
                              
                             <label
-                              class="filter-label"
                               for="Editors Pick"
                             >
                               Editors Pick
@@ -96,13 +94,12 @@ exports[`Main component should render correctly 1`] = `
                           </div>
                         </li>
                         <li
-                          class="filter-item__wrapper"
+                          class="posts-filter__item-wrapper"
                         >
                           <div
-                            class="filter-item"
+                            class="posts-filter__item"
                           >
                             <input
-                              class="radio-input"
                               data-testid="test-post-input"
                               id="Software Development"
                               name="Tag"
@@ -111,7 +108,6 @@ exports[`Main component should render correctly 1`] = `
                             />
                              
                             <label
-                              class="filter-label"
                               for="Software Development"
                             >
                               Software Development
@@ -119,13 +115,12 @@ exports[`Main component should render correctly 1`] = `
                           </div>
                         </li>
                         <li
-                          class="filter-item__wrapper"
+                          class="posts-filter__item-wrapper"
                         >
                           <div
-                            class="filter-item"
+                            class="posts-filter__item"
                           >
                             <input
-                              class="radio-input"
                               data-testid="test-post-input"
                               id="Mobile Development"
                               name="Tag"
@@ -134,7 +129,6 @@ exports[`Main component should render correctly 1`] = `
                             />
                              
                             <label
-                              class="filter-label"
                               for="Mobile Development"
                             >
                               Mobile Development
@@ -142,13 +136,12 @@ exports[`Main component should render correctly 1`] = `
                           </div>
                         </li>
                         <li
-                          class="filter-item__wrapper"
+                          class="posts-filter__item-wrapper"
                         >
                           <div
-                            class="filter-item"
+                            class="posts-filter__item"
                           >
                             <input
-                              class="radio-input"
                               data-testid="test-post-input"
                               id="Project Management"
                               name="Tag"
@@ -157,7 +150,6 @@ exports[`Main component should render correctly 1`] = `
                             />
                              
                             <label
-                              class="filter-label"
                               for="Project Management"
                             >
                               Project Management
@@ -165,13 +157,12 @@ exports[`Main component should render correctly 1`] = `
                           </div>
                         </li>
                         <li
-                          class="filter-item__wrapper"
+                          class="posts-filter__item-wrapper"
                         >
                           <div
-                            class="filter-item"
+                            class="posts-filter__item"
                           >
                             <input
-                              class="radio-input"
                               data-testid="test-post-input"
                               id="Hardware"
                               name="Tag"
@@ -180,7 +171,6 @@ exports[`Main component should render correctly 1`] = `
                             />
                              
                             <label
-                              class="filter-label"
                               for="Hardware"
                             >
                               Hardware
@@ -188,13 +178,12 @@ exports[`Main component should render correctly 1`] = `
                           </div>
                         </li>
                         <li
-                          class="filter-item__wrapper"
+                          class="posts-filter__item-wrapper"
                         >
                           <div
-                            class="filter-item"
+                            class="posts-filter__item"
                           >
                             <input
-                              class="radio-input"
                               data-testid="test-post-input"
                               id="Job Opening"
                               name="Tag"
@@ -203,7 +192,6 @@ exports[`Main component should render correctly 1`] = `
                             />
                              
                             <label
-                              class="filter-label"
                               for="Job Opening"
                             >
                               Job Opening
@@ -245,1294 +233,1224 @@ exports[`Main component should render correctly 1`] = `
         </div>
          
         <div
-          class="filtered-posts__wrapper"
+          class="filtered-posts__list"
         >
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/software-architecture-design/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="Application Design Proccess."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/93d447b6-2865-4da7-ad2c-5cd07c98d4e3_8.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/software-architecture-design/"
                 >
-                  <img
-                    alt="Application Design Proccess."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/93d447b6-2865-4da7-ad2c-5cd07c98d4e3_8.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         Hello, everyone!Today, I would like to introduce you to the world of application design.Designing applications can be called a multidisciplinary...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Dec 17, 2020
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/backend-development/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Backend development
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Dec 17, 2020
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/backend-development/"
+                  >
+                    
+  Backend development
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/how-to-make-three-paid-eta-services-one-free/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="How to Make Three Paid ETA Services One Free."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/7b3c67c5-b80e-488d-ad0e-e90745ede392_1_q9EOHqrYhaLpY1ZIL0C4Qw.jpeg?auto=compress,format&rect=0,1,1260,683&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/how-to-make-three-paid-eta-services-one-free/"
                 >
-                  <img
-                    alt="How to Make Three Paid ETA Services One Free."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/7b3c67c5-b80e-488d-ad0e-e90745ede392_1_q9EOHqrYhaLpY1ZIL0C4Qw.jpeg?auto=compress,format&rect=0,1,1260,683&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         This is a story on how to not spend even a penny by using three ETA (estimated time of arrival) services instead of one. Everything is based on my...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Dec 17, 2020
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/mobile-development/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Mobile Development
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Dec 17, 2020
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/mobile-development/"
+                  >
+                    
+  Mobile Development
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/web-app-deploy-to-glitch/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="Glitch.com + Node.js."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/1642c64c-6482-41c1-9a2e-c76c1040caa4_Glitch2.png?auto=compress,format&rect=0,5,680,369&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/web-app-deploy-to-glitch/"
                 >
-                  <img
-                    alt="Glitch.com + Node.js."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/1642c64c-6482-41c1-9a2e-c76c1040caa4_Glitch2.png?auto=compress,format&rect=0,5,680,369&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         So, this is the second part of my interaction with Glitch.com and in this part, we will talk about deployment methods, both standard and non-standard...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Dec 01, 2020
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/frontend-development/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Frontend development
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Dec 01, 2020
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/frontend-development/"
+                  >
+                    
+  Frontend development
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/effective-refactoring-of-heavy-database-interface/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="From Total Mess to Order in Several Steps."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/d9fd1cce-d1a8-44fa-b90c-11fa2834c824_1_vlNV_wVecX-_9r55T7E2-w.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/effective-refactoring-of-heavy-database-interface/"
                 >
-                  <img
-                    alt="From Total Mess to Order in Several Steps."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/d9fd1cce-d1a8-44fa-b90c-11fa2834c824_1_vlNV_wVecX-_9r55T7E2-w.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         This story is about pain, agony, and denial of ready-made solutions. It is also about changes that improve the code’s readability and help the...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Jul 14, 2020
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/backend-development/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Backend development
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Jul 14, 2020
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/backend-development/"
+                  >
+                    
+  Backend development
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/running-geo-django-on-elasticbeanstalk/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="Running Geo Django on ElasticBeanstalk."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/638ccb04-1340-4efc-9a7d-7ba9812f6929_1*BmpD-5oBin9o583biKxvCQ.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/running-geo-django-on-elasticbeanstalk/"
                 >
-                  <img
-                    alt="Running Geo Django on ElasticBeanstalk."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/638ccb04-1340-4efc-9a7d-7ba9812f6929_1*BmpD-5oBin9o583biKxvCQ.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         I want to tell you this story because I wasted about 14 hours to realize how to achieve it correctly.NB!: Sometimes working with Elastic Beanstalk...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Jun 11, 2020
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/backend-development/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Backend development
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Jun 11, 2020
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/backend-development/"
+                  >
+                    
+  Backend development
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/guaranteed-delivery-with-grpc-streams/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="GRPC Streams."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/ffcc13e7-abed-4806-ac94-ec0f95bb88ee_1_hwJDs4aWX8ioOeHmWG13lw.png?auto=compress,format&rect=0,1,2000,1084&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/guaranteed-delivery-with-grpc-streams/"
                 >
-                  <img
-                    alt="GRPC Streams."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/ffcc13e7-abed-4806-ac94-ec0f95bb88ee_1_hwJDs4aWX8ioOeHmWG13lw.png?auto=compress,format&rect=0,1,2000,1084&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         Let’s take a look at the minimum requirements for web developers in the 2000s. In the good old days, you could build more or less working website...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Nov 26, 2019
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/backend-development/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Backend development
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Nov 26, 2019
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/backend-development/"
+                  >
+                    
+  Backend development
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/how-to-start-with-logging-in-golang-projects-part-1/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="Go projects."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/2767800e-7419-4f93-a9d2-cabde13b22b8_1_6mY93Z3wBTUpcRdEvhIBeg.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/how-to-start-with-logging-in-golang-projects-part-1/"
                 >
-                  <img
-                    alt="Go projects."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/2767800e-7419-4f93-a9d2-cabde13b22b8_1_6mY93Z3wBTUpcRdEvhIBeg.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         Logs are recorded events that your software produces. They are essential to every IT project since they provide the context to help debugging and...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Nov 05, 2019
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/backend-development/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Backend development
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Nov 05, 2019
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/backend-development/"
+                  >
+                    
+  Backend development
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/how-to-start-developing-for-raspberry-pi-with-qt/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="Raspberry Pi with Qt."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/e4a2fb29-2906-479e-a875-0dd278f4bc08_Raspberry+Pi+with+Qt.png?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/how-to-start-developing-for-raspberry-pi-with-qt/"
                 >
-                  <img
-                    alt="Raspberry Pi with Qt."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/e4a2fb29-2906-479e-a875-0dd278f4bc08_Raspberry+Pi+with+Qt.png?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         One fine day, it became necessary to finish the project for an international mining company. The workers regularly complained about the quality of...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Oct 21, 2019
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/hardware/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Hardware
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Oct 21, 2019
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/hardware/"
+                  >
+                    
+  Hardware
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/a-bit-about-event-delegation-in-pure-js/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="A Bit about Event Delegation in Pure JS."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/ee76dea8-07c8-4c08-ab9f-5f337a1fd0b0_1_d28fyQqH7yGrZ6NvNpm2jA.png?auto=compress,format&rect=31,0,738,400&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/a-bit-about-event-delegation-in-pure-js/"
                 >
-                  <img
-                    alt="A Bit about Event Delegation in Pure JS."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/ee76dea8-07c8-4c08-ab9f-5f337a1fd0b0_1_d28fyQqH7yGrZ6NvNpm2jA.png?auto=compress,format&rect=31,0,738,400&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         In the previous article, I talked about Event Delegation in React. On this one, I will tell you how you can use this pattern in the world of events...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Oct 10, 2019
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/frontend-development/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Frontend development
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Oct 10, 2019
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/frontend-development/"
+                  >
+                    
+  Frontend development
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/a-bit-about-event-delegation-in-react/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="Event Delegation in React."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/83f9d80e-d90e-4694-bfca-9633adf0bb76_1_wcAi1bMW4Xrj57-rbiE7hg.png?auto=compress,format&rect=31,0,738,400&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/a-bit-about-event-delegation-in-react/"
                 >
-                  <img
-                    alt="Event Delegation in React."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/83f9d80e-d90e-4694-bfca-9633adf0bb76_1_wcAi1bMW4Xrj57-rbiE7hg.png?auto=compress,format&rect=31,0,738,400&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         Unfortunately, in our modern world, there is no way to delve into the little things and how frameworks work.We use many tools and like how easy it is...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Sep 30, 2019
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/frontend-development/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Frontend development
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Sep 30, 2019
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/frontend-development/"
+                  >
+                    
+  Frontend development
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/best-ci-for-js-projects-with-puppeteer-tests/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="Top 3 Best CI for Your JS Projects with Puppeteer Tests."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/f0ac1d09-037c-4d09-8599-13dd754d2b13_1_MccluIYzshmdLz4cM_HsEg.png?auto=compress,format&rect=109,0,950,515&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/best-ci-for-js-projects-with-puppeteer-tests/"
                 >
-                  <img
-                    alt="Top 3 Best CI for Your JS Projects with Puppeteer Tests."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/f0ac1d09-037c-4d09-8599-13dd754d2b13_1_MccluIYzshmdLz4cM_HsEg.png?auto=compress,format&rect=109,0,950,515&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         For the first time, it was conceptualized and proposed by Grady Booch in 1991. It is one of the main elements of extreme programming practice.I...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Jul 19, 2019
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/backend-development/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Backend development
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Jul 19, 2019
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/backend-development/"
+                  >
+                    
+  Backend development
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/mad-fake-slack/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="Mad Fake Slack."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/dd6df0bd-221c-4392-9eb1-4d782d6e2ddd_1_Kw5pRjj9dpQIDye2-0sjAQ.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/mad-fake-slack/"
                 >
-                  <img
-                    alt="Mad Fake Slack."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/dd6df0bd-221c-4392-9eb1-4d782d6e2ddd_1_Kw5pRjj9dpQIDye2-0sjAQ.jpeg?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         Mad-fake-slack is primarily a tool for testing your bot, without using real slack servers. In the future, it will be a powerful tool for integration...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Jul 03, 2019
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/backend-development/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Backend development
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Jul 03, 2019
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/backend-development/"
+                  >
+                    
+  Backend development
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/comedian-slack-standup-bot/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="Standup."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/d765c67a-821c-4f88-abf7-7a6822df8ede_1_bNuvXMgfV9hkVO-U-gQQ2g.png?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/comedian-slack-standup-bot/"
                 >
-                  <img
-                    alt="Standup."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/d765c67a-821c-4f88-abf7-7a6822df8ede_1_bNuvXMgfV9hkVO-U-gQQ2g.png?auto=compress,format&rect=0,1,1400,759&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         Any business always strives to effectively use the time and skills of its employees since it directly affects the profit. Therefore, a business...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Oct 01, 2018
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/software-development/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Software Development 
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Oct 01, 2018
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/software-development/"
+                  >
+                    
+  Software Development 
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
           <section
-            class="filtered-posts__single-post"
+            class="filtered-posts__list-item"
+            data-testid="test-single-post"
             post="[object Object]"
           >
             <div
-              class="single-post__wrapper"
-              data-testid="test-single-post"
+              class="post-card"
             >
               <nuxtlink-stub
-                class="blog-post__wrapper"
-                class-name="filtered-post"
+                class="post-card__image"
                 to="/blog/best-architecture-for-the-react-project/"
               >
-                <div
-                  class="blog-post"
+                <img
+                  alt="Best architecture for the React Project."
+                  class="img_lazy"
+                  data-src="https://images.prismic.io/superpupertest/0af584bc-4da6-469d-954a-ae4f2d6b7e37_react.jpg?auto=compress,format&rect=0,390,6240,3383&w=983&h=533"
+                  height="217"
+                  width="400"
+                />
+              </nuxtlink-stub>
+               
+              <div>
+                <nuxtlink-stub
+                  to="/blog/best-architecture-for-the-react-project/"
                 >
-                  <img
-                    alt="Best architecture for the React Project."
-                    class="blog-post__image img_lazy"
-                    data-src="https://images.prismic.io/superpupertest/0af584bc-4da6-469d-954a-ae4f2d6b7e37_react.jpg?auto=compress,format&rect=0,390,6240,3383&w=983&h=533"
-                    height="217"
-                    width="400"
-                  />
+                  <h2
+                    class="post-card__title post-card__title--short"
+                    title="text"
+                  >
+                    
+        text
+      
+                  </h2>
                    
-                  <div>
-                    <h2
-                      class="blog-post__title blog-post__title--short"
-                      title="text"
-                    >
-                      
+                  <h2
+                    class="post-card__title post-card__title--very-short"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--very-short"
-                      title="text"
-                    >
-                      
+                  </h2>
+                   
+                  <h2
+                    class="post-card__title post-card__title--full"
+                    title="text"
+                  >
+                    
         text
       
-                    </h2>
-                     
-                    <h2
-                      class="blog-post__title blog-post__title--full"
-                      title="text"
-                    >
-                      
-        text
-      
-                    </h2>
-                     
-                    <p
-                      class="blog-post__paragraph"
-                      data-testid="test-blog-post"
-                    >
-                      
+                  </h2>
+                   
+                  <p
+                    class="post-card__paragraph"
+                    data-testid="test-post-card"
+                  >
+                    
         Usually, at the preparatory stages of project developers think of the project skeleton to avoid a lot of mistakes and reworks in the future.What is...
       
-                    </p>
-                     
-                    <div
-                      class="blog-post__meta"
-                    >
-                      <span
-                        class="created-at"
-                      >
-                        Jul 06, 2018
-                      </span>
-                       
-                      <nuxtlink-stub
-                        class="post-tag light light"
-                        event="click"
-                        to="/blog/tag/backend-development/"
-                      >
-                        <span
-                          class="tag"
-                          data-testid="test-tag"
-                        >
-                          
-    Backend development
-  
-                        </span>
-                      </nuxtlink-stub>
-                    </div>
-                     
-                    <!---->
-                  </div>
+                  </p>
+                </nuxtlink-stub>
+                 
+                <div
+                  class="post-card__meta"
+                >
+                  <span
+                    class="post-card__date"
+                  >
+                    Jul 06, 2018
+                  </span>
+                   
+                  <nuxtlink-stub
+                    class="post-tag light post-tag--light"
+                    data-testid="test-tag"
+                    event="click"
+                    to="/blog/tag/backend-development/"
+                  >
+                    
+  Backend development
+
+                  </nuxtlink-stub>
                 </div>
-              </nuxtlink-stub>
+                 
+                <!---->
+              </div>
             </div>
           </section>
         </div>

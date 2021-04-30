@@ -1,25 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`recommended blog widget component render with very long title 1`] = `
+exports[`post card component render with very long title 1`] = `
 <div>
-  <nuxtlink-stub
-    class="blog-post__wrapper"
+  <div
+    class="post-card"
     classname="test"
-    to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
   >
-    <div
-      class="blog-post"
+    <nuxtlink-stub
+      class="post-card__image"
+      to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
     >
       <img
-        class="blog-post__image img_lazy"
+        class="img_lazy"
         data-src="https://images.prismic.io/superpupertest/e746f4e6-ce33-47b7-b828-5f315fea2bbb_1_bmF_K9TNqtHpHzUUiI_y5Q.jpeg?auto=compress,format"
         height="217"
         width="400"
       />
-       
-      <div>
+    </nuxtlink-stub>
+     
+    <div>
+      <nuxtlink-stub
+        to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
+      >
         <h2
-          class="blog-post__title blog-post__title--short"
+          class="post-card__title post-card__title--short"
           title="The best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your website"
         >
           
@@ -28,7 +32,7 @@ exports[`recommended blog widget component render with very long title 1`] = `
         </h2>
          
         <h2
-          class="blog-post__title blog-post__title--very-short"
+          class="post-card__title post-card__title--very-short"
           title="The best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your website"
         >
           
@@ -37,7 +41,7 @@ exports[`recommended blog widget component render with very long title 1`] = `
         </h2>
          
         <h2
-          class="blog-post__title blog-post__title--full"
+          class="post-card__title post-card__title--full"
           title="The best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your websiteThe best practices for improving layout quality on your website"
         >
           
@@ -46,66 +50,66 @@ exports[`recommended blog widget component render with very long title 1`] = `
         </h2>
          
         <p
-          class="blog-post__paragraph"
-          data-testid="test-blog-post"
+          class="post-card__paragraph"
+          data-testid="test-post-card"
         >
           
         Let’s start with a partial list of how a valid and semantic layout can improve any project:The best practices for improving layout quality on your...
       
         </p>
-         
-        <div
-          class="blog-post__meta"
+      </nuxtlink-stub>
+       
+      <div
+        class="post-card__meta"
+      >
+        <span
+          class="post-card__date"
         >
-          <span
-            class="created-at"
-          >
-            Aug 25, 2020
-          </span>
-           
-          <nuxtlink-stub
-            class="post-tag light light"
-            event="click"
-            to="/blog/tag/markup/"
-          >
-            <span
-              class="tag"
-              data-testid="test-tag"
-            >
-              
-    markup
-  
-            </span>
-          </nuxtlink-stub>
-        </div>
+          Aug 25, 2020
+        </span>
          
-        <!---->
+        <nuxtlink-stub
+          class="post-tag light post-tag--light"
+          data-testid="test-tag"
+          event="click"
+          to="/blog/tag/markup/"
+        >
+          
+  markup
+
+        </nuxtlink-stub>
       </div>
+       
+      <!---->
     </div>
-  </nuxtlink-stub>
+  </div>
 </div>
 `;
 
-exports[`recommended blog widget component should render correctly with slot 1`] = `
+exports[`post card component should render correctly with slot 1`] = `
 <div>
-  <nuxtlink-stub
-    class="blog-post__wrapper"
+  <div
+    class="post-card"
     classname="test"
-    to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
   >
-    <div
-      class="blog-post"
+    <nuxtlink-stub
+      class="post-card__image"
+      to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
     >
       <img
-        class="blog-post__image img_lazy"
+        class="img_lazy"
         data-src="https://images.prismic.io/superpupertest/e746f4e6-ce33-47b7-b828-5f315fea2bbb_1_bmF_K9TNqtHpHzUUiI_y5Q.jpeg?auto=compress,format"
         height="217"
         width="400"
       />
-       
-      <div>
+    </nuxtlink-stub>
+     
+    <div>
+      <nuxtlink-stub
+        to="/blog/its-not-just-a-layout-what-do-you-need-to-know-to/"
+      >
         <h2
-          class="blog-post__title blog-post__title--short"
+          class="post-card__title post-card__title--short"
           title="The best practices for improving layout quality on your website"
         >
           
@@ -114,7 +118,7 @@ exports[`recommended blog widget component should render correctly with slot 1`]
         </h2>
          
         <h2
-          class="blog-post__title blog-post__title--very-short"
+          class="post-card__title post-card__title--very-short"
           title="The best practices for improving layout quality on your website"
         >
           
@@ -123,7 +127,7 @@ exports[`recommended blog widget component should render correctly with slot 1`]
         </h2>
          
         <h2
-          class="blog-post__title blog-post__title--full"
+          class="post-card__title post-card__title--full"
           title="The best practices for improving layout quality on your website"
         >
           
@@ -132,42 +136,38 @@ exports[`recommended blog widget component should render correctly with slot 1`]
         </h2>
          
         <p
-          class="blog-post__paragraph"
-          data-testid="test-blog-post"
+          class="post-card__paragraph"
+          data-testid="test-post-card"
         >
           
         Let’s start with a partial list of how a valid and semantic layout can improve any project:
       
         </p>
-         
-        <div
-          class="blog-post__meta"
+      </nuxtlink-stub>
+       
+      <div
+        class="post-card__meta"
+      >
+        <span
+          class="post-card__date"
         >
-          <span
-            class="created-at"
-          >
-            Aug 25, 2020
-          </span>
-           
-          <nuxtlink-stub
-            class="post-tag light light"
-            event="click"
-            to="/blog/tag/markup/"
-          >
-            <span
-              class="tag"
-              data-testid="test-tag"
-            >
-              
-    markup
-  
-            </span>
-          </nuxtlink-stub>
-        </div>
+          Aug 25, 2020
+        </span>
          
-        <!---->
+        <nuxtlink-stub
+          class="post-tag light post-tag--light"
+          data-testid="test-tag"
+          event="click"
+          to="/blog/tag/markup/"
+        >
+          
+  markup
+
+        </nuxtlink-stub>
       </div>
+       
+      <!---->
     </div>
-  </nuxtlink-stub>
+  </div>
 </div>
 `;

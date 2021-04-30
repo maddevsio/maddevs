@@ -21,72 +21,67 @@ exports[`CustomerUniversitySection component should render correctly 1`] = `
       </div>
        
       <div
-        class="customer-university__wrapper"
+        class="customer-university__content"
       >
         <div
           class="customer-university__featured-post"
         >
-          <nuxtlink-stub
+          <div
             class="featured-post"
-            to="/customer-university/uid/"
           >
-            <span
-              class="featured-post__date"
+            <nuxtlink-stub
+              class="featured-post__info"
+              to="/customer-university/uid/"
             >
-              
-            </span>
-             
-            <h2
-              class="featured-post__title"
-            >
-              
-            img.png
-          
-            </h2>
-             
-            <p
-              class="featured-post__text"
-            >
+              <span
+                class="featured-post__date"
+              >
+                
+              </span>
+               
+              <h2
+                class="featured-post__title"
+              >
+                
+              img.png
+            
+              </h2>
+               
+              <p
+                class="featured-post__text"
+              >
+                
               
             
-          
-            </p>
+              </p>
+            </nuxtlink-stub>
              
             <!---->
              
-            <div
-              class="featured-post__cover-wrapper"
+            <nuxtlink-stub
+              class="featured-post__image"
+              to="/customer-university/uid/"
             >
               <img
-                class="featured-post__cover img_lazy"
+                class="img_lazy"
                 data-src=""
                 height="347"
                 width="560"
               />
-            </div>
-          </nuxtlink-stub>
+            </nuxtlink-stub>
+          </div>
         </div>
          
         <div
           class="customer-university__list"
         >
-          <div
-            class="customer-university__list-wrapper"
+          <span
+            class="customer-university__list-title"
           >
-            <span
-              class="customer-university__list-title"
-            >
-              Series of articles:
-            </span>
-             
-            <div />
-             
-            <div
-              class="customer-university__list-show-more-wrapper"
-            >
-              <!---->
-            </div>
-          </div>
+            Series of articles:
+          </span>
+            
+          <!---->
         </div>
       </div>
     </div>
