@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag _uid component should render correctly 1`] = `
+<section class="tag">
+  <tagbanner-stub></tagbanner-stub>
+  <tagpostssection-stub></tagpostssection-stub>
+</section>
+`;

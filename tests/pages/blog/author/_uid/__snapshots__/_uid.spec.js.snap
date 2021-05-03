@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Author _uid component should render correctly 1`] = `
+<section class="author">
+  <authorbanner-stub></authorbanner-stub>
+  <authorpostssection-stub></authorpostssection-stub>
+</section>
+`;
