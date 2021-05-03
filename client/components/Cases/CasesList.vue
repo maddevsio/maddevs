@@ -35,7 +35,7 @@ export default {
         {
           width: 'full',
           link: '/case-studies/sir-john-monash-centre/',
-          video: '/videos/sjmc/sjmc-main-video.b35a387.mp444',
+          video: '/videos/sjmc/sjmc-main-video.b35a387.mp4',
           subtitle: 'SJMC',
           title: 'Sir John Monash Centre',
           desc: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',

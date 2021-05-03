@@ -14,8 +14,8 @@
       <!-- Video BG -->
       <video
         ref="video"
+        muted="true"
         loop="true"
-        autoplay="false"
       >
         <source
           :src="$getMediaFromS3(videoFileName)"
@@ -243,14 +243,6 @@ export default {
         transition: all 0.4s ease;
         transform: translateY(50px);
 
-        &:hover {
-          p {
-            height: auto;
-            margin: 16px 0;
-            transform: none;
-          }
-        }
-
         @media screen and (max-width: 768px) {
           display: none;
         }
@@ -269,12 +261,6 @@ export default {
         transition: all 0.4s ease;
         transform: translateY(100px);
 
-        &:hover {
-          height: auto;
-          padding: 8px;
-          transform: none;
-        }
-
         @media screen and (max-width: 768px) {
           height: auto;
           transform: none;
@@ -285,6 +271,22 @@ export default {
 
         @media screen and (max-width: 375px) {
           font-size: 14px;
+        }
+      }
+    }
+
+    &:hover {
+      .cases-list_item-info {
+        p {
+          height: auto;
+          margin: 16px 0;
+          transform: none;
+        }
+
+        > a {
+          height: auto;
+          padding: 8px;
+          transform: none;
         }
       }
     }
