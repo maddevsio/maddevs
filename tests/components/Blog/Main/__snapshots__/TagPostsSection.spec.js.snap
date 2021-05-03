@@ -95,7 +95,7 @@ exports[`TagPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event=""
                   to="/blog/tag/blog-tag/"
@@ -183,7 +183,7 @@ exports[`TagPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event=""
                   to="/blog/tag/blog-tag/"
@@ -271,7 +271,7 @@ exports[`TagPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event=""
                   to="/blog/tag/blog-tag/"

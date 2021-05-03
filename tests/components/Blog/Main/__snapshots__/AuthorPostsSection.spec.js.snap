@@ -82,7 +82,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                   class="featured-post__meta"
                 >
                   <nuxtlink-stub
-                    class="post-tag post-tag--light"
+                    class="post-tag post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/backend-development/"
@@ -197,7 +197,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/backend-development/"
@@ -315,7 +315,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/mobile-development/"
@@ -433,7 +433,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/frontend-development/"
@@ -551,7 +551,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/backend-development/"
@@ -669,7 +669,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/backend-development/"
@@ -787,7 +787,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/backend-development/"
@@ -905,7 +905,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/backend-development/"
@@ -1023,7 +1023,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/hardware/"
@@ -1141,7 +1141,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/frontend-development/"
@@ -1259,7 +1259,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/frontend-development/"
@@ -1377,7 +1377,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/backend-development/"
@@ -1495,7 +1495,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/backend-development/"
@@ -1613,7 +1613,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 </span>
                  
                 <nuxtlink-stub
-                  class="post-tag light post-tag--light"
+                  class="post-tag light post-tag--light-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/software-development/"

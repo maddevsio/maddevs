@@ -309,7 +309,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/backend-development/"
@@ -398,7 +398,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/mobile-development/"
@@ -487,7 +487,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/frontend-development/"
@@ -576,7 +576,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/backend-development/"
@@ -665,7 +665,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/backend-development/"
@@ -754,7 +754,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/backend-development/"
@@ -843,7 +843,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/backend-development/"
@@ -932,7 +932,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/hardware/"
@@ -1021,7 +1021,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/frontend-development/"
@@ -1110,7 +1110,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/frontend-development/"
@@ -1199,7 +1199,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/backend-development/"
@@ -1288,7 +1288,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/backend-development/"
@@ -1377,7 +1377,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/software-development/"
@@ -1466,7 +1466,7 @@ exports[`Main component should render correctly 1`] = `
                   </span>
                    
                   <nuxtlink-stub
-                    class="post-tag light post-tag--light"
+                    class="post-tag light post-tag--light-theme"
                     data-testid="test-tag"
                     event="click"
                     to="/blog/tag/backend-development/"

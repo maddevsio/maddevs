@@ -48,7 +48,7 @@ exports[`TheLastPostSection component should render correctly 1`] = `
                 class="featured-post__meta"
               >
                 <nuxtlink-stub
-                  class="post-tag post-tag--dark"
+                  class="post-tag post-tag--dark-theme"
                   data-testid="test-tag"
                   event="click"
                   to="/blog/tag/backend-development/"
