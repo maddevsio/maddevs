@@ -18,25 +18,19 @@
           class="case-studies__fire-icon"
         />
       </div>
-      <div class="projects">
-        <SingleProject
-          v-for="project in projects"
-          :key="project.name"
-          v-bind="project"
-        />
-      </div>
     </div>
+    <CasesList />
   </section>
 </template>
 
 <script>
-import SingleProject from '@/components/core/SingleProject'
+import CasesList from '@/components/Cases/CasesList'
 import { preview as projects } from '@/data/caseStudies'
 
 export default {
   name: 'CaseStudies',
   components: {
-    SingleProject,
+    CasesList,
   },
 
   props: {
@@ -79,13 +73,14 @@ export default {
 
   .container {
     position: relative;
+    padding-bottom: 0;
   }
 
   &__main-title {
     @include h2_title;
     padding-bottom: 30px;
-    color: $text-color--red;
-    text-align: center;
+    color: $text-color--white;
+    text-align: left;
     margin: auto;
     display: block;
   }

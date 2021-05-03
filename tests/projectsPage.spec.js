@@ -18,6 +18,9 @@ describe('projects page', () => {
     wrapper = mount(ProjectsPage, {
       localVue,
       stubs: ['NuxtLink'],
+      mocks: {
+        $getMediaFromS3: () => 'img.jpg',
+      },
     })
   })
 

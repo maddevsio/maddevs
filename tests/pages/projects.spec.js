@@ -23,6 +23,7 @@ const mocks = {
   $nuxt: {
     $emit: jest.fn(),
   },
+  $getMediaFromS3: () => 'img.jpg',
 }
 
 const stubs = ['client-only', 'NuxtLink']
