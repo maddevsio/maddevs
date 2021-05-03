@@ -6,7 +6,7 @@ const emoji = {
   technologist: [':technologist:', '\ud83e\uddd1\u200d\ud83d\udcbb'],
   elevator: [':elevator:', '\ud83d\uded7'],
   moyai: [':moyai:', '\ud83d\uddff'],
-  clock: [':clock:', '\ud83d\udd50'],
+  clock: [':clock1:', '\ud83d\udd50'],
   computer: [':computer:', '\ud83d\udcbb'],
   iphone: [':iphone:', '\ud83d\udcf1'],
   pager: [':pager:', '\ud83d\udcdf'],

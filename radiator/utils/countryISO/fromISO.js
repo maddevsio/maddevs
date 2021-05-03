@@ -1,7 +1,8 @@
 const data = require('./data.json')
 
 function fromISO(country) {
-  const found = data.find(c => c.Code === country)
+  if (!country) return null
+  const found = data.find(c => c.Code.toLowerCase() === country.toLowerCase())
   if (!found) return null
   return found.Name
 }
