@@ -133,8 +133,8 @@ export default {
 @import '../../../assets/styles/_vars';
 
 .posts-filter {
-  margin-bottom: 48px;
   min-width: 150px;
+  margin-bottom: 50px;
   &__list {
     display: flex;
     justify-content: flex-start;
@@ -208,11 +208,15 @@ export default {
       color: $text-color--red;
     }
   }
+
+  @media only screen and (min-width: 991px) {
+    margin-bottom: 35px;
+  }
 }
 
 .filtered-posts {
   background-color: $bgcolor--white-primary;
-  padding: 48px 0;
+  padding: 80px 0 73px;
 
   &__list {
     display: flex;
@@ -224,7 +228,7 @@ export default {
     box-sizing: border-box;
     width: 33.3333%;
     padding: 0 10px;
-    margin-bottom: 48px;
+    margin-bottom: 103px;
     @media only screen and (min-width: 991px) {
       &:nth-last-child(-n+3) {
         margin-bottom: 0;
@@ -234,17 +238,19 @@ export default {
 
   &__load-more {
     text-align: center;
-    margin-top: 85px;
+    margin-top: 75px;
   }
 
   @media only screen and (max-width: 991px) {
+    padding: 30px 0 69px;
+
     &__list {
       margin-top: 0;
     }
 
     &__list-item {
       width: 100%;
-      margin-bottom: 16px;
+      margin-bottom: 32px;
       &:last-child {
         margin-bottom: 0;
       }
@@ -301,7 +307,7 @@ export default {
     }
 
     &__load-more {
-      margin-top: 28px;
+      margin-top: 35px;
     }
   }
 

@@ -148,7 +148,7 @@ export default {
 
 .customer-university {
   background-color: $bgcolor--black-oil;
-  padding: 90px 0;
+  padding: 88px 0 98px;
 
   a {
     text-decoration: none;
@@ -163,7 +163,7 @@ export default {
     letter-spacing: -0.04em;
     -webkit-text-stroke: 1.13px $text-color--grey-opacity-40-percent;
     color: $text-color--black-oil;
-    margin-bottom: 78px;
+    margin-bottom: 63px;
     span {
       color: $bgcolor--silver;
       -webkit-text-stroke: 0;
@@ -195,7 +195,7 @@ export default {
 
   &__list-item {
     display: block;
-    margin-bottom: 31px;
+    margin-bottom: 43px;
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -215,7 +215,7 @@ export default {
     background-color: transparent;
     cursor: pointer;
     &-wrapper {
-      margin-top: 36px;
+      margin-top: 41px;
     }
   }
 }
@@ -307,7 +307,7 @@ export default {
 
 @media screen and (max-width: 1024px) {
   .customer-university {
-    padding: 34px 0;
+    padding: 35px 0 69px;
     &__title {
       font-size: 50px;
       line-height: 101%;
@@ -328,7 +328,10 @@ export default {
     &__featured-post {
       width: 100%;
       padding-right: 0;
-      margin-bottom: 31px;
+    }
+    &__list-item,
+    &__featured-post {
+      margin-bottom: 56px;
     }
     &__show-more {
       font-weight: normal;

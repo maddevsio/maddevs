@@ -68,8 +68,8 @@ export default {
 @import '../../../assets/styles/_vars';
 
 .latest-posts {
-  padding: 96px 0;
   background-color: $bgcolor--white-primary;
+  padding: 96px 0 80px;
 
   &__list {
     display: flex;
@@ -80,7 +80,7 @@ export default {
   &__list-item {
     box-sizing: border-box;
     width: 33.3333%;
-    margin-bottom: 80px;
+    margin-bottom: 103px;
     padding: 0 10px;
     @media only screen and (min-width: 991px) {
       &:nth-last-child(-n+3) {
@@ -100,7 +100,7 @@ export default {
   }
 
   @media only screen and (max-width: 991px) {
-    padding: 29px 0;
+    padding: 29px 0 56px;
     &__list-item {
       width: 100%;
       margin-bottom: 56px;

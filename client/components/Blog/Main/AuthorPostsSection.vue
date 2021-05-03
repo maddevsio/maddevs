@@ -106,7 +106,7 @@ export default {
 
   .author-posts {
     background-color: $bgcolor--white-primary;
-    padding: 60px 0;
+    padding: 60px 0 71px;
 
     &__featured-post {
       margin-bottom: 137px;
@@ -125,7 +125,7 @@ export default {
       box-sizing: border-box;
       width: 33.3333%;
       padding: 0 10px;
-      margin-bottom: 48px;
+      margin-bottom: 103px;
       &:first-of-type {
         display: none;
       }
@@ -137,16 +137,19 @@ export default {
     }
 
     &__load-more {
-      margin-top: 36px;
+      margin-top: 75px;
     }
 
     @media only screen and (max-width: 991px) {
+      padding: 34px 0 60px;
+
       &__featured-post {
         display: none;
       }
 
       &__list-item {
         width: 100%;
+        margin-bottom: 56px;
         &:first-of-type {
           display: block;
         }
@@ -154,6 +157,10 @@ export default {
           margin-bottom: 0;
         }
       }
+
+      &__load-more {
+      margin-top: 56px;
+    }
     }
   }
 </style>
