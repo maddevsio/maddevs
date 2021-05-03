@@ -4,7 +4,7 @@ export const casesList = [
     id: 'sjmc',
     link: '/case-studies/sir-john-monash-centre/',
     video: '/videos/sjmc/sjmc-main-video.b35a387.mp4#t=2',
-    subtitle: 'SJMC',
+    subtitle: 'BYOD',
     title: 'Sir John Monash Centre',
     desc: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
     poster: '/images/Cases/sjmc/jpg/sjmc-main-video-preview.jpg',
