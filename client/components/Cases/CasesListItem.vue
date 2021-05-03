@@ -16,9 +16,10 @@
         ref="video"
         muted="true"
         loop="true"
+        :style="{ backgroundImage: `url(${$getMediaFromS3(poster)})` }"
       >
         <source
-          :src="$getMediaFromS3(videoFileName)"
+          :data-src="$getMediaFromS3(videoFileName)"
           type="video/mp4"
         >
         Your browser does not support the video tag.
@@ -87,10 +88,21 @@ export default {
       type: String,
       default: null,
     },
+
+    poster: {
+      type: String,
+      default: null,
+    },
   },
 
   methods: {
     play() {
+      const videoSource = this.$refs.video.children[0]
+      if (videoSource.dataset.src) {
+        videoSource.src = videoSource.dataset.src
+        this.$refs.video.load()
+        videoSource.removeAttribute('data-src')
+      }
       this.$refs.video.play()
     },
 
@@ -172,6 +184,8 @@ export default {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      background-position: center;
+      background-size: cover;
     }
 
     &::before {

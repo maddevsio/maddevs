@@ -202,7 +202,7 @@ export default {
     },
 
     setDefaultStateForHeader() {
-      this.isCasePage = this.$nuxt.$route.name.includes('case-studies-')
+      this.isCasePage = this.$nuxt.$route.name && this.$nuxt.$route.name.includes('case-studies-')
     },
 
     changeLogoState(scrollTop) {
