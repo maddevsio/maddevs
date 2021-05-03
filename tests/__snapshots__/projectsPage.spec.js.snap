@@ -108,7 +108,7 @@ exports[`projects page renders correctly 1`] = `
         class="cases-list"
       >
         <div
-          class="cases-list_item cases-list_item--full"
+          class="cases-list_item cases-list_item--full cases-list_sjmc"
         >
           <nuxtlink-stub
             to="/case-studies/sir-john-monash-centre/"
@@ -116,9 +116,10 @@ exports[`projects page renders correctly 1`] = `
             <video
               loop="loop"
               muted="muted"
+              style="background-image: url(img.jpg);"
             >
               <source
-                src="img.jpg"
+                data-src="img.jpg"
                 type="video/mp4"
               />
               
@@ -159,7 +160,7 @@ exports[`projects page renders correctly 1`] = `
           </nuxtlink-stub>
         </div>
         <div
-          class="cases-list_item cases-list_item--big"
+          class="cases-list_item cases-list_item--big cases-list_nambafood"
         >
           <nuxtlink-stub
             to="/case-studies/namba-food/"
@@ -167,9 +168,10 @@ exports[`projects page renders correctly 1`] = `
             <video
               loop="loop"
               muted="muted"
+              style="background-image: url(img.jpg);"
             >
               <source
-                src="img.jpg"
+                data-src="img.jpg"
                 type="video/mp4"
               />
               
@@ -210,7 +212,7 @@ exports[`projects page renders correctly 1`] = `
           </nuxtlink-stub>
         </div>
         <div
-          class="cases-list_item cases-list_item--small"
+          class="cases-list_item cases-list_item--small cases-list_yourcast"
         >
           <nuxtlink-stub
             to="/case-studies/yourcast/"
@@ -218,9 +220,10 @@ exports[`projects page renders correctly 1`] = `
             <video
               loop="loop"
               muted="muted"
+              style="background-image: url(img.jpg);"
             >
               <source
-                src="img.jpg"
+                data-src="img.jpg"
                 type="video/mp4"
               />
               
@@ -261,7 +264,7 @@ exports[`projects page renders correctly 1`] = `
           </nuxtlink-stub>
         </div>
         <div
-          class="cases-list_item cases-list_item--full"
+          class="cases-list_item cases-list_item--full cases-list_godee"
         >
           <nuxtlink-stub
             to="/case-studies/godee/"
@@ -269,9 +272,10 @@ exports[`projects page renders correctly 1`] = `
             <video
               loop="loop"
               muted="muted"
+              style="background-image: url(img.jpg);"
             >
               <source
-                src="img.jpg"
+                data-src="img.jpg"
                 type="video/mp4"
               />
               

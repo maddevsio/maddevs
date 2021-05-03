@@ -32,7 +32,7 @@ exports[`CaseStudies should render correctly 1`] = `
         class="cases-list"
       >
         <div
-          class="cases-list_item cases-list_item--full"
+          class="cases-list_item cases-list_item--full cases-list_sjmc"
         >
           <nuxtlink
             to="/case-studies/sir-john-monash-centre/"
@@ -40,9 +40,10 @@ exports[`CaseStudies should render correctly 1`] = `
             <video
               loop="loop"
               muted="muted"
+              style="background-image: url(img.jpg);"
             >
               <source
-                src="img.jpg"
+                data-src="img.jpg"
                 type="video/mp4"
               />
               
@@ -83,7 +84,7 @@ exports[`CaseStudies should render correctly 1`] = `
           </nuxtlink>
         </div>
         <div
-          class="cases-list_item cases-list_item--big"
+          class="cases-list_item cases-list_item--big cases-list_nambafood"
         >
           <nuxtlink
             to="/case-studies/namba-food/"
@@ -91,9 +92,10 @@ exports[`CaseStudies should render correctly 1`] = `
             <video
               loop="loop"
               muted="muted"
+              style="background-image: url(img.jpg);"
             >
               <source
-                src="img.jpg"
+                data-src="img.jpg"
                 type="video/mp4"
               />
               
@@ -134,7 +136,7 @@ exports[`CaseStudies should render correctly 1`] = `
           </nuxtlink>
         </div>
         <div
-          class="cases-list_item cases-list_item--small"
+          class="cases-list_item cases-list_item--small cases-list_yourcast"
         >
           <nuxtlink
             to="/case-studies/yourcast/"
@@ -142,9 +144,10 @@ exports[`CaseStudies should render correctly 1`] = `
             <video
               loop="loop"
               muted="muted"
+              style="background-image: url(img.jpg);"
             >
               <source
-                src="img.jpg"
+                data-src="img.jpg"
                 type="video/mp4"
               />
               
@@ -185,7 +188,7 @@ exports[`CaseStudies should render correctly 1`] = `
           </nuxtlink>
         </div>
         <div
-          class="cases-list_item cases-list_item--full"
+          class="cases-list_item cases-list_item--full cases-list_godee"
         >
           <nuxtlink
             to="/case-studies/godee/"
@@ -193,9 +196,10 @@ exports[`CaseStudies should render correctly 1`] = `
             <video
               loop="loop"
               muted="muted"
+              style="background-image: url(img.jpg);"
             >
               <source
-                src="img.jpg"
+                data-src="img.jpg"
                 type="video/mp4"
               />
               
@@ -286,7 +290,7 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
         class="cases-list"
       >
         <div
-          class="cases-list_item cases-list_item--full"
+          class="cases-list_item cases-list_item--full cases-list_sjmc"
         >
           <nuxtlink
             to="/case-studies/sir-john-monash-centre/"
@@ -294,9 +298,10 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             <video
               loop="loop"
               muted="muted"
+              style="background-image: url(img.jpg);"
             >
               <source
-                src="img.jpg"
+                data-src="img.jpg"
                 type="video/mp4"
               />
               
@@ -337,7 +342,7 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
           </nuxtlink>
         </div>
         <div
-          class="cases-list_item cases-list_item--big"
+          class="cases-list_item cases-list_item--big cases-list_nambafood"
         >
           <nuxtlink
             to="/case-studies/namba-food/"
@@ -345,9 +350,10 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             <video
               loop="loop"
               muted="muted"
+              style="background-image: url(img.jpg);"
             >
               <source
-                src="img.jpg"
+                data-src="img.jpg"
                 type="video/mp4"
               />
               
@@ -388,7 +394,7 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
           </nuxtlink>
         </div>
         <div
-          class="cases-list_item cases-list_item--small"
+          class="cases-list_item cases-list_item--small cases-list_yourcast"
         >
           <nuxtlink
             to="/case-studies/yourcast/"
@@ -396,9 +402,10 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             <video
               loop="loop"
               muted="muted"
+              style="background-image: url(img.jpg);"
             >
               <source
-                src="img.jpg"
+                data-src="img.jpg"
                 type="video/mp4"
               />
               
@@ -439,7 +446,7 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
           </nuxtlink>
         </div>
         <div
-          class="cases-list_item cases-list_item--full"
+          class="cases-list_item cases-list_item--full cases-list_godee"
         >
           <nuxtlink
             to="/case-studies/godee/"
@@ -447,9 +454,10 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             <video
               loop="loop"
               muted="muted"
+              style="background-image: url(img.jpg);"
             >
               <source
-                src="img.jpg"
+                data-src="img.jpg"
                 type="video/mp4"
               />
               
