@@ -11,15 +11,3 @@ exports[`Default layout renders correctly 1`] = `
   <footer-stub />
 </div>
 `;
-
-exports[`Default дфнщге renders correctly 1`] = `
-<div
-  class="default-layout"
->
-  <header-stub />
-   
-  <nuxt-stub />
-   
-  <footer-stub />
-</div>
-`;
