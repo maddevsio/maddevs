@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SirJohnMonashCentre _uid component should render correctly 1`] = `
+<div>
+  <main
+    class="main case case--sjmc"
+  >
+    <section
+      class="case_header case_header-sjmc"
+      id="case-header"
+    >
+      <div
+        class="case_main-video_fallback"
+        style="background-image: url(img.jpg);"
+      />
+       
+      <video
+        autoplay="autoplay"
+        class="case_main-video media_lazy"
+        data-testid="test-case_main-video"
+        loop="loop"
+        muted="muted"
+      >
+        <source
+          data-src="img.jpg"
+          type="video/mp4"
+        />
+        
+    Your browser does not support the video tag.
+  
+      </video>
+       
+      <div
+        class="case_header-content"
+      >
+        <div
+          class="case_header-text"
+        >
+          <div
+            class="case_case-study-item"
+          >
+            
+        Case Study
+      
+          </div>
+           
+          <h1
+            class="case_header-title"
+          >
+            
+      Sir John Monash 
+            <br />
+            
+      Centre
+    
+          </h1>
+           
+          <p
+            class="case_header-description"
+          >
+            
+      The Sir John Monash Centre (SJMC) tells Australia’s story of the Western Front 
+            <br />
+            
+      during the First World War in the words of those who served.
+    
+          </p>
+           
+          <button
+            class="case_play-button"
+            data-testid="test-play-button"
+            type="button"
+          >
+            <img
+              alt="Play"
+              class="case_play-icon img_lazy"
+              data-src="[object Object]"
+            />
+            
+      View video about SJMC
+    
+          </button>
+        </div>
+         
+        <img
+          alt=""
+          class="case_header-logo media_lazy case_sjmc-logo"
+          data-src="img.jpg"
+          height="110"
+          width="242"
+        />
+      </div>
+    </section>
+     
+    <div
+      style="display: none;"
+    >
+      <div
+        class="video-wrapper"
+      >
+        <!---->
+         
+        <video
+          class="main-video"
+        >
+          <source
+            src="img.jpg"
+            type="video/mp4"
+          />
+          
+      Your browser does not support the video tag.
+    
+        </video>
+      </div>
+       
+      <button
+        class="exit"
+      >
+        <img
+          alt="Close"
+          src="@/assets/img/Studies/svg/close-icon.svg"
+        />
+      </button>
+    </div>
+     
+    <section>
+      <main-stub />
+       
+      <section
+        class="case_footer container_full"
+      >
+        <img
+          alt="Namba Food"
+          class="case_logotype-namba-food img_lazy"
+          data-src="[object Object]"
+        />
+         
+        <h2
+          class="case_title case_title_h2 case_title-namba-food"
+        >
+          
+      Namba Food 
+          <br />
+          
+      Top Delivery Service in 
+          <br
+            class="case_mobile-break-namba-food"
+          />
+          
+      Central Asia
+    
+        </h2>
+         
+        <nuxtlink-stub
+          class="case_next-project-button"
+          to="/case-studies/namba-food/"
+        >
+          
+    Read next project
+  
+        </nuxtlink-stub>
+      </section>
+    </section>
+  </main>
+</div>
+`;

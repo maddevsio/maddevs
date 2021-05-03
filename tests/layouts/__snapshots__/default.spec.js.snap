@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default layout renders correctly 1`] = `
+<div
+  class="default-layout"
+>
+  <header-stub />
+   
+  <nuxt-stub />
+   
+  <footer-stub />
+</div>
+`;
