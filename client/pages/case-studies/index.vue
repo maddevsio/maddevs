@@ -29,6 +29,10 @@ export default {
   head() {
     return buildHead(getMetadata('caseStudies'))
   },
+
+  mounted() {
+    this.$lazyLoad.init()
+  },
 }
 </script>
 

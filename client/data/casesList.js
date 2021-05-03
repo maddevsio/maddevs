@@ -9,8 +9,8 @@ export const casesList = [
     desc: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
     poster: '/images/Cases/sjmc/jpg/sjmc-main-video-preview.jpg',
     logo: {
-      width: 259,
-      height: 82,
+      width: 133,
+      height: 60,
       folder: 'sjmc',
       file: 'sjmc-logo',
       alt: 'SJMC logo',
@@ -26,8 +26,8 @@ export const casesList = [
     desc: 'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
     poster: '/images/Cases/nambafood/jpg/blank.jpg',
     logo: {
-      width: 259,
-      height: 82,
+      width: 108,
+      height: 80,
       folder: 'nambafood',
       file: 'nambafood-logo',
       alt: 'Namba Food logo',
@@ -43,8 +43,8 @@ export const casesList = [
     desc: 'Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.',
     poster: '/images/Cases/yourcast/png/banner-bg.png',
     logo: {
-      width: 259,
-      height: 82,
+      width: 120,
+      height: 25,
       folder: 'yourcast',
       file: 'yourcast-logo',
       alt: 'Yourcast logo',
@@ -60,8 +60,8 @@ export const casesList = [
     desc: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
     poster: '/images/Cases/godee/jpg/godee-case-preview.jpg',
     logo: {
-      width: 259,
-      height: 82,
+      width: 105,
+      height: 23,
       folder: 'godee',
       file: 'godee-logo',
       alt: 'Godee logo',

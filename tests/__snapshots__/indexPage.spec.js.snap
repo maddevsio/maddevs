@@ -1691,9 +1691,9 @@ exports[`index page renders correctly 1`] = `
             >
               <img
                 alt="SJMC logo"
-                height="82"
+                height="60"
                 src="img.jpg"
-                width="259"
+                width="133"
               />
                
               <span>
@@ -1743,9 +1743,9 @@ exports[`index page renders correctly 1`] = `
             >
               <img
                 alt="Namba Food logo"
-                height="82"
+                height="80"
                 src="img.jpg"
-                width="259"
+                width="108"
               />
                
               <span>
@@ -1795,9 +1795,9 @@ exports[`index page renders correctly 1`] = `
             >
               <img
                 alt="Yourcast logo"
-                height="82"
+                height="25"
                 src="img.jpg"
-                width="259"
+                width="120"
               />
                
               <span>
@@ -1847,9 +1847,9 @@ exports[`index page renders correctly 1`] = `
             >
               <img
                 alt="Godee logo"
-                height="82"
+                height="23"
                 src="img.jpg"
-                width="259"
+                width="105"
               />
                
               <span>
