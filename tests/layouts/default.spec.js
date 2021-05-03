@@ -11,6 +11,7 @@ const mocks = {
     }
   }),
 }
+const SCROLL_FN = jest.fn()
 
 describe('Default layout', () => {
   let wrapper
@@ -29,7 +30,6 @@ describe('Default layout', () => {
   })
 
   it('should correctly work initHashLinks method if hash false', () => {
-    const SCROLL_FN = jest.fn()
     const QUERY_SELECTOR = jest.fn(() => ({
       scrollIntoView: SCROLL_FN,
     }))
@@ -48,7 +48,6 @@ describe('Default layout', () => {
   })
 
   it('should correctly work initHashLinks method if hash true but selection not found', () => {
-    const SCROLL_FN = jest.fn()
     const QUERY_SELECTOR = jest.fn()
     const callObject = {
       $nextTick: jest.fn(callback => {
@@ -65,7 +64,6 @@ describe('Default layout', () => {
   })
 
   it('should correctly work initHashLinks method', () => {
-    const SCROLL_FN = jest.fn()
     const QUERY_SELECTOR = jest.fn(() => ({
       scrollIntoView: SCROLL_FN,
     }))
