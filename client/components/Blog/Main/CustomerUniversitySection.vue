@@ -340,6 +340,9 @@ export default {
       letter-spacing: -0.035em;
       width: 100%;
       border-color: rgba(236, 28, 36, 0.4);
+      &-wrapper {
+        margin-top: 56px;
+      }
     }
   }
 
