@@ -62,7 +62,7 @@ exports[`CaseStudies should render correctly 1`] = `
               />
                
               <span>
-                SJMC
+                BYOD
               </span>
                
               <h3>
@@ -320,7 +320,7 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
               />
                
               <span>
-                SJMC
+                BYOD
               </span>
                
               <h3>
