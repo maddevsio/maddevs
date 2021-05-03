@@ -7,7 +7,7 @@ import { getBlogAuthors, getBlogAuthor, getAuthorPosts } from '@/api/blogAuthors
 
 jest.mock('@/api/blogAuthors', () => (
   {
-    getBlogAuthors: jest.fn(() => 'test'),
+    getBlogAuthors: jest.fn(() => []),
     getBlogAuthor: jest.fn(() => 'test'),
     getAuthorPosts: jest.fn(() => 'test'),
   }
@@ -137,7 +137,7 @@ describe('BlogAuthors module mutations', () => {
 })
 
 describe('BlogAuthors module actions', () => {
-  it('should correctly called getBlogAuthors', async () => {
+  it('should called commit if api method return array', async () => {
     const store = {
       commit: jest.fn(),
     }
@@ -145,7 +145,18 @@ describe('BlogAuthors module actions', () => {
     await actions.getBlogAuthors(store)
 
     expect(getBlogAuthors).toHaveBeenCalledTimes(1)
-    expect(store.commit).toHaveBeenCalledWith('SET_ALL_AUTHORS', 'test')
+    expect(store.commit).toHaveBeenCalledWith('SET_ALL_AUTHORS', [])
+  })
+
+  it('should not called commit if api method did not return array', async () => {
+    const store = {
+      commit: jest.fn(),
+    }
+    getBlogAuthors.mockReturnValue('test')
+
+    await actions.getBlogAuthors(store)
+
+    expect(store.commit).not.toHaveBeenCalled()
   })
 
   it('should correctly called getBlogAuthor', async () => {
