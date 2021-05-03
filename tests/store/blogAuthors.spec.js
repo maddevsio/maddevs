@@ -152,7 +152,7 @@ describe('BlogAuthors module actions', () => {
     const store = {
       commit: jest.fn(),
     }
-    getBlogAuthors.mockReturnValue('test')
+    getBlogAuthors.mockReturnValue({})
 
     await actions.getBlogAuthors(store)
 
