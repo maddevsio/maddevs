@@ -38,10 +38,9 @@ export default {
 
 <style scoped lang="scss">
   .last-post {
-    margin: 95px 0;
+    padding: 95px 0 88px;
     @media only screen and (max-width: 991px) {
-      margin-top: 0;
-      margin-bottom: 36px;
+      padding: 36px 0;
     }
   }
 </style>

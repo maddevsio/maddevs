@@ -3,15 +3,11 @@
     v-if="tag"
     :event="disabled ? '' : 'click'"
     :to="link"
-    :class="theme"
     class="post-tag"
+    :class="`post-tag--${theme}-theme`"
+    data-testid="test-tag"
   >
-    <span
-      data-testid="test-tag"
-      class="tag"
-    >
-      {{ tag }}
-    </span>
+    {{ tag }}
   </NuxtLink>
 </template>
 
@@ -50,23 +46,19 @@ export default {
 @import '../../../assets/styles/_vars';
 
 .post-tag {
-  border-radius: 2px;
+  white-space: nowrap;
+  font-size: 13px;
+  line-height: 22px;
   padding: 4px 16px;
+  border-radius: 2px;
   transition: 0.2s;
-
-  &.light {
+  &--light-theme {
     background-color: $bgcolor--silver;
     color: $text-color--black;
   }
-
-  &.dark {
+  &--dark-theme {
     background-color: $text-color--quote-box;
     color: $bgcolor--silver;
-  }
-
-  .tag {
-    line-height: 22px;
-    font-size: 13px;
   }
 }
 </style>
