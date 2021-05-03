@@ -35,7 +35,7 @@ export default {
         {
           width: 'full',
           link: '/case-studies/sir-john-monash-centre/',
-          video: '/videos/sjmc/sjmc-main-video.b35a387.mp4',
+          video: '/videos/sjmc/sjmc-main-video.b35a387.mp4#t=1,5',
           subtitle: 'SJMC',
           title: 'Sir John Monash Centre',
           desc: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
@@ -50,7 +50,7 @@ export default {
         {
           width: 'big',
           link: '/case-studies/namba-food/',
-          video: '/videos/main.ef19480.mp4444',
+          video: '/videos/main.ef19480.mp4',
           subtitle: 'Foodtech',
           title: 'Contactless Delivery Service',
           desc: 'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
@@ -65,7 +65,7 @@ export default {
         {
           width: 'small',
           link: '/case-studies/yourcast/',
-          video: '/videos/yourcast-banner.mp4444',
+          video: '/videos/yourcast-banner.mp4',
           subtitle: 'Content Streaming',
           title: 'The Evolution of Yourcast.TV',
           desc: 'Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.',
@@ -80,7 +80,7 @@ export default {
         {
           width: 'full',
           link: '/case-studies/godee/',
-          video: '/videos/godee-case-main-video.mp444',
+          video: '/videos/godee-case-main-video.mp4',
           subtitle: 'Transportation',
           title: 'Convenient shuttle bus service',
           desc: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
@@ -105,6 +105,8 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: dense;
     gap: 30px;
+    z-index: 1;
+    background-color: #111213;
 
     @media screen and (max-width: 1140px) {
       grid-template-columns: repeat(4, 1fr);

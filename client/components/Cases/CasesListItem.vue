@@ -35,9 +35,7 @@
         <span>{{ subtitle }}</span>
         <h3>{{ title }}</h3>
         <p>{{ desc }}</p>
-        <NuxtLink
-          to="/"
-        >
+        <NuxtLink :to="link">
           Explore
         </NuxtLink>
       </div>
