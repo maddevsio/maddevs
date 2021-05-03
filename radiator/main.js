@@ -3,24 +3,29 @@ require('dotenv').config()
 const getAnalyticsData = require('./analytics')
 const getLighthouseData = require('./lighthouse')
 const sendMessageToSlack = require('./slack')
+const sendMessageToTelegram = require('./telegram')
 const parseRange = require('./utils/parseRange')
 
 async function main({
-  slack, telegram, period, channel,
+  slack, telegram, period, ...params
 }) {
   const range = parseRange(period)
   const analytics = await getAnalyticsData(range)
   const lighthouse = await getLighthouseData()
 
+  const data = {
+    analytics,
+    range,
+    lighthouse,
+    ...params,
+  }
+
   if (slack) {
-    await sendMessageToSlack({
-      analytics, range, lighthouse, channel,
-    })
+    await sendMessageToSlack(data)
   }
 
   if (telegram) {
-    console.warn('There is no telegram implementation for now.')
-    // TODO: Add telegram implementation
+    await sendMessageToTelegram(data)
   }
 }
 

@@ -1,42 +1,34 @@
 import {
-  header, divider, section, list, listItem, countryListItem, performanceListItem,
-} from '../../../radiator/slack/blocks'
+  header,
+  divider,
+  section,
+  list,
+  listItem,
+  countryListItem,
+  performanceListItem,
+} from '../../../radiator/telegram/blocks'
 
-describe('Radiator > slack > blocks', () => {
+describe('Radiator > telegram > blocks', () => {
   it('header block', () => {
     const text = 'Some text'
 
     const result = header(text)
 
-    expect(result).toEqual({
-      type: 'header',
-      text: {
-        type: 'plain_text',
-        emoji: true,
-        text,
-      },
-    })
+    expect(result).toBe('*Some text*\n')
   })
 
   it('divider block', () => {
     const result = divider()
 
-    expect(result).toEqual({ type: 'divider' })
+    expect(result).toBe('———\n')
   })
 
   it('section block', () => {
     const text = 'Text'
-    const type = 'mrkdwn'
 
-    const result = section(text, type)
+    const result = section(text)
 
-    expect(result).toEqual({
-      type: 'section',
-      text: {
-        type,
-        text: `${text}\n\n`,
-      },
-    })
+    expect(result).toEqual('Text\n\n')
   })
 
   it('list block', () => {
@@ -44,7 +36,7 @@ describe('Radiator > slack > blocks', () => {
 
     const result = list(...items)
 
-    expect(result).toEqual(items.join('\n\n'))
+    expect(result).toEqual(items.join('\n'))
   })
 
   it('listItem block', () => {
@@ -61,7 +53,7 @@ describe('Radiator > slack > blocks', () => {
 
     const result = listItem(entity, title, smile, parensKey, valueType, parensType)
 
-    expect(result).toBe(':partying_face: :x: Title: *15* (25%)')
+    expect(result).toBe('🥳 ❌ Title: *15* (25%)')
   })
 
   it('countryListItem block', () => {
@@ -72,7 +64,7 @@ describe('Radiator > slack > blocks', () => {
 
     const result = countryListItem(entity)
 
-    expect(result).toBe(':flag-in: India: *25%* от всех посетителей сайта')
+    expect(result).toBe('🇮🇳 India: *25%* от всех посетителей сайта')
   })
 
   it('countryListItem block with unexpected country', () => {
@@ -83,7 +75,7 @@ describe('Radiator > slack > blocks', () => {
 
     const result = countryListItem(entity)
 
-    expect(result).toBe(':flags: Unnamed: *20%* от всех посетителей сайта')
+    expect(result).toBe('🎏 Unnamed: *20%* от всех посетителей сайта')
   })
 
   it('performanceListItem block', () => {
@@ -97,6 +89,6 @@ describe('Radiator > slack > blocks', () => {
 
     const result = performanceListItem(entity, smile)
 
-    expect(result).toBe(':partying_face: :x: SEO: *95%*')
+    expect(result).toBe('🥳 ❌ SEO: *95%*')
   })
 })

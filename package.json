@@ -36,6 +36,7 @@
     "express": "^4.17.1",
     "googleapis": "^72.0.0",
     "mongoose": "^5.12.3",
+    "node-telegram-bot-api": "^0.52.0",
     "nuxt": "^2.15.4",
     "prismjs": "^1.23.0",
     "request": "^2.88.2",
