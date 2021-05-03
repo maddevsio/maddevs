@@ -1507,27 +1507,6 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                       />
                     </picture>
                   </div>
-                  <div
-                    class="swiper-slide"
-                  >
-                    <picture>
-                      <source
-                        class="image media_lazy"
-                        data-srcset="s3 image url,s3 image url"
-                        type="image/webp"
-                      />
-                       
-                      <img
-                        alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                        class="image media_lazy"
-                        data-src="s3 image url"
-                        data-srcset="s3 image url"
-                        data-testid="test-picture-img"
-                        height="0"
-                        width="0"
-                      />
-                    </picture>
-                  </div>
                 </div>
                 <span
                   aria-atomic="true"
@@ -1546,27 +1525,6 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                 class="swiper-wrapper"
                 style="webkit-transition-duration: 0ms; transition-duration: 0ms; webkit-transform: translate3d(NaNpx, 0px, 0px); transform: translate3d(NaNpx, 0px, 0px);"
               >
-                <div
-                  class="swiper-slide"
-                >
-                  <picture>
-                    <source
-                      class="image media_lazy"
-                      data-srcset="s3 image url,s3 image url"
-                      type="image/webp"
-                    />
-                     
-                    <img
-                      alt="Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment."
-                      class="image media_lazy"
-                      data-src="s3 image url"
-                      data-srcset="s3 image url"
-                      data-testid="test-picture-img"
-                      height="0"
-                      width="0"
-                    />
-                  </picture>
-                </div>
                 <div
                   class="swiper-slide"
                 >
