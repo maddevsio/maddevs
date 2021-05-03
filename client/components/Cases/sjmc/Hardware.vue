@@ -76,12 +76,7 @@
       </TextParagraph>
     </section>
     <section class="container_full case_sec-container background-color-black-primary">
-      <img
-        v-if="isIphone"
-        :src="$getMediaFromS3('/images/Cases/sjmc/png/bluetooth-beacons-video-background.png')"
-        class="case_img-ios-only"
-      >
-      <HardwareVideo v-else />
+      <HardwareVideo />
     </section>
     <section class="container_regular">
       <p class="case_image-description m-34_top media-m-24_top">
@@ -113,7 +108,6 @@
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import Picture from '@/components/Cases/shared/Picture'
 import HardwareVideo from '@/components/Cases/sjmc/HardwareVideo'
-import isIphoneMixin from '@/mixins/isIphoneMixin'
 
 export default {
   name: 'Hardware',
@@ -122,8 +116,6 @@ export default {
     Picture,
     HardwareVideo,
   },
-
-  mixins: [isIphoneMixin],
 }
 </script>
 
@@ -135,18 +127,6 @@ export default {
 
       @media screen and (max-width: 768px) {
         padding: 50px 0;
-      }
-    }
-
-    &_img-ios-only {
-      width: 23%;
-      max-width: 460px;
-      min-width: 225px;
-      display: block;
-      margin: 0 auto;
-
-      @media screen and (max-width: 360px) {
-        min-width: 280px;
       }
     }
   }

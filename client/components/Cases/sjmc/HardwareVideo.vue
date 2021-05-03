@@ -25,6 +25,7 @@
         data-testid="test-case_video"
         width="100%"
         height="100%"
+        :controls="false"
         muted
         playsinline
         loop
@@ -94,6 +95,12 @@ export default {
       width: 23%;
       max-width: 460px;
       min-width: 270px;
+      video {
+        display: block;
+        &::-webkit-media-controls {
+          display:none !important;
+        }
+      }
     }
 
     &_sound-control {
