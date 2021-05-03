@@ -31,6 +31,9 @@ describe('About page', () => {
   it('should render correctly', () => {
     render(About, {
       stubs,
+      mocks: {
+        $getMediaFromS3: () => 'img.jpg',
+      },
     })
 
     expect(screen.getByText(/Your Growth/i)).toBeTruthy()
