@@ -5,8 +5,8 @@
         <h2>Let’s build or scale up your development team?</h2>
         <p>Book a call with us and we’ll guide you through a structured process to assess the right solution for your business. You'll be talking to technical experts, not account managers.</p>
         <button
-          @click="$refs.modalContactMe.show()"
           class="build-dev-team_btn"
+          @click="$refs.modalContactMe.show()"
         >
           Book a free consultation
         </button>
