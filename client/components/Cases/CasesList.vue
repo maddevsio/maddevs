@@ -217,7 +217,7 @@ export default {
     video {
       width: 140%;
       left: -150px;
-      background-position: 54% -36px;
+      background-position: center;
       background-repeat: no-repeat;
     }
   }

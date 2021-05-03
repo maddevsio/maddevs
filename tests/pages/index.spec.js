@@ -33,6 +33,9 @@ describe('About page', () => {
       stubs,
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
+        $lazyLoad: {
+          init: () => {},
+        },
       },
     })
 
@@ -41,6 +44,12 @@ describe('About page', () => {
 
   it('should correct work head method', () => {
     const wrapper = shallowMount(About, {
+      mocks: {
+        $getMediaFromS3: () => 'img.jpg',
+        $lazyLoad: {
+          init: () => {},
+        },
+      },
       stubs,
     })
 

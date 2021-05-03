@@ -41,5 +41,9 @@ export default {
   head() {
     return buildHead(getMetadata('index'))
   },
+
+  mounted() {
+    this.$lazyLoad.init()
+  },
 }
 </script>
