@@ -4,7 +4,7 @@
     :event="disabled ? '' : 'click'"
     :to="link"
     class="post-tag"
-    :class="`post-tag--${theme}`"
+    :class="`post-tag--${theme}-theme`"
     data-testid="test-tag"
   >
     {{ tag }}
@@ -52,11 +52,11 @@ export default {
   padding: 4px 16px;
   border-radius: 2px;
   transition: 0.2s;
-  &--light {
+  &--light-theme {
     background-color: $bgcolor--silver;
     color: $text-color--black;
   }
-  &--dark {
+  &--dark-theme {
     background-color: $text-color--quote-box;
     color: $bgcolor--silver;
   }
