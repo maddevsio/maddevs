@@ -1,4 +1,4 @@
-import { mount, shallowMount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import SJMCVideo from '@/components/Cases/sjmc/SJMCVideo'
 
 global.document.exitFullscreen = () => {}
@@ -39,7 +39,7 @@ describe('SJMCVideo component', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(SJMCVideo, {
+    wrapper = shallowMount(SJMCVideo, {
       mocks,
       stubs,
     })
