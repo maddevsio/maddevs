@@ -7,6 +7,7 @@ const mocks = {
   $nuxt: {
     $route: {
       path: '/',
+      name: '',
     },
   },
 }
@@ -15,6 +16,7 @@ const GODEE_MOCK = {
   $nuxt: {
     $route: {
       path: '/case-studies/godee',
+      name: 'case-studies-godee',
     },
   },
 }

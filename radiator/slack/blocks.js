@@ -1,5 +1,7 @@
 /* eslint-disable vue/max-len */
-const getColorSmile = require('./getColorSmile')
+const getEmoji = require('../emoji/getEmoji')
+const getRateEmoji = require('../emoji/getRateEmoji')
+const toISO = require('../utils/countryISO/toISO')
 
 const header = text => ({
   type: 'header',
@@ -24,27 +26,22 @@ const section = (text, type = 'mrkdwn') => ({
 
 const list = (...args) => [...args].join('\n\n')
 
-const listItem = (entity, title, smile, parensKey, valueType = '', parensType = '') => `${getColorSmile(entity.rate)} :${smile}: ${title}: *${entity.value}${valueType}* (${entity[parensKey]}${parensType})`
+const listItem = (entity, title, emoji, parensKey, valueType = '', parensType = '') => `${getRateEmoji(entity.rate)} ${getEmoji(emoji)} ${title}: *${entity.value}${valueType}* (${entity[parensKey]}${parensType})`
 
-const countryListItem = ({ title, percentage }) => {
-  const flags = {
-    'United States': 'us',
-    India: 'in',
-    Russia: 'ru',
-    Kyrgyzstan: 'kg',
-    Ukraine: 'ua',
-    'United Kingdom': 'uk',
-    China: 'cn',
-    Germany: 'de',
-    France: 'fr',
-    Japan: 'jp',
+const getFlag = title => {
+  const iso = toISO(title)
+  if (iso && getEmoji(`${iso.toLowerCase()}Flag`) !== ':x:') {
+    return getEmoji(`${iso.toLowerCase()}Flag`)
   }
-
-  const flag = flags[title] ? `flag-${flags[title]}` : 'flags'
-  return `:${flag}: ${title}: *${percentage}%* от всех посетителей сайта`
+  return getEmoji('defaultFlag')
 }
 
-const performanceListItem = (entity, smile) => `${getColorSmile(entity.rate)} :${smile}: ${entity.title}: *${entity.value}%*`
+const countryListItem = ({ title, percentage }) => {
+  const flag = getFlag(title)
+  return `${flag} ${title}: *${percentage}%* от всех посетителей сайта`
+}
+
+const performanceListItem = (entity, emoji) => `${getRateEmoji(entity.rate)} ${getEmoji(emoji)} ${entity.title}: *${entity.value}%*`
 
 module.exports = {
   header,

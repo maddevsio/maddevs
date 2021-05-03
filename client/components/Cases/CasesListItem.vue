@@ -14,12 +14,12 @@
       <!-- Video BG -->
       <video
         ref="video"
-        loop="true"
         muted="true"
-        autoplay="false"
+        loop="true"
+        :style="{ backgroundImage: `url(${$getMediaFromS3(poster)})` }"
       >
         <source
-          :src="$getMediaFromS3(videoFileName)"
+          :data-src="$getMediaFromS3(videoFileName)"
           type="video/mp4"
         >
         Your browser does not support the video tag.
@@ -36,9 +36,7 @@
         <span>{{ subtitle }}</span>
         <h3>{{ title }}</h3>
         <p>{{ desc }}</p>
-        <NuxtLink
-          to="/"
-        >
+        <NuxtLink :to="link">
           Explore
         </NuxtLink>
       </div>
@@ -90,11 +88,22 @@ export default {
       type: String,
       default: null,
     },
+
+    poster: {
+      type: String,
+      default: null,
+    },
   },
 
   methods: {
     play() {
-      // this.$refs.video.play()
+      const videoSource = this.$refs.video.children[0]
+      if (videoSource.dataset.src) {
+        videoSource.src = videoSource.dataset.src
+        this.$refs.video.load()
+        videoSource.removeAttribute('data-src')
+      }
+      this.$refs.video.play()
     },
 
     pause() {
@@ -133,10 +142,18 @@ export default {
 
     &--full {
       grid-column: auto / span 3;
+
+      @media screen and (max-width: 1140px) {
+        grid-column: auto / span 4;
+      }
     }
 
     &--big {
       grid-column: auto / span 2;
+
+      @media screen and (max-width: 768px) {
+        grid-column: auto / span 4;
+      }
     }
 
     &--middle {
@@ -145,6 +162,14 @@ export default {
 
     &--small {
       grid-column: auto / span 1;
+
+      @media screen and (max-width: 1140px) {
+        grid-column: auto / span 2;
+      }
+
+      @media screen and (max-width: 768px) {
+        grid-column: auto / span 4;
+      }
     }
 
     @media screen and (max-width: 375px) {
@@ -159,6 +184,8 @@ export default {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      background-position: center;
+      background-size: cover;
     }
 
     &::before {
@@ -227,6 +254,10 @@ export default {
         overflow: hidden;
         transition: all 0.4s ease;
         transform: translateY(50px);
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
 
       > a {
@@ -241,6 +272,14 @@ export default {
         overflow: hidden;
         transition: all 0.4s ease;
         transform: translateY(100px);
+
+        @media screen and (max-width: 768px) {
+          height: auto;
+          transform: none;
+          transition: none;
+          padding: 8px;
+          margin-top: 20px;
+        }
 
         @media screen and (max-width: 375px) {
           font-size: 14px;
