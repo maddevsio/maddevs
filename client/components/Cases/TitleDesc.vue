@@ -25,10 +25,30 @@
       margin-bottom: 32px;
       font-family: 'Poppins-Bold', sans-serif;
 
+      @media screen and (max-width: 1140px) {
+        font-size: 90px;
+      }
+
+      @media screen and (max-width: 970px) {
+        font-size: 74px;
+        line-height: 74px;
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: 62px;
+      }
+
       @media screen and (max-width: 375px) {
         font-size: 48px;
         line-height: 58px;
         letter-spacing: -0.05em;
+      }
+
+      @media screen and (max-width: 370px) {
+        font-size: 36px;
+        line-height: 52px;
+        letter-spacing: -0.05em;
+        margin-bottom: 5px;
       }
     }
 
@@ -40,6 +60,14 @@
       letter-spacing: -0.013em;
       color: #fff;
       font-family: 'Inter', sans-serif;
+
+      @media screen and (max-width: 1140px) {
+        font-size: 26px;
+      }
+
+      @media screen and (max-width: 970px) {
+        font-size: 22px;
+      }
 
       @media screen and (max-width: 375px) {
         font-size: 18px;

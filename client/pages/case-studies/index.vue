@@ -31,3 +31,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+  /deep/ .cases-list_see-more {
+    display: none;
+  }
+</style>

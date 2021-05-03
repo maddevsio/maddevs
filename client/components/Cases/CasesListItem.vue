@@ -15,7 +15,6 @@
       <video
         ref="video"
         loop="true"
-        muted="true"
         autoplay="false"
       >
         <source
@@ -94,7 +93,7 @@ export default {
 
   methods: {
     play() {
-      // this.$refs.video.play()
+      this.$refs.video.play()
     },
 
     pause() {
@@ -133,10 +132,18 @@ export default {
 
     &--full {
       grid-column: auto / span 3;
+
+      @media screen and (max-width: 1140px) {
+        grid-column: auto / span 4;
+      }
     }
 
     &--big {
       grid-column: auto / span 2;
+
+      @media screen and (max-width: 768px) {
+        grid-column: auto / span 4;
+      }
     }
 
     &--middle {
@@ -145,6 +152,14 @@ export default {
 
     &--small {
       grid-column: auto / span 1;
+
+      @media screen and (max-width: 1140px) {
+        grid-column: auto / span 2;
+      }
+
+      @media screen and (max-width: 768px) {
+        grid-column: auto / span 4;
+      }
     }
 
     @media screen and (max-width: 375px) {
@@ -227,6 +242,18 @@ export default {
         overflow: hidden;
         transition: all 0.4s ease;
         transform: translateY(50px);
+
+        &:hover {
+          p {
+            height: auto;
+            margin: 16px 0;
+            transform: none;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
 
       > a {
@@ -242,24 +269,22 @@ export default {
         transition: all 0.4s ease;
         transform: translateY(100px);
 
-        @media screen and (max-width: 375px) {
-          font-size: 14px;
-        }
-      }
-    }
-
-    &:hover {
-      .cases-list_item-info {
-        p {
-          height: auto;
-          margin: 16px 0;
-          transform: none;
-        }
-
-        > a {
+        &:hover {
           height: auto;
           padding: 8px;
           transform: none;
+        }
+
+        @media screen and (max-width: 768px) {
+          height: auto;
+          transform: none;
+          transition: none;
+          padding: 8px;
+          margin-top: 20px;
+        }
+
+        @media screen and (max-width: 375px) {
+          font-size: 14px;
         }
       }
     }

@@ -47,14 +47,22 @@ export default {
     padding: 85px 105px;
     box-sizing: border-box;
 
+    @media screen and (max-width: 1280px) {
+      padding: 85px 40px;
+    }
+
+    @media screen and (max-width: 992px) {
+      padding: 40px;
+    }
+
     * {
       font-family: 'Inter', sans-serif;
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       justify-content: flex-start;
       padding: 40px 32px 0;
     }
@@ -64,7 +72,7 @@ export default {
       padding-bottom: 100px;
       margin-top: -1px;
 
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: 768px) {
         padding-bottom: 44px;
       }
     }
@@ -77,12 +85,32 @@ export default {
       letter-spacing: -0.04em;
       margin-bottom: 21px;
 
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: 1280px) {
+        max-width: 500px;
+        font-size: 48px;
+      }
+
+      @media screen and (max-width: 1280px) {
+        max-width: 450px;
+        font-size: 42px;
+        line-height: 100%;
+      }
+
+      @media screen and (max-width: 900px) {
+        max-width: 395px;
+        font-size: 36px;
+      }
+
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
         text-align: center;
         font-size: 40px;
-        line-height: 100%;
         letter-spacing: -0.05em;
         margin-bottom: 24px;
+      }
+
+      @media screen and (max-width: 370px) {
+        font-size: 34px;
       }
     }
 
@@ -94,7 +122,20 @@ export default {
       margin-bottom: 40px;
       max-width: 420px;
 
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: 1280px) {
+        font-size: 18px;
+      }
+
+      @media screen and (max-width: 992px) {
+        max-width: 350px;
+      }
+
+      @media screen and (max-width: 900px) {
+        max-width: 320px;
+      }
+
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
         font-size: 16px;
         line-height: 21px;
         margin-bottom: 24px;
@@ -111,6 +152,10 @@ export default {
       font-size: 18px;
       cursor: pointer;
       line-height: 100%;
+
+      @media screen and (max-width: 900px) {
+        font-size: 16px;
+      }
     }
 
     &_img {
@@ -120,10 +165,26 @@ export default {
       bottom: 0;
       right: 106px;
 
-      @media screen and (max-width: 375px) {
-        width: calc(100% + 50px);
+      @media screen and (max-width: 1280px) {
+        right: 90px;
+      }
+
+      @media screen and (max-width: 1180px) {
+        height: 85%;
+      }
+
+      @media screen and (max-width: 900px) {
+        right: 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 90%;
         height: auto;
         position: static;
+      }
+
+      @media screen and (max-width: 375px) {
+        width: calc(100% + 50px);
         margin: auto -25px 0;
       }
     }
@@ -138,7 +199,25 @@ export default {
       line-height: 18px;
       color: #101113;
 
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: 1280px) {
+        right: 20px;
+      }
+
+      @media screen and (max-width: 1180px) {
+        right: 5px;
+        top: 215px;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 190px;
+      }
+
+      @media screen and (max-width: 900px) {
+        top: auto;
+        bottom: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
         top: auto;
         bottom: 16px;
         right: 0;
@@ -150,7 +229,7 @@ export default {
         font-weight: bold;
         margin-top: 4px;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
           margin-top: 0;
         }
       }

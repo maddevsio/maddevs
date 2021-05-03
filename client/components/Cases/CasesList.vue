@@ -14,12 +14,12 @@
         :link="item.link"
       />
     </section>
-    <!-- NOTE: Temporarily commented -->
-    <!-- <button
+    <NuxtLink
+      to="/case-studies/"
       class="cases-list_see-more"
     >
       <span>See More</span> ↓
-    </button> -->
+    </NuxtLink>
   </div>
 </template>
 
@@ -35,7 +35,7 @@ export default {
         {
           width: 'full',
           link: '/case-studies/sir-john-monash-centre/',
-          video: '/videos/sjmc/sjmc-main-video.b35a387.mp4',
+          video: '/videos/sjmc/sjmc-main-video.b35a387.mp444',
           subtitle: 'SJMC',
           title: 'Sir John Monash Centre',
           desc: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
@@ -50,7 +50,7 @@ export default {
         {
           width: 'big',
           link: '/case-studies/namba-food/',
-          video: '/videos/main.ef19480.mp4',
+          video: '/videos/main.ef19480.mp4444',
           subtitle: 'Foodtech',
           title: 'Contactless Delivery Service',
           desc: 'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
@@ -65,7 +65,7 @@ export default {
         {
           width: 'small',
           link: '/case-studies/yourcast/',
-          video: '/videos/yourcast-banner.mp4',
+          video: '/videos/yourcast-banner.mp4444',
           subtitle: 'Content Streaming',
           title: 'The Evolution of Yourcast.TV',
           desc: 'Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.',
@@ -78,24 +78,9 @@ export default {
           },
         },
         {
-          width: 'small',
-          link: '/case-studies/veeqo/',
-          video: '/videos/main.ef19480.mp4',
-          subtitle: 'BYOD',
-          title: 'Veeqo – platform for e-commerce',
-          desc: 'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
-          logo: {
-            width: 259,
-            height: 82,
-            folder: 'veeqo',
-            file: 'veeqo-logo',
-            alt: 'Veeqo logo',
-          },
-        },
-        {
-          width: 'big',
+          width: 'full',
           link: '/case-studies/godee/',
-          video: '/videos/godee-case-main-video.mp4',
+          video: '/videos/godee-case-main-video.mp444',
           subtitle: 'Transportation',
           title: 'Convenient shuttle bus service',
           desc: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
@@ -121,6 +106,10 @@ export default {
     grid-auto-flow: dense;
     gap: 30px;
 
+    @media screen and (max-width: 1140px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
     @media screen and (max-width: 375px) {
       gap: 8px;
     }
@@ -139,22 +128,6 @@ export default {
 
       a {
         text-decoration: none;
-      }
-
-      &-full {
-        grid-column: auto / span 4;
-      }
-
-      &-big {
-        grid-column: auto / span 3;
-      }
-
-      &-middle {
-        grid-column: auto / span 2;
-      }
-
-      &-small {
-        grid-column: auto / span 1;
       }
 
       @media screen and (max-width: 375px) {
@@ -265,6 +238,7 @@ export default {
       background-color: transparent;
       border: 0;
       cursor: pointer;
+      text-decoration: none;
 
       span {
         position: relative;
