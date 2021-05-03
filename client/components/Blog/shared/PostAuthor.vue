@@ -123,6 +123,7 @@ export default {
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
     img {
+      display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
