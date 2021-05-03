@@ -1,10 +1,7 @@
 <template>
   <div class="author-posts">
     <div class="container">
-      <div
-        class="author-posts__featured-post"
-        :class="[authorPosts.length === 1 ? 'author-posts__featured-post--mb-0' : '']"
-      >
+      <div class="author-posts__featured-post">
         <FeaturedPost
           v-if="authorPostsLoaded"
           :post="authorPosts[0]"
@@ -110,9 +107,6 @@ export default {
 
     &__featured-post {
       margin-bottom: 137px;
-      &--mb-0 {
-        margin-bottom: 0;
-      }
     }
 
     &__list {

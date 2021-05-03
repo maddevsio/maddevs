@@ -135,6 +135,7 @@ export default {
 .posts-filter {
   min-width: 150px;
   margin-bottom: 50px;
+
   &__list {
     display: flex;
     justify-content: flex-start;
