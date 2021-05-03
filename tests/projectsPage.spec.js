@@ -20,6 +20,9 @@ describe('projects page', () => {
       stubs: ['NuxtLink'],
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
+        $lazyLoad: {
+          init: () => {},
+        },
       },
     })
   })

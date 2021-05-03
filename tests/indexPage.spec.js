@@ -19,6 +19,9 @@ describe('index page', () => {
       localVue,
       mocks: {
         $getMediaFromS3: () => 'img.jpg',
+        $lazyLoad: {
+          init: () => {},
+        },
       },
       stubs: ['ClientOnly', 'NuxtLink'],
     })

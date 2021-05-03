@@ -38,9 +38,10 @@ exports[`CaseStudies should render correctly 1`] = `
             to="/case-studies/sir-john-monash-centre/"
           >
             <video
+              class="media_lazy"
               loop="loop"
               muted="muted"
-              style="background-image: url(img.jpg);"
+              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -90,9 +91,10 @@ exports[`CaseStudies should render correctly 1`] = `
             to="/case-studies/namba-food/"
           >
             <video
+              class="media_lazy"
               loop="loop"
               muted="muted"
-              style="background-image: url(img.jpg);"
+              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -142,9 +144,10 @@ exports[`CaseStudies should render correctly 1`] = `
             to="/case-studies/yourcast/"
           >
             <video
+              class="media_lazy"
               loop="loop"
               muted="muted"
-              style="background-image: url(img.jpg);"
+              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -194,9 +197,10 @@ exports[`CaseStudies should render correctly 1`] = `
             to="/case-studies/godee/"
           >
             <video
+              class="media_lazy"
               loop="loop"
               muted="muted"
-              style="background-image: url(img.jpg);"
+              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -296,9 +300,10 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             to="/case-studies/sir-john-monash-centre/"
           >
             <video
+              class="media_lazy"
               loop="loop"
               muted="muted"
-              style="background-image: url(img.jpg);"
+              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -348,9 +353,10 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             to="/case-studies/namba-food/"
           >
             <video
+              class="media_lazy"
               loop="loop"
               muted="muted"
-              style="background-image: url(img.jpg);"
+              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -400,9 +406,10 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             to="/case-studies/yourcast/"
           >
             <video
+              class="media_lazy"
               loop="loop"
               muted="muted"
-              style="background-image: url(img.jpg);"
+              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"
@@ -452,9 +459,10 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             to="/case-studies/godee/"
           >
             <video
+              class="media_lazy"
               loop="loop"
               muted="muted"
-              style="background-image: url(img.jpg);"
+              poster="img.jpg"
             >
               <source
                 data-src="img.jpg"

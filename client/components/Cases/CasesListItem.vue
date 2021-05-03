@@ -16,7 +16,8 @@
         ref="video"
         muted="true"
         loop="true"
-        :style="{ backgroundImage: `url(${$getMediaFromS3(poster)})` }"
+        :poster="$getMediaFromS3(poster)"
+        class="media_lazy"
       >
         <source
           :data-src="$getMediaFromS3(videoFileName)"
@@ -97,13 +98,11 @@ export default {
 
   methods: {
     play() {
-      const videoSource = this.$refs.video.children[0]
-      if (videoSource.dataset.src) {
-        videoSource.src = videoSource.dataset.src
-        this.$refs.video.load()
-        videoSource.removeAttribute('data-src')
+      // NOTE: https://developers.google.com/web/updates/2017/06/play-request-was-interrupted
+      const playPromise = this.$refs.video.play()
+      if (playPromise !== undefined) {
+        playPromise.catch(() => { this.$refs.video.play() })
       }
-      this.$refs.video.play()
     },
 
     pause() {

@@ -7,7 +7,7 @@ export const casesList = [
     subtitle: 'BYOD',
     title: 'Sir John Monash Centre',
     desc: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
-    poster: '/images/Cases/sjmc/jpg/sjmc-main-video-preview.jpg',
+    poster: '/images/Cases/sjmc/jpg/sjmc-poster.jpg',
     logo: {
       width: 133,
       height: 60,
@@ -24,7 +24,7 @@ export const casesList = [
     subtitle: 'Foodtech',
     title: 'Contactless Delivery Service',
     desc: 'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
-    poster: '/images/Cases/nambafood/jpg/blank.jpg',
+    poster: '/images/Cases/nambafood/jpg/nambafood-poster.jpg',
     logo: {
       width: 108,
       height: 80,
@@ -41,7 +41,7 @@ export const casesList = [
     subtitle: 'Content Streaming',
     title: 'The Evolution of Yourcast.TV',
     desc: 'Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.',
-    poster: '/images/Cases/yourcast/png/banner-bg.png',
+    poster: '/images/Cases/yourcast/jpg/yourcast-poster.jpg',
     logo: {
       width: 120,
       height: 25,
@@ -54,11 +54,11 @@ export const casesList = [
     width: 'full',
     id: 'godee',
     link: '/case-studies/godee/',
-    video: '/videos/godee-case-main-video.mp4#t=1.1',
+    video: '/videos/godee-case-main-video.mp4#t=1',
     subtitle: 'Transportation',
     title: 'Convenient shuttle bus service',
     desc: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
-    poster: '/images/Cases/godee/jpg/godee-case-preview.jpg',
+    poster: '/images/Cases/godee/jpg/godee-poster.jpg',
     logo: {
       width: 105,
       height: 23,
