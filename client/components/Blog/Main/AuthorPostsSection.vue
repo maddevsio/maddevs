@@ -139,6 +139,7 @@ export default {
 
       &__featured-post {
         display: none;
+        margin-bottom: 56px;
       }
 
       &__list-item {
