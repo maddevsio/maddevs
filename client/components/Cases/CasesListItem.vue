@@ -101,7 +101,13 @@ export default {
       // NOTE: https://developers.google.com/web/updates/2017/06/play-request-was-interrupted
       const playPromise = this.$refs.video.play()
       if (playPromise !== undefined) {
-        playPromise.catch(() => { this.$refs.video.play() })
+        playPromise.then(() => {
+          // Automatic playback started!
+          // Show playing UI.
+        }).catch(() => {
+          // Auto-play was prevented
+          // Show paused UI.
+        })
       }
     },
 
