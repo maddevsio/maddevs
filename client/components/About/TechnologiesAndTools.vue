@@ -107,7 +107,7 @@ $tech_legends: (
 .tech_legend {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 43px;
 
   &__item {
@@ -844,7 +844,7 @@ $tech_legends: (
     @include h2_title;
 
     color: $text-color--white;
-    text-align: center;
+    text-align: left;
   }
 
   &__technologies-list {

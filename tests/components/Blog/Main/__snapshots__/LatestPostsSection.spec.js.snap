@@ -9,7 +9,7 @@ exports[`LatestPostsSection component should render correctly 1`] = `
       class="container"
     >
       <div
-        class="latest-posts__wrapper"
+        class="latest-posts__list"
       />
     </div>
   </div>

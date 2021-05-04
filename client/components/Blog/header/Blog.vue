@@ -9,7 +9,10 @@
   >
     <template #afterTitle>
       <div class="blog-post__post-info">
-        <PostAuthor v-bind="blogAuthor" />
+        <PostAuthor
+          v-bind="blogAuthor"
+          theme="dark"
+        />
         <div class="blog-post__date-tag">
           <div class="blog-post__date">
             {{ date }}
@@ -90,6 +93,7 @@ export default {
 
     /deep/ .blog-post__author-image {
       width: 30px;
+      min-width: 30px;
       height: 30px;
     }
   }

@@ -17,6 +17,12 @@ describe('index page', () => {
     }
     wrapper = mount(IndexPage, {
       localVue,
+      mocks: {
+        $getMediaFromS3: () => 'img.jpg',
+        $lazyLoad: {
+          init: () => {},
+        },
+      },
       stubs: ['ClientOnly', 'NuxtLink'],
     })
   })

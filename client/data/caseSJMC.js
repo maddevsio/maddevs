@@ -89,37 +89,31 @@ export const technologies = [
 
 export const swiperOfficeTeam = [
   {
-    fileName: 'office-team-first-slide',
+    fileName: 'office-team-first-slide_v1',
     pictureFolder: 'sjmc',
     fileExtension: 'jpg',
     alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.',
   },
   {
-    fileName: 'office-team-second-slide',
+    fileName: 'office-team-second-slide_v1',
     pictureFolder: 'sjmc',
     fileExtension: 'jpg',
     alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.',
   },
   {
-    fileName: 'office-team-third-slide',
+    fileName: 'office-team-third-slide_v1',
     pictureFolder: 'sjmc',
     fileExtension: 'jpg',
     alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.',
   },
   {
-    fileName: 'office-team-fourth-slide',
+    fileName: 'office-team-fourth-slide_v1',
     pictureFolder: 'sjmc',
     fileExtension: 'jpg',
     alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.',
   },
   {
-    fileName: 'office-team-fifth-slide',
-    pictureFolder: 'sjmc',
-    fileExtension: 'jpg',
-    alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.',
-  },
-  {
-    fileName: 'office-team-sixth-slide',
+    fileName: 'office-team-fifth-slide_v1',
     pictureFolder: 'sjmc',
     fileExtension: 'jpg',
     alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.',

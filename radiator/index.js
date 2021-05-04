@@ -6,7 +6,7 @@ function index() {
   const { argv } = yargs(hideBin(process.argv))
 
   const {
-    slack = false, telegram = false, period = 'day', channel,
+    slack = false, telegram = false, period = 'day', slackChannelId, telegramChannelId,
   } = argv
 
   if (!slack && !telegram) {
@@ -21,7 +21,8 @@ function index() {
     slack,
     telegram,
     period,
-    channel,
+    slackChannelId,
+    telegramChannelId,
   })
 }
 

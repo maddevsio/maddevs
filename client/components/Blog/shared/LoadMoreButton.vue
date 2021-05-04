@@ -31,6 +31,7 @@ export default {
   line-height: 26px;
   background-color: transparent;
   cursor: pointer;
+  font-family: inherit;
   &:hover {
     color: $text-color--red;
   }

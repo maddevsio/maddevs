@@ -6,20 +6,27 @@
       'cases-list_item--big': width === 'big',
       'cases-list_item--middle': width === 'middle',
       'cases-list_item--small': width === 'small',
+      'is-mobile': isMobile,
     }"
     @mouseover="play"
     @mouseout="pause"
   >
-    <NuxtLink :to="link">
+    <NuxtLink
+      :to="link"
+      :disabled="isMobile"
+      :tag="isMobile ? 'button' : 'a'"
+      class="cases-list_item-link"
+    >
       <!-- Video BG -->
       <video
         ref="video"
-        loop="true"
         muted="true"
-        autoplay="false"
+        loop="true"
+        :poster="$getMediaFromS3(poster)"
+        class="cases-list_item-video media_lazy"
       >
         <source
-          :src="$getMediaFromS3(videoFileName)"
+          :data-src="$getMediaFromS3(videoFileName)"
           type="video/mp4"
         >
         Your browser does not support the video tag.
@@ -36,9 +43,7 @@
         <span>{{ subtitle }}</span>
         <h3>{{ title }}</h3>
         <p>{{ desc }}</p>
-        <NuxtLink
-          to="/"
-        >
+        <NuxtLink :to="link">
           Explore
         </NuxtLink>
       </div>
@@ -48,6 +53,8 @@
 </template>
 
 <script>
+import { isMobile } from 'mobile-device-detect'
+
 export default {
   props: {
     width: {
@@ -63,8 +70,8 @@ export default {
     logo: {
       type: Object,
       default: () => ({
-        width: 259,
-        height: 82,
+        width: 260,
+        height: 80,
         folder: '',
         file: '',
         alt: '',
@@ -90,15 +97,38 @@ export default {
       type: String,
       default: null,
     },
+
+    poster: {
+      type: String,
+      default: null,
+    },
+  },
+
+  data() {
+    return {
+      isMobile,
+    }
   },
 
   methods: {
     play() {
-      // this.$refs.video.play()
+      // NOTE: https://developers.google.com/web/updates/2017/06/play-request-was-interrupted
+      const playPromise = this.$refs.video.play()
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          // Automatic playback started!
+          // Show playing UI.
+        }).catch(() => {
+          // Auto-play was prevented
+          // Show paused UI.
+        })
+      }
     },
 
     pause() {
-      this.$refs.video.pause()
+      if (this.$refs.video) {
+        this.$refs.video.pause()
+      }
     },
   },
 }
@@ -115,7 +145,7 @@ export default {
     overflow: hidden;
     text-decoration: none;
 
-    > a {
+    &-link {
       width: 100%;
       height: 100%;
       display: flex;
@@ -125,6 +155,9 @@ export default {
       padding: 40px;
       box-sizing: border-box;
       text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      text-align: left;
 
       @media screen and (max-width: 375px) {
         padding: 24px;
@@ -133,10 +166,18 @@ export default {
 
     &--full {
       grid-column: auto / span 3;
+
+      @media screen and (max-width: 1140px) {
+        grid-column: auto / span 4;
+      }
     }
 
     &--big {
       grid-column: auto / span 2;
+
+      @media screen and (max-width: 992px) {
+        grid-column: auto / span 4;
+      }
     }
 
     &--middle {
@@ -145,6 +186,14 @@ export default {
 
     &--small {
       grid-column: auto / span 1;
+
+      @media screen and (max-width: 1140px) {
+        grid-column: auto / span 2;
+      }
+
+      @media screen and (max-width: 992px) {
+        grid-column: auto / span 4;
+      }
     }
 
     @media screen and (max-width: 375px) {
@@ -159,6 +208,8 @@ export default {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      background-position: center;
+      background-size: cover;
     }
 
     &::before {
@@ -227,6 +278,10 @@ export default {
         overflow: hidden;
         transition: all 0.4s ease;
         transform: translateY(50px);
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
 
       > a {
@@ -241,6 +296,18 @@ export default {
         overflow: hidden;
         transition: all 0.4s ease;
         transform: translateY(100px);
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        @media screen and (max-width: 768px) {
+          height: auto;
+          transform: none;
+          transition: none;
+          padding: 8px;
+          margin-top: 20px;
+        }
 
         @media screen and (max-width: 375px) {
           font-size: 14px;
@@ -261,6 +328,22 @@ export default {
           padding: 8px;
           transform: none;
         }
+      }
+    }
+  }
+
+  .is-mobile {
+    .cases-list_item-info {
+      p {
+        display: none;
+      }
+
+      > a {
+        height: auto;
+        transform: none;
+        transition: none;
+        padding: 8px;
+        margin-top: 20px;
       }
     }
   }

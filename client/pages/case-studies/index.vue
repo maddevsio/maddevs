@@ -29,5 +29,15 @@ export default {
   head() {
     return buildHead(getMetadata('caseStudies'))
   },
+
+  mounted() {
+    this.$lazyLoad.init()
+  },
 }
 </script>
+
+<style lang="scss" scoped>
+  /deep/ .cases-list_see-more {
+    display: none;
+  }
+</style>

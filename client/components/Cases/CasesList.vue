@@ -3,7 +3,7 @@
     <section class="cases-list">
       <!-- Card -->
       <CasesListItem
-        v-for="(item, i) of cases"
+        v-for="(item, i) of casesList"
         :key="`case_list_item_${i}`"
         :video-file-name="item.video"
         :logo="item.logo"
@@ -12,103 +12,60 @@
         :desc="item.desc"
         :width="item.width"
         :link="item.link"
+        :poster="item.poster"
+        :class="`cases-list_${item.id}`"
       />
     </section>
-    <!-- NOTE: Temporarily commented -->
-    <!-- <button
+    <NuxtLink
+      to="/case-studies/"
       class="cases-list_see-more"
     >
       <span>See More</span> ↓
-    </button> -->
+    </NuxtLink>
   </div>
 </template>
 
 <script>
 import CasesListItem from '@/components/Cases/CasesListItem'
+import { casesList } from '@/data/casesList'
 
 export default {
   name: 'CasesList',
   components: { CasesListItem },
   data() {
     return {
-      cases: [
-        {
-          width: 'full',
-          link: '/case-studies/sir-john-monash-centre/',
-          video: '/videos/sjmc/sjmc-main-video.b35a387.mp4',
-          subtitle: 'SJMC',
-          title: 'Sir John Monash Centre',
-          desc: 'Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.',
-          logo: {
-            width: 259,
-            height: 82,
-            folder: 'sjmc',
-            file: 'sjmc-logo',
-            alt: 'SJMC logo',
-          },
-        },
-        {
-          width: 'big',
-          link: '/case-studies/namba-food/',
-          video: '/videos/main.ef19480.mp4',
-          subtitle: 'Foodtech',
-          title: 'Contactless Delivery Service',
-          desc: 'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
-          logo: {
-            width: 259,
-            height: 82,
-            folder: 'nambafood',
-            file: 'nambafood-logo',
-            alt: 'Namba Food logo',
-          },
-        },
-        {
-          width: 'small',
-          link: '/case-studies/yourcast/',
-          video: '/videos/yourcast-banner.mp4',
-          subtitle: 'Content Streaming',
-          title: 'The Evolution of Yourcast.TV',
-          desc: 'Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.',
-          logo: {
-            width: 259,
-            height: 82,
-            folder: 'yourcast',
-            file: 'yourcast-logo',
-            alt: 'Yourcast logo',
-          },
-        },
-        {
-          width: 'small',
-          link: '/case-studies/veeqo/',
-          video: '/videos/main.ef19480.mp4',
-          subtitle: 'BYOD',
-          title: 'Veeqo – platform for e-commerce',
-          desc: 'Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.',
-          logo: {
-            width: 259,
-            height: 82,
-            folder: 'veeqo',
-            file: 'veeqo-logo',
-            alt: 'Veeqo logo',
-          },
-        },
-        {
-          width: 'big',
-          link: '/case-studies/godee/',
-          video: '/videos/godee-case-main-video.mp4',
-          subtitle: 'Transportation',
-          title: 'Convenient shuttle bus service',
-          desc: 'Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.',
-          logo: {
-            width: 259,
-            height: 82,
-            folder: 'godee',
-            file: 'godee-logo',
-            alt: 'Godee logo',
-          },
-        },
-      ],
+      casesList,
+      observer: null,
     }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      if (window.innerWidth <= 992) {
+        this.autoplay()
+      }
+    })
+  },
+
+  methods: {
+    autoplay() {
+      const observerCallback = entries => entries.forEach(({ isIntersecting, target }) => {
+        if (!isIntersecting) {
+          target.pause()
+        } else {
+          target.play()
+        }
+      })
+
+      const elements = Array.from(document.querySelectorAll('.cases-list_item-video'))
+
+      if ('IntersectionObserver' in window) {
+        this.observer = new IntersectionObserver(observerCallback, {
+          threshold: 0.5,
+        })
+        elements.forEach(element => this.observer.observe(element))
+      }
+    },
   },
 }
 </script>
@@ -120,6 +77,12 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: dense;
     gap: 30px;
+    z-index: 1;
+    background-color: #111213;
+
+    @media screen and (max-width: 1140px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
 
     @media screen and (max-width: 375px) {
       gap: 8px;
@@ -139,22 +102,6 @@ export default {
 
       a {
         text-decoration: none;
-      }
-
-      &-full {
-        grid-column: auto / span 4;
-      }
-
-      &-big {
-        grid-column: auto / span 3;
-      }
-
-      &-middle {
-        grid-column: auto / span 2;
-      }
-
-      &-small {
-        grid-column: auto / span 1;
       }
 
       @media screen and (max-width: 375px) {
@@ -265,6 +212,7 @@ export default {
       background-color: transparent;
       border: 0;
       cursor: pointer;
+      text-decoration: none;
 
       span {
         position: relative;
@@ -292,6 +240,16 @@ export default {
 
     @media screen and (max-width: 375px) {
       padding: 0;
+    }
+  }
+
+  /deep/ .cases-list_yourcast {
+    video {
+      width: 140%;
+      left: auto;
+      right: 0;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 </style>

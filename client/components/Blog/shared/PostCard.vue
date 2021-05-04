@@ -1,59 +1,60 @@
 <template>
-  <NuxtLink
-    :to="link"
-    class="blog-post__wrapper"
-  >
-    <div class="blog-post">
+  <div class="post-card">
+    <NuxtLink
+      :to="link"
+      class="post-card__image"
+    >
       <img
-        ref="recommendedImage"
         :data-src="post.data.featured_image.url"
         :alt="post.data.featured_image.alt"
-        class="blog-post__image img_lazy"
+        class="img_lazy"
         width="400"
         height="217"
       >
-      <div>
+    </NuxtLink>
+    <div class="post-card__info">
+      <NuxtLink :to="link">
         <h2
-          class="blog-post__title blog-post__title--short"
+          class="post-card__title post-card__title--short"
           :title="$prismic.asText(post.data.title)"
         >
           {{ shortTitle }}
         </h2>
         <h2
-          class="blog-post__title blog-post__title--very-short"
+          class="post-card__title post-card__title--very-short"
           :title="$prismic.asText(post.data.title)"
         >
           {{ veryShortTitle }}
         </h2>
         <h2
-          class="blog-post__title blog-post__title--full"
+          class="post-card__title post-card__title--full"
           :title="$prismic.asText(post.data.title)"
         >
           {{ $prismic.asText(post.data.title) }}
         </h2>
         <p
-          class="blog-post__paragraph"
-          data-testid="test-blog-post"
+          class="post-card__paragraph"
+          data-testid="test-post-card"
         >
           {{ firstParagraph }}
         </p>
-        <div class="blog-post__meta">
-          <span class="created-at">{{ formattedDate }}</span>
-          <PostTag
-            v-if="post.tags && post.tags.length"
-            :tag="tag || post.tags[0]"
-            :disabled="disableTagLink"
-            class="light"
-          />
-        </div>
-        <PostAuthor
-          v-bind="author"
-          :disabled="disableAuthorLink"
-          theme="light"
+      </NuxtLink>
+      <div class="post-card__meta">
+        <span class="post-card__date">{{ formattedDate }}</span>
+        <PostTag
+          v-if="post.tags && post.tags.length"
+          :tag="tag || post.tags[0]"
+          :disabled="disableTagLink"
+          class="light"
         />
       </div>
+      <PostAuthor
+        v-bind="author"
+        :disabled="disableAuthorLink"
+        theme="light"
+      />
     </div>
-  </NuxtLink>
+  </div>
 </template>
 
 <script>
@@ -65,7 +66,7 @@ import textEllipsis from '@/helpers/textEllipsis'
 import formatDate from '@/helpers/formatDate'
 
 export default {
-  name: 'RecommendedBlogWidget',
+  name: 'PostCard',
   components: {
     PostAuthor,
     PostTag,
@@ -130,10 +131,12 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../../assets/styles/_vars';
-.blog-post {
-  color: $text-color--black;
-  p {
-    margin-top: 5px;
+
+.post-card {
+  width: 100%;
+  height: 100%;
+  * {
+    color: $text-color--black;
   }
   p,
   span {
@@ -141,39 +144,42 @@ export default {
     font-weight: 400;
     opacity: 0.8;
   }
+  p {
+    margin-top: 5px;
+  }
   span {
     letter-spacing: -0.02em;
   }
   a {
     text-decoration: none;
   }
-  &__wrapper {
-    text-decoration: none;
-  }
   &__image {
     display: block;
     width: 100%;
     max-width: 100%;
-    height: auto;
     margin-bottom: 16px;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
-  &__featured-image {
+  &__info {
     max-width: 100%;
-    height: auto;
+    overflow: hidden;
   }
   &__title {
+    max-width: 100%;
+    height: 54px;
     font-size: 21px;
     line-height: 130%;
     letter-spacing: -0.02em;
     font-family: 'Poppins-Medium', sans-serif;
     display: -webkit-box;
-    max-width: 100%;
-    margin: 0 auto;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 54px;
     &--short {
       display: block;
       @media screen and (max-width: 1196px) {
@@ -210,6 +216,11 @@ export default {
     letter-spacing: -0.035em;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &__meta {
     display: flex;
@@ -218,16 +229,12 @@ export default {
     font-size: 13px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    .created-at {
-      margin-right: 24px;
-      color: $text-color--grey;
-    }
-    .tag {
-      background-color: $bgcolor--silver;
-      padding: 4px 16px;
-      transition: 0.2s;
-      line-height: 22px;
-    }
+  }
+  &__date {
+    margin-right: 5px;
+    flex-basis: 95px;
+    white-space: nowrap;
+    color: $text-color--grey;
   }
 }
 </style>

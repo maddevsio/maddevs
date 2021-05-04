@@ -31,6 +31,12 @@ describe('About page', () => {
   it('should render correctly', () => {
     render(About, {
       stubs,
+      mocks: {
+        $getMediaFromS3: () => 'img.jpg',
+        $lazyLoad: {
+          init: () => {},
+        },
+      },
     })
 
     expect(screen.getByText(/Your Growth/i)).toBeTruthy()
@@ -38,6 +44,12 @@ describe('About page', () => {
 
   it('should correct work head method', () => {
     const wrapper = shallowMount(About, {
+      mocks: {
+        $getMediaFromS3: () => 'img.jpg',
+        $lazyLoad: {
+          init: () => {},
+        },
+      },
       stubs,
     })
 
