@@ -41,7 +41,7 @@ export default {
 
   mounted() {
     this.$nextTick(() => {
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 992) {
         this.autoplay()
       }
     })
