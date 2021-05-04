@@ -20,7 +20,7 @@
       to="/case-studies/"
       class="cases-list_see-more"
     >
-      <span>See More</span> ↓
+      <span>See More</span>
     </NuxtLink>
   </div>
 </template>
