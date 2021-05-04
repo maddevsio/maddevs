@@ -141,7 +141,7 @@ export default {
       left: 50%;
       transform: translate(-50%, -50%);
       /deep/ svg {
-        shape-rendering: crispEdges;
+        transform: translateZ(0);
       }
     }
 
