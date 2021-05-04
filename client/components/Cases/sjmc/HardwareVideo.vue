@@ -141,7 +141,7 @@ export default {
       left: 50%;
       transform: translate(-50%, -50%);
       /deep/ svg {
-        transform: translateZ(0);
+        transform: translateZ(0); // fix for clearer display of icon
       }
     }
 
