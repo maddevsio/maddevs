@@ -217,7 +217,7 @@ export default {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
