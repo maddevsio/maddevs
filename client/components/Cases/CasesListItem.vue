@@ -14,7 +14,7 @@
     <NuxtLink
       :to="link"
       :disabled="isMobile"
-      :tag="isMobile ? 'div' : 'a'"
+      :tag="isMobile ? 'button' : 'a'"
       class="cases-list_item-link"
     >
       <!-- Video BG -->
@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import isMobileMixin from '@/mixins/isMobileMixin'
+import { isMobile } from 'mobile-device-detect'
 
 export default {
   props: {
@@ -104,7 +104,11 @@ export default {
     },
   },
 
-  mixins: [isMobileMixin],
+  data() {
+    return {
+      isMobile,
+    }
+  },
 
   methods: {
     play() {
@@ -151,6 +155,9 @@ export default {
       padding: 40px;
       box-sizing: border-box;
       text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      text-align: left;
 
       @media screen and (max-width: 375px) {
         padding: 24px;
