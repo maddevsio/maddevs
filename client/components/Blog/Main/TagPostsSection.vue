@@ -1,7 +1,10 @@
 <template>
   <div class="tag-posts">
     <div class="container">
-      <div class="tag-posts__featured-post">
+      <div
+        class="tag-posts__featured-post"
+        :class="[tagPosts.length === 1 ? 'tag-posts__featured-post--mb-0' : '']"
+      >
         <FeaturedPost
           v-if="tagPostsLoaded"
           :post="tagPosts[0]"
@@ -112,6 +115,9 @@ export default {
 
     &__featured-post {
       margin-bottom: 137px;
+      &--mb-0 {
+        margin-bottom: 0;
+      }
     }
 
     &__list {
