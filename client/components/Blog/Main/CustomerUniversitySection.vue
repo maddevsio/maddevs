@@ -305,6 +305,14 @@ export default {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .customer-university {
+    &__list {
+      padding-left: 0;
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .customer-university {
     padding: 35px 0 69px;
