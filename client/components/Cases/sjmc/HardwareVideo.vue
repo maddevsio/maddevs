@@ -140,9 +140,6 @@ export default {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      /deep/ svg {
-        shape-rendering: crispEdges; // fix for clearer display of icon
-      }
     }
 
     @media only screen and (max-width: 1180px) {
