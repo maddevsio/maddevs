@@ -31,9 +31,11 @@ $spaces: (
   '48': 48px,
   '56': 56px,
   '60': 60px,
+  '66': 66px,
   '72': 72px,
   '75': 75px,
   '78': 78px,
+  '80': 80px,
   '92': 92px,
   '96': 96px,
   '100': 100px,
@@ -72,7 +74,9 @@ $backgroundColors: (
   'purple-primary': #675290,
   'purple-medium': #2D1956,
   'purple-dark': #180839,
-  'godee-black-card': rgba(64, 65, 67, 0.3)
+  'godee-black-card': rgba(64, 65, 67, 0.3),
+  'blue': #137bce,
+  'blue-light': #effaff,
 );
 
 // loop, to style Legends
