@@ -3,7 +3,7 @@
     <div class="container">
       <div
         class="author-posts__featured-post"
-        :class="[authorPosts.length === 1 ? 'author-posts__featured-post--mb-48' : '']"
+        :class="[authorPosts.length === 1 ? 'author-posts__featured-post--mb-0' : '']"
       >
         <FeaturedPost
           v-if="authorPostsLoaded"
@@ -17,32 +17,28 @@
           theme="light"
         />
       </div>
-      <div class="row author-posts__wrapper">
+      <div class="author-posts__list">
         <template v-if="authorPostsLoaded">
           <section
             v-for="post in authorPostsToShow"
             :key="post.id"
             :post="post"
-            class="author-posts__single-post"
+            class="author-posts__list-item"
           >
-            <div class="single-post__wrapper">
-              <RecommendedBlogWidget
-                :post="post"
-                :author="blogAuthor"
-                :disable-author-link="true"
-              />
-            </div>
+            <PostCard
+              :post="post"
+              :author="blogAuthor"
+              :disable-author-link="true"
+            />
           </section>
         </template>
         <template v-else>
           <section
             v-for="i in 6"
             :key="i"
-            class="author-posts__single-post"
+            class="author-posts__list-item"
           >
-            <div class="single-post__wrapper">
-              <SkeletonBlogWidget />
-            </div>
+            <SkeletonBlogWidget />
           </section>
         </template>
       </div>
@@ -63,7 +59,7 @@ import { mapGetters, mapActions } from 'vuex'
 import FeaturedPost from '@/components/Blog/shared/FeaturedPost'
 import SkeletonFeaturedPost from '@/components/Blog/skeletons/SkeletonFeaturedPost'
 import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
-import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
+import PostCard from '@/components/Blog/shared/PostCard'
 import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
 import initializeLazyLoad from '@/helpers/lazyLoad'
 
@@ -73,7 +69,7 @@ export default {
     FeaturedPost,
     SkeletonFeaturedPost,
     SkeletonBlogWidget,
-    RecommendedBlogWidget,
+    PostCard,
     LoadMoreButton,
   },
 
@@ -110,43 +106,62 @@ export default {
 
   .author-posts {
     background-color: $bgcolor--white-primary;
-    padding: 60px 0 12px;
-    &__wrapper {
-      margin: 0 -10px;
-    }
+    padding: 60px 0 71px;
+
     &__featured-post {
       margin-bottom: 137px;
-      &--mb-48 {
-        margin-bottom: 48px;
+      &--mb-0 {
+        margin-bottom: 0;
       }
     }
-    &__single-post {
+
+    &__list {
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0 -10px;
+    }
+
+    &__list-item {
+      box-sizing: border-box;
       width: 33.3333%;
-      margin-bottom: 48px;
+      padding: 0 10px;
+      margin-bottom: 103px;
       &:first-of-type {
         display: none;
       }
-      .single-post__wrapper {
-        padding: 0 10px;
-        /deep/ .blog-post__author-name {
-          color: $text-color--black;
+      @media only screen and (min-width: 991px) {
+        &:nth-last-child(-n+3) {
+          margin-bottom: 0;
         }
       }
     }
+
     &__load-more {
-      margin-top: 36px;
-      margin-bottom: 48px;
+      margin-top: 75px;
     }
+
     @media only screen and (max-width: 991px) {
-      &__single-post {
+      padding: 34px 0 60px;
+
+      &__featured-post {
+        display: none;
+        margin-bottom: 56px;
+      }
+
+      &__list-item {
         width: 100%;
+        margin-bottom: 56px;
         &:first-of-type {
           display: block;
         }
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
-      &__featured-post {
-        display: none;
-      }
+
+      &__load-more {
+      margin-top: 56px;
+    }
     }
   }
 </style>

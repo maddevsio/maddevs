@@ -5,73 +5,80 @@
         Customer<br>
         <span>University</span>
       </div>
-      <div class="customer-university__wrapper">
+      <div class="customer-university__content">
         <div class="customer-university__featured-post">
-          <NuxtLink
+          <div
             v-if="featuredCUPost"
-            :to="`/customer-university/${customerContent.featured_cu.uid}/`"
             class="featured-post"
           >
-            <span class="featured-post__date">{{ featuredCUPost.date }}</span>
-            <h2 class="featured-post__title">
-              {{ $prismic.asText(featuredCUPost.title).replace(/^[0-9]*\. /, '') }}
-            </h2>
-            <p class="featured-post__text">
-              {{ firstParagraph }}
-            </p>
+            <NuxtLink
+              :to="`/customer-university/${customerContent.featured_cu.uid}/`"
+              class="featured-post__info"
+            >
+              <span class="featured-post__date">{{ featuredCUPost.date }}</span>
+              <h2 class="featured-post__title">
+                {{ $prismic.asText(featuredCUPost.title).replace(/^[0-9]*\. /, '') }}
+              </h2>
+              <p class="featured-post__text">
+                {{ firstParagraph }}
+              </p>
+            </NuxtLink>
             <PostAuthor
               v-bind="findAuthor(featuredCUPost.post_author.id, allAuthors)"
               theme="dark"
             />
-            <div class="featured-post__cover-wrapper">
+            <NuxtLink
+              :to="`/customer-university/${customerContent.featured_cu.uid}/`"
+              class="featured-post__image"
+            >
               <img
-                class="featured-post__cover img_lazy"
-                width="560"
-                height="347"
                 :data-src="featuredCUPost.featured_image.url"
                 :alt="featuredCUPost.featured_image.alt"
+                class="img_lazy"
+                width="560"
+                height="347"
               >
-            </div>
-          </NuxtLink>
+            </NuxtLink>
+          </div>
         </div>
         <div class="customer-university__list">
-          <div class="customer-university__list-wrapper">
-            <span class="customer-university__list-title">Series of articles:</span>
-            <div>
-              <NuxtLink
-                v-for="(cluster, i) in clustersToShow"
-                :key="i"
-                :to="cluster.items.length ? `/customer-university/${cluster.items[0].cu_post.uid}/` : ''"
-                class="customer-university__list-item single-cluster"
-              >
-                <div class="single-cluster__cover-wrapper">
-                  <img
-                    class="single-cluster__cover img_lazy"
-                    width="295"
-                    height="160"
-                    :data-src="cluster.primary.cover_image.url"
-                    :alt="cluster.primary.cover_image.alt"
-                  >
+          <span class="customer-university__list-title">Series of articles:</span>
+          <NuxtLink
+            v-for="(cluster, i) in clustersToShow"
+            :key="i"
+            :to="cluster.items.length ? `/customer-university/${cluster.items[0].cu_post.uid}/` : ''"
+            class="customer-university__list-item"
+          >
+            <div class="single-cluster">
+              <div class="single-cluster__image">
+                <img
+                  :data-src="cluster.primary.cover_image.url"
+                  :alt="cluster.primary.cover_image.alt"
+                  class="img_lazy"
+                  width="295"
+                  height="160"
+                >
+              </div>
+              <div class="single-cluster__info">
+                <h3 class="single-cluster__title">
+                  {{ $prismic.asText(cluster.primary.cluster_name) }}
+                </h3>
+                <div class="single-cluster__description">
+                  {{ $prismic.asText(cluster.primary.description) }}
                 </div>
-                <div class="single-cluster__data">
-                  <h3 class="single-cluster__title">
-                    {{ $prismic.asText(cluster.primary.cluster_name) }}
-                  </h3>
-                  <div class="single-cluster__description">
-                    {{ $prismic.asText(cluster.primary.description) }}
-                  </div>
-                </div>
-              </NuxtLink>
+              </div>
             </div>
-            <div class="customer-university__list-show-more-wrapper">
-              <button
-                v-if="clusters.length > 3 && !showAll"
-                class="customer-university__list-show-more"
-                @click="showAll = true"
-              >
-                Browse all series
-              </button>
-            </div>
+          </NuxtLink>
+          <div
+            v-if="clusters.length > 3 && !showAll"
+            class="customer-university__show-more-wrapper"
+          >
+            <button
+              class="customer-university__show-more"
+              @click="showAll = true"
+            >
+              Browse all series
+            </button>
           </div>
         </div>
       </div>
@@ -138,25 +145,15 @@ export default {
   letter-spacing: -0.02em;
   margin-bottom: 16px;
 }
-.d-flex {
-  display: flex;
-}
-.justify-content-between {
-  justify-content: space-between;
-}
-.w-50 {
-  width: 50%;
-}
-.pl-2 {
-  padding-left: 60px;
-}
+
 .customer-university {
-  background-color: $text-color--black-oil;
-  padding: 90px 0;
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
+  background-color: $bgcolor--black-oil;
+  padding: 88px 0 98px;
+
+  a {
+    text-decoration: none;
   }
+
   &__title {
     font-family: 'Poppins-Bold', sans-serif;
     font-style: normal;
@@ -166,26 +163,45 @@ export default {
     letter-spacing: -0.04em;
     -webkit-text-stroke: 1.13px $text-color--grey-opacity-40-percent;
     color: $text-color--black-oil;
-    margin-bottom: 78px;
+    margin-bottom: 63px;
     span {
       color: $bgcolor--silver;
       -webkit-text-stroke: 0;
     }
   }
-  &__featured-post {
-    width: 50%;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
   }
-  &__list-wrapper {
-    padding-left: 60px;
-  }
+
+  &__featured-post,
   &__list {
+    box-sizing: border-box;
     width: 50%;
   }
-  &__list-title {
-    display: block;
-    @include label;
+
+  &__featured-post {
+    padding-right: 60px;
   }
-  &__list-show-more {
+
+  &__list {
+    padding-left: 60px;
+    &-title {
+      display: block;
+      @include label;
+    }
+  }
+
+  &__list-item {
+    display: block;
+    margin-bottom: 43px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__show-more {
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -199,20 +215,12 @@ export default {
     background-color: transparent;
     cursor: pointer;
     &-wrapper {
-      margin-top: 36px;
+      margin-top: 41px;
     }
   }
-  &__list-item {
-    text-decoration: none;
-  }
 }
+
 .featured-post {
-  text-decoration: none;
-  display: block;
-  padding-right: 60px;
-  a {
-    text-decoration: none;
-  }
   &__date {
     display: block;
     @include label;
@@ -238,33 +246,36 @@ export default {
     margin-bottom: 28px;
     color: $text-color--grey-pale;
   }
-  &__cover {
+  &__image {
+    display: block;
+    text-align: center;
+    margin-top: 33px;
     width: 100%;
     max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    &-wrapper {
-      margin-top: 33px;
-      text-align: center;
+    img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
     }
   }
 }
+
 .single-cluster {
-  margin-bottom: 31px;
   display: flex;
-  &:last-child {
-    margin-bottom: 0;
-  }
-  &__cover {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    &-wrapper {
-      width: 52.68%;
-      margin-right: 20px;
-      flex-shrink: 0;
-      text-align: center;
+  &__image {
+    display: block;
+    flex-shrink: 0;
+    text-align: center;
+    width: 52.68%;
+    margin-right: 20px;
+    img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
     }
   }
   &__title {
@@ -293,12 +304,18 @@ export default {
     text-overflow: ellipsis;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .customer-university {
+    &__list {
+      padding-left: 0;
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .customer-university {
-    padding: 34px 0 69px;
-    &__wrapper {
-      display: block;
-    }
+    padding: 35px 0 69px;
     &__title {
       font-size: 50px;
       line-height: 101%;
@@ -306,58 +323,66 @@ export default {
       font-feature-settings: 'ss02' on;
       margin-bottom: 38px;
     }
+    &__content {
+      display: block;
+    }
     &__list {
       width: 100%;
-      &-wrapper {
-        padding-left: 0;
-      }
-      &-show-more {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 26px;
-        letter-spacing: -0.035em;
-        width: 100%;
-        border-color: rgba(236, 28, 36, 0.4);
+      padding-left: 0;
+      &-title {
+        display: none;
       }
     }
     &__featured-post {
       width: 100%;
-      margin-bottom: 31px;
+      padding-right: 0;
     }
-    &__list-title {
-      display: none;
+    &__list-item,
+    &__featured-post {
+      margin-bottom: 56px;
+    }
+    &__show-more {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.035em;
+      width: 100%;
+      border-color: rgba(236, 28, 36, 0.4);
+      &-wrapper {
+        margin-top: 56px;
+      }
     }
   }
+
   .featured-post {
     display: flex;
     flex-direction: column;
-    padding-right: 0;
     &__date,
-    .blog-post__author {
+    .post-author {
       display: none;
     }
     &__title {
-      order: 1;
       margin-bottom: 6px;
       font-size: 22.78px;
     }
     &__text {
-      order: 2;
       margin-bottom: 0;
     }
-    &__cover-wrapper {
+    &__info {
+      order: 1;
+    }
+    &__image {
       order: 0;
       margin-top: 0;
       margin-bottom: 14px;
     }
   }
+
   .single-cluster {
     display: block;
-    &__cover {
-      &-wrapper {
-        width: 100%;
-        margin-bottom: 14px;
-      }
+    &__image {
+      width: 100%;
+      margin-bottom: 14px;
     }
     &__title {
       color: $text-color--grey-cases;

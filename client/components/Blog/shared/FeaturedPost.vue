@@ -1,22 +1,26 @@
 <template>
-  <NuxtLink
-    :to="link"
-    :class="theme"
+  <div
+    :class="`featured-post--${theme}-theme`"
     class="featured-post"
   >
     <div class="row featured-post__wrapper">
-      <div class="col-12 col-lg-6 featured-post__main">
-        <Component
-          :is="titleTag"
-          :title="$prismic.asText(post.data.title)"
-          class="featured-post__title"
+      <div class="col-12 col-lg-6 featured-post__info-wrapper">
+        <NuxtLink
+          :to="link"
+          class="featured-post__info"
         >
-          {{ shortTitle }}
-        </Component>
-        <p class="featured-post__paragraph">
-          {{ firstParagraph }}
-        </p>
-        <div class="featured-post__data d-flex justify-content-between">
+          <Component
+            :is="titleTag"
+            :title="$prismic.asText(post.data.title)"
+            class="featured-post__title"
+          >
+            {{ shortTitle }}
+          </Component>
+          <p class="featured-post__paragraph">
+            {{ firstParagraph }}
+          </p>
+        </NuxtLink>
+        <div class="featured-post__meta-wrapper">
           <PostAuthor
             v-bind="author"
             :theme="theme"
@@ -27,21 +31,26 @@
               :tag="tag || post.tags[0]"
               :theme="theme"
             />
-            <span class="created-at">{{ formattedDate }}</span>
+            <span class="featured-post__date">{{ formattedDate }}</span>
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-6 featured-post__image-wrapper">
-        <img
-          :data-src="post.data.featured_image.url"
-          :alt="post.data.featured_image.alt"
-          :width="post.data.featured_image.dimensions.width"
-          :height="post.data.featured_image.dimensions.height"
-          class="featured-post__image img_lazy"
+        <NuxtLink
+          :to="link"
+          class="featured-post__image"
         >
+          <img
+            :data-src="post.data.featured_image.url"
+            :alt="post.data.featured_image.alt"
+            :width="post.data.featured_image.dimensions.width"
+            :height="post.data.featured_image.dimensions.height"
+            class="img_lazy"
+          >
+        </NuxtLink>
       </div>
     </div>
-  </NuxtLink>
+  </div>
 </template>
 
 <script>
@@ -113,18 +122,16 @@ export default {
 
 <style scoped lang="scss">
 @import '../../../assets/styles/_vars';
+
 .featured-post {
-  text-decoration: none;
-  display: block;
-  &.dark {
-    color: $text-color--white-primary;
+  &--dark-theme {
+    * {
+      color: $text-color--white-primary;
+    }
   }
-  &.light {
-    color: $text-color--black;
-    /deep/ .blog-post {
-      &__author-name {
-        color: $text-color--black;
-      }
+  &--light-theme {
+    * {
+      color: $text-color--black;
     }
   }
   a {
@@ -133,7 +140,7 @@ export default {
   &__wrapper {
     align-items: center;
   }
-  &__main {
+  &__info-wrapper{
     margin-top: 0;
   }
   &__title {
@@ -151,44 +158,55 @@ export default {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
   }
-  &__data {
-    display: flex;
-    justify-content: space-between;
-    /deep/ .blog-post__author-name {
-      color: $text-color--white-primary;
-    }
-    /deep/ .blog-post__author-image {
-      width: 40px;
-      height: 40px;
-    }
-  }
   &__meta {
     display: flex;
     align-items: center;
     font-size: 13px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    .created-at {
-      margin-left: 24px;
-      color: $text-color--grey;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      /deep/ .post-author {
+        margin-right: 24px;
+        &__image,
+        &__none-image {
+          width: 40px;
+          min-width: 40px;
+          height: 40px;
+        }
+      }
     }
   }
-  &__image-wrapper {
-    text-align: right;
-    margin-top: 0;
+  &__date {
+    white-space: nowrap;
+    margin-left: 24px;
+    color: $text-color--grey;
+  }
+  &__image {
+    display: block;
+    width: 90%;
+    margin-left: auto;
     img {
-      max-width: 90%;
+      display: block;
+      width: 100%;
       height: auto;
       vertical-align: middle;
+    }
+    &-wrapper {
+      margin-top: 0;
     }
   }
 }
 @media only screen and (max-width: 991px) {
   .featured-post {
-    &__main {
+    &__info-wrapper {
+      order: 1;
       padding: 0;
-      margin-top: 0;
-      order: 2;
+    }
+    &__title {
+      font-size: 35px;
     }
     &__paragraph {
       margin-bottom: 38px;
@@ -196,35 +214,34 @@ export default {
       line-height: 150%;
       letter-spacing: -0.02em;
     }
-    &__data {
-      display: block;
-      /deep/ .blog-post__author {
-        margin-bottom: 16px;
-      }
-      /deep/ .blog-post__author-image {
-        width: 30px;
-        height: 30px;
-      }
-    }
-    &__title {
-      font-size: 35px;
-    }
     &__meta {
       justify-content: space-between;
-      /deep/ .post-tag {
+      .post-tag {
         padding: 8px 16px;
         line-height: 22px;
         margin-left: 0;
       }
+      &-wrapper {
+        display: block;
+        /deep/ .post-author {
+          margin-right: 0;
+          margin-bottom: 16px;
+          &__image,
+          &__none-image {
+            width: 30px;
+            min-width: 30px;
+            height: 30px;
+          }
+        }
+      }
     }
-    &__image-wrapper {
-      padding: 0;
-      order: 1;
-      margin-bottom: 17px;
-      margin-top: 0;
-      text-align: center;
-      img {
-        max-width: 100%;
+    &__image {
+      width: 100%;
+      margin: 0;
+      &-wrapper {
+        order: 0;
+        padding: 0;
+        margin-bottom: 17px;
       }
     }
   }

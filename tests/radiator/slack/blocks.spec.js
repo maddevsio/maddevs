@@ -54,14 +54,14 @@ describe('Radiator > slack > blocks', () => {
       value: 15,
     }
     const title = 'Title'
-    const smile = 'my_smile'
+    const smile = 'custom_smile'
     const parensKey = 'difference'
     const valueType = ''
     const parensType = '%'
 
     const result = listItem(entity, title, smile, parensKey, valueType, parensType)
 
-    expect(result).toBe(':partying_face: :my_smile: Title: *15* (25%)')
+    expect(result).toBe(':partying_face: :x: Title: *15* (25%)')
   })
 
   it('countryListItem block', () => {
@@ -97,6 +97,6 @@ describe('Radiator > slack > blocks', () => {
 
     const result = performanceListItem(entity, smile)
 
-    expect(result).toBe(':partying_face: :good: SEO: *95%*')
+    expect(result).toBe(':partying_face: :x: SEO: *95%*')
   })
 })

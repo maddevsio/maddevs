@@ -6,7 +6,7 @@
 
 <script>
 /* eslint no-console: 0 */
-import { config } from './config'
+import { config } from '@/featureFlags/config'
 
 export default {
   name: 'Feature',
@@ -26,6 +26,8 @@ export default {
           return true
         }
         if (!process.env.ffEnvironment) {
+          console.log('CONFIG', config)
+          console.log('FLAG', this.flag)
           console.error('WARNING: FEATURE FLAGS. ffEnvironment variable is not provided! Feature flag will be ignored!')
           return true
         }
