@@ -11,6 +11,8 @@
           Book a free consultation
         </button>
         <img
+          width="395"
+          height="490"
           class="build-dev-team_img media_lazy"
           :data-src="require('@/assets/img/Cases/Chuk.png')"
           alt="Chuk"

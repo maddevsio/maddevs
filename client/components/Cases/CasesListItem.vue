@@ -175,7 +175,7 @@ export default {
     &--big {
       grid-column: auto / span 2;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 992px) {
         grid-column: auto / span 4;
       }
     }
@@ -191,7 +191,7 @@ export default {
         grid-column: auto / span 2;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 992px) {
         grid-column: auto / span 4;
       }
     }
