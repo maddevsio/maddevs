@@ -18,7 +18,7 @@
           alt="Chuk"
         >
         <div class="build-dev-team_man">
-          Andrew “Chuk” Minkin
+          Andrew “Chuck” Minkin
           <span>CTO, Co-Founder</span>
         </div>
       </section>
