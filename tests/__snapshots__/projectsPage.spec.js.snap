@@ -340,8 +340,6 @@ exports[`projects page renders correctly 1`] = `
         <span>
           See More
         </span>
-         ↓
-  
       </nuxtlink-stub>
     </div>
   </section>
