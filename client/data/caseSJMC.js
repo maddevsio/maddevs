@@ -118,12 +118,6 @@ export const swiperOfficeTeam = [
     fileExtension: 'jpg',
     alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.',
   },
-  {
-    fileName: 'office-team-sixth-slide',
-    pictureFolder: 'sjmc',
-    fileExtension: 'jpg',
-    alt: 'Creating a Custom Small-Scale Version of the SJMC Complex Multimedia Environment.',
-  },
 ]
 
 export const swiperGrafanaPrometheus = [
