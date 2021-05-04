@@ -2,6 +2,7 @@
   <section
     id="customers"
     class="customers"
+    :class="{ 'customers--light': light }"
   >
     <div class="container">
       <div class="customers__text-content">
@@ -21,7 +22,7 @@
         >
           <img
             class="icon-wrapper__icon img_lazy"
-            :data-src="require(`@/assets/img/Projects/svg/${customer}.svg`)"
+            :data-src="fileName(customer)"
             :alt="customer"
           >
         </div>
@@ -36,10 +37,24 @@ import { customers } from '@/data/customers'
 export default {
   name: 'Customers',
 
+  props: {
+    light: {
+      type: Boolean,
+      default: false,
+    },
+  },
+
   data() {
     return {
       customers,
     }
+  },
+
+  methods: {
+    fileName(name) {
+      if (this.light) return require(`@/assets/img/Projects/svg/${name}-black.svg`)
+      return require(`@/assets/img/Projects/svg/${name}.svg`)
+    },
   },
 }
 </script>
@@ -83,6 +98,22 @@ export default {
     line-height: 22px;
     letter-spacing: -0.02em;
     color: $text-color--grey;
+  }
+
+  &--light {
+    background-color: #fff;
+
+    .customers__main-title {
+      color: #101113;
+    }
+
+    .customers__description {
+      color: #101113;
+    }
+
+    .icon-wrapper {
+      background-color: #fff;
+    }
   }
 
   @media only screen and (max-width: 1300px) {

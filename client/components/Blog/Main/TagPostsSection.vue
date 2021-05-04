@@ -3,7 +3,7 @@
     <div class="container">
       <div
         class="tag-posts__featured-post"
-        :class="[tagPosts.length === 1 ? 'tag-posts__featured-post--mb-48' : '']"
+        :class="[tagPosts.length === 1 ? 'tag-posts__featured-post--mb-0' : '']"
       >
         <FeaturedPost
           v-if="tagPostsLoaded"
@@ -17,36 +17,29 @@
           theme="light"
         />
       </div>
-      <div
-        class="row tag-posts__wrapper"
-        :class="[tagPosts.length === 1 ? 'tag-posts__wrapper--one-post' : '']"
-      >
+      <div class="tag-posts__list">
         <template v-if="tagPostsLoaded">
           <section
             v-for="post in tagPostsToShow"
             :key="post.id"
             :post="post"
-            class="tag-posts__single-post"
+            class="tag-posts__list-item"
           >
-            <div class="single-post__wrapper">
-              <RecommendedBlogWidget
-                :post="post"
-                :tag="blogTag"
-                :author="findAuthor(post.data.post_author.id, allAuthors)"
-                :disable-tag-link="true"
-              />
-            </div>
+            <PostCard
+              :post="post"
+              :tag="blogTag"
+              :author="findAuthor(post.data.post_author.id, allAuthors)"
+              :disable-tag-link="true"
+            />
           </section>
         </template>
         <template v-else>
           <section
             v-for="i in 6"
             :key="i"
-            class="tag-posts__single-post"
+            class="tag-posts__list-item"
           >
-            <div class="single-post__wrapper">
-              <SkeletonBlogWidget />
-            </div>
+            <SkeletonBlogWidget />
           </section>
         </template>
       </div>
@@ -55,7 +48,6 @@
         class="tag-posts__load-more"
       >
         <LoadMoreButton
-
           @click="getMoreTagPosts"
         />
       </div>
@@ -68,7 +60,7 @@ import { mapGetters, mapActions } from 'vuex'
 import FeaturedPost from '@/components/Blog/shared/FeaturedPost'
 import SkeletonFeaturedPost from '@/components/Blog/skeletons/SkeletonFeaturedPost'
 import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
-import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
+import PostCard from '@/components/Blog/shared/PostCard'
 import LoadMoreButton from '@/components/Blog/shared/LoadMoreButton'
 import initializeLazyLoad from '@/helpers/lazyLoad'
 
@@ -80,7 +72,7 @@ export default {
     FeaturedPost,
     SkeletonFeaturedPost,
     SkeletonBlogWidget,
-    RecommendedBlogWidget,
+    PostCard,
     LoadMoreButton,
   },
 
@@ -119,42 +111,61 @@ export default {
 
   .tag-posts {
     background-color: $bgcolor--white-primary;
-    padding: 60px 0 12px;
+    padding: 60px 0 71px;
+
     &__featured-post {
       margin-bottom: 137px;
-      &--mb-48 {
-        margin-bottom: 48px;
+      &--mb-0 {
+        margin-bottom: 0;
       }
     }
-    &__wrapper {
+
+    &__list {
+      display: flex;
+      flex-flow: row wrap;
       margin: 0 -10px;
     }
-    &__single-post {
+
+    &__list-item {
+      box-sizing: border-box;
       width: 33.3333%;
-      margin-bottom: 48px;
+      padding: 0 10px;
+      margin-bottom: 103px;
       &:first-of-type {
         display: none;
       }
-      .single-post__wrapper {
-        padding: 0 10px;
-        /deep/ .blog-post__author-name {
-          color: $text-color--black;
+      @media only screen and (min-width: 991px) {
+        &:nth-last-child(-n+3) {
+          margin-bottom: 0;
         }
       }
     }
+
     &__load-more {
-      margin-top: 36px;
-      margin-bottom: 48px;
+      margin-top: 75px;
     }
+
     @media only screen and (max-width: 991px) {
-      &__single-post {
+      padding: 34px 0 60px;
+
+      &__list-item {
         width: 100%;
+        margin-bottom: 56px;
         &:first-of-type {
           display: block;
         }
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
+
       &__featured-post {
         display: none;
+        margin-bottom: 56px;
+      }
+
+      &__load-more {
+        margin-top: 56px;
       }
     }
   }

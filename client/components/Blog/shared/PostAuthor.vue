@@ -3,12 +3,12 @@
     v-if="name"
     :event="disabled ? '' : 'click'"
     :to="link"
-    class="blog-post__author"
+    :class="`post-author--${theme}-theme`"
+    class="post-author"
   >
     <div
       v-if="thumbnailImage.url !== undefined"
-      class="blog-post__author-image"
-      :class="theme"
+      class="post-author__image"
     >
       <img
         :data-src="thumbnailImage.url"
@@ -18,16 +18,19 @@
     </div>
     <div
       v-else
-      class="blog-post__none-image"
-      :class="theme"
+      class="post-author__none-image"
     />
-    <div class="blog-post__author-info">
-      <p class="blog-post__author-name">
+    <div class="post-author__info">
+      <p
+        class="post-author__name"
+        :title="name"
+      >
         {{ shortTitle }}
       </p>
-      <div class="blog-post__data-of-creation">
-        <span class="blog-post__author-title">{{ position }}</span>
-      </div>
+      <span
+        class="post-author__position"
+        :title="position"
+      >{{ position }}</span>
     </div>
   </NuxtLink>
 </template>
@@ -65,7 +68,7 @@ export default {
 
     theme: {
       type: String,
-      default: 'dark',
+      default: 'light',
     },
   },
 
@@ -83,62 +86,74 @@ export default {
 
 <style scoped lang="scss">
 @import '../../../assets/styles/vars';
-.blog-post {
-  &__author {
-    display: flex;
-    align-items: center;
-    margin-right: 24px;
+
+.post-author {
+  max-width: 100%;
+  display: inline-flex;
+  align-items: center;
+  &--dark-theme {
+    .post-author {
+      &__image,
+      &__none-image {
+        background-color: $bgcolor--black-light;
+      }
+      &__name {
+        color: $text-color--white;
+      }
+    }
+  }
+  &--light-theme {
+    .post-author {
+      &__image,
+      &__none-image {
+        background-color: $bgcolor--silver;
+      }
+      &__name {
+        color: $text-color--black;
+      }
+    }
   }
 
-  &__author-info {
-    margin-left: 9px;
-  }
-
-  &__author-name {
-    color: $text-color--white;
-  }
-
-  &__author-title,
-  &__author-name {
-    display: block;
-    font-size: 13px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    line-height: 129%;
-    letter-spacing: -0.02em;
-  }
-
-  &__author-name {
-    margin-bottom: 4px;
-  }
-
-  &__author-image {
-    object-fit: cover;
-  }
-
-  &__author-image,
+  &__image,
   &__none-image {
     width: 36px;
+    min-width: 36px;
     height: 36px;
     border-radius: 50%;
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
-    &.dark {
-      background-color: $bgcolor--black-light;
-      color: $text-color--white-primary;
-    }
-    &.light {
-      background-color: $bgcolor--silver;
-      color: $text-color--black;
-    }
     img {
+      display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
 
-  &__author-title {
+  &__info {
+    max-width: 100%;
+    margin-left: 9px;
+    overflow: hidden;
+  }
+
+  &__name,
+  &__position {
+    display: block;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__name {
+    margin-bottom: 4px;
+  }
+
+  &__position {
     color: $text-color--grey-pale;
   }
 }

@@ -66,10 +66,9 @@
           class="blog-post__recommended-post"
           data-testid="test-recommended-post"
         >
-          <RecommendedBlogWidget
+          <PostCard
             :post="post"
             :author="findAuthor(post.data.post_author.id, allAuthors)"
-            class-name="recommended-post"
           />
         </section>
       </div>
@@ -102,7 +101,7 @@ import TableOfContents from '@/components/Blog/Post/TableOfContents'
 import BlogHeader from '@/components/Blog/header/Blog'
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity'
 import CustomerUniversityNavigation from '@/components/Blog/Post/CustomerUniversityNavigation'
-import RecommendedBlogWidget from '@/components/Blog/shared/RecommendedBlogWidget'
+import PostCard from '@/components/Blog/shared/PostCard'
 import initializeLazyLoad from '@/helpers/lazyLoad'
 
 import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
@@ -112,7 +111,7 @@ export default {
   name: 'PostView',
   components: {
     SlicesBlock,
-    RecommendedBlogWidget,
+    PostCard,
     TableOfContents,
     BlogHeader,
     CustomerUniversityHeader,
@@ -469,7 +468,6 @@ export default {
 
   &__recommended-post {
     width: 33.33333%;
-    height: max-content;
     border-radius: 3px;
     transition: 0.2s;
     margin-right: 20px;
@@ -482,19 +480,15 @@ export default {
       margin-right: 0;
     }
 
-    /deep/ h2,
-    /deep/ p {
-      color: $text-color--black;
+    /deep/ .post-tag {
+      background-color: $bgcolor--white-primary;
     }
 
-    /deep/ .blog-post__meta {
-      .post-tag {
+    /deep/ .post-author {
+      &__image,
+      &__none-image {
         background-color: $bgcolor--white-primary;
       }
-    }
-
-    /deep/ .blog-post__none-image {
-      background-color: $bgcolor--white-primary;
     }
   }
 }
@@ -556,13 +550,8 @@ export default {
       width: 100%;
       margin-right: 0;
       margin-bottom: 40px;
-
-      /deep/ .blog-post__author {
-        margin-top: 16px;
-      }
-
-      /deep/ .blog-post-meta {
-        display: none;
+      &:last-child {
+        margin-bottom: 0;
       }
     }
 

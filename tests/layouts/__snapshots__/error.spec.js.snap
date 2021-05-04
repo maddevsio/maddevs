@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error layout renders correctly 1`] = `
+<div
+  class="error-page container"
+>
+  <lottie-stub
+    class="error-page_lottie"
+    id="404-code"
+    options="[object Object]"
+  />
+   
+  <h1
+    class="error-page_title"
+  >
+    
+    The page you were looking for doesn’t exist.
+  
+  </h1>
+   
+  <nuxtlink-stub
+    class="error-page_link"
+    to="/"
+  >
+    
+    Back to our site
+  
+  </nuxtlink-stub>
+</div>
+`;

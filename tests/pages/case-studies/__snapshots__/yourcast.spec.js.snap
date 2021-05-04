@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CaseYourcast _uid component should render correctly 1`] = `
+<div>
+  <main
+    class="case case--yourcast"
+  >
+    <section
+      class="case_header case_header-yourcast"
+      id="case-header"
+    >
+      <div
+        class="case_main-video_fallback"
+        style="background-image: url(img.jpg);"
+      />
+       
+      <video
+        autoplay="autoplay"
+        class="case_main-video media_lazy"
+        data-testid="test-case_main-video"
+        loop="loop"
+        muted="muted"
+      >
+        <source
+          data-src="img.jpg"
+          type="video/mp4"
+        />
+        
+    Your browser does not support the video tag.
+  
+      </video>
+       
+      <div
+        class="case_header-content"
+      >
+        <div
+          class="case_header-text"
+        >
+          <div
+            class="case_case-study-item"
+          >
+            
+        Case Study
+      
+          </div>
+           
+          <h1
+            class="case_header-title"
+          >
+            
+      The Evolution 
+            <br />
+            
+      of Yourcast.TV
+    
+          </h1>
+           
+          <p
+            class="case_header-description"
+          >
+            
+      Mad Devs developed a secure and private video streaming service and live 
+            <br />
+            
+      video broadcasting cinema to provide entertainment experience to isolated 
+            <br />
+            
+      groups feeling homesick.
+    
+          </p>
+           
+        </div>
+         
+        <img
+          alt="YourcastTV - Video Streaming Platform Logo."
+          class="case_header-logo media_lazy case_yourcast-logo"
+          data-src="img.jpg"
+          height="81.23"
+          width="387"
+        />
+      </div>
+    </section>
+     
+    <main-stub />
+     
+    <section
+      class="case_footer container_full"
+    >
+      <img
+        alt="SJMC"
+        class="case_logotype-sjmc img_lazy"
+        data-src="[object Object]"
+      />
+       
+      <h2
+        class="case_title case_title_h2 case_title-sjmc"
+      >
+        
+    The maintenance 
+        <br
+          class="case_mobile-break-sjmc"
+        />
+        
+    of memory: 
+        <br />
+        
+    Sir John Monash 
+        <br
+          class="case_mobile-break-sjmc"
+        />
+        
+    Centre
+  
+      </h2>
+       
+      <nuxtlink-stub
+        class="case_next-project-button"
+        to="/case-studies/sir-john-monash-centre/"
+      >
+        
+    Read next project
+  
+      </nuxtlink-stub>
+    </section>
+  </main>
+</div>
+`;

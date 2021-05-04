@@ -66,6 +66,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
          
         <button
           class="case_play-button"
+          data-testid="test-play-button"
           type="button"
         >
           <img
