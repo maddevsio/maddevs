@@ -264,8 +264,6 @@ exports[`CaseStudies should render correctly 1`] = `
         <span>
           See More
         </span>
-         ↓
-  
       </nuxtlink>
     </div>
   </section>
@@ -538,8 +536,6 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
         <span>
           See More
         </span>
-         ↓
-  
       </nuxtlink>
     </div>
   </section>
