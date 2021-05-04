@@ -23,6 +23,7 @@
       <button
         slot="actions"
         class="case_play-button"
+        data-testid="test-play-button"
         type="button"
         @click="openFullscreen()"
       >

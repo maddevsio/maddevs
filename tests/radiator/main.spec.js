@@ -3,12 +3,14 @@ import 'regenerator-runtime'
 import getAnalyticsData from '../../radiator/analytics'
 import getLighthouseData from '../../radiator/lighthouse'
 import sendMessageToSlack from '../../radiator/slack'
+import sendMessageToTelegram from '../../radiator/telegram'
 import parseRange from '../../radiator/utils/parseRange'
 import main from '../../radiator/main'
 
 jest.mock('../../radiator/analytics', () => jest.fn(() => new Promise(res => res('analytics'))))
 jest.mock('../../radiator/lighthouse', () => jest.fn(() => new Promise(res => res('lighthouse'))))
 jest.mock('../../radiator/slack', () => jest.fn(() => new Promise(res => res())))
+jest.mock('../../radiator/telegram', () => jest.fn(() => new Promise(res => res())))
 jest.mock('../../radiator/utils/parseRange', () => jest.fn(() => '25-04-2021'))
 
 describe('Radiator > main', () => {
@@ -32,9 +34,6 @@ describe('Radiator > main', () => {
   })
 
   it('should correctly called data functions and called telegram if', async () => {
-    jest.spyOn(console, 'warn')
-    console.warn.mockImplementation(() => {})
-
     const config = {
       slack: false,
       telegram: true,
@@ -43,6 +42,10 @@ describe('Radiator > main', () => {
 
     await main(config)
 
-    expect(console.warn).toHaveBeenCalledWith('There is no telegram implementation for now.')
+    expect(sendMessageToTelegram).toHaveBeenCalledWith({
+      analytics: 'analytics',
+      range: '25-04-2021',
+      lighthouse: 'lighthouse',
+    })
   })
 })

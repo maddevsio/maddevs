@@ -23,6 +23,10 @@ const mocks = {
   $nuxt: {
     $emit: jest.fn(),
   },
+  $getMediaFromS3: () => 'img.jpg',
+  $lazyLoad: {
+    init: () => {},
+  },
 }
 
 const stubs = ['client-only', 'NuxtLink']

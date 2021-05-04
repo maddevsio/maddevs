@@ -29,5 +29,9 @@ export default {
   head() {
     return buildHead(getMetadata('projects'))
   },
+
+  mounted() {
+    this.$lazyLoad.init()
+  },
 }
 </script>

@@ -55,7 +55,7 @@ export const mutations = {
 export const actions = {
   async getBlogAuthors({ commit }) {
     const authors = await getBlogAuthors(this.$prismic)
-    commit('SET_ALL_AUTHORS', authors)
+    if (Array.isArray(authors)) commit('SET_ALL_AUTHORS', authors)
   },
   async getBlogAuthor({ commit }, payload) {
     const author = await getBlogAuthor(this.$prismic, payload)
