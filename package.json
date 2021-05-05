@@ -36,6 +36,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "googleapis": "^72.0.0",
+    "mobile-device-detect": "^0.4.3",
     "mongoose": "^5.12.3",
     "node-telegram-bot-api": "^0.52.0",
     "nuxt": "^2.15.4",

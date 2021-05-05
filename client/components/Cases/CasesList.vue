@@ -20,7 +20,7 @@
       to="/case-studies/"
       class="cases-list_see-more"
     >
-      <span>See More</span> ↓
+      <span>See More</span>
     </NuxtLink>
   </div>
 </template>
@@ -35,7 +35,37 @@ export default {
   data() {
     return {
       casesList,
+      observer: null,
     }
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      if (window.innerWidth <= 992) {
+        this.autoplay()
+      }
+    })
+  },
+
+  methods: {
+    autoplay() {
+      const observerCallback = entries => entries.forEach(({ isIntersecting, target }) => {
+        if (!isIntersecting) {
+          target.pause()
+        } else {
+          target.play()
+        }
+      })
+
+      const elements = Array.from(document.querySelectorAll('.cases-list_item-video'))
+
+      if ('IntersectionObserver' in window) {
+        this.observer = new IntersectionObserver(observerCallback, {
+          threshold: 0.5,
+        })
+        elements.forEach(element => this.observer.observe(element))
+      }
+    },
   },
 }
 </script>
@@ -216,7 +246,8 @@ export default {
   /deep/ .cases-list_yourcast {
     video {
       width: 140%;
-      left: -150px;
+      left: auto;
+      right: 0;
       background-position: center;
       background-repeat: no-repeat;
     }

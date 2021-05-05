@@ -11,12 +11,14 @@
           Book a free consultation
         </button>
         <img
-          class="build-dev-team_img media_lazy"
-          :data-src="require('@/assets/img/Cases/Chuk.png')"
+          width="395"
+          height="490"
+          class="build-dev-team_img"
+          src="@/assets/img/Cases/Chuk.png"
           alt="Chuk"
         >
         <div class="build-dev-team_man">
-          Andrew “Chuk” Minkin
+          Andrew “Chuck” Minkin
           <span>CTO, Co-Founder</span>
         </div>
       </section>

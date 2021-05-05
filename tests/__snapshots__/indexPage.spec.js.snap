@@ -1670,10 +1670,13 @@ exports[`index page renders correctly 1`] = `
           class="cases-list_item cases-list_item--full cases-list_sjmc"
         >
           <nuxtlink-stub
+            class="cases-list_item-link"
+            disabled=""
+            tag="a"
             to="/case-studies/sir-john-monash-centre/"
           >
             <video
-              class="media_lazy"
+              class="cases-list_item-video media_lazy"
               loop="loop"
               muted="muted"
               poster="img.jpg"
@@ -1723,10 +1726,13 @@ exports[`index page renders correctly 1`] = `
           class="cases-list_item cases-list_item--big cases-list_nambafood"
         >
           <nuxtlink-stub
+            class="cases-list_item-link"
+            disabled=""
+            tag="a"
             to="/case-studies/namba-food/"
           >
             <video
-              class="media_lazy"
+              class="cases-list_item-video media_lazy"
               loop="loop"
               muted="muted"
               poster="img.jpg"
@@ -1776,10 +1782,13 @@ exports[`index page renders correctly 1`] = `
           class="cases-list_item cases-list_item--small cases-list_yourcast"
         >
           <nuxtlink-stub
+            class="cases-list_item-link"
+            disabled=""
+            tag="a"
             to="/case-studies/yourcast/"
           >
             <video
-              class="media_lazy"
+              class="cases-list_item-video media_lazy"
               loop="loop"
               muted="muted"
               poster="img.jpg"
@@ -1829,10 +1838,13 @@ exports[`index page renders correctly 1`] = `
           class="cases-list_item cases-list_item--full cases-list_godee"
         >
           <nuxtlink-stub
+            class="cases-list_item-link"
+            disabled=""
+            tag="a"
             to="/case-studies/godee/"
           >
             <video
-              class="media_lazy"
+              class="cases-list_item-video media_lazy"
               loop="loop"
               muted="muted"
               poster="img.jpg"
@@ -1887,8 +1899,6 @@ exports[`index page renders correctly 1`] = `
         <span>
           See More
         </span>
-         ↓
-  
       </nuxtlink-stub>
     </div>
   </section>

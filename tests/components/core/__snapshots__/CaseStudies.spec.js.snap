@@ -35,10 +35,13 @@ exports[`CaseStudies should render correctly 1`] = `
           class="cases-list_item cases-list_item--full cases-list_sjmc"
         >
           <nuxtlink
+            class="cases-list_item-link"
+            disabled="disabled"
+            tag="a"
             to="/case-studies/sir-john-monash-centre/"
           >
             <video
-              class="media_lazy"
+              class="cases-list_item-video media_lazy"
               loop="loop"
               muted="muted"
               poster="img.jpg"
@@ -88,10 +91,13 @@ exports[`CaseStudies should render correctly 1`] = `
           class="cases-list_item cases-list_item--big cases-list_nambafood"
         >
           <nuxtlink
+            class="cases-list_item-link"
+            disabled="disabled"
+            tag="a"
             to="/case-studies/namba-food/"
           >
             <video
-              class="media_lazy"
+              class="cases-list_item-video media_lazy"
               loop="loop"
               muted="muted"
               poster="img.jpg"
@@ -141,10 +147,13 @@ exports[`CaseStudies should render correctly 1`] = `
           class="cases-list_item cases-list_item--small cases-list_yourcast"
         >
           <nuxtlink
+            class="cases-list_item-link"
+            disabled="disabled"
+            tag="a"
             to="/case-studies/yourcast/"
           >
             <video
-              class="media_lazy"
+              class="cases-list_item-video media_lazy"
               loop="loop"
               muted="muted"
               poster="img.jpg"
@@ -194,10 +203,13 @@ exports[`CaseStudies should render correctly 1`] = `
           class="cases-list_item cases-list_item--full cases-list_godee"
         >
           <nuxtlink
+            class="cases-list_item-link"
+            disabled="disabled"
+            tag="a"
             to="/case-studies/godee/"
           >
             <video
-              class="media_lazy"
+              class="cases-list_item-video media_lazy"
               loop="loop"
               muted="muted"
               poster="img.jpg"
@@ -252,8 +264,6 @@ exports[`CaseStudies should render correctly 1`] = `
         <span>
           See More
         </span>
-         ↓
-  
       </nuxtlink>
     </div>
   </section>
@@ -297,10 +307,13 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
           class="cases-list_item cases-list_item--full cases-list_sjmc"
         >
           <nuxtlink
+            class="cases-list_item-link"
+            disabled="disabled"
+            tag="a"
             to="/case-studies/sir-john-monash-centre/"
           >
             <video
-              class="media_lazy"
+              class="cases-list_item-video media_lazy"
               loop="loop"
               muted="muted"
               poster="img.jpg"
@@ -350,10 +363,13 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
           class="cases-list_item cases-list_item--big cases-list_nambafood"
         >
           <nuxtlink
+            class="cases-list_item-link"
+            disabled="disabled"
+            tag="a"
             to="/case-studies/namba-food/"
           >
             <video
-              class="media_lazy"
+              class="cases-list_item-video media_lazy"
               loop="loop"
               muted="muted"
               poster="img.jpg"
@@ -403,10 +419,13 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
           class="cases-list_item cases-list_item--small cases-list_yourcast"
         >
           <nuxtlink
+            class="cases-list_item-link"
+            disabled="disabled"
+            tag="a"
             to="/case-studies/yourcast/"
           >
             <video
-              class="media_lazy"
+              class="cases-list_item-video media_lazy"
               loop="loop"
               muted="muted"
               poster="img.jpg"
@@ -456,10 +475,13 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
           class="cases-list_item cases-list_item--full cases-list_godee"
         >
           <nuxtlink
+            class="cases-list_item-link"
+            disabled="disabled"
+            tag="a"
             to="/case-studies/godee/"
           >
             <video
-              class="media_lazy"
+              class="cases-list_item-video media_lazy"
               loop="loop"
               muted="muted"
               poster="img.jpg"
@@ -514,8 +536,6 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
         <span>
           See More
         </span>
-         ↓
-  
       </nuxtlink>
     </div>
   </section>

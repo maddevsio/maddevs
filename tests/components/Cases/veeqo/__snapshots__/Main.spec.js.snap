@@ -1,0 +1,838 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main component should render correctly 1`] = `
+<div>
+  <section>
+    <div
+      id="case-first-section"
+    />
+     
+    <section
+      class="container_regular m-72_top media-m-38_top"
+    >
+      <p
+        class="case_paragraph"
+      >
+        
+    Veeqo is an inventory and shipping platform for e-commerce. It helps businesses to manage sales across multiple channels, ship items via multiple carriers, process refunds, manage B2B orders, forecast 
+        <span
+          class="case_no-wrap"
+        >
+          inventory—the
+        </span>
+         list of features is almost endless. The platform directly integrates with the world’s most popular retail applications, including e-commerce platforms, marketplaces, shipping carriers, POS systems, and more.
+  
+      </p>
+       
+      <blockquote
+        class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+      >
+        <img
+          alt="blockquote"
+          class="case_blockquote-mark img_lazy"
+          data-src="[object Object]"
+        />
+         
+    Veeqo is a single platform that gives users complete control of their entire inventory. It enables businesses to quickly bulk ship orders from any sales channel, automate repetitive shipping tasks, and track every delivery in one place.
+  
+      </blockquote>
+       
+      <p
+        class="case_paragraph"
+      >
+        
+    Hundreds of retailers all over the world use Veeqo to power their inventory and shipping founded
+  
+      </p>
+    </section>
+     
+    <div
+      class="container_full background-color-blue m-72_bottom media-m-48_bottom p-72_top media-p-41_top"
+    >
+      <div
+        class="container_regular"
+      >
+        <h2
+          class="case_title_h2 case_title"
+        >
+          
+      Veeqo high-level overview
+    
+        </h2>
+         
+        <p
+          class="case_paragraph case_description m-12_top m-80_bottom media-m-41_bottom"
+        >
+          
+      The service has multiple subsystems integrated into one platform
+    
+        </p>
+         
+        <div
+          class="case_animation-items"
+        >
+          <div
+            class="case_animation-item"
+          >
+            <p
+              class="case_animation-item-description"
+            >
+              
+          dashboard
+        
+            </p>
+             
+            <h5
+              class="case_title_h5 case_animation-item-title"
+            >
+              
+          The dashboard used to visualize reports
+        
+            </h5>
+          </div>
+           
+          <div
+            class="case_animation-item"
+          >
+            <p
+              class="case_animation-item-description"
+            >
+              
+          Subsystems
+        
+            </p>
+             
+            <h5
+              class="case_title_h5 case_animation-item-title"
+            >
+              
+          Inventory management, Management, Warehouse, Reporting
+        
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-12_bottom"
+      >
+        
+    Challenges and solutions
+  
+      </h2>
+       
+      <p
+        class="case_paragraph"
+      >
+        
+    In making Veeqo the reliable and efficient system it is today, our teams faced serious technical challenges. Addressing them required profound expertise, creative solutions, and intensive work. Particularly important were the contributions of our DevOps engineers.
+  
+      </p>
+       
+      <blockquote
+        class="case_blockquote-box m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
+      >
+        
+    The role of DevOps specialists is to bring order and predictability to the development process: remove bottlenecks, simplify delivery, and automate as many processes as possible. The goal is to turn the development of features into a smoothly running conveyor belt.
+  
+      </blockquote>
+       
+      <p
+        class="case_paragraph"
+      >
+        
+    When we joined the Veeqo project, our DevOps team started sorting out existing blockages in the development process, prioritizing those that affected Veeqo’s users and the client’s business the most.
+  
+      </p>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-24_bottom"
+      >
+        
+    Phase 1: Fixing database outages
+  
+      </h2>
+       
+      <div
+        class="case_card background-color-silver"
+      >
+        <p
+          class="case_card-name"
+        >
+          
+      Challenge
+    
+        </p>
+         
+        <h4
+          class="case_title_h4 m-8_bottom"
+        >
+          
+      Regular outage
+    
+        </h4>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+      Without any detectable load spikes, the database would often reach maximum processor performance and deny service as the queries piled up in the query queue. To get the system up and running again, workers had to be manually restarted every time.
+    
+        </p>
+      </div>
+       
+      <div
+        class="case_card background-color-blue-light"
+      >
+        <p
+          class="case_card-name"
+        >
+          
+      Effect on users
+    
+        </p>
+         
+        <h4
+          class="case_title_h4 m-8_bottom"
+        >
+          
+      Degraded user services
+    
+        </h4>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+      Users had limited access to services: they couldn't view contents, place orders, or manage their settings.
+    
+        </p>
+      </div>
+       
+      <blockquote
+        class="case_blockquote-box m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
+      >
+        
+    “We needed better monitoring and metrics collection to detect the true reason for the outage. We don’t sweep these things under the rug. We go for root causes.”
+  
+      </blockquote>
+       
+      <h3
+        class="case_title_h3 m-24_bottom media-m-12_bottom"
+      >
+        
+    Solution
+  
+      </h3>
+       
+      <p
+        class="case_paragraph m-24_top"
+      >
+        
+    As a result, we spent $180 on launching PgBouncers on two c4.large instances behind NLB and saved about 10X  the sum in the customer’s monthly costs by: Freeing up about 40 GB of RAM, Postponing the need to upgrade the RDS instance until about 6 months later.
+  
+      </p>
+       
+      <h2
+        class="case_title_h2 m-48_bottom media-m-41_bottom case_text-align-center"
+      >
+        
+    Result
+  
+      </h2>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-24_bottom"
+      >
+        
+    Phase 2: Continuous integration (CI)
+  
+      </h2>
+       
+      <div
+        class="case_card background-color-silver"
+      >
+        <h3
+          class="case_title_h4 m-8_bottom"
+        >
+          
+      Challenge
+    
+        </h3>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+      Development processes lacked consistency. Particularly, the project had manually configured CI system and pipelines, different development, test, and production environments and runtimes, non-reproducible development environment, inconsistent test builds.
+    
+        </p>
+      </div>
+       
+      <div
+        class="case_card background-color-blue-light"
+      >
+        <h3
+          class="case_title_h4 m-8_bottom"
+        >
+          
+      Solution
+    
+        </h3>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+      Dockerization is the most viable solution today to set up continuous delivery. As our application was back then partially hosted on Heroku, we created a unified runtime for developers and CI by dockerizing the main app using a Heroku Stack image and Docker Compose. It made CI reliable and allowed simplifying deployment. Also, it sped up bootstrapping of the development environment.
+    
+        </p>
+      </div>
+       
+      <blockquote
+        class="case_blockquote-box m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
+      >
+        
+    The developers didn’t trust their CI system. CI wasn’t helping them; it was hindering their work instead. It’s just bad DevOps.
+  
+      </blockquote>
+       
+      <h3
+        class="case_title_h3 m-38_bottom media-m-24_bottom"
+      >
+        
+    What we achieved
+  
+      </h3>
+       
+      <div
+        class="case_results"
+      >
+        <div
+          class="case_result-item"
+        >
+          
+      Reproducible CI results
+    
+        </div>
+         
+        <div
+          class="case_result-item"
+        >
+          
+      Unified runtime
+    
+        </div>
+         
+        <div
+          class="case_result-item"
+        >
+          
+      Standardized development, test, and production environments
+    
+        </div>
+      </div>
+       
+      <h3
+        class="case_title_h3 m-12_bottom"
+      >
+        
+    Moving Jenkins
+  
+      </h3>
+       
+      <p
+        class="case_paragraph m-34_bottom"
+      >
+        
+    Jenkins was operated manually on a separate EC2 instance. Managing it was thus challenging, especially in emergencies. We moved the Jenkins master to ECS by remaking its provisioning, deployment, and updating (Later, we’ll move it to k8s, but in 2017, ECS was the only good option for us). We reduced build time and cost by allocating a small part of compute resources of Jenkins agents to reserved instances and moving 90% of the load to spot instances.
+  
+      </p>
+       
+      <p
+        class="case_paragraph case_bold"
+      >
+        
+    We further renovated CI by:
+  
+      </p>
+       
+      <ul
+        class="case_list"
+      >
+        <li
+          class="list-item_dot"
+        >
+          Creating Jenkinsfiles for all repositories thus making pipelines reproducible
+        </li>
+         
+        <li
+          class="list-item_dot"
+        >
+          Creating backups
+        </li>
+         
+        <li
+          class="list-item_dot"
+        >
+          Running access audit and configuring SSO for more secure access
+        </li>
+      </ul>
+       
+      <blockquote
+        class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+      >
+        <img
+          alt="blockquote"
+          class="case_blockquote-mark img_lazy"
+          data-src="[object Object]"
+        />
+         
+    Everything down to the last comma is now written in the form of code. Even if we took Jenkins down completely and had to build it from scratch again, it’d take us no more than 10 minutes.
+  
+      </blockquote>
+    </section>
+     
+    <section
+      class="container_full background-color-blue p-48_top media-p-41_top p-56_bottom media-p-41_bottom"
+    >
+      <div
+        class="container_regular"
+      >
+        <h2
+          class="case_title_h2 case_title case_text-align-center"
+        >
+          
+      Result
+    
+        </h2>
+         
+        <p
+          class="case_paragraph case_description case_text-align-center m-12_top m-66_bottom media-m-41_bottom"
+        >
+          
+      We call it a win-win situation between the development team 
+          <br />
+           and the customer’s business.
+    
+        </p>
+      </div>
+    </section>
+     
+    <section
+      class="container_regular m-66_bottom media-m-48_bottom"
+    >
+      <h2
+        class="case_title_h2 m-12_bottom"
+      >
+        
+    Phase 3: Elasticsearch
+  
+      </h2>
+       
+      <p
+        class="case_paragraph m-24_bottom"
+      >
+        
+    Elasticsearch is crucial in the way users experience the Veeqo platform: the dashboard and the entire interface rely on Elasticsearch. Even if everything else functions flawlessly, delays in the search engine alone cause problems for user experience.
+  
+      </p>
+       
+      <div
+        class="m-96_bottom media-m-48_bottom"
+      >
+        <div
+          class="case_card background-color-silver"
+        >
+          <h3
+            class="case_title_h4 m-8_bottom"
+          >
+            
+        Challenge
+      
+          </h3>
+           
+          <p
+            class="case_paragraph"
+          >
+            
+        Elasticsearch didn’t cope with the load due to its outdated version and non-optimized configurations.
+      
+          </p>
+        </div>
+         
+        <div
+          class="case_card background-color-blue-light"
+        >
+          <h3
+            class="case_title_h4 m-8_bottom"
+          >
+            
+        Effect on users
+      
+          </h3>
+           
+          <p
+            class="case_paragraph"
+          >
+            
+        The users were often unable to access search results. Elasticsearch would expose them to delays of up to 30 seconds.
+      
+          </p>
+        </div>
+      </div>
+       
+      <h3
+        class="case_title_h4 m-8_bottom"
+      >
+        
+    Solution
+  
+      </h3>
+       
+      <p
+        class="case_paragraph m-24_bottom media-m-12_bottom"
+      >
+        
+    There are two main ways to improve performance: Increase compute resources, Optimize the use of resources
+  
+      </p>
+       
+      <p
+        class="case_paragraph m-34_bottom media-m-24_bottom"
+      >
+        
+    At any given moment DevOps specialists calculate and evaluate cost factors of different solutions. We applied both types of solutions as we started with enhancing the cluster and later optimized indexing to make searching as convenient for users as possible.
+  
+      </p>
+       
+      <div>
+        <div
+          class="case_card background-color-silver"
+        >
+          <h4
+            class="case_title_h4 m-8_bottom"
+          >
+            
+        New cluster
+      
+          </h4>
+           
+          <p
+            class="case_paragraph m-24_bottom media-m-12_bottom"
+          >
+            
+        We implemented a new Elasticsearch cluster as a self-hosted solution on EC2 instances.
+      
+          </p>
+           
+          <p
+            class="case_paragraph case_bold"
+          >
+            
+        Three reasons:
+      
+          </p>
+           
+          <ul
+            class="case_list"
+          >
+            <li
+              class="list-item_dot"
+            >
+              Control over the security of our Elasticsearch
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Immediate response in case of incidents
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Independent monitoring and investigation of Elasticsearch performance
+            </li>
+          </ul>
+        </div>
+         
+        <div
+          class="case_card background-color-blue-light"
+        >
+          <h4
+            class="case_title_h4 m-8_bottom"
+          >
+            
+        Indexing and performance
+      
+          </h4>
+           
+          <p
+            class="case_paragraph m-24_bottom media-m-12_bottom"
+          >
+            
+        The indices featured too much unnecessary information and non-optimized mapping.
+      
+          </p>
+           
+          <p
+            class="case_paragraph case_bold"
+          >
+            
+        What we did:
+      
+          </p>
+           
+          <ul
+            class="case_list"
+          >
+            <li
+              class="list-item_dot"
+            >
+              Refactored them to make them concise
+            </li>
+             
+            <li
+              class="list-item_dot"
+            >
+              Used the replication and sharding mechanisms to distribute the indices among five nodes
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+     
+    <section
+      class="container_full background-color-blue m-96_bottom media-m-48_bottom p-48_top media-p-41_top p-28_bottom media-p-38_bottom"
+    >
+      <div
+        class="container_regular"
+      >
+        <h2
+          class="case_title_h2 case_title case_text-align-center"
+        >
+          
+      Result
+    
+        </h2>
+         
+        <p
+          class="case_paragraph case_description case_text-align-center"
+        >
+          
+      Now, Elasticsearch is back to three nodes; in fact, two are enough for normal operation, and the third is there to ensure fail-safety.
+    
+        </p>
+      </div>
+    </section>
+     
+    <div
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-12_bottom"
+      >
+        
+    Phase 4: Cutting the costs
+  
+      </h2>
+       
+      <p
+        class="case_paragraph m-24_bottom media-m-12_bottom"
+      >
+        
+    Cutting the costs for the customer is not about making compromises but about achieving efficiency. The mind of a DevOps engineer is like an hourglass: engineers are focusing on either improving performance or cutting the costs. It’s flipping all the time, and it is needed to find balance, which is solutions that are effective and cheap.
+  
+      </p>
+       
+      <p
+        class="case_paragraph m-48_bottom media-m-24_bottom"
+      >
+        
+    Once we improved Veeqo’s performance and user experience, we started working on optimizing infrastructure costs. In total, the infrastructure used to cost the customer about 
+        <span
+          class="case_red-text"
+        >
+          ~$20,000 per month.
+        </span>
+         Within one summer, as we prepared the new solutions and migrated to them, we brought the figure down to ~$13,000.
+  
+      </p>
+       
+      <p
+        class="case_paragraph m-48_top media-m-24_top"
+      >
+        
+    Importantly, we made the system more secure as we started using RabbitMQ, Memcached, Elasticsearch, and other services within our own network. The monitoring system that we kept perfecting as we went on with cutting the costs confirmed the effectiveness of cost optimization.
+  
+      </p>
+       
+      <blockquote
+        class="case_blockquote-box m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
+      >
+        
+    Costs can’t be cut overnight. Not without damaging user experience, service uptime, and system survivability, anyway. We initially told Veeqo how we would decrease monthly infrastructure costs by ~7,000 dollars, but it took months to make smooth transitions. Our Veeqo partners trusted our professionalism, and it all paid off. We’re proud of how we optimized the costs along with improving the system’s performance.
+  
+      </blockquote>
+    </div>
+     
+    <div
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-12_bottom"
+      >
+        
+    Phase 6: Infrastructure as Code (IaC)
+  
+      </h2>
+       
+      <p
+        class="case_paragraph m-24_bottom"
+      >
+        
+    IaC is a way to manage large structures where manual operation is highly ineffective or simply impossible. To go fully IaC, our teams made fundamental changes in the ways we develop, deliver, and maintain our solutions.
+  
+      </p>
+       
+      <h4
+        class="case_title_h4 m-12_bottom"
+      >
+        
+    Advantages of IaC
+  
+      </h4>
+       
+      <ol>
+        <li>
+          
+      Control over resources: The more people have access to the cloud, the more expensive it is to use it. By introducing IaC, we rule out disorderly alterations in the system and prevent wastefulness, thus improving security and gaining firmer control over resources and costs.
+    
+        </li>
+         
+        <li>
+          
+      Reproducibility: IaC is the tool of ultimate reproducibility. By going straight to Terraform, one can avoid repetitive manual work, thus achieving: lower operating costs, higher speed, better coordination within the team, (ideally) fully automated infrastructure deployment.
+    
+        </li>
+         
+        <li>
+          
+      Security: Introduced changes can be tracked, reviewed, and analyzed automatically before delivery. It’s a reliable way to detect and fix vulnerabilities before they can make trouble.
+    
+        </li>
+         
+        <li>
+          
+      Reliable documentation: Documentation effectively stops being relevant once a new change is introduced into the system without being documented. With many changes going on, doc updates get easily forgotten. But if you have code for documentation, this problem is solved. There’s nothing more relevant for understanding a system than code itself. Ideally, what you have in master is what you have in production.
+    
+        </li>
+      </ol>
+       
+      <blockquote
+        class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+      >
+        <img
+          alt="blockquote"
+          class="case_blockquote-mark img_lazy"
+          data-src="[object Object]"
+        />
+         
+    We are proud of our work with Veeqo and eager to share our successes. As our partnership continues, we’re constantly looking for new ways to meet Veeqo’s business needs and make its users’ experience better.
+  
+      </blockquote>
+    </div>
+     
+    <section
+      class="container_full background-color-blue m-72_bottom media-m-48_bottom p-48_top media-p-41_top p-100_bottom media-p-48_bottom"
+    >
+      <div
+        class="container_regular"
+      >
+        <h2
+          class="case_title_h2 case_title case_text-align-center"
+        >
+          
+      Key results
+    
+        </h2>
+      </div>
+    </section>
+     
+    <section
+      class="container_regular m-72_bottom media-m-48_bottom"
+    >
+      <h2
+        class="case_title_h2 m-48_bottom media-m-24_bottom case_text-align-center"
+      >
+        
+    Meet the team
+  
+      </h2>
+       
+      <blockquote
+        alt="Ruslan Karabukaev"
+        class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
+      >
+        
+    The resource provided by Mad Devs is excellent, bringing not only their own skill and expertise, but the input of the wider team to the project too. They manage the remote work seamlessly and fit well into the company’s workflow.
+   
+        <div
+          class="case_blockquote-author__author-info m-24_top"
+        >
+          <div
+            class="case_blockquote-author__photo m-auto"
+          >
+            <picture>
+              <source
+                class="image media_lazy"
+                data-srcset="img.jpg,img.jpg"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Ruslan Karabukaev"
+                class="image media_lazy"
+                data-src="img.jpg"
+                data-srcset="img.jpg"
+                data-testid="test-picture-img"
+                height="0"
+                width="0"
+              />
+            </picture>
+          </div>
+           
+          <p
+            class="case_paragraph case_blockquote-author__name"
+          >
+            
+      Ruslan Karabukaev
+    
+          </p>
+           
+          <p
+            class="case_blockquote-author__position"
+          >
+            
+      Co-founder of GoDee
+    
+          </p>
+        </div>
+      </blockquote>
+    </section>
+  </section>
+</div>
+`;
