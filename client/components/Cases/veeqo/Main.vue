@@ -7,6 +7,12 @@
     <PhaseFixingDatabaseOutages />
     <PhaseContinuousIntegration />
     <ContinuousIntegrationResult />
+    <PhaseElasticsearch />
+    <PhaseElasticsearchResult />
+    <PhaseCuttingTheCosts />
+    <PhasInfrastructureAsCode />
+    <PhasInfrastructureAsCodeResult />
+    <Team />
   </section>
 </template>
 
@@ -17,6 +23,12 @@ import ChallengesAndSolutions from '@/components/Cases/veeqo/ChallengesAndSoluti
 import PhaseFixingDatabaseOutages from '@/components/Cases/veeqo/PhaseFixingDatabaseOutages'
 import PhaseContinuousIntegration from '@/components/Cases/veeqo/PhaseContinuousIntegration'
 import ContinuousIntegrationResult from '@/components/Cases/veeqo/ContinuousIntegrationResult'
+import PhaseElasticsearch from '@/components/Cases/veeqo/PhaseElasticsearch'
+import PhaseElasticsearchResult from '@/components/Cases/veeqo/PhaseElasticsearchResult'
+import PhaseCuttingTheCosts from '@/components/Cases/veeqo/PhaseCuttingTheCosts'
+import PhasInfrastructureAsCode from '@/components/Cases/veeqo/PhasInfrastructureAsCode'
+import PhasInfrastructureAsCodeResult from '@/components/Cases/veeqo/PhasInfrastructureAsCodeResult'
+import Team from '@/components/Cases/veeqo/Team'
 
 export default {
   name: 'Main',
@@ -27,6 +39,12 @@ export default {
     PhaseFixingDatabaseOutages,
     PhaseContinuousIntegration,
     ContinuousIntegrationResult,
+    PhaseElasticsearch,
+    PhaseElasticsearchResult,
+    PhaseCuttingTheCosts,
+    PhasInfrastructureAsCode,
+    PhasInfrastructureAsCodeResult,
+    Team,
   },
 }
 </script>

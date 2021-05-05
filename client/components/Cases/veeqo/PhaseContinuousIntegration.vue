@@ -65,7 +65,7 @@ import ListItemDot from '@/components/Cases/shared/ListItemDot'
 import List from '@/components/Cases/shared/List'
 
 export default {
-  name: 'PhaseFixingDatabaseOutages',
+  name: 'PhaseContinuousIntegration',
   components: {
     TextParagraph,
     Card,

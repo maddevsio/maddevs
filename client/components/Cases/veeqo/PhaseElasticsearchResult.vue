@@ -1,11 +1,11 @@
 <template>
-  <section class="container_full background-color-blue p-48_top media-p-41_top p-56_bottom media-p-41_bottom">
+  <section class="container_full background-color-blue m-96_bottom media-m-48_bottom p-48_top media-p-41_top p-28_bottom media-p-38_bottom">
     <div class="container_regular">
       <h2 class="case_title_h2 case_title case_text-align-center">
         Result
       </h2>
-      <TextParagraph class="case_description case_text-align-center m-12_top m-66_bottom media-m-41_bottom">
-        We call it a win-win situation between the development team <br> and the customer’s business.
+      <TextParagraph class="case_description case_text-align-center">
+        Now, Elasticsearch is back to three nodes; in fact, two are enough for normal operation, and the third is there to ensure fail-safety.
       </TextParagraph>
     </div>
   </section>
@@ -15,7 +15,7 @@
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
 
 export default {
-  name: 'ContinuousIntegrationResult',
+  name: 'PhaseElasticsearchResult',
   components: {
     TextParagraph,
   },
@@ -29,10 +29,6 @@ export default {
   &_title,
   &_description {
     color: $text-color--white;
-  }
-
-  &_no-wrap {
-    white-space: nowrap;
   }
 }
 </style>
