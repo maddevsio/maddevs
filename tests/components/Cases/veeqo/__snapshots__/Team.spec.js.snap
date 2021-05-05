@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Team component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular m-72_bottom media-m-48_bottom"
+  >
+    <h2
+      class="case_title_h2 m-48_bottom media-m-24_bottom case_text-align-center"
+    >
+      
+    Meet the team
+  
+    </h2>
+     
+    <blockquote
+      alt="Ruslan Karabukaev"
+      class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
+    >
+      
+    The resource provided by Mad Devs is excellent, bringing not only their own skill and expertise, but the input of the wider team to the project too. They manage the remote work seamlessly and fit well into the company’s workflow.
+   
+      <div
+        class="case_blockquote-author__author-info m-24_top"
+      >
+        <div
+          class="case_blockquote-author__photo m-auto"
+        >
+          <picture>
+            <source
+              class="image media_lazy"
+              data-srcset="img.jpg,img.jpg"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Ruslan Karabukaev"
+              class="image media_lazy"
+              data-src="img.jpg"
+              data-srcset="img.jpg"
+              data-testid="test-picture-img"
+              height="0"
+              width="0"
+            />
+          </picture>
+        </div>
+         
+        <p
+          class="case_paragraph case_blockquote-author__name"
+        >
+          
+      Ruslan Karabukaev
+    
+        </p>
+         
+        <p
+          class="case_blockquote-author__position"
+        >
+          
+      Co-founder of GoDee
+    
+        </p>
+      </div>
+    </blockquote>
+  </section>
+</div>
+`;
