@@ -1,4 +1,4 @@
-import { render } from '@testing-library/vue'
+import { render, screen } from '@testing-library/vue'
 import Veeqo from '@/pages/case-studies/veeqo'
 
 const mocks = {
@@ -17,6 +17,7 @@ describe('Veeqo root component', () => {
       stubs,
     })
 
+    expect(screen.getByText('The Evolution of Yourcast.TV')).not.toBeNull()
     expect(container).toMatchSnapshot()
   })
 })

@@ -1,5 +1,5 @@
 import Team from '@/components/Cases/veeqo/Team'
-import { render } from '@testing-library/vue'
+import { render, screen } from '@testing-library/vue'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',
@@ -11,6 +11,7 @@ describe('Team component', () => {
       mocks,
     })
 
+    expect(screen.getByText('Meet the team')).not.toBeNull()
     expect(container).toMatchSnapshot()
   })
 })

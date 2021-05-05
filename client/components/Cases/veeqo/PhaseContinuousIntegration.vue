@@ -1,7 +1,7 @@
 <template>
   <section class="container_regular">
     <h2 class="case_title_h2 m-24_bottom">
-      Phase 1: Fixing database outages
+      Phase 2: Continuous integration (CI)
     </h2>
     <Card class="background-color-silver">
       <h3 class="case_title_h4 m-8_bottom">
