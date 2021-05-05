@@ -7,11 +7,13 @@ module.exports = class JsonLdRule {
   check(dom) {
     if (!this.enabled) return
     let report = []
-    let schema = dom.window.document.querySelector('head > script[type="application/ld+json"]')
+    const schema = dom.window.document.querySelector('head > script[type="application/ld+json"]')
     if (!schema) {
+      // eslint-disable-next-line
       return report = 'This HTML without <script type="application/ld+json">'
     }
     if (schema.textContent.trim() === '') {
+      // eslint-disable-next-line
       return report = 'The meta <script type="application/ld+json"></script> is empty'
     }
     try {
@@ -22,8 +24,10 @@ module.exports = class JsonLdRule {
         }
       })
     } catch (error) {
+      // eslint-disable-next-line
       return report = 'The <script type="application/ld+json"> on this page invalid.'
     }
+    // eslint-disable-next-line
     return report.join('\n')
   }
 }

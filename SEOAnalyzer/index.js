@@ -64,8 +64,9 @@ function getFilesFromFolder(base, ext, listFiles, result) {
       return res
     }
     if (file.substr(-1 * (ext.length + 1)) === `.${ext}`) {
-      if (params.ignoreFiles.some(path => path === filePath)) return
-      return res.push(filePath)
+      if (params.ignoreFiles.some(fp => fp !== filePath)) {
+        return res.push(filePath)
+      }
     }
     return res
   })

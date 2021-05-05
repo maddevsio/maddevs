@@ -22,7 +22,7 @@
     "test:coverage": "jest --config=./jest/develop.config.js && node ./jest/coverageBadges.js -output './client/static'",
     "test:staging": "jest --config=./jest/staging.config.js",
     "radiator": "node -e 'require(\"./radiator\")()'",
-    "seo-analyze": "npm run generate && node .github/scripts/SEOAnalyzer/index.js"
+    "seo-analyze": "npm run generate && node ./SEOAnalyzer/index.js"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
