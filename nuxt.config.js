@@ -189,7 +189,16 @@ module.exports = {
   /*
   ** Nuxt Modules
   */
-  modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/prismic'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/prismic', '@nuxtjs/sitemap'],
+  sitemap: {
+    hostname: 'https://maddevs.io',
+    gzip: false,
+    path: '/sitemap.xml',
+    defaults: {
+      changefreq: 'daily',
+      lastmod: new Date(),
+    },
+  },
   axios: {
     baseURL: '/',
   },
