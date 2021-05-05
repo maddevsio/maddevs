@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhasInfrastructureAsCodeResult component should render correctly 1`] = `
+<div>
+  <section
+    class="container_full background-color-blue m-72_bottom media-m-48_bottom p-48_top media-p-41_top p-100_bottom media-p-48_bottom"
+  >
+    <div
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 case_title case_text-align-center"
+      >
+        
+      Key results
+    
+      </h2>
+    </div>
+  </section>
+</div>
+`;

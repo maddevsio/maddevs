@@ -46,7 +46,6 @@ import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/veeqo/Main'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
-import { getMetadata, buildHead } from '@/data/seo'
 
 export default {
   name: 'CaseVeeqo',
@@ -68,13 +67,6 @@ export default {
         alt: 'YourcastTV - Video Streaming Platform Logo.',
       },
     }
-  },
-
-  head() {
-    return buildHead({
-      ...getMetadata('yourcast'),
-      image: 'https://maddevs.io/yourcast.jpg',
-    })
   },
 
   mounted() {
