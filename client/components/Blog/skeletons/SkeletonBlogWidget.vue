@@ -29,20 +29,25 @@ export default {
 
 @keyframes SkeletonLoading {
   0% {
-    background-position: -200px 0;
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 80% 50%;
   }
   100% {
-    background-position: calc(200px + 100%) 0;
+    background-position: 0 50%;
   }
 }
 
 .animated {
-  animation: 1.5s ease-in-out 1s infinite normal none running SkeletonLoading;
+  animation: 2.5s ease infinite SkeletonLoading;
 }
 
 .background-grey {
   background-color: $bgcolor--silver;
-  background-image: linear-gradient(90deg, $bgcolor--grey-extra-dark, $bgcolor--silver, $bgcolor--grey-extra-dark);
+  background-image: linear-gradient(90deg, #EFEFF4 0%, #FFFFFF 30%, #EFEFF4 60%, #FFFFFF 100%);
+  background-size: 400% 400%;
+  background-position: center;
 }
 
 .blog-post {
