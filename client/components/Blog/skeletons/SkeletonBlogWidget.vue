@@ -5,13 +5,13 @@
       <h2 class="blog-post__title animated background-grey" />
       <p class="blog-post__paragraph background-grey animated" />
       <div class="blog-post__meta">
-        <span class="created-at background-grey" />
-        <span class="tag" />
+        <span class="created-at animated background-grey" />
+        <span class="tag animated background-grey" />
       </div>
       <div class="blog-post__author">
-        <div class="blog-post__none-image background-grey" />
-        <div class="blog-post__author-info background-grey">
-          <p class="blog-post__author-name background-grey" />
+        <div class="blog-post__none-image background-grey animated" />
+        <div class="blog-post__author-info background-grey animated">
+          <p class="blog-post__author-name background-grey animated" />
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@ export default {
     background-position: 0 50%;
   }
   50% {
-    background-position: 80% 50%;
+    background-position: 90% 50%;
   }
   100% {
     background-position: 0 50%;
@@ -40,13 +40,13 @@ export default {
 }
 
 .animated {
-  animation: 2.5s ease infinite SkeletonLoading;
+  animation: 3s ease infinite SkeletonLoading;
+  background-size: 200% 200%;
 }
 
 .background-grey {
   background-color: $bgcolor--silver;
-  background-image: linear-gradient(90deg, #EFEFF4 0%, #FFFFFF 30%, #EFEFF4 60%, #FFFFFF 100%);
-  background-size: 400% 400%;
+  background-image: linear-gradient(90deg, #FFFFFF 0%, #EFEFF4 30%, #FFFFFF 100%);
   background-position: center;
 }
 
