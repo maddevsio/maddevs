@@ -35,6 +35,7 @@ exports[`CaseYourcast _uid component should render correctly 1`] = `
       >
         <div
           class="case_header-text"
+          style="opacity: 1;"
         >
           <div
             class="case_case-study-item"

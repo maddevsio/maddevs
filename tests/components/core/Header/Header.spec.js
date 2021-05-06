@@ -45,6 +45,11 @@ containerToRender.append(mobileScrollBar)
 
 containerToRender.append(caseHeaderForRender)
 describe('Header component', () => {
+  beforeEach(() => {
+    jest.clearAllMocks()
+    jest.spyOn(window, 'removeEventListener').mockImplementation(() => {})
+  })
+
   it('correctly call update class function from watcher', () => {
     const wrapper = shallowMount(Header, {
       mocks,
@@ -90,6 +95,25 @@ describe('Header component', () => {
     })
 
     expect(container.querySelector('header').style.width).toBe('100%')
+  })
+
+  it('should correctly work setWidthForHeader method if haven\'t container', () => {
+    const callObject = {
+      $refs: {
+        header: {
+          style: {
+            width: '88%',
+          },
+        },
+      },
+    }
+    const wrapper = shallowMount(Header, {
+      mocks: GODEE_MOCK,
+      stubs,
+    })
+
+    wrapper.vm.$options.methods.setWidthForHeader.call(callObject)
+    expect(callObject.$refs.header.style.width).toBe('88%')
   })
 
   it('should correct work navigation click', async () => {
@@ -188,5 +212,59 @@ describe('Header component', () => {
     })
 
     expect(caseGoDeeScrollContainer.removeEventListener).toHaveBeenCalledTimes(0)
+  })
+
+  it('should correctly work removeEventListeners handler if haven\'t godee container', () => {
+    const callObject = {
+      ...GODEE_MOCK,
+      setWidthForHeader: jest.fn(),
+      isGodeePage: true,
+    }
+    const wrapper = shallowMount(Header, {
+      mocks: GODEE_MOCK,
+      stubs,
+    })
+
+    wrapper.vm.$options.methods.removeEventListeners.call(callObject)
+
+    expect(window.removeEventListener).toHaveBeenCalledWith('resize', callObject.setWidthForHeader)
+  })
+
+  it('should correctly work removeEventListeners handler', () => {
+    const callObject = {
+      ...GODEE_MOCK,
+      caseGoDeeScrollContainer,
+      setWidthForHeader: jest.fn(),
+      isGodeePage: true,
+    }
+    const wrapper = shallowMount(Header, {
+      mocks: GODEE_MOCK,
+      stubs,
+      container: document.body.appendChild(containerToRender),
+    })
+
+    wrapper.vm.$options.methods.removeEventListeners.call(callObject)
+
+    expect(caseGoDeeScrollContainer.removeEventListener).toHaveBeenCalledTimes(1)
+    expect(window.removeEventListener).toHaveBeenCalledWith('resize', callObject.setWidthForHeader)
+  })
+
+  it('should correctly work disable scroll if body top is null', () => {
+    document.body.style.top = null
+    jest.spyOn(document.body.classList, 'remove')
+    jest.spyOn(document.documentElement.classList, 'remove')
+    jest.spyOn(window, 'scrollTo')
+
+    const wrapper = shallowMount(Header, {
+      mocks: GODEE_MOCK,
+      stubs,
+      container: document.body.appendChild(containerToRender),
+    })
+
+    wrapper.vm.$options.methods.enablePageScroll()
+
+    expect(document.body.classList.remove).toHaveBeenCalledTimes(1)
+    expect(document.documentElement.classList.remove).toHaveBeenCalledTimes(1)
+    expect(window.scrollTo).toHaveBeenCalledWith(0, -0)
   })
 })

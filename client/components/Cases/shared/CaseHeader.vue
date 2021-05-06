@@ -25,7 +25,11 @@
       Your browser does not support the video tag.
     </video>
     <div class="case_header-content">
-      <div class="case_header-text">
+      <div
+        ref="mainVideo"
+        :style="{opacity}"
+        class="case_header-text"
+      >
         <div class="case_case-study-item">
           Case Study
         </div>
@@ -94,11 +98,17 @@ export default {
       type: String,
       default: '',
     },
+
+    textOpacity: {
+      type: Boolean,
+      default: true,
+    },
   },
 
   data() {
     return {
       isIphone: false,
+      opacity: 1,
     }
   },
 
@@ -115,6 +125,23 @@ export default {
     } else {
       this.isIphone = false
     }
+    if (this.textOpacity) window.addEventListener('scroll', this.onScroll)
+  },
+
+  destroyed() {
+    if (this.textOpacity) window.removeEventListener('scroll', this.onScroll)
+  },
+
+  methods: {
+    onScroll() {
+      const { mainVideo } = this.$refs
+      if (!mainVideo) return
+      const { clientHeight } = mainVideo
+      const result = ((clientHeight - window.scrollY) / clientHeight) + 0.2
+      if (result > 0 && result <= 1) {
+        this.opacity = ((clientHeight - window.scrollY) / clientHeight) + 0.2
+      }
+    },
   },
 }
 </script>
