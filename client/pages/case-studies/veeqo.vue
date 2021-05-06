@@ -78,35 +78,35 @@ export default {
 @import '../../assets/styles/cases/components';
 @import '../../assets/styles/cases/media';
 
-  .case {
-    &_header-veeqo {
-      background-color: rgba(16, 17, 19, 0.5);
+.case {
+  &_header-veeqo {
+    background-color: rgba(16, 17, 19, 0.5);
+  }
+
+  &_veeqo-logotype {
+    width: 309px;
+    height: 114px;
+    margin-left: 114px;
+
+    @media screen and (max-width: 1170px) {
+      margin-left: 0;
+      margin-bottom: 30px;
     }
 
-    &_veeqo-logotype {
-      width: 309px;
-      height: 114px;
-      margin-left: 114px;
-
-      @media screen and (max-width: 1170px) {
-        margin-left: 0;
-        margin-bottom: 30px;
-      }
-
-      @media screen and (max-width: 655px) {
-        width: 219px;
-        height: 90px;
-      }
-
-      @media screen and (max-width: 370px) {
-        width: 190px;
-        height: 70px;
-        margin-bottom: 20px;
-      }
+    @media screen and (max-width: 655px) {
+      width: 219px;
+      height: 90px;
     }
 
-    &_nowrap {
-      white-space: nowrap;
+    @media screen and (max-width: 370px) {
+      width: 190px;
+      height: 70px;
+      margin-bottom: 20px;
     }
   }
+
+  &_nowrap {
+    white-space: nowrap;
+  }
+}
 </style>

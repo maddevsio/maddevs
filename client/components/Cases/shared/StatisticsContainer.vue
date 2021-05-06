@@ -13,15 +13,15 @@ export default {
 <style lang="scss" scoped>
 @import '../../../assets/styles/cases/_mixins';
 
-  .case {
-    &_statistics-container {
-      display: flex;
-      justify-content: space-between;
+.case {
+  &_statistics-container {
+    display: flex;
+    justify-content: space-between;
 
-      @media screen and (max-width: 880px) {
-        flex-direction: column;
-        align-items: center;
-      }
+    @media screen and (max-width: 880px) {
+      flex-direction: column;
+      align-items: center;
     }
   }
+}
 </style>
