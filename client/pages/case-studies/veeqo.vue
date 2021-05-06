@@ -3,8 +3,8 @@
     <CaseHeader
       :logo="logo"
       project="veeqo"
-      video-name=""
-      video-fallback-path="/images/Cases/veeqo/svg/veeqo-banner-fallback.svg"
+      video-name="/videos/veeqo-banner.mp4"
+      video-fallback-path="/images/Cases/veeqo/svg/veeqo-banner-bg.svg"
     >
       <h1
         slot="title"
@@ -16,7 +16,7 @@
         slot="description"
         class="case_header-description"
       >
-        Our DevOps team optimized the infrastructure for Veeqo, an inventory <br> and shipping e-commerce platform, and made it highly efficient, smooth, <br> and cost-effective for our partners.
+        Our DevOps team optimized the infrastructure for Veeqo, an inventory <br> and shipping <span class="case_nowrap">e-commerce</span> platform, and made it highly efficient, smooth, <br> and cost-effective for our partners.
       </p>
     </CaseHeader>
     <Main />
@@ -57,10 +57,10 @@ export default {
   data() {
     return {
       logo: {
-        width: 388,
-        height: 172,
+        width: 309,
+        height: 114,
         folder: 'veeqo',
-        file: 'veeqo-logo',
+        file: 'veeqo-logotype',
         alt: '',
       },
     }
@@ -77,4 +77,36 @@ export default {
 @import '../../assets/styles/cases/mixins';
 @import '../../assets/styles/cases/components';
 @import '../../assets/styles/cases/media';
+
+  .case {
+    &_header-veeqo {
+      background-color: rgba(16, 17, 19, 0.5);
+    }
+
+    &_veeqo-logotype {
+      width: 309px;
+      height: 114px;
+      margin-left: 114px;
+
+      @media screen and (max-width: 1170px) {
+        margin-left: 0;
+        margin-bottom: 30px;
+      }
+
+      @media screen and (max-width: 655px) {
+        width: 219px;
+        height: 90px;
+      }
+
+      @media screen and (max-width: 370px) {
+        width: 190px;
+        height: 70px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &_nowrap {
+      white-space: nowrap;
+    }
+  }
 </style>
