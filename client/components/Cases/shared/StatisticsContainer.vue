@@ -11,8 +11,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/cases/_mixins';
-
 .case {
   &_statistics-container {
     display: flex;
