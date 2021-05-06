@@ -6,7 +6,7 @@ exports[`Veeqo root component should render correctly 1`] = `
     class="case case--yourcast"
   >
     <section
-      class="case_header case_header-yourcast"
+      class="case_header case_header-veeqo"
       id="case-header"
     >
       <div
@@ -48,10 +48,9 @@ exports[`Veeqo root component should render correctly 1`] = `
             class="case_header-title"
           >
             
-      The Evolution 
+      Optimization 
             <br />
-            
-      of Yourcast.TV
+             for Veeqo
     
           </h1>
            
@@ -59,24 +58,28 @@ exports[`Veeqo root component should render correctly 1`] = `
             class="case_header-description"
           >
             
-      Mad Devs developed a secure and private video streaming service and live 
+      Our DevOps team optimized the infrastructure for Veeqo, an inventory 
             <br />
-            
-      video broadcasting cinema to provide entertainment experience to isolated 
+             and shipping 
+            <span
+              class="case_nowrap"
+            >
+              e-commerce
+            </span>
+             platform, and made it highly efficient, smooth, 
             <br />
-            
-      groups feeling homesick.
+             and cost-effective for our partners.
     
           </p>
            
         </div>
          
         <img
-          alt="YourcastTV - Video Streaming Platform Logo."
-          class="case_header-logo media_lazy case_yourcast-logo"
+          alt=""
+          class="case_header-logo media_lazy case_veeqo-logotype"
           data-src="img.jpg"
-          height="81.23"
-          width="387"
+          height="114"
+          width="309"
         />
       </div>
     </section>
