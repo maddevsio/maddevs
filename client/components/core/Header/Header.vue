@@ -447,6 +447,7 @@ export default {
 
 .is-transparent-bg {
   #overlay::before {
+    transition: all 0.3s ease;
     height: 175px;
     background: $bgcolor--header-gradient;
     opacity: 0.3;

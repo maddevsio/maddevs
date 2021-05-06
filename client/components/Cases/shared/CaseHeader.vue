@@ -101,7 +101,7 @@ export default {
 
     textOpacity: {
       type: Boolean,
-      default: false,
+      default: true,
     },
   },
 
@@ -134,10 +134,12 @@ export default {
 
   methods: {
     onScroll() {
-      const videoRef = this.$refs.mainVideo.clientHeight
-      const result = ((videoRef - window.scrollY) / videoRef) + 0.2
+      const { mainVideo } = this.$refs
+      if (!mainVideo) return
+      const { clientHeight } = mainVideo
+      const result = ((clientHeight - window.scrollY) / clientHeight) + 0.2
       if (result > 0 && result <= 1) {
-        this.opacity = ((videoRef - window.scrollY) / videoRef) + 0.2
+        this.opacity = ((clientHeight - window.scrollY) / clientHeight) + 0.2
       }
     },
   },

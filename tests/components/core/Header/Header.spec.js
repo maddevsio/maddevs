@@ -23,7 +23,6 @@ const GODEE_MOCK = {
 
 const stubs = ['NuxtLink']
 
-const REMOVE_LISTENER = jest.fn()
 const setDefaultStateForHeader = jest.fn()
 const removeEventListeners = jest.fn()
 const caseGoDeeScrollContainer = {
@@ -46,7 +45,10 @@ containerToRender.append(mobileScrollBar)
 
 containerToRender.append(caseHeaderForRender)
 describe('Header component', () => {
-  window.removeEventListener = REMOVE_LISTENER
+  beforeEach(() => {
+    jest.clearAllMocks()
+    jest.spyOn(window, 'removeEventListener').mockImplementation(() => {})
+  })
 
   it('correctly call update class function from watcher', () => {
     const wrapper = shallowMount(Header, {
@@ -225,7 +227,7 @@ describe('Header component', () => {
 
     wrapper.vm.$options.methods.removeEventListeners.call(callObject)
 
-    expect(REMOVE_LISTENER).toHaveBeenCalledWith('resize', callObject.setWidthForHeader)
+    expect(window.removeEventListener).toHaveBeenCalledWith('resize', callObject.setWidthForHeader)
   })
 
   it('should correctly work removeEventListeners handler', () => {
@@ -244,16 +246,14 @@ describe('Header component', () => {
     wrapper.vm.$options.methods.removeEventListeners.call(callObject)
 
     expect(caseGoDeeScrollContainer.removeEventListener).toHaveBeenCalledTimes(1)
-    expect(REMOVE_LISTENER).toHaveBeenCalledWith('resize', callObject.setWidthForHeader)
+    expect(window.removeEventListener).toHaveBeenCalledWith('resize', callObject.setWidthForHeader)
   })
 
   it('should correctly work disable scroll if body top is null', () => {
-    const REMOVE_HANDLER = jest.fn()
-    const SCROLL_HANDLER = jest.fn()
     document.body.style.top = null
-    document.body.classList.remove = REMOVE_HANDLER
-    document.documentElement.classList.remove = REMOVE_HANDLER
-    window.scrollTo = SCROLL_HANDLER
+    jest.spyOn(document.body.classList, 'remove')
+    jest.spyOn(document.documentElement.classList, 'remove')
+    jest.spyOn(window, 'scrollTo')
 
     const wrapper = shallowMount(Header, {
       mocks: GODEE_MOCK,
@@ -263,7 +263,8 @@ describe('Header component', () => {
 
     wrapper.vm.$options.methods.enablePageScroll()
 
-    expect(REMOVE_HANDLER).toHaveBeenCalledTimes(2)
-    expect(SCROLL_HANDLER).toHaveBeenCalledWith(0, -0)
+    expect(document.body.classList.remove).toHaveBeenCalledTimes(1)
+    expect(document.documentElement.classList.remove).toHaveBeenCalledTimes(1)
+    expect(window.scrollTo).toHaveBeenCalledWith(0, -0)
   })
 })
