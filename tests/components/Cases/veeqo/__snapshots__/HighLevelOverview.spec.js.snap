@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HighLevelOverview component should render correctly 1`] = `
+<div>
+  <div
+    class="container_full background-color-blue m-72_bottom media-m-48_bottom p-72_top media-p-41_top"
+  >
+    <div
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 case_title"
+      >
+        
+      Veeqo high-level overview
+    
+      </h2>
+       
+      <p
+        class="case_paragraph case_description m-12_top m-80_bottom media-m-41_bottom"
+      >
+        
+      The service has multiple subsystems integrated into one platform
+    
+      </p>
+       
+      <div
+        class="case_animation-items"
+      >
+        <div
+          class="case_animation-item"
+        >
+          <p
+            class="case_animation-item-description"
+          >
+            
+          dashboard
+        
+          </p>
+           
+          <h5
+            class="case_title_h5 case_animation-item-title"
+          >
+            
+          The dashboard used to visualize reports
+        
+          </h5>
+        </div>
+         
+        <div
+          class="case_animation-item"
+        >
+          <p
+            class="case_animation-item-description"
+          >
+            
+          Subsystems
+        
+          </p>
+           
+          <h5
+            class="case_title_h5 case_animation-item-title"
+          >
+            
+          Inventory management, Management, Warehouse, Reporting
+        
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

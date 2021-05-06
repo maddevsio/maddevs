@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular m-72_top media-m-38_top"
+  >
+    <p
+      class="case_paragraph"
+    >
+      
+    Veeqo is an inventory and shipping platform for e-commerce. It helps businesses to manage sales across multiple channels, ship items via multiple carriers, process refunds, manage B2B orders, forecast 
+      <span
+        class="case_no-wrap"
+      >
+        inventory—the
+      </span>
+       list of features is almost endless. The platform directly integrates with the world’s most popular retail applications, including e-commerce platforms, marketplaces, shipping carriers, POS systems, and more.
+  
+    </p>
+     
+    <blockquote
+      class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+    >
+      <img
+        alt="blockquote"
+        class="case_blockquote-mark img_lazy"
+        data-src="[object Object]"
+      />
+       
+    Veeqo is a single platform that gives users complete control of their entire inventory. It enables businesses to quickly bulk ship orders from any sales channel, automate repetitive shipping tasks, and track every delivery in one place.
+  
+    </blockquote>
+     
+    <p
+      class="case_paragraph"
+    >
+      
+    Hundreds of retailers all over the world use Veeqo to power their inventory and shipping founded
+  
+    </p>
+  </section>
+</div>
+`;
