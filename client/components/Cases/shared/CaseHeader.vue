@@ -194,6 +194,11 @@ export default {
     z-index: -1;
   }
 
+  &_veeqo-logo {
+    width: 388px;
+    height: 172px;
+  }
+
   @media screen and (max-width: 1170px) {
     &_header-content {
       flex-direction: column-reverse;
