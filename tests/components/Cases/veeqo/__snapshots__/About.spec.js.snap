@@ -48,7 +48,6 @@ exports[`About component should render correctly 1`] = `
       >
         <p
           class="case_statistics-item_title"
-          data-testid="title"
         >
           
     FOUNDED
@@ -57,7 +56,6 @@ exports[`About component should render correctly 1`] = `
          
         <p
           class="case_statistics-item_number"
-          data-testid="number"
         >
           
     2013
@@ -66,7 +64,6 @@ exports[`About component should render correctly 1`] = `
          
         <p
           class="case_statistics-item_description"
-          data-testid="description"
         >
           
     by experienced ecommerce retailer
@@ -78,7 +75,6 @@ exports[`About component should render correctly 1`] = `
       >
         <p
           class="case_statistics-item_title"
-          data-testid="title"
         >
           
     OVER
@@ -87,7 +83,6 @@ exports[`About component should render correctly 1`] = `
          
         <p
           class="case_statistics-item_number"
-          data-testid="number"
         >
           
     1.5bn
@@ -96,7 +91,6 @@ exports[`About component should render correctly 1`] = `
          
         <p
           class="case_statistics-item_description"
-          data-testid="description"
         >
           
     inventory updates processed in Veeqo every year
@@ -108,7 +102,6 @@ exports[`About component should render correctly 1`] = `
       >
         <p
           class="case_statistics-item_title"
-          data-testid="title"
         >
           
     OVER
@@ -117,7 +110,6 @@ exports[`About component should render correctly 1`] = `
          
         <p
           class="case_statistics-item_number"
-          data-testid="number"
         >
           
     31m
@@ -126,7 +118,6 @@ exports[`About component should render correctly 1`] = `
          
         <p
           class="case_statistics-item_description"
-          data-testid="description"
         >
           
     items picked, packed and shipped through annually
