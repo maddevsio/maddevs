@@ -98,6 +98,11 @@ export default {
       type: String,
       default: '',
     },
+
+    textOpacity: {
+      type: Boolean,
+      default: false,
+    },
   },
 
   data() {
@@ -120,11 +125,11 @@ export default {
     } else {
       this.isIphone = false
     }
-    window.addEventListener('scroll', this.onScroll)
+    if (this.textOpacity) window.addEventListener('scroll', this.onScroll)
   },
 
   destroyed() {
-    window.removeEventListener('scroll', this.onScroll)
+    if (this.textOpacity) window.removeEventListener('scroll', this.onScroll)
   },
 
   methods: {
