@@ -62,6 +62,10 @@ module.exports = {
     height: '2px',
   },
   components: true,
+  /*
+   ** Component will be ignored in building
+   */
+  ignore: 'pages/case-studies/veeqo.vue',
   generate: {
     async routes() {
       const getPosts = async pageUrl => {
