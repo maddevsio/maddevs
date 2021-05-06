@@ -83,4 +83,23 @@ describe('CaseHeader component', () => {
     wrapper.vm.$options.methods.onScroll.call(callObject)
     expect(callObject.opacity).toBe(0.7)
   })
+
+  it('should not update opacity if function result less then 0', async () => {
+    window.scrollY = 2800
+    const callObject = {
+      opacity: 1,
+      $refs: {
+        mainVideo: {
+          clientHeight: 800,
+        },
+      },
+    }
+    const wrapper = shallowMount(CaseHeader, {
+      propsData: props,
+      mocks,
+    })
+
+    wrapper.vm.$options.methods.onScroll.call(callObject)
+    expect(callObject.opacity).toBe(1)
+  })
 })

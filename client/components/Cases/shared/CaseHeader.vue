@@ -135,7 +135,10 @@ export default {
   methods: {
     onScroll() {
       const videoRef = this.$refs.mainVideo.clientHeight
-      this.opacity = ((videoRef - window.scrollY) / videoRef) + 0.2
+      const result = ((videoRef - window.scrollY) / videoRef) + 0.2
+      if (result > 0) {
+        this.opacity = ((videoRef - window.scrollY) / videoRef) + 0.2
+      }
     },
   },
 }
