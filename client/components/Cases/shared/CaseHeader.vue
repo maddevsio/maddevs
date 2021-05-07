@@ -104,6 +104,11 @@ export default {
       type: Boolean,
       default: true,
     },
+
+    scrollContainer: {
+      type: Object,
+      default: null,
+    },
   },
 
   data() {
@@ -127,9 +132,8 @@ export default {
       this.isIphone = false
     }
     if (this.textOpacity) {
-      const element = document.getElementById('case-scroll-container')
-      if (element) {
-        element.addEventListener('scroll', this.onScrollGoDee)
+      if (this.project === 'godee') {
+        document.getElementById('case-scroll-container').addEventListener('scroll', this.onScroll)
       } else {
         window.addEventListener('scroll', this.onScroll)
       }
@@ -138,9 +142,8 @@ export default {
 
   destroyed() {
     if (this.textOpacity) {
-      const element = document.getElementById('case-scroll-container')
-      if (element) {
-        element.removeEventListener('scroll', this.onScrollGoDee)
+      if (this.scrollContainer) {
+        document.getElementById('case-scroll-container').removeEventListener('scroll', this.onScroll)
       } else {
         window.removeEventListener('scroll', this.onScroll)
       }
@@ -152,21 +155,17 @@ export default {
       const { mainVideo } = this.$refs
       if (!mainVideo) return
       const { clientHeight } = mainVideo
-      const result = ((clientHeight - window.scrollY) / clientHeight) + 0.2
+      const result = ((clientHeight - this.getScrollPosition()) / clientHeight) + 0.2
       if (result > 0 && result <= 1) {
-        this.opacity = ((clientHeight - window.scrollY) / clientHeight) + 0.2
+        this.opacity = ((clientHeight - this.getScrollPosition()) / clientHeight) + 0.2
       }
     },
 
-    onScrollGoDee() {
-      const element = document.getElementById('case-scroll-container')
-      const { mainVideo } = this.$refs
-      if (!mainVideo) return
-      const { clientHeight } = mainVideo
-      const result = ((clientHeight - element.scrollTop) / clientHeight) + 0.2
-      if (result > 0 && result <= 1) {
-        this.opacity = ((clientHeight - element.scrollTop) / clientHeight) + 0.2
+    getScrollPosition() {
+      if (this.project === 'godee') {
+        return document.getElementById('case-scroll-container').scrollTop
       }
+      return window.scrollY
     },
   },
 }
