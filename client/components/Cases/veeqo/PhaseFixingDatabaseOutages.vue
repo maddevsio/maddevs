@@ -4,9 +4,9 @@
       Phase 1: Fixing database outages
     </h2>
     <Card class="background-color-silver">
-      <p class="case_card-name">
+      <TextParagraphUppercase class="case_card-name">
         Challenge
-      </p>
+      </TextParagraphUppercase>
       <h4 class="case_title_h4 m-8_bottom">
         Regular outage
       </h4>
@@ -15,9 +15,9 @@
       </TextParagraph>
     </Card>
     <Card class="background-color-blue-light">
-      <p class="case_card-name">
+      <TextParagraphUppercase class="case_card-name">
         Effect on users
-      </p>
+      </TextParagraphUppercase>
       <h4 class="case_title_h4 m-8_bottom">
         Degraded user services
       </h4>
@@ -44,6 +44,7 @@
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import Card from '@/components/Cases/shared/Card'
 import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
+import TextParagraphUppercase from '@/components/Cases/shared/TextParagraphUppercase'
 
 export default {
   name: 'PhaseFixingDatabaseOutages',
@@ -51,6 +52,7 @@ export default {
     TextParagraph,
     Card,
     TextQuoteBox,
+    TextParagraphUppercase,
   },
 }
 </script>

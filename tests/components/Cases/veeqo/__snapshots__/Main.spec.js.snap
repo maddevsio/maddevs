@@ -273,7 +273,7 @@ exports[`Main component should render correctly 1`] = `
         class="case_card background-color-silver"
       >
         <p
-          class="case_card-name"
+          class="case_paragraph-uppercase case_card-name"
         >
           
       Challenge
@@ -301,7 +301,7 @@ exports[`Main component should render correctly 1`] = `
         class="case_card background-color-blue-light"
       >
         <p
-          class="case_card-name"
+          class="case_paragraph-uppercase case_card-name"
         >
           
       Effect on users
