@@ -75,9 +75,9 @@ exports[`Main component should render correctly 1`] = `
          
         <img
           alt=""
-          class="case_header-logo media_lazy case_godee-logo"
-          data-src="/images/Cases/godee/svg/godee-logo.svg"
+          class="case_header-logo case_godee-logo"
           height="130"
+          src="/images/Cases/godee/svg/godee-logo.svg"
           width="293"
         />
       </div>

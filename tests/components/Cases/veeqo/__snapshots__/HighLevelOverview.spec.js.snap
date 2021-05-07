@@ -17,7 +17,7 @@ exports[`HighLevelOverview component should render correctly 1`] = `
       </h2>
        
       <p
-        class="case_paragraph case_description m-12_top m-80_bottom media-m-41_bottom"
+        class="case_paragraph case_sec-desc m-12_top m-80_bottom media-m-41_bottom"
       >
         
       The service has multiple subsystems integrated into one platform
@@ -25,21 +25,21 @@ exports[`HighLevelOverview component should render correctly 1`] = `
       </p>
        
       <div
-        class="case_animation-items"
+        class="case_dashboard-container m-72_bottom media-m-48_bottom"
       >
         <div
-          class="case_animation-item"
+          class="case_dashboard-item"
         >
           <p
-            class="case_animation-item-description"
+            class="case_paragraph-uppercase case_dashboard-desc m-8_bottom media-m-6_bottom"
           >
             
-          dashboard
+          Dashboard
         
           </p>
            
           <h5
-            class="case_title_h5 case_animation-item-title"
+            class="case_title_h5 case_dashboard-title media-m-41_bottom"
           >
             
           The dashboard used to visualize reports
@@ -48,10 +48,10 @@ exports[`HighLevelOverview component should render correctly 1`] = `
         </div>
          
         <div
-          class="case_animation-item"
+          class="case_dashboard-item case_animate-text"
         >
           <p
-            class="case_animation-item-description"
+            class="case_paragraph-uppercase case_dashboard-desc m-8_bottom media-m-6_bottom"
           >
             
           Subsystems
@@ -59,7 +59,7 @@ exports[`HighLevelOverview component should render correctly 1`] = `
           </p>
            
           <h5
-            class="case_title_h5 case_animation-item-title"
+            class="case_title_h5 case_dashboard-title"
           >
             
           Inventory management, Management, Warehouse, Reporting
@@ -67,6 +67,28 @@ exports[`HighLevelOverview component should render correctly 1`] = `
           </h5>
         </div>
       </div>
+    </div>
+     
+    <div
+      class="case_image-wrapp"
+    >
+      <picture>
+        <source
+          class="image media_lazy"
+          data-srcset="img.jpg,img.jpg"
+          type="image/webp"
+        />
+         
+        <img
+          alt=""
+          class="image media_lazy"
+          data-src="img.jpg"
+          data-srcset="img.jpg"
+          data-testid="test-picture-img"
+          height="335"
+          width="1440"
+        />
+      </picture>
     </div>
   </div>
 </div>
