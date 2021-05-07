@@ -17,7 +17,7 @@ describe('Veeqo root component', () => {
       stubs,
     })
 
-    expect(screen.getByText('The Evolution of Yourcast.TV')).not.toBeNull()
+    expect(screen.getByText('Optimization for Veeqo')).not.toBeNull()
     expect(container).toMatchSnapshot()
   })
 })
