@@ -9,17 +9,17 @@
       </TextParagraph>
       <div class="case_dashboard-container m-72_bottom media-m-48_bottom">
         <div class="case_dashboard-item">
-          <p class="case_dashboard-desc m-8_bottom media-m-6_bottom">
-            dashboard
-          </p>
+          <TextParagraphUppercase class="case_dashboard-desc m-8_bottom media-m-6_bottom">
+            Dashboard
+          </TextParagraphUppercase>
           <h5 class="case_title_h5 case_dashboard-title media-m-41_bottom">
             The dashboard used to visualize reports
           </h5>
         </div>
         <div class="case_dashboard-item case_animate-text">
-          <p class="case_dashboard-desc m-8_bottom media-m-6_bottom">
+          <TextParagraphUppercase class="case_dashboard-desc m-8_bottom media-m-6_bottom">
             Subsystems
-          </p>
+          </TextParagraphUppercase>
           <h5 class="case_title_h5 case_dashboard-title">
             Inventory management, Management, Warehouse, Reporting
           </h5>
@@ -42,12 +42,14 @@
 
 <script>
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextParagraphUppercase from '@/components/Cases/shared/TextParagraphUppercase'
 import Picture from '@/components/Cases/shared/Picture'
 
 export default {
   name: 'HighLevelOverview',
   components: {
     TextParagraph,
+    TextParagraphUppercase,
     Picture,
   },
 }
@@ -77,15 +79,6 @@ export default {
   &_dashboard-title,
   &_dashboard-desc {
     opacity: 0.5;
-  }
-
-  &_dashboard-desc {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 135%;
-    letter-spacing: -0.035em;
-    text-transform: uppercase;
   }
 
   &_animate-text {
