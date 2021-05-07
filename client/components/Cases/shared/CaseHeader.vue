@@ -40,10 +40,10 @@
       <img
         :width="logo.width"
         :height="logo.height"
-        :data-src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
+        :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
         :alt="logo.alt"
         :class="`case_${logo.file}`"
-        class="case_header-logo media_lazy"
+        class="case_header-logo"
       >
     </div>
   </section>
