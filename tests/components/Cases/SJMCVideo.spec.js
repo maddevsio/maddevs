@@ -105,13 +105,4 @@ describe('SJMCVideo component', () => {
 
     expect(EVENT_LISTENER).toHaveBeenCalledTimes(1)
   })
-
-  it('should correct work catch method', () => {
-    const callObject = {
-      $refs: MOCK_REFS,
-      showIcon: true,
-    }
-    wrapper.vm.$options.methods.emitHandler.call(callObject)
-    expect.assertions(0)
-  })
 })
