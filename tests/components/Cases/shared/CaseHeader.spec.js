@@ -18,6 +18,9 @@ const props = {
   videoName: 'video-name',
 }
 
+const containerToRender = document.createElement('div')
+containerToRender.setAttribute('id', 'case-scroll-container')
+
 const mocks = {
   $getMediaFromS3: img => img,
 }
@@ -132,5 +135,46 @@ describe('CaseHeader component', () => {
 
     wrapper.vm.$options.methods.onScroll.call(callObject)
     expect(callObject.opacity).toBe(1)
+  })
+
+  it('should not update opacity if function result less then 0 and have godee container', async () => {
+    window.scrollY = 2800
+    const callObject = {
+      opacity: 1,
+      $refs: {
+        mainVideo: {
+          clientHeight: 800,
+        },
+      },
+    }
+    const wrapper = shallowMount(CaseHeader, {
+      propsData: props,
+      mocks,
+      container: document.body.appendChild(containerToRender),
+    })
+
+    wrapper.vm.$options.methods.onScrollGoDee.call(callObject)
+    expect(callObject.opacity).toBe(1)
+  })
+
+  it('should correct work on scroll godee method', async () => {
+    containerToRender.scrollTop = 200
+    const callObject = {
+      opacity: 1,
+      $refs: {
+        mainVideo: {
+          clientHeight: 800,
+        },
+      },
+    }
+    const wrapper = shallowMount(CaseHeader, {
+      propsData: props,
+      mocks,
+      container: document.body.appendChild(containerToRender),
+    })
+
+    wrapper.vm.$options.methods.onScrollGoDee.call(callObject)
+    expect(callObject.opacity).toBe(0.95)
+    wrapper.destroy()
   })
 })

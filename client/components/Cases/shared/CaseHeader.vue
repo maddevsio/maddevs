@@ -38,6 +38,7 @@
         <slot name="actions" />
       </div>
       <img
+        :style="{opacity}"
         :width="logo.width"
         :height="logo.height"
         :data-src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
@@ -125,11 +126,25 @@ export default {
     } else {
       this.isIphone = false
     }
-    if (this.textOpacity) window.addEventListener('scroll', this.onScroll)
+    if (this.textOpacity) {
+      const element = document.getElementById('case-scroll-container')
+      if (element) {
+        element.addEventListener('scroll', this.onScrollGoDee)
+      } else {
+        window.addEventListener('scroll', this.onScroll)
+      }
+    }
   },
 
   destroyed() {
-    if (this.textOpacity) window.removeEventListener('scroll', this.onScroll)
+    if (this.textOpacity) {
+      const element = document.getElementById('case-scroll-container')
+      if (element) {
+        element.removeEventListener('scroll', this.onScrollGoDee)
+      } else {
+        window.removeEventListener('scroll', this.onScroll)
+      }
+    }
   },
 
   methods: {
@@ -140,6 +155,17 @@ export default {
       const result = ((clientHeight - window.scrollY) / clientHeight) + 0.2
       if (result > 0 && result <= 1) {
         this.opacity = ((clientHeight - window.scrollY) / clientHeight) + 0.2
+      }
+    },
+
+    onScrollGoDee() {
+      const element = document.getElementById('case-scroll-container')
+      const { mainVideo } = this.$refs
+      if (!mainVideo) return
+      const { clientHeight } = mainVideo
+      const result = ((clientHeight - element.scrollTop) / clientHeight) + 0.2
+      if (result > 0 && result <= 1) {
+        this.opacity = ((clientHeight - element.scrollTop) / clientHeight) + 0.2
       }
     },
   },
@@ -183,6 +209,7 @@ export default {
 
   &_header-logo {
     color: $text-color--white;
+    transition: none;
   }
 
   &_header-text {
