@@ -3,29 +3,34 @@
     <h2 class="case_title_h2 m-24_bottom">
       Phase 1: Fixing database outages
     </h2>
-    <Card class="background-color-silver">
-      <TextParagraphUppercase class="case_card-name">
-        Challenge
-      </TextParagraphUppercase>
-      <h4 class="case_title_h4 m-8_bottom">
-        Regular outage
-      </h4>
-      <TextParagraph>
-        Without any detectable load spikes, the database would often reach maximum processor performance and deny service as the queries piled up in the query queue. To get the system up and running again, workers had to be manually restarted every time.
-      </TextParagraph>
-    </Card>
-    <Card class="background-color-blue-light">
-      <TextParagraphUppercase class="case_card-name">
-        Effect on users
-      </TextParagraphUppercase>
-      <h4 class="case_title_h4 m-8_bottom">
-        Degraded user services
-      </h4>
-      <TextParagraph>
-        Users had limited access to services: they couldn't view contents, place orders, or manage their settings.
-      </TextParagraph>
-    </Card>
-    <TextQuoteBox class="m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto">
+    <div class="case_cards-container">
+      <Card class="background-color-silver">
+        <TextParagraphUppercase class="case_card-name m-10_bottom media-m-8_bottom">
+          Challenge
+        </TextParagraphUppercase>
+        <h4 class="case_title_h4 m-10_bottom media-m-8_bottom">
+          Regular outage
+        </h4>
+        <TextParagraph>
+          Without any detectable load spikes, the database would often reach maximum processor performance and deny service as the queries piled up in the query queue. To get the system up and running again, workers had to be manually restarted every time.
+        </TextParagraph>
+      </Card>
+      <Card class="background-color-blue-light">
+        <TextParagraphUppercase class="case_card-name m-10_bottom media-m-8_bottom">
+          Effect on users
+        </TextParagraphUppercase>
+        <h4 class="case_title_h4 m-10_bottom media-m-8_bottom">
+          Degraded user services
+        </h4>
+        <TextParagraph>
+          Users had limited access to services: they couldn't view contents, place orders, or manage their settings.
+        </TextParagraph>
+      </Card>
+    </div>
+    <TextQuoteBox
+      class="m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
+      author="Andrew Sapozhnikov, CIO at Mad Devs"
+    >
       “We needed better monitoring and metrics collection to detect the true reason for the outage. We don’t sweep these things under the rug. We go for root causes.”
     </TextQuoteBox>
     <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">
@@ -56,3 +61,17 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+@import '../../../assets/styles/cases/_mixins';
+
+.case {
+  &_cards-container {
+    @include grid(repeat(2, 1fr), auto, 25px, 0);
+
+    @media screen and (max-width: 880px) {
+      @include grid(repeat(1, 1fr), auto, 0, 10px);
+    }
+  }
+}
+</style>
