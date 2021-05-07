@@ -1014,14 +1014,20 @@ exports[`Main component should render correctly 1`] = `
     
           </p>
            
-          <blockquote
-            class="case_blockquote-box m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
+          <div
+            class="case_quote-wrap m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
           >
-            
+            <blockquote
+              class="case_blockquote-box m-auto"
+            >
+              
       One manager and one customer support representative can manage more than ~2500 trip requests per month and
       ~25,000 passengers per month.
     
-          </blockquote>
+            </blockquote>
+             
+            <!---->
+          </div>
            
           <h3
             class="case_title_h3 m-12_bottom"
@@ -2568,21 +2574,27 @@ exports[`Main component should render correctly 1`] = `
     
           </p>
            
-          <blockquote
-            class="case_blockquote-box m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
+          <div
+            class="case_quote-wrap m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
           >
-            <span
-              class="case_text-quote-break m-24_bottom media-m-12_bottom"
+            <blockquote
+              class="case_blockquote-box m-auto"
             >
-              Examples of early and late departure times:
-            </span>
-             
-            <span>
-              If Pifia determines that a minibus is usually late due to increased traffic at 5:35 pm and not 5:30 pm,
+              <span
+                class="case_text-quote-break m-24_bottom media-m-12_bottom"
+              >
+                Examples of early and late departure times:
+              </span>
+               
+              <span>
+                If Pifia determines that a minibus is usually late due to increased traffic at 5:35 pm and not 5:30 pm,
         it alerts the route manager to shift the arrival time to 5:35 pm. Five minutes might sound minor, but
         these small optimizations add up.
-            </span>
-          </blockquote>
+              </span>
+            </blockquote>
+             
+            <!---->
+          </div>
         </section>
       </section>
        

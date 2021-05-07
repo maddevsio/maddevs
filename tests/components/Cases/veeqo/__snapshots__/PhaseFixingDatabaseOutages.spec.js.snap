@@ -14,68 +14,84 @@ exports[`PhaseFixingDatabaseOutages component should render correctly 1`] = `
     </h2>
      
     <div
-      class="case_card background-color-silver"
+      class="case_cards-container"
     >
-      <p
-        class="case_paragraph-uppercase case_card-name"
+      <div
+        class="case_card background-color-silver"
       >
-        
-      Challenge
-    
-      </p>
+        <p
+          class="case_paragraph-uppercase case_card-name m-10_bottom media-m-8_bottom"
+        >
+          
+        Challenge
+      
+        </p>
+         
+        <h4
+          class="case_title_h4 m-10_bottom media-m-8_bottom"
+        >
+          
+        Regular outage
+      
+        </h4>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+        Without any detectable load spikes, the database would often reach maximum processor performance and deny service as the queries piled up in the query queue. To get the system up and running again, workers had to be manually restarted every time.
+      
+        </p>
+      </div>
        
-      <h4
-        class="case_title_h4 m-8_bottom"
+      <div
+        class="case_card background-color-blue-light"
       >
-        
-      Regular outage
-    
-      </h4>
-       
-      <p
-        class="case_paragraph"
-      >
-        
-      Without any detectable load spikes, the database would often reach maximum processor performance and deny service as the queries piled up in the query queue. To get the system up and running again, workers had to be manually restarted every time.
-    
-      </p>
+        <p
+          class="case_paragraph-uppercase case_card-name m-10_bottom media-m-8_bottom"
+        >
+          
+        Effect on users
+      
+        </p>
+         
+        <h4
+          class="case_title_h4 m-10_bottom media-m-8_bottom"
+        >
+          
+        Degraded user services
+      
+        </h4>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+        Users had limited access to services: they couldn't view contents, place orders, or manage their settings.
+      
+        </p>
+      </div>
     </div>
      
     <div
-      class="case_card background-color-blue-light"
+      class="case_quote-wrap m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
     >
-      <p
-        class="case_paragraph-uppercase case_card-name"
+      <blockquote
+        class="case_blockquote-box m-auto"
       >
         
-      Effect on users
-    
-      </p>
-       
-      <h4
-        class="case_title_h4 m-8_bottom"
-      >
-        
-      Degraded user services
-    
-      </h4>
-       
-      <p
-        class="case_paragraph"
-      >
-        
-      Users had limited access to services: they couldn't view contents, place orders, or manage their settings.
-    
-      </p>
-    </div>
-     
-    <blockquote
-      class="case_blockquote-box m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
-    >
-      
     “We needed better monitoring and metrics collection to detect the true reason for the outage. We don’t sweep these things under the rug. We go for root causes.”
   
-    </blockquote>
+      </blockquote>
+       
+      <p
+        class="case_quote-author"
+      >
+        
+    Andrew Sapozhnikov, CIO at Mad Devs
+  
+      </p>
+    </div>
      
     <h3
       class="case_title_h3 m-24_bottom media-m-12_bottom"

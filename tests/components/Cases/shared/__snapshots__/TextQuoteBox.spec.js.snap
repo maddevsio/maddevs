@@ -2,10 +2,16 @@
 
 exports[`TextQuoteBox should render correctly 1`] = `
 <div>
-  <blockquote
-    class="case_blockquote-box"
+  <div
+    class="case_quote-wrap"
   >
-    Main Content
-  </blockquote>
+    <blockquote
+      class="case_blockquote-box m-auto"
+    >
+      Main Content
+    </blockquote>
+     
+    <!---->
+  </div>
 </div>
 `;
