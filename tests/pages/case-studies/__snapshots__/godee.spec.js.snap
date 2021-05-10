@@ -6,7 +6,7 @@ exports[`GoDeeCase _uid component should render correctly 1`] = `
     class="case_root case--godee"
   >
     <div
-      class="header-wrapper is-transparent-bg"
+      class="header-wrapper"
       data-testid="test-header-wrapper"
       id="header"
     >
