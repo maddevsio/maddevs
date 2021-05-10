@@ -31,6 +31,13 @@
     <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">
       Solution
     </h3>
+    <div class="case_solution-cards">
+      <CardTechSolution
+        v-for="solution in techSolutions"
+        v-bind="solution"
+        :key="solution.icon"
+      />
+    </div>
     <TextParagraph class="m-24_top">
       As a result, we spent $180 on launching PgBouncers on two c4.large instances behind NLB and saved about 10X  the sum in the customer’s monthly costs by: Freeing up about 40 GB of RAM, Postponing the need to upgrade the RDS instance until about 6 months later.
     </TextParagraph>
@@ -44,6 +51,8 @@
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import Card from '@/components/Cases/shared/Card'
 import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
+import CardTechSolution from '@/components/Cases/veeqo/CardTechSolution'
+import { techSolutions } from '@/data/caseVeeqo'
 
 export default {
   name: 'PhaseFixingDatabaseOutages',
@@ -51,6 +60,26 @@ export default {
     TextParagraph,
     Card,
     TextQuoteBox,
+    CardTechSolution,
+  },
+
+  data() {
+    return {
+      techSolutions,
+    }
   },
 }
 </script>
+
+<style lang="scss" scoped>
+@import '../../../assets/styles/cases/_mixins';
+.case {
+  &_solution-cards {
+    @include grid(repeat(2, 1fr), auto, 25px, 24px);
+
+    @media screen and (max-width: 880px) {
+      @include grid(repeat(1, 1fr), auto, 0, 10px);
+    }
+  }
+}
+</style>
