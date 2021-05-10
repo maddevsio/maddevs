@@ -80,6 +80,7 @@ exports[`Veeqo root component should render correctly 1`] = `
           class="case_header-logo case_veeqo-logotype"
           height="114"
           src="img.jpg"
+          style="opacity: 1;"
           width="309"
         />
       </div>

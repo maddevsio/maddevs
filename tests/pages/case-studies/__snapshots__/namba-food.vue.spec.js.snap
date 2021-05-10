@@ -71,6 +71,7 @@ exports[`NambaFood _uid component should render correctly 1`] = `
           class="case_header-logo case_nambafood-logo"
           height="82"
           src="img.jpg"
+          style="opacity: 1;"
           width="259"
         />
       </div>

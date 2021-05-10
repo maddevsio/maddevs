@@ -3,7 +3,7 @@
 exports[`Header component should render correctly 1`] = `
 <div>
   <div
-    class="header-wrapper is-transparent-bg"
+    class="header-wrapper"
     data-testid="test-header-wrapper"
     id="header"
   >

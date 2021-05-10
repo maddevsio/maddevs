@@ -3,7 +3,7 @@
     id="header"
     class="header-wrapper"
     data-testid="test-header-wrapper"
-    :class="{ 'is-transparent-bg': isTransparentBG }"
+    :class="{ 'is-transparent-bg': isTransparentBG && isCasePage }"
   >
     <div
       id="overlay"
