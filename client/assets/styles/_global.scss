@@ -79,8 +79,9 @@
 .field-name {
   width: max-content;
   margin-bottom: 6px;
-  color: $text-color--grey;
-  font-size: 16px;
+  color: $text-color--silver;
+  letter-spacing: -0.013em;
+  font-size: 14px;
   font-family: 'Poppins-Regular', sans-serif;
 }
 
@@ -91,21 +92,27 @@
   font-size: 16px;
   font-family: 'Poppins-Regular', sans-serif;
   line-height: 27px;
-  letter-spacing: -0.02em;
-  border: 0;
+  letter-spacing: -0.013em;
   box-sizing: border-box;
   background-color: $input-bgcolor--grey-dark;
-  color: $text-color--grey;
+  border: 1px solid $border-color--grey-pale;
+  color: $text-color--white-primary;
+  outline: none;
 
   &::placeholder {
     color: $input-placeholder-text--grey-dark;
   }
+
+  &:focus {
+    border-color: $border-color--grey-selected;
+  }
+
 }
 
 .required {
   &::after {
     content: '*';
-    padding-left: 3px;
+    padding-left: 4px;
     color: $text-color--red;
     position: absolute;
   }
@@ -121,11 +128,11 @@
 .form-checkbox-label {
   position: relative;
   padding-left: 30px;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Poppins-Regular', sans-serif;
   line-height: 24px;
-  letter-spacing: -0.02em;
-  color: $label-text--grey-dark;
+  letter-spacing: -0.013em;
+  color: $text-color--grey-pale;
   user-select: none;
   cursor: pointer;
 
@@ -135,7 +142,7 @@
 
   input:checked ~ .checkmark {
     background: url('../img/common/checkmark.svg') no-repeat center;
-    background-color: $input-bgcolor--grey-dark;
+    background-color: $input-bgcolor--grey-light;
   }
 
   a,
@@ -160,7 +167,7 @@
   top: 3px;
   left: 0;
   border-radius: 4px;
-  background-color: $input-bgcolor--grey-dark;
+  background-color: $input-bgcolor--grey-light;
 }
 
 // ----------- Modal window ----------- //

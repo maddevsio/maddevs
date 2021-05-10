@@ -11,7 +11,7 @@
       <input
         v-if="elementType === 'input'"
         :data-testid="`test-base-form-${name}`"
-        class="modal-entry-field entry-field"
+        class="entry-field"
         :value="value"
         :class="{ invalid: validation.$error }"
         :type="type"
@@ -21,7 +21,7 @@
       <textarea
         v-if="elementType === 'textarea'"
         :data-testid="`test-base-form-${name}`"
-        class="modal-entry-field entry-field textarea"
+        class="textarea"
         :value="value"
         :class="{ invalid: validation.$error }"
         :placeholder="placeholder"
@@ -35,7 +35,7 @@
       <input
         v-if="elementType === 'input'"
         :data-testid="`test-base-form-${name}`"
-        class="modal-entry-field entry-field"
+        class="entry-field"
         :value="value"
         :class="{ invalid: validation.$error }"
         :type="type"
@@ -48,7 +48,7 @@
       <input
         v-if="elementType === 'input'"
         :data-testid="`test-base-form-${name}`"
-        class="modal-entry-field entry-field"
+        class="entry-field"
         :placeholder="placeholder"
         :value="value"
         :class="{ invalid: validation.$error }"
@@ -58,7 +58,7 @@
       <textarea
         v-if="elementType === 'textarea'"
         :data-testid="`test-base-form-${name}`"
-        class="modal-entry-field entry-field textarea"
+        class="textarea"
         :placeholder="placeholder"
         :value="value"
         :class="{ invalid: validation.$error }"

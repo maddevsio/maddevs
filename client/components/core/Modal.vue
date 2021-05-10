@@ -25,7 +25,7 @@
             @click="close"
           >
             <img
-              src="@/assets/img/common/close-icon.svg"
+              src="@/assets/img/common/close-icon-circle.svg"
               alt="Close modal"
             >
           </div>
