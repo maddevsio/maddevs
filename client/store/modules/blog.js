@@ -41,7 +41,7 @@ export const mutations = {
   },
   SET_POSTS(state, data) {
     state.posts = data
-    state.featuredPost = data.find(post => post.tags.includes('Featured post'))
+    state.featuredPost = data && data.find(post => post.tags.includes('Featured post'))
   },
   SET_POSTS_CATEGORY(state, category) {
     state.postsCategory = category
