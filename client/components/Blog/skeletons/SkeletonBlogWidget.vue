@@ -46,7 +46,7 @@ export default {
 
 .background-grey {
   background-color: $bgcolor--silver;
-  background-image: linear-gradient(90deg, #FFFFFF 0%, #EFEFF4 30%, #FFFFFF 100%);
+  background-image: $bgcolor--skeleton-gradient-light;
   background-position: center;
 }
 

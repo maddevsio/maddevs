@@ -60,7 +60,7 @@ export default {
 
 .background-grey {
   &.dark {
-    background: $bgcolor--skeleton-gradient;
+    background: $bgcolor--skeleton-gradient-dark;
     background-size: 500% 500%;
   }
   &.light {
