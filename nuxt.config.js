@@ -62,10 +62,6 @@ module.exports = {
     height: '2px',
   },
   components: true,
-  /*
-   ** Component will be ignored in building
-   */
-  ignore: 'pages/case-studies/veeqo.vue',
   generate: {
     ...getRoutes(),
     fallback: '404.html',
@@ -121,7 +117,7 @@ module.exports = {
   */
   modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/prismic', '@nuxtjs/sitemap'],
   sitemap: {
-    hostname: process.env.domain,
+    hostname: 'https://maddevs.io',
     gzip: false,
     path: '/sitemap.xml',
     exclude: ['/**'],
@@ -138,7 +134,7 @@ module.exports = {
     Sitemap: 'https://maddevs.io/sitemap.xml',
   },
   prismic: {
-    endpoint: 'https://maddevs.io',
+    endpoint: 'process.env.NODE_PRISMIC_API',
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
     preview: false,
