@@ -71,8 +71,12 @@ const getRoutes = async () => {
 
 export default getRoutes
 
+/** The priority of the route depends on the nesting. More nesting has a lower priority
+ Nesting is equal to minus 0.1 unit. Consistent with Seo * */
+const getRoutePriority = path => 1 - (((path.split('/').length) - 1) * 0.1)
+
 const generateRoute = name => {
-  const priority = EXCLUDE_ROUTES[name.trim()] ? EXCLUDE_ROUTES[name.trim()] : 1 - (((name.trim().split('/').length) - 1) * 0.1)
+  const priority = EXCLUDE_ROUTES[name] || getRoutePriority(name)
 
   return (
     {
@@ -87,5 +91,5 @@ const generateRoute = name => {
 export const getSitemapRoutes = async () => {
   const routes = await getRoutes()
 
-  return routes.map(route => generateRoute(route))
+  return routes.map(route => generateRoute(route.trim()))
 }

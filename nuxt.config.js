@@ -1,4 +1,4 @@
-import getRoutes, { getSitemapRoutes } from './getRoutes'
+import getRoutes, { getSitemapRoutes } from './utils/getRoutes'
 
 require('dotenv').config()
 
