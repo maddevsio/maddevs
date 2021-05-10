@@ -37,13 +37,19 @@ exports[`PhaseMovingToKubernetes component should render correctly 1`] = `
   
     </p>
      
-    <blockquote
-      class="case_blockquote-box m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
+    <div
+      class="case_quote-wrap m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
     >
-      
+      <blockquote
+        class="case_blockquote-box m-auto"
+      >
+        
     There’s nothing more expensive than idle resources. At the same time, you don’t want to load the nodes to their maximum capacity because a) it’ll lead to performance degradation and b) you do need some idle resource to handle load spikes. Kubernetes finds balance.
   
-    </blockquote>
+      </blockquote>
+       
+      <!---->
+    </div>
      
     <p
       class="case_paragraph m-48_bottom"
