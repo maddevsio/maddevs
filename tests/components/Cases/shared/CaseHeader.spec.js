@@ -18,13 +18,14 @@ const props = {
   videoName: 'video-name',
 }
 
+const containerToRender = document.createElement('div')
+containerToRender.setAttribute('id', 'case-scroll-container')
+
 const mocks = {
   $getMediaFromS3: img => img,
 }
 
 describe('CaseHeader component', () => {
-  window.scrollY = 400
-
   beforeEach(() => {
     jest.clearAllMocks()
     jest.spyOn(window, 'addEventListener').mockImplementation(() => {})
@@ -88,6 +89,7 @@ describe('CaseHeader component', () => {
           clientHeight: 800,
         },
       },
+      getScrollPosition: () => 400,
     }
     const wrapper = shallowMount(CaseHeader, {
       propsData: props,
@@ -99,14 +101,14 @@ describe('CaseHeader component', () => {
   })
 
   it('should not update opacity if function result less then 0', async () => {
-    window.scrollY = 2800
     const callObject = {
       opacity: 1,
       $refs: {
         mainVideo: {
-          clientHeight: 800,
+          clientHeight: 2800,
         },
       },
+      getScrollPosition: () => 300,
     }
     const wrapper = shallowMount(CaseHeader, {
       propsData: props,

@@ -38,6 +38,7 @@
         <slot name="actions" />
       </div>
       <img
+        :style="{opacity}"
         :width="logo.width"
         :height="logo.height"
         :data-src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
@@ -103,6 +104,11 @@ export default {
       type: Boolean,
       default: true,
     },
+
+    scrollContainer: {
+      type: Object,
+      default: null,
+    },
   },
 
   data() {
@@ -125,11 +131,23 @@ export default {
     } else {
       this.isIphone = false
     }
-    if (this.textOpacity) window.addEventListener('scroll', this.onScroll)
+    if (this.textOpacity) {
+      if (this.project === 'godee') {
+        document.getElementById('case-scroll-container').addEventListener('scroll', this.onScroll)
+      } else {
+        window.addEventListener('scroll', this.onScroll)
+      }
+    }
   },
 
   destroyed() {
-    if (this.textOpacity) window.removeEventListener('scroll', this.onScroll)
+    if (this.textOpacity) {
+      if (this.scrollContainer) {
+        document.getElementById('case-scroll-container').removeEventListener('scroll', this.onScroll)
+      } else {
+        window.removeEventListener('scroll', this.onScroll)
+      }
+    }
   },
 
   methods: {
@@ -137,10 +155,17 @@ export default {
       const { mainVideo } = this.$refs
       if (!mainVideo) return
       const { clientHeight } = mainVideo
-      const result = ((clientHeight - window.scrollY) / clientHeight) + 0.2
+      const result = ((clientHeight - this.getScrollPosition()) / clientHeight) + 0.2
       if (result > 0 && result <= 1) {
-        this.opacity = ((clientHeight - window.scrollY) / clientHeight) + 0.2
+        this.opacity = ((clientHeight - this.getScrollPosition()) / clientHeight) + 0.2
       }
+    },
+
+    getScrollPosition() {
+      if (this.project === 'godee') {
+        return document.getElementById('case-scroll-container').scrollTop
+      }
+      return window.scrollY
     },
   },
 }
@@ -183,6 +208,7 @@ export default {
 
   &_header-logo {
     color: $text-color--white;
+    transition: none;
   }
 
   &_header-text {

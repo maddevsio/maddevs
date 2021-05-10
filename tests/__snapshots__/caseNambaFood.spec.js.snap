@@ -69,6 +69,7 @@ exports[`namba food renders correctly 1`] = `
         class="case_header-logo media_lazy case_nambafood-logo"
         data-src="s3 image url"
         height="82"
+        style="opacity: 1;"
         width="259"
       />
     </div>
