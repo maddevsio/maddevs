@@ -7,7 +7,7 @@
 
 <script>
 import CareersBanner from '@/components/core/banners/CareersBanner'
-import Careers from '@/components/Careers/Careers'
+import Careers from '@/components/Careers/shared/Careers'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
