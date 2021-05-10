@@ -134,7 +134,7 @@ module.exports = {
     Sitemap: 'https://maddevs.io/sitemap.xml',
   },
   prismic: {
-    endpoint: process.env.NODE_PRISMIC_API,
+    endpoint: 'https://maddevs.io',
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
     preview: false,
