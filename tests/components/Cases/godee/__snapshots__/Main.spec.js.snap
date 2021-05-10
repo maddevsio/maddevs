@@ -78,6 +78,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_header-logo media_lazy case_godee-logo"
           data-src="/images/Cases/godee/svg/godee-logo.svg"
           height="130"
+          style="opacity: 1;"
           width="293"
         />
       </div>
