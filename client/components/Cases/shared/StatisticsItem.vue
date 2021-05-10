@@ -1,8 +1,8 @@
 <template>
   <div class="case_statistics-item">
-    <p class="case_statistics-item_title">
+    <TextParagraphUppercase class="case_statistics-item_title">
       {{ title }}
-    </p>
+    </TextParagraphUppercase>
     <p class="case_statistics-item_number">
       {{ number }}
     </p>
@@ -13,8 +13,14 @@
 </template>
 
 <script>
+import TextParagraphUppercase from '@/components/Cases/shared/TextParagraphUppercase'
+
 export default {
   name: 'StatisticsItem',
+  components: {
+    TextParagraphUppercase,
+  },
+
   props: {
     title: {
       type: String,
@@ -49,7 +55,6 @@ export default {
       border-right: 1px solid $border-color--black-border-03-opacity;
     }
 
-    &_title,
     &_description {
       font-family: 'Inter', sans-serif;
       font-weight: 400;
@@ -61,11 +66,6 @@ export default {
     &_title,
     &_number {
       margin-bottom: 16px;
-    }
-
-    &_title {
-      text-transform: uppercase;
-      color: $text-color--grey-opacity-40-percent;
     }
 
     &_number {
