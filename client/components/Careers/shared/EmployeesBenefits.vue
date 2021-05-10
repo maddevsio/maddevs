@@ -6,7 +6,7 @@
       class="employees-benefits__item"
     >
       <img
-        :src="require(`@/assets/img/EmployeesBenefits/svg/${benefit.icon}.svg`)"
+        :src="require(`@/assets/img/Careers/svg/employeesBenefits/${benefit.icon}.svg`)"
         class="employees-benefits__item-icon"
       >
       <p class="employees-benefits__item-title">
