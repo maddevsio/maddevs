@@ -6,21 +6,39 @@
     <TextQuote class="m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom">
       Veeqo is a single platform that gives users complete control of their entire inventory. It enables businesses to quickly bulk ship orders from any sales channel, automate repetitive shipping tasks, and track every delivery in one place.
     </TextQuote>
-    <TextParagraph>
+    <TextParagraph class="case_text-align-center m-48_bottom">
       Hundreds of retailers all over the world use Veeqo to power their inventory and shipping founded
     </TextParagraph>
+    <StatisticsContainer class="m-96_bottom media-m-48_bottom">
+      <StatisticsItem
+        v-for="inventoryAndShippingItem in inventoryAndShipping"
+        v-bind="inventoryAndShippingItem"
+        :key="inventoryAndShippingItem.title"
+      />
+    </StatisticsContainer>
   </section>
 </template>
 
 <script>
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import TextQuote from '@/components/Cases/shared/TextQuote'
+import StatisticsContainer from '@/components/Cases/shared/StatisticsContainer'
+import StatisticsItem from '@/components/Cases/shared/StatisticsItem'
+import { inventoryAndShipping } from '@/data/caseVeeqo'
 
 export default {
   name: 'About',
   components: {
     TextParagraph,
     TextQuote,
+    StatisticsContainer,
+    StatisticsItem,
+  },
+
+  data() {
+    return {
+      inventoryAndShipping,
+    }
   },
 }
 </script>

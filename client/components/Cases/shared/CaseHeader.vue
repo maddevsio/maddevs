@@ -25,7 +25,11 @@
       Your browser does not support the video tag.
     </video>
     <div class="case_header-content">
-      <div class="case_header-text">
+      <div
+        ref="mainVideo"
+        :style="{opacity}"
+        class="case_header-text"
+      >
         <div class="case_case-study-item">
           Case Study
         </div>
@@ -34,6 +38,7 @@
         <slot name="actions" />
       </div>
       <img
+        :style="{opacity}"
         :width="logo.width"
         :height="logo.height"
         :data-src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
@@ -94,11 +99,22 @@ export default {
       type: String,
       default: '',
     },
+
+    textOpacity: {
+      type: Boolean,
+      default: true,
+    },
+
+    scrollContainer: {
+      type: Object,
+      default: null,
+    },
   },
 
   data() {
     return {
       isIphone: false,
+      opacity: 1,
     }
   },
 
@@ -115,6 +131,42 @@ export default {
     } else {
       this.isIphone = false
     }
+    if (this.textOpacity) {
+      if (this.project === 'godee') {
+        document.getElementById('case-scroll-container').addEventListener('scroll', this.onScroll)
+      } else {
+        window.addEventListener('scroll', this.onScroll)
+      }
+    }
+  },
+
+  destroyed() {
+    if (this.textOpacity) {
+      if (this.scrollContainer) {
+        document.getElementById('case-scroll-container').removeEventListener('scroll', this.onScroll)
+      } else {
+        window.removeEventListener('scroll', this.onScroll)
+      }
+    }
+  },
+
+  methods: {
+    onScroll() {
+      const { mainVideo } = this.$refs
+      if (!mainVideo) return
+      const { clientHeight } = mainVideo
+      const result = ((clientHeight - this.getScrollPosition()) / clientHeight) + 0.2
+      if (result > 0 && result <= 1) {
+        this.opacity = ((clientHeight - this.getScrollPosition()) / clientHeight) + 0.2
+      }
+    },
+
+    getScrollPosition() {
+      if (this.project === 'godee') {
+        return document.getElementById('case-scroll-container').scrollTop
+      }
+      return window.scrollY
+    },
   },
 }
 </script>
@@ -156,6 +208,7 @@ export default {
 
   &_header-logo {
     color: $text-color--white;
+    transition: none;
   }
 
   &_header-text {

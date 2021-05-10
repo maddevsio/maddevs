@@ -2,24 +2,21 @@
   <main class="case case--yourcast">
     <CaseHeader
       :logo="logo"
-      project="yourcast"
-      video-name="/videos/yourcast-banner.mp4"
-      video-fallback-path="/images/Cases/yourcast/png/banner-bg.png"
+      project="veeqo"
+      video-name="/videos/veeqo-banner.mp4"
+      video-fallback-path="/images/Cases/veeqo/svg/veeqo-banner-bg.svg"
     >
       <h1
         slot="title"
         class="case_header-title"
       >
-        The Evolution <br>
-        of Yourcast.TV
+        Optimization <br> for Veeqo
       </h1>
       <p
         slot="description"
         class="case_header-description"
       >
-        Mad Devs developed a secure and private video streaming service and live <br>
-        video broadcasting cinema to provide entertainment experience to isolated <br>
-        groups feeling homesick.
+        Our DevOps team optimized the infrastructure for Veeqo, an inventory <br> and shipping <span class="case_nowrap">e-commerce</span> platform, and made it highly efficient, smooth, <br> and cost-effective for our partners.
       </p>
     </CaseHeader>
     <Main />
@@ -60,11 +57,11 @@ export default {
   data() {
     return {
       logo: {
-        width: 387,
-        height: 81.23,
-        folder: 'yourcast',
-        file: 'yourcast-logo',
-        alt: 'YourcastTV - Video Streaming Platform Logo.',
+        width: 309,
+        height: 114,
+        folder: 'veeqo',
+        file: 'veeqo-logotype',
+        alt: '',
       },
     }
   },
@@ -80,4 +77,36 @@ export default {
 @import '../../assets/styles/cases/mixins';
 @import '../../assets/styles/cases/components';
 @import '../../assets/styles/cases/media';
+
+.case {
+  &_header-veeqo {
+    background-color: rgba(16, 17, 19, 0.5);
+  }
+
+  &_veeqo-logotype {
+    width: 309px;
+    height: 114px;
+    margin-left: 114px;
+
+    @media screen and (max-width: 1170px) {
+      margin-left: 0;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 655px) {
+      width: 219px;
+      height: 90px;
+    }
+
+    @media screen and (max-width: 370px) {
+      width: 190px;
+      height: 70px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &_nowrap {
+    white-space: nowrap;
+  }
+}
 </style>

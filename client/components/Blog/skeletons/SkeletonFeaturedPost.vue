@@ -45,28 +45,28 @@ export default {
 @import '../../../assets/styles/_vars';
 @keyframes SkeletonLoading {
   0% {
-    background-position: -600px 0;
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 80% 50%;
   }
   100% {
-    background-position: calc(600px + 100%) 0;
+    background-position: 0 50%;
   }
 }
 .animated {
-  animation: 1.5s ease-in-out 1s infinite normal none running SkeletonLoading;
+  animation: 2s ease infinite SkeletonLoading;
 }
+
 .background-grey {
   &.dark {
-    background-color: $bgcolor--black-light;
-    background-image: linear-gradient(
-      90deg,
-      $bgcolor--black-lighten,
-      $bgcolor--black-lighten-pale,
-      $bgcolor--black-lighten
-    );
+    background: $bgcolor--skeleton-gradient-dark;
+    background-size: 500% 500%;
   }
   &.light {
     background-color: $bgcolor--silver;
     background-image: linear-gradient(90deg, $bgcolor--grey-extra-dark, $bgcolor--silver, $bgcolor--grey-extra-dark);
+    background-size: 500% 500%;
   }
 }
 .featured-post {

@@ -3,7 +3,7 @@
     id="header"
     class="header-wrapper"
     data-testid="test-header-wrapper"
-    :class="{ 'is-transparent-bg': isTransparentBG }"
+    :class="{ 'is-transparent-bg': isTransparentBG && isCasePage }"
   >
     <div
       id="overlay"
@@ -447,8 +447,10 @@ export default {
 
 .is-transparent-bg {
   #overlay::before {
-    height: 0;
-    opacity: 0;
+    transition: all 0.3s ease;
+    height: 175px;
+    background: $bgcolor--header-gradient;
+    opacity: 0.3;
   }
 
   /deep/ #header-logo-text {

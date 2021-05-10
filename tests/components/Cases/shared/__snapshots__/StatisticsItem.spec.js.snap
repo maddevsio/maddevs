@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatisticsItem component should render correctly 1`] = `
+<div>
+  <div
+    class="case_statistics-item"
+  >
+    <p
+      class="case_statistics-item_title"
+    >
+      
+    FOUNDED
+  
+    </p>
+     
+    <p
+      class="case_statistics-item_number"
+    >
+      
+    2013
+  
+    </p>
+     
+    <p
+      class="case_statistics-item_description"
+    >
+      
+    by experienced ecommerce retailer
+  
+    </p>
+  </div>
+</div>
+`;

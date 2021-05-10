@@ -33,6 +33,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
     >
       <div
         class="case_header-text"
+        style="opacity: 1;"
       >
         <div
           class="case_case-study-item"
@@ -85,6 +86,7 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         class="case_header-logo media_lazy case_sjmc-logo"
         data-src="s3 image url"
         height="110"
+        style="opacity: 1;"
         width="242"
       />
     </div>
