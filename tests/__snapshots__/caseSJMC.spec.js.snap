@@ -83,9 +83,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
        
       <img
         alt=""
-        class="case_header-logo case_sjmc-logo"
+        class="case_header-logo media_lazy case_sjmc-logo"
+        data-src="s3 image url"
         height="110"
-        src="s3 image url"
         style="opacity: 1;"
         width="242"
       />

@@ -77,9 +77,9 @@ exports[`Veeqo root component should render correctly 1`] = `
          
         <img
           alt=""
-          class="case_header-logo case_veeqo-logotype"
+          class="case_header-logo media_lazy case_veeqo-logotype"
+          data-src="img.jpg"
           height="114"
-          src="img.jpg"
           style="opacity: 1;"
           width="309"
         />

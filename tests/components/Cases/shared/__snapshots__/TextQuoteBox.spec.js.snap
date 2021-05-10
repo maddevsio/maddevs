@@ -11,7 +11,13 @@ exports[`TextQuoteBox should render correctly 1`] = `
       Main Content
     </blockquote>
      
-    <!---->
+    <p
+      class="case_quote-author"
+    >
+      
+    Andrew Sapozhnikov, CIO at Mad Devs
+  
+    </p>
   </div>
 </div>
 `;

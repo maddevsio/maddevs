@@ -41,10 +41,10 @@
         :style="{opacity}"
         :width="logo.width"
         :height="logo.height"
-        :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
+        :data-src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
         :alt="logo.alt"
         :class="`case_${logo.file}`"
-        class="case_header-logo"
+        class="case_header-logo media_lazy"
       >
     </div>
   </section>

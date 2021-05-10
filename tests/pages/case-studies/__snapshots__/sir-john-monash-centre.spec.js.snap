@@ -85,9 +85,9 @@ exports[`SirJohnMonashCentre _uid component should render correctly 1`] = `
          
         <img
           alt=""
-          class="case_header-logo case_sjmc-logo"
+          class="case_header-logo media_lazy case_sjmc-logo"
+          data-src="img.jpg"
           height="110"
-          src="img.jpg"
           style="opacity: 1;"
           width="242"
         />
