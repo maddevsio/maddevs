@@ -312,7 +312,7 @@ export default {
     /deep/ .ui-radio-buttons {
       &::after {
         @include font('Inter', 22px, 400);
-        content: 'roles.';    @include font('Inter', 16px, 400);
+        content: 'roles.';
         line-height: 24px;
         letter-spacing: -0.02em;
         margin-left: 11px;

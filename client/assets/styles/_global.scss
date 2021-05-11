@@ -54,12 +54,10 @@
 }
 
 .paragraph-md {
-  font-size: 16px;
   @include font('Inter', 16px, 400);
 }
 
 .paragraph-sm {
-  font-size: 14px;
   @include font('Inter', 14px, 400);
 }
 
