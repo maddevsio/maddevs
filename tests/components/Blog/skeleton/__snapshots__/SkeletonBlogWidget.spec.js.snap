@@ -22,11 +22,11 @@ exports[`skeleton blog widget component should render correctly 1`] = `
         class="blog-post__meta"
       >
         <span
-          class="created-at background-grey"
+          class="created-at animated background-grey"
         />
          
         <span
-          class="tag"
+          class="tag animated background-grey"
         />
       </div>
        
@@ -34,14 +34,14 @@ exports[`skeleton blog widget component should render correctly 1`] = `
         class="blog-post__author"
       >
         <div
-          class="blog-post__none-image background-grey"
+          class="blog-post__none-image background-grey animated"
         />
          
         <div
-          class="blog-post__author-info background-grey"
+          class="blog-post__author-info background-grey animated"
         >
           <p
-            class="blog-post__author-name background-grey"
+            class="blog-post__author-name background-grey animated"
           />
         </div>
       </div>

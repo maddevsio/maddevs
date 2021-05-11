@@ -20,7 +20,6 @@
 import BaseForm from '@/components/core/forms/BaseForm'
 import RadioList from '@/components/shared/UIRadioList'
 import sendEmailMixin from '@/mixins/sendEmailMixin'
-import createNewLeadMixin from '@/mixins/createNewLeadMixin'
 
 export default {
   name: 'InfrastructureAuditForm',
@@ -29,7 +28,7 @@ export default {
     RadioList,
   },
 
-  mixins: [sendEmailMixin(304628, 'Infrastructure audit'), createNewLeadMixin('infrastructure-audit')],
+  mixins: [sendEmailMixin(304628, 'Infrastructure audit')],
 
   data() {
     return {
@@ -81,14 +80,6 @@ export default {
 
       // from mixin
       this.submitEmail(variables)
-
-      const lead = {
-        ...formData,
-        description: this.buildLeadDescription('Where is a project hosted:', variables.selectedProjectHost),
-      }
-
-      // from mixin
-      this.submitLead(lead)
     },
 
     reset() {

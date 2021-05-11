@@ -33,12 +33,98 @@ exports[`About component should render correctly 1`] = `
     </blockquote>
      
     <p
-      class="case_paragraph"
+      class="case_paragraph case_text-align-center m-48_bottom"
     >
       
     Hundreds of retailers all over the world use Veeqo to power their inventory and shipping founded
   
     </p>
+     
+    <div
+      class="case_statistics-container m-96_bottom media-m-48_bottom"
+    >
+      <div
+        class="case_statistics-item"
+      >
+        <p
+          class="case_paragraph-uppercase case_statistics-item_title"
+        >
+          
+    FOUNDED
+  
+        </p>
+         
+        <p
+          class="case_statistics-item_number"
+        >
+          
+    2013
+  
+        </p>
+         
+        <p
+          class="case_statistics-item_description"
+        >
+          
+    by experienced ecommerce retailer
+  
+        </p>
+      </div>
+      <div
+        class="case_statistics-item"
+      >
+        <p
+          class="case_paragraph-uppercase case_statistics-item_title"
+        >
+          
+    OVER
+  
+        </p>
+         
+        <p
+          class="case_statistics-item_number"
+        >
+          
+    1.5bn
+  
+        </p>
+         
+        <p
+          class="case_statistics-item_description"
+        >
+          
+    inventory updates processed in Veeqo every year
+  
+        </p>
+      </div>
+      <div
+        class="case_statistics-item"
+      >
+        <p
+          class="case_paragraph-uppercase case_statistics-item_title"
+        >
+          
+    OVER
+  
+        </p>
+         
+        <p
+          class="case_statistics-item_number"
+        >
+          
+    31m
+  
+        </p>
+         
+        <p
+          class="case_statistics-item_description"
+        >
+          
+    items picked, packed and shipped through annually
+  
+        </p>
+      </div>
+    </div>
   </section>
 </div>
 `;

@@ -5,13 +5,13 @@
       <h2 class="blog-post__title animated background-grey" />
       <p class="blog-post__paragraph background-grey animated" />
       <div class="blog-post__meta">
-        <span class="created-at background-grey" />
-        <span class="tag" />
+        <span class="created-at animated background-grey" />
+        <span class="tag animated background-grey" />
       </div>
       <div class="blog-post__author">
-        <div class="blog-post__none-image background-grey" />
-        <div class="blog-post__author-info background-grey">
-          <p class="blog-post__author-name background-grey" />
+        <div class="blog-post__none-image background-grey animated" />
+        <div class="blog-post__author-info background-grey animated">
+          <p class="blog-post__author-name background-grey animated" />
         </div>
       </div>
     </div>
@@ -29,20 +29,25 @@ export default {
 
 @keyframes SkeletonLoading {
   0% {
-    background-position: -200px 0;
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 90% 50%;
   }
   100% {
-    background-position: calc(200px + 100%) 0;
+    background-position: 0 50%;
   }
 }
 
 .animated {
-  animation: 1.5s ease-in-out 1s infinite normal none running SkeletonLoading;
+  animation: 3s ease infinite SkeletonLoading;
+  background-size: 200% 200%;
 }
 
 .background-grey {
   background-color: $bgcolor--silver;
-  background-image: linear-gradient(90deg, $bgcolor--grey-extra-dark, $bgcolor--silver, $bgcolor--grey-extra-dark);
+  background-image: $bgcolor--skeleton-gradient-light;
+  background-position: center;
 }
 
 .blog-post {
