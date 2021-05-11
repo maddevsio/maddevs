@@ -22,7 +22,6 @@ import { maxLength } from 'vuelidate/lib/validators'
 import BaseForm from '@/components/core/forms/BaseForm'
 import BaseInput from '@/components/core/forms/BaseInput'
 import sendEmailMixin from '@/mixins/sendEmailMixin'
-import createNewLeadMixin from '@/mixins/createNewLeadMixin'
 
 export default {
   name: 'GetYourTrustedItPartnerForm',
@@ -31,7 +30,7 @@ export default {
     BaseInput,
   },
 
-  mixins: [sendEmailMixin(304629, 'Get your trusted IT partner'), createNewLeadMixin('get-your-trusted-it-partner')],
+  mixins: [sendEmailMixin(304629, 'Get your trusted IT partner')],
 
   validations: {
     needAssistanceWith: {
@@ -56,14 +55,6 @@ export default {
 
       // from mixin
       this.submitEmail(variables)
-
-      const lead = {
-        ...formData,
-        description: this.buildLeadDescription('I need assistance with:', this.needAssistanceWith),
-      }
-
-      // from mixin
-      this.submitLead(lead)
     },
 
     reset() {
