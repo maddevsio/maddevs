@@ -10,7 +10,6 @@
       :accept="acceptedExtensions"
       @change="handleFileSelect"
     >
-    <span class="none-decorated-dash">–</span>
     <label
       data-testid="test-file-label"
       :class="`file-input__cv--${selectedFile ? 'selected' : 'attachable'}`"
@@ -61,11 +60,8 @@ export default {
 @import '../../../assets/styles/vars';
 
 .file-input {
-  display: flex;
-
-  .none-decorated-dash {
-    margin-right: 5px;
-  }
+  position: relative;
+  display: inline-flex;
 
   &__uploader {
     display: none;
@@ -74,10 +70,10 @@ export default {
   &__cv {
     min-width: max-content;
     color: $text-color--grey;
-    font-family: 'Poppins-Regular', sans-serif;
-    font-size: 22px;
-    line-height: 24px;
-    letter-spacing: -0.02em;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
     text-decoration-line: none;
     cursor: pointer;
 

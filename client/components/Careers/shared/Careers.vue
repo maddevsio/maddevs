@@ -123,7 +123,7 @@
             </li>
             <li class="careers__form-list-item careers__file-attach">
               <div>
-                <FileInput
+                – <FileInput
                   ref="fileInput"
                   v-model="cvFile"
                   @input="handleFileSelect"
