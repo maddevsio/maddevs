@@ -326,7 +326,6 @@ export default {
   z-index: 1;
   color: $text-color--grey;
   margin-top: 26px;
-  font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.02em;
 
