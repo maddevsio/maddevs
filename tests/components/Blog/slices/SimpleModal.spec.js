@@ -1,4 +1,4 @@
-import Modal from '@/components/Blog/slices/SimpleModal'
+import Modal from '@/components/slices/SimpleModal'
 import { render } from '@testing-library/vue'
 import { mount, shallowMount } from '@vue/test-utils'
 

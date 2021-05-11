@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import TextSlice from '../../../../client/components/Blog/slices/TextSlice'
+import TextSlice from '@/components/slices/TextSlice'
 
 describe('text slice component', () => {
   const slice = {

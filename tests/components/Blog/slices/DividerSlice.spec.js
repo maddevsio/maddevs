@@ -1,4 +1,4 @@
-import DividerSlice from '@/components/Blog/slices/DividerSlice'
+import DividerSlice from '@/components/slices/DividerSlice'
 import { render } from '@testing-library/vue'
 
 describe('DividerSlice component', () => {

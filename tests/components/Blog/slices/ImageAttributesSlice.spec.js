@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import ImageAttributesSlice from '../../../../client/components/Blog/slices/ImageAttributesSlice'
+import ImageAttributesSlice from '@/components/slices/ImageAttributesSlice'
 
 describe('image attribute slice component', () => {
   const slice = {

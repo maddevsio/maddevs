@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/vue'
 import { shallowMount } from '@vue/test-utils'
-import ImageCaptionSlice from '../../../../client/components/Blog/slices/ImageCaptionSlice'
+import ImageCaptionSlice from '@/components/slices/ImageCaptionSlice'
 
 const slice = {
   items: [{}],

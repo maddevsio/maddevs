@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import GithubGistSlice from '../../../../client/components/Blog/slices/GithubGistSlice'
+import GithubGistSlice from '@/components/slices/GithubGistSlice'
 
 describe('github gist component', () => {
   const slice = {

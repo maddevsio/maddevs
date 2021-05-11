@@ -14,12 +14,6 @@ exports[`FileInput component should render correctly 1`] = `
       type="file"
     />
      
-    <span
-      class="none-decorated-dash"
-    >
-      –
-    </span>
-     
     <label
       class="file-input__cv file-input__cv--attachable"
       data-testid="test-file-label"

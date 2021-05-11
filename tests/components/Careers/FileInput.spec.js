@@ -1,5 +1,5 @@
-import FileInput from '@/components/Careers/FileInput'
-import Careers from '@/components/Careers/Careers'
+import FileInput from '@/components/Careers/shared/FileInput'
+import Careers from '@/components/Careers/shared/Careers'
 import { fireEvent, render, screen } from '@testing-library/vue'
 
 const file = new File([new ArrayBuffer(1)], 'file.pdf')

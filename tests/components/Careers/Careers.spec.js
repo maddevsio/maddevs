@@ -1,5 +1,5 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils'
-import Careers from '@/components/Careers/Careers'
+import Careers from '@/components/Careers/shared/Careers'
 import Vuelidate from 'vuelidate'
 import { render } from '@testing-library/vue'
 

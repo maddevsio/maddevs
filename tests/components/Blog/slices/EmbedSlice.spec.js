@@ -1,5 +1,5 @@
 // eslint-disalbe quotes
-import EmbedSlice from '@/components/Blog/slices/EmbedSlice'
+import EmbedSlice from '@/components/slices/EmbedSlice'
 import { render } from '@testing-library/vue'
 
 describe('EmbedSlice component', () => {

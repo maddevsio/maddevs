@@ -218,6 +218,8 @@ exports[`careers page renders correctly 1`] = `
               class="careers__form-list-item careers__file-attach"
             >
               <div>
+                
+              – 
                 <div
                   class="file-input"
                 >
@@ -229,12 +231,6 @@ exports[`careers page renders correctly 1`] = `
                     name="file"
                     type="file"
                   />
-                   
-                  <span
-                    class="none-decorated-dash"
-                  >
-                    –
-                  </span>
                    
                   <label
                     class="file-input__cv file-input__cv--attachable"

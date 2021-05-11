@@ -1,5 +1,5 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
-import Button from '@/components/Careers/Button'
+import Button from '@/components/Careers/shared/Button'
 
 describe('Button component', () => {
   it('should render correctly with slot', () => {

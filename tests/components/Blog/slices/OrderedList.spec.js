@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import OrderedList from '../../../../client/components/Blog/slices/OrderedList'
+import OrderedList from '@/components/slices/OrderedList'
 
 describe('orderedListSlice component', () => {
   const slice = {
