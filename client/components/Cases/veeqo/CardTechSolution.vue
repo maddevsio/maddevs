@@ -19,7 +19,7 @@ import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import Card from '@/components/Cases/shared/Card'
 
 export default {
-  name: 'CardGoDeeFeature',
+  name: 'CardTechSolution',
   components: {
     TextParagraph,
     Card,

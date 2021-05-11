@@ -3,38 +3,43 @@
     <h2 class="case_title_h2 m-24_bottom">
       Phase 2: Continuous integration (CI)
     </h2>
-    <Card class="background-color-silver">
-      <h3 class="case_title_h4 m-8_bottom">
-        Challenge
-      </h3>
-      <TextParagraph>
-        Development processes lacked consistency. Particularly, the project had manually configured CI system and pipelines, different development, test, and production environments and runtimes, non-reproducible development environment, inconsistent test builds.
-      </TextParagraph>
-    </Card>
-    <Card class="background-color-blue-light">
-      <h3 class="case_title_h4 m-8_bottom">
-        Solution
-      </h3>
-      <TextParagraph>
-        Dockerization is the most viable solution today to set up continuous delivery. As our application was back then partially hosted on Heroku, we created a unified runtime for developers and CI by dockerizing the main app using a Heroku Stack image and Docker Compose. It made CI reliable and allowed simplifying deployment. Also, it sped up bootstrapping of the development environment.
-      </TextParagraph>
-    </Card>
-    <TextQuoteBox class="m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto">
+    <div class="case_cards-container">
+      <Card class="background-color-silver">
+        <h3 class="case_title_h4 m-8_bottom">
+          Challenge
+        </h3>
+        <TextParagraph>
+          Development processes lacked consistency. Particularly, the project had manually configured CI system and pipelines, different development, test, and production environments and runtimes, non-reproducible development environment, inconsistent test builds.
+        </TextParagraph>
+      </Card>
+      <Card class="background-color-blue-light">
+        <h3 class="case_title_h4 m-8_bottom">
+          Solution
+        </h3>
+        <TextParagraph>
+          Dockerization is the most viable solution today to set up continuous delivery. As our application was back then partially hosted on Heroku, we created a unified runtime for developers and CI by dockerizing the main app using a Heroku Stack image and Docker Compose. It made CI reliable and allowed simplifying deployment. Also, it sped up bootstrapping of the development environment.
+        </TextParagraph>
+      </Card>
+    </div>
+    <TextQuoteBox
+      class="m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
+      author="Andrew Sapozhnikov, CIO at Mad Devs"
+    >
       The developers didn’t trust their CI system. CI wasn’t helping them; it was hindering their work instead. It’s just bad DevOps.
     </TextQuoteBox>
     <h3 class="case_title_h3 m-38_bottom media-m-24_bottom">
       What we achieved
     </h3>
-    <div class="case_results">
-      <div class="case_result-item">
-        Reproducible CI results
-      </div>
-      <div class="case_result-item">
-        Unified runtime
-      </div>
-      <div class="case_result-item">
+    <div class="case_achievements m-48_bottom media-m-24_bottom">
+      <TextParagraph class="case_achievement-item">
+        Reproducible <br> CI results
+      </TextParagraph>
+      <TextParagraph class="case_achievement-item">
+        Unified <br> runtime
+      </TextParagraph>
+      <TextParagraph class="case_achievement-item">
         Standardized development, test, and production environments
-      </div>
+      </TextParagraph>
     </div>
     <h3 class="case_title_h3 m-12_bottom">
       Moving Jenkins
@@ -76,3 +81,59 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+@import '../../../assets/styles/cases/_mixins';
+
+.case {
+  &_cards-container {
+    @include grid(repeat(2, 1fr), auto, 25px, 0);
+
+    @media screen and (max-width: 880px) {
+      @include grid(repeat(1, 1fr), auto, 0, 10px);
+    }
+  }
+
+  &_achievements {
+    @include grid(repeat(3, 1fr), auto, 0, 0);
+  }
+
+  &_achievement-item {
+    position: relative;
+    padding-left: 10px;
+
+    &:before {
+      content: '';
+      width: 2px;
+      height: 85%;
+      min-height: 40px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: $bgcolor--blue;
+    }
+
+    @media screen and (max-width: 642px) {
+      &:last-child {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    &_achievements {
+      @include grid(repeat(1, 1fr), auto, 0, 21px);
+    }
+
+    &_achievement-item {
+      padding: 12px 0 12px 10px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+}
+</style>

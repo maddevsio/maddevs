@@ -363,8 +363,89 @@ exports[`Main component should render correctly 1`] = `
   
       </h3>
        
+      <div
+        class="case_solution-cards"
+      >
+        <div
+          class="case_card card-content background-color-silver"
+        >
+          <img
+            alt="Collecting host metrics (CloudWatch and okmeter showed consequences, not causes)."
+            class="card-content_icon img_lazy"
+            data-src="img.jpg"
+            height="51.94"
+            width="51.94"
+          />
+           
+          <p
+            class="case_paragraph"
+          >
+            
+    Collecting host metrics (CloudWatch and okmeter showed consequences, not causes).
+  
+          </p>
+        </div>
+        <div
+          class="case_card card-content background-color-silver"
+        >
+          <img
+            alt="Analyzing the true RAM use and identifying 1,200-1,500 worker connections taking up about 40 GB of RAM."
+            class="card-content_icon img_lazy"
+            data-src="img.jpg"
+            height="51.94"
+            width="51.94"
+          />
+           
+          <p
+            class="case_paragraph"
+          >
+            
+    Analyzing the true RAM use and identifying 1,200-1,500 worker connections taking up about 40 GB of RAM.
+  
+          </p>
+        </div>
+        <div
+          class="case_card card-content background-color-silver"
+        >
+          <img
+            alt="Adding PgBouncers to reduce the load on the database."
+            class="card-content_icon img_lazy"
+            data-src="img.jpg"
+            height="51.94"
+            width="51.94"
+          />
+           
+          <p
+            class="case_paragraph"
+          >
+            
+    Adding PgBouncers to reduce the load on the database.
+  
+          </p>
+        </div>
+        <div
+          class="case_card card-content background-color-silver"
+        >
+          <img
+            alt="Stabilizing connection pooling by applying ELB and thus distributing traffic more evenly to decrease the number of SPOFs."
+            class="card-content_icon img_lazy"
+            data-src="img.jpg"
+            height="51.94"
+            width="51.94"
+          />
+           
+          <p
+            class="case_paragraph"
+          >
+            
+    Stabilizing connection pooling by applying ELB and thus distributing traffic more evenly to decrease the number of SPOFs.
+  
+          </p>
+        </div>
+      </div>
+       
       <p
-        class="case_paragraph m-24_top"
+        class="case_paragraph m-48_top m-48_bottom media-m-24_bottom"
       >
         
     As a result, we spent $180 on launching PgBouncers on two c4.large instances behind NLB and saved about 10X  the sum in the customer’s monthly costs by: Freeing up about 40 GB of RAM, Postponing the need to upgrade the RDS instance until about 6 months later.
@@ -372,12 +453,81 @@ exports[`Main component should render correctly 1`] = `
       </p>
        
       <h2
-        class="case_title_h2 m-48_bottom media-m-41_bottom case_text-align-center"
+        class="case_title_h2 case_title-result m-48_bottom media-m-41_bottom"
       >
         
     Result
   
       </h2>
+       
+      <div
+        class="case_result-container m-96_bottom media-m-48_bottom"
+      >
+        <div
+          class="case_result-item"
+        >
+          <h3
+            class="case_result-item_title"
+          >
+            
+      ReadIOPS
+    
+          </h3>
+           
+          <p
+            class="case_paragraph"
+            style="color: rgb(64, 65, 67);"
+          >
+            
+      halved for better instance performance
+    
+          </p>
+        </div>
+         
+        <div
+          class="case_result-item"
+        >
+          <h3
+            class="case_result-item_title"
+          >
+            
+      CPU
+    
+          </h3>
+           
+          <p
+            class="case_paragraph"
+            style="color: rgb(64, 65, 67);"
+          >
+            
+      load: reduced due to extra RAM
+    
+          </p>
+        </div>
+         
+        <div
+          class="case_result-item"
+        >
+          <h3
+            class="case_result-item_title"
+          >
+            
+      TPS
+    
+          </h3>
+           
+          <p
+            class="case_paragraph"
+            style="color: rgb(64, 65, 67);"
+          >
+            
+      increased 
+            <br />
+             by 50%
+    
+          </p>
+        </div>
+      </div>
     </section>
      
     <section
@@ -392,43 +542,47 @@ exports[`Main component should render correctly 1`] = `
       </h2>
        
       <div
-        class="case_card background-color-silver"
+        class="case_cards-container"
       >
-        <h3
-          class="case_title_h4 m-8_bottom"
+        <div
+          class="case_card background-color-silver"
         >
-          
-      Challenge
-    
-        </h3>
+          <h3
+            class="case_title_h4 m-8_bottom"
+          >
+            
+        Challenge
+      
+          </h3>
+           
+          <p
+            class="case_paragraph"
+          >
+            
+        Development processes lacked consistency. Particularly, the project had manually configured CI system and pipelines, different development, test, and production environments and runtimes, non-reproducible development environment, inconsistent test builds.
+      
+          </p>
+        </div>
          
-        <p
-          class="case_paragraph"
+        <div
+          class="case_card background-color-blue-light"
         >
-          
-      Development processes lacked consistency. Particularly, the project had manually configured CI system and pipelines, different development, test, and production environments and runtimes, non-reproducible development environment, inconsistent test builds.
-    
-        </p>
-      </div>
-       
-      <div
-        class="case_card background-color-blue-light"
-      >
-        <h3
-          class="case_title_h4 m-8_bottom"
-        >
-          
-      Solution
-    
-        </h3>
-         
-        <p
-          class="case_paragraph"
-        >
-          
-      Dockerization is the most viable solution today to set up continuous delivery. As our application was back then partially hosted on Heroku, we created a unified runtime for developers and CI by dockerizing the main app using a Heroku Stack image and Docker Compose. It made CI reliable and allowed simplifying deployment. Also, it sped up bootstrapping of the development environment.
-    
-        </p>
+          <h3
+            class="case_title_h4 m-8_bottom"
+          >
+            
+        Solution
+      
+          </h3>
+           
+          <p
+            class="case_paragraph"
+          >
+            
+        Dockerization is the most viable solution today to set up continuous delivery. As our application was back then partially hosted on Heroku, we created a unified runtime for developers and CI by dockerizing the main app using a Heroku Stack image and Docker Compose. It made CI reliable and allowed simplifying deployment. Also, it sped up bootstrapping of the development environment.
+      
+          </p>
+        </div>
       </div>
        
       <div
@@ -442,7 +596,13 @@ exports[`Main component should render correctly 1`] = `
   
         </blockquote>
          
-        <!---->
+        <p
+          class="case_quote-author"
+        >
+          
+    Andrew Sapozhnikov, CIO at Mad Devs
+  
+        </p>
       </div>
        
       <h3
@@ -454,31 +614,35 @@ exports[`Main component should render correctly 1`] = `
       </h3>
        
       <div
-        class="case_results"
+        class="case_achievements m-48_bottom media-m-24_bottom"
       >
-        <div
-          class="case_result-item"
+        <p
+          class="case_paragraph case_achievement-item"
         >
           
-      Reproducible CI results
+      Reproducible 
+          <br />
+           CI results
     
-        </div>
+        </p>
          
-        <div
-          class="case_result-item"
+        <p
+          class="case_paragraph case_achievement-item"
         >
           
-      Unified runtime
+      Unified 
+          <br />
+           runtime
     
-        </div>
+        </p>
          
-        <div
-          class="case_result-item"
+        <p
+          class="case_paragraph case_achievement-item"
         >
           
       Standardized development, test, and production environments
     
-        </div>
+        </p>
       </div>
        
       <h3
