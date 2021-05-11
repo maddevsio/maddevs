@@ -96,7 +96,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import SlicesBlock from '@/components/Blog/Post/SlicesBlock.vue'
+import SlicesBlock from '@/components/slices'
 import TableOfContents from '@/components/Blog/Post/TableOfContents'
 import BlogHeader from '@/components/Blog/header/Blog'
 import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversity'
