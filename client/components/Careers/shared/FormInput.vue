@@ -1,6 +1,9 @@
 <template>
-  <div class="career-form-input">
-    <span>{{ value || placeholder }}</span>
+  <div
+    class="career-form-input"
+    :title="value || placeholder"
+  >
+    <pre>{{ value || placeholder }}</pre>
     <input
       :type="type"
       :autofocus="autofocus"
@@ -44,16 +47,18 @@ export default {
 .career-form-input {
   position: relative;
   display: inline-flex;
-  span,
+  pre,
   input {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
     letter-spacing: inherit;
   }
-  span {
+  pre {
+    width: 100%;
     display: block;
     opacity: 0;
+    margin: 0;
     visibility: hidden;
     pointer-events: none;
   }
