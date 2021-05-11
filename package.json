@@ -43,7 +43,7 @@
     "request": "^2.88.2",
     "sendpulse-api": "^1.1.4",
     "simplebar-vue": "^1.6.0",
-    "snyk": "^1.550.0",
+    "snyk": "^1.557.0",
     "swiper": "^5.4.5",
     "vue-awesome-swiper": "^4.1.1",
     "vue-embed-gist": "^1.1.0",
