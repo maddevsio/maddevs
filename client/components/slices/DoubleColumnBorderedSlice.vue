@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/vars';
+@import '@/assets/styles/_vars.scss';
 
 .post-section-bordered {
   border: 1px solid $border-color--silver;

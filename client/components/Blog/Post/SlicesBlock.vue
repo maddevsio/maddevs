@@ -55,19 +55,19 @@
 </template>
 
 <script>
-import CodeBlockSlice from '@/components/Blog/slices/CodeBlockSlice/index.vue'
-import SectionIdSlice from '@/components/Blog/slices/SectionIdSlice'
-import QuoteSlice from '@/components/Blog/slices/QuoteSlice.vue'
-import TextSlice from '@/components/Blog/slices/TextSlice.vue'
-import ImageCaptionSlice from '@/components/Blog/slices/ImageCaptionSlice.vue'
-import EmbedSlice from '@/components/Blog/slices/EmbedSlice.vue'
-import DividerSlice from '@/components/Blog/slices/DividerSlice'
-import ImageAttributesSlice from '@/components/Blog/slices/ImageAttributesSlice'
-import OrderedList from '@/components/Blog/slices/OrderedList'
-import DoubleColumnBorderedSlice from '@/components/Blog/slices/DoubleColumnBorderedSlice'
-import GithubGistSlice from '@/components/Blog/slices/GithubGistSlice'
-import GallerySlice from '@/components/Blog/slices/GallerySlice'
-import AuthorSlice from '@/components/Blog/slices/AuthorSlice'
+import CodeBlockSlice from '@/components/slices/CodeBlockSlice/index.vue'
+import SectionIdSlice from '@/components/slices/SectionIdSlice'
+import QuoteSlice from '@/components/slices/QuoteSlice.vue'
+import TextSlice from '@/components/slices/TextSlice.vue'
+import ImageCaptionSlice from '@/components/slices/ImageCaptionSlice.vue'
+import EmbedSlice from '@/components/slices/EmbedSlice.vue'
+import DividerSlice from '@/components/slices/DividerSlice'
+import ImageAttributesSlice from '@/components/slices/ImageAttributesSlice'
+import OrderedList from '@/components/slices/OrderedList'
+import DoubleColumnBorderedSlice from '@/components/slices/DoubleColumnBorderedSlice'
+import GithubGistSlice from '@/components/slices/GithubGistSlice'
+import GallerySlice from '@/components/slices/GallerySlice'
+import AuthorSlice from '@/components/slices/AuthorSlice'
 
 export default {
   name: 'SlicesBlock',

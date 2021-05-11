@@ -15,7 +15,7 @@ import 'vue-prism-editor/dist/prismeditor.min.css'
 
 import 'prismjs'
 import Prism from 'prismjs/components/prism-core.min'
-import '@/components/Blog/slices/CodeBlockSlice/highlights'
+import '@/components/slices/CodeBlockSlice/highlights'
 
 export default {
   name: 'CodeblockSlice',
@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../../assets/styles/_vars';
+@import '@/assets/styles/_vars.scss';
 
 .code-sample {
   line-height: 22px;

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import SwiperBlog from '@/components/Blog/slices/SwiperBlog'
+import SwiperBlog from '@/components/slices/SwiperBlog'
 
 export default {
   name: 'GallerySlice',
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
+@import '@/assets/styles/_vars.scss';
 
 .gallery-slice {
   margin-bottom: 48px;

@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import SimpleModal from '@/components/Blog/slices/SimpleModal'
+import SimpleModal from '@/components/slices/SimpleModal'
 
 export default {
   name: 'ImageCaptionSlice',
@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
+@import '@/assets/styles/_vars.scss';
 
 img {
   max-width: 100%;

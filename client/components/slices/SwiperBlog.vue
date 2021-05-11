@@ -98,8 +98,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../../assets/styles/cases/mixins';
-@import '../../../assets/styles/vars';
+@import '@/assets/styles/cases/_mixins.scss';
+@import '@/assets/styles/_vars.scss';
 
 .thumb-example {
   img {
