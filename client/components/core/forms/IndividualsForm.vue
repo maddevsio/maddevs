@@ -2,6 +2,7 @@
   <BaseForm
     id="individuals-form"
     ref="baseForm"
+    button-class-name="ui-button--transparent-bgc ui-button_submit-button-footer"
     button-label="Get individual proactive rockets"
     :use-description="true"
     @submit="handleSubmit"

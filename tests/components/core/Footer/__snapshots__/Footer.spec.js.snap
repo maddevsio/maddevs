@@ -394,7 +394,7 @@ exports[`Footer component should render correctly 1`] = `
                    
                   <div>
                     <input
-                      class="entry-field"
+                      class="modal-entry-field entry-field"
                       data-testid="test-base-form-fullName"
                       placeholder="John Smith"
                       type="text"
@@ -417,7 +417,7 @@ exports[`Footer component should render correctly 1`] = `
                     style="position: relative;"
                   >
                     <input
-                      class="entry-field"
+                      class="modal-entry-field entry-field"
                       data-testid="test-base-form-email"
                       type="text"
                     />
@@ -446,7 +446,7 @@ exports[`Footer component should render correctly 1`] = `
                     <!---->
                      
                     <textarea
-                      class="textarea modal-entry-field entry-field"
+                      class="modal-entry-field entry-field textarea"
                       data-testid="test-base-form-description"
                       placeholder="Describe your project..."
                     />

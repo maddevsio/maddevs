@@ -2,6 +2,7 @@
   <BaseForm
     id="teams-form"
     ref="baseForm"
+    button-class-name="ui-button--transparent-bgc ui-button_submit-button-footer"
     button-label="Get a team of ultra fast coders"
     :use-description="true"
     @submit="handleSubmit"

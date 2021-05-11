@@ -2,6 +2,7 @@
   <BaseForm
     id="get-your-partner-form"
     ref="baseForm"
+    button-class-name="ui-button--transparent-bgc ui-button_submit-button-footer"
     button-label="Get your trusted IT partner"
     :additional-valid="!$v.validationGroup.$invalid"
     @submit="handleSubmit"

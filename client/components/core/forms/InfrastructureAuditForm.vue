@@ -2,6 +2,7 @@
   <BaseForm
     id="infrastructure-audit-form"
     ref="baseForm"
+    button-class-name="ui-button--transparent-bgc ui-button_submit-button-footer"
     button-label="Get an infrastructure audit"
     :use-company="true"
     @submit="handleSubmit"

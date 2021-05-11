@@ -22,7 +22,7 @@
         >
           <div class="modal_head">
             <p class="modal_title">
-              What do you want to achieve?
+              {{ modalTitle }}
             </p>
             <div
               class="modal_close"
@@ -193,9 +193,7 @@ export default {
 
   &_head {
     position: relative;
-    display: flex;
-    justify-content: flex-end;
-    padding: 40px 52px 40px;
+    padding: 40px 55px 40px;
     max-width: 600px;
   }
 
@@ -300,6 +298,10 @@ export default {
       margin: 0;
     }
 
+    &_head {
+      padding-left: 10px;
+    }
+
     &_content {
       padding: 0 10px;
       max-height: 85vh;
@@ -307,6 +309,18 @@ export default {
 
     /deep/ .simplebar-vertical {
       right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .modal {
+    &_title {
+      font-size: 32px;
+    }
+
+    &_head {
+      padding-bottom: 30px;
     }
   }
 }

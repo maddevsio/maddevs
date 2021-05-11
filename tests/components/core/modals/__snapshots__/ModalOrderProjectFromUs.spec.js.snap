@@ -21,7 +21,7 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
          
         <div>
           <input
-            class="entry-field"
+            class="modal-entry-field entry-field"
             data-testid="test-base-form-fullName"
             placeholder="John Smith"
             type="text"
@@ -46,7 +46,7 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
          
         <div>
           <input
-            class="entry-field"
+            class="modal-entry-field entry-field"
             data-testid="test-base-form-company"
             placeholder="MyAwesomeCompany, Inc."
             type="text"
@@ -71,7 +71,7 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
          
         <div>
           <input
-            class="entry-field"
+            class="modal-entry-field entry-field"
             data-testid="test-base-form-email"
             placeholder="your@mail.com"
             type="text"
@@ -96,7 +96,7 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
          
         <div>
           <input
-            class="entry-field"
+            class="modal-entry-field entry-field"
             data-testid="test-base-form-phoneNumber"
             placeholder="+X XXX XXX-XXXX"
             type="text"
@@ -123,7 +123,7 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
           <!---->
            
           <textarea
-            class="textarea"
+            class="modal-entry-field entry-field textarea"
             data-testid="test-base-form-description"
             placeholder="Describe your project..."
           />
@@ -195,7 +195,7 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
     </div>
      
     <button
-      class="ui-button ui-button--disabled modal-button"
+      class="ui-button ui-button--disabled ui-button--transparent-bgc ui-button_submit-button-footer"
     >
       
     Submit your project

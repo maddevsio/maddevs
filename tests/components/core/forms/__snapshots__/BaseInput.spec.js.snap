@@ -15,7 +15,7 @@ exports[`BaseInput should render correctly 1`] = `
      
     <div>
       <input
-        class="entry-field"
+        class="modal-entry-field entry-field"
         data-testid="test-base-form-input"
         placeholder="custom placeholder"
         type="text"
