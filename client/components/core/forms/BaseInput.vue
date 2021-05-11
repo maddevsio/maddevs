@@ -58,7 +58,7 @@
       <textarea
         v-if="elementType === 'textarea'"
         :data-testid="`test-base-form-${name}`"
-        class="textarea"
+        class="textarea modal-entry-field entry-field"
         :placeholder="placeholder"
         :value="value"
         :class="{ invalid: validation.$error }"

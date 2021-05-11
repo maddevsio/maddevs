@@ -20,14 +20,19 @@
           v-if="contentLoaded"
           class="modal_container"
         >
-          <div
-            class="modal_close"
-            @click="close"
-          >
-            <img
-              src="@/assets/img/common/close-icon-circle.svg"
-              alt="Close modal"
+          <div class="modal_head">
+            <p class="modal_title">
+              What do you want to achieve?
+            </p>
+            <div
+              class="modal_close"
+              @click="close"
             >
+              <img
+                src="@/assets/img/common/close-icon-circle.svg"
+                alt="Close modal"
+              >
+            </div>
           </div>
           <Simplebar
             ref="content"
@@ -68,6 +73,11 @@ export default {
     appendToBody: {
       type: Boolean,
       default: false,
+    },
+
+    modalTitle: {
+      type: String,
+      default: '',
     },
   },
 
@@ -168,9 +178,9 @@ export default {
 
   &_close {
     position: absolute;
+    padding: 25px 25px 12px;
     top: 0;
     right: 0;
-    padding: 25px 25px 12px;
     cursor: pointer;
     z-index: 1;
     background-color: transparent;
@@ -181,6 +191,23 @@ export default {
     }
   }
 
+  &_head {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 52px 40px;
+    max-width: 600px;
+  }
+
+  &_title {
+    font-family: Inter, sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    color: $text-color--silver;
+  }
+
   &_container {
     width: 600px;
     max-width: 600px;
@@ -189,7 +216,7 @@ export default {
     position: relative;
     z-index: 12;
     margin: auto;
-    padding: 70px 0 53px;
+    padding: 0 0 53px;
     box-sizing: border-box;
     transition: top 0.4s ease;
     overflow: hidden;
