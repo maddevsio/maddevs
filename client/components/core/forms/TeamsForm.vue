@@ -20,7 +20,7 @@
 import BaseForm from '@/components/core/forms/BaseForm'
 import RadioList from '@/components/shared/UIRadioList'
 import sendEmailMixin from '@/mixins/sendEmailMixin'
-import createNewLeadMixin from '@/mixins/createNewLeadMixin'
+
 import exceptKeys from '@/helpers/exceptKeys'
 
 export default {
@@ -30,7 +30,7 @@ export default {
     RadioList,
   },
 
-  mixins: [sendEmailMixin(304637, 'Teams'), createNewLeadMixin('teams')],
+  mixins: [sendEmailMixin(304637, 'Teams')],
 
   data() {
     return {
@@ -66,17 +66,6 @@ export default {
 
       // from mixin
       this.submitEmail(variables)
-
-      const lead = {
-        ...formData,
-        description: this.buildLeadDescription('Project description and team size:', `
-          Project description: ${formData.description};
-          Team size: ${variables.selectedTeamSize};
-        `),
-      }
-
-      // from mixin
-      this.submitLead(lead)
     },
 
     reset() {
