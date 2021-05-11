@@ -43,13 +43,11 @@ export default {
 @import '../../assets/styles/vars';
 
 .ui-button {
+  @include font('Inter', 16px, 700);
   border: 1px solid $border-color--red-opacity;
   background-color: $bgcolor--red;
   border-radius: 4px;
   color: $text-color--white;
-  font-size: 16px;
-  font-family: 'Poppins-Bold', sans-serif;
-  font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 24px;
   box-shadow: none;
@@ -80,12 +78,11 @@ export default {
   }
 
   &_submit-button-footer {
+    @include font('Inter', 16px, 400);
     width: 100%;
     height: 54px;
     line-height: 27px;
     letter-spacing: -0.1px;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
     font-weight: 400;
   }
 

@@ -14,8 +14,7 @@ export default {
 @import '../../assets/styles/vars';
 
 .paragraph {
-  font-size: 16px;
-  font-family: 'Poppins-Regular', sans-serif;
+  @include font('Inter', 16px, 400);
   line-height: 24px;
   letter-spacing: -0.02em;
   color: $remote-tech-staff-sub-title-grey;

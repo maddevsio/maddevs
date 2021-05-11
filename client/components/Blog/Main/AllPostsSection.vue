@@ -152,6 +152,7 @@ export default {
       display: none;
     }
     label {
+      @include font('Poppins', 18px, 600);
       cursor: pointer;
       box-shadow: none;
       display: flex;
@@ -159,8 +160,6 @@ export default {
       padding: 47px 22px 22px;
       color: $text-color--black;
       background-color: $bgcolor--silver;
-      font-family: 'Poppins-Medium', sans-serif;
-      font-size: 18px;
       line-height: 22px;
       font-weight: 700;
       min-height: 44px;

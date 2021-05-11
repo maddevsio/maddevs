@@ -112,9 +112,7 @@ export default {
   }
 
   &__paragraph {
-    font-family: 'Poppins-Regular', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+    @include font('Inter', 18px, 400);
     letter-spacing: -0.02em;
     line-height: 34px;
   }

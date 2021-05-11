@@ -177,8 +177,7 @@ export default {
   }
 
   &__sub-title {
-    font-family: 'Poppins-Bold', sans-serif;
-    font-size: 40px;
+    @include font('Poppins', 40px, 700);
     line-height: 120%;
     letter-spacing: -1px;
     margin-top: 34px;
@@ -320,12 +319,12 @@ export default {
 }
 
 .contribution-widget {
+  @include font('Inter', 16px, 400);
   display: flex;
   align-items: self-start;
   position: relative;
   z-index: 1;
   color: $text-color--grey;
-  font-family: 'Poppins-Regular', sans-serif;
   margin-top: 26px;
   font-size: 16px;
   line-height: 24px;

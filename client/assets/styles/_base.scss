@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inter:400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Poppins:wght@600;700&display=swap');
 
 body {
   margin: 0;
@@ -6,7 +6,7 @@ body {
   min-width: 320px;
   transition: all .4s ease;
   background-color: #111213;
-  font-family: 'Poppins-Regular', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-feature-settings: 'zero' on, 'ordn' on, 'ss02' on, 'ss05' on;
   overflow-y: overlay; // removes the black line near scrollbar when Chrome browser is scaled > 100%
 }
@@ -68,45 +68,4 @@ main {
   position: fixed;
   overflow: hidden;
   top: 0;
-}
-
-/* poppins-400normal - latin */
-@font-face {
-  font-family: 'Poppins-Regular';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src:
-    url('~assets/fonts/Poppins/Poppins-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-    url('~assets/fonts/Poppins/Poppins-Regular.woff') format('woff'), /* Modern Browsers */
-    url('~assets/fonts/Poppins/Poppins-Regular.otf') format('otf'), /* Fancy Font Features */
-    url('~assets/fonts/Poppins/Poppins-Regular.ttf') format('otf'); /* Fancy Font Features */
-}
-
-/* poppins-700normal - latin */
-@font-face {
-  font-family: 'Poppins-Bold';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src:
-    url('~assets/fonts/Poppins/Poppins-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-    url('~assets/fonts/Poppins/Poppins-Bold.woff') format('woff'), /* Modern Browsers */
-    url('~assets/fonts/Poppins/Poppins-Bold.otf') format('otf'); /* Fancy Font Features */
-}
-
-/* poppins-600normal - latin */
-/* Get a problem with this font weight - can't add font-features for it. HAve removed woff2 and woff formats and includes
-  font form Google-Font service. Doesn't do it for other font-weight - they are good;
-*/
-@font-face {
-  font-family: 'Poppins-Medium';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src:
-    url('~assets/fonts/Poppins/Poppins-Medium.woff2') format('woff2'), /* Super Modern Browsers */
-    url('~assets/fonts/Poppins/Poppins-Medium.woff') format('woff'), /* Modern Browsers */
-    url('~assets/fonts/Poppins/Poppins-Medium.otf') format('otf'),
-    url('~assets/fonts/Poppins/Poppins-Medium.ttf') format('ttf');
 }
