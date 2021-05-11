@@ -56,9 +56,7 @@ export default {
     }
 
     &_description {
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
-      font-size: 16px;
+      @include font('Inter', 16px, 400);
       line-height: 135%;
       letter-spacing: -0.035em;
     }
@@ -69,8 +67,7 @@ export default {
     }
 
     &_number {
-      font-family: 'Poppins-Medium', sans-serif;
-      font-size: 48px;
+      @include font('Poppins', 48px, 600);
       line-height: 90%;
       letter-spacing: -0.02em;
     }

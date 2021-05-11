@@ -1,33 +1,27 @@
 @import "../vars";
 
 @mixin title($color, $size, $spacing) {
-  font-family: 'Poppins-Medium', sans-serif;
+  @include font('Poppins', $size, 600);
   font-style: normal;
   font-feature-settings: 'zero' on, 'ordn' on, 'ss02' on, 'ss05' on;
 
   color: $color;
-  font-weight: 600;
-  font-size: $size;
   line-height: 130%;
   letter-spacing: $spacing;
 }
 
 @mixin default_text($color, $size, $height, $spacing, $weight) {
+  @include font('Inter', $size, $weight);
   color: $color;
-  font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: $weight;
-  font-size: $size;
   line-height: $height;
   letter-spacing: $spacing;
 }
 
 @mixin italic_text($color, $size, $height, $spacing) {
+  @include font('Inter', $size, 400);
   color: $color;
-  font-family: Inter, sans-serif;
   font-style: italic;
-  font-weight: normal;
-  font-size: $size;
   line-height: $height;
   letter-spacing: $spacing;
 }

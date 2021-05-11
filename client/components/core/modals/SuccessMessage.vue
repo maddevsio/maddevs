@@ -35,20 +35,17 @@ export default {
   background-color: $modal-bg-color;
 
   &__title {
+    @include font('Poppins', 40px, 700);
     padding-top: 28px;
-    font-size: 40px;
     color: $text-color--red;
     letter-spacing: -1px;
-    font-family: 'Poppins-Bold', sans-serif;
-    font-weight: 700;
   }
 
   &__info-text {
+    @include font('Inter', 18px, 400);
     padding-top: 23px;
-    font-size: 18px;
     color: $text-color--grey;
     letter-spacing: -0.03em;
-    font-family: 'Poppins-Regular', sans-serif;
   }
 }
 

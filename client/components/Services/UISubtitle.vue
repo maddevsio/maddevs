@@ -14,8 +14,7 @@ export default {
 @import '../../assets/styles/vars';
 
 .item-sub-title {
-  font-size: 23px;
-  font-family: 'Poppins-Medium', sans-serif;
+  @include font('Poppins', 23px, 600);
   line-height: 136%;
   letter-spacing: -1px;
   color: $remote-tech-staff-sub-title-grey;

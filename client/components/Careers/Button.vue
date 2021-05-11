@@ -36,12 +36,11 @@ export default {
 @import '../../assets/styles/vars';
 
 .button {
+  @include font('Inter', 16px, 400);
   height: 56px;
   width: 401px;
   background-color: $button-bgcolor--red;
   color: $text-color--white;
-  font-size: 16px;
-  font-family: 'Poppins-Regular', sans-serif;
   line-height: 24px;
   letter-spacing: -0.02em;
   border-radius: 2px;

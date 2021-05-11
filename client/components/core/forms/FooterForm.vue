@@ -141,8 +141,7 @@ export default {
   .entry-field,
   .error-text,
   /deep/ .form-checkbox-label {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    @include font('Inter', 16px, 400);
   }
 
   .entry-field,

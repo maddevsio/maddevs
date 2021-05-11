@@ -54,9 +54,8 @@ export default {
     }
 
     span {
+      @include font('Inter', 10px, 400);
       white-space: nowrap;
-      font-family: 'Poppins-Regular', sans-serif;
-      font-size: 10px;
       line-height: 13px;
       letter-spacing: -0.02em;
       margin-top: 9px;

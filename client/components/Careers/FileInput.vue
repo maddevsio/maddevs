@@ -72,10 +72,9 @@ export default {
   }
 
   &__cv {
+    @include font('Inter', 22px, 400);
     min-width: max-content;
     color: $text-color--grey;
-    font-family: 'Poppins-Regular', sans-serif;
-    font-size: 22px;
     line-height: 24px;
     letter-spacing: -0.02em;
     text-decoration-line: none;

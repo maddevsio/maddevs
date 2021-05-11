@@ -138,23 +138,16 @@ export default {
   }
 
   &__title {
-    font-family: 'Poppins-Bold', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
+    @include font('Poppins', 32px, 700);
     line-height: 32px;
     letter-spacing: -1px;
     text-transform: capitalize;
     color: $text-color--red;
   }
 
-  &__description,
-  &__button {
-    font-family: 'Poppins-Regular', sans-serif;
-  }
-
   &__description {
+    @include font('Inter', 14px, 400);
     margin-top: 8px;
-    font-size: 14px;
     line-height: 22px;
     text-align: center;
     letter-spacing: -0.02em;
@@ -162,10 +155,10 @@ export default {
   }
 
   &__button {
+    @include font('Inter', 16px, 400);
     width: 100%;
     height: 56px;
     margin-top: 47px;
-    font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.02em;
   }
