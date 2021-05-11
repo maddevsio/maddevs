@@ -21,7 +21,7 @@ exports[`ModalInfrastructureAudit component should render correctly 1`] = `
          
         <div>
           <input
-            class="modal-entry-field entry-field"
+            class="entry-field"
             data-testid="test-base-form-fullName"
             placeholder="John Smith"
             type="text"
@@ -46,7 +46,7 @@ exports[`ModalInfrastructureAudit component should render correctly 1`] = `
          
         <div>
           <input
-            class="modal-entry-field entry-field"
+            class="entry-field"
             data-testid="test-base-form-company"
             placeholder="MyAwesomeCompany, Inc."
             type="text"
@@ -71,7 +71,7 @@ exports[`ModalInfrastructureAudit component should render correctly 1`] = `
          
         <div>
           <input
-            class="modal-entry-field entry-field"
+            class="entry-field"
             data-testid="test-base-form-email"
             placeholder="your@mail.com"
             type="text"
@@ -96,7 +96,7 @@ exports[`ModalInfrastructureAudit component should render correctly 1`] = `
          
         <div>
           <input
-            class="modal-entry-field entry-field"
+            class="entry-field"
             data-testid="test-base-form-phoneNumber"
             placeholder="+X XXX XXX-XXXX"
             type="text"

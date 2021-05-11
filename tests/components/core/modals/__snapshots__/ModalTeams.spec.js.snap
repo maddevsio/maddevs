@@ -21,7 +21,7 @@ exports[`ModalTeams component should render correctly 1`] = `
          
         <div>
           <input
-            class="modal-entry-field entry-field"
+            class="entry-field"
             data-testid="test-base-form-fullName"
             placeholder="John Smith"
             type="text"
@@ -48,7 +48,7 @@ exports[`ModalTeams component should render correctly 1`] = `
          
         <div>
           <input
-            class="modal-entry-field entry-field"
+            class="entry-field"
             data-testid="test-base-form-email"
             placeholder="your@mail.com"
             type="text"
@@ -73,7 +73,7 @@ exports[`ModalTeams component should render correctly 1`] = `
          
         <div>
           <input
-            class="modal-entry-field entry-field"
+            class="entry-field"
             data-testid="test-base-form-phoneNumber"
             placeholder="+X XXX XXX-XXXX"
             type="text"
@@ -100,7 +100,7 @@ exports[`ModalTeams component should render correctly 1`] = `
           <!---->
            
           <textarea
-            class="modal-entry-field entry-field textarea"
+            class="textarea"
             data-testid="test-base-form-description"
             placeholder="Describe your project..."
           />
