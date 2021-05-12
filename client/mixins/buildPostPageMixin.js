@@ -1,22 +1,17 @@
 import formatDate from '@/helpers/formatDate'
 import extractSchemaOrg from '@/helpers/extractSchemaOrg'
+import { buildHead } from '@/data/seo'
 
-const buildPostPageMixin = (pageName = 'blog', postType = 'post') => ({
+const buildBlogPostPageMixin = (postType = 'post') => ({
   async asyncData({
     $prismic, store, params, error,
   }) {
     let schemaOrgSnippet = ''
-    let openGraphUrl = `${process.env.domain}/blog/${params.uid}/`
-
-    // Open graph url
-    if (pageName === 'author' || pageName === 'tag') openGraphUrl = `${process.env.domain}/blog/${pageName}/${params.uid}/${params.postUID}/`
-    if (pageName === 'customer-university') openGraphUrl = `${process.env.domain}/customer-university/${params.uid}/`
+    const openGraphUrl = `${process.env.domain}/${postType === 'customer_university' ? 'customer-university' : 'blog'}/${params.uid}/`
 
     try {
-      const post = await store.dispatch('getBlogPost', { type: postType, uid: (params.postUID || params.uid) })
-      if (post.data.post_author) {
-        await store.dispatch('getBlogAuthor', post.data.post_author.uid)
-      }
+      const post = await store.dispatch('getBlogPost', { type: postType, uid: params.uid })
+      if (post.data.post_author) await store.dispatch('getBlogAuthor', post.data.post_author.uid)
 
       // Schema org snippet
       schemaOrgSnippet = extractSchemaOrg(post.data.schema_org_snippets)
@@ -61,48 +56,14 @@ const buildPostPageMixin = (pageName = 'blog', postType = 'post') => ({
   },
 
   head() {
-    return {
+    return buildHead({
       title: this.post.metaTitle || '',
-      meta: [
-        { name: 'description', content: this.post.metaDescription || '' },
-        // Facebook / Open Graph
-        { property: 'og:site_name', content: 'Mad Devs: Software & Mobile App Development Company' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: this.openGraphUrl },
-        {
-          property: 'og:title',
-          content: this.post.metaTitle || '',
-        },
-        { property: 'og:description', content: this.post.metaDescription || '' },
-        {
-          property: 'og:image',
-          content: this.post.featuredImage.url ? this.post.featuredImage.url : '/favicon.ico',
-        },
-        { property: 'og:image:width', content: '1200' },
-        { property: 'og:image:height', content: '630' },
-        // Twitter / Twitter Card
-        { property: 'twitter:card', content: 'summary_large_image' },
-        {
-          property: 'twitter:text:title',
-          content: this.post.metaTitle || '',
-        },
-        { property: 'twitter:description', content: this.post.metaDescription || '' },
-        {
-          property: 'twitter:image:src',
-          content: this.post.featuredImage.url ? this.post.featuredImage.url : '/favicon.ico',
-        },
-        { property: 'twitter:url', content: this.openGraphUrl },
-      ],
-
-      link: [{ rel: 'canonical', href: this.openGraphUrl }],
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          type: 'application/ld+json',
-          innerHTML: this.schemaOrgSnippet,
-        },
-      ],
-    }
+      metaTitle: this.post.metaTitle || '',
+      description: this.post.metaDescription || '',
+      url: this.openGraphUrl,
+      jsonLd: this.schemaOrgSnippet,
+      image: this.post.featuredImage.url ? this.post.featuredImage.url : '/favicon.ico',
+    })
   },
 
   mounted() {
@@ -110,4 +71,4 @@ const buildPostPageMixin = (pageName = 'blog', postType = 'post') => ({
   },
 })
 
-export default buildPostPageMixin
+export default buildBlogPostPageMixin
