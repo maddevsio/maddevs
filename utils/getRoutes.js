@@ -8,7 +8,7 @@ const EXCLUDE_ROUTES = {
   '/faq': 0.7,
 }
 
-const IGNORE_ROUTES = ['/blog/tag/featured-post/']
+const IGNORE_ROUTES = ['/blog/tag/featured-post']
 
 const getRoutes = async () => {
   const getPosts = async pageUrl => {
