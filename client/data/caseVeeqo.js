@@ -34,3 +34,21 @@ export const techSolutions = [
     description: 'Stabilizing connection pooling by applying ELB and thus distributing traffic more evenly to decrease the number of SPOFs.',
   },
 ]
+
+export const elasticsearchResults = [
+  {
+    icon: 'speed-card',
+    title: '~250-300 ms',
+    description: 'Search time went down to under 5 seconds (now: ~250-300 ms) ',
+  },
+  {
+    icon: 'message-card',
+    title: 'Feedback',
+    description: 'We received massive positive feedback as Veeqo users were contacting customer ',
+  },
+  {
+    icon: 'gears-card',
+    title: 'Elasticsearch',
+    description: 'Elasticsearch became more efficient and reliable without costing the customer more',
+  },
+]

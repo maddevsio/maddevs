@@ -1,30 +1,55 @@
 <template>
-  <blockquote class="case_blockquote">
+  <div class="case_quote-wrap">
     <img
       :data-src="require('@/assets/img/Studies/svg/qmark.svg')"
       alt="blockquote"
-      class="case_blockquote-mark img_lazy"
+      class="case_mark img_lazy"
     >
-    <slot />
-  </blockquote>
+    <blockquote class="case_blockquote">
+      <slot />
+    </blockquote>
+    <p
+      v-if="author !== ''"
+      class="case_quote-author m-8_top"
+    >
+      {{ author }}
+    </p>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'TextQuote',
+  props: {
+    author: {
+      type: String,
+      default: '',
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 @import '../../../assets/styles/cases/_mixins';
 
-.case_blockquote {
-  display: flex;
-  position: relative;
-  padding-left: 62px;
-  @include default_text($text-color--black-oil, 30px, 166%, -0.02em, normal);
+.case {
+  &_quote-wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 62px;
+  }
 
-  &-mark {
+  &_blockquote {
+    margin: 0;
+    @include default_text($text-color--black-oil, 30px, 166%, -0.02em, normal);
+  }
+
+  &_quote-author {
+    @include italic_text($text-color--grey-opacity-40-percent, 16px, 166%, -0.035em);
+  }
+
+  &_mark {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -34,10 +59,19 @@ export default {
   }
 
   @media screen and (max-width: 768px) {
-    padding-left: 37px;
-    @include default_text($text-color--black-oil, 24px, 150%, -0.02em, normal);
+    &_quote-wrap {
+      padding-left: 37px;
+    }
 
-    &-mark {
+    &_blockquote {
+      @include default_text($text-color--black-oil, 24px, 150%, -0.02em, normal);
+    }
+
+    &_quote-author {
+      @include italic_text($text-color--grey-opacity-40-percent, 13px, 166%, -0.02em);
+    }
+
+    &_mark {
       width: 32px;
       height: 33px;
     }

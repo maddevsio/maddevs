@@ -55,7 +55,10 @@
       <ListItemDot>Creating backups</ListItemDot>
       <ListItemDot>Running access audit and configuring SSO for more secure access</ListItemDot>
     </List>
-    <TextQuote class="m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom">
+    <TextQuote
+      class="m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+      author="Maxim Glotov, DevOps Engineer at Mad Devs"
+    >
       Everything down to the last comma is now written in the form of code. Even if we took Jenkins down completely and had to build it from scratch again, it’d take us no more than 10 minutes.
     </TextQuote>
   </section>
@@ -120,6 +123,10 @@ export default {
         padding-bottom: 0;
       }
     }
+  }
+
+  &_bold {
+    font-weight: 700;
   }
 
   @media screen and (max-width: 950px) {
