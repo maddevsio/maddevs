@@ -8,6 +8,8 @@ const EXCLUDE_ROUTES = {
   '/faq': 0.7,
 }
 
+const IGNORE_ROUTES = ['/blog/tag/featured-post/']
+
 const getRoutes = async () => {
   const getPosts = async pageUrl => {
     let posts = []
@@ -76,20 +78,28 @@ export default getRoutes
 const getRoutePriority = path => 1 - (((path.split('/').length) - 1) * 0.1)
 
 const generateRoute = name => {
+  if (IGNORE_ROUTES.includes(name)) return null
+
   const priority = EXCLUDE_ROUTES[name] || getRoutePriority(name)
 
-  return (
-    {
-      priority,
-      url: `${name}/`,
-      changefreq: 'daily',
-      lastmod: new Date().toISOString().split('T')[0],
-    }
-  )
+  return {
+    priority,
+    url: `${name}/`,
+    changefreq: 'daily',
+    lastmod: new Date().toISOString().split('T')[0],
+  }
 }
 
 export const getSitemapRoutes = async () => {
+  const sitemap = []
   const routes = await getRoutes()
 
-  return routes.map(route => generateRoute(route.trim()))
+  routes.forEach(route => {
+    const sitemapRoute = generateRoute(route.trim())
+    if (sitemapRoute) {
+      sitemap.push(sitemapRoute)
+    }
+  })
+
+  return sitemap
 }
