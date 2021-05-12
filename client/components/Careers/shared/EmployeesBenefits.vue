@@ -2,12 +2,14 @@
   <div class="employees-benefits">
     <div
       v-for="benefit in benefits"
-      :key="benefit.icon"
+      :key="benefit.icon.name"
       class="employees-benefits__item"
     >
       <img
-        :src="require(`@/assets/img/Careers/svg/employeesBenefits/${benefit.icon}.svg`)"
-        class="employees-benefits__item-icon"
+        :data-src="require(`@/assets/img/Careers/svg/employeesBenefits/${benefit.icon.name}.svg`)"
+        :width="benefit.icon.width"
+        :height="benefit.icon.height"
+        class="employees-benefits__item-icon img_lazy"
       >
       <p class="employees-benefits__item-title">
         {{ benefit.title }}
@@ -42,6 +44,7 @@ export default {
     border-radius: 4px;
     &-icon {
       display: block;
+      min-height: 24px;
     }
     &-title {
       margin-top: 15px;
