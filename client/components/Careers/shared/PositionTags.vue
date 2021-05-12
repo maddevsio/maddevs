@@ -1,8 +1,5 @@
 <template>
-  <div
-    v-if="tags.length"
-    class="position-tags"
-  >
+  <div class="position-tags">
     <span
       v-for="tag in tags"
       :key="tag"

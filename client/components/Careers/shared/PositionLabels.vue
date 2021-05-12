@@ -1,9 +1,15 @@
 <template>
   <div class="position-labels">
-    <div class="position-labels__item">
+    <div
+      v-if="labels.remote"
+      class="position-labels__item"
+    >
       Remote
     </div>
-    <div class="position-labels__item">
+    <div
+      v-if="labels.relocation"
+      class="position-labels__item"
+    >
       Open for relocation
     </div>
   </div>
@@ -12,6 +18,12 @@
 <script>
 export default {
   name: 'PositionLabels',
+  props: {
+    labels: {
+      type: Object,
+      default: () => {},
+    },
+  },
 }
 </script>
 
