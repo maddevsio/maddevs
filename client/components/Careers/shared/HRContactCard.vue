@@ -2,8 +2,9 @@
   <div class="hr-contact">
     <div class="hr-contact__image">
       <img
-        src=""
-        alt="alt text author"
+        :data-src="require(`@/assets/img/Careers/jpeg/HRContactCard/diana-hr.jpeg`)"
+        class="img_lazy"
+        alt="Diana"
       >
     </div>
     <div class="hr-contact__info">
@@ -15,11 +16,14 @@
         I am here to simplify the hiring process and set you up for success.
         Feel free to telegram me
         <a
-          href="https://web.telegram.org/#/im"
+          href="https://t.me/DianaHRDigital"
           target="_blank"
         >
           <img
-            :src="require(`@/assets/img/Careers/svg/careersAuthor/telegram.svg`)"
+            :data-src="require(`@/assets/img/Careers/svg/careersAuthor/telegram.svg`)"
+            width="20"
+            height="17"
+            class="img_lazy"
           >
           <span>@DianaHRDigital</span>
         </a>
@@ -30,7 +34,7 @@
 
 <script>
 export default {
-  name: 'CareersAuthor',
+  name: 'CareersAuthorCard',
 
 }
 </script>
@@ -57,15 +61,14 @@ export default {
     }
   }
   &__title {
-    font-weight: 600;
-    font-size: 33px;
-    line-height: 130%;
+    @include font('Poppins', 33px, 600);
+    line-height: 43px;
     letter-spacing: -0.04em;
   }
   &__description {
     margin-top: 10px;
     font-size: 17px;
-    line-height: 159%;
+    line-height: 27px;
     letter-spacing: -0.013em;
     a {
       display: inline-block;
