@@ -12,7 +12,6 @@
             v-model="name"
             type="text"
             placeholder="Your Name"
-            :autofocus="true"
             class="position-form__input"
             @input="$v.name.$touch"
           />.

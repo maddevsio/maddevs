@@ -23,9 +23,11 @@
         >
           <PositionTags :tags="vacancy.tags" />
         </div>
-        <UIButton class="careers-position__apply-button">
-          Apply now
-        </UIButton>
+        <NuxtLink to="#careers-position-form">
+          <UIButton class="careers-position__apply-button">
+            Apply now
+          </UIButton>
+        </NuxtLink>
       </div>
     </div>
   </div>
