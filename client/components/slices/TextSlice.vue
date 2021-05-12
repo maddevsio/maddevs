@@ -31,25 +31,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.textslice {
-  word-break: break-word;
-  /deep/ h1,
-  /deep/ h2,
-  /deep/ h3,
-  /deep/ h4,
-  /deep/ h5,
-  /deep/ h6,
-  /deep/ p {
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-  /deep/ p {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-</style>

@@ -100,6 +100,20 @@ export default {
 @import '@/assets/styles/_vars.scss';
 @import '@/assets/styles/cases/_mixins.scss';
 
+/deep/ h1,
+/deep/ h2,
+/deep/ h3,
+/deep/ h4,
+/deep/ h5,
+/deep/ h6 {
+  margin-top: 48px;
+  margin-bottom: 12px;
+}
+
+/deep/ h1 {
+  @include title($text-color--black-oil, 38px, -0.04em);
+  display: none; // h1 tag should not be used
+}
 /deep/ h2 {
   @include title($text-color--black-oil, 32px, -0.04em);
 }
@@ -116,33 +130,42 @@ export default {
   @include title($text-color--black-oil, 14px, -0.04em);
 }
 
-/deep/ h1,
-/deep/ h2,
-/deep/ h3,
-/deep/ h4,
-/deep/ h5,
-/deep/ h6 {
-  margin-top: 48px;
-  margin-bottom: 12px;
+/deep/ a {
+  text-decoration: underline;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
 }
 
-/deep/ h1,
-/deep/ strong,
-/deep/ p,
-/deep/ span,
-/deep/ li {
-  color: $text-color--black-oil;
+/deep/ img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
-/deep/ h1,
-/deep/ li {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
+/deep/ hr {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid $border-color--grey-20-percent;
+  margin: 48px 0;
 }
 
 /deep/ strong {
-  font-family: 'Inter', sans-serif;
   font-weight: 700;
+}
+
+/deep/ ul,
+/deep/ ol {
+  padding-left: 18px;
+}
+
+/deep/ ul {
+  list-style: disc;
+}
+
+/deep/ ol {
+  list-style: decimal;
 }
 
 /deep/ p,
@@ -160,17 +183,10 @@ export default {
 }
 
 /deep/ p {
-  @include font('Inter', 16px, 400);
   margin: 12px 0;
-}
-
-/deep/ p + p {
-  margin-top: 24px;
-}
-
-/deep/ ul {
-  list-style: disc;
-  padding-left: 18px;
+  & + p {
+    margin-top: 24px;
+  }
 }
 
 /deep/ .inline-code {
@@ -193,31 +209,6 @@ export default {
   background: $bgcolor--grey-light;
   border-radius: 2px;
   line-height: 24px;
-}
-
-/deep/ ol {
-  margin: 35px 0;
-}
-
-/deep/ a {
-  text-decoration: underline;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-}
-
-/deep/ img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
-/deep/ hr {
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-  border-top: 1px solid $border-color--grey-20-percent;
-  margin: 48px 0;
 }
 
 @media only screen and (max-width: 1024px) {
