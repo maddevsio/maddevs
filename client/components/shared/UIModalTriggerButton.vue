@@ -46,13 +46,12 @@ export default {
 @import '../../assets/styles/vars';
 
 .ui-button-modal-trigger {
+  @include font('Inter', 18px, 400);
   height: 65px;
   border: 1px solid $border-color--grey;
   border-radius: 2px;
   box-shadow: none;
   background-color: transparent;
-  font-size: 18px;
-  font-family: 'Poppins-Regular', sans-serif;
   cursor: pointer;
   transition: 0.4s;
 

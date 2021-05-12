@@ -144,26 +144,21 @@ export default {
     margin-top: 0;
   }
   &__title {
-    font-size: 52px;
+    @include font('Poppins', 52px, 600);
     line-height: 130%;
     margin-bottom: 15px;
     letter-spacing: -2px;
-    font-family: 'Poppins-Medium', sans-serif;
   }
   &__paragraph {
-    font-size: 17px;
+    @include font('Inter', 17px, 400);
     line-height: 28px;
     letter-spacing: -0.035em;
     margin-bottom: 44px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
   }
   &__meta {
+    @include font('Inter', 13px, 400);
     display: flex;
     align-items: center;
-    font-size: 13px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
 
     &-wrapper {
       display: flex;

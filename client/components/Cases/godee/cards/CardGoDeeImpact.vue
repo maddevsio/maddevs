@@ -40,6 +40,7 @@ export default {
 
 <style scoped lang="scss">
 @import '../../../../assets/styles/cases/_mixins';
+@import '../../../../assets/styles/vars';
 
 .card-content {
   display: flex;
@@ -72,8 +73,7 @@ export default {
   }
 
   &_title {
-    font-family: 'Poppins-Medium', sans-serif;
-    font-size: 87px;
+    @include font('Poppins', 87px, 600);
     line-height: 104%;
     letter-spacing: -0.02em;
     color: $text-color--white-primary;

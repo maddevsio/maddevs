@@ -99,11 +99,10 @@ export default {
   }
 
   &__date-tag {
+    @include font('Inter', 13px, 400);
     display: flex;
     align-items: center;
-    font-size: 13px;
     line-height: 22px;
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
 
     .blog-post__date {

@@ -88,74 +88,72 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../../assets/styles/vars';
+@import '../../../assets/styles/vars';
 
-  .case {
-    &_video-wrapper {
-      width: 23%;
-      max-width: 460px;
-      min-width: 270px;
-      video {
-        display: block;
-        &::-webkit-media-controls {
-          display:none !important;
-        }
-      }
-    }
-
-    &_sound-control {
-      width: max-content;
-      display: flex;
-      margin: auto auto 28px auto;
-      border-radius: 26px;
-      background-color: $bgcolor--sound-control;
-      cursor: pointer;
-    }
-
-    &_sound-icon-wrap {
-      width: 33px;
-      height: 30px;
-      position: relative;
-      margin: 3px 0 3px 3px;
-      border: none;
-      border-radius: 100%;
-      background-color: $bgcolor--black-oil;
-      cursor: pointer;
-    }
-
-    &_sound-control-desc {
-      padding: 8px 20px;
-      font-size: 17px;
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
-      line-height: 20px;
-      letter-spacing: -0.41px;
-      color: $text-color--grey-opacity-40-percent;
-    }
-
-    &_lottie {
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    @media only screen and (max-width: 1180px) {
-      &_sound-icon-wrap {
-        width: 29px;
-        height: 26px;
-      }
-
-      &_sound-control-desc {
-        padding: 6px 12px;
-        font-size: 14px;
-      }
-
-      &_lottie {
-        width: 17px;
+.case {
+  &_video-wrapper {
+    width: 23%;
+    max-width: 460px;
+    min-width: 270px;
+    video {
+      display: block;
+      &::-webkit-media-controls {
+        display:none !important;
       }
     }
   }
+
+  &_sound-control {
+    width: max-content;
+    display: flex;
+    margin: auto auto 28px auto;
+    border-radius: 26px;
+    background-color: $bgcolor--sound-control;
+    cursor: pointer;
+  }
+
+  &_sound-icon-wrap {
+    width: 33px;
+    height: 30px;
+    position: relative;
+    margin: 3px 0 3px 3px;
+    border: none;
+    border-radius: 100%;
+    background-color: $bgcolor--black-oil;
+    cursor: pointer;
+  }
+
+  &_sound-control-desc {
+    @include font('Inter', 17px, 400);
+    padding: 8px 20px;
+    line-height: 20px;
+    letter-spacing: -0.41px;
+    color: $text-color--grey-opacity-40-percent;
+  }
+
+  &_lottie {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media only screen and (max-width: 1180px) {
+    &_sound-icon-wrap {
+      width: 29px;
+      height: 26px;
+    }
+
+    &_sound-control-desc {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+
+    &_lottie {
+      width: 17px;
+    }
+  }
+}
 </style>

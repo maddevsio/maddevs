@@ -14,9 +14,8 @@ export default {
 @import '../../assets/styles/vars';
 
 .item-title {
+  @include font('Poppins', 40px, 700);
   margin-bottom: 24px;
-  font-size: 40px;
-  font-family: 'Poppins-Bold', sans-serif;
   line-height: 120%;
   letter-spacing: -1px;
   color: $text-color--white;

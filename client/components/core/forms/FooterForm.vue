@@ -25,7 +25,6 @@
 import BaseForm from '@/components/core/forms/BaseForm'
 import ModalSuccess from '@/components/core/modals/ModalSuccess'
 import sendEmailMixin from '@/mixins/sendEmailMixin'
-import createNewLeadMixin from '@/mixins/createNewLeadMixin'
 
 export default {
   name: 'FooterForm',
@@ -34,7 +33,7 @@ export default {
     ModalSuccess,
   },
 
-  mixins: [sendEmailMixin(305480, 'Contact Me'), createNewLeadMixin('footer-form')],
+  mixins: [sendEmailMixin(305480, 'Contact Me')],
 
   data() {
     return {
@@ -50,14 +49,6 @@ export default {
 
       // from mixin
       this.submitEmail(variables)
-
-      const lead = {
-        ...formData,
-        description: this.buildLeadDescription('Project description:', formData.description),
-      }
-
-      // from mixin
-      this.submitLead(lead)
 
       this.disableScrollOnBody()
       this.isSuccess = true
@@ -150,8 +141,7 @@ export default {
   .entry-field,
   .error-text,
   /deep/ .form-checkbox-label {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    @include font('Inter', 16px, 400);
   }
 
   .entry-field,

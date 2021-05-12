@@ -146,14 +146,11 @@ export default {
   }
 
   &__expert-name {
-    font-size: 17px;
-    font-family: 'Poppins-Bold', sans-serif;
-    font-weight: 700;
+    @include font('Inter', 17px, 700);
   }
 
   &__expert-position {
-    font-size: 14px;
-    font-family: 'Poppins-Regular', sans-serif;
+    @include font('Inter', 14px, 400);
   }
 
   @media only screen and (max-width: 1180px) {

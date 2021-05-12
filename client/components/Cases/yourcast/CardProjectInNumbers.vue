@@ -51,6 +51,7 @@ export default {
 
 <style scoped lang="scss">
 @import '../../../assets/styles/cases/_mixins';
+@import '../../../assets/styles/vars';
 
 .card-content {
   @include grid(154px 195px 173px 254px, auto, 0, 0);
@@ -72,8 +73,7 @@ export default {
   }
 
   &_title {
-    font-family: 'Poppins-Medium', sans-serif;
-    font-size: 48px;
+    @include font('Poppins', 48px, 600);
     line-height: 62.4px;
     letter-spacing: -0.02em;
   }

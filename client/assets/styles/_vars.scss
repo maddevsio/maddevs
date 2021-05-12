@@ -133,10 +133,14 @@ $software-icon-text-color: #a4a8b4;
 $software-icon-background: #eef0f2;
 $our-valued-icon-background: #191A1B;
 
+@mixin font($family, $size, $weight) {
+  font-family: $family, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+}
+
 @mixin h2_title {
-  font-family: 'Poppins-Bold', sans-serif;
-  font-weight: 700;
-  font-size: 62px;
+  @include font('Poppins', 62px, 700);
   line-height: 120%;
   letter-spacing: -1px;
   padding-top: 96px;
@@ -153,9 +157,7 @@ $our-valued-icon-background: #191A1B;
 }
 
 @mixin h3_title {
-  font-family: 'Poppins-Bold', sans-serif;
-  font-weight: 700;
-  font-size: 40px;
+  @include font('Poppins', 40px, 700);
   line-height: 120%;
   letter-spacing: -1px;
   padding-top: 102px;

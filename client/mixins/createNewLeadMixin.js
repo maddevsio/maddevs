@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { mapActions } from 'vuex'
 import exceptKeys from '@/helpers/exceptKeys'
 

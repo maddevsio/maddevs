@@ -140,8 +140,7 @@ export default {
   }
   p,
   span {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    @include font('Inter', 16px, 400);
     opacity: 0.8;
   }
   p {
@@ -169,12 +168,11 @@ export default {
     overflow: hidden;
   }
   &__title {
+    @include font('Poppins', 21px, 600);
     max-width: 100%;
     height: 54px;
-    font-size: 21px;
     line-height: 130%;
     letter-spacing: -0.02em;
-    font-family: 'Poppins-Medium', sans-serif;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -211,11 +209,9 @@ export default {
     }
   }
   &__paragraph {
-    font-size: 16px;
+    @include font('Inter', 16px, 400);
     line-height: 166%;
     letter-spacing: -0.035em;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -223,12 +219,10 @@ export default {
     text-overflow: ellipsis;
   }
   &__meta {
+    @include font('Inter', 13px, 400);
     display: flex;
     align-items: center;
     margin: 20px 0;
-    font-size: 13px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
   }
   &__date {
     margin-right: 5px;

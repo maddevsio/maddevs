@@ -306,11 +306,12 @@ export default {
 
 /deep/ .inline-code {
   font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  font-weight: 400;
   background: $bgcolor--grey-light;
   padding: 0 4px;
   border-radius: 3px;
   display: inline-block;
-  font-size: 15px;
   line-height: 129%;
 }
 
@@ -389,11 +390,9 @@ export default {
   &__introduction-paragraph,
   &__table-of-content-list-item,
   &__table-of-content-title {
+    @include font('Inter', 17px, 400);
     margin: 25px 0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
     color: $text-color--black-oil;
-    font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.02em;
     white-space: pre-wrap;
@@ -409,11 +408,9 @@ export default {
   }
 
   &__table-of-content-title {
+    @include font('Poppins', 1.9em, 700);
     margin-top: 0;
     margin-bottom: -5px;
-    font-size: 1.9em;
-    font-family: 'Poppins-Bold', sans-serif;
-    font-weight: 700;
   }
 
   &__table-of-content-list-item {

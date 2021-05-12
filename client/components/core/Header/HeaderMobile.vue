@@ -162,12 +162,11 @@ export default {
   z-index: 2;
 
   &__modal-trigger-btn {
+    @include font('Inter', 16px, 400);
     width: 100%;
     height: 60px;
     margin-top: 5px;
     margin-bottom: 11px;
-    font-family: 'Poppins-Regular', sans-serif;
-    font-size: 16px;
   }
 
   &__top-line {
@@ -216,9 +215,9 @@ export default {
   }
 
   &__nav-link {
+    @include font('Poppins', 32px, 600);
     padding: 14px 0;
     font-size: 32px;
-    font-family: 'Poppins-Medium', sans-serif;
     letter-spacing: -1px;
     line-height: 38px;
     text-decoration: none;
@@ -287,7 +286,7 @@ export default {
 
   &__contact-title,
   &__messenger-name {
-    font-family: 'Poppins-Regular', sans-serif;
+    @include font('Inter', 16px, 400);
   }
 
   &__contact-title,
@@ -300,12 +299,11 @@ export default {
   }
 
   &__contact-link {
+    @include font('Inter', 28px, 400);
     display: inline-block;
     margin-top: 11px;
-    font-size: 28px;
     line-height: 38px;
     letter-spacing: -1px;
-    font-family: 'Poppins-Regular', sans-serif;
     border-bottom: 1px solid $header-red-border-color;
     text-decoration: none;
   }
