@@ -1,14 +1,27 @@
 <template>
-  <div class="position-tags">
-    <span class="position-tags__item">HR</span>
-    <span class="position-tags__item">Marketing</span>
-    <span class="position-tags__item">DevOps</span>
+  <div
+    v-if="tags.length"
+    class="position-tags"
+  >
+    <span
+      v-for="tag in tags"
+      :key="tag"
+      class="position-tags__item"
+    >
+      {{ tag }}
+    </span>
   </div>
 </template>
 
 <script>
 export default {
   name: 'PositionTags',
+  props: {
+    tags: {
+      type: Array,
+      default: () => [],
+    },
+  },
 }
 </script>
 
