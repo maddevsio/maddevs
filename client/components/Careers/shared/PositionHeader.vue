@@ -2,6 +2,9 @@
   <div class="careers-position__header">
     <div class="container">
       <div class="careers-position__container">
+        <div class="careers-position__labels">
+          <PositionLabels />
+        </div>
         <h1 class="careers-position__title">
           Data Analyst / Senior Data Analyst - Core Services
         </h1>
@@ -22,12 +25,14 @@
 </template>
 
 <script>
+import PositionLabels from './PositionLabels'
 import PositionTags from './PositionTags'
 import UIButton from '../../shared/UIButton'
 
 export default {
   name: 'PositionHeader',
   components: {
+    PositionLabels,
     PositionTags,
     UIButton,
   },
@@ -48,13 +53,13 @@ export default {
   }
   &__title {
     font-size: 68px;
-    line-height: 109%;
+    line-height: 74px;
     letter-spacing: -3.6px;
   }
   &__subtitle {
     margin-top: 24.5px;
     font-size: 17px;
-    line-height: 141%;
+    line-height: 24px;
     letter-spacing: -0.013em;
   }
   &__tags {
@@ -64,7 +69,7 @@ export default {
     font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 166%;
+    line-height: 27px;
     letter-spacing: -0.1px;
     width: 190px;
     height: 48px;

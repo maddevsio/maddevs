@@ -12,7 +12,12 @@
               v-if="slices.length"
               :slices="slices"
             />
-            <EmployeesBenefits />
+            <div class="careers-position__benefits">
+              <h2 class="careers-position__benefits-title">
+                Employees benefits
+              </h2>
+              <EmployeesBenefits />
+            </div>
           </div>
           <div class="careers-position__content-divider" />
           <HRContact />
@@ -116,6 +121,15 @@ export default {
     margin-top: 60px;
     margin-bottom: 79px;
     background-color: $border-color--grey-20-percent;
+  }
+  &__benefits {
+    margin-top: 62px;
+    &-title {
+      @include font('Poppins', 33px, 600);
+      line-height: 43px;
+      letter-spacing: -0.04em;
+      margin-bottom: 25px;
+    }
   }
   &__form {
     margin-top: 40px;

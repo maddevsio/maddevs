@@ -269,7 +269,7 @@ export default {
   /deep/ * {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
-    line-height: 169%;
+    line-height: 34px;
     letter-spacing: -0.1px;
   }
 
@@ -328,7 +328,7 @@ export default {
     margin-top: 33px;
     font-weight: normal;
     font-size: 16px;
-    line-height: 166%;
+    line-height: 27px;
     letter-spacing: -0.1px;
     width: 255px;
     height: 48px;

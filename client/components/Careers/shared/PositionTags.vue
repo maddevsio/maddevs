@@ -20,7 +20,7 @@ export default {
   align-items: center;
   &__item {
     font-size: 15px;
-    line-height: 166%;
+    line-height: 25px;
     letter-spacing: -0.009em;
     display: flex;
     align-items: center;
