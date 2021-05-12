@@ -45,7 +45,8 @@ export default {
 
   /deep/ h1,
   /deep/ li {
-    @include font('Inter', 16px, 400);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
   }
 
   /deep/ strong {
