@@ -87,8 +87,6 @@
   width: 100%;
   padding: 17px 19px;
   border-radius: 4px;
-  font-size: 16px;
-  font-family: Inter, sans-serif;
   line-height: 24px;
   letter-spacing: -0.013em;
   box-sizing: border-box;
@@ -124,13 +122,11 @@
 }
 
 .form-checkbox-label {
-  @include font('Inter', 16px, 400);
+  @include font('Inter', 15px, 400);
   position: relative;
   padding-left: 30px;
-  font-size: 15px;
   line-height: 22px;
   letter-spacing: -0.013em;
-  font-family: 'Inter', sans-serif;
   color: $text-color--grey-pale;
   user-select: none;
   cursor: pointer;

@@ -19,7 +19,7 @@
         name="company"
         :show-label="useLabels"
         label="Company"
-        placeholder="MyAwesomeCompany, Inc."
+        placeholder="My Awesome Company, Inc."
         :required="true"
         :validation="$v.company"
       />

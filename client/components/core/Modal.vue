@@ -198,9 +198,7 @@ export default {
   }
 
   &_title {
-    font-family: Inter, sans-serif;
-    font-weight: 800;
-    font-size: 40px;
+    @include font('Inter', 40px, 800);
     line-height: 100%;
     letter-spacing: -0.04em;
     color: $text-color--silver;
