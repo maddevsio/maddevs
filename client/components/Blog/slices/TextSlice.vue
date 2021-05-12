@@ -3,6 +3,7 @@
     <PrismicRichText
       :class="className"
       :field="slice.primary.text"
+      :html-serializer="htmlSerializer"
       class="textslice"
     />
   </div>
@@ -28,6 +29,37 @@ export default {
     if (this.slice.primary.text[0] && this.slice.primary.text[0].type === 'heading1') {
       this.className = this.slice.primary.text[0].text.toLowerCase().replace(/\s/g, '-')
     }
+  },
+
+  methods: {
+    htmlSerializer(type, element, content, children) {
+      const text = children.join('')
+      if (type === 'heading1') {
+        return `<h1 id="${this.createAnchorID(text)}">${text}</h1>`
+      }
+      if (type === 'heading2') {
+        return `<h2 id="${this.createAnchorID(text)}">${text}</h2>`
+      }
+      if (type === 'heading3') {
+        return `<h3 id="${this.createAnchorID(text)}">${text}</h3>`
+      }
+      if (type === 'heading4') {
+        return `<h4 id="${this.createAnchorID(text)}">${text}</h4>`
+      }
+      if (type === 'heading5') {
+        return `<h5 id="${this.createAnchorID(text)}">${text}</h5>`
+      }
+      if (type === 'heading6') {
+        return `<h6 id="${this.createAnchorID(text)}">${text}</h6>`
+      }
+      return null
+    },
+
+    createAnchorID(text) {
+      if (!text || typeof text !== 'string') return null
+      const formattedText = text.trim().toLowerCase().replace(/\s+/g, '-')
+      return formattedText
+    },
   },
 }
 </script>

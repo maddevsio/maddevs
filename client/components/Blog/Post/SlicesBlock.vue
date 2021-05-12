@@ -50,6 +50,10 @@
       <template v-else-if="slice.slice_type === 'author'">
         <AuthorSlice :slice="slice" />
       </template>
+      <!-- Table of contents -->
+      <template v-else-if="slice.slice_type === 'table_of_contents'">
+        <TableOfContents :slice="slice" />
+      </template>
     </section>
   </section>
 </template>
@@ -68,6 +72,7 @@ import DoubleColumnBorderedSlice from '@/components/Blog/slices/DoubleColumnBord
 import GithubGistSlice from '@/components/Blog/slices/GithubGistSlice'
 import GallerySlice from '@/components/Blog/slices/GallerySlice'
 import AuthorSlice from '@/components/Blog/slices/AuthorSlice'
+import TableOfContents from '@/components/Blog/slices/TableOfContents'
 
 export default {
   name: 'SlicesBlock',
@@ -85,6 +90,7 @@ export default {
     GallerySlice,
     SectionIdSlice,
     AuthorSlice,
+    TableOfContents,
   },
 
   props: {
