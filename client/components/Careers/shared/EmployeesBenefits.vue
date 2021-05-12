@@ -37,16 +37,15 @@ export default {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 8px 10px;
   &__item {
-    padding: 28px 16px 32px 27px;
+    padding: 16px;
     background-color: $bgcolor--silver;
     border-radius: 4px;
     &-icon {
       display: block;
     }
     &-title {
-      margin-top: 20px;
-      font-size: 17px;
-      line-height: 140%;
+      margin-top: 15px;
+      line-height: 22px;
       letter-spacing: -0.013em;
       color: $text-color--black-oil;
     }
