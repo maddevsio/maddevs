@@ -78,20 +78,21 @@
 
 .field-name {
   width: max-content;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   color: $text-color--silver;
-  letter-spacing: -0.013em;
   font-size: 14px;
-  font-family: 'Poppins-Regular', sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.013em;
+  font-family: Inter, sans-serif;
 }
 
 .entry-field {
   width: 100%;
-  padding: 14px 19px;
+  padding: 17px 19px;
   border-radius: 4px;
   font-size: 16px;
-  font-family: 'Poppins-Regular', sans-serif;
-  line-height: 27px;
+  font-family: Inter, sans-serif;
+  line-height: 24px;
   letter-spacing: -0.013em;
   box-sizing: border-box;
   background-color: $input-bgcolor--grey-dark;
@@ -121,17 +122,17 @@
 .form-checkboxes {
   display: flex;
   flex-direction: column;
-  margin-top: 4px;
-  margin-bottom: 26px;
+  margin-top: 8px;
+  margin-bottom: 30px;
 }
 
 .form-checkbox-label {
   position: relative;
   padding-left: 30px;
   font-size: 15px;
-  font-family: 'Poppins-Regular', sans-serif;
-  line-height: 24px;
+  line-height: 22px;
   letter-spacing: -0.013em;
+  font-family: 'Inter', sans-serif;
   color: $text-color--grey-pale;
   user-select: none;
   cursor: pointer;

@@ -160,7 +160,7 @@ export default {
   left: 0;
   top: 0;
   bottom: 0;
-  z-index: 9999999999999;
+  z-index: 90;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px 15px;
   overflow: hidden;
@@ -179,8 +179,8 @@ export default {
   &_close {
     position: absolute;
     padding: 25px 25px 12px;
-    top: 0;
-    right: 0;
+    top: 36px;
+    right: 60px;
     cursor: pointer;
     z-index: 1;
     background-color: transparent;
@@ -193,8 +193,8 @@ export default {
 
   &_head {
     position: relative;
-    padding: 40px 55px 40px;
-    max-width: 600px;
+    padding: 52px 84px 40px;
+    max-width: 660px;
   }
 
   &_title {
@@ -207,8 +207,8 @@ export default {
   }
 
   &_container {
-    width: 600px;
-    max-width: 600px;
+    width: 660px;
+    max-width: 660px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -226,7 +226,7 @@ export default {
 
   &_content {
     max-height: 80vh;
-    padding: 0 60px;
+    padding: 0 84px;
     box-sizing: border-box;
   }
 
@@ -305,6 +305,11 @@ export default {
     &_content {
       padding: 0 10px;
       max-height: 85vh;
+    }
+
+    &_close {
+      right: 0;
+      top: 0;
     }
 
     /deep/ .simplebar-vertical {
