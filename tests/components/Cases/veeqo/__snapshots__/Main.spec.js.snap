@@ -24,18 +24,25 @@ exports[`Main component should render correctly 1`] = `
   
       </p>
        
-      <blockquote
-        class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+      <div
+        class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
       >
         <img
           alt="blockquote"
-          class="case_blockquote-mark img_lazy"
+          class="case_mark img_lazy"
           data-src="[object Object]"
         />
          
+        <blockquote
+          class="case_blockquote"
+        >
+          
     Veeqo is a single platform that gives users complete control of their entire inventory. It enables businesses to quickly bulk ship orders from any sales channel, automate repetitive shipping tasks, and track every delivery in one place.
   
-      </blockquote>
+        </blockquote>
+         
+        <!---->
+      </div>
        
       <p
         class="case_paragraph case_text-align-center m-48_bottom"
@@ -691,28 +698,41 @@ exports[`Main component should render correctly 1`] = `
         </li>
       </ul>
        
-      <blockquote
-        class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+      <div
+        class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
       >
         <img
           alt="blockquote"
-          class="case_blockquote-mark img_lazy"
+          class="case_mark img_lazy"
           data-src="[object Object]"
         />
          
+        <blockquote
+          class="case_blockquote"
+        >
+          
     Everything down to the last comma is now written in the form of code. Even if we took Jenkins down completely and had to build it from scratch again, it’d take us no more than 10 minutes.
   
-      </blockquote>
+        </blockquote>
+         
+        <p
+          class="case_quote-author m-8_top"
+        >
+          
+    Maxim Glotov, DevOps Engineer at Mad Devs
+  
+        </p>
+      </div>
     </section>
      
     <section
-      class="container_full background-color-blue p-48_top media-p-41_top p-56_bottom media-p-41_bottom"
+      class="container_full background-color-blue m-96_bottom media-m-48_bottom p-48_top media-p-41_top p-56_bottom media-p-41_bottom"
     >
       <div
         class="container_regular"
       >
         <h2
-          class="case_title_h2 case_title case_text-align-center"
+          class="case_title_h2 case_title case_text-align-center m-10_bottom media-m-16_bottom"
         >
           
       Result
@@ -751,7 +771,7 @@ exports[`Main component should render correctly 1`] = `
       </p>
        
       <div
-        class="m-96_bottom media-m-48_bottom"
+        class="case_cards-container m-96_bottom media-m-48_bottom"
       >
         <div
           class="case_card background-color-silver"
@@ -818,9 +838,12 @@ exports[`Main component should render correctly 1`] = `
   
       </p>
        
-      <div>
+      <div
+        class="case_cards-container"
+      >
         <div
           class="case_card background-color-silver"
+          style="padding: 24px;"
         >
           <h4
             class="case_title_h4 m-8_bottom"
@@ -831,7 +854,7 @@ exports[`Main component should render correctly 1`] = `
           </h4>
            
           <p
-            class="case_paragraph m-24_bottom media-m-12_bottom"
+            class="case_paragraph m-32_bottom"
           >
             
         We implemented a new Elasticsearch cluster as a self-hosted solution on EC2 instances.
@@ -870,7 +893,8 @@ exports[`Main component should render correctly 1`] = `
         </div>
          
         <div
-          class="case_card background-color-blue-light"
+          class="case_card background-color-silver"
+          style="padding: 24px;"
         >
           <h4
             class="case_title_h4 m-8_bottom"
@@ -881,7 +905,7 @@ exports[`Main component should render correctly 1`] = `
           </h4>
            
           <p
-            class="case_paragraph m-24_bottom media-m-12_bottom"
+            class="case_paragraph m-32_bottom"
           >
             
         The indices featured too much unnecessary information and non-optimized mapping.
@@ -922,12 +946,113 @@ exports[`Main component should render correctly 1`] = `
         class="container_regular"
       >
         <h2
-          class="case_title_h2 case_title case_text-align-center"
+          class="case_title_h2 case_title case_text-align-center m-32_bottom"
         >
           
       Result
     
         </h2>
+         
+        <div
+          class="case_cards-container m-38_bottom media-m-32_bottom"
+        >
+          <div
+            class="card"
+          >
+            <img
+              alt="Search time went down to under 5 seconds (now: ~250-300 ms)"
+              class="card_icon img_lazy card_icon_speed-card"
+              data-src="img.jpg"
+              height="66"
+              width="66"
+            />
+             
+            <div
+              class="card_text-content"
+            >
+              <h4
+                class="case_title_h4 card_title"
+              >
+                
+      ~250-300 ms
+    
+              </h4>
+               
+              <p
+                class="case_paragraph card_description"
+                style="color: rgb(255, 255, 255);"
+              >
+                
+      Search time went down to under 5 seconds (now: ~250-300 ms)
+    
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+          >
+            <img
+              alt="We received massive positive feedback as Veeqo users were contacting customer"
+              class="card_icon img_lazy card_icon_message-card"
+              data-src="img.jpg"
+              height="66"
+              width="66"
+            />
+             
+            <div
+              class="card_text-content"
+            >
+              <h4
+                class="case_title_h4 card_title"
+              >
+                
+      Feedback
+    
+              </h4>
+               
+              <p
+                class="case_paragraph card_description"
+                style="color: rgb(255, 255, 255);"
+              >
+                
+      We received massive positive feedback as Veeqo users were contacting customer
+    
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+          >
+            <img
+              alt="Elasticsearch became more efficient and reliable without costing the customer more"
+              class="card_icon img_lazy card_icon_gears-card"
+              data-src="img.jpg"
+              height="66"
+              width="66"
+            />
+             
+            <div
+              class="card_text-content"
+            >
+              <h4
+                class="case_title_h4 card_title"
+              >
+                
+      Elasticsearch
+    
+              </h4>
+               
+              <p
+                class="case_paragraph card_description"
+                style="color: rgb(255, 255, 255);"
+              >
+                
+      Elasticsearch became more efficient and reliable without costing the customer more
+    
+              </p>
+            </div>
+          </div>
+        </div>
          
         <p
           class="case_paragraph case_description case_text-align-center"
@@ -1048,18 +1173,25 @@ exports[`Main component should render correctly 1`] = `
         </li>
       </ol>
        
-      <blockquote
-        class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+      <div
+        class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
       >
         <img
           alt="blockquote"
-          class="case_blockquote-mark img_lazy"
+          class="case_mark img_lazy"
           data-src="[object Object]"
         />
          
+        <blockquote
+          class="case_blockquote"
+        >
+          
     We are proud of our work with Veeqo and eager to share our successes. As our partnership continues, we’re constantly looking for new ways to meet Veeqo’s business needs and make its users’ experience better.
   
-      </blockquote>
+        </blockquote>
+         
+        <!---->
+      </div>
     </div>
      
     <section

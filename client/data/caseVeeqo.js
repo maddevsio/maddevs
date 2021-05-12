@@ -39,12 +39,12 @@ export const elasticsearchResults = [
   {
     icon: 'speed-card',
     title: '~250-300 ms',
-    description: 'Search time went down to under 5 seconds (now: ~250-300 ms) ',
+    description: 'Search time went down to under 5 seconds (now: ~250-300 ms)',
   },
   {
     icon: 'message-card',
     title: 'Feedback',
-    description: 'We received massive positive feedback as Veeqo users were contacting customer ',
+    description: 'We received massive positive feedback as Veeqo users were contacting customer',
   },
   {
     icon: 'gears-card',

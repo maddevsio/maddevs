@@ -163,18 +163,31 @@ exports[`PhaseContinuousIntegration component should render correctly 1`] = `
       </li>
     </ul>
      
-    <blockquote
-      class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+    <div
+      class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
     >
       <img
         alt="blockquote"
-        class="case_blockquote-mark img_lazy"
+        class="case_mark img_lazy"
         data-src="[object Object]"
       />
        
+      <blockquote
+        class="case_blockquote"
+      >
+        
     Everything down to the last comma is now written in the form of code. Even if we took Jenkins down completely and had to build it from scratch again, it’d take us no more than 10 minutes.
   
-    </blockquote>
+      </blockquote>
+       
+      <p
+        class="case_quote-author m-8_top"
+      >
+        
+    Maxim Glotov, DevOps Engineer at Mad Devs
+  
+      </p>
+    </div>
   </section>
 </div>
 `;

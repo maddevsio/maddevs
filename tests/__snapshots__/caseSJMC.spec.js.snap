@@ -163,19 +163,26 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
   
         </p>
          
-        <blockquote
-          class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+        <div
+          class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
         >
           <img
             alt="blockquote"
-            class="case_blockquote-mark img_lazy"
+            class="case_mark img_lazy"
             data-src="[object Object]"
           />
            
+          <blockquote
+            class="case_blockquote"
+          >
+            
     World-class BYOD technology delivers an enhanced understanding of the nature and context of the Australian
     contribution to the First World War.
   
-        </blockquote>
+          </blockquote>
+           
+          <!---->
+        </div>
       </section>
        
       <section>
@@ -415,19 +422,26 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
     
           </p>
            
-          <blockquote
-            class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+          <div
+            class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
           >
             <img
               alt="blockquote"
-              class="case_blockquote-mark img_lazy"
+              class="case_mark img_lazy"
               data-src="[object Object]"
             />
              
+            <blockquote
+              class="case_blockquote"
+            >
+              
       The MMIT Brain is a coherent solution that brings together the monitoring and management of two information
       systems.
     
-          </blockquote>
+            </blockquote>
+             
+            <!---->
+          </div>
            
           <p
             class="case_paragraph m-16_bottom"
@@ -1842,18 +1856,25 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
     
           </p>
            
-          <blockquote
-            class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+          <div
+            class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
           >
             <img
               alt="blockquote"
-              class="case_blockquote-mark img_lazy"
+              class="case_mark img_lazy"
               data-src="[object Object]"
             />
              
+            <blockquote
+              class="case_blockquote"
+            >
+              
       Sophisticated system monitoring is the fight life of defence against downtime.
     
-          </blockquote>
+            </blockquote>
+             
+            <!---->
+          </div>
            
           <h3
             class="case_title_h3 m-12_bottom"

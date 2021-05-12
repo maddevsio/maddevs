@@ -528,18 +528,25 @@ exports[`PhaseOnlineCinema component should render correctly 1`] = `
     <div
       class="container_regular"
     >
-      <blockquote
-        class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+      <div
+        class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
       >
         <img
           alt="blockquote"
-          class="case_blockquote-mark img_lazy"
+          class="case_mark img_lazy"
           data-src="[object Object]"
         />
          
+        <blockquote
+          class="case_blockquote"
+        >
+          
       Mad Devs integrated the platform with Plex Media Server, which provides free movie descriptions via an API.
     
-      </blockquote>
+        </blockquote>
+         
+        <!---->
+      </div>
        
       <h4
         class="case_title_h3 m-12_bottom"
