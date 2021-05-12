@@ -65,7 +65,9 @@ export default {
   }
 
   /deep/ pre {
-    @include font('Inter', 16px, 400);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
     padding: 20px;
     overflow: auto;
     background: $bgcolor--grey-light;

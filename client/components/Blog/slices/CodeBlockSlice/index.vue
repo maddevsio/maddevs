@@ -52,7 +52,9 @@ export default {
 @import '../../../../assets/styles/_vars';
 
 .code-sample {
-  @include font('Inter', 17px, 400);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 22px;
   margin: 24px 0;
 
