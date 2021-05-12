@@ -79,16 +79,9 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/_vars.scss';
 
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
 .block-img {
   margin-bottom: 10px;
   text-align: center;
-
   &-zoom {
     cursor: pointer;
   }

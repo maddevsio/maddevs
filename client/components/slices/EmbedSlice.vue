@@ -103,17 +103,14 @@ export default {
     a {
       text-decoration: none;
     }
-
     img {
       display: none;
     }
-
     h1,
     p {
       letter-spacing: -0.02em;
       line-height: 129%;
     }
-
     p {
       @include font('Inter', 13px, 400);
       color: $text-color--grey-pale;
@@ -162,9 +159,9 @@ export default {
       width: 100%;
       padding-right: 24px;
     }
+
     &__image {
       height: 40vw;
-
       &-wrapper {
         order: 1;
         width: 100%;
