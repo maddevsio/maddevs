@@ -2,19 +2,26 @@
   <div class="careers-position__header">
     <div class="container">
       <div class="careers-position__container">
-        <div class="careers-position__labels">
-          <PositionLabels />
+        <div
+          v-if="vacancy.labels.remote || vacancy.labels.relocation"
+          class="careers-position__labels"
+        >
+          <PositionLabels :labels="vacancy.labels" />
         </div>
         <h1 class="careers-position__title">
-          Data Analyst / Senior Data Analyst - Core Services
+          {{ vacancy.title }}
         </h1>
-        <p class="careers-position__subtitle">
-          We're building a culture at MadDevs where amazing people can do their best work.
-          If you're ready to grow your career and help millions of organizations grow better,
-          you've come to the right place.
+        <p
+          v-if="vacancy.subtitle"
+          class="careers-position__subtitle"
+        >
+          {{ vacancy.subtitle }}
         </p>
-        <div class="careers-position__tags">
-          <PositionTags />
+        <div
+          v-if="vacancy.tags && vacancy.tags.length"
+          class="careers-position__tags"
+        >
+          <PositionTags :tags="vacancy.tags" />
         </div>
         <UIButton class="careers-position__apply-button">
           Apply now
@@ -25,6 +32,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import PositionLabels from './PositionLabels'
 import PositionTags from './PositionTags'
 import UIButton from '../../shared/UIButton'
@@ -36,11 +44,24 @@ export default {
     PositionTags,
     UIButton,
   },
+
+  computed: {
+    ...mapGetters(['vacancy']),
+  },
 }
 </script>
 
 <style scoped lang="scss">
 @import '../../../assets/styles/vars';
+
+@keyframes moveArrow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
 
 .careers-position {
   &__header {
@@ -77,8 +98,12 @@ export default {
     border-radius: 6px;
     &::after {
       content: '↓';
+      transform: translateY(0);
       display: inline-block;
       margin-left: 8px;
+    }
+    &:hover::after {
+      animation: moveArrow 1s linear infinite;
     }
   }
 }

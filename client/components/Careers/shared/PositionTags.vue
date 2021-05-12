@@ -1,5 +1,8 @@
 <template>
-  <div class="position-tags">
+  <div
+    v-if="tags.length"
+    class="position-tags"
+  >
     <span
       v-for="tag in tags"
       :key="tag"
@@ -16,7 +19,7 @@ export default {
   props: {
     tags: {
       type: Array,
-      default: () => [],
+      default: () => ([]),
     },
   },
 }

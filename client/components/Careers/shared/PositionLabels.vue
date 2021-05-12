@@ -1,5 +1,8 @@
 <template>
-  <div class="position-labels">
+  <div
+    v-if="labels.remote || labels.relocation"
+    class="position-labels"
+  >
     <div
       v-if="labels.remote"
       class="position-labels__item"
@@ -21,7 +24,7 @@ export default {
   props: {
     labels: {
       type: Object,
-      default: () => {},
+      default: () => ({}),
     },
   },
 }
@@ -33,6 +36,7 @@ export default {
 .position-labels {
   display: flex;
   &__item {
+    margin-right: 8px;
     padding: 2px 10px;
     font-size: 9px;
     line-height: 15px;
@@ -41,10 +45,10 @@ export default {
     color: $text-color--white-primary;
     &:first-child {
       background-color: $bgcolor--blue;
-      margin-right: 8px;
     }
     &:last-child {
       background-color: $bgcolor--green;
+      margin-right: 0;
     }
   }
 }
