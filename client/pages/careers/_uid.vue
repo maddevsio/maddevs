@@ -23,8 +23,7 @@
             id="careers-position-form"
             class="careers-position__contacts"
           >
-            <div class="careers-position__content-divider" />
-            <HRContact />
+            <HRContactCard />
             <div class="careers-position__form">
               <PositionForm />
             </div>
@@ -40,8 +39,9 @@ import { mapGetters } from 'vuex'
 import PositionHeader from '@/components/Careers/shared/PositionHeader'
 import SlicesBlock from '@/components/slices'
 import EmployeesBenefits from '@/components/Careers/shared/EmployeesBenefits'
-import HRContact from '@/components/Careers/shared/HRContact'
+import HRContactCard from '@/components/Careers/shared/HRContactCard'
 import PositionForm from '@/components/Careers/shared/PositionForm'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { buildHead } from '@/data/seo'
 
 export default {
@@ -50,9 +50,11 @@ export default {
     PositionHeader,
     SlicesBlock,
     EmployeesBenefits,
-    HRContact,
+    HRContactCard,
     PositionForm,
   },
+
+  mixins: [initLazyLoadMixin],
 
   async asyncData({ store, params, error }) {
     const openGraphUrl = `${process.env.domain}/careers/${params.uid}/`
