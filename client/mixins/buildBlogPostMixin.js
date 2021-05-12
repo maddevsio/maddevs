@@ -2,7 +2,7 @@ import formatDate from '@/helpers/formatDate'
 import extractSchemaOrg from '@/helpers/extractSchemaOrg'
 import { buildHead } from '@/data/seo'
 
-const buildBlogPostPageMixin = (postType = 'post') => ({
+const buildBlogPostMixin = (postType = 'post') => ({
   async asyncData({
     $prismic, store, params, error,
   }) {
@@ -71,4 +71,4 @@ const buildBlogPostPageMixin = (postType = 'post') => ({
   },
 })
 
-export default buildBlogPostPageMixin
+export default buildBlogPostMixin
