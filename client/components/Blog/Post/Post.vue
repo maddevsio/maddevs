@@ -221,6 +221,13 @@ export default {
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
     window.addEventListener('scroll', this.shareButtonsScroll)
+    document.querySelectorAll('.copy-link')
+      .forEach(link => link.addEventListener('click', this.copyAnchorLink))
+  },
+
+  beforeDestroy() {
+    document.querySelectorAll('.copy-link')
+      .forEach(link => link.removeEventListener('click', this.copyAnchorLink))
   },
 
   destroyed() {
@@ -229,6 +236,26 @@ export default {
   },
 
   methods: {
+    copyAnchorLink(e) {
+      const copyText = e.target.getAttribute('data-id')
+      if (copyText) {
+        const link = `${window.location.origin}${this.$router.currentRoute.path}#${copyText}`
+        const dummy = document.createElement('input')
+        document.body.appendChild(dummy)
+        dummy.value = link
+        dummy.select()
+        dummy.setSelectionRange(0, 99999) /* For mobile devices */
+        document.execCommand('copy')
+        document.body.removeChild(dummy)
+        e.target.innerText = 'Copied!'
+        setTimeout(() => {
+          e.target.innerText = 'Copy link'
+        }, 3000)
+        return link
+      }
+      return null
+    },
+
     scrollToTop() {
       window.scrollTo({
         top: 0,
