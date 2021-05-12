@@ -103,8 +103,7 @@ export default {
   &__description,
   &__paragraph,
   &__github-link {
-    font-family: 'Poppins-Regular', sans-serif;
-    font-size: 16px;
+    @include font('Inter', 16px, 400);
     line-height: 24px;
     letter-spacing: -0.02em;
     color: $text-color--black-lighter;

@@ -259,9 +259,8 @@ $tech_legends: (
   }
 
   span {
+    @include font('Inter', 11px, 400);
     white-space: nowrap;
-    font-family: 'Poppins-Regular', sans-serif;
-    font-size: 11px;
     line-height: 13px;
     color: rgba(255, 255, 255, 0.25);
     margin-top: 15px;

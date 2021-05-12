@@ -60,13 +60,11 @@ export default {
 @import '@/assets/styles/_vars.scss';
 
 .block-quotation {
+  @include font('Inter', 17px, 400);
   display: inline-block;
   font-style: italic;
-  font-size: 17px;
   line-height: 28px;
   margin: 24px 0;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
   color: $text-color--black-oil;
   border-left: 2px solid $border-color--red;
   padding-left: 35px;
@@ -114,11 +112,9 @@ export default {
   }
 
   &__name {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    @include font('Inter', 16px, 400);
     color: $text-color--grey-opacity-40-percent;
     font-style: italic;
-    font-size: 16px;
     line-height: 166%;
     letter-spacing: -0.035em;
   }

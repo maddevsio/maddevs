@@ -45,13 +45,11 @@ export default {
 
   /deep/ h1,
   /deep/ li {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    @include font('Inter', 16px, 400);
   }
 
   /deep/ strong {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    @include font('Inter', 16px, 700);
   }
 
   /deep/ p,
@@ -62,18 +60,16 @@ export default {
   }
 
   /deep/ p {
+    @include font('Inter', 16px, 400);
     margin: 12px 0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
   }
 
   /deep/ pre {
+    @include font('Inter', 16px, 400);
     padding: 20px;
     overflow: auto;
     background: $bgcolor--grey-light;
     border-radius: 2px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
     line-height: 24px;
   }
 

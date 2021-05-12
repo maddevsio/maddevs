@@ -75,12 +75,11 @@ export default {
 }
 
 .navigation-item {
+  @include font('Inter', 19px, 400);
   margin-right: 48px;
   border-bottom: 1px solid rgba(236, 28, 36, 0.5);
   color: $text-color--grey-light;
-  font-size: 19px;
   line-height: 24px;
-  font-family: 'Poppins-Regular', sans-serif;
   letter-spacing: -0.04em;
   text-decoration: none;
   transition: 0.3s;

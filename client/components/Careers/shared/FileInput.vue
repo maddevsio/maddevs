@@ -68,6 +68,7 @@ export default {
   }
 
   &__cv {
+    @include font('Inter', 22px, 400);
     min-width: max-content;
     color: $text-color--grey;
     font-family: inherit;

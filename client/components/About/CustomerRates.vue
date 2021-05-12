@@ -89,8 +89,7 @@ export default {
   }
 
   &__number-item {
-    font-family: 'Poppins-Bold', sans-serif;
-    font-weight: 700;
+    @include font('Poppins', 50px, 700);
   }
 
   &__main-title,
@@ -140,7 +139,7 @@ export default {
   }
 
   &__description {
-    font-family: 'Poppins-Regular', sans-serif;
+    @include font('Inter', 16px, 400);
     letter-spacing: -0.02em;
   }
 

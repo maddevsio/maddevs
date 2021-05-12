@@ -122,9 +122,7 @@ export default {
 
   &__contact-title,
   &__messenger-name {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    @include font('Inter', 16px, 400);
     line-height: 24px;
     letter-spacing: -0.013em;
   }
@@ -146,12 +144,10 @@ export default {
   }
 
   &__contact-link {
+    @include font('Poppins', 34px, 600);
     display: inline-block;
     margin-top: 12px;
-    font-size: 34px;
     line-height: 100%;
-    font-weight: 600;
-    font-family: 'Inter', sans-serif;
     letter-spacing: -1px;
     border-bottom: 1px solid $text-color--red-opacity;
     text-decoration: none;

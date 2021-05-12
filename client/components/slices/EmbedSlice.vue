@@ -115,8 +115,7 @@ export default {
     }
 
     p {
-      font-size: 13px;
-      font-family: 'Poppins-Regular', sans-serif;
+      @include font('Inter', 13px, 400);
       color: $text-color--grey-pale;
     }
   }
@@ -129,11 +128,9 @@ export default {
   }
 
   /deep/ &__title {
+    @include font('Poppins', 21px, 700);
     margin-top: 0;
     margin-bottom: 6px;
-    font-size: 21px;
-    font-family: 'Poppins-Bold', sans-serif;
-    font-weight: 600;
     color: $text-color--black-oil;
     line-height: 27.34px;
   }

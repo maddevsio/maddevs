@@ -108,10 +108,9 @@ export default {
   }
 
   &__radio-text_item {
+    @include font('Inter', 16px, 400);
     margin-left: 8px;
     color: $text-color--grey;
-    font-family: 'Poppins-Regular', sans-serif;
-    font-size: 16px;
     letter-spacing: -0.02em;
   }
 

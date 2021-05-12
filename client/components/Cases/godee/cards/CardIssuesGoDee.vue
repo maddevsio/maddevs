@@ -68,6 +68,7 @@ export default {
 
 <style scoped lang="scss">
 @import '../../../../assets/styles/cases/_mixins';
+@import '../../../../assets/styles/vars';
 
 .card-content {
   display: flex;
@@ -78,17 +79,15 @@ export default {
   }
 
   &_prices-title {
-    font-size: 80px;
+    @include font('Poppins', 80px, 600);
     line-height: 80px;
     letter-spacing: -2px;
-    font-family: 'Poppins-Medium';
     margin-bottom: 22px;
 
     span {
-      font-size: 19px;
+      @include font('Inter', 19px, 400);
       line-height: 26px;
       letter-spacing: -1px;
-      font-family: 'Poppins-Regular';
     }
   }
 

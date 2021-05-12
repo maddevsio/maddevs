@@ -253,11 +253,9 @@ export default {
 
 .form {
   /deep/ .v-placeholder-asterisk {
+    @include font('Inter', 16px, 400);
     padding-left: 4px;
     padding-bottom: 2px;
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
     letter-spacing: -0.013em;
     color: $text-color--grey-pale;
     left: 17px !important;
