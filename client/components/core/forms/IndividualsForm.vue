@@ -20,7 +20,7 @@
 import BaseForm from '@/components/core/forms/BaseForm'
 import BaseInput from '@/components/core/forms/BaseInput'
 import sendEmailMixin from '@/mixins/sendEmailMixin'
-import createNewLeadMixin from '@/mixins/createNewLeadMixin'
+
 import exceptKeys from '@/helpers/exceptKeys'
 
 export default {
@@ -30,7 +30,7 @@ export default {
     BaseInput,
   },
 
-  mixins: [sendEmailMixin(304625, 'Individuals'), createNewLeadMixin('individuals-form')],
+  mixins: [sendEmailMixin(304625, 'Individuals')],
 
   data() {
     return {
@@ -48,17 +48,6 @@ export default {
 
       // from mixin
       this.submitEmail(variables)
-
-      const lead = {
-        ...formData,
-        description: this.buildLeadDescription('Project description and expertise:', `
-          Project description: ${formData.description};
-          Expertise: ${this.expertise};
-        `),
-      }
-
-      // from mixin
-      this.submitLead(lead)
     },
 
     reset() {

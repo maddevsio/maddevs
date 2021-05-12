@@ -175,9 +175,7 @@ export default {
   align-items: center;
 
   &__name {
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    @include font('Inter', 16px, 400);
     line-height: 166%;
     letter-spacing: -0.035em;
     color: $text-color--grey-opacity-40-percent;
@@ -203,10 +201,8 @@ export default {
       }
 
       &__dropdown-option {
-        font-family: Inter, sans-serif;
+        @include font('Inter', 16px, 400);
         font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
         line-height: 160%;
         letter-spacing: -0.02em;
         padding: 12px 16px 12px 10px;
@@ -263,13 +259,11 @@ export default {
   }
 
   &__link {
+    @include font('Inter', 16px, 400);
     color: $bgcolor--silver;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     line-height: 166%;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
 
     &:not(.disabled):hover {
       color: $text-color--red;

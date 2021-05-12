@@ -12,7 +12,6 @@
 <script>
 import BaseForm from '@/components/core/forms/BaseForm'
 import sendEmailMixin from '@/mixins/sendEmailMixin'
-import createNewLeadMixin from '@/mixins/createNewLeadMixin'
 
 export default {
   name: 'ContactMeForm',
@@ -20,7 +19,7 @@ export default {
     BaseForm,
   },
 
-  mixins: [sendEmailMixin(303792, 'Contact Me'), createNewLeadMixin('contact-me')],
+  mixins: [sendEmailMixin(303792, 'Contact Me')],
 
   methods: {
     handleSubmit(formData) {
@@ -30,9 +29,6 @@ export default {
 
       // from mixin
       this.submitEmail(variables)
-
-      // from mixin
-      this.submitLead(variables)
     },
 
     reset() {

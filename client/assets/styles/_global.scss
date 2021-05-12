@@ -1,3 +1,5 @@
+@import 'vars';
+
 .banner-container {
   width: 100%;
   height: 100%;
@@ -11,10 +13,8 @@
   }
 
   .banner-main_title {
-    font-family: 'Poppins-Bold', sans-serif;
-    font-weight: 700;
+    @include font('Poppins', 120px, 700);
     font-style: normal;
-    font-size: 120px;
     line-height: 96%;
     letter-spacing: -0.04em;
     color: $text-color--black-lighter;
@@ -38,31 +38,27 @@
 }
 
 .title-md {
-  font-size: 40px;
-  font-family: 'Poppins-Bold', sans-serif;
-  font-weight: 700;
+  @include font('Poppins', 40px, 700);
   letter-spacing: -1px;
 }
 
 .paragraph {
-  font-size: 21px;
-  font-family: 'Poppins-Regular', sans-serif;
+  @include font('Inter', 21px, 400);
   line-height: 129%;
   letter-spacing: -0.02em;
 }
 
 .paragraph-md,
 .paragraph-sm {
-  font-family: 'Poppins-Regular', sans-serif;
   letter-spacing: -0.02em;
 }
 
 .paragraph-md {
-  font-size: 16px;
+  @include font('Inter', 16px, 400);
 }
 
 .paragraph-sm {
-  font-size: 14px;
+  @include font('Inter', 14px, 400);
 }
 
 // ----------- Form styles ----------- //
@@ -77,16 +73,17 @@
 }
 
 .field-name {
+  @include font('Inter', 16px, 400);
   width: max-content;
   margin-bottom: 2px;
   color: $text-color--silver;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.013em;
-  font-family: Inter, sans-serif;
 }
 
 .entry-field {
+  @include font('Inter', 16px, 400);
   width: 100%;
   padding: 17px 19px;
   border-radius: 4px;
@@ -127,6 +124,7 @@
 }
 
 .form-checkbox-label {
+  @include font('Inter', 16px, 400);
   position: relative;
   padding-left: 30px;
   font-size: 15px;
@@ -176,8 +174,7 @@
   display: block;
   margin-top: 3px;
   color: $text-color--red-opacity;
-  font-size: 14px;
-  font-family: 'Poppins-Regular', sans-serif;
+  @include font('Inter', 14px, 400);
 }
 
 .textarea {

@@ -52,9 +52,10 @@ export default {
 @import '../../../../assets/styles/_vars';
 
 .code-sample {
-  line-height: 22px;
-  font-size: 17px;
   font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
   margin: 24px 0;
 
   /deep/ .prism-editor__container {

@@ -87,11 +87,10 @@ export default {
   }
 
   &__meta {
+    @include font('Inter', 16px, 400);
     display: flex;
     align-items: center;
     margin: 20px 0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
 
     .created-at {
       margin-right: 40px;

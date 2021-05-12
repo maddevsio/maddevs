@@ -349,8 +349,7 @@ export default {
   &__navigation-link,
   &__header-phone,
   button {
-    font-size: 16px;
-    font-family: 'Poppins-Regular', sans-serif;
+    @include font('Inter', 16px, 400);
     text-decoration: none;
     letter-spacing: -0.02em;
   }
@@ -359,9 +358,8 @@ export default {
     margin-right: 15px;
 
     &::after {
+      @include font('Inter', 17px, 400);
       content: '↓';
-      font-size: 17px;
-      font-family: 'Poppins-Regular', sans-serif;
       color: transparent;
     }
   }

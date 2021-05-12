@@ -95,12 +95,11 @@ img {
 }
 
 .image-label {
+  @include font('Inter', 14px, 400);
   display: block;
   text-align: center;
-  font-size: 14px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  font-family: 'Poppins-Regular', sans-serif;
   color: $text-color--grey;
   margin-bottom: 12px;
 }

@@ -138,10 +138,8 @@ export default {
 
   &__name,
   &__position {
+    @include font('Inter', 13px, 400);
     display: block;
-    font-size: 13px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
     line-height: 129%;
     letter-spacing: -0.02em;
     text-overflow: ellipsis;

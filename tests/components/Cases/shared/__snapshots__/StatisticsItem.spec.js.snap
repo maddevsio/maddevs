@@ -6,7 +6,7 @@ exports[`StatisticsItem component should render correctly 1`] = `
     class="case_statistics-item"
   >
     <p
-      class="case_statistics-item_title"
+      class="case_paragraph-uppercase case_statistics-item_title"
     >
       
     FOUNDED

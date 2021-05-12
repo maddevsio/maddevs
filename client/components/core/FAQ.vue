@@ -256,11 +256,10 @@ export default {
   }
 
   &__sec-title {
+    @include font('Inter', 24px, 400);
     margin-top: -48px;
     padding-top: 96px;
     padding-bottom: 8px;
-    font-family: 'Poppins-Regular', sans-serif;
-    font-size: 24px;
     line-height: 136%;
     letter-spacing: 0;
     color: $text-color--red;
@@ -282,8 +281,7 @@ export default {
 
   &__link,
   &__paragraph {
-    font-family: 'Poppins-Regular', sans-serif;
-    font-size: 17px;
+    @include font('Inter', 17px, 400);
     line-height: 28px;
     letter-spacing: -0.02em;
   }
