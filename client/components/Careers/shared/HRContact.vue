@@ -1,16 +1,16 @@
 <template>
-  <div class="careers-author">
-    <div class="careers-author__image">
+  <div class="hr-contact">
+    <div class="hr-contact__image">
       <img
         src=""
         alt="alt text author"
       >
     </div>
-    <div class="careers-author__info">
-      <p class="careers-author__title">
+    <div class="hr-contact__info">
+      <p class="hr-contact__title">
         Hi, I'm Diana,
       </p>
-      <p class="careers-author__description">
+      <p class="hr-contact__description">
         Applying for jobs should be easy.
         I am here to simplify the hiring process and set you up for success.
         Feel free to telegram me
@@ -38,7 +38,7 @@ export default {
 <style lang="scss" scoped>
 @import '../../../assets/styles/vars';
 
-.careers-author {
+.hr-contact {
   display: flex;
   color: $text-color--black-oil;
   &__image {
