@@ -18,7 +18,7 @@ export default {
     PostView,
   },
 
-  mixins: [buildPostPageMixin('customer-university', 'customer_university')],
+  mixins: [buildPostPageMixin('customer_university')],
 
   beforeRouteEnter(to, from, next) {
     next(vm => {
