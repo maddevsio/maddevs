@@ -46,5 +46,9 @@
   {
     "from": "/blog/web-app-deploy-to-glitch-com",
     "to": "https://maddevs.io/blog/web-app-deploy-to-glitch/"
+  },
+  {
+    "from": "/blog/tag/featured-post",
+    "to": "https://maddevs.io/blog/"
   }
 ]

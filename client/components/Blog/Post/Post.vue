@@ -305,7 +305,9 @@ export default {
 }
 
 /deep/ .inline-code {
-  @include font('Inter', 15px, 400);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  font-weight: 400;
   background: $bgcolor--grey-light;
   padding: 0 4px;
   border-radius: 3px;
