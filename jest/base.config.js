@@ -16,7 +16,7 @@ module.exports = {
     // process `*.vue` files with `vue-jest`
     '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest',
     // process `*.svg` files with `imgTransform.js`
-    '\\.(svg|png|webp|jpg)$': '<rootDir>/jest/imgTransformer.js',
+    '\\.(svg|png|webp|jpg|jpeg)$': '<rootDir>/jest/imgTransformer.js',
   },
   transformIgnorePatterns: ['/node_modules/(?!vue-lottie)'],
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PositionLabels component should render correctly 1`] = `
+<div>
+  <div
+    class="position-labels"
+  >
+    <div
+      class="position-labels__item"
+    >
+      
+    Remote
+  
+    </div>
+     
+    <!---->
+  </div>
+</div>
+`;

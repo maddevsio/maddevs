@@ -8,7 +8,7 @@
 <script>
 import PostView from '@/components/Blog/Post/Post'
 
-import buildPostPageMixin from '@/mixins/buildPostPageMixin'
+import buildBlogPostMixin from '@/mixins/buildBlogPostMixin'
 
 export default {
   name: 'Post',
@@ -16,7 +16,7 @@ export default {
     PostView,
   },
 
-  mixins: [buildPostPageMixin()],
+  mixins: [buildBlogPostMixin()],
 
   beforeRouteEnter(to, from, next) {
     next(vm => {
