@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectsCountries component should render correctly 1`] = `
+<div>
+  <div
+    class="projects-countries container"
+  >
+    <h2
+      class="projects-countries_title"
+    >
+      
+    Global projects in 20+ countries
+  
+    </h2>
+     
+    <p
+      class="projects-countries_description"
+    >
+      
+    We build solutions for 35M+ users worldwide
+  
+    </p>
+     
+    <div
+      class="projects-countries_img-wrap"
+    >
+      <img
+        alt="lobal projects in 20+ countries"
+        class="projects-countries_img media_lazy"
+        data-src="img.jpg"
+        height="558"
+        width="1240"
+      />
+    </div>
+  </div>
+</div>
+`;

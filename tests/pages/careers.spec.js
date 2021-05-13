@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import MainCareers from '@/pages/careers'
+import Careers from '@/pages/careers/index'
 import { shallowMount } from '@vue/test-utils'
 
 const META_DATA = {
@@ -20,42 +20,27 @@ const META_DATA = {
 }
 
 const mocks = {
-  $v: {
-    name: {
-      $touch: jest.fn(),
-    },
-    position: {
-      $touch: jest.fn(),
-    },
-    grade: {
-      $touch: jest.fn(),
-    },
-    email: {
-      $touch: jest.fn(),
-    },
-    cvFile: {
-    },
-    validationGroup: {
-
-    },
-  },
-  $store: {
-    dispatch: jest.fn(),
+  $lazyLoad: {
+    init: jest.fn(),
   },
 }
 
+const stubs = ['Main']
+
 describe('Careers page', () => {
   it('should render correctly', () => {
-    const { container } = render(MainCareers, {
+    const { container } = render(Careers, {
       mocks,
+      stubs,
     })
 
     expect(container).toMatchSnapshot()
   })
 
   it('should correct work head method', () => {
-    const wrapper = shallowMount(MainCareers, {
+    const wrapper = shallowMount(Careers, {
       mocks,
+      stubs,
     })
 
     const actual = wrapper.vm.$options.head.call(wrapper.vm)
