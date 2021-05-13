@@ -1,137 +1,144 @@
 <template>
-  <form
-    class="position-form"
-    @submit.prevent="submitForm"
-  >
-    <div class="position-form__text">
-      <label class="position-form__field">
-        Hello, my name is
-        <FormInput
-          ref="nameInput"
-          v-model="name"
-          type="text"
-          placeholder="Your Name"
-          class="position-form__input position-form__input-name"
-          @input="$v.name.$touch"
-        />.
-        I want to work for you as a desired position.
-        <!-- Erros -->
-        <div v-if="$v.name.$dirty">
-          <span
-            v-if="!$v.name.required"
-            class="position-form__error error-text"
-          >This field is required.</span>
-          <span
-            v-if="!$v.name.maxLength"
-            class="position-form__error error-text"
-          >
-            Sorry, the number of characters in this field should not exceed 50.
-          </span>
-        </div>
-      <!-- End Erros -->
-      </label>
-      <p class="position-form__field">
-        <UIRadioButtons
-          ref="radioButtons"
-          v-model="grade"
-          class="position-form__positions-list"
-          :options="grades"
-          @change="$v.grade.$touch"
-        />
-        <!-- Erros -->
-        <span>
-          <div v-if="$v.grade.$dirty">
+  <div>
+    <form
+      class="position-form"
+      @submit.prevent="submitForm"
+    >
+      <div class="position-form__text">
+        <label class="position-form__field">
+          Hello, my name is
+          <FormInput
+            ref="nameInput"
+            v-model="name"
+            type="text"
+            placeholder="Your Name"
+            class="position-form__input position-form__input-name"
+            @input="$v.name.$touch"
+          />.
+          I want to work for you as a desired position.
+          <!-- Erros -->
+          <div v-if="$v.name.$dirty">
             <span
-              v-if="!$v.grade.required"
+              v-if="!$v.name.required"
+              class="position-form__error error-text"
+            >This field is required.</span>
+            <span
+              v-if="!$v.name.maxLength"
               class="position-form__error error-text"
             >
-              This field is required.
+              Sorry, the number of characters in this field should not exceed 50.
             </span>
           </div>
-        </span>
-      <!-- End Erros -->
-      </p>
-      <label class="position-form__field">
-        Please reply to
-        <FormInput
-          v-model="email"
-          type="email"
-          placeholder="your@mail.com"
-          class="position-form__input position-form__input-email"
-          @input="$v.email.$touch"
-        />
-        <!-- Erros -->
-        <div v-if="$v.email.$dirty">
-          <span
-            v-if="!$v.email.required"
-            class="position-form__error error-text"
-          >This field is required.</span>
-          <span
-            v-if="!$v.email.email"
-            class="position-form__error error-text"
-          >
-            Invalid email address. Please use your work email.
+          <!-- End Erros -->
+        </label>
+        <p class="position-form__field">
+          <UIRadioButtons
+            ref="radioButtons"
+            v-model="grade"
+            class="position-form__positions-list"
+            :options="grades"
+            @change="$v.grade.$touch"
+          />
+          <!-- Erros -->
+          <span>
+            <div v-if="$v.grade.$dirty">
+              <span
+                v-if="!$v.grade.required"
+                class="position-form__error error-text"
+              >
+                This field is required.
+              </span>
+            </div>
           </span>
-        </div>
-      <!-- End Erros -->
-      </label>
-      <p class="position-form__field position-form__skills">
-        To get more information on my skills, please
-        <ul class="position-form__skills-list">
-          <li>
-            <label>
-              check out my
-              <FormInput
-                v-model="linkedin"
-                type="text"
-                placeholder="LinkedIn profile"
-                class="position-form__input position-form__input-linkedin"
-              />
-            </label>
-            OR
-          </li>
-          <li>
-            <label>
-              <FileInput
-                ref="fileInput"
-                v-model="cvFile"
-                @input="handleFileSelect"
-              />
-              <!-- Erros -->
-              <div v-if="$v.cvFile.$dirty">
-                <span
-                  v-if="!$v.cvFile.required"
-                  class="position-form__error position-form__error--file-attach error-text"
-                >
-                  This field is required.
-                </span>
-                <span
-                  v-if="!$v.cvFile.fileExt"
-                  class="position-form__error position-form__error--file-attach error-text"
-                >
-                  Please, upload a file with one of the following extensions: pdf, doc, docx.
-                </span>
-                <span
-                  v-if="!$v.cvFile.fileSizeValidation"
-                  class="position-form__error position-form__error--file-attach error-text"
-                >
-                  Sorry, file size has exceeded its max limit of 5MB.
-                </span>
-              </div>
-            <!-- End Erros -->
-            </label>
-          </li>
-        </ul>
-      </p>
-    </div>
-    <UIButton
-      type="submit"
-      :disabled="$v.validationGroup.$invalid"
-      class="position-form__submit-button"
-    >
-      I want to work for Mad Devs!
-    </UIButton>
-  </form>
+          <!-- End Erros -->
+        </p>
+        <label class="position-form__field">
+          Please reply to
+          <FormInput
+            v-model="email"
+            type="email"
+            placeholder="your@mail.com"
+            class="position-form__input position-form__input-email"
+            @input="$v.email.$touch"
+          />
+          <!-- Erros -->
+          <div v-if="$v.email.$dirty">
+            <span
+              v-if="!$v.email.required"
+              class="position-form__error error-text"
+            >This field is required.</span>
+            <span
+              v-if="!$v.email.email"
+              class="position-form__error error-text"
+            >
+              Invalid email address. Please use your work email.
+            </span>
+          </div>
+          <!-- End Erros -->
+        </label>
+        <p class="position-form__field position-form__skills">
+          To get more information on my skills, please
+          <ul class="position-form__skills-list">
+            <li>
+              <label>
+                check out my
+                <FormInput
+                  v-model="linkedin"
+                  type="text"
+                  placeholder="LinkedIn profile"
+                  class="position-form__input position-form__input-linkedin"
+                />
+              </label>
+              OR
+            </li>
+            <li>
+              <label>
+                <FileInput
+                  ref="fileInput"
+                  v-model="cvFile"
+                  @input="handleFileSelect"
+                />
+                <!-- Erros -->
+                <div v-if="$v.cvFile.$dirty">
+                  <span
+                    v-if="!$v.cvFile.required"
+                    class="position-form__error position-form__error--file-attach error-text"
+                  >
+                    This field is required.
+                  </span>
+                  <span
+                    v-if="!$v.cvFile.fileExt"
+                    class="position-form__error position-form__error--file-attach error-text"
+                  >
+                    Please, upload a file with one of the following extensions: pdf, doc, docx.
+                  </span>
+                  <span
+                    v-if="!$v.cvFile.fileSizeValidation"
+                    class="position-form__error position-form__error--file-attach error-text"
+                  >
+                    Sorry, file size has exceeded its max limit of 5MB.
+                  </span>
+                </div>
+                <!-- End Erros -->
+              </label>
+            </li>
+          </ul>
+        </p>
+      </div>
+      <UIButton
+        type="submit"
+        :disabled="$v.validationGroup.$invalid"
+        class="position-form__submit-button"
+      >
+        I want to work for Mad Devs!
+      </UIButton>
+    </form>
+    <ModalSuccess
+      id="career-modal"
+      :visibled="isShowSuccessModal"
+      @close="isShowSuccessModal = false"
+    />
+  </div>
 </template>
 
 <script>
@@ -141,6 +148,7 @@ import UIRadioButtons from '@/components/shared/UIRadioButtons'
 import UIButton from '@/components/shared/UIButton'
 import FormInput from '@/components/Careers/shared/FormInput'
 import FileInput from '@/components/Careers/shared/FileInput'
+import ModalSuccess from '@/components/core/modals/ModalSuccess'
 
 export default {
   name: 'Careers',
@@ -149,6 +157,7 @@ export default {
     UIRadioButtons,
     FileInput,
     UIButton,
+    ModalSuccess,
   },
 
   validations: {
