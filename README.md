@@ -327,6 +327,33 @@ or in the component's code:
    ...
 ```
 
+## Seo Analyzer
+
+Github action for checks for errors in the html DOM.
+
+### Run
+
+```bash
+npm run seo-analyze
+```
+
+#### Valid result
+
+```bash
+ ████████████████████████████████████████ 100% | ETA: 0s | 233/233
+
+ No any SEO defect found.
+```
+
+#### Invalid result
+
+```bash
+████████████████████████████████████████ 100% | ETA: 0s | 233/233
+
+File: dist/case-studies/namba-food/index.html
+SEO defects found: 
+There are 1 <img> tag without alt attribute
+```
 ## Radiator
 We have advanced tool for collect some metrics from google analytics and google page speed and send it to our slack/telegram channels.
 
