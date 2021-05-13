@@ -49,7 +49,7 @@ exports[`Careers _uid component should render correctly 1`] = `
             to="#careers-position-form"
           >
             <button
-              class="ui-button"
+              class="ui-button careers-position__apply-button"
               style="position: relative; overflow: hidden;"
               type="button"
             >

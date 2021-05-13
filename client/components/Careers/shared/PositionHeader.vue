@@ -24,7 +24,10 @@
           <PositionTags :tags="vacancy.tags" />
         </div>
         <NuxtLink to="#careers-position-form">
-          <UIButton type="button">
+          <UIButton
+            type="button"
+            class="careers-position__apply-button"
+          >
             Apply now
           </UIButton>
         </NuxtLink>
@@ -65,31 +68,30 @@ export default {
   }
 }
 
-/deep/ .ui-button {
-  width: 190px;
-  height: 48px;
-  font-weight: 400;
-  border-radius: 6px;
-  line-height: 27px;
-  letter-spacing: -0.1px;
-  margin-top: 47.5px;
-  &::after {
-    content: '↓';
-    transform: translateY(0);
-    display: inline-block;
-    margin-left: 8px;
-  }
-  &:hover::after {
-    animation: moveArrow 1s linear infinite;
-  }
-}
-
 .careers-position {
   &__header {
     padding: 155px 0 95px;
     margin-bottom: 60px;
     background-color: $bgcolor--black;
     color: $text-color--white-primary;
+    /deep/ .ui-button {
+      width: 190px;
+      height: 48px;
+      font-weight: 400;
+      border-radius: 6px;
+      line-height: 27px;
+      letter-spacing: -0.1px;
+      margin-top: 47.5px;
+      &::after {
+        content: '↓';
+        transform: translateY(0);
+        display: inline-block;
+        margin-left: 8px;
+      }
+      &:hover::after {
+        animation: moveArrow 1s linear infinite;
+      }
+    }
   }
   &__labels {
     margin-bottom: 32px;
