@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
+@import '@/assets/styles/_vars';
 
 .banner {
   margin-bottom: 210px;

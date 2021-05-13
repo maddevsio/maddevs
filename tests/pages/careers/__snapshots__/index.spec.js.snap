@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Careers page should render correctly 1`] = `
+exports[`Index page should render correctly 1`] = `
 <div>
   <main
     class="main"

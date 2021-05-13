@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import Careers from '@/pages/careers/index'
+import Index from '@/pages/careers/index'
 import { shallowMount } from '@vue/test-utils'
 
 const META_DATA = {
@@ -27,9 +27,9 @@ const mocks = {
 
 const stubs = ['Main']
 
-describe('Careers page', () => {
+describe('Index page', () => {
   it('should render correctly', () => {
-    const { container } = render(Careers, {
+    const { container } = render(Index, {
       mocks,
       stubs,
     })
@@ -38,7 +38,7 @@ describe('Careers page', () => {
   })
 
   it('should correct work head method', () => {
-    const wrapper = shallowMount(Careers, {
+    const wrapper = shallowMount(Index, {
       mocks,
       stubs,
     })
