@@ -2,15 +2,15 @@ import { mapActions } from 'vuex'
 import delay from '@/helpers/delay'
 import exceptKeys from '@/helpers/exceptKeys'
 
-const sendEmailMixin = (templateId, title = 'Individuals', subject = 'Marketing') => ({
+const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing') => ({
   methods: {
-    ...mapActions(['sendEmail']),
+    ...mapActions(['sendLead']),
 
-    async submitEmail(variables) {
+    async submitLead(variables) {
       if (!templateId) throw new Error('Template ID was not provided')
 
       const baseTitle = 'Mad Devs Website Forms'
-      const emailToSent = {
+      const payload = {
         templateId,
         variables: {
           emailTo: process.env.emailContact,
@@ -22,7 +22,7 @@ const sendEmailMixin = (templateId, title = 'Individuals', subject = 'Marketing'
           ...exceptKeys(variables, ['agreeToGetMadDevsDiscountOffers', 'agreeWithPrivacyPolicy', 'description']),
         },
       }
-      this.sendEmail(emailToSent)
+      this.sendLead(payload)
       await delay(500)
       this.reset()
       this.$emit('success')
@@ -30,4 +30,4 @@ const sendEmailMixin = (templateId, title = 'Individuals', subject = 'Marketing'
   },
 })
 
-export default sendEmailMixin
+export default createLeadMixin

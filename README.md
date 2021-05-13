@@ -31,19 +31,13 @@ SendPulse will send email to these emails
 
 * NODE_PRISMIC_API
 
-#### AmoCrm
+#### Atlassian
 
-Data from the forms are sent not only to SendPulse, but also to AmoCrm
+Environment variables for atlassian authentication
 
-* NODE_AMOCRM_URL
-* NODE_AMOCRM_REDIRECT_URL
-* NODE_AMOCRM_SECRET
-* NODE_AMOCRM_ID
-* NODE_AMOCRM_PHONE_FIELD_ID
-* NODE_AMOCRM_EMAIL_FIELD_ID
-* NODE_AMOCRM_RESPONSIBLE_USER_ID
-* NODE_AMOCRM_SOURCE_FIELD_ID
-* NODE_AMOCRM_SOURCE_FIELD_VALUE
+* NODE_ATLASSIAN_TOKEN
+* NODE_ATLASSIAN_EMAIL
+* NODE_ATLASSIAN_PROJECT_KEY
 
 #### Slack
 
@@ -51,12 +45,6 @@ Sending messages using Incoming Webhooks
 
 * NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL
 * NODE_PAGESPEED_SLACK_WEBHOOK_URL
-
-#### Mongo
-
-Temporary tokens for the correct operation of AmoCrm are stored in mLab 
-
-* NODE_MONGO_URL
 
 #### Sentry
 

@@ -1,29 +1,50 @@
-// services
-const { getToken, tokensTypes } = require('../services/TokenService')
-const { refreshCrmToken, createNewLead } = require('../services/LeadsService')
+const { sendEmail } = require('../services/EmailsService')
+const { createLead } = require('../services/LeadsService')
 
-// utilities
-const logError = require('../utils/logError')
+function validate(req) {
+  const error = {
+    status: 200,
+    message: 'OK',
+  }
 
-async function createLead(req, res) {
-  try {
-    /**
-     * We need to refresh the current amocrm token 'cause we haven't an ability to refresh the access token after expiration
-     * So, we just refresh token before any request for our safety
-     * @see {@link https://www.amocrm.ru/developers/content/oauth/oauth}
-     */
-    await refreshCrmToken()
+  const errors = {
+    templateId: {
+      message: 'templateId key not found or incorrect',
+      compareFn: value => !value || typeof value !== 'number',
+    },
+    variables: {
+      message: 'variables key not found',
+      compareFn: value => !value,
+    },
+  }
 
-    const token = await getToken(tokensTypes.AMOCRM)
-    const success = await createNewLead(req.body, token)
+  Object.entries(errors).some(([key, { message, compareFn }]) => {
+    const isError = compareFn(req.body[key])
 
-    return res.status(200).json({ success })
-  } catch (error) {
-    logError(error, 'Error during creating lead')
-    return res.status(500).json({ success: false, message: 'Error during creating lead', details: error })
+    if (isError) {
+      error.status = 500
+      error.message = message
+    }
+
+    return isError
+  })
+
+  return {
+    isValid: error.status === 200,
+    error,
   }
 }
 
+async function create(req, res) {
+  const { isValid, error } = validate(req)
+  if (!isValid) return res.status(error.status).json(error)
+
+  sendEmail(req)
+  const response = await createLead(req)
+
+  return res.json(response)
+}
+
 module.exports = {
-  createLead,
+  create,
 }
