@@ -7,7 +7,7 @@ exports[`PositionForm component should render correctly 1`] = `
       class="position-form"
     >
       <div
-        class="position-form__text"
+        class="position-form__message"
       >
         <label
           class="position-form__field"
@@ -196,7 +196,7 @@ exports[`PositionForm component should render correctly 1`] = `
       </div>
        
       <button
-        class="ui-button position-form__submit-button ui-button--disabled"
+        class="ui-button ui-button--disabled"
         type="submit"
       >
         
