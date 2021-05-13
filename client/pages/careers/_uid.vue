@@ -57,7 +57,7 @@ export default {
   async asyncData({ store, params, error }) {
     const openGraphUrl = `${process.env.domain}/careers/${params.uid}/`
     try {
-      await store.dispatch('getVacancyPost', { type: 'vacancy', uid: params.uid })
+      await store.dispatch('getVacancyPost', params.uid)
       return {
         openGraphUrl,
       }

@@ -33,7 +33,7 @@ export const mutations = {
 }
 
 export const actions = {
-  async getVacancyPost({ commit }, payload = { type: 'vacancy' }) {
+  async getVacancyPost({ commit }, payload) {
     const post = await getVacancyPost(this.$prismic, payload)
     commit('SET_VACANCY', post)
   },
