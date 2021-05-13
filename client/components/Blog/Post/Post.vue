@@ -67,6 +67,7 @@
           data-testid="test-recommended-post"
         >
           <PostCard
+            v-if="post.data.post_author && post.data.post_author.id"
             :post="post"
             :author="findAuthor(post.data.post_author.id, allAuthors)"
           />
