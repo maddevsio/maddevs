@@ -10,8 +10,8 @@
         class="blog-post__share"
       >
         <TableOfContents
-          v-if="slices && slices.some(slice => slice.slice_type === 'table_of_contents')"
-          :slice="slices.find(slice => slice.slice_type === 'table_of_contents')"
+          v-if="tableOfContentsSlice"
+          :slice="tableOfContentsSlice"
         />
         <div class="blog-post__share-links">
           <ShareNetwork
@@ -108,6 +108,7 @@ import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversit
 import CustomerUniversityNavigation from '@/components/Blog/Post/CustomerUniversityNavigation'
 import PostCard from '@/components/Blog/shared/PostCard'
 import initializeLazyLoad from '@/helpers/lazyLoad'
+import copyToClipboard from '@/helpers/copyToClipboard'
 
 import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
@@ -207,6 +208,10 @@ export default {
   computed: {
     ...mapGetters(['allAuthors', 'blogTag']),
 
+    tableOfContentsSlice() {
+      return this.slices && this.slices.find(slice => slice.slice_type === 'table_of_contents')
+    },
+
     clusterPosts() {
       return this.cluster ? this.cluster.items : []
     },
@@ -246,24 +251,16 @@ export default {
   },
 
   methods: {
-    copyAnchorLink(e) {
-      const copyText = e.target.getAttribute('data-id')
-      if (copyText) {
-        const link = `${window.location.origin}${this.$router.currentRoute.path}#${copyText}`
-        const dummy = document.createElement('input')
-        document.body.appendChild(dummy)
-        dummy.value = link
-        dummy.select()
-        dummy.setSelectionRange(0, 99999) /* For mobile devices */
-        document.execCommand('copy')
-        document.body.removeChild(dummy)
-        e.target.innerText = 'Copied!'
-        setTimeout(() => {
-          e.target.innerText = 'Copy link'
-        }, 3000)
-        return link
-      }
-      return null
+    copyAnchorLink(event) {
+      const copyText = event.target.getAttribute('data-id')
+      if (!copyText) return null
+      const link = `${window.location.origin}${this.$router.currentRoute.path}#${copyText}`
+      event.target.innerText = 'Copied!'
+      setTimeout(() => {
+        event.target.innerText = 'Copy link'
+      }, 3000)
+      copyToClipboard(link)
+      return link
     },
 
     scrollToTop() {
@@ -273,8 +270,8 @@ export default {
       })
     },
 
-    handleScroll(e) {
-      this.buttonIsActive = Boolean(e.target.scrollingElement.scrollTop !== 0)
+    handleScroll(event) {
+      this.buttonIsActive = Boolean(event.target.scrollingElement.scrollTop !== 0)
       this.calcProgress()
     },
 
