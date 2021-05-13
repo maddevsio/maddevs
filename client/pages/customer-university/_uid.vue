@@ -10,7 +10,7 @@
 import { mapActions } from 'vuex'
 import PostView from '@/components/Blog/Post/Post'
 
-import buildPostPageMixin from '@/mixins/buildPostPageMixin'
+import buildBlogPostMixin from '@/mixins/buildBlogPostMixin'
 
 export default {
   name: 'Post',
@@ -18,7 +18,7 @@ export default {
     PostView,
   },
 
-  mixins: [buildPostPageMixin('customer-university', 'customer_university')],
+  mixins: [buildBlogPostMixin('customer_university')],
 
   beforeRouteEnter(to, from, next) {
     next(vm => {
