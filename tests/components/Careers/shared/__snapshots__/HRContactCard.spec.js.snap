@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HRContactCard is a Vue instance 1`] = `
+<div>
+  <div
+    class="hr-contact"
+  >
+    <div
+      class="hr-contact__image"
+    >
+      <img
+        alt="Diana"
+        class="img_lazy"
+        data-src="img.jpg"
+      />
+    </div>
+     
+    <div
+      class="hr-contact__info"
+    >
+      <p
+        class="hr-contact__title"
+      >
+        
+      Hi, I'm Diana,
+    
+      </p>
+       
+      <p
+        class="hr-contact__description"
+      >
+        
+      Applying for jobs should be easy.
+      I am here to simplify the hiring process and set you up for success.
+      Feel free to telegram me
+      
+        <a
+          href="https://t.me/DianaHRDigital"
+          target="_blank"
+        >
+          <img
+            class="img_lazy"
+            data-src="img.jpg"
+            height="17"
+            width="20"
+          />
+           
+          <span>
+            @DianaHRDigital
+          </span>
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+`;
