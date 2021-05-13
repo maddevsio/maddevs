@@ -2,7 +2,7 @@
   <div class="hr-contact">
     <div class="hr-contact__image">
       <img
-        :data-src="require(`@/assets/img/Careers/jpeg/HRContactCard/diana-hr.jpeg`)"
+        :data-src="require(`@/assets/img/Careers/jpeg/HRContactCard/dianaHR.jpeg`)"
         class="img_lazy"
         alt="Diana"
       >

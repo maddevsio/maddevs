@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PositionHeader component should render correctly 1`] = `
+<div>
+  <div
+    class="careers-position__header"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="careers-position__container"
+      >
+        <!---->
+         
+        <h1
+          class="careers-position__title"
+        >
+          
+        Title
+      
+        </h1>
+         
+        <p
+          class="careers-position__subtitle"
+        >
+          
+        Subtitle
+      
+        </p>
+         
+        <!---->
+         
+        <nuxtlink
+          to="#careers-position-form"
+        >
+          <button
+            class="ui-button careers-position__apply-button"
+            style="position: relative; overflow: hidden;"
+          >
+            
+          Apply now
+        
+            <div
+              class="wave"
+            />
+          </button>
+        </nuxtlink>
+      </div>
+    </div>
+  </div>
+</div>
+`;
