@@ -33,6 +33,7 @@ function buildPayload({ variables }) {
       customfield_10063: variables.company,
       customfield_10057: variables.phoneNumber,
       customfield_10064: 'maddevs.io',
+      customfield_10066: 'https://megadocnotprovided.com',
       description: {
         type: 'doc',
         version: 1,
