@@ -19,7 +19,7 @@
 <script>
 import BaseForm from '@/components/core/forms/BaseForm'
 import BaseInput from '@/components/core/forms/BaseInput'
-import sendEmailMixin from '@/mixins/sendEmailMixin'
+import createLeadMixin from '@/mixins/createLeadMixin'
 
 import exceptKeys from '@/helpers/exceptKeys'
 
@@ -30,7 +30,7 @@ export default {
     BaseInput,
   },
 
-  mixins: [sendEmailMixin(304625, 'Individuals')],
+  mixins: [createLeadMixin(304625, 'Individuals')],
 
   data() {
     return {
@@ -47,7 +47,7 @@ export default {
       }
 
       // from mixin
-      this.submitEmail(variables)
+      this.submitLead(variables)
     },
 
     reset() {

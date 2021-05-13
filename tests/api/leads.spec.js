@@ -16,13 +16,13 @@ describe('Leads api methods', () => {
 
   it('createNewLead success', async () => {
     const payload = 'payload'
-    const data = await api.createNewLead(axios, payload)
-    expect(data).toBe('data')
+    const data = await api.sendLead(axios, payload)
+    expect(data).toEqual({ data: 'data' })
   })
 
   it('createNewLead failure', async () => {
     const payload = 'payload'
-    const data = await api.createNewLead(axiosFailure, payload)
+    const data = await api.sendLead(axiosFailure, payload)
     expect(data).toBe(error)
   })
 })

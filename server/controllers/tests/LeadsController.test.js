@@ -1,64 +1,62 @@
 import 'regenerator-runtime/runtime'
 import * as controller from '../LeadsController'
-import * as tokenService from '../../services/TokenService'
+import * as emailsService from '../../services/EmailsService'
 import * as leadsService from '../../services/LeadsService'
-import logError from '../../utils/logError'
 
-const originalTokenTypes = tokenService.tokensTypes
-
-jest.useFakeTimers()
-
-jest.mock('../../utils/logError', () => jest.fn())
-
-jest.mock('../../services/TokenService', () => ({
-  tokensTypes: {},
-  getToken: jest.fn(),
+jest.mock('../../services/EmailsService', () => ({
+  sendEmail: jest.fn(),
 }))
 
 jest.mock('../../services/LeadsService', () => ({
-  refreshCrmToken: jest.fn(),
-  createNewLead: jest.fn(),
+  createLead: jest.fn(),
 }))
 
 // mocks
-const refreshCrmToken = jest.fn(() => new Promise(res => setTimeout(res, 5)))
-const getToken = jest.fn()
-const createNewLead = jest.fn(() => true)
-const logErrorMock = jest.fn()
+const sendEmail = jest.fn()
+const createLead = jest.fn(() => Promise.resolve({ data: 'data' }))
 
-tokenService.tokensTypes = originalTokenTypes
-tokenService.getToken.mockImplementation(getToken)
-leadsService.refreshCrmToken.mockImplementation(refreshCrmToken)
-leadsService.createNewLead.mockImplementation(createNewLead)
-
-logError.mockImplementation(logErrorMock)
+emailsService.sendEmail.mockImplementation(sendEmail)
+leadsService.createLead.mockImplementation(createLead)
 
 describe('leadsController', () => {
-  const json = jest.fn()
+  let json
+  let req
+  let res
 
-  const req = {}
-  const res = {
-    status: jest.fn(() => ({
+  beforeEach(() => {
+    json = jest.fn(data => data)
+
+    req = {
+      body: {},
+    }
+
+    res = {
       json,
-    })),
-    json,
-  }
-
-  it('createLead should correctly called refreshCrmToken, getToken and createNewLead', () => {
-    controller.createLead(req, res)
-    jest.runAllTimers()
-    expect(leadsService.refreshCrmToken).toHaveBeenCalledTimes(1)
+      status: jest.fn(() => ({
+        json,
+      })),
+    }
   })
 
-  it('createLead should correctly log error and return 500 status', () => {
-    const error = new Error('Err')
-    leadsService.refreshCrmToken.mockImplementation(() => {
-      throw error
-    })
-
-    controller.createLead(req, res)
-    expect(logErrorMock).toHaveBeenCalledTimes(1)
+  it('should correctly handle invalid templateId in req.body', async () => {
+    await controller.create(req, res)
     expect(res.status).toHaveBeenCalledWith(500)
-    expect(json).toHaveBeenCalledWith({ success: false, message: 'Error during creating lead', details: error })
+    expect(json).toHaveBeenCalledWith({ message: 'templateId key not found or incorrect', status: 500 })
+  })
+
+  it('should correctly handle invalid variables in req.body', async () => {
+    req.body.templateId = 123
+    await controller.create(req, res)
+    expect(res.status).toHaveBeenCalledWith(500)
+    expect(json).toHaveBeenCalledWith({ message: 'variables key not found', status: 500 })
+  })
+
+  it('should correctly call sendEmail and createLead methods', async () => {
+    req.body.templateId = 123
+    req.body.variables = {}
+    const data = await controller.create(req, res)
+    expect(data).toEqual({ data: 'data' })
+    expect(emailsService.sendEmail).toHaveBeenCalledTimes(1)
+    expect(leadsService.createLead).toHaveBeenCalledTimes(1)
   })
 })
