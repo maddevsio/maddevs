@@ -12,6 +12,7 @@
         :key="anchor.lable"
         :to="anchor.link"
         class="table-of-contents__links-link"
+        :class="{ 'table-of-contents__links-link--active': anchor.link.includes(activeAnchor) }"
       >
         {{ i + 1 }}. {{ anchor.lable }}
       </NuxtLink>
@@ -29,6 +30,12 @@ export default {
     },
   },
 
+  data() {
+    return {
+      activeAnchor: null,
+    }
+  },
+
   computed: {
     anchors() {
       if (this.slice.items && this.slice.items.length) {
@@ -41,11 +48,36 @@ export default {
     },
   },
 
+  mounted() {
+    const sections = document.querySelectorAll('.anchor_title')
+    const config = {
+      rootMargin: '-100px 0px -55%',
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.intersectionHandler(entry)
+        }
+      })
+    }, config)
+
+    sections.forEach(section => {
+      observer.observe(section)
+    })
+  },
+
   methods: {
     createAnchorID(text) {
       if (!text || typeof text !== 'string') return null
       const formattedText = `#${text.trim().toLowerCase().replace(/\s+/g, '-')}`
       return formattedText
+    },
+
+    intersectionHandler(entry) {
+      if (this.anchors.some(a => a.link.includes(entry.target.id))) {
+        this.activeAnchor = entry.target.id
+      }
     },
   },
 }
@@ -82,8 +114,17 @@ export default {
       padding: 10px 8px;
       border-radius: 8px;
 
+      &:hover {
+        background-color: rgba(247, 199, 68, 0.1);
+      }
+
       &.nuxt-link-active {
         background-color: rgba(247, 199, 68, 0.2);
+        cursor: default;
+      }
+
+      &--active {
+        background-color: rgba(204, 160, 40, 0.1);
       }
     }
   }
