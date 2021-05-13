@@ -97,11 +97,9 @@ export default {
   }
 
   &__title {
-    font-size: 26px;
+    @include font('Poppins', 26px, 600);
     line-height: 130%;
-    font-family: 'Poppins-Medium', sans-serif;
     font-style: normal;
-    font-weight: 600;
     text-align: center;
     letter-spacing: -0.04em;
     color: $text-color--tech-label-black;
@@ -118,13 +116,12 @@ export default {
   }
 
   &__nav-item {
+    @include font('Inter', 16px, 400);
     text-decoration: none;
     color: $text-color--black-oil;
     display: flex;
     background: $bgcolor--white-primary;
     border-radius: 8px;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
     line-height: 151%;
     letter-spacing: -0.035em;
     margin-bottom: 11px;

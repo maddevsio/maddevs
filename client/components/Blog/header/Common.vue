@@ -81,20 +81,18 @@ export default {
 
 .blog-post {
   &__blog-title {
-    font-size: 52px;
+    @include font('Poppins', 52px, 400);
     line-height: 67px;
     letter-spacing: -2px;
     color: $text-color--white;
-    font-family: 'Poppins-Medium', sans-serif;
   }
 
   &__blog-sub-title {
+    @include font('Inter', 17px, 300);
     margin-bottom: 36px;
-    font-family: Inter, sans-serif;
     color: $text-color--white-primary;
     letter-spacing: 0.2px;
     font-size: 17px;
-    font-weight: 300;
     line-height: 28px;
   }
 

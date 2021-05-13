@@ -1,9 +1,7 @@
 @mixin title($color, $size, $spacing) {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-feature-settings: 'zero' on, 'ordn' on, 'ss02' on, 'ss05' on;
-  font-weight: 400;
-
   color: $color;
   font-weight: 600;
   font-size: $size;

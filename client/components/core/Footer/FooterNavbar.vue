@@ -44,9 +44,7 @@ export default {
 
   &__nav-item,
   &__company-name {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    @include font('Inter', 16px, 400);
     line-height: 24px;
     color: $text-color--grey;
     letter-spacing: -0.013em;

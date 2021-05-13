@@ -76,10 +76,9 @@ export default {
     }
 
     &-label {
+      @include font('Inter', 22px, 400);
       margin-top: 1px;
       color: $text-color--grey;
-      font-family: 'Poppins-Regular', sans-serif;
-      font-size: 22px;
       line-height: 24px;
       letter-spacing: -0.02em;
     }

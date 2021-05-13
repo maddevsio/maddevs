@@ -136,11 +136,9 @@ export default {
 @import '../../../assets/styles/vars';
 
 @mixin label {
+  @include font('Inter', 13px, 400);
   color: $text-color--grey-opacity-40-percent;
-  font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
   line-height: 166%;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
@@ -155,10 +153,8 @@ export default {
   }
 
   &__title {
-    font-family: 'Poppins-Bold', sans-serif;
+    @include font('Poppins', 120px, 700);
     font-style: normal;
-    font-weight: bold;
-    font-size: 120px;
     line-height: 96%;
     letter-spacing: -0.04em;
     -webkit-text-stroke: 1.13px $text-color--grey-opacity-40-percent;
@@ -202,10 +198,8 @@ export default {
   }
 
   &__show-more {
-    font-family: Inter, sans-serif;
+    @include font('Inter', 16px, 400);
     font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
     line-height: 26px;
     letter-spacing: -0.035em;
     width: 100%;
@@ -226,10 +220,8 @@ export default {
     @include label;
   }
   &__title {
-    font-family: 'Poppins-Medium', sans-serif;
+    @include font('Poppins', 33.2px, 600);
     font-style: normal;
-    font-weight: 600;
-    font-size: 33.2px;
     line-height: 130%;
     letter-spacing: -0.04em;
     font-feature-settings: 'zero' on, 'ordn' on, 'ss02' on, 'ss05' on;
@@ -237,10 +229,8 @@ export default {
     color: $text-color--white-primary;
   }
   &__text {
-    font-family: Inter, sans-serif;
+    @include font('Inter', 16px, 400);
     font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
     line-height: 166%;
     letter-spacing: -0.035em;
     margin-bottom: 28px;
@@ -279,10 +269,8 @@ export default {
     }
   }
   &__title {
-    font-family: 'Poppins-Medium', sans-serif;
+    @include font('Poppins', 21.25px, 600);
     font-style: normal;
-    font-weight: 600;
-    font-size: 21.25px;
     line-height: 130%;
     letter-spacing: -0.02em;
     font-feature-settings: 'ss02' on;
@@ -290,10 +278,8 @@ export default {
     margin-bottom: 6px;
   }
   &__description {
-    font-family: Inter, sans-serif;
+    @include font('Inter', 16px, 400);
     font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
     line-height: 166%;
     letter-spacing: -0.035em;
     color: $text-color--grey-pale;

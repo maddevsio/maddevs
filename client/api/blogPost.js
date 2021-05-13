@@ -4,7 +4,7 @@ export const getBlogPost = async (prismic, payload) => {
     if (post.tags && post.tags.length) {
       const response = await prismic.api.query(
         prismic.predicates.at('document.tags', [post.tags[0]]),
-        { pageSize: 4 },
+        { pageSize: 6 },
       )
       post.recommendedPosts = response.results
     }

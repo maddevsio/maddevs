@@ -85,10 +85,8 @@ export default {
   }
 
   &__main-title {
+    @include font('Poppins', 62px, 700);
     margin-bottom: 43px;
-    font-size: 62px;
-    font-family: 'Poppins-Bold', sans-serif;
-    font-weight: 700;
     line-height: 120%;
     letter-spacing: -1px;
     color: $text-color--red;
