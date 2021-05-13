@@ -2,7 +2,7 @@
   <div class="hr-contact">
     <div class="hr-contact__image">
       <img
-        :data-src="require(`@/assets/img/Careers/jpeg/HRContactCard/dianaHR.jpeg`)"
+        :data-src="$getMediaFromS3(`/images/Careers/jpg/dianaHR.jpeg`)"
         class="img_lazy"
         alt="Diana"
       >
@@ -20,7 +20,7 @@
           target="_blank"
         >
           <img
-            :data-src="require(`@/assets/img/Careers/svg/careersAuthor/telegram.svg`)"
+            :data-src="$getMediaFromS3(`/images/Careers/svg/telegram.svg`)"
             width="20"
             height="17"
             class="img_lazy"
