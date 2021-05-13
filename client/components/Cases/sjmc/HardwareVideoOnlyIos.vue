@@ -42,7 +42,9 @@ export default {
 
     toggleVideoState() {
       if (this.$refs.video.paused) {
-        this.$refs.video.play()
+        this.$refs.video.play().catch(() => {
+          // prevent play
+        })
         this.$refs.videoWrap.classList.remove('case_video-wrapper--paused')
       } else {
         this.$refs.video.pause()
