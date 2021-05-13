@@ -2,13 +2,17 @@
   <div class="employees-benefits">
     <div
       v-for="benefit in benefits"
-      :key="benefit.icon"
+      :key="benefit.icon.name"
       class="employees-benefits__item"
     >
-      <img
-        :src="require(`@/assets/img/Careers/svg/employeesBenefits/${benefit.icon}.svg`)"
-        class="employees-benefits__item-icon"
-      >
+      <div class="employees-benefits__item-icon-wrapper">
+        <img
+          :data-src="require(`@/assets/img/Careers/svg/employeesBenefits/${benefit.icon.name}.svg`)"
+          :width="benefit.icon.width"
+          :height="benefit.icon.height"
+          class="employees-benefits__item-icon img_lazy"
+        >
+      </div>
       <p class="employees-benefits__item-title">
         {{ benefit.title }}
       </p>
@@ -37,16 +41,17 @@ export default {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 8px 10px;
   &__item {
-    padding: 28px 16px 32px 27px;
+    padding: 16px;
     background-color: $bgcolor--silver;
     border-radius: 4px;
     &-icon {
+      &-wrapper {
+        height: 45px;
+      }
       display: block;
     }
     &-title {
-      margin-top: 20px;
-      font-size: 17px;
-      line-height: 140%;
+      line-height: 22px;
       letter-spacing: -0.013em;
       color: $text-color--black-oil;
     }

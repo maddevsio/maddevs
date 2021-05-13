@@ -38,3 +38,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.case-list_numbered {
+  margin: 35px 0;
+}
+</style>

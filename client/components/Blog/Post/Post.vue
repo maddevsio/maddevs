@@ -276,44 +276,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../../assets/styles/vars';
-@import '../../../assets/styles/cases/mixins';
 @import '../../../assets/styles/socialNetworkIcons';
-
-/deep/ h2 {
-  @include title($text-color--black-oil, 32px, -0.04em);
-}
-
-/deep/ h3 {
-  @include title($text-color--black-oil, 26px, -0.04em);
-}
-
-/deep/ h4 {
-  @include title($text-color--black-oil, 21px, -0.04em);
-}
-
-/deep/ h5 {
-  @include title($text-color--black-oil, 17px, -0.04em);
-}
-
-/deep/ h6 {
-  @include title($text-color--black-oil, 14px, -0.04em);
-}
-
-/deep/ ul {
-  list-style: disc;
-  padding-left: 18px;
-}
-
-/deep/ .inline-code {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 15px;
-  font-weight: 400;
-  background: $bgcolor--grey-light;
-  padding: 0 4px;
-  border-radius: 3px;
-  display: inline-block;
-  line-height: 129%;
-}
 
 .blog-post {
   margin: auto;
@@ -334,20 +297,6 @@ export default {
     max-width: 818px;
     margin: -514px auto 0;
     position: relative;
-
-    /deep/ h1,
-    /deep/ h2,
-    /deep/ h3,
-    /deep/ h4,
-    /deep/ h5,
-    /deep/ h6 {
-      margin-top: 48px;
-      margin-bottom: 12px;
-    }
-
-    /deep/ p + p {
-      margin-top: 24px;
-    }
   }
 
   &__main-content {
@@ -371,16 +320,13 @@ export default {
     background-repeat: no-repeat;
     margin-bottom: 30px;
     cursor: pointer;
-
     &.icon-wrapper {
       &__facebook-icon {
         @include social-network-facebook;
       }
-
       &__twitter-icon {
         @include social-network-twitter;
       }
-
       &__linkedin-icon {
         @include social-network-linkedin;
       }
@@ -416,7 +362,6 @@ export default {
   &__table-of-content-list-item {
     margin: 15px;
     cursor: pointer;
-
     &:hover {
       text-decoration: underline;
     }
@@ -432,7 +377,6 @@ export default {
     border-radius: 2px;
     transition: 0.2s;
     cursor: pointer;
-
     i {
       display: inline-block;
       padding: 4px;
@@ -440,16 +384,8 @@ export default {
       border-width: 0 3px 3px 0;
       transform: rotate(-135deg);
     }
-
     &:hover {
       background-color: $button-active--red;
-    }
-  }
-
-  /deep/ .textslice {
-    span,
-    p {
-      color: $text-color--black-oil;
     }
   }
 
@@ -468,19 +404,15 @@ export default {
     border-radius: 3px;
     transition: 0.2s;
     margin-right: 20px;
-
     &:first-child {
       margin-left: 0;
     }
-
     &:last-child {
       margin-right: 0;
     }
-
     /deep/ .post-tag {
       background-color: $bgcolor--white-primary;
     }
-
     /deep/ .post-author {
       &__image,
       &__none-image {
@@ -497,7 +429,6 @@ export default {
   top: 0;
   background-color: $bgcolor--red;
   z-index: 3;
-
   @media only screen and (max-width: 768px) {
     height: 1px;
   }
@@ -522,7 +453,6 @@ export default {
     &__inner-container {
       margin: 0;
       max-width: none;
-
       h1 {
         margin-top: 0;
       }
@@ -531,7 +461,6 @@ export default {
     &__introduction-paragraph,
     &__text-container {
       padding: 0 24px;
-      word-break: break-word;
     }
 
     &__recommended-posts-list {

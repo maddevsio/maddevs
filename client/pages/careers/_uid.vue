@@ -4,20 +4,27 @@
     class="careers-position"
   >
     <PositionHeader />
-    <div class="careers-position__body">
-      <div class="container">
-        <div class="careers-position__container">
-          <div class="careers-position__content">
-            <SlicesBlock
-              v-if="slices.length"
-              :slices="slices"
-            />
+    <div class="container">
+      <div class="careers-position__container">
+        <div class="careers-position__info">
+          <SlicesBlock
+            v-if="vacancy.slices && vacancy.slices.length"
+            :slices="vacancy.slices"
+          />
+          <div class="careers-position__benefits">
+            <h2 class="careers-position__benefits-title">
+              Employees benefits
+            </h2>
             <EmployeesBenefits />
           </div>
-          <div class="careers-position__content-divider" />
-          <HRContact />
+        </div>
+        <div
+          id="careers-position-form"
+          class="careers-position__contacts"
+        >
+          <HRContactCard />
           <div class="careers-position__form">
-            <PositionForm />
+            <PositionForm :position="vacancy.position" />
           </div>
         </div>
       </div>
@@ -26,15 +33,16 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import PositionHeader from '@/components/Careers/shared/PositionHeader'
 import SlicesBlock from '@/components/slices'
 import EmployeesBenefits from '@/components/Careers/shared/EmployeesBenefits'
-import HRContact from '@/components/Careers/shared/HRContact'
+import HRContactCard from '@/components/Careers/shared/HRContactCard'
 import PositionForm from '@/components/Careers/shared/PositionForm'
-
-import extractSchemaOrg from '@/helpers/extractSchemaOrg'
-import formatDate from '@/helpers/formatDate'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { buildHead } from '@/data/seo'
+
+import featureFlag from '@/featureFlags/featureFlag'
 
 export default {
   name: 'CareersPosition',
@@ -42,33 +50,22 @@ export default {
     PositionHeader,
     SlicesBlock,
     EmployeesBenefits,
-    HRContact,
+    HRContactCard,
     PositionForm,
   },
 
+  mixins: [initLazyLoadMixin],
+
   async asyncData({ store, params, error }) {
-    let schemaOrgSnippet = ''
     const openGraphUrl = `${process.env.domain}/careers/${params.uid}/`
+    const showPage = featureFlag('careersPosition')
+
+    if (!showPage) return error({ statusCode: 404, message: 'Page not found' })
 
     try {
-      const post = await store.dispatch('getVacancyPost', { type: 'vacancy', uid: params.uid })
-
-      // Schema org snippet
-      schemaOrgSnippet = extractSchemaOrg(post.data.schema_org_snippets)
-
+      await store.dispatch('getVacancyPost', params.uid)
       return {
-        type: post.type,
-        id: post.id,
-        uid: post.uid,
-        title: post.data.title,
-        subtitle: post.data.subtitle,
-        slices: post.data.body,
-        tags: post.tags,
-        date: formatDate(post.data.date),
-        metaTitle: post.data.meta_title || post.data.title,
-        metaDescription: post.data.meta_description,
         openGraphUrl,
-        schemaOrgSnippet,
       }
     } catch (e) {
       // Returns error page
@@ -78,21 +75,23 @@ export default {
 
   data() {
     return {
-      slices: [],
       openGraphUrl: '',
-      schemaOrgSnippet: '',
     }
   },
 
   head() {
     return buildHead({
-      title: this.metaTitle || '',
-      metaTitle: this.metaTitle || '',
-      description: this.metaDescription || '',
+      title: this.vacancy.metaTitle || this.vacancy.title || '',
+      metaTitle: this.vacancy.metaTitle || this.vacancy.title || '',
+      description: this.vacancy.metaDescription || '',
+      jsonLd: this.vacancy.schemaOrgSnippet,
       image: '/favicon.ico',
       url: this.openGraphUrl,
-      jsonLd: this.schemaOrgSnippet,
     })
+  },
+
+  computed: {
+    ...mapGetters(['vacancy']),
   },
 }
 </script>
@@ -101,24 +100,63 @@ export default {
 @import '../../assets/styles/vars';
 
 .careers-position {
-  padding-top: 62px;
+  padding-bottom: 79px;
+  background-color: $bgcolor--white-primary;
+  color: $text-color--black-oil;
   /deep/ &__container {
     max-width: 924px;
   }
-  &__body {
-    padding: 60px 0 79px;
-    background-color: $bgcolor--white-primary;
-    color: $text-color--black-oil;
+  &__benefits {
+    margin-top: 62px;
+    &-title {
+      @include font('Poppins', 32px, 600);
+      line-height: 43px;
+      letter-spacing: -0.04em;
+      margin-bottom: 25px;
+    }
   }
-  &__content-divider {
-    display: block;
-    height: 1px;
+  &__contacts {
     margin-top: 60px;
-    margin-bottom: 79px;
-    background-color: $border-color--grey-20-percent;
+    padding-top: 79px;
+    border-top: 1px solid $border-color--grey-20-percent;
   }
   &__form {
-    margin-top: 40px;
+    margin-top: 45px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    /deep/ &__container {
+      max-width: 100%;
+    }
+    &__benefits-title {
+      font-size: 26px;
+      line-height: 33px;
+    }
+    &__contacts {
+      margin-top: 70px;
+      padding-top: 70px;
+    }
+    &__form {
+      margin-top: 39px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__benefits {
+      .employees-benefits {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &__contacts {
+      margin-top: 40px;
+      padding-top: 40px;
+    }
+    &__form {
+      margin-top: 26px;
+    }
   }
 }
 </style>

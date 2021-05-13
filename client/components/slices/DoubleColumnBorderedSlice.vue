@@ -35,27 +35,19 @@ export default {
 
   &__inner {
     align-items: center;
-
     & > div {
       margin-top: 0;
     }
-
     /deep/ h5 {
       font-size: 21px;
       line-height: 28px;
       margin-bottom: 6px;
     }
-
     /deep/ p {
       font-size: 13px;
       line-height: 22px;
       margin-bottom: 6px;
       color: $text-color--grey-pale;
-    }
-
-    /deep/ img {
-      max-width: 100%;
-      height: auto;
     }
   }
 }

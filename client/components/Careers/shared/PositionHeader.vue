@@ -2,34 +2,53 @@
   <div class="careers-position__header">
     <div class="container">
       <div class="careers-position__container">
-        <h1 class="careers-position__title">
-          Data Analyst / Senior Data Analyst - Core Services
-        </h1>
-        <p class="careers-position__subtitle">
-          We're building a culture at MadDevs where amazing people can do their best work.
-          If you're ready to grow your career and help millions of organizations grow better,
-          you've come to the right place.
-        </p>
-        <div class="careers-position__tags">
-          <PositionTags />
+        <div
+          v-if="vacancy.labels.remote || vacancy.labels.relocation"
+          class="careers-position__labels"
+        >
+          <PositionLabels :labels="vacancy.labels" />
         </div>
-        <UIButton class="careers-position__apply-button">
-          Apply now
-        </UIButton>
+        <h1 class="careers-position__title">
+          {{ vacancy.title }}
+        </h1>
+        <p
+          v-if="vacancy.subtitle"
+          class="careers-position__subtitle"
+        >
+          {{ vacancy.subtitle }}
+        </p>
+        <div
+          v-if="vacancy.tags && vacancy.tags.length"
+          class="careers-position__tags"
+        >
+          <PositionTags :tags="vacancy.tags" />
+        </div>
+        <NuxtLink to="#careers-position-form">
+          <UIButton class="careers-position__apply-button">
+            Apply now
+          </UIButton>
+        </NuxtLink>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+import PositionLabels from './PositionLabels'
 import PositionTags from './PositionTags'
 import UIButton from '../../shared/UIButton'
 
 export default {
   name: 'PositionHeader',
   components: {
+    PositionLabels,
     PositionTags,
     UIButton,
+  },
+
+  computed: {
+    ...mapGetters(['vacancy']),
   },
 }
 </script>
@@ -37,9 +56,19 @@ export default {
 <style scoped lang="scss">
 @import '../../../assets/styles/vars';
 
+@keyframes moveArrow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
 .careers-position {
   &__header {
-    padding: 95px 0;
+    padding: 155px 0 95px;
+    margin-bottom: 60px;
     background-color: $bgcolor--black;
     color: $text-color--white-primary;
   }
@@ -48,13 +77,13 @@ export default {
   }
   &__title {
     font-size: 68px;
-    line-height: 109%;
+    line-height: 74px;
     letter-spacing: -3.6px;
   }
   &__subtitle {
     margin-top: 24.5px;
     font-size: 17px;
-    line-height: 141%;
+    line-height: 24px;
     letter-spacing: -0.013em;
   }
   &__tags {
@@ -64,7 +93,7 @@ export default {
     font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 166%;
+    line-height: 27px;
     letter-spacing: -0.1px;
     width: 190px;
     height: 48px;
@@ -72,8 +101,30 @@ export default {
     border-radius: 6px;
     &::after {
       content: '↓';
+      transform: translateY(0);
       display: inline-block;
       margin-left: 8px;
+    }
+    &:hover::after {
+      animation: moveArrow 1s linear infinite;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__header {
+      padding: 120px 0 60px;
+    }
+
+    &__title {
+      font-size: 52px;
+      line-height: 64px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &__title {
+      font-size: 35px;
+      line-height: 45px;
     }
   }
 }

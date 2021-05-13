@@ -6,7 +6,6 @@
     <pre>{{ value || placeholder }}</pre>
     <input
       :type="type"
-      :autofocus="autofocus"
       :placeholder="placeholder"
       :value="value"
       @input="$emit('input', $event.target.value)"
@@ -21,11 +20,6 @@ export default {
     type: {
       type: String,
       default: 'text',
-    },
-
-    autofocus: {
-      type: Boolean,
-      default: false,
     },
 
     value: {

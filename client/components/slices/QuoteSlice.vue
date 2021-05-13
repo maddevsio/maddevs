@@ -71,7 +71,6 @@ export default {
 
   /deep/ p {
     margin-bottom: 28px;
-
     &:last-child {
       margin-bottom: 0;
     }
@@ -93,7 +92,6 @@ export default {
     &-border {
       padding-left: 37px;
     }
-
     &-brackets {
       padding-left: 62px;
       margin-top: -26px;
@@ -102,9 +100,9 @@ export default {
 
   &__image {
     margin-right: 8px;
-
     img {
       width: 40px;
+      min-width: 40px;
       height: 40px;
       border-radius: 50%;
       vertical-align: middle;

@@ -1,130 +1,130 @@
 <template>
-  <div
-    id="position-form"
-    class="position-form"
-  >
-    <form @submit.prevent="submitForm">
-      <label class="position-form__field">
-        Hello, my name is
-        <span>
+  <div>
+    <form
+      class="position-form"
+      @submit.prevent="submitForm"
+    >
+      <div class="position-form__text">
+        <label class="position-form__field">
+          Hello, my name is
           <FormInput
             ref="nameInput"
             v-model="name"
             type="text"
             placeholder="Your Name"
-            :autofocus="true"
-            class="position-form__input"
+            class="position-form__input position-form__input-name"
             @input="$v.name.$touch"
           />.
-        </span> I want to work for you as a desired position.
-        <!-- Erros -->
-        <div v-if="$v.name.$dirty">
-          <span
-            v-if="!$v.name.required"
-            class="position-form__error error-text"
-          >This field is required.</span>
-          <span
-            v-if="!$v.name.maxLength"
-            class="position-form__error error-text"
-          >
-            Sorry, the number of characters in this field should not exceed 50.
-          </span>
-        </div>
-      <!-- End Erros -->
-      </label>
-      <p class="position-form__field">
-        <UIRadioButtons
-          ref="radioButtons"
-          v-model="grade"
-          class="position-form__positions-list"
-          :options="grades"
-          @change="$v.grade.$touch"
-        />
-        <!-- Erros -->
-        <span>
-          <div v-if="$v.grade.$dirty">
+          I want to work for you as a desired position.
+          <!-- Erros -->
+          <div v-if="$v.name.$dirty">
             <span
-              v-if="!$v.grade.required"
+              v-if="!$v.name.required"
+              class="position-form__error error-text"
+            >This field is required.</span>
+            <span
+              v-if="!$v.name.maxLength"
               class="position-form__error error-text"
             >
-              This field is required.
+              Sorry, the number of characters in this field should not exceed 50.
             </span>
           </div>
-        </span>
-        <!-- End Erros -->
-      </p>
-      <label class="position-form__field">
-        Please reply to
-        <FormInput
-          v-model="email"
-          type="email"
-          placeholder="your@mail.com"
-          class="position-form__input"
-          @input="$v.email.$touch"
-        />
-        <!-- Erros -->
-        <div v-if="$v.email.$dirty">
-          <span
-            v-if="!$v.email.required"
-            class="position-form__error error-text"
-          >This field is required.</span>
-          <span
-            v-if="!$v.email.email"
-            class="position-form__error error-text"
-          >
-            Invalid email address. Please use your work email.
+          <!-- End Erros -->
+        </label>
+        <p class="position-form__field">
+          <UIRadioButtons
+            ref="radioButtons"
+            v-model="grade"
+            class="position-form__positions-list"
+            :options="grades"
+            @change="$v.grade.$touch"
+          />
+          <!-- Erros -->
+          <span>
+            <div v-if="$v.grade.$dirty">
+              <span
+                v-if="!$v.grade.required"
+                class="position-form__error error-text"
+              >
+                This field is required.
+              </span>
+            </div>
           </span>
-        </div>
-        <!-- End Erros -->
-      </label>
-      <p class="position-form__field position-form__skills">
-        To get more information on my skills, please
-        <ul class="position-form__skills-list">
-          <li>
-            <label>
-              check out my
-              <FormInput
-                v-model="linkedin"
-                type="text"
-                placeholder="LinkedIn profile"
-                class="position-form__input"
-              />
-            </label>
-            OR
-          </li>
-          <li>
-            <label>
-              <FileInput
-                ref="fileInput"
-                v-model="cvFile"
-                @input="handleFileSelect"
-              />
-              <!-- Erros -->
-              <div v-if="$v.cvFile.$dirty">
-                <span
-                  v-if="!$v.cvFile.required"
-                  class="position-form__error position-form__error--file-attach error-text"
-                >
-                  This field is required.
-                </span>
-                <span
-                  v-if="!$v.cvFile.fileExt"
-                  class="position-form__error position-form__error--file-attach error-text"
-                >
-                  Please, upload a file with one of the following extensions: pdf, doc, docx.
-                </span>
-                <span
-                  v-if="!$v.cvFile.fileSizeValidation"
-                  class="position-form__error position-form__error--file-attach error-text"
-                >
-                  Sorry, file size has exceeded its max limit of 5MB.
-                </span>
-              </div>
-            <!-- End Erros -->
-            </label>
-          </li>
-        </ul>
-      </p>
+          <!-- End Erros -->
+        </p>
+        <label class="position-form__field">
+          Please reply to
+          <FormInput
+            v-model="email"
+            type="email"
+            placeholder="your@mail.com"
+            class="position-form__input position-form__input-email"
+            @input="$v.email.$touch"
+          />
+          <!-- Erros -->
+          <div v-if="$v.email.$dirty">
+            <span
+              v-if="!$v.email.required"
+              class="position-form__error error-text"
+            >This field is required.</span>
+            <span
+              v-if="!$v.email.email"
+              class="position-form__error error-text"
+            >
+              Invalid email address. Please use your work email.
+            </span>
+          </div>
+          <!-- End Erros -->
+        </label>
+        <p class="position-form__field position-form__skills">
+          To get more information on my skills, please
+          <ul class="position-form__skills-list">
+            <li>
+              <label>
+                check out my
+                <FormInput
+                  v-model="linkedin"
+                  type="text"
+                  placeholder="LinkedIn profile"
+                  class="position-form__input position-form__input-linkedin"
+                />
+              </label>
+              OR
+            </li>
+            <li>
+              <label>
+                <FileInput
+                  ref="fileInput"
+                  v-model="cvFile"
+                  @input="handleFileSelect"
+                />
+                <!-- Erros -->
+                <div v-if="$v.cvFile.$dirty">
+                  <span
+                    v-if="!$v.cvFile.required"
+                    class="position-form__error position-form__error--file-attach error-text"
+                  >
+                    This field is required.
+                  </span>
+                  <span
+                    v-if="!$v.cvFile.fileExt"
+                    class="position-form__error position-form__error--file-attach error-text"
+                  >
+                    Please, upload a file with one of the following extensions: pdf, doc, docx.
+                  </span>
+                  <span
+                    v-if="!$v.cvFile.fileSizeValidation"
+                    class="position-form__error position-form__error--file-attach error-text"
+                  >
+                    Sorry, file size has exceeded its max limit of 5MB.
+                  </span>
+                </div>
+                <!-- End Erros -->
+              </label>
+            </li>
+          </ul>
+        </p>
+      </div>
       <UIButton
         type="submit"
         :disabled="$v.validationGroup.$invalid"
@@ -133,6 +133,11 @@
         I want to work for Mad Devs!
       </UIButton>
     </form>
+    <ModalSuccess
+      id="career-modal"
+      :visibled="isShowSuccessModal"
+      @close="isShowSuccessModal = false"
+    />
   </div>
 </template>
 
@@ -143,6 +148,7 @@ import UIRadioButtons from '@/components/shared/UIRadioButtons'
 import UIButton from '@/components/shared/UIButton'
 import FormInput from '@/components/Careers/shared/FormInput'
 import FileInput from '@/components/Careers/shared/FileInput'
+import ModalSuccess from '@/components/core/modals/ModalSuccess'
 
 export default {
   name: 'Careers',
@@ -151,6 +157,7 @@ export default {
     UIRadioButtons,
     FileInput,
     UIButton,
+    ModalSuccess,
   },
 
   validations: {
@@ -177,10 +184,16 @@ export default {
     validationGroup: ['name', 'email', 'grade', 'cvFile'],
   },
 
+  props: {
+    position: {
+      type: String,
+      default: '',
+    },
+  },
+
   data() {
     return {
       name: null,
-      position: null,
       grade: null,
       email: null,
       cvFile: null,
@@ -266,30 +279,27 @@ export default {
   padding: 40px;
   padding-bottom: 45px;
   border-radius: 8px;
-  /deep/ * {
-    font-family: 'Inter', sans-serif;
+  overflow: hidden;
+
+  &__text * {
     font-size: 20px;
-    line-height: 169%;
+    line-height: 34px;
     letter-spacing: -0.1px;
   }
 
   &__input {
-    max-width: 40%;
+    max-width: 45%;
   }
 
   &__error {
     position: relative;
-    top: -4px;
+    top: -6px;
     font-size: 14px;
     margin-top: 0;
     line-height: normal;
     &--file-attach {
       padding-left: 26px;
     }
-  }
-
-  &__name-input {
-    max-width: 290px;
   }
 
   &__positions-list {
@@ -315,23 +325,52 @@ export default {
   }
 
   &__skills {
-    margin-top: 40px;
+    margin-top: 32px;
     &-list {
-      padding-left: 10px;
+      padding-left: 5px;
       list-style: initial;
       list-style-position: inside;
+      li label {
+        margin-left: -10px;
+      }
     }
   }
 
   &__submit-button {
-    border-radius: 6px;
-    margin-top: 33px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 166%;
-    letter-spacing: -0.1px;
     width: 255px;
     height: 48px;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: -0.1px;
+    border-radius: 6px;
+    margin-top: 32px;
+    font-weight: normal;
+  }
+
+  @media screen and (max-width: 768px) {
+    /deep/ &__text * {
+      font-size: 18px;
+      line-height: 29px;
+    }
+    &__error {
+      top: -4px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 24px;
+    padding-bottom: 29px;
+    /deep/ &__text * {
+      font-size: 17px;
+      line-height: 27px;
+    }
+    &__error {
+      top: -4px;
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 }
 </style>

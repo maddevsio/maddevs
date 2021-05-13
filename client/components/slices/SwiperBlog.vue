@@ -112,11 +112,6 @@ export default {
 }
 
 .swiper {
-  /deep/ img {
-    max-width: 100%;
-    height: auto;
-  }
-
   &.gallery-thumbs {
     box-sizing: border-box;
     padding: 8px 0;
