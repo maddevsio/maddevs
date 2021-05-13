@@ -283,28 +283,6 @@ export default {
   font-weight: normal;
 }
 
-/deep/ .ui-radio-buttons {
-  display: flex;
-  flex-flow: row wrap;
-  grid-row-gap: initial;
-  &::before {
-    content: 'You can also consider me for your other:';
-    margin-right: 11px;
-  }
-  &::after {
-    content: 'roles.';
-  }
-  &_item {
-    &:last-child {
-      margin-right: 11px;
-    }
-    &-circle {
-      width: 18px;
-      height: 18px;
-    }
-  }
-}
-
 .position-form {
   background-color: $bgcolor--silver;
   color: $text-color--black-oil;
@@ -312,6 +290,27 @@ export default {
   padding-bottom: 45px;
   border-radius: 8px;
   overflow: hidden;
+  /deep/ .ui-radio-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    grid-row-gap: initial;
+    &::before {
+      content: 'You can also consider me for your other:';
+      margin-right: 11px;
+    }
+    &::after {
+      content: 'roles.';
+    }
+    &_item {
+      &:last-child {
+        margin-right: 11px;
+      }
+      &-circle {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
   &__message,
   /deep/ .ui-radio-buttons_item-label {
     font-size: 20px;
