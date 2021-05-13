@@ -2,7 +2,7 @@
   <main class="main">
     <ProjectsBanner />
     <CaseStudies type="projects" />
-    <Customers />
+    <Customers icon-background="#191A1B" />
     <OpenSource />
   </main>
 </template>

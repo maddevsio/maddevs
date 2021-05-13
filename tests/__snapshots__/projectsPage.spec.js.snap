@@ -377,263 +377,350 @@ exports[`projects page renders correctly 1`] = `
       >
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="godee"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="guardrails"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="teacherly"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="triggermesh"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="clutch"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="eatigo"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="veeqo"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="admitad"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="iotsploit"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="sjmc"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="progressay"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="kickoico"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="nambafood"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="showmebishkek"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="mythril"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="seso"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="tengri"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="peklo"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="bandpay"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="nambataxi"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="alfa-bank"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="edumall"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="dzing"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="topica"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="terbine"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="silk-road"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="vms"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="ase"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
         <div
           class="icon-wrapper"
+          data-testid="icon-wrapper"
+          style="background-color: rgb(25, 26, 27);"
         >
           <img
             alt="iothub"
-            class="icon-wrapper__icon img_lazy"
+            class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
+            data-testid="customer-icon"
           />
         </div>
       </div>

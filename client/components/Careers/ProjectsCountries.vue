@@ -15,12 +15,35 @@
         class="projects-countries_img media_lazy"
       >
     </div>
+    <UICustomersList
+      class="projects-countries_customers-list"
+      :customers="careersCustomers"
+    />
+    <UILinkButton
+      class="projects-countries_link-btn"
+      link="/case-studies/"
+      title="See all case studies "
+    />
   </div>
 </template>
 
 <script>
+import UICustomersList from '@/components/shared/UICustomersList'
+import UILinkButton from '@/components/shared/UILinkButton'
+import { careersCustomers } from '@/data/customers'
+
 export default {
   name: 'ProjectsCountries',
+  components: {
+    UICustomersList,
+    UILinkButton,
+  },
+
+  data() {
+    return {
+      careersCustomers,
+    }
+  },
 }
 </script>
 
@@ -45,13 +68,17 @@ export default {
     @include font('Inter', 20px, 400);
   }
 
-  &_img-wrap {
-    margin-bottom: 25px;
-  }
-
   &_img {
     width: 100%;
     height: 100%;
+  }
+
+  &_customers-list {
+    margin-bottom: 40px;
+  }
+
+  &_link-btn {
+    margin: 0 auto;
   }
 }
 </style>
