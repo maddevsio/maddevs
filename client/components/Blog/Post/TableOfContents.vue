@@ -62,7 +62,7 @@ export default {
   &__title {
     color: #101113;
     line-height: 130%;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     font-weight: bold;
   }
 
@@ -78,7 +78,7 @@ export default {
       line-height: 130%;
       letter-spacing: -0.1px;
       color: #101113;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
       padding: 10px 8px;
       border-radius: 8px;
 

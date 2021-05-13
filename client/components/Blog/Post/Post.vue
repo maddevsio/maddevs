@@ -10,24 +10,26 @@
           v-if="slices.some(slice => slice.slice_type === 'table_of_contents')"
           :slice="slices.find(slice => slice.slice_type === 'table_of_contents')"
         />
-        <ShareNetwork
-          :url="openGraphUrl"
-          :title="metaTitle"
-          network="facebook"
-          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
-        />
-        <ShareNetwork
-          :url="openGraphUrl"
-          :title="metaTitle"
-          network="twitter"
-          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
-        />
-        <ShareNetwork
-          :url="openGraphUrl"
-          :title="metaTitle"
-          network="linkedin"
-          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
-        />
+        <div class="blog-post__share-links">
+          <ShareNetwork
+            :url="openGraphUrl"
+            :title="metaTitle"
+            network="facebook"
+            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
+          />
+          <ShareNetwork
+            :url="openGraphUrl"
+            :title="metaTitle"
+            network="twitter"
+            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
+          />
+          <ShareNetwork
+            :url="openGraphUrl"
+            :title="metaTitle"
+            network="linkedin"
+            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
+          />
+        </div>
       </div>
 
       <CustomerUniversityHeader
@@ -219,6 +221,7 @@ export default {
   },
 
   mounted() {
+    this.shareButtonsScroll()
     window.addEventListener('scroll', this.handleScroll)
     window.addEventListener('scroll', this.shareButtonsScroll)
     document.querySelectorAll('.copy-link')
@@ -271,8 +274,8 @@ export default {
     shareButtonsScroll() {
       const shareButtons = document.querySelector('.blog-post__share')
 
-      if (window.pageYOffset < 650) {
-        shareButtons.style.cssText = 'position: absolute; top: 580px; left: -183px;'
+      if (window.pageYOffset < 930) {
+        shareButtons.style.cssText = 'position: absolute; top: 812px; left: -210px;'
       } else if (
         window.pageYOffset
         > document.querySelector('.blog-post').offsetHeight
@@ -283,9 +286,9 @@ export default {
             ? document.querySelector('.blog-post > .cluster-navigation').offsetHeight - 24
             : 0)
           - document.querySelector('.blog-post__share').offsetHeight
-          - 100
+          - 190
       ) {
-        shareButtons.style.cssText = 'position: absolute; bottom: -100px; top: auto; left: -183px;'
+        shareButtons.style.cssText = 'position: absolute; bottom: 0; top: auto; left: -210px;'
       } else {
         shareButtons.style.cssText = 'top: 100px'
       }
@@ -385,10 +388,15 @@ export default {
   &__share {
     display: flex;
     position: fixed;
-    left: calc(50vw - 599px);
+    left: calc(50vw - 619px);
     top: 750px;
     flex-direction: column;
     margin-top: 0;
+
+    &-links {
+      display: flex;
+      margin-top: 20px;
+    }
   }
 
   &__share-link {
@@ -396,8 +404,12 @@ export default {
     height: 33px;
     display: block;
     background-repeat: no-repeat;
-    margin-bottom: 30px;
+    margin-right: 24px;
     cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &.icon-wrapper {
       &__facebook-icon {
@@ -452,7 +464,7 @@ export default {
   &__back-to-list {
     padding: 12px 14px 4px;
     position: fixed;
-    left: 36px;
+    left: 28px;
     bottom: 20px;
     background-color: $bgcolor--red;
     border: 1px solid $border-color--red;
@@ -530,7 +542,7 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1285px) {
   .blog-post {
     &__share {
       display: none;
