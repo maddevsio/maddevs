@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormInput component should render correctly 1`] = `
+<div>
+  <div
+    class="career-form-input"
+    title=""
+  >
+    <pre>
+      
+    </pre>
+     
+    <input
+      placeholder=""
+      type="text"
+    />
+  </div>
+</div>
+`;

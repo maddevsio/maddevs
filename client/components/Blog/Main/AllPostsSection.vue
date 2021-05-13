@@ -161,7 +161,6 @@ export default {
       color: $text-color--black;
       background-color: $bgcolor--silver;
       line-height: 22px;
-      font-weight: 700;
       min-height: 44px;
       border-radius: 2px;
       transition: 0.2s;
