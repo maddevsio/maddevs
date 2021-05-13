@@ -38,7 +38,7 @@ export default {
 
   computed: {
     anchors() {
-      if (this.slice.items && this.slice.items.length) {
+      if (this.slice && this.slice.items && this.slice.items.length) {
         return this.slice.items.map(item => ({
           lable: item.lable[0].text,
           link: this.createAnchorID(item.lable[0].text),

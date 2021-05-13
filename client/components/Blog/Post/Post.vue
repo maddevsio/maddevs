@@ -5,7 +5,10 @@
   >
     <div class="blog-post__background" />
     <div class="blog-post__inner-container">
-      <div class="blog-post__share">
+      <div
+        v-show="dataLoaded"
+        class="blog-post__share"
+      >
         <TableOfContents
           v-if="slices.some(slice => slice.slice_type === 'table_of_contents')"
           :slice="slices.find(slice => slice.slice_type === 'table_of_contents')"
@@ -197,6 +200,7 @@ export default {
   data() {
     return {
       buttonIsActive: false,
+      dataLoaded: false,
     }
   },
 
@@ -226,6 +230,9 @@ export default {
     window.addEventListener('scroll', this.shareButtonsScroll)
     document.querySelectorAll('.copy-link')
       .forEach(link => link.addEventListener('click', this.copyAnchorLink))
+    this.$nextTick(() => {
+      this.dataLoaded = true
+    })
   },
 
   beforeDestroy() {

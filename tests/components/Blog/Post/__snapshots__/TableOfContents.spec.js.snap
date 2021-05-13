@@ -1,46 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableOfContents component should render correctly 1`] = `
-<div>
+exports[`careers page renders correctly 1`] = `
+<div
+  class="table-of-contents"
+>
   <div
-    class="table-of-contents"
+    class="table-of-contents__title"
   >
-    <div
-      class="table-of-contents__title"
+    
+    Contents:
+  
+  </div>
+   
+  <div
+    class="table-of-contents__links"
+  >
+    <nuxtlink-stub
+      class="table-of-contents__links-link"
+      to="#blog-post-title"
     >
       
-    Table of contents
-  
-    </div>
-     
-    <ol
-      class="table-of-contents__list"
-    >
-      <li
-        class="table-of-contents__list-item"
-      >
-        <a
-          data-testid="test-link-table"
-          href="#gallery"
-        >
-          
-          Gallery
-        
-        </a>
-      </li>
-      <li
-        class="table-of-contents__list-item"
-      >
-        <a
-          data-testid="test-link-table"
-          href="#main"
-        >
-          
-          Main
-        
-        </a>
-      </li>
-    </ol>
+      1. Blog post title
+    
+    </nuxtlink-stub>
   </div>
 </div>
 `;
