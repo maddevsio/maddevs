@@ -4,29 +4,27 @@
     class="careers-position"
   >
     <PositionHeader />
-    <div class="careers-position__body">
-      <div class="container">
-        <div class="careers-position__container">
-          <div class="careers-position__info">
-            <SlicesBlock
-              v-if="vacancy.slices && vacancy.slices.length"
-              :slices="vacancy.slices"
-            />
-            <div class="careers-position__benefits">
-              <h2 class="careers-position__benefits-title">
-                Employees benefits
-              </h2>
-              <EmployeesBenefits />
-            </div>
+    <div class="container">
+      <div class="careers-position__container">
+        <div class="careers-position__info">
+          <SlicesBlock
+            v-if="vacancy.slices && vacancy.slices.length"
+            :slices="vacancy.slices"
+          />
+          <div class="careers-position__benefits">
+            <h2 class="careers-position__benefits-title">
+              Employees benefits
+            </h2>
+            <EmployeesBenefits />
           </div>
-          <div
-            id="careers-position-form"
-            class="careers-position__contacts"
-          >
-            <HRContactCard />
-            <div class="careers-position__form">
-              <PositionForm />
-            </div>
+        </div>
+        <div
+          id="careers-position-form"
+          class="careers-position__contacts"
+        >
+          <HRContactCard />
+          <div class="careers-position__form">
+            <PositionForm />
           </div>
         </div>
       </div>
@@ -96,19 +94,16 @@ export default {
 @import '../../assets/styles/vars';
 
 .careers-position {
-  padding-top: 62px;
+  padding-bottom: 79px;
+  background-color: $bgcolor--white-primary;
+  color: $text-color--black-oil;
   /deep/ &__container {
     max-width: 924px;
-  }
-  &__body {
-    padding: 60px 0 79px;
-    background-color: $bgcolor--white-primary;
-    color: $text-color--black-oil;
   }
   &__benefits {
     margin-top: 62px;
     &-title {
-      @include font('Poppins', 33px, 600);
+      @include font('Poppins', 32px, 600);
       line-height: 43px;
       letter-spacing: -0.04em;
       margin-bottom: 25px;
@@ -120,7 +115,42 @@ export default {
     border-top: 1px solid $border-color--grey-20-percent;
   }
   &__form {
-    margin-top: 40px;
+    margin-top: 45px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    /deep/ &__container {
+      max-width: 100%;
+    }
+    &__benefits-title {
+      font-size: 26px;
+      line-height: 33px;
+    }
+    &__contacts {
+      margin-top: 70px;
+      padding-top: 70px;
+    }
+    &__form {
+      margin-top: 39px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__benefits {
+      .employees-benefits {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &__contacts {
+      margin-top: 40px;
+      padding-top: 40px;
+    }
+    &__form {
+      margin-top: 26px;
+    }
   }
 }
 </style>

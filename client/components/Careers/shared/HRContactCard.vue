@@ -80,5 +80,17 @@ export default {
       }
     }
   }
+
+  @media screen and (max-width: 576px) {
+    &__image {
+      width: 68px;
+      min-width: 68px;
+      height: 68px;
+    }
+    &__title {
+      font-size: 23px;
+      line-height: 30px;
+    }
+  }
 }
 </style>

@@ -67,7 +67,8 @@ export default {
 
 .careers-position {
   &__header {
-    padding: 95px 0;
+    padding: 155px 0 95px;
+    margin-bottom: 60px;
     background-color: $bgcolor--black;
     color: $text-color--white-primary;
   }
@@ -106,6 +107,24 @@ export default {
     }
     &:hover::after {
       animation: moveArrow 1s linear infinite;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__header {
+      padding: 120px 0 60px;
+    }
+
+    &__title {
+      font-size: 52px;
+      line-height: 64px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &__title {
+      font-size: 35px;
+      line-height: 45px;
     }
   }
 }

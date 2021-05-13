@@ -5,12 +5,14 @@
       :key="benefit.icon.name"
       class="employees-benefits__item"
     >
-      <img
-        :data-src="require(`@/assets/img/Careers/svg/employeesBenefits/${benefit.icon.name}.svg`)"
-        :width="benefit.icon.width"
-        :height="benefit.icon.height"
-        class="employees-benefits__item-icon img_lazy"
-      >
+      <div class="employees-benefits__item-icon-wrapper">
+        <img
+          :data-src="require(`@/assets/img/Careers/svg/employeesBenefits/${benefit.icon.name}.svg`)"
+          :width="benefit.icon.width"
+          :height="benefit.icon.height"
+          class="employees-benefits__item-icon img_lazy"
+        >
+      </div>
       <p class="employees-benefits__item-title">
         {{ benefit.title }}
       </p>
@@ -43,11 +45,12 @@ export default {
     background-color: $bgcolor--silver;
     border-radius: 4px;
     &-icon {
+      &-wrapper {
+        height: 45px;
+      }
       display: block;
-      min-height: 24px;
     }
     &-title {
-      margin-top: 15px;
       line-height: 22px;
       letter-spacing: -0.013em;
       color: $text-color--black-oil;

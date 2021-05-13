@@ -1,21 +1,20 @@
 <template>
-  <div
-    id="position-form"
+  <form
     class="position-form"
+    @submit.prevent="submitForm"
   >
-    <form @submit.prevent="submitForm">
+    <div class="position-form__text">
       <label class="position-form__field">
         Hello, my name is
-        <span>
-          <FormInput
-            ref="nameInput"
-            v-model="name"
-            type="text"
-            placeholder="Your Name"
-            class="position-form__input"
-            @input="$v.name.$touch"
-          />.
-        </span> I want to work for you as a desired position.
+        <FormInput
+          ref="nameInput"
+          v-model="name"
+          type="text"
+          placeholder="Your Name"
+          class="position-form__input position-form__input-name"
+          @input="$v.name.$touch"
+        />.
+        I want to work for you as a desired position.
         <!-- Erros -->
         <div v-if="$v.name.$dirty">
           <span
@@ -50,7 +49,7 @@
             </span>
           </div>
         </span>
-        <!-- End Erros -->
+      <!-- End Erros -->
       </p>
       <label class="position-form__field">
         Please reply to
@@ -58,7 +57,7 @@
           v-model="email"
           type="email"
           placeholder="your@mail.com"
-          class="position-form__input"
+          class="position-form__input position-form__input-email"
           @input="$v.email.$touch"
         />
         <!-- Erros -->
@@ -74,7 +73,7 @@
             Invalid email address. Please use your work email.
           </span>
         </div>
-        <!-- End Erros -->
+      <!-- End Erros -->
       </label>
       <p class="position-form__field position-form__skills">
         To get more information on my skills, please
@@ -86,7 +85,7 @@
                 v-model="linkedin"
                 type="text"
                 placeholder="LinkedIn profile"
-                class="position-form__input"
+                class="position-form__input position-form__input-linkedin"
               />
             </label>
             OR
@@ -124,15 +123,15 @@
           </li>
         </ul>
       </p>
-      <UIButton
-        type="submit"
-        :disabled="$v.validationGroup.$invalid"
-        class="position-form__submit-button"
-      >
-        I want to work for Mad Devs!
-      </UIButton>
-    </form>
-  </div>
+    </div>
+    <UIButton
+      type="submit"
+      :disabled="$v.validationGroup.$invalid"
+      class="position-form__submit-button"
+    >
+      I want to work for Mad Devs!
+    </UIButton>
+  </form>
 </template>
 
 <script>
@@ -265,30 +264,27 @@ export default {
   padding: 40px;
   padding-bottom: 45px;
   border-radius: 8px;
-  /deep/ * {
-    font-family: 'Inter', sans-serif;
+  overflow: hidden;
+
+  &__text * {
     font-size: 20px;
     line-height: 34px;
     letter-spacing: -0.1px;
   }
 
   &__input {
-    max-width: 40%;
+    max-width: 45%;
   }
 
   &__error {
     position: relative;
-    top: -4px;
+    top: -6px;
     font-size: 14px;
     margin-top: 0;
     line-height: normal;
     &--file-attach {
       padding-left: 26px;
     }
-  }
-
-  &__name-input {
-    max-width: 290px;
   }
 
   &__positions-list {
@@ -314,23 +310,52 @@ export default {
   }
 
   &__skills {
-    margin-top: 40px;
+    margin-top: 32px;
     &-list {
-      padding-left: 10px;
+      padding-left: 5px;
       list-style: initial;
       list-style-position: inside;
+      li label {
+        margin-left: -10px;
+      }
     }
   }
 
   &__submit-button {
-    border-radius: 6px;
-    margin-top: 33px;
-    font-weight: normal;
+    width: 255px;
+    height: 48px;
     font-size: 16px;
     line-height: 27px;
     letter-spacing: -0.1px;
-    width: 255px;
-    height: 48px;
+    border-radius: 6px;
+    margin-top: 32px;
+    font-weight: normal;
+  }
+
+  @media screen and (max-width: 768px) {
+    /deep/ &__text * {
+      font-size: 18px;
+      line-height: 29px;
+    }
+    &__error {
+      top: -4px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 24px;
+    padding-bottom: 29px;
+    /deep/ &__text * {
+      font-size: 17px;
+      line-height: 27px;
+    }
+    &__error {
+      top: -4px;
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 }
 </style>
