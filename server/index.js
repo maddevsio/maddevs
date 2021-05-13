@@ -1,9 +1,6 @@
 const express = require('express')
-
-// db
 const cors = require('cors')
 const bodyParser = require('body-parser')
-const { connect } = require('./db')
 
 // sentry
 const { configureSentry } = require('./sentry')
@@ -26,9 +23,6 @@ const apiRouter = require('./routes/api')
 function bootstrap() {
   const app = express()
   const Sentry = configureSentry(app)
-
-  // DB connect
-  connect(config.DATABASE_URL, config.mongoConfig)
 
   // Sentry handlers
   app.use(Sentry.Handlers.requestHandler())

@@ -24,7 +24,7 @@ function buildEmail({ body: { variables, templateId, attachment } }) {
   return email
 }
 
-function sendEmail(req, callback) {
+function sendEmail(req, callback = () => {}) {
   sendpulse.init(config.SENDPULSE_API_USER_ID, config.SENDPULSE_API_KEY, config.SENDPULSE_TOKEN_STORAGE, () => {
     const email = buildEmail(req)
     sendpulse.smtpSendMail(callback, email)
