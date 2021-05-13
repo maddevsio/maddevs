@@ -43,6 +43,7 @@
     "import/no-extraneous-dependencies": "off",
     "import/no-dynamic-require": "off",
     "global-require": "off",
+    "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
     "vue/attribute-hyphenation": [
       "error",
       "always"

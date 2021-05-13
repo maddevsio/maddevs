@@ -7,7 +7,7 @@
     >
       <div class="employees-benefits__item-icon-wrapper">
         <img
-          :data-src="require(`@/assets/img/Careers/svg/employeesBenefits/${benefit.icon.name}.svg`)"
+          :data-src="$getMediaFromS3(`/images/Careers/svg/${benefit.icon.name}.svg`)"
           :width="benefit.icon.width"
           :height="benefit.icon.height"
           class="employees-benefits__item-icon img_lazy"
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss" scroped>
-@import '../../../assets/styles/vars';
+@import '@/assets/styles/_vars.scss';
 
 .employees-benefits {
   display: grid;

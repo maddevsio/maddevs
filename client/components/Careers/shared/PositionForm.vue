@@ -134,7 +134,7 @@
       </UIButton>
     </form>
     <ModalSuccess
-      id="career-modal"
+      id="careers-modal"
       :visibled="isShowSuccessModal"
       @close="isShowSuccessModal = false"
     />
@@ -271,7 +271,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
+@import '@/assets/styles/_vars.scss';
 
 .position-form {
   background-color: $bgcolor--silver;
@@ -281,7 +281,7 @@ export default {
   border-radius: 8px;
   overflow: hidden;
 
-  &__text * {
+  /deep/ &__text * {
     font-size: 20px;
     line-height: 34px;
     letter-spacing: -0.1px;

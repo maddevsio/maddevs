@@ -13,7 +13,7 @@ exports[`EmployeesBenefits is a Vue instance 1`] = `
       >
         <img
           class="employees-benefits__item-icon img_lazy"
-          data-src="[object Object]"
+          data-src="img.jpg"
           height="30"
           width="31"
         />
@@ -35,7 +35,7 @@ exports[`EmployeesBenefits is a Vue instance 1`] = `
       >
         <img
           class="employees-benefits__item-icon img_lazy"
-          data-src="[object Object]"
+          data-src="img.jpg"
           height="32"
           width="28"
         />
@@ -57,7 +57,7 @@ exports[`EmployeesBenefits is a Vue instance 1`] = `
       >
         <img
           class="employees-benefits__item-icon img_lazy"
-          data-src="[object Object]"
+          data-src="img.jpg"
           height="31"
           width="36"
         />
@@ -79,7 +79,7 @@ exports[`EmployeesBenefits is a Vue instance 1`] = `
       >
         <img
           class="employees-benefits__item-icon img_lazy"
-          data-src="[object Object]"
+          data-src="img.jpg"
           height="24"
           width="39"
         />
@@ -101,7 +101,7 @@ exports[`EmployeesBenefits is a Vue instance 1`] = `
       >
         <img
           class="employees-benefits__item-icon img_lazy"
-          data-src="[object Object]"
+          data-src="img.jpg"
           height="31"
           width="24"
         />
@@ -123,7 +123,7 @@ exports[`EmployeesBenefits is a Vue instance 1`] = `
       >
         <img
           class="employees-benefits__item-icon img_lazy"
-          data-src="[object Object]"
+          data-src="img.jpg"
           height="30"
           width="26"
         />
@@ -145,7 +145,7 @@ exports[`EmployeesBenefits is a Vue instance 1`] = `
       >
         <img
           class="employees-benefits__item-icon img_lazy"
-          data-src="[object Object]"
+          data-src="img.jpg"
           height="33"
           width="20"
         />
@@ -167,7 +167,7 @@ exports[`EmployeesBenefits is a Vue instance 1`] = `
       >
         <img
           class="employees-benefits__item-icon img_lazy"
-          data-src="[object Object]"
+          data-src="img.jpg"
           height="36"
           width="31"
         />

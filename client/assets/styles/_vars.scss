@@ -58,6 +58,8 @@ $text-stroke--black: 1.5px #000;
 
 // ---------- Border ------------ //
 $border-color--grey: #96969c;
+$border-color--grey-pale: #404143;
+$border-color--grey-selected: #707072;
 $border-color--black: #111213;
 $border-color--white: #fff;
 $border-color--grey-light: #e8e8e8;
@@ -87,7 +89,8 @@ $black02: rgba(0, 0, 0, 0.2);
 $white-02: rgba(255, 255, 255, 0.2);
 
 // ---------- Input ------------ //
-$input-bgcolor--grey-dark: rgba(150, 150, 156, 0.2);
+$input-bgcolor--grey-dark: #121212;
+$input-bgcolor--grey-light: rgba(150, 150, 156, 0.2);
 $input-invalid--bg: rgba(236, 28, 36, 0.2);
 $input-placeholder-text--grey-dark: rgba(150, 150, 156, 0.5);
 $input-checkmark-bg: #1e1e1f;
@@ -121,7 +124,7 @@ $header-grey-border-color: rgba(164, 168, 180, 0.4);
 
 // ---------- Modal ------------ //
 $modal-overlay-bg-color: #0d0d0dc7;
-$modal-bg-color: #251E1E;
+$modal-bg-color: #121212;
 $modal-entry-field-bg: #403838;
 
 // ---------- Other ------------ //

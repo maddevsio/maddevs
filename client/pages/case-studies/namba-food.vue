@@ -63,7 +63,7 @@ export default {
         height: 82,
         folder: 'nambafood',
         file: 'nambafood-logo',
-        alt: '',
+        alt: 'Nambafood Logo',
       },
     }
   },

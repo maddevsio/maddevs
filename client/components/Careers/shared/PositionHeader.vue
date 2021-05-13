@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/vars';
+@import '@/assets/styles/_vars.scss';
 
 @keyframes moveArrow {
   0%, 100% {
@@ -89,16 +89,14 @@ export default {
   &__tags {
     margin-top: 23px;
   }
-  &__apply-button {
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: -0.1px;
+  /deep/ &__apply-button {
     width: 190px;
     height: 48px;
-    margin-top: 47.5px;
+    font-weight: 400;
     border-radius: 6px;
+    line-height: 27px;
+    letter-spacing: -0.1px;
+    margin-top: 47.5px;
     &::after {
       content: '↓';
       transform: translateY(0);
@@ -118,6 +116,7 @@ export default {
     &__title {
       font-size: 52px;
       line-height: 64px;
+      letter-spacing: -3px;
     }
   }
 
@@ -125,6 +124,7 @@ export default {
     &__title {
       font-size: 35px;
       line-height: 45px;
+      letter-spacing: -1.4px;
     }
   }
 }
