@@ -33,168 +33,17 @@ exports[`ProjectsCountries component should render correctly 1`] = `
       />
     </div>
      
-    <div
-      class="customers__customers-list projects-countries_customers-list"
-    >
-      <div
-        class="icon-wrapper"
-        data-testid="icon-wrapper"
-        style="background-color: transparent;"
-      >
-        <img
-          alt="clutch"
-          class="icon-wrapper__icon media_lazy"
-          data-src="[object Object]"
-          data-testid="customer-icon"
-        />
-      </div>
-      <div
-        class="icon-wrapper"
-        data-testid="icon-wrapper"
-        style="background-color: transparent;"
-      >
-        <img
-          alt="godee"
-          class="icon-wrapper__icon media_lazy"
-          data-src="[object Object]"
-          data-testid="customer-icon"
-        />
-      </div>
-      <div
-        class="icon-wrapper"
-        data-testid="icon-wrapper"
-        style="background-color: transparent;"
-      >
-        <img
-          alt="sjmc"
-          class="icon-wrapper__icon media_lazy"
-          data-src="[object Object]"
-          data-testid="customer-icon"
-        />
-      </div>
-      <div
-        class="icon-wrapper"
-        data-testid="icon-wrapper"
-        style="background-color: transparent;"
-      >
-        <img
-          alt="dzing"
-          class="icon-wrapper__icon media_lazy"
-          data-src="[object Object]"
-          data-testid="customer-icon"
-        />
-      </div>
-      <div
-        class="icon-wrapper"
-        data-testid="icon-wrapper"
-        style="background-color: transparent;"
-      >
-        <img
-          alt="topica"
-          class="icon-wrapper__icon media_lazy"
-          data-src="[object Object]"
-          data-testid="customer-icon"
-        />
-      </div>
-      <div
-        class="icon-wrapper"
-        data-testid="icon-wrapper"
-        style="background-color: transparent;"
-      >
-        <img
-          alt="veeqo"
-          class="icon-wrapper__icon media_lazy"
-          data-src="[object Object]"
-          data-testid="customer-icon"
-        />
-      </div>
-      <div
-        class="icon-wrapper"
-        data-testid="icon-wrapper"
-        style="background-color: transparent;"
-      >
-        <img
-          alt="guardrails"
-          class="icon-wrapper__icon media_lazy"
-          data-src="[object Object]"
-          data-testid="customer-icon"
-        />
-      </div>
-      <div
-        class="icon-wrapper"
-        data-testid="icon-wrapper"
-        style="background-color: transparent;"
-      >
-        <img
-          alt="teacherly"
-          class="icon-wrapper__icon media_lazy"
-          data-src="[object Object]"
-          data-testid="customer-icon"
-        />
-      </div>
-      <div
-        class="icon-wrapper"
-        data-testid="icon-wrapper"
-        style="background-color: transparent;"
-      >
-        <img
-          alt="nambataxi"
-          class="icon-wrapper__icon media_lazy"
-          data-src="[object Object]"
-          data-testid="customer-icon"
-        />
-      </div>
-      <div
-        class="icon-wrapper"
-        data-testid="icon-wrapper"
-        style="background-color: transparent;"
-      >
-        <img
-          alt="alfa-bank"
-          class="icon-wrapper__icon media_lazy"
-          data-src="[object Object]"
-          data-testid="customer-icon"
-        />
-      </div>
-      <div
-        class="icon-wrapper"
-        data-testid="icon-wrapper"
-        style="background-color: transparent;"
-      >
-        <img
-          alt="edumall"
-          class="icon-wrapper__icon media_lazy"
-          data-src="[object Object]"
-          data-testid="customer-icon"
-        />
-      </div>
-      <div
-        class="icon-wrapper"
-        data-testid="icon-wrapper"
-        style="background-color: transparent;"
-      >
-        <img
-          alt="triggermesh"
-          class="icon-wrapper__icon media_lazy"
-          data-src="[object Object]"
-          data-testid="customer-icon"
-        />
-      </div>
-    </div>
+    <uicustomerslist-stub
+      class="projects-countries_customers-list"
+      customers="clutch,godee,sjmc,dzing,topica,veeqo,guardrails,teacherly,nambataxi,alfa-bank,edumall,triggermesh"
+      iconbackground="transparent"
+    />
      
-    <button
-      class="ui-link-btn projects-countries_link-btn"
-      type="button"
-    >
-      <nuxtlink
-        class="ui-link-btn_link"
-        to="/case-studies/"
-      >
-        
-    See all case studies 
-  
-      </nuxtlink>
-    </button>
+    <uilinkbutton-stub
+      class="projects-countries_link-btn"
+      link="/case-studies/"
+      title="See all case studies "
+    />
   </div>
 </div>
 `;
