@@ -7,6 +7,7 @@ const extractVacancyData = post => ({
   type: post.type,
   id: post.id,
   uid: post.uid,
+  position: post.data.position,
   title: post.data.title,
   subtitle: post.data.subtitle,
   labels: {

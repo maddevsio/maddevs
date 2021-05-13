@@ -24,7 +24,7 @@
         >
           <HRContactCard />
           <div class="careers-position__form">
-            <PositionForm />
+            <PositionForm :position="vacancy.position" />
           </div>
         </div>
       </div>

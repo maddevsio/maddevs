@@ -175,10 +175,16 @@ export default {
     validationGroup: ['name', 'email', 'grade', 'cvFile'],
   },
 
+  props: {
+    position: {
+      type: String,
+      default: '',
+    },
+  },
+
   data() {
     return {
       name: null,
-      position: null,
       grade: null,
       email: null,
       cvFile: null,
