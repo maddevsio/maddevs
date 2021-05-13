@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss" scroped>
-@import '../../../assets/styles/vars';
+@import '@/assets/styles/_vars.scss';
 
 .employees-benefits {
   display: grid;

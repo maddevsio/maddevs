@@ -271,7 +271,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
+@import '@/assets/styles/_vars.scss';
 
 .position-form {
   background-color: $bgcolor--silver;
