@@ -17,10 +17,9 @@ const buildBlogPostMixin = (postType = 'post') => ({
       schemaOrgSnippet = extractSchemaOrg(post.data.schema_org_snippets)
 
       // Recommended posts
-      if (post.recommendedPosts && post.recommendedPosts.length) {
-        post.recommendedPosts = post.recommendedPosts.filter(recommendedPost => recommendedPost.uid !== post.uid)
-        if (post.recommendedPosts.length > 3) post.recommendedPosts = post.recommendedPosts.slice(0, 3)
-      }
+      post.recommendedPosts = post.recommendedPosts && post.recommendedPosts
+        .filter(recommendedPost => recommendedPost.uid !== post.uid && Boolean(recommendedPost.data.post_author))
+        .slice(0, 3)
 
       return {
         post: {
