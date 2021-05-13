@@ -42,6 +42,8 @@ import PositionForm from '@/components/Careers/shared/PositionForm'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { buildHead } from '@/data/seo'
 
+import featureFlag from '@/featureFlags/featureFlag'
+
 export default {
   name: 'CareersPosition',
   components: {
@@ -56,6 +58,10 @@ export default {
 
   async asyncData({ store, params, error }) {
     const openGraphUrl = `${process.env.domain}/careers/${params.uid}/`
+    const showPage = featureFlag('careersPosition')
+
+    if (!showPage) return error({ statusCode: 404, message: 'Page not found' })
+
     try {
       await store.dispatch('getVacancyPost', params.uid)
       return {
