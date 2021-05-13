@@ -3,6 +3,7 @@
     id="contact-me-form"
     ref="baseForm"
     button-label="Сontact Me"
+    button-class-name="ui-button--transparent-bgc ui-button_submit-button-footer"
     :use-company="true"
     @submit="handleSubmit"
   />

@@ -48,7 +48,7 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
           <input
             class="modal-entry-field entry-field"
             data-testid="test-base-form-company"
-            placeholder="MyAwesomeCompany, Inc."
+            placeholder="My Awesome Company, Inc."
             type="text"
           />
            
@@ -65,7 +65,7 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
           class="modal-field-name field-name required"
         >
           
-    Work email
+    Work Email
   
         </p>
          
@@ -90,7 +90,7 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
           class="modal-field-name field-name"
         >
           
-    Phone number
+    Phone Number
   
         </p>
          
@@ -98,7 +98,7 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
           <input
             class="modal-entry-field entry-field"
             data-testid="test-base-form-phoneNumber"
-            placeholder="+X XXX XXX-XXXX"
+            placeholder="Phone number"
             type="text"
           />
            
@@ -195,7 +195,7 @@ exports[`ModalOrderProjectFromUs component should render correctly 1`] = `
     </div>
      
     <button
-      class="ui-button ui-button--disabled modal-button"
+      class="ui-button ui-button--disabled ui-button--transparent-bgc ui-button_submit-button-footer"
     >
       
     Submit your project

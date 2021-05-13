@@ -20,14 +20,19 @@
           v-if="contentLoaded"
           class="modal_container"
         >
-          <div
-            class="modal_close"
-            @click="close"
-          >
-            <img
-              src="@/assets/img/common/close-icon.svg"
-              alt="Close modal"
+          <div class="modal_head">
+            <p class="modal_title">
+              {{ modalTitle }}
+            </p>
+            <div
+              class="modal_close"
+              @click="close"
             >
+              <img
+                src="@/assets/img/common/close-icon-circle.svg"
+                alt="Close modal"
+              >
+            </div>
           </div>
           <Simplebar
             ref="content"
@@ -68,6 +73,11 @@ export default {
     appendToBody: {
       type: Boolean,
       default: false,
+    },
+
+    modalTitle: {
+      type: String,
+      default: '',
     },
   },
 
@@ -150,7 +160,7 @@ export default {
   left: 0;
   top: 0;
   bottom: 0;
-  z-index: 9999999999999;
+  z-index: 90;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px 15px;
   overflow: hidden;
@@ -168,9 +178,9 @@ export default {
 
   &_close {
     position: absolute;
-    top: 0;
-    right: 0;
     padding: 25px 25px 12px;
+    top: 36px;
+    right: 60px;
     cursor: pointer;
     z-index: 1;
     background-color: transparent;
@@ -181,15 +191,28 @@ export default {
     }
   }
 
+  &_head {
+    position: relative;
+    padding: 52px 84px 40px;
+    max-width: 660px;
+  }
+
+  &_title {
+    @include font('Inter', 40px, 800);
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    color: $text-color--silver;
+  }
+
   &_container {
-    width: 600px;
-    max-width: 600px;
+    width: 660px;
+    max-width: 660px;
     display: flex;
     flex-direction: column;
     position: relative;
     z-index: 12;
     margin: auto;
-    padding: 70px 0 53px;
+    padding: 0 0 53px;
     box-sizing: border-box;
     transition: top 0.4s ease;
     overflow: hidden;
@@ -201,7 +224,7 @@ export default {
 
   &_content {
     max-height: 80vh;
-    padding: 0 60px;
+    padding: 0 84px;
     box-sizing: border-box;
   }
 
@@ -273,13 +296,34 @@ export default {
       margin: 0;
     }
 
+    &_head {
+      padding-left: 10px;
+    }
+
     &_content {
       padding: 0 10px;
       max-height: 85vh;
     }
 
+    &_close {
+      right: 0;
+      top: 0;
+    }
+
     /deep/ .simplebar-vertical {
       right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .modal {
+    &_title {
+      font-size: 32px;
+    }
+
+    &_head {
+      padding-bottom: 30px;
     }
   }
 }

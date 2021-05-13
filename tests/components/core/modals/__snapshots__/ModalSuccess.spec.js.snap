@@ -19,7 +19,7 @@ exports[`ModalSuccess component should render correctly 1`] = `
         >
           <img
             alt="Close modal"
-            src="@/assets/img/common/close-icon.svg"
+            src="@/assets/img/common/close-icon-circle.svg"
           />
         </button>
          
