@@ -38,6 +38,7 @@ Environment variables for atlassian authentication
 * NODE_ATLASSIAN_TOKEN
 * NODE_ATLASSIAN_EMAIL
 * NODE_ATLASSIAN_PROJECT_KEY
+* NODE_ATLASSIAN_API_URL
 
 #### Slack
 

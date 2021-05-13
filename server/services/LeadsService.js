@@ -1,5 +1,5 @@
 const axios = require('axios')
-const { ATLASSIAN_AUTH_TOKEN, ATLASSIAN_PROJECT_KEY } = require('../config/env')
+const { ATLASSIAN_AUTH_TOKEN, ATLASSIAN_PROJECT_KEY, ATLASSIAN_API_URL } = require('../config/env')
 
 function generateToken(token) {
   return Buffer.from(token).toString('base64')
@@ -55,10 +55,9 @@ function buildPayload({ variables }) {
 async function createLead({ body }) {
   try {
     const token = generateToken(ATLASSIAN_AUTH_TOKEN)
-    const url = 'https://maddevs.atlassian.net/rest/api/3/issue'
     const payload = buildPayload(body)
 
-    const response = await axios.post(url, payload, {
+    const response = await axios.post(ATLASSIAN_API_URL, payload, {
       headers: {
         Authorization: `Basic ${token}`,
         'Content-Type': 'application/json',

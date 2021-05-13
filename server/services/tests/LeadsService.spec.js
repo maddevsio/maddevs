@@ -6,6 +6,7 @@ import { createLead } from '../LeadsService'
 jest.mock('../../config/env', () => ({
   ATLASSIAN_AUTH_TOKEN: '123',
   ATLASSIAN_PROJECT_KEY: 'DELMTEST',
+  ATLASSIAN_API_URL: 'https://maddevs.atlassian.net/rest/api/3/issue',
 }))
 
 const response = { data: 'some data' }
