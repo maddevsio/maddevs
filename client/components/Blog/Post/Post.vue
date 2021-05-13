@@ -10,7 +10,7 @@
         class="blog-post__share"
       >
         <TableOfContents
-          v-if="slices.some(slice => slice.slice_type === 'table_of_contents')"
+          v-if="slices && slices.some(slice => slice.slice_type === 'table_of_contents')"
           :slice="slices.find(slice => slice.slice_type === 'table_of_contents')"
         />
         <div class="blog-post__share-links">
@@ -212,11 +212,11 @@ export default {
     },
 
     wrapperClass() {
-      return this.recommendedPosts.length || this.type === 'customer_university' ? 'with-recommended' : ''
+      return (this.recommendedPosts && this.recommendedPosts.length) || this.type === 'customer_university' ? 'with-recommended' : ''
     },
 
     showRecommended() {
-      return this.type !== 'customer_university' && this.recommendedPosts.length !== 0
+      return this.type !== 'customer_university' && this.recommendedPosts && this.recommendedPosts.length !== 0
     },
   },
 
@@ -281,6 +281,8 @@ export default {
     shareButtonsScroll() {
       const shareButtons = document.querySelector('.blog-post__share')
 
+      if (!shareButtons) return null
+
       if (window.pageYOffset < 930) {
         shareButtons.style.cssText = 'position: absolute; top: 812px; left: -210px;'
       } else if (
@@ -299,6 +301,7 @@ export default {
       } else {
         shareButtons.style.cssText = 'top: 100px'
       }
+      return true
     },
 
     calcProgress() {
