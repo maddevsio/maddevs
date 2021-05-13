@@ -6,6 +6,10 @@
     <div class="blog-post__background" />
     <div class="blog-post__inner-container">
       <div class="blog-post__share">
+        <TableOfContents
+          v-if="slices.some(slice => slice.slice_type === 'table_of_contents')"
+          :slice="slices.find(slice => slice.slice_type === 'table_of_contents')"
+        />
         <ShareNetwork
           :url="openGraphUrl"
           :title="metaTitle"
@@ -44,10 +48,6 @@
         :date="date"
       />
       <div class="blog-post__main-content">
-        <TableOfContents
-          v-if="$prismic.asText(tableOfContents)"
-          :content="tableOfContents"
-        />
         <SlicesBlock
           :slices="slices"
           class="blog-post__text-container"
