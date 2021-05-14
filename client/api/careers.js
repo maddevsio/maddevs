@@ -6,3 +6,12 @@ export const getVacancyPost = async (prismic, payload) => {
     return error
   }
 }
+
+export const sendVacancy = async (axios, payload) => {
+  try {
+    const response = await axios.post('api/careers', payload)
+    return response
+  } catch (error) {
+    return error
+  }
+}
