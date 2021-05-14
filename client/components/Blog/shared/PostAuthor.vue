@@ -20,17 +20,25 @@
       v-else
       class="post-author__none-image"
     />
-    <div class="post-author__info">
-      <p
-        class="post-author__name"
-        :title="name"
+    <div class="post-author__data">
+      <div class="post-author__info">
+        <p
+          class="post-author__name"
+          :title="name"
+        >
+          {{ shortTitle }}
+        </p>
+        <span
+          class="post-author__position"
+          :title="position"
+        >{{ position }}</span>
+      </div>
+      <div
+        v-if="date"
+        class="post-author__date"
       >
-        {{ shortTitle }}
-      </p>
-      <span
-        class="post-author__position"
-        :title="position"
-      >{{ position }}</span>
+        {{ date }}
+      </div>
     </div>
   </NuxtLink>
 </template>
@@ -70,6 +78,11 @@ export default {
       type: String,
       default: 'light',
     },
+
+    date: {
+      type: String,
+      default: () => '',
+    },
   },
 
   computed: {
@@ -85,74 +98,93 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/vars';
+  @import '../../../assets/styles/vars';
 
-.post-author {
-  max-width: 100%;
-  display: inline-flex;
-  align-items: center;
-  &--dark-theme {
-    .post-author {
-      &__image,
-      &__none-image {
-        background-color: $bgcolor--black-light;
-      }
-      &__name {
-        color: $text-color--white;
-      }
-    }
-  }
-  &--light-theme {
-    .post-author {
-      &__image,
-      &__none-image {
-        background-color: $bgcolor--silver;
-      }
-      &__name {
-        color: $text-color--black;
-      }
-    }
-  }
-
-  &__image,
-  &__none-image {
-    width: 36px;
-    min-width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    overflow: hidden;
-    -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  &__info {
+  .post-author {
     max-width: 100%;
-    margin-left: 9px;
-    overflow: hidden;
-  }
+    display: inline-flex;
+    align-items: center;
 
-  &__name,
-  &__position {
-    @include font('Inter', 13px, 400);
-    display: block;
-    line-height: 129%;
-    letter-spacing: -0.02em;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
+    &--dark-theme {
+      .post-author {
+        &__image,
+        &__none-image {
+          background-color: $bgcolor--black-light;
+        }
 
-  &__name {
-    margin-bottom: 4px;
-  }
+        &__name {
+          color: $text-color--white;
+        }
+      }
+    }
 
-  &__position {
-    color: $text-color--grey-pale;
+    &--light-theme {
+      .post-author {
+        &__image,
+        &__none-image {
+          background-color: $bgcolor--silver;
+        }
+
+        &__name {
+          color: $text-color--black;
+        }
+      }
+    }
+
+    &__image,
+    &__none-image {
+      width: 36px;
+      min-width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      overflow: hidden;
+      -webkit-mask-image: -webkit-radial-gradient(white, black); // fix for problems with border-radius in Safari
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__data {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__info {
+      max-width: 100%;
+      margin-left: 9px;
+      overflow: hidden;
+    }
+
+    &__name,
+    &__position {
+      @include font('Inter', 13px, 400);
+      display: block;
+      line-height: 129%;
+      letter-spacing: -0.02em;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &__date {
+      @include font('Inter', 12px, 400);
+      font-style: normal;
+      font-weight: normal;
+      line-height: 166%;
+      letter-spacing: -0.1px;
+      color: $text-color--grey-pale;
+      margin-left: 9px;
+    }
+
+    &__name {
+      margin-bottom: 4px;
+    }
+
+    &__position {
+      color: $text-color--grey-pale;
+    }
   }
-}
 </style>

@@ -66,13 +66,9 @@
       <div class="blog-post__post-info">
         <PostAuthor
           v-bind="author"
+          :date="date"
           theme="dark"
         />
-        <div class="blog-post__date-tag">
-          <div class="blog-post__date">
-            {{ date }}
-          </div>
-        </div>
       </div>
     </template>
   </CommonHeader>
@@ -198,12 +194,7 @@ export default {
 
 /deep/ .blog-post {
   &__post-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 7px;
-    margin-bottom: 43px;
-    text-decoration: none;
+    margin-bottom: 50px;
 
     a {
       text-decoration: none;
@@ -224,11 +215,35 @@ export default {
   }
 }
 
-/deep/ .post-author__image {
+/deep/ .post-author {
+  &__name {
+    font-size: 15px;
+
+    &::after {
+      content: '/';
+      color: red;
+      margin: 0 5px;
+    }
+  }
+
+  &__image {
   width: 40px;
   min-width: 40px;
   height: 40px;
   border-radius: 9.41177px;
+  }
+
+  &__position {
+    font-size: 15px;
+  }
+}
+
+/deep/ .post-author {
+  align-items: end;
+
+  &__info {
+    display: flex;
+  }
 }
 
 .cluster-navigation {
