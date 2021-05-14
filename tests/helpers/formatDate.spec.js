@@ -7,6 +7,10 @@ describe('formatDate helper', () => {
     expect(formatDate('2021-4-28')).toEqual(newDateFormat)
   })
 
+  it('function should return invalid date if pass invalid string in params', () => {
+    expect(formatDate('abc')).toEqual('Invalid Date')
+  })
+
   it('function should return invalid date if called without params', () => {
     expect(formatDate()).toEqual('Invalid Date')
   })

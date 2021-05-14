@@ -1,88 +1,101 @@
+import { shallowMount, createLocalVue } from '@vue/test-utils'
 import TableOfContents from '@/components/Blog/Post/TableOfContents'
-import { render, fireEvent, screen } from '@testing-library/vue'
+import '../../../__mocks__/intersectionObserverMock'
 
-const content = [
-  {
-    spans: [
-      {
-        data: {
-          lunk_type: 'Web',
-          url: 'https://#gallery',
-        },
-        start: 0,
-        end: 7,
-        type: 'hyperlink',
+const localVue = createLocalVue()
+
+describe('careers page', () => {
+  let wrapper
+
+  beforeEach(() => {
+    global.$nuxt = {
+      $route: {
+        name: null,
       },
-    ],
-    text: 'Gallery',
-    type: 'list-item',
-  },
-  {
-    spans: [
-      {
-        data: {
-          lunk_type: 'Web',
-          url: 'https://#main',
-        },
-        start: 0,
-        end: 7,
-        type: 'hyperlink',
+    }
+    wrapper = shallowMount(TableOfContents, {
+      localVue,
+      stubs: ['NuxtLink'],
+      data() {
+        return {
+          activeAnchor: null,
+        }
       },
-    ],
-    text: 'Main',
-    type: 'list-item',
-  },
-]
-
-const containerToRender = document.createElement('div')
-containerToRender.setAttribute('id', content[0].text.toLowerCase())
-containerToRender.setAttribute('data-testid', 'test-container')
-
-const WINDOW_SCROLL_TO = jest.fn()
-
-describe('TableOfContents component', () => {
-  window.scrollTo = WINDOW_SCROLL_TO
-  it('should render correctly', () => {
-    const { container } = render(TableOfContents, {
-      props: {
-        content,
+      propsData: {
+        slice: {
+          items: [
+            {
+              lable: [
+                {
+                  text: 'Blog post title',
+                },
+              ],
+            },
+          ],
+        },
       },
     })
-    const element = screen.getAllByTestId('test-link-table')
-    fireEvent.click(element[0])
-    expect(container).toMatchSnapshot()
   })
 
-  it('should render correctly without spans property', async () => {
-    render(TableOfContents, {
-      props: {
-        content: [
-          {
-            spans: [],
-            text: 'Gallery',
-            type: 'list-item',
+  // ------ IMPORTANT ----- //
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
+  })
+
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
+  // --------------------- //
+  describe('Table Of Contents', () => {
+    it('if set args "Blog post title" to createAnchorID will return id #blog-post-title', () => {
+      expect(wrapper.vm.createAnchorID('Blog post title')).toBe('#blog-post-title')
+    })
+
+    it('if set not string args to createAnchorID will return null', () => {
+      expect(wrapper.vm.createAnchorID(undefined)).toBeNull()
+      expect(wrapper.vm.createAnchorID(null)).toBeNull()
+      expect(wrapper.vm.createAnchorID(123)).toBeNull()
+      expect(wrapper.vm.createAnchorID({})).toBeNull()
+      expect(wrapper.vm.createAnchorID([])).toBeNull()
+    })
+
+    it('if has visible title in anchors list will set to activeAnchor active id', () => {
+      const entry = {
+        target: {
+          id: 'blog-post-title',
+        },
+      }
+      wrapper.vm.intersectionHandler(entry)
+      expect(wrapper.vm.activeAnchor).toBe('blog-post-title')
+    })
+
+    it('if not has visible title in anchors list than not change value in activeAnchor', () => {
+      const entry = {
+        target: {
+          id: 'new-blog-post-title',
+        },
+      }
+      wrapper.vm.intersectionHandler(entry)
+      expect(wrapper.vm.activeAnchor).toBeNull()
+    })
+
+    it('if slice items is empty than computed anchors will return []', () => {
+      wrapper = shallowMount(TableOfContents, {
+        localVue,
+        stubs: ['NuxtLink'],
+        data() {
+          return {
+            activeAnchor: null,
+          }
+        },
+        propsData: {
+          slice: {
+            items: [],
           },
-        ],
-      },
+        },
+      })
+      const result = wrapper.vm.anchors
+      expect(result.length).toBeFalsy()
     })
-
-    const element = screen.getAllByTestId('test-link-table')
-    await fireEvent.click(element[0])
-
-    expect(element[0].innerHTML.trim()).toBe('Gallery')
-  })
-
-  it('should correctly work scroll', async () => {
-    render(TableOfContents, {
-      props: {
-        content,
-      },
-      container: document.body.appendChild(containerToRender),
-    })
-
-    const element = screen.getAllByTestId('test-link-table')
-    await fireEvent.click(element[0])
-
-    expect(WINDOW_SCROLL_TO).toHaveBeenCalledTimes(1)
   })
 })

@@ -15,27 +15,34 @@ exports[`Post component should render correctly with default props 1`] = `
     >
       <div
         class="blog-post__share"
+        style="position: absolute; top: 812px; left: -210px;"
       >
-        <sharenetwork-stub
-          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
-          network="facebook"
-          title=""
-          url=""
-        />
+        <!---->
          
-        <sharenetwork-stub
-          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
-          network="twitter"
-          title=""
-          url=""
-        />
-         
-        <sharenetwork-stub
-          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
-          network="linkedin"
-          title=""
-          url=""
-        />
+        <div
+          class="blog-post__share-links"
+        >
+          <sharenetwork-stub
+            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
+            network="facebook"
+            title=""
+            url=""
+          />
+           
+          <sharenetwork-stub
+            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
+            network="twitter"
+            title=""
+            url=""
+          />
+           
+          <sharenetwork-stub
+            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
+            network="linkedin"
+            title=""
+            url=""
+          />
+        </div>
       </div>
        
       <blogheader-stub
@@ -48,22 +55,6 @@ exports[`Post component should render correctly with default props 1`] = `
       <div
         class="blog-post__main-content"
       >
-        <div
-          class="table-of-contents"
-        >
-          <div
-            class="table-of-contents__title"
-          >
-            
-    Table of contents
-  
-          </div>
-           
-          <ol
-            class="table-of-contents__list"
-          />
-        </div>
-         
         <section
           class="blog-post__text-container"
         />
