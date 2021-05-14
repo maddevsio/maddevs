@@ -81,7 +81,7 @@ export const agileDevelopmentBenefits = [
   'Cross-functional collaboration',
 ]
 
-export const competitiveAndCompensation = [
+export const competitiveAndCompensationBenefits = [
   'Stable salary and pay days',
   'Competitive compensation',
   'Formal employment',

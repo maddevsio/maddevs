@@ -49,7 +49,7 @@
       </div>
       <ul class="benefits_list">
         <li
-          v-for="benefit in competitiveAndCompensation"
+          v-for="benefit in competitiveAndCompensationBenefits"
           :key="benefit"
           class="benefits_list-item"
         >
@@ -64,7 +64,7 @@
 import {
   engineeringCultureBenefits,
   agileDevelopmentBenefits,
-  competitiveAndCompensation,
+  competitiveAndCompensationBenefits,
 } from '@/data/benefits'
 
 export default {
@@ -73,7 +73,7 @@ export default {
     return {
       engineeringCultureBenefits,
       agileDevelopmentBenefits,
-      competitiveAndCompensation,
+      competitiveAndCompensationBenefits,
     }
   },
 }
