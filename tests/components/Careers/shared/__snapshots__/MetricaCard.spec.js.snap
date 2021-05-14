@@ -3,7 +3,7 @@
 exports[`KeyMetrics component should render correctly 1`] = `
 <div>
   <div
-    class="key-metrics container"
+    class="key-metrics_container container"
     description="open-source projects on GitHub."
     title="70+"
   >

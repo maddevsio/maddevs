@@ -3,7 +3,7 @@
 exports[`KeyMetrics component should render correctly 1`] = `
 <div>
   <div
-    class="key-metrics container"
+    class="key-metrics_container container"
   >
     <h2
       class="key-metrics_title"

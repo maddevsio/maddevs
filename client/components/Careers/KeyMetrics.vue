@@ -1,5 +1,5 @@
 <template>
-  <div class="key-metrics container">
+  <div class="key-metrics_container container">
     <h2 class="key-metrics_title">
       Mad Devs’ key metrics
     </h2>
@@ -35,11 +35,16 @@ export default {
 @import '@/assets/styles/_vars';
 
 .key-metrics {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-
+  &_container,
   &_grid {
     display: grid;
+  }
+
+  &_container {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &_grid {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
