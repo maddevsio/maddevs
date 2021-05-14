@@ -37,6 +37,7 @@ exports[`PositionHeader component should render correctly 1`] = `
           <button
             class="ui-button careers-position__apply-button"
             style="position: relative; overflow: hidden;"
+            type="button"
           >
             
           Apply now

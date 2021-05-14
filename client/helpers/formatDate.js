@@ -5,7 +5,7 @@ function formatDate(raw) {
 
   const date = new Date(raw)
 
-  if (date === 'Invalid Date') return 'Invalid Date'
+  if (Number.isNaN(date.valueOf())) return 'Invalid Date'
 
   return date.toLocaleString('en-US', options)
 }

@@ -24,7 +24,10 @@
           <PositionTags :tags="vacancy.tags" />
         </div>
         <NuxtLink to="#careers-position-form">
-          <UIButton class="careers-position__apply-button">
+          <UIButton
+            type="button"
+            class="careers-position__apply-button"
+          >
             Apply now
           </UIButton>
         </NuxtLink>
@@ -53,7 +56,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import '@/assets/styles/_vars.scss';
 
 @keyframes moveArrow {
@@ -71,6 +74,24 @@ export default {
     margin-bottom: 60px;
     background-color: $bgcolor--black;
     color: $text-color--white-primary;
+    /deep/ .ui-button {
+      width: 190px;
+      height: 48px;
+      font-weight: 400;
+      border-radius: 6px;
+      line-height: 27px;
+      letter-spacing: -0.1px;
+      margin-top: 47.5px;
+      &::after {
+        content: '↓';
+        transform: translateY(0);
+        display: inline-block;
+        margin-left: 8px;
+      }
+      &:hover::after {
+        animation: moveArrow 1s linear infinite;
+      }
+    }
   }
   &__labels {
     margin-bottom: 32px;
@@ -89,30 +110,11 @@ export default {
   &__tags {
     margin-top: 23px;
   }
-  /deep/ &__apply-button {
-    width: 190px;
-    height: 48px;
-    font-weight: 400;
-    border-radius: 6px;
-    line-height: 27px;
-    letter-spacing: -0.1px;
-    margin-top: 47.5px;
-    &::after {
-      content: '↓';
-      transform: translateY(0);
-      display: inline-block;
-      margin-left: 8px;
-    }
-    &:hover::after {
-      animation: moveArrow 1s linear infinite;
-    }
-  }
 
   @media screen and (max-width: 1024px) {
     &__header {
       padding: 120px 0 60px;
     }
-
     &__title {
       font-size: 52px;
       line-height: 64px;

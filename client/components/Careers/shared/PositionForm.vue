@@ -4,7 +4,7 @@
       class="position-form"
       @submit.prevent="submitForm"
     >
-      <div class="position-form__text">
+      <div class="position-form__message">
         <label class="position-form__field">
           Hello, my name is
           <FormInput
@@ -128,7 +128,6 @@
       <UIButton
         type="submit"
         :disabled="$v.validationGroup.$invalid"
-        class="position-form__submit-button"
       >
         I want to work for Mad Devs!
       </UIButton>
@@ -273,6 +272,17 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/_vars.scss';
 
+/deep/ .ui-button {
+  width: 255px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.1px;
+  border-radius: 6px;
+  margin-top: 32px;
+  font-weight: normal;
+}
+
 .position-form {
   background-color: $bgcolor--silver;
   color: $text-color--black-oil;
@@ -280,29 +290,7 @@ export default {
   padding-bottom: 45px;
   border-radius: 8px;
   overflow: hidden;
-
-  /deep/ &__text * {
-    font-size: 20px;
-    line-height: 34px;
-    letter-spacing: -0.1px;
-  }
-
-  &__input {
-    max-width: 45%;
-  }
-
-  &__error {
-    position: relative;
-    top: -6px;
-    font-size: 14px;
-    margin-top: 0;
-    line-height: normal;
-    &--file-attach {
-      padding-left: 26px;
-    }
-  }
-
-  &__positions-list {
+  /deep/ .ui-radio-buttons {
     display: flex;
     flex-flow: row wrap;
     grid-row-gap: initial;
@@ -313,7 +301,7 @@ export default {
     &::after {
       content: 'roles.';
     }
-    /deep/ .ui-radio-buttons_item {
+    &_item {
       &:last-child {
         margin-right: 11px;
       }
@@ -323,7 +311,25 @@ export default {
       }
     }
   }
-
+  &__message,
+  /deep/ .ui-radio-buttons_item-label {
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: -0.1px;
+  }
+  &__input {
+    max-width: 45%;
+  }
+  &__error {
+    position: relative;
+    top: -6px;
+    font-size: 14px;
+    margin-top: 0;
+    line-height: normal;
+    &--file-attach {
+      padding-left: 26px;
+    }
+  }
   &__skills {
     margin-top: 32px;
     &-list {
@@ -336,19 +342,9 @@ export default {
     }
   }
 
-  &__submit-button {
-    width: 255px;
-    height: 48px;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: -0.1px;
-    border-radius: 6px;
-    margin-top: 32px;
-    font-weight: normal;
-  }
-
   @media screen and (max-width: 768px) {
-    /deep/ &__text * {
+    &__message,
+    /deep/ .ui-radio-buttons_item-label {
       font-size: 18px;
       line-height: 29px;
     }
@@ -362,7 +358,8 @@ export default {
   @media screen and (max-width: 576px) {
     padding: 24px;
     padding-bottom: 29px;
-    /deep/ &__text * {
+    &__message,
+    /deep/ .ui-radio-buttons_item-label {
       font-size: 17px;
       line-height: 27px;
     }
