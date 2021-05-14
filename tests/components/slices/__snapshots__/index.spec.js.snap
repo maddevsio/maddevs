@@ -13,7 +13,6 @@ exports[`slice block component should render correctly 1`] = `
         <prismicrichtext-stub
           class="textslice"
           field="[object Object]"
-          html-serializer="function () { [native code] }"
         />
       </div>
     </section>

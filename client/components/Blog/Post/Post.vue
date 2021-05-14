@@ -56,6 +56,7 @@
       <div class="blog-post__main-content">
         <SlicesBlock
           :slices="slices"
+          :slices-type="type"
           class="blog-post__text-container"
         />
       </div>

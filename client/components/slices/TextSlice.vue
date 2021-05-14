@@ -17,6 +17,11 @@ export default {
       type: Object,
       default: null,
     },
+
+    htmlSerializer: {
+      type: Function,
+      default: () => null,
+    },
   },
 
   data() {
@@ -29,46 +34,6 @@ export default {
     if (this.slice.primary.text[0] && this.slice.primary.text[0].type === 'heading1') {
       this.className = this.slice.primary.text[0].text.toLowerCase().replace(/\s/g, '-')
     }
-  },
-
-  methods: {
-    htmlSerializer(type, element, content, children) {
-      const text = children.join('')
-      if (type === 'heading2') {
-        return this.createAnchorTag('h2', text)
-      }
-      if (type === 'heading3') {
-        return this.createAnchorTag('h3', text)
-      }
-      if (type === 'heading4') {
-        return this.createAnchorTag('h4', text)
-      }
-      if (type === 'heading5') {
-        return this.createAnchorTag('h5', text)
-      }
-      if (type === 'heading6') {
-        return this.createAnchorTag('h6', text)
-      }
-      return null
-    },
-
-    createAnchorID(text) {
-      if (!text || typeof text !== 'string') return null
-      const formattedText = text.trim().toLowerCase().replace(/[|&;$%@"<>()+,?!]/g, '').replace(/\s+/g, '-')
-      return formattedText
-    },
-
-    createAnchorTag(tag, text) {
-      return `
-        <div id="${this.createAnchorID(text)}" class="anchor_title">
-          <${tag} class="anchor_title-h">${text}</${tag}>
-          <div class="anchor_copy-link">
-            <img src="${require('@/assets/img/common/anchor.svg')}" alt="Anchor" />
-            <button data-id="${this.createAnchorID(text)}" class="copy-link">Copy link</button>
-          </div>
-        </div>
-      `
-    },
   },
 }
 </script>
