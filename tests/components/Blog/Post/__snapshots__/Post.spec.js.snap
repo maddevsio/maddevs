@@ -15,7 +15,7 @@ exports[`Post component should render correctly with default props 1`] = `
     >
       <div
         class="blog-post__share blog-post__share--vertical"
-        style="position: absolute; top: 580px; left: -183px;"
+        style="display: none;"
       >
         <!---->
          

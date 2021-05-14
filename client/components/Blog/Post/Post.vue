@@ -278,15 +278,16 @@ export default {
 
     shareButtonsScroll() {
       const shareButtons = document.querySelector('.blog-post__share')
-      const offsetTop = document.querySelector('.blog-post__introduction-container').clientHeight
+      const shareButtonsContainer = document.querySelector('.blog-post__introduction-container')
 
       if (!shareButtons) return null
+      if (!shareButtonsContainer) return null
 
-      if (window.pageYOffset < (!this.tableOfContentsSlice ? 650 : offsetTop + 100)) {
+      if (window.pageYOffset < (!this.tableOfContentsSlice ? 650 : shareButtonsContainer.clientHeight + 100)) {
         if (!this.tableOfContentsSlice) {
           shareButtons.style.cssText = 'position: absolute; top: 580px; left: -183px;'
         } else {
-          shareButtons.style.cssText = `position: absolute; top: ${offsetTop + 30}px; left: -210px;`
+          shareButtons.style.cssText = `position: absolute; top: ${shareButtonsContainer.clientHeight + 30}px; left: -210px;`
         }
       } else if (
         window.pageYOffset
