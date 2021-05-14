@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'MetricaCard',
+  name: 'MetricCard',
   props: {
     title: {
       type: String,

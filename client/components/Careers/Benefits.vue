@@ -10,20 +10,12 @@
         </p>
       </div>
       <ul class="benefits_list">
-        <li class="benefits_list-item">
-          Code reviews and testing
-        </li>
-        <li class="benefits_list-item">
-          Automated CI/CD
-        </li>
-        <li class="benefits_list-item">
-          Healthy oncall
-        </li>
-        <li class="benefits_list-item">
-          Internal boilerplates and open-source
-        </li>
-        <li class="benefits_list-item">
-          Regularly updated and reliable documentation
+        <li
+          v-for="benefit in engineeringCultureBenefits"
+          :key="benefit"
+          class="benefits_list-item"
+        >
+          {{ benefit }}
         </li>
       </ul>
     </div>
@@ -37,20 +29,12 @@
         </p>
       </div>
       <ul class="benefits_list">
-        <li class="benefits_list-item">
-          Clearly explained development goals
-        </li>
-        <li class="benefits_list-item">
-          Engineers contribute to backlog and roadmap
-        </li>
-        <li class="benefits_list-item">
-          Direct, cult-the bullshit, communication in problem-solving
-        </li>
-        <li class="benefits_list-item">
-          Celebrating initiatives culture
-        </li>
-        <li class="benefits_list-item">
-          Cross-functional collaboration
+        <li
+          v-for="benefit in agileDevelopmentBenefits"
+          :key="benefit"
+          class="benefits_list-item"
+        >
+          {{ benefit }}
         </li>
       </ul>
     </div>
@@ -64,20 +48,12 @@
         </p>
       </div>
       <ul class="benefits_list">
-        <li class="benefits_list-item">
-          Stable salary and pay days
-        </li>
-        <li class="benefits_list-item">
-          Competitive compensation
-        </li>
-        <li class="benefits_list-item">
-          Formal employment
-        </li>
-        <li class="benefits_list-item">
-          Flexible payment terms
-        </li>
-        <li class="benefits_list-item">
-          Salary, benefits and bonuses paid in USD
+        <li
+          v-for="benefit in competitiveAndCompensation"
+          :key="benefit"
+          class="benefits_list-item"
+        >
+          {{ benefit }}
         </li>
       </ul>
     </div>
@@ -85,8 +61,21 @@
 </template>
 
 <script>
+import {
+  engineeringCultureBenefits,
+  agileDevelopmentBenefits,
+  competitiveAndCompensation,
+} from '@/data/benefits'
+
 export default {
   name: 'Benefits',
+  data() {
+    return {
+      engineeringCultureBenefits,
+      agileDevelopmentBenefits,
+      competitiveAndCompensation,
+    }
+  },
 }
 </script>
 
@@ -132,7 +121,7 @@ export default {
 
   &_title {
     margin-bottom: 21px;
-    @include font('Inter', 60px, 800);
+    @include font('Poppins', 60px, 700);
     letter-spacing: -0.04em;
     line-height: 65px;
   }

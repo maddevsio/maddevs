@@ -1,7 +1,7 @@
 import KeyMetrics from '@/components/Careers/KeyMetrics'
 import { render, screen } from '@testing-library/vue'
 
-const stubs = ['MetricaCard']
+const stubs = ['MetricCard']
 
 describe('KeyMetrics component', () => {
   it('should render correctly', () => {

@@ -4,7 +4,7 @@
       Mad Devs’ key metrics
     </h2>
     <div class="key-metrics_grid">
-      <MetricaCard
+      <MetricCard
         v-for="metrica in keyMetrics"
         v-bind="metrica"
         :key="metrica.title"
@@ -14,13 +14,13 @@
 </template>
 
 <script>
-import MetricaCard from '@/components/Careers/shared/MetricaCard'
+import MetricCard from '@/components/Careers/shared/MetricCard'
 import { keyMetrics } from '@/data/careersPage'
 
 export default {
   name: 'KeyMetrics',
   components: {
-    MetricaCard,
+    MetricCard,
   },
 
   data() {
@@ -51,7 +51,7 @@ export default {
 
   &_title {
     margin-right: 48px;
-    @include font('Inter', 60px, 800);
+    @include font('Poppins', 60px, 700);
     letter-spacing: -2.6px;
     line-height: 64px;
     color: $text-color--white;

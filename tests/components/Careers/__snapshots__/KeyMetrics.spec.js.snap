@@ -16,27 +16,27 @@ exports[`KeyMetrics component should render correctly 1`] = `
     <div
       class="key-metrics_grid"
     >
-      <metricacard-stub
+      <MetricCard-stub
         description="open-source projects on GitHub."
         title="70+"
       />
-      <metricacard-stub
+      <MetricCard-stub
         description="staff members work for Mad Devs."
         title="100+"
       />
-      <metricacard-stub
+      <MetricCard-stub
         description="tech bloggers and conference speakers."
         title="30+"
       />
-      <metricacard-stub
+      <MetricCard-stub
         description="weekly pull requests in a project."
         title="100+"
       />
-      <metricacard-stub
+      <MetricCard-stub
         description="boring task and bureaucratic procedures."
         title="0"
       />
-      <metricacard-stub
+      <MetricCard-stub
         description="hours of internal training."
         title="10K"
       />

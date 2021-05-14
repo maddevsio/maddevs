@@ -45,7 +45,7 @@ export default {
   &_title {
     margin-top: 141px;
     margin-bottom: 66px;
-    @include font('Inter', 100px, 800);
+    @include font('Poppins', 100px, 700);
     letter-spacing: -0.04em;
     line-height: 96px;
     color: $text-color--white;

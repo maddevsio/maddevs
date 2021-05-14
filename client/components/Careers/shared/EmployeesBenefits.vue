@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { employeesBenefits as benefits } from '@/data/employeesBenefits'
+import { employeesBenefits as benefits } from '@/data/benefits'
 
 export default {
   name: 'EmployeesBenefits',
