@@ -35,11 +35,13 @@
           />
         </div>
       </div>
-
       <CustomerUniversityHeader
         v-if="type === 'customer_university'"
         :id="id"
         :title="title"
+        :author="findAuthor(postAuthor.id, allAuthors)"
+        :date="date"
+        :tags="tags"
         :subtitle="subtitle"
         :featured-image="featuredImage"
         :post-list="clusterPosts || []"
@@ -240,6 +242,8 @@ export default {
     this.$nextTick(() => {
       this.dataLoaded = true
     })
+
+    console.log('---->', this.postAuthor)
   },
 
   beforeDestroy() {

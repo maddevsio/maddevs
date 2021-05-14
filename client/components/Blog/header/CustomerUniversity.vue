@@ -61,6 +61,25 @@
         </div>
       </div>
     </template>
+
+    <template #afterTitle>
+      <div class="blog-post__post-info">
+        <PostAuthor
+          v-bind="author"
+          theme="dark"
+        />
+        <div class="blog-post__date-tag">
+          <div class="blog-post__date">
+            {{ date }}
+          </div>
+          <PostTag
+            v-if="tags.length"
+            :tag="tags[0]"
+            theme="dark"
+          />
+        </div>
+      </div>
+    </template>
   </CommonHeader>
 </template>
 
@@ -68,12 +87,14 @@
 import CommonHeader from '@/components/Blog/header/Common'
 import VueSelect from 'vue-select'
 import 'vue-select/dist/vue-select.css'
+import PostAuthor from '@/components/Blog/shared/PostAuthor'
 
 export default {
   name: 'CustomerUniversity',
   components: {
     CommonHeader,
     VueSelect,
+    PostAuthor,
   },
 
   props: {
@@ -105,6 +126,21 @@ export default {
     clusterName: {
       type: String,
       default: () => '',
+    },
+
+    author: {
+      type: Object,
+      default: () => {},
+    },
+
+    date: {
+      type: String,
+      default: () => '',
+    },
+
+    tags: {
+      type: Array,
+      required: true,
     },
   },
 
@@ -173,6 +209,10 @@ export default {
 .cluster-navigation {
   color: white;
   align-items: center;
+
+  /deep/ .post-author {
+
+  }
 
   &__name {
     @include font('Inter', 16px, 400);
