@@ -5,7 +5,7 @@ export const employeesBenefits = [
       width: 31,
       height: 30,
     },
-    title: 'Flexible working hours',
+    title: 'Flexible working <br> hours',
   },
   {
     icon: {
@@ -13,7 +13,7 @@ export const employeesBenefits = [
       width: 28,
       height: 32,
     },
-    title: 'Onsite business trips',
+    title: 'Onsite business <br> trips',
   },
   {
     icon: {
@@ -21,7 +21,7 @@ export const employeesBenefits = [
       width: 36,
       height: 31,
     },
-    title: 'English lessons',
+    title: 'English <br> lessons',
   },
   {
     icon: {
@@ -29,7 +29,7 @@ export const employeesBenefits = [
       width: 39,
       height: 24,
     },
-    title: 'Training budget',
+    title: 'Training <br> budget',
   },
   {
     icon: {
@@ -37,7 +37,7 @@ export const employeesBenefits = [
       width: 24,
       height: 31,
     },
-    title: 'Remote-first culture',
+    title: 'Remote-first <br> culture',
   },
   {
     icon: {
@@ -45,7 +45,7 @@ export const employeesBenefits = [
       width: 26,
       height: 30,
     },
-    title: 'Long-term projects',
+    title: 'Long-term <br> projects',
   },
   {
     icon: {
@@ -53,7 +53,7 @@ export const employeesBenefits = [
       width: 20,
       height: 33,
     },
-    title: 'Paid conferences',
+    title: 'Paid <br> conferences',
   },
   {
     icon: {
@@ -61,7 +61,7 @@ export const employeesBenefits = [
       width: 31,
       height: 36,
     },
-    title: 'Team parties',
+    title: 'Team <br> parties',
   },
 ]
 

@@ -41,6 +41,7 @@ export default {
   }
 
   &_container {
+    margin-bottom: 101px;
     grid-template-columns: 1fr 2fr;
   }
 
