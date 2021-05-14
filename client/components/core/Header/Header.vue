@@ -125,7 +125,6 @@
 
     <Modal
       ref="modalContactMe"
-      modal-title="What do you want to achieve?"
     >
       <ModalContactMe @success="$refs.modalContactMe.close()" />
     </Modal>

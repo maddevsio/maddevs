@@ -4,7 +4,7 @@ export const getPostsByTag = async (prismic, payload) => {
       orderings: '[my.post.date desc]',
       pageSize: 100,
     })
-    return response.results
+    return response.results.filter(recommendedPost => Boolean(recommendedPost.data?.post_author?.id))
   } catch (error) {
     return error
   }
