@@ -8,6 +8,7 @@
       <div
         v-show="dataLoaded"
         class="blog-post__share"
+        :class="{ 'blog-post__share--vertical': !tableOfContentsSlice }"
       >
         <TableOfContents
           v-if="tableOfContentsSlice"
@@ -280,8 +281,12 @@ export default {
 
       if (!shareButtons) return null
 
-      if (window.pageYOffset < 930) {
-        shareButtons.style.cssText = 'position: absolute; top: 812px; left: -210px;'
+      if (window.pageYOffset < (!this.tableOfContentsSlice ? 650 : 930)) {
+        if (!this.tableOfContentsSlice) {
+          shareButtons.style.cssText = 'position: absolute; top: 580px; left: -183px;'
+        } else {
+          shareButtons.style.cssText = 'position: absolute; top: 812px; left: -210px;'
+        }
       } else if (
         window.pageYOffset
         > document.querySelector('.blog-post').offsetHeight
@@ -294,7 +299,11 @@ export default {
           - document.querySelector('.blog-post__share').offsetHeight
           - 190
       ) {
-        shareButtons.style.cssText = 'position: absolute; bottom: 0; top: auto; left: -210px;'
+        if (!this.tableOfContentsSlice) {
+          shareButtons.style.cssText = 'position: absolute; bottom: 0; top: auto; left: -183px;'
+        } else {
+          shareButtons.style.cssText = 'position: absolute; bottom: 0; top: auto; left: -210px;'
+        }
       } else {
         shareButtons.style.cssText = 'top: 100px'
       }
@@ -352,6 +361,20 @@ export default {
     &-links {
       display: flex;
       margin-top: 20px;
+    }
+
+    &--vertical {
+      left: calc(50vw - 592px);
+
+      .blog-post__share-links {
+        margin-top: 0;
+        flex-direction: column;
+
+        .blog-post__share-link {
+          margin: 0;
+          margin-bottom: 30px;
+        }
+      }
     }
   }
 
