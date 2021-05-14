@@ -49,5 +49,14 @@ export default {
     @include font('Inter', 17px, 400);
     line-height: 24px;
   }
+
+  @media screen and (max-width: 1024px) {
+    padding: 16px;
+
+    &_title {
+      font-size: 40px;
+      line-height: 56px;
+    }
+  }
 }
 </style>

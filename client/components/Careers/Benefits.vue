@@ -102,6 +102,11 @@ export default {
     &:first-child {
       padding-top: 0;
     }
+
+    @media screen and (max-width: 1024px) {
+      opacity: 1;
+      border-color: $border-color--grey-02-opacity;
+    }
   }
 
   &_description {
@@ -152,6 +157,51 @@ export default {
       position: absolute;
       left: 0;
       color: $text-color--red;
+    }
+  }
+
+  @media screen and (max-width: 1340px) {
+    &_benefit {
+      padding: 56px 0;
+    }
+
+    &_description {
+      max-width: 610px;
+    }
+
+    &_title {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &_paragraph {
+      font-size: 18px;
+      line-height: 29px;
+    }
+  }
+
+  @media screen and (max-width: 1240px) {
+    margin-bottom: 117px;
+
+    &_benefit {
+      grid-template-columns: 1fr;
+
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+    }
+
+    &_description {
+      max-width: 100%;
+    }
+
+    &_title br {
+      display: none;
+    }
+
+    &_paragraph {
+      margin-bottom: 29px;
     }
   }
 }

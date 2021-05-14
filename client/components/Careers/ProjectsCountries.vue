@@ -82,5 +82,21 @@ export default {
   &_link-btn {
     margin: 0 auto;
   }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 98px;
+
+    &_title {
+      margin-bottom: 7px;
+      font-size: 44px;
+      line-height: 50px;
+    }
+
+    &_description {
+      margin-bottom: 15px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
 }
 </style>

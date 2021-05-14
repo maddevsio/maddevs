@@ -49,6 +49,14 @@ export default {
   &_grid {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+
+    @media screen and (max-width: 740px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 360px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &_title {
@@ -59,9 +67,41 @@ export default {
     color: $text-color--red;
   }
 
+  @media screen and (max-width: 1340px) {
+    &_container {
+      grid-template-columns: 1fr;
+    }
+
+    &_grid {
+      grid-gap: 8px;
+    }
+
+    &_title {
+      margin-right: 0;
+      margin-bottom: 29px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &_container {
+      padding-top: 62px;
+      padding-bottom: 32px;
+    }
+
+    &_title {
+      margin-bottom: 23px;
+      font-size: 40px;
+      line-height: 118%;
+      letter-spacing: -0.04em;
+    }
+  }
 }
 
 /deep/ .benefit-card__item {
   padding: 30px 27px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 15px;
+  }
 }
 </style>

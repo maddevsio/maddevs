@@ -72,5 +72,24 @@ export default {
       color: $text-color--red;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 98px;
+
+    &_title {
+      margin-bottom: 26px;
+      font-size: 76px;
+      line-height: 76px;
+    }
+
+    &_img-wrap {
+      margin-bottom: 96px;
+    }
+
+    &_description {
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
 }
 </style>
