@@ -12,6 +12,12 @@ exports[`Main component should render correctly 1`] = `
     <benefits-stub />
      
     <keymetrics-stub />
+     
+    <div
+      class="careers_white-section"
+    >
+      <employeesbenefits-stub />
+    </div>
   </div>
 </div>
 `;
