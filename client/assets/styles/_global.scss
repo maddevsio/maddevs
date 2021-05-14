@@ -75,31 +75,40 @@
 .field-name {
   @include font('Inter', 16px, 400);
   width: max-content;
-  margin-bottom: 6px;
-  color: $text-color--grey;
+  margin-bottom: 2px;
+  color: $text-color--silver;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.013em;
 }
 
 .entry-field {
   @include font('Inter', 16px, 400);
   width: 100%;
-  padding: 14px 19px;
+  padding: 17px 19px;
   border-radius: 4px;
-  line-height: 27px;
-  letter-spacing: -0.02em;
-  border: 0;
+  line-height: 24px;
+  letter-spacing: -0.013em;
   box-sizing: border-box;
   background-color: $input-bgcolor--grey-dark;
-  color: $text-color--grey;
+  border: 1px solid $border-color--grey-pale;
+  color: $text-color--white-primary;
+  outline: none;
 
   &::placeholder {
     color: $input-placeholder-text--grey-dark;
   }
+
+  &:focus {
+    border-color: $border-color--grey-selected;
+  }
+
 }
 
 .required {
   &::after {
     content: '*';
-    padding-left: 3px;
+    padding-left: 4px;
     color: $text-color--red;
     position: absolute;
   }
@@ -108,17 +117,17 @@
 .form-checkboxes {
   display: flex;
   flex-direction: column;
-  margin-top: 4px;
-  margin-bottom: 26px;
+  margin-top: 8px;
+  margin-bottom: 30px;
 }
 
 .form-checkbox-label {
-  @include font('Inter', 16px, 400);
+  @include font('Inter', 15px, 400);
   position: relative;
   padding-left: 30px;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-  color: $label-text--grey-dark;
+  line-height: 22px;
+  letter-spacing: -0.013em;
+  color: $text-color--grey-pale;
   user-select: none;
   cursor: pointer;
 
@@ -128,7 +137,7 @@
 
   input:checked ~ .checkmark {
     background: url('../img/common/checkmark.svg') no-repeat center;
-    background-color: $input-bgcolor--grey-dark;
+    background-color: $input-bgcolor--grey-light;
   }
 
   a,
@@ -153,21 +162,21 @@
   top: 3px;
   left: 0;
   border-radius: 4px;
-  background-color: $input-bgcolor--grey-dark;
+  background-color: $input-bgcolor--grey-light;
 }
 
 // ----------- Modal window ----------- //
 .error-text {
   display: block;
   margin-top: 3px;
-  color: $text-color--red-opacity;
+  color: $text-color--red;
   @include font('Inter', 14px, 400);
 }
 
 .textarea {
   height: 54px;
   max-height: 192px;
-  min-height: 54px;
+  min-height: 60px;
   overflow: hidden;
   resize: vertical;
 }

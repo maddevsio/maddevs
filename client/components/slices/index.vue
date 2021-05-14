@@ -10,7 +10,10 @@
       <!-- Text slice template -->
       <template v-if="slice.slice_type === 'text'">
         <!-- Here :slice="slice" passes the data to the component -->
-        <TextSlice :slice="slice" />
+        <TextSlice
+          :slice="slice"
+          :html-serializer="serializer"
+        />
       </template>
       <!-- Quote slice template -->
       <template v-else-if="slice.slice_type === 'quote'">
@@ -88,9 +91,63 @@ export default {
   },
 
   props: {
+    slicesType: {
+      type: String,
+      default: null,
+    },
+
     slices: {
       type: Array,
       required: true,
+    },
+  },
+
+  computed: {
+    serializer() {
+      if (this.slicesType === 'post') return this.htmlSerializer
+      return null
+    },
+  },
+
+  methods: {
+    htmlSerializer(type, element, content, children) {
+      const text = children.join('')
+      if (type === 'heading2') {
+        return this.createAnchorTag('h2', text)
+      }
+      if (type === 'heading3') {
+        return this.createAnchorTag('h3', text)
+      }
+      if (type === 'heading4') {
+        return this.createAnchorTag('h4', text)
+      }
+      if (type === 'heading5') {
+        return this.createAnchorTag('h5', text)
+      }
+      if (type === 'heading6') {
+        return this.createAnchorTag('h6', text)
+      }
+      return null
+    },
+
+    createAnchorID(text) {
+      if (!text || typeof text !== 'string') return null
+      const formattedText = text.trim().toLowerCase().replace(/[|&;$%@"<>()+,?!]/g, '').replace(/\s+/g, '-')
+      return formattedText
+    },
+
+    createAnchorTag(tag, text) {
+      return `
+        <div id="${this.createAnchorID(text)}" class="anchor_title">
+          <${tag} class="anchor_title-h">${text}</${tag}>
+          <div class="anchor_copy-link">
+            <button data-id="${this.createAnchorID(text)}" class="copy-link">
+              <img src="${require('@/assets/img/common/anchor.svg')}" alt="Anchor" />
+            </button>
+            <div class="anchor_copy-link-tooltip">Copy link</div>
+          </div>
+        </div>
+      `
     },
   },
 }
@@ -209,6 +266,60 @@ export default {
   background: $bgcolor--grey-light;
   border-radius: 2px;
   line-height: 24px;
+}
+
+/deep/ .anchor_title {
+  position: relative;
+
+  .anchor_copy-link {
+    button {
+      display: none;
+      position: absolute;
+      left: -36px;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 12px;
+      cursor: pointer;
+      border: 0;
+      background-color: transparent;
+
+      img {
+        width: 16px;
+        height: 16px;
+        user-select: none;
+        pointer-events: none;
+      }
+    }
+
+    &-tooltip {
+      display: none;
+      position: absolute;
+      left: -102px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #F4F4F4;
+      padding: 4px 8px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border: 0;
+      line-height: 18px;
+      color: #101113;
+      transition: all 0.1s ease;
+      @include font('Inter', 12px, 400);
+    }
+
+    &:hover {
+      .anchor_copy-link-tooltip {
+        display: block;
+      }
+    }
+  }
+
+  &:hover {
+    .anchor_copy-link button {
+      display: block;
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {

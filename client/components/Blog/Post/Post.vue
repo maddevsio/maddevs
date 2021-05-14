@@ -5,25 +5,35 @@
   >
     <div class="blog-post__background" />
     <div class="blog-post__inner-container">
-      <div class="blog-post__share">
-        <ShareNetwork
-          :url="openGraphUrl"
-          :title="metaTitle"
-          network="facebook"
-          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
+      <div
+        v-show="dataLoaded"
+        class="blog-post__share"
+        :class="{ 'blog-post__share--vertical': !tableOfContentsSlice }"
+      >
+        <TableOfContents
+          v-if="tableOfContentsSlice"
+          :slice="tableOfContentsSlice"
         />
-        <ShareNetwork
-          :url="openGraphUrl"
-          :title="metaTitle"
-          network="twitter"
-          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
-        />
-        <ShareNetwork
-          :url="openGraphUrl"
-          :title="metaTitle"
-          network="linkedin"
-          class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
-        />
+        <div class="blog-post__share-links">
+          <ShareNetwork
+            :url="openGraphUrl"
+            :title="metaTitle"
+            network="facebook"
+            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
+          />
+          <ShareNetwork
+            :url="openGraphUrl"
+            :title="metaTitle"
+            network="twitter"
+            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
+          />
+          <ShareNetwork
+            :url="openGraphUrl"
+            :title="metaTitle"
+            network="linkedin"
+            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
+          />
+        </div>
       </div>
 
       <CustomerUniversityHeader
@@ -44,12 +54,9 @@
         :date="date"
       />
       <div class="blog-post__main-content">
-        <TableOfContents
-          v-if="$prismic.asText(tableOfContents)"
-          :content="tableOfContents"
-        />
         <SlicesBlock
           :slices="slices"
+          :slices-type="type"
           class="blog-post__text-container"
         />
       </div>
@@ -103,6 +110,7 @@ import CustomerUniversityHeader from '@/components/Blog/header/CustomerUniversit
 import CustomerUniversityNavigation from '@/components/Blog/Post/CustomerUniversityNavigation'
 import PostCard from '@/components/Blog/shared/PostCard'
 import initializeLazyLoad from '@/helpers/lazyLoad'
+import copyToClipboard from '@/helpers/copyToClipboard'
 
 import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
@@ -195,22 +203,27 @@ export default {
   data() {
     return {
       buttonIsActive: false,
+      dataLoaded: false,
     }
   },
 
   computed: {
     ...mapGetters(['allAuthors', 'blogTag']),
 
+    tableOfContentsSlice() {
+      return this.slices && this.slices.find(slice => slice.slice_type === 'table_of_contents')
+    },
+
     clusterPosts() {
       return this.cluster ? this.cluster.items : []
     },
 
     wrapperClass() {
-      return this.recommendedPosts.length || this.type === 'customer_university' ? 'with-recommended' : ''
+      return (this.recommendedPosts && this.recommendedPosts.length) || this.type === 'customer_university' ? 'with-recommended' : ''
     },
 
     showRecommended() {
-      return this.type !== 'customer_university' && this.recommendedPosts.length !== 0
+      return this.type !== 'customer_university' && this.recommendedPosts && this.recommendedPosts.length !== 0
     },
   },
 
@@ -219,8 +232,19 @@ export default {
   },
 
   mounted() {
+    this.shareButtonsScroll()
     window.addEventListener('scroll', this.handleScroll)
     window.addEventListener('scroll', this.shareButtonsScroll)
+    document.querySelectorAll('.copy-link')
+      .forEach(link => link.addEventListener('click', this.copyAnchorLink))
+    this.$nextTick(() => {
+      this.dataLoaded = true
+    })
+  },
+
+  beforeDestroy() {
+    document.querySelectorAll('.copy-link')
+      .forEach(link => link.removeEventListener('click', this.copyAnchorLink))
   },
 
   destroyed() {
@@ -229,6 +253,21 @@ export default {
   },
 
   methods: {
+    copyAnchorLink(event) {
+      const copyText = event.target.getAttribute('data-id')
+      if (!copyText) return null
+      const tooltip = event.target.nextElementSibling
+      const link = `${window.location.origin}${this.$router.currentRoute.path}#${copyText}`
+      if (tooltip) {
+        tooltip.innerText = 'Copied!'
+        setTimeout(() => {
+          tooltip.innerText = 'Copy link'
+        }, 3000)
+      }
+      copyToClipboard(link)
+      return link
+    },
+
     scrollToTop() {
       window.scrollTo({
         top: 0,
@@ -236,16 +275,24 @@ export default {
       })
     },
 
-    handleScroll(e) {
-      this.buttonIsActive = Boolean(e.target.scrollingElement.scrollTop !== 0)
+    handleScroll(event) {
+      this.buttonIsActive = Boolean(event.target.scrollingElement.scrollTop !== 0)
       this.calcProgress()
     },
 
     shareButtonsScroll() {
       const shareButtons = document.querySelector('.blog-post__share')
+      const shareButtonsContainer = document.querySelector('.blog-post__introduction-container')
 
-      if (window.pageYOffset < 650) {
-        shareButtons.style.cssText = 'position: absolute; top: 580px; left: -183px;'
+      if (!shareButtons) return null
+      if (!shareButtonsContainer) return null
+
+      if (window.pageYOffset < (!this.tableOfContentsSlice ? 650 : shareButtonsContainer.clientHeight + 100)) {
+        if (!this.tableOfContentsSlice) {
+          shareButtons.style.cssText = 'position: absolute; top: 580px; left: -183px;'
+        } else {
+          shareButtons.style.cssText = `position: absolute; top: ${shareButtonsContainer.clientHeight + 30}px; left: -210px;`
+        }
       } else if (
         window.pageYOffset
         > document.querySelector('.blog-post').offsetHeight
@@ -256,12 +303,17 @@ export default {
             ? document.querySelector('.blog-post > .cluster-navigation').offsetHeight - 24
             : 0)
           - document.querySelector('.blog-post__share').offsetHeight
-          - 100
+          - 190
       ) {
-        shareButtons.style.cssText = 'position: absolute; bottom: -100px; top: auto; left: -183px;'
+        if (!this.tableOfContentsSlice) {
+          shareButtons.style.cssText = 'position: absolute; bottom: 0; top: auto; left: -183px;'
+        } else {
+          shareButtons.style.cssText = 'position: absolute; bottom: 0; top: auto; left: -210px;'
+        }
       } else {
         shareButtons.style.cssText = 'top: 100px'
       }
+      return true
     },
 
     calcProgress() {
@@ -307,10 +359,29 @@ export default {
   &__share {
     display: flex;
     position: fixed;
-    left: calc(50vw - 599px);
+    left: calc(50vw - 619px);
     top: 750px;
     flex-direction: column;
     margin-top: 0;
+
+    &-links {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    &--vertical {
+      left: calc(50vw - 592px);
+
+      .blog-post__share-links {
+        margin-top: 0;
+        flex-direction: column;
+
+        .blog-post__share-link {
+          margin: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
   }
 
   &__share-link {
@@ -318,8 +389,13 @@ export default {
     height: 33px;
     display: block;
     background-repeat: no-repeat;
-    margin-bottom: 30px;
+    margin-right: 24px;
     cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
     &.icon-wrapper {
       &__facebook-icon {
         @include social-network-facebook;
@@ -370,7 +446,7 @@ export default {
   &__back-to-list {
     padding: 12px 14px 4px;
     position: fixed;
-    left: 36px;
+    left: 28px;
     bottom: 20px;
     background-color: $bgcolor--red;
     border: 1px solid $border-color--red;
@@ -434,7 +510,7 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1285px) {
   .blog-post {
     &__share {
       display: none;

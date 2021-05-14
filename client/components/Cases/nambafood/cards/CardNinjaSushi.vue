@@ -68,7 +68,7 @@ export default {
       img: {
         x1: this.$getMediaFromS3('/images/Cases/nambafood/webp/ninja-sushi-slide.webp'),
         x2: this.$getMediaFromS3('/images/Cases/nambafood/webp/ninja-sushi-slide@2x.webp'),
-        alt: null,
+        alt: 'Cases image',
       },
 
       source: {

@@ -51,6 +51,7 @@ exports[`Careers _uid component should render correctly 1`] = `
             <button
               class="ui-button careers-position__apply-button"
               style="position: relative; overflow: hidden;"
+              type="button"
             >
               
           Apply now
@@ -332,7 +333,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                 class="position-form"
               >
                 <div
-                  class="position-form__text"
+                  class="position-form__message"
                 >
                   <label
                     class="position-form__field"
@@ -521,7 +522,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <button
-                  class="ui-button position-form__submit-button"
+                  class="ui-button"
                   style="position: relative; overflow: hidden;"
                   type="submit"
                 >

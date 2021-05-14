@@ -1,8 +1,8 @@
-import { createNewLead } from '@/api/leads'
+import { sendLead } from '@/api/leads'
 
 export const actions = {
-  async createNewLead(_, payload) {
-    const data = await createNewLead(this.$axios, payload)
-    return data
+  async sendLead(_, payload) {
+    const response = await sendLead(this.$axios, payload)
+    return response
   },
 }

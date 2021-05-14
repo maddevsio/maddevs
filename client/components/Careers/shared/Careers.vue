@@ -300,6 +300,10 @@ export default {
 @import '@/assets/styles/_vars.scss';
 
 .careers {
+  .error-text {
+    color: $text-color--red-opacity;
+  }
+
   &__position-list {
     align-items: center;
     position: relative;

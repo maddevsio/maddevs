@@ -84,7 +84,7 @@ exports[`SirJohnMonashCentre _uid component should render correctly 1`] = `
         </div>
          
         <img
-          alt=""
+          alt="Sjmc Logo"
           class="case_header-logo media_lazy case_sjmc-logo"
           data-src="img.jpg"
           height="110"

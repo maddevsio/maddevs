@@ -3,6 +3,7 @@
     <PrismicRichText
       :class="className"
       :field="slice.primary.text"
+      :html-serializer="htmlSerializer"
       class="textslice"
     />
   </div>
@@ -15,6 +16,11 @@ export default {
     slice: {
       type: Object,
       default: null,
+    },
+
+    htmlSerializer: {
+      type: Function,
+      default: () => null,
     },
   },
 
@@ -31,3 +37,11 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+@import '@/assets/styles/_vars.scss';
+
+.textslice {
+  word-break: break-word;
+}
+</style>

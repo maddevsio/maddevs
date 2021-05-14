@@ -64,6 +64,7 @@ exports[`CardNinjaSushi component should render correctly 1`] = `
         />
          
         <img
+          alt="Cases image"
           class="case_card-content_image"
           data-testid="test-case_card-content_image"
           src="/images/Cases/nambafood/webp/ninja-sushi-slide.webp"

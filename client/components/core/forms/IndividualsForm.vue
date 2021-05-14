@@ -2,6 +2,7 @@
   <BaseForm
     id="individuals-form"
     ref="baseForm"
+    button-class-name="ui-button--transparent-bgc ui-button_submit-button-footer"
     button-label="Get individual proactive rockets"
     :use-description="true"
     @submit="handleSubmit"
@@ -18,7 +19,7 @@
 <script>
 import BaseForm from '@/components/core/forms/BaseForm'
 import BaseInput from '@/components/core/forms/BaseInput'
-import sendEmailMixin from '@/mixins/sendEmailMixin'
+import createLeadMixin from '@/mixins/createLeadMixin'
 
 import exceptKeys from '@/helpers/exceptKeys'
 
@@ -29,7 +30,7 @@ export default {
     BaseInput,
   },
 
-  mixins: [sendEmailMixin(304625, 'Individuals')],
+  mixins: [createLeadMixin(304625, 'Individuals')],
 
   data() {
     return {
@@ -46,7 +47,7 @@ export default {
       }
 
       // from mixin
-      this.submitEmail(variables)
+      this.submitLead(variables)
     },
 
     reset() {

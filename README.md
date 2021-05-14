@@ -31,19 +31,14 @@ SendPulse will send email to these emails
 
 * NODE_PRISMIC_API
 
-#### AmoCrm
+#### Atlassian
 
-Data from the forms are sent not only to SendPulse, but also to AmoCrm
+Environment variables for atlassian authentication
 
-* NODE_AMOCRM_URL
-* NODE_AMOCRM_REDIRECT_URL
-* NODE_AMOCRM_SECRET
-* NODE_AMOCRM_ID
-* NODE_AMOCRM_PHONE_FIELD_ID
-* NODE_AMOCRM_EMAIL_FIELD_ID
-* NODE_AMOCRM_RESPONSIBLE_USER_ID
-* NODE_AMOCRM_SOURCE_FIELD_ID
-* NODE_AMOCRM_SOURCE_FIELD_VALUE
+* NODE_ATLASSIAN_TOKEN
+* NODE_ATLASSIAN_EMAIL
+* NODE_ATLASSIAN_PROJECT_KEY
+* NODE_ATLASSIAN_API_URL
 
 #### Slack
 
@@ -51,12 +46,6 @@ Sending messages using Incoming Webhooks
 
 * NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL
 * NODE_PAGESPEED_SLACK_WEBHOOK_URL
-
-#### Mongo
-
-Temporary tokens for the correct operation of AmoCrm are stored in mLab 
-
-* NODE_MONGO_URL
 
 #### Sentry
 
@@ -327,6 +316,33 @@ or in the component's code:
    ...
 ```
 
+## Seo Analyzer
+
+Github action for checks for errors in the html DOM.
+
+### Run
+
+```bash
+npm run seo-analyze
+```
+
+#### Valid result
+
+```bash
+ ████████████████████████████████████████ 100% | ETA: 0s | 233/233
+
+ No any SEO defect found.
+```
+
+#### Invalid result
+
+```bash
+████████████████████████████████████████ 100% | ETA: 0s | 233/233
+
+File: dist/case-studies/namba-food/index.html
+SEO defects found: 
+There are 1 <img> tag without alt attribute
+```
 ## Radiator
 We have advanced tool for collect some metrics from google analytics and google page speed and send it to our slack/telegram channels.
 

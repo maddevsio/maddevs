@@ -1,3 +1,4 @@
+import { shallowMount } from '@vue/test-utils'
 import { render } from '@testing-library/vue'
 import SlicesBlock from '@/components/slices'
 
@@ -108,5 +109,67 @@ describe('slice block component', () => {
     })
 
     expect(container).toMatchSnapshot()
+  })
+})
+
+describe('Post component copyAnchorLink', () => {
+  const slice = {
+    primary: {
+      text: [
+        {
+          type: 'heading1',
+          text: 'sample text',
+        },
+      ],
+    },
+  }
+
+  const wrapper = shallowMount(SlicesBlock, {
+    stubs: ['PrismicRichText'],
+    propsData: {
+      slice,
+    },
+  })
+
+  const html = tag => `
+        <div id="blog-post-title" class="anchor_title">
+          <${tag} class="anchor_title-h">Blog post title</${tag}>
+          <div class="anchor_copy-link">
+            <button data-id="blog-post-title" class="copy-link">
+              <img src="[object Object]" alt="Anchor" />
+            </button>
+            <div class="anchor_copy-link-tooltip">Copy link</div>
+          </div>
+        </div>
+      `
+
+  it('if type not heading will return null', () => {
+    const result = wrapper.vm.htmlSerializer('div', null, null, ['Blog post title'])
+    expect(result).toBeNull()
+  })
+
+  it('if type heading2 will return html with h2 tag', () => {
+    const result = wrapper.vm.htmlSerializer('heading2', null, null, ['Blog post title'])
+    expect(result).toBe(html('h2'))
+  })
+
+  it('if type heading3 will return html with h3 tag', () => {
+    const result = wrapper.vm.htmlSerializer('heading3', null, null, ['Blog post title'])
+    expect(result).toBe(html('h3'))
+  })
+
+  it('if type heading4 will return html with h4 tag', () => {
+    const result = wrapper.vm.htmlSerializer('heading4', null, null, ['Blog post title'])
+    expect(result).toBe(html('h4'))
+  })
+
+  it('if type heading5 will return html with h5 tag', () => {
+    const result = wrapper.vm.htmlSerializer('heading5', null, null, ['Blog post title'])
+    expect(result).toBe(html('h5'))
+  })
+
+  it('if type heading6 will return html with h6 tag', () => {
+    const result = wrapper.vm.htmlSerializer('heading6', null, null, ['Blog post title'])
+    expect(result).toBe(html('h6'))
   })
 })

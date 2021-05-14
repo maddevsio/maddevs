@@ -1,25 +1,22 @@
 <template>
   <div class="table-of-contents">
     <div class="table-of-contents__title">
-      Table of contents
+      Contents:
     </div>
-    <ol class="table-of-contents__list">
-      <li
-        v-for="(link, index) in content"
-        :key="index"
-        class="table-of-contents__list-item"
+    <div
+      v-if="anchors && anchors.length"
+      class="table-of-contents__links"
+    >
+      <NuxtLink
+        v-for="(anchor, i) in anchors"
+        :key="anchor.lable"
+        :to="anchor.link"
+        class="table-of-contents__links-link"
+        :class="{ 'table-of-contents__links-link--active': anchor.link.includes(activeAnchor) }"
       >
-        <template v-if="link.type === 'list-item'">
-          <a
-            data-testid="test-link-table"
-            :href="link.spans.length ? link.spans[0].data.url : null"
-            @click.prevent="scrollToSection"
-          >
-            {{ link.text }}
-          </a>
-        </template>
-      </li>
-    </ol>
+        {{ i + 1 }}. {{ anchor.lable }}
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
@@ -27,30 +24,57 @@
 export default {
   name: 'TableOfContents',
   props: {
-    content: {
-      type: Array,
+    slice: {
+      type: Object,
       required: true,
     },
   },
 
-  created() {
-    this.content.forEach(link => {
-      if (link.spans.length) {
-        // eslint-disable-next-line
-        link.spans[0].data.url = link.spans[0].data.url.replace('https://', '');
-      }
+  data() {
+    return {
+      activeAnchor: null,
+    }
+  },
+
+  computed: {
+    anchors() {
+      if (this.slice && this.slice.items && !this.slice.items.length) return []
+      return this.slice.items.map(item => ({
+        lable: item.lable[0].text,
+        link: this.createAnchorID(item.lable[0].text),
+      }))
+    },
+  },
+
+  mounted() {
+    const sections = document.querySelectorAll('.anchor_title')
+    const config = {
+      rootMargin: '-100px 0px -55%',
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.intersectionHandler(entry)
+        }
+      })
+    }, config)
+
+    sections.forEach(section => {
+      observer.observe(section)
     })
   },
 
   methods: {
-    scrollToSection(e) {
-      const id = e.target.getAttribute('href') ? e.target.getAttribute('href').replace('#', '') : null
-      const element = document.getElementById(id)
-      if (element !== null) {
-        window.scrollTo({
-          top: element.offsetTop + 180,
-          behavior: 'smooth',
-        })
+    createAnchorID(text) {
+      if (!text || typeof text !== 'string') return null
+      const formattedText = `#${text.trim().toLowerCase().replace(/[|&;$%@"<>()+,?!]/g, '').replace(/\s+/g, '-')}`
+      return formattedText
+    },
+
+    intersectionHandler(entry) {
+      if (this.anchors.some(a => a.link.includes(entry.target.id))) {
+        this.activeAnchor = entry.target.id
       }
     },
   },
@@ -62,34 +86,38 @@ export default {
 @import '../../../assets/styles/cases/mixins';
 
 .table-of-contents {
-  padding: 23px 24px;
-  background-color: $bgcolor--silver;
+  width: 100%;
+  max-width: 200px;
 
   &__title {
-    @include title($text-color--black-oil, 21px, -0.04em);
-    margin-bottom: 20px;
-    @include font('Inter', 21px, 400);
+    color: #101113;
+    line-height: 130%;
+    margin-bottom: 18px;
+    font-weight: bold;
   }
 
-  &__list {
-    padding-left: 20px;
-    margin: 0;
+  &__links {
+    display: flex;
+    flex-direction: column;
 
-    &-item {
-      @include font('Inter', 16px, 400);
-      padding: 7px 0 12px;
+    &-link {
+      width: 100%;
+      display: block;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 130%;
+      letter-spacing: -0.1px;
+      color: #101113;
+      margin-bottom: 6px;
+      padding: 10px 8px;
+      border-radius: 8px;
 
-      a {
-        text-decoration: none;
-        color: $text-color--black-oil;
+      &:hover {
+        background-color: rgba(247, 199, 68, 0.1);
+      }
 
-        &:hover {
-          text-decoration: underline;
-        }
-
-        &:visited {
-          color: inherit;
-        }
+      &--active {
+        background-color: rgba(204, 160, 40, 0.2);
       }
     }
   }
