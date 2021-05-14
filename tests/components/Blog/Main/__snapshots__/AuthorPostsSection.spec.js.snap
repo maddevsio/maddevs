@@ -58,23 +58,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                   />
                    
                   <div
-                    class="post-author__info"
+                    class="post-author__data"
                   >
-                    <p
-                      class="post-author__name"
-                      title="Maddevs"
+                    <div
+                      class="post-author__info"
                     >
-                      
-      Maddevs
-    
-                    </p>
+                      <p
+                        class="post-author__name"
+                        title="Maddevs"
+                      >
+                        
+        Maddevs
+      
+                      </p>
+                       
+                      <span
+                        class="post-author__position"
+                        title=""
+                      >
+                        
+                      </span>
+                    </div>
                      
-                    <span
-                      class="post-author__position"
-                      title=""
-                    >
-                      
-                    </span>
+                    <!---->
                   </div>
                 </nuxtlink-stub>
                  
@@ -220,23 +226,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 />
                  
                 <div
-                  class="post-author__info"
+                  class="post-author__data"
                 >
-                  <p
-                    class="post-author__name"
-                    title="Maddevs"
+                  <div
+                    class="post-author__info"
                   >
-                    
-      Maddevs
-    
-                  </p>
+                    <p
+                      class="post-author__name"
+                      title="Maddevs"
+                    >
+                      
+        Maddevs
+      
+                    </p>
+                     
+                    <span
+                      class="post-author__position"
+                      title=""
+                    >
+                      
+                    </span>
+                  </div>
                    
-                  <span
-                    class="post-author__position"
-                    title=""
-                  >
-                    
-                  </span>
+                  <!---->
                 </div>
               </nuxtlink-stub>
             </div>
@@ -338,23 +350,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 />
                  
                 <div
-                  class="post-author__info"
+                  class="post-author__data"
                 >
-                  <p
-                    class="post-author__name"
-                    title="Maddevs"
+                  <div
+                    class="post-author__info"
                   >
-                    
-      Maddevs
-    
-                  </p>
+                    <p
+                      class="post-author__name"
+                      title="Maddevs"
+                    >
+                      
+        Maddevs
+      
+                    </p>
+                     
+                    <span
+                      class="post-author__position"
+                      title=""
+                    >
+                      
+                    </span>
+                  </div>
                    
-                  <span
-                    class="post-author__position"
-                    title=""
-                  >
-                    
-                  </span>
+                  <!---->
                 </div>
               </nuxtlink-stub>
             </div>
@@ -456,23 +474,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 />
                  
                 <div
-                  class="post-author__info"
+                  class="post-author__data"
                 >
-                  <p
-                    class="post-author__name"
-                    title="Maddevs"
+                  <div
+                    class="post-author__info"
                   >
-                    
-      Maddevs
-    
-                  </p>
+                    <p
+                      class="post-author__name"
+                      title="Maddevs"
+                    >
+                      
+        Maddevs
+      
+                    </p>
+                     
+                    <span
+                      class="post-author__position"
+                      title=""
+                    >
+                      
+                    </span>
+                  </div>
                    
-                  <span
-                    class="post-author__position"
-                    title=""
-                  >
-                    
-                  </span>
+                  <!---->
                 </div>
               </nuxtlink-stub>
             </div>
@@ -574,23 +598,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 />
                  
                 <div
-                  class="post-author__info"
+                  class="post-author__data"
                 >
-                  <p
-                    class="post-author__name"
-                    title="Maddevs"
+                  <div
+                    class="post-author__info"
                   >
-                    
-      Maddevs
-    
-                  </p>
+                    <p
+                      class="post-author__name"
+                      title="Maddevs"
+                    >
+                      
+        Maddevs
+      
+                    </p>
+                     
+                    <span
+                      class="post-author__position"
+                      title=""
+                    >
+                      
+                    </span>
+                  </div>
                    
-                  <span
-                    class="post-author__position"
-                    title=""
-                  >
-                    
-                  </span>
+                  <!---->
                 </div>
               </nuxtlink-stub>
             </div>
@@ -692,23 +722,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 />
                  
                 <div
-                  class="post-author__info"
+                  class="post-author__data"
                 >
-                  <p
-                    class="post-author__name"
-                    title="Maddevs"
+                  <div
+                    class="post-author__info"
                   >
-                    
-      Maddevs
-    
-                  </p>
+                    <p
+                      class="post-author__name"
+                      title="Maddevs"
+                    >
+                      
+        Maddevs
+      
+                    </p>
+                     
+                    <span
+                      class="post-author__position"
+                      title=""
+                    >
+                      
+                    </span>
+                  </div>
                    
-                  <span
-                    class="post-author__position"
-                    title=""
-                  >
-                    
-                  </span>
+                  <!---->
                 </div>
               </nuxtlink-stub>
             </div>
@@ -810,23 +846,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 />
                  
                 <div
-                  class="post-author__info"
+                  class="post-author__data"
                 >
-                  <p
-                    class="post-author__name"
-                    title="Maddevs"
+                  <div
+                    class="post-author__info"
                   >
-                    
-      Maddevs
-    
-                  </p>
+                    <p
+                      class="post-author__name"
+                      title="Maddevs"
+                    >
+                      
+        Maddevs
+      
+                    </p>
+                     
+                    <span
+                      class="post-author__position"
+                      title=""
+                    >
+                      
+                    </span>
+                  </div>
                    
-                  <span
-                    class="post-author__position"
-                    title=""
-                  >
-                    
-                  </span>
+                  <!---->
                 </div>
               </nuxtlink-stub>
             </div>
@@ -928,23 +970,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 />
                  
                 <div
-                  class="post-author__info"
+                  class="post-author__data"
                 >
-                  <p
-                    class="post-author__name"
-                    title="Maddevs"
+                  <div
+                    class="post-author__info"
                   >
-                    
-      Maddevs
-    
-                  </p>
+                    <p
+                      class="post-author__name"
+                      title="Maddevs"
+                    >
+                      
+        Maddevs
+      
+                    </p>
+                     
+                    <span
+                      class="post-author__position"
+                      title=""
+                    >
+                      
+                    </span>
+                  </div>
                    
-                  <span
-                    class="post-author__position"
-                    title=""
-                  >
-                    
-                  </span>
+                  <!---->
                 </div>
               </nuxtlink-stub>
             </div>
@@ -1046,23 +1094,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 />
                  
                 <div
-                  class="post-author__info"
+                  class="post-author__data"
                 >
-                  <p
-                    class="post-author__name"
-                    title="Maddevs"
+                  <div
+                    class="post-author__info"
                   >
-                    
-      Maddevs
-    
-                  </p>
+                    <p
+                      class="post-author__name"
+                      title="Maddevs"
+                    >
+                      
+        Maddevs
+      
+                    </p>
+                     
+                    <span
+                      class="post-author__position"
+                      title=""
+                    >
+                      
+                    </span>
+                  </div>
                    
-                  <span
-                    class="post-author__position"
-                    title=""
-                  >
-                    
-                  </span>
+                  <!---->
                 </div>
               </nuxtlink-stub>
             </div>
@@ -1164,23 +1218,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 />
                  
                 <div
-                  class="post-author__info"
+                  class="post-author__data"
                 >
-                  <p
-                    class="post-author__name"
-                    title="Maddevs"
+                  <div
+                    class="post-author__info"
                   >
-                    
-      Maddevs
-    
-                  </p>
+                    <p
+                      class="post-author__name"
+                      title="Maddevs"
+                    >
+                      
+        Maddevs
+      
+                    </p>
+                     
+                    <span
+                      class="post-author__position"
+                      title=""
+                    >
+                      
+                    </span>
+                  </div>
                    
-                  <span
-                    class="post-author__position"
-                    title=""
-                  >
-                    
-                  </span>
+                  <!---->
                 </div>
               </nuxtlink-stub>
             </div>
@@ -1282,23 +1342,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 />
                  
                 <div
-                  class="post-author__info"
+                  class="post-author__data"
                 >
-                  <p
-                    class="post-author__name"
-                    title="Maddevs"
+                  <div
+                    class="post-author__info"
                   >
-                    
-      Maddevs
-    
-                  </p>
+                    <p
+                      class="post-author__name"
+                      title="Maddevs"
+                    >
+                      
+        Maddevs
+      
+                    </p>
+                     
+                    <span
+                      class="post-author__position"
+                      title=""
+                    >
+                      
+                    </span>
+                  </div>
                    
-                  <span
-                    class="post-author__position"
-                    title=""
-                  >
-                    
-                  </span>
+                  <!---->
                 </div>
               </nuxtlink-stub>
             </div>
@@ -1400,23 +1466,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 />
                  
                 <div
-                  class="post-author__info"
+                  class="post-author__data"
                 >
-                  <p
-                    class="post-author__name"
-                    title="Maddevs"
+                  <div
+                    class="post-author__info"
                   >
-                    
-      Maddevs
-    
-                  </p>
+                    <p
+                      class="post-author__name"
+                      title="Maddevs"
+                    >
+                      
+        Maddevs
+      
+                    </p>
+                     
+                    <span
+                      class="post-author__position"
+                      title=""
+                    >
+                      
+                    </span>
+                  </div>
                    
-                  <span
-                    class="post-author__position"
-                    title=""
-                  >
-                    
-                  </span>
+                  <!---->
                 </div>
               </nuxtlink-stub>
             </div>
@@ -1518,23 +1590,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 />
                  
                 <div
-                  class="post-author__info"
+                  class="post-author__data"
                 >
-                  <p
-                    class="post-author__name"
-                    title="Maddevs"
+                  <div
+                    class="post-author__info"
                   >
-                    
-      Maddevs
-    
-                  </p>
+                    <p
+                      class="post-author__name"
+                      title="Maddevs"
+                    >
+                      
+        Maddevs
+      
+                    </p>
+                     
+                    <span
+                      class="post-author__position"
+                      title=""
+                    >
+                      
+                    </span>
+                  </div>
                    
-                  <span
-                    class="post-author__position"
-                    title=""
-                  >
-                    
-                  </span>
+                  <!---->
                 </div>
               </nuxtlink-stub>
             </div>
@@ -1636,23 +1714,29 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
                 />
                  
                 <div
-                  class="post-author__info"
+                  class="post-author__data"
                 >
-                  <p
-                    class="post-author__name"
-                    title="Maddevs"
+                  <div
+                    class="post-author__info"
                   >
-                    
-      Maddevs
-    
-                  </p>
+                    <p
+                      class="post-author__name"
+                      title="Maddevs"
+                    >
+                      
+        Maddevs
+      
+                    </p>
+                     
+                    <span
+                      class="post-author__position"
+                      title=""
+                    >
+                      
+                    </span>
+                  </div>
                    
-                  <span
-                    class="post-author__position"
-                    title=""
-                  >
-                    
-                  </span>
+                  <!---->
                 </div>
               </nuxtlink-stub>
             </div>

@@ -156,18 +156,6 @@ exports[`customer university header component should render correctly with defau
       class="blog-post__post-info"
     >
       <!---->
-       
-      <div
-        class="blog-post__date-tag"
-      >
-        <div
-          class="blog-post__date"
-        >
-          
-          
-        
-        </div>
-      </div>
     </div>
   </commonheader-stub>
 </div>
