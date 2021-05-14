@@ -72,11 +72,6 @@
           <div class="blog-post__date">
             {{ date }}
           </div>
-          <PostTag
-            v-if="tags.length"
-            :tag="tags[0]"
-            theme="dark"
-          />
         </div>
       </div>
     </template>
@@ -136,11 +131,6 @@ export default {
     date: {
       type: String,
       default: () => '',
-    },
-
-    tags: {
-      type: Array,
-      required: true,
     },
   },
 
@@ -206,13 +196,44 @@ export default {
 @import '../../../assets/styles/vars';
 @import '../../../assets/styles/commonIcons';
 
+/deep/ .blog-post {
+  &__post-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 43px;
+    text-decoration: none;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__date-tag {
+    @include font('Inter', 13px, 400);
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+    font-weight: 400;
+
+    .blog-post__date {
+      color: $text-color--grey-pale;
+      margin-right: 24px;
+    }
+  }
+}
+
+/deep/ .post-author__image {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 9.41177px;
+}
+
 .cluster-navigation {
   color: white;
   align-items: center;
-
-  /deep/ .post-author {
-
-  }
 
   &__name {
     @include font('Inter', 16px, 400);

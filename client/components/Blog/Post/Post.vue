@@ -41,7 +41,6 @@
         :title="title"
         :author="findAuthor(postAuthor.id, allAuthors)"
         :date="date"
-        :tags="tags"
         :subtitle="subtitle"
         :featured-image="featuredImage"
         :post-list="clusterPosts || []"
