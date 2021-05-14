@@ -141,8 +141,10 @@ export default {
         <div id="${this.createAnchorID(text)}" class="anchor_title">
           <${tag} class="anchor_title-h">${text}</${tag}>
           <div class="anchor_copy-link">
-            <img src="${require('@/assets/img/common/anchor.svg')}" alt="Anchor" />
-            <button data-id="${this.createAnchorID(text)}" class="copy-link">Copy link</button>
+            <button data-id="${this.createAnchorID(text)}" class="copy-link">
+              <img src="${require('@/assets/img/common/anchor.svg')}" alt="Anchor" />
+            </button>
+            <div class="anchor_copy-link-tooltip">Copy link</div>
           </div>
         </div>
       `
@@ -264,6 +266,60 @@ export default {
   background: $bgcolor--grey-light;
   border-radius: 2px;
   line-height: 24px;
+}
+
+/deep/ .anchor_title {
+  position: relative;
+
+  .anchor_copy-link {
+    button {
+      display: none;
+      position: absolute;
+      left: -36px;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 12px;
+      cursor: pointer;
+      border: 0;
+      background-color: transparent;
+
+      img {
+        width: 16px;
+        height: 16px;
+        user-select: none;
+        pointer-events: none;
+      }
+    }
+
+    &-tooltip {
+      display: none;
+      position: absolute;
+      left: -102px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #F4F4F4;
+      padding: 4px 8px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border: 0;
+      line-height: 18px;
+      color: #101113;
+      transition: all 0.1s ease;
+      @include font('Inter', 12px, 400);
+    }
+
+    &:hover {
+      .anchor_copy-link-tooltip {
+        display: block;
+      }
+    }
+  }
+
+  &:hover {
+    .anchor_copy-link button {
+      display: block;
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {

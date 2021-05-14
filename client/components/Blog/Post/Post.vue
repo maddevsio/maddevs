@@ -256,11 +256,14 @@ export default {
     copyAnchorLink(event) {
       const copyText = event.target.getAttribute('data-id')
       if (!copyText) return null
+      const tooltip = event.target.nextElementSibling
       const link = `${window.location.origin}${this.$router.currentRoute.path}#${copyText}`
-      event.target.innerText = 'Copied!'
-      setTimeout(() => {
-        event.target.innerText = 'Copy link'
-      }, 3000)
+      if (tooltip) {
+        tooltip.innerText = 'Copied!'
+        setTimeout(() => {
+          tooltip.innerText = 'Copy link'
+        }, 3000)
+      }
       copyToClipboard(link)
       return link
     },
