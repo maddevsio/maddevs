@@ -51,6 +51,8 @@ export default {
 @import '@/assets/styles/_vars';
 
 .projects-countries {
+  margin-bottom: 233px;
+
   &_title,
   &_description {
     letter-spacing: -0.04em;
