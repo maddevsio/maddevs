@@ -65,7 +65,7 @@ exports[`namba food renders correctly 1`] = `
       </div>
        
       <img
-        alt=""
+        alt="Nambafood Logo"
         class="case_header-logo media_lazy case_nambafood-logo"
         data-src="s3 image url"
         height="82"
@@ -204,6 +204,7 @@ exports[`namba food renders correctly 1`] = `
               />
                
               <img
+                alt="Cases image"
                 class="case_card-content_image"
                 data-testid="test-case_card-content_image"
                 src="s3 image url"

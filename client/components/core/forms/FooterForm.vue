@@ -24,7 +24,7 @@
 <script>
 import BaseForm from '@/components/core/forms/BaseForm'
 import ModalSuccess from '@/components/core/modals/ModalSuccess'
-import sendEmailMixin from '@/mixins/sendEmailMixin'
+import createLeadMixin from '@/mixins/createLeadMixin'
 
 export default {
   name: 'FooterForm',
@@ -33,7 +33,7 @@ export default {
     ModalSuccess,
   },
 
-  mixins: [sendEmailMixin(305480, 'Contact Me')],
+  mixins: [createLeadMixin(305480, 'Contact Me')],
 
   data() {
     return {
@@ -48,7 +48,7 @@ export default {
       }
 
       // from mixin
-      this.submitEmail(variables)
+      this.submitLead(variables)
 
       this.disableScrollOnBody()
       this.isSuccess = true

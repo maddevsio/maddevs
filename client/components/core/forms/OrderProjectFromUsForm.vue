@@ -2,6 +2,7 @@
   <BaseForm
     id="order-project-form"
     ref="baseForm"
+    button-class-name="ui-button--transparent-bgc ui-button_submit-button-footer"
     button-label="Submit your project"
     :use-company="true"
     :use-description="true"
@@ -11,7 +12,7 @@
 
 <script>
 import BaseForm from '@/components/core/forms/BaseForm'
-import sendEmailMixin from '@/mixins/sendEmailMixin'
+import createLeadMixin from '@/mixins/createLeadMixin'
 
 import exceptKeys from '@/helpers/exceptKeys'
 
@@ -21,7 +22,7 @@ export default {
     BaseForm,
   },
 
-  mixins: [sendEmailMixin(304632, 'Order Project From Us')],
+  mixins: [createLeadMixin(304632, 'Order Project From Us')],
 
   methods: {
     handleSubmit(formData) {
@@ -31,7 +32,7 @@ export default {
       }
 
       // from mixin
-      this.submitEmail(variables)
+      this.submitLead(variables)
     },
 
     reset() {

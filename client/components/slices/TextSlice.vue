@@ -39,67 +39,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/_vars';
+@import '@/assets/styles/_vars.scss';
 
 .textslice {
-  /deep/ strong,
-  /deep/ p,
-  /deep/ h1,
-  /deep/ li {
-    color: $text-color--black-oil;
-  }
-
-  /deep/ h1,
-  /deep/ li {
-    @include font('Inter', 16px, 400);
-  }
-
-  /deep/ strong {
-    @include font('Inter', 16px, 700);
-  }
-
-  /deep/ p,
-  /deep/ li {
-    font-size: 17px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-  }
-
-  /deep/ p {
-    @include font('Inter', 16px, 400);
-    margin: 12px 0;
-  }
-
-  /deep/ pre {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 20px;
-    overflow: auto;
-    background: $bgcolor--grey-light;
-    border-radius: 2px;
-    line-height: 24px;
-  }
-
-  /deep/ ol {
-    margin: 35px 0;
-  }
-
-  /deep/ li {
-    margin-bottom: 8px;
-  }
-
-  /deep/ a {
-    text-decoration: underline;
-    color: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-  }
-
-  /deep/ img {
-    max-width: 100%;
-    height: auto;
-  }
+  word-break: break-word;
 }
 
 /deep/ .anchor_title {
@@ -155,25 +98,6 @@ export default {
   &:hover {
     .anchor_copy-link img {
       display: block;
-    }
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .textslice {
-    /deep/ h2 {
-      font-size: 26px;
-      line-height: 33px;
-    }
-
-    /deep/ h5 {
-      font-size: 20px;
-      line-height: 27px;
-    }
-
-    /deep/ p {
-      font-size: 16px;
-      line-height: 24px;
     }
   }
 }

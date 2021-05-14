@@ -2,6 +2,7 @@
   <BaseForm
     id="infrastructure-audit-form"
     ref="baseForm"
+    button-class-name="ui-button--transparent-bgc ui-button_submit-button-footer"
     button-label="Get an infrastructure audit"
     :use-company="true"
     @submit="handleSubmit"
@@ -19,7 +20,7 @@
 <script>
 import BaseForm from '@/components/core/forms/BaseForm'
 import RadioList from '@/components/shared/UIRadioList'
-import sendEmailMixin from '@/mixins/sendEmailMixin'
+import createLeadMixin from '@/mixins/createLeadMixin'
 
 export default {
   name: 'InfrastructureAuditForm',
@@ -28,7 +29,7 @@ export default {
     RadioList,
   },
 
-  mixins: [sendEmailMixin(304628, 'Infrastructure audit')],
+  mixins: [createLeadMixin(304628, 'Infrastructure audit')],
 
   data() {
     return {
@@ -79,7 +80,7 @@ export default {
       }
 
       // from mixin
-      this.submitEmail(variables)
+      this.submitLead(variables)
     },
 
     reset() {
