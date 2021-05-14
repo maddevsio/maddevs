@@ -10,7 +10,10 @@
       <!-- Text slice template -->
       <template v-if="slice.slice_type === 'text'">
         <!-- Here :slice="slice" passes the data to the component -->
-        <TextSlice :slice="slice" />
+        <TextSlice
+          :slice="slice"
+          :html-serializer="serializer"
+        />
       </template>
       <!-- Quote slice template -->
       <template v-else-if="slice.slice_type === 'quote'">
@@ -88,9 +91,61 @@ export default {
   },
 
   props: {
+    slicesType: {
+      type: String,
+      default: null,
+    },
+
     slices: {
       type: Array,
       required: true,
+    },
+  },
+
+  computed: {
+    serializer() {
+      if (this.slicesType === 'post') return this.htmlSerializer
+      return null
+    },
+  },
+
+  methods: {
+    htmlSerializer(type, element, content, children) {
+      const text = children.join('')
+      if (type === 'heading2') {
+        return this.createAnchorTag('h2', text)
+      }
+      if (type === 'heading3') {
+        return this.createAnchorTag('h3', text)
+      }
+      if (type === 'heading4') {
+        return this.createAnchorTag('h4', text)
+      }
+      if (type === 'heading5') {
+        return this.createAnchorTag('h5', text)
+      }
+      if (type === 'heading6') {
+        return this.createAnchorTag('h6', text)
+      }
+      return null
+    },
+
+    createAnchorID(text) {
+      if (!text || typeof text !== 'string') return null
+      const formattedText = text.trim().toLowerCase().replace(/[|&;$%@"<>()+,?!]/g, '').replace(/\s+/g, '-')
+      return formattedText
+    },
+
+    createAnchorTag(tag, text) {
+      return `
+        <div id="${this.createAnchorID(text)}" class="anchor_title">
+          <${tag} class="anchor_title-h">${text}</${tag}>
+          <div class="anchor_copy-link">
+            <img src="${require('@/assets/img/common/anchor.svg')}" alt="Anchor" />
+            <button data-id="${this.createAnchorID(text)}" class="copy-link">Copy link</button>
+          </div>
+        </div>
+      `
     },
   },
 }
