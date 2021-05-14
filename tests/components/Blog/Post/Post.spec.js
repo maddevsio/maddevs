@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/vue'
+import { shallowMount, createLocalVue } from '@vue/test-utils'
 import Post from '@/components/Blog/Post/Post'
-import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
 import blogDocument from '../../../__mocks__/blogDocument'
 import recomendedPosts from '../../../__mocks__/recomendedPosts'
@@ -25,6 +25,8 @@ const props = {
   type: 'blog_post',
 }
 
+Object.defineProperty(document, 'execCommand', { value: jest.fn() })
+
 const localVue = createLocalVue()
 localVue.use(Vuex)
 
@@ -35,6 +37,11 @@ const mocks = {
   },
   $route: {
     name: 'test-route',
+  },
+  $router: {
+    currentRoute: {
+      path: '/blog-post-title',
+    },
   },
 }
 
@@ -65,6 +72,7 @@ describe('Post component', () => {
       mocks,
       props: {
         document: blogDocument,
+        tags: [],
       },
       store,
     })
@@ -88,5 +96,39 @@ describe('Post component', () => {
     const element = screen.getByTestId('test-back-list')
     fireEvent.click(element)
     expect(WINDOW_SCROLL_TO).toHaveBeenCalledTimes(1)
+  })
+
+  describe('Post component copyAnchorLink', () => {
+    const wrapper = shallowMount(Post, {
+      stubs,
+      mocks,
+      props,
+      store,
+      propsData: {
+        slice: {
+          items: [],
+        },
+      },
+    })
+
+    it('if has attr data-id in btn will return valid link', () => {
+      const event = {
+        target: {
+          getAttribute: () => 'blog-post-title',
+        },
+      }
+      const result = wrapper.vm.copyAnchorLink(event)
+      expect(result).toBe('http://localhost/blog-post-title#blog-post-title')
+    })
+
+    it('if not have attr data-id in btn will return null', () => {
+      const event = {
+        target: {
+          getAttribute: () => undefined,
+        },
+      }
+      const result = wrapper.vm.copyAnchorLink(event)
+      expect(result).toBeNull()
+    })
   })
 })
