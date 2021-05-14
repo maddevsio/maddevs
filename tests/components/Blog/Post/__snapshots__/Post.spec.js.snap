@@ -14,8 +14,8 @@ exports[`Post component should render correctly with default props 1`] = `
       class="blog-post__inner-container"
     >
       <div
-        class="blog-post__share"
-        style="position: absolute; top: 812px; left: -210px;"
+        class="blog-post__share blog-post__share--vertical"
+        style="display: none;"
       >
         <!---->
          
