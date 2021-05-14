@@ -8,6 +8,10 @@ exports[`Main component should render correctly 1`] = `
     <banner-stub />
      
     <projectscountries-stub />
+     
+    <benefits-stub />
+     
+    <keymetrics-stub />
   </div>
 </div>
 `;

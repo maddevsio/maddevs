@@ -3,6 +3,7 @@
     <Banner />
     <ProjectsCountries />
     <Benefits />
+    <KeyMetrics />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Banner from '@/components/Careers/Banner'
 import ProjectsCountries from '@/components/Careers/ProjectsCountries'
 import Benefits from '@/components/Careers/Benefits'
+import KeyMetrics from '@/components/Careers/KeyMetrics'
 
 export default {
   name: 'Main',
@@ -17,7 +19,7 @@ export default {
     Banner,
     ProjectsCountries,
     Benefits,
+    KeyMetrics,
   },
-
 }
 </script>

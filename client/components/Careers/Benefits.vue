@@ -86,7 +86,7 @@
 
 <script>
 export default {
-  name: 'ProjectsCountries',
+  name: 'Benefits',
 }
 </script>
 
@@ -94,6 +94,8 @@ export default {
 @import '@/assets/styles/_vars';
 
 .benefits {
+  margin-bottom: 68px;
+
   &_benefit {
     display: grid;
     grid-template-columns: 2fr 1fr;
