@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UILinkButton should render correctly with props data 1`] = `
+<div>
+  <button
+    class="ui-link-btn"
+    type="button"
+  >
+    <nuxtlink-stub
+      class="ui-link-btn_link"
+      to="test"
+    >
+      
+    See all case studies
+  
+    </nuxtlink-stub>
+  </button>
+</div>
+`;
