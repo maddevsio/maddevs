@@ -8,10 +8,7 @@ exports[`text slice component is a Vue instance 1`] = `
     <prismicrichtext-stub
       class="textslice"
       field="[object Object]"
-      html-serializer="function _default() {
-          /* istanbul ignore next */
-          cov_2iyfyk07ui().f[1]++;
-          cov_2iyfyk07ui().s[4]++;
+      html-serializer="function htmlSerializer() {
           return null;
         }"
     />
