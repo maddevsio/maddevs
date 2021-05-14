@@ -8,8 +8,6 @@ const props = {
 
 const stubs = ['NuxtLink']
 
-const expected = `<nuxtlink-stub class="ui-link-btn_link" to="${props.link}">${props.title}</nuxtlink-stub>`
-
 describe('UILinkButton', () => {
   it('should render correctly with props data', () => {
     const { container } = render(UILinkButton, {
@@ -17,7 +15,7 @@ describe('UILinkButton', () => {
       stubs,
     })
 
-    expect(screen.queryByText(expected)).toBeNull()
+    expect(screen.queryByText('See all case studies')).not.toBeNull()
     expect(container).toMatchSnapshot()
   })
 })

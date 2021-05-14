@@ -3,7 +3,7 @@
 exports[`KeyMetrics component should render correctly 1`] = `
 <div>
   <div
-    class="key-metrics container"
+    class="key-metrics_container container"
   >
     <h2
       class="key-metrics_title"
@@ -16,27 +16,27 @@ exports[`KeyMetrics component should render correctly 1`] = `
     <div
       class="key-metrics_grid"
     >
-      <metricacard-stub
+      <metriccard-stub
         description="open-source projects on GitHub."
         title="70+"
       />
-      <metricacard-stub
+      <metriccard-stub
         description="staff members work for Mad Devs."
         title="100+"
       />
-      <metricacard-stub
+      <metriccard-stub
         description="tech bloggers and conference speakers."
         title="30+"
       />
-      <metricacard-stub
+      <metriccard-stub
         description="weekly pull requests in a project."
         title="100+"
       />
-      <metricacard-stub
+      <metriccard-stub
         description="boring task and bureaucratic procedures."
         title="0"
       />
-      <metricacard-stub
+      <metriccard-stub
         description="hours of internal training."
         title="10K"
       />

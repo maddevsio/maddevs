@@ -18,7 +18,7 @@ const buildBlogPostMixin = (postType = 'post') => ({
 
       // Recommended posts
       post.recommendedPosts = post.recommendedPosts && post.recommendedPosts
-        .filter(recommendedPost => recommendedPost.uid !== post.uid && Boolean(recommendedPost.data.post_author))
+        .filter(recommendedPost => recommendedPost.uid !== post.uid && Boolean(recommendedPost.data?.post_author?.id))
         .slice(0, 3)
 
       return {

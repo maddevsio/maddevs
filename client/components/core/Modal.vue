@@ -303,6 +303,7 @@ export default {
     &_content {
       padding: 0 10px;
       max-height: 85vh;
+      min-height: 70%;
     }
 
     &_close {

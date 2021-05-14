@@ -53,7 +53,9 @@ export default {
         if (!isIntersecting) {
           target.pause()
         } else {
-          target.play()
+          target.play().catch(() => {
+            // prevent play
+          })
         }
       })
 

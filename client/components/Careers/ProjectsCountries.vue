@@ -62,7 +62,7 @@ export default {
   }
 
   &_title {
-    @include font('Inter', 60px, 800);
+    @include font('Poppins', 60px, 700);
   }
 
   &_description {
