@@ -40,7 +40,6 @@ exports[`Benefits component should render correctly 1`] = `
         Code reviews and testing
       
         </li>
-         
         <li
           class="benefits_list-item"
         >
@@ -48,7 +47,6 @@ exports[`Benefits component should render correctly 1`] = `
         Automated CI/CD
       
         </li>
-         
         <li
           class="benefits_list-item"
         >
@@ -56,7 +54,6 @@ exports[`Benefits component should render correctly 1`] = `
         Healthy oncall
       
         </li>
-         
         <li
           class="benefits_list-item"
         >
@@ -64,7 +61,6 @@ exports[`Benefits component should render correctly 1`] = `
         Internal boilerplates and open-source
       
         </li>
-         
         <li
           class="benefits_list-item"
         >
@@ -110,7 +106,6 @@ exports[`Benefits component should render correctly 1`] = `
         Clearly explained development goals
       
         </li>
-         
         <li
           class="benefits_list-item"
         >
@@ -118,7 +113,6 @@ exports[`Benefits component should render correctly 1`] = `
         Engineers contribute to backlog and roadmap
       
         </li>
-         
         <li
           class="benefits_list-item"
         >
@@ -126,7 +120,6 @@ exports[`Benefits component should render correctly 1`] = `
         Direct, cult-the bullshit, communication in problem-solving
       
         </li>
-         
         <li
           class="benefits_list-item"
         >
@@ -134,7 +127,6 @@ exports[`Benefits component should render correctly 1`] = `
         Celebrating initiatives culture
       
         </li>
-         
         <li
           class="benefits_list-item"
         >
@@ -180,7 +172,6 @@ exports[`Benefits component should render correctly 1`] = `
         Stable salary and pay days
       
         </li>
-         
         <li
           class="benefits_list-item"
         >
@@ -188,7 +179,6 @@ exports[`Benefits component should render correctly 1`] = `
         Competitive compensation
       
         </li>
-         
         <li
           class="benefits_list-item"
         >
@@ -196,7 +186,6 @@ exports[`Benefits component should render correctly 1`] = `
         Formal employment
       
         </li>
-         
         <li
           class="benefits_list-item"
         >
@@ -204,7 +193,6 @@ exports[`Benefits component should render correctly 1`] = `
         Flexible payment terms
       
         </li>
-         
         <li
           class="benefits_list-item"
         >
