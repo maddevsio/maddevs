@@ -11,6 +11,9 @@ describe('CardProjectMilestone component', () => {
   it('should render correctly', async () => {
     const { container } = render(CardProjectMilestone, {
       props,
+      methods: {
+        play: jest.fn(),
+      },
     })
 
     const element = await screen.getByTestId('test-card-project-milestone')
