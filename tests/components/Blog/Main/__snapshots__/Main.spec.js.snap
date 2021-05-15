@@ -1485,6 +1485,40 @@ exports[`Main component should render correctly 1`] = `
         <!---->
       </div>
     </div>
+     
+    <section
+      class="modal-search"
+    >
+      <div
+        class="modal-search_form"
+      >
+        <label>
+          <img
+            alt="Magnify"
+            src="@/assets/img/common/magnify.svg"
+          />
+           
+          <input
+            placeholder="Search"
+            type="text"
+          />
+        </label>
+      </div>
+       
+      <!---->
+       
+      <div
+        class="modal-search_suggest"
+      >
+        <h5>
+          May we suggest
+        </h5>
+         
+        <div
+          class="modal-search_suggest-list"
+        />
+      </div>
+    </section>
   </section>
 </div>
 `;
