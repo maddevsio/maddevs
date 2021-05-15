@@ -4,6 +4,7 @@
     <LatestPostsSection />
     <CustomerUniversitySection />
     <AllPostsSection />
+    <ModalSearch />
   </section>
 </template>
 
@@ -13,6 +14,7 @@ import TheLastPostSection from '@/components/Blog/Main/TheLastPostSection'
 import LatestPostsSection from '@/components/Blog/Main/LatestPostsSection'
 import CustomerUniversitySection from '@/components/Blog/Main/CustomerUniversitySection'
 import AllPostsSection from '@/components/Blog/Main/AllPostsSection'
+import ModalSearch from '@/components/core/modals/ModalSearch'
 import initializeLazyLoad from '@/helpers/lazyLoad'
 
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
@@ -24,6 +26,7 @@ export default {
     LatestPostsSection,
     CustomerUniversitySection,
     AllPostsSection,
+    ModalSearch,
   },
 
   mixins: [initLazyLoadMixin],

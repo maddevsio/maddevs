@@ -49,6 +49,7 @@
     "simplebar-vue": "^1.6.0",
     "snyk": "^1.557.0",
     "swiper": "^5.4.5",
+    "v-debounce": "^0.1.2",
     "vue-awesome-swiper": "^4.1.1",
     "vue-embed-gist": "^1.1.0",
     "vue-lottie": "^0.2.1",
