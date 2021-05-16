@@ -116,13 +116,8 @@ export default {
         background-color: rgba(247, 199, 68, 0.1);
       }
 
-      &.nuxt-link-active {
-        background-color: rgba(247, 199, 68, 0.2);
-        cursor: default;
-      }
-
       &--active {
-        background-color: rgba(204, 160, 40, 0.1);
+        background-color: rgba(204, 160, 40, 0.2);
       }
     }
   }

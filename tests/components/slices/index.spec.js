@@ -135,8 +135,10 @@ describe('Post component copyAnchorLink', () => {
         <div id="blog-post-title" class="anchor_title">
           <${tag} class="anchor_title-h">Blog post title</${tag}>
           <div class="anchor_copy-link">
-            <img src="[object Object]" alt="Anchor" />
-            <button data-id="blog-post-title" class="copy-link">Copy link</button>
+            <button data-id="blog-post-title" class="copy-link">
+              <img src="[object Object]" alt="Anchor" />
+            </button>
+            <div class="anchor_copy-link-tooltip">Copy link</div>
           </div>
         </div>
       `

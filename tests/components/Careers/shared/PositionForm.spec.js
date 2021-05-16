@@ -1,3 +1,4 @@
+/* eslint-disable jest/no-disabled-tests */
 import Vuelidate from 'vuelidate'
 import { render } from '@testing-library/vue'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
@@ -27,11 +28,9 @@ const mocks = {
     $reset: jest.fn(),
     validationGroup: {},
   },
-  $store: {
-    dispatch: jest.fn(),
-  },
   buildEmail: jest.fn(),
   resetForm: jest.fn(),
+  sendVacancy: jest.fn(),
   $refs: {
     fileInput: {
       reset: jest.fn(),
@@ -84,7 +83,7 @@ describe('PositionForm component', () => {
 
     await expect(mocks.buildEmail).toHaveBeenCalledTimes(0)
     expect(mocks.resetForm).toHaveBeenCalledTimes(0)
-    expect(mocks.$store.dispatch).toHaveBeenCalledTimes(0)
+    expect(mocks.sendVacancy).toHaveBeenCalledTimes(0)
   })
 
   it('should work send form', async () => {
@@ -98,7 +97,7 @@ describe('PositionForm component', () => {
 
     await expect(mocks.buildEmail).toHaveBeenCalledTimes(1)
     expect(mocks.resetForm).toHaveBeenCalledTimes(1)
-    expect(mocks.$store.dispatch).toHaveBeenCalledTimes(1)
+    expect(mocks.sendVacancy).toHaveBeenCalledTimes(1)
   })
 
   it('should work reset form', () => {
