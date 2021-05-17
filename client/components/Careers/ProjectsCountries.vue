@@ -70,6 +70,13 @@ export default {
     @include font('Inter', 20px, 400);
   }
 
+  &_img-wrap {
+    min-width: 481px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   &_img {
     width: 100%;
     height: 100%;
@@ -81,6 +88,37 @@ export default {
 
   &_link-btn {
     margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 98px;
+
+    &_title {
+      margin-bottom: 7px;
+      font-size: 44px;
+      line-height: 50px;
+    }
+
+    &_description {
+      margin-bottom: 15px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    &_title {
+      font-size: 34px;
+      line-height: 118%;
+    }
+
+    &_description {
+      margin-bottom: 35px;
+    }
+
+    &_link-btn {
+      width: 100%;
+    }
   }
 }
 </style>

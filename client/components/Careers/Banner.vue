@@ -49,6 +49,10 @@ export default {
     letter-spacing: -0.04em;
     line-height: 96px;
     color: $text-color--white;
+
+    @media screen and (max-width: 991px) {
+      margin-top: 70px;
+    }
   }
 
   &_img-wrap {
@@ -70,6 +74,40 @@ export default {
 
     span {
       color: $text-color--red;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 98px;
+
+    &_title {
+      margin-bottom: 26px;
+      font-size: 76px;
+      line-height: 76px;
+    }
+
+    &_img-wrap {
+      margin-bottom: 96px;
+    }
+
+    &_description {
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    margin-bottom: 108px;
+
+    &_title {
+      margin-top: 116px;
+      margin-bottom: 38px;
+      font-size: 44px;
+      line-height: 109%;
+    }
+
+    &_img-wrap {
+      margin-bottom: 70px;
     }
   }
 }
