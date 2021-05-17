@@ -90,22 +90,10 @@ export default {
     grid-template-columns: 2fr 1fr;
     align-items: end;
     padding: 85px 0;
-    border-bottom: 1px solid $border-color--grey-careers-page;
-    opacity: 0.2;
-    cursor: pointer;
-    transition: 0.4s;
-
-    &:hover {
-      opacity: 1;
-    }
+    border-bottom: 1px solid $border-color--grey-02-opacity;
 
     &:first-child {
       padding-top: 0;
-    }
-
-    @media screen and (max-width: 1024px) {
-      opacity: 1;
-      border-color: $border-color--grey-02-opacity;
     }
   }
 

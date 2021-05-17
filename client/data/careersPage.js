@@ -16,10 +16,6 @@ export const keyMetrics = [
     description: 'weekly pull requests in a project',
   },
   {
-    title: '0',
-    description: 'boring tasks and bureaucratic procedures',
-  },
-  {
     title: '10K',
     description: 'hours of internal training',
   },
