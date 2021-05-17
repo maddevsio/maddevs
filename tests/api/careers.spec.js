@@ -28,6 +28,27 @@ describe('Careers api methods', () => {
     },
   }
 
+  it('getCareersHome success', async () => {
+    const data = await api.getCareersHome(prismic)
+    expect(data).toBe('data')
+    expect(prismic.api.getSingle).toHaveBeenCalledWith('careers_home')
+  })
+
+  it('getCareersHome failure', async () => {
+    const data = await api.getCareersHome(prismicFailure)
+    expect(data).toBe(error)
+  })
+
+  it('getVacancyPosts success', async () => {
+    const data = await api.getVacancyPosts(prismic)
+    expect(data).toBe('results')
+  })
+
+  it('getVacancyPosts failure', async () => {
+    const data = await api.getVacancyPosts(prismicFailure)
+    expect(data).toBe(error)
+  })
+
   it('getVacancyPost success', async () => {
     const data = await api.getVacancyPost(prismic, 1)
     expect(data).toEqual({ data: 'data', results: 'results' })
