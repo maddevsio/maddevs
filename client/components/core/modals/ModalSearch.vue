@@ -11,14 +11,14 @@
         <input
           ref="searchInput"
           v-model.lazy="searchQuery"
+          v-debounce="600"
           type="text"
           placeholder="Search"
-          v-debounce="600"
         >
       </label>
       <button
-        @click="$emit('on-close')"
         class="modal-search_form-close"
+        @click="$emit('on-close')"
       >
         <img
           src="@/assets/img/common/close-icon-search.svg"
@@ -101,17 +101,18 @@ import linkResolver from '@/plugins/link-resolver.js'
 
 export default {
   name: 'ModalSearch',
+
+  directives: {
+    debounce,
+  },
+
+  mixins: [findPostAuthorMixin],
+
   data() {
     return {
       searchQuery: null,
       response: null,
     }
-  },
-
-  mixins: [findPostAuthorMixin],
-
-  directives: {
-    debounce,
   },
 
   computed: {
@@ -132,6 +133,11 @@ export default {
 
   mounted() {
     this.$refs.searchInput.focus()
+    document.addEventListener('keyup', this.listenEnterKey)
+  },
+
+  beforeDestroy() {
+    document.removeEventListener('keyup', this.listenEnterKey)
   },
 
   methods: {
@@ -154,6 +160,15 @@ export default {
 
     link(post) {
       return linkResolver(post)
+    },
+
+    listenEnterKey(event) {
+      if (!this.searchQuery) return false
+      if (event.keyCode !== 13) return false
+      document.removeEventListener('keyup', this.listenEnterKey)
+      this.$router.push('/blog/search-result/')
+      this.$emit('on-close')
+      return true
     },
   },
 }

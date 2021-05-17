@@ -92,8 +92,8 @@
           <div class="header__right-content col-xl-6 col-lg-5">
             <button
               v-if="isBlogPage"
-              @click="searchActive = true"
               class="header__search-btn"
+              @click="searchActive = true"
             >
               <img
                 src="@/assets/img/common/magnify--white.svg"

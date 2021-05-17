@@ -190,7 +190,11 @@ exports[`Header component should render correctly 1`] = `
      
     <!---->
      
-    <!---->
+    <transition-stub
+      name="slide-fade"
+    >
+      <!---->
+    </transition-stub>
      
     <transition-stub
       mode="out-in"
