@@ -11,7 +11,7 @@
         name="tag"
         :value="category.title"
         :checked="vacanciesCategory === category.title"
-        @change="handleFilterChange"
+        @click="handleFilterChange"
       >
       <label :for="category.title">{{ category.title }}</label>
     </li>
@@ -31,7 +31,7 @@ export default {
     ...mapActions(['changeVacanciesCategory']),
 
     handleFilterChange(event) {
-      this.changeVacanciesCategory(event.target.value)
+      this.changeVacanciesCategory(event.target.value !== this.vacanciesCategory ? event.target.value : null)
     },
   },
 }
