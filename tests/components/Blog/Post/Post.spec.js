@@ -115,6 +115,7 @@ describe('Post component', () => {
       const event = {
         target: {
           getAttribute: () => 'blog-post-title',
+          nextElementSibling: document.createElement('div'),
         },
       }
       const result = wrapper.vm.copyAnchorLink(event)
@@ -125,6 +126,7 @@ describe('Post component', () => {
       const event = {
         target: {
           getAttribute: () => undefined,
+          nextElementSibling: document.createElement('div'),
         },
       }
       const result = wrapper.vm.copyAnchorLink(event)
