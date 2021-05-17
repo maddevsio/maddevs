@@ -17,7 +17,13 @@ exports[`Main component should render correctly 1`] = `
       class="careers_white-section"
     >
       <employeesbenefits-stub />
+       
+      <openpositions-stub />
+       
+      <ctabanner-stub />
     </div>
+     
+    <scrolltopositionsbutton-stub />
   </div>
 </div>
 `;

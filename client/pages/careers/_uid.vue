@@ -70,7 +70,7 @@ export default {
     if (!showPage) return error({ statusCode: 404, message: 'Page not found' })
 
     try {
-      await store.dispatch('getVacancyPost', params.uid)
+      await store.dispatch('getVacancy', params.uid)
       return {
         openGraphUrl,
       }

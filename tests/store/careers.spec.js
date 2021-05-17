@@ -74,12 +74,12 @@ describe('Careers module mutations', () => {
 })
 
 describe('Careers module actions', () => {
-  it('should correctly called getVacancyPost', async () => {
+  it('should correctly called getVacancy', async () => {
     const store = {
       commit: jest.fn(),
     }
 
-    await actions.getVacancyPost(store)
+    await actions.getVacancy(store)
 
     expect(getVacancyPost).toHaveBeenCalledTimes(1)
     expect(store.commit).toHaveBeenCalledWith('SET_VACANCY', 'test')
