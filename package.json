@@ -46,7 +46,7 @@
     "request": "^2.88.2",
     "sendpulse-api": "^1.1.4",
     "seo-inspector": "0.0.2",
-    "simplebar-vue": "^1.6.0",
+    "simplebar-vue": "^1.6.2",
     "snyk": "^1.563.0",
     "swiper": "^5.4.5",
     "vue-awesome-swiper": "^4.1.1",
