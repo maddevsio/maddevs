@@ -26,11 +26,12 @@ export default {
 
   mounted() {
     this.positionsSectionEl = document.getElementById('open-positions')
-    window.addEventListener('scroll', this.handleScroll)
+    this.handleButtonVisibility()
+    window.addEventListener('scroll', this.handleButtonVisibility)
   },
 
   methods: {
-    handleScroll() {
+    handleButtonVisibility() {
       if (this.positionsSectionEl) {
         const sectionRect = this.positionsSectionEl.getBoundingClientRect()
         const offsetTop = sectionRect.top - window.innerHeight
