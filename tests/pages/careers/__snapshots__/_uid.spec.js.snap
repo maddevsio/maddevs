@@ -22,7 +22,7 @@ exports[`Careers _uid component should render correctly 1`] = `
               class="position-labels"
             >
               <div
-                class="position-labels__item"
+                class="position-labels__item position-labels__item--filled"
               >
                 
     Remote

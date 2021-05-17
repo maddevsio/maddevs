@@ -6,14 +6,14 @@ exports[`PositionTags component should render correctly 1`] = `
     class="position-tags"
   >
     <span
-      class="position-tags__item"
+      class="position-tags__item position-tags__item--point-divider"
     >
       
     DevOps
   
     </span>
     <span
-      class="position-tags__item"
+      class="position-tags__item position-tags__item--point-divider"
     >
       
     Job
