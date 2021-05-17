@@ -13,6 +13,7 @@
 </template>
 
 <script>
+
 import PositionsFilter from '@/components/Careers/shared/PositionsFilter'
 import PositionsGrid from '@/components/Careers/shared/PositionsGrid'
 
