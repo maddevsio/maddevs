@@ -1,5 +1,8 @@
 <template>
-  <div class="open-positions">
+  <div
+    id="open-positions"
+    class="open-positions"
+  >
     <div class="container">
       <div class="open-positions__head">
         <h2 class="open-positions__title">
@@ -30,6 +33,7 @@ export default {
 @import '@/assets/styles/_vars';
 
 .open-positions {
+  padding: 82px 0 88px;
   &__head {
     display: flex;
     flex-direction: column;
@@ -44,6 +48,7 @@ export default {
   }
 
   @media screen and (max-width: 1024px) {
+    padding: 55px 0 60px;
     &__head {
       align-items: flex-start;
       margin-bottom: 27px;

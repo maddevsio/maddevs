@@ -8,6 +8,7 @@
       <EmployeesBenefits />
       <OpenPositions />
     </div>
+    <ScrollToPositionsButton />
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import OpenPositions from '@/components/Careers/OpenPositions'
 import Benefits from '@/components/Careers/Benefits'
 import KeyMetrics from '@/components/Careers/KeyMetrics'
 import EmployeesBenefits from '@/components/Careers/EmployeesBenefits'
+import ScrollToPositionsButton from '@/components/Careers/shared/ScrollToPositionsButton'
 
 export default {
   name: 'Main',
@@ -29,6 +31,7 @@ export default {
     KeyMetrics,
     EmployeesBenefits,
     OpenPositions,
+    ScrollToPositionsButton,
   },
 
   mounted() {
