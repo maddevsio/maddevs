@@ -22,7 +22,7 @@ exports[`HRContactCard is a Vue instance 1`] = `
         class="hr-contact__title"
       >
         
-      Hi, I'm Diana,
+      Hi, I'm Diana.
     
       </p>
        
@@ -32,7 +32,7 @@ exports[`HRContactCard is a Vue instance 1`] = `
         
       Applying for jobs should be easy.
       I am here to simplify the hiring process and set you up for success.
-      Feel free to telegram me
+      Feel free to send me a message on Telegram.
       
         <a
           href="https://t.me/DianaHRDigital"
