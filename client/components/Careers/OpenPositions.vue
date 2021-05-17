@@ -41,7 +41,7 @@ export default {
     margin-bottom: 48px;
   }
   &__title {
-    @include font('Popins', 60px, 700);
+    @include font('Poppins', 60px, 700);
     line-height: 64px;
     letter-spacing: -2.6px;
     margin-bottom: 38px;

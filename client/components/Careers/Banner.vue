@@ -67,7 +67,7 @@ export default {
   &_description {
     max-width: 1028px;
     margin: 0 auto;
-    @include font('Inter', 32px, 600);
+    @include font('Inter', 32px, 700);
     line-height: 47px;
     letter-spacing: -0.013em;
     color: $text-color--grey-opacity-20-percent;

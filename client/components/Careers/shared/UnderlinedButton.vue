@@ -31,6 +31,7 @@ export default {
   display: inline-block;
   color: $text-color--red;
   letter-spacing: -0.013em;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 16px;
   transition: all .4s;
