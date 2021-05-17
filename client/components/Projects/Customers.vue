@@ -14,33 +14,34 @@
           are a few of the companies we work with.
         </p>
       </div>
-      <div class="customers__customers-list">
-        <div
-          v-for="customer in customers"
-          :key="customer"
-          class="icon-wrapper"
-        >
-          <img
-            class="icon-wrapper__icon img_lazy"
-            :data-src="fileName(customer)"
-            :alt="customer"
-          >
-        </div>
-      </div>
+      <UICustomersList
+        :light="light"
+        :customers="customers"
+        :icon-background="iconBackground"
+      />
     </div>
   </section>
 </template>
 
 <script>
+import UICustomersList from '@/components/shared/UICustomersList'
 import { customers } from '@/data/customers'
 
 export default {
   name: 'Customers',
+  components: {
+    UICustomersList,
+  },
 
   props: {
     light: {
       type: Boolean,
       default: false,
+    },
+
+    iconBackground: {
+      type: String,
+      default: 'transparent',
     },
   },
 
@@ -49,18 +50,11 @@ export default {
       customers,
     }
   },
-
-  methods: {
-    fileName(name) {
-      if (this.light) return require(`@/assets/img/Projects/svg/${name}-black.svg`)
-      return require(`@/assets/img/Projects/svg/${name}.svg`)
-    },
-  },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
+@import '@/assets/styles/_vars';
 
 .customers {
   padding-bottom: 108px;
@@ -71,12 +65,6 @@ export default {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
-  }
-
-  &__customers-list {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 20px;
   }
 
   &__main-title,
@@ -109,31 +97,10 @@ export default {
     .customers__description {
       color: #101113;
     }
-
-    .icon-wrapper {
-      background-color: #fff;
-    }
-  }
-
-  @media only screen and (max-width: 1300px) {
-    &__customers-list {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-
-  @media only screen and (max-width: 1160px) {
-    &__customers-list {
-      grid-template-columns: repeat(4, 1fr);
-    }
   }
 
   @media only screen and (max-width: 1024px) {
     padding-bottom: 109px;
-
-    &__customers-list {
-      grid-template-columns: repeat(6, 1fr);
-      grid-gap: 14px;
-    }
   }
 
   @media only screen and (max-width: 834px) {
@@ -143,18 +110,8 @@ export default {
       margin-bottom: 20px;
     }
 
-    &__customers-list {
-      grid-template-columns: repeat(5, 1fr);
-    }
-
     &__description {
       width: 395px;
-    }
-  }
-
-  @media only screen and (max-width: 640px) {
-    &__customers-list {
-      grid-template-columns: repeat(4, 1fr);
     }
   }
 
@@ -163,46 +120,12 @@ export default {
   }
 
   @media only screen and (max-width: 520px) {
-    &__customers-list {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
     &__main-title {
       width: unset;
     }
 
     &__description {
       width: 100%;
-    }
-  }
-
-  @media only screen and (max-width: 360px) {
-    &__customers-list {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-}
-
-.icon-wrapper {
-  min-height: 111px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $our-valued-icon-background;
-
-  &__icon {
-    width: 143px;
-    height: 64px;
-    display: block;
-  }
-
-  @media only screen and (max-width: 1024px) {
-    min-height: 81px;
-
-    &__icon {
-      width: 75px;
-      height: 33px;
     }
   }
 }

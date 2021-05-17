@@ -371,7 +371,7 @@ export default {
       margin-bottom: 14px;
     }
     &__title {
-      color: $text-color--grey-cases;
+      color: $text-color--grey-opacity-20-percent;
       font-size: 22.78px;
       line-height: 130%;
       letter-spacing: -1px;
