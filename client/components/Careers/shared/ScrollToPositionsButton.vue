@@ -51,7 +51,7 @@ export default {
   left: 0;
   width: 100%;
   background: $bgcolor--black;
-  padding: 15px 0;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   z-index: 9;
