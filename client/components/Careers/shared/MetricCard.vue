@@ -41,7 +41,7 @@ export default {
   }
 
   &_title {
-    @include font('Inter', 53px, 800);
+    @include font('Poppins', 53px, 800);
     line-height: 74px;
   }
 

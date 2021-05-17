@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/vue'
 
 const props = {
   title: '70+',
-  description: 'open-source projects on GitHub.',
+  description: 'open-source projects on GitHub',
 }
 
 describe('KeyMetrics component', () => {
