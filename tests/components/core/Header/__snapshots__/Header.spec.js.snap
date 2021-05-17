@@ -155,6 +155,8 @@ exports[`Header component should render correctly 1`] = `
           <div
             class="header__right-content col-xl-6 col-lg-5"
           >
+            <!---->
+             
             <div
               class="header__phone-wrapper"
             >
@@ -185,6 +187,8 @@ exports[`Header component should render correctly 1`] = `
         </div>
       </div>
     </header>
+     
+    <!---->
      
     <!---->
      
