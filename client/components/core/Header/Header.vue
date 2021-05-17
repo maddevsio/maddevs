@@ -133,7 +133,12 @@
     />
     <!-- END Mobile header -->
 
-    <ModalSearch v-if="searchActive" />
+    <transition name="slide-fade">
+      <ModalSearch
+        v-if="searchActive"
+        @on-close="searchActive = false"
+      />
+    </transition>
 
     <Modal
       ref="modalContactMe"
@@ -494,8 +499,23 @@ export default {
   }
 }
 
-// ------------ END Overlay styles ------------- //
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all .5s ease;
+}
 
+.slide-fade-leave-active {
+  transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(-300px);
+  opacity: 0;
+}
+
+// ------------ END Overlay styles ------------- //
 .mobile-menu_is-open {
   width: 100%;
   height: 100%;

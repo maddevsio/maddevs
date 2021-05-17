@@ -4,6 +4,7 @@
     <div class="modal-search_form">
       <label>
         <img
+          class="modal-search_form-search"
           src="@/assets/img/common/magnify.svg"
           alt="Magnify"
         >
@@ -15,6 +16,15 @@
           v-debounce="600"
         >
       </label>
+      <button
+        @click="$emit('on-close')"
+        class="modal-search_form-close"
+      >
+        <img
+          src="@/assets/img/common/close-icon-search.svg"
+          alt="Close"
+        >
+      </button>
     </div>
 
     <!-- Search result -->
@@ -168,6 +178,8 @@ export default {
 
     // Form
     &_form {
+      display: flex;
+      flex-wrap: nowrap;
       width: 100%;
       border-bottom: 1px solid #404143;
       padding-bottom: 14px;
@@ -177,17 +189,19 @@ export default {
       padding-top: 15px;
 
       label {
+        width: 100%;
         display: flex;
         align-items: center;
       }
 
-      img {
+      &-search {
         width: 30px;
         height: 35px;
         margin-right: 22px;
       }
 
       input {
+        width: 100%;
         border: 0;
         background-color: transparent;
         color: #fff;
@@ -195,6 +209,19 @@ export default {
         font-size: 33.2px;
         line-height: 130%;
         letter-spacing: -0.04em;
+      }
+
+      &-close {
+        width: auto;
+        height: auto;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
       }
     }
 
