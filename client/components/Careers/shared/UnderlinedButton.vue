@@ -1,6 +1,5 @@
 <template>
   <button
-    type="button"
     class="underlined-button"
     @click="handleClick"
   >
