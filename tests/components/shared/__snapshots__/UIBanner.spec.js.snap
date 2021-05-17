@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UIBanner component should render correctly 1`] = `
+<div>
+  <section
+    class="cta-banner"
+  >
+    <h2>
+      Title
+    </h2>
+     
+    <p>
+      
+    </p>
+      
+    <img
+      alt=""
+      class="cta-banner__image"
+      height="490"
+      src=""
+      width="395"
+    />
+     
+    <div
+      class="cta-banner__man"
+    >
+      
+    
+    
+      <span>
+        
+      </span>
+    </div>
+  </section>
+</div>
+`;

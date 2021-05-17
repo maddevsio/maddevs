@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScrollToPositionsButton component should render correctly 1`] = `
+<div>
+  <nuxtlink
+    class="scroll-to-positions"
+    to="#open-positions"
+  >
+    <button
+      class="underlined-button"
+    >
+      Scroll to open positions
+    </button>
+  </nuxtlink>
+</div>
+`;

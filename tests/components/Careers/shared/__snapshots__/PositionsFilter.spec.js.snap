@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PositionsFilter component should render correctly 1`] = `
+<div>
+  <ul
+    class="positions-filter"
+  >
+    <li
+      class="positions-filter__item"
+    >
+      <input
+        name="tag"
+        type="radio"
+        value=""
+      />
+       
+      <label>
+        
+      </label>
+    </li>
+    <li
+      class="positions-filter__item"
+    >
+      <input
+        name="tag"
+        type="radio"
+        value=""
+      />
+       
+      <label>
+        
+      </label>
+    </li>
+  </ul>
+</div>
+`;
