@@ -25,7 +25,7 @@ exports[`Benefits component should render correctly 1`] = `
           class="benefits_paragraph"
         >
           
-        At Mad Devs, we built an environment where teams can move sustainably fast by implementing modern technologies and best practices.
+        At Mad Devs, we build an environment where teams can move sustainably and quickly by implementing modern technologies and best practices.
       
         </p>
       </div>
@@ -110,21 +110,21 @@ exports[`Benefits component should render correctly 1`] = `
           class="benefits_list-item"
         >
           
-        Engineers contribute to backlog and roadmap
+        Contribution of engineers to backlog and roadmap
       
         </li>
         <li
           class="benefits_list-item"
         >
           
-        Direct, cult-the bullshit, communication in problem-solving
+        Direct, cut-the-bullshit, communication in problem-solving
       
         </li>
         <li
           class="benefits_list-item"
         >
           
-        Celebrating initiatives culture
+        Culture that celebrates initiatives
       
         </li>
         <li
@@ -157,7 +157,7 @@ exports[`Benefits component should render correctly 1`] = `
           class="benefits_paragraph"
         >
           
-        Everybody at Mad Devs, from C-suite to interns, gets paid competitive compensation in USD. Please note that due to legal regulations, the majority of employees receive salaries in the local currency with respect to the exchange rate.
+        Everybody at Mad Devs—from C-suite to interns—gets paid competitive compensation in USD. Please note that due to legal regulations, majority of employees receive salaries in the local currency with respect to the exchange rate.
       
         </p>
       </div>
@@ -197,7 +197,7 @@ exports[`Benefits component should render correctly 1`] = `
           class="benefits_list-item"
         >
           
-        Salary, benefits and bonuses paid in USD
+        Salary, benefits, and bonuses paid in USD
       
         </li>
       </ul>
