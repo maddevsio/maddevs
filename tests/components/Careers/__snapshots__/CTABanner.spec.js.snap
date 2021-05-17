@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CTABanner component should render correctly 1`] = `
+<div>
+  <div
+    class="careers-cta-banner_container container"
+  >
+    <uibanner-stub
+      image="[object Object]"
+      imagealttext="Daria"
+      manname="Daria Utesheva"
+      manposition="Head of HR Departament"
+      text="If you don’t see a suitable vacancy, but you are sure we’re meant to be, drop us a line."
+      title="Can’t see your next role?"
+    >
+      <a
+        href="https://t.me/DianaHRDigital"
+        target="_blank"
+      >
+        <uibutton-stub
+          class="careers-cta-banner__button"
+        >
+          <img
+            class="img_lazy"
+            data-src="[object Object]"
+            height="17"
+            width="20"
+          />
+          
+         
+        Telegram us
+      
+        </uibutton-stub>
+      </a>
+       
+      <ul
+        class="careers-cta-banner__links"
+      >
+        <li>
+          <a
+            href="#"
+            target="_blank"
+          >
+            
+          Headhunter
+        
+          </a>
+        </li>
+         
+        <li>
+          <a
+            href="#"
+            target="_blank"
+          >
+            
+          Habr.com
+        
+          </a>
+        </li>
+         
+        <li>
+          <a
+            href="#"
+            target="_blank"
+          >
+            
+          Linkedin
+        
+          </a>
+        </li>
+      </ul>
+    </uibanner-stub>
+  </div>
+</div>
+`;
