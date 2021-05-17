@@ -1,13 +1,21 @@
 <template>
-  <div class="employees-benefits_container container">
-    <h2 class="employees-benefits_title">
-      Employees benefits
-    </h2>
-    <div class="employees-benefits_grid">
-      <BenefitCard
-        v-for="benefit in benefits"
-        v-bind="benefit"
-        :key="benefit.title"
+  <div class="employees-benefits">
+    <div class="employees-benefits_grid-container container">
+      <h2 class="employees-benefits_title">
+        Employees benefits
+      </h2>
+      <div class="employees-benefits_benefits-cards">
+        <BenefitCard
+          v-for="benefit in benefits"
+          v-bind="benefit"
+          :key="benefit.title"
+        />
+      </div>
+    </div>
+    <div class="employees-benefits_slider-wrap">
+      <UISllider
+        :options="swiperOptions"
+        :slides="slides"
       />
     </div>
   </div>
@@ -15,17 +23,27 @@
 
 <script>
 import BenefitCard from '@/components/Careers/shared/BenefitCard'
+import UISllider from '@/components/shared/UISllider'
 import { employeesBenefits as benefits } from '@/data/benefits'
+import { slides } from '@/data/careersPage'
 
 export default {
   name: 'EmployeesBenefits',
   components: {
     BenefitCard,
+    UISllider,
   },
 
   data() {
     return {
       benefits,
+      slides,
+      swiperOptions: {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        freeMode: true,
+        loop: false,
+      },
     }
   },
 }
@@ -35,18 +53,24 @@ export default {
 @import '@/assets/styles/_vars';
 
 .employees-benefits {
-  &_container,
-  &_grid {
+  padding-top: 100px;
+  padding-bottom: 61px;
+
+  &_grid-container,
+  &_benefits-cards {
     display: grid;
   }
 
-  &_container {
+  &_grid-container {
     grid-template-columns: 1fr 2fr;
-    padding-top: 100px;
-    padding-bottom: 61px;
+    margin-bottom: 61px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 32px;
+    }
   }
 
-  &_grid {
+  &_benefits-cards {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
 
@@ -67,12 +91,17 @@ export default {
     color: $text-color--red;
   }
 
+  &_slider-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
   @media screen and (max-width: 1340px) {
-    &_container {
+    &_grid-container {
       grid-template-columns: 1fr;
     }
 
-    &_grid {
+    &_benefits-cards {
       grid-gap: 8px;
     }
 
@@ -83,10 +112,8 @@ export default {
   }
 
   @media screen and (max-width: 1024px) {
-    &_container {
-      padding-top: 62px;
-      padding-bottom: 32px;
-    }
+    padding-top: 62px;
+    padding-bottom: 57px;
 
     &_title {
       margin-bottom: 23px;
@@ -95,6 +122,11 @@ export default {
       letter-spacing: -0.04em;
     }
   }
+
+  @media screen and (max-width: 375px) {
+    padding-top: 43px;
+    padding-bottom: 55px;
+  }
 }
 
 /deep/ .benefit-card__item {
@@ -102,6 +134,16 @@ export default {
 
   @media screen and (max-width: 1024px) {
     padding: 15px;
+  }
+}
+
+/deep/ .swiper-slide {
+  height: 415px;
+  width: 415px;
+
+  @media screen and (max-width: 768px) {
+    height: 293px;
+    width: 293px;
   }
 }
 </style>

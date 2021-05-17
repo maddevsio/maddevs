@@ -204,5 +204,24 @@ export default {
       margin-bottom: 29px;
     }
   }
+
+  @media screen and (max-width: 620px) {
+    margin-bottom: 81px;
+
+    &_benefit {
+      padding: 47px 0;
+    }
+
+    &_title {
+      font-size: 34px;
+      line-height: 118%;
+    }
+
+    &_paragraph {
+      margin-bottom: 27px;
+      font-size: 17px;
+      line-height: 143%;
+    }
+  }
 }
 </style>
