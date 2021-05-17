@@ -90,6 +90,16 @@
             <!-- END Burget btn -->
           </div>
           <div class="header__right-content col-xl-6 col-lg-5">
+            <button
+              v-if="isBlogPage"
+              @click="searchActive = true"
+              class="header__search-btn"
+            >
+              <img
+                src="@/assets/img/common/magnify--white.svg"
+                alt="Magnify"
+              >
+            </button>
             <div class="header__phone-wrapper">
               <!-- Flag uk -->
               <img
@@ -123,6 +133,8 @@
     />
     <!-- END Mobile header -->
 
+    <ModalSearch v-if="searchActive" />
+
     <Modal
       ref="modalContactMe"
     >
@@ -136,6 +148,7 @@ import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import HeaderMobile from '@/components/core/Header/HeaderMobile'
 import HeaderLogo from '@/components/core/Header/HeaderLogo'
 import Modal from '@/components/core/Modal'
+import ModalSearch from '@/components/core/modals/ModalSearch'
 import { headerNavigation as navigation } from '@/data/navigation'
 
 export default {
@@ -146,6 +159,7 @@ export default {
     HeaderMobile,
     HeaderLogo,
     Modal,
+    ModalSearch,
   },
 
   data() {
@@ -156,12 +170,17 @@ export default {
       isCasePage: false,
       isTransparentBG: true,
       caseGoDeeScrollContainer: null,
+      searchActive: false,
     }
   },
 
   computed: {
     isGodeePage() {
       return this.$nuxt.$route.path.includes('/godee')
+    },
+
+    isBlogPage() {
+      return this.$nuxt.$route.path.includes('/blog')
     },
   },
 
@@ -308,6 +327,22 @@ export default {
       height: 22px;
       margin-top: 3px;
       margin-right: 3px;
+    }
+  }
+
+  &__search-btn {
+    width: auto !important;
+    height: auto !important;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 22px !important;
+    margin-right: 18px;
+    padding: 10px;
+    cursor: pointer;
+
+    img {
+      width: 19px;
+      height: 21px;
     }
   }
 

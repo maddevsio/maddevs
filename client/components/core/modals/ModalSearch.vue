@@ -8,6 +8,7 @@
           alt="Magnify"
         >
         <input
+          ref="searchInput"
           v-model.lazy="searchQuery"
           type="text"
           placeholder="Search"
@@ -18,7 +19,7 @@
 
     <!-- Search result -->
     <div
-      v-if="searchPosts"
+      v-if="searchPosts && searchPosts.length"
       class="modal-search_result"
     >
       <div
@@ -26,17 +27,24 @@
         :key="`search-post-${i}`"
         class="modal-search_result-item"
       >
-        <img
-          class="modal-search_result-item_img"
-          :src="post.data.featured_image.url"
-          alt="Post image"
-        >
+        <NuxtLink :to="link(post)">
+          <img
+            class="modal-search_result-item_img"
+            :src="post.data.featured_image.url"
+            alt="Post image"
+          >
+        </NuxtLink>
         <div class="modal-search_result-item_content">
-          <h4>{{ post.data.title[0].text }}</h4>
+          <NuxtLink :to="link(post)">
+            <h4>{{ post.data.title[0].text }}</h4>
+          </NuxtLink>
           <div class="modal-search_result-item_content-date">
             {{ formattedDate(post) }}
           </div>
-          <div class="modal-search_result-item_content-author">
+          <NuxtLink
+            :to="`/blog/author/${getAuthor(post, 'uid')}`"
+            class="modal-search_result-item_content-author"
+          >
             <img
               :src="getAuthor(post, 'image').url"
               alt="Author"
@@ -45,15 +53,31 @@
               <h5>{{ getAuthor(post, 'name') }}</h5>
               <p>{{ getAuthor(post, 'position') }}</p>
             </div>
-          </div>
+          </NuxtLink>
         </div>
       </div>
+    </div>
+
+    <!-- Not found -->
+    <div
+      v-if="searchPosts && !searchPosts.length"
+      class="modal-search_not-found"
+    >
+      No results found
     </div>
 
     <!-- Suggest -->
     <div class="modal-search_suggest">
       <h5>May we suggest</h5>
-      <div class="modal-search_suggest-list"></div>
+      <div class="modal-search_suggest-list">
+        <div
+          v-for="(tag, i) of []"
+          :key="`search-tag-${i}`"
+          class="modal-search_suggest-list-item"
+        >
+          Item
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -63,6 +87,7 @@ import { mapGetters } from 'vuex'
 import debounce from 'v-debounce'
 import formatDate from '@/helpers/formatDate'
 import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
+import linkResolver from '@/plugins/link-resolver.js'
 
 export default {
   name: 'ModalSearch',
@@ -83,7 +108,8 @@ export default {
     ...mapGetters(['allAuthors']),
 
     searchPosts() {
-      if (!this.response || !this.response.results || !this.response.results.length) return null
+      if (!this.response || !this.response.results) return null
+      if (!this.response || !this.response.results || !this.response.results.length) return []
       return this.response.results
     },
   },
@@ -92,6 +118,10 @@ export default {
     searchQuery(newVal) {
       this.getPosts(newVal)
     },
+  },
+
+  mounted() {
+    this.$refs.searchInput.focus()
   },
 
   methods: {
@@ -111,6 +141,10 @@ export default {
         return null
       }
     },
+
+    link(post) {
+      return linkResolver(post)
+    },
   },
 }
 </script>
@@ -124,14 +158,23 @@ export default {
     height: 100%;
     background-color: rgba(0, 0, 0, 1);
     z-index: 999;
-    padding: 130px 100px;
+    padding: 115px 100px 30px;
     box-sizing: border-box;
+    overflow: auto;
+
+    a {
+      text-decoration: none;
+    }
 
     // Form
     &_form {
       width: 100%;
       border-bottom: 1px solid #404143;
       padding-bottom: 14px;
+      position: sticky;
+      top: -117px;
+      background-color: #000;
+      padding-top: 15px;
 
       label {
         display: flex;
@@ -157,8 +200,10 @@ export default {
 
     // Result
     &_result {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 48px;
       margin-top: 35px;
 
       &-item {
@@ -176,11 +221,17 @@ export default {
           margin-left: 16px;
 
           h4 {
+            max-height: 57px;
             font-weight: 600;
             font-size: 15px;
             line-height: 124%;
             letter-spacing: -0.03em;
             color: #fff;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
 
           &-date {
@@ -194,6 +245,7 @@ export default {
 
           &-author {
             display: flex;
+            margin-top: auto;
 
             img {
               width: 20px;
@@ -218,6 +270,28 @@ export default {
             }
           }
         }
+      }
+    }
+
+    // Not found
+    &_not-found {
+      color: #EC1C24;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 166%;
+      letter-spacing: -0.035em;
+      margin-top: 50px;
+    }
+
+    &_suggest {
+      margin-top: 50px;
+
+      h5 {
+        color: #707072;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 166%;
+        letter-spacing: -0.02em;
       }
     }
   }
