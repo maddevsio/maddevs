@@ -3,13 +3,13 @@
 exports[`ScrollToPositionsButton component should render correctly 1`] = `
 <div>
   <nuxtlink
-    class="scroll-to-positions"
+    class="scroll-to-positions scroll-to-positions--hidden"
     to="#open-positions"
   >
     <button
       class="underlined-button"
     >
-      Scroll to open positions
+      See all 0 open positions
     </button>
   </nuxtlink>
 </div>
