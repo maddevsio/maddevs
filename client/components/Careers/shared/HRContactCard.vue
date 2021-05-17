@@ -9,7 +9,7 @@
     </div>
     <div class="hr-contact__info">
       <p class="hr-contact__title">
-        Hi, I'm Diana,
+        Hi, I'm Diana.
       </p>
       <p class="hr-contact__description">
         Applying for jobs should be easy.
