@@ -14,7 +14,7 @@
       <p class="hr-contact__description">
         Applying for jobs should be easy.
         I am here to simplify the hiring process and set you up for success.
-        Feel free to telegram me
+        Feel free to send me a message on Telegram.
         <a
           href="https://t.me/DianaHRDigital"
           target="_blank"

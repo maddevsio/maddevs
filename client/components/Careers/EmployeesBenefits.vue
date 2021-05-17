@@ -54,7 +54,6 @@ export default {
 
 .employees-benefits {
   padding-top: 100px;
-  padding-bottom: 61px;
 
   &_grid-container,
   &_benefits-cards {
@@ -113,7 +112,6 @@ export default {
 
   @media screen and (max-width: 1024px) {
     padding-top: 62px;
-    padding-bottom: 57px;
 
     &_title {
       margin-bottom: 23px;
@@ -125,7 +123,6 @@ export default {
 
   @media screen and (max-width: 375px) {
     padding-top: 43px;
-    padding-bottom: 55px;
   }
 }
 

@@ -192,7 +192,7 @@ export default {
       padding-bottom: 28px;
     }
     &-title {
-      font-size: 25px;
+      font-size: 26px;
     }
   }
 }

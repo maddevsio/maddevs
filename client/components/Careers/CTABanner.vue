@@ -1,8 +1,8 @@
 <template>
   <div class="careers-cta-banner_container container">
     <UIBanner
-      title="Can’t see your next role?"
-      text="If you don’t see a suitable vacancy, but you are sure we’re meant to be, drop us a line."
+      title="Can’t find your next role?"
+      text="If you don’t see a suitable vacancy, but are sure that we’re meant to be, drop us a line."
       :image="require(`@/assets/img/Careers/Daria.png`)"
       image-alt-text="Daria"
       man-name="Daria Utesheva"
@@ -101,6 +101,12 @@ export default {
       &:last-child {
         margin-right: 0;
       }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &_container {
+      padding-bottom: 44px;
     }
   }
 }

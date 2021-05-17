@@ -6,7 +6,7 @@
     <div class="container">
       <div class="open-positions__head">
         <h2 class="open-positions__title">
-          Open Positions
+          Find your next job at Mad Devs
         </h2>
         <PositionsFilter />
       </div>
@@ -38,7 +38,11 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     margin-bottom: 48px;
+    /deep/ .positions-filter {
+      justify-content: center;
+    }
   }
   &__title {
     @include font('Poppins', 60px, 700);
@@ -48,10 +52,14 @@ export default {
   }
 
   @media screen and (max-width: 1024px) {
-    padding: 55px 0 60px;
+    padding: 57px 0 60px;
     &__head {
       align-items: flex-start;
+      text-align: left;
       margin-bottom: 27px;
+      /deep/ .positions-filter {
+        justify-content: flex-start;
+      }
     }
     &__title {
       margin-bottom: 24px;
@@ -62,13 +70,14 @@ export default {
   }
 
   @media screen and (max-width: 768px) {
+    padding: 55px 0 60px;
     &__title {
       margin-bottom: 22px;
       font-size: 34px;
       letter-spacing: -0.04em;
     }
     &__head {
-      margin-bottom: 14px;
+      margin-bottom: 24px;
     }
   }
 }
