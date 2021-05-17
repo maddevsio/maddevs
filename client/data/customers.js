@@ -30,6 +30,21 @@ export const customers = [
   'iothub',
 ]
 
+export const careersCustomers = [
+  'clutch',
+  'godee',
+  'sjmc',
+  'dzing',
+  'topica',
+  'veeqo',
+  'guardrails',
+  'teacherly',
+  'nambataxi',
+  'alfa-bank',
+  'edumall',
+  'triggermesh',
+]
+
 export const ratesPercentages = [
   {
     percent: 92,

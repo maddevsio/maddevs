@@ -8,12 +8,6 @@ const localVue = createLocalVue()
 
 localVue.use(Vuelidate)
 
-const store = {
-  actions: {
-    sendVacancy: jest.fn(),
-  },
-}
-
 const mocks = {
   $v: {
     name: {
@@ -36,6 +30,7 @@ const mocks = {
   },
   buildEmail: jest.fn(),
   resetForm: jest.fn(),
+  sendVacancy: jest.fn(),
   $refs: {
     fileInput: {
       reset: jest.fn(),
@@ -50,7 +45,6 @@ describe('PositionForm component', () => {
   it('should render correctly', () => {
     const { container } = render(PositionForm, {
       localVue,
-      store,
     })
 
     expect(container).toMatchSnapshot()
@@ -60,7 +54,6 @@ describe('PositionForm component', () => {
     const wrapper = shallowMount(PositionForm, {
       localVue,
       mocks,
-      store,
     })
 
     wrapper.vm.$options.methods.handleFileSelect.call({ $v: {} })
@@ -72,7 +65,6 @@ describe('PositionForm component', () => {
     const wrapper = shallowMount(PositionForm, {
       localVue,
       mocks,
-      store,
     })
 
     wrapper.vm.$options.methods.handleFileSelect.call(mocks)
@@ -84,7 +76,6 @@ describe('PositionForm component', () => {
     const wrapper = shallowMount(PositionForm, {
       localVue,
       mocks,
-      store,
     })
 
     mocks.$v.validationGroup.$invalid = true
@@ -92,29 +83,27 @@ describe('PositionForm component', () => {
 
     await expect(mocks.buildEmail).toHaveBeenCalledTimes(0)
     expect(mocks.resetForm).toHaveBeenCalledTimes(0)
-    expect(store.actions.sendVacancy).toHaveBeenCalledTimes(0)
+    expect(mocks.sendVacancy).toHaveBeenCalledTimes(0)
   })
 
-  it.skip('should work send form', async () => {
+  it('should work send form', async () => {
     mocks.$v.validationGroup.$invalid = false
     const wrapper = shallowMount(PositionForm, {
       localVue,
       mocks,
-      store,
     })
 
     wrapper.vm.$options.methods.submitForm.call(mocks)
 
     await expect(mocks.buildEmail).toHaveBeenCalledTimes(1)
     expect(mocks.resetForm).toHaveBeenCalledTimes(1)
-    expect(store.actions.sendVacancy).toHaveBeenCalledTimes(1)
+    expect(mocks.sendVacancy).toHaveBeenCalledTimes(1)
   })
 
   it('should work reset form', () => {
     const wrapper = shallowMount(PositionForm, {
       localVue,
       mocks,
-      store,
     })
 
     wrapper.vm.$options.methods.resetForm.call(mocks)
@@ -144,7 +133,6 @@ describe('PositionForm component', () => {
     const wrapper = shallowMount(PositionForm, {
       localVue,
       mocks,
-      store,
       data: () => ({
         name: 'John Johnson',
         position: 'Frontend',
@@ -161,11 +149,10 @@ describe('PositionForm component', () => {
     expect(result.variables.positionValue).toBe(callObject.grade.value)
   })
 
-  it.skip('should work base 64 function', async () => {
+  it('should work base 64 function', async () => {
     const wrapper = shallowMount(PositionForm, {
       localVue,
       mocks,
-      store,
     })
 
     const result = await wrapper.vm.$options.methods.toBase64.call(mocks, new File([], 'testfile.png', undefined))

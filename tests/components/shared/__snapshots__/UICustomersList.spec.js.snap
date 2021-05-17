@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UICustomersList should render correctly 1`] = `
+<div>
+  <div
+    class="customers__customers-list"
+  >
+    <div
+      class="icon-wrapper"
+      data-testid="icon-wrapper"
+      style="background-color: rgb(255, 255, 255);"
+    >
+      <img
+        alt="topica"
+        class="icon-wrapper__icon media_lazy"
+        data-src="[object Object]"
+        data-testid="customer-icon"
+      />
+    </div>
+  </div>
+</div>
+`;

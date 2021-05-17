@@ -28,13 +28,9 @@ const mocks = {
     $reset: jest.fn(),
     validationGroup: {},
   },
-  $store: {
-    actions: {
-      sendVacancy: jest.fn(),
-    },
-  },
   buildEmail: jest.fn(),
   resetForm: jest.fn(),
+  sendVacancy: jest.fn(),
   $refs: {
     fileInput: {
       reset: jest.fn(),
@@ -87,10 +83,10 @@ describe('Careers component', () => {
 
     await expect(mocks.buildEmail).toHaveBeenCalledTimes(0)
     expect(mocks.resetForm).toHaveBeenCalledTimes(0)
-    expect(mocks.$store.actions.sendVacancy).toHaveBeenCalledTimes(0)
+    expect(mocks.sendVacancy).toHaveBeenCalledTimes(0)
   })
 
-  it.skip('should work send form', async () => {
+  it('should work send form', async () => {
     mocks.$v.validationGroup.$invalid = false
     const wrapper = shallowMount(Careers, {
       localVue,
@@ -101,7 +97,7 @@ describe('Careers component', () => {
 
     await expect(mocks.buildEmail).toHaveBeenCalledTimes(1)
     expect(mocks.resetForm).toHaveBeenCalledTimes(1)
-    expect(mocks.$store.actions.sendVacancy).toHaveBeenCalledTimes(1)
+    expect(mocks.sendVacancy).toHaveBeenCalledTimes(1)
   })
 
   it('should work reset form', () => {
@@ -153,7 +149,7 @@ describe('Careers component', () => {
     expect(result.variables.positionValue).toBe(callObject.grade.value)
   })
 
-  it.skip('should work base 64 function', async () => {
+  it('should work base 64 function', async () => {
     const wrapper = shallowMount(Careers, {
       localVue,
       mocks,

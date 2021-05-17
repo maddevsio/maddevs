@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KeyMetrics component should render correctly 1`] = `
+<div>
+  <div
+    class="key-metrics_container container"
+    description="open-source projects on GitHub."
+    title="70+"
+  >
+    <h2
+      class="key-metrics_title"
+    >
+      
+    Mad Devs’ key metrics
+  
+    </h2>
+     
+    <div
+      class="key-metrics_grid"
+    >
+      <div
+        class="metrica-card"
+      >
+        <h3
+          class="metrica-card_title"
+        >
+          
+    70+
+  
+        </h3>
+         
+        <p
+          class="metrica-card_description"
+        >
+          
+    open-source projects on GitHub.
+  
+        </p>
+      </div>
+      <div
+        class="metrica-card"
+      >
+        <h3
+          class="metrica-card_title"
+        >
+          
+    100+
+  
+        </h3>
+         
+        <p
+          class="metrica-card_description"
+        >
+          
+    staff members work for Mad Devs.
+  
+        </p>
+      </div>
+      <div
+        class="metrica-card"
+      >
+        <h3
+          class="metrica-card_title"
+        >
+          
+    30+
+  
+        </h3>
+         
+        <p
+          class="metrica-card_description"
+        >
+          
+    tech bloggers and conference speakers.
+  
+        </p>
+      </div>
+      <div
+        class="metrica-card"
+      >
+        <h3
+          class="metrica-card_title"
+        >
+          
+    100+
+  
+        </h3>
+         
+        <p
+          class="metrica-card_description"
+        >
+          
+    weekly pull requests in a project.
+  
+        </p>
+      </div>
+      <div
+        class="metrica-card"
+      >
+        <h3
+          class="metrica-card_title"
+        >
+          
+    0
+  
+        </h3>
+         
+        <p
+          class="metrica-card_description"
+        >
+          
+    boring task and bureaucratic procedures.
+  
+        </p>
+      </div>
+      <div
+        class="metrica-card"
+      >
+        <h3
+          class="metrica-card_title"
+        >
+          
+    10K
+  
+        </h3>
+         
+        <p
+          class="metrica-card_description"
+        >
+          
+    hours of internal training.
+  
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

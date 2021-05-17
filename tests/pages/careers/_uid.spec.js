@@ -48,6 +48,9 @@ const mocks = {
       reset: jest.fn(),
     },
   },
+  $lazyLoad: {
+    init: jest.fn(),
+  },
 }
 
 const localVue = createLocalVue()
