@@ -28,6 +28,14 @@ describe('Careers api methods', () => {
     },
   }
 
+  const axios = {
+    post: success,
+  }
+
+  const axiosFailure = {
+    post: failure,
+  }
+
   it('getCareersHome success', async () => {
     const data = await api.getCareersHome(prismic)
     expect(data).toBe('data')
@@ -56,6 +64,18 @@ describe('Careers api methods', () => {
 
   it('getVacancyPost failure', async () => {
     const data = await api.getVacancyPost(prismicFailure)
+    expect(data).toBe(error)
+  })
+
+  it('sendVacancy success', async () => {
+    const payload = 'payload'
+    const data = await api.sendVacancy(axios, payload)
+    expect(data).toEqual({ data: 'data', results: 'results' })
+  })
+
+  it('sendVacancy failure', async () => {
+    const payload = 'payload'
+    const data = await api.sendVacancy(axiosFailure, payload)
     expect(data).toBe(error)
   })
 })
