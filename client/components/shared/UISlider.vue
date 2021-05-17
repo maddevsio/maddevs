@@ -1,10 +1,10 @@
 <template>
   <div class="ui-slider">
-    <swiper
+    <Swiper
       :options="options"
       class="ui-slider_slider"
     >
-      <swiper-slide
+      <SwiperSlide
         v-for="slide in slides"
         :key="slide.file"
       >
@@ -22,8 +22,8 @@
             class="ui-slider_slider-img"
           >
         </picture>
-      </swiper-slide>
-    </swiper>
+      </SwiperSlide>
+    </Swiper>
   </div>
 </template>
 

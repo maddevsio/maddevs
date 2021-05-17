@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="employees-benefits_slider-wrap">
-      <UISllider
+      <UISlider
         :options="swiperOptions"
         :slides="slides"
       />
@@ -23,7 +23,7 @@
 
 <script>
 import BenefitCard from '@/components/Careers/shared/BenefitCard'
-import UISllider from '@/components/shared/UISllider'
+import UISlider from '@/components/shared/UISlider'
 import { employeesBenefits as benefits } from '@/data/benefits'
 import { slides } from '@/data/careersPage'
 
@@ -31,7 +31,7 @@ export default {
   name: 'EmployeesBenefits',
   components: {
     BenefitCard,
-    UISllider,
+    UISlider,
   },
 
   data() {
