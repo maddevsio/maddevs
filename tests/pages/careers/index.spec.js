@@ -23,9 +23,10 @@ const mocks = {
   $lazyLoad: {
     init: jest.fn(),
   },
+  featureFlag: jest.fn(),
 }
 
-const stubs = ['Main']
+const stubs = ['Main', 'CareersBanner', 'Careers']
 
 describe('Index page', () => {
   it('should render correctly', () => {

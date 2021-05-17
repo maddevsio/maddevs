@@ -1,5 +1,5 @@
 /* eslint-disable no-shadow */
-import { getVacancyPost } from '@/api/careers'
+import { getVacancyPost, sendVacancy } from '@/api/careers'
 import formatDate from '@/helpers/formatDate'
 import extractSchemaOrg from '@/helpers/extractSchemaOrg'
 
@@ -36,6 +36,10 @@ export const actions = {
   async getVacancyPost({ commit }, payload) {
     const post = await getVacancyPost(this.$prismic, payload)
     commit('SET_VACANCY', post)
+  },
+
+  async sendVacancy(_, payload) {
+    await sendVacancy(this.$axios, payload)
   },
 }
 

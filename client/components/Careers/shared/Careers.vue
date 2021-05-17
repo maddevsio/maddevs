@@ -171,6 +171,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import { required, email, maxLength } from 'vuelidate/lib/validators'
 import { fileSizeValidation, fileExt } from '@/helpers/validators'
 import FileInput from '@/components/Careers/shared/FileInput'
@@ -236,6 +237,7 @@ export default {
   },
 
   methods: {
+    ...mapActions(['sendVacancy']),
     handleFileSelect() {
       if (this.$v && this.$v.cvFile) {
         this.$v.cvFile.$touch()
@@ -245,7 +247,7 @@ export default {
     async submitForm() {
       if (this.$v.validationGroup.$invalid) return
       const emailToSent = await this.buildEmail()
-      this.$store.dispatch('sendEmail', emailToSent)
+      this.sendVacancy(emailToSent)
       this.isShowSuccessModal = true
       this.resetForm()
     },
@@ -300,6 +302,10 @@ export default {
 @import '@/assets/styles/_vars.scss';
 
 .careers {
+  .error-text {
+    color: $text-color--red-opacity;
+  }
+
   &__position-list {
     align-items: center;
     position: relative;
