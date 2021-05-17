@@ -35,13 +35,37 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 56px;
+    margin-bottom: 48px;
   }
   &__title {
     @include font('Popins', 60px, 700);
     line-height: 64px;
     letter-spacing: -2.6px;
     margin-bottom: 38px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__head {
+      align-items: flex-start;
+      margin-bottom: 27px;
+    }
+    &__title {
+      margin-bottom: 24px;
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -0.04em;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__title {
+      margin-bottom: 22px;
+      font-size: 34px;
+      letter-spacing: -0.04em;
+    }
+    &__head {
+      margin-bottom: 14px;
+    }
   }
 }
 </style>

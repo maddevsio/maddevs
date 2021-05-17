@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import Banner from '@/components/Careers/Banner'
 import ProjectsCountries from '@/components/Careers/ProjectsCountries'
 import OpenPositions from '@/components/Careers/OpenPositions'
@@ -24,9 +25,18 @@ export default {
   components: {
     Banner,
     ProjectsCountries,
-    OpenPositions,
     Benefits,
     KeyMetrics,
+    OpenPositions,
+  },
+
+  mounted() {
+    // Query to get vacancies and categories
+    this.getCareersHome()
+  },
+
+  methods: {
+    ...mapActions(['getCareersHome']),
   },
 }
 </script>
