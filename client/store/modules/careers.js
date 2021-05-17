@@ -101,7 +101,7 @@ export const getters = {
   },
 
   vacancyCategories(state) {
-    return state.vacancyCategories
+    return state.vacancyCategories.filter(category => category.tags.some(tag => state.vacancies.some(vacancy => vacancy.tags.includes(tag))))
   },
 
   vacanciesCategory(state) {

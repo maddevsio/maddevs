@@ -126,7 +126,7 @@ export default {
   }
 }
 
-/deep/ .benefit-card__item {
+/deep/ .benefit-card {
   padding: 30px 27px;
 
   @media screen and (max-width: 1024px) {

@@ -6,7 +6,7 @@
     <div class="container">
       <div class="open-positions__head">
         <h2 class="open-positions__title">
-          Find your next job at Mad Devs
+          Open positions
         </h2>
         <PositionsFilter />
       </div>
@@ -16,7 +16,6 @@
 </template>
 
 <script>
-
 import PositionsFilter from '@/components/Careers/shared/PositionsFilter'
 import PositionsGrid from '@/components/Careers/shared/PositionsGrid'
 

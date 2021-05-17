@@ -88,16 +88,16 @@ exports[`Careers _uid component should render correctly 1`] = `
             </h2>
              
             <div
-              class="careers-position__employees-benefits"
+              class="careers-position__benefits-grid"
             >
               <div
-                class="benefit-card__item"
+                class="benefit-card"
               >
                 <div
-                  class="benefit-card__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="benefit-card__item-icon media_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="30"
                     width="31"
@@ -105,7 +105,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="benefit-card__item-title"
+                  class="benefit-card__title"
                 >
                   Flexible working 
                   <br />
@@ -113,13 +113,13 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </p>
               </div>
               <div
-                class="benefit-card__item"
+                class="benefit-card"
               >
                 <div
-                  class="benefit-card__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="benefit-card__item-icon media_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="32"
                     width="28"
@@ -127,7 +127,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="benefit-card__item-title"
+                  class="benefit-card__title"
                 >
                   Onsite business 
                   <br />
@@ -135,13 +135,13 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </p>
               </div>
               <div
-                class="benefit-card__item"
+                class="benefit-card"
               >
                 <div
-                  class="benefit-card__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="benefit-card__item-icon media_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="31"
                     width="36"
@@ -149,7 +149,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="benefit-card__item-title"
+                  class="benefit-card__title"
                 >
                   English 
                   <br />
@@ -157,13 +157,13 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </p>
               </div>
               <div
-                class="benefit-card__item"
+                class="benefit-card"
               >
                 <div
-                  class="benefit-card__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="benefit-card__item-icon media_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="24"
                     width="39"
@@ -171,7 +171,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="benefit-card__item-title"
+                  class="benefit-card__title"
                 >
                   Training 
                   <br />
@@ -179,13 +179,13 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </p>
               </div>
               <div
-                class="benefit-card__item"
+                class="benefit-card"
               >
                 <div
-                  class="benefit-card__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="benefit-card__item-icon media_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="31"
                     width="24"
@@ -193,7 +193,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="benefit-card__item-title"
+                  class="benefit-card__title"
                 >
                   Remote-first 
                   <br />
@@ -201,13 +201,13 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </p>
               </div>
               <div
-                class="benefit-card__item"
+                class="benefit-card"
               >
                 <div
-                  class="benefit-card__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="benefit-card__item-icon media_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="30"
                     width="26"
@@ -215,7 +215,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="benefit-card__item-title"
+                  class="benefit-card__title"
                 >
                   Long-term 
                   <br />
@@ -223,13 +223,13 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </p>
               </div>
               <div
-                class="benefit-card__item"
+                class="benefit-card"
               >
                 <div
-                  class="benefit-card__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="benefit-card__item-icon media_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="33"
                     width="20"
@@ -237,7 +237,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="benefit-card__item-title"
+                  class="benefit-card__title"
                 >
                   Paid 
                   <br />
@@ -245,13 +245,13 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </p>
               </div>
               <div
-                class="benefit-card__item"
+                class="benefit-card"
               >
                 <div
-                  class="benefit-card__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="benefit-card__item-icon media_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="36"
                     width="31"
@@ -259,7 +259,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="benefit-card__item-title"
+                  class="benefit-card__title"
                 >
                   Team 
                   <br />

@@ -16,7 +16,7 @@ exports[`OpenPositions component should render correctly 1`] = `
           class="open-positions__title"
         >
           
-        Open Positions
+        Open positions
       
         </h2>
          

@@ -15,7 +15,7 @@
             <h2 class="careers-position__benefits-title">
               Employees benefits
             </h2>
-            <div class="careers-position__employees-benefits">
+            <div class="careers-position__benefits-grid">
               <BenefitCard
                 v-for="benefit in benefits"
                 v-bind="benefit"
@@ -126,6 +126,11 @@ export default {
       letter-spacing: -0.04em;
       margin-bottom: 25px;
     }
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 8px 10px;
+    }
   }
   &__contacts {
     margin-top: 60px;
@@ -134,12 +139,6 @@ export default {
   }
   &__form {
     margin-top: 45px;
-  }
-
-  &__employees-benefits {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 8px 10px;
   }
 
   @media screen and (max-width: 1024px) {
@@ -160,10 +159,8 @@ export default {
   }
 
   @media screen and (max-width: 768px) {
-    &__benefits {
-      .employees-benefits {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    &__benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
