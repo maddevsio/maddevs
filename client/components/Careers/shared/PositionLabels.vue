@@ -50,6 +50,7 @@ export default {
     text-transform: uppercase;
     border-radius: 2px;
     border: 1px solid;
+    transition: all 0.4s;
     &:first-child {
       border-color: $border-color--blue;
     }
