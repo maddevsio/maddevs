@@ -20,7 +20,7 @@
       </picture>
     </div>
     <p class="banner_description">
-      Without empty words, here at Mad Devs we partner with projects where <span>our teams thrive</span>. Innovating solutions, carrying ownership, delivering sustainable value and celebrating successes — make a happy workplace, where things get done.
+      Here at Mad Devs, we don’t give empty promises. We partner with projects where <span>our teams thrive</span>. Innovating solutions, carrying ownership, delivering sustainable value, and celebrating successes—these make ours a happy workplace where things get done.
     </p>
   </div>
 </template>

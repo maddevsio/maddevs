@@ -6,7 +6,7 @@
           Sustainable <br> engineering culture
         </h2>
         <p class="benefits_paragraph">
-          At Mad Devs, we built an environment where teams can move sustainably fast by implementing modern technologies and best practices.
+          At Mad Devs, we build an environment where teams can move sustainably and quickly by implementing modern technologies and best practices.
         </p>
       </div>
       <ul class="benefits_list">
@@ -44,7 +44,7 @@
           Competitive and <br> reliable compensation
         </h2>
         <p class="benefits_paragraph">
-          Everybody at Mad Devs, from C-suite to interns, gets paid competitive compensation in USD. Please note that due to legal regulations, the majority of employees receive salaries in the local currency with respect to the exchange rate.
+          Everybody at Mad Devs—from C-suite to interns—gets paid competitive compensation in USD. Please note that due to legal regulations, majority of employees receive salaries in the local currency with respect to the exchange rate.
         </p>
       </div>
       <ul class="benefits_list">
@@ -180,7 +180,7 @@ export default {
     }
   }
 
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1260px) {
     margin-bottom: 117px;
 
     &_benefit {
