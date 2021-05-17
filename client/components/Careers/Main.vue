@@ -7,6 +7,7 @@
     <div class="careers_white-section">
       <EmployeesBenefits />
       <OpenPositions />
+      <CTABanner />
     </div>
     <ScrollToPositionsButton />
   </div>
@@ -16,10 +17,11 @@
 import { mapActions } from 'vuex'
 import Banner from '@/components/Careers/Banner'
 import ProjectsCountries from '@/components/Careers/ProjectsCountries'
-import OpenPositions from '@/components/Careers/OpenPositions'
 import Benefits from '@/components/Careers/Benefits'
 import KeyMetrics from '@/components/Careers/KeyMetrics'
 import EmployeesBenefits from '@/components/Careers/EmployeesBenefits'
+import OpenPositions from '@/components/Careers/OpenPositions'
+import CTABanner from '@/components/Careers/CTABanner'
 import ScrollToPositionsButton from '@/components/Careers/shared/ScrollToPositionsButton'
 
 export default {
@@ -31,6 +33,7 @@ export default {
     KeyMetrics,
     EmployeesBenefits,
     OpenPositions,
+    CTABanner,
     ScrollToPositionsButton,
   },
 
