@@ -1,12 +1,11 @@
 <template>
   <div class="careers">
-    <div class="careers__content--dark-theme">
-      <Banner />
-      <ProjectsCountries />
-      <Benefits />
-      <KeyMetrics />
-    </div>
-    <div class="careers__content--white-theme">
+    <Banner />
+    <ProjectsCountries />
+    <Benefits />
+    <KeyMetrics />
+    <div class="careers_white-section">
+      <EmployeesBenefits />
       <OpenPositions />
     </div>
   </div>
@@ -19,6 +18,7 @@ import ProjectsCountries from '@/components/Careers/ProjectsCountries'
 import OpenPositions from '@/components/Careers/OpenPositions'
 import Benefits from '@/components/Careers/Benefits'
 import KeyMetrics from '@/components/Careers/KeyMetrics'
+import EmployeesBenefits from '@/components/Careers/EmployeesBenefits'
 
 export default {
   name: 'Main',
@@ -27,6 +27,7 @@ export default {
     ProjectsCountries,
     Benefits,
     KeyMetrics,
+    EmployeesBenefits,
     OpenPositions,
   },
 
@@ -42,10 +43,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars.scss';
+@import '@/assets/styles/_vars';
 
-.careers__content {
-  &--white-theme {
+.careers {
+  &_white-section {
     background-color: $bgcolor--white-primary;
   }
 }

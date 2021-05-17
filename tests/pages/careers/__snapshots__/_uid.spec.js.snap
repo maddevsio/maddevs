@@ -88,16 +88,16 @@ exports[`Careers _uid component should render correctly 1`] = `
             </h2>
              
             <div
-              class="employees-benefits"
+              class="careers-position__employees-benefits"
             >
               <div
-                class="employees-benefits__item"
+                class="benefit-card__item"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__item-icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__item-icon media_lazy"
                     data-src="img.jpg"
                     height="30"
                     width="31"
@@ -105,21 +105,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__item-title"
                 >
-                  
-      Flexible working hours
-    
+                  Flexible working 
+                  <br />
+                   hours
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card__item"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__item-icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__item-icon media_lazy"
                     data-src="img.jpg"
                     height="32"
                     width="28"
@@ -127,21 +127,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__item-title"
                 >
-                  
-      Onsite business trips
-    
+                  Onsite business 
+                  <br />
+                   trips
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card__item"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__item-icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__item-icon media_lazy"
                     data-src="img.jpg"
                     height="31"
                     width="36"
@@ -149,21 +149,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__item-title"
                 >
-                  
-      English lessons
-    
+                  English 
+                  <br />
+                   lessons
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card__item"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__item-icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__item-icon media_lazy"
                     data-src="img.jpg"
                     height="24"
                     width="39"
@@ -171,21 +171,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__item-title"
                 >
-                  
-      Training budget
-    
+                  Training 
+                  <br />
+                   budget
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card__item"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__item-icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__item-icon media_lazy"
                     data-src="img.jpg"
                     height="31"
                     width="24"
@@ -193,21 +193,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__item-title"
                 >
-                  
-      Remote-first culture
-    
+                  Remote-first 
+                  <br />
+                   culture
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card__item"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__item-icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__item-icon media_lazy"
                     data-src="img.jpg"
                     height="30"
                     width="26"
@@ -215,21 +215,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__item-title"
                 >
-                  
-      Long-term projects
-    
+                  Long-term 
+                  <br />
+                   projects
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card__item"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__item-icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__item-icon media_lazy"
                     data-src="img.jpg"
                     height="33"
                     width="20"
@@ -237,21 +237,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__item-title"
                 >
-                  
-      Paid conferences
-    
+                  Paid 
+                  <br />
+                   conferences
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card__item"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__item-icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__item-icon media_lazy"
                     data-src="img.jpg"
                     height="36"
                     width="31"
@@ -259,11 +259,11 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__item-title"
                 >
-                  
-      Team parties
-    
+                  Team 
+                  <br />
+                   parties
                 </p>
               </div>
             </div>

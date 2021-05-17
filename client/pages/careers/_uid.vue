@@ -15,7 +15,13 @@
             <h2 class="careers-position__benefits-title">
               Employees benefits
             </h2>
-            <EmployeesBenefits />
+            <div class="careers-position__employees-benefits">
+              <BenefitCard
+                v-for="benefit in benefits"
+                v-bind="benefit"
+                :key="benefit.title"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -36,11 +42,12 @@
 import { mapGetters } from 'vuex'
 import PositionHeader from '@/components/Careers/shared/PositionHeader'
 import SlicesBlock from '@/components/slices'
-import EmployeesBenefits from '@/components/Careers/shared/EmployeesBenefits'
+import BenefitCard from '@/components/Careers/shared/BenefitCard'
 import HRContactCard from '@/components/Careers/shared/HRContactCard'
 import PositionForm from '@/components/Careers/shared/PositionForm'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { buildHead } from '@/data/seo'
+import { employeesBenefits as benefits } from '@/data/benefits'
 
 import featureFlag from '@/featureFlags/featureFlag'
 
@@ -49,7 +56,7 @@ export default {
   components: {
     PositionHeader,
     SlicesBlock,
-    EmployeesBenefits,
+    BenefitCard,
     HRContactCard,
     PositionForm,
   },
@@ -76,6 +83,7 @@ export default {
   data() {
     return {
       openGraphUrl: '',
+      benefits,
     }
   },
 
@@ -92,6 +100,10 @@ export default {
 
   computed: {
     ...mapGetters(['vacancy']),
+  },
+
+  mounted() {
+    this.$lazyLoad.init()
   },
 }
 </script>
@@ -122,6 +134,12 @@ export default {
   }
   &__form {
     margin-top: 45px;
+  }
+
+  &__employees-benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px 10px;
   }
 
   @media screen and (max-width: 1024px) {
