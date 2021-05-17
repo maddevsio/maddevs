@@ -1,5 +1,5 @@
 import OpenPositions from '@/components/Careers/OpenPositions'
-import { render, screen } from '@testing-library/vue'
+import { render } from '@testing-library/vue'
 
 const stubs = ['PositionsFilter', 'PositionsGrid']
 
@@ -9,7 +9,6 @@ describe('OpenPositions component', () => {
       stubs,
     })
 
-    expect(screen.getByText('Open Positions')).not.toBeNull()
     expect(container).toMatchSnapshot()
   })
 })

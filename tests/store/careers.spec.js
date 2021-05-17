@@ -225,8 +225,29 @@ describe('Careers module getters', () => {
     expect(getters.vacancy(state)).toBe(state.vacancy)
   })
 
-  it('vacancyCategories', () => {
-    expect(getters.vacancyCategories(state)).toBe(state.vacancyCategories)
+  it('vacancyCategories are correctly filtered', () => {
+    state.vacancies = [
+      {
+        tags: ['DevOps'],
+      },
+    ]
+    state.vacancyCategories = [
+      {
+        title: 'Mobile',
+        tags: ['Mobile'],
+      },
+      {
+        title: 'DevOps',
+        tags: ['DevOps'],
+      },
+    ]
+    const expectedCategories = [
+      {
+        title: 'DevOps',
+        tags: ['DevOps'],
+      },
+    ]
+    expect(getters.vacancyCategories(state)).toEqual(expectedCategories)
   })
 
   it('vacanciesCategory', () => {
