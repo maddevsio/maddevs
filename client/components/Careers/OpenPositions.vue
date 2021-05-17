@@ -30,7 +30,6 @@ export default {
 @import '@/assets/styles/_vars';
 
 .open-positions {
-  padding: 82px 0 88px;
   &__head {
     display: flex;
     flex-direction: column;
