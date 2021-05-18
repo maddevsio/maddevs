@@ -1,95 +1,97 @@
 <template>
   <section class="modal-search">
-    <!-- Search input -->
-    <div class="modal-search_form">
-      <label>
-        <img
-          class="modal-search_form-search"
-          src="@/assets/img/common/magnify.svg"
-          alt="Magnify"
-        >
-        <input
-          ref="searchInput"
-          type="text"
-          placeholder="Search"
-          @input="searchQuery"
-        >
-      </label>
-      <button
-        class="modal-search_form-close"
-        @click="onClose"
-      >
-        <img
-          src="@/assets/img/common/close-icon-search.svg"
-          alt="Close"
-        >
-      </button>
-    </div>
-
-    <!-- Search result -->
-    <div
-      v-if="searchPosts && searchPosts.length"
-      class="modal-search_result"
-    >
-      <div
-        v-for="(post, i) of searchPosts"
-        :key="`search-post-${i}`"
-        class="modal-search_result-item"
-      >
-        <NuxtLink :to="link(post)">
+    <div class="container">
+      <!-- Search input -->
+      <div class="modal-search_form">
+        <label>
           <img
-            class="modal-search_result-item_img"
-            :src="post.data.featured_image.url"
-            alt="Post image"
+            class="modal-search_form-search"
+            src="@/assets/img/common/magnify.svg"
+            alt="Magnify"
           >
-        </NuxtLink>
-        <div class="modal-search_result-item_content">
+          <input
+            ref="searchInput"
+            type="text"
+            placeholder="Search"
+            @input="searchQuery"
+          >
+        </label>
+        <button
+          class="modal-search_form-close"
+          @click="onClose"
+        >
+          <img
+            src="@/assets/img/common/close-icon-search.svg"
+            alt="Close"
+          >
+        </button>
+      </div>
+
+      <!-- Search result -->
+      <div
+        v-if="searchPosts && searchPosts.length"
+        class="modal-search_result"
+      >
+        <div
+          v-for="(post, i) of searchPosts"
+          :key="`search-post-${i}`"
+          class="modal-search_result-item"
+        >
           <NuxtLink :to="link(post)">
-            <h4>{{ post.data.title[0].text }}</h4>
-          </NuxtLink>
-          <div class="modal-search_result-item_content-date">
-            {{ formattedDate(post) }}
-          </div>
-          <NuxtLink
-            :to="`/blog/author/${getAuthor(post, 'uid')}`"
-            class="modal-search_result-item_content-author"
-          >
             <img
-              :src="getAuthor(post, 'image').url"
-              alt="Author"
+              class="modal-search_result-item_img"
+              :src="post.data.featured_image.url"
+              alt="Post image"
             >
-            <div>
-              <h5>{{ getAuthor(post, 'name') }}</h5>
-              <p>{{ getAuthor(post, 'position') }}</p>
-            </div>
           </NuxtLink>
+          <div class="modal-search_result-item_content">
+            <NuxtLink :to="link(post)">
+              <h4>{{ post.data.title[0].text }}</h4>
+            </NuxtLink>
+            <div class="modal-search_result-item_content-date">
+              {{ formattedDate(post) }}
+            </div>
+            <NuxtLink
+              :to="`/blog/author/${getAuthor(post, 'uid')}`"
+              class="modal-search_result-item_content-author"
+            >
+              <img
+                :src="getAuthor(post, 'image').url"
+                alt="Author"
+              >
+              <div>
+                <h5>{{ getAuthor(post, 'name') }}</h5>
+                <p>{{ getAuthor(post, 'position') }}</p>
+              </div>
+            </NuxtLink>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Not found -->
-    <div
-      v-if="searchPosts && !searchPosts.length"
-      class="modal-search_not-found"
-    >
-      No results found
-    </div>
+      <!-- Not found -->
+      <div
+        v-if="searchPosts && !searchPosts.length"
+        class="modal-search_not-found"
+      >
+        No results found
+      </div>
 
-    <!-- Suggest -->
-    <div
-      v-if="tags && tags.length"
-      class="modal-search_suggest"
-    >
-      <h5>May we suggest</h5>
-      <div class="modal-search_suggest-list">
-        <NuxtLink
-          v-for="(tag, i) of tags"
-          :key="`search-tag-${i}`"
-          :to="tagLink(tag)"
-          class="modal-search_suggest-list-item"
-        >
-          {{ tag }}
-        </NuxtLink>
+      <!-- Suggest -->
+      <div
+        v-if="tags && tags.length"
+        class="modal-search_suggest"
+      >
+        <h5>May we suggest</h5>
+        <div class="modal-search_suggest-list">
+          <NuxtLink
+            v-for="(tag, i) of tags"
+            :key="`search-tag-${i}`"
+            :to="tagLink(tag)"
+            class="modal-search_suggest-list-item"
+          >
+            {{ tag }}
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </section>
@@ -113,12 +115,12 @@ export default {
       response: null,
       searchQuery: debounce(event => {
         const { value } = event.target
-        if (!value) return null
+        if (typeof value !== 'string') return null
         localStorage.setItem('blog-search-query', value)
         this.setSearchQuery(value)
         this.getPosts(value)
         return value
-      }, 500),
+      }, 300),
     }
   },
 
@@ -191,7 +193,11 @@ export default {
       }
       if (this.searchPosts && this.searchPosts.length && this.searchQuery) {
         if (event.keyCode === 13) {
-          this.$router.push('/blog/search-result/')
+          if (this.searchQuery.length) {
+            this.$router.push('/blog/search-result/')
+          } else {
+            this.$router.push('/blog/')
+          }
           document.removeEventListener('keyup', this.listenKeys)
           this.onClose()
           return true
@@ -210,6 +216,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../../assets/styles/_vars';
+
   .modal-search {
     position: fixed;
     top: 0;
@@ -218,16 +226,13 @@ export default {
     height: 100%;
     background-color: rgba(0, 0, 0, 1);
     z-index: 999;
-    padding: 115px 100px 30px;
+    padding-top: 115px;
+    padding-bottom: 30px;
     box-sizing: border-box;
     overflow: auto;
 
     @media only screen and (max-width: 992px) {
-      padding: 30px 50px;
-    }
-
-    @media only screen and (max-width: 468px) {
-      padding: 30px 25px;
+      padding-top: 30px;
     }
 
     a {
@@ -263,10 +268,9 @@ export default {
         border: 0;
         background-color: transparent;
         color: #fff;
-        font-weight: 600;
-        font-size: 33.2px;
         line-height: 130%;
         letter-spacing: -0.04em;
+        @include font('Poppins', 33px, 600);
       }
 
       &-close {
@@ -327,8 +331,6 @@ export default {
 
           h4 {
             max-height: 57px;
-            font-weight: 600;
-            font-size: 15px;
             line-height: 124%;
             letter-spacing: -0.03em;
             color: #fff;
@@ -337,15 +339,16 @@ export default {
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
+            @include font('Poppins', 15px, 600);
           }
 
           &-date {
             font-weight: normal;
-            font-size: 11px;
             line-height: 141%;
             letter-spacing: -0.02em;
             color: #A0A0A1;
             margin: 8px 0;
+            @include font('Inter', 11px, 400);
           }
 
           &-author {
@@ -360,18 +363,17 @@ export default {
             }
 
             h5 {
-              font-weight: 500;
-              font-size: 11px;
               line-height: 141%;
               color: #fff;
               letter-spacing: -0.02em;
+              @include font('Inter', 11px, 500);
             }
 
             p {
-              font-size: 11px;
               line-height: 141%;
               color: rgba(255, 255, 255, 0.6);
               letter-spacing: -0.02em;
+              @include font('Inter', 11px, 400);
             }
           }
         }
@@ -382,10 +384,10 @@ export default {
     &_not-found {
       color: #EC1C24;
       font-weight: normal;
-      font-size: 17px;
       line-height: 166%;
       letter-spacing: -0.035em;
       margin-top: 50px;
+      @include font('Inter', 17px, 400);
     }
 
     &_suggest {
@@ -393,10 +395,9 @@ export default {
 
       h5 {
         color: #707072;
-        font-weight: normal;
-        font-size: 13px;
         line-height: 166%;
         letter-spacing: -0.02em;
+        @include font('Inter', 13px, 400);
       }
 
       &-list {
@@ -407,7 +408,6 @@ export default {
         margin-right: -5px;
 
         &-item {
-          font-size: 13px;
           line-height: 166%;
           letter-spacing: -0.02em;
           color: #F4F4F4;
@@ -416,6 +416,7 @@ export default {
           padding: 4px 16px;
           margin: 5px;
           text-decoration: none;
+          @include font('Inter', 13px, 400);
         }
       }
     }

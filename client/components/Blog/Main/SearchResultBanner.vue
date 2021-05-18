@@ -52,12 +52,13 @@ export default {
       letter-spacing: -0.035em;
       color: #F4F4F4;
       margin-bottom: 15px;
+      @include font('Inter', 14px, 400);
     }
 
     &__title {
-      font-size: 52px;
       line-height: 130%;
       letter-spacing: -2px;
+      @include font('Poppins', 52px, 600);
     }
 
     @media only screen and (max-width: 991px) {
