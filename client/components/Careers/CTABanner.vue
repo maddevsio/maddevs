@@ -1,7 +1,7 @@
 <template>
   <div class="careers-cta-banner_container container">
     <UIBanner
-      :title="`Can’t find your <br /> next role?`"
+      title="Can’t find your <br /> next role?'"
       text="If you don’t see a suitable vacancy, but are sure that we’re meant to be, drop us a line."
       :image="require(`@/assets/img/Careers/Daria.png`)"
       image-alt-text="Daria"
