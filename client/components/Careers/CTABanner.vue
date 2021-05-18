@@ -1,7 +1,7 @@
 <template>
   <div class="careers-cta-banner_container container">
     <UIBanner
-      title="Can’t find your next role?"
+      :title="`Can’t find your <br /> next role?`"
       text="If you don’t see a suitable vacancy, but are sure that we’re meant to be, drop us a line."
       :image="require(`@/assets/img/Careers/Daria.png`)"
       image-alt-text="Daria"
@@ -12,7 +12,7 @@
         href="https://t.me/DianaHRDigital"
         target="_blank"
       >
-        <UIButton class="careers-cta-banner__button">
+        <UIButton>
           <img
             :data-src="require(`@/assets/img/Careers/svg/telegram--white.svg`)"
             width="20"
@@ -26,7 +26,7 @@
       <ul class="careers-cta-banner__links">
         <li>
           <a
-            href="#"
+            href="https://career.habr.com/companies/maddevs/cp/vacancies/"
             target="_blank"
           >
             Headhunter
@@ -34,7 +34,7 @@
         </li>
         <li>
           <a
-            href="#"
+            href="https://novosibirsk.hh.ru/employer/2861993/"
             target="_blank"
           >
             Habr.com
@@ -42,7 +42,7 @@
         </li>
         <li>
           <a
-            href="#"
+            href="https://www.linkedin.com/company/mad-devs/"
             target="_blank"
           >
             Linkedin
@@ -72,18 +72,19 @@ export default {
 .careers-cta-banner {
   &_container {
     padding-bottom: 100px;
-  }
-  &__button {
-    font-weight: normal;
-    padding: 17px 31px;
-    font-size: 18px;
-    line-height: 18px;
-    letter-spacing: -0.02em;
-    img {
-      transform: translateY(2.5px);
-    }
-    @media screen and (max-width: 900px) {
-      font-size: 16px;
+    /deep/ .ui-button {
+      width: 193px;
+      height: 52px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+      img {
+        transform: translateY(2.5px);
+      }
+      @media screen and (max-width: 900px) {
+        font-size: 16px;
+      }
     }
   }
   &__links {
