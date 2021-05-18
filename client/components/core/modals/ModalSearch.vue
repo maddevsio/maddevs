@@ -10,8 +10,7 @@
         >
         <input
           ref="searchInput"
-          v-model.lazy="searchQuery"
-          v-debounce="600"
+          @input="searchQuery"
           type="text"
           placeholder="Search"
         >
@@ -78,18 +77,19 @@
 
     <!-- Suggest -->
     <div
-      v-if="false"
+      v-if="tags && tags.length"
       class="modal-search_suggest"
     >
       <h5>May we suggest</h5>
       <div class="modal-search_suggest-list">
-        <div
-          v-for="(tag, i) of []"
+        <NuxtLink
+          v-for="(tag, i) of tags"
           :key="`search-tag-${i}`"
+          :to="tagLink(tag)"
           class="modal-search_suggest-list-item"
         >
-          Item
-        </div>
+          {{ tag }}
+        </NuxtLink>
       </div>
     </div>
   </section>
@@ -97,24 +97,28 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
-import debounce from 'v-debounce'
 import formatDate from '@/helpers/formatDate'
 import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
 import linkResolver from '@/plugins/link-resolver.js'
+import convertStringToSlug from '@/helpers/convertStringToSlug'
+import debounce from '@/helpers/debounce'
 
 export default {
   name: 'ModalSearch',
-
-  directives: {
-    debounce,
-  },
 
   mixins: [findPostAuthorMixin],
 
   data() {
     return {
-      searchQuery: null,
       response: null,
+      searchQuery: debounce(event => {
+        const { value } = event.target
+        if (!value) return null
+        localStorage.setItem('blog-search-query', value)
+        this.setSearchQuery(value)
+        this.getPosts(value)
+        return value
+      }, 700),
     }
   },
 
@@ -126,13 +130,16 @@ export default {
       if (!this.response || !this.response.results || !this.response.results.length) return []
       return this.response.results
     },
+
+    tags() {
+      return this.$prismic.api.tags || []
+    },
   },
 
   watch: {
-    searchQuery(newVal) {
-      localStorage.setItem('blog-search-query', newVal)
-      this.setSearchQuery(newVal)
-      this.getPosts(newVal)
+    // eslint-disable-next-line
+    '$route' () {
+      this.onClose()
     },
   },
 
@@ -169,12 +176,19 @@ export default {
       return linkResolver(post)
     },
 
+    tagLink(tag) {
+      return linkResolver({ type: 'tag', uid: convertStringToSlug(tag) })
+    },
+
     listenKeys(event) {
-      if (this.searchQuery && event.keyCode === 13) {
-        this.$router.push('/blog/search-result/')
-        document.removeEventListener('keyup', this.listenKeys)
-        this.onClose()
-        return true
+      if (this.searchPosts && this.searchPosts.length && this.searchQuery) {
+        if (event.keyCode === 13) {
+          this.$router.push('/blog/search-result/')
+          document.removeEventListener('keyup', this.listenKeys)
+          this.onClose()
+          return true
+        }
+        return false
       }
       if (event.keyCode === 27) {
         document.removeEventListener('keyup', this.listenKeys)
@@ -380,6 +394,26 @@ export default {
         font-size: 13px;
         line-height: 166%;
         letter-spacing: -0.02em;
+      }
+
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 6px;
+        margin-left: -5px;
+        margin-right: -5px;
+
+        &-item {
+          font-size: 13px;
+          line-height: 166%;
+          letter-spacing: -0.02em;
+          color: #F4F4F4;
+          background: #404143;
+          border-radius: 2px;
+          padding: 4px 16px;
+          margin: 5px;
+          text-decoration: none;
+        }
       }
     }
   }

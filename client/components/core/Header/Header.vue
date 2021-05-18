@@ -356,8 +356,8 @@ export default {
     }
 
     img {
-      width: 19px;
-      height: 21px;
+      width: 16px;
+      height: 18px;
     }
   }
 
