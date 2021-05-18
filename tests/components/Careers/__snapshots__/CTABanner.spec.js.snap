@@ -11,15 +11,13 @@ exports[`CTABanner component should render correctly 1`] = `
       manname="Daria Utesheva"
       manposition="Head of HR Departament"
       text="If you don’t see a suitable vacancy, but are sure that we’re meant to be, drop us a line."
-      title="Can’t find your next role?"
+      title="Can’t find your <br /> next role?'"
     >
       <a
         href="https://t.me/DianaHRDigital"
         target="_blank"
       >
-        <uibutton-stub
-          class="careers-cta-banner__button"
-        >
+        <uibutton-stub>
           <img
             class="img_lazy"
             data-src="[object Object]"
@@ -38,7 +36,7 @@ exports[`CTABanner component should render correctly 1`] = `
       >
         <li>
           <a
-            href="#"
+            href="https://career.habr.com/companies/maddevs/cp/vacancies/"
             target="_blank"
           >
             
@@ -49,7 +47,7 @@ exports[`CTABanner component should render correctly 1`] = `
          
         <li>
           <a
-            href="#"
+            href="https://novosibirsk.hh.ru/employer/2861993/"
             target="_blank"
           >
             
@@ -60,7 +58,7 @@ exports[`CTABanner component should render correctly 1`] = `
          
         <li>
           <a
-            href="#"
+            href="https://www.linkedin.com/company/mad-devs/"
             target="_blank"
           >
             

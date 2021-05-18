@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    to="#open-positions"
+    :to="{ hash: '#open-positions' }"
     :class="[(show && vacanciesLoaded && vacanciesCount) ? null : 'scroll-to-positions--hidden']"
     class="scroll-to-positions"
   >

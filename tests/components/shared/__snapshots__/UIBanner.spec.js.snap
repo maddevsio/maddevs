@@ -9,9 +9,7 @@ exports[`UIBanner component should render correctly 1`] = `
       Title
     </h2>
      
-    <p>
-      
-    </p>
+    <p />
       
     <img
       alt=""
