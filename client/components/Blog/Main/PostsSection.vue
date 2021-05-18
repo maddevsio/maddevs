@@ -9,20 +9,7 @@
             :post="post"
             class="posts-section__list-item"
           >
-            <a
-              v-if="post.id === 'banner'"
-              :href="post.link.url"
-              :target="post.link.target"
-              class="posts-section__banner"
-            >
-              <img
-                class="img_lazy"
-                :data-src="post.banner.url"
-                :alt="post.id"
-              >
-            </a>
             <PostCard
-              v-else
               :post="post"
               :author="findAuthor(post.data.post_author.id, allAuthors)"
             />
@@ -43,6 +30,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import PostCard from '@/components/Blog/shared/PostCard'
 import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
 
@@ -63,6 +51,10 @@ export default {
   },
 
   mixins: [findPostAuthorMixin],
+
+  computed: {
+    ...mapGetters(['allAuthors']),
+  },
 }
 </script>
 

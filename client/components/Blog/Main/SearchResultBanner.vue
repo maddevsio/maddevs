@@ -5,15 +5,35 @@
         You searched for
       </p>
       <h1 class="search-result-banner__title">
-        “Let’s go”
+        “{{ searchQuery }}”
       </h1>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'SearchResultBanner',
+
+  computed: {
+    ...mapGetters(['getSearchQuery']),
+
+    searchQuery() {
+      if (this.getSearchQuery) {
+        return this.getSearchQuery
+      }
+      if (process.browser) {
+        const query = localStorage.getItem('blog-search-query')
+        if (query && query.length) {
+          return query
+        }
+        return 'All'
+      }
+      return null
+    },
+  },
 }
 </script>
 

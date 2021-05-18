@@ -18,7 +18,7 @@
       </label>
       <button
         class="modal-search_form-close"
-        @click="$emit('on-close')"
+        @click="onClose"
       >
         <img
           src="@/assets/img/common/close-icon-search.svg"
@@ -77,7 +77,10 @@
     </div>
 
     <!-- Suggest -->
-    <div class="modal-search_suggest">
+    <div
+      v-if="false"
+      class="modal-search_suggest"
+    >
       <h5>May we suggest</h5>
       <div class="modal-search_suggest-list">
         <div
@@ -93,7 +96,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import debounce from 'v-debounce'
 import formatDate from '@/helpers/formatDate'
 import findPostAuthorMixin from '@/mixins/findPostAuthorMixin'
@@ -127,22 +130,26 @@ export default {
 
   watch: {
     searchQuery(newVal) {
+      localStorage.setItem('blog-search-query', newVal)
+      this.setSearchQuery(newVal)
       this.getPosts(newVal)
     },
   },
 
   mounted() {
     this.$refs.searchInput.focus()
-    document.addEventListener('keyup', this.listenEnterKey)
+    document.addEventListener('keyup', this.listenKeys)
   },
 
   beforeDestroy() {
-    document.removeEventListener('keyup', this.listenEnterKey)
+    document.removeEventListener('keyup', this.listenKeys)
   },
 
   methods: {
+    ...mapActions(['setSearchQuery', 'setSearchResponse']),
     async getPosts(query) {
       this.response = await this.$prismic.api.query(this.$prismic.predicates.fulltext('my.post.title', query))
+      this.setSearchResponse(this.response)
     },
 
     formattedDate(post) {
@@ -153,7 +160,7 @@ export default {
       try {
         const author = this.findAuthor(post.data.post_author.id, this.allAuthors)
         return author[field]
-      } catch {
+      } catch (error) {
         return null
       }
     },
@@ -162,13 +169,24 @@ export default {
       return linkResolver(post)
     },
 
-    listenEnterKey(event) {
-      if (!this.searchQuery) return false
-      if (event.keyCode !== 13) return false
-      document.removeEventListener('keyup', this.listenEnterKey)
-      this.$router.push('/blog/search-result/')
-      this.$emit('on-close')
+    listenKeys(event) {
+      if (this.searchQuery && event.keyCode === 13) {
+        this.$router.push('/blog/search-result/')
+        document.removeEventListener('keyup', this.listenKeys)
+        this.onClose()
+        return true
+      }
+      if (event.keyCode === 27) {
+        document.removeEventListener('keyup', this.listenKeys)
+        this.onClose()
+        return true
+      }
       return true
+    },
+
+    onClose() {
+      this.$emit('on-close')
+      this.response = null
     },
   },
 }
@@ -186,6 +204,14 @@ export default {
     padding: 115px 100px 30px;
     box-sizing: border-box;
     overflow: auto;
+
+    @media only screen and (max-width: 992px) {
+      padding: 30px 50px;
+    }
+
+    @media only screen and (max-width: 468px) {
+      padding: 30px 25px;
+    }
 
     a {
       text-decoration: none;
@@ -248,6 +274,14 @@ export default {
       grid-row-gap: 48px;
       margin-top: 35px;
 
+      @media only screen and (max-width: 1260px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media only screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
       &-item {
         display: flex;
 
@@ -256,6 +290,18 @@ export default {
           height: auto;
           object-fit: cover;
           object-position: left;
+
+          @media only screen and (max-width: 992px) {
+            width: 150px;
+          }
+
+          @media only screen and (max-width: 768px) {
+            width: 200px;
+          }
+
+          @media only screen and (max-width: 468px) {
+            width: 150px;
+          }
         }
 
         &_content {

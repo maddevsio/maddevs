@@ -345,6 +345,16 @@ export default {
     padding: 10px;
     cursor: pointer;
 
+    @media screen and (max-width: 1140px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    @media screen and (max-width: 1090px) {
+      left: -30px;
+    }
+
     img {
       width: 19px;
       height: 21px;
@@ -365,6 +375,7 @@ export default {
 
   &__right-content {
     justify-content: flex-end;
+    position: relative;
   }
 
   &__phone-wrapper,
