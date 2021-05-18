@@ -1,9 +1,17 @@
 <template>
   <div class="key-metrics_container container">
-    <h2 class="key-metrics_title">
+    <h2
+      class="key-metrics_title"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+    >
       Mad Devs’ key metrics
     </h2>
-    <div class="key-metrics_grid">
+    <div
+      class="key-metrics_grid"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+    >
       <MetricCard
         v-for="metrica in keyMetrics"
         v-bind="metrica"

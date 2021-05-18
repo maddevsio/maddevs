@@ -1,18 +1,28 @@
 <template>
-  <div class="projects-countries container">
-    <h2 class="projects-countries_title">
+  <div
+    class="projects-countries container"
+  >
+    <h2
+      class="projects-countries_title"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       Global projects in 20+ countries
     </h2>
-    <p class="projects-countries_description">
+    <p
+      class="projects-countries_description"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       We build solutions for 35M+ users worldwide
     </p>
     <div class="projects-countries_img-wrap">
       <img
         :data-src="$getMediaFromS3('/images/Careers/svg/сountries.svg')"
         alt="lobal projects in 20+ countries"
+        class="projects-countries_img media_lazy"
         width="1240"
         height="558"
-        class="projects-countries_img media_lazy"
       >
     </div>
     <UICustomersList

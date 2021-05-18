@@ -1,30 +1,46 @@
 <template>
-  <div class="careers-position__header">
+  <div
+    class="careers-position__header"
+  >
     <div class="container">
       <div class="careers-position__container">
         <div
           v-if="vacancy.labels.remote || vacancy.labels.relocation"
           class="careers-position__labels"
+          data-aos="fade-right"
+          data-aos-duration="600"
         >
           <PositionLabels :labels="vacancy.labels" />
         </div>
-        <h1 class="careers-position__title">
+        <h1
+          class="careers-position__title"
+          data-aos="fade-right"
+          data-aos-duration="600"
+        >
           {{ vacancy.title }}
         </h1>
         <p
           v-if="vacancy.subtitle"
+          data-aos="fade-right"
+          data-aos-duration="600"
           class="careers-position__subtitle"
         >
           {{ vacancy.subtitle }}
         </p>
         <div
           v-if="vacancy.tags && vacancy.tags.length"
+          data-aos="fade-right"
+          data-aos-duration="600"
           class="careers-position__tags"
         >
           <PositionTags :tags="vacancy.tags" />
         </div>
-        <NuxtLink to="#careers-position-form">
+        <NuxtLink
+          to="#careers-position-form"
+        >
           <UIButton
+            data-aos="fade-up"
+            data-aos-duration="600"
             type="button"
             class="careers-position__apply-button"
           >

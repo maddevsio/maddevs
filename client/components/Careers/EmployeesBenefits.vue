@@ -1,10 +1,18 @@
 <template>
   <div class="employees-benefits">
     <div class="employees-benefits_grid-container container">
-      <h2 class="employees-benefits_title">
+      <h2
+        class="employees-benefits_title"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
         Employees benefits
       </h2>
-      <div class="employees-benefits_benefits-cards">
+      <div
+        class="employees-benefits_benefits-cards"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
         <BenefitCard
           v-for="benefit in benefits"
           v-bind="benefit"

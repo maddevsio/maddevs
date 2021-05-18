@@ -14,6 +14,7 @@ import Careers from '@/components/Careers/shared/Careers'
 import CareersBanner from '@/components/core/banners/CareersBanner'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'MainCareers',
@@ -23,7 +24,7 @@ export default {
     CareersBanner,
   },
 
-  mixins: [initLazyLoadMixin],
+  mixins: [initLazyLoadMixin, animateOnScrollMixin()],
 
   head() {
     return buildHead(getMetadata('careers'))

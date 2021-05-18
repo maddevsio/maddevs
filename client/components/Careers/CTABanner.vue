@@ -1,5 +1,9 @@
 <template>
-  <div class="careers-cta-banner_container container">
+  <div
+    class="careers-cta-banner_container container"
+    data-aos="fade"
+    data-aos-duration="1000"
+  >
     <UIBanner
       title="Can’t see your next role?"
       text="If you don’t see a suitable vacancy, but you are sure we’re meant to be, drop us a line."

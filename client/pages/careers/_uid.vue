@@ -10,12 +10,22 @@
           <SlicesBlock
             v-if="vacancy.slices && vacancy.slices.length"
             :slices="vacancy.slices"
+            data-aos="fade"
+            data-aos-duration="800"
           />
           <div class="careers-position__benefits">
-            <h2 class="careers-position__benefits-title">
+            <h2
+              class="careers-position__benefits-title"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
               Employees benefits
             </h2>
-            <div class="careers-position__employees-benefits">
+            <div
+              class="careers-position__employees-benefits"
+              data-aos="fade-left"
+              data-aos-duration="800"
+            >
               <BenefitCard
                 v-for="benefit in benefits"
                 v-bind="benefit"
@@ -27,6 +37,8 @@
         <div
           id="careers-position-form"
           class="careers-position__contacts"
+          data-aos="fade-up"
+          data-aos-duration="800"
         >
           <HRContactCard />
           <div class="careers-position__form">
@@ -50,6 +62,7 @@ import { buildHead } from '@/data/seo'
 import { employeesBenefits as benefits } from '@/data/benefits'
 
 import featureFlag from '@/featureFlags/featureFlag'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'CareersPosition',
@@ -61,7 +74,7 @@ export default {
     PositionForm,
   },
 
-  mixins: [initLazyLoadMixin],
+  mixins: [initLazyLoadMixin, animateOnScrollMixin()],
 
   async asyncData({ store, params, error }) {
     const openGraphUrl = `${process.env.domain}/careers/${params.uid}/`

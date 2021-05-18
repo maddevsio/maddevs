@@ -2,6 +2,8 @@
   <div
     id="open-positions"
     class="open-positions"
+    data-aos="fade"
+    data-aos-duration="1000"
   >
     <div class="container">
       <div class="open-positions__head">

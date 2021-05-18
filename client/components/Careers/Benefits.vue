@@ -1,6 +1,11 @@
 <template>
   <div class="benefits container">
-    <div class="benefits_benefit">
+    <div
+      data-aos="fade"
+      data-aos-duration="1000"
+      data-aos-offset="400"
+      class="benefits_benefit"
+    >
       <div class="benefits_description">
         <h2 class="benefits_title">
           Sustainable <br> engineering culture
@@ -19,7 +24,12 @@
         </li>
       </ul>
     </div>
-    <div class="benefits_benefit">
+    <div
+      data-aos="fade"
+      data-aos-duration="1000"
+      data-aos-offset="800"
+      class="benefits_benefit"
+    >
       <div class="benefits_description">
         <h2 class="benefits_title">
           Agile <br> development
@@ -38,7 +48,12 @@
         </li>
       </ul>
     </div>
-    <div class="benefits_benefit">
+    <div
+      data-aos="fade"
+      data-aos-duration="1000"
+      data-aos-offset="800"
+      class="benefits_benefit"
+    >
       <div class="benefits_description">
         <h2 class="benefits_title">
           Competitive and <br> reliable compensation
