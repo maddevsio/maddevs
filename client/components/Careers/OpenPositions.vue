@@ -2,17 +2,26 @@
   <div
     id="open-positions"
     class="open-positions"
-    data-aos="fade"
-    data-aos-duration="1000"
   >
     <div class="container">
-      <div class="open-positions__head">
+      <div
+        class="open-positions__head"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="top-center"
+      >
         <h2 class="open-positions__title">
           Open positions
         </h2>
         <PositionsFilter />
       </div>
-      <PositionsGrid />
+      <PositionsGrid
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="800"
+        data-aos-anchor-placement="top-center"
+      />
     </div>
   </div>
 </template>

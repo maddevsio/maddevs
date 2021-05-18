@@ -1,12 +1,14 @@
 <template>
   <div class="benefits container">
-    <div
-      data-aos="fade"
-      data-aos-duration="1000"
-      data-aos-offset="400"
-      class="benefits_benefit"
-    >
-      <div class="benefits_description">
+    <div class="benefits_benefit">
+      <div
+        class="benefits_description"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="top-center"
+      >
         <h2 class="benefits_title">
           Sustainable <br> engineering culture
         </h2>
@@ -14,7 +16,14 @@
           At Mad Devs, we build an environment where teams can move sustainably and quickly by implementing modern technologies and best practices.
         </p>
       </div>
-      <ul class="benefits_list">
+      <ul
+        class="benefits_list"
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="top-center"
+      >
         <li
           v-for="benefit in engineeringCultureBenefits"
           :key="benefit"
@@ -24,13 +33,15 @@
         </li>
       </ul>
     </div>
-    <div
-      data-aos="fade"
-      data-aos-duration="1000"
-      data-aos-offset="800"
-      class="benefits_benefit"
-    >
-      <div class="benefits_description">
+    <div class="benefits_benefit">
+      <div
+        class="benefits_description"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="top-center"
+      >
         <h2 class="benefits_title">
           Agile <br> development
         </h2>
@@ -38,7 +49,14 @@
           High talent density in our 20+ teams creates a culture where collaboratively innovative and autonomous people thrive.
         </p>
       </div>
-      <ul class="benefits_list">
+      <ul
+        class="benefits_list"
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="top-center"
+      >
         <li
           v-for="benefit in agileDevelopmentBenefits"
           :key="benefit"
@@ -48,13 +66,15 @@
         </li>
       </ul>
     </div>
-    <div
-      data-aos="fade"
-      data-aos-duration="1000"
-      data-aos-offset="800"
-      class="benefits_benefit"
-    >
-      <div class="benefits_description">
+    <div class="benefits_benefit">
+      <div
+        class="benefits_description"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="top-center"
+      >
         <h2 class="benefits_title">
           Competitive and <br> reliable compensation
         </h2>
@@ -62,7 +82,14 @@
           Everybody at Mad Devs—from C-suite to interns—gets paid competitive compensation in USD. Please note that due to legal regulations, majority of employees receive salaries in the local currency with respect to the exchange rate.
         </p>
       </div>
-      <ul class="benefits_list">
+      <ul
+        class="benefits_list"
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="top-center"
+      >
         <li
           v-for="benefit in competitiveAndCompensationBenefits"
           :key="benefit"

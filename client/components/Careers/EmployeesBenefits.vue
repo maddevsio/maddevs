@@ -4,14 +4,20 @@
       <h2
         class="employees-benefits_title"
         data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
         data-aos-duration="1000"
+        data-aos-anchor-placement="top-center"
       >
         Employees benefits
       </h2>
       <div
         class="employees-benefits_benefits-cards"
         data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
         data-aos-duration="1000"
+        data-aos-anchor-placement="top-center"
       >
         <BenefitCard
           v-for="benefit in benefits"

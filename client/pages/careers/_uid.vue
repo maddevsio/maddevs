@@ -41,7 +41,12 @@
           data-aos-duration="800"
         >
           <HRContactCard />
-          <div class="careers-position__form">
+          <div
+            class="careers-position__form"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center"
+          >
             <PositionForm :position="vacancy.position" />
           </div>
         </div>
