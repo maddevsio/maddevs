@@ -328,19 +328,12 @@ export default {
     font-size: 14px;
     margin-top: 0;
     line-height: normal;
-    &--file-attach {
-      padding-left: 26px;
-    }
   }
   &__skills {
     margin-top: 32px;
     &-list {
-      padding-left: 5px;
-      list-style: initial;
-      list-style-position: inside;
-      li label {
-        margin-left: -10px;
-      }
+      padding-left: 25px;
+      list-style: disc;
     }
   }
 

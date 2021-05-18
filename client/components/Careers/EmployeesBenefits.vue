@@ -39,10 +39,21 @@ export default {
       benefits,
       slides,
       swiperOptions: {
+        speed: 750,
         slidesPerView: 'auto',
         spaceBetween: 0,
         freeMode: true,
         loop: false,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
       },
     }
   },
@@ -137,11 +148,6 @@ export default {
 /deep/ .swiper-slide {
   height: 415px;
   width: 415px;
-  cursor: grab;
-
-  &:active {
-    cursor: grabbing;
-  }
 
   @media screen and (max-width: 768px) {
     height: 293px;
