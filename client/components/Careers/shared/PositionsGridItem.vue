@@ -1,7 +1,7 @@
 <template>
   <li class="positions-grid__item">
     <NuxtLink
-      :to="`/careers/${uid}`"
+      :to="`/careers/${uid}/`"
       class="positions-grid__item-link"
     >
       <div
@@ -129,6 +129,9 @@ export default {
     }
   }
   &-link {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
     display: block;
     padding: 40px;
     padding-bottom: 46.5px;

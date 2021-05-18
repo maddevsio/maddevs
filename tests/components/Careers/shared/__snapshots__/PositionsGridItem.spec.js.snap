@@ -7,7 +7,7 @@ exports[`PositionsGridItem component should render correctly 1`] = `
   >
     <nuxtlink
       class="positions-grid__item-link"
-      to="/careers/"
+      to="/careers//"
     >
       <div
         class="positions-grid__item-labels"
