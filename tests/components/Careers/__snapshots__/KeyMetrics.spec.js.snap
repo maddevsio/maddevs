@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KeyMetrics component should render correctly 1`] = `
+<div>
+  <div
+    class="key-metrics_container container"
+  >
+    <h2
+      class="key-metrics_title"
+    >
+      
+    Mad Devs’ key metrics
+  
+    </h2>
+     
+    <div
+      class="key-metrics_grid"
+    >
+      <metriccard-stub
+        description="open-source projects on GitHub"
+        title="70+"
+      />
+      <metriccard-stub
+        description="staff members work"
+        title="100+"
+      />
+      <metriccard-stub
+        description="tech bloggers and conference speakers"
+        title="30+"
+      />
+      <metriccard-stub
+        description="weekly pull requests in a project"
+        title="100+"
+      />
+      <metriccard-stub
+        description="hours of internal training"
+        title="10K"
+      />
+      <metriccard-stub
+        description="average project scope in months"
+        title="24+"
+      />
+    </div>
+  </div>
+</div>
+`;

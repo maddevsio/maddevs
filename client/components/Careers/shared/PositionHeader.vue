@@ -23,7 +23,7 @@
         >
           <PositionTags :tags="vacancy.tags" />
         </div>
-        <NuxtLink to="#careers-position-form">
+        <NuxtLink :to="{ hash: '#careers-position-form' }">
           <UIButton
             type="button"
             class="careers-position__apply-button"
@@ -38,9 +38,9 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import PositionLabels from './PositionLabels'
-import PositionTags from './PositionTags'
-import UIButton from '../../shared/UIButton'
+import PositionLabels from '@/components/Careers/shared/PositionLabels'
+import PositionTags from '@/components/Careers/shared/PositionTags'
+import UIButton from '@/components/shared/UIButton'
 
 export default {
   name: 'PositionHeader',

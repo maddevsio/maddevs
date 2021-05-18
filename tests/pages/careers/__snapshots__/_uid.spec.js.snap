@@ -22,7 +22,7 @@ exports[`Careers _uid component should render correctly 1`] = `
               class="position-labels"
             >
               <div
-                class="position-labels__item"
+                class="position-labels__item position-labels__item--filled"
               >
                 
     Remote
@@ -46,7 +46,7 @@ exports[`Careers _uid component should render correctly 1`] = `
           <!---->
            
           <nuxtlink
-            to="#careers-position-form"
+            to="[object Object]"
           >
             <button
               class="ui-button careers-position__apply-button"
@@ -88,16 +88,16 @@ exports[`Careers _uid component should render correctly 1`] = `
             </h2>
              
             <div
-              class="employees-benefits"
+              class="careers-position__benefits-grid"
             >
               <div
-                class="employees-benefits__item"
+                class="benefit-card"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="30"
                     width="31"
@@ -105,21 +105,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__title"
                 >
-                  
-      Flexible working hours
-    
+                  Flexible working 
+                  <br />
+                   hours
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="32"
                     width="28"
@@ -127,21 +127,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__title"
                 >
-                  
-      Onsite business trips
-    
+                  Onsite business 
+                  <br />
+                   trips
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="31"
                     width="36"
@@ -149,21 +149,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__title"
                 >
-                  
-      English lessons
-    
+                  English 
+                  <br />
+                   lessons
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="24"
                     width="39"
@@ -171,21 +171,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__title"
                 >
-                  
-      Training budget
-    
+                  Training 
+                  <br />
+                   budget
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="31"
                     width="24"
@@ -193,21 +193,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__title"
                 >
-                  
-      Remote-first culture
-    
+                  Remote-first 
+                  <br />
+                   culture
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="30"
                     width="26"
@@ -215,21 +215,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__title"
                 >
-                  
-      Long-term projects
-    
+                  Long-term 
+                  <br />
+                   projects
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="33"
                     width="20"
@@ -237,21 +237,21 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__title"
                 >
-                  
-      Paid conferences
-    
+                  Paid 
+                  <br />
+                   conferences
                 </p>
               </div>
               <div
-                class="employees-benefits__item"
+                class="benefit-card"
               >
                 <div
-                  class="employees-benefits__item-icon-wrapper"
+                  class="benefit-card__icon-wrapper"
                 >
                   <img
-                    class="employees-benefits__item-icon img_lazy"
+                    class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="36"
                     width="31"
@@ -259,11 +259,11 @@ exports[`Careers _uid component should render correctly 1`] = `
                 </div>
                  
                 <p
-                  class="employees-benefits__item-title"
+                  class="benefit-card__title"
                 >
-                  
-      Team parties
-    
+                  Team 
+                  <br />
+                   parties
                 </p>
               </div>
             </div>
@@ -294,7 +294,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                 class="hr-contact__title"
               >
                 
-      Hi, I'm Diana,
+      Hi, I'm Diana.
     
               </p>
                
@@ -304,7 +304,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                 
       Applying for jobs should be easy.
       I am here to simplify the hiring process and set you up for success.
-      Feel free to telegram me
+      Feel free to send me a message on Telegram.
       
                 <a
                   href="https://t.me/DianaHRDigital"

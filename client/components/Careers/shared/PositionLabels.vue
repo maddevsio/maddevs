@@ -5,12 +5,14 @@
   >
     <div
       v-if="labels.remote"
+      :class="`position-labels__item--${variant}`"
       class="position-labels__item"
     >
       Remote
     </div>
     <div
       v-if="labels.relocation"
+      :class="`position-labels__item--${variant}`"
       class="position-labels__item"
     >
       Open for relocation
@@ -25,6 +27,11 @@ export default {
     labels: {
       type: Object,
       default: () => ({}),
+    },
+
+    variant: {
+      type: String,
+      default: 'filled',
     },
   },
 }
@@ -42,13 +49,31 @@ export default {
     line-height: 15px;
     text-transform: uppercase;
     border-radius: 2px;
-    color: $text-color--white-primary;
+    border: 1px solid;
+    transition: all 0.4s;
     &:first-child {
-      background-color: $bgcolor--blue;
+      border-color: $border-color--blue;
     }
     &:last-child {
-      background-color: $bgcolor--green;
+      border-color: $border-color--green;
       margin-right: 0;
+    }
+    &--filled {
+      color: $text-color--white-primary;
+      &:first-child {
+        background-color: $bgcolor--blue;
+      }
+      &:last-child {
+        background-color: $bgcolor--green;
+      }
+    }
+    &--outlined {
+      &:first-child {
+        color: $text-color--blue;
+      }
+      &:last-child {
+        color: $text-color--green;
+      }
     }
   }
 }

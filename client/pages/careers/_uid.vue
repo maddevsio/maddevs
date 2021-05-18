@@ -15,7 +15,13 @@
             <h2 class="careers-position__benefits-title">
               Employees benefits
             </h2>
-            <EmployeesBenefits />
+            <div class="careers-position__benefits-grid">
+              <BenefitCard
+                v-for="benefit in benefits"
+                v-bind="benefit"
+                :key="benefit.title"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -36,11 +42,12 @@
 import { mapGetters } from 'vuex'
 import PositionHeader from '@/components/Careers/shared/PositionHeader'
 import SlicesBlock from '@/components/slices'
-import EmployeesBenefits from '@/components/Careers/shared/EmployeesBenefits'
+import BenefitCard from '@/components/Careers/shared/BenefitCard'
 import HRContactCard from '@/components/Careers/shared/HRContactCard'
 import PositionForm from '@/components/Careers/shared/PositionForm'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { buildHead } from '@/data/seo'
+import { employeesBenefits as benefits } from '@/data/benefits'
 
 import featureFlag from '@/featureFlags/featureFlag'
 
@@ -49,7 +56,7 @@ export default {
   components: {
     PositionHeader,
     SlicesBlock,
-    EmployeesBenefits,
+    BenefitCard,
     HRContactCard,
     PositionForm,
   },
@@ -63,7 +70,7 @@ export default {
     if (!showPage) return error({ statusCode: 404, message: 'Page not found' })
 
     try {
-      await store.dispatch('getVacancyPost', params.uid)
+      await store.dispatch('getVacancy', params.uid)
       return {
         openGraphUrl,
       }
@@ -76,6 +83,7 @@ export default {
   data() {
     return {
       openGraphUrl: '',
+      benefits,
     }
   },
 
@@ -92,6 +100,10 @@ export default {
 
   computed: {
     ...mapGetters(['vacancy']),
+  },
+
+  mounted() {
+    this.$lazyLoad.init()
   },
 }
 </script>
@@ -113,6 +125,11 @@ export default {
       line-height: 43px;
       letter-spacing: -0.04em;
       margin-bottom: 25px;
+    }
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 8px 10px;
     }
   }
   &__contacts {
@@ -142,10 +159,8 @@ export default {
   }
 
   @media screen and (max-width: 768px) {
-    &__benefits {
-      .employees-benefits {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    &__benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 

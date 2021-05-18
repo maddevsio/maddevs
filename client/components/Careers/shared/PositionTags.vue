@@ -6,6 +6,7 @@
     <span
       v-for="tag in tags"
       :key="tag"
+      :class="`position-tags__item--${divider}-divider`"
       class="position-tags__item"
     >
       {{ tag }}
@@ -20,6 +21,11 @@ export default {
     tags: {
       type: Array,
       default: () => ([]),
+    },
+
+    divider: {
+      type: String,
+      default: 'point',
     },
   },
 }
@@ -39,17 +45,28 @@ export default {
     display: flex;
     align-items: center;
     color: $text-color--grey-opacity-40-percent;
-    &::after {
-      content: "";
-      display: block;
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: $text-color--grey-opacity-40-percent;
-      margin: 2px 8.5px 0;
+    &--point-divider {
+      &::after {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: $text-color--grey-opacity-40-percent;
+        margin: 2px 8.5px 0;
+      }
+      &:last-child::after {
+        display: none;
+      }
     }
-    &:last-child::after {
-      display: none;
+    &--comma-divider {
+      &::after {
+        content: ",\a0";
+        display: inline;
+      }
+      &:last-child::after {
+        display: none;
+      }
     }
   }
 }

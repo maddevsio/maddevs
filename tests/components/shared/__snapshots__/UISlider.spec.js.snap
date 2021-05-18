@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UISlider component should render correctly 1`] = `
+<div>
+  <div
+    class="ui-slider"
+  >
+    <swiper-stub
+      autodestroy="true"
+      autoupdate="true"
+      class="ui-slider_slider"
+      cleanupstylesondestroy="true"
+      defaultoptions="[object Object]"
+      deleteinstanceondestroy="true"
+    />
+  </div>
+</div>
+`;
