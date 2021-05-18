@@ -75,9 +75,9 @@ export const engineeringCultureBenefits = [
 
 export const agileDevelopmentBenefits = [
   'Clearly explained development goals',
-  'Engineers contribute to backlog and roadmap',
-  'Direct, cult-the bullshit, communication in problem-solving',
-  'Celebrating initiatives culture',
+  'Contribution of engineers to backlog and roadmap',
+  'Direct, cut-the-bullshit, communication in problem-solving',
+  'Culture that celebrates initiatives',
   'Cross-functional collaboration',
 ]
 
@@ -86,5 +86,5 @@ export const competitiveAndCompensationBenefits = [
   'Competitive compensation',
   'Formal employment',
   'Flexible payment terms',
-  'Salary, benefits and bonuses paid in USD',
+  'Salary, benefits, and bonuses paid in USD',
 ]

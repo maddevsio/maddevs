@@ -36,7 +36,7 @@
       data-aos-duration="800"
       data-aos-offset="120"
     >
-      Without empty words, here at Mad Devs we partner with projects where <span>our teams thrive</span>. Innovating solutions, carrying ownership, delivering sustainable value and celebrating successes — make a happy workplace, where things get done.
+      Here at Mad Devs, we partner with projects where <span>our teams thrive</span>. Innovating solutions, carrying ownership, delivering sustainable value, and celebrating successes—these make ours a happy workplace where things get done.
     </p>
   </div>
 </template>
@@ -83,7 +83,7 @@ export default {
   &_description {
     max-width: 1028px;
     margin: 0 auto;
-    @include font('Inter', 32px, 600);
+    @include font('Inter', 32px, 700);
     line-height: 47px;
     letter-spacing: -0.013em;
     color: $text-color--grey-opacity-20-percent;

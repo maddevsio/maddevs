@@ -1,27 +1,27 @@
 export const keyMetrics = [
   {
     title: '70+',
-    description: 'open-source projects on GitHub.',
+    description: 'open-source projects on GitHub',
   },
   {
     title: '100+',
-    description: 'staff members work for Mad Devs.',
+    description: 'staff members work',
   },
   {
     title: '30+',
-    description: 'tech bloggers and conference speakers.',
+    description: 'tech bloggers and conference speakers',
   },
   {
     title: '100+',
-    description: 'weekly pull requests in a project.',
-  },
-  {
-    title: '0',
-    description: 'boring task and bureaucratic procedures.',
+    description: 'weekly pull requests in a project',
   },
   {
     title: '10K',
-    description: 'hours of internal training.',
+    description: 'hours of internal training',
+  },
+  {
+    title: '24+',
+    description: 'average project scope in months',
   },
 ]
 

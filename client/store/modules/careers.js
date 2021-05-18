@@ -34,15 +34,15 @@ export const state = () => ({
 })
 
 export const mutations = {
-  SET_VACANCY(state, post) {
+  SET_VACANCY(state, post = {}) {
     state.vacancy = extractVacancyData(post)
   },
 
-  SET_VACANCIES(state, posts) {
+  SET_VACANCIES(state, posts = []) {
     state.vacancies = posts.map(post => extractVacancyData(post))
   },
 
-  SET_VACANCY_CATEGORIES(state, categories) {
+  SET_VACANCY_CATEGORIES(state, categories = []) {
     const vacancyCategories = categories.map(category => ({
       title: category.category_title,
       tags: category.tags.length ? category.tags.split(/, */g) : [],
@@ -50,15 +50,15 @@ export const mutations = {
     state.vacancyCategories = vacancyCategories
   },
 
-  SET_VACANCIES_CATEGORY(state, category) {
+  SET_VACANCIES_CATEGORY(state, category = null) {
     state.vacanciesCategory = category
   },
 
-  SET_VACANCIES_LOADED(state, value) {
+  SET_VACANCIES_LOADED(state, value = false) {
     state.vacanciesLoaded = value
   },
 
-  SET_VACANCIES_PAGE(state, page) {
+  SET_VACANCIES_PAGE(state, page = 1) {
     state.vacanciesPage = page
   },
 }
@@ -101,7 +101,7 @@ export const getters = {
   },
 
   vacancyCategories(state) {
-    return state.vacancyCategories
+    return state.vacancyCategories.filter(category => category.tags.some(tag => state.vacancies.some(vacancy => vacancy.tags.includes(tag))))
   },
 
   vacanciesCategory(state) {

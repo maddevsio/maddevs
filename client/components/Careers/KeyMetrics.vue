@@ -15,7 +15,7 @@
       <MetricCard
         v-for="metrica in keyMetrics"
         v-bind="metrica"
-        :key="metrica.title"
+        :key="metrica.description"
       />
     </div>
   </div>

@@ -62,7 +62,6 @@ export default {
 
 .employees-benefits {
   padding-top: 100px;
-  padding-bottom: 61px;
 
   &_grid-container,
   &_benefits-cards {
@@ -121,7 +120,6 @@ export default {
 
   @media screen and (max-width: 1024px) {
     padding-top: 62px;
-    padding-bottom: 57px;
 
     &_title {
       margin-bottom: 23px;
@@ -133,11 +131,10 @@ export default {
 
   @media screen and (max-width: 375px) {
     padding-top: 43px;
-    padding-bottom: 55px;
   }
 }
 
-/deep/ .benefit-card__item {
+/deep/ .benefit-card {
   padding: 30px 27px;
 
   @media screen and (max-width: 1024px) {
@@ -148,6 +145,11 @@ export default {
 /deep/ .swiper-slide {
   height: 415px;
   width: 415px;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
 
   @media screen and (max-width: 768px) {
     height: 293px;

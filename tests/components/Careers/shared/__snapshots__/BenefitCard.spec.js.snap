@@ -3,13 +3,13 @@
 exports[`BenefitCard is a Vue instance 1`] = `
 <div>
   <div
-    class="benefit-card__item"
+    class="benefit-card"
   >
     <div
-      class="benefit-card__item-icon-wrapper"
+      class="benefit-card__icon-wrapper"
     >
       <img
-        class="benefit-card__item-icon media_lazy"
+        class="benefit-card__icon media_lazy"
         data-src="img.jpg"
         height="32"
         width="28"
@@ -17,7 +17,7 @@ exports[`BenefitCard is a Vue instance 1`] = `
     </div>
      
     <p
-      class="benefit-card__item-title"
+      class="benefit-card__title"
     >
       Onsite business trips
     </p>

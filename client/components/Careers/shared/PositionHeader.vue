@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="careers-position__header"
-  >
+  <div class="careers-position__header">
     <div class="container">
       <div class="careers-position__container">
         <div
@@ -35,9 +33,7 @@
         >
           <PositionTags :tags="vacancy.tags" />
         </div>
-        <NuxtLink
-          to="#careers-position-form"
-        >
+        <NuxtLink :to="{ hash: '#careers-position-form' }">
           <UIButton
             data-aos="fade-up"
             data-aos-duration="600"
