@@ -9,6 +9,8 @@ exports[`KeyMetrics component should render correctly 1`] = `
   >
     <h2
       class="key-metrics_title"
+      data-aos="fade-right"
+      data-aos-duration="1000"
     >
       
     Mad Devs’ key metrics
@@ -17,6 +19,8 @@ exports[`KeyMetrics component should render correctly 1`] = `
      
     <div
       class="key-metrics_grid"
+      data-aos="fade-left"
+      data-aos-duration="1000"
     >
       <div
         class="metrica-card"

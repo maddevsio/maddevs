@@ -16,7 +16,9 @@ exports[`Careers _uid component should render correctly 1`] = `
           class="careers-position__container"
         >
           <div
-            class="careers-position__labels"
+            class="careers-position__labels aos-init aos-animate"
+            data-aos="fade-right"
+            data-aos-duration="600"
           >
             <div
               class="position-labels"
@@ -34,7 +36,9 @@ exports[`Careers _uid component should render correctly 1`] = `
           </div>
            
           <h1
-            class="careers-position__title"
+            class="careers-position__title aos-init aos-animate"
+            data-aos="fade-right"
+            data-aos-duration="600"
           >
             
         
@@ -49,7 +53,9 @@ exports[`Careers _uid component should render correctly 1`] = `
             to="#careers-position-form"
           >
             <button
-              class="ui-button careers-position__apply-button"
+              class="ui-button careers-position__apply-button aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-duration="600"
               style="position: relative; overflow: hidden;"
               type="button"
             >
@@ -80,7 +86,9 @@ exports[`Careers _uid component should render correctly 1`] = `
             class="careers-position__benefits"
           >
             <h2
-              class="careers-position__benefits-title"
+              class="careers-position__benefits-title aos-init aos-animate"
+              data-aos="fade-right"
+              data-aos-duration="800"
             >
               
             Employees benefits
@@ -88,7 +96,9 @@ exports[`Careers _uid component should render correctly 1`] = `
             </h2>
              
             <div
-              class="careers-position__employees-benefits"
+              class="careers-position__employees-benefits aos-init aos-animate"
+              data-aos="fade-left"
+              data-aos-duration="800"
             >
               <div
                 class="benefit-card__item"
@@ -271,7 +281,9 @@ exports[`Careers _uid component should render correctly 1`] = `
         </div>
          
         <div
-          class="careers-position__contacts"
+          class="careers-position__contacts aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="800"
           id="careers-position-form"
         >
           <div
