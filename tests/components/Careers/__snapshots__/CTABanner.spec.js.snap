@@ -11,7 +11,7 @@ exports[`CTABanner component should render correctly 1`] = `
       manname="Daria Utesheva"
       manposition="Head of HR Departament"
       text="If you don’t see a suitable vacancy, but are sure that we’re meant to be, drop us a line."
-      title="Can’t find your <br /> next role?'"
+      title="Can’t find your <br /> next role?"
     >
       <a
         href="https://t.me/DianaHRDigital"
