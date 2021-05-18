@@ -140,6 +140,8 @@ exports[`GoDeeCase _uid component should render correctly 1`] = `
             <div
               class="header__right-content col-xl-6 col-lg-5"
             >
+              <!---->
+               
               <div
                 class="header__phone-wrapper"
               >
@@ -172,6 +174,12 @@ exports[`GoDeeCase _uid component should render correctly 1`] = `
       </header>
        
       <!---->
+       
+      <transition-stub
+        name="slide-fade"
+      >
+        <!---->
+      </transition-stub>
        
       <transition-stub
         mode="out-in"
