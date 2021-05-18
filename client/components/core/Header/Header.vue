@@ -90,6 +90,16 @@
             <!-- END Burget btn -->
           </div>
           <div class="header__right-content col-xl-6 col-lg-5">
+            <button
+              v-if="isBlogPage"
+              class="header__search-btn"
+              @click="searchActive = true"
+            >
+              <img
+                src="@/assets/img/common/magnify--white.svg"
+                alt="Magnify"
+              >
+            </button>
             <div class="header__phone-wrapper">
               <!-- Flag uk -->
               <img
@@ -123,6 +133,13 @@
     />
     <!-- END Mobile header -->
 
+    <transition name="slide-fade">
+      <ModalSearch
+        v-if="searchActive"
+        @on-close="searchActive = false"
+      />
+    </transition>
+
     <Modal
       ref="modalContactMe"
     >
@@ -136,6 +153,7 @@ import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import HeaderMobile from '@/components/core/Header/HeaderMobile'
 import HeaderLogo from '@/components/core/Header/HeaderLogo'
 import Modal from '@/components/core/Modal'
+import ModalSearch from '@/components/core/modals/ModalSearch'
 import { headerNavigation as navigation } from '@/data/navigation'
 
 export default {
@@ -146,6 +164,7 @@ export default {
     HeaderMobile,
     HeaderLogo,
     Modal,
+    ModalSearch,
   },
 
   data() {
@@ -156,6 +175,7 @@ export default {
       isCasePage: false,
       isTransparentBG: true,
       caseGoDeeScrollContainer: null,
+      searchActive: false,
     }
   },
 
@@ -163,12 +183,24 @@ export default {
     isGodeePage() {
       return this.$nuxt.$route.path.includes('/godee')
     },
+
+    isBlogPage() {
+      return this.$nuxt.$route.path.includes('/blog')
+    },
   },
 
   watch: {
     $route() {
       this.setDefaultStateForHeader()
       this.removeEventListeners()
+    },
+
+    searchActive(newVal) {
+      if (newVal) {
+        this.disablePageScroll()
+      } else {
+        this.enablePageScroll()
+      }
     },
   },
 
@@ -311,6 +343,32 @@ export default {
     }
   }
 
+  &__search-btn {
+    width: auto !important;
+    height: auto !important;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 22px !important;
+    margin-right: 18px;
+    padding: 10px;
+    cursor: pointer;
+
+    @media screen and (max-width: 1140px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    @media screen and (max-width: 1090px) {
+      left: -30px;
+    }
+
+    img {
+      width: 16px;
+      height: 18px;
+    }
+  }
+
   &__header-logo {
     width: 34px;
     height: 58px;
@@ -325,6 +383,7 @@ export default {
 
   &__right-content {
     justify-content: flex-end;
+    position: relative;
   }
 
   &__phone-wrapper,
@@ -459,8 +518,23 @@ export default {
   }
 }
 
-// ------------ END Overlay styles ------------- //
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all .5s ease;
+}
 
+.slide-fade-leave-active {
+  transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(-300px);
+  opacity: 0;
+}
+
+// ------------ END Overlay styles ------------- //
 .mobile-menu_is-open {
   width: 100%;
   height: 100%;

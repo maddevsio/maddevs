@@ -178,6 +178,7 @@ export default {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+
     &--short {
       display: block;
       @media screen and (max-width: 1196px) {
