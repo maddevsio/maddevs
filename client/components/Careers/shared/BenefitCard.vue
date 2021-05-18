@@ -41,9 +41,9 @@ export default {
   padding: 16px;
   background-color: $bgcolor--silver;
   border-radius: 4px;
-  &-icon {
+  &__icon {
     &-wrapper {
-      height: 45px;
+      margin-bottom: 16px;
     }
     display: block;
   }
