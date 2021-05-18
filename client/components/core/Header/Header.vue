@@ -581,7 +581,7 @@ export default {
         display: block;
         left: auto;
         right: 66px;
-        top: 4px;
+        top: 2px;
       }
     }
 

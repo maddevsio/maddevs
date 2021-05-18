@@ -13,6 +13,7 @@
             ref="searchInput"
             type="text"
             placeholder="Search"
+            v-model="value"
             @input="searchQuery"
           >
         </label>
@@ -113,6 +114,7 @@ export default {
   data() {
     return {
       response: null,
+      value: null,
       searchQuery: debounce(event => {
         const { value } = event.target
         if (typeof value !== 'string') return null
@@ -191,9 +193,9 @@ export default {
         this.onClose()
         return true
       }
-      if (this.searchPosts && this.searchPosts.length && this.searchQuery) {
+      if (this.searchPosts && this.searchPosts.length) {
         if (event.keyCode === 13) {
-          if (this.searchQuery.length) {
+          if (this.value && this.value.length) {
             this.$router.push('/blog/search-result/')
           } else {
             this.$router.push('/blog/')
