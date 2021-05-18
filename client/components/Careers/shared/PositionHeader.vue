@@ -23,7 +23,7 @@
         >
           <PositionTags :tags="vacancy.tags" />
         </div>
-        <NuxtLink to="#careers-position-form">
+        <NuxtLink :to="{ hash: '#careers-position-form' }">
           <UIButton
             type="button"
             class="careers-position__apply-button"
