@@ -46,7 +46,7 @@ exports[`Careers _uid component should render correctly 1`] = `
           <!---->
            
           <nuxtlink
-            to="#careers-position-form"
+            to="[object Object]"
           >
             <button
               class="ui-button careers-position__apply-button"
