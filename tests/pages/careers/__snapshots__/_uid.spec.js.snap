@@ -338,7 +338,10 @@ exports[`Careers _uid component should render correctly 1`] = `
           </div>
            
           <div
-            class="careers-position__form"
+            class="careers-position__form aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-duration="1000"
           >
             <div>
               <form

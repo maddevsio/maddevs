@@ -7,12 +7,14 @@ exports[`Benefits component should render correctly 1`] = `
   >
     <div
       class="benefits_benefit"
-      data-aos="fade"
-      data-aos-duration="1000"
-      data-aos-offset="400"
     >
       <div
         class="benefits_description"
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-center"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-offset="200"
       >
         <h2
           class="benefits_title"
@@ -35,6 +37,11 @@ exports[`Benefits component should render correctly 1`] = `
        
       <ul
         class="benefits_list"
+        data-aos="fade-left"
+        data-aos-anchor-placement="top-center"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-offset="200"
       >
         <li
           class="benefits_list-item"
@@ -76,12 +83,14 @@ exports[`Benefits component should render correctly 1`] = `
      
     <div
       class="benefits_benefit"
-      data-aos="fade"
-      data-aos-duration="1000"
-      data-aos-offset="800"
     >
       <div
         class="benefits_description"
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-center"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-offset="200"
       >
         <h2
           class="benefits_title"
@@ -104,6 +113,11 @@ exports[`Benefits component should render correctly 1`] = `
        
       <ul
         class="benefits_list"
+        data-aos="fade-left"
+        data-aos-anchor-placement="top-center"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-offset="200"
       >
         <li
           class="benefits_list-item"
@@ -145,12 +159,14 @@ exports[`Benefits component should render correctly 1`] = `
      
     <div
       class="benefits_benefit"
-      data-aos="fade"
-      data-aos-duration="1000"
-      data-aos-offset="800"
     >
       <div
         class="benefits_description"
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-center"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-offset="200"
       >
         <h2
           class="benefits_title"
@@ -173,6 +189,11 @@ exports[`Benefits component should render correctly 1`] = `
        
       <ul
         class="benefits_list"
+        data-aos="fade-left"
+        data-aos-anchor-placement="top-center"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-offset="200"
       >
         <li
           class="benefits_list-item"
