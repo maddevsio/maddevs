@@ -195,11 +195,13 @@ export default {
       this.removeEventListeners()
     },
 
-    searchActive(newVal) {
-      if (newVal) {
-        this.disablePageScroll()
+    searchActive(opened) {
+      if (opened) {
+        this.disableScrollOnBody()
       } else {
-        this.enablePageScroll()
+        setTimeout(() => {
+          this.enableScrollOnBody()
+        }, 300)
       }
     },
   },
@@ -233,6 +235,16 @@ export default {
       document.body.classList.add('scrollDisabled')
       document.documentElement.classList.add('scrollDisabled')
       document.body.style.top = `-${scrollY}px`
+    },
+
+    enableScrollOnBody() {
+      document.body.style.top = 'auto'
+      document.body.style.overflow = 'auto'
+    },
+
+    disableScrollOnBody() {
+      document.body.style.top = `-${window.scrollY}px`
+      document.body.style.overflow = 'hidden'
     },
 
     setDefaultStateForHeader() {
@@ -517,11 +529,19 @@ export default {
     transform: none;
   }
 }
+// ------------ END Overlay styles ------------- //
+.mobile-menu_is-open {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  padding: initial;
+  z-index: 999;
+}
 
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
 .slide-fade-enter-active {
-  transition: all .5s ease;
+  transition: all .3s ease;
 }
 
 .slide-fade-leave-active {
@@ -532,15 +552,6 @@ export default {
 /* .slide-fade-leave-active below version 2.1.8 */ {
   transform: translateY(-300px);
   opacity: 0;
-}
-
-// ------------ END Overlay styles ------------- //
-.mobile-menu_is-open {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  padding: initial;
-  z-index: 999;
 }
 
 @media screen and (max-width: 991px) {
@@ -560,7 +571,18 @@ export default {
     }
 
     &__right-content {
-      display: none;
+      position: initial;
+
+      > * {
+        display: none;
+      }
+
+      .header__search-btn {
+        display: block;
+        left: auto;
+        right: 66px;
+        top: 2px;
+      }
     }
 
     &__header-logo {
@@ -580,6 +602,10 @@ export default {
 
     &__header-logo {
       margin-left: -40px;
+    }
+
+    .header__search-btn {
+      right: 58px;
     }
   }
 }

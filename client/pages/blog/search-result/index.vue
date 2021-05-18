@@ -49,6 +49,9 @@ export default {
     posts() {
       if (!this.getSearchResponse || !this.getSearchResponse.results) return null
       if (!this.getSearchResponse || !this.getSearchResponse.results || !this.getSearchResponse.results.length) return []
+      this.$nextTick(() => {
+        this.resetLazyLoad()
+      })
       return this.getSearchResponse.results
     },
   },
