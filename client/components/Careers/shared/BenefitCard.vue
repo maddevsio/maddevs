@@ -42,12 +42,12 @@ export default {
   background-color: $bgcolor--silver;
   border-radius: 4px;
   &__icon {
-    &-wrapper {
-      margin-bottom: 16px;
-    }
     display: block;
+    &-wrapper {
+      height: 45px;
+    }
   }
-  &-title {
+  &__title {
     line-height: 22px;
     letter-spacing: -0.013em;
     color: $text-color--black-oil;
