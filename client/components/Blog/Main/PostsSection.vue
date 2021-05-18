@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import PostCard from '@/components/Blog/shared/PostCard'
 import SkeletonBlogWidget from '@/components/Blog/skeletons/SkeletonBlogWidget'
 
@@ -43,6 +43,8 @@ export default {
     SkeletonBlogWidget,
   },
 
+  mixins: [findPostAuthorMixin],
+
   props: {
     posts: {
       type: Array,
@@ -50,10 +52,18 @@ export default {
     },
   },
 
-  mixins: [findPostAuthorMixin],
-
   computed: {
     ...mapGetters(['allAuthors']),
+  },
+
+  created() {
+    if (!this.allAuthors || (this.allAuthors && !this.allAuthors.length)) {
+      this.getBlogAuthors()
+    }
+  },
+
+  methods: {
+    ...mapActions(['getBlogAuthors']),
   },
 }
 </script>

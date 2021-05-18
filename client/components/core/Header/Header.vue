@@ -194,6 +194,14 @@ export default {
       this.setDefaultStateForHeader()
       this.removeEventListeners()
     },
+
+    searchActive(newVal) {
+      if (newVal) {
+        this.disablePageScroll()
+      } else {
+        this.enablePageScroll()
+      }
+    },
   },
 
   created() {

@@ -33,8 +33,18 @@ export default {
     })
   },
 
+  watch: {
+    allAuthors(newVal) {
+      if (newVal && newVal.length) {
+        this.$nextTick(() => {
+          this.resetLazyLoad()
+        })
+      }
+    },
+  },
+
   computed: {
-    ...mapGetters(['getSearchResponse', 'getSearchQuery']),
+    ...mapGetters(['getSearchResponse', 'getSearchQuery', 'allAuthors']),
 
     posts() {
       if (!this.getSearchResponse || !this.getSearchResponse.results) return null

@@ -10,9 +10,9 @@
         >
         <input
           ref="searchInput"
-          @input="searchQuery"
           type="text"
           placeholder="Search"
+          @input="searchQuery"
         >
       </label>
       <button
@@ -118,7 +118,7 @@ export default {
         this.setSearchQuery(value)
         this.getPosts(value)
         return value
-      }, 700),
+      }, 500),
     }
   },
 
@@ -132,7 +132,10 @@ export default {
     },
 
     tags() {
-      return this.$prismic.api.tags || []
+      const ignoreTags = ['iOS development', 'Featured post', 'Software features']
+      const { tags } = this.$prismic.api
+      if (!tags || (tags && !tags.length)) return []
+      return tags.filter(tag => !ignoreTags.some(ignoreTag => ignoreTag === tag))
     },
   },
 
@@ -181,6 +184,11 @@ export default {
     },
 
     listenKeys(event) {
+      if (event.keyCode === 27) {
+        document.removeEventListener('keyup', this.listenKeys)
+        this.onClose()
+        return true
+      }
       if (this.searchPosts && this.searchPosts.length && this.searchQuery) {
         if (event.keyCode === 13) {
           this.$router.push('/blog/search-result/')
@@ -189,11 +197,6 @@ export default {
           return true
         }
         return false
-      }
-      if (event.keyCode === 27) {
-        document.removeEventListener('keyup', this.listenKeys)
-        this.onClose()
-        return true
       }
       return true
     },
