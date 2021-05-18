@@ -4,7 +4,7 @@ exports[`ScrollToPositionsButton component should render correctly 1`] = `
 <div>
   <nuxtlink
     class="scroll-to-positions scroll-to-positions--hidden"
-    to="#open-positions"
+    to="[object Object]"
   >
     <button
       class="underlined-button"

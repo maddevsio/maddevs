@@ -1,7 +1,7 @@
 <template>
   <section class="cta-banner">
-    <h2>{{ title }}</h2>
-    <p>{{ text }}</p>
+    <h2 v-html="title" />
+    <p v-html="text" />
     <!-- Child elements start -->
     <slot />
     <!-- Child elements end -->
@@ -79,9 +79,8 @@ export default {
   }
 
   h2 {
+    @include font('Poppins', 60px, 700);
     max-width: 590px;
-    font-weight: 800;
-    font-size: 60px;
     line-height: 65px;
     letter-spacing: -0.04em;
     margin-bottom: 21px;
