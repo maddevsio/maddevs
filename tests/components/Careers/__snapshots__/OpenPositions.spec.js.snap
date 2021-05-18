@@ -4,6 +4,8 @@ exports[`OpenPositions component should render correctly 1`] = `
 <div>
   <div
     class="open-positions"
+    data-aos="fade"
+    data-aos-duration="1000"
     id="open-positions"
   >
     <div
