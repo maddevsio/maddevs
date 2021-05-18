@@ -194,6 +194,16 @@ export default {
       this.setDefaultStateForHeader()
       this.removeEventListeners()
     },
+
+    searchActive(opened) {
+      if (opened) {
+        this.disableScrollOnBody()
+      } else {
+        setTimeout(() => {
+          this.enableScrollOnBody()
+        }, 300)
+      }
+    },
   },
 
   created() {
@@ -225,6 +235,16 @@ export default {
       document.body.classList.add('scrollDisabled')
       document.documentElement.classList.add('scrollDisabled')
       document.body.style.top = `-${scrollY}px`
+    },
+
+    enableScrollOnBody() {
+      document.body.style.top = 'auto'
+      document.body.style.overflow = 'auto'
+    },
+
+    disableScrollOnBody() {
+      document.body.style.top = `-${window.scrollY}px`
+      document.body.style.overflow = 'hidden'
     },
 
     setDefaultStateForHeader() {

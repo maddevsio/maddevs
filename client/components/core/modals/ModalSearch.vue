@@ -134,7 +134,7 @@ export default {
     },
 
     tags() {
-      const ignoreTags = ['iOS development', 'Featured post', 'Software features']
+      const ignoreTags = ['iOS development', 'iOS', 'Featured post', 'Software features']
       const { tags } = this.$prismic.api
       if (!tags || (tags && !tags.length)) return []
       return tags.filter(tag => !ignoreTags.some(ignoreTag => ignoreTag === tag))
