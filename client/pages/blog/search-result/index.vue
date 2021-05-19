@@ -25,7 +25,7 @@ export default {
   head() {
     return buildHead({
       title: 'Mad Devs: Blog search result',
-      metaTitle: `Blog`,
+      metaTitle: 'Blog',
       description: '',
       url: this.openGraphUrl,
       image: 'https://maddevs.io/blog.png',
@@ -72,7 +72,7 @@ export default {
     ...mapActions(['setSearchResponse']),
 
     async getPosts(query) {
-      const response = await this.$prismic.api.query(this.$prismic.predicates.fulltext('my.post.title', query))
+      const response = await this.$prismic.api.query(this.$prismic.predicates.fulltext('document', query))
       this.setSearchResponse(response)
     },
   },
