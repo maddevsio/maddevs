@@ -45,22 +45,18 @@ exports[`Careers _uid component should render correctly 1`] = `
            
           <!---->
            
-          <nuxtlink
-            to="[object Object]"
+          <button
+            class="ui-button careers-position__apply-button"
+            style="position: relative; overflow: hidden;"
+            type="button"
           >
-            <button
-              class="ui-button careers-position__apply-button"
-              style="position: relative; overflow: hidden;"
-              type="button"
-            >
-              
-          Apply now
-        
-              <div
-                class="wave"
-              />
-            </button>
-          </nuxtlink>
+            
+        Apply now
+      
+            <div
+              class="wave"
+            />
+          </button>
         </div>
       </div>
     </div>
