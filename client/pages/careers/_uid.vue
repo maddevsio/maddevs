@@ -44,8 +44,6 @@
           <div
             class="careers-position__form"
             data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="top-center"
           >
             <PositionForm :position="vacancy.position" />
           </div>
@@ -77,7 +75,12 @@ export default {
     PositionForm,
   },
 
-  mixins: [initLazyLoadMixin, animateOnScrollMixin()],
+  mixins: [initLazyLoadMixin, animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+  })],
 
   async asyncData({ store, params, error }) {
     const openGraphUrl = `${process.env.domain}/careers/${params.uid}/`

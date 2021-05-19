@@ -5,7 +5,6 @@
     <h2
       class="projects-countries_title"
       data-aos="fade-up"
-      data-aos-duration="1000"
     >
       Global projects in 20+ countries
     </h2>

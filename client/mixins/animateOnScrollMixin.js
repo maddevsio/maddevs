@@ -1,12 +1,12 @@
 import AOS from 'aos'
-import 'aos/dist/aos.css'
 
-const config = {}
-
-function animateOnScrollMixin() {
+function animateOnScrollMixin(config = {}) {
   return {
     mounted() {
-      AOS.init(config)
+      if (this.featureFlag('careersPageAnimations')) {
+        import('aos/dist/aos.css')
+        AOS.init(config)
+      }
     },
   }
 }

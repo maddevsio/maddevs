@@ -16,7 +16,12 @@ export default {
     Main,
   },
 
-  mixins: [initLazyLoadMixin, animateOnScrollMixin()],
+  mixins: [initLazyLoadMixin, animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+  })],
 
   head() {
     return buildHead(getMetadata('careers'))

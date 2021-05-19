@@ -3,11 +3,7 @@
     <div class="benefits_benefit">
       <div
         class="benefits_description"
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-anchor-placement="top-center"
+        data-aos="fade-up"
       >
         <h2 class="benefits_title">
           Sustainable <br> engineering culture
@@ -18,11 +14,7 @@
       </div>
       <ul
         class="benefits_list"
-        data-aos="fade-left"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-anchor-placement="top-center"
+        data-aos="fade-up"
       >
         <li
           v-for="benefit in engineeringCultureBenefits"
@@ -36,11 +28,7 @@
     <div class="benefits_benefit">
       <div
         class="benefits_description"
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-anchor-placement="top-center"
+        data-aos="fade-up"
       >
         <h2 class="benefits_title">
           Agile <br> development
@@ -51,11 +39,7 @@
       </div>
       <ul
         class="benefits_list"
-        data-aos="fade-left"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-anchor-placement="top-center"
+        data-aos="fade-up"
       >
         <li
           v-for="benefit in agileDevelopmentBenefits"
@@ -69,11 +53,7 @@
     <div class="benefits_benefit">
       <div
         class="benefits_description"
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-anchor-placement="top-center"
+        data-aos="fade-up"
       >
         <h2 class="benefits_title">
           Competitive and <br> reliable compensation
@@ -84,11 +64,7 @@
       </div>
       <ul
         class="benefits_list"
-        data-aos="fade-left"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-anchor-placement="top-center"
+        data-aos="fade-up"
       >
         <li
           v-for="benefit in competitiveAndCompensationBenefits"
