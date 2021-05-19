@@ -11,9 +11,9 @@
           >
           <input
             ref="searchInput"
+            v-model="value"
             type="text"
             placeholder="Search"
-            v-model="value"
             @input="searchQuery"
           >
         </label>
