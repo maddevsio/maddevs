@@ -32,16 +32,6 @@ export default {
     })
   },
 
-  watch: {
-    allAuthors(newVal) {
-      if (newVal && newVal.length) {
-        this.$nextTick(() => {
-          this.resetLazyLoad()
-        })
-      }
-    },
-  },
-
   computed: {
     ...mapGetters(['getSearchResponse', 'getSearchQuery', 'allAuthors']),
 
@@ -55,10 +45,20 @@ export default {
     },
   },
 
+  watch: {
+    allAuthors(newVal) {
+      if (newVal && newVal.length) {
+        this.$nextTick(() => {
+          this.resetLazyLoad()
+        })
+      }
+    },
+  },
+
   created() {
     if (!this.getSearchQuery) {
       if (process.browser) {
-        const query = localStorage.getItem('blog-search-query')
+        const query = this.$route.query.searchBy.replace(/\//g, '')
         if (query && query.length) {
           this.getPosts(query)
         } else {
