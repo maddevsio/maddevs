@@ -72,7 +72,9 @@ export default {
     ...mapActions(['setSearchResponse']),
 
     async getPosts(query) {
-      const response = await this.$prismic.api.query(this.$prismic.predicates.fulltext('document', query))
+      const response = await this.$prismic.api.query(
+        this.$prismic.predicates.fulltext('my.post.title', query),
+      )
       this.setSearchResponse(response)
     },
   },
