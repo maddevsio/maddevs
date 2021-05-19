@@ -10,11 +10,7 @@ exports[`EmployeesBenefits component should render correctly 1`] = `
     >
       <h2
         class="employees-benefits_title"
-        data-aos="fade-right"
-        data-aos-anchor-placement="top-center"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-offset="200"
+        data-aos="fade-up"
       >
         
       Employees benefits
@@ -23,11 +19,7 @@ exports[`EmployeesBenefits component should render correctly 1`] = `
        
       <div
         class="employees-benefits_benefits-cards"
-        data-aos="fade-left"
-        data-aos-anchor-placement="top-center"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-offset="200"
+        data-aos="fade-up"
       >
         <benefitcard-stub
           icon="[object Object]"

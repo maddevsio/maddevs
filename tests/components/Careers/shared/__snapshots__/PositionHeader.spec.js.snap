@@ -37,6 +37,8 @@ exports[`PositionHeader component should render correctly 1`] = `
          
         <button
           class="ui-button careers-position__apply-button"
+          data-aos="fade-up"
+          data-aos-duration="600"
           style="position: relative; overflow: hidden;"
           type="button"
         >

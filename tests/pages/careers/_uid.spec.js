@@ -51,6 +51,7 @@ const mocks = {
   $lazyLoad: {
     init: jest.fn(),
   },
+  featureFlag: jest.fn(),
 }
 
 const localVue = createLocalVue()

@@ -7,11 +7,7 @@ exports[`KeyMetrics component should render correctly 1`] = `
   >
     <h2
       class="key-metrics_title"
-      data-aos="fade-right"
-      data-aos-anchor-placement="top-center"
-      data-aos-delay="50"
-      data-aos-duration="1000"
-      data-aos-offset="200"
+      data-aos="fade-up"
     >
       
     Mad Devs’ key metrics
@@ -20,11 +16,7 @@ exports[`KeyMetrics component should render correctly 1`] = `
      
     <div
       class="key-metrics_grid"
-      data-aos="fade-left"
-      data-aos-anchor-placement="top-center"
-      data-aos-delay="50"
-      data-aos-duration="1000"
-      data-aos-offset="200"
+      data-aos="fade-up"
     >
       <metriccard-stub
         description="open-source projects on GitHub"

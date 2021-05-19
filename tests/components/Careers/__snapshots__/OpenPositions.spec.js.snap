@@ -12,8 +12,6 @@ exports[`OpenPositions component should render correctly 1`] = `
       <div
         class="open-positions__head"
         data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-        data-aos-duration="1000"
       >
         <h2
           class="open-positions__title"
@@ -28,10 +26,6 @@ exports[`OpenPositions component should render correctly 1`] = `
        
       <positionsgrid-stub
         data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-        data-aos-delay="50"
-        data-aos-duration="800"
-        data-aos-offset="200"
       />
     </div>
   </div>
