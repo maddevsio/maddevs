@@ -91,7 +91,7 @@ export default {
     return buildHead({
       title: this.vacancy.metaTitle || this.vacancy.title || '',
       metaTitle: this.vacancy.metaTitle || this.vacancy.title || '',
-      description: this.vacancy.metaDescription || '',
+      description: this.vacancy.metaDescription || this.vacancy.subtitle || '',
       jsonLd: this.vacancy.schemaOrgSnippet,
       image: '/favicon.ico',
       url: this.openGraphUrl,

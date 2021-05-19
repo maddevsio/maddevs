@@ -29,7 +29,9 @@ exports[`PositionForm component should render correctly 1`] = `
             />
           </div>
           .
-        I want to work for you as a desired position.
+        
+          <br />
+           I want to work for you as a desired position.
          
           <!---->
         </label>
