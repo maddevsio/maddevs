@@ -11,9 +11,9 @@
           >
           <input
             ref="searchInput"
+            v-model="value"
             type="text"
             placeholder="Search"
-            v-model="value"
             @input="searchQuery"
           >
         </label>
@@ -118,7 +118,6 @@ export default {
       searchQuery: debounce(event => {
         const { value } = event.target
         if (typeof value !== 'string') return null
-        localStorage.setItem('blog-search-query', value)
         this.setSearchQuery(value)
         this.getPosts(value)
         return value
@@ -132,7 +131,8 @@ export default {
     searchPosts() {
       if (!this.response || !this.response.results) return null
       if (!this.response || !this.response.results || !this.response.results.length) return []
-      return this.response.results
+      const list = [...this.response.results]
+      return list.sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
     },
 
     tags() {
@@ -162,7 +162,9 @@ export default {
   methods: {
     ...mapActions(['setSearchQuery', 'setSearchResponse']),
     async getPosts(query) {
-      this.response = await this.$prismic.api.query(this.$prismic.predicates.fulltext('my.post.title', query))
+      this.response = await this.$prismic.api.query(
+        this.$prismic.predicates.fulltext('my.post.title', query),
+      )
       this.setSearchResponse(this.response)
     },
 
@@ -196,7 +198,7 @@ export default {
       if (this.searchPosts && this.searchPosts.length) {
         if (event.keyCode === 13) {
           if (this.value && this.value.length) {
-            this.$router.push('/blog/search-result/')
+            this.$router.push({ path: '/blog/search-result', query: { searchBy: this.value } })
           } else {
             this.$router.push('/blog/')
           }

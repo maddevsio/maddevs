@@ -65,8 +65,6 @@ import PositionForm from '@/components/Careers/shared/PositionForm'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { buildHead } from '@/data/seo'
 import { employeesBenefits as benefits } from '@/data/benefits'
-
-import featureFlag from '@/featureFlags/featureFlag'
 import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
@@ -83,9 +81,6 @@ export default {
 
   async asyncData({ store, params, error }) {
     const openGraphUrl = `${process.env.domain}/careers/${params.uid}/`
-    const showPage = featureFlag('careersPosition')
-
-    if (!showPage) return error({ statusCode: 404, message: 'Page not found' })
 
     try {
       await store.dispatch('getVacancy', params.uid)
@@ -109,7 +104,7 @@ export default {
     return buildHead({
       title: this.vacancy.metaTitle || this.vacancy.title || '',
       metaTitle: this.vacancy.metaTitle || this.vacancy.title || '',
-      description: this.vacancy.metaDescription || '',
+      description: this.vacancy.metaDescription || this.vacancy.subtitle || '',
       jsonLd: this.vacancy.schemaOrgSnippet,
       image: '/favicon.ico',
       url: this.openGraphUrl,

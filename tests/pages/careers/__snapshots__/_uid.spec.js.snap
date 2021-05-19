@@ -49,24 +49,18 @@ exports[`Careers _uid component should render correctly 1`] = `
            
           <!---->
            
-          <nuxtlink
-            to="[object Object]"
+          <button
+            class="ui-button careers-position__apply-button"
+            style="position: relative; overflow: hidden;"
+            type="button"
           >
-            <button
-              class="ui-button careers-position__apply-button aos-init aos-animate"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              style="position: relative; overflow: hidden;"
-              type="button"
-            >
-              
-          Apply now
-        
-              <div
-                class="wave"
-              />
-            </button>
-          </nuxtlink>
+            
+        Apply now
+      
+            <div
+              class="wave"
+            />
+          </button>
         </div>
       </div>
     </div>
@@ -370,7 +364,9 @@ exports[`Careers _uid component should render correctly 1`] = `
                       />
                     </div>
                     .
-        I want to work for you as a desired position.
+        
+                    <br />
+                     I want to work for you as a desired position.
          
                     <!---->
                   </label>

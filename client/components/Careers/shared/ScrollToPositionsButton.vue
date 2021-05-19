@@ -1,22 +1,24 @@
 <template>
-  <NuxtLink
-    :to="{ hash: '#open-positions' }"
+  <label
     :class="[(show && vacanciesLoaded && vacanciesCount) ? null : 'scroll-to-positions--hidden']"
     class="scroll-to-positions"
   >
-    <UnderlinedButton>See all {{ vacanciesCount }} open positions</UnderlinedButton>
-  </NuxtLink>
+    <UnderlinedButton @click="scrollToElement('#open-positions')">See all {{ vacanciesCount }} open positions</UnderlinedButton>
+  </label>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
 import UnderlinedButton from '@/components/Careers/shared/UnderlinedButton'
+import scrollToElementMixin from '@/mixins/scrollToElementMixin'
 
 export default {
   name: 'ScrollToPositionsButton',
   components: {
     UnderlinedButton,
   },
+
+  mixins: [scrollToElementMixin],
 
   data() {
     return {
@@ -55,6 +57,8 @@ export default {
 @import '@/assets/styles/_vars';
 
 .scroll-to-positions {
+  cursor: pointer;
+  border: 0px solid;
   position: fixed;
   bottom: 0;
   left: 0;

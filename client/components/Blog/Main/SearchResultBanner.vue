@@ -25,7 +25,7 @@ export default {
         return this.getSearchQuery
       }
       if (process.browser) {
-        const query = localStorage.getItem('blog-search-query')
+        const query = this.$route.query.searchBy.replace(/\//g, '')
         if (query && query.length) {
           return query
         }

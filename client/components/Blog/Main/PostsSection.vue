@@ -4,7 +4,7 @@
       <div class="posts-section__list">
         <template v-if="posts && posts.length">
           <section
-            v-for="post in posts"
+            v-for="post in sortedPosts"
             :key="post.id"
             :post="post"
             class="posts-section__list-item"
@@ -54,6 +54,11 @@ export default {
 
   computed: {
     ...mapGetters(['allAuthors']),
+
+    sortedPosts() {
+      const list = [...this.posts]
+      return list.sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
+    },
   },
 
   created() {

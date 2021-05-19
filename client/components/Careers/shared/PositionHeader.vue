@@ -33,16 +33,15 @@
         >
           <PositionTags :tags="vacancy.tags" />
         </div>
-        <NuxtLink :to="{ hash: '#careers-position-form' }">
-          <UIButton
-            data-aos="fade-up"
-            data-aos-duration="600"
-            type="button"
-            class="careers-position__apply-button"
-          >
-            Apply now
-          </UIButton>
-        </NuxtLink>
+        <UIButton
+          data-aos="fade-up"
+          data-aos-duration="600"
+          type="button"
+          class="careers-position__apply-button"
+          @click="scrollToElement('#careers-position-form')"
+        >
+          Apply now
+        </UIButton>
       </div>
     </div>
   </div>
@@ -53,6 +52,7 @@ import { mapGetters } from 'vuex'
 import PositionLabels from '@/components/Careers/shared/PositionLabels'
 import PositionTags from '@/components/Careers/shared/PositionTags'
 import UIButton from '@/components/shared/UIButton'
+import scrollToElementMixin from '@/mixins/scrollToElementMixin'
 
 export default {
   name: 'PositionHeader',
@@ -61,6 +61,8 @@ export default {
     PositionTags,
     UIButton,
   },
+
+  mixins: [scrollToElementMixin],
 
   computed: {
     ...mapGetters(['vacancy']),
