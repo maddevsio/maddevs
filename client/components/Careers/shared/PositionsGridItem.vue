@@ -144,11 +144,6 @@ export default {
     @include font('Poppins', 32px, 700);
     letter-spacing: -0.03em;
     line-height: 35px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   &-divider {
     width: 75px;
