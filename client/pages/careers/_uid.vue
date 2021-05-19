@@ -49,8 +49,6 @@ import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { buildHead } from '@/data/seo'
 import { employeesBenefits as benefits } from '@/data/benefits'
 
-import featureFlag from '@/featureFlags/featureFlag'
-
 export default {
   name: 'CareersPosition',
   components: {
@@ -65,9 +63,6 @@ export default {
 
   async asyncData({ store, params, error }) {
     const openGraphUrl = `${process.env.domain}/careers/${params.uid}/`
-    const showPage = featureFlag('careersPosition')
-
-    if (!showPage) return error({ statusCode: 404, message: 'Page not found' })
 
     try {
       await store.dispatch('getVacancy', params.uid)
