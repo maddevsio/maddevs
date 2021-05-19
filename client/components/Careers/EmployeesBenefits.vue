@@ -85,10 +85,6 @@ export default {
     @media screen and (max-width: 740px) {
       grid-template-columns: repeat(2, 1fr);
     }
-
-    @media screen and (max-width: 360px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
   }
 
   &_title {
@@ -140,6 +136,12 @@ export default {
 
   @media screen and (max-width: 1024px) {
     padding: 15px;
+  }
+
+  @media screen and (max-width: 740px) {
+    &__title br {
+      display: none;
+    }
   }
 }
 
