@@ -15,7 +15,7 @@
             class="position-form__input position-form__input-name"
             @input="$v.name.$touch"
           />.
-          I want to work for you as a desired position.
+          <br> I want to work for you as a desired position.
           <!-- Erros -->
           <div v-if="$v.name.$dirty">
             <span
@@ -292,6 +292,12 @@ export default {
   padding-bottom: 45px;
   border-radius: 8px;
   overflow: hidden;
+  /deep/ br {
+    display: none;
+    @media screen and (max-width: 400px) {
+      display: block;
+    }
+  }
   /deep/ .ui-radio-buttons {
     display: flex;
     flex-flow: row wrap;
