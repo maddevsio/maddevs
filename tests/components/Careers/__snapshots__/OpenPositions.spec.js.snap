@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpenPositions component should render correctly 1`] = `
+<div>
+  <div
+    class="open-positions"
+    id="open-positions"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="open-positions__head"
+      >
+        <h2
+          class="open-positions__title"
+        >
+          
+        Open positions
+      
+        </h2>
+         
+        <positionsfilter-stub />
+      </div>
+       
+      <positionsgrid-stub />
+    </div>
+  </div>
+</div>
+`;

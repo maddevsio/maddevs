@@ -4,6 +4,12 @@ const initLazyLoadMixin = {
   mounted() {
     initializeLazyLoad()
   },
+
+  methods: {
+    resetLazyLoad() {
+      initializeLazyLoad()
+    },
+  },
 }
 
 export default initLazyLoadMixin

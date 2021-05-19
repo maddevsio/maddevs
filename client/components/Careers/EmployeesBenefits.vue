@@ -39,10 +39,19 @@ export default {
       benefits,
       slides,
       swiperOptions: {
+        speed: 750,
         slidesPerView: 'auto',
         spaceBetween: 0,
         freeMode: true,
         loop: false,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+
+        autoplay: {
+          delay: 2500,
+        },
       },
     }
   },
@@ -54,7 +63,6 @@ export default {
 
 .employees-benefits {
   padding-top: 100px;
-  padding-bottom: 61px;
 
   &_grid-container,
   &_benefits-cards {
@@ -76,10 +84,6 @@ export default {
 
     @media screen and (max-width: 740px) {
       grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media screen and (max-width: 360px) {
-      grid-template-columns: repeat(1, 1fr);
     }
   }
 
@@ -113,7 +117,6 @@ export default {
 
   @media screen and (max-width: 1024px) {
     padding-top: 62px;
-    padding-bottom: 57px;
 
     &_title {
       margin-bottom: 23px;
@@ -125,15 +128,20 @@ export default {
 
   @media screen and (max-width: 375px) {
     padding-top: 43px;
-    padding-bottom: 55px;
   }
 }
 
-/deep/ .benefit-card__item {
+/deep/ .benefit-card {
   padding: 30px 27px;
 
   @media screen and (max-width: 1024px) {
     padding: 15px;
+  }
+
+  @media screen and (max-width: 740px) {
+    &__title br {
+      display: none;
+    }
   }
 }
 

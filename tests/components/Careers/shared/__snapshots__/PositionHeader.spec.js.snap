@@ -31,22 +31,18 @@ exports[`PositionHeader component should render correctly 1`] = `
          
         <!---->
          
-        <nuxtlink
-          to="#careers-position-form"
+        <button
+          class="ui-button careers-position__apply-button"
+          style="position: relative; overflow: hidden;"
+          type="button"
         >
-          <button
-            class="ui-button careers-position__apply-button"
-            style="position: relative; overflow: hidden;"
-            type="button"
-          >
-            
-          Apply now
-        
-            <div
-              class="wave"
-            />
-          </button>
-        </nuxtlink>
+          
+        Apply now
+      
+          <div
+            class="wave"
+          />
+        </button>
       </div>
     </div>
   </div>

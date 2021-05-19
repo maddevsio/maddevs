@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index page should render correctly 1`] = `
+<div>
+  <main
+    class="main"
+  >
+    <titledesc-stub />
+     
+    <caseslist-stub />
+     
+    <customers-stub
+      iconbackground="transparent"
+      light="true"
+    />
+     
+    <builddevteam-stub />
+  </main>
+</div>
+`;

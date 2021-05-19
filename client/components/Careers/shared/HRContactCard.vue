@@ -9,12 +9,12 @@
     </div>
     <div class="hr-contact__info">
       <p class="hr-contact__title">
-        Hi, I'm Diana,
+        Hi, I'm Diana.
       </p>
       <p class="hr-contact__description">
         Applying for jobs should be easy.
         I am here to simplify the hiring process and set you up for success.
-        Feel free to telegram me
+        Feel free to send me a message on Telegram.
         <a
           href="https://t.me/DianaHRDigital"
           target="_blank"
@@ -57,6 +57,7 @@ export default {
       display: block;
       width: 100%;
       height: 100%;
+      border-radius: 20px;
       object-fit: cover;
     }
   }

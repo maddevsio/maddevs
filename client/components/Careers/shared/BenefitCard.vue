@@ -1,15 +1,15 @@
 <template>
-  <div class="benefit-card__item">
-    <div class="benefit-card__item-icon-wrapper">
+  <div class="benefit-card">
+    <div class="benefit-card__icon-wrapper">
       <img
         :data-src="$getMediaFromS3(`/images/Careers/svg/${icon.name}.svg`)"
         :width="icon.width"
         :height="icon.height"
-        class="benefit-card__item-icon media_lazy"
+        class="benefit-card__icon media_lazy"
       >
     </div>
     <p
-      class="benefit-card__item-title"
+      class="benefit-card__title"
       v-html="title"
     >
       {{ title }}
@@ -38,21 +38,19 @@ export default {
 @import '@/assets/styles/_vars.scss';
 
 .benefit-card {
-  &__item {
-    padding: 16px;
-    background-color: $bgcolor--silver;
-    border-radius: 4px;
-    &-icon {
-      &-wrapper {
-        height: 45px;
-      }
-      display: block;
+  padding: 16px;
+  background-color: $bgcolor--silver;
+  border-radius: 4px;
+  &__icon {
+    display: block;
+    &-wrapper {
+      height: 45px;
     }
-    &-title {
-      line-height: 22px;
-      letter-spacing: -0.013em;
-      color: $text-color--black-oil;
-    }
+  }
+  &__title {
+    line-height: 22px;
+    letter-spacing: -0.013em;
+    color: $text-color--black-oil;
   }
 }
 </style>

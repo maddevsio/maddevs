@@ -5,5 +5,4 @@
  */
 export const config = {
   careersPosition: ['development', 'staging'],
-  careersMain: ['development', 'staging'],
 }

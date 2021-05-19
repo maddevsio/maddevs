@@ -39,11 +39,11 @@ exports[`Banner component should render correctly 1`] = `
       class="banner_description"
     >
       
-    Without empty words, here at Mad Devs we partner with projects where 
+    Here at Mad Devs, we partner with projects where 
       <span>
         our teams thrive
       </span>
-      . Innovating solutions, carrying ownership, delivering sustainable value and celebrating successes — make a happy workplace, where things get done.
+      . Innovating solutions, carrying ownership, delivering sustainable value, and celebrating successes—these make a happy workplace where things get done.
   
     </p>
   </div>

@@ -70,6 +70,7 @@ export default {
     overflow: hidden;
     text-overflow: ellipsis;
     &::placeholder {
+      opacity: 1;
       color: $text-color--grey;
     }
   }
