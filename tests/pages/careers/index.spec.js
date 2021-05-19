@@ -23,6 +23,7 @@ const mocks = {
   $lazyLoad: {
     init: jest.fn(),
   },
+  featureFlag: jest.fn(),
 }
 
 const stubs = ['Main']

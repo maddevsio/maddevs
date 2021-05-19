@@ -5,4 +5,5 @@
  */
 export const config = {
   careersPosition: ['development', 'staging'],
+  careersPageAnimations: ['development', 'staging'],
 }

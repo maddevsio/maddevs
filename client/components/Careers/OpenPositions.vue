@@ -4,13 +4,18 @@
     class="open-positions"
   >
     <div class="container">
-      <div class="open-positions__head">
+      <div
+        class="open-positions__head"
+        data-aos="fade-up"
+      >
         <h2 class="open-positions__title">
           Open positions
         </h2>
         <PositionsFilter />
       </div>
-      <PositionsGrid />
+      <PositionsGrid
+        data-aos="fade-up"
+      />
     </div>
   </div>
 </template>
