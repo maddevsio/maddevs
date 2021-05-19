@@ -8,7 +8,7 @@
     </p>
     <div class="projects-countries_img-wrap">
       <img
-        :data-src="$getMediaFromS3('/images/Careers/svg/сountries.svg')"
+        :data-src="$getMediaFromS3('/images/Careers/svg/map.svg')"
         alt="lobal projects in 20+ countries"
         width="1240"
         height="558"
