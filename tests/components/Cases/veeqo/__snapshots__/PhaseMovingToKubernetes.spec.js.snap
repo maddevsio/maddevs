@@ -48,7 +48,13 @@ exports[`PhaseMovingToKubernetes component should render correctly 1`] = `
   
       </blockquote>
        
-      <!---->
+      <p
+        class="case_quote-author"
+      >
+        
+    Andrew Sapozhnikov, CIO at Mad Devs
+  
+      </p>
     </div>
      
     <p

@@ -5,10 +5,13 @@ const mocks = {
   $getMediaFromS3: () => 'img.jpg',
 }
 
+const stubs = ['PhaseCuttingTheCosts']
+
 describe('Main component', () => {
   it('should render correctly', () => {
     const { container } = render(Main, {
       mocks,
+      stubs,
     })
 
     expect(container).toMatchSnapshot()
