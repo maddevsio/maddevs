@@ -21,14 +21,14 @@ exports[`TheLastPostSection component should render correctly 1`] = `
               class="featured-post__info"
               to="/blog/software-architecture-design/"
             >
-              <h1
+              <h2
                 class="featured-post__title"
                 title="text"
               >
                 
           text
         
-              </h1>
+              </h2>
                
               <p
                 class="featured-post__paragraph"

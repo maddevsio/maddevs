@@ -13,6 +13,8 @@ $bgcolor--grey-pale: #c4c4c4;
 $bgcolor--grey-dark: #f4f5f7;
 $bgcolor--grey-extra-dark: #e7e7e7;
 $bgcolor--red: #ec1c24;
+$bgcolor--blue: #5159F6;
+$bgcolor--green: #0A8F37;
 $bgcolor--project-white: #f8f7f6;
 $bgcolor--project-indigo: #56448E;
 $bgcolor--project-blue: #0E1B27;
@@ -40,9 +42,11 @@ $text-color--quote-box: #404143;
 $text-color--black-lighter: #111213;
 $text-color--grey: #96969c;
 $text-color--grey-light: #f2f2f2;
-$text-color--grey-cases: #cfcfd0;
+$text-color--grey-opacity-20-percent: #cfcfd0;
 $text-color--grey-pale: #707072;
 $text-color--red: #ec1c24;
+$text-color--blue: #5159F6;
+$text-color--green: #0A8F37;
 $text-color--red-opacity: rgba(236, 28, 36, 0.5);
 $text-color--grey-form-placeholder: #6E6E73;
 $text-color--grey-opacity-40-percent: #a0a0a1;
@@ -57,16 +61,21 @@ $text-stroke--black: 1.5px #000;
 
 // ---------- Border ------------ //
 $border-color--grey: #96969c;
+$border-color--grey-pale: #404143;
+$border-color--grey-selected: #707072;
 $border-color--black: #111213;
 $border-color--white: #fff;
 $border-color--grey-light: #e8e8e8;
 $border-color--red: #ec1c24;
+$border-color--blue: #5159F6;
+$border-color--green: #0A8F37;
 $border-color--red-opacity: rgba(236, 28, 36, 0.5);
 $border-color--grey-dark-transparent: rgba(150, 150, 156, 0.2);
 $border-color--grey-light: #f2f2f2;
 $border-color--grey-dark: #3b3b3b;
 $border-color--grey-form: #333333;
 $border-color--grey-cases: #d7dde1;
+$border-color--grey-careers-page: #c4c4c4;
 $border-color--grey-20-percent: #cfcfd0;
 $border-color--silver: #f4f4f4;
 $border-color--grey-02-opacity: rgba(160, 160, 161, 0.2);
@@ -86,7 +95,8 @@ $black02: rgba(0, 0, 0, 0.2);
 $white-02: rgba(255, 255, 255, 0.2);
 
 // ---------- Input ------------ //
-$input-bgcolor--grey-dark: rgba(150, 150, 156, 0.2);
+$input-bgcolor--grey-dark: #121212;
+$input-bgcolor--grey-light: rgba(150, 150, 156, 0.2);
 $input-invalid--bg: rgba(236, 28, 36, 0.2);
 $input-placeholder-text--grey-dark: rgba(150, 150, 156, 0.5);
 $input-checkmark-bg: #1e1e1f;
@@ -120,7 +130,7 @@ $header-grey-border-color: rgba(164, 168, 180, 0.4);
 
 // ---------- Modal ------------ //
 $modal-overlay-bg-color: #0d0d0dc7;
-$modal-bg-color: #251E1E;
+$modal-bg-color: #121212;
 $modal-entry-field-bg: #403838;
 
 // ---------- Other ------------ //

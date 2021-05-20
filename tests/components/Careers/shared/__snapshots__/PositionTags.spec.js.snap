@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PositionTags component should render correctly 1`] = `
+<div>
+  <div
+    class="position-tags"
+  >
+    <span
+      class="position-tags__item position-tags__item--point-divider"
+    >
+      
+    DevOps
+  
+    </span>
+    <span
+      class="position-tags__item position-tags__item--point-divider"
+    >
+      
+    Job
+  
+    </span>
+  </div>
+</div>
+`;

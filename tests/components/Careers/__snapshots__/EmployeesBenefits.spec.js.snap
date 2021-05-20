@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmployeesBenefits component should render correctly 1`] = `
+<div>
+  <div
+    class="employees-benefits"
+  >
+    <div
+      class="employees-benefits_grid-container container"
+    >
+      <h2
+        class="employees-benefits_title"
+        data-aos="fade-up"
+      >
+        
+      Employees benefits
+    
+      </h2>
+       
+      <div
+        class="employees-benefits_benefits-cards"
+        data-aos="fade-up"
+      >
+        <benefitcard-stub
+          icon="[object Object]"
+          title="Flexible working <br> hours"
+        />
+        <benefitcard-stub
+          icon="[object Object]"
+          title="Onsite business <br> trips"
+        />
+        <benefitcard-stub
+          icon="[object Object]"
+          title="English <br> lessons"
+        />
+        <benefitcard-stub
+          icon="[object Object]"
+          title="Training <br> budget"
+        />
+        <benefitcard-stub
+          icon="[object Object]"
+          title="Remote-first <br> culture"
+        />
+        <benefitcard-stub
+          icon="[object Object]"
+          title="Long-term <br> projects"
+        />
+        <benefitcard-stub
+          icon="[object Object]"
+          title="Paid <br> conferences"
+        />
+        <benefitcard-stub
+          icon="[object Object]"
+          title="Team <br> parties"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="employees-benefits_slider-wrap"
+    >
+      <uislider-stub
+        options="[object Object]"
+        slides="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+      />
+    </div>
+  </div>
+</div>
+`;

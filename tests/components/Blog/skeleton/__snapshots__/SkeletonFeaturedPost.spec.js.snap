@@ -11,7 +11,7 @@ exports[`skeleton post widget component should render correctly 1`] = `
       <div
         class="col-12 col-lg-6 featured-post__main"
       >
-        <h1
+        <h2
           class="featured-post__title background-grey animated dark"
         />
          

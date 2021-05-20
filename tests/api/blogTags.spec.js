@@ -1,9 +1,22 @@
 import 'regenerator-runtime'
 import * as api from '@/api/blogTags'
 
+const results = [{
+  data: {
+    post_author: {
+      id: '1',
+    },
+  },
+}, {
+  data: {
+    post_author: {
+    },
+  },
+}]
+
 describe('BlogTags api methods', () => {
   const error = new Error('error')
-  const success = jest.fn(() => Promise.resolve({ data: 'data', results: 'results' }))
+  const success = jest.fn(() => Promise.resolve({ data: 'data', results }))
   const failure = jest.fn(() => Promise.reject(error))
 
   const prismic = {
@@ -28,7 +41,8 @@ describe('BlogTags api methods', () => {
     const payload = 'payload'
     const data = await api.getPostsByTag(prismic, payload)
 
-    expect(data).toBe('results')
+    expect(data).toHaveLength(1)
+    expect(data[0].data?.post_author?.id).toBe('1')
   })
 
   it('getPostsByTag failure', async () => {

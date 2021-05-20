@@ -34,6 +34,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
           />
            
           <img
+            alt="Arrow"
             class="quickProjectStart__arrow-icon img_lazy"
             data-src="[object Object]"
           />
@@ -74,6 +75,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
           />
            
           <img
+            alt="Arrow"
             class="quickProjectStart__arrow-icon img_lazy"
             data-src="[object Object]"
           />
@@ -114,6 +116,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
           />
            
           <img
+            alt="Arrow"
             class="quickProjectStart__arrow-icon img_lazy"
             data-src="[object Object]"
           />
@@ -154,6 +157,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
           />
            
           <img
+            alt="Arrow"
             class="quickProjectStart__arrow-icon img_lazy"
             data-src="[object Object]"
           />

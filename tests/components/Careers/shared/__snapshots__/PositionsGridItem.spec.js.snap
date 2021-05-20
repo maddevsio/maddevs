@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PositionsGridItem component should render correctly 1`] = `
+<div>
+  <li
+    class="positions-grid__item"
+  >
+    <nuxtlink
+      class="positions-grid__item-link"
+      to="/careers//"
+    >
+      <div
+        class="positions-grid__item-labels"
+      >
+        <!---->
+      </div>
+       
+      <h3
+        class="positions-grid__item-title"
+        title=""
+      >
+        
+      
+    
+      </h3>
+       
+      <hr
+        class="positions-grid__item-divider"
+      />
+       
+      <p
+        class="positions-grid__item-subtitle"
+        title=""
+      >
+        
+      
+    
+      </p>
+       
+      <!---->
+    </nuxtlink>
+  </li>
+</div>
+`;

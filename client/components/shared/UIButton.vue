@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
+@import '@/assets/styles/_vars.scss';
 
 .ui-button {
   @include font('Inter', 16px, 700);

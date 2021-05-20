@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BenefitCard is a Vue instance 1`] = `
+<div>
+  <div
+    class="benefit-card"
+  >
+    <div
+      class="benefit-card__icon-wrapper"
+    >
+      <img
+        class="benefit-card__icon media_lazy"
+        data-src="img.jpg"
+        height="32"
+        width="28"
+      />
+    </div>
+     
+    <p
+      class="benefit-card__title"
+    >
+      Onsite business trips
+    </p>
+  </div>
+</div>
+`;

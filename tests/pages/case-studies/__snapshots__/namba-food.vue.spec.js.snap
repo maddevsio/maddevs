@@ -67,7 +67,7 @@ exports[`NambaFood _uid component should render correctly 1`] = `
         </div>
          
         <img
-          alt=""
+          alt="Nambafood Logo"
           class="case_header-logo media_lazy case_nambafood-logo"
           data-src="img.jpg"
           height="82"

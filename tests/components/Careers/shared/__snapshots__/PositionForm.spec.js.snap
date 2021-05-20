@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PositionForm component should render correctly 1`] = `
+<div>
+  <div>
+    <form
+      class="position-form"
+    >
+      <div
+        class="position-form__message"
+      >
+        <label
+          class="position-form__field"
+        >
+          
+        Hello, my name is
+        
+          <div
+            class="career-form-input position-form__input position-form__input-name"
+            title="Your Name"
+          >
+            <pre>
+              Your Name
+            </pre>
+             
+            <input
+              placeholder="Your Name"
+              type="text"
+            />
+          </div>
+          .
+        
+          <br />
+           I want to work for you as a desired position.
+         
+          <!---->
+        </label>
+         
+        <p
+          class="position-form__field"
+        >
+          <div
+            class="ui-radio-buttons position-form__positions-list"
+          >
+            <div
+              class="ui-radio-buttons_item"
+            >
+              <div
+                class="ui-radio-buttons_item-circle"
+              />
+               
+              <div
+                class="ui-radio-buttons_item-label"
+              >
+                
+      Senior,
+    
+              </div>
+            </div>
+            <div
+              class="ui-radio-buttons_item"
+            >
+              <div
+                class="ui-radio-buttons_item-circle"
+              />
+               
+              <div
+                class="ui-radio-buttons_item-label"
+              >
+                
+      Middle,
+    
+              </div>
+            </div>
+            <div
+              class="ui-radio-buttons_item"
+            >
+              <div
+                class="ui-radio-buttons_item-circle"
+              />
+               
+              <div
+                class="ui-radio-buttons_item-label"
+              >
+                
+      Junior,
+    
+              </div>
+            </div>
+            <div
+              class="ui-radio-buttons_item"
+            >
+              <div
+                class="ui-radio-buttons_item-circle"
+              />
+               
+              <div
+                class="ui-radio-buttons_item-label"
+              >
+                
+      Intern
+    
+              </div>
+            </div>
+          </div>
+           
+          <span>
+            <!---->
+          </span>
+        </p>
+         
+        <label
+          class="position-form__field"
+        >
+          
+        Please reply to
+        
+          <div
+            class="career-form-input position-form__input position-form__input-email"
+            title="your@mail.com"
+          >
+            <pre>
+              your@mail.com
+            </pre>
+             
+            <input
+              placeholder="your@mail.com"
+              type="email"
+            />
+          </div>
+           
+          <!---->
+        </label>
+         
+        <p
+          class="position-form__field position-form__skills"
+        >
+          
+        To get more information on my skills, please
+        
+          <ul
+            class="position-form__skills-list"
+          >
+            <li>
+              <label>
+                
+              check out my
+              
+                <div
+                  class="career-form-input position-form__input position-form__input-linkedin"
+                  title="LinkedIn profile"
+                >
+                  <pre>
+                    LinkedIn profile
+                  </pre>
+                   
+                  <input
+                    placeholder="LinkedIn profile"
+                    type="text"
+                  />
+                </div>
+              </label>
+              
+            OR
+          
+            </li>
+             
+            <li>
+              <label>
+                <div
+                  class="file-input"
+                >
+                  <input
+                    accept=".pdf,.cv,.doc,.odt,.docx,.txt"
+                    class="file-input__uploader"
+                    data-testid="test-file"
+                    id="file"
+                    name="file"
+                    type="file"
+                  />
+                   
+                  <label
+                    class="file-input__cv file-input__cv--attachable"
+                    data-testid="test-file-label"
+                    for="file"
+                  >
+                    
+    find attached my CV
+  
+                  </label>
+                </div>
+                 
+                <!---->
+              </label>
+            </li>
+          </ul>
+        </p>
+      </div>
+       
+      <button
+        class="ui-button ui-button--disabled"
+        type="submit"
+      >
+        
+      I want to work for Mad Devs!
+    
+      </button>
+    </form>
+     
+    <transition-stub
+      name="fade"
+    >
+      <!---->
+    </transition-stub>
+  </div>
+</div>
+`;

@@ -1,11 +1,11 @@
 import 'regenerator-runtime'
 import { actions } from '@/store/modules/leads'
 
-import { createNewLead } from '@/api/leads'
+import { sendLead } from '@/api/leads'
 
 jest.mock('@/api/leads', () => (
   {
-    createNewLead: jest.fn(() => 'test'),
+    sendLead: jest.fn(() => 'test'),
   }
 ))
 
@@ -15,8 +15,8 @@ actions.$axios = {
 
 describe('Leads module actions', () => {
   it('should createNewLead action correctly called and returned response', async () => {
-    const response = await actions.createNewLead()
+    const response = await actions.sendLead()
     expect(response).toBe('test')
-    expect(createNewLead).toHaveBeenCalledTimes(1)
+    expect(sendLead).toHaveBeenCalledTimes(1)
   })
 })

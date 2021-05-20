@@ -16,7 +16,7 @@ module.exports = {
     // process `*.vue` files with `vue-jest`
     '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest',
     // process `*.svg` files with `imgTransform.js`
-    '\\.(svg|png|webp|jpg)$': '<rootDir>/jest/imgTransformer.js',
+    '\\.(svg|png|webp|jpg|jpeg)$': '<rootDir>/jest/imgTransformer.js',
   },
   transformIgnorePatterns: ['/node_modules/(?!vue-lottie)'],
   snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
@@ -32,10 +32,10 @@ module.exports = {
   setupFiles: ['jest-canvas-mock'],
   coverageThreshold: {
     global: {
-      branches: 75,
-      statements: 91,
-      functions: 87,
-      lines: 91,
+      branches: 69,
+      statements: 86,
+      functions: 81,
+      lines: 87,
     },
   },
 }

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main component should render correctly 1`] = `
+<div>
+  <div
+    class="careers"
+  >
+    <banner-stub />
+     
+    <projectscountries-stub />
+     
+    <benefits-stub />
+     
+    <keymetrics-stub />
+     
+    <div
+      class="careers_white-section"
+    >
+      <employeesbenefits-stub />
+       
+      <openpositions-stub />
+       
+      <ctabanner-stub />
+    </div>
+     
+    <scrolltopositionsbutton-stub />
+  </div>
+</div>
+`;

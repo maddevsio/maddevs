@@ -1,12 +1,12 @@
 const express = require('express')
 
 // controllers
-const { index: sendEmail } = require('../controllers/EmailsController')
-const { createLead } = require('../controllers/LeadsController')
+const { create: createLead } = require('../controllers/LeadsController')
+const { index: sendCareerEmail } = require('../controllers/CareersController')
 
 const router = express.Router()
 
-router.post('/send-email', sendEmail)
 router.post('/leads', createLead)
+router.post('/careers', sendCareerEmail)
 
 module.exports = router
