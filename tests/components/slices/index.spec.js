@@ -2,6 +2,8 @@ import { shallowMount } from '@vue/test-utils'
 import { render } from '@testing-library/vue'
 import SlicesBlock from '@/components/slices'
 
+const toOneLine = text => text.replace(/\n/g, '').replace(/>(.*?)</g, '><').trim()
+
 describe('slice block component', () => {
   const slices = [
     {
@@ -163,7 +165,7 @@ describe('Post component copyAnchorLink', () => {
     },
   })
 
-  const html = tag => `
+  const headerHtml = tag => `
         <div id="blog-post-title" class="anchor_title">
           <${tag} class="anchor_title-h">Blog post title</${tag}>
           <div class="anchor_copy-link">
@@ -174,34 +176,103 @@ describe('Post component copyAnchorLink', () => {
           </div>
         </div>
       `
+  const imageHtml = () => '<p class=" block-img"><img src="" alt="" copyright=""></p>'
 
   it('if type not heading will return null', () => {
     const result = wrapper.vm.htmlSerializer('div', null, null, ['Blog post title'])
     expect(result).toBeNull()
   })
 
+  it('if type heading1 will return html with h1 tag', () => {
+    const result = wrapper.vm.htmlSerializer('heading1', null, null, ['Blog post title'])
+    expect(result).toBe(headerHtml('h1'))
+  })
+
   it('if type heading2 will return html with h2 tag', () => {
     const result = wrapper.vm.htmlSerializer('heading2', null, null, ['Blog post title'])
-    expect(result).toBe(html('h2'))
+    expect(result).toBe(headerHtml('h2'))
   })
 
   it('if type heading3 will return html with h3 tag', () => {
     const result = wrapper.vm.htmlSerializer('heading3', null, null, ['Blog post title'])
-    expect(result).toBe(html('h3'))
+    expect(result).toBe(headerHtml('h3'))
   })
 
   it('if type heading4 will return html with h4 tag', () => {
     const result = wrapper.vm.htmlSerializer('heading4', null, null, ['Blog post title'])
-    expect(result).toBe(html('h4'))
+    expect(result).toBe(headerHtml('h4'))
   })
 
   it('if type heading5 will return html with h5 tag', () => {
     const result = wrapper.vm.htmlSerializer('heading5', null, null, ['Blog post title'])
-    expect(result).toBe(html('h5'))
+    expect(result).toBe(headerHtml('h5'))
   })
 
   it('if type heading6 will return html with h6 tag', () => {
     const result = wrapper.vm.htmlSerializer('heading6', null, null, ['Blog post title'])
-    expect(result).toBe(html('h6'))
+    expect(result).toBe(headerHtml('h6'))
+  })
+
+  it('if type paragraph will return <p>Blog post title</p>', () => {
+    const result = wrapper.vm.htmlSerializer('paragraph', null, null, ['Blog post title'])
+    expect(result).toBe('<p>Blog post title</p>')
+  })
+
+  it('if type preformatted will return <pre>Blog post title</pre>', () => {
+    const result = wrapper.vm.htmlSerializer('preformatted', null, null, ['Blog post title'])
+    expect(result).toBe('<pre>Blog post title</pre>')
+  })
+
+  it('if type strong will return <strong>Blog post title</strong>', () => {
+    const result = wrapper.vm.htmlSerializer('strong', null, null, ['Blog post title'])
+    expect(result).toBe('<strong>Blog post title</strong>')
+  })
+
+  it('if type em will return <em>Blog post title</em>', () => {
+    const result = wrapper.vm.htmlSerializer('em', null, null, ['Blog post title'])
+    expect(result).toBe('<em>Blog post title</em>')
+  })
+
+  it('if type list-item will return <li>Blog post title</li>', () => {
+    const result = wrapper.vm.htmlSerializer('list-item', null, null, ['Blog post title'])
+    expect(result).toBe('<li>Blog post title</li>')
+  })
+
+  it('if type o-list-item will return <li>Blog post title</li>', () => {
+    const result = wrapper.vm.htmlSerializer('o-list-item', null, null, ['Blog post title'])
+    expect(result).toBe('<li>Blog post title</li>')
+  })
+
+  it('if type group-list-item will return <ul>Blog post title</ul>', () => {
+    const result = wrapper.vm.htmlSerializer('group-list-item', null, null, ['Blog post title'])
+    expect(result).toBe('<ul>Blog post title</ul>')
+  })
+
+  it('if type group-o-list-item will return <ol>Blog post title</ol>', () => {
+    const result = wrapper.vm.htmlSerializer('group-o-list-item', null, null, ['Blog post title'])
+    expect(result).toBe('<ol>Blog post title</ol>')
+  })
+
+  it('if type span and content null will return empty string', () => {
+    const result = wrapper.vm.htmlSerializer('span', null, null, ['Blog post title'])
+    expect(result).toBe('')
+  })
+
+  it('if type span will return <ol>Blog post title</ol>', () => {
+    const result = wrapper.vm.htmlSerializer('span', null, 'Blog post \n title', ['Blog post title'])
+    expect(result).toBe('Blog post <br /> title')
+  })
+
+  it('if type image will return <ol>Blog post title</ol>', () => {
+    const element = {
+      linkTo: {
+        target: '_blank',
+      },
+      label: '',
+      url: '',
+      alt: '',
+    }
+    const result = wrapper.vm.htmlSerializer('image', element, null, ['Blog post title'])
+    expect(toOneLine(result)).toEqual(toOneLine(imageHtml()))
   })
 })
