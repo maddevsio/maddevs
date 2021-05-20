@@ -145,6 +145,7 @@ export default {
     line-height: 130%;
     letter-spacing: -0.02px;
     color: $text-color--black-oil;
+    margin: 6px 0;
   }
   &__position {
     font-size: 15px;

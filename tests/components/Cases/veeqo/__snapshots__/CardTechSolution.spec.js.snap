@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardTechSolution component should render correctly 1`] = `
+<div>
+  <div
+    class="case_card card-content background-color-silver"
+  >
+    <img
+      alt="Adding PgBouncers to reduce the load on the database."
+      class="card-content_icon img_lazy"
+      data-src="img.jpg"
+      height="51.94"
+      width="51.94"
+    />
+     
+    <p
+      class="case_paragraph"
+    >
+      
+    Adding PgBouncers to reduce the load on the database.
+  
+    </p>
+  </div>
+</div>
+`;

@@ -105,18 +105,25 @@ exports[`Main component should render correctly 1`] = `
   
         </p>
          
-        <blockquote
-          class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+        <div
+          class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
         >
           <img
             alt="blockquote"
-            class="case_blockquote-mark img_lazy"
+            class="case_mark img_lazy"
             data-src="[object Object]"
           />
            
+          <blockquote
+            class="case_blockquote"
+          >
+            
     The app-based system allows users to find a route, select the time, book a seat and pay for the ride online.
   
-        </blockquote>
+          </blockquote>
+           
+          <!---->
+        </div>
       </section>
        
       <section

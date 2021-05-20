@@ -79,9 +79,7 @@ exports[`TagPostsSection component should render correctly 1`] = `
                   class="post-card__paragraph"
                   data-testid="test-post-card"
                 >
-                  
-        When I started learning Vue, I was pleasantly surprised by this framework. It turned out to be very simple and easy to learn. Its API had enough...
-      
+                  When I started learning Vue, I was pleasantly surprised by this framework. It turned out to be very simple and easy to learn. Its API had enough...
                 </p>
               </nuxtlink-stub>
                
@@ -167,9 +165,7 @@ exports[`TagPostsSection component should render correctly 1`] = `
                   class="post-card__paragraph"
                   data-testid="test-post-card"
                 >
-                  
-        When creating a new React project, I faced the same problems every time. I need to build it manually because \`create-react-app\` do not provide...
-      
+                  When creating a new React project, I faced the same problems every time. I need to build it manually because 
                 </p>
               </nuxtlink-stub>
                
@@ -255,9 +251,7 @@ exports[`TagPostsSection component should render correctly 1`] = `
                   class="post-card__paragraph"
                   data-testid="test-post-card"
                 >
-                  
-        When starting a project in Vue, I constantly faced the fact that I had to set up the store again and again, add the basic structure of styles, look...
-      
+                  When starting a project in Vue, I constantly faced the fact that I had to set up the store again and again, add the basic structure of styles, look...
                 </p>
               </nuxtlink-stub>
                

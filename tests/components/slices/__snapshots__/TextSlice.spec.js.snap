@@ -9,7 +9,7 @@ exports[`text slice component is a Vue instance 1`] = `
       class="textslice"
       field="[object Object]"
       html-serializer="function htmlSerializer() {
-          return null;
+          return '';
         }"
     />
   </div>

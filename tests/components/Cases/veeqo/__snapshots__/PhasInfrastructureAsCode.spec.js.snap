@@ -55,18 +55,25 @@ exports[`PhasInfrastructureAsCode component should render correctly 1`] = `
       </li>
     </ol>
      
-    <blockquote
-      class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+    <div
+      class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
     >
       <img
         alt="blockquote"
-        class="case_blockquote-mark img_lazy"
+        class="case_mark img_lazy"
         data-src="[object Object]"
       />
        
+      <blockquote
+        class="case_blockquote"
+      >
+        
     We are proud of our work with Veeqo and eager to share our successes. As our partnership continues, we’re constantly looking for new ways to meet Veeqo’s business needs and make its users’ experience better.
   
-    </blockquote>
+      </blockquote>
+       
+      <!---->
+    </div>
   </div>
 </div>
 `;

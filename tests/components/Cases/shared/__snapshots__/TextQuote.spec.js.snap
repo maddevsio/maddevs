@@ -1,16 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextQuote component should render correctly 1`] = `
+exports[`TextQuote should render correctly 1`] = `
 <div>
-  <blockquote
-    class="case_blockquote"
+  <div
+    class="case_quote-wrap"
   >
     <img
       alt="blockquote"
-      class="case_blockquote-mark img_lazy"
+      class="case_mark img_lazy"
       data-src="[object Object]"
     />
-     Main Content
-  </blockquote>
+     
+    <blockquote
+      class="case_blockquote"
+    >
+      Main Content
+    </blockquote>
+     
+    <p
+      class="case_quote-author m-8_top"
+    >
+      
+    Andrew Sapozhnikov, CIO at Mad Devs
+  
+    </p>
+  </div>
 </div>
 `;

@@ -19,18 +19,25 @@ exports[`About component should render correctly 1`] = `
   
     </p>
      
-    <blockquote
-      class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+    <div
+      class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
     >
       <img
         alt="blockquote"
-        class="case_blockquote-mark img_lazy"
+        class="case_mark img_lazy"
         data-src="[object Object]"
       />
        
+      <blockquote
+        class="case_blockquote"
+      >
+        
     Veeqo is a single platform that gives users complete control of their entire inventory. It enables businesses to quickly bulk ship orders from any sales channel, automate repetitive shipping tasks, and track every delivery in one place.
   
-    </blockquote>
+      </blockquote>
+       
+      <!---->
+    </div>
      
     <p
       class="case_paragraph case_text-align-center m-48_bottom"

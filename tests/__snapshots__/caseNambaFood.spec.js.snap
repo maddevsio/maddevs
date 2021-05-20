@@ -970,19 +970,26 @@ exports[`namba food renders correctly 1`] = `
   
       </p>
        
-      <blockquote
-        class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+      <div
+        class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
       >
         <img
           alt="blockquote"
-          class="case_blockquote-mark img_lazy"
+          class="case_mark img_lazy"
           data-src="[object Object]"
         />
          
+        <blockquote
+          class="case_blockquote"
+        >
+          
     Namba Food automatically categorises data inside the managers' dashboard panel. More than 4000 products can be
     catalogued in a few clicks.
   
-      </blockquote>
+        </blockquote>
+         
+        <!---->
+      </div>
        
       <h3
         class="case_title_h3 m-12_bottom"

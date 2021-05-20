@@ -1,25 +1,41 @@
 <template>
-  <div class="banner container">
-    <h1 class="banner_title">
+  <div
+    class="banner container"
+  >
+    <h1
+      class="banner_title"
+      data-aos="fade-down"
+      data-aos-duration="800"
+    >
       Career at <br> Mad Devs
     </h1>
-    <div class="banner_img-wrap">
+    <div
+      class="banner_img-wrap"
+      data-aos="fade-up"
+      data-aos-duration="800"
+    >
       <picture>
         <source
-          :data-srcset="[$getMediaFromS3('/images/Careers/webp/office.webp') + ' ', $getMediaFromS3('/images/Careers/webp/office@2x.webp 2x')]"
+          :srcset="[$getMediaFromS3('/images/Careers/webp/office.webp') + ' ', $getMediaFromS3('/images/Careers/webp/office@2x.webp 2x')]"
           type="image/webp"
           class="banner_img media_lazy"
         >
         <img
-          :data-src="$getMediaFromS3('/images/Careers/png/office.png')"
-          :data-srcset="$getMediaFromS3('/images/Careers/png/office@2x.png')"
+          :src="$getMediaFromS3('/images/Careers/png/office.png')"
+          :srcset="$getMediaFromS3('/images/Careers/png/office@2x.png')"
           width="1239"
           height="606"
           class="banner_img media_lazy"
+          alt="Office"
         >
       </picture>
     </div>
-    <p class="banner_description">
+    <p
+      class="banner_description"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-offset="120"
+    >
       Here at Mad Devs, we partner with projects where <span>our teams thrive</span>. Innovating solutions, carrying ownership, delivering sustainable value, and celebrating successes—these make a happy workplace where things get done.
     </p>
   </div>
