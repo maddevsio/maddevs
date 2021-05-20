@@ -18,6 +18,7 @@ describe('text slice component', () => {
     const { container } = render(TextSlice, {
       props: {
         slice,
+        htmlSerializer: () => '',
       },
       stubs: ['PrismicRichText'],
     })
