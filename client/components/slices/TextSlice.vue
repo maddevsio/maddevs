@@ -1,7 +1,6 @@
 <template>
   <div class="post-part single">
     <PrismicRichText
-      :class="className"
       :field="slice.primary.text"
       :html-serializer="htmlSerializer"
       class="textslice"
@@ -22,18 +21,6 @@ export default {
       type: Function,
       default: () => null,
     },
-  },
-
-  data() {
-    return {
-      className: '',
-    }
-  },
-
-  mounted() {
-    if (this.slice.primary.text[0] && this.slice.primary.text[0].type === 'heading1') {
-      this.className = this.slice.primary.text[0].text.toLowerCase().replace(/\s/g, '-')
-    }
   },
 }
 </script>

@@ -48,7 +48,7 @@ describe('careers page', () => {
   // --------------------- //
   describe('Table Of Contents', () => {
     it('if set args "Blog post title" to createAnchorID will return id #blog-post-title', () => {
-      expect(wrapper.vm.createAnchorID('Blog post title')).toBe('#blog-post-title')
+      expect(wrapper.vm.createAnchorID('Blog post title')).toBe('blog-post-title')
     })
 
     it('if set not string args to createAnchorID will return null', () => {

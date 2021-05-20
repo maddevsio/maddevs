@@ -61,6 +61,17 @@
   @include font('Inter', 14px, 400);
 }
 
+.inline-code {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  font-weight: 400;
+  background: $bgcolor--grey-light;
+  padding: 0 4px;
+  border-radius: 3px;
+  display: inline-block;
+  line-height: 129%;
+}
+
 // ----------- Form styles ----------- //
 .form {
   display: flex;

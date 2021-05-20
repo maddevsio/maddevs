@@ -292,9 +292,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        Hello, everyone!Today, I would like to introduce you to the world of application design.Designing applications can be called a multidisciplinary...
-      
+                    Hello, everyone!Today, I would like to introduce you to the world of application design.Designing applications can be called a multidisciplinary...
                   </p>
                 </nuxtlink-stub>
                  
@@ -381,9 +379,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        This is a story on how to not spend even a penny by using three ETA (estimated time of arrival) services instead of one. Everything is based on my...
-      
+                    This is a story on how to not spend even a penny by using three ETA (estimated time of arrival) services instead of one. Everything is based on my...
                   </p>
                 </nuxtlink-stub>
                  
@@ -470,9 +466,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        So, this is the second part of my interaction with Glitch.com and in this part, we will talk about deployment methods, both standard and non-standard...
-      
+                    So, this is the second part of my interaction with Glitch.com and in this part, we will talk about deployment methods, both standard and non-standard...
                   </p>
                 </nuxtlink-stub>
                  
@@ -559,9 +553,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        This story is about pain, agony, and denial of ready-made solutions. It is also about changes that improve the code’s readability and help the...
-      
+                    This story is about pain, agony, and denial of ready-made solutions. It is also about changes that improve the code’s readability and help the...
                   </p>
                 </nuxtlink-stub>
                  
@@ -648,9 +640,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        I want to tell you this story because I wasted about 14 hours to realize how to achieve it correctly.NB!: Sometimes working with Elastic Beanstalk...
-      
+                    I want to tell you this story because I wasted about 14 hours to realize how to achieve it correctly.NB!: Sometimes working with Elastic Beanstalk...
                   </p>
                 </nuxtlink-stub>
                  
@@ -737,9 +727,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        Let’s take a look at the minimum requirements for web developers in the 2000s. In the good old days, you could build more or less working website...
-      
+                    Let’s take a look at the minimum requirements for web developers in the 2000s. In the good old days, you could build more or less working website...
                   </p>
                 </nuxtlink-stub>
                  
@@ -826,9 +814,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        Logs are recorded events that your software produces. They are essential to every IT project since they provide the context to help debugging and...
-      
+                    Logs are recorded events that your software produces. They are essential to every IT project since they provide the context to help debugging and...
                   </p>
                 </nuxtlink-stub>
                  
@@ -915,9 +901,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        One fine day, it became necessary to finish the project for an international mining company. The workers regularly complained about the quality of...
-      
+                    One fine day, it became necessary to finish the project for an international mining company. The workers regularly complained about the quality of...
                   </p>
                 </nuxtlink-stub>
                  
@@ -1004,9 +988,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        In the previous article, I talked about Event Delegation in React. On this one, I will tell you how you can use this pattern in the world of events...
-      
+                    In the previous article, I talked about Event Delegation in React. On this one, I will tell you how you can use this pattern in the world of events...
                   </p>
                 </nuxtlink-stub>
                  
@@ -1093,9 +1075,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        Unfortunately, in our modern world, there is no way to delve into the little things and how frameworks work.We use many tools and like how easy it is...
-      
+                    Unfortunately, in our modern world, there is no way to delve into the little things and how frameworks work.We use many tools and like how easy it is...
                   </p>
                 </nuxtlink-stub>
                  
@@ -1182,9 +1162,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        For the first time, it was conceptualized and proposed by Grady Booch in 1991. It is one of the main elements of extreme programming practice.I...
-      
+                    For the first time, it was conceptualized and proposed by Grady Booch in 1991. It is one of the main elements of extreme programming practice.I...
                   </p>
                 </nuxtlink-stub>
                  
@@ -1271,9 +1249,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        Mad-fake-slack is primarily a tool for testing your bot, without using real slack servers. In the future, it will be a powerful tool for integration...
-      
+                    Mad-fake-slack is primarily a tool for testing your bot, without using real slack servers. In the future, it will be a powerful tool for integration...
                   </p>
                 </nuxtlink-stub>
                  
@@ -1360,9 +1336,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        Any business always strives to effectively use the time and skills of its employees since it directly affects the profit. Therefore, a business...
-      
+                    Any business always strives to effectively use the time and skills of its employees since it directly affects the profit. Therefore, a business...
                   </p>
                 </nuxtlink-stub>
                  
@@ -1449,9 +1423,7 @@ exports[`Main component should render correctly 1`] = `
                     class="post-card__paragraph"
                     data-testid="test-post-card"
                   >
-                    
-        Usually, at the preparatory stages of project developers think of the project skeleton to avoid a lot of mistakes and reworks in the future.What is...
-      
+                    Usually, at the preparatory stages of project developers think of the project skeleton to avoid a lot of mistakes and reworks in the future.What is...
                   </p>
                 </nuxtlink-stub>
                  

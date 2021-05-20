@@ -19,8 +19,10 @@ exports[`careers page renders correctly 1`] = `
       class="table-of-contents__links-link"
       to="#blog-post-title"
     >
-      
-      1. Blog post title
+      <span>
+        1.
+      </span>
+       Blog post title
     
     </nuxtlink-stub>
   </div>
