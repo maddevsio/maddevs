@@ -22,7 +22,7 @@ exports[`PhaseElasticsearch component should render correctly 1`] = `
     </p>
      
     <div
-      class="m-96_bottom media-m-48_bottom"
+      class="case_cards-container m-96_bottom media-m-48_bottom"
     >
       <div
         class="case_card background-color-silver"
@@ -89,9 +89,12 @@ exports[`PhaseElasticsearch component should render correctly 1`] = `
   
     </p>
      
-    <div>
+    <div
+      class="case_cards-container"
+    >
       <div
         class="case_card background-color-silver"
+        style="padding: 24px;"
       >
         <h4
           class="case_title_h4 m-8_bottom"
@@ -102,7 +105,7 @@ exports[`PhaseElasticsearch component should render correctly 1`] = `
         </h4>
          
         <p
-          class="case_paragraph m-24_bottom media-m-12_bottom"
+          class="case_paragraph m-32_bottom"
         >
           
         We implemented a new Elasticsearch cluster as a self-hosted solution on EC2 instances.
@@ -141,7 +144,8 @@ exports[`PhaseElasticsearch component should render correctly 1`] = `
       </div>
        
       <div
-        class="case_card background-color-blue-light"
+        class="case_card background-color-silver"
+        style="padding: 24px;"
       >
         <h4
           class="case_title_h4 m-8_bottom"
@@ -152,7 +156,7 @@ exports[`PhaseElasticsearch component should render correctly 1`] = `
         </h4>
          
         <p
-          class="case_paragraph m-24_bottom media-m-12_bottom"
+          class="case_paragraph m-32_bottom"
         >
           
         The indices featured too much unnecessary information and non-optimized mapping.
