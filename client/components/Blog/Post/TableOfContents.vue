@@ -14,15 +14,20 @@
         class="table-of-contents__links-link"
         :class="{ 'table-of-contents__links-link--active': anchor.link.includes(activeAnchor) }"
       >
-        {{ i + 1 }}. {{ anchor.lable }}
+        <span>{{ i + 1 }}.</span> {{ anchor.lable }}
       </NuxtLink>
     </div>
   </div>
 </template>
 
 <script>
+import mainMixins from '@/mixins/mainMixins'
+
 export default {
   name: 'TableOfContents',
+
+  mixins: [mainMixins],
+
   props: {
     slice: {
       type: Object,
@@ -41,7 +46,7 @@ export default {
       if (this.slice && this.slice.items && !this.slice.items.length) return []
       return this.slice.items.map(item => ({
         lable: item.lable[0].text,
-        link: this.createAnchorID(item.lable[0].text),
+        link: `#${this.createAnchorID(item.lable[0].text)}`,
       }))
     },
   },
@@ -66,12 +71,6 @@ export default {
   },
 
   methods: {
-    createAnchorID(text) {
-      if (!text || typeof text !== 'string') return null
-      const formattedText = `#${text.trim().toLowerCase().replace(/&amp;|[|&;$%@"<>()+,?!]/g, '').replace(/\s+/g, '-')}`
-      return formattedText
-    },
-
     intersectionHandler(entry) {
       if (this.anchors.some(a => a.link.includes(entry.target.id))) {
         this.activeAnchor = entry.target.id
@@ -102,7 +101,7 @@ export default {
 
     &-link {
       width: 100%;
-      display: block;
+      display: flex;
       text-decoration: none;
       font-size: 14px;
       line-height: 130%;
@@ -111,6 +110,10 @@ export default {
       margin-bottom: 6px;
       padding: 10px 8px;
       border-radius: 8px;
+
+      span {
+        margin-right: 6px;
+      }
 
       &:hover {
         background-color: rgba(247, 199, 68, 0.1);

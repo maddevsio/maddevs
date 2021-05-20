@@ -129,6 +129,38 @@ describe('Post component copyAnchorLink', () => {
     propsData: {
       slice,
     },
+    mocks: {
+      $prismic: {
+        dom: {
+          Link: {
+            url: () => '',
+          },
+          RichText: {
+            Elements: {
+              em: 'em',
+              embed: 'embed',
+              heading1: 'heading1',
+              heading2: 'heading2',
+              heading3: 'heading3',
+              heading4: 'heading4',
+              heading5: 'heading5',
+              heading6: 'heading6',
+              hyperlink: 'hyperlink',
+              image: 'image',
+              label: 'label',
+              list: 'group-list-item',
+              listItem: 'list-item',
+              oList: 'group-o-list-item',
+              oListItem: 'o-list-item',
+              paragraph: 'paragraph',
+              preformatted: 'preformatted',
+              span: 'span',
+              strong: 'strong',
+            },
+          },
+        },
+      },
+    },
   })
 
   const html = tag => `

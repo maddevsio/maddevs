@@ -55,9 +55,7 @@ exports[`post card component render with very long title 1`] = `
           class="post-card__paragraph"
           data-testid="test-post-card"
         >
-          
-        Let’s start with a partial list of how a valid and semantic layout can improve any project:The best practices for improving layout quality on your...
-      
+          Let’s start with a partial list of how a valid and semantic layout can improve any project:The best practices for improving layout quality on your...
         </p>
       </nuxtlink-stub>
        
@@ -143,9 +141,7 @@ exports[`post card component should render correctly with slot 1`] = `
           class="post-card__paragraph"
           data-testid="test-post-card"
         >
-          
-        Let’s start with a partial list of how a valid and semantic layout can improve any project:
-      
+          Let’s start with a partial list of how a valid and semantic layout can improve any project:
         </p>
       </nuxtlink-stub>
        

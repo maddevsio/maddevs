@@ -1,7 +1,10 @@
 <template>
   <div class="blog-post__introduction-container">
     <slot name="beforeTitle" />
-    <h1 class="blog-post__blog-title title">
+    <h1
+      :id="createAnchorID(title)"
+      class="blog-post__blog-title title"
+    >
       {{ title }}
     </h1>
     <p class="blog-post__blog-sub-title">
@@ -25,10 +28,14 @@
 </template>
 
 <script>
+import mainMixins from '@/mixins/mainMixins'
 import extractFileExtension from '@/helpers/extractFileExtension'
 
 export default {
   name: 'Common',
+
+  mixins: [mainMixins],
+
   props: {
     title: {
       type: String,

@@ -35,9 +35,8 @@
         <p
           class="post-card__paragraph"
           data-testid="test-post-card"
-        >
-          {{ firstParagraph }}
-        </p>
+          v-html="firstParagraph"
+        />
       </NuxtLink>
       <div class="post-card__meta">
         <span class="post-card__date">{{ formattedDate }}</span>

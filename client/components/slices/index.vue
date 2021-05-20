@@ -58,6 +58,8 @@
 </template>
 
 <script>
+import linkResolver from '@/plugins/link-resolver'
+import mainMixins from '@/mixins/mainMixins'
 import CodeBlockSlice from '@/components/slices/CodeBlockSlice/index.vue'
 import SectionIdSlice from '@/components/slices/SectionIdSlice'
 import QuoteSlice from '@/components/slices/QuoteSlice.vue'
@@ -74,6 +76,7 @@ import AuthorSlice from '@/components/slices/AuthorSlice'
 
 export default {
   name: 'SlicesBlock',
+
   components: {
     DoubleColumnBorderedSlice,
     OrderedList,
@@ -89,6 +92,8 @@ export default {
     SectionIdSlice,
     AuthorSlice,
   },
+
+  mixins: [mainMixins],
 
   props: {
     slicesType: {
@@ -111,29 +116,60 @@ export default {
 
   methods: {
     htmlSerializer(type, element, content, children) {
-      const text = children.join('')
-      if (type === 'heading2') {
-        return this.createAnchorTag('h2', text)
+      const text = children.join('').replace(/`(.*?)`/g, '<span class="inline-code">$1</span>')
+      const { Elements } = this.$prismic.dom.RichText
+      const { Link } = this.$prismic.dom
+      switch (type) {
+        case Elements.heading1: return this.createAnchorTag('h1', text)
+        case Elements.heading2: return this.createAnchorTag('h2', text)
+        case Elements.heading3: return this.createAnchorTag('h3', text)
+        case Elements.heading4: return this.createAnchorTag('h4', text)
+        case Elements.heading5: return this.createAnchorTag('h5', text)
+        case Elements.heading6: return this.createAnchorTag('h6', text)
+        case Elements.paragraph: return `<p>${text}</p>`
+        case Elements.preformatted: return `<pre>${text}</pre>`
+        case Elements.strong: return `<strong>${text}</strong>`
+        case Elements.em: return `<em>${text}</em>`
+        case Elements.listItem: return `<li>${text}</li>`
+        case Elements.oListItem: return `<li>${text}</li>`
+        case Elements.list: return `<ul>${text}</ul>`
+        case Elements.oList: return `<ol>${text}</ol>`
+        case Elements.image:
+          // eslint-disable-next-line
+          const linkUrl = element.linkTo ? Link.url(element.linkTo, linkResolver) : null
+          // eslint-disable-next-line
+          const linkTarget = element.linkTo && element.linkTo.target ? `target="${element.linkTo.target}" rel="noopener"` : ''
+          // eslint-disable-next-line
+          const wrapperClassList = [element.label || '', 'block-img']
+          // eslint-disable-next-line
+          const img = `<img src="${element.url}" alt="${element.alt || ''}" copyright="${element.copyright || ''}">`
+          return (`
+            <p class="${wrapperClassList.join(' ')}">
+              ${linkUrl ? `<a ${linkTarget} href="${linkUrl}">${img}</a>` : img}
+            </p>
+          `)
+        case Elements.embed:
+          return (`
+            <div data-oembed="${element.oembed.embed_url}"
+              data-oembed-type="${element.oembed.type}"
+              data-oembed-provider="${element.oembed.provider_name}"
+            >
+              ${element.oembed.html}
+            </div>
+          `)
+        case Elements.hyperlink:
+          // eslint-disable-next-line
+          const target = element.data.target ? `target="${element.data.target}" rel="noopener"` : ''
+          // eslint-disable-next-line
+          const url = Link.url(element.data, linkResolver)
+          return `<a ${target} href="${url}">${text}</a>`
+        case Elements.label:
+          // eslint-disable-next-line
+          const label = element.data.label ? ` class="${element.data.label}"` : ''
+          return `<span ${label}>${text}</span>`
+        case Elements.span: return content ? content.replace(/\n/g, '<br />') : ''
+        default: return null
       }
-      if (type === 'heading3') {
-        return this.createAnchorTag('h3', text)
-      }
-      if (type === 'heading4') {
-        return this.createAnchorTag('h4', text)
-      }
-      if (type === 'heading5') {
-        return this.createAnchorTag('h5', text)
-      }
-      if (type === 'heading6') {
-        return this.createAnchorTag('h6', text)
-      }
-      return null
-    },
-
-    createAnchorID(text) {
-      if (!text || typeof text !== 'string') return null
-      const formattedText = text.trim().toLowerCase().replace(/&amp;|[|&;$%@"<>()+,?!]/g, '').replace(/\s+/g, '-')
-      return formattedText
     },
 
     createAnchorTag(tag, text) {
@@ -244,17 +280,6 @@ export default {
   & + p {
     margin-top: 24px;
   }
-}
-
-/deep/ .inline-code {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 15px;
-  font-weight: 400;
-  background: $bgcolor--grey-light;
-  padding: 0 4px;
-  border-radius: 3px;
-  display: inline-block;
-  line-height: 129%;
 }
 
 /deep/ pre {

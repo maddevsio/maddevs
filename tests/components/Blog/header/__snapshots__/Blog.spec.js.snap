@@ -8,6 +8,7 @@ exports[`header Blog is a Vue instance 1`] = `
      
     <h1
       class="blog-post__blog-title title"
+      id="title"
     >
       
     title
