@@ -4,7 +4,7 @@
       <slot />
     </blockquote>
     <p
-      v-if="author !== ''"
+      v-if="author"
       class="case_quote-author"
     >
       {{ author }}

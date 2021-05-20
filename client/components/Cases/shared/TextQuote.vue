@@ -9,7 +9,7 @@
       <slot />
     </blockquote>
     <p
-      v-if="author !== ''"
+      v-if="author"
       class="case_quote-author m-8_top"
     >
       {{ author }}
@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/cases/_mixins';
+@import '@/assets/styles/cases/_mixins';
 
 .case {
   &_quote-wrap {
