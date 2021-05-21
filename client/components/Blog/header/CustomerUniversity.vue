@@ -173,6 +173,7 @@ export default {
 .cluster-navigation {
   color: white;
   align-items: center;
+  margin-bottom: 64px;
 
   &__name {
     @include font('Inter', 16px, 400);
@@ -313,13 +314,12 @@ export default {
 @media screen and (max-width: 1024px) {
   .cluster-navigation {
     padding: 0 24px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 991px) {
   .cluster-navigation {
-    margin: 0;
-
     &__name {
       margin-bottom: 13.5px;
       margin-top: 0;
