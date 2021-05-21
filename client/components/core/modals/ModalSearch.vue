@@ -151,7 +151,7 @@ export default {
   },
 
   mounted() {
-    this.$refs.searchInput.focus()
+    this.focusOnInput()
     document.addEventListener('keyup', this.listenKeys)
   },
 
@@ -161,6 +161,12 @@ export default {
 
   methods: {
     ...mapActions(['setSearchQuery', 'setSearchResponse']),
+
+    focusOnInput() {
+      if (!this.$refs.searchInput) return null
+      return this.$refs.searchInput.focus()
+    },
+
     async getPosts(query) {
       this.response = await this.$prismic.api.query(
         this.$prismic.predicates.fulltext('my.post.title', query),

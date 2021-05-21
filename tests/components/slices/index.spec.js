@@ -2,7 +2,11 @@ import { shallowMount } from '@vue/test-utils'
 import { render } from '@testing-library/vue'
 import SlicesBlock from '@/components/slices'
 
-const toOneLine = text => text.replace(/\n/g, '').replace(/>(.*?)</g, '><').trim()
+const toOneLine = text => text
+  .replace(/ +(?= )/g, '')
+  .replace(/\n/g, '')
+  .replace(/>(.*?)</g, '><')
+  .trim()
 
 describe('slice block component', () => {
   const slices = [
@@ -176,7 +180,6 @@ describe('Post component copyAnchorLink', () => {
           </div>
         </div>
       `
-  const imageHtml = () => '<p class=" block-img"><img src="" alt="" copyright=""></p>'
 
   it('if type not heading will return null', () => {
     const result = wrapper.vm.htmlSerializer('div', null, null, ['Blog post title'])
@@ -258,12 +261,74 @@ describe('Post component copyAnchorLink', () => {
     expect(result).toBe('')
   })
 
-  it('if type span will return <ol>Blog post title</ol>', () => {
+  it('if type span will return "Blog post <br /> title"', () => {
     const result = wrapper.vm.htmlSerializer('span', null, 'Blog post \n title', ['Blog post title'])
     expect(result).toBe('Blog post <br /> title')
   })
 
-  it('if type image will return <ol>Blog post title</ol>', () => {
+  it('if type embed will return embed html', () => {
+    const element = {
+      oembed: {
+        provider_name: '',
+        type: '',
+        embed_url: '',
+        html: 'html',
+      },
+    }
+    const embedHtml = '<div data-oembed="" data-oembed-type="" data-oembed-provider="" ></div>'
+    const result = wrapper.vm.htmlSerializer('embed', element, null, ['Blog post title'])
+    expect(toOneLine(result)).toStrictEqual(toOneLine(embedHtml))
+  })
+
+  describe('hyperlink tests', () => {
+    it('if type hyperlink & without target will return <a href=""></a>', () => {
+      const element = {
+        data: {
+          target: null,
+        },
+      }
+      const hyperlinkHtml = '<a href=""></a>'
+      const result = wrapper.vm.htmlSerializer('hyperlink', element, null, ['Blog post title'])
+      expect(toOneLine(result)).toStrictEqual(toOneLine(hyperlinkHtml))
+    })
+
+    it('if type hyperlink will return <a target="_blank" rel="noopener" href=""></a>', () => {
+      const element = {
+        data: {
+          target: '_blank',
+        },
+      }
+      const hyperlinkHtml = '<a target="_blank" rel="noopener" href=""></a>'
+      const result = wrapper.vm.htmlSerializer('hyperlink', element, null, ['Blog post title'])
+      expect(toOneLine(result)).toStrictEqual(toOneLine(hyperlinkHtml))
+    })
+  })
+
+  describe('label tests', () => {
+    it('if type label will return <span class="label"></span>', () => {
+      const element = {
+        data: {
+          label: 'label',
+        },
+      }
+      const labelHtml = '<span class="label"></span>'
+      const result = wrapper.vm.htmlSerializer('label', element, null, ['Blog post title'])
+      expect(toOneLine(result)).toStrictEqual(toOneLine(labelHtml))
+    })
+
+    it('if type label & without label will return <span ></span>', () => {
+      const element = {
+        data: {
+          label: null,
+        },
+      }
+      const labelHtml = '<span ></span>'
+      const result = wrapper.vm.htmlSerializer('label', element, null, ['Blog post title'])
+      expect(toOneLine(result)).toStrictEqual(toOneLine(labelHtml))
+    })
+  })
+
+  it('if type image will return html for img', () => {
     const element = {
       linkTo: {
         target: '_blank',
@@ -272,7 +337,8 @@ describe('Post component copyAnchorLink', () => {
       url: '',
       alt: '',
     }
+    const imageHtml = '<p class=" block-img"><img src="" alt="" copyright=""></p>'
     const result = wrapper.vm.htmlSerializer('image', element, null, ['Blog post title'])
-    expect(toOneLine(result)).toEqual(toOneLine(imageHtml()))
+    expect(toOneLine(result)).toStrictEqual(toOneLine(imageHtml))
   })
 })
