@@ -22,6 +22,8 @@ exports[`PhaseElasticsearchResult component should render correctly 1`] = `
         <div
           class="card"
         >
+          <!---->
+           
           <img
             alt="Search time went down to under 5 seconds (now: ~250-300 ms)"
             class="card_icon img_lazy card_icon_speed-card"
@@ -54,6 +56,8 @@ exports[`PhaseElasticsearchResult component should render correctly 1`] = `
         <div
           class="card"
         >
+          <!---->
+           
           <img
             alt="We received massive positive feedback as Veeqo users were contacting customer"
             class="card_icon img_lazy card_icon_message-card"
@@ -86,6 +90,8 @@ exports[`PhaseElasticsearchResult component should render correctly 1`] = `
         <div
           class="card"
         >
+          <!---->
+           
           <img
             alt="Elasticsearch became more efficient and reliable without costing the customer more"
             class="card_icon img_lazy card_icon_gears-card"

@@ -73,3 +73,99 @@ export const infrastructureAsCodeResult = [
     description: 'More secure data access Search time decreased initially to under 5 seconds and by now to ~250-300ms',
   },
 ]
+
+export const technologies = [
+  {
+    name: 'ruby',
+    alt: 'Ruby',
+  },
+  {
+    name: 'node',
+    alt: 'NodeJS',
+  },
+  {
+    name: 'elastic',
+    alt: 'Elasticsearch',
+  },
+  {
+    name: 'postgresql',
+    alt: 'PostgreSQL',
+  },
+  {
+    name: 'rebbit-mq',
+    alt: 'RebbitMQ',
+  },
+  {
+    name: 'redis',
+    alt: 'Redis',
+  },
+  {
+    name: 'memcached',
+    alt: 'Memcached',
+  },
+  {
+    name: 'cloud-watch',
+    alt: 'Cloudwatch',
+  },
+  {
+    name: 'prometheus',
+    alt: 'Prometheus',
+  },
+  {
+    name: 'grafana',
+    alt: 'Grafana',
+  },
+  {
+    name: 'sentry-black',
+    alt: 'Sentry',
+  },
+  {
+    name: 'heroku',
+    alt: 'Heroku',
+  },
+  {
+    name: 'aws',
+    alt: 'AWS',
+  },
+  {
+    name: 'kubernetes',
+    alt: 'Kubernetes',
+  },
+  {
+    name: 'terraform',
+    alt: 'Terraform',
+  },
+  {
+    name: 'travis-ci',
+    alt: 'Travis CI',
+  },
+  {
+    name: 'jenkins',
+    alt: 'Jenkins',
+  },
+  {
+    name: 'docker',
+    alt: 'Docker',
+  },
+  {
+    name: 'helm',
+    alt: 'Helm',
+  },
+]
+
+export const team = [
+  {
+    name: 'Maxim Glotov',
+    position: 'Senior DevOps engineer',
+    image: {
+      file: 'maxim-glotov',
+    },
+  },
+  {
+    name: 'Andrew Sapozhnikov',
+    position: 'Head of DevOps',
+    image: {
+      file: 'andrew-sapozhnikov',
+    },
+  },
+]
