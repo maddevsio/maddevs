@@ -57,6 +57,7 @@
               class="modal-search_result-item_content-author"
             >
               <img
+                v-if="getAuthor(post, 'image')"
                 :src="getAuthor(post, 'image').url"
                 alt="Author"
               >
@@ -129,7 +130,6 @@ export default {
     ...mapGetters(['allAuthors']),
 
     searchPosts() {
-      if (!this.response || !this.response.results) return null
       if (!this.response || !this.response.results || !this.response.results.length) return []
       const list = [...this.response.results]
       return list.sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
