@@ -6,7 +6,7 @@
     <div class="blog-post__background" />
     <div class="blog-post__inner-container">
       <div
-        v-show="dataLoaded"
+        v-if="dataLoaded"
         class="blog-post__share"
         :class="{ 'blog-post__share--vertical': !tableOfContentsSlice }"
       >

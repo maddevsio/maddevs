@@ -2,7 +2,10 @@ const mainMixins = {
   methods: {
     createAnchorID(text) {
       if (!text || typeof text !== 'string') return null
-      const formattedText = text.trim().toLowerCase().replace(/&amp;|[|&;$%@"<>()+,?!'’]/g, '').replace(/\s+/g, '-')
+      const formattedText = text.trim()
+        .toLowerCase()
+        .replace(/\s+/g, '-') // Change spaces to -
+        .replace(/[^+\w-]/g, '') // Remove all symbols
       return formattedText
     },
   },

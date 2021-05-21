@@ -13,37 +13,7 @@ exports[`Post component should render correctly with default props 1`] = `
     <div
       class="blog-post__inner-container"
     >
-      <div
-        class="blog-post__share blog-post__share--vertical"
-        style="display: none;"
-      >
-        <!---->
-         
-        <div
-          class="blog-post__share-links"
-        >
-          <sharenetwork-stub
-            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
-            network="facebook"
-            title=""
-            url=""
-          />
-           
-          <sharenetwork-stub
-            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
-            network="twitter"
-            title=""
-            url=""
-          />
-           
-          <sharenetwork-stub
-            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
-            network="linkedin"
-            title=""
-            url=""
-          />
-        </div>
-      </div>
+      <!---->
        
       <blogheader-stub
         date=""
