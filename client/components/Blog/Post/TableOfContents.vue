@@ -3,7 +3,7 @@
     <div class="table-of-contents__title">
       Contents:
     </div>
-    <div
+    <Simplebar
       v-if="anchors && anchors.length"
       class="table-of-contents__links"
     >
@@ -16,15 +16,18 @@
       >
         <span>{{ i + 1 }}.</span> {{ anchor.lable }}
       </NuxtLink>
-    </div>
+    </Simplebar>
   </div>
 </template>
 
 <script>
+import Simplebar from 'simplebar-vue'
 import mainMixins from '@/mixins/mainMixins'
 
 export default {
   name: 'TableOfContents',
+
+  components: { Simplebar },
 
   mixins: [mainMixins],
 
@@ -44,10 +47,12 @@ export default {
   computed: {
     anchors() {
       if (this.slice && this.slice.items && !this.slice.items.length) return []
-      return this.slice.items.map(item => ({
-        lable: item.lable[0].text,
-        link: `#${this.createAnchorID(item.lable[0].text)}`,
-      }))
+      return this.slice.items
+        .filter(item => item.lable.length)
+        .map(item => ({
+          lable: item.lable[0].text,
+          link: `#${this.createAnchorID(item.lable[0].text)}`,
+        }))
     },
   },
 
@@ -85,7 +90,7 @@ export default {
 @import '../../../assets/styles/cases/mixins';
 
 .table-of-contents {
-  width: 100%;
+  width: 200px;
   max-width: 200px;
 
   &__title {
@@ -96,8 +101,11 @@ export default {
   }
 
   &__links {
+    width: 100%;
+    max-height: 400px;
     display: flex;
     flex-direction: column;
+    padding-right: 12px;
 
     &-link {
       width: 100%;
@@ -109,6 +117,7 @@ export default {
       color: #101113;
       margin-bottom: 6px;
       padding: 10px 8px;
+      box-sizing: border-box;
       border-radius: 8px;
 
       span {
