@@ -52,3 +52,24 @@ export const elasticsearchResults = [
     description: 'Elasticsearch became more efficient and reliable without costing the customer more',
   },
 ]
+
+export const infrastructureAsCodeResult = [
+  {
+    icon: 'circle',
+    cardName: 'PostgreSQL',
+    title: '40GB of RAM',
+    description: '40 GB of RAM freed up. ReadIOPS halved. Number of TPS increased by 50%',
+  },
+  {
+    icon: 'chart',
+    cardName: 'Infrastructure costs',
+    title: 'Reduced by 35%',
+    description: 'without losses in performance and security',
+  },
+  {
+    icon: 'speed-card',
+    cardName: 'Elasticsearch',
+    title: '~250-300ms',
+    description: 'More secure data access Search time decreased initially to under 5 seconds and by now to ~250-300ms',
+  },
+]
