@@ -46,6 +46,13 @@
     <TextParagraph class="m-48_top m-48_bottom media-m-24_bottom">
       As a result, we spent $180 on launching PgBouncers on two c4.large instances behind NLB and saved about 10X  the sum in the customer’s monthly costs by: Freeing up about 40 GB of RAM, Postponing the need to upgrade the RDS instance until about 6 months later.
     </TextParagraph>
+    <img
+      :data-src="$getMediaFromS3('/images/Cases/veeqo/svg/pg-bouncer-diagram.svg')"
+      width="818"
+      height="560"
+      alt="PgBouncers Diagram"
+      class="case_pg-bouncer-diagram media_lazy m-48_bottom"
+    >
     <h2 class="case_title_h2 case_title-result m-48_bottom media-m-41_bottom">
       Result
     </h2>
@@ -95,6 +102,11 @@ export default {
 
   &_title-result {
     text-align: center;
+  }
+
+  &_pg-bouncer-diagram {
+    width: 100%;
+    height: 100%;
   }
 
   @media screen and (max-width: 880px) {

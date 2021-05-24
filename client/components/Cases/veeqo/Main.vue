@@ -10,6 +10,8 @@
     <PhaseElasticsearch />
     <PhaseElasticsearchResult />
     <PhaseCuttingTheCosts />
+    <PhaseMovingToKubernetes />
+    <InventoryChangeLog />
     <PhasInfrastructureAsCode />
     <PhasInfrastructureAsCodeResult />
     <Technologies />
@@ -31,6 +33,8 @@ import PhasInfrastructureAsCode from '@/components/Cases/veeqo/PhasInfrastructur
 import PhasInfrastructureAsCodeResult from '@/components/Cases/veeqo/PhasInfrastructureAsCodeResult'
 import Team from '@/components/Cases/veeqo/Team'
 import Technologies from '@/components/Cases/veeqo/Technologies'
+import PhaseMovingToKubernetes from '@/components/Cases/veeqo/PhaseMovingToKubernetes'
+import InventoryChangeLog from '@/components/Cases/veeqo/InventoryChangeLog'
 
 export default {
   name: 'Main',
@@ -48,6 +52,8 @@ export default {
     PhasInfrastructureAsCodeResult,
     Team,
     Technologies,
+    PhaseMovingToKubernetes,
+    InventoryChangeLog,
   },
 }
 </script>

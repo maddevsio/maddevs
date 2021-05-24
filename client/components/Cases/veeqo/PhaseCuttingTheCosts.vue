@@ -19,7 +19,7 @@
       Importantly, we made the system more secure as we started using RabbitMQ, Memcached, Elasticsearch, and other services within our own network. The monitoring system that we kept perfecting as we went on with cutting the costs confirmed the effectiveness of cost optimization.
     </TextParagraph>
     <TextQuoteBox
-      class="m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
+      class="m-48_top m-96_bottom media-m-24_top media-m-48_bottom m-auto"
       author="Andrew Sapozhnikov, CIO at Mad Devs"
     >
       Costs can’t be cut overnight. Not without damaging user experience, service uptime, and system survivability, anyway. We initially told Veeqo how we would decrease monthly infrastructure costs by ~7,000 dollars, but it took months to make smooth transitions. Our Veeqo partners trusted our professionalism, and it all paid off. We’re proud of how we optimized the costs along with improving the system’s performance.
