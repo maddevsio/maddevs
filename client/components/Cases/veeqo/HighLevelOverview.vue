@@ -91,8 +91,8 @@ export default {
   }
 
   &_image-wrapp {
-    min-width: 3028px;
-    max-width: 3028px;
+    min-width: 3020px;
+    max-width: 3020px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);

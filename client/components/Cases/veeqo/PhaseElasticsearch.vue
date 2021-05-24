@@ -108,4 +108,8 @@ export default {
     font-weight: 700;
   }
 }
+
+/deep/ .list-item_dot {
+  margin-bottom: 0;
+}
 </style>

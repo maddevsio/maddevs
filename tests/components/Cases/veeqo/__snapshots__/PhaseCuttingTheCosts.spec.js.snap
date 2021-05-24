@@ -328,7 +328,7 @@ exports[`PhaseCuttingTheCosts component should render correctly 1`] = `
     </p>
      
     <div
-      class="case_quote-wrap m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
+      class="case_quote-wrap m-48_top m-96_bottom media-m-24_top media-m-48_bottom m-auto"
     >
       <blockquote
         class="case_blockquote-box m-auto"

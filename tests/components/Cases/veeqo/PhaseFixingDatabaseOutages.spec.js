@@ -7,6 +7,9 @@ describe('PhaseFixingDatabaseOutages component', () => {
   it('should render correctly', () => {
     const { container } = render(PhaseFixingDatabaseOutages, {
       stubs,
+      mocks: {
+        $getMediaFromS3: () => 'img.jpg',
+      },
     })
 
     expect(screen.getByText('Phase 1: Fixing database outages')).not.toBeNull()

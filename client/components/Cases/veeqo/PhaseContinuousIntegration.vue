@@ -160,4 +160,8 @@ export default {
     }
   }
 }
+
+/deep/ .list-item_dot {
+  margin-bottom: 0;
+}
 </style>
