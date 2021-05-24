@@ -117,6 +117,20 @@ exports[`PhaseContinuousIntegration component should render correctly 1`] = `
       </p>
     </div>
      
+    <div
+      class="case_ci-panel m-96_bottom media-m-48_bottom"
+    >
+      <picture-stub
+        alt="CI Panel"
+        extension="png"
+        file="ci-panel"
+        folder="veeqo"
+        height="440"
+        lazy="true"
+        width="818"
+      />
+    </div>
+     
     <h3
       class="case_title_h3 m-12_bottom"
     >
