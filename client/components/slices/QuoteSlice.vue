@@ -94,7 +94,6 @@ export default {
     }
     &-brackets {
       padding-left: 62px;
-      margin-top: -26px;
     }
   }
 
