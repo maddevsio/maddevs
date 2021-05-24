@@ -26,8 +26,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
-@import '../../../assets/styles/cases/_mixins';
+@import '@/assets/styles/_vars';
+@import '@/assets/styles/cases/_mixins';
 
 .case {
   &_container {
