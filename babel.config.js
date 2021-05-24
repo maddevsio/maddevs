@@ -15,6 +15,7 @@ module.exports = api => {
           },
         ],
       ],
+      plugins: ['@babel/transform-runtime'],
     }
   }
   return {}

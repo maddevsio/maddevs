@@ -179,12 +179,11 @@ export default {
     },
 
     getAuthor(post, field) {
-      try {
+      if (post && post.data && post.data.post_author && post.data.post_author.id) {
         const author = this.findAuthor(post.data.post_author.id, this.allAuthors)
         return author[field]
-      } catch (error) {
-        return null
       }
+      return null
     },
 
     link(post) {

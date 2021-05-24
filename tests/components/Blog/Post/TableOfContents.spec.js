@@ -66,7 +66,7 @@ describe('careers page', () => {
         },
       }
       wrapper.vm.intersectionHandler(entry)
-      expect(wrapper.vm.activeAnchor).toBe('blog-post-title')
+      expect(wrapper.vm.activeAnchor).toBe('#blog-post-title')
     })
 
     it('if not has visible title in anchors list than not change value in activeAnchor', () => {

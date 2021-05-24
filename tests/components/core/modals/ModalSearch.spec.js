@@ -1,8 +1,17 @@
-import { shallowMount } from '@vue/test-utils'
+import 'regenerator-runtime/runtime'
+import { shallowMount, createLocalVue } from '@vue/test-utils'
 import ModalSearch from '@/components/core/modals/ModalSearch'
+import VueRouter from 'vue-router'
+import Vuex from 'vuex'
+
+const localVue = createLocalVue()
+
+localVue.use(VueRouter)
+localVue.use(Vuex)
 
 describe('ModalSearch component', () => {
   let wrapper
+
   const mocks = {
     $refs: {
       searchInput: {
@@ -13,6 +22,20 @@ describe('ModalSearch component', () => {
       api: {
         tags: ['iOS'],
       },
+    },
+  }
+
+  const store = {
+    actions: {
+      setSearchResponse: () => '',
+    },
+    getters: {
+      allAuthors: [
+        {
+          id: '123',
+          position: 'Senior',
+        },
+      ],
     },
   }
 
@@ -142,5 +165,30 @@ describe('ModalSearch component', () => {
       expect(wrapper.vm.searchPosts[0].data.id).toBe(2)
       expect(wrapper.vm.searchPosts[1].data.id).toBe(1)
     })
+  })
+
+  it('if set to args Frontend Development > tagLink will return /blog/tag/frontend-development/', () => {
+    wrapper = shallowMount(ModalSearch, {
+      mocks,
+    })
+    expect(wrapper.vm.tagLink('Frontend Development')).toEqual('/blog/tag/frontend-development/')
+  })
+
+  it('if set to 2 arg position > getAuthor will return Senior', () => {
+    wrapper = shallowMount(ModalSearch, {
+      localVue,
+      store,
+      mocks: {
+        ...mocks,
+      },
+    })
+    const post = {
+      data: {
+        post_author: {
+          id: '123',
+        },
+      },
+    }
+    expect(wrapper.vm.getAuthor(post, 'position')).toEqual('Senior')
   })
 })

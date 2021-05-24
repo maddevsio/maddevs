@@ -12,7 +12,7 @@
         :key="anchor.lable"
         :to="anchor.link"
         class="table-of-contents__links-link"
-        :class="{ 'table-of-contents__links-link--active': anchor.link.includes(activeAnchor) }"
+        :class="{ 'table-of-contents__links-link--active': anchor.link === activeAnchor }"
       >
         <span>{{ i + 1 }}.</span> {{ anchor.lable }}
       </NuxtLink>
@@ -78,7 +78,7 @@ export default {
   methods: {
     intersectionHandler(entry) {
       if (this.anchors.some(a => a.link.includes(entry.target.id))) {
-        this.activeAnchor = entry.target.id
+        this.activeAnchor = `#${entry.target.id}`
       }
     },
   },

@@ -4,8 +4,10 @@ const mainMixins = {
       if (!text || typeof text !== 'string') return null
       const formattedText = text.trim()
         .toLowerCase()
-        .replace(/\s+/g, '-') // Change spaces to -
-        .replace(/[^+\w-]/g, '') // Remove all symbols
+        .replace(/[^+\w]/g, ' ') // Change all symbols to space
+        .replace(/_/g, '') // Removed symbol "_"
+        .trim() // Remove spaces from start & end string
+        .replace(/\s+/g, '-') // Change spaces to "-"
       return formattedText
     },
   },
