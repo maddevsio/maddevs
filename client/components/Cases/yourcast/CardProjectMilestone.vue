@@ -74,9 +74,11 @@ export default {
     },
 
     play() {
-      this.animation.play().catch(() => {
+      try {
+        this.animation.play()
+      } catch (err) {
         // prevent catch
-      })
+      }
     },
 
     pause() {

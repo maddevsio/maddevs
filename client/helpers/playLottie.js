@@ -1,9 +1,11 @@
 export default function playLottie(animation, lottieId) {
   const observerCallback = entries => entries.forEach(({ isIntersecting }) => {
     if (isIntersecting) {
-      animation.play().catch(() => {
-      // prevent catch
-      })
+      try {
+        animation.play()
+      } catch (err) {
+        // prevent catch
+      }
     }
   })
 

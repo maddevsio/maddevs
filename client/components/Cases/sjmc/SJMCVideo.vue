@@ -82,18 +82,22 @@ export default {
       this.fullscreenModIsActive = true
 
       if (this.flagFirstStartVideo) {
-        this.$refs.video.play().catch(() => {
+        try {
+          this.$refs.video.play()
+        } catch (err) {
           this.showIcon = true
-        })
+        }
         this.flagFirstStartVideo = false
       }
     },
 
     videoSetState() {
       if (this.$refs.video.paused) {
-        this.$refs.video.play().catch(() => {
+        try {
+          this.$refs.video.play()
+        } catch (err) {
           this.showIcon = true
-        })
+        }
         this.showIcon = false
       } else {
         this.$refs.video.pause()

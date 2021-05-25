@@ -17,9 +17,11 @@ function autoplayVideoMixin(videoIds, observerOptions = observerDefaultOptions) 
             entries.forEach(entry => {
               if (entry.target.id === video) {
                 if (entry.isIntersecting) {
-                  entry.target.play().catch(() => {
+                  try {
+                    entry.target.play()
+                  } catch (err) {
                     // prevent play
-                  })
+                  }
                 }
               }
             })
