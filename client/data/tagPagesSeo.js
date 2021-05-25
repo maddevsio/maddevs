@@ -32,7 +32,7 @@ export const tagPagesSeo = {
     description: 'Discover tech articles about mobile app development. Insightful articles on the best  iOS creation practices. Quality content curated by Mad Devs.',
   },
   'mobile-development': {
-    title: 'Discover tech articles about mobile app development. Insightful articles on the best  iOS creation practices. Quality content curated by Mad Devs.',
+    title: 'Top articles about mobile app development | Mad Devs Blog',
     description: 'Discover tech articles about mobile app development. Insightful articles on the best iOS and Android creation practices. Quality content curated by Mad Devs.',
   },
   ux: {
