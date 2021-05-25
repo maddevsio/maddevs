@@ -109,7 +109,8 @@ export default {
 
   computed: {
     serializer() {
-      if (this.slicesType === 'post') return this.htmlSerializer
+      const types = ['post', 'customer_university']
+      if (types.includes(this.slicesType)) return this.htmlSerializer
       return null
     },
   },
