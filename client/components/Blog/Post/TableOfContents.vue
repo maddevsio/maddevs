@@ -5,6 +5,7 @@
     </div>
     <Simplebar
       v-if="anchors && anchors.length"
+      ref="anchors"
       class="table-of-contents__links"
     >
       <NuxtLink
@@ -12,7 +13,7 @@
         :key="anchor.lable"
         :to="anchor.link"
         class="table-of-contents__links-link"
-        :class="{ 'table-of-contents__links-link--active': anchor.link === activeAnchor }"
+        :class="{ 'table-of-contents__links-link--active': getActiveAnchor(anchor.link, i) }"
       >
         <span>{{ i + 1 }}.</span> {{ anchor.lable }}
       </NuxtLink>
@@ -41,6 +42,7 @@ export default {
   data() {
     return {
       activeAnchor: null,
+      scrollBar: null,
     }
   },
 
@@ -73,6 +75,10 @@ export default {
     sections.forEach(section => {
       observer.observe(section)
     })
+
+    if (this.$refs && this.$refs.anchors && this.$refs.anchors.SimpleBar) {
+      this.scrollBar = this.$refs.anchors.SimpleBar.getScrollElement()
+    }
   },
 
   methods: {
@@ -80,6 +86,21 @@ export default {
       if (this.anchors.some(a => a.link.includes(entry.target.id))) {
         this.activeAnchor = `#${entry.target.id}`
       }
+    },
+
+    getActiveAnchor(link, index) {
+      if (link === this.activeAnchor) {
+        if (index === 4) {
+          this.scrollBar.scrollTo({ top: 0, behavior: 'smooth' })
+          return true
+        }
+        if (index === 5) {
+          this.scrollBar.scrollTo({ top: 400, behavior: 'smooth' })
+          return true
+        }
+        return true
+      }
+      return false
     },
   },
 }

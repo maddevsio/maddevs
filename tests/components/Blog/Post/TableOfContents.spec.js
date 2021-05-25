@@ -79,6 +79,84 @@ describe('careers page', () => {
       expect(wrapper.vm.activeAnchor).toBeNull()
     })
 
+    it('if activeAnchor !== current link will return false', () => {
+      wrapper = shallowMount(TableOfContents, {
+        localVue,
+        stubs: ['NuxtLink'],
+        data() {
+          return {
+            activeAnchor: '#active-anchor',
+          }
+        },
+        propsData: {
+          slice: {
+            items: [],
+          },
+        },
+      })
+      expect(wrapper.vm.getActiveAnchor('#how-to', 3)).toBeFalsy()
+    })
+
+    it('if activeAnchor === current link will return true', () => {
+      wrapper = shallowMount(TableOfContents, {
+        localVue,
+        stubs: ['NuxtLink'],
+        data() {
+          return {
+            activeAnchor: '#how-to',
+          }
+        },
+        propsData: {
+          slice: {
+            items: [],
+          },
+        },
+      })
+      expect(wrapper.vm.getActiveAnchor('#how-to', 3)).toBeTruthy()
+    })
+
+    it('if activeAnchor === current link & index === 4 will return true', () => {
+      wrapper = shallowMount(TableOfContents, {
+        localVue,
+        stubs: ['NuxtLink'],
+        data() {
+          return {
+            activeAnchor: '#how-to',
+            scrollBar: {
+              scrollTo: () => {},
+            },
+          }
+        },
+        propsData: {
+          slice: {
+            items: [],
+          },
+        },
+      })
+      expect(wrapper.vm.getActiveAnchor('#how-to', 4)).toBeTruthy()
+    })
+
+    it('if activeAnchor === current link & index === 6 will return true', () => {
+      wrapper = shallowMount(TableOfContents, {
+        localVue,
+        stubs: ['NuxtLink'],
+        data() {
+          return {
+            activeAnchor: '#how-to',
+            scrollBar: {
+              scrollTo: () => {},
+            },
+          }
+        },
+        propsData: {
+          slice: {
+            items: [],
+          },
+        },
+      })
+      expect(wrapper.vm.getActiveAnchor('#how-to', 5)).toBeTruthy()
+    })
+
     it('if slice items is empty than computed anchors will return []', () => {
       wrapper = shallowMount(TableOfContents, {
         localVue,
