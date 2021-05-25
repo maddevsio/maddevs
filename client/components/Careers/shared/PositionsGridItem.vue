@@ -141,7 +141,7 @@ export default {
     margin-bottom: 20px;
   }
   &-title {
-    @include font('Poppins', 32px, 700);
+    @include font('Inter', 32px, 700);
     letter-spacing: -0.03em;
     line-height: 35px;
   }
