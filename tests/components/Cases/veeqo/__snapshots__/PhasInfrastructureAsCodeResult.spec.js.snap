@@ -9,12 +9,35 @@ exports[`PhasInfrastructureAsCodeResult component should render correctly 1`] = 
       class="container_regular"
     >
       <h2
-        class="case_title_h2 case_title case_text-align-center"
+        class="case_title_h2 case_title case_text-align-center m-48_bottom media-m-32_bottom"
       >
         
       Key results
     
       </h2>
+       
+      <div
+        class="case_cards-container"
+      >
+        <cardresult-stub
+          cardname="PostgreSQL"
+          description="40 GB of RAM freed up. ReadIOPS halved. Number of TPS increased by 50%"
+          icon="circle"
+          title="40GB of RAM"
+        />
+        <cardresult-stub
+          cardname="Infrastructure costs"
+          description="without losses in performance and security"
+          icon="chart"
+          title="Reduced by 35%"
+        />
+        <cardresult-stub
+          cardname="Elasticsearch"
+          description="More secure data access Search time decreased initially to under 5 seconds and by now to ~250-300ms"
+          icon="speed-card"
+          title="~250-300ms"
+        />
+      </div>
     </div>
   </section>
 </div>

@@ -1,5 +1,11 @@
 <template>
   <div class="card">
+    <TextParagraphUppercase
+      v-if="cardName"
+      class="card_card-name"
+    >
+      {{ cardName }}
+    </TextParagraphUppercase>
     <img
       v-if="icon"
       :data-src="$getMediaFromS3(`/images/Cases/veeqo/svg/${icon}.svg`)"
@@ -25,15 +31,22 @@
 
 <script>
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import TextParagraphUppercase from '@/components/Cases/shared/TextParagraphUppercase'
 
 export default {
   name: 'CardResult',
   components: {
     TextParagraph,
+    TextParagraphUppercase,
   },
 
   props: {
     icon: {
+      type: String,
+      default: null,
+    },
+
+    cardName: {
       type: String,
       default: null,
     },
@@ -58,8 +71,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 60px 14px 20px 14px;
+  padding: 24px 14px;
   background: #268BDC;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -69,7 +81,7 @@ export default {
     width: 66px;
     height: 66px;
     display: block;
-    margin-bottom: 40px;
+    margin: 40px 0;
 
     &_gears-card {
       width: 105px;
@@ -77,9 +89,17 @@ export default {
     }
   }
 
+  &_card-name,
+  &_title {
+    color: $text-color--white;
+  }
+
   &_title {
     margin-bottom: 5px;
-    color: $text-color--white;
+  }
+
+  &_card-name {
+    opacity: 0.5;
   }
 
   @media screen and (max-width: 880px) {
@@ -91,10 +111,10 @@ export default {
     &_description {
       font-size: 16px;
     }
-  }
 
-  @media screen and (max-width: 768px) {
-    padding: 52px 35px 30px 35px;
+    &_icon {
+      margin: 30px 0;
+    }
   }
 }
 </style>

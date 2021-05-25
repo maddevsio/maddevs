@@ -52,12 +52,12 @@ export default {
     @include grid(repeat(3, 1fr), auto, 25px, 0);
 
     @media screen and (max-width: 880px) {
-      grid-column-gap: 15px;
-    }
-
-    @media screen and (max-width: 768px) {
       @include grid(repeat(1, 1fr), auto, 0, 16px);
     }
   }
+}
+
+/deep/ .card {
+  justify-content: space-between;
 }
 </style>

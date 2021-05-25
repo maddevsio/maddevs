@@ -3,7 +3,7 @@
 exports[`HighLevelOverview component should render correctly 1`] = `
 <div>
   <div
-    class="container_full background-color-blue m-72_bottom media-m-48_bottom p-72_top media-p-41_top"
+    class="container_full case_container background-color-blue m-72_bottom media-m-48_bottom p-72_top media-p-41_top"
   >
     <div
       class="container_regular"

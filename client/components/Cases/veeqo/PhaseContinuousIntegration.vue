@@ -41,6 +41,17 @@
         Standardized development, test, and production environments
       </TextParagraph>
     </div>
+    <div class="case_ci-panel m-96_bottom media-m-48_bottom">
+      <Picture
+        folder="veeqo"
+        file="ci-panel"
+        extension="png"
+        alt="CI Panel"
+        :width="818"
+        :height="440"
+        :background="false"
+      />
+    </div>
     <h3 class="case_title_h3 m-12_bottom">
       Moving Jenkins
     </h3>
@@ -71,6 +82,7 @@ import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
 import TextQuote from '@/components/Cases/shared/TextQuote'
 import ListItemDot from '@/components/Cases/shared/ListItemDot'
 import List from '@/components/Cases/shared/List'
+import Picture from '@/components/Cases/shared/Picture'
 
 export default {
   name: 'PhaseContinuousIntegration',
@@ -81,6 +93,7 @@ export default {
     TextQuote,
     ListItemDot,
     List,
+    Picture,
   },
 }
 </script>
@@ -129,6 +142,10 @@ export default {
     font-weight: 700;
   }
 
+  &_ci-panel {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+  }
+
   @media screen and (max-width: 950px) {
     &_achievements {
       @include grid(repeat(1, 1fr), auto, 0, 21px);
@@ -142,5 +159,9 @@ export default {
       }
     }
   }
+}
+
+/deep/ .list-item_dot {
+  margin-bottom: 0;
 }
 </style>

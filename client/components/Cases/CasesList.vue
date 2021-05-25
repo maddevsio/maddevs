@@ -53,9 +53,11 @@ export default {
         if (!isIntersecting) {
           target.pause()
         } else {
-          target.play().catch(() => {
-            // prevent play
-          })
+          try {
+            target.play()
+          } catch (err) {
+            // prevent catch
+          }
         }
       })
 
@@ -73,7 +75,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
+@import '@/assets/styles/_vars';
 
 .cases-list {
   width: 100%;

@@ -130,6 +130,14 @@ exports[`PhaseFixingDatabaseOutages component should render correctly 1`] = `
   
     </p>
      
+    <img
+      alt="PgBouncers Diagram"
+      class="case_pg-bouncer-diagram media_lazy m-48_bottom"
+      data-src="img.jpg"
+      height="560"
+      width="818"
+    />
+     
     <h2
       class="case_title_h2 case_title-result m-48_bottom media-m-41_bottom"
     >

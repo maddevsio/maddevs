@@ -140,7 +140,7 @@ exports[`Main component should render correctly 1`] = `
     </section>
      
     <div
-      class="container_full background-color-blue m-72_bottom media-m-48_bottom p-72_top media-p-41_top"
+      class="container_full case_container background-color-blue m-72_bottom media-m-48_bottom p-72_top media-p-41_top"
     >
       <div
         class="container_regular"
@@ -459,6 +459,14 @@ exports[`Main component should render correctly 1`] = `
   
       </p>
        
+      <img
+        alt="PgBouncers Diagram"
+        class="case_pg-bouncer-diagram media_lazy m-48_bottom"
+        data-src="img.jpg"
+        height="560"
+        width="818"
+      />
+       
       <h2
         class="case_title_h2 case_title-result m-48_bottom media-m-41_bottom"
       >
@@ -650,6 +658,28 @@ exports[`Main component should render correctly 1`] = `
       Standardized development, test, and production environments
     
         </p>
+      </div>
+       
+      <div
+        class="case_ci-panel m-96_bottom media-m-48_bottom"
+      >
+        <picture>
+          <source
+            class="image media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="CI Panel"
+            class="image media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="440"
+            width="818"
+          />
+        </picture>
       </div>
        
       <h3
@@ -959,6 +989,8 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card"
           >
+            <!---->
+             
             <img
               alt="Search time went down to under 5 seconds (now: ~250-300 ms)"
               class="card_icon img_lazy card_icon_speed-card"
@@ -991,6 +1023,8 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card"
           >
+            <!---->
+             
             <img
               alt="We received massive positive feedback as Veeqo users were contacting customer"
               class="card_icon img_lazy card_icon_message-card"
@@ -1023,6 +1057,8 @@ exports[`Main component should render correctly 1`] = `
           <div
             class="card"
           >
+            <!---->
+             
             <img
               alt="Elasticsearch became more efficient and reliable without costing the customer more"
               class="card_icon img_lazy card_icon_gears-card"
@@ -1064,6 +1100,8 @@ exports[`Main component should render correctly 1`] = `
       </div>
     </section>
      
+    <phasecuttingthecosts-stub />
+     
     <div
       class="container_regular"
     >
@@ -1071,37 +1109,31 @@ exports[`Main component should render correctly 1`] = `
         class="case_title_h2 m-12_bottom"
       >
         
-    Phase 4: Cutting the costs
+    Phase 5. Moving to Kubernetes
   
       </h2>
        
       <p
-        class="case_paragraph m-24_bottom media-m-12_bottom"
+        class="case_paragraph m-72_bottom media-m-48_bottom"
       >
         
-    Cutting the costs for the customer is not about making compromises but about achieving efficiency. The mind of a DevOps engineer is like an hourglass: engineers are focusing on either improving performance or cutting the costs. It’s flipping all the time, and it is needed to find balance, which is solutions that are effective and cheap.
+    Kubernetes and the team were ready for each other. Kubernetes was growing stable, well-integrated with all the major AWS services, and well-equipped for high production loads. The team, in turn, stabilized the development processes and needed better automation. Kubernetes provided a unified platform for app launching and Docker containers orchestration: we wanted to have a unified platform to safeguard Veeqo’s future growth. Having one platform to handle everything meant being independent of cloud providers and being able to launch instances in any clouds. We were going more cloud agnostic: Kubernetes allows moving workloads seamlessly.
   
       </p>
        
-      <p
-        class="case_paragraph m-48_bottom media-m-24_bottom"
+      <h3
+        class="case_title_h3 m-12_bottom"
       >
         
-    Once we improved Veeqo’s performance and user experience, we started working on optimizing infrastructure costs. In total, the infrastructure used to cost the customer about 
-        <span
-          class="case_red-text"
-        >
-          ~$20,000 per month.
-        </span>
-         Within one summer, as we prepared the new solutions and migrated to them, we brought the figure down to ~$13,000.
+    Use of resources
   
-      </p>
+      </h3>
        
       <p
-        class="case_paragraph m-48_top media-m-24_top"
+        class="case_paragraph"
       >
         
-    Importantly, we made the system more secure as we started using RabbitMQ, Memcached, Elasticsearch, and other services within our own network. The monitoring system that we kept perfecting as we went on with cutting the costs confirmed the effectiveness of cost optimization.
+    There are four main types of resources: CPU, RAM, disc, and network. The way a service uses them depends on its type. Our objective was to arrange the services so that they don’t overlap in terms of the use of resources and—importantly—so that not too many resources are idle.
   
       </p>
        
@@ -1112,11 +1144,75 @@ exports[`Main component should render correctly 1`] = `
           class="case_blockquote-box m-auto"
         >
           
-    Costs can’t be cut overnight. Not without damaging user experience, service uptime, and system survivability, anyway. We initially told Veeqo how we would decrease monthly infrastructure costs by ~7,000 dollars, but it took months to make smooth transitions. Our Veeqo partners trusted our professionalism, and it all paid off. We’re proud of how we optimized the costs along with improving the system’s performance.
+    There’s nothing more expensive than idle resources. At the same time, you don’t want to load the nodes to their maximum capacity because a) it’ll lead to performance degradation and b) you do need some idle resource to handle load spikes. Kubernetes finds balance.
   
         </blockquote>
          
-        <!---->
+        <p
+          class="case_quote-author"
+        >
+          
+    Andrew Sapozhnikov, CIO at Mad Devs
+  
+        </p>
+      </div>
+       
+      <p
+        class="case_paragraph m-48_bottom"
+      >
+        
+    The balance is found based on thorough continuous calculations. Kubernetes shuffles services from node to node so that resources are not overused and creates optimal distribution that a human admin could never possibly achieve manually.
+  
+      </p>
+       
+      <h3
+        class="case_title_h3 m-12_bottom"
+      >
+        
+    Kubernetes and containerization
+  
+      </h3>
+       
+      <p
+        class="case_paragraph m-24_bottom media-m-12_bottom"
+      >
+        
+    Kubernetes specializes in resource management and orchestration, but it needs a containerization service alongside it. We used Docker to standardize the runtime for application. The two worked perfectly together.
+  
+      </p>
+       
+      <p
+        class="case_paragraph m-72_bottom media-m-24_bottom"
+      >
+        
+    Kubernetes provides an environment where Ops and Devs can speak the same language: the language of YAML configurations and Kubernetes objects. We get system resources on one end, containers on the other, and in the middle, Kubernetes works its magic.
+  
+      </p>
+    </div>
+     
+    <div
+      class="case_container container_full background-color-silver m-48_bottom"
+    >
+      <div
+        class="case_image-wrapp"
+      >
+        <picture>
+          <source
+            class="image media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Inventory change log"
+            class="image media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="366"
+            width="1440"
+          />
+        </picture>
       </div>
     </div>
      
@@ -1147,28 +1243,46 @@ exports[`Main component should render correctly 1`] = `
   
       </h4>
        
-      <ol>
-        <li>
-          
-      Control over resources: The more people have access to the cloud, the more expensive it is to use it. By introducing IaC, we rule out disorderly alterations in the system and prevent wastefulness, thus improving security and gaining firmer control over resources and costs.
+      <ol
+        class="case_advantages-list"
+      >
+        <li
+          class="case_advantages-item"
+        >
+          <span>
+            Control over resources:
+          </span>
+           The more people have access to the cloud, the more expensive it is to use it. By introducing IaC, we rule out disorderly alterations in the system and prevent wastefulness, thus improving security and gaining firmer control over resources and costs.
     
         </li>
          
-        <li>
-          
-      Reproducibility: IaC is the tool of ultimate reproducibility. By going straight to Terraform, one can avoid repetitive manual work, thus achieving: lower operating costs, higher speed, better coordination within the team, (ideally) fully automated infrastructure deployment.
+        <li
+          class="case_advantages-item"
+        >
+          <span>
+            Reproducibility:
+          </span>
+           IaC is the tool of ultimate reproducibility. By going straight to Terraform, one can avoid repetitive manual work, thus achieving: lower operating costs, higher speed, better coordination within the team, (ideally) fully automated infrastructure deployment.
     
         </li>
          
-        <li>
-          
-      Security: Introduced changes can be tracked, reviewed, and analyzed automatically before delivery. It’s a reliable way to detect and fix vulnerabilities before they can make trouble.
+        <li
+          class="case_advantages-item"
+        >
+          <span>
+            Security:
+          </span>
+           Introduced changes can be tracked, reviewed, and analyzed automatically before delivery. It’s a reliable way to detect and fix vulnerabilities before they can make trouble.
     
         </li>
          
-        <li>
-          
-      Reliable documentation: Documentation effectively stops being relevant once a new change is introduced into the system without being documented. With many changes going on, doc updates get easily forgotten. But if you have code for documentation, this problem is solved. There’s nothing more relevant for understanding a system than code itself. Ideally, what you have in master is what you have in production.
+        <li
+          class="case_advantages-item"
+        >
+          <span>
+            Reliable documentation:
+          </span>
+           Documentation effectively stops being relevant once a new change is introduced into the system without being documented. With many changes going on, doc updates get easily forgotten. But if you have code for documentation, this problem is solved. There’s nothing more relevant for understanding a system than code itself. Ideally, what you have in master is what you have in production.
     
         </li>
       </ol>
@@ -1201,28 +1315,584 @@ exports[`Main component should render correctly 1`] = `
         class="container_regular"
       >
         <h2
-          class="case_title_h2 case_title case_text-align-center"
+          class="case_title_h2 case_title case_text-align-center m-48_bottom media-m-32_bottom"
         >
           
       Key results
     
         </h2>
+         
+        <div
+          class="case_cards-container"
+        >
+          <div
+            class="card"
+          >
+            <p
+              class="case_paragraph-uppercase card_card-name"
+            >
+              
+    PostgreSQL
+  
+            </p>
+             
+            <img
+              alt="40 GB of RAM freed up. ReadIOPS halved. Number of TPS increased by 50%"
+              class="card_icon img_lazy card_icon_circle"
+              data-src="img.jpg"
+              height="66"
+              width="66"
+            />
+             
+            <div
+              class="card_text-content"
+            >
+              <h4
+                class="case_title_h4 card_title"
+              >
+                
+      40GB of RAM
+    
+              </h4>
+               
+              <p
+                class="case_paragraph card_description"
+                style="color: rgb(255, 255, 255);"
+              >
+                
+      40 GB of RAM freed up. ReadIOPS halved. Number of TPS increased by 50%
+    
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+          >
+            <p
+              class="case_paragraph-uppercase card_card-name"
+            >
+              
+    Infrastructure costs
+  
+            </p>
+             
+            <img
+              alt="without losses in performance and security"
+              class="card_icon img_lazy card_icon_chart"
+              data-src="img.jpg"
+              height="66"
+              width="66"
+            />
+             
+            <div
+              class="card_text-content"
+            >
+              <h4
+                class="case_title_h4 card_title"
+              >
+                
+      Reduced by 35%
+    
+              </h4>
+               
+              <p
+                class="case_paragraph card_description"
+                style="color: rgb(255, 255, 255);"
+              >
+                
+      without losses in performance and security
+    
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+          >
+            <p
+              class="case_paragraph-uppercase card_card-name"
+            >
+              
+    Elasticsearch
+  
+            </p>
+             
+            <img
+              alt="More secure data access Search time decreased initially to under 5 seconds and by now to ~250-300ms"
+              class="card_icon img_lazy card_icon_speed-card"
+              data-src="img.jpg"
+              height="66"
+              width="66"
+            />
+             
+            <div
+              class="card_text-content"
+            >
+              <h4
+                class="case_title_h4 card_title"
+              >
+                
+      ~250-300ms
+    
+              </h4>
+               
+              <p
+                class="case_paragraph card_description"
+                style="color: rgb(255, 255, 255);"
+              >
+                
+      More secure data access Search time decreased initially to under 5 seconds and by now to ~250-300ms
+    
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+     
+    <section
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 case_text-align-center m-24_bottom media-m-12_bottom"
+      >
+        
+    Technology stack
+  
+      </h2>
+       
+      <ul
+        class="case_list-technologies m-96_bottom media-m-48_bottom"
+      >
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Ruby"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__ruby ruby"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Ruby
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="NodeJS"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__node node"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    NodeJS
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Elasticsearch"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__elastic elastic"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Elasticsearch
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="PostgreSQL"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    PostgreSQL
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="RebbitMQ"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__rebbit-mq rebbit-mq"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    RebbitMQ
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Redis"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__redis redis"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Redis
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Memcached"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__memcached memcached"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Memcached
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Cloudwatch"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__cloud-watch cloud-watch"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Cloudwatch
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Prometheus"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__prometheus prometheus"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Prometheus
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Grafana"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__grafana grafana"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Grafana
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Sentry"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Sentry
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Heroku"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__heroku heroku"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Heroku
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="AWS"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__aws aws"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    AWS
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Kubernetes"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__kubernetes kubernetes"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Kubernetes
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Terraform"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__terraform terraform"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Terraform
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Travis CI"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__travis-ci travis-ci"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Travis CI
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Jenkins"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__jenkins jenkins"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Jenkins
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Docker"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__docker docker"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Docker
+  
+          </p>
+        </li>
+        <li
+          class="case_technologies-item"
+        >
+          <img
+            alt="Helm"
+            class="img_lazy case_technologies-item__tech-icon case_technologies-item__helm helm"
+            data-src="[object Object]"
+          />
+           
+          <p
+            class="case_technologies-item__tech-name"
+          >
+            
+    Helm
+  
+          </p>
+        </li>
+      </ul>
     </section>
      
     <section
       class="container_regular m-72_bottom media-m-48_bottom"
     >
       <h2
-        class="case_title_h2 m-48_bottom media-m-24_bottom case_text-align-center"
+        class="case_title_h2 case_title m-48_bottom media-m-24_bottom"
       >
         
     Meet the team
   
       </h2>
        
+      <div
+        class="case_team-list m-72_bottom media-m-48_bottom"
+      >
+        <li
+          class="case_team-item"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image grey-background media_lazy"
+              data-srcset="img.jpg,img.jpg"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Maxim Glotov"
+              class="image grey-background media_lazy"
+              data-src="img.jpg"
+              data-srcset="img.jpg"
+              data-testid="test-picture-img"
+              height="50"
+              width="50"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              
+      Maxim Glotov
+    
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              
+      Senior DevOps engineer
+    
+            </p>
+          </div>
+        </li>
+        <li
+          class="case_team-item"
+        >
+          <picture
+            class="case_team-item__image"
+          >
+            <source
+              class="image grey-background media_lazy"
+              data-srcset="img.jpg,img.jpg"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Andrew Sapozhnikov"
+              class="image grey-background media_lazy"
+              data-src="img.jpg"
+              data-srcset="img.jpg"
+              data-testid="test-picture-img"
+              height="50"
+              width="50"
+            />
+          </picture>
+           
+          <div
+            class="case_team-item__info"
+          >
+            <p
+              class="case_team-item__name"
+            >
+              
+      Andrew Sapozhnikov
+    
+            </p>
+             
+            <p
+              class="case_team-item__position"
+            >
+              
+      Head of DevOps
+    
+            </p>
+          </div>
+        </li>
+      </div>
+       
       <blockquote
-        alt="Ruslan Karabukaev"
+        alt="Daniel Vartanov"
         class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
       >
         
@@ -1242,7 +1912,7 @@ exports[`Main component should render correctly 1`] = `
               />
                
               <img
-                alt="Ruslan Karabukaev"
+                alt="Daniel Vartanov"
                 class="image media_lazy"
                 data-src="img.jpg"
                 data-srcset="img.jpg"
@@ -1257,7 +1927,7 @@ exports[`Main component should render correctly 1`] = `
             class="case_paragraph case_blockquote-author__name"
           >
             
-      Ruslan Karabukaev
+      Daniel Vartanov
     
           </p>
            
@@ -1265,7 +1935,7 @@ exports[`Main component should render correctly 1`] = `
             class="case_blockquote-author__position"
           >
             
-      Co-founder of GoDee
+      CTO, Veeqo
     
           </p>
         </div>

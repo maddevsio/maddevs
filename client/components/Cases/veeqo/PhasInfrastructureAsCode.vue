@@ -9,18 +9,18 @@
     <h4 class="case_title_h4 m-12_bottom">
       Advantages of IaC
     </h4>
-    <ol>
-      <li>
-        Control over resources: The more people have access to the cloud, the more expensive it is to use it. By introducing IaC, we rule out disorderly alterations in the system and prevent wastefulness, thus improving security and gaining firmer control over resources and costs.
+    <ol class="case_advantages-list">
+      <li class="case_advantages-item">
+        <span>Control over resources:</span> The more people have access to the cloud, the more expensive it is to use it. By introducing IaC, we rule out disorderly alterations in the system and prevent wastefulness, thus improving security and gaining firmer control over resources and costs.
       </li>
-      <li>
-        Reproducibility: IaC is the tool of ultimate reproducibility. By going straight to Terraform, one can avoid repetitive manual work, thus achieving: lower operating costs, higher speed, better coordination within the team, (ideally) fully automated infrastructure deployment.
+      <li class="case_advantages-item">
+        <span>Reproducibility:</span> IaC is the tool of ultimate reproducibility. By going straight to Terraform, one can avoid repetitive manual work, thus achieving: lower operating costs, higher speed, better coordination within the team, (ideally) fully automated infrastructure deployment.
       </li>
-      <li>
-        Security: Introduced changes can be tracked, reviewed, and analyzed automatically before delivery. It’s a reliable way to detect and fix vulnerabilities before they can make trouble.
+      <li class="case_advantages-item">
+        <span>Security:</span> Introduced changes can be tracked, reviewed, and analyzed automatically before delivery. It’s a reliable way to detect and fix vulnerabilities before they can make trouble.
       </li>
-      <li>
-        Reliable documentation: Documentation effectively stops being relevant once a new change is introduced into the system without being documented. With many changes going on, doc updates get easily forgotten. But if you have code for documentation, this problem is solved. There’s nothing more relevant for understanding a system than code itself. Ideally, what you have in master is what you have in production.
+      <li class="case_advantages-item">
+        <span>Reliable documentation:</span> Documentation effectively stops being relevant once a new change is introduced into the system without being documented. With many changes going on, doc updates get easily forgotten. But if you have code for documentation, this problem is solved. There’s nothing more relevant for understanding a system than code itself. Ideally, what you have in master is what you have in production.
       </li>
     </ol>
     <TextQuote class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom">
@@ -41,3 +41,32 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+@import '@/assets/styles/cases/_mixins';
+
+.case {
+  &_advantages-list {
+    margin: 0;
+    padding-left: 25px;
+  }
+
+  &_advantages-item {
+    margin-bottom: 10px;
+    @include default_text($text-color--black-oil, 17px, 166%, -0.03em, 400);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    span {
+      font-weight: 700
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+  }
+}
+</style>
