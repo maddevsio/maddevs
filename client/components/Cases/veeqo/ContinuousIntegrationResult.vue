@@ -1,7 +1,7 @@
 <template>
-  <section class="container_full background-color-blue p-48_top media-p-41_top p-56_bottom media-p-41_bottom">
+  <section class="container_full background-color-blue m-96_bottom media-m-48_bottom p-48_top media-p-41_top p-56_bottom media-p-41_bottom">
     <div class="container_regular">
-      <h2 class="case_title_h2 case_title case_text-align-center">
+      <h2 class="case_title_h2 case_title case_text-align-center m-10_bottom media-m-16_bottom">
         Result
       </h2>
       <TextParagraph class="case_description case_text-align-center m-12_top m-66_bottom media-m-41_bottom">

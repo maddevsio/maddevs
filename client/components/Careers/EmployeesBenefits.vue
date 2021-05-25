@@ -1,10 +1,16 @@
 <template>
   <div class="employees-benefits">
     <div class="employees-benefits_grid-container container">
-      <h2 class="employees-benefits_title">
+      <h2
+        class="employees-benefits_title"
+        data-aos="fade-up"
+      >
         Employees benefits
       </h2>
-      <div class="employees-benefits_benefits-cards">
+      <div
+        class="employees-benefits_benefits-cards"
+        data-aos="fade-up"
+      >
         <BenefitCard
           v-for="benefit in benefits"
           v-bind="benefit"
@@ -85,10 +91,6 @@ export default {
     @media screen and (max-width: 740px) {
       grid-template-columns: repeat(2, 1fr);
     }
-
-    @media screen and (max-width: 360px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
   }
 
   &_title {
@@ -140,6 +142,12 @@ export default {
 
   @media screen and (max-width: 1024px) {
     padding: 15px;
+  }
+
+  @media screen and (max-width: 740px) {
+    &__title br {
+      display: none;
+    }
   }
 }
 

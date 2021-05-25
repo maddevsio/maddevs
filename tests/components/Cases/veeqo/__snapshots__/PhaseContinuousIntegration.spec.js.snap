@@ -14,43 +14,47 @@ exports[`PhaseContinuousIntegration component should render correctly 1`] = `
     </h2>
      
     <div
-      class="case_card background-color-silver"
+      class="case_cards-container"
     >
-      <h3
-        class="case_title_h4 m-8_bottom"
+      <div
+        class="case_card background-color-silver"
       >
-        
-      Challenge
-    
-      </h3>
+        <h3
+          class="case_title_h4 m-8_bottom"
+        >
+          
+        Challenge
+      
+        </h3>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+        Development processes lacked consistency. Particularly, the project had manually configured CI system and pipelines, different development, test, and production environments and runtimes, non-reproducible development environment, inconsistent test builds.
+      
+        </p>
+      </div>
        
-      <p
-        class="case_paragraph"
+      <div
+        class="case_card background-color-blue-light"
       >
-        
-      Development processes lacked consistency. Particularly, the project had manually configured CI system and pipelines, different development, test, and production environments and runtimes, non-reproducible development environment, inconsistent test builds.
-    
-      </p>
-    </div>
-     
-    <div
-      class="case_card background-color-blue-light"
-    >
-      <h3
-        class="case_title_h4 m-8_bottom"
-      >
-        
-      Solution
-    
-      </h3>
-       
-      <p
-        class="case_paragraph"
-      >
-        
-      Dockerization is the most viable solution today to set up continuous delivery. As our application was back then partially hosted on Heroku, we created a unified runtime for developers and CI by dockerizing the main app using a Heroku Stack image and Docker Compose. It made CI reliable and allowed simplifying deployment. Also, it sped up bootstrapping of the development environment.
-    
-      </p>
+        <h3
+          class="case_title_h4 m-8_bottom"
+        >
+          
+        Solution
+      
+        </h3>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+        Dockerization is the most viable solution today to set up continuous delivery. As our application was back then partially hosted on Heroku, we created a unified runtime for developers and CI by dockerizing the main app using a Heroku Stack image and Docker Compose. It made CI reliable and allowed simplifying deployment. Also, it sped up bootstrapping of the development environment.
+      
+        </p>
+      </div>
     </div>
      
     <div
@@ -64,7 +68,13 @@ exports[`PhaseContinuousIntegration component should render correctly 1`] = `
   
       </blockquote>
        
-      <!---->
+      <p
+        class="case_quote-author"
+      >
+        
+    Andrew Sapozhnikov, CIO at Mad Devs
+  
+      </p>
     </div>
      
     <h3
@@ -76,31 +86,49 @@ exports[`PhaseContinuousIntegration component should render correctly 1`] = `
     </h3>
      
     <div
-      class="case_results"
+      class="case_achievements m-48_bottom media-m-24_bottom"
     >
-      <div
-        class="case_result-item"
+      <p
+        class="case_paragraph case_achievement-item"
       >
         
-      Reproducible CI results
+      Reproducible 
+        <br />
+         CI results
     
-      </div>
+      </p>
        
-      <div
-        class="case_result-item"
+      <p
+        class="case_paragraph case_achievement-item"
       >
         
-      Unified runtime
+      Unified 
+        <br />
+         runtime
     
-      </div>
+      </p>
        
-      <div
-        class="case_result-item"
+      <p
+        class="case_paragraph case_achievement-item"
       >
         
       Standardized development, test, and production environments
     
-      </div>
+      </p>
+    </div>
+     
+    <div
+      class="case_ci-panel m-96_bottom media-m-48_bottom"
+    >
+      <picture-stub
+        alt="CI Panel"
+        extension="png"
+        file="ci-panel"
+        folder="veeqo"
+        height="440"
+        lazy="true"
+        width="818"
+      />
     </div>
      
     <h3
@@ -149,18 +177,31 @@ exports[`PhaseContinuousIntegration component should render correctly 1`] = `
       </li>
     </ul>
      
-    <blockquote
-      class="case_blockquote m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+    <div
+      class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
     >
       <img
         alt="blockquote"
-        class="case_blockquote-mark img_lazy"
+        class="case_mark img_lazy"
         data-src="[object Object]"
       />
        
+      <blockquote
+        class="case_blockquote"
+      >
+        
     Everything down to the last comma is now written in the form of code. Even if we took Jenkins down completely and had to build it from scratch again, it’d take us no more than 10 minutes.
   
-    </blockquote>
+      </blockquote>
+       
+      <p
+        class="case_quote-author m-8_top"
+      >
+        
+    Maxim Glotov, DevOps Engineer at Mad Devs
+  
+      </p>
+    </div>
   </section>
 </div>
 `;

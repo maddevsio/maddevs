@@ -12,7 +12,10 @@
     <TextParagraph>
       There are four main types of resources: CPU, RAM, disc, and network. The way a service uses them depends on its type. Our objective was to arrange the services so that they don’t overlap in terms of the use of resources and—importantly—so that not too many resources are idle.
     </TextParagraph>
-    <TextQuoteBox class="m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto">
+    <TextQuoteBox
+      class="m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
+      author="Andrew Sapozhnikov, CIO at Mad Devs"
+    >
       There’s nothing more expensive than idle resources. At the same time, you don’t want to load the nodes to their maximum capacity because a) it’ll lead to performance degradation and b) you do need some idle resource to handle load spikes. Kubernetes finds balance.
     </TextQuoteBox>
     <TextParagraph class="m-48_bottom">

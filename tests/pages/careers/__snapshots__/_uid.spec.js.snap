@@ -17,6 +17,8 @@ exports[`Careers _uid component should render correctly 1`] = `
         >
           <div
             class="careers-position__labels"
+            data-aos="fade-right"
+            data-aos-duration="600"
           >
             <div
               class="position-labels"
@@ -35,6 +37,8 @@ exports[`Careers _uid component should render correctly 1`] = `
            
           <h1
             class="careers-position__title"
+            data-aos="fade-right"
+            data-aos-duration="600"
           >
             
         
@@ -45,22 +49,20 @@ exports[`Careers _uid component should render correctly 1`] = `
            
           <!---->
            
-          <nuxtlink
-            to="[object Object]"
+          <button
+            class="ui-button careers-position__apply-button"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            style="position: relative; overflow: hidden;"
+            type="button"
           >
-            <button
-              class="ui-button careers-position__apply-button"
-              style="position: relative; overflow: hidden;"
-              type="button"
-            >
-              
-          Apply now
-        
-              <div
-                class="wave"
-              />
-            </button>
-          </nuxtlink>
+            
+        Apply now
+      
+            <div
+              class="wave"
+            />
+          </button>
         </div>
       </div>
     </div>
@@ -81,6 +83,8 @@ exports[`Careers _uid component should render correctly 1`] = `
           >
             <h2
               class="careers-position__benefits-title"
+              data-aos="fade-right"
+              data-aos-duration="800"
             >
               
             Employees benefits
@@ -89,6 +93,8 @@ exports[`Careers _uid component should render correctly 1`] = `
              
             <div
               class="careers-position__benefits-grid"
+              data-aos="fade-left"
+              data-aos-duration="800"
             >
               <div
                 class="benefit-card"
@@ -272,6 +278,8 @@ exports[`Careers _uid component should render correctly 1`] = `
          
         <div
           class="careers-position__contacts"
+          data-aos="fade-up"
+          data-aos-duration="800"
           id="careers-position-form"
         >
           <div
@@ -327,6 +335,7 @@ exports[`Careers _uid component should render correctly 1`] = `
            
           <div
             class="careers-position__form"
+            data-aos="fade-up"
           >
             <div>
               <form
@@ -355,7 +364,9 @@ exports[`Careers _uid component should render correctly 1`] = `
                       />
                     </div>
                     .
-        I want to work for you as a desired position.
+        
+                    <br />
+                     I want to work for you as a desired position.
          
                     <!---->
                   </label>

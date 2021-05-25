@@ -1,5 +1,4 @@
 import FileInput from '@/components/Careers/shared/FileInput'
-import Careers from '@/components/Careers/shared/Careers'
 import { fireEvent, render, screen } from '@testing-library/vue'
 
 const file = new File([new ArrayBuffer(1)], 'file.pdf')
@@ -11,13 +10,13 @@ const MAX_FILE_LENGTH = 25
 
 describe('FileInput component', () => {
   it('should render correctly', () => {
-    const { container } = render(FileInput, { parentComponent: Careers })
+    const { container } = render(FileInput)
 
     expect(container).toMatchSnapshot()
   })
 
   it('should correct upload file', async () => {
-    const { emitted } = render(FileInput, { parentComponent: Careers })
+    const { emitted } = render(FileInput)
 
     const input = screen.getByTestId('test-file')
     await fireEvent.change(input, {
@@ -29,7 +28,7 @@ describe('FileInput component', () => {
   })
 
   it('should correct display long file name', async () => {
-    render(FileInput, { parentComponent: Careers })
+    render(FileInput)
 
     const input = await screen.getByTestId('test-file')
     await fireEvent.change(input, {

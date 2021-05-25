@@ -1,5 +1,5 @@
 <template>
-  <div class="container_full background-color-blue m-72_bottom media-m-48_bottom p-72_top media-p-41_top">
+  <div class="container_full case_container background-color-blue m-72_bottom media-m-48_bottom p-72_top media-p-41_top">
     <div class="container_regular">
       <h2 class="case_title_h2 case_title">
         Veeqo high-level overview
@@ -29,7 +29,7 @@
     <div class="case_image-wrapp">
       <Picture
         folder="veeqo"
-        file="high-level-overview"
+        file="high-level"
         extension="png"
         alt=""
         :width="1440"
@@ -60,6 +60,11 @@ export default {
 @import '../../../assets/styles/cases/_mixins';
 
 .case {
+  &_container {
+    max-height: 762px;
+    overflow: hidden;
+  }
+
   &_title,
   &_sec-desc {
     text-align: center;
@@ -86,10 +91,17 @@ export default {
   }
 
   &_image-wrapp {
-    min-width: 1440px;
+    min-width: 3020px;
+    max-width: 3020px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+
+    @media screen and (max-width: 870px) {
+      left: unset;
+      right: 1086px;
+      transform: none;
+    }
   }
 
   &_no-wrap {

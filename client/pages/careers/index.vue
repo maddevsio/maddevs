@@ -1,29 +1,27 @@
 <template>
   <main class="main">
-    <Main v-if="featureFlag('careersMain')" />
-    <div v-else>
-      <CareersBanner />
-      <Careers />
-    </div>
+    <Main />
   </main>
 </template>
 
 <script>
 import Main from '@/components/Careers/Main'
-import Careers from '@/components/Careers/shared/Careers'
-import CareersBanner from '@/components/core/banners/CareersBanner'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'MainCareers',
   components: {
     Main,
-    Careers,
-    CareersBanner,
   },
 
-  mixins: [initLazyLoadMixin],
+  mixins: [initLazyLoadMixin, animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+  })],
 
   head() {
     return buildHead(getMetadata('careers'))

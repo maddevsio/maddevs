@@ -9,12 +9,119 @@ exports[`PhaseElasticsearchResult component should render correctly 1`] = `
       class="container_regular"
     >
       <h2
-        class="case_title_h2 case_title case_text-align-center"
+        class="case_title_h2 case_title case_text-align-center m-32_bottom"
       >
         
       Result
     
       </h2>
+       
+      <div
+        class="case_cards-container m-38_bottom media-m-32_bottom"
+      >
+        <div
+          class="card"
+        >
+          <!---->
+           
+          <img
+            alt="Search time went down to under 5 seconds (now: ~250-300 ms)"
+            class="card_icon img_lazy card_icon_speed-card"
+            data-src="img.jpg"
+            height="66"
+            width="66"
+          />
+           
+          <div
+            class="card_text-content"
+          >
+            <h4
+              class="case_title_h4 card_title"
+            >
+              
+      ~250-300 ms
+    
+            </h4>
+             
+            <p
+              class="case_paragraph card_description"
+              style="color: rgb(255, 255, 255);"
+            >
+              
+      Search time went down to under 5 seconds (now: ~250-300 ms)
+    
+            </p>
+          </div>
+        </div>
+        <div
+          class="card"
+        >
+          <!---->
+           
+          <img
+            alt="We received massive positive feedback as Veeqo users were contacting customer"
+            class="card_icon img_lazy card_icon_message-card"
+            data-src="img.jpg"
+            height="66"
+            width="66"
+          />
+           
+          <div
+            class="card_text-content"
+          >
+            <h4
+              class="case_title_h4 card_title"
+            >
+              
+      Feedback
+    
+            </h4>
+             
+            <p
+              class="case_paragraph card_description"
+              style="color: rgb(255, 255, 255);"
+            >
+              
+      We received massive positive feedback as Veeqo users were contacting customer
+    
+            </p>
+          </div>
+        </div>
+        <div
+          class="card"
+        >
+          <!---->
+           
+          <img
+            alt="Elasticsearch became more efficient and reliable without costing the customer more"
+            class="card_icon img_lazy card_icon_gears-card"
+            data-src="img.jpg"
+            height="66"
+            width="66"
+          />
+           
+          <div
+            class="card_text-content"
+          >
+            <h4
+              class="case_title_h4 card_title"
+            >
+              
+      Elasticsearch
+    
+            </h4>
+             
+            <p
+              class="case_paragraph card_description"
+              style="color: rgb(255, 255, 255);"
+            >
+              
+      Elasticsearch became more efficient and reliable without costing the customer more
+    
+            </p>
+          </div>
+        </div>
+      </div>
        
       <p
         class="case_paragraph case_description case_text-align-center"

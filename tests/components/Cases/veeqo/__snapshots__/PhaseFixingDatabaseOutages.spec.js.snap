@@ -101,21 +101,54 @@ exports[`PhaseFixingDatabaseOutages component should render correctly 1`] = `
   
     </h3>
      
+    <div
+      class="case_solution-cards"
+    >
+      <cardtechsolution-stub
+        description="Collecting host metrics (CloudWatch and okmeter showed consequences, not causes)."
+        icon="cloud"
+      />
+      <cardtechsolution-stub
+        description="Analyzing the true RAM use and identifying 1,200-1,500 worker connections taking up about 40 GB of RAM."
+        icon="danger"
+      />
+      <cardtechsolution-stub
+        description="Adding PgBouncers to reduce the load on the database."
+        icon="gear"
+      />
+      <cardtechsolution-stub
+        description="Stabilizing connection pooling by applying ELB and thus distributing traffic more evenly to decrease the number of SPOFs."
+        icon="speed"
+      />
+    </div>
+     
     <p
-      class="case_paragraph m-24_top"
+      class="case_paragraph m-48_top m-48_bottom media-m-24_bottom"
     >
       
     As a result, we spent $180 on launching PgBouncers on two c4.large instances behind NLB and saved about 10X  the sum in the customer’s monthly costs by: Freeing up about 40 GB of RAM, Postponing the need to upgrade the RDS instance until about 6 months later.
   
     </p>
      
+    <img
+      alt="PgBouncers Diagram"
+      class="case_pg-bouncer-diagram media_lazy m-48_bottom"
+      data-src="img.jpg"
+      height="560"
+      width="818"
+    />
+     
     <h2
-      class="case_title_h2 m-48_bottom media-m-41_bottom case_text-align-center"
+      class="case_title_h2 case_title-result m-48_bottom media-m-41_bottom"
     >
       
     Result
   
     </h2>
+     
+    <fixingdatabaseoutagesresult-stub
+      class="m-96_bottom media-m-48_bottom"
+    />
   </section>
 </div>
 `;

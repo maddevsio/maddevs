@@ -5,32 +5,43 @@
         <div
           v-if="vacancy.labels.remote || vacancy.labels.relocation"
           class="careers-position__labels"
+          data-aos="fade-right"
+          data-aos-duration="600"
         >
           <PositionLabels :labels="vacancy.labels" />
         </div>
-        <h1 class="careers-position__title">
+        <h1
+          class="careers-position__title"
+          data-aos="fade-right"
+          data-aos-duration="600"
+        >
           {{ vacancy.title }}
         </h1>
         <p
           v-if="vacancy.subtitle"
+          data-aos="fade-right"
+          data-aos-duration="600"
           class="careers-position__subtitle"
         >
           {{ vacancy.subtitle }}
         </p>
         <div
           v-if="vacancy.tags && vacancy.tags.length"
+          data-aos="fade-right"
+          data-aos-duration="600"
           class="careers-position__tags"
         >
           <PositionTags :tags="vacancy.tags" />
         </div>
-        <NuxtLink :to="{ hash: '#careers-position-form' }">
-          <UIButton
-            type="button"
-            class="careers-position__apply-button"
-          >
-            Apply now
-          </UIButton>
-        </NuxtLink>
+        <UIButton
+          data-aos="fade-up"
+          data-aos-duration="600"
+          type="button"
+          class="careers-position__apply-button"
+          @click="scrollToElement('#careers-position-form')"
+        >
+          Apply now
+        </UIButton>
       </div>
     </div>
   </div>
@@ -41,6 +52,7 @@ import { mapGetters } from 'vuex'
 import PositionLabels from '@/components/Careers/shared/PositionLabels'
 import PositionTags from '@/components/Careers/shared/PositionTags'
 import UIButton from '@/components/shared/UIButton'
+import scrollToElementMixin from '@/mixins/scrollToElementMixin'
 
 export default {
   name: 'PositionHeader',
@@ -49,6 +61,8 @@ export default {
     PositionTags,
     UIButton,
   },
+
+  mixins: [scrollToElementMixin],
 
   computed: {
     ...mapGetters(['vacancy']),

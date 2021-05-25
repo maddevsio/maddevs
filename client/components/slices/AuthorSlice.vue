@@ -140,8 +140,7 @@ export default {
     }
   }
   &__name {
-    font-weight: 600;
-    font-size: 21px;
+    @include font('Poppins', 21px, 600);
     line-height: 130%;
     letter-spacing: -0.02px;
     color: $text-color--black-oil;

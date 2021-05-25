@@ -36,12 +36,27 @@
     <h3 class="case_title_h3 m-24_bottom media-m-12_bottom">
       Solution
     </h3>
-    <TextParagraph class="m-24_top">
+    <div class="case_solution-cards">
+      <CardTechSolution
+        v-for="solution in techSolutions"
+        v-bind="solution"
+        :key="solution.icon"
+      />
+    </div>
+    <TextParagraph class="m-48_top m-48_bottom media-m-24_bottom">
       As a result, we spent $180 on launching PgBouncers on two c4.large instances behind NLB and saved about 10X  the sum in the customer’s monthly costs by: Freeing up about 40 GB of RAM, Postponing the need to upgrade the RDS instance until about 6 months later.
     </TextParagraph>
-    <h2 class="case_title_h2 m-48_bottom media-m-41_bottom case_text-align-center">
+    <img
+      :data-src="$getMediaFromS3('/images/Cases/veeqo/svg/pg-bouncer-diagram.svg')"
+      width="818"
+      height="560"
+      alt="PgBouncers Diagram"
+      class="case_pg-bouncer-diagram media_lazy m-48_bottom"
+    >
+    <h2 class="case_title_h2 case_title-result m-48_bottom media-m-41_bottom">
       Result
     </h2>
+    <FixingDatabaseOutagesResult class="m-96_bottom media-m-48_bottom" />
   </section>
 </template>
 
@@ -50,6 +65,9 @@ import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import Card from '@/components/Cases/shared/Card'
 import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
 import TextParagraphUppercase from '@/components/Cases/shared/TextParagraphUppercase'
+import CardTechSolution from '@/components/Cases/veeqo/CardTechSolution'
+import FixingDatabaseOutagesResult from '@/components/Cases/veeqo/FixingDatabaseOutagesResult'
+import { techSolutions } from '@/data/caseVeeqo'
 
 export default {
   name: 'PhaseFixingDatabaseOutages',
@@ -58,6 +76,14 @@ export default {
     Card,
     TextQuoteBox,
     TextParagraphUppercase,
+    CardTechSolution,
+    FixingDatabaseOutagesResult,
+  },
+
+  data() {
+    return {
+      techSolutions,
+    }
   },
 }
 </script>
@@ -68,9 +94,29 @@ export default {
 .case {
   &_cards-container {
     @include grid(repeat(2, 1fr), auto, 25px, 0);
+  }
 
-    @media screen and (max-width: 880px) {
+  &_solution-cards {
+    @include grid(repeat(2, 1fr), auto, 25px, 25px);
+  }
+
+  &_title-result {
+    text-align: center;
+  }
+
+  &_pg-bouncer-diagram {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 880px) {
+    &_cards-container,
+    &_solution-cards {
       @include grid(repeat(1, 1fr), auto, 0, 10px);
+    }
+
+    &_title-result {
+      text-align: left;
     }
   }
 }

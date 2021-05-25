@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FixingDatabaseOutagesResult component should render correctly 1`] = `
+<div>
+  <div
+    class="case_result-container"
+  >
+    <div
+      class="case_result-item"
+    >
+      <h3
+        class="case_result-item_title"
+      >
+        
+      ReadIOPS
+    
+      </h3>
+       
+      <p
+        class="case_paragraph"
+        style="color: rgb(64, 65, 67);"
+      >
+        
+      halved for better instance performance
+    
+      </p>
+    </div>
+     
+    <div
+      class="case_result-item"
+    >
+      <h3
+        class="case_result-item_title"
+      >
+        
+      CPU
+    
+      </h3>
+       
+      <p
+        class="case_paragraph"
+        style="color: rgb(64, 65, 67);"
+      >
+        
+      load: reduced due to extra RAM
+    
+      </p>
+    </div>
+     
+    <div
+      class="case_result-item"
+    >
+      <h3
+        class="case_result-item_title"
+      >
+        
+      TPS
+    
+      </h3>
+       
+      <p
+        class="case_paragraph"
+        style="color: rgb(64, 65, 67);"
+      >
+        
+      increased 
+        <br />
+         by 50%
+    
+      </p>
+    </div>
+  </div>
+</div>
+`;

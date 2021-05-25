@@ -5,11 +5,7 @@ exports[`Index page should render correctly 1`] = `
   <main
     class="main"
   >
-    <div>
-      <careersbanner-stub />
-       
-      <careers-stub />
-    </div>
+    <main-stub />
   </main>
 </div>
 `;

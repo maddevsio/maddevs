@@ -10,12 +10,22 @@
           <SlicesBlock
             v-if="vacancy.slices && vacancy.slices.length"
             :slices="vacancy.slices"
+            data-aos="fade"
+            data-aos-duration="800"
           />
           <div class="careers-position__benefits">
-            <h2 class="careers-position__benefits-title">
+            <h2
+              class="careers-position__benefits-title"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
               Employees benefits
             </h2>
-            <div class="careers-position__benefits-grid">
+            <div
+              class="careers-position__benefits-grid"
+              data-aos="fade-left"
+              data-aos-duration="800"
+            >
               <BenefitCard
                 v-for="benefit in benefits"
                 v-bind="benefit"
@@ -27,9 +37,14 @@
         <div
           id="careers-position-form"
           class="careers-position__contacts"
+          data-aos="fade-up"
+          data-aos-duration="800"
         >
           <HRContactCard />
-          <div class="careers-position__form">
+          <div
+            class="careers-position__form"
+            data-aos="fade-up"
+          >
             <PositionForm :position="vacancy.position" />
           </div>
         </div>
@@ -48,8 +63,7 @@ import PositionForm from '@/components/Careers/shared/PositionForm'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { buildHead } from '@/data/seo'
 import { employeesBenefits as benefits } from '@/data/benefits'
-
-import featureFlag from '@/featureFlags/featureFlag'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'CareersPosition',
@@ -61,13 +75,15 @@ export default {
     PositionForm,
   },
 
-  mixins: [initLazyLoadMixin],
+  mixins: [initLazyLoadMixin, animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+  })],
 
   async asyncData({ store, params, error }) {
     const openGraphUrl = `${process.env.domain}/careers/${params.uid}/`
-    const showPage = featureFlag('careersPosition')
-
-    if (!showPage) return error({ statusCode: 404, message: 'Page not found' })
 
     try {
       await store.dispatch('getVacancy', params.uid)
@@ -91,7 +107,7 @@ export default {
     return buildHead({
       title: this.vacancy.metaTitle || this.vacancy.title || '',
       metaTitle: this.vacancy.metaTitle || this.vacancy.title || '',
-      description: this.vacancy.metaDescription || '',
+      description: this.vacancy.metaDescription || this.vacancy.subtitle || '',
       jsonLd: this.vacancy.schemaOrgSnippet,
       image: '/favicon.ico',
       url: this.openGraphUrl,

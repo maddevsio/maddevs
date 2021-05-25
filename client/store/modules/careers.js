@@ -45,7 +45,7 @@ export const mutations = {
   SET_VACANCY_CATEGORIES(state, categories = []) {
     const vacancyCategories = categories.map(category => ({
       title: category.category_title,
-      tags: category.tags.length ? category.tags.split(/, */g) : [],
+      tags: (category.tags && category.tags.length) ? category.tags.split(/, */g) : [],
     }))
     state.vacancyCategories = vacancyCategories
   },

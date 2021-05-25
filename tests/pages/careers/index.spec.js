@@ -26,7 +26,7 @@ const mocks = {
   featureFlag: jest.fn(),
 }
 
-const stubs = ['Main', 'CareersBanner', 'Careers']
+const stubs = ['Main']
 
 describe('Index page', () => {
   it('should render correctly', () => {
