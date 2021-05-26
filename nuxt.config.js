@@ -67,7 +67,7 @@ module.exports = {
    */
   ignore: 'pages/case-studies/veeqo.vue',
   generate: {
-    ...getRoutes(),
+    routes: () => getRoutes(),
     fallback: '404.html',
   },
   css: [
