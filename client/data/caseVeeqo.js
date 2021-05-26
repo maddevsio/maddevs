@@ -1,3 +1,5 @@
+import { cardAnimationY20, cardAnimationY40 } from '@/data/animationConfigs'
+
 export const inventoryAndShipping = [
   {
     title: 'FOUNDED',
@@ -40,16 +42,21 @@ export const elasticsearchResults = [
     icon: 'speed-card',
     title: '~250-300 ms',
     description: 'Search time went down to under 5 seconds (now: ~250-300 ms)',
+    animationSettings: {
+      disabled: true,
+    },
   },
   {
     icon: 'message-card',
     title: 'Feedback',
     description: 'We received massive positive feedback as Veeqo users were contacting customer',
+    animationSettings: cardAnimationY20,
   },
   {
     icon: 'gears-card',
     title: 'Elasticsearch',
     description: 'Elasticsearch became more efficient and reliable without costing the customer more',
+    animationSettings: cardAnimationY40,
   },
 ]
 
@@ -59,18 +66,23 @@ export const infrastructureAsCodeResult = [
     cardName: 'PostgreSQL',
     title: '40GB of RAM',
     description: '40 GB of RAM freed up. ReadIOPS halved. Number of TPS increased by 50%',
+    animationSettings: {
+      disabled: true,
+    },
   },
   {
     icon: 'chart',
     cardName: 'Infrastructure costs',
     title: 'Reduced by 35%',
     description: 'without losses in performance and security',
+    animationSettings: cardAnimationY20,
   },
   {
     icon: 'speed-card',
     cardName: 'Elasticsearch',
     title: '~250-300ms',
     description: 'More secure data access Search time decreased initially to under 5 seconds and by now to ~250-300ms',
+    animationSettings: cardAnimationY40,
   },
 ]
 

@@ -1,5 +1,5 @@
 <template>
-  <section class="container_full background-color-blue m-72_bottom media-m-48_bottom p-48_top media-p-41_top p-100_bottom media-p-48_bottom">
+  <section class="container_full background-color-blue m-72_bottom media-m-48_bottom p-48_top media-p-41_top p-78_bottom media-p-41_bottom">
     <div class="container_regular">
       <h2 class="case_title_h2 case_title case_text-align-center m-48_bottom media-m-32_bottom">
         Key results
@@ -9,6 +9,8 @@
           v-for="result in infrastructureAsCodeResult"
           v-bind="result"
           :key="result.title"
+          v-prlx="result.animationSettings"
+          class="case_result-card"
         />
       </div>
     </div>
@@ -47,6 +49,25 @@ export default {
 
     @media screen and (max-width: 880px) {
       @include grid(repeat(1, 1fr), auto, 0, 16px);
+    }
+  }
+
+  &_result-card {
+    position: relative;
+
+    &:nth-child(2) {
+      top: 20px;
+    }
+
+    &:nth-child(3) {
+      top: 40px;
+    }
+
+    @media screen and (max-width: 880px) {
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 0;
+      }
     }
   }
 }

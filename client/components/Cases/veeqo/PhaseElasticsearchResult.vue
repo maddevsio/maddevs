@@ -4,11 +4,13 @@
       <h2 class="case_title_h2 case_title case_text-align-center m-32_bottom">
         Result
       </h2>
-      <div class="case_cards-container m-38_bottom media-m-32_bottom">
+      <div class="case_cards-container m-60_bottom media-m-32_bottom">
         <CardResult
           v-for="result in elasticsearchResults"
           v-bind="result"
           :key="result.title"
+          v-prlx="result.animationSettings"
+          class="case_result-card"
         />
       </div>
       <TextParagraph class="case_description case_text-align-center">
@@ -53,6 +55,25 @@ export default {
 
     @media screen and (max-width: 880px) {
       @include grid(repeat(1, 1fr), auto, 0, 16px);
+    }
+  }
+
+  &_result-card {
+    position: relative;
+
+    &:nth-child(2) {
+      top: 20px;
+    }
+
+    &:nth-child(3) {
+      top: 40px;
+    }
+
+    @media screen and (max-width: 880px) {
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 0;
+      }
     }
   }
 }

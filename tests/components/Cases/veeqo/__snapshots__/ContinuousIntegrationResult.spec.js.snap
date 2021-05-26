@@ -20,11 +20,53 @@ exports[`ContinuousIntegrationResult component should render correctly 1`] = `
         class="case_paragraph case_description case_text-align-center m-12_top m-66_bottom media-m-41_bottom"
       >
         
-      We call it a win-win situation between the development team 
-        <br />
-         and the customer’s business.
+      We call it a win-win situation between the development team and the customer’s business.
     
       </p>
+       
+      <div
+        class="case_cards-container"
+      >
+        <div
+          class="case_card"
+        >
+          <img
+            alt="Significantly reduced test time"
+            class="case_card-icon case_time-icon media_lazy"
+            data-src="img.jpg"
+            height="66"
+            width="66"
+          />
+           
+          <h4
+            class="case_title_h4 case_card-title"
+          >
+            
+          Significantly reduced test time
+        
+          </h4>
+        </div>
+         
+        <div
+          class="case_card case_card-anim"
+        >
+          <img
+            alt="Significantly reduced test time"
+            class="case_card-icon case_dollar-icon media_lazy"
+            data-src="img.jpg"
+            height="66"
+            width="66"
+          />
+           
+          <h4
+            class="case_title_h4 case_card-title"
+          >
+            
+          Decreased cost of CI maintenance
+        
+          </h4>
+        </div>
+      </div>
     </div>
   </section>
 </div>
