@@ -40,16 +40,35 @@ export const elasticsearchResults = [
     icon: 'speed-card',
     title: '~250-300 ms',
     description: 'Search time went down to under 5 seconds (now: ~250-300 ms)',
+    animationSettings: {
+      disabled: true,
+    },
   },
   {
     icon: 'message-card',
     title: 'Feedback',
     description: 'We received massive positive feedback as Veeqo users were contacting customer',
+    animationSettings: {
+      reverse: true,
+      limit: {
+        min: -20,
+        max: 20,
+      },
+      mobileMaxWidth: 881,
+    },
   },
   {
     icon: 'gears-card',
     title: 'Elasticsearch',
     description: 'Elasticsearch became more efficient and reliable without costing the customer more',
+    animationSettings: {
+      reverse: true,
+      limit: {
+        min: -40,
+        max: 40,
+      },
+      mobileMaxWidth: 881,
+    },
   },
 ]
 
@@ -59,18 +78,37 @@ export const infrastructureAsCodeResult = [
     cardName: 'PostgreSQL',
     title: '40GB of RAM',
     description: '40 GB of RAM freed up. ReadIOPS halved. Number of TPS increased by 50%',
+    animationSettings: {
+      disabled: true,
+    },
   },
   {
     icon: 'chart',
     cardName: 'Infrastructure costs',
     title: 'Reduced by 35%',
     description: 'without losses in performance and security',
+    animationSettings: {
+      reverse: true,
+      limit: {
+        min: -20,
+        max: 20,
+      },
+      mobileMaxWidth: 881,
+    },
   },
   {
     icon: 'speed-card',
     cardName: 'Elasticsearch',
     title: '~250-300ms',
     description: 'More secure data access Search time decreased initially to under 5 seconds and by now to ~250-300ms',
+    animationSettings: {
+      reverse: true,
+      limit: {
+        min: -40,
+        max: 40,
+      },
+      mobileMaxWidth: 881,
+    },
   },
 ]
 

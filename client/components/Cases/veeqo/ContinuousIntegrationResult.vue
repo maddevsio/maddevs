@@ -20,7 +20,10 @@
             Significantly reduced test time
           </h4>
         </div>
-        <div class="case_card">
+        <div
+          v-prlx="animationSettings"
+          class="case_card case_card-anim"
+        >
           <img
             :data-src="$getMediaFromS3(`/images/Cases/veeqo/svg/dollar.svg`)"
             alt="Significantly reduced test time"
@@ -44,6 +47,20 @@ export default {
   name: 'ContinuousIntegrationResult',
   components: {
     TextParagraph,
+  },
+
+  data() {
+    return {
+      animationSettings: {
+        reverse: true,
+        limit: {
+          min: -20,
+          max: 20,
+        },
+
+        mobileMaxWidth: 621,
+      },
+    }
   },
 }
 </script>
@@ -76,10 +93,6 @@ export default {
     @media screen and (max-width: 880px) {
       @include grid(repeat(2, 1fr), auto, 20px, 0);
     }
-
-    @media screen and (max-width: 620px) {
-      @include grid(repeat(1, 1fr), auto, 0, 16px);
-    }
   }
 
   &_card {
@@ -92,6 +105,11 @@ export default {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
+  }
+
+  &_card-anim {
+    position: relative;
+    top: 20px;
   }
 
   &_card-icon {
@@ -113,6 +131,16 @@ export default {
     &_card {
       padding-top: 45px;
       padding-bottom: 40px;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    &_cards-container {
+      @include grid(repeat(1, 1fr), auto, 0, 16px);
+    }
+
+    &_card-anim {
+      top: 0;
     }
   }
 }

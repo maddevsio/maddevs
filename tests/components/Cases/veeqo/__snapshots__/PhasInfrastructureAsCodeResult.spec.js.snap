@@ -3,7 +3,7 @@
 exports[`PhasInfrastructureAsCodeResult component should render correctly 1`] = `
 <div>
   <section
-    class="container_full background-color-blue m-72_bottom media-m-48_bottom p-48_top media-p-41_top p-100_bottom media-p-48_bottom"
+    class="container_full background-color-blue m-72_bottom media-m-48_bottom p-48_top media-p-41_top p-78_bottom media-p-41_bottom"
   >
     <div
       class="container_regular"
@@ -20,19 +20,25 @@ exports[`PhasInfrastructureAsCodeResult component should render correctly 1`] = 
         class="case_cards-container"
       >
         <cardresult-stub
+          animationsettings="[object Object]"
           cardname="PostgreSQL"
+          class="case_result-card"
           description="40 GB of RAM freed up. ReadIOPS halved. Number of TPS increased by 50%"
           icon="circle"
           title="40GB of RAM"
         />
         <cardresult-stub
+          animationsettings="[object Object]"
           cardname="Infrastructure costs"
+          class="case_result-card"
           description="without losses in performance and security"
           icon="chart"
           title="Reduced by 35%"
         />
         <cardresult-stub
+          animationsettings="[object Object]"
           cardname="Elasticsearch"
+          class="case_result-card"
           description="More secure data access Search time decreased initially to under 5 seconds and by now to ~250-300ms"
           icon="speed-card"
           title="~250-300ms"

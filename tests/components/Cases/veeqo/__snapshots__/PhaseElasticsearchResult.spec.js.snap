@@ -17,10 +17,11 @@ exports[`PhaseElasticsearchResult component should render correctly 1`] = `
       </h2>
        
       <div
-        class="case_cards-container m-38_bottom media-m-32_bottom"
+        class="case_cards-container m-60_bottom media-m-32_bottom"
       >
         <div
-          class="card"
+          animationsettings="[object Object]"
+          class="card case_result-card"
         >
           <!---->
            
@@ -54,7 +55,8 @@ exports[`PhaseElasticsearchResult component should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="card"
+          animationsettings="[object Object]"
+          class="card case_result-card"
         >
           <!---->
            
@@ -88,7 +90,8 @@ exports[`PhaseElasticsearchResult component should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="card"
+          animationsettings="[object Object]"
+          class="card case_result-card"
         >
           <!---->
            

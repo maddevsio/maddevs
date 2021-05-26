@@ -162,7 +162,7 @@ exports[`Main component should render correctly 1`] = `
         </p>
          
         <div
-          class="case_dashboard-container m-72_bottom media-m-48_bottom"
+          class="case_dashboard-container m-60_bottom media-m-48_bottom"
         >
           <div
             class="case_dashboard-item"
@@ -206,26 +206,28 @@ exports[`Main component should render correctly 1`] = `
         </div>
       </div>
        
-      <div
-        class="case_image-wrapp"
-      >
-        <picture>
-          <source
-            class="image media_lazy"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt=""
-            class="image media_lazy"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="335"
-            width="1440"
-          />
-        </picture>
+      <div>
+        <div
+          class="case_image-wrapp"
+        >
+          <picture>
+            <source
+              class="image"
+              srcset="img.jpg,img.jpg"
+              type="image/webp"
+            />
+             
+            <img
+              alt=""
+              class="image"
+              data-testid="test-picture-img"
+              height="335"
+              src="img.jpg"
+              srcset="img.jpg"
+              width="1440"
+            />
+          </picture>
+        </div>
       </div>
     </div>
      
@@ -801,7 +803,7 @@ exports[`Main component should render correctly 1`] = `
           </div>
            
           <div
-            class="case_card"
+            class="case_card case_card-anim"
           >
             <img
               alt="Significantly reduced test time"
@@ -1026,10 +1028,11 @@ exports[`Main component should render correctly 1`] = `
         </h2>
          
         <div
-          class="case_cards-container m-38_bottom media-m-32_bottom"
+          class="case_cards-container m-60_bottom media-m-32_bottom"
         >
           <div
-            class="card"
+            animationsettings="[object Object]"
+            class="card case_result-card"
           >
             <!---->
              
@@ -1063,7 +1066,8 @@ exports[`Main component should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="card"
+            animationsettings="[object Object]"
+            class="card case_result-card"
           >
             <!---->
              
@@ -1097,7 +1101,8 @@ exports[`Main component should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="card"
+            animationsettings="[object Object]"
+            class="card case_result-card"
           >
             <!---->
              
@@ -1235,26 +1240,28 @@ exports[`Main component should render correctly 1`] = `
     <div
       class="case_container container_full background-color-silver m-48_bottom"
     >
-      <div
-        class="case_image-wrapp"
-      >
-        <picture>
-          <source
-            class="image media_lazy"
-            data-srcset="img.jpg,img.jpg"
-            type="image/webp"
-          />
-           
-          <img
-            alt="Inventory change log"
-            class="image media_lazy"
-            data-src="img.jpg"
-            data-srcset="img.jpg"
-            data-testid="test-picture-img"
-            height="366"
-            width="1440"
-          />
-        </picture>
+      <div>
+        <div
+          class="case_image-wrapp"
+        >
+          <picture>
+            <source
+              class="image"
+              srcset="img.jpg,img.jpg"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Inventory change log"
+              class="image"
+              data-testid="test-picture-img"
+              height="366"
+              src="img.jpg"
+              srcset="img.jpg"
+              width="1440"
+            />
+          </picture>
+        </div>
       </div>
     </div>
      
@@ -1351,7 +1358,7 @@ exports[`Main component should render correctly 1`] = `
     </div>
      
     <section
-      class="container_full background-color-blue m-72_bottom media-m-48_bottom p-48_top media-p-41_top p-100_bottom media-p-48_bottom"
+      class="container_full background-color-blue m-72_bottom media-m-48_bottom p-48_top media-p-41_top p-78_bottom media-p-41_bottom"
     >
       <div
         class="container_regular"
@@ -1368,7 +1375,8 @@ exports[`Main component should render correctly 1`] = `
           class="case_cards-container"
         >
           <div
-            class="card"
+            animationsettings="[object Object]"
+            class="card case_result-card"
           >
             <p
               class="case_paragraph-uppercase card_card-name"
@@ -1408,7 +1416,8 @@ exports[`Main component should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="card"
+            animationsettings="[object Object]"
+            class="card case_result-card"
           >
             <p
               class="case_paragraph-uppercase card_card-name"
@@ -1448,7 +1457,8 @@ exports[`Main component should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="card"
+            animationsettings="[object Object]"
+            class="card case_result-card"
           >
             <p
               class="case_paragraph-uppercase card_card-name"

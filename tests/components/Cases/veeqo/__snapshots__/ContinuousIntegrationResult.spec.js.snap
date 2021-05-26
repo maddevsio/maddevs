@@ -48,7 +48,7 @@ exports[`ContinuousIntegrationResult component should render correctly 1`] = `
         </div>
          
         <div
-          class="case_card"
+          class="case_card case_card-anim"
         >
           <img
             alt="Significantly reduced test time"
