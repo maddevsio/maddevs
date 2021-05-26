@@ -1,10 +1,11 @@
 import getRobots from '../utils/getRobots'
 
 describe('getRobots util', () => {
-  it('if env not "staging" will return { UserAgent: "*" }', () => {
-    const result = { UserAgent: '*' }
+  it('if env not "staging" will return { UserAgent: "*", Sitemap: "https://maddevs.io/sitemap.xml" }', () => {
+    const result = { UserAgent: '*', Sitemap: 'https://maddevs.io/sitemap.xml' }
     expect(getRobots()).toEqual(result)
-    expect(getRobots('develop')).toEqual(result)
+    expect(getRobots('')).toEqual(result)
+    expect(getRobots('development')).toEqual(result)
     expect(getRobots('production')).toEqual(result)
   })
 

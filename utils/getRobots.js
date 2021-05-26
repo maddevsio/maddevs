@@ -7,6 +7,7 @@ const getRobots = env => {
   }
   return {
     UserAgent: '*',
+    Sitemap: 'https://maddevs.io/sitemap.xml',
   }
 }
 
