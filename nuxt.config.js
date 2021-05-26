@@ -1,4 +1,5 @@
 import getRoutes, { getSitemapRoutes } from './utils/getRoutes'
+import getRobots from './utils/getRobots'
 
 require('dotenv').config()
 
@@ -134,8 +135,7 @@ module.exports = {
     baseURL: '/',
   },
   robots: {
-    UserAgent: '*',
-    Sitemap: 'https://maddevs.io/sitemap.xml',
+    ...getRobots(process.env.FF_ENVIRONMENT),
   },
   prismic: {
     endpoint: process.env.NODE_PRISMIC_API,
