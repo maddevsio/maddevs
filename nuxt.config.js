@@ -114,6 +114,7 @@ module.exports = {
     '~/plugins/vue-social-sharing.js',
     '~/plugins/get-media-from-s3.js',
     '~/plugins/feature-flags.js',
+    '~/plugins/vue-prlx.js',
     { src: '~/plugins/sentry.js', mode: 'client' },
     { src: '~/plugins/lazy-load.js', mode: 'client' },
   ],
