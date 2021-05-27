@@ -59,6 +59,7 @@ export default {
         },
 
         mobileMaxWidth: 621,
+        fromBottom: true,
       },
     }
   },
