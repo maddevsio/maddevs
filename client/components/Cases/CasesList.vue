@@ -14,6 +14,7 @@
         :link="item.link"
         :poster="item.poster"
         :class="`cases-list_${item.id}`"
+        data-testid="test-case-card"
       />
     </section>
     <NuxtLink
