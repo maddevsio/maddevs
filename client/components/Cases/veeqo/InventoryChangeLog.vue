@@ -31,12 +31,12 @@ export default {
       animationSettings: {
         reverse: true,
         limit: {
-          min: -30,
-          max: 30,
+          min: -50,
+          max: 0,
         },
 
-        preserveInitialPosition: false,
         mobileMaxWidth: 881,
+        fromBottom: true,
       },
     }
   },
