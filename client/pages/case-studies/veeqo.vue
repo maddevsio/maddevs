@@ -1,5 +1,5 @@
 <template>
-  <main class="case case--yourcast">
+  <main class="case case--veeqo">
     <CaseHeader
       :logo="logo"
       project="veeqo"

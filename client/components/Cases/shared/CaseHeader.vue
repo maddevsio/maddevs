@@ -2,7 +2,7 @@
   <section
     id="case-header"
     class="case_header"
-    :class="projectName"
+    :class="`case_header-${project}`"
   >
     <!-- Image placeholder fallback for Video -->
     <div
@@ -116,13 +116,6 @@ export default {
       isIphone: false,
       opacity: 1,
     }
-  },
-
-  computed: {
-    projectName() {
-      if (!this.isIphone) return `case_header-${this.project}`
-      return ''
-    },
   },
 
   mounted() {
