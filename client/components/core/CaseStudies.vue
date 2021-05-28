@@ -19,7 +19,7 @@
         />
       </div>
     </div>
-    <CasesList />
+    <CasesList :limit="4" />
   </section>
 </template>
 

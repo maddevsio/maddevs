@@ -68,8 +68,8 @@ export default {
           max: 0,
         },
 
-        preserveInitialPosition: false,
         mobileMaxWidth: 961,
+        fromBottom: true,
       },
     }
   },
@@ -102,7 +102,6 @@ export default {
     @include grid(repeat(2, 1fr), auto, 0, 0);
   }
 
-  &_dashboard-title,
   &_dashboard-desc {
     opacity: 0.5;
   }
@@ -133,10 +132,6 @@ export default {
     &_dashboard-container {
       @include grid(repeat(1, 1fr), auto, 0, 0);
       text-align: center;
-    }
-
-    &_dashboard-title {
-      opacity: 1;
     }
   }
 
