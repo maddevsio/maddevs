@@ -38,13 +38,13 @@ exports[`HighLevelOverview component should render correctly 1`] = `
         
           </p>
            
-          <h5
+          <h3
             class="case_title_h5 case_dashboard-title media-m-41_bottom"
           >
             
           The dashboard used to visualize reports
         
-          </h5>
+          </h3>
         </div>
          
         <div
@@ -58,13 +58,13 @@ exports[`HighLevelOverview component should render correctly 1`] = `
         
           </p>
            
-          <h5
+          <h3
             class="case_title_h5 case_dashboard-title"
           >
             
           Inventory management, Management, Warehouse, Reporting
         
-          </h5>
+          </h3>
         </div>
       </div>
     </div>
@@ -81,7 +81,7 @@ exports[`HighLevelOverview component should render correctly 1`] = `
           />
            
           <img
-            alt=""
+            alt="Veeqo High Level Overview."
             class="image"
             data-testid="test-picture-img"
             height="335"

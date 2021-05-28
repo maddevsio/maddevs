@@ -3,7 +3,7 @@
     <img
       v-if="icon"
       :data-src="$getMediaFromS3(`/images/Cases/veeqo/svg/${icon}.svg`)"
-      :alt="description"
+      :alt="alt"
       width="51.94"
       height="51.94"
       class="card-content_icon img_lazy"
@@ -32,6 +32,11 @@ export default {
     },
 
     description: {
+      type: String,
+      default: '',
+    },
+
+    alt: {
       type: String,
       default: '',
     },

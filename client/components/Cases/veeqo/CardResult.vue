@@ -9,16 +9,16 @@
     <img
       v-if="icon"
       :data-src="$getMediaFromS3(`/images/Cases/veeqo/svg/${icon}.svg`)"
-      :alt="description"
+      :alt="alt"
       width="66"
       height="66"
       class="card_icon media_lazy"
       :class="`card_icon_${icon}`"
     >
     <div class="card_text-content">
-      <h4 class="case_title_h4 card_title">
+      <h3 class="case_title_h4 card_title">
         {{ title }}
-      </h4>
+      </h3>
       <TextParagraph
         class="card_description"
         color="#ffffff"
@@ -57,6 +57,11 @@ export default {
     },
 
     description: {
+      type: String,
+      default: '',
+    },
+
+    alt: {
       type: String,
       default: '',
     },
