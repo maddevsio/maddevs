@@ -3,7 +3,7 @@
 exports[`Veeqo root component should render correctly 1`] = `
 <div>
   <main
-    class="case case--yourcast"
+    class="case case--veeqo"
   >
     <section
       class="case_header case_header-veeqo"
@@ -93,34 +93,21 @@ exports[`Veeqo root component should render correctly 1`] = `
     >
       <img
         alt="SJMC"
-        class="case_logotype-sjmc img_lazy"
+        class="case_logotype-yourcast img_lazy"
         data-src="[object Object]"
       />
        
       <h2
-        class="case_title case_title_h2 case_title-sjmc"
+        class="case_title case_title_h2 case_title-yourcast"
       >
         
-    The maintenance 
-        <br
-          class="case_mobile-break-sjmc"
-        />
-        
-    of memory: 
-        <br />
-        
-    Sir John Monash 
-        <br
-          class="case_mobile-break-sjmc"
-        />
-        
-    Centre
+    The Evolution of Yourcast.TV
   
       </h2>
        
       <nuxtlink-stub
         class="case_next-project-button"
-        to="/case-studies/sir-john-monash-centre/"
+        to="/case-studies/yourcast/"
       >
         
     Read next project
