@@ -1,5 +1,5 @@
 <template>
-  <main class="case case--yourcast">
+  <main class="case case--veeqo">
     <CaseHeader
       :logo="logo"
       project="veeqo"
@@ -21,19 +21,16 @@
     </CaseHeader>
     <Main />
     <Footer
-      link="/case-studies/sir-john-monash-centre/"
-      class-name="sjmc"
+      link="/case-studies/yourcast/"
+      class-name="yourcast"
     >
       <img
         slot="icon"
-        :data-src="require(`@/assets/img/Studies/svg/sjmc-footer.svg`)"
+        :data-src="require(`@/assets/img/Studies/svg/yourcast-logo.svg`)"
         alt="SJMC"
-        class="case_logotype-sjmc img_lazy"
+        class="case_logotype-yourcast img_lazy"
       >
-      The maintenance <br class="case_mobile-break-sjmc">
-      of memory: <br>
-      Sir John Monash <br class="case_mobile-break-sjmc">
-      Centre
+      The Evolution of Yourcast.TV
     </Footer>
   </main>
 </template>
@@ -43,6 +40,8 @@ import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/veeqo/Main'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
+import { getMetadata, buildHead } from '@/data/seo'
+import { getPageScripts } from '@/data/pageScripts'
 
 export default {
   name: 'CaseVeeqo',
@@ -64,6 +63,10 @@ export default {
         alt: '',
       },
     }
+  },
+
+  head() {
+    return buildHead({ ...getMetadata('sjmc'), image: 'https://maddevs.io/veeqo-case.jpg' }, getPageScripts('sjmc'))
   },
 
   mounted() {
@@ -107,6 +110,32 @@ export default {
 
   &_nowrap {
     white-space: nowrap;
+  }
+
+  &_logotype-yourcast {
+    width: 270px;
+    height: 57px;
+    margin-bottom: 30px;
+  }
+
+  &_title-yourcast {
+    margin-bottom: 51px;
+
+    @media screen and (max-width: 430px) {
+      max-width: 205px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &_logotype-yourcast {
+      width: 200px;
+      height: 44px;
+      margin-bottom: 25px;
+    }
+
+    &_title-yourcast {
+      margin-bottom: 41px;
+    }
   }
 }
 </style>
