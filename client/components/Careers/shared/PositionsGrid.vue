@@ -7,14 +7,15 @@
         v-bind="vacancy"
       />
     </ul>
-    <UnderlinedButton
-      v-if="totalPages > vacanciesPage"
-      type="button"
-      class="positions-load-button"
-      @click="getMoreVacancies"
-    >
-      See more positions
-    </UnderlinedButton>
+    <div class="positions-load-button">
+      <UnderlinedButton
+        v-if="totalPages > vacanciesPage"
+        type="button"
+        @click="getMoreVacancies"
+      >
+        See more positions
+      </UnderlinedButton>
+    </div>
   </div>
 </template>
 
@@ -80,7 +81,8 @@ export default {
 }
 
 .positions-load-button {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin: 35px auto 0;
 
   @media screen and (max-width: 768px) {
