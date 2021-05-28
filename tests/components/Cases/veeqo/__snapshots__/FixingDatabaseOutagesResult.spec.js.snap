@@ -8,13 +8,13 @@ exports[`FixingDatabaseOutagesResult component should render correctly 1`] = `
     <div
       class="case_result-item"
     >
-      <h3
+      <h4
         class="case_result-item_title"
       >
         
       ReadIOPS
     
-      </h3>
+      </h4>
        
       <p
         class="case_paragraph"
@@ -29,13 +29,13 @@ exports[`FixingDatabaseOutagesResult component should render correctly 1`] = `
     <div
       class="case_result-item"
     >
-      <h3
+      <h4
         class="case_result-item_title"
       >
         
       CPU
     
-      </h3>
+      </h4>
        
       <p
         class="case_paragraph"
@@ -50,13 +50,13 @@ exports[`FixingDatabaseOutagesResult component should render correctly 1`] = `
     <div
       class="case_result-item"
     >
-      <h3
+      <h4
         class="case_result-item_title"
       >
         
       TPS
     
-      </h3>
+      </h4>
        
       <p
         class="case_paragraph"

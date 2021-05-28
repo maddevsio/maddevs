@@ -1,9 +1,9 @@
 <template>
   <section class="container_full background-color-blue m-96_bottom media-m-48_bottom p-48_top media-p-41_top p-28_bottom media-p-38_bottom">
     <div class="container_regular">
-      <h2 class="case_title_h2 case_title case_text-align-center m-32_bottom">
+      <h3 class="case_title_h2 case_title case_text-align-center m-32_bottom">
         Result
-      </h2>
+      </h3>
       <div class="case_cards-container m-60_bottom media-m-32_bottom">
         <CardResult
           v-for="result in elasticsearchResults"

@@ -20,6 +20,7 @@ exports[`PhasInfrastructureAsCodeResult component should render correctly 1`] = 
         class="case_cards-container"
       >
         <cardresult-stub
+          alt="40 GB of RAM Freed Up. ReadIOPS Halved. The Number of TPS Increased by 50%."
           animationsettings="[object Object]"
           cardname="PostgreSQL"
           class="case_result-card"
@@ -28,6 +29,7 @@ exports[`PhasInfrastructureAsCodeResult component should render correctly 1`] = 
           title="40GB of RAM"
         />
         <cardresult-stub
+          alt="Infrastructure Costs Redused by 35% Without Losses in Performance and Security."
           animationsettings="[object Object]"
           cardname="Infrastructure costs"
           class="case_result-card"
@@ -36,6 +38,7 @@ exports[`PhasInfrastructureAsCodeResult component should render correctly 1`] = 
           title="Reduced by 35%"
         />
         <cardresult-stub
+          alt="Elasticsearch – More Secure Data Access Search Time Decreased Initially to Under 5 Seconds and by Now to ~250–300ms."
           animationsettings="[object Object]"
           cardname="Elasticsearch"
           class="case_result-card"

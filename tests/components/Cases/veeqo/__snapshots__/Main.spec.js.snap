@@ -175,13 +175,13 @@ exports[`Main component should render correctly 1`] = `
         
             </p>
              
-            <h5
+            <h3
               class="case_title_h5 case_dashboard-title media-m-41_bottom"
             >
               
           The dashboard used to visualize reports
         
-            </h5>
+            </h3>
           </div>
            
           <div
@@ -195,13 +195,13 @@ exports[`Main component should render correctly 1`] = `
         
             </p>
              
-            <h5
+            <h3
               class="case_title_h5 case_dashboard-title"
             >
               
           Inventory management, Management, Warehouse, Reporting
         
-            </h5>
+            </h3>
           </div>
         </div>
       </div>
@@ -218,7 +218,7 @@ exports[`Main component should render correctly 1`] = `
             />
              
             <img
-              alt=""
+              alt="Veeqo High Level Overview."
               class="image"
               data-testid="test-picture-img"
               height="335"
@@ -298,13 +298,13 @@ exports[`Main component should render correctly 1`] = `
       
           </p>
            
-          <h4
+          <h3
             class="case_title_h4 m-10_bottom media-m-8_bottom"
           >
             
         Regular outage
       
-          </h4>
+          </h3>
            
           <p
             class="case_paragraph"
@@ -326,13 +326,13 @@ exports[`Main component should render correctly 1`] = `
       
           </p>
            
-          <h4
+          <h3
             class="case_title_h4 m-10_bottom media-m-8_bottom"
           >
             
         Degraded user services
       
-          </h4>
+          </h3>
            
           <p
             class="case_paragraph"
@@ -359,7 +359,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_quote-author"
         >
           
-    Andrew Sapozhnikov, CIO at Mad Devs
+    Andrew Sapozhnikov, Head of DevOps at Mad Devs
   
         </p>
       </div>
@@ -379,7 +379,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_card card-content background-color-silver"
         >
           <img
-            alt="Collecting host metrics (CloudWatch and okmeter showed consequences, not causes)."
+            alt="CloudWatch Logo."
             class="card-content_icon img_lazy"
             data-src="img.jpg"
             height="51.94"
@@ -398,7 +398,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_card card-content background-color-silver"
         >
           <img
-            alt="Analyzing the true RAM use and identifying 1,200-1,500 worker connections taking up about 40 GB of RAM."
+            alt="RAM Icon."
             class="card-content_icon img_lazy"
             data-src="img.jpg"
             height="51.94"
@@ -417,7 +417,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_card card-content background-color-silver"
         >
           <img
-            alt="Adding PgBouncers to reduce the load on the database."
+            alt="PgBouncers Icon."
             class="card-content_icon img_lazy"
             data-src="img.jpg"
             height="51.94"
@@ -436,7 +436,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_card card-content background-color-silver"
         >
           <img
-            alt="Stabilizing connection pooling by applying ELB and thus distributing traffic more evenly to decrease the number of SPOFs."
+            alt="Speed Icon."
             class="card-content_icon img_lazy"
             data-src="img.jpg"
             height="51.94"
@@ -462,20 +462,20 @@ exports[`Main component should render correctly 1`] = `
       </p>
        
       <img
-        alt="PgBouncers Diagram"
+        alt="PgBouncers Diagram."
         class="case_pg-bouncer-diagram media_lazy m-48_bottom"
         data-src="img.jpg"
         height="560"
         width="818"
       />
        
-      <h2
+      <h3
         class="case_title_h2 case_title-result m-48_bottom media-m-41_bottom"
       >
         
     Result
   
-      </h2>
+      </h3>
        
       <div
         class="case_result-container m-96_bottom media-m-48_bottom"
@@ -483,13 +483,13 @@ exports[`Main component should render correctly 1`] = `
         <div
           class="case_result-item"
         >
-          <h3
+          <h4
             class="case_result-item_title"
           >
             
       ReadIOPS
     
-          </h3>
+          </h4>
            
           <p
             class="case_paragraph"
@@ -504,13 +504,13 @@ exports[`Main component should render correctly 1`] = `
         <div
           class="case_result-item"
         >
-          <h3
+          <h4
             class="case_result-item_title"
           >
             
       CPU
     
-          </h3>
+          </h4>
            
           <p
             class="case_paragraph"
@@ -525,13 +525,13 @@ exports[`Main component should render correctly 1`] = `
         <div
           class="case_result-item"
         >
-          <h3
+          <h4
             class="case_result-item_title"
           >
             
       TPS
     
-          </h3>
+          </h4>
            
           <p
             class="case_paragraph"
@@ -617,7 +617,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_quote-author"
         >
           
-    Andrew Sapozhnikov, CIO at Mad Devs
+    Andrew Sapozhnikov, Head of DevOps at Mad Devs
   
         </p>
       </div>
@@ -673,7 +673,7 @@ exports[`Main component should render correctly 1`] = `
           />
            
           <img
-            alt="CI Panel"
+            alt="CI Panel."
             class="image media_lazy"
             data-src="img.jpg"
             data-srcset="img.jpg"
@@ -763,13 +763,13 @@ exports[`Main component should render correctly 1`] = `
       <div
         class="container_regular"
       >
-        <h2
+        <h3
           class="case_title_h2 case_title case_text-align-center m-10_bottom media-m-16_bottom"
         >
           
       Result
     
-        </h2>
+        </h3>
          
         <p
           class="case_paragraph case_description case_text-align-center m-12_top m-66_bottom media-m-41_bottom"
@@ -786,7 +786,7 @@ exports[`Main component should render correctly 1`] = `
             class="case_card"
           >
             <img
-              alt="Significantly reduced test time"
+              alt="Significantly Reduced Test Time."
               class="case_card-icon case_time-icon media_lazy"
               data-src="img.jpg"
               height="66"
@@ -806,7 +806,7 @@ exports[`Main component should render correctly 1`] = `
             class="case_card case_card-anim"
           >
             <img
-              alt="Significantly reduced test time"
+              alt="Decreased Cost of CI Maintenance."
               class="case_card-icon case_dollar-icon media_lazy"
               data-src="img.jpg"
               height="66"
@@ -1019,13 +1019,13 @@ exports[`Main component should render correctly 1`] = `
       <div
         class="container_regular"
       >
-        <h2
+        <h3
           class="case_title_h2 case_title case_text-align-center m-32_bottom"
         >
           
       Result
     
-        </h2>
+        </h3>
          
         <div
           class="case_cards-container m-60_bottom media-m-32_bottom"
@@ -1037,7 +1037,7 @@ exports[`Main component should render correctly 1`] = `
             <!---->
              
             <img
-              alt="Search time went down to under 5 seconds (now: ~250-300 ms)"
+              alt="Search Time Went Down to Under 5 Seconds – Now: 250–300 Ms."
               class="card_icon media_lazy card_icon_speed-card"
               data-src="img.jpg"
               height="66"
@@ -1047,13 +1047,13 @@ exports[`Main component should render correctly 1`] = `
             <div
               class="card_text-content"
             >
-              <h4
+              <h3
                 class="case_title_h4 card_title"
               >
                 
       ~250-300 ms
     
-              </h4>
+              </h3>
                
               <p
                 class="case_paragraph card_description"
@@ -1072,7 +1072,7 @@ exports[`Main component should render correctly 1`] = `
             <!---->
              
             <img
-              alt="We received massive positive feedback as Veeqo users were contacting customer"
+              alt="We Received Massive Positive Feedback As Veeqo Users Were Contacting the Customer."
               class="card_icon media_lazy card_icon_message-card"
               data-src="img.jpg"
               height="66"
@@ -1082,13 +1082,13 @@ exports[`Main component should render correctly 1`] = `
             <div
               class="card_text-content"
             >
-              <h4
+              <h3
                 class="case_title_h4 card_title"
               >
                 
       Feedback
     
-              </h4>
+              </h3>
                
               <p
                 class="case_paragraph card_description"
@@ -1107,7 +1107,7 @@ exports[`Main component should render correctly 1`] = `
             <!---->
              
             <img
-              alt="Elasticsearch became more efficient and reliable without costing the customer more"
+              alt="Elasticsearch Became More Efficient and Reliable Without Costing the Customer More."
               class="card_icon media_lazy card_icon_gears-card"
               data-src="img.jpg"
               height="66"
@@ -1117,13 +1117,13 @@ exports[`Main component should render correctly 1`] = `
             <div
               class="card_text-content"
             >
-              <h4
+              <h3
                 class="case_title_h4 card_title"
               >
                 
       Elasticsearch
     
-              </h4>
+              </h3>
                
               <p
                 class="case_paragraph card_description"
@@ -1199,7 +1199,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_quote-author"
         >
           
-    Andrew Sapozhnikov, CIO at Mad Devs
+    Andrew Sapozhnikov, Head of DevOps at Mad Devs
   
         </p>
       </div>
@@ -1252,7 +1252,7 @@ exports[`Main component should render correctly 1`] = `
             />
              
             <img
-              alt="Inventory change log"
+              alt="Inventory Changelog."
               class="image"
               data-testid="test-picture-img"
               height="366"
@@ -1284,13 +1284,13 @@ exports[`Main component should render correctly 1`] = `
   
       </p>
        
-      <h4
+      <h3
         class="case_title_h4 m-12_bottom"
       >
         
     Advantages of IaC
   
-      </h4>
+      </h3>
        
       <ol
         class="case_advantages-list"
@@ -1387,7 +1387,7 @@ exports[`Main component should render correctly 1`] = `
             </p>
              
             <img
-              alt="40 GB of RAM freed up. ReadIOPS halved. Number of TPS increased by 50%"
+              alt="40 GB of RAM Freed Up. ReadIOPS Halved. The Number of TPS Increased by 50%."
               class="card_icon media_lazy card_icon_circle"
               data-src="img.jpg"
               height="66"
@@ -1397,13 +1397,13 @@ exports[`Main component should render correctly 1`] = `
             <div
               class="card_text-content"
             >
-              <h4
+              <h3
                 class="case_title_h4 card_title"
               >
                 
       40GB of RAM
     
-              </h4>
+              </h3>
                
               <p
                 class="case_paragraph card_description"
@@ -1428,7 +1428,7 @@ exports[`Main component should render correctly 1`] = `
             </p>
              
             <img
-              alt="without losses in performance and security"
+              alt="Infrastructure Costs Redused by 35% Without Losses in Performance and Security."
               class="card_icon media_lazy card_icon_chart"
               data-src="img.jpg"
               height="66"
@@ -1438,13 +1438,13 @@ exports[`Main component should render correctly 1`] = `
             <div
               class="card_text-content"
             >
-              <h4
+              <h3
                 class="case_title_h4 card_title"
               >
                 
       Reduced by 35%
     
-              </h4>
+              </h3>
                
               <p
                 class="case_paragraph card_description"
@@ -1469,7 +1469,7 @@ exports[`Main component should render correctly 1`] = `
             </p>
              
             <img
-              alt="More secure data access Search time decreased initially to under 5 seconds and by now to ~250-300ms"
+              alt="Elasticsearch – More Secure Data Access Search Time Decreased Initially to Under 5 Seconds and by Now to ~250–300ms."
               class="card_icon media_lazy card_icon_speed-card"
               data-src="img.jpg"
               height="66"
@@ -1479,13 +1479,13 @@ exports[`Main component should render correctly 1`] = `
             <div
               class="card_text-content"
             >
-              <h4
+              <h3
                 class="case_title_h4 card_title"
               >
                 
       ~250-300ms
     
-              </h4>
+              </h3>
                
               <p
                 class="case_paragraph card_description"
@@ -1519,7 +1519,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Ruby"
+            alt="Ruby Programming Language Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__ruby ruby"
             data-src="[object Object]"
           />
@@ -1536,7 +1536,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="NodeJS"
+            alt="NodeJS Logo"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__node node"
             data-src="[object Object]"
           />
@@ -1553,7 +1553,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Elasticsearch"
+            alt="Elasticsearch Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__elastic elastic"
             data-src="[object Object]"
           />
@@ -1570,7 +1570,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="PostgreSQL"
+            alt="PostgreSQL Database Management System Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
             data-src="[object Object]"
           />
@@ -1587,7 +1587,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="RebbitMQ"
+            alt="RebbitMQ Message Broker Software Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__rebbit-mq rebbit-mq"
             data-src="[object Object]"
           />
@@ -1604,7 +1604,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Redis"
+            alt="Redis Data Structure Store Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__redis redis"
             data-src="[object Object]"
           />
@@ -1621,7 +1621,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Memcached"
+            alt="Memcached Memory Caching System Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__memcached memcached"
             data-src="[object Object]"
           />
@@ -1638,7 +1638,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Cloudwatch"
+            alt="Cloudwatch Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__cloud-watch cloud-watch"
             data-src="[object Object]"
           />
@@ -1655,7 +1655,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Prometheus"
+            alt="Prometheus Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__prometheus prometheus"
             data-src="[object Object]"
           />
@@ -1672,7 +1672,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Grafana"
+            alt="Grafana Software Application Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__grafana grafana"
             data-src="[object Object]"
           />
@@ -1689,7 +1689,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Sentry"
+            alt="Sentry Error Tracking System Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
             data-src="[object Object]"
           />
@@ -1706,7 +1706,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Heroku"
+            alt="Heroku Cloud Platform Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__heroku heroku"
             data-src="[object Object]"
           />
@@ -1723,7 +1723,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="AWS"
+            alt="AWS Cloud Computing Platforms Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__aws aws"
             data-src="[object Object]"
           />
@@ -1740,7 +1740,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Kubernetes"
+            alt="Kubernetes Container Orchestration System Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__kubernetes kubernetes"
             data-src="[object Object]"
           />
@@ -1757,7 +1757,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Terraform"
+            alt="Terraform Infrastructure as Code Software Tool Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__terraform terraform"
             data-src="[object Object]"
           />
@@ -1774,7 +1774,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Travis CI"
+            alt="Travis CI Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__travis-ci travis-ci"
             data-src="[object Object]"
           />
@@ -1791,7 +1791,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Jenkins"
+            alt="Jenkins Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__jenkins jenkins"
             data-src="[object Object]"
           />
@@ -1808,7 +1808,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Docker"
+            alt="Docker Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__docker docker"
             data-src="[object Object]"
           />
@@ -1825,7 +1825,7 @@ exports[`Main component should render correctly 1`] = `
           class="case_technologies-item"
         >
           <img
-            alt="Helm"
+            alt="Helm Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__helm helm"
             data-src="[object Object]"
           />
@@ -1893,7 +1893,7 @@ exports[`Main component should render correctly 1`] = `
               class="case_team-item__position"
             >
               
-      Senior DevOps engineer
+      DevOps engineer
     
             </p>
           </div>

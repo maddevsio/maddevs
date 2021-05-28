@@ -14,7 +14,7 @@
     </TextParagraph>
     <TextQuoteBox
       class="m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
-      author="Andrew Sapozhnikov, CIO at Mad Devs"
+      author="Andrew Sapozhnikov, Head of DevOps at Mad Devs"
     >
       There’s nothing more expensive than idle resources. At the same time, you don’t want to load the nodes to their maximum capacity because a) it’ll lead to performance degradation and b) you do need some idle resource to handle load spikes. Kubernetes finds balance.
     </TextQuoteBox>

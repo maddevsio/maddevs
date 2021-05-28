@@ -10,7 +10,7 @@ exports[`InventoryChangeLog component should render correctly 1`] = `
         class="case_image-wrapp"
       >
         <picture-stub
-          alt="Inventory change log"
+          alt="Inventory Changelog."
           extension="png"
           file="inventory-change-log"
           folder="veeqo"
