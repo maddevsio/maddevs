@@ -10,7 +10,7 @@ export const getCareersHome = async prismic => {
 export const getVacancyPosts = async prismic => {
   try {
     const response = await prismic.api.query(prismic.predicates.at('document.type', 'vacancy'), {
-      orderings: '[my.post.date desc]',
+      orderings: '[my.vacancy.date desc]',
       pageSize: 100,
     })
     return response.results
