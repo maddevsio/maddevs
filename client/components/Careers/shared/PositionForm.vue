@@ -189,6 +189,11 @@ export default {
       type: String,
       default: '',
     },
+
+    huntflowVacancyId: {
+      type: String,
+      default: null,
+    },
   },
 
   data() {
@@ -212,34 +217,39 @@ export default {
 
   methods: {
     ...mapActions(['sendVacancy']),
-    handleFileSelect() {
-      if (this.$v && this.$v.cvFile) {
-        this.$v.cvFile.$touch()
-      }
+
+    toBase64(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader()
+        reader.readAsDataURL(file)
+        reader.onload = () => resolve(reader.result)
+        reader.onerror = error => reject(error)
+      })
     },
 
-    async submitForm() {
-      if (this.$v.validationGroup.$invalid) return
-      const emailToSent = await this.buildEmail()
-      this.sendVacancy(emailToSent)
-      this.isShowSuccessModal = true
-      this.resetForm()
-    },
-
-    resetForm() {
-      this.$v.$reset() // Reset validation form
-      this.$refs.fileInput.reset()
-      this.$refs.radioButtons.reset()
-      this.name = null
-      this.grade = null
-      this.email = null
-      this.cvFile = null
-      this.linkedin = null
-    },
-
-    async buildEmail() {
+    async buildApplicantData() {
+      const splitedName = this.name.split(' ')
       const base64File = await this.toBase64(this.cvFile)
+
+      if (true) {
+        return {
+          sendMethod: 'huntflow',
+          vacancy: this.huntflowVacancyId,
+          variables: {
+            firstName: splitedName[0],
+            middleName: splitedName.length > 2 ? splitedName[1] : '',
+            lastName: splitedName.length > 1 ? splitedName[splitedName.length - 1] : '',
+            email: this.email,
+            positionValue: this.grade.value,
+            linkedinProfile: this.linkedin,
+          },
+
+          attachment: this.cvFile,
+        }
+      }
+
       return {
+        sendMethod: 'email',
         templateId: 305491, // Required
         variables: {
           fullName: this.name,
@@ -259,13 +269,27 @@ export default {
       }
     },
 
-    toBase64(file) {
-      return new Promise((resolve, reject) => {
-        const reader = new FileReader()
-        reader.readAsDataURL(file)
-        reader.onload = () => resolve(reader.result)
-        reader.onerror = error => reject(error)
-      })
+    handleFileSelect() {
+      if (this.$v && this.$v.cvFile) this.$v.cvFile.$touch()
+    },
+
+    resetForm() {
+      this.$v.$reset() // Reset validation form
+      this.$refs.fileInput.reset()
+      this.$refs.radioButtons.reset()
+      this.name = null
+      this.grade = null
+      this.email = null
+      this.cvFile = null
+      this.linkedin = null
+    },
+
+    async submitForm() {
+      if (this.$v.validationGroup.$invalid) return
+      const applicantData = await this.buildApplicantData()
+      this.sendVacancy(applicantData)
+      this.isShowSuccessModal = true
+      // this.resetForm()
     },
   },
 }

@@ -45,7 +45,10 @@
             class="careers-position__form"
             data-aos="fade-up"
           >
-            <PositionForm :position="vacancy.position" />
+            <PositionForm
+              :position="vacancy.position"
+              :huntflow-vacancy-id="vacancy.huntflow_vacancy_id"
+            />
           </div>
         </div>
       </div>

@@ -1,10 +1,14 @@
-const { sendEmail } = require('../services/EmailsService')
-const { validate } = require('../utils/validation')
+// const { sendEmail } = require('../services/EmailsService')
+const { sendApplication } = require('../services/HuntflowService')
+// const { validate } = require('../utils/validation')
 
-function index(req, res) {
-  const { isValid, error } = validate(req)
-  if (!isValid) return res.status(error.status).json(error)
-  return sendEmail(req, data => res.json(data))
+async function index(req, res) {
+  // const { isValid, error } = validate(req)
+  // if (!isValid) return res.status(error.status).json(error)
+
+  const huntflowRes = await sendApplication(req)
+  return res.json(huntflowRes)
+  // return sendEmail(req, data => res.json(data))
 }
 
 module.exports = {

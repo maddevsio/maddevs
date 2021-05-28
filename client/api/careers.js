@@ -29,8 +29,14 @@ export const getVacancyPost = async (prismic, payload) => {
 }
 
 export const sendVacancy = async (axios, payload) => {
+  const formData = new FormData()
+  formData.append('file', payload.attachment)
   try {
-    const response = await axios.post('api/careers', payload)
+    const response = await axios.post('api/careers', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    })
     return response
   } catch (error) {
     return error
