@@ -7,7 +7,11 @@ exports[`PositionsGrid component should render correctly 1`] = `
       class="positions-grid"
     />
      
-    <!---->
+    <div
+      class="positions-load-button"
+    >
+      <!---->
+    </div>
   </div>
 </div>
 `;

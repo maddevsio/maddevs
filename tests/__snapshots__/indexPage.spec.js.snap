@@ -1668,6 +1668,7 @@ exports[`index page renders correctly 1`] = `
       >
         <div
           class="cases-list_item cases-list_item--full cases-list_sjmc"
+          data-testid="test-case-card"
         >
           <nuxtlink-stub
             class="cases-list_item-link"
@@ -1724,6 +1725,7 @@ exports[`index page renders correctly 1`] = `
         </div>
         <div
           class="cases-list_item cases-list_item--big cases-list_nambafood"
+          data-testid="test-case-card"
         >
           <nuxtlink-stub
             class="cases-list_item-link"
@@ -1780,6 +1782,7 @@ exports[`index page renders correctly 1`] = `
         </div>
         <div
           class="cases-list_item cases-list_item--small cases-list_yourcast"
+          data-testid="test-case-card"
         >
           <nuxtlink-stub
             class="cases-list_item-link"
@@ -1836,6 +1839,7 @@ exports[`index page renders correctly 1`] = `
         </div>
         <div
           class="cases-list_item cases-list_item--full cases-list_godee"
+          data-testid="test-case-card"
         >
           <nuxtlink-stub
             class="cases-list_item-link"

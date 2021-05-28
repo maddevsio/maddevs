@@ -2,7 +2,7 @@
   <section
     id="case-header"
     class="case_header"
-    :class="projectName"
+    :class="`case_header-${project}`"
   >
     <!-- Image placeholder fallback for Video -->
     <div
@@ -41,10 +41,10 @@
         :style="{opacity}"
         :width="logo.width"
         :height="logo.height"
-        :data-src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
+        :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
         :alt="logo.alt"
         :class="`case_${logo.file}`"
-        class="case_header-logo media_lazy"
+        class="case_header-logo"
       >
     </div>
   </section>
@@ -116,13 +116,6 @@ export default {
       isIphone: false,
       opacity: 1,
     }
-  },
-
-  computed: {
-    projectName() {
-      if (!this.isIphone) return `case_header-${this.project}`
-      return ''
-    },
   },
 
   mounted() {
