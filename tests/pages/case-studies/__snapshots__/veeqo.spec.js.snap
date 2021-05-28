@@ -76,7 +76,7 @@ exports[`Veeqo root component should render correctly 1`] = `
         </div>
          
         <img
-          alt=""
+          alt="Veeqo an Inventory Management Platform’s Logo."
           class="case_header-logo media_lazy case_veeqo-logotype"
           data-src="img.jpg"
           height="114"
@@ -92,7 +92,7 @@ exports[`Veeqo root component should render correctly 1`] = `
       class="case_footer container_full"
     >
       <img
-        alt="SJMC"
+        alt="The Evolution of Yourcast.TV"
         class="case_logotype-yourcast img_lazy"
         data-src="[object Object]"
       />

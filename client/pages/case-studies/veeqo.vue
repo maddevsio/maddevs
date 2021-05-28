@@ -27,7 +27,7 @@
       <img
         slot="icon"
         :data-src="require(`@/assets/img/Studies/svg/yourcast-logo.svg`)"
-        alt="SJMC"
+        alt="The Evolution of Yourcast.TV"
         class="case_logotype-yourcast img_lazy"
       >
       The Evolution of Yourcast.TV
@@ -41,7 +41,6 @@ import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/veeqo/Main'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { getMetadata, buildHead } from '@/data/seo'
-import { getPageScripts } from '@/data/pageScripts'
 
 export default {
   name: 'CaseVeeqo',
@@ -60,13 +59,16 @@ export default {
         height: 114,
         folder: 'veeqo',
         file: 'veeqo-logotype',
-        alt: '',
+        alt: 'Veeqo an Inventory Management Platform’s Logo.',
       },
     }
   },
 
   head() {
-    return buildHead({ ...getMetadata('sjmc'), image: 'https://maddevs.io/veeqo-case.jpg' }, getPageScripts('sjmc'))
+    return buildHead({
+      ...getMetadata('veeqo'),
+      image: 'https://maddevs.io/veeqo-case.png',
+    })
   },
 
   mounted() {

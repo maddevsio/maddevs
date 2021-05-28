@@ -87,6 +87,12 @@ export const meta = {
     url: 'https://maddevs.io/case-studies/yourcast/',
     jsonLd: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: YourcastTV - online video streaming platform", "description": "OTT-like streaming platform case study. Read how Mad Devs developed an online video streaming service for isolated groups of people feeling homesick.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group LTD"}}',
   },
+  veeqo: {
+    title: 'Mad Devs Case Study: Veeqo an inventory management platform for e-commerce',
+    description: 'Infrastructure Case Study: How to optimize and reduce infrastructure costs? Read Veeqo’s story of optimizing the costs along with improving the system’s performance.',
+    url: 'https://maddevs.io/case-studies/veeqo/',
+    jsonLd: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: Veeqo an Inventory Management Platform for E-commerce", "description": "Infrastructure Case Study: How to optimize and reduce infrastructure costs? Read Veeqo’s story of optimizing the costs along with improving the system’s performance.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}',
+  },
   ...tagPagesSeo,
 }
 

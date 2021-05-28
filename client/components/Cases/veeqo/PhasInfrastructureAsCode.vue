@@ -6,9 +6,9 @@
     <TextParagraph class="m-24_bottom">
       IaC is a way to manage large structures where manual operation is highly ineffective or simply impossible. To go fully IaC, our teams made fundamental changes in the ways we develop, deliver, and maintain our solutions.
     </TextParagraph>
-    <h4 class="case_title_h4 m-12_bottom">
+    <h3 class="case_title_h4 m-12_bottom">
       Advantages of IaC
-    </h4>
+    </h3>
     <ol class="case_advantages-list">
       <li class="case_advantages-item">
         <span>Control over resources:</span> The more people have access to the cloud, the more expensive it is to use it. By introducing IaC, we rule out disorderly alterations in the system and prevent wastefulness, thus improving security and gaining firmer control over resources and costs.

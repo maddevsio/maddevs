@@ -3,7 +3,7 @@
     <img
       v-if="name"
       :data-src="require(`@/assets/img/Home/svg/technologies/${name}.svg`)"
-      :alt="alt"
+      :alt="imgAlt || alt"
       class="img_lazy case_technologies-item__tech-icon"
       :class="`case_technologies-item__${name} ${name}`"
     >
@@ -26,6 +26,11 @@ export default {
     },
 
     alt: {
+      type: String,
+      default: '',
+    },
+
+    imgAlt: {
       type: String,
       default: '',
     },

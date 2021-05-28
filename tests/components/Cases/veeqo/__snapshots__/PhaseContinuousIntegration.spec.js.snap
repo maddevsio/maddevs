@@ -72,7 +72,7 @@ exports[`PhaseContinuousIntegration component should render correctly 1`] = `
         class="case_quote-author"
       >
         
-    Andrew Sapozhnikov, CIO at Mad Devs
+    Andrew Sapozhnikov, Head of DevOps at Mad Devs
   
       </p>
     </div>
@@ -121,7 +121,7 @@ exports[`PhaseContinuousIntegration component should render correctly 1`] = `
       class="case_ci-panel m-96_bottom media-m-48_bottom"
     >
       <picture-stub
-        alt="CI Panel"
+        alt="CI Panel."
         extension="png"
         file="ci-panel"
         folder="veeqo"

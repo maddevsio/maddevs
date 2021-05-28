@@ -1,9 +1,9 @@
 <template>
   <section class="container_full background-color-blue m-96_bottom media-m-48_bottom p-48_top media-p-41_top p-56_bottom media-p-41_bottom">
     <div class="container_regular">
-      <h2 class="case_title_h2 case_title case_text-align-center m-10_bottom media-m-16_bottom">
+      <h3 class="case_title_h2 case_title case_text-align-center m-10_bottom media-m-16_bottom">
         Result
-      </h2>
+      </h3>
       <TextParagraph class="case_description case_text-align-center m-12_top m-66_bottom media-m-41_bottom">
         We call it a win-win situation between the development team and the customer’s business.
       </TextParagraph>
@@ -11,7 +11,7 @@
         <div class="case_card">
           <img
             :data-src="$getMediaFromS3(`/images/Cases/veeqo/svg/time.svg`)"
-            alt="Significantly reduced test time"
+            alt="Significantly Reduced Test Time."
             width="66"
             height="66"
             class="case_card-icon case_time-icon media_lazy"
@@ -26,7 +26,7 @@
         >
           <img
             :data-src="$getMediaFromS3(`/images/Cases/veeqo/svg/dollar.svg`)"
-            alt="Significantly reduced test time"
+            alt="Decreased Cost of CI Maintenance."
             width="66"
             height="66"
             class="case_card-icon case_dollar-icon media_lazy"

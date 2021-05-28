@@ -21,7 +21,7 @@ exports[`TextQuote should render correctly 1`] = `
       class="case_quote-author m-8_top"
     >
       
-    Andrew Sapozhnikov, CIO at Mad Devs
+    Andrew Sapozhnikov, Head of DevOps at Mad Devs
   
     </p>
   </div>

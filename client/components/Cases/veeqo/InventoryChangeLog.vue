@@ -6,7 +6,7 @@
           folder="veeqo"
           file="inventory-change-log"
           extension="png"
-          alt="Inventory change log"
+          alt="Inventory Changelog."
           :width="1440"
           :height="366"
           :background="false"
