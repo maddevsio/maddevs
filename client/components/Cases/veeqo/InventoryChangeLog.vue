@@ -6,7 +6,7 @@
           folder="veeqo"
           file="inventory-change-log"
           extension="png"
-          alt="Inventory change log"
+          alt="Inventory Changelog."
           :width="1440"
           :height="366"
           :background="false"
@@ -31,12 +31,12 @@ export default {
       animationSettings: {
         reverse: true,
         limit: {
-          min: -30,
-          max: 30,
+          min: -50,
+          max: 0,
         },
 
-        preserveInitialPosition: false,
         mobileMaxWidth: 881,
+        fromBottom: true,
       },
     }
   },

@@ -1,25 +1,25 @@
 <template>
   <div class="case_result-container">
     <div class="case_result-item">
-      <h3 class="case_result-item_title">
+      <h4 class="case_result-item_title">
         ReadIOPS
-      </h3>
+      </h4>
       <TextParagraph color="#404143">
         halved for better instance performance
       </TextParagraph>
     </div>
     <div class="case_result-item">
-      <h3 class="case_result-item_title">
+      <h4 class="case_result-item_title">
         CPU
-      </h3>
+      </h4>
       <TextParagraph color="#404143">
         load: reduced due to extra RAM
       </TextParagraph>
     </div>
     <div class="case_result-item">
-      <h3 class="case_result-item_title">
+      <h4 class="case_result-item_title">
         TPS
-      </h3>
+      </h4>
       <TextParagraph color="#404143">
         increased <br> by 50%
       </TextParagraph>

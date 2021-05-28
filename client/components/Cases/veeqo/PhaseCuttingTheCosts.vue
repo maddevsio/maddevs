@@ -20,7 +20,7 @@
     </TextParagraph>
     <TextQuoteBox
       class="m-48_top m-96_bottom media-m-24_top media-m-48_bottom m-auto"
-      author="Andrew Sapozhnikov, CIO at Mad Devs"
+      author="Andrew Sapozhnikov, Head of DevOps at Mad Devs"
     >
       Costs can’t be cut overnight. Not without damaging user experience, service uptime, and system survivability, anyway. We initially told Veeqo how we would decrease monthly infrastructure costs by ~7,000 dollars, but it took months to make smooth transitions. Our Veeqo partners trusted our professionalism, and it all paid off. We’re proud of how we optimized the costs along with improving the system’s performance.
     </TextQuoteBox>

@@ -67,4 +67,21 @@ export const casesList = [
       alt: 'Godee logo',
     },
   },
+  {
+    width: 'full',
+    id: 'veeqo',
+    link: '/case-studies/veeqo/',
+    video: '/videos/veeqo-banner.mp4#t=1',
+    subtitle: 'Logistics',
+    title: 'Optimization for Veeqo',
+    desc: 'Our DevOps team optimized the infrastructure for Veeqo, an inventory and shipping e-commerce platform, and made it highly efficient, smooth, and cost-effective for our partners.',
+    poster: '/images/Cases/veeqo/svg/veeqo-banner-bg.svg',
+    logo: {
+      width: 105,
+      height: 23,
+      folder: 'veeqo',
+      file: 'veeqo-logotype',
+      alt: 'Veeqo logo',
+    },
+  },
 ]

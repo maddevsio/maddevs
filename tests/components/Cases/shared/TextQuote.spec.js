@@ -6,7 +6,7 @@ const slots = {
 }
 
 const props = {
-  author: 'Andrew Sapozhnikov, CIO at Mad Devs',
+  author: 'Andrew Sapozhnikov, Head of DevOps at Mad Devs',
 }
 
 describe('TextQuote', () => {

@@ -12,9 +12,9 @@
           <TextParagraphUppercase class="case_dashboard-desc m-8_bottom media-m-6_bottom">
             Dashboard
           </TextParagraphUppercase>
-          <h5 class="case_title_h5 case_dashboard-title media-m-41_bottom">
+          <h3 class="case_title_h5 case_dashboard-title media-m-41_bottom">
             The dashboard used to visualize reports
-          </h5>
+          </h3>
         </div>
         <div
           v-prlx="animationSettings"
@@ -23,9 +23,9 @@
           <TextParagraphUppercase class="case_dashboard-desc m-8_bottom media-m-6_bottom">
             Subsystems
           </TextParagraphUppercase>
-          <h5 class="case_title_h5 case_dashboard-title">
+          <h3 class="case_title_h5 case_dashboard-title">
             Inventory management, Management, Warehouse, Reporting
-          </h5>
+          </h3>
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@
           folder="veeqo"
           file="high-level"
           extension="png"
-          alt=""
+          alt="Veeqo High Level Overview."
           :width="1440"
           :height="335"
           :background="false"
@@ -68,8 +68,8 @@ export default {
           max: 0,
         },
 
-        preserveInitialPosition: false,
         mobileMaxWidth: 961,
+        fromBottom: true,
       },
     }
   },
@@ -102,7 +102,6 @@ export default {
     @include grid(repeat(2, 1fr), auto, 0, 0);
   }
 
-  &_dashboard-title,
   &_dashboard-desc {
     opacity: 0.5;
   }
@@ -133,10 +132,6 @@ export default {
     &_dashboard-container {
       @include grid(repeat(1, 1fr), auto, 0, 0);
       text-align: center;
-    }
-
-    &_dashboard-title {
-      opacity: 1;
     }
   }
 
