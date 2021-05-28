@@ -67,7 +67,7 @@ export default {
   head() {
     return buildHead({
       ...getMetadata('veeqo'),
-      image: 'https://maddevs.io/veeqo-case.png',
+      image: 'https://maddevs.io/veeqo-case.jpg',
     })
   },
 
