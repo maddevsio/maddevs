@@ -23,6 +23,6 @@ describe('redirectToHttps', () => {
   it('not secure, redirect', () => {
     req.secure = false
     redirectToHttps(req, res, next)
-    expect(res.redirect).toHaveBeenCalledWith(`https://${req.headers.host}${req.url}`)
+    expect(res.redirect).toHaveBeenCalledWith(301, `https://${req.headers.host}${req.url}`)
   })
 })
