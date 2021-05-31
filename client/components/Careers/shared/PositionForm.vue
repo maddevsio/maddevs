@@ -234,11 +234,12 @@ export default {
       return {
         body: {
           huntflow: {
-            vacancyId: this.huntflowVacancyId || process.env.reserveVacancyId,
+            vacancyId: this.huntflowVacancyId,
             firstName: splitedName[0],
             middleName: splitedName.length > 2 ? splitedName[1] : '',
             lastName: splitedName.length > 1 ? splitedName[splitedName.length - 1] : '',
             email: this.email,
+            positionTitle: this.position,
             positionValue: this.grade.value,
             linkedinProfile: this.linkedin,
           },
@@ -250,8 +251,8 @@ export default {
               email: this.email,
               emailTo: process.env.emailHR,
               linkedinProfile: this.linkedin,
-              positionValue: this.grade.value,
               positionTitle: this.position,
+              positionValue: this.grade.value,
               subject: `Job Candidate Application for ${this.position}`,
               modalTitle: 'Mad Devs Website Carrers Form',
             },
