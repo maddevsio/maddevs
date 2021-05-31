@@ -14,17 +14,12 @@ const buildRequest = (req, key) => ({
 })
 
 async function index(req, res) {
-  const parsedReqest = parseRequest(req)
-  const huntflowRequest = buildRequest(parsedReqest, 'huntflow')
-  const emailRequest = buildRequest(parsedReqest, 'email')
+  const parsedReq = parseRequest(req)
+  const huntflowReq = buildRequest(parsedReq, 'huntflow')
+  const emailReq = buildRequest(parsedReq, 'email')
 
-  const huntflowRes = await sendApplication(huntflowRequest)
-  const emailRes = await sendEmail(emailRequest, data => res.json(data))
-
-  return res.json({
-    huntflowRes,
-    emailRes,
-  })
+  await sendApplication(huntflowReq)
+  await sendEmail(emailReq, data => res.json(data))
 }
 
 module.exports = {

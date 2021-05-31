@@ -9,11 +9,11 @@ const storage = multer.diskStorage({
 
 // controllers
 const { create: createLead } = require('../controllers/LeadsController')
-const { index: sendCareerEmail } = require('../controllers/CareersController')
+const { index: sendVacancyApplication } = require('../controllers/CareersController')
 
 const router = express.Router()
 
 router.post('/leads', createLead)
-router.post('/careers', multer({ storage }).single('cvFile'), sendCareerEmail)
+router.post('/careers', multer({ storage }).single('cvFile'), sendVacancyApplication)
 
 module.exports = router
