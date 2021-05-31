@@ -30,7 +30,8 @@ export const getVacancyPost = async (prismic, payload) => {
 
 export const sendVacancy = async (axios, payload) => {
   const formData = new FormData()
-  formData.append('file', payload.attachment)
+  formData.append('cvFile', payload.cvFile)
+  formData.append('payload', JSON.stringify(payload.body))
   try {
     const response = await axios.post('api/careers', formData, {
       headers: {

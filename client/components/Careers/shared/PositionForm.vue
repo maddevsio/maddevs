@@ -231,11 +231,10 @@ export default {
       const splitedName = this.name.split(' ')
       const base64File = await this.toBase64(this.cvFile)
 
-      if (true) {
-        return {
-          sendMethod: 'huntflow',
-          vacancy: this.huntflowVacancyId,
-          variables: {
+      return {
+        body: {
+          huntflow: {
+            vacancyId: this.huntflowVacancyId || process.env.reserveVacancyId,
             firstName: splitedName[0],
             middleName: splitedName.length > 2 ? splitedName[1] : '',
             lastName: splitedName.length > 1 ? splitedName[splitedName.length - 1] : '',
@@ -244,28 +243,27 @@ export default {
             linkedinProfile: this.linkedin,
           },
 
-          attachment: this.cvFile,
-        }
-      }
+          email: {
+            templateId: 305491, // Required
+            variables: {
+              fullName: this.name,
+              email: this.email,
+              emailTo: process.env.emailHR,
+              linkedinProfile: this.linkedin,
+              positionValue: this.grade.value,
+              positionTitle: this.position,
+              subject: `Job Candidate Application for ${this.position}`,
+              modalTitle: 'Mad Devs Website Carrers Form',
+            },
 
-      return {
-        sendMethod: 'email',
-        templateId: 305491, // Required
-        variables: {
-          fullName: this.name,
-          email: this.email,
-          emailTo: process.env.emailHR,
-          linkedinProfile: this.linkedin,
-          positionValue: this.grade.value,
-          positionTitle: this.position,
-          subject: `Job Candidate Application for ${this.position}`,
-          modalTitle: 'Mad Devs Website Carrers Form',
+            attachment: {
+              base64: base64File.replace(/^data:(.*,)?/, ''),
+              name: this.cvFile.name,
+            },
+          },
         },
 
-        attachment: {
-          base64: base64File.replace(/^data:(.*,)?/, ''),
-          name: this.cvFile.name,
-        },
+        cvFile: this.cvFile,
       }
     },
 
@@ -289,7 +287,7 @@ export default {
       const applicantData = await this.buildApplicantData()
       this.sendVacancy(applicantData)
       this.isShowSuccessModal = true
-      // this.resetForm()
+      this.resetForm()
     },
   },
 }
