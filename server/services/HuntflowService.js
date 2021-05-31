@@ -39,7 +39,6 @@ const buildVacancyRequest = (vacancyId, cvFileId) => ({
 
 async function sendApplication(req) {
   try {
-    const payload = (JSON.parse(req.body.payload)).huntflow
     const formData = new FormData()
     formData.append('file', fs.createReadStream(req.file.path))
 
@@ -51,7 +50,10 @@ async function sendApplication(req) {
       },
     })
 
-    const applicant = buildApplicant(uploadResponse.data.id, payload)
+    // Remove file from disk storage
+    fs.unlink(req.file.path)
+
+    const applicant = buildApplicant(uploadResponse.data.id, req.body)
 
     const applicantResponse = await axios.post(`${HUNTFLOW_API_URL}/account/${HUNTFLOW_ACCOUNT_ID}/applicants`, applicant, {
       headers: {
@@ -60,7 +62,7 @@ async function sendApplication(req) {
       },
     })
 
-    const vacancyRequest = buildVacancyRequest(payload.vacancyId, uploadResponse.data.id)
+    const vacancyRequest = buildVacancyRequest(req.body.vacancyId, uploadResponse.data.id)
 
     const vacancyResponse = await axios.post(`${HUNTFLOW_API_URL}/account/${HUNTFLOW_ACCOUNT_ID}/applicants/${applicantResponse.data.id}/vacancy`,
       vacancyRequest,
