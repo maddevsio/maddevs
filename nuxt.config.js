@@ -147,6 +147,7 @@ module.exports = {
     environment: process.env.NODE_ENV,
     s3PublicUrl: process.env.NODE_S3_PUBLIC_URL,
     domain: process.env.NODE_DOMAIN,
+    reserveVacancyId: process.env.NODE_HUNTFLOW_RESERVE_VACANCY_ID,
     emailHR: process.env.NODE_EMAIL_HR,
     emailContact: process.env.NODE_EMAIL_CONTACT,
     sentryDsnFront: process.env.NODE_SENTRY_DSN_FRONT,
