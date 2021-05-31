@@ -18,8 +18,8 @@ async function index(req, res) {
   const huntflowReq = buildRequest(parsedReq, 'huntflow')
   const emailReq = buildRequest(parsedReq, 'email')
 
-  await sendApplication(huntflowReq)
-  await sendEmail(emailReq, data => res.json(data))
+  const huntflowRes = await sendApplication(huntflowReq)
+  await sendEmail(emailReq, data => res.json({ email: data, huntflow: huntflowRes }))
 }
 
 module.exports = {
