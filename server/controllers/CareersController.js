@@ -1,6 +1,5 @@
 const { sendEmail } = require('../services/EmailsService')
 const { sendApplication } = require('../services/HuntflowService')
-const { validate } = require('../utils/validation')
 
 const parseRequest = req => ({
   ...req,
@@ -16,12 +15,12 @@ const buildRequest = (req, key) => ({
 
 async function index(req, res) {
   const parsedReqest = parseRequest(req)
+  const huntflowRequest = buildRequest(parsedReqest, 'huntflow')
+  const emailRequest = buildRequest(parsedReqest, 'email')
 
-  const { isValid, error } = validate(parsedReqest)
-  if (!isValid) return res.status(error.status).json(error)
+  const huntflowRes = await sendApplication(huntflowRequest)
+  const emailRes = await sendEmail(emailRequest, data => res.json(data))
 
-  const huntflowRes = await sendApplication(buildRequest('huntflow'))
-  const emailRes = await sendEmail(buildRequest('email'), data => res.json(data))
   return res.json({
     huntflowRes,
     emailRes,
