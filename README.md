@@ -83,7 +83,7 @@ Set current environment for feature flags
 
 #### Huntflow envs
 
-Environment variables for huntflow authentication and and sending applications to the huntflow vacancies
+Environment variables for huntflow authentication and sending applications to the huntflow vacancies
 
 * NODE_HUNTFLOW_API_URL
 * NODE_HUNTFLOW_TOKEN
