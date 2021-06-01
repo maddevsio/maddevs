@@ -12,6 +12,12 @@ const defaultConfig = {
   },
 }
 
+const buildFormData = cvFilePath => {
+  const formData = new FormData()
+  formData.append('file', fs.createReadStream(cvFilePath))
+  return formData
+}
+
 const buildApplicant = (cvFileId, {
   firstName, middleName, lastName, email, linkedinProfile, positionTitle, positionValue,
 }) => ({
@@ -51,8 +57,7 @@ async function sendApplication(req) {
     let { vacancyId } = req.body
 
     // Uploading CV file to huntflow
-    const formData = new FormData()
-    formData.append('file', fs.createReadStream(req.file.path))
+    const formData = buildFormData(req.file.path)
     const uploadResponse = await axios.post(`${HUNTFLOW_API_URL}/account/${HUNTFLOW_ACCOUNT_ID}/upload`, formData, {
       headers: {
         Authorization: `Bearer ${HUNTFLOW_TOKEN}`,
