@@ -80,7 +80,7 @@ async function sendApplication(req) {
 
     return applicationResponse.data
   } catch (error) {
-    return error.response.data
+    return error
   }
 }
 
