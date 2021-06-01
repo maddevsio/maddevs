@@ -47,7 +47,7 @@
           >
             <PositionForm
               :position="vacancy.position"
-              :huntflow-vacancy-id="vacancy.huntflow_vacancy_id"
+              :huntflow-vacancy-id="vacancy.huntflowVacancyId"
             />
           </div>
         </div>
