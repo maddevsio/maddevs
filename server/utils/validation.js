@@ -26,7 +26,7 @@ function validate(req, type) {
     },
     file: {
       message: 'cvFile key not found',
-      compareFn: value => !value && !value.path,
+      compareFn: value => !(value && value.path),
     },
   }
 
