@@ -8,8 +8,8 @@ exports[`CardResult component should render correctly 1`] = `
     <!---->
      
     <img
-      alt="Search time went down to under 5 seconds (now: ~250-300 ms)"
-      class="card_icon img_lazy card_icon_gears-card"
+      alt=""
+      class="card_icon media_lazy card_icon_gears-card"
       data-src="img.jpg"
       height="66"
       width="66"
@@ -18,13 +18,13 @@ exports[`CardResult component should render correctly 1`] = `
     <div
       class="card_text-content"
     >
-      <h4
+      <h3
         class="case_title_h4 card_title"
       >
         
       ~250-300 ms
     
-      </h4>
+      </h3>
        
       <p
         class="case_paragraph card_description"

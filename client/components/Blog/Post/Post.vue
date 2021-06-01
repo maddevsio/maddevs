@@ -227,19 +227,24 @@ export default {
     },
   },
 
+  watch: {
+    dataLoaded(loaded) {
+      if (loaded) {
+        this.$nextTick(() => this.shareButtonsScroll())
+      }
+    },
+  },
+
   updated() {
     this.$nextTick(() => initializeLazyLoad())
   },
 
   mounted() {
-    this.shareButtonsScroll()
     window.addEventListener('scroll', this.handleScroll)
     window.addEventListener('scroll', this.shareButtonsScroll)
     document.querySelectorAll('.copy-link')
       .forEach(link => link.addEventListener('click', this.copyAnchorLink))
-    this.$nextTick(() => {
-      this.dataLoaded = true
-    })
+    this.dataLoaded = true
   },
 
   beforeDestroy() {

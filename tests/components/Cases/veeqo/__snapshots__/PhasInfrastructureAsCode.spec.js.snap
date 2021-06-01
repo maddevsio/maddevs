@@ -21,13 +21,13 @@ exports[`PhasInfrastructureAsCode component should render correctly 1`] = `
   
     </p>
      
-    <h4
+    <h3
       class="case_title_h4 m-12_bottom"
     >
       
     Advantages of IaC
   
-    </h4>
+    </h3>
      
     <ol
       class="case_advantages-list"

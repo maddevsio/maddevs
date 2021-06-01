@@ -23,7 +23,7 @@
     </div>
     <TextQuoteBox
       class="m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
-      author="Andrew Sapozhnikov, CIO at Mad Devs"
+      author="Andrew Sapozhnikov, Head of DevOps at Mad Devs"
     >
       The developers didn’t trust their CI system. CI wasn’t helping them; it was hindering their work instead. It’s just bad DevOps.
     </TextQuoteBox>
@@ -46,7 +46,7 @@
         folder="veeqo"
         file="ci-panel"
         extension="png"
-        alt="CI Panel"
+        alt="CI Panel."
         :width="818"
         :height="440"
         :background="false"

@@ -9,16 +9,16 @@
     <img
       v-if="icon"
       :data-src="$getMediaFromS3(`/images/Cases/veeqo/svg/${icon}.svg`)"
-      :alt="description"
+      :alt="alt"
       width="66"
       height="66"
-      class="card_icon img_lazy"
+      class="card_icon media_lazy"
       :class="`card_icon_${icon}`"
     >
     <div class="card_text-content">
-      <h4 class="case_title_h4 card_title">
+      <h3 class="case_title_h4 card_title">
         {{ title }}
-      </h4>
+      </h3>
       <TextParagraph
         class="card_description"
         color="#ffffff"
@@ -60,6 +60,11 @@ export default {
       type: String,
       default: '',
     },
+
+    alt: {
+      type: String,
+      default: '',
+    },
   },
 }
 </script>
@@ -72,7 +77,7 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 24px 14px;
-  background: #268BDC;
+  background: $bgcolor--blue-veeqo;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   text-align: center;

@@ -54,7 +54,7 @@ exports[`Team component should render correctly 1`] = `
             class="case_team-item__position"
           >
             
-      Senior DevOps engineer
+      DevOps engineer
     
           </p>
         </div>

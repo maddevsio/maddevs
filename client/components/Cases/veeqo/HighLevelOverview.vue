@@ -7,35 +7,41 @@
       <TextParagraph class="case_sec-desc m-12_top m-80_bottom media-m-41_bottom">
         The service has multiple subsystems integrated into one platform
       </TextParagraph>
-      <div class="case_dashboard-container m-72_bottom media-m-48_bottom">
+      <div class="case_dashboard-container m-60_bottom media-m-48_bottom">
         <div class="case_dashboard-item">
           <TextParagraphUppercase class="case_dashboard-desc m-8_bottom media-m-6_bottom">
             Dashboard
           </TextParagraphUppercase>
-          <h5 class="case_title_h5 case_dashboard-title media-m-41_bottom">
+          <h3 class="case_title_h5 case_dashboard-title media-m-41_bottom">
             The dashboard used to visualize reports
-          </h5>
+          </h3>
         </div>
-        <div class="case_dashboard-item case_animate-text">
+        <div
+          v-prlx="animationSettings"
+          class="case_dashboard-item case_animate-text"
+        >
           <TextParagraphUppercase class="case_dashboard-desc m-8_bottom media-m-6_bottom">
             Subsystems
           </TextParagraphUppercase>
-          <h5 class="case_title_h5 case_dashboard-title">
+          <h3 class="case_title_h5 case_dashboard-title">
             Inventory management, Management, Warehouse, Reporting
-          </h5>
+          </h3>
         </div>
       </div>
     </div>
-    <div class="case_image-wrapp">
-      <Picture
-        folder="veeqo"
-        file="high-level"
-        extension="png"
-        alt=""
-        :width="1440"
-        :height="335"
-        :background="false"
-      />
+    <div v-prlx="animationSettings">
+      <div class="case_image-wrapp">
+        <Picture
+          folder="veeqo"
+          file="high-level"
+          extension="png"
+          alt="Veeqo High Level Overview."
+          :width="1440"
+          :height="335"
+          :background="false"
+          :lazy="false"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -51,6 +57,21 @@ export default {
     TextParagraph,
     TextParagraphUppercase,
     Picture,
+  },
+
+  data() {
+    return {
+      animationSettings: {
+        reverse: true,
+        limit: {
+          min: -30,
+          max: 0,
+        },
+
+        mobileMaxWidth: 961,
+        fromBottom: true,
+      },
+    }
   },
 }
 </script>
@@ -81,7 +102,6 @@ export default {
     @include grid(repeat(2, 1fr), auto, 0, 0);
   }
 
-  &_dashboard-title,
   &_dashboard-desc {
     opacity: 0.5;
   }
@@ -91,8 +111,8 @@ export default {
   }
 
   &_image-wrapp {
-    min-width: 3020px;
-    max-width: 3020px;
+    min-width: 3028px;
+    max-width: 3028px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -113,13 +133,13 @@ export default {
       @include grid(repeat(1, 1fr), auto, 0, 0);
       text-align: center;
     }
-
-    &_dashboard-title {
-      opacity: 1;
-    }
   }
 
   @media screen and (max-width: 768px) {
+    &_container {
+      max-height: 732px;
+    }
+
     &_animate-text {
       margin-top: 0;
     }

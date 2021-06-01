@@ -27,13 +27,13 @@ exports[`PhaseFixingDatabaseOutages component should render correctly 1`] = `
       
         </p>
          
-        <h4
+        <h3
           class="case_title_h4 m-10_bottom media-m-8_bottom"
         >
           
         Regular outage
       
-        </h4>
+        </h3>
          
         <p
           class="case_paragraph"
@@ -55,13 +55,13 @@ exports[`PhaseFixingDatabaseOutages component should render correctly 1`] = `
       
         </p>
          
-        <h4
+        <h3
           class="case_title_h4 m-10_bottom media-m-8_bottom"
         >
           
         Degraded user services
       
-        </h4>
+        </h3>
          
         <p
           class="case_paragraph"
@@ -88,7 +88,7 @@ exports[`PhaseFixingDatabaseOutages component should render correctly 1`] = `
         class="case_quote-author"
       >
         
-    Andrew Sapozhnikov, CIO at Mad Devs
+    Andrew Sapozhnikov, Head of DevOps at Mad Devs
   
       </p>
     </div>
@@ -105,18 +105,22 @@ exports[`PhaseFixingDatabaseOutages component should render correctly 1`] = `
       class="case_solution-cards"
     >
       <cardtechsolution-stub
+        alt="CloudWatch Logo."
         description="Collecting host metrics (CloudWatch and okmeter showed consequences, not causes)."
         icon="cloud"
       />
       <cardtechsolution-stub
+        alt="RAM Icon."
         description="Analyzing the true RAM use and identifying 1,200-1,500 worker connections taking up about 40 GB of RAM."
         icon="danger"
       />
       <cardtechsolution-stub
+        alt="PgBouncers Icon."
         description="Adding PgBouncers to reduce the load on the database."
         icon="gear"
       />
       <cardtechsolution-stub
+        alt="Speed Icon."
         description="Stabilizing connection pooling by applying ELB and thus distributing traffic more evenly to decrease the number of SPOFs."
         icon="speed"
       />
@@ -131,20 +135,20 @@ exports[`PhaseFixingDatabaseOutages component should render correctly 1`] = `
     </p>
      
     <img
-      alt="PgBouncers Diagram"
+      alt="PgBouncers Diagram."
       class="case_pg-bouncer-diagram media_lazy m-48_bottom"
       data-src="img.jpg"
       height="560"
       width="818"
     />
      
-    <h2
+    <h3
       class="case_title_h2 case_title-result m-48_bottom media-m-41_bottom"
     >
       
     Result
   
-    </h2>
+    </h3>
      
     <fixingdatabaseoutagesresult-stub
       class="m-96_bottom media-m-48_bottom"

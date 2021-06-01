@@ -74,9 +74,9 @@ exports[`CaseYourcast _uid component should render correctly 1`] = `
          
         <img
           alt="YourcastTV - Video Streaming Platform Logo."
-          class="case_header-logo media_lazy case_yourcast-logo"
-          data-src="img.jpg"
+          class="case_header-logo case_yourcast-logo"
           height="81.23"
+          src="img.jpg"
           style="opacity: 1;"
           width="387"
         />

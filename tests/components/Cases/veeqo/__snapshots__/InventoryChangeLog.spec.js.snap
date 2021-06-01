@@ -5,18 +5,19 @@ exports[`InventoryChangeLog component should render correctly 1`] = `
   <div
     class="case_container container_full background-color-silver m-48_bottom"
   >
-    <div
-      class="case_image-wrapp"
-    >
-      <picture-stub
-        alt="Inventory change log"
-        extension="png"
-        file="inventory-change-log"
-        folder="veeqo"
-        height="366"
-        lazy="true"
-        width="1440"
-      />
+    <div>
+      <div
+        class="case_image-wrapp"
+      >
+        <picture-stub
+          alt="Inventory Changelog."
+          extension="png"
+          file="inventory-change-log"
+          folder="veeqo"
+          height="366"
+          width="1440"
+        />
+      </div>
     </div>
   </div>
 </div>

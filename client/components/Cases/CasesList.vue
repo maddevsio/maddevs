@@ -3,7 +3,7 @@
     <section class="cases-list">
       <!-- Card -->
       <CasesListItem
-        v-for="(item, i) of casesList"
+        v-for="(item, i) of casesList.slice(0, limit)"
         :key="`case_list_item_${i}`"
         :video-file-name="item.video"
         :logo="item.logo"
@@ -14,6 +14,7 @@
         :link="item.link"
         :poster="item.poster"
         :class="`cases-list_${item.id}`"
+        data-testid="test-case-card"
       />
     </section>
     <NuxtLink
@@ -32,6 +33,13 @@ import { casesList } from '@/data/casesList'
 export default {
   name: 'CasesList',
   components: { CasesListItem },
+  props: {
+    limit: {
+      type: Number,
+      default: casesList.length,
+    },
+  },
+
   data() {
     return {
       casesList,

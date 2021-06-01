@@ -6,7 +6,7 @@ exports[`CardTechSolution component should render correctly 1`] = `
     class="case_card card-content background-color-silver"
   >
     <img
-      alt="Adding PgBouncers to reduce the load on the database."
+      alt=""
       class="card-content_icon img_lazy"
       data-src="img.jpg"
       height="51.94"

@@ -1,4 +1,5 @@
 import getRoutes, { getSitemapRoutes } from './utils/getRoutes'
+import getRobots from './utils/getRobots'
 
 require('dotenv').config()
 
@@ -65,7 +66,6 @@ module.exports = {
   /*
    ** Component will be ignored in building
    */
-  ignore: 'pages/case-studies/veeqo.vue',
   generate: {
     routes: () => getRoutes(),
     fallback: '404.html',
@@ -113,6 +113,7 @@ module.exports = {
     '~/plugins/vue-social-sharing.js',
     '~/plugins/get-media-from-s3.js',
     '~/plugins/feature-flags.js',
+    '~/plugins/vue-prlx.js',
     { src: '~/plugins/sentry.js', mode: 'client' },
     { src: '~/plugins/lazy-load.js', mode: 'client' },
   ],
@@ -134,8 +135,7 @@ module.exports = {
     baseURL: '/',
   },
   robots: {
-    UserAgent: '*',
-    Sitemap: 'https://maddevs.io/sitemap.xml',
+    ...getRobots(process.env.FF_ENVIRONMENT),
   },
   prismic: {
     endpoint: process.env.NODE_PRISMIC_API,

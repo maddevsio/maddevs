@@ -1,15 +1,18 @@
 <template>
   <div class="case_container container_full background-color-silver m-48_bottom">
-    <div class="case_image-wrapp">
-      <Picture
-        folder="veeqo"
-        file="inventory-change-log"
-        extension="png"
-        alt="Inventory change log"
-        :width="1440"
-        :height="366"
-        :background="false"
-      />
+    <div v-prlx="animationSettings">
+      <div class="case_image-wrapp">
+        <Picture
+          folder="veeqo"
+          file="inventory-change-log"
+          extension="png"
+          alt="Inventory Changelog."
+          :width="1440"
+          :height="366"
+          :background="false"
+          :lazy="false"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -21,6 +24,21 @@ export default {
   name: 'InventoryChangeLog',
   components: {
     Picture,
+  },
+
+  data() {
+    return {
+      animationSettings: {
+        reverse: true,
+        limit: {
+          min: -50,
+          max: 0,
+        },
+
+        mobileMaxWidth: 881,
+        fromBottom: true,
+      },
+    }
   },
 }
 </script>

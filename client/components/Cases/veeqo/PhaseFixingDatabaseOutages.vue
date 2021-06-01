@@ -8,9 +8,9 @@
         <TextParagraphUppercase class="case_card-name m-10_bottom media-m-8_bottom">
           Challenge
         </TextParagraphUppercase>
-        <h4 class="case_title_h4 m-10_bottom media-m-8_bottom">
+        <h3 class="case_title_h4 m-10_bottom media-m-8_bottom">
           Regular outage
-        </h4>
+        </h3>
         <TextParagraph>
           Without any detectable load spikes, the database would often reach maximum processor performance and deny service as the queries piled up in the query queue. To get the system up and running again, workers had to be manually restarted every time.
         </TextParagraph>
@@ -19,9 +19,9 @@
         <TextParagraphUppercase class="case_card-name m-10_bottom media-m-8_bottom">
           Effect on users
         </TextParagraphUppercase>
-        <h4 class="case_title_h4 m-10_bottom media-m-8_bottom">
+        <h3 class="case_title_h4 m-10_bottom media-m-8_bottom">
           Degraded user services
-        </h4>
+        </h3>
         <TextParagraph>
           Users had limited access to services: they couldn't view contents, place orders, or manage their settings.
         </TextParagraph>
@@ -29,7 +29,7 @@
     </div>
     <TextQuoteBox
       class="m-48_top m-96_bottom media-m-24_top media-m-72_bottom m-auto"
-      author="Andrew Sapozhnikov, CIO at Mad Devs"
+      author="Andrew Sapozhnikov, Head of DevOps at Mad Devs"
     >
       “We needed better monitoring and metrics collection to detect the true reason for the outage. We don’t sweep these things under the rug. We go for root causes.”
     </TextQuoteBox>
@@ -50,12 +50,12 @@
       :data-src="$getMediaFromS3('/images/Cases/veeqo/svg/pg-bouncer-diagram.svg')"
       width="818"
       height="560"
-      alt="PgBouncers Diagram"
+      alt="PgBouncers Diagram."
       class="case_pg-bouncer-diagram media_lazy m-48_bottom"
     >
-    <h2 class="case_title_h2 case_title-result m-48_bottom media-m-41_bottom">
+    <h3 class="case_title_h2 case_title-result m-48_bottom media-m-41_bottom">
       Result
-    </h2>
+    </h3>
     <FixingDatabaseOutagesResult class="m-96_bottom media-m-48_bottom" />
   </section>
 </template>
