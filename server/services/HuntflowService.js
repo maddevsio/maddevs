@@ -28,50 +28,61 @@ const uploadFile = async cvFilePath => {
   return uploadResponse.data
 }
 
-const buildCandidate = (cvFileId, {
+const createCandidate = async (cvFileId, {
   firstName, middleName, lastName, email, linkedinProfile, positionTitle, positionValue,
-}) => ({
-  first_name: firstName,
-  middle_name: middleName,
-  last_name: lastName,
-  position: `${positionTitle}. You can also consider me for your other: ${positionValue} roles.`,
-  email,
-  externals: [
-    {
-      data: {
-        body: `To get more information on my skills, please check out my linkedin profile: ${linkedinProfile}`,
-      },
-      auth_type: 'NATIVE',
-      files: [
-        {
-          id: cvFileId,
+}) => {
+  const candidate = {
+    first_name: firstName,
+    middle_name: middleName,
+    last_name: lastName,
+    position: `${positionTitle}. You can also consider me for your other: ${positionValue} roles.`,
+    email,
+    externals: [
+      {
+        data: {
+          body: `To get more information on my skills, please check out my linkedin profile: ${linkedinProfile}`,
         },
-      ],
-    },
-  ],
-})
+        auth_type: 'NATIVE',
+        files: [
+          {
+            id: cvFileId,
+          },
+        ],
+      },
+    ],
+  }
 
-const buildApplication = (vacancyId, cvFileId) => ({
-  vacancy: vacancyId,
-  status: 75897, // "Новые"
-  comment: 'Заявка на вакансию отправлена с сайта https://maddevs.io/',
-  files: [
-    {
-      id: cvFileId,
-    },
-  ],
-})
+  const candidateResponse = await axios.post(`${apiUrlPrefix}/applicants`, candidate, defaultConfig)
+  return candidateResponse.data
+}
+
+const createApplication = async (vacancyId, candidateId, cvFileId) => {
+  const application = {
+    vacancy: vacancyId,
+    status: 75897, // "Новые"
+    comment: 'Заявка на вакансию отправлена с сайта https://maddevs.io/',
+    files: [
+      {
+        id: cvFileId,
+      },
+    ],
+  }
+
+  const applicationResponse = await axios.post(`${apiUrlPrefix}/applicants/${candidateId}/vacancy`,
+    application,
+    defaultConfig)
+  return applicationResponse.data
+}
 
 async function sendApplication(req) {
   try {
     let { vacancyId } = req.body
 
     // Uploading CV file to huntflow
-    const cvFile = uploadFile(req.file.path)
+    const cvFile = await uploadFile(req.file.path)
 
     // Applicant creation
-    const candidate = buildCandidate(cvFile.id, req.body)
-    const candidateResponse = await axios.post(`${apiUrlPrefix}/applicants`, candidate, defaultConfig)
+    const candidate = await createCandidate(cvFile.id, req.body)
 
     // Checking a vacancyId for existence
     try {
@@ -81,12 +92,9 @@ async function sendApplication(req) {
     }
 
     // Creating a vacancy application
-    const application = buildApplication(vacancyId, cvFile.id)
-    const applicationResponse = await axios.post(`${apiUrlPrefix}/applicants/${candidateResponse.data.id}/vacancy`,
-      application,
-      defaultConfig)
+    const application = await createApplication(vacancyId, candidate.id, cvFile.id)
 
-    return applicationResponse.data
+    return application
   } catch (error) {
     return error
   }
