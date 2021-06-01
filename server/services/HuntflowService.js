@@ -5,6 +5,8 @@ const {
   HUNTFLOW_API_URL, HUNTFLOW_TOKEN, HUNTFLOW_ACCOUNT_ID, HUNTFLOW_RESERVE_VACANCY_ID,
 } = require('../config')
 
+const apiUrlPrefix = `${HUNTFLOW_API_URL}/account/${HUNTFLOW_ACCOUNT_ID}`
+
 const defaultConfig = {
   headers: {
     Authorization: `Bearer ${HUNTFLOW_TOKEN}`,
@@ -12,13 +14,21 @@ const defaultConfig = {
   },
 }
 
-const buildFormData = cvFilePath => {
+const uploadFile = async cvFilePath => {
   const formData = new FormData()
   formData.append('file', fs.createReadStream(cvFilePath))
-  return formData
+
+  const uploadResponse = await axios.post(`${apiUrlPrefix}/upload`, formData, {
+    headers: {
+      Authorization: `Bearer ${HUNTFLOW_TOKEN}`,
+      'Content-Type': 'multipart/form-data',
+      ...formData.getHeaders(),
+    },
+  })
+  return uploadResponse.data
 }
 
-const buildApplicant = (cvFileId, {
+const buildCandidate = (cvFileId, {
   firstName, middleName, lastName, email, linkedinProfile, positionTitle, positionValue,
 }) => ({
   first_name: firstName,
@@ -41,7 +51,7 @@ const buildApplicant = (cvFileId, {
   ],
 })
 
-const buildVacancyApplication = (vacancyId, cvFileId) => ({
+const buildApplication = (vacancyId, cvFileId) => ({
   vacancy: vacancyId,
   status: 75897, // "Новые"
   comment: 'Заявка на вакансию отправлена с сайта https://maddevs.io/',
@@ -57,30 +67,23 @@ async function sendApplication(req) {
     let { vacancyId } = req.body
 
     // Uploading CV file to huntflow
-    const formData = buildFormData(req.file.path)
-    const uploadResponse = await axios.post(`${HUNTFLOW_API_URL}/account/${HUNTFLOW_ACCOUNT_ID}/upload`, formData, {
-      headers: {
-        Authorization: `Bearer ${HUNTFLOW_TOKEN}`,
-        'Content-Type': 'multipart/form-data',
-        ...formData.getHeaders(),
-      },
-    })
+    const cvFile = uploadFile(req.file.path)
 
     // Applicant creation
-    const applicant = buildApplicant(uploadResponse.data.id, req.body)
-    const applicantResponse = await axios.post(`${HUNTFLOW_API_URL}/account/${HUNTFLOW_ACCOUNT_ID}/applicants`, applicant, defaultConfig)
+    const candidate = buildCandidate(cvFile.id, req.body)
+    const candidateResponse = await axios.post(`${apiUrlPrefix}/applicants`, candidate, defaultConfig)
 
     // Checking a vacancyId for existence
     try {
-      await axios.get(`${HUNTFLOW_API_URL}/account/${HUNTFLOW_ACCOUNT_ID}/vacancies/${vacancyId}`, defaultConfig)
+      await axios.get(`${apiUrlPrefix}/vacancies/${vacancyId}`, defaultConfig)
     } catch {
       vacancyId = HUNTFLOW_RESERVE_VACANCY_ID
     }
 
     // Creating a vacancy application
-    const vacancyApplication = buildVacancyApplication(vacancyId, uploadResponse.data.id)
-    const applicationResponse = await axios.post(`${HUNTFLOW_API_URL}/account/${HUNTFLOW_ACCOUNT_ID}/applicants/${applicantResponse.data.id}/vacancy`,
-      vacancyApplication,
+    const application = buildApplication(vacancyId, cvFile.id)
+    const applicationResponse = await axios.post(`${apiUrlPrefix}/applicants/${candidateResponse.data.id}/vacancy`,
+      application,
       defaultConfig)
 
     return applicationResponse.data
