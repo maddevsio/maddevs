@@ -29,8 +29,7 @@
             href="https://maddevsgroup.co.uk/"
           >https://maddevsgroup.co.uk/</a>
           are websites operated by <span class="privacy__nowrap">Mad Devs</span> Group Ltd ("We"). We are registered in
-          England and Wales under a company number 11793394 and have our registered office at Salisbury House, Station
-          Road, Cambridge, CB1 2LA, United Kingdom.
+          England and Wales under a company number 11793394 and have our registered office at 27 Old Gloucester Street, London, United Kingdom, WC1N 3AX.
         </p>
         <p class="privacy__text privacy__break-main">
           We also have close associations with <span class="privacy__nowrap">Mad Devs</span> LLC, a company registered
