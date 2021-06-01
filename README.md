@@ -81,6 +81,15 @@ Set current environment for feature flags
 * RADIATOR_WEBHOOK_URL - slack webhook url
 * RADIATOR_GOOGLEAPIS_KEY - key for google api(pagespeed)
 
+#### Huntflow envs
+
+Environment variables for huntflow authentication and and sending applications to the huntflow vacancies
+
+* NODE_HUNTFLOW_API_URL
+* NODE_HUNTFLOW_TOKEN
+* NODE_HUNTFLOW_ACCOUNT_ID
+* NODE_HUNTFLOW_RESERVE_VACANCY_ID
+
 **All of these variables must be added to the Heroku hosting**
 
 ## Instructions for using the AWS S3
