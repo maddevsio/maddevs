@@ -3,7 +3,7 @@ const { createLead } = require('../services/LeadsService')
 const { validate } = require('../utils/validation')
 
 async function create(req, res) {
-  const { isValid, error } = validate(req)
+  const { isValid, error } = validate(req, 'email')
   if (!isValid) return res.status(error.status).json(error)
 
   sendEmail(req)

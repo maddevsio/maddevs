@@ -148,10 +148,10 @@ export default {
       const { mainVideo } = this.$refs
       if (!mainVideo) return
       const { clientHeight } = mainVideo
-      const result = ((clientHeight - this.getScrollPosition()) / clientHeight) + 0.2
-      if (result > 0 && result <= 1) {
-        this.opacity = ((clientHeight - this.getScrollPosition()) / clientHeight) + 0.2
-      }
+      const scrollPosition = this.getScrollPosition()
+      const result = ((clientHeight - scrollPosition) / clientHeight) + 0.2
+      if (result > 0 && result <= 1) this.opacity = ((clientHeight - scrollPosition) / clientHeight) + 0.2
+      if (scrollPosition === 0) this.opacity = 1
     },
 
     getScrollPosition() {
@@ -165,8 +165,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/cases/header';
-@import '../../../assets/styles/cases/mixins';
+@import '@/assets/styles/cases/_header';
+@import '@/assets/styles/cases/_mixins';
 
 .case {
   &_header {

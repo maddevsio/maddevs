@@ -2,6 +2,7 @@ export const employeesBenefits = [
   {
     icon: {
       name: 'hours',
+      alt: 'Hours Icon.',
       width: 31,
       height: 30,
     },
@@ -10,6 +11,7 @@ export const employeesBenefits = [
   {
     icon: {
       name: 'trips',
+      alt: 'Trips Icon.',
       width: 28,
       height: 32,
     },
@@ -18,6 +20,7 @@ export const employeesBenefits = [
   {
     icon: {
       name: 'lessons',
+      alt: 'Lessons Icon.',
       width: 36,
       height: 31,
     },
@@ -26,6 +29,7 @@ export const employeesBenefits = [
   {
     icon: {
       name: 'training',
+      alt: 'Training Icon.',
       width: 39,
       height: 24,
     },
@@ -34,6 +38,7 @@ export const employeesBenefits = [
   {
     icon: {
       name: 'culture',
+      alt: 'Culture Icon.',
       width: 24,
       height: 31,
     },
@@ -42,6 +47,7 @@ export const employeesBenefits = [
   {
     icon: {
       name: 'term',
+      alt: 'Docs Icon.',
       width: 26,
       height: 30,
     },
@@ -50,6 +56,7 @@ export const employeesBenefits = [
   {
     icon: {
       name: 'conferences',
+      alt: 'Microphone Icon.',
       width: 20,
       height: 33,
     },
@@ -58,6 +65,7 @@ export const employeesBenefits = [
   {
     icon: {
       name: 'parties',
+      alt: 'Cocktail Glass Icon.',
       width: 31,
       height: 36,
     },

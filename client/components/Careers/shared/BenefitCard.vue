@@ -5,6 +5,7 @@
         :data-src="$getMediaFromS3(`/images/Careers/svg/${icon.name}.svg`)"
         :width="icon.width"
         :height="icon.height"
+        :alt="icon.alt"
         class="benefit-card__icon media_lazy"
       >
     </div>

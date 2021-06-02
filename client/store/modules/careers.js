@@ -9,6 +9,7 @@ const extractVacancyData = post => ({
   type: post.type,
   id: post.id,
   uid: post.uid,
+  huntflowVacancyId: post.data.huntflow_vacancy_id,
   position: post.data.position,
   title: post.data.title,
   subtitle: post.data.subtitle,

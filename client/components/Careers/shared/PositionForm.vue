@@ -189,6 +189,11 @@ export default {
       type: String,
       default: '',
     },
+
+    huntflowVacancyId: {
+      type: String,
+      default: null,
+    },
   },
 
   data() {
@@ -212,18 +217,59 @@ export default {
 
   methods: {
     ...mapActions(['sendVacancy']),
-    handleFileSelect() {
-      if (this.$v && this.$v.cvFile) {
-        this.$v.cvFile.$touch()
+
+    toBase64(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader()
+        reader.readAsDataURL(file)
+        reader.onload = () => resolve(reader.result)
+        reader.onerror = error => reject(error)
+      })
+    },
+
+    async buildApplicantData() {
+      const splitedName = this.name.split(' ')
+      const base64File = await this.toBase64(this.cvFile)
+
+      return {
+        body: {
+          huntflow: {
+            vacancyId: this.huntflowVacancyId,
+            firstName: splitedName[0],
+            middleName: splitedName.length > 2 ? splitedName[1] : '',
+            lastName: splitedName.length > 1 ? splitedName[splitedName.length - 1] : '',
+            email: this.email,
+            positionTitle: this.position,
+            positionValue: this.grade.value,
+            linkedinProfile: this.linkedin,
+          },
+
+          email: {
+            templateId: 305491, // Required
+            variables: {
+              fullName: this.name,
+              email: this.email,
+              emailTo: process.env.emailHR,
+              linkedinProfile: this.linkedin,
+              positionTitle: this.position,
+              positionValue: this.grade.value,
+              subject: `Job Candidate Application for ${this.position}`,
+              modalTitle: 'Mad Devs Website Carrers Form',
+            },
+
+            attachment: {
+              base64: base64File.replace(/^data:(.*,)?/, ''),
+              name: this.cvFile.name,
+            },
+          },
+        },
+
+        cvFile: this.cvFile,
       }
     },
 
-    async submitForm() {
-      if (this.$v.validationGroup.$invalid) return
-      const emailToSent = await this.buildEmail()
-      this.sendVacancy(emailToSent)
-      this.isShowSuccessModal = true
-      this.resetForm()
+    handleFileSelect() {
+      if (this.$v && this.$v.cvFile) this.$v.cvFile.$touch()
     },
 
     resetForm() {
@@ -237,35 +283,12 @@ export default {
       this.linkedin = null
     },
 
-    async buildEmail() {
-      const base64File = await this.toBase64(this.cvFile)
-      return {
-        templateId: 305491, // Required
-        variables: {
-          fullName: this.name,
-          email: this.email,
-          emailTo: process.env.emailHR,
-          linkedinProfile: this.linkedin,
-          positionValue: this.grade.value,
-          positionTitle: this.position,
-          subject: `Job Candidate Application for ${this.position}`,
-          modalTitle: 'Mad Devs Website Carrers Form',
-        },
-
-        attachment: {
-          base64: base64File.replace(/^data:(.*,)?/, ''),
-          name: this.cvFile.name,
-        },
-      }
-    },
-
-    toBase64(file) {
-      return new Promise((resolve, reject) => {
-        const reader = new FileReader()
-        reader.readAsDataURL(file)
-        reader.onload = () => resolve(reader.result)
-        reader.onerror = error => reject(error)
-      })
+    async submitForm() {
+      if (this.$v.validationGroup.$invalid) return
+      const applicantData = await this.buildApplicantData()
+      this.sendVacancy(applicantData)
+      this.isShowSuccessModal = true
+      this.resetForm()
     },
   },
 }

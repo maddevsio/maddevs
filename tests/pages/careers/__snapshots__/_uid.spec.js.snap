@@ -103,6 +103,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                   class="benefit-card__icon-wrapper"
                 >
                   <img
+                    alt="Hours Icon."
                     class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="30"
@@ -125,6 +126,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                   class="benefit-card__icon-wrapper"
                 >
                   <img
+                    alt="Trips Icon."
                     class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="32"
@@ -147,6 +149,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                   class="benefit-card__icon-wrapper"
                 >
                   <img
+                    alt="Lessons Icon."
                     class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="31"
@@ -169,6 +172,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                   class="benefit-card__icon-wrapper"
                 >
                   <img
+                    alt="Training Icon."
                     class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="24"
@@ -191,6 +195,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                   class="benefit-card__icon-wrapper"
                 >
                   <img
+                    alt="Culture Icon."
                     class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="31"
@@ -213,6 +218,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                   class="benefit-card__icon-wrapper"
                 >
                   <img
+                    alt="Docs Icon."
                     class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="30"
@@ -235,6 +241,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                   class="benefit-card__icon-wrapper"
                 >
                   <img
+                    alt="Microphone Icon."
                     class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="33"
@@ -257,6 +264,7 @@ exports[`Careers _uid component should render correctly 1`] = `
                   class="benefit-card__icon-wrapper"
                 >
                   <img
+                    alt="Cocktail Glass Icon."
                     class="benefit-card__icon media_lazy"
                     data-src="img.jpg"
                     height="36"

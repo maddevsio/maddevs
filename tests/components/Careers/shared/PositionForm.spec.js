@@ -28,7 +28,7 @@ const mocks = {
     $reset: jest.fn(),
     validationGroup: {},
   },
-  buildEmail: jest.fn(),
+  buildApplicantData: jest.fn(),
   resetForm: jest.fn(),
   sendVacancy: jest.fn(),
   $refs: {
@@ -81,7 +81,7 @@ describe('PositionForm component', () => {
     mocks.$v.validationGroup.$invalid = true
     wrapper.vm.$options.methods.submitForm.call(mocks)
 
-    await expect(mocks.buildEmail).toHaveBeenCalledTimes(0)
+    await expect(mocks.buildApplicantData).toHaveBeenCalledTimes(0)
     expect(mocks.resetForm).toHaveBeenCalledTimes(0)
     expect(mocks.sendVacancy).toHaveBeenCalledTimes(0)
   })
@@ -95,7 +95,7 @@ describe('PositionForm component', () => {
 
     wrapper.vm.$options.methods.submitForm.call(mocks)
 
-    await expect(mocks.buildEmail).toHaveBeenCalledTimes(1)
+    await expect(mocks.buildApplicantData).toHaveBeenCalledTimes(1)
     expect(mocks.resetForm).toHaveBeenCalledTimes(1)
     expect(mocks.sendVacancy).toHaveBeenCalledTimes(1)
   })
@@ -113,7 +113,8 @@ describe('PositionForm component', () => {
     expect(mocks.$refs.radioButtons.reset).toHaveBeenCalledTimes(1)
   })
 
-  it('should work build email function', async () => {
+  it('should work build applicant data function', async () => {
+    process.env.emailHR = 'emailTo@maddevs.io'
     const toBase64Mock = jest.fn()
     mocks.toBase64 = () => {
       toBase64Mock()
@@ -123,7 +124,6 @@ describe('PositionForm component', () => {
     const callObject = {
       ...mocks,
       name: 'John Johnson',
-      position: 'Frontend',
       email: 'johnhohnson@maddevs.io',
       cvFile: { name: 'some-name' },
       linkedin: '',
@@ -133,9 +133,12 @@ describe('PositionForm component', () => {
     const wrapper = shallowMount(PositionForm, {
       localVue,
       mocks,
+      props: {
+        huntflowVacancyId: 123,
+        position: 'Frontend',
+      },
       data: () => ({
         name: 'John Johnson',
-        position: 'Frontend',
         email: 'johnhohnson@maddevs.io',
         cvFile: { name: 'some-name' },
         linkedin: '',
@@ -143,10 +146,45 @@ describe('PositionForm component', () => {
       }),
     })
 
-    const result = await wrapper.vm.$options.methods.buildEmail.call(callObject)
+    const result = await wrapper.vm.$options.methods.buildApplicantData.call(callObject)
+    const expectedResult = {
+      body: {
+        huntflow: {
+          vacancyId: wrapper.vm.$props.huntflowVacancyId,
+          firstName: callObject.name.split(' ')[0],
+          middleName: '',
+          lastName: callObject.name.split(' ')[1],
+          email: callObject.email,
+          positionTitle: wrapper.vm.$props.position,
+          positionValue: callObject.grade.value,
+          linkedinProfile: callObject.linkedin,
+        },
+
+        email: {
+          templateId: 305491,
+          variables: {
+            fullName: callObject.name,
+            email: callObject.email,
+            emailTo: process.env.emailHR,
+            linkedinProfile: callObject.linkedin,
+            positionValue: callObject.grade.value,
+            positionTitle: wrapper.vm.$props.position,
+            subject: `Job Candidate Application for ${wrapper.vm.$props.position}`,
+            modalTitle: 'Mad Devs Website Carrers Form',
+          },
+
+          attachment: {
+            base64: 'base64file',
+            name: callObject.cvFile.name,
+          },
+        },
+      },
+
+      cvFile: callObject.cvFile,
+    }
+
     await expect(toBase64Mock).toHaveBeenCalledTimes(1)
-    expect(result.variables.subject).toBe(`Job Candidate Application for ${callObject.position}`)
-    expect(result.variables.positionValue).toBe(callObject.grade.value)
+    expect(result).toEqual(expectedResult)
   })
 
   it('should work base 64 function', async () => {
