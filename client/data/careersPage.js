@@ -29,6 +29,7 @@ export const slides = [
   {
     page: 'Careers',
     file: 'first-slide_hq',
+    alt: 'Golang Conf 2019 with Andrew Minkin.',
     extension: 'png',
     width: '415',
     height: '415',
@@ -36,6 +37,7 @@ export const slides = [
   {
     page: 'Careers',
     file: 'second-slide_hq',
+    alt: 'Mad Devs Team.',
     extension: 'png',
     width: '415',
     height: '415',
@@ -43,6 +45,7 @@ export const slides = [
   {
     page: 'Careers',
     file: 'third-slide_hq',
+    alt: 'Mad Devs Team.',
     extension: 'png',
     width: '415',
     height: '415',
@@ -50,6 +53,7 @@ export const slides = [
   {
     page: 'Careers',
     file: 'fourth-slide_hq',
+    alt: 'Mad Devs Team.',
     extension: 'png',
     width: '415',
     height: '415',
@@ -57,6 +61,7 @@ export const slides = [
   {
     page: 'Careers',
     file: 'fifth-slide_hq',
+    alt: 'Mad Devs Team.',
     extension: 'png',
     width: '415',
     height: '415',
@@ -64,6 +69,7 @@ export const slides = [
   {
     page: 'Careers',
     file: 'sixth-slide_hq',
+    alt: 'Mad Devs Team.',
     extension: 'png',
     width: '415',
     height: '415',
@@ -71,6 +77,7 @@ export const slides = [
   {
     page: 'Careers',
     file: 'seventh-slide_hq',
+    alt: 'Mad Devs Team.',
     extension: 'png',
     width: '415',
     height: '415',
@@ -78,6 +85,7 @@ export const slides = [
   {
     page: 'Careers',
     file: 'eighth-slide_hq',
+    alt: 'Mad Devs Team.',
     extension: 'png',
     width: '415',
     height: '415',
@@ -85,6 +93,7 @@ export const slides = [
   {
     page: 'Careers',
     file: 'ninth-slide_hq',
+    alt: 'Mad Devs Team.',
     extension: 'png',
     width: '415',
     height: '415',
@@ -92,6 +101,7 @@ export const slides = [
   {
     page: 'Careers',
     file: 'tenth-slide_hq',
+    alt: 'Mad Devs Team.',
     extension: 'png',
     width: '415',
     height: '415',
@@ -99,6 +109,7 @@ export const slides = [
   {
     page: 'Careers',
     file: 'eleventh-slide_hq',
+    alt: 'Mad Devs Team.',
     extension: 'png',
     width: '415',
     height: '415',
@@ -106,6 +117,7 @@ export const slides = [
   {
     page: 'Careers',
     file: 'twelfth-slide_hq',
+    alt: 'Mad Devs Team.',
     extension: 'png',
     width: '415',
     height: '415',
