@@ -1,3 +1,5 @@
+import jest from 'jest'
+
 export default {
   $v: {
     fullName: {
