@@ -1,5 +1,5 @@
 <template>
-  <div class="case_container">
+  <section class="case_container">
     <div class="container_regular">
       <h2 class="case_title_h2 m-12_bottom">
         Project mission
@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
