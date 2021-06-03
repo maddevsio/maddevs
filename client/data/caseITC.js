@@ -30,3 +30,97 @@ export const resolvedIssues = [
     alt: 'Lock file icon.',
   },
 ]
+
+export const technologies = [
+  {
+    name: 'angular',
+    alt: 'Angular',
+    imgAlt: 'Angular',
+  },
+  {
+    name: 'rxjs',
+    alt: 'RxJs',
+    imgAlt: 'RxJs',
+  },
+  {
+    name: 'material-design',
+    alt: 'Material Design',
+    imgAlt: 'Material Design',
+  },
+  {
+    name: 'net-core',
+    alt: '.NET Core',
+    imgAlt: '.NET Core',
+  },
+  {
+    name: 'asp-net',
+    alt: 'ASP.NET',
+    imgAlt: 'ASP.NET ',
+  },
+  {
+    name: 'gitlab',
+    alt: 'GitLab CI/CD',
+    imgAlt: 'GitLab CI/CD',
+  },
+  {
+    name: 'docker',
+    alt: 'Docker',
+    imgAlt: 'Docker',
+  },
+  {
+    name: 'aws-second-logo',
+    alt: 'AWS',
+    imgAlt: 'AWS',
+  },
+  {
+    name: 'eks',
+    alt: 'EKS ',
+    imgAlt: 'EKS',
+  },
+  {
+    name: 'postgresql',
+    alt: 'PostgreSQL',
+    imgAlt: 'PostgreSQL',
+  },
+  {
+    name: 'sentry-black',
+    alt: 'Sentry',
+    imgAlt: 'Sentry',
+  },
+  {
+    name: 'grafana',
+    alt: 'Grafana',
+    imgAlt: 'Grafana',
+  },
+]
+
+export const team = [
+  {
+    name: 'Kirill Zinchenko',
+    position: 'Project Manager',
+    image: {
+      file: 'zinchenko',
+    },
+  },
+  {
+    name: 'Oleg Glazyrin',
+    position: 'Full-Stack Developer',
+    image: {
+      file: 'oleg-glazyrin',
+    },
+  },
+  {
+    name: 'Andrew Gubskii',
+    position: 'Full-Stack Developer',
+    image: {
+      file: 'andrew-gubskii',
+    },
+  },
+  {
+    name: 'Dmitrii Khalezin',
+    position: 'DevOps Engineer',
+    image: {
+      file: 'dmitrii-khalezin',
+    },
+  },
+]

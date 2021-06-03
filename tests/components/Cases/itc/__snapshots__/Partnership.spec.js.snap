@@ -22,7 +22,7 @@ exports[`Partnership component should render correctly 1`] = `
     </p>
      
     <div
-      class="case_quote-wrap m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
+      class="case_quote-wrap m-48_top m-120_bottom media-m-24_top media-m-48_bottom m-auto"
     >
       <blockquote
         class="case_blockquote-box m-auto"
@@ -34,6 +34,20 @@ exports[`Partnership component should render correctly 1`] = `
        
       <!---->
     </div>
+     
+    <textquoteauthor-stub
+      alt="Augustin Baret"
+      author="Augustin Baret"
+      class="case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
+      extension="png"
+      file="augustin-baret"
+      folder="common"
+      position="Trade Facilitation Consultant at International Trade Centre"
+    >
+      
+    We appreciate that the team took time to listen to us and to understand our needs. We also liked the professional approach: weekly reports helped us a lot to keep track of progress. We hope we’ll work together again in the future.
+  
+    </textquoteauthor-stub>
   </section>
 </div>
 `;
