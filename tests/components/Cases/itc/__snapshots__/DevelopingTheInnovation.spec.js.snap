@@ -109,7 +109,7 @@ exports[`DevelopingTheInnovation component should render correctly 1`] = `
       </p>
        
       <h3
-        class="case_title_h3 m-12_bottom media-m-24_bottom"
+        class="case_title_h3 m-12_bottom"
       >
         
       Benefits of CQRS
@@ -122,39 +122,61 @@ exports[`DevelopingTheInnovation component should render correctly 1`] = `
         <div
           class="case_card background-color-silver"
         >
-          
-        The backend structure allows for future modifications and augmentations, making the app scalable and adaptable
-      
+          <p
+            class="case_paragraph"
+          >
+            
+          The backend structure allows for future modifications and augmentations, making the app scalable and adaptable
+        
+          </p>
         </div>
          
         <div
           class="case_card background-color-silver"
         >
-          
-        Data processing can be flexibly optimised separately for the read side and the write side
-      
+          <p
+            class="case_paragraph"
+          >
+            
+          Data processing can be flexibly optimised separately for the read side and the write side
+        
+          </p>
         </div>
          
         <div
           class="case_card background-color-silver"
         >
-          
-        Overcomplicated logic is avoided so that the app’s performance does not have bottlenecks or vulnerabilities
-      
+          <p
+            class="case_paragraph"
+          >
+            
+          Overcomplicated logic is avoided so that the app’s performance does not have bottlenecks or vulnerabilities
+        
+          </p>
         </div>
          
         <div
           class="case_card background-color-silver"
         >
-          
-        The system is more secure because access must be managed on one side only, so it is simpler to separate and distribute functions among user roles
-      
+          <p
+            class="case_paragraph"
+          >
+            
+          The system is more secure because access must be managed on one side only, so it is simpler to separate and distribute functions among user roles
+        
+          </p>
         </div>
       </div>
        
       <div
-        class="case_image m-96_bottom media-m-48_bottom"
-      />
+        class="m-96_bottom media-m-48_bottom"
+      >
+        <lottie-stub
+          class="case_lottie"
+          id="benefits-of-cqrs"
+          options="[object Object]"
+        />
+      </div>
        
       <h3
         class="case_title_h3 m-12_bottom media-m-24_bottom"
