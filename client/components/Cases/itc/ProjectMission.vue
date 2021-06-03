@@ -20,8 +20,14 @@
         Coaching focuses on five thematic areas
       </h4>
       <div class="case_thematic-areas m-24_bottom media-m-12_bottom" />
-      <TextParagraph class="m-24_bottom media-m-12_bottom">
-        For more information on the R4TCA project, please <a href="https://www.intracen.org/Ready4Trade/">visit site</a>
+      <TextParagraph class="case_text-italic m-24_bottom media-m-12_bottom">
+        For more information on the R4TCA project, please
+        <a
+          href="https://www.intracen.org/Ready4Trade/"
+          class="case_link"
+        >
+          visit site
+        </a>
       </TextParagraph>
       <TextParagraph class="m-48_bottom">
         It is the first time that EMCI is running in five countries simultaneously. The growth of the project means more people involved, more activities to coordinate, and more ambitious objectives to pursue.
@@ -34,7 +40,10 @@
           <h4 class="case_statistics-item_title">
             40
           </h4>
-          <TextParagraph color="#404143">
+          <TextParagraph
+            class="case_statistics-item_description"
+            color="#404143"
+          >
             SMEs will receive coaching services in each of the five countries
           </TextParagraph>
         </div>
@@ -42,7 +51,10 @@
           <h4 class="case_statistics-item_title">
             50
           </h4>
-          <TextParagraph color="#404143">
+          <TextParagraph
+            class="case_statistics-item_description"
+            color="#404143"
+          >
             SMEs out of the total that the project will cover will be women-led enterprises
           </TextParagraph>
         </div>
@@ -50,7 +62,10 @@
           <h4 class="case_statistics-item_title">
             200
           </h4>
-          <TextParagraph color="#404143">
+          <TextParagraph
+            class="case_statistics-item_description"
+            color="#404143"
+          >
             enterprises will receive coaching services overall
           </TextParagraph>
         </div>
@@ -93,11 +108,26 @@ export default {
     &_title {
       @include title($text-color--blue-itc-case, 48px, -0.02em)
     }
+
+    &_description {
+      font-size: 16px;
+      line-height: 135%;
+    }
+  }
+
+  &_text-italic,
+  &_link {
+    font-style: italic;
+    color: $text-color--black-lighter;
+  }
+
+  &_link {
+    border-bottom: 2px solid $border-color--black-border-05-opacity;
   }
 
   @media screen and (max-width: 880px) {
     &_statistics-container {
-      @include grid(repeat(1, 180px), auto, 0, 0);
+      @include grid(repeat(1, 222px), auto, 0, 0);
       justify-content: center;
     }
 

@@ -47,15 +47,15 @@
         Going paperless is an internationally recognised way to make your operations greener and more sustainable. The  digital tool is a long-term solution that can help prevent the extensive use of paper in future projects, too.
       </TextParagraph>
       <TextQuoteBox
-        class="m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
+        class="m-48_top m-72_bottom media-m-24_top media-m-48_bottom m-auto"
         author="Sergei Kokot, EMCI Lead Coach, Central Asia"
       >
         We at ITC could benefit from digital transformation. The paper-based manual was 200 pages long, and the coach needed to fill out two copies of it every time. Developing a web app to deal with it was a solution that had lots of pluses and not a single minus.
       </TextQuoteBox>
-      <h2 class="case_text-align-center">
-        ~400 reams or 200,000 sheets of paper
+      <h2 class="case_title-statistics case_text-align-center">
+        ~400 reams <span>or</span> 200,000 sheets of paper
       </h2>
-      <TextParagraph class="m-96_bottom media-m-48_bottom case_text-align-center">
+      <TextParagraph class="case_description-statistics m-96_bottom media-m-48_bottom m-auto case_text-align-center">
         the alternative costs of running a paper-based version of the R4TCA EMCI component
       </TextParagraph>
     </div>
@@ -96,6 +96,28 @@ export default {
     @include grid(repeat(1, 1fr), repeat(3, max-content), 0, 24px);
   }
 
+  &_title-statistics {
+    margin-bottom: 6px;
+    @include font('Poppins', 36px, 600);
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: $text-color--blue-itc-case;
+
+    span {
+      color: $text-color--black-oil;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  &_description-statistics {
+    max-width: 390px;
+    font-size: 16px;
+    color: $text-color--quote-box;
+  }
+
   @media screen and (max-width: 880px) {
     &_cards-container {
       @include grid(repeat(1, 1fr), auto, 0, 10px);
@@ -106,5 +128,4 @@ export default {
     }
   }
 }
-
 </style>

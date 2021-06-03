@@ -38,24 +38,39 @@
       <TextParagraph class="m-96_bottom media-m-48_bottom">
         In development, we relied on Domain-Driven Design (DDD) values and the Command Query Responsibility Segregation (CQRS) principle. CQRS is an approach that involves separating read and command operations, thus creating a better architecture and improving the observability of the entire system.
       </TextParagraph>
-      <h3 class="case_title_h3 m-12_bottom media-m-24_bottom">
+      <h3 class="case_title_h3 m-12_bottom">
         Benefits of CQRS
       </h3>
       <div class="case_cards-container m-48_bottom media-m-24_bottom">
         <Card class="background-color-silver">
-          The backend structure allows for future modifications and augmentations, making the app scalable and adaptable
+          <TextParagraph>
+            The backend structure allows for future modifications and augmentations, making the app scalable and adaptable
+          </TextParagraph>
         </Card>
         <Card class="background-color-silver">
-          Data processing can be flexibly optimised separately for the read side and the write side
+          <TextParagraph>
+            Data processing can be flexibly optimised separately for the read side and the write side
+          </TextParagraph>
         </Card>
         <Card class="background-color-silver">
-          Overcomplicated logic is avoided so that the app’s performance does not have bottlenecks or vulnerabilities
+          <TextParagraph>
+            Overcomplicated logic is avoided so that the app’s performance does not have bottlenecks or vulnerabilities
+          </TextParagraph>
         </Card>
         <Card class="background-color-silver">
-          The system is more secure because access must be managed on one side only, so it is simpler to separate and distribute functions among user roles
+          <TextParagraph>
+            The system is more secure because access must be managed on one side only, so it is simpler to separate and distribute functions among user roles
+          </TextParagraph>
         </Card>
       </div>
-      <div class="case_image m-96_bottom media-m-48_bottom" />
+      <div class="m-96_bottom media-m-48_bottom">
+        <Lottie
+          id="benefits-of-cqrs"
+          :options="options"
+          class="case_lottie"
+          @animCreated="handleAnimation"
+        />
+      </div>
       <h3 class="case_title_h3 m-12_bottom media-m-24_bottom">
         Benefits of Domain-driven design
       </h3>
@@ -80,6 +95,9 @@
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import Card from '@/components/Cases/shared/Card'
 import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
+import Lottie from 'vue-lottie/src/lottie.vue'
+import animationData from '@/assets/lottie/itc/benefits-of-cqrs.json'
+import playLottieMixin from '@/mixins/playLottieMixin'
 
 export default {
   name: 'DevelopingTheInnovation',
@@ -87,6 +105,29 @@ export default {
     TextParagraph,
     Card,
     TextQuoteBox,
+    Lottie,
   },
+
+  mixins: [playLottieMixin('benefits-of-cqrs', {
+    animationData,
+    autoplay: false,
+    loop: false,
+  })],
+
 }
 </script>
+
+<style scoped lang="scss">
+@import '@/assets/styles/cases/_mixins';
+
+.case {
+  &_cards-container {
+    @include grid(repeat(2, 1fr), auto, 24px, 24px);
+
+    @media screen and (max-width: 880px) {
+      @include grid(repeat(1, 1fr), auto, 0, 10px);
+    }
+  }
+
+}
+</style>

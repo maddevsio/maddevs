@@ -29,3 +29,16 @@ export default {
   },
 }
 </script>
+
+<style scoped lang="scss">
+
+.case {
+  &_bold-text {
+    font-weight: 700
+  }
+}
+
+/deep/ .list-item_dot {
+  margin-bottom: 0;
+}
+</style>
