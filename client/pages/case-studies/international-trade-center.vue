@@ -70,10 +70,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/styles/cases/base';
-@import '@/assets/styles/cases/mixins';
-@import '@/assets/styles/cases/components';
-@import '@/assets/styles/cases/media';
+@import '@/assets/styles/cases/_base';
+@import '@/assets/styles/cases/_mixins';
+@import '@/assets/styles/cases/_components';
+@import '@/assets/styles/cases/_media';
 
 .case {
   &_header-itc {
