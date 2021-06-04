@@ -70,10 +70,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../assets/styles/cases/base';
-@import '../../assets/styles/cases/mixins';
-@import '../../assets/styles/cases/components';
-@import '../../assets/styles/cases/media';
+@import '@/assets/styles/cases/base';
+@import '@/assets/styles/cases/mixins';
+@import '@/assets/styles/cases/components';
+@import '@/assets/styles/cases/media';
 
 .case {
   &_header-itc {
@@ -98,10 +98,6 @@ export default {
     @media screen and (max-width: 655px) {
       width: 192px;
       height: 78.97px;
-    }
-
-    @media screen and (max-width: 370px) {
-
     }
   }
 
