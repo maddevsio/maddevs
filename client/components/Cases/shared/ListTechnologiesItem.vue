@@ -75,6 +75,10 @@ export default {
     width: 59px;
   }
 
+  &__asp-net {
+    width: 60px;
+  }
+
   @media screen and (max-width: 768px) {
     &__tech-icon {
       margin-bottom: 8px;
@@ -101,6 +105,10 @@ export default {
 
     &__plex {
       width: 28px;
+    }
+
+    &__asp-net {
+      width: 30px;
     }
 
     &__tech-name {

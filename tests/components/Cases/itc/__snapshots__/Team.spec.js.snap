@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Team component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular"
+  >
+    <h3
+      class="case_title_h2 m-24_bottom"
+    >
+      
+    Meet the team
+  
+    </h3>
+     
+    <ul
+      class="case_list-team m-96_bottom media-m-48_bottom"
+    >
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Kirill Zinchenko"
+            class="image grey-background media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="50"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Kirill Zinchenko
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Project Manager
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Oleg Glazyrin"
+            class="image grey-background media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="50"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Oleg Glazyrin
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Full-Stack Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Andrew Gubskii"
+            class="image grey-background media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="50"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Andrew Gubskii
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Full-Stack Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Dmitrii Khalezin"
+            class="image grey-background media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="50"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Dmitrii Khalezin
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      DevOps Engineer
+    
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>
+`;

@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InternationalTradeCenter root component should render correctly 1`] = `
+<div>
+  <main
+    class="case case--veeqo"
+  >
+    <section
+      class="case_header case_header-itc"
+      id="case-header"
+    >
+      <div
+        class="case_main-video_fallback"
+        style="background-image: url(img.jpg);"
+      />
+       
+      <video
+        autoplay="autoplay"
+        class="case_main-video media_lazy"
+        data-testid="test-case_main-video"
+        loop="loop"
+        muted="muted"
+      >
+        <source
+          data-src="img.jpg"
+          type="video/mp4"
+        />
+        
+    Your browser does not support the video tag.
+  
+      </video>
+       
+      <div
+        class="case_header-content"
+      >
+        <div
+          class="case_header-text"
+          style="opacity: 1;"
+        >
+          <div
+            class="case_case-study-item"
+          >
+            
+        Case Study
+      
+          </div>
+           
+          <h1
+            class="case_header-title"
+          >
+            
+      Ready4Trade 
+            <br />
+             Central Asia
+    
+          </h1>
+           
+          <p
+            class="case_header-description"
+          >
+            
+      A web app customized for the delivery of export management coaching 
+            <br />
+             missions that contributes to the development of 
+            <span
+              class="case_nowrap"
+            >
+              intra-regional
+            </span>
+             
+            <br />
+             and international trade in Central Asia
+    
+          </p>
+           
+        </div>
+         
+        <img
+          alt="International trade center logo"
+          class="case_header-logo case_itc-logo"
+          height="154.95"
+          src="img.jpg"
+          style="opacity: 1;"
+          width="377"
+        />
+      </div>
+    </section>
+     
+    <main-stub />
+     
+    <section
+      class="case_footer container_full"
+    >
+      <img
+        alt="The Evolution of Yourcast.TV"
+        class="case_logotype-yourcast img_lazy"
+        data-src="[object Object]"
+      />
+       
+      <h2
+        class="case_title case_title_h2 case_title-yourcast"
+      >
+        
+    The Evolution of Yourcast.TV
+  
+      </h2>
+       
+      <nuxtlink-stub
+        class="case_next-project-button"
+        to="/case-studies/yourcast/"
+      >
+        
+    Read next project
+  
+      </nuxtlink-stub>
+    </section>
+  </main>
+</div>
+`;

@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectMission component should render correctly 1`] = `
+<div>
+  <section
+    class="case_container"
+  >
+    <div
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 m-12_bottom"
+      >
+        
+      Project mission
+    
+      </h2>
+       
+      <p
+        class="case_paragraph m-48_bottom media-m-24_bottom"
+      >
+        
+      ITC previously implemented EMCI in Sri Lanka and Afghanistan to facilitate export management for SMEs in these countries via business-related training on the ground. The project’s current goal is to support the development of intra-regional and international trade in five Central Asian (CA) countries: Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Uzbekistan.
+    
+      </p>
+    </div>
+     
+    <div
+      class="container_full background-color-silver m-48_bottom media-m-24_bottom"
+    />
+     
+    <div
+      class="container_regular"
+    >
+      <p
+        class="case_paragraph m-24_bottom media-m-12_bottom"
+      >
+        
+      It is the trade component of a larger EU-funded programme that aims to support investment, competitiveness, and trade in Central Asia, thus contributing to sustainable and inclusive economic development in the region.
+    
+      </p>
+       
+      <p
+        class="case_paragraph m-48_bottom media-m-24_bottom"
+      >
+        
+      To boost intra-regional and international trade, ITC trains Export Management Coaches (EMCs), who then deliver on-the-job coaching to offer practical and action-oriented advisory services to local businesses.
+    
+      </p>
+       
+      <h4
+        class="case_title_h4 m-24_bottom media-m-12_bottom"
+      >
+        
+      Coaching focuses on five thematic areas
+    
+      </h4>
+       
+      <div
+        class="case_thematic-areas m-24_bottom media-m-12_bottom"
+      />
+       
+      <p
+        class="case_paragraph case_text-italic m-24_bottom media-m-12_bottom"
+      >
+        
+      For more information on the R4TCA project, please
+      
+        <a
+          class="case_link"
+          href="https://www.intracen.org/Ready4Trade/"
+        >
+          
+        visit site
+      
+        </a>
+      </p>
+       
+      <p
+        class="case_paragraph m-48_bottom"
+      >
+        
+      It is the first time that EMCI is running in five countries simultaneously. The growth of the project means more people involved, more activities to coordinate, and more ambitious objectives to pursue.
+    
+      </p>
+       
+      <h4
+        class="case_title_h4 m-34_bottom"
+      >
+        
+      ITC’s aims under this programme
+    
+      </h4>
+       
+      <div
+        class="case_statistics-container m-107_bottom media-m-41_bottom"
+      >
+        <div
+          class="case_statistics-item"
+        >
+          <h4
+            class="case_statistics-item_title"
+          >
+            
+          40
+        
+          </h4>
+           
+          <p
+            class="case_paragraph case_statistics-item_description"
+            style="color: rgb(64, 65, 67);"
+          >
+            
+          SMEs will receive coaching services in each of the five countries
+        
+          </p>
+        </div>
+         
+        <div
+          class="case_statistics-item"
+        >
+          <h4
+            class="case_statistics-item_title"
+          >
+            
+          50
+        
+          </h4>
+           
+          <p
+            class="case_paragraph case_statistics-item_description"
+            style="color: rgb(64, 65, 67);"
+          >
+            
+          SMEs out of the total that the project will cover will be women-led enterprises
+        
+          </p>
+        </div>
+         
+        <div
+          class="case_statistics-item"
+        >
+          <h4
+            class="case_statistics-item_title"
+          >
+            
+          200
+        
+          </h4>
+           
+          <p
+            class="case_paragraph case_statistics-item_description"
+            style="color: rgb(64, 65, 67);"
+          >
+            
+          enterprises will receive coaching services overall
+        
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
