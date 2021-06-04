@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main component should render correctly 1`] = `
+<div>
+  <section>
+    <div
+      id="case-first-section"
+    />
+     
+    <about-stub />
+     
+    <projectmission-stub />
+     
+    <challenges-stub />
+     
+    <savingtime-stub />
+     
+    <collectingdataforanalysis-stub />
+     
+    <developingtheinnovation-stub />
+     
+    <technologies-stub />
+     
+    <team-stub />
+     
+    <futureplans-stub />
+     
+    <partnership-stub />
+  </section>
+</div>
+`;

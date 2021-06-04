@@ -1,4 +1,4 @@
-import CardTechSolution from '@/components/Cases/veeqo/CardTechSolution'
+import CardTechSolution from '@/components/Cases/shared/CardTechSolution'
 import { render, screen } from '@testing-library/vue'
 
 describe('CardTechSolution component', () => {

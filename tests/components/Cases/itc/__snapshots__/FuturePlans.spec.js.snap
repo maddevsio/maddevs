@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FuturePlans component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular"
+  >
+    <h2
+      class="case_title_h2 m-12_bottom"
+    >
+      
+    Future plans
+  
+    </h2>
+     
+    <p
+      class="case_paragraph case_bold-text m-12_bottom"
+    >
+      
+    ITC and Mad Devs are hoping for further cooperation, and when the time comes, we are planning to add the following functionality to the digital manual:
+  
+    </p>
+     
+    <ul
+      class="case_list m-48_bottom"
+    >
+      <li
+        class="list-item_dot"
+      >
+        Travel requests: create them; add details; display their lists, statuses, and workflow; and send email notifications
+      </li>
+       
+      <li
+        class="list-item_dot"
+      >
+        Travel calendar and travel request reports
+      </li>
+       
+      <li
+        class="list-item_dot"
+      >
+        Editable captions for initial approach questionnaires (IAQs) and post-mission questionnaires (PMQs)
+      </li>
+       
+      <li
+        class="list-item_dot"
+      >
+        With certain localisation efforts, the app will be fit for similar trade facilitation initiatives in more countries in the future
+      </li>
+    </ul>
+  </section>
+</div>
+`;
