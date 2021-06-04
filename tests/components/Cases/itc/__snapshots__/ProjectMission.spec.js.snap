@@ -58,7 +58,201 @@ exports[`ProjectMission component should render correctly 1`] = `
        
       <div
         class="case_thematic-areas m-24_bottom media-m-12_bottom"
-      />
+      >
+        <div
+          class="case_card card background-color-black"
+        >
+          <h4
+            class="card_title case_title_h4"
+          >
+            
+    Export planning and pro forma invoicing
+  
+          </h4>
+           
+          <div
+            class="card_image-wrapper"
+          >
+            <picture>
+              <source
+                class="image"
+                srcset="img.jpg,img.jpg"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Export planning and pro forma invoicing"
+                class="image"
+                data-testid="test-picture-img"
+                height="302"
+                src="img.jpg"
+                srcset="img.jpg"
+                width="160"
+              />
+            </picture>
+          </div>
+           
+          <div
+            class="card_image-wrapper-mobile"
+          >
+            <picture>
+              <source
+                class="image"
+                srcset="img.jpg,img.jpg"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Export planning and pro forma invoicing"
+                class="image"
+                data-testid="test-picture-img"
+                height="201"
+                src="img.jpg"
+                srcset="img.jpg"
+                width="295"
+              />
+            </picture>
+          </div>
+        </div>
+        <div
+          class="case_card card background-color-blue-itc"
+        >
+          <h4
+            class="card_title case_title_h4"
+          >
+            
+    Mandatory certifications, registrations and buyer standards
+  
+          </h4>
+           
+          <div
+            class="card_image-wrapper"
+          >
+            <picture>
+              <source
+                class="image"
+                srcset="img.jpg,img.jpg"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Mandatory certifications, registrations and buyer standards"
+                class="image"
+                data-testid="test-picture-img"
+                height="302"
+                src="img.jpg"
+                srcset="img.jpg"
+                width="160"
+              />
+            </picture>
+          </div>
+           
+          <div
+            class="card_image-wrapper-mobile"
+          >
+            <picture>
+              <source
+                class="image"
+                srcset="img.jpg,img.jpg"
+                type="image/webp"
+              />
+               
+              <img
+                alt="Mandatory certifications, registrations and buyer standards"
+                class="image"
+                data-testid="test-picture-img"
+                height="201"
+                src="img.jpg"
+                srcset="img.jpg"
+                width="295"
+              />
+            </picture>
+          </div>
+        </div>
+        <div
+          class="case_card card background-color-blue-itc-darken"
+        >
+          <h4
+            class="card_title case_title_h4"
+          >
+            
+    International shipping by sea and air freight
+  
+          </h4>
+           
+          <div
+            class="card_image-wrapper"
+          >
+            <picture>
+              <source
+                class="image"
+                srcset="img.jpg,img.jpg"
+                type="image/webp"
+              />
+               
+              <img
+                alt="International shipping by sea and air freight"
+                class="image"
+                data-testid="test-picture-img"
+                height="302"
+                src="img.jpg"
+                srcset="img.jpg"
+                width="160"
+              />
+            </picture>
+          </div>
+           
+          <div
+            class="card_image-wrapper-mobile"
+          >
+            <picture>
+              <source
+                class="image"
+                srcset="img.jpg,img.jpg"
+                type="image/webp"
+              />
+               
+              <img
+                alt="International shipping by sea and air freight"
+                class="image"
+                data-testid="test-picture-img"
+                height="201"
+                src="img.jpg"
+                srcset="img.jpg"
+                width="295"
+              />
+            </picture>
+          </div>
+        </div>
+         
+        <div
+          class="case_inner-cards"
+        >
+          <div
+            class="case_card case_inner-card background-color-pink"
+          >
+            <h4
+              class="case_card-title case_title_h4"
+            >
+              
+            Customs and duties
+          
+            </h4>
+          </div>
+           
+          <div
+            class="case_card case_inner-card background-color-blue-itc-darken"
+          >
+            <h4
+              class="case_card-title case_title_h4"
+            >
+              
+            Packaging and labelling
+          
+            </h4>
+          </div>
+        </div>
+      </div>
        
       <p
         class="case_paragraph case_text-italic m-24_bottom media-m-12_bottom"
@@ -69,6 +263,7 @@ exports[`ProjectMission component should render correctly 1`] = `
         <a
           class="case_link"
           href="https://www.intracen.org/Ready4Trade/"
+          target="_blank"
         >
           
         visit site
