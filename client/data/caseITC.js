@@ -124,3 +124,21 @@ export const team = [
     },
   },
 ]
+
+export const thematicAreas = [
+  {
+    title: 'Export planning and pro forma invoicing',
+    file: 'export',
+    color: 'black',
+  },
+  {
+    title: 'Mandatory certifications, registrations and buyer standards',
+    file: 'certifications',
+    color: 'blue-itc',
+  },
+  {
+    title: 'International shipping by sea and air freight',
+    file: 'air-transportation',
+    color: 'blue-itc-darken',
+  },
+]
