@@ -102,7 +102,8 @@ import Team from '@/components/Cases/godee/Team'
 import CaseFooter from '@/components/Cases/shared/CaseFooter'
 import Footer from '@/components/core/Footer/Footer'
 import isIphoneMixin from '@/mixins/isIphoneMixin'
-import autoplayVideoMixin from '@/mixins/autoplayVideoMixin'
+import IntersectionObserverMixin from '@/mixins/IntersectionObserverMixin'
+import playVideo from '@/helpers/playVideo'
 
 const observerOptions = {
   root: null,
@@ -136,7 +137,14 @@ export default {
     Footer,
   },
 
-  mixins: [isIphoneMixin, autoplayVideoMixin(['trip-request-map', 'trip-monitor', 'route-optimization'], observerOptions)],
+  mixins: [
+    isIphoneMixin,
+    IntersectionObserverMixin(
+      ['trip-request-map', 'trip-monitor', 'route-optimization'],
+      playVideo,
+      observerOptions,
+    ),
+  ],
 
   data() {
     return {

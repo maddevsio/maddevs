@@ -142,3 +142,39 @@ export const thematicAreas = [
     color: 'blue-itc-darken',
   },
 ]
+
+export const developingInnovation = [
+  {
+    text: 'Built a data backup system with daily backups',
+    background: '#5A6BC3',
+  },
+  {
+    text: 'Set up a CI/CD pipeline',
+    background: '#4154B3',
+  },
+  {
+    text: 'Introduced a staging environment in addition to the production environment',
+    background: '#354491',
+  },
+  {
+    text: 'Introduced an infrastructure monitoring system',
+    background: '#293470',
+  },
+  {
+    text: 'Covered with integration and unit tests',
+    background: '#1C254E',
+  },
+  {
+    text: 'Created a user manual with screenshots from the app and with descriptions of its functions in Russian, which all the coaches speak',
+    background: '#10152C',
+  },
+]
+
+export const idList = [
+  'innovation-item-0',
+  'innovation-item-1',
+  'innovation-item-2',
+  'innovation-item-3',
+  'innovation-item-4',
+  'innovation-item-5',
+]
