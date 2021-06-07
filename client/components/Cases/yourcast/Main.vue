@@ -30,7 +30,14 @@ import PhaseUserAuthorisation from '@/components/Cases/yourcast/PhaseUserAuthori
 import WatchWhatYouLikeVideo from '@/components/Cases/yourcast/WatchWhatYouLikeVideo'
 import PlansForSimilarProjects from '@/components/Cases/yourcast/PlansForSimilarProjects'
 import Team from '@/components/Cases/yourcast/Team'
-import autoplayVideoMixin from '@/mixins/autoplayVideoMixin'
+import IntersectionObserverMixin from '@/mixins/IntersectionObserverMixin'
+import playVideo from '@/helpers/playVideo'
+
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.8,
+}
 
 export default {
   components: {
@@ -49,11 +56,12 @@ export default {
     Team,
   },
 
-  mixins: [autoplayVideoMixin(['yourcast-tv'], {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.8,
-  })],
-
+  mixins: [
+    IntersectionObserverMixin(
+      ['yourcast-tv'],
+      playVideo,
+      observerOptions,
+    ),
+  ],
 }
 </script>

@@ -68,6 +68,18 @@ exports[`CasesList component should render correctly 1`] = `
         videofilename="/videos/veeqo-banner.mp4#t=1"
         width="full"
       />
+      <caseslistitem-stub
+        class="cases-list_itc"
+        data-testid="test-case-card"
+        desc="A web app customized for the delivery of export management coaching missions that contributes to the development of intra-regional and international trade in Central Asia"
+        link="/case-studies/R4TCA-web-application/"
+        logo="[object Object]"
+        poster="/images/Cases/itc/jpg/itc-banner.jpg"
+        subtitle="Digital transformation"
+        title="Ready4Trade Central Asia"
+        videofilename="/videos/itc-banner.mp4#t=1"
+        width="full"
+      />
     </section>
      
     <nuxtlink-stub

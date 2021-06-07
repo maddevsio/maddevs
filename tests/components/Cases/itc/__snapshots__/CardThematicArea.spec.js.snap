@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardThematicArea component should render correctly 1`] = `
+<div>
+  <card-stub
+    class="card background-color-silver"
+    padding=""
+  >
+    <h4
+      class="card_title case_title_h4"
+    >
+      
+    
+  
+    </h4>
+     
+    <div
+      class="card_image-wrapper"
+    >
+      <picture-stub
+        alt=""
+        extension="png"
+        file="null-desktop"
+        folder="itc"
+        height="302"
+        width="160"
+      />
+    </div>
+     
+    <div
+      class="card_image-wrapper-mobile"
+    >
+      <picture-stub
+        alt=""
+        extension="png"
+        file="null-mobile"
+        folder="itc"
+        height="201"
+        width="295"
+      />
+    </div>
+  </card-stub>
+</div>
+`;

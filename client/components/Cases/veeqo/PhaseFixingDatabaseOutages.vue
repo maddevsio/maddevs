@@ -41,6 +41,7 @@
         v-for="solution in techSolutions"
         v-bind="solution"
         :key="solution.icon"
+        folder="veeqo"
       />
     </div>
     <TextParagraph class="m-48_top m-48_bottom media-m-24_bottom">
@@ -65,7 +66,7 @@ import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import Card from '@/components/Cases/shared/Card'
 import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
 import TextParagraphUppercase from '@/components/Cases/shared/TextParagraphUppercase'
-import CardTechSolution from '@/components/Cases/veeqo/CardTechSolution'
+import CardTechSolution from '@/components/Cases/shared/CardTechSolution'
 import FixingDatabaseOutagesResult from '@/components/Cases/veeqo/FixingDatabaseOutagesResult'
 import { techSolutions } from '@/data/caseVeeqo'
 

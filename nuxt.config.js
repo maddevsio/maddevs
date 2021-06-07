@@ -116,6 +116,7 @@ module.exports = {
     '~/plugins/vue-prlx.js',
     { src: '~/plugins/sentry.js', mode: 'client' },
     { src: '~/plugins/lazy-load.js', mode: 'client' },
+    { src: '~/plugins/pure-counter.js', mode: 'client' },
   ],
   /*
   ** Nuxt Modules

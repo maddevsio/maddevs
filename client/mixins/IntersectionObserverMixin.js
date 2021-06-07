@@ -4,29 +4,25 @@ const observerDefaultOptions = {
   threshold: 1.0,
 }
 
-function autoplayVideoMixin(videoIds, observerOptions = observerDefaultOptions) {
+function IntersectionObserverMixin(idList, callbackFn, observerOptions = observerDefaultOptions) {
   return {
     mounted() {
-      this.setupAutoplay()
+      this.initIntersectionObserver()
     },
 
     methods: {
-      setupAutoplay() {
-        videoIds.forEach(video => {
+      initIntersectionObserver() {
+        idList.forEach(id => {
           const callback = entries => {
             entries.forEach(entry => {
-              if (entry.target.id === video) {
+              if (entry.target.id === id) {
                 if (entry.isIntersecting) {
-                  try {
-                    entry.target.play()
-                  } catch (err) {
-                    // prevent play
-                  }
+                  callbackFn(entry)
                 }
               }
             })
           }
-          const element = document.getElementById(video)
+          const element = document.getElementById(id)
           if (!element) return
           const observer = new IntersectionObserver(callback, observerOptions)
           observer.observe(element)
@@ -36,4 +32,4 @@ function autoplayVideoMixin(videoIds, observerOptions = observerDefaultOptions) 
   }
 }
 
-export default autoplayVideoMixin
+export default IntersectionObserverMixin
