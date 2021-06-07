@@ -84,4 +84,21 @@ export const casesList = [
       alt: 'Veeqo logo',
     },
   },
+  {
+    width: 'full',
+    id: 'itc',
+    link: '/case-studies/international-trade-center/',
+    video: '/videos/itc-banner.mp4#t=1',
+    subtitle: 'Digital transformation',
+    title: 'Ready4Trade Central Asia',
+    desc: 'A web app customized for the delivery of export management coaching missions that contributes to the development of intra-regional and international trade in Central Asia',
+    poster: '/images/Cases/itc/jpg/itc-banner.jpg',
+    logo: {
+      width: 105,
+      height: 23,
+      folder: 'itc',
+      file: 'itc-logo',
+      alt: 'ITC logo',
+    },
+  },
 ]

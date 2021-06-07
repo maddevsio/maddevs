@@ -70,7 +70,7 @@
               data-purecounter-end="40"
               class="purecounter"
             >
-              0
+              40
             </span>
           </h4>
           <TextParagraph
@@ -87,7 +87,7 @@
               data-purecounter-end="50"
               class="purecounter"
             >
-              0
+              50
             </span>
           </h4>
           <TextParagraph
@@ -104,7 +104,7 @@
               data-purecounter-end="200"
               class="purecounter"
             >
-              0
+              200
             </span>
           </h4>
           <TextParagraph

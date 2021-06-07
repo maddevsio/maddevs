@@ -310,7 +310,7 @@ exports[`ProjectMission component should render correctly 1`] = `
               data-purecounter-start="0"
             >
               
-            0
+            40
           
             </span>
           </h4>
@@ -337,7 +337,7 @@ exports[`ProjectMission component should render correctly 1`] = `
               data-purecounter-start="0"
             >
               
-            0
+            50
           
             </span>
           </h4>
@@ -364,7 +364,7 @@ exports[`ProjectMission component should render correctly 1`] = `
               data-purecounter-start="0"
             >
               
-            0
+            200
           
             </span>
           </h4>
