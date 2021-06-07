@@ -3,8 +3,8 @@
     <CaseHeader
       :logo="logo"
       project="itc"
-      video-name=""
-      video-fallback-path=""
+      video-name="/videos/itc-banner.mp4"
+      video-fallback-path="/images/Cases/itc/jpg/itc-banner.jpg"
     >
       <h1
         slot="title"

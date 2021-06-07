@@ -11,7 +11,17 @@
         Instead, a unified regional data collection platform made adding, storing, processing, and sharing data possible, convenient, and accessible for subsequent analysis.
       </TextParagraph>
     </div>
-    <div class="container_middle m-96_bottom media-m-48_bottom" />
+    <div class="container_middle case_img-wrap m-96_bottom media-m-48_bottom">
+      <Picture
+        :width="1026"
+        :height="554"
+        :lazy="true"
+        folder="itc"
+        file="data-collection"
+        extension="png"
+        alt="Collecting data for analysis"
+      />
+    </div>
     <div class="container_regular">
       <h3 class="case_title_h3 m-12_bottom">
         Platform developed locally
@@ -44,12 +54,22 @@
 <script>
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import TextQuote from '@/components/Cases/shared/TextQuote'
+import Picture from '@/components/Cases/shared/Picture'
 
 export default {
   name: 'CollectingDataForAnalysis',
   components: {
     TextParagraph,
     TextQuote,
+    Picture,
   },
 }
 </script>
+
+<style lang="scss" scoped>
+  .case {
+    &_img-wrap {
+      filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+    }
+  }
+</style>

@@ -8,7 +8,15 @@
         ITC previously implemented EMCI in Sri Lanka and Afghanistan to facilitate export management for SMEs in these countries via business-related training on the ground. The project’s current goal is to support the development of intra-regional and international trade in five Central Asian (CA) countries: Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Uzbekistan.
       </TextParagraph>
     </div>
-    <div class="container_full background-color-silver m-48_bottom media-m-24_bottom" />
+    <div class="case_full-screen-image background-color-silver m-48_bottom media-m-24_bottom m-auto">
+      <img
+        width="1440"
+        height="540"
+        :data-src="require(`@/assets/img/Studies/svg/project-mission.svg`)"
+        class="case_project-mission media_lazy"
+        alt="Project mission"
+      >
+    </div>
     <div class="container_regular">
       <TextParagraph class="m-24_bottom media-m-12_bottom">
         It is the trade component of a larger EU-funded programme that aims to support investment, competitiveness, and trade in Central Asia, thus contributing to sustainable and inclusive economic development in the region.
@@ -57,7 +65,13 @@
       <div class="case_statistics-container m-107_bottom media-m-41_bottom">
         <div class="case_statistics-item">
           <h4 class="case_statistics-item_title">
-            40
+            <span
+              data-purecounter-start="0"
+              data-purecounter-end="40"
+              class="purecounter"
+            >
+              0
+            </span>
           </h4>
           <TextParagraph
             class="case_statistics-item_description"
@@ -68,7 +82,13 @@
         </div>
         <div class="case_statistics-item">
           <h4 class="case_statistics-item_title">
-            50
+            <span
+              data-purecounter-start="0"
+              data-purecounter-end="50"
+              class="purecounter"
+            >
+              0
+            </span>
           </h4>
           <TextParagraph
             class="case_statistics-item_description"
@@ -79,7 +99,13 @@
         </div>
         <div class="case_statistics-item">
           <h4 class="case_statistics-item_title">
-            200
+            <span
+              data-purecounter-start="0"
+              data-purecounter-end="200"
+              class="purecounter"
+            >
+              0
+            </span>
           </h4>
           <TextParagraph
             class="case_statistics-item_description"
@@ -175,6 +201,11 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  &_project-mission {
+    width: 100%;
+    height: 100%;
   }
 
   @media screen and (max-width: 880px) {
