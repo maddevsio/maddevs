@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import InternationalTradeCenter from '@/pages/case-studies/international-trade-center'
+import InternationalTradeCenter from '@/pages/case-studies/R4TCA-web-application'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

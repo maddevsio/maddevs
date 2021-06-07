@@ -87,7 +87,7 @@ export const casesList = [
   {
     width: 'full',
     id: 'itc',
-    link: '/case-studies/international-trade-center/',
+    link: '/case-studies/R4TCA-web-application/',
     video: '/videos/itc-banner.mp4#t=1',
     subtitle: 'Digital transformation',
     title: 'Ready4Trade Central Asia',

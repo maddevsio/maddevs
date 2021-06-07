@@ -40,6 +40,7 @@ import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/itc/Main'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
+import { getMetadata, buildHead } from '@/data/seo'
 
 export default {
   name: 'CaseITC',
@@ -61,6 +62,13 @@ export default {
         alt: 'International trade center logo',
       },
     }
+  },
+
+  head() {
+    return buildHead({
+      ...getMetadata('itc'),
+      image: 'https://maddevs.io/itc-case.jpg',
+    })
   },
 
   mounted() {
