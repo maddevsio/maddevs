@@ -183,7 +183,7 @@ export default {
   }
 
   /deep/ &_list-numbered_item {
-    color: $text-color--white-primary;
+    color: $text-color--white-primary !important;
     background-color: $bgcolor--grey-cases;
     transition: 0.4s;
   }

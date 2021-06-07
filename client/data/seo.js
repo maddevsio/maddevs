@@ -93,6 +93,12 @@ export const meta = {
     url: 'https://maddevs.io/case-studies/veeqo/',
     jsonLd: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: Veeqo an Inventory Management Platform for E-commerce", "description": "Infrastructure Case Study: How to optimize and reduce infrastructure costs? Read Veeqo’s story of optimizing the costs along with improving the system’s performance.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}',
   },
+  itc: {
+    title: 'Mad Devs Case Study: the International Trade Centre (ITC)',
+    description: 'Digital Transformation Case Study: How to implement digital transformation? Read an ITC\'s story of improving the reports and the coaches\' coordination with a convenient web app.',
+    url: 'https://maddevs.io/case-studies/R4TCA-web-application/',
+    jsonLd: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: the International Trade Centre (ITC)", "description": "Digital Transformation Case Study: How to implement digital transformation? Read an ITC\'s story of improving the reports and the coaches\' coordination with a convenient web app.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}',
+  },
   ...tagPagesSeo,
 }
 
