@@ -8,7 +8,15 @@
         ITC previously implemented EMCI in Sri Lanka and Afghanistan to facilitate export management for SMEs in these countries via business-related training on the ground. The project’s current goal is to support the development of intra-regional and international trade in five Central Asian (CA) countries: Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Uzbekistan.
       </TextParagraph>
     </div>
-    <div class="container_full background-color-silver m-48_bottom media-m-24_bottom" />
+    <div class="case_full-screen-image background-color-silver m-48_bottom media-m-24_bottom m-auto">
+      <img
+        width="1440"
+        height="540"
+        :data-src="require(`@/assets/img/Studies/svg/project-mission.svg`)"
+        class="case_project-mission media_lazy"
+        alt="Project mission"
+      >
+    </div>
     <div class="container_regular">
       <TextParagraph class="m-24_bottom media-m-12_bottom">
         It is the trade component of a larger EU-funded programme that aims to support investment, competitiveness, and trade in Central Asia, thus contributing to sustainable and inclusive economic development in the region.
@@ -19,12 +27,31 @@
       <h4 class="case_title_h4 m-24_bottom media-m-12_bottom">
         Coaching focuses on five thematic areas
       </h4>
-      <div class="case_thematic-areas m-24_bottom media-m-12_bottom" />
+      <div class="case_thematic-areas m-24_bottom media-m-12_bottom">
+        <CardThematicArea
+          v-for="thematicArea in thematicAreas"
+          v-bind="thematicArea"
+          :key="thematicArea.title"
+        />
+        <div class="case_inner-cards">
+          <Card class="case_inner-card background-color-pink">
+            <h4 class="case_card-title case_title_h4">
+              Customs and duties
+            </h4>
+          </Card>
+          <Card class="case_inner-card background-color-blue-itc-darken">
+            <h4 class="case_card-title case_title_h4">
+              Packaging and labelling
+            </h4>
+          </Card>
+        </div>
+      </div>
       <TextParagraph class="case_text-italic m-24_bottom media-m-12_bottom">
         For more information on the R4TCA project, please
         <a
           href="https://www.intracen.org/Ready4Trade/"
           class="case_link"
+          target="_blank"
         >
           visit site
         </a>
@@ -38,7 +65,13 @@
       <div class="case_statistics-container m-107_bottom media-m-41_bottom">
         <div class="case_statistics-item">
           <h4 class="case_statistics-item_title">
-            40
+            <span
+              data-purecounter-start="0"
+              data-purecounter-end="40"
+              class="purecounter"
+            >
+              40
+            </span>
           </h4>
           <TextParagraph
             class="case_statistics-item_description"
@@ -49,7 +82,13 @@
         </div>
         <div class="case_statistics-item">
           <h4 class="case_statistics-item_title">
-            50
+            <span
+              data-purecounter-start="0"
+              data-purecounter-end="50"
+              class="purecounter"
+            >
+              50
+            </span>
           </h4>
           <TextParagraph
             class="case_statistics-item_description"
@@ -60,7 +99,13 @@
         </div>
         <div class="case_statistics-item">
           <h4 class="case_statistics-item_title">
-            200
+            <span
+              data-purecounter-start="0"
+              data-purecounter-end="200"
+              class="purecounter"
+            >
+              200
+            </span>
           </h4>
           <TextParagraph
             class="case_statistics-item_description"
@@ -76,11 +121,22 @@
 
 <script>
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import CardThematicArea from '@/components/Cases/itc/CardThematicArea'
+import Card from '@/components/Cases/shared/Card'
+import { thematicAreas } from '@/data/caseITC'
 
 export default {
   name: 'ProjectMission',
   components: {
     TextParagraph,
+    CardThematicArea,
+    Card,
+  },
+
+  data() {
+    return {
+      thematicAreas,
+    }
   },
 }
 </script>
@@ -92,6 +148,14 @@ export default {
 .case {
   &_statistics-container {
     @include grid(repeat(3, 1fr), auto, 0, 0);
+  }
+
+  &_thematic-areas {
+    @include grid(repeat(2, 1fr), auto, 24px, 24px);
+
+    @media screen and (max-width: 970px) {
+      @include grid(repeat(1, 1fr), auto, 0, 24px);
+    }
   }
 
   &_statistics-item {
@@ -123,6 +187,25 @@ export default {
 
   &_link {
     border-bottom: 2px solid $border-color--black-border-05-opacity;
+  }
+
+  &_card-title {
+    color: $text-color--white-primary;
+  }
+
+  &_inner-cards {
+    @include grid(repeat(1, 1fr), auto, 0, 24px);
+  }
+
+  &_inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &_project-mission {
+    width: 100%;
+    height: 100%;
   }
 
   @media screen and (max-width: 880px) {
@@ -166,6 +249,13 @@ export default {
           bottom: 0;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &_thematic-areas,
+    &_inner-cards {
+      grid-gap: 16px;
     }
   }
 }

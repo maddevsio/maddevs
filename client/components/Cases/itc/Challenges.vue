@@ -32,7 +32,21 @@
         How our product solves the challenges
       </h2>
     </div>
-    <div class="container_full background-color-silver m-48_bottom media-m-24_bottom" />
+    <div class="background-color-silver m-48_bottom media-m-24_bottom">
+      <div v-prlx="animationSettings">
+        <div class="case_image-wrap">
+          <Picture
+            :width="1440"
+            :height="440"
+            :lazy="false"
+            folder="itc"
+            file="solves-the-challenges"
+            extension="png"
+            alt="How our product solves the challenges"
+          />
+        </div>
+      </div>
+    </div>
     <div class="container_regular">
       <h4 class="case_title_h4 m-12_bottom">
         Saving efforts: Better reporting and coordination
@@ -53,7 +67,23 @@
         We at ITC could benefit from digital transformation. The paper-based manual was 200 pages long, and the coach needed to fill out two copies of it every time. Developing a web app to deal with it was a solution that had lots of pluses and not a single minus.
       </TextQuoteBox>
       <h2 class="case_title-statistics case_text-align-center">
-        ~400 reams <span>or</span> 200,000 sheets of paper
+        <span
+          data-purecounter-start="0"
+          data-purecounter-end="400"
+          class="purecounter"
+        >
+          ~400
+        </span>
+        reams <span class="case_black">or</span>
+        <span
+          data-purecounter-start="0"
+          data-purecounter-end="200"
+          data-purecounter-decimals="3"
+          class="purecounter"
+        >
+          200,000
+        </span>
+        sheets of paper
       </h2>
       <TextParagraph class="case_description-statistics m-96_bottom media-m-48_bottom m-auto case_text-align-center">
         the alternative costs of running a paper-based version of the R4TCA EMCI component
@@ -66,6 +96,7 @@
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import TextQuoteBox from '@/components/Cases/shared/TextQuoteBox'
 import CardTechSolution from '@/components/Cases/shared/CardTechSolution'
+import Picture from '@/components/Cases/shared/Picture'
 import { resolvedIssues } from '@/data/caseITC'
 
 export default {
@@ -74,11 +105,18 @@ export default {
     TextParagraph,
     TextQuoteBox,
     CardTechSolution,
+    Picture,
   },
 
   data() {
     return {
       resolvedIssues,
+      animationSettings: {
+        direction: 'x',
+        speed: 0.2,
+        fromBottom: true,
+        reverse: true,
+      },
     }
   },
 }
@@ -103,10 +141,6 @@ export default {
     letter-spacing: -0.02em;
     color: $text-color--blue-itc-case;
 
-    span {
-      color: $text-color--black-oil;
-    }
-
     @media screen and (max-width: 768px) {
       font-size: 24px;
     }
@@ -116,6 +150,20 @@ export default {
     max-width: 390px;
     font-size: 16px;
     color: $text-color--quote-box;
+  }
+
+  &_black {
+    color: $text-color--black-oil;
+  }
+
+  &_image-wrap {
+    min-width: 4211px;
+    max-width: 4211px;
+    min-height: 540px;
+    max-height: 540px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-30%);
   }
 
   @media screen and (max-width: 880px) {

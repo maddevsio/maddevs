@@ -92,22 +92,22 @@ exports[`InternationalTradeCenter root component should render correctly 1`] = `
       class="case_footer container_full"
     >
       <img
-        alt="The Evolution of Yourcast.TV"
-        class="case_logotype-yourcast img_lazy"
+        alt="Optimization for Veeqo"
+        class="case_logotype-veeqo img_lazy"
         data-src="[object Object]"
       />
        
       <h2
-        class="case_title case_title_h2 case_title-yourcast"
+        class="case_title case_title_h2 case_title-veeqo"
       >
         
-    The Evolution of Yourcast.TV
+    Optimization for Veeqo
   
       </h2>
        
       <nuxtlink-stub
         class="case_next-project-button"
-        to="/case-studies/yourcast/"
+        to="/case-studies/veeqo/"
       >
         
     Read next project

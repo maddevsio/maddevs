@@ -40,9 +40,64 @@ exports[`DevelopingTheInnovation component should render correctly 1`] = `
     
       </p>
        
-      <div
-        class="case_list m-24_bottom"
-      />
+      <ol
+        class="case-list_numbered m-24_bottom"
+      >
+        <li
+          class="case_list-numbered_item"
+          data-background="#5A6BC3"
+          id="innovation-item-0"
+        >
+          
+        Built a data backup system with daily backups
+      
+        </li>
+        <li
+          class="case_list-numbered_item"
+          data-background="#4154B3"
+          id="innovation-item-1"
+        >
+          
+        Set up a CI/CD pipeline
+      
+        </li>
+        <li
+          class="case_list-numbered_item"
+          data-background="#354491"
+          id="innovation-item-2"
+        >
+          
+        Introduced a staging environment in addition to the production environment
+      
+        </li>
+        <li
+          class="case_list-numbered_item"
+          data-background="#293470"
+          id="innovation-item-3"
+        >
+          
+        Introduced an infrastructure monitoring system
+      
+        </li>
+        <li
+          class="case_list-numbered_item"
+          data-background="#1C254E"
+          id="innovation-item-4"
+        >
+          
+        Covered with integration and unit tests
+      
+        </li>
+        <li
+          class="case_list-numbered_item"
+          data-background="#10152C"
+          id="innovation-item-5"
+        >
+          
+        Created a user manual with screenshots from the app and with descriptions of its functions in Russian, which all the coaches speak
+      
+        </li>
+      </ol>
        
       <p
         class="case_paragraph m-96_bottom media-m-48_bottom"
@@ -86,8 +141,26 @@ exports[`DevelopingTheInnovation component should render correctly 1`] = `
     </div>
      
     <div
-      class="cotnainer_middle m-96_bottom media-m-48_bottom"
-    />
+      class="container_middle case_img-wrap m-96_bottom media-m-48_bottom"
+    >
+      <picture>
+        <source
+          class="image media_lazy"
+          data-srcset="img.jpg,img.jpg"
+          type="image/webp"
+        />
+         
+        <img
+          alt="Infrastructure"
+          class="image media_lazy"
+          data-src="img.jpg"
+          data-srcset="img.jpg"
+          data-testid="test-picture-img"
+          height="582"
+          width="1026"
+        />
+      </picture>
+    </div>
      
     <div
       class="container_regular"
@@ -224,8 +297,26 @@ exports[`DevelopingTheInnovation component should render correctly 1`] = `
     </div>
      
     <div
-      class="container_full m-72_bottom media-m-48_bottom"
-    />
+      class="case_full-screen-image m-72_bottom media-m-48_bottom m-auto"
+    >
+      <picture>
+        <source
+          class="image media_lazy"
+          data-srcset="img.jpg,img.jpg"
+          type="image/webp"
+        />
+         
+        <img
+          alt="itc-architecture"
+          class="image media_lazy"
+          data-src="img.jpg"
+          data-srcset="img.jpg"
+          data-testid="test-picture-img"
+          height="644"
+          width="1440"
+        />
+      </picture>
+    </div>
   </section>
 </div>
 `;

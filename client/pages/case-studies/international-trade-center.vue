@@ -3,8 +3,8 @@
     <CaseHeader
       :logo="logo"
       project="itc"
-      video-name=""
-      video-fallback-path=""
+      video-name="/videos/itc-banner.mp4"
+      video-fallback-path="/images/Cases/itc/jpg/itc-banner.jpg"
     >
       <h1
         slot="title"
@@ -21,16 +21,16 @@
     </CaseHeader>
     <Main />
     <Footer
-      link="/case-studies/yourcast/"
-      class-name="yourcast"
+      link="/case-studies/veeqo/"
+      class-name="veeqo"
     >
       <img
         slot="icon"
-        :data-src="require(`@/assets/img/Studies/svg/yourcast-logo.svg`)"
-        alt="The Evolution of Yourcast.TV"
-        class="case_logotype-yourcast img_lazy"
+        :data-src="require(`@/assets/img/Studies/svg/veeqo.svg`)"
+        alt="Optimization for Veeqo"
+        class="case_logotype-veeqo img_lazy"
       >
-      The Evolution of Yourcast.TV
+      Optimization for Veeqo
     </Footer>
   </main>
 </template>
@@ -105,29 +105,29 @@ export default {
     white-space: nowrap;
   }
 
-  &_logotype-yourcast {
-    width: 270px;
-    height: 57px;
+  &_logotype-veeqo {
+    width: 195px;
+    height: 72px;
     margin-bottom: 30px;
   }
 
-  &_title-yourcast {
+  &_title-veeqo {
     margin-bottom: 51px;
 
     @media screen and (max-width: 430px) {
-      max-width: 205px;
+      max-width: 190px;
     }
   }
 
   @media screen and (max-width: 768px) {
-    &_logotype-yourcast {
-      width: 200px;
+    &_logotype-veeqo {
+      width: 120px;
       height: 44px;
-      margin-bottom: 25px;
+      margin-bottom: 21px;
     }
 
-    &_title-yourcast {
-      margin-bottom: 41px;
+    &_title-veeqo {
+      margin-bottom: 31px;
     }
   }
 }

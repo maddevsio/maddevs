@@ -46,7 +46,8 @@ import Pipelines from '@/components/Cases/nambafood/Pipelines'
 import Team from '@/components/Cases/nambafood/Team'
 import NationwideSuccess from '@/components/Cases/nambafood/NationwideSuccess'
 import isIphoneMixin from '@/mixins/isIphoneMixin'
-import autoplayVideoMixin from '@/mixins/autoplayVideoMixin'
+import IntersectionObserverMixin from '@/mixins/IntersectionObserverMixin'
+import playVideo from '@/helpers/playVideo'
 
 export default {
   name: 'Main',
@@ -70,6 +71,12 @@ export default {
     NationwideSuccess,
   },
 
-  mixins: [isIphoneMixin, autoplayVideoMixin(['map-video', 'iphone-silver-video'])],
+  mixins: [
+    isIphoneMixin,
+    IntersectionObserverMixin(
+      ['map-video', 'iphone-silver-video'],
+      playVideo,
+    ),
+  ],
 }
 </script>
