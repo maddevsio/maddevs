@@ -107,21 +107,25 @@ exports[`PhaseFixingDatabaseOutages component should render correctly 1`] = `
       <cardtechsolution-stub
         alt="CloudWatch Logo."
         description="Collecting host metrics (CloudWatch and okmeter showed consequences, not causes)."
+        folder="veeqo"
         icon="cloud"
       />
       <cardtechsolution-stub
         alt="RAM Icon."
         description="Analyzing the true RAM use and identifying 1,200-1,500 worker connections taking up about 40 GB of RAM."
+        folder="veeqo"
         icon="danger"
       />
       <cardtechsolution-stub
         alt="PgBouncers Icon."
         description="Adding PgBouncers to reduce the load on the database."
+        folder="veeqo"
         icon="gear"
       />
       <cardtechsolution-stub
         alt="Speed Icon."
         description="Stabilizing connection pooling by applying ELB and thus distributing traffic more evenly to decrease the number of SPOFs."
+        folder="veeqo"
         icon="speed"
       />
     </div>

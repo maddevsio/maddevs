@@ -2,7 +2,7 @@
   <Card class="card-content background-color-silver">
     <img
       v-if="icon"
-      :data-src="$getMediaFromS3(`/images/Cases/veeqo/svg/${icon}.svg`)"
+      :data-src="$getMediaFromS3(`/images/Cases/${folder}/svg/${icon}.svg`)"
       :alt="alt"
       width="51.94"
       height="51.94"
@@ -27,6 +27,11 @@ export default {
 
   props: {
     icon: {
+      type: String,
+      default: null,
+    },
+
+    folder: {
       type: String,
       default: null,
     },
