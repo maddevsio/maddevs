@@ -92,7 +92,7 @@ exports[`Challenges component should render correctly 1`] = `
     </div>
      
     <div
-      class="background-color-silver m-48_bottom media-m-24_bottom"
+      class="case_img-section background-color-silver m-48_bottom media-m-24_bottom"
     >
       <div>
         <div
