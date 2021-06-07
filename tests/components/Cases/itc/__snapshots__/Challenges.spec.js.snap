@@ -92,8 +92,32 @@ exports[`Challenges component should render correctly 1`] = `
     </div>
      
     <div
-      class="container_full background-color-silver m-48_bottom media-m-24_bottom"
-    />
+      class="background-color-silver m-48_bottom media-m-24_bottom"
+    >
+      <div>
+        <div
+          class="case_image-wrap"
+        >
+          <picture>
+            <source
+              class="image"
+              srcset="img.jpg,img.jpg"
+              type="image/webp"
+            />
+             
+            <img
+              alt="How our product solves the challenges"
+              class="image"
+              data-testid="test-picture-img"
+              height="440"
+              src="img.jpg"
+              srcset="img.jpg"
+              width="1440"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
      
     <div
       class="container_regular"
@@ -153,12 +177,35 @@ exports[`Challenges component should render correctly 1`] = `
       <h2
         class="case_title-statistics case_text-align-center"
       >
+        <span
+          class="purecounter"
+          data-purecounter-end="400"
+          data-purecounter-start="0"
+        >
+          
+        ~400
+      
+        </span>
         
-      ~400 reams 
-        <span>
+      reams 
+        <span
+          class="case_black"
+        >
           or
         </span>
-         200,000 sheets of paper
+         
+        <span
+          class="purecounter"
+          data-purecounter-decimals="3"
+          data-purecounter-end="200"
+          data-purecounter-start="0"
+        >
+          
+        200,000
+      
+        </span>
+        
+      sheets of paper
     
       </h2>
        

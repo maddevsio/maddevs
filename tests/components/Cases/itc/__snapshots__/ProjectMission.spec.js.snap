@@ -26,8 +26,16 @@ exports[`ProjectMission component should render correctly 1`] = `
     </div>
      
     <div
-      class="container_full background-color-silver m-48_bottom media-m-24_bottom"
-    />
+      class="case_full-screen-image background-color-silver m-48_bottom media-m-24_bottom m-auto"
+    >
+      <img
+        alt="Project mission"
+        class="case_project-mission media_lazy"
+        data-src="[object Object]"
+        height="540"
+        width="1440"
+      />
+    </div>
      
     <div
       class="container_regular"
@@ -296,9 +304,15 @@ exports[`ProjectMission component should render correctly 1`] = `
           <h4
             class="case_statistics-item_title"
           >
-            
-          40
-        
+            <span
+              class="purecounter"
+              data-purecounter-end="40"
+              data-purecounter-start="0"
+            >
+              
+            0
+          
+            </span>
           </h4>
            
           <p
@@ -317,9 +331,15 @@ exports[`ProjectMission component should render correctly 1`] = `
           <h4
             class="case_statistics-item_title"
           >
-            
-          50
-        
+            <span
+              class="purecounter"
+              data-purecounter-end="50"
+              data-purecounter-start="0"
+            >
+              
+            0
+          
+            </span>
           </h4>
            
           <p
@@ -338,9 +358,15 @@ exports[`ProjectMission component should render correctly 1`] = `
           <h4
             class="case_statistics-item_title"
           >
-            
-          200
-        
+            <span
+              class="purecounter"
+              data-purecounter-end="200"
+              data-purecounter-start="0"
+            >
+              
+            0
+          
+            </span>
           </h4>
            
           <p
