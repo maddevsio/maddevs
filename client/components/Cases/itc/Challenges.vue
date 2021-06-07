@@ -32,7 +32,7 @@
         How our product solves the challenges
       </h2>
     </div>
-    <div class="background-color-silver m-48_bottom media-m-24_bottom">
+    <div class="case_img-section background-color-silver m-48_bottom media-m-24_bottom">
       <div v-prlx="animationSettings">
         <div class="case_image-wrap">
           <Picture
@@ -116,6 +116,7 @@ export default {
         speed: 0.2,
         fromBottom: true,
         reverse: true,
+        mobileMaxWidth: 991,
       },
     }
   },
@@ -164,6 +165,20 @@ export default {
     position: relative;
     left: 50%;
     transform: translateX(-30%);
+
+  }
+
+  @media screen and (max-width: 990px) {
+    &_image-wrap {
+      left: unset;
+      right: 820px;
+      transform: none;
+    }
+
+    &_img-section {
+      max-height: 276px;
+      overflow: hidden;
+    }
   }
 
   @media screen and (max-width: 880px) {
