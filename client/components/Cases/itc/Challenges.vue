@@ -4,10 +4,13 @@
       <h2 class="case_title_h2 m-24_bottom media-m-12_bottom">
         Challenges
       </h2>
-      <TextParagraph class="m-48_bottom">
+      <TextParagraph class="m-66_bottom">
         The main challenge for ITC was to coordinate missions and formalise recommendations provided by the coaches. Initially, the project was using a paper-based manual cum mission report to track their activities with SMEs. R4TCA implementers saw digitalisation as a major opportunity for improvement.
       </TextParagraph>
-      <h4 class="case_title_h4 m-24_bottom">
+      <h4
+        v-prlx="animationSettingsTitle"
+        class="case_title_h4 m-24_bottom"
+      >
         Below are examples of issues that digitising the manual resolved:
       </h4>
       <div class="case_cards-container m-96_bottom media-m-48_bottom">
@@ -19,7 +22,10 @@
             folder="itc"
           />
         </div>
-        <div class="case_column">
+        <div
+          v-prlx="animationSettingsCards"
+          class="case_column"
+        >
           <CardTechSolution
             v-for="issue in resolvedIssues.slice(3, 6)"
             v-bind="issue"
@@ -33,7 +39,7 @@
       </h2>
     </div>
     <div class="case_img-section background-color-silver m-48_bottom media-m-24_bottom">
-      <div v-prlx="animationSettings">
+      <div v-prlx="animationSettingsImg">
         <div class="case_image-wrap">
           <Picture
             :width="1440"
@@ -111,11 +117,32 @@ export default {
   data() {
     return {
       resolvedIssues,
-      animationSettings: {
+      animationSettingsImg: {
         direction: 'x',
         speed: 0.2,
         fromBottom: true,
         reverse: true,
+        mobileMaxWidth: 991,
+      },
+
+      animationSettingsTitle: {
+        speed: 0.05,
+        reverse: true,
+        limit: {
+          min: -55,
+          max: 55,
+        },
+
+        mobileMaxWidth: 991,
+      },
+
+      animationSettingsCards: {
+        reverse: true,
+        limit: {
+          min: -55,
+          max: 55,
+        },
+
         mobileMaxWidth: 991,
       },
     }

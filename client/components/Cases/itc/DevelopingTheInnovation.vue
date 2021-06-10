@@ -106,15 +106,15 @@
         A system built with DDD and CQRS is robust and more transparent. If you are using DDD, it takes less time for developers and the customer to communicate, to understand how the system functions and what new requirements there are, and to start working with the system.
       </TextQuoteBox>
     </div>
-    <div class="case_full-screen-image m-72_bottom media-m-48_bottom m-auto">
+    <div class="case_full-screen-image case_architecture-img m-72_bottom media-m-48_bottom m-auto">
       <Picture
         :width="1440"
         :height="644"
         :lazy="true"
         folder="itc"
-        file="itc-architecture"
+        file="architecture"
         extension="jpg"
-        alt="itc-architecture"
+        alt="Architecture"
       />
     </div>
   </section>
@@ -180,6 +180,15 @@ export default {
 
   &_img-wrap {
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+  }
+
+  &_architecture-img {
+    @media screen and (max-width: 530px) {
+      min-width: 530px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   /deep/ &_list-numbered_item {
