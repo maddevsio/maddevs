@@ -137,16 +137,16 @@
           "error",
           "as-needed"
         ],
-        "jest/prefer-expect-assertions": "off",
-        "jest/no-hooks": "off",
-        "jest/prefer-strict-equal": "off",
-        "jest/no-mocks-import": "off",
-        "jest/lowercase-name": "off",
         "import/no-unresolved": "off",
         "import/extensions": "off",
         "import/no-extraneous-dependencies": "off",
         "import/no-dynamic-require": "off",
-        "import/prefer-default-export": 0
+        "import/prefer-default-export": 0,
+        "cypress/no-assigning-return-values": "error",
+        "cypress/no-unnecessary-waiting": "error",
+        "cypress/assertion-before-screenshot": "warn",
+        "cypress/no-force": "warn",
+        "cypress/no-async-tests": "error"
       }
     }
   ]
