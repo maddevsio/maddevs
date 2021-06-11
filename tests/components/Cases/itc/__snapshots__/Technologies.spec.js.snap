@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Technologies component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular"
+  >
+    <h2
+      class="case_title_h2 m-24_bottom media-m-12_bottom"
+    >
+      
+    Technology stack
+  
+    </h2>
+     
+    <listtechnologies-stub
+      class="m-96_bottom media-m-48_bottom"
+    >
+      <listtechnologiesitem-stub
+        alt="Angular"
+        imgalt="Angular"
+        name="angular"
+      />
+      <listtechnologiesitem-stub
+        alt="RxJs"
+        imgalt="RxJs"
+        name="rxjs"
+      />
+      <listtechnologiesitem-stub
+        alt="Material Design"
+        imgalt="Material Design"
+        name="material-design"
+      />
+      <listtechnologiesitem-stub
+        alt=".NET Core"
+        imgalt=".NET Core"
+        name="net-core"
+      />
+      <listtechnologiesitem-stub
+        alt="ASP.NET"
+        imgalt="ASP.NET "
+        name="asp-net"
+      />
+      <listtechnologiesitem-stub
+        alt="GitLab CI/CD"
+        imgalt="GitLab CI/CD"
+        name="gitlab"
+      />
+      <listtechnologiesitem-stub
+        alt="Docker"
+        imgalt="Docker"
+        name="docker"
+      />
+      <listtechnologiesitem-stub
+        alt="AWS"
+        imgalt="AWS"
+        name="aws-second-logo"
+      />
+      <listtechnologiesitem-stub
+        alt="EKS "
+        imgalt="EKS"
+        name="eks"
+      />
+      <listtechnologiesitem-stub
+        alt="PostgreSQL"
+        imgalt="PostgreSQL"
+        name="postgresql"
+      />
+      <listtechnologiesitem-stub
+        alt="Sentry"
+        imgalt="Sentry"
+        name="sentry-black"
+      />
+      <listtechnologiesitem-stub
+        alt="Grafana"
+        imgalt="Grafana"
+        name="grafana"
+      />
+    </listtechnologies-stub>
+  </section>
+</div>
+`;

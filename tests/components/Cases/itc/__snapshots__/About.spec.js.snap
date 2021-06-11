@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular m-48_top media-m-24_top"
+  >
+    <p
+      class="case_paragraph m-24_bottom media-m-12_bottom"
+    >
+      
+    The digital manual is a web-application developed by Mad Devs under the Ready4Trade-Central Asia project, which is a project funded by the European Union and implemented by the International Trade Center (ITC) in the Central Asian region.
+  
+    </p>
+     
+    <p
+      class="case_paragraph"
+    >
+      
+    The goal of the partnership was to improve the implementation of the Export Management Coaching Initiative (EMCI), a programme where expert coaches in the field of export management train the owners of local small and medium-sized enterprises (SMEs) on how to best optimise business processes and expand trade capacity.
+  
+    </p>
+     
+    <div
+      class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-72_bottom"
+    >
+      <img
+        alt="blockquote"
+        class="case_mark img_lazy"
+        data-src="[object Object]"
+      />
+       
+      <blockquote
+        class="case_blockquote"
+      >
+        
+    The web application improved reporting and coordination by giving the coaches a convenient tool to collect, process, and report data
+  
+      </blockquote>
+       
+      <!---->
+    </div>
+  </section>
+</div>
+`;

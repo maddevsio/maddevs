@@ -43,9 +43,14 @@
 </template>
 
 <script>
-import autoplayVideoMixin from '@/mixins/autoplayVideoMixin'
+import IntersectionObserverMixin from '@/mixins/IntersectionObserverMixin'
 import Lottie from 'vue-lottie/src/lottie.vue'
 import animationData from '@/assets/lottie/sjmc/sound-icon.json'
+import playVideo from '@/helpers/playVideo'
+
+const observerOptions = {
+  threshold: 0.5,
+}
 
 export default {
   name: 'HardwareVideo',
@@ -53,9 +58,13 @@ export default {
     Lottie,
   },
 
-  mixins: [autoplayVideoMixin(['iphone-video'], {
-    threshold: 0.5,
-  })],
+  mixins: [
+    IntersectionObserverMixin(
+      ['iphone-video'],
+      playVideo,
+      observerOptions,
+    ),
+  ],
 
   data() {
     return {

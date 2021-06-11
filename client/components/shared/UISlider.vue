@@ -19,6 +19,7 @@
             :srcset="$getMediaFromS3(`/images/${slide.page}/${slide.extension}/${slide.file}@2x.${slide.extension}`)"
             :width="slide.width"
             :height="slide.height"
+            :alt="slide.alt"
             class="ui-slider_slider-img"
           >
         </picture>
