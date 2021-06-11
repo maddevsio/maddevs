@@ -81,6 +81,12 @@ Set current environment for feature flags
 * RADIATOR_WEBHOOK_URL - slack webhook url
 * RADIATOR_GOOGLEAPIS_KEY - key for google api(pagespeed)
 
+#### Cypress tests
+
+Cypress run e2e tests on base URL domain
+
+* NODE_CYPRESS_BASE_URL
+
 **All of these variables must be added to the Heroku hosting**
 
 ## Instructions for using the AWS S3

@@ -18,7 +18,7 @@
     "heroku-cleanup": "cd ./client; ls | grep -v static | xargs rm -rfv",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
-    "test": "jest --config=./jest/develop.config.js && cypress run --browser chrome",
+    "test": "jest --config=./jest/develop.config.js && cypress run",
     "test:e2e": "cypress run --browser chrome",
     "test:coverage": "jest --config=./jest/develop.config.js && node ./jest/coverageBadges.js -output './client/static'",
     "test:staging": "jest --config=./jest/staging.config.js",
