@@ -10,10 +10,6 @@ module.exports = {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|css|less)$':
       '<rootDir>/jest/assetsTransformer.js',
   },
-  testMatch: [
-    '<rootDir>/tests/**/*.spec.js',
-    '<rootDir>/tests/**/*.test.js',
-  ],
   transform: {
     // process js with `babel-jest`
     '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
@@ -42,4 +38,7 @@ module.exports = {
       lines: 88,
     },
   },
+  modulePathIgnorePatterns: [
+    '<rootDir>/cypress/',
+  ],
 }

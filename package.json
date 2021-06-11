@@ -19,6 +19,7 @@
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
     "test": "jest --config=./jest/develop.config.js && cypress run",
+    "test:unit": "jest --config=./jest/develop.config.js",
     "test:e2e": "cypress run --browser chrome",
     "test:coverage": "jest --config=./jest/develop.config.js && node ./jest/coverageBadges.js -output './client/static'",
     "test:staging": "jest --config=./jest/staging.config.js",
