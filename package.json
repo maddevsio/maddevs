@@ -22,7 +22,7 @@
     "test:unit": "jest --config=./jest/develop.config.js",
     "test:e2e": "cypress run --browser chrome",
     "test:coverage": "jest --config=./jest/develop.config.js && node ./jest/coverageBadges.js -output './client/static'",
-    "test:staging": "jest --config=./jest/staging.config.js",
+    "test:staging": "jest --config=./jest/staging.config.js && cypress run",
     "radiator": "node -e 'require(\"./radiator\")()'",
     "seo-analyze": "npm run generate && node ./SEOAnalyzer/index.js"
   },
