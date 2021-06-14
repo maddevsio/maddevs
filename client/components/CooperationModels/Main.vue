@@ -3,7 +3,7 @@
     <Banner />
     <ModelsGrid />
     <GetPresentation />
-    <div class="cooperation-models--white-sections">
+    <div class="cooperation-models--bg-white">
       <CustomerTestimonials />
       <CTABanner />
     </div>
@@ -33,7 +33,7 @@ export default {
 @import '@/assets/styles/_vars';
 
 .cooperation-models {
-  &--white-sections {
+  &--bg-white {
     background-color: $bgcolor--white-primary;
   }
 }

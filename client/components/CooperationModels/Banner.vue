@@ -35,8 +35,10 @@ export default {
     display: block;
     z-index: -1;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
     width: 100%;
     height: 100%;
     object-fit: cover;
