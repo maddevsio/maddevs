@@ -1,14 +1,16 @@
 <template>
-  <div class="presentation container">
-    <div class="presentation__content">
-      <h2 class="presentation__title">
-        Explore more about the interaction process and choose a cooperation model that suits your business needs.
-      </h2>
-      <a href="#">
-        <UIButton>
-          Get presentation
-        </UIButton>
-      </a>
+  <div class="presentation">
+    <div class="container">
+      <div class="presentation__content">
+        <h2 class="presentation__title">
+          Explore more about the interaction process and choose a cooperation model that suits your business needs.
+        </h2>
+        <a href="#">
+          <UIButton>
+            Get presentation
+          </UIButton>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -28,6 +30,7 @@ export default {
 @import '@/assets/styles/_vars';
 
 .presentation {
+  padding: 157px 0;
   &__content {
     display: block;
     margin: 0 auto;

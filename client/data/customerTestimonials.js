@@ -36,3 +36,46 @@ export const customerTestimonials = [
     logoWidth: 160,
   },
 ]
+
+export const cooperationModelsTestimonials = [
+  {
+    text: 'Mad Devs have extensive experience in various industries, which allows them to solve issues quickly and efficiently.',
+    author: {
+      name: 'Wade Bartlett',
+      position: 'Technical Consultant, Sir John Monash Centre',
+      image: 'wade',
+    },
+  },
+  {
+    text: 'They fully disclose what they’re doing and why they’re doing it.',
+    author: {
+      name: 'Duc Nguyen',
+      position: 'Former CEO, Topica Group',
+      image: 'daniel',
+    },
+  },
+  {
+    text: 'They work as if their own money and success are on the line.',
+    author: {
+      name: 'Ruslan Karabukaev',
+      position: 'Co-Founder, Namba Taxi',
+      image: 'ruslan',
+    },
+  },
+  {
+    text: 'Our infrastructure is much more resilient and secure.',
+    author: {
+      name: 'Daniel Vartanov',
+      position: 'CTO, Veeqo.com',
+      image: 'daniel',
+    },
+  },
+  {
+    text: 'I’m most impressed with their technical capacities.',
+    author: {
+      name: 'Moktar Alqaderi',
+      position: 'CEO, Progressay',
+      image: 'daniel',
+    },
+  },
+]
