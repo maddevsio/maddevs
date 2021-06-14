@@ -462,7 +462,7 @@ export default {
       margin-right: 33px;
     }
 
-    @media screen and (max-width: 1160px) {
+    @media screen and (max-width: 1180px) {
       margin-right: 20px;
     }
   }
