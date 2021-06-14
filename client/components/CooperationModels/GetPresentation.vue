@@ -1,0 +1,52 @@
+<template>
+  <div class="presentation container">
+    <div class="presentation__content">
+      <h2 class="presentation__title">
+        Explore more about the interaction process and choose a cooperation model that suits your business needs.
+      </h2>
+      <a href="#">
+        <UIButton>
+          Get presentation
+        </UIButton>
+      </a>
+    </div>
+  </div>
+</template>
+
+<script>
+import UIButton from '@/components/shared/UIButton'
+
+export default {
+  name: 'GetPresentation',
+  components: {
+    UIButton,
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+@import '@/assets/styles/_vars';
+
+.presentation {
+  &__content {
+    display: block;
+    margin: 0 auto;
+    max-width: 833px;
+    text-align: center;
+  }
+  &__title {
+    font-size: 40px;
+    line-height: 51px;
+    letter-spacing: -0.013em;
+    color: $text-color--white-primary;
+  }
+  /deep/ .ui-button {
+    width: 197px;
+    height: 52px;
+    margin-top: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+}
+</style>
