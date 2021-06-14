@@ -2,10 +2,10 @@
   <div class="container">
     <div class="models-grid">
       <ModelCard
-        v-for="(modelKey, i) in Object.keys(cooperationModels)"
+        v-for="(modelKey, i) in Object.keys(models)"
         :key="modelKey"
         :full="i === 2 || i === 3"
-        :url="modelKey"
+        :uid="modelKey"
       />
     </div>
   </div>
@@ -23,7 +23,7 @@ export default {
 
   data() {
     return {
-      cooperationModels,
+      models: cooperationModels,
     }
   },
 }
