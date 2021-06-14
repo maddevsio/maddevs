@@ -1,7 +1,7 @@
 export const cooperationModels = {
   'augmented-staff-members': {
     animation: 'staff',
-    title: 'Reach time-to-market targets and release deadlines faster with augmented staff members.',
+    title: 'Reach time-to-market targets and release deadlines faster with <span>augmented staff members.</span>',
     subtitle: 'Best suited for customers with an existing team that has well-established development processes and knowledge management.',
     optimalModelFor: [
       'Organizations that need to add specialists to facilitate reaching time-to-market targets.',
@@ -41,7 +41,7 @@ export const cooperationModels = {
   },
   'dedicated-project-based-team': {
     animation: 'dedicated',
-    title: 'Hire a dedicated project-based team to meet all IT-related needs and bring your product idea to life.',
+    title: 'Hire a <span>dedicated project-based team</span> to meet all IT-related needs and bring your product idea to life.',
     subtitle: '',
     optimalModelFor: [
       'Businesses that need to raise funds and quickly move to the next stage.',
@@ -78,7 +78,7 @@ export const cooperationModels = {
   },
   'temp-to-hire': {
     animation: 'team',
-    title: 'Temp to hire allows businesses to safely expand the hiring geography and diversity with minimal onboarding and recruiting risks.',
+    title: '<span>Temp to hire</span> allows businesses to safely expand the hiring geography and diversity with minimal onboarding and recruiting risks.',
     subtitle: '',
     optimalModelFor: [
       'Businesses whose offshore development is hindered by legal restrictions and corporate rules.',
@@ -126,7 +126,7 @@ export const cooperationModels = {
   },
   'technical-assessment-and-consulting': {
     animation: 'technicalAssessment',
-    title: 'Technical assessment & consulting equip business with unbias expert assessment to solve technical issues and scale your business.',
+    title: '<span>Technical assessment & consulting</span> equip business with unbias expert assessment to solve technical issues and scale your business.',
     subtitle: '',
     optimalModelFor: [
       'Organizations looking for an unbiased expert assessment.',
@@ -168,7 +168,7 @@ export const cooperationModels = {
   },
   'effective-team-supervision': {
     animation: 'boost',
-    title: 'Boost technical team performance with effective team supervision.',
+    title: 'Boost technical team performance with <span>effective team supervision.</span>',
     subtitle: '',
     optimalModelFor: [
       'Managers who don’t have a technical background.',
@@ -203,7 +203,7 @@ export const cooperationModels = {
   },
   'transferring-a-project': {
     animation: 'transfer',
-    title: 'Protect intellectual property while transferring a project to another IT partner.',
+    title: 'Protect intellectual property while <span>transferring a project</span> to another IT partner.',
     subtitle: '',
     optimalModelFor: [
       'Companies facing disappointing performance and ruined relationships with the current IT contractor.',
