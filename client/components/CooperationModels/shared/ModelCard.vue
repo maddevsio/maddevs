@@ -14,7 +14,7 @@
     <div class="model-card__content">
       <h3
         class="model-card__title"
-        v-html="model.title"
+        v-html="title"
       />
       <NuxtLink
         v-if="uid"
@@ -28,7 +28,6 @@
 </template>
 
 <script>
-import { cooperationModels } from '@/data/cooperationModels'
 import Lottie from 'vue-lottie/src/lottie.vue'
 
 export default {
@@ -47,11 +46,20 @@ export default {
       type: String,
       required: true,
     },
+
+    animationName: {
+      type: String,
+      default: '',
+    },
+
+    title: {
+      type: String,
+      default: '',
+    },
   },
 
   data() {
     return {
-      model: cooperationModels[this.uid],
       animation: null,
     }
   },
@@ -59,7 +67,7 @@ export default {
   computed: {
     lottieOptions() {
       return {
-        animationData: require(`@/assets/lottie/cooperationModels/${this.model.animation}.json`),
+        animationData: require(`@/assets/lottie/cooperationModels/${this.animationName}.json`),
         autoplay: false,
         loop: false,
       }

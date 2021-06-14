@@ -6,6 +6,7 @@
         :key="modelKey"
         :full="i === 2 || i === 3"
         :uid="modelKey"
+        v-bind="models[modelKey]"
       />
     </div>
   </div>
