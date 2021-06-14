@@ -90,6 +90,13 @@ Environment variables for huntflow authentication and sending applications to th
 * NODE_HUNTFLOW_ACCOUNT_ID
 * NODE_HUNTFLOW_RESERVE_VACANCY_ID
 
+#### Cypress tests
+
+Cypress run e2e tests on base URL domain
+
+* NODE_CYPRESS_BASE_URL
+
+
 **All of these variables must be added to the Heroku hosting**
 
 ## Instructions for using the AWS S3

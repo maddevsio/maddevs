@@ -38,4 +38,7 @@ module.exports = {
       lines: 88,
     },
   },
+  modulePathIgnorePatterns: [
+    '<rootDir>/cypress/',
+  ],
 }
