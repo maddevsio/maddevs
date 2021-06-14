@@ -19,7 +19,7 @@
 
 <script>
 import TestimonialBlock from '@/components/CooperationModels/shared/TestimonialBlock'
-import { cooperationModelsTestimonials } from '@/data/customerTestimonials'
+import { testimonials } from '@/data/cooperationModels'
 
 export default {
   name: 'CustomerTestimonials',
@@ -29,7 +29,7 @@ export default {
 
   data() {
     return {
-      testimonials: cooperationModelsTestimonials,
+      testimonials,
     }
   },
 }
