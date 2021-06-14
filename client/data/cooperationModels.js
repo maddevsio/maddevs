@@ -1,5 +1,6 @@
 export const cooperationModels = {
   'augmented-staff-members': {
+    animation: 'staff',
     title: 'Reach time-to-market targets and release deadlines faster with augmented staff members.',
     subtitle: 'Best suited for customers with an existing team that has well-established development processes and knowledge management.',
     optimalModelFor: [
@@ -39,6 +40,7 @@ export const cooperationModels = {
     ],
   },
   'dedicated-project-based-team': {
+    animation: 'dedicated',
     title: 'Hire a dedicated project-based team to meet all IT-related needs and bring your product idea to life.',
     subtitle: '',
     optimalModelFor: [
@@ -75,6 +77,7 @@ export const cooperationModels = {
     ],
   },
   'temp-to-hire': {
+    animation: 'team',
     title: 'Temp to hire allows businesses to safely expand the hiring geography and diversity with minimal onboarding and recruiting risks.',
     subtitle: '',
     optimalModelFor: [
@@ -122,6 +125,7 @@ export const cooperationModels = {
     ],
   },
   'technical-assessment-and-consulting': {
+    animation: 'technicalAssessment',
     title: 'Technical assessment & consulting equip business with unbias expert assessment to solve technical issues and scale your business.',
     subtitle: '',
     optimalModelFor: [
@@ -163,6 +167,7 @@ export const cooperationModels = {
     ],
   },
   'effective-team-supervision': {
+    animation: 'boost',
     title: 'Boost technical team performance with effective team supervision.',
     subtitle: '',
     optimalModelFor: [
@@ -197,6 +202,7 @@ export const cooperationModels = {
     ],
   },
   'transferring-a-project': {
+    animation: 'transfer',
     title: 'Protect intellectual property while transferring a project to another IT partner.',
     subtitle: '',
     optimalModelFor: [
