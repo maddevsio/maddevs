@@ -19,3 +19,5 @@ jobs:
         with:
           build: npm run build
           start: npm start
+        env:
+         NODE_PRISMIC_API: ${{ secrets.NODE_PRISMIC_API }}
