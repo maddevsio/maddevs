@@ -17,7 +17,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          build: npm run build
-          start: npm start
+          start: npm run dev
+          config: pageLoadTimeout=100000,baseUrl=http://localhost:3000
         env:
          NODE_PRISMIC_API: ${{ secrets.NODE_PRISMIC_API }}
