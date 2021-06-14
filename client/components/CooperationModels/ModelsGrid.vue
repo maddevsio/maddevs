@@ -1,0 +1,40 @@
+<template>
+  <div class="container">
+    <div class="models-grid">
+      <ModelCard
+        v-for="(modelKey, i) in Object.keys(cooperationModels)"
+        :key="modelKey"
+        :full="i === 2 || i === 3"
+        :url="modelKey"
+      />
+    </div>
+  </div>
+</template>
+
+<script>
+import ModelCard from '@/components/CooperationModels/shared/ModelCard'
+import { cooperationModels } from '@/data/cooperationModels'
+
+export default {
+  name: 'ModelsGrid',
+  components: {
+    ModelCard,
+  },
+
+  data() {
+    return {
+      cooperationModels,
+    }
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+@import '@/assets/styles/_vars';
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 48px;
+}
+</style>
