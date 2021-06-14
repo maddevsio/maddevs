@@ -1,12 +1,15 @@
 <template>
   <div class="cooperation-model">
     <div class="container cooperation-model__container">
-      <ModelBanner />
+      <ModelBanner
+        :title="title"
+        :subtitle="subtitle"
+      />
     </div>
     <div class="cooperation-model--bg-white">
       <div class="container cooperation-model__container">
         <ModelOptimal :list-items="optimalModelFor" />
-        <ModelProcess />
+        <ModelProcess v-bind="process" />
       </div>
       <CTABanner />
     </div>
@@ -29,9 +32,24 @@ export default {
   },
 
   props: {
+    title: {
+      type: String,
+      default: '',
+    },
+
+    subtitle: {
+      type: String,
+      default: '',
+    },
+
     optimalModelFor: {
       type: Array,
       default: () => ([]),
+    },
+
+    process: {
+      type: Object,
+      default: () => ({}),
     },
   },
 }
