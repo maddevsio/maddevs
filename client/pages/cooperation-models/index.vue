@@ -18,7 +18,7 @@ export default {
   mixins: [initLazyLoadMixin],
 
   head() {
-    return buildHead(getMetadata('cooperation-models'))
+    return buildHead(getMetadata('cooperationModels'))
   },
 
   mounted() {
