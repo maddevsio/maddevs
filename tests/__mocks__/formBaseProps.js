@@ -1,3 +1,5 @@
+import jest from 'jest-mock'
+
 export default {
   $v: {
     fullName: {

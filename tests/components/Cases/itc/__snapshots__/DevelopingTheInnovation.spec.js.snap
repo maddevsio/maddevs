@@ -297,7 +297,7 @@ exports[`DevelopingTheInnovation component should render correctly 1`] = `
     </div>
      
     <div
-      class="case_full-screen-image m-72_bottom media-m-48_bottom m-auto"
+      class="case_full-screen-image case_architecture-img m-72_bottom media-m-48_bottom m-auto"
     >
       <picture>
         <source
@@ -307,7 +307,7 @@ exports[`DevelopingTheInnovation component should render correctly 1`] = `
         />
          
         <img
-          alt="itc-architecture"
+          alt="Architecture"
           class="image media_lazy"
           data-src="img.jpg"
           data-srcset="img.jpg"

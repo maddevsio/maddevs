@@ -206,6 +206,13 @@ export default {
   &_project-mission {
     width: 100%;
     height: 100%;
+
+    @media screen and (max-width: 530px) {
+      min-width: 530px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   @media screen and (max-width: 880px) {
