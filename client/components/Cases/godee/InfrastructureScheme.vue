@@ -3,18 +3,16 @@
     <section
       class="container_full case_infrastructure-scheme-wrapper background-color-silver m-48_bottom media-m-24_bottom"
     >
-      <section class="container_middle">
+      <section class="container_regular">
         <h2 class="case_title_h2 m-24_bottom case_text-align-center">
           Infrastructure scheme
         </h2>
-        <img
-          :src="$getMediaFromS3('/images/Cases/godee/gif/infrastructure-scheme.gif')"
-          class="case_gif case_infrastructure-scheme-gif"
-          alt="GoDee Mobile App Infrastructure Scheme."
-          loading="lazy"
-          width="645"
-          height="774.92"
-        >
+        <Lottie
+          id="infrastructure-scheme"
+          :options="options"
+          class="case_lottie"
+          @animCreated="handleAnimation"
+        />
       </section>
     </section>
     <section class="container_regular">
@@ -37,11 +35,29 @@
 
 <script>
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import Lottie from 'vue-lottie/src/lottie.vue'
+import playLottieMixin from '@/mixins/playLottieMixin'
+import animationData from '@/assets/lottie/godee/infrastructure-scheme.json'
 
 export default {
   name: 'InfrastructureScheme',
   components: {
     TextParagraph,
+    Lottie,
   },
+
+  mixins: [playLottieMixin('infrastructure-scheme', {
+    animationData,
+    autoplay: false,
+    loop: false,
+  })],
 }
 </script>
+
+<style lang="scss" scoped>
+  .case {
+    &_lottie {
+      max-width: 645px;
+    }
+  }
+</style>

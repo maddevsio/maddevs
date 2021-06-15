@@ -44,3 +44,15 @@ export default {
   })],
 }
 </script>
+
+<style lang="scss" scoped>
+  .case {
+    &_lottie {
+      padding: 55px 0;
+
+      @media screen and (max-width: 768px) {
+        padding: 35px 0;
+      }
+    }
+  }
+</style>
