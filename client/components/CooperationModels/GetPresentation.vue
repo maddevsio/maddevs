@@ -5,7 +5,11 @@
         <h2 class="presentation__title">
           Explore more about the interaction process and choose a cooperation model that suits your business needs.
         </h2>
-        <a href="#">
+        <a
+          href="https://maddevs.io/custom-software-development-pricing-strategies-ebook.pdf"
+          download="Download"
+          target="_blank"
+        >
           <UIButton>
             Get presentation
           </UIButton>
@@ -50,6 +54,14 @@ export default {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: -0.02em;
+  }
+
+  @media screen and (max-width: 1450px) {
+    padding: 123px 0 110px;
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
 }
 </style>

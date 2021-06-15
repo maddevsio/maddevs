@@ -65,5 +65,29 @@ export default {
     line-height: 44px;
     color: $text-color--silver;
   }
+
+  @media screen and (max-width: 1450px) {
+    &__title {
+      font-size: 76px;
+      line-height: 76px;
+    }
+    &__subtitle {
+      font-size: 24px;
+      line-height: 34px;
+      margin-top: 35px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__title {
+      font-size: 52px;
+      line-height: 57px;
+    }
+    &__subtitle {
+      margin-top: 28px;
+      font-size: 21px;
+      line-height: 30px;
+    }
+  }
 }
 </style>
