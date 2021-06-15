@@ -1,9 +1,8 @@
 <template>
   <div
+    ref="card"
     class="model-card"
     :class="[`model-card--${uid}`, full ? 'model-card--full' : '']"
-    @mouseover="play"
-    @mouseout="pause"
   >
     <div class="model-card__animation">
       <Lottie
@@ -47,20 +46,26 @@ export default {
       required: true,
     },
 
+    title: {
+      type: String,
+      default: '',
+    },
+
     animationName: {
       type: String,
       default: '',
     },
 
-    title: {
-      type: String,
-      default: '',
+    startAnimationOnScreenPercent: {
+      type: Number,
+      default: 35,
     },
   },
 
   data() {
     return {
       animation: null,
+      animationIsPlayed: false,
     }
   },
 
@@ -74,12 +79,16 @@ export default {
     },
   },
 
+  mounted() {
+    document.addEventListener('scroll', this.handleCardAnimation)
+  },
+
   methods: {
     animCreatedHandler(animation) {
       this.animation = animation
     },
 
-    play() {
+    playAnimation() {
       try {
         this.animation.play()
       } catch (err) {
@@ -87,8 +96,17 @@ export default {
       }
     },
 
-    pause() {
-      this.animation.pause()
+    handleCardAnimation() {
+      const rect = this.$refs.card.getBoundingClientRect()
+
+      if (rect.top >= 0 && rect.top <= window.innerHeight) {
+        const startArea = (window.innerHeight / 100) * this.startAnimationOnScreenPercent
+
+        if (rect.top <= (window.innerHeight - startArea) && !this.animationPlayed) {
+          this.animationIsPlayed = true
+          this.playAnimation()
+        }
+      }
     },
   },
 }
@@ -125,6 +143,12 @@ export default {
       }
     }
   }
+  &:hover {
+    .model-card__link {
+      background-color: $border-color--white;
+      color: $text-color--black;
+    }
+  }
 
   &__animation {
     z-index: 1;
@@ -157,7 +181,7 @@ export default {
     border-radius: 50%;
     border: 1px solid $border-color--white;
     color: $border-color--white;
-    transition: all .2s;
+    transition: all .3s ease;
     &:hover,
     &:focus,
     &--active {

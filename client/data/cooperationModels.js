@@ -1,6 +1,7 @@
 export const cooperationModels = {
   'augmented-staff-members': {
     animationName: 'staff',
+    startAnimationOnScreenPercent: 35,
     title: 'Reach time-to-market targets and release deadlines faster with <span>augmented staff members.</span>',
     subtitle: 'Best suited for customers with an existing team that has well-established development processes and knowledge management.',
     optimalModelFor: [
@@ -44,6 +45,7 @@ export const cooperationModels = {
   },
   'dedicated-project-based-team': {
     animationName: 'dedicated',
+    startAnimationOnScreenPercent: 70,
     title: 'Hire a <span>dedicated project-based team</span> to meet all IT-related needs and bring your product idea to life.',
     subtitle: '',
     optimalModelFor: [
@@ -84,6 +86,7 @@ export const cooperationModels = {
   },
   'temp-to-hire': {
     animationName: 'team',
+    startAnimationOnScreenPercent: 75,
     title: '<span>Temp to hire</span> allows businesses to safely expand the hiring geography and diversity with minimal onboarding and recruiting risks.',
     subtitle: '',
     optimalModelFor: [
@@ -135,6 +138,7 @@ export const cooperationModels = {
   },
   'technical-assessment-and-consulting': {
     animationName: 'technicalAssessment',
+    startAnimationOnScreenPercent: 75,
     title: '<span>Technical assessment & consulting</span> equip business with unbias expert assessment to solve technical issues and scale your business.',
     subtitle: '',
     optimalModelFor: [
@@ -180,6 +184,7 @@ export const cooperationModels = {
   },
   'effective-team-supervision': {
     animationName: 'boost',
+    startAnimationOnScreenPercent: 35,
     title: 'Boost technical team performance with <span>effective team supervision.</span>',
     subtitle: '',
     optimalModelFor: [
@@ -218,6 +223,7 @@ export const cooperationModels = {
   },
   'transferring-a-project': {
     animationName: 'transfer',
+    startAnimationOnScreenPercent: 70,
     title: 'Protect intellectual property while <span>transferring a project</span> to another IT partner.',
     subtitle: 'The main aim of the cooperation is to prepare the customer’s project for transfer to another IT team.',
     optimalModelFor: [
