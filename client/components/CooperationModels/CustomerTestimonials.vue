@@ -52,5 +52,35 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 80px;
   }
+
+  @media screen and (max-width: 1450px) {
+    grid-gap: 60px 45px;
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    &__grid {
+      margin-top: 36px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 39px 0 65px;
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    &__grid {
+      margin-top: 36px;
+      grid-template-columns: 1fr;
+      grid-gap: 53px;
+    }
+  }
 }
 </style>

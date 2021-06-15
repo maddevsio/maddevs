@@ -8,22 +8,28 @@
       man-name="Tamara Mun"
       man-position="Delivery Manager"
     >
-      <UIButton>
+      <UIButton @click="$refs.modalContactMe.show()">
         Estimate your project
       </UIButton>
     </UIBanner>
+    <Modal ref="modalContactMe">
+      <ModalContactMe @success="$refs.modalContactMe.close()" />
+    </Modal>
   </div>
 </template>
 
 <script>
 import UIBanner from '@/components/shared/UIBanner'
 import UIButton from '@/components/shared/UIButton'
+import Modal from '@/components/core/Modal'
 
 export default {
   name: 'CTABanner',
   components: {
     UIBanner,
     UIButton,
+    Modal,
+    ModalContactMe: () => import('@/components/core/modals/ModalContactMe'),
   },
 }
 </script>
@@ -34,6 +40,9 @@ export default {
 .cta-banner {
   &_container {
     padding-bottom: 119px;
+    @media screen and (max-width: 768px) {
+      padding-bottom: 44px;
+    }
   }
 
   /deep/ .ui-button {

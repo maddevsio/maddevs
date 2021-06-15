@@ -63,5 +63,16 @@ export default {
       line-height: 37px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 77px 0 105px;
+    &__content {
+      text-align: left;
+    }
+    /deep/ .ui-button {
+      margin-top: 44px;
+      font-size: 16px;
+    }
+  }
 }
 </style>

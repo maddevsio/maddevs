@@ -105,5 +105,73 @@ export default {
       letter-spacing: -0.013em;
     }
   }
+
+  @media screen and (max-width: 1450px) {
+    &--featured {
+      .testimonial-block {
+        &__text {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 29px;
+        }
+      }
+    }
+    &__mark {
+      font-size: 20px;
+    }
+    &__text {
+      font-size: 21px;
+      line-height: 27px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &--featured {
+      grid-column: auto / span 2;
+      .testimonial-block {
+        &__author {
+          &-image {
+            width: 42px;
+            height: 42px;
+          }
+        }
+      }
+    }
+    &__author {
+      &-image {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-column: auto;
+    &,
+    &--featured {
+      .testimonial-block {
+        &__text {
+          font-weight: 400;
+          font-size: 21px;
+          line-height: 27px;
+        }
+        &__mark {
+          font-size: 16px;
+        }
+        &__author {
+          margin-top: 14px;
+          &-image {
+            width: 26px;
+            height: 26px;
+          }
+          &-name,
+          &-position {
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
 }
 </style>

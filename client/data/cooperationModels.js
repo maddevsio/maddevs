@@ -86,7 +86,7 @@ export const cooperationModels = {
   },
   'temp-to-hire': {
     animationName: 'team',
-    startAnimationOnScreenPercent: 75,
+    startAnimationOnScreenPercent: 60,
     title: '<span>Temp to hire</span> allows businesses to safely expand the hiring geography and diversity with minimal onboarding and recruiting risks.',
     subtitle: '',
     optimalModelFor: [
@@ -138,7 +138,7 @@ export const cooperationModels = {
   },
   'technical-assessment-and-consulting': {
     animationName: 'technicalAssessment',
-    startAnimationOnScreenPercent: 75,
+    startAnimationOnScreenPercent: 60,
     title: '<span>Technical assessment & consulting</span> equip business with unbias expert assessment to solve technical issues and scale your business.',
     subtitle: '',
     optimalModelFor: [
@@ -223,7 +223,7 @@ export const cooperationModels = {
   },
   'transferring-a-project': {
     animationName: 'transfer',
-    startAnimationOnScreenPercent: 70,
+    startAnimationOnScreenPercent: 65,
     title: 'Protect intellectual property while <span>transferring a project</span> to another IT partner.',
     subtitle: 'The main aim of the cooperation is to prepare the customer’s project for transfer to another IT team.',
     optimalModelFor: [
