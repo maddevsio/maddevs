@@ -1,5 +1,6 @@
 import InfrastructureSchema from '@/components/Cases/nambafood/InfrastructureSchema.vue'
 import { render, screen } from '@testing-library/vue'
+import '../../../__mocks__/intersectionObserverMock'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',
