@@ -5,7 +5,7 @@
         Challenges
       </h2>
       <TextParagraph class="m-66_bottom">
-        The main challenge for ITC was to coordinate missions and formalise recommendations provided by the coaches. Initially, the project was using a paper-based manual cum mission report to track their activities with SMEs. R4TCA implementers saw digitalisation as a major opportunity for improvement.
+        The main challenge for ITC was to coordinate missions and formalise recommendations provided by the coaches. Initially, the project was using a paper-based manual mission report to track their activities with SMEs. R4TCA implementers saw digitalisation as a major opportunity for improvement.
       </TextParagraph>
       <h4
         v-prlx="animationSettingsTitle"
