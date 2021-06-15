@@ -209,7 +209,6 @@ export default {
 
   &--temp-to-hire {
     padding-top: 120px;
-    min-height: 460px;
     /deep/ .model-card {
       &__title span {
         color: $text-color--blue;
@@ -222,12 +221,17 @@ export default {
         transform: translateX(-50%);
         line-height: 0;
       }
+
+      @media screen and (min-width: 768px) {
+        &__link {
+          margin-top: 12%;
+        }
+      }
     }
   }
 
   &--technical-assessment-and-consulting {
     padding-top: 120px;
-    min-height: 420px;
     /deep/ .model-card {
       &__title span {
         color: $text-color--red-dark;
@@ -239,6 +243,12 @@ export default {
         left: 50%;
         transform: translateX(-50%);
         line-height: 0;
+      }
+
+      @media screen and (min-width: 768px) {
+        &__link {
+          margin-top: 8%;
+        }
       }
     }
   }
@@ -252,6 +262,46 @@ export default {
   &--transferring-a-project /deep/ .model-card {
     &__title span {
       color: $text-color--purple;
+    }
+  }
+
+  @media screen and (max-width: 1450px) {
+    padding: 32px;
+    &--full {
+      .model-card {
+        &__title {
+          font-size: 30px;
+          line-height: 37px;
+        }
+      }
+    }
+    &__title {
+      max-width: 800px;
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &--temp-to-hire,
+    &--technical-assessment-and-consulting {
+      padding: 64px 32px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 32px;
+    grid-column: auto;
+    text-align: left;
+    &--full {
+      .model-card__content {
+        text-align: left;
+        align-items: flex-start;
+      }
+    }
+    &--temp-to-hire {
+      padding-bottom: 80px;
+    }
+    &--technical-assessment-and-consulting {
+      padding-bottom: 90px;
     }
   }
 }
