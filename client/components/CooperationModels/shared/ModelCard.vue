@@ -116,6 +116,8 @@ export default {
 @import '@/assets/styles/_vars';
 
 .model-card {
+  display: flex;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
   padding: 80px;
@@ -155,8 +157,10 @@ export default {
   }
 
   &__content {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     * {
       z-index: 2;
     }
@@ -194,26 +198,17 @@ export default {
     &__title span {
       color: $text-color--red-dark;
     }
-    &__link {
-      margin-top: 63px;
-    }
   }
 
   &--dedicated-project-based-team /deep/ .model-card {
     &__title span {
       color: $text-color--yellow;
     }
-    &__link {
-      margin-top: 63px;
-    }
   }
 
   &--temp-to-hire /deep/ .model-card {
     &__title span {
       color: $text-color--blue;
-    }
-    &__link {
-      margin-top: 130px;
     }
     &__animation {
       width: 100%;
@@ -228,9 +223,6 @@ export default {
     &__title span {
       color: $text-color--red-dark;
     }
-    &__link {
-      margin-top: 84px;
-    }
     &__animation {
       width: 95%;
       position: absolute;
@@ -244,17 +236,11 @@ export default {
     &__title span {
       color: $text-color--green-pale;
     }
-    &__link {
-      margin-top: 116px;
-    }
   }
 
   &--transferring-a-project /deep/ .model-card {
     &__title span {
       color: $text-color--purple;
-    }
-    &__link {
-      margin-top: 119px;
     }
   }
 }

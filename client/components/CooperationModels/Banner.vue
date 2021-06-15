@@ -31,16 +31,15 @@ export default {
   margin-top: 62px; // height of header component
   padding: 164px 0 139px;
   background: linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213 100%);
+  overflow: hidden;
   &__image {
     display: block;
     z-index: -1;
     position: absolute;
-    top: -2px;
-    left: -2px;
-    bottom: -2px;
-    right: -2px;
-    width: 100%;
-    height: 100%;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
     object-fit: cover;
     object-position: top;
     opacity: 0.48;

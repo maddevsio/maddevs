@@ -2,6 +2,7 @@
   <div class="model-banner">
     <h1
       class="model-banner__title"
+      :class="`model-banner__title--${uid}`"
       v-html="title"
     />
     <p
@@ -17,6 +18,11 @@
 export default {
   name: 'ModelBanner',
   props: {
+    uid: {
+      type: String,
+      default: '',
+    },
+
     title: {
       type: String,
       default: '',
@@ -40,6 +46,24 @@ export default {
     font-size: 60px;
     line-height: 68px;
     letter-spacing: -0.04em;
+    &--augmented-staff-members /deep/ span {
+      color: $text-color--red-dark;
+    }
+    &--dedicated-project-based-team /deep/ span {
+      color: $text-color--yellow;
+    }
+    &--temp-to-hire /deep/ span {
+      color: $text-color--blue;
+    }
+    &--technical-assessment-and-consulting /deep/ span {
+      color: $text-color--red-dark;
+    }
+    &--effective-team-supervision /deep/ span {
+      color: $text-color--green-pale;
+    }
+    &--transferring-a-project /deep/ span {
+      color: $text-color--purple;
+    }
   }
   &__subtitle {
     margin-top: 67px;

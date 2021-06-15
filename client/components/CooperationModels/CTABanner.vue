@@ -42,6 +42,9 @@ export default {
     font-weight: 400;
     font-size: 18px;
     letter-spacing: -0.02em;
+    @media screen and (max-width: 900px) {
+      font-size: 16px;
+    }
   }
 }
 </style>

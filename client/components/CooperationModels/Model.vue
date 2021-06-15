@@ -2,6 +2,7 @@
   <div class="cooperation-model">
     <div class="container cooperation-model__container">
       <ModelBanner
+        :uid="uid"
         :title="title"
         :subtitle="subtitle"
       />
@@ -32,6 +33,11 @@ export default {
   },
 
   props: {
+    uid: {
+      type: String,
+      default: '',
+    },
+
     title: {
       type: String,
       default: '',

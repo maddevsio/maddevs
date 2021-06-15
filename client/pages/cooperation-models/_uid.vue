@@ -1,6 +1,9 @@
 <template>
   <main class="main">
-    <Model v-bind="model" />
+    <Model
+      :uid="uid"
+      v-bind="model"
+    />
   </main>
 </template>
 
@@ -23,6 +26,7 @@ export default {
 
     if (model) {
       return {
+        uid: params.uid,
         model,
         openGraphUrl,
       }
