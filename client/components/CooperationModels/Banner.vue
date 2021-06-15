@@ -28,6 +28,7 @@ export default {
 
 .banner {
   position: relative;
+  min-height: 40vh;
   margin-top: 62px; // height of header component
   padding: 164px 0 139px;
   background: linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213 100%);
@@ -38,8 +39,8 @@ export default {
     position: absolute;
     top: -1px;
     left: -1px;
-    width: calc(100% + 1px);
-    height: calc(100% + 1px);
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
     object-fit: cover;
     object-position: top;
     opacity: 0.48;
