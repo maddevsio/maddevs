@@ -173,6 +173,7 @@ export default {
   }
 
   &__link {
+    margin-top: 56px;
     @include font('Inter', 16px, 400);
     cursor: pointer;
     background: transparent;
@@ -206,29 +207,39 @@ export default {
     }
   }
 
-  &--temp-to-hire /deep/ .model-card {
-    &__title span {
-      color: $text-color--blue;
-    }
-    &__animation {
-      width: 100%;
-      position: absolute;
-      bottom: -13px;
-      left: 50%;
-      transform: translateX(-50%);
+  &--temp-to-hire {
+    padding-top: 120px;
+    min-height: 460px;
+    /deep/ .model-card {
+      &__title span {
+        color: $text-color--blue;
+      }
+      &__animation {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        line-height: 0;
+      }
     }
   }
 
-  &--technical-assessment-and-consulting /deep/ .model-card {
-    &__title span {
-      color: $text-color--red-dark;
-    }
-    &__animation {
-      width: 95%;
-      position: absolute;
-      bottom: -20px;
-      left: 50%;
-      transform: translateX(-50%);
+  &--technical-assessment-and-consulting {
+    padding-top: 120px;
+    min-height: 420px;
+    /deep/ .model-card {
+      &__title span {
+        color: $text-color--red-dark;
+      }
+      &__animation {
+        width: 92%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        line-height: 0;
+      }
     }
   }
 
