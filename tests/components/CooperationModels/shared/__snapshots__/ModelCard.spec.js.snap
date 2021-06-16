@@ -119,9 +119,9 @@ exports[`ModelCard component should render correctly 1`] = `
         <button
           class="model-card__button"
         >
-          
-        →
-      
+          <span>
+            ↓
+          </span>
         </button>
       </div>
     </nuxtlink>
