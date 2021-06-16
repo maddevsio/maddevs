@@ -4,5 +4,6 @@
  * Available environments - [development, staging, production]
  */
 export const config = {
+  cooperationModels: ['development', 'staging'],
   careersPageAnimations: ['development', 'staging'],
 }

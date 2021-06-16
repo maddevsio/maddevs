@@ -34,7 +34,7 @@
             </NuxtLink>
             <nav class="header__header-routes_links">
               <NuxtLink
-                v-for="{ title, link, exact } in navigation"
+                v-for="{ title, link, exact } in filteredNavigation"
                 :key="link"
                 :exact="exact"
                 class="header__navigation-link"
@@ -156,6 +156,8 @@ import Modal from '@/components/core/Modal'
 import ModalSearch from '@/components/core/modals/ModalSearch'
 import { headerNavigation as navigation } from '@/data/navigation'
 
+import featureFlag from '@/featureFlags/featureFlag'
+
 export default {
   name: 'MainHeader',
   components: {
@@ -180,6 +182,11 @@ export default {
   },
 
   computed: {
+    filteredNavigation() {
+      if (!featureFlag('cooperationModels')) return this.navigation.filter(({ link }) => link !== '/cooperation-models/')
+      return this.navigation
+    },
+
     isGodeePage() {
       return this.$nuxt.$route.path.includes('/godee')
     },
