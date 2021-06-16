@@ -1,5 +1,6 @@
 import SystemOverview from '@/components/Cases/nambafood/SystemOverview.vue'
 import { render, screen } from '@testing-library/vue'
+import '../../../__mocks__/intersectionObserverMock'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',
