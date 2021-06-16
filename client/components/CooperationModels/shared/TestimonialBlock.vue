@@ -1,5 +1,6 @@
 <template>
   <div
+    v-if="author"
     class="testimonial-block"
     :class="featured ? 'testimonial-block--featured' : null"
   >

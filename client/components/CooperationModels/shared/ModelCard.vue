@@ -1,5 +1,6 @@
 <template>
   <div
+    v-if="uid"
     ref="card"
     class="model-card"
     :class="[`model-card--${uid}`, full ? 'model-card--full' : '']"
