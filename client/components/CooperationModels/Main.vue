@@ -4,7 +4,7 @@
     <ModelsGrid />
     <Presentation />
     <div class="cooperation-models--bg-white">
-      <CustomerTestimonials />
+      <Testimonials />
       <CTABanner />
     </div>
   </div>
@@ -14,7 +14,7 @@
 import Banner from '@/components/CooperationModels/Banner'
 import ModelsGrid from '@/components/CooperationModels/ModelsGrid'
 import Presentation from '@/components/CooperationModels/Presentation'
-import CustomerTestimonials from '@/components/CooperationModels/CustomerTestimonials'
+import Testimonials from '@/components/CooperationModels/Testimonials'
 import CTABanner from '@/components/CooperationModels/CTABanner'
 
 export default {
@@ -23,7 +23,7 @@ export default {
     Banner,
     ModelsGrid,
     Presentation,
-    CustomerTestimonials,
+    Testimonials,
     CTABanner,
   },
 }

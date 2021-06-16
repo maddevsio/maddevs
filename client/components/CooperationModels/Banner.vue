@@ -1,8 +1,8 @@
 <template>
   <div class="banner">
     <img
-      :data-src="require(`@/assets/img/CooperationModels/jpg/banner.jpg`)"
-      class="banner__image img_lazy"
+      :data-src="$getMediaFromS3('/images/CooperationModels/banner.jpg')"
+      class="banner__image media_lazy"
     >
     <div class="container">
       <div class="banner__content">

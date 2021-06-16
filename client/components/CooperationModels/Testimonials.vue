@@ -22,7 +22,7 @@ import TestimonialBlock from '@/components/CooperationModels/shared/TestimonialB
 import { testimonials } from '@/data/cooperationModels'
 
 export default {
-  name: 'CustomerTestimonials',
+  name: 'Testimonials',
   components: {
     TestimonialBlock,
   },

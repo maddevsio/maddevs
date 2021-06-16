@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testimonials component should render correctly 1`] = `
+<div>
+  <div
+    class="customer-testimonials"
+  >
+    <div
+      class="container"
+    >
+      <h2
+        class="customer-testimonials__title"
+      >
+        
+      Customer 
+        <br />
+         Testimonials
+    
+      </h2>
+       
+      <div
+        class="customer-testimonials__grid"
+      >
+        <div
+          class="testimonial-block testimonial-block--featured"
+        >
+          <span
+            class="testimonial-block__mark"
+          >
+            “
+          </span>
+           
+          <div
+            class="testimonial-block__content"
+          >
+            <blockquote
+              class="testimonial-block__text"
+            >
+              
+      Mad Devs have extensive experience in various industries, which allows them to solve issues quickly and efficiently.
+    
+            </blockquote>
+             
+            <div
+              class="testimonial-block__author"
+            >
+              <div
+                class="testimonial-block__author-image"
+              >
+                <img
+                  alt="Photo"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+              </div>
+               
+              <div>
+                <p
+                  class="testimonial-block__author-name"
+                >
+                  
+          Wade Bartlett
+        
+                </p>
+                 
+                <span
+                  class="testimonial-block__author-position"
+                >
+                  Technical Consultant, Sir John Monash Centre
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="testimonial-block"
+        >
+          <span
+            class="testimonial-block__mark"
+          >
+            “
+          </span>
+           
+          <div
+            class="testimonial-block__content"
+          >
+            <blockquote
+              class="testimonial-block__text"
+            >
+              
+      They fully disclose what they’re doing and why they’re doing it.
+    
+            </blockquote>
+             
+            <div
+              class="testimonial-block__author"
+            >
+              <div
+                class="testimonial-block__author-image"
+              >
+                <img
+                  alt="Photo"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+              </div>
+               
+              <div>
+                <p
+                  class="testimonial-block__author-name"
+                >
+                  
+          Duc Nguyen
+        
+                </p>
+                 
+                <span
+                  class="testimonial-block__author-position"
+                >
+                  Former CEO, Topica Group
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="testimonial-block"
+        >
+          <span
+            class="testimonial-block__mark"
+          >
+            “
+          </span>
+           
+          <div
+            class="testimonial-block__content"
+          >
+            <blockquote
+              class="testimonial-block__text"
+            >
+              
+      They work as if their own money and success are on the line.
+    
+            </blockquote>
+             
+            <div
+              class="testimonial-block__author"
+            >
+              <div
+                class="testimonial-block__author-image"
+              >
+                <img
+                  alt="Photo"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+              </div>
+               
+              <div>
+                <p
+                  class="testimonial-block__author-name"
+                >
+                  
+          Ruslan Karabukaev
+        
+                </p>
+                 
+                <span
+                  class="testimonial-block__author-position"
+                >
+                  Co-Founder, Namba Taxi
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="testimonial-block"
+        >
+          <span
+            class="testimonial-block__mark"
+          >
+            “
+          </span>
+           
+          <div
+            class="testimonial-block__content"
+          >
+            <blockquote
+              class="testimonial-block__text"
+            >
+              
+      Our infrastructure is much more resilient and secure.
+    
+            </blockquote>
+             
+            <div
+              class="testimonial-block__author"
+            >
+              <div
+                class="testimonial-block__author-image"
+              >
+                <img
+                  alt="Photo"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+              </div>
+               
+              <div>
+                <p
+                  class="testimonial-block__author-name"
+                >
+                  
+          Daniel Vartanov
+        
+                </p>
+                 
+                <span
+                  class="testimonial-block__author-position"
+                >
+                  CTO, Veeqo.com
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="testimonial-block"
+        >
+          <span
+            class="testimonial-block__mark"
+          >
+            “
+          </span>
+           
+          <div
+            class="testimonial-block__content"
+          >
+            <blockquote
+              class="testimonial-block__text"
+            >
+              
+      I’m most impressed with their technical capacities.
+    
+            </blockquote>
+             
+            <div
+              class="testimonial-block__author"
+            >
+              <div
+                class="testimonial-block__author-image"
+              >
+                <img
+                  alt="Photo"
+                  class="img_lazy"
+                  data-src="[object Object]"
+                />
+              </div>
+               
+              <div>
+                <p
+                  class="testimonial-block__author-name"
+                >
+                  
+          Moktar Alqaderi
+        
+                </p>
+                 
+                <span
+                  class="testimonial-block__author-position"
+                >
+                  CEO, Progressay
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
