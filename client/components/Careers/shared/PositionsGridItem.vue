@@ -22,9 +22,9 @@
       <hr class="positions-grid__item-divider">
       <p
         class="positions-grid__item-subtitle"
-        :title="firstParagraph"
+        :title="subtitle"
       >
-        {{ firstParagraph }}
+        {{ subtitle }}
       </p>
       <div
         v-if="tags.length"
@@ -42,7 +42,6 @@
 <script>
 import PositionLabels from '@/components/Careers/shared/PositionLabels'
 import PositionTags from '@/components/Careers/shared/PositionTags'
-import getFirstParagraph from '@/helpers/getFirstParagraph'
 
 export default {
   name: 'PositionsGridItem',
@@ -62,6 +61,11 @@ export default {
       default: '',
     },
 
+    subtitle: {
+      type: String,
+      default: '',
+    },
+
     slices: {
       type: Array,
       default: () => ([]),
@@ -75,13 +79,6 @@ export default {
     tags: {
       type: Array,
       default: () => ([]),
-    },
-  },
-
-  computed: {
-    firstParagraph() {
-      const limit = 90
-      return getFirstParagraph(this.slices, limit)
     },
   },
 }
