@@ -21,7 +21,7 @@
           v-html="title"
         />
         <button class="model-card__button">
-          →
+          <span v-html="'↓'" />
         </button>
       </div>
     </NuxtLink>
@@ -197,6 +197,10 @@ export default {
     &--active {
       background-color: $border-color--white;
       color: $text-color--black;
+    }
+
+    span {
+      transform: rotate(-90deg); // right and left arrows is not supported by the font
     }
   }
 
