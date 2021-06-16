@@ -116,24 +116,17 @@ export default {
 @import '@/assets/styles/_vars';
 
 .model-card {
+  overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
-  overflow: hidden;
+  background-color: $bgcolor--black-pale;
+  color: $text-color--white-primary;
+  border-radius: 4px;
   padding: 80px;
   padding-bottom: 64px;
-  background-color: $bgcolor--black-pale;
-  border-radius: 4px;
-  font-weight: 700;
-  color: $text-color--white-primary;
-  font-size: 40px;
-  line-height: 51px;
-  letter-spacing: -0.013em;
   &--full {
     grid-column: auto / span 2;
-    font-size: 56px;
-    line-height: 67px;
-    text-align: center;
     .model-card {
       &__title {
         font-size: 56px;
@@ -173,8 +166,8 @@ export default {
   }
 
   &__link {
-    margin-top: 56px;
     @include font('Inter', 16px, 400);
+    margin-top: 56px;
     cursor: pointer;
     background: transparent;
     padding: 0;
@@ -221,12 +214,6 @@ export default {
         transform: translateX(-50%);
         line-height: 0;
       }
-
-      @media screen and (min-width: 768px) {
-        &__link {
-          margin-top: 12%;
-        }
-      }
     }
   }
 
@@ -244,12 +231,6 @@ export default {
         transform: translateX(-50%);
         line-height: 0;
       }
-
-      @media screen and (min-width: 768px) {
-        &__link {
-          margin-top: 8%;
-        }
-      }
     }
   }
 
@@ -262,46 +243,6 @@ export default {
   &--transferring-a-project /deep/ .model-card {
     &__title span {
       color: $text-color--purple;
-    }
-  }
-
-  @media screen and (max-width: 1450px) {
-    padding: 32px;
-    &--full {
-      .model-card {
-        &__title {
-          font-size: 30px;
-          line-height: 37px;
-        }
-      }
-    }
-    &__title {
-      max-width: 800px;
-      font-size: 30px;
-      line-height: 37px;
-    }
-
-    &--temp-to-hire,
-    &--technical-assessment-and-consulting {
-      padding: 64px 32px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    padding: 32px;
-    grid-column: auto;
-    text-align: left;
-    &--full {
-      .model-card__content {
-        text-align: left;
-        align-items: flex-start;
-      }
-    }
-    &--temp-to-hire {
-      padding-bottom: 80px;
-    }
-    &--technical-assessment-and-consulting {
-      padding-bottom: 90px;
     }
   }
 }

@@ -2,7 +2,7 @@
   <div class="cooperation-models">
     <Banner />
     <ModelsGrid />
-    <GetPresentation />
+    <Presentation />
     <div class="cooperation-models--bg-white">
       <CustomerTestimonials />
       <CTABanner />
@@ -13,7 +13,7 @@
 <script>
 import Banner from '@/components/CooperationModels/Banner'
 import ModelsGrid from '@/components/CooperationModels/ModelsGrid'
-import GetPresentation from '@/components/CooperationModels/GetPresentation'
+import Presentation from '@/components/CooperationModels/Presentation'
 import CustomerTestimonials from '@/components/CooperationModels/CustomerTestimonials'
 import CTABanner from '@/components/CooperationModels/CTABanner'
 
@@ -22,7 +22,7 @@ export default {
   components: {
     Banner,
     ModelsGrid,
-    GetPresentation,
+    Presentation,
     CustomerTestimonials,
     CTABanner,
   },

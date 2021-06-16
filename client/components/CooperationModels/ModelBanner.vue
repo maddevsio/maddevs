@@ -42,6 +42,7 @@ export default {
 .model-banner {
   padding: 168px 0 108px;
   color: $text-color--white-primary;
+
   &__title {
     font-size: 60px;
     line-height: 68px;
@@ -65,6 +66,7 @@ export default {
       color: $text-color--purple;
     }
   }
+
   &__subtitle {
     margin-top: 67px;
     font-size: 24px;

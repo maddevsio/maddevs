@@ -6,7 +6,7 @@
           Explore more about the interaction process and choose a cooperation model that suits your business needs.
         </h2>
         <a
-          href="https://maddevs.io/custom-software-development-pricing-strategies-ebook.pdf"
+          href="https://drive.google.com/file/d/1ZLxA5IR_d-GD_3JY1OooHE4gMQFDYcgi/view"
           download="Download"
           target="_blank"
         >
@@ -23,7 +23,7 @@
 import UIButton from '@/components/shared/UIButton'
 
 export default {
-  name: 'GetPresentation',
+  name: 'Presentation',
   components: {
     UIButton,
   },
@@ -54,25 +54,6 @@ export default {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: -0.02em;
-  }
-
-  @media screen and (max-width: 1450px) {
-    padding: 123px 0 110px;
-    &__title {
-      font-size: 30px;
-      line-height: 37px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    padding: 77px 0 105px;
-    &__content {
-      text-align: left;
-    }
-    /deep/ .ui-button {
-      margin-top: 44px;
-      font-size: 16px;
-    }
   }
 }
 </style>

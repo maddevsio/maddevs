@@ -78,7 +78,7 @@ export default {
     border-bottom: 1px solid $bgcolor--black-oil;
   }
   &__steps {
-    margin-top: 8;
+    margin-top: 8px;
   }
   &__step {
     display: flex;
@@ -94,6 +94,7 @@ export default {
       align-items: center;
       justify-content: center;
       width: 28px;
+      min-width: 28px;
       height: 28px;
       border: 1px solid $bgcolor--black-oil;
       font-size: 14px;

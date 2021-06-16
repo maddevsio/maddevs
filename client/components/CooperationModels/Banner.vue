@@ -37,10 +37,10 @@ export default {
     display: block;
     z-index: -1;
     position: absolute;
-    top: -1px;
-    left: -1px;
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
     object-fit: cover;
     object-position: top;
     opacity: 0.48;
@@ -64,30 +64,6 @@ export default {
     letter-spacing: -0.013em;
     line-height: 44px;
     color: $text-color--silver;
-  }
-
-  @media screen and (max-width: 1450px) {
-    &__title {
-      font-size: 76px;
-      line-height: 76px;
-    }
-    &__subtitle {
-      font-size: 24px;
-      line-height: 34px;
-      margin-top: 35px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    &__title {
-      font-size: 52px;
-      line-height: 57px;
-    }
-    &__subtitle {
-      margin-top: 28px;
-      font-size: 21px;
-      line-height: 30px;
-    }
   }
 }
 </style>
