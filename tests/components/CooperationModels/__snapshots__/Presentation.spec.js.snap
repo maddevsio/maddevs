@@ -28,7 +28,7 @@ exports[`Presentation component should render correctly 1`] = `
             style="position: relative; overflow: hidden;"
           >
             
-          Download PDF file
+          Download presentation
         
             <div
               class="wave"

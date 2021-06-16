@@ -10,7 +10,7 @@
           download
         >
           <UIButton>
-            Download PDF file
+            Download presentation
           </UIButton>
         </a>
       </div>
