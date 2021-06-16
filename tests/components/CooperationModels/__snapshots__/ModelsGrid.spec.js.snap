@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModelsGrid component should render correctly 1`] = `
+<div>
+  <div
+    class="container models-grid_container"
+  >
+    <div
+      class="models-grid"
+    >
+      <modelcard-stub
+        animationname="staff"
+        optimalmodelfor="Organizations that need to add specialists to facilitate reaching time-to-market targets.,Companies that need to determine the best fit for the team and identify uncertainty in the scope of work.,Companies that cope with urgent tasks to meet release deadlines.,Organizations that want to avoid inefficient in-house hiring processes."
+        process="[object Object]"
+        startanimationonscreenpercent="35"
+        subtitle="Best suited for customers with an existing team that has well-established development processes and knowledge management."
+        title="Reach time-to-market targets and release deadlines faster with <span>augmented staff members.</span>"
+        uid="augmented-staff-members"
+      />
+      <modelcard-stub
+        animationname="dedicated"
+        optimalmodelfor="Businesses that need to raise funds and quickly move to the next stage.,Companies that plan to reorganize their internal IT departments to optimize costs and performance.,Existing businesses that need teams with specific expertise to develop new products.,Companies that don’t have expertise in hiring and supervising big IT teams."
+        process="[object Object]"
+        startanimationonscreenpercent="82"
+        subtitle=""
+        title="Hire a <span>dedicated project-based team</span> to meet all IT-related needs and bring your product idea to life."
+        uid="dedicated-project-based-team"
+      />
+      <modelcard-stub
+        animationname="team"
+        full="true"
+        optimalmodelfor="Businesses whose offshore development is hindered by legal restrictions and corporate rules.,Companies that face long and difficult employee recruitment and onboarding processes due to governmental and corporate regulations.,Organizations that want to safely expand the hiring geography and diversify their corporate culture."
+        process="[object Object]"
+        startanimationonscreenpercent="70"
+        subtitle=""
+        title=<span>Temp to hire</span> allows businesses to safely expand the hiring geography and diversity with minimal onboarding and recruiting risks.
+        uid="temp-to-hire"
+      />
+      <modelcard-stub
+        animationname="technicalAssessment"
+        full="true"
+        optimalmodelfor="Organizations looking for an unbiased expert assessment.,Businesses that need to effectively scale up their products.,Businesses in search of new product development directions.,Companies dealing with overwhelming tech issues and technical debt.,Organizations that have had several failed MVP launches.,Business owners that doubt their current teams’ competencies.,Companies facing disappointing performance and ruined relationships with the current IT contractor or in-house team."
+        process="[object Object]"
+        startanimationonscreenpercent="70"
+        subtitle=""
+        title=<span>Technical assessment & consulting</span> equip business with unbias expert assessment to solve technical issues and scale your business.
+        uid="technical-assessment-and-consulting"
+      />
+      <modelcard-stub
+        animationname="boost"
+        optimalmodelfor="Managers who don’t have a technical background.,Organizations whose current teams’ competencies don’t grow in proportion to their business needs.,Businesses facing technical challenges due to rapid growth.,Managers experiencing frustration due to a lack of transparency in teams’ development processes and communication.,Businesses whose lack of infrastructure planning and management incurs expenses."
+        process="[object Object]"
+        startanimationonscreenpercent="35"
+        subtitle=""
+        title="Boost technical team performance with <span>effective team supervision.</span>"
+        uid="effective-team-supervision"
+      />
+      <modelcard-stub
+        animationname="transfer"
+        optimalmodelfor="Companies facing disappointing performance and ruined relationships with the current IT contractor.,Companies whose end results bring no value to their owners or to end users.,Businesses looking to switch software development from in-house to an IT contractor model."
+        process="[object Object]"
+        startanimationonscreenpercent="82"
+        subtitle="The main aim of the cooperation is to prepare the customer’s project for transfer to another IT team."
+        title="Protect intellectual property while <span>transferring a project</span> to another IT partner."
+        uid="transferring-a-project"
+      />
+    </div>
+  </div>
+</div>
+`;
