@@ -5,25 +5,28 @@
     class="model-card"
     :class="[`model-card--${uid}`, full ? 'model-card--full' : '']"
   >
-    <div class="model-card__animation">
-      <Lottie
-        :options="lottieOptions"
-        @animCreated="animCreatedHandler"
-      />
-    </div>
-    <div class="model-card__content">
-      <h3
-        class="model-card__title"
-        v-html="title"
-      />
-      <NuxtLink
-        v-if="uid"
-        :to="`/cooperation-models/${uid}/`"
-        class="model-card__link"
-      >
-        →
-      </NuxtLink>
-    </div>
+    <NuxtLink
+      :to="`/cooperation-models/${uid}/`"
+      class="model-card__link"
+    >
+      <div class="model-card__animation">
+        <Lottie
+          :options="lottieOptions"
+          @animCreated="animCreatedHandler"
+        />
+      </div>
+      <div class="model-card__content">
+        <h3
+          class="model-card__title"
+          v-html="title"
+        />
+        <button
+          class="model-card__button"
+        >
+          <span v-html="'↓'" />
+        </button>
+      </div>
+    </NuxtLink>
   </div>
 </template>
 
@@ -127,10 +130,7 @@ export default {
   display: flex;
   flex-direction: column;
   background-color: $bgcolor--black-pale;
-  color: $text-color--white-primary;
   border-radius: 4px;
-  padding: 80px;
-  padding-bottom: 64px;
   &--full {
     grid-column: auto / span 2;
     .model-card {
@@ -145,10 +145,16 @@ export default {
     }
   }
   &:hover {
-    .model-card__link {
+    .model-card__button {
       background-color: $border-color--white;
       color: $text-color--black;
     }
+  }
+
+  &__link {
+    color: $text-color--white-primary;
+    padding: 80px;
+    padding-bottom: 64px;
   }
 
   &__animation {
@@ -171,8 +177,9 @@ export default {
     letter-spacing: -0.013em;
   }
 
-  &__link {
+  &__button {
     @include font('Inter', 16px, 400);
+    line-height: 1;
     margin-top: 56px;
     cursor: pointer;
     background: transparent;
@@ -181,11 +188,15 @@ export default {
     align-items: center;
     justify-content: center;
     width: 48px;
+    min-width: 48px;
     height: 48px;
     border-radius: 50%;
     border: 1px solid $border-color--white;
     color: $border-color--white;
     transition: all .3s ease;
+    span {
+      transform: rotate(-90deg); // right arrow is not supported by Inter font
+    }
     &:hover,
     &:focus,
     &--active {
@@ -207,12 +218,14 @@ export default {
   }
 
   &--temp-to-hire {
-    padding-top: 120px;
     /deep/ .model-card {
+      &__link {
+        padding-top: 120px;
+      }
       &__title span {
         color: $text-color--blue;
       }
-      &__link {
+      &__button {
         margin-top: 12%;
       }
       &__animation {
@@ -227,12 +240,14 @@ export default {
   }
 
   &--technical-assessment-and-consulting {
-    padding-top: 120px;
     /deep/ .model-card {
+      &__link {
+        padding-top: 120px;
+      }
       &__title span {
         color: $text-color--red-dark;
       }
-      &__link {
+      &__button {
         margin-top: 8%;
       }
       &__animation {
@@ -259,20 +274,27 @@ export default {
   }
 
   @media screen and (max-width: 1285px) {
-    padding: 38px;
+    &__link {
+      padding: 38px;
+    }
   }
 
   @media screen and (max-width: 1200px) {
-    padding: 32px;
     &--full {
-      padding: 32px;
-      padding-top: 64px;
       .model-card {
+        &__link {
+          padding: 32px;
+          padding-top: 64px;
+        }
         &__title {
           font-size: 30px;
           line-height: 37px;
         }
       }
+    }
+
+    &__link {
+      padding: 32px;
     }
 
     &__title {
@@ -283,17 +305,22 @@ export default {
 
   @media screen and (max-width: 768px) {
     grid-column: auto;
-    padding: 32px;
     &--full {
-      padding: 32px;
-      padding-bottom: 80px;
       grid-column: auto;
       .model-card {
+        &__link {
+          padding: 32px;
+          padding-bottom: 80px;
+        }
         &__content {
           text-align: left;
           align-items: flex-start;
         }
       }
+    }
+
+    &__link {
+      padding: 32px;
     }
   }
 }
