@@ -59,7 +59,7 @@ export default {
     }
 
     &_title {
-      @include title($text-color--blue, 36px, -0.02em)
+      @include title($text-color--blue-pale, 36px, -0.02em)
     }
   }
 
