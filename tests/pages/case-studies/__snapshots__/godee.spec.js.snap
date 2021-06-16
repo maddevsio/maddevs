@@ -25,7 +25,7 @@ exports[`GoDeeCase _uid component should render correctly 1`] = `
             class="row"
           >
             <div
-              class="header__left-nav_bar col-xl-6 col-lg-7"
+              class="header__left-nav_bar col"
             >
               <nuxtlink-stub
                 class="header__logo-icon"
@@ -95,6 +95,15 @@ exports[`GoDeeCase _uid component should render correctly 1`] = `
                 <nuxtlink-stub
                   class="header__navigation-link"
                   data-testid="test-navigation-link"
+                  to="/cooperation-models/"
+                >
+                  
+              Cooperation models
+            
+                </nuxtlink-stub>
+                <nuxtlink-stub
+                  class="header__navigation-link"
+                  data-testid="test-navigation-link"
                   to="/careers/"
                 >
                   
@@ -138,7 +147,7 @@ exports[`GoDeeCase _uid component should render correctly 1`] = `
             </div>
              
             <div
-              class="header__right-content col-xl-6 col-lg-5"
+              class="header__right-content col-auto"
             >
               <!---->
                

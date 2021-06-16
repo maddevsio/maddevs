@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModelOptimal component should render correctly 1`] = `
+<div>
+  <div
+    class="model-optimal"
+  >
+    <h2
+      class="model-optimal__title"
+    >
+      
+    Optimal model for:
+  
+    </h2>
+     
+    <!---->
+  </div>
+</div>
+`;

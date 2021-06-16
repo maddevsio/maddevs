@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModelProcess component should render correctly 1`] = `
+<div>
+  <div
+    class="model-process"
+  >
+    <h2
+      class="model-process__title"
+    >
+      
+    
+  
+    </h2>
+     
+    <!---->
+  </div>
+</div>
+`;
