@@ -16,9 +16,8 @@
           <span
             v-if="step.title === 'Extras'"
             class="model-process__step-count model-process__step-count--active"
-          >
-            ♥
-          </span>
+            v-html="'❤'"
+          />
           <span
             v-else
             class="model-process__step-count"
