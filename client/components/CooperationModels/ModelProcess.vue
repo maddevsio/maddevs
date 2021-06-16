@@ -134,5 +134,32 @@ export default {
       padding-bottom: 0;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 65px;
+    &__title {
+      font-size: 35px;
+      line-height: 45px;
+      letter-spacing: -1.4px;
+      padding-bottom: 35px;
+    }
+    &__step {
+      padding: 50px 0;
+      flex-direction: column;
+      &-meta {
+        margin-bottom: 20px;
+      }
+      &-title {
+        max-width: 100%;
+      }
+      &-text {
+        max-width: 100%;
+        font-size: 16px;
+        p {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
 }
 </style>
