@@ -6,12 +6,11 @@
           Explore more about the interaction process and choose a cooperation model that suits your business needs.
         </h2>
         <a
-          href="https://drive.google.com/file/d/1ZLxA5IR_d-GD_3JY1OooHE4gMQFDYcgi/view"
-          download="Download"
-          target="_blank"
+          href="/cooperation-models.pdf"
+          download
         >
           <UIButton>
-            Get presentation
+            Download PDF file
           </UIButton>
         </a>
       </div>
@@ -48,7 +47,9 @@ export default {
     color: $text-color--white-primary;
   }
   /deep/ .ui-button {
-    width: 197px;
+    padding-right: 28px;
+    padding-left: 28px;
+    min-width: 197px;
     height: 52px;
     margin-top: 60px;
     font-size: 18px;
