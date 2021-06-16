@@ -83,6 +83,7 @@ export default {
     &-image {
       overflow: hidden;
       width: 42px;
+      min-width: 42px;
       height: 42px;
       border-radius: 3px;
       background-color: $bgcolor--silver;
@@ -98,11 +99,86 @@ export default {
     &-name {
       font-weight: 500;
     }
+    &-position {
+      line-height: 23px;
+    }
     &-name,
     &-position {
       font-size: 15px;
-      line-height: 23px;
       letter-spacing: -0.013em;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &--featured {
+      .testimonial-block {
+        &__author {
+          margin-top: 22px;
+          &-image {
+            width: 42px;
+            min-width: 42px;
+            height: 42px;
+          }
+          &-name,
+          &-position {
+            font-size: 15px;
+          }
+        }
+        &__text {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 29px;
+          letter-spacing: -0.013em;
+        }
+      }
+    }
+    &__mark {
+      font-size: 22px;
+    }
+    &__text {
+      font-size: 21px;
+      line-height: 27px;
+    }
+    &__author {
+      margin-top: 14px;
+      &-image {
+        width: 26px;
+        min-width: 26px;
+        height: 26px;
+      }
+      &-name,
+      &-position {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    grid-column: auto;
+    &--featured {
+      grid-column: auto;
+      .testimonial-block {
+        &__author {
+          margin-top: 14px;
+          &-image {
+            width: 26px;
+            min-width: 26px;
+            height: 26px;
+          }
+          &-name,
+          &-position {
+            font-size: 12px;
+          }
+        }
+        &__text {
+          font-weight: 500;
+          font-size: 21px;
+          line-height: 27px;
+        }
+      }
+    }
+    &__mark {
+      font-size: 20px;
     }
   }
 }
