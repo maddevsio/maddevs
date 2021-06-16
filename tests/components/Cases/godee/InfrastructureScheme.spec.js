@@ -1,5 +1,6 @@
 import InfrastructureScheme from '@/components/Cases/godee/InfrastructureScheme.vue'
 import { render, screen } from '@testing-library/vue'
+import '../../../__mocks__/intersectionObserverMock'
 
 const mocks = {
   $getMediaFromS3: () => 'img.jpg',

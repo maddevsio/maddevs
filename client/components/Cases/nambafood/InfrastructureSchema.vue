@@ -6,13 +6,14 @@
       </h3>
     </section>
     <section class="container_full background-color-silver">
-      <img
-        :data-src="$getMediaFromS3('/images/Cases/nambafood/gif/website-and-mobile-apps-infrastructure-scheme.gif')"
-        class="case_gif case_website-and-mobile-apps-infrastructure-scheme-gif img_lazy"
-        alt="Namba Food: Website and Mobile App Infrastructure Scheme."
-        :width="817"
-        :height="615"
-      >
+      <div class="container_regular">
+        <Lottie
+          id="website-and-mobile-apps"
+          :options="options"
+          class="case_lottie"
+          @animCreated="handleAnimation"
+        />
+      </div>
     </section>
     <section class="container_regular">
       <TextParagraph class="m-24_top">
@@ -31,17 +32,46 @@
 
 <script>
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import Lottie from 'vue-lottie/src/lottie.vue'
+import playLottieMixin from '@/mixins/playLottieMixin'
+import animationData from '@/assets/lottie/nambafood/website-and-mobile-apps.json'
 
 export default {
   name: 'InfrastructureSchema',
   components: {
     TextParagraph,
+    Lottie,
   },
+
+  mixins: [playLottieMixin('website-and-mobile-apps', {
+    animationData,
+    autoplay: false,
+    loop: false,
+  })],
 }
 </script>
 
 <style scoped lang="scss">
-.text-center {
-  text-align: center;
-}
+  .case {
+    &_lottie {
+      max-width: 455px;
+      padding: 55px 0;
+      position: relative;
+      left: 45px;
+
+      @media screen and (max-width: 768px) {
+        padding: 35px 0;
+      }
+
+      @media screen and (max-width: 576px) {
+        max-width: 230px;
+        padding: 20px 0;
+        left: 16px;
+      }
+    }
+  }
+
+  .text-center {
+    text-align: center;
+  }
 </style>

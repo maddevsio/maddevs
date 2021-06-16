@@ -32,10 +32,13 @@ module.exports = {
   setupFiles: ['jest-canvas-mock'],
   coverageThreshold: {
     global: {
-      branches: 71,
+      branches: 70.96,
       statements: 87,
       functions: 83,
       lines: 88,
     },
   },
+  modulePathIgnorePatterns: [
+    '<rootDir>/cypress/',
+  ],
 }

@@ -63,6 +63,7 @@ export default {
   box-sizing: border-box;
   position: relative;
   background-color: $bgcolor--silver;
+  min-height: 543px;
   padding: 85px 105px;
   @media screen and (max-width: 1280px) {
     padding: 85px 40px;

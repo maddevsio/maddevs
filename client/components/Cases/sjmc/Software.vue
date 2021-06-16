@@ -16,14 +16,12 @@
       </TextParagraph>
     </section>
     <section class="container_full background-color-silver">
-      <div class="container_full case_full-screen-img">
-        <Picture
-          :width="1440"
-          :height="705"
-          folder="sjmc"
-          file="multimedia-management"
-          extension="jpg"
-          alt="The SJMC: Multimedia Management System."
+      <div class="container_regular">
+        <Lottie
+          id="multimedia-management"
+          class="case_lottie"
+          :options="options"
+          @animCreated="handleAnimation"
         />
       </div>
     </section>
@@ -68,18 +66,39 @@
 <script>
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
 import TextQuote from '@/components/Cases/shared/TextQuote'
-import Picture from '@/components/Cases/shared/Picture'
 import List from '@/components/Cases/shared/List'
 import ListItemDot from '@/components/Cases/shared/ListItemDot'
+import Lottie from 'vue-lottie/src/lottie.vue'
+import playLottieMixin from '@/mixins/playLottieMixin'
+import animationData from '@/assets/lottie/sjmc/multimedia-management.json'
 
 export default {
   name: 'Software',
   components: {
     TextParagraph,
     TextQuote,
-    Picture,
     List,
     ListItemDot,
+    Lottie,
   },
+
+  mixins: [playLottieMixin('multimedia-management', {
+    animationData,
+    autoplay: false,
+    loop: false,
+  })],
 }
 </script>
+
+<style lang="scss" scoped>
+  .case {
+    &_lottie {
+      max-width: 642px;
+      padding: 35px 0;
+
+      @media screen and (max-width: 460px) {
+        padding: 20px 0;
+      }
+    }
+  }
+</style>
