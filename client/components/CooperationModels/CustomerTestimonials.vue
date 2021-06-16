@@ -62,6 +62,14 @@ export default {
 
   @media screen and (max-width: 1024px) {
     padding: 39px 0 65px;
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -0.05em;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
     &__grid {
       margin-top: 36px;
       grid-gap: 56px 35px;
@@ -69,12 +77,6 @@ export default {
   }
 
   @media screen and (max-width: 680px) {
-    padding: 39px 0 65px;
-    &__title {
-      font-size: 40px;
-      line-height: 40px;
-      letter-spacing: -0.05em;
-    }
     &__grid {
       grid-template-columns: 1fr;
       grid-gap: 53px;

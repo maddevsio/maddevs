@@ -55,5 +55,24 @@ export default {
     font-weight: 400;
     letter-spacing: -0.02em;
   }
+
+  @media screen and (max-width: 1024px) {
+    padding: 123px 0 110px;
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 77px 0 105px;
+    &__content {
+      text-align: left;
+    }
+    /deep/ .ui-button {
+      margin-top: 44px;
+      font-size: 16px;
+    }
+  }
 }
 </style>
