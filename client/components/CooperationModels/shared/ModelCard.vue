@@ -102,9 +102,10 @@ export default {
 
     handleCardAnimation() {
       const rect = this.$refs.card.getBoundingClientRect()
+      const screenPercent = window.innerWidth < 768 ? 50 : this.startAnimationOnScreenPercent
 
       if (rect.top >= 0 && rect.top <= window.innerHeight) {
-        const startArea = (window.innerHeight / 100) * this.startAnimationOnScreenPercent
+        const startArea = (window.innerHeight / 100) * screenPercent
 
         if (rect.top <= (window.innerHeight - startArea) && !this.animationPlayed) {
           this.animationIsPlayed = true
