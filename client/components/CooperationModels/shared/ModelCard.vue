@@ -210,6 +210,9 @@ export default {
       &__title span {
         color: $text-color--blue;
       }
+      &__link {
+        margin-top: 12%;
+      }
       &__animation {
         width: 100%;
         position: absolute;
@@ -226,6 +229,9 @@ export default {
     /deep/ .model-card {
       &__title span {
         color: $text-color--red-dark;
+      }
+      &__link {
+        margin-top: 8%;
       }
       &__animation {
         width: 92%;
@@ -247,6 +253,45 @@ export default {
   &--transferring-a-project /deep/ .model-card {
     &__title span {
       color: $text-color--purple;
+    }
+  }
+
+  @media screen and (max-width: 1285px) {
+    padding: 38px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding: 32px;
+    &--full {
+      padding: 32px;
+      padding-top: 64px;
+      .model-card {
+        &__title {
+          font-size: 30px;
+          line-height: 37px;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-column: auto;
+    padding: 32px;
+    &--full {
+      padding: 32px;
+      padding-bottom: 80px;
+      grid-column: auto;
+      .model-card {
+        &__content {
+          text-align: left;
+          align-items: flex-start;
+        }
+      }
     }
   }
 }
