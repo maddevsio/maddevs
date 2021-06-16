@@ -57,5 +57,17 @@ export default {
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 44px 0 65px;
+    &__title {
+      font-size: 35px;
+      line-height: 45px;
+      letter-spacing: -1.4px;
+    }
+    &__list-item {
+      font-size: 16px;
+    }
+  }
 }
 </style>
