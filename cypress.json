@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://localhost:3000/",
+  "pluginsFile": "cypress/plugins/index.js",
+  "screenshotsFolder": false,
+  "supportFile": false,
+  "video": false,
+  "fixtures": false
+}

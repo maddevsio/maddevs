@@ -21,4 +21,5 @@ jobs:
     - run: npm run test:staging
       env:
         NODE_JEST_COVERAGE_SLACK_WEBHOOK_URL: ${{ secrets.JEST_COVERAGE_SLACK_WEBHOOK_URL }}
+        NODE_CYPRESS_BASE_URL: http://maddevs.co/
         CI: true
