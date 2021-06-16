@@ -80,7 +80,11 @@ export default {
   },
 
   mounted() {
-    document.addEventListener('scroll', this.handleCardAnimation)
+    window.addEventListener('scroll', this.handleCardAnimation)
+  },
+
+  destroyed() {
+    window.removeEventListener('scroll', this.handleCardAnimation)
   },
 
   methods: {
