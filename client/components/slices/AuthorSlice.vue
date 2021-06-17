@@ -6,6 +6,8 @@
     <div class="author-slice__info">
       <div class="author-slice__image">
         <img
+          width="64"
+          height="64"
           :data-src="blogAuthor.image.url"
           :alt="blogAuthor.image.alt"
           class="img_lazy"
