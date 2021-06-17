@@ -3,7 +3,7 @@
     <div class="container">
       <div class="presentation__content">
         <h2 class="presentation__title">
-          Explore more about the interaction process and choose a cooperation model that suits your business needs.
+          Explore more about the interaction process and choose a delivery model that suits your business needs.
         </h2>
         <a
           href="/cooperation-models.pdf"

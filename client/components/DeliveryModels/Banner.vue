@@ -7,7 +7,7 @@
     <div class="container">
       <div class="banner__content">
         <h1 class="banner__title">
-          Cooperation <br> models
+          Delivery <br> models
         </h1>
         <p class="banner__subtitle">
           At Mad Devs, we provide a full range of services aimed at delivering long-term value for both our customers and end users.

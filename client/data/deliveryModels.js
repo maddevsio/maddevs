@@ -225,7 +225,7 @@ export const deliveryModels = {
     animationName: 'transfer',
     startAnimationOnScreenPercent: 82,
     title: 'Protect intellectual property while <span>transferring a project</span> to another IT partner.',
-    subtitle: 'The main aim of the cooperation is to prepare the customer’s project for transfer to another IT team.',
+    subtitle: 'The main aim of the delivery is to prepare the customer’s project for transfer to another IT team.',
     optimalModelFor: [
       'Companies facing disappointing performance and ruined relationships with the current IT contractor.',
       'Companies whose end results bring no value to their owners or to end users.',
