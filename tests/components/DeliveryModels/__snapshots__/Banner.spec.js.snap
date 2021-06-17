@@ -20,7 +20,7 @@ exports[`Banner component should render correctly 1`] = `
           class="banner__title"
         >
           
-        Cooperation 
+        Delivery 
           <br />
            models
       
