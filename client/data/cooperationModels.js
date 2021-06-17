@@ -269,7 +269,7 @@ export const testimonials = [
     author: {
       name: 'Duc Nguyen',
       position: 'Former CEO, Topica Group',
-      image: 'daniel',
+      image: 'duc',
     },
   },
   {
@@ -293,7 +293,7 @@ export const testimonials = [
     author: {
       name: 'Moktar Alqaderi',
       position: 'CEO, Progressay',
-      image: 'daniel',
+      image: 'moktar',
     },
   },
 ]
