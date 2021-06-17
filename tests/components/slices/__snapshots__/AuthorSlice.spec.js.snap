@@ -15,6 +15,8 @@ exports[`AuthorSlice component should render correctly 1`] = `
           alt="alt"
           class="img_lazy"
           data-src="someurl"
+          height="64"
+          width="64"
         />
       </div>
        
