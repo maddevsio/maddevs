@@ -21,7 +21,7 @@ exports[`Presentation component should render correctly 1`] = `
          
         <a
           download=""
-          href="/cooperation-models.pdf"
+          href="/delivery-models.pdf"
         >
           <button
             class="ui-button"
