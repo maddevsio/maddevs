@@ -92,8 +92,9 @@ export default {
       img {
         display: block;
         font-size: 12px;
-        width: 100%;
-        height: 100%;
+        width: calc(100% + 1px);
+        height: calc(100% + 1px);
+        margin-top: -1px;
         object-fit: cover;
       }
     }
