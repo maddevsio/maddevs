@@ -26,7 +26,7 @@
               class="header__logo-icon"
             >
               <HeaderLogo
-                :is-show-text="logoTextActive"
+                :is-show-text="logoTextIsActive"
                 :is-case-page="isCasePage"
                 :is-active-mobile-menu="isActiveMobileMenu"
                 class="header__header-logo"
@@ -187,8 +187,8 @@ export default {
       return this.navigation
     },
 
-    logoTextActive() {
-      return this.showLogoText && !this.$nuxt.$route.path.includes('/cooperation-models')
+    logoTextIsActive() {
+      return this.showLogoText && this.$nuxt.$route.name !== 'cooperation-models'
     },
 
     isGodeePage() {
