@@ -183,12 +183,12 @@ export default {
 
   computed: {
     filteredNavigation() {
-      if (!featureFlag('cooperationModels')) return this.navigation.filter(({ link }) => link !== '/cooperation-models/')
+      if (!featureFlag('deliveryModels')) return this.navigation.filter(({ link }) => link !== '/delivery-models/')
       return this.navigation
     },
 
     logoTextIsActive() {
-      return this.showLogoText && this.$nuxt.$route.name !== 'cooperation-models'
+      return this.showLogoText && this.$nuxt.$route.name !== 'delivery-models'
     },
 
     isGodeePage() {
@@ -522,7 +522,7 @@ export default {
     opacity: 1;
   }
 
-  @media screen and (max-width: 1135px) {
+  @media screen and (max-width: 1120px) {
     height: 48px;
     padding: 0;
   }
@@ -572,7 +572,7 @@ export default {
   opacity: 0;
 }
 
-@media screen and (max-width: 1135px) {
+@media screen and (max-width: 1120px) {
   .header {
     max-height: 26px;
 

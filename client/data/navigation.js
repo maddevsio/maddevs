@@ -66,8 +66,8 @@ export const headerNavigation = [
     link: '/projects/',
   },
   {
-    title: 'Cooperation models',
-    link: '/cooperation-models/',
+    title: 'Delivery models',
+    link: '/delivery-models/',
   },
   {
     title: 'Careers',

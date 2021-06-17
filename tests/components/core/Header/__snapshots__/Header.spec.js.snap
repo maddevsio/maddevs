@@ -110,10 +110,10 @@ exports[`Header component should render correctly 1`] = `
               <nuxtlink-stub
                 class="header__navigation-link"
                 data-testid="test-navigation-link"
-                to="/cooperation-models/"
+                to="/delivery-models/"
               >
                 
-              Cooperation models
+              Delivery models
             
               </nuxtlink-stub>
               <nuxtlink-stub
