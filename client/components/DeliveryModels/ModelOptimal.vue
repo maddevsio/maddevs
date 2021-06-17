@@ -45,6 +45,7 @@ export default {
     &-item {
       @include font('Inter', 17px, 400);
       display: flex;
+      align-items: flex-start;
       line-height: 25px;
       letter-spacing: -0.013em;
       margin-bottom: 20px;
@@ -52,8 +53,9 @@ export default {
         margin-bottom: 0;
       }
       &::before {
-        content: '⟶';
-        margin-right: 7px;
+        content: '↓'; // right arrow is not supported by Inter font
+        transform: rotate(-90deg);
+        margin-right: 10px;
       }
     }
   }
