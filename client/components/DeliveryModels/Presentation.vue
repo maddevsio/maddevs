@@ -6,7 +6,7 @@
           Explore more about the interaction process and choose a delivery model that suits your business needs.
         </h2>
         <a
-          href="/cooperation-models.pdf"
+          href="/delivery-models.pdf"
           download
         >
           <UIButton>

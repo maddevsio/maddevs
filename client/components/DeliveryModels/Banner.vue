@@ -2,6 +2,7 @@
   <div class="banner">
     <img
       :data-src="$getMediaFromS3('/images/CooperationModels/banner.jpg')"
+      alt=""
       class="banner__image media_lazy"
     >
     <div class="container">

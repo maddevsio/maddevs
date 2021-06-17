@@ -6,6 +6,7 @@ exports[`Banner component should render correctly 1`] = `
     class="banner"
   >
     <img
+      alt=""
       class="banner__image media_lazy"
       data-src="img.jpg"
     />
