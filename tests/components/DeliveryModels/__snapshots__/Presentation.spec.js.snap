@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Presentation component should render correctly 1`] = `
+<div>
+  <div
+    class="presentation"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="presentation__content"
+      >
+        <h2
+          class="presentation__title"
+        >
+          
+        Explore more about the interaction process and choose a delivery model that suits your business needs.
+      
+        </h2>
+         
+        <a
+          download=""
+          href="/delivery-models.pdf"
+        >
+          <button
+            class="ui-button"
+            style="position: relative; overflow: hidden;"
+          >
+            
+          Download presentation
+        
+            <div
+              class="wave"
+            />
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

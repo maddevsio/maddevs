@@ -20,13 +20,13 @@
         class="container"
       >
         <div class="row">
-          <div class="header__left-nav_bar col-xl-6 col-lg-7">
+          <div class="header__left-nav_bar col">
             <NuxtLink
               :to="`/`"
               class="header__logo-icon"
             >
               <HeaderLogo
-                :is-show-text="showLogoText"
+                :is-show-text="logoTextIsActive"
                 :is-case-page="isCasePage"
                 :is-active-mobile-menu="isActiveMobileMenu"
                 class="header__header-logo"
@@ -34,7 +34,7 @@
             </NuxtLink>
             <nav class="header__header-routes_links">
               <NuxtLink
-                v-for="{ title, link, exact } in navigation"
+                v-for="{ title, link, exact } in filteredNavigation"
                 :key="link"
                 :exact="exact"
                 class="header__navigation-link"
@@ -89,7 +89,7 @@
             </div>
             <!-- END Burget btn -->
           </div>
-          <div class="header__right-content col-xl-6 col-lg-5">
+          <div class="header__right-content col-auto">
             <button
               v-if="isBlogPage"
               class="header__search-btn"
@@ -156,6 +156,8 @@ import Modal from '@/components/core/Modal'
 import ModalSearch from '@/components/core/modals/ModalSearch'
 import { headerNavigation as navigation } from '@/data/navigation'
 
+import featureFlag from '@/featureFlags/featureFlag'
+
 export default {
   name: 'MainHeader',
   components: {
@@ -180,6 +182,15 @@ export default {
   },
 
   computed: {
+    filteredNavigation() {
+      if (!featureFlag('deliveryModels')) return this.navigation.filter(({ link }) => link !== '/delivery-models/')
+      return this.navigation
+    },
+
+    logoTextIsActive() {
+      return this.showLogoText && this.$nuxt.$route.name !== 'delivery-models'
+    },
+
     isGodeePage() {
       return this.$nuxt.$route.path.includes('/godee')
     },
@@ -328,7 +339,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
+@import '@/assets/styles/_vars';
 
 .header {
   width: 100%;
@@ -365,14 +376,8 @@ export default {
     padding: 10px;
     cursor: pointer;
 
-    @media screen and (max-width: 1140px) {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    @media screen and (max-width: 1090px) {
-      left: -30px;
+    @media screen and (max-width: 1160px) {
+      margin-right: 10px;
     }
 
     img {
@@ -385,6 +390,14 @@ export default {
     width: 34px;
     height: 58px;
     margin: -3px -33px 0 -65px;
+  }
+
+  &__left-nav_bar {
+    padding-right: 0;
+  }
+
+  &__right-content {
+    padding-left: 0;
   }
 
   &__left-nav_bar,
@@ -426,11 +439,16 @@ export default {
 
   &__navigation-link {
     margin-right: 15px;
-
+    &:last-of-type {
+      margin-right: 0;
+    }
     &::after {
       @include font('Inter', 17px, 400);
       content: '↓';
       color: transparent;
+    }
+    @media screen and (max-width: 1280px) {
+      margin-right: 10px;
     }
   }
 
@@ -455,7 +473,7 @@ export default {
       margin-right: 33px;
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1180px) {
       margin-right: 20px;
     }
   }
@@ -504,7 +522,7 @@ export default {
     opacity: 1;
   }
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1120px) {
     height: 48px;
     padding: 0;
   }
@@ -554,7 +572,7 @@ export default {
   opacity: 0;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1120px) {
   .header {
     max-height: 26px;
 
@@ -579,8 +597,10 @@ export default {
 
       .header__search-btn {
         display: block;
+        margin: 0;
+        position: absolute;
         left: auto;
-        right: 66px;
+        right: 85px;
         top: 2px;
       }
     }

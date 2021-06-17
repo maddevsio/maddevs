@@ -49,6 +49,15 @@ exports[`MobileHeader component should render correctly 1`] = `
             <nuxtlink-stub
               class="mobile-header__nav-link"
               data-testid="test-header-nav-link"
+              to="/delivery-models/"
+            >
+              
+            Delivery models
+          
+            </nuxtlink-stub>
+            <nuxtlink-stub
+              class="mobile-header__nav-link"
+              data-testid="test-header-nav-link"
               to="/careers/"
             >
               

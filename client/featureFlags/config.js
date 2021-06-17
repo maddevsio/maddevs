@@ -4,6 +4,6 @@
  * Available environments - [development, staging, production]
  */
 export const config = {
-  careersPosition: ['development', 'staging'],
+  deliveryModels: ['development', 'staging'],
   careersPageAnimations: ['development', 'staging'],
 }

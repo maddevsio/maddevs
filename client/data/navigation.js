@@ -66,6 +66,10 @@ export const headerNavigation = [
     link: '/projects/',
   },
   {
+    title: 'Delivery models',
+    link: '/delivery-models/',
+  },
+  {
     title: 'Careers',
     link: '/careers/',
   },

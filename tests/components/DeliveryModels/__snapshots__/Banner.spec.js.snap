@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner component should render correctly 1`] = `
+<div>
+  <div
+    class="banner"
+  >
+    <picture>
+      <source
+        class="banner__image media_lazy"
+        srcset="img.jpg ,img.jpg"
+        type="image/webp"
+      />
+       
+      <img
+        alt=""
+        class="banner__image media_lazy"
+        src="img.jpg"
+        srcset="img.jpg"
+      />
+    </picture>
+     
+    <div
+      class="container"
+    >
+      <div
+        class="banner__content"
+      >
+        <h1
+          class="banner__title"
+        >
+          
+        Delivery 
+          <br />
+           models
+      
+        </h1>
+         
+        <p
+          class="banner__subtitle"
+        >
+          
+        At Mad Devs, we provide a full range of services aimed at delivering long-term value for both our customers and end users.
+      
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

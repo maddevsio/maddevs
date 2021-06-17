@@ -12,24 +12,47 @@
       </TextParagraph>
     </section>
     <section class="container_full background-color-silver">
-      <img
-        :data-src="$getMediaFromS3('/images/Cases/nambafood/gif/high-level-system-overview.gif')"
-        class="case_gif case_high-level-system-overview-gif img_lazy"
-        alt="Namba Food: Website and Mobile App Infrastructure Scheme."
-        :width="817"
-        :height="776"
-      >
+      <div class="container_regular">
+        <Lottie
+          id="high-level-system-overview"
+          :options="options"
+          class="case_lottie"
+          @animCreated="handleAnimation"
+        />
+      </div>
     </section>
   </section>
 </template>
 
 <script>
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import Lottie from 'vue-lottie/src/lottie.vue'
+import playLottieMixin from '@/mixins/playLottieMixin'
+import animationData from '@/assets/lottie/nambafood/high-level-system-overview.json'
 
 export default {
   name: 'SystemOverview',
   components: {
     TextParagraph,
+    Lottie,
   },
+
+  mixins: [playLottieMixin('high-level-system-overview', {
+    animationData,
+    autoplay: false,
+    loop: false,
+  })],
 }
 </script>
+
+<style lang="scss" scoped>
+  .case {
+    &_lottie {
+      padding: 55px 0;
+
+      @media screen and (max-width: 768px) {
+        padding: 35px 0;
+      }
+    }
+  }
+</style>
