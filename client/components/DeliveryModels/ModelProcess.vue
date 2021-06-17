@@ -15,7 +15,7 @@
         <div class="model-process__step-meta">
           <span
             v-if="step.title === 'Extras'"
-            class="model-process__step-count model-process__step-count--active"
+            class="model-process__step-count model-process__step-count--extra"
             v-html="'❤'"
           />
           <span
@@ -26,7 +26,7 @@
           </span>
           <p
             class="model-process__step-title"
-            :class="step.title === 'Extras' ? 'model-process__step-title--active' : null"
+            :class="step.title === 'Extras' ? 'model-process__step-title--extra' : null"
           >
             {{ step.title }}
           </p>
@@ -100,7 +100,7 @@ export default {
       line-height: 20px;
       letter-spacing: -0.013em;
       border-radius: 50%;
-      &--active {
+      &--extra {
         color: $text-color--red;
         border-color: $border-color--red;
       }
@@ -110,7 +110,7 @@ export default {
       line-height: 29px;
       letter-spacing: -0.013em;
       max-width: 197px;
-      &--active {
+      &--extra {
         color: $text-color--red;
       }
     }
@@ -153,6 +153,9 @@ export default {
       }
       &-count {
         font-size: 13px;
+        &--extra {
+          font-size: 11px;
+        }
       }
       &-text {
         max-width: 100%;
