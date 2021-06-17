@@ -1,10 +1,18 @@
 <template>
   <div class="banner">
-    <img
-      :data-src="$getMediaFromS3('/images/CooperationModels/banner.jpg')"
-      alt=""
-      class="banner__image media_lazy"
-    >
+    <picture>
+      <source
+        :srcset="[$getMediaFromS3('/images/DeliveryModels/webp/banner.webp') + ' ', $getMediaFromS3('/images/DeliveryModels/webp/banner@2x.webp 2x')]"
+        type="image/webp"
+        class="banner__image media_lazy"
+      >
+      <img
+        :srcset="$getMediaFromS3('/images/DeliveryModels/jpg/banner@2x.jpg')"
+        :src="$getMediaFromS3('/images/DeliveryModels/jpg/banner.jpg')"
+        class="banner__image media_lazy"
+        alt=""
+      >
+    </picture>
     <div class="container">
       <div class="banner__content">
         <h1 class="banner__title">
