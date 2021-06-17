@@ -74,6 +74,7 @@ export default {
   }
 
   @media screen and (max-width: 768px) {
+    padding: 105px 0 85px;
     &__title {
       font-size: 52px;
       line-height: 64px;
