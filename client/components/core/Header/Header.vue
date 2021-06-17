@@ -26,7 +26,7 @@
               class="header__logo-icon"
             >
               <HeaderLogo
-                :is-show-text="showLogoText"
+                :is-show-text="logoTextIsActive"
                 :is-case-page="isCasePage"
                 :is-active-mobile-menu="isActiveMobileMenu"
                 class="header__header-logo"
@@ -185,6 +185,10 @@ export default {
     filteredNavigation() {
       if (!featureFlag('cooperationModels')) return this.navigation.filter(({ link }) => link !== '/cooperation-models/')
       return this.navigation
+    },
+
+    logoTextIsActive() {
+      return this.showLogoText && this.$nuxt.$route.name !== 'cooperation-models'
     },
 
     isGodeePage() {
@@ -518,7 +522,7 @@ export default {
     opacity: 1;
   }
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1135px) {
     height: 48px;
     padding: 0;
   }

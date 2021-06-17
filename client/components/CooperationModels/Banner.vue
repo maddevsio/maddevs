@@ -66,6 +66,10 @@ export default {
     color: $text-color--silver;
   }
 
+  @media screen and (max-width: 1135px) {
+    margin-top: 48px;
+  }
+
   @media screen and (max-width: 1024px) {
     &__title {
       font-size: 76px;

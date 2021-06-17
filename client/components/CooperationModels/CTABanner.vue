@@ -3,7 +3,8 @@
     <UIBanner
       title="Build your product <br /> with Mad Devs"
       text="Together we build solutions that bring digital innovation."
-      :image="require(`@/assets/img/CooperationModels/png/tamara.png`)"
+      :image="require(`@/assets/img/CooperationModels/png/Tamara.png`)"
+      :image2x="require(`@/assets/img/CooperationModels/png/Tamara@2x.png`)"
       image-alt-text="Tamara"
       man-name="Tamara Mun"
       man-position="Delivery Manager"
@@ -37,11 +38,19 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/_vars';
 
-.cta-banner {
-  &_container {
-    padding-bottom: 119px;
-    @media screen and (max-width: 768px) {
-      padding-bottom: 44px;
+.cta-banner_container {
+  padding-bottom: 119px;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 44px;
+  }
+
+  /deep/ .cta-banner {
+    min-height: 543px;
+    @media screen and (max-width: 1180px) {
+      min-height: 490px;
+    }
+    @media screen and (max-width: 992px) {
+      min-height: 450px;
     }
   }
 
@@ -55,5 +64,6 @@ export default {
       font-size: 16px;
     }
   }
+
 }
 </style>

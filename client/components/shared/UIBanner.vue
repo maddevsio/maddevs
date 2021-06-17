@@ -10,6 +10,7 @@
       height="490"
       class="cta-banner__image"
       :src="image"
+      :srcset="image2x"
       :alt="imageAltText"
     >
     <div class="cta-banner__man">
@@ -38,6 +39,11 @@ export default {
       default: '',
     },
 
+    image2x: {
+      type: String,
+      default: null,
+    },
+
     imageAltText: {
       type: String,
       default: '',
@@ -63,7 +69,6 @@ export default {
   box-sizing: border-box;
   position: relative;
   background-color: $bgcolor--silver;
-  min-height: 543px;
   padding: 85px 105px;
   @media screen and (max-width: 1280px) {
     padding: 85px 40px;
