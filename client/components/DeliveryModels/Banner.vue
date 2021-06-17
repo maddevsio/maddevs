@@ -1,7 +1,7 @@
 <template>
   <div class="banner">
     <img
-      :data-src="$getMediaFromS3('/images/DeliveryModels/banner.jpg')"
+      :data-src="$getMediaFromS3('/images/CooperationModels/banner.jpg')"
       class="banner__image media_lazy"
     >
     <div class="container">
@@ -66,7 +66,7 @@ export default {
     color: $text-color--silver;
   }
 
-  @media screen and (max-width: 1135px) {
+  @media screen and (max-width: 1120px) {
     margin-top: 48px;
   }
 

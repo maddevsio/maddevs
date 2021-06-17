@@ -522,7 +522,7 @@ export default {
     opacity: 1;
   }
 
-  @media screen and (max-width: 1135px) {
+  @media screen and (max-width: 1120px) {
     height: 48px;
     padding: 0;
   }
@@ -572,7 +572,7 @@ export default {
   opacity: 0;
 }
 
-@media screen and (max-width: 1135px) {
+@media screen and (max-width: 1120px) {
   .header {
     max-height: 26px;
 
