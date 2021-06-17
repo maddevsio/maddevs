@@ -5,11 +5,20 @@ exports[`Banner component should render correctly 1`] = `
   <div
     class="banner"
   >
-    <img
-      alt=""
-      class="banner__image media_lazy"
-      data-src="img.jpg"
-    />
+    <picture>
+      <source
+        class="banner__image media_lazy"
+        srcset="img.jpg ,img.jpg"
+        type="image/webp"
+      />
+       
+      <img
+        alt=""
+        class="banner__image media_lazy"
+        src="img.jpg"
+        srcset="img.jpg"
+      />
+    </picture>
      
     <div
       class="container"
