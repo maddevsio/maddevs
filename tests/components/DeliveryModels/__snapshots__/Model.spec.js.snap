@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Model component should render correctly 1`] = `
+<div>
+  <div
+    class="delivery-model"
+  >
+    <div
+      class="container delivery-model__container"
+    >
+      <modelbanner-stub
+        subtitle=""
+        title=""
+        uid=""
+      />
+    </div>
+     
+    <div
+      class="delivery-model--bg-white"
+    >
+      <div
+        class="container delivery-model__container"
+      >
+        <modeloptimal-stub
+          listitems=""
+        />
+         
+        <modelprocess-stub
+          steps=""
+          title=""
+        />
+      </div>
+       
+      <ctabanner-stub />
+    </div>
+  </div>
+</div>
+`;

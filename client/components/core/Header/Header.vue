@@ -183,12 +183,12 @@ export default {
 
   computed: {
     filteredNavigation() {
-      if (!featureFlag('cooperationModels')) return this.navigation.filter(({ link }) => link !== '/cooperation-models/')
+      if (!featureFlag('deliveryModels')) return this.navigation.filter(({ link }) => link !== '/delivery-models/')
       return this.navigation
     },
 
     logoTextIsActive() {
-      return this.showLogoText && this.$nuxt.$route.name !== 'cooperation-models'
+      return this.showLogoText && this.$nuxt.$route.name !== 'delivery-models'
     },
 
     isGodeePage() {
