@@ -1,19 +1,31 @@
 <template>
-  <InfrastructureAuditForm @success="handleSuccess" />
+  <Modal ref="modalInfrastructureAudit">
+    <InfrastructureAuditForm @success="handleSuccess" />
+  </Modal>
 </template>
 
 <script>
+import Modal from '@/components/core/Modal'
 import InfrastructureAuditForm from '@/components/core/forms/InfrastructureAuditForm'
 
 export default {
   name: 'ModalInfrastructureAudit',
   components: {
+    Modal,
     InfrastructureAuditForm,
   },
 
   methods: {
     handleSuccess() {
-      this.$parent.$emit('success')
+      this.$refs.modalInfrastructureAudit.close()
+    },
+
+    show() {
+      this.$refs.modalInfrastructureAudit.show()
+    },
+
+    close() {
+      this.$refs.modalInfrastructureAudit.close()
     },
   },
 }
