@@ -26,13 +26,8 @@
         />
       </div>
     </div>
-
-    <Modal ref="modalTeams">
-      <ModalTeams />
-    </Modal>
-    <Modal ref="modalIndividuals">
-      <ModalIndividuals />
-    </Modal>
+    <ModalTeams ref="modalTeams" />
+    <ModalIndividuals ref="modalIndividuals" />
   </section>
 </template>
 
@@ -40,7 +35,6 @@
 import RemoteTechStaffContent from '@/components/Services/RemoteTechStaffContent'
 import ModalTeams from '@/components/core/modals/ModalTeams'
 import ModalIndividuals from '@/components/core/modals/ModalIndividuals'
-import Modal from '@/components/core/Modal'
 
 export default {
   name: 'RemoteTechStaff',
@@ -48,7 +42,6 @@ export default {
     RemoteTechStaffContent,
     ModalTeams,
     ModalIndividuals,
-    Modal,
   },
 
   data() {
