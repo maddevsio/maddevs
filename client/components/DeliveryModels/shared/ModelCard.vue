@@ -3,7 +3,7 @@
     v-if="uid"
     ref="card"
     class="model-card"
-    :class="[`model-card--${uid}`, full ? 'model-card--full' : '']"
+    :class="[`model-card--${className}`, full ? 'model-card--full' : '']"
   >
     <NuxtLink
       :to="`/delivery-models/${uid}/`"
@@ -48,6 +48,11 @@ export default {
     uid: {
       type: String,
       required: true,
+    },
+
+    className: {
+      type: String,
+      default: '',
     },
 
     title: {
@@ -211,13 +216,13 @@ export default {
     }
   }
 
-  &--augmented-staff-members /deep/ .model-card {
+  &--staff-augmentation /deep/ .model-card {
     &__title span {
       color: $text-color--red-dark;
     }
   }
 
-  &--dedicated-project-based-team /deep/ .model-card {
+  &--dedicated-team /deep/ .model-card {
     &__title span {
       color: $text-color--yellow;
     }
@@ -245,7 +250,7 @@ export default {
     }
   }
 
-  &--technical-assessment-and-consulting {
+  &--technical-assessment {
     /deep/ .model-card {
       &__link {
         padding-top: 120px;
@@ -267,13 +272,13 @@ export default {
     }
   }
 
-  &--effective-team-supervision /deep/ .model-card {
+  &--team-supervision /deep/ .model-card {
     &__title span {
       color: $text-color--green-pale;
     }
   }
 
-  &--transferring-a-project /deep/ .model-card {
+  &--transferring-projects /deep/ .model-card {
     &__title span {
       color: $text-color--purple;
     }
