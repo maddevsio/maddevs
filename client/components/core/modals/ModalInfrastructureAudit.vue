@@ -17,7 +17,7 @@ export default {
 
   methods: {
     handleSuccess() {
-      this.$refs.modalInfrastructureAudit.close()
+      this.close()
     },
 
     show() {

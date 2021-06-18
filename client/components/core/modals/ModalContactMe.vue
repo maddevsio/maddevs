@@ -17,7 +17,7 @@ export default {
 
   methods: {
     handleSuccess() {
-      this.$refs.modalContactMe.close()
+      this.close()
     },
 
     show() {
