@@ -46,22 +46,18 @@
         @click="$refs.modalOrderProjectFromUs.show()"
       />
     </div>
-    <Modal ref="modalOrderProjectFromUs">
-      <ModalOrderProjectFromUs />
-    </Modal>
+    <ModalOrderProjectFromUs ref="modalOrderProjectFromUs" />
   </section>
 </template>
 
 <script>
 import { steps } from '@/data/quickProjectStart'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
-import Modal from '@/components/core/Modal'
 
 export default {
   name: 'QuickProjectStart',
   components: {
     UIModalTriggerButton,
-    Modal,
     ModalOrderProjectFromUs: () => import('@/components/core/modals/ModalOrderProjectFromUs'),
   },
 
