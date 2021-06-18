@@ -1,5 +1,5 @@
 export const deliveryModels = {
-  'augmented-staff-members': {
+  'staff-augmentation': {
     animationName: 'staff',
     animationSpeed: 0.7,
     startAnimationOnScreenPercent: 20,
@@ -44,7 +44,7 @@ export const deliveryModels = {
       ],
     },
   },
-  'dedicated-project-based-team': {
+  'dedicated-team': {
     animationName: 'dedicated',
     animationSpeed: 1,
     startAnimationOnScreenPercent: 77,
@@ -139,7 +139,7 @@ export const deliveryModels = {
       ],
     },
   },
-  'technical-assessment-and-consulting': {
+  'technical-assessment': {
     animationName: 'technicalAssessment',
     animationSpeed: 0.75,
     startAnimationOnScreenPercent: 60,
@@ -186,7 +186,7 @@ export const deliveryModels = {
       ],
     },
   },
-  'effective-team-supervision': {
+  'team-supervision': {
     animationName: 'boost',
     animationSpeed: 0.7,
     startAnimationOnScreenPercent: 20,
@@ -226,7 +226,7 @@ export const deliveryModels = {
       ],
     },
   },
-  'transferring-a-project': {
+  'transferring-projects': {
     animationName: 'transfer',
     animationSpeed: 0.9,
     startAnimationOnScreenPercent: 77,
