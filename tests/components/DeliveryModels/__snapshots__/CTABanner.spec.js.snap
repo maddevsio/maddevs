@@ -20,12 +20,7 @@ exports[`CTABanner component should render correctly 1`] = `
       </uibutton-stub>
     </uibanner-stub>
      
-    <transition-stub
-      mode="out-in"
-      name="main-fade"
-    >
-      <!---->
-    </transition-stub>
+    <!---->
   </div>
 </div>
 `;
