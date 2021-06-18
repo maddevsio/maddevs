@@ -3,7 +3,7 @@
 exports[`ModelCard component should render correctly 1`] = `
 <div>
   <div
-    class="model-card model-card--uid"
+    class="model-card model-card--"
   >
     <nuxtlink
       class="model-card__link"

@@ -11,6 +11,7 @@
 import Model from '@/components/DeliveryModels/Model'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { deliveryModels } from '@/data/deliveryModels'
+import { buildHead, getMetadata } from '@/data/seo'
 
 import featureFlag from '@/featureFlags/featureFlag'
 
@@ -23,7 +24,6 @@ export default {
   mixins: [initLazyLoadMixin],
 
   asyncData({ params, error }) {
-    const openGraphUrl = `${process.env.domain}/delivery-models/${params.uid}/`
     const model = deliveryModels[params.uid]
 
     if (!featureFlag('deliveryModels')) return error({ statusCode: 404, message: 'Page not found' })
@@ -31,10 +31,13 @@ export default {
       return {
         uid: params.uid,
         model,
-        openGraphUrl,
       }
     }
     return error({ statusCode: 404, message: 'Page not found' })
+  },
+
+  head() {
+    return buildHead(getMetadata(this.uid))
   },
 
   mounted() {

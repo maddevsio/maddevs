@@ -6,8 +6,8 @@
 
 <script>
 import Main from '@/components/DeliveryModels/Main'
-import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
+import { getMetadata, buildHead } from '@/data/seo'
 
 import featureFlag from '@/featureFlags/featureFlag'
 
@@ -25,7 +25,7 @@ export default {
   },
 
   head() {
-    return buildHead(getMetadata('deliveryModels'))
+    return buildHead(getMetadata('delivery-models'))
   },
 
   mounted() {
