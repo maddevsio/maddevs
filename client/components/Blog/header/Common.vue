@@ -17,7 +17,7 @@
       :class="imageBackgroundClass"
     >
       <img
-        :data-src="imageWithoutCrop"
+        :data-src="compressedImage"
         :width="coverImageWidth"
         :height="coverImageHeight"
         :alt="coverImageAltText"
@@ -70,8 +70,10 @@ export default {
   },
 
   computed: {
-    imageWithoutCrop() {
-      return this.coverImageUrl.split('?auto')[0] // get image without crop and compress params
+    compressedImage() {
+      const imageWithoutCrop = this.coverImageUrl.split('?auto')[0] // get image without crop and default compress params
+      const compressedImage = `${imageWithoutCrop}?q=40` // set custome compress params
+      return compressedImage
     },
 
     imageBackgroundClass() {
