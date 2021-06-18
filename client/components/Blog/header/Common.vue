@@ -17,10 +17,11 @@
       :class="imageBackgroundClass"
     >
       <img
-        :src="imageWithoutCrop"
+        :data-src="imageWithoutCrop"
         :width="coverImageWidth"
         :height="coverImageHeight"
         :alt="coverImageAltText"
+        class="img_lazy"
       >
     </div>
   </div>
@@ -68,15 +69,9 @@ export default {
     },
   },
 
-  data() {
-    return {
-      coverImg: null,
-    }
-  },
-
   computed: {
     imageWithoutCrop() {
-      return this.coverImg
+      return this.coverImageUrl.split('?auto')[0] // get image without crop and compress params
     },
 
     imageBackgroundClass() {
@@ -84,10 +79,6 @@ export default {
       const extension = extractFileExtension(this.coverImageUrl)
       return allowedExtensions.includes(extension) ? 'blog-post__introduction-image--with-background' : ''
     },
-  },
-
-  mounted() {
-    this.coverImg = String(this.coverImageUrl.split('?auto')[0]) // Get conver img after page load
   },
 }
 </script>
@@ -115,7 +106,6 @@ export default {
   &__introduction-image {
     width: 983px;
     margin-left: -82.5px;
-    color: transparent;
     &--with-background {
       background-color: $bgcolor--silver;
     }
