@@ -21,10 +21,7 @@
         @click="$refs.modalGetYourTrustedItPartner.show()"
       />
     </div>
-
-    <Modal ref="modalGetYourTrustedItPartner">
-      <ModalGetYourTrustedItPartner />
-    </Modal>
+    <ModalGetYourTrustedItPartner ref="modalGetYourTrustedItPartner" />
   </section>
 </template>
 
@@ -32,7 +29,6 @@
 import SoftwareDevelopmentContent from '@/components/Services/SoftwareDevelopmentContent'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import ModalGetYourTrustedItPartner from '@/components/core/modals/ModalGetYourTrustedItPartner'
-import Modal from '@/components/core/Modal'
 import { developmentCategories } from '@/data/softwareDevelopment'
 
 export default {
@@ -41,7 +37,6 @@ export default {
     SoftwareDevelopmentContent,
     UIModalTriggerButton,
     ModalGetYourTrustedItPartner,
-    Modal,
   },
 
   data() {
