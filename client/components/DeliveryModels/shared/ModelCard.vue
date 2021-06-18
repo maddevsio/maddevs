@@ -60,6 +60,11 @@ export default {
       default: '',
     },
 
+    animationSpeed: {
+      type: Number,
+      default: 1,
+    },
+
     startAnimationOnScreenPercent: {
       type: Number,
       default: 35,
@@ -94,6 +99,7 @@ export default {
   methods: {
     animCreatedHandler(animation) {
       this.animation = animation
+      this.animation.setSpeed(this.animationSpeed)
     },
 
     playAnimation() {
@@ -106,7 +112,7 @@ export default {
 
     handleCardAnimation() {
       const rect = this.$refs.card.getBoundingClientRect()
-      const screenPercent = window.innerWidth < 768 ? 50 : this.startAnimationOnScreenPercent
+      const screenPercent = window.innerWidth < 768 ? 55 : this.startAnimationOnScreenPercent
 
       if (rect.top >= 0 && rect.top <= window.innerHeight) {
         const startArea = (window.innerHeight / 100) * screenPercent
