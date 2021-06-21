@@ -9,7 +9,7 @@ exports[`CTABanner component should render correctly 1`] = `
       image="[object Object]"
       imagealttext="Tamara"
       manname="Tamara Mun"
-      manposition="Delivery Manager"
+      manposition="Head of Delivery Management"
       text="Together we build solutions that bring digital innovation."
       title="Build your product <br /> with Mad Devs"
     >
