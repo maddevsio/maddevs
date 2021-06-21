@@ -13,8 +13,6 @@ import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { deliveryModels } from '@/data/deliveryModels'
 import { buildHead, getMetadata } from '@/data/seo'
 
-import featureFlag from '@/featureFlags/featureFlag'
-
 export default {
   name: 'DeliveryModel',
   components: {
@@ -26,7 +24,6 @@ export default {
   asyncData({ params, error }) {
     const model = deliveryModels[params.uid]
 
-    if (!featureFlag('deliveryModels')) return error({ statusCode: 404, message: 'Page not found' })
     if (model) {
       return {
         uid: params.uid,
