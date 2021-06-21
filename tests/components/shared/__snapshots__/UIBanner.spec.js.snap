@@ -25,9 +25,7 @@ exports[`UIBanner component should render correctly 1`] = `
       
     
     
-      <span>
-        
-      </span>
+      <span />
     </div>
   </section>
 </div>
