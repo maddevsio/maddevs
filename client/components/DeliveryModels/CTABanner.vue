@@ -6,7 +6,7 @@
       :image="require(`@/assets/img/DeliveryModels/png/Tamara.png`)"
       image-alt-text="Tamara"
       man-name="Tamara Mun"
-      man-position="Delivery Manager"
+      man-position="Head of Delivery Management"
     >
       <UIButton @click="$refs.modalContactMe.show()">
         Estimate your project
