@@ -6,7 +6,7 @@ import delay from '../../../../client/helpers/delay'
 
 const mocks = formBaseProps
 
-describe('ModalIndividuals component', () => {
+describe('IndividualsForm component', () => {
   it('should render correctly', () => {
     const { container } = render(IndividualsForm, {
       mocks,
