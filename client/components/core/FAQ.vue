@@ -75,7 +75,7 @@
         <p class="faq__paragraph">
           Simply submit your project idea to us via our contact form. We will contact you to clarify further
           requirements and prepare the project time & cost estimates. For more details, you can get in touch with our
-          delivery manager <span class="faq__nowrap">Tamara Mun:</span>
+          head of delivery management <span class="faq__nowrap">Tamara Mun:</span>
           <a
             class="faq__link"
             href="mailto:tamaramun@maddevs.io"
@@ -160,7 +160,7 @@
             Live chat
           </li>
           <li class="faq__list">
-            Direct mail to our Delivery Manager <span class="faq__nowrap">Tamara Mun</span> via
+            Direct mail to our Head of Delivery Management <span class="faq__nowrap">Tamara Mun</span> via
             <a
               class="faq__link"
               href="mailto:tamaramun@maddevs.io"

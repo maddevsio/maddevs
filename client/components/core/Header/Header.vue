@@ -34,7 +34,7 @@
             </NuxtLink>
             <nav class="header__header-routes_links">
               <NuxtLink
-                v-for="{ title, link, exact } in filteredNavigation"
+                v-for="{ title, link, exact } in navigation"
                 :key="link"
                 :exact="exact"
                 class="header__navigation-link"
@@ -150,8 +150,6 @@ import HeaderLogo from '@/components/core/Header/HeaderLogo'
 import ModalSearch from '@/components/core/modals/ModalSearch'
 import { headerNavigation as navigation } from '@/data/navigation'
 
-import featureFlag from '@/featureFlags/featureFlag'
-
 export default {
   name: 'MainHeader',
   components: {
@@ -175,11 +173,6 @@ export default {
   },
 
   computed: {
-    filteredNavigation() {
-      if (!featureFlag('deliveryModels')) return this.navigation.filter(({ link }) => link !== '/delivery-models/')
-      return this.navigation
-    },
-
     logoTextIsActive() {
       return this.showLogoText && this.$nuxt.$route.name !== 'delivery-models'
     },

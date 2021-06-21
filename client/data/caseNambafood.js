@@ -157,7 +157,7 @@ export const team = [
   },
   {
     name: 'Tamara Mun',
-    position: 'Delivery Manager',
+    position: 'Head of Delivery Management',
     image: {
       file: 'tamara-mun',
     },
