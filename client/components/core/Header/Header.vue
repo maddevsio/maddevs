@@ -139,7 +139,11 @@
         @on-close="searchActive = false"
       />
     </transition>
-    <ModalContactMe ref="modalContactMe" />
+    <!-- "contact-me-modal" - id for google analytic -->
+    <ModalContactMe
+      id="contact-me-modal"
+      ref="modalContactMe"
+    />
   </div>
 </template>
 

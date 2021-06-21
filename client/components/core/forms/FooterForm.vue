@@ -12,6 +12,7 @@
       class-name="footer-form"
       @submit="handleSubmit"
     />
+    <!-- "footer-modal" - id for google analytic -->
     <ModalSuccess
       id="footer-modal"
       :display-time="3000"

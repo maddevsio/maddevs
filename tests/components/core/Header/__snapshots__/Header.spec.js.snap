@@ -206,6 +206,7 @@ exports[`Header component should render correctly 1`] = `
     </transition-stub>
      
     <modal-stub
+      id="contact-me-modal"
       modaltitle=""
     >
       <contactmeform-stub />

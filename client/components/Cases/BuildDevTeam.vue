@@ -16,7 +16,11 @@
           Book a free consultation
         </UIButton>
       </UIBanner>
-      <ModalContactMe ref="modalContactMe" />
+      <!-- "contact-me-cs" - id for google analytic -->
+      <ModalContactMe
+        id="contact-me-cs"
+        ref="modalContactMe"
+      />
     </div>
   </div>
 </template>

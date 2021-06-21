@@ -21,7 +21,11 @@
         @click="$refs.modalGetExpertAdvice.show()"
       />
     </div>
-    <ModalGetExpertAdvice ref="modalGetExpertAdvice" />
+    <!-- "get-expert-advice-modal" - id for google analytic -->
+    <ModalGetExpertAdvice
+      id="get-expert-advice-modal"
+      ref="modalGetExpertAdvice"
+    />
   </section>
 </template>
 

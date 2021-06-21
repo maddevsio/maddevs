@@ -132,8 +132,9 @@
         I want to work for Mad Devs!
       </UIButton>
     </form>
+    <!-- "career-modal" - id for google analytic -->
     <ModalSuccess
-      id="careers-modal"
+      id="career-modal"
       :visibled="isShowSuccessModal"
       @close="isShowSuccessModal = false"
     />

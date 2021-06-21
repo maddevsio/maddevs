@@ -26,8 +26,16 @@
         />
       </div>
     </div>
-    <ModalTeams ref="modalTeams" />
-    <ModalIndividuals ref="modalIndividuals" />
+    <!-- "teams-modal" - id for google analytic -->
+    <ModalTeams
+      id="teams-modal"
+      ref="modalTeams"
+    />
+    <!-- "individuals-modal" - id for google analytic -->
+    <ModalIndividuals
+      id="individuals-modal"
+      ref="modalIndividuals"
+    />
   </section>
 </template>
 

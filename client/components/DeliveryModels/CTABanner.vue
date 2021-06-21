@@ -12,7 +12,11 @@
         Estimate your project
       </UIButton>
     </UIBanner>
-    <ModalContactMe ref="modalContactMe" />
+    <!-- "contact-me-dm" - id for google analytic -->
+    <ModalContactMe
+      id="contact-me-dm"
+      ref="modalContactMe"
+    />
   </div>
 </template>
 
