@@ -135,7 +135,6 @@ exports[`itСonsulting component should render correctly 1`] = `
     </div>
      
     <transition-stub
-      id="get-expert-advice-modal"
       mode="out-in"
       name="main-fade"
     >

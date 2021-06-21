@@ -1,5 +1,9 @@
 <template>
-  <Modal ref="modalOrderProjectFromUs">
+  <!-- 'order-project-from-us-modal' id is needed for google analytics, don't remove it -->
+  <Modal
+    :id="'order-project-from-us-modal'"
+    ref="modalOrderProjectFromUs"
+  >
     <OrderProjectFromUsForm @success="handleSuccess" />
   </Modal>
 </template>

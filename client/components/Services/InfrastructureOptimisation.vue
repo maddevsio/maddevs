@@ -31,11 +31,7 @@
         </div>
       </div>
     </div>
-    <!-- "infrastructure-audit-modal" - id for google analytic -->
-    <ModalInfrastructureAudit
-      id="infrastructure-audit-modal"
-      ref="modalInfrastructureAudit"
-    />
+    <ModalInfrastructureAudit ref="modalInfrastructureAudit" />
   </section>
 </template>
 

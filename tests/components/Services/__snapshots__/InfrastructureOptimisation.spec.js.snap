@@ -103,7 +103,6 @@ exports[`InfrastructureOptimisation should render correctly 1`] = `
     </div>
      
     <transition-stub
-      id="infrastructure-audit-modal"
       mode="out-in"
       name="main-fade"
     >

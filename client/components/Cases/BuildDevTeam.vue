@@ -16,9 +16,9 @@
           Book a free consultation
         </UIButton>
       </UIBanner>
-      <!-- "contact-me-cs" - id for google analytic -->
+      <!-- 'contact-me-cs' id prop is needed for google analytics, don't remove it -->
       <ModalContactMe
-        id="contact-me-cs"
+        :id="'contact-me-cs'"
         ref="modalContactMe"
       />
     </div>

@@ -1,5 +1,8 @@
 <template>
-  <Modal ref="modalContactMe">
+  <Modal
+    :id="id"
+    ref="modalContactMe"
+  >
     <ContactMeForm @success="handleSuccess" />
   </Modal>
 </template>
@@ -13,6 +16,13 @@ export default {
   components: {
     ContactMeForm,
     Modal,
+  },
+
+  props: {
+    id: {
+      type: String,
+      default: '',
+    },
   },
 
   methods: {

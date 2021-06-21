@@ -1,5 +1,9 @@
 <template>
-  <Modal ref="modalIndividuals">
+  <!-- 'individuals-modal' id is needed for google analytics, don't remove it -->
+  <Modal
+    :id="'individuals-modal'"
+    ref="modalIndividuals"
+  >
     <IndividualsForm @success="handleSuccess" />
   </Modal>
 </template>

@@ -46,11 +46,7 @@
         @click="$refs.modalOrderProjectFromUs.show()"
       />
     </div>
-    <!-- "order-project-from-us-modal" - id for google analytic -->
-    <ModalOrderProjectFromUs
-      id="order-project-from-us-modal"
-      ref="modalOrderProjectFromUs"
-    />
+    <ModalOrderProjectFromUs ref="modalOrderProjectFromUs" />
   </section>
 </template>
 

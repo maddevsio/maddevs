@@ -121,7 +121,6 @@ exports[`RemoteTechStaff component should render correctly 1`] = `
     </div>
      
     <transition-stub
-      id="teams-modal"
       mode="out-in"
       name="main-fade"
     >
@@ -129,7 +128,6 @@ exports[`RemoteTechStaff component should render correctly 1`] = `
     </transition-stub>
      
     <transition-stub
-      id="individuals-modal"
       mode="out-in"
       name="main-fade"
     >

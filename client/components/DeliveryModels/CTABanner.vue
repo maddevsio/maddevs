@@ -12,9 +12,9 @@
         Estimate your project
       </UIButton>
     </UIBanner>
-    <!-- "contact-me-dm" - id for google analytic -->
+    <!-- 'contact-me-dm' id prop is needed for google analytics, don't remove it -->
     <ModalContactMe
-      id="contact-me-dm"
+      :id="'contact-me-dm'"
       ref="modalContactMe"
     />
   </div>

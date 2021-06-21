@@ -1,5 +1,9 @@
 <template>
-  <Modal ref="modalTeams">
+  <!-- 'teams-modal' id is needed for google analytics, don't remove it -->
+  <Modal
+    :id="'teams-modal'"
+    ref="modalTeams"
+  >
     <TeamsForm @success="handleSuccess" />
   </Modal>
 </template>
