@@ -109,7 +109,7 @@ export default {
       @include font('Inter', 24px, 600);
       line-height: 29px;
       letter-spacing: -0.013em;
-      max-width: 197px;
+      max-width: 210px;
       &--extra {
         color: $text-color--red;
       }

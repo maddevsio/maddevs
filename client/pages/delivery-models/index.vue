@@ -6,10 +6,8 @@
 
 <script>
 import Main from '@/components/DeliveryModels/Main'
-import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
-
-import featureFlag from '@/featureFlags/featureFlag'
+import { getMetadata, buildHead } from '@/data/seo'
 
 export default {
   name: 'DeliveryModels',
@@ -19,13 +17,8 @@ export default {
 
   mixins: [initLazyLoadMixin],
 
-  async asyncData({ error }) {
-    if (!featureFlag('deliveryModels')) return error({ statusCode: 404, message: 'Page not found' })
-    return {}
-  },
-
   head() {
-    return buildHead(getMetadata('deliveryModels'))
+    return buildHead(getMetadata('delivery-models'))
   },
 
   mounted() {
