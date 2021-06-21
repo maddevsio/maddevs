@@ -18,7 +18,7 @@
       </UIBanner>
       <!-- 'contact-me-cs' id is needed for google analytics, don't remove it -->
       <ModalContactMe
-        :id="'contact-me-cs'"
+        id="contact-me-cs"
         ref="modalContactMe"
       />
     </div>

@@ -1,7 +1,7 @@
 <template>
   <!-- 'get-expert-advice-modal' id is needed for google analytics, don't remove it -->
   <Modal
-    :id="'get-expert-advice-modal'"
+    id="get-expert-advice-modal"
     ref="modalGetExpertAdvice"
   >
     <GetExpertAdviceForm @success="handleSuccess" />

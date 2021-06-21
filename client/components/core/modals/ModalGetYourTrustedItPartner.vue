@@ -1,7 +1,7 @@
 <template>
   <!-- 'get-your-trusted-it-partner-modal' id is needed for google analytics, don't remove it -->
   <Modal
-    :id="'get-your-trusted-it-partner-modal'"
+    id="get-your-trusted-it-partner-modal"
     ref="modalGetYourTrustedItPartner"
   >
     <GetYourTrustedItPartnerForm @success="handleSuccess" />

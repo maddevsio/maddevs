@@ -134,7 +134,7 @@
     </form>
     <!-- 'career-modal' id is needed for google analytics, don't remove it -->
     <ModalSuccess
-      :id="'career-modal'"
+      id="career-modal"
       :visibled="isShowSuccessModal"
       @close="isShowSuccessModal = false"
     />

@@ -1,7 +1,7 @@
 <template>
   <!-- 'teams-modal' id is needed for google analytics, don't remove it -->
   <Modal
-    :id="'teams-modal'"
+    id="teams-modal"
     ref="modalTeams"
   >
     <TeamsForm @success="handleSuccess" />

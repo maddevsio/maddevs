@@ -141,7 +141,7 @@
     </transition>
     <!-- 'contact-me-modal' id is needed for google analytics, don't remove it -->
     <ModalContactMe
-      :id="'contact-me-modal'"
+      id="contact-me-modal"
       ref="modalContactMe"
     />
   </div>

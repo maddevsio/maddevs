@@ -1,7 +1,7 @@
 <template>
   <!-- 'infrastructure-audit-modal' id is needed for google analytics, don't remove it -->
   <Modal
-    :id="'infrastructure-audit-modal'"
+    id="infrastructure-audit-modal"
     ref="modalInfrastructureAudit"
   >
     <InfrastructureAuditForm @success="handleSuccess" />
