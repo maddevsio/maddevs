@@ -11,10 +11,12 @@
     />
     <template v-if="slice.items[0].embed.type === 'link'">
       <div class="embed__image-wrapper">
-        <div
-          :style="{ backgroundImage: `url(${slice.items[0].embed.thumbnail_url})` }"
-          class="embed__image"
-        />
+        <img
+          width="150"
+          height="126"
+          class="embed__image img_lazy"
+          :data-src="slice.items[0].embed.thumbnail_url"
+        >
       </div>
     </template>
   </div>
@@ -103,9 +105,6 @@ export default {
     a {
       text-decoration: none;
     }
-    img {
-      display: none;
-    }
     h1,
     p {
       letter-spacing: -0.02em;
@@ -137,9 +136,7 @@ export default {
     height: 100%;
     min-width: 136px;
     min-height: 60px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: cover;
 
     &-wrapper {
       width: 33%;

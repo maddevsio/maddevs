@@ -8,10 +8,10 @@ export const experts = [
   },
   {
     name: 'Tamara Mun',
-    position: 'Delivery Manager',
+    position: 'Head of Delivery Management',
     image: 'Tamara',
     linkedin: 'https://www.linkedin.com/in/tamara-mun/',
-    alt: 'Tamara Mun - Delivery Manager at Mad Devs Software and Mobile App Development Company.',
+    alt: 'Tamara Mun - Head of Delivery Management at Mad Devs Software and Mobile App Development Company.',
   },
   {
     name: 'Andrew "Chuck" Minkin',

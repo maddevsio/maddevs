@@ -14,6 +14,8 @@
         :data-src="thumbnailImage.url"
         :alt="thumbnailImage.alt"
         class="img_lazy"
+        width="36"
+        height="36"
       >
     </div>
     <div

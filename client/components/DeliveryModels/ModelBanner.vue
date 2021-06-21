@@ -46,22 +46,22 @@ export default {
     font-size: 60px;
     line-height: 68px;
     letter-spacing: -0.04em;
-    &--augmented-staff-members /deep/ span {
+    &--staff-augmentation /deep/ span {
       color: $text-color--red-dark;
     }
-    &--dedicated-project-based-team /deep/ span {
+    &--dedicated-team /deep/ span {
       color: $text-color--yellow;
     }
     &--temp-to-hire /deep/ span {
       color: $text-color--blue;
     }
-    &--technical-assessment-and-consulting /deep/ span {
+    &--technical-assessment /deep/ span {
       color: $text-color--red-dark;
     }
-    &--effective-team-supervision /deep/ span {
+    &--team-supervision /deep/ span {
       color: $text-color--green-pale;
     }
-    &--transferring-a-project /deep/ span {
+    &--transferring-projects /deep/ span {
       color: $text-color--purple;
     }
   }
@@ -74,6 +74,7 @@ export default {
   }
 
   @media screen and (max-width: 768px) {
+    padding: 105px 0 85px;
     &__title {
       font-size: 52px;
       line-height: 64px;

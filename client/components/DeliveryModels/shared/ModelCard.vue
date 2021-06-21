@@ -3,7 +3,7 @@
     v-if="uid"
     ref="card"
     class="model-card"
-    :class="[`model-card--${uid}`, full ? 'model-card--full' : '']"
+    :class="[`model-card--${className}`, full ? 'model-card--full' : '']"
   >
     <NuxtLink
       :to="`/delivery-models/${uid}/`"
@@ -50,6 +50,11 @@ export default {
       required: true,
     },
 
+    className: {
+      type: String,
+      default: '',
+    },
+
     title: {
       type: String,
       default: '',
@@ -58,6 +63,11 @@ export default {
     animationName: {
       type: String,
       default: '',
+    },
+
+    animationSpeed: {
+      type: Number,
+      default: 1,
     },
 
     startAnimationOnScreenPercent: {
@@ -94,6 +104,7 @@ export default {
   methods: {
     animCreatedHandler(animation) {
       this.animation = animation
+      this.animation.setSpeed(this.animationSpeed)
     },
 
     playAnimation() {
@@ -106,7 +117,7 @@ export default {
 
     handleCardAnimation() {
       const rect = this.$refs.card.getBoundingClientRect()
-      const screenPercent = window.innerWidth < 768 ? 50 : this.startAnimationOnScreenPercent
+      const screenPercent = window.innerWidth < 768 ? 55 : this.startAnimationOnScreenPercent
 
       if (rect.top >= 0 && rect.top <= window.innerHeight) {
         const startArea = (window.innerHeight / 100) * screenPercent
@@ -205,13 +216,13 @@ export default {
     }
   }
 
-  &--augmented-staff-members /deep/ .model-card {
+  &--staff-augmentation /deep/ .model-card {
     &__title span {
       color: $text-color--red-dark;
     }
   }
 
-  &--dedicated-project-based-team /deep/ .model-card {
+  &--dedicated-team /deep/ .model-card {
     &__title span {
       color: $text-color--yellow;
     }
@@ -239,7 +250,7 @@ export default {
     }
   }
 
-  &--technical-assessment-and-consulting {
+  &--technical-assessment {
     /deep/ .model-card {
       &__link {
         padding-top: 120px;
@@ -261,13 +272,13 @@ export default {
     }
   }
 
-  &--effective-team-supervision /deep/ .model-card {
+  &--team-supervision /deep/ .model-card {
     &__title span {
       color: $text-color--green-pale;
     }
   }
 
-  &--transferring-a-project /deep/ .model-card {
+  &--transferring-projects /deep/ .model-card {
     &__title span {
       color: $text-color--purple;
     }

@@ -37,9 +37,11 @@ export default {
 
 .banner {
   position: relative;
-  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
   margin-top: 62px; // height of header component
-  padding: 164px 0 139px;
   background: linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213 100%);
   overflow: hidden;
   &__image {
