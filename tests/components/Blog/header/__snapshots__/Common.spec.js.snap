@@ -27,9 +27,6 @@ exports[`header Common is a Vue instance 1`] = `
       class="blog-post__introduction-image blog-post__introduction-image--with-background"
     >
       <img
-        alt=""
-        class="img_lazy"
-        data-src="some-url.jpg?q=45"
         height="534"
         width="983"
       />

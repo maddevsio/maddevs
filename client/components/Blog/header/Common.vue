@@ -12,16 +12,20 @@
     </p>
     <slot name="afterTitle" />
     <div
-      v-if="coverImageUrl"
       class="blog-post__introduction-image"
       :class="imageBackgroundClass"
     >
       <img
-        :data-src="compressedImage"
+        v-if="isShowImg"
+        :src="compressedImage"
         :width="coverImageWidth"
         :height="coverImageHeight"
         :alt="coverImageAltText"
-        class="img_lazy"
+      >
+      <img
+        v-else
+        :width="coverImageWidth"
+        :height="coverImageHeight"
       >
     </div>
   </div>
@@ -69,6 +73,12 @@ export default {
     },
   },
 
+  data() {
+    return {
+      isShowImg: false,
+    }
+  },
+
   computed: {
     compressedImage() {
       const imageWithoutCrop = this.coverImageUrl.split('?auto')[0] // get image without crop and default compress params
@@ -81,6 +91,12 @@ export default {
       const extension = extractFileExtension(this.coverImageUrl)
       return allowedExtensions.includes(extension) ? 'blog-post__introduction-image--with-background' : ''
     },
+  },
+
+  mounted() {
+    setTimeout(() => {
+      this.isShowImg = true
+    }, 300)
   },
 }
 </script>
