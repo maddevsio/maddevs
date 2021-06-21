@@ -1,4 +1,5 @@
 <template>
+  <!-- id is needed for google analytics, don't remove it -->
   <Modal
     :id="id"
     ref="modalContactMe"
