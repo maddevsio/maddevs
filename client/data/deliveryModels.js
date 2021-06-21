@@ -22,7 +22,7 @@ export const deliveryModels = {
           ],
         },
         {
-          title: 'Define specialists’ competencies',
+          title: 'Team composition',
           content: [
             'We propose a team composition with a cost-effective combination of seniority levels. Our approach to team headcount is based on our 15+ years of experience in custom software development.',
             'Each selected candidate is available for additional interviews to ensure that the competence requirements are met.',
