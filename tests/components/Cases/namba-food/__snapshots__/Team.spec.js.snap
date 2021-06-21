@@ -150,7 +150,7 @@ exports[`Team component should render correctly 1`] = `
             class="case_team-item__position"
           >
             
-      Delivery Manager
+      Head of Delivery Management
     
           </p>
         </div>
