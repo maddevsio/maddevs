@@ -16,16 +16,10 @@
       :class="imageBackgroundClass"
     >
       <img
-        v-if="isShowImg"
         :src="compressedImage"
         :width="coverImageWidth"
         :height="coverImageHeight"
         :alt="coverImageAltText"
-      >
-      <img
-        v-else
-        :width="coverImageWidth"
-        :height="coverImageHeight"
       >
     </div>
   </div>
@@ -73,12 +67,6 @@ export default {
     },
   },
 
-  data() {
-    return {
-      isShowImg: false,
-    }
-  },
-
   computed: {
     compressedImage() {
       const imageWithoutCrop = this.coverImageUrl.split('?auto')[0] // get image without crop and default compress params
@@ -91,12 +79,6 @@ export default {
       const extension = extractFileExtension(this.coverImageUrl)
       return allowedExtensions.includes(extension) ? 'blog-post__introduction-image--with-background' : ''
     },
-  },
-
-  mounted() {
-    setTimeout(() => {
-      this.isShowImg = true
-    }, 1000)
   },
 }
 </script>

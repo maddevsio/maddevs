@@ -56,7 +56,9 @@ exports[`header Blog is a Vue instance 1`] = `
       class="blog-post__introduction-image"
     >
       <img
+        alt="alt"
         height="300"
+        src="url?q=45"
         width="200"
       />
     </div>
