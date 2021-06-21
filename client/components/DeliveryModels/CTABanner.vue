@@ -6,7 +6,7 @@
       :image="require(`@/assets/img/DeliveryModels/png/Tamara.png`)"
       image-alt-text="Tamara"
       man-name="Tamara Mun"
-      man-position="Head of Delivery Management"
+      man-position="Head of Delivery <br /> Management"
     >
       <UIButton @click="$refs.modalContactMe.show()">
         Estimate your project
@@ -45,11 +45,29 @@ export default {
 
   /deep/ .cta-banner {
     min-height: 543px;
+    &__man {
+      top: 170px;
+    }
     @media screen and (max-width: 1180px) {
       min-height: 490px;
+      &__man {
+        top: 190px;
+      }
     }
     @media screen and (max-width: 992px) {
       min-height: 450px;
+      &__man {
+        top: 170px;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      &__man {
+        top: auto;
+        right: 7px;
+        br {
+          display: none;
+        }
+      }
     }
   }
 

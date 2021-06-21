@@ -14,7 +14,7 @@
     >
     <div class="cta-banner__man">
       {{ manName }}
-      <span>{{ manPosition }}</span>
+      <span v-html="manPosition" />
     </div>
   </section>
 </template>
