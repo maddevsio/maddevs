@@ -96,7 +96,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.isShowImg = true
-    }, 500)
+    }, 1000)
   },
 }
 </script>
