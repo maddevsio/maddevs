@@ -4,7 +4,7 @@
     :id="id"
     ref="modalGetYourTrustedItPartner"
   >
-    <GetYourTrustedItPartnerForm @success="handleSuccess" />
+    <GetYourTrustedItPartnerForm />
   </Modal>
 </template>
 
@@ -27,10 +27,6 @@ export default {
   },
 
   methods: {
-    handleSuccess() {
-      this.$parent.$emit('success')
-    },
-
     show() {
       this.$refs.modalGetYourTrustedItPartner.show()
     },
