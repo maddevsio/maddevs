@@ -12,6 +12,7 @@
       class-name="footer-form"
       @submit="handleSubmit"
     />
+    <!-- this id should be unique, because it used for google analytics -->
     <ModalSuccess
       id="footer-modal"
       :display-time="3000"

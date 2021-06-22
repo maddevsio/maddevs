@@ -21,10 +21,11 @@
         @click="$refs.modalGetExpertAdvice.show()"
       />
     </div>
-
-    <Modal ref="modalGetExpertAdvice">
-      <ModalGetExpertAdvice />
-    </Modal>
+    <!-- this id should be unique, because it used for google analytics -->
+    <ModalGetExpertAdvice
+      id="get-expert-advice-modal"
+      ref="modalGetExpertAdvice"
+    />
   </section>
 </template>
 
@@ -32,7 +33,6 @@
 import ItConsultingContent from '@/components/Services/ItConsultingContent'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import ModalGetExpertAdvice from '@/components/core/modals/ModalGetExpertAdvice'
-import Modal from '@/components/core/Modal'
 import { consultungTypes } from '@/data/itConsulting'
 
 export default {
@@ -41,7 +41,6 @@ export default {
     ItConsultingContent,
     UIModalTriggerButton,
     ModalGetExpertAdvice,
-    Modal,
   },
 
   data() {

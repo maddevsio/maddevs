@@ -139,12 +139,11 @@
         @on-close="searchActive = false"
       />
     </transition>
-
-    <Modal
+    <!-- this id should be unique, because it used for google analytics -->
+    <ModalContactMe
+      id="contact-me-modal"
       ref="modalContactMe"
-    >
-      <ModalContactMe @success="$refs.modalContactMe.close()" />
-    </Modal>
+    />
   </div>
 </template>
 
@@ -152,7 +151,6 @@
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import HeaderMobile from '@/components/core/Header/HeaderMobile'
 import HeaderLogo from '@/components/core/Header/HeaderLogo'
-import Modal from '@/components/core/Modal'
 import ModalSearch from '@/components/core/modals/ModalSearch'
 import { headerNavigation as navigation } from '@/data/navigation'
 
@@ -163,7 +161,6 @@ export default {
     ModalContactMe: () => import('@/components/core/modals/ModalContactMe'),
     HeaderMobile,
     HeaderLogo,
-    Modal,
     ModalSearch,
   },
 
