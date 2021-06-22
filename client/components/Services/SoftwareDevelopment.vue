@@ -21,7 +21,11 @@
         @click="$refs.modalGetYourTrustedItPartner.show()"
       />
     </div>
-    <ModalGetYourTrustedItPartner ref="modalGetYourTrustedItPartner" />
+    <!-- this id should be unique, because it used for google analytics -->
+    <ModalGetYourTrustedItPartner
+      id="get-your-trusted-it-partner-modal"
+      ref="modalGetYourTrustedItPartner"
+    />
   </section>
 </template>
 

@@ -16,7 +16,7 @@
           Book a free consultation
         </UIButton>
       </UIBanner>
-      <!-- 'contact-me-cs' id is needed for google analytics, don't remove it -->
+      <!-- this id should be unique, because it used for google analytics -->
       <ModalContactMe
         id="contact-me-cs"
         ref="modalContactMe"

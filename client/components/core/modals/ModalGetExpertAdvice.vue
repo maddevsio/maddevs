@@ -1,7 +1,7 @@
 <template>
-  <!-- 'get-expert-advice-modal' id is needed for google analytics, don't remove it -->
+  <!-- id is needed for google analytics, don't remove it -->
   <Modal
-    id="get-expert-advice-modal"
+    :id="id"
     ref="modalGetExpertAdvice"
   >
     <GetExpertAdviceForm @success="handleSuccess" />
@@ -17,6 +17,13 @@ export default {
   components: {
     Modal,
     GetExpertAdviceForm,
+  },
+
+  props: {
+    id: {
+      type: String,
+      default: '',
+    },
   },
 
   methods: {
