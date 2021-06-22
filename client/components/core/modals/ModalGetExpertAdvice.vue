@@ -4,7 +4,7 @@
     :id="id"
     ref="modalGetExpertAdvice"
   >
-    <GetExpertAdviceForm @success="handleSuccess" />
+    <GetExpertAdviceForm />
   </Modal>
 </template>
 
@@ -27,10 +27,6 @@ export default {
   },
 
   methods: {
-    handleSuccess() {
-      this.$parent.$emit('success')
-    },
-
     show() {
       this.$refs.modalGetExpertAdvice.show()
     },
