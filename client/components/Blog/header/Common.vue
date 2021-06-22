@@ -12,14 +12,16 @@
     </p>
     <slot name="afterTitle" />
     <div
+      v-if="coverImageUrl"
       class="blog-post__introduction-image"
       :class="imageBackgroundClass"
     >
       <img
-        :src="compressedImage"
+        :data-src="compressedImage"
         :width="coverImageWidth"
         :height="coverImageHeight"
         :alt="coverImageAltText"
+        class="img_lazy"
       >
     </div>
   </div>
@@ -70,7 +72,7 @@ export default {
   computed: {
     compressedImage() {
       const imageWithoutCrop = this.coverImageUrl.split('?auto')[0] // get image without crop and default compress params
-      const compressedImage = `${imageWithoutCrop}?q=45` // set custome compress params
+      const compressedImage = `${imageWithoutCrop}?q=40` // set custome compress params
       return compressedImage
     },
 
