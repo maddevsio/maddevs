@@ -25,7 +25,7 @@ const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing
       this.sendLead(payload)
       await delay(500)
       this.reset()
-      this.$emit('success')
+      this.$parent.$emit('success')
     },
   },
 })

@@ -28,7 +28,7 @@ export default {
 
   methods: {
     handleSuccess() {
-      this.close()
+      this.$parent.$emit('success')
     },
 
     show() {
