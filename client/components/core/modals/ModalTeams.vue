@@ -1,7 +1,7 @@
 <template>
-  <!-- 'teams-modal' id is needed for google analytics, don't remove it -->
+  <!-- id is needed for google analytics, don't remove it -->
   <Modal
-    id="teams-modal"
+    :id="id"
     ref="modalTeams"
   >
     <TeamsForm @success="handleSuccess" />
@@ -17,6 +17,13 @@ export default {
   components: {
     Modal,
     TeamsForm,
+  },
+
+  props: {
+    id: {
+      type: String,
+      default: '',
+    },
   },
 
   methods: {

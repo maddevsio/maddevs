@@ -139,7 +139,7 @@
         @on-close="searchActive = false"
       />
     </transition>
-    <!-- 'contact-me-modal' id is needed for google analytics, don't remove it -->
+    <!-- this id should be unique, because it used for google analytics -->
     <ModalContactMe
       id="contact-me-modal"
       ref="modalContactMe"

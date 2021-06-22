@@ -31,7 +31,11 @@
         </div>
       </div>
     </div>
-    <ModalInfrastructureAudit ref="modalInfrastructureAudit" />
+    <!-- this id should be unique, because it used for google analytics -->
+    <ModalInfrastructureAudit
+      id="infrastructure-audit-modal"
+      ref="modalInfrastructureAudit"
+    />
   </section>
 </template>
 

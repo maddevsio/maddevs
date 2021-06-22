@@ -1,7 +1,7 @@
 <template>
-  <!-- 'infrastructure-audit-modal' id is needed for google analytics, don't remove it -->
+  <!-- id is needed for google analytics, don't remove it -->
   <Modal
-    id="infrastructure-audit-modal"
+    :id="id"
     ref="modalInfrastructureAudit"
   >
     <InfrastructureAuditForm @success="handleSuccess" />
@@ -17,6 +17,13 @@ export default {
   components: {
     Modal,
     InfrastructureAuditForm,
+  },
+
+  props: {
+    id: {
+      type: String,
+      default: '',
+    },
   },
 
   methods: {

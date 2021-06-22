@@ -1,5 +1,6 @@
 <template>
   <transition name="fade">
+    <!-- id is needed for google analytics, don't remove it -->
     <div
       v-if="visibled"
       :id="id"

@@ -1,7 +1,7 @@
 <template>
-  <!-- 'order-project-from-us-modal' id is needed for google analytics, don't remove it -->
+  <!-- id is needed for google analytics, don't remove it -->
   <Modal
-    id="order-project-from-us-modal"
+    :id="id"
     ref="modalOrderProjectFromUs"
   >
     <OrderProjectFromUsForm @success="handleSuccess" />
@@ -17,6 +17,13 @@ export default {
   components: {
     Modal,
     OrderProjectFromUsForm,
+  },
+
+  props: {
+    id: {
+      type: String,
+      default: '',
+    },
   },
 
   methods: {

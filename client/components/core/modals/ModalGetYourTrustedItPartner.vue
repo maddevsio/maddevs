@@ -1,7 +1,7 @@
 <template>
-  <!-- 'get-your-trusted-it-partner-modal' id is needed for google analytics, don't remove it -->
+  <!-- id is needed for google analytics, don't remove it -->
   <Modal
-    id="get-your-trusted-it-partner-modal"
+    :id="id"
     ref="modalGetYourTrustedItPartner"
   >
     <GetYourTrustedItPartnerForm @success="handleSuccess" />
@@ -17,6 +17,13 @@ export default {
   components: {
     Modal,
     GetYourTrustedItPartnerForm,
+  },
+
+  props: {
+    id: {
+      type: String,
+      default: '',
+    },
   },
 
   methods: {

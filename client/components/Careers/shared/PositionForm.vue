@@ -132,7 +132,7 @@
         I want to work for Mad Devs!
       </UIButton>
     </form>
-    <!-- 'career-modal' id is needed for google analytics, don't remove it -->
+    <!-- this id should be unique, because it used for google analytics -->
     <ModalSuccess
       id="career-modal"
       :visibled="isShowSuccessModal"

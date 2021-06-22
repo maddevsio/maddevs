@@ -1,7 +1,7 @@
 <template>
-  <!-- 'individuals-modal' id is needed for google analytics, don't remove it -->
+  <!-- id is needed for google analytics, don't remove it -->
   <Modal
-    id="individuals-modal"
+    :id="id"
     ref="modalIndividuals"
   >
     <IndividualsForm @success="handleSuccess" />
@@ -17,6 +17,13 @@ export default {
   components: {
     Modal,
     IndividualsForm,
+  },
+
+  props: {
+    id: {
+      type: String,
+      default: '',
+    },
   },
 
   methods: {
