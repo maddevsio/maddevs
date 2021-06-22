@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndividualsForm component should render correctly 1`] = `
+<div>
+  <div
+    class="form"
+  >
+    <div
+      class="fields-list"
+    >
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name required"
+        >
+          
+    Full Name
+  
+        </p>
+         
+        <div>
+          <input
+            class="modal-entry-field entry-field"
+            data-testid="test-base-form-fullName"
+            placeholder="John Smith"
+            type="text"
+          />
+           
+          <!---->
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+       
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name required"
+        >
+          
+    Work Email
+  
+        </p>
+         
+        <div>
+          <input
+            class="modal-entry-field entry-field"
+            data-testid="test-base-form-email"
+            placeholder="your@mail.com"
+            type="text"
+          />
+           
+          <!---->
+        </div>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name"
+        >
+          
+    Phone Number
+  
+        </p>
+         
+        <div>
+          <input
+            class="modal-entry-field entry-field"
+            data-testid="test-base-form-phoneNumber"
+            placeholder="Phone number"
+            type="text"
+          />
+           
+          <!---->
+        </div>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name"
+        >
+          
+    Project description
+  
+        </p>
+         
+        <div>
+          <!---->
+           
+          <textarea
+            class="modal-entry-field entry-field textarea"
+            data-testid="test-base-form-description"
+            placeholder="Describe your project..."
+          />
+        </div>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="modal-field-item field-item"
+      >
+        <p
+          class="modal-field-name field-name"
+        >
+          
+    Expertise you are interested in
+  
+        </p>
+         
+        <div>
+          <input
+            class="modal-entry-field entry-field"
+            data-testid="test-base-form-questionsOnItConsulting"
+            placeholder="React development, Heroku Postgres, etc"
+            type="text"
+          />
+           
+          <!---->
+        </div>
+         
+        <!---->
+      </div>
+    </div>
+     
+    <div
+      class="form-checkboxes"
+    >
+      <label
+        class="form-checkbox-label required"
+        for="privacy-policy-individuals-form"
+      >
+        I confirm that I have read and accepted
+    
+        <div>
+          
+      Mad Devs’
+      
+          <a
+            href="/privacy/"
+            target="_blank"
+          >
+            Privacy Policy
+          </a>
+        </div>
+         
+        <input
+          class="form-checkbox-input"
+          data-testid="test-privacy-policy-checkbox-input"
+          id="privacy-policy-individuals-form"
+          name="Privacy policy"
+          type="checkbox"
+        />
+         
+        <div
+          class="checkmark"
+        />
+      </label>
+       
+      <label
+        class="form-checkbox-label"
+        for="marketing-communications-individuals-form"
+      >
+        I agree to get
+    
+        <div>
+          Mad Devs’
+        </div>
+        
+    discount offers and other marketing communications.
+    
+        <input
+          class="form-checkbox-input"
+          data-testid="test-form-checkbox-input"
+          id="marketing-communications-individuals-form"
+          name="Marketing communications"
+          type="checkbox"
+        />
+         
+        <div
+          class="checkmark"
+        />
+      </label>
+    </div>
+     
+    <button
+      class="ui-button ui-button--disabled ui-button--transparent-bgc ui-button_submit-button-footer"
+    >
+      
+    Get individual proactive rockets
+  
+    </button>
+  </div>
+</div>
+`;

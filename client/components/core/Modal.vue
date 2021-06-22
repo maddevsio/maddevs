@@ -39,7 +39,14 @@
             class="modal_content safari-only"
             @success="openSuccessModal"
           >
-            <SuccessMessage v-if="isSuccess" />
+            <!-- id is needed for google analytics, don't remove it -->
+            <div
+              v-if="isSuccess"
+              :id="id"
+              class="success-modal"
+            >
+              <SuccessMessage />
+            </div>
             <slot v-else />
           </Simplebar>
         </div>
@@ -70,6 +77,11 @@ export default {
   },
 
   props: {
+    id: {
+      type: String,
+      default: '',
+    },
+
     appendToBody: {
       type: Boolean,
       default: false,
@@ -150,7 +162,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
+@import '@/assets/styles/_vars';
 
 .modal {
   width: 100%;

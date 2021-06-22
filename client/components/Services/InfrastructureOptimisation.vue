@@ -31,10 +31,7 @@
         </div>
       </div>
     </div>
-
-    <Modal ref="modalInfrastructureAudit">
-      <ModalInfrastructureAudit />
-    </Modal>
+    <ModalInfrastructureAudit ref="modalInfrastructureAudit" />
   </section>
 </template>
 
@@ -42,7 +39,6 @@
 import InfrastructureOptimisationContent from '@/components/Services/InfrastructureOptimisationContent'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import ModalInfrastructureAudit from '@/components/core/modals/ModalInfrastructureAudit'
-import Modal from '@/components/core/Modal'
 import { infrastructureOptimisation } from '@/data/infrastructureOptimisation'
 
 export default {
@@ -51,7 +47,6 @@ export default {
     InfrastructureOptimisationContent,
     UIModalTriggerButton,
     ModalInfrastructureAudit,
-    Modal,
   },
 
   data() {

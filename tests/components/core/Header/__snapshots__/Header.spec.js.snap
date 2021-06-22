@@ -205,12 +205,12 @@ exports[`Header component should render correctly 1`] = `
       <!---->
     </transition-stub>
      
-    <transition-stub
-      mode="out-in"
-      name="main-fade"
+    <modal-stub
+      id="contact-me-modal"
+      modaltitle=""
     >
-      <!---->
-    </transition-stub>
+      <contactmeform-stub />
+    </modal-stub>
   </div>
 </div>
 `;

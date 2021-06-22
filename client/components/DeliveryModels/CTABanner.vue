@@ -12,23 +12,23 @@
         Estimate your project
       </UIButton>
     </UIBanner>
-    <Modal ref="modalContactMe">
-      <ModalContactMe @success="$refs.modalContactMe.close()" />
-    </Modal>
+    <!-- 'contact-me-dm' id is needed for google analytics, don't remove it -->
+    <ModalContactMe
+      id="contact-me-dm"
+      ref="modalContactMe"
+    />
   </div>
 </template>
 
 <script>
 import UIBanner from '@/components/shared/UIBanner'
 import UIButton from '@/components/shared/UIButton'
-import Modal from '@/components/core/Modal'
 
 export default {
   name: 'CTABanner',
   components: {
     UIBanner,
     UIButton,
-    Modal,
     ModalContactMe: () => import('@/components/core/modals/ModalContactMe'),
   },
 }

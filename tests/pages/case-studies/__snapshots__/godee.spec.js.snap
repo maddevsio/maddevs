@@ -190,12 +190,7 @@ exports[`GoDeeCase _uid component should render correctly 1`] = `
         <!---->
       </transition-stub>
        
-      <transition-stub
-        mode="out-in"
-        name="main-fade"
-      >
-        <!---->
-      </transition-stub>
+      <!---->
     </div>
      
     <main-stub />

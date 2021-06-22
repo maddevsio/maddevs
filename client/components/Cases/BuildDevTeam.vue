@@ -16,9 +16,11 @@
           Book a free consultation
         </UIButton>
       </UIBanner>
-      <Modal ref="modalContactMe">
-        <ModalContactMe @success="$refs.modalContactMe.close()" />
-      </Modal>
+      <!-- 'contact-me-cs' id is needed for google analytics, don't remove it -->
+      <ModalContactMe
+        id="contact-me-cs"
+        ref="modalContactMe"
+      />
     </div>
   </div>
 </template>
@@ -26,14 +28,12 @@
 <script>
 import UIBanner from '@/components/shared/UIBanner'
 import UIButton from '@/components/shared/UIButton'
-import Modal from '@/components/core/Modal'
 
 export default {
   name: 'BuildDevTeam',
   components: {
     UIBanner,
     UIButton,
-    Modal,
     ModalContactMe: () => import('@/components/core/modals/ModalContactMe'),
   },
 }
