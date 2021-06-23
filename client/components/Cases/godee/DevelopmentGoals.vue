@@ -1,20 +1,18 @@
 <template>
   <section
-    ref="cardsRootElem"
     class="container_regular"
   >
     <h3
-      ref="developmentGoalsTitle"
+      v-prlx="animationSettingsTitle"
       class="case_title_h2 m-24_bottom case_text-align-center"
     >
       Development goals
     </h3>
     <div
-      ref="cardsContainer"
+      ref="container"
       class="case_development-goals p-96_bottom media-p-48_bottom"
     >
       <div
-        ref="cardsLeftColumn"
         class="case_development-goals-left-column"
       >
         <Card
@@ -38,6 +36,7 @@
       </div>
       <div
         ref="cardsRightColumn"
+        v-prlx="animationSettingsCards"
         class="case_development-goals-right-column"
       >
         <Card
@@ -80,15 +79,26 @@ export default {
   data() {
     return {
       developmentGoals,
-      mainElement: null,
-      currentScroll: 0,
-      previousScroll: 0,
-      translateY: null,
-      scrollSpeed: 5,
-      cardsContainerHeight: null,
-      newHeight: null,
-      paddingBottom: 96,
-      headerHeight: 62,
+      mobileResolution: 1025,
+      animationSettingsCards: {
+        reverse: true,
+        limit: {
+          min: -151,
+          max: 151,
+        },
+
+        mobileMaxWidth: 1025,
+      },
+
+      animationSettingsTitle: {
+        reverse: true,
+        limit: {
+          min: -151,
+          max: 151,
+        },
+
+        mobileMaxWidth: 1025,
+      },
     }
   },
 
@@ -100,68 +110,32 @@ export default {
     rightColumnGoals() {
       return this.developmentGoals.slice(2)
     },
+
+    isMobile() {
+      if (window.screen.width <= this.mobileResolution) return true
+      return false
+    },
   },
 
   mounted() {
-    this.cardsContainerHeight = this.$refs.cardsContainer.getBoundingClientRect().height
-    this.mainElement = document.querySelector('#case-scroll-container')
-    this.mainElement.addEventListener('scroll', this.handleScroll)
+    if (!this.isMobile) window.addEventListener('scroll', this.scrollHandler)
   },
 
   methods: {
-    handleScroll() {
-      // На разрешении экрана 880 происходит перестройка секции и анимация не должна больше отрабатывать
-      const BREAKPOINT = 880
+    scrollHandler() {
+      const { transform } = this.$refs.cardsRightColumn.style
+      const translateY = this.getNumberFromString(transform) // Get number without translateY() wrapper
 
-      if (!this.mainElement) return null
-      if (window.innerWidth <= BREAKPOINT) return this.setDefaultStylesForCards()
-
-      this.currentScroll = this.mainElement.scrollTop
-      if (this.currentScroll > this.previousScroll) this.handleScrollDown()
-      else this.handleScrollUp()
-
-      this.previousScroll = this.currentScroll
-      return null
+      this.calcContainerPadding(translateY)
     },
 
-    getColumnOffset(ref, rootBounding) {
-      if (!ref) return 0
-      return Math.abs(ref.getBoundingClientRect().bottom - rootBounding.bottom)
+    calcContainerPadding(translateY) {
+      this.$refs.container.style.marginBottom = `-${translateY}px`
     },
 
-    handleScrollDown() {
-      const rootBounding = this.$refs.cardsRootElem.getBoundingClientRect()
-      // Получаем расстояние снизу отностильно родителя и переводим число в положительное
-      const leftColumnOffsetBottom = this.getColumnOffset(this.$refs.cardsLeftColumn, rootBounding)
-      const rightColumnOffsetBottom = this.getColumnOffset(this.$refs.cardsRightColumn, rootBounding)
-
-      if (rootBounding.top - this.headerHeight >= 0 || leftColumnOffsetBottom <= rightColumnOffsetBottom) return
-
-      this.translateY = (rootBounding.top - this.headerHeight) / this.scrollSpeed
-      this.$refs.cardsRightColumn.style.transform = `translateY(${this.translateY}px)`
-      this.$refs.developmentGoalsTitle.style.transform = `translateY(${this.translateY}px)`
-      this.newHeight = this.cardsContainerHeight - Math.abs(this.translateY - this.paddingBottom)
-      this.$refs.cardsContainer.style.height = `${this.newHeight}px`
-    },
-
-    handleScrollUp() {
-      const rootBounding = this.$refs.cardsRootElem.getBoundingClientRect()
-      const translateY = (rootBounding.top - this.headerHeight) / this.scrollSpeed
-
-      if (rootBounding.top - this.headerHeight > 0 || translateY <= this.translateY) return
-
-      this.$refs.cardsRightColumn.style.transform = `translateY(${translateY}px)`
-      this.$refs.developmentGoalsTitle.style.transform = `translateY(${translateY}px)`
-
-      if (this.cardsContainerHeight <= this.newHeight) return
-      this.$refs.cardsContainer.style.height = `${(this.newHeight += 3)}px`
-    },
-
-    setDefaultStylesForCards() {
-      this.cardsContainerHeight = this.$refs.cardsContainer.getBoundingClientRect().height
-      this.$refs.cardsRightColumn.style.transform = 'translateY(0px)'
-      this.$refs.developmentGoalsTitle.style.transform = 'translateY(0px)'
-      this.$refs.cardsContainer.style.height = '100%'
+    getNumberFromString(string) {
+      if (typeof string === 'string' && string.length > 0) return parseInt(string.replace(/[^0-9]/g, ''), 10)
+      return 0
     },
   },
 }

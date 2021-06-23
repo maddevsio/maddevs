@@ -122,50 +122,6 @@
       }
     }
 
-    &_parallax {
-      height: 100vh;
-      overflow-x: hidden;
-      overflow-y: auto;
-      -webkit-perspective: 300px;
-      perspective: 300px;
-    }
-
-    &_content-layer {
-      position: relative;
-      z-index: 1;
-      background: #fff;
-    }
-
-    &_parallax-layer {
-      z-index: -9;
-      height: 576px;
-      max-width: 1440px;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-    }
-
-    &_parallax-image-wrapper {
-      position: relative;
-      height: 100vh;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-    }
-
-    &_parallax-image {
-      position: absolute;
-      top: 0;
-      left: -5px;
-      right: 0;
-      bottom: 0;
-      background-size: cover;
-      background-position: center;
-      -webkit-transform: translateZ(-300px) scale(2);
-      transform: translateZ(-300px) scale(2);
-    }
-
     &_html-video-wrapper,
     &_image-wrapper {
       border-top-left-radius: 4px;
