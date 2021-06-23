@@ -1,3 +1,5 @@
+import { getBlogPosts } from '@/api/blog'
+
 export const getBlogAuthors = async prismic => {
   const prismicQuery = async (page = 1) => {
     let authors = []
@@ -11,8 +13,10 @@ export const getBlogAuthors = async prismic => {
   }
 
   try {
+    const blogPosts = await getBlogPosts(prismic)
     const authors = await prismicQuery()
-    return authors
+    const blogAuthors = authors.filter(author => blogPosts.some(post => post.data.post_author.id === author.id))
+    return blogAuthors
   } catch (error) {
     return error
   }
@@ -20,8 +24,9 @@ export const getBlogAuthors = async prismic => {
 
 export const getBlogAuthor = async (prismic, payload) => {
   try {
-    const response = await prismic.api.getByUID('author', payload)
-    return response
+    const blogAuthors = await getBlogAuthors(prismic)
+    const blogAuthor = blogAuthors.find(author => author.uid === payload)
+    return blogAuthor
   } catch (error) {
     return error
   }

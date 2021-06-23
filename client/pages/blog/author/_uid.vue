@@ -46,6 +46,8 @@ export default {
   async asyncData({ store, params, error }) {
     try {
       await store.dispatch('getBlogAuthor', params.uid)
+
+      if (!store.getters.blogAuthor) return error({ statusCode: 404, message: 'Page not found' })
       return {
         openGraphUrl: `${process.env.domain}/blog/author/${params.uid}/`,
       }
