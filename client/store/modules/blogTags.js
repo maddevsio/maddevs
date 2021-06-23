@@ -1,8 +1,8 @@
 /* eslint-disable no-shadow */
-import { getPostsByTag } from '@/api/blogTags'
-import convertStringToSlug from '@/helpers/convertStringToSlug'
+import { getBlogTags, getBlogTag, getPostsByTag } from '@/api/blogTags'
 
 export const state = () => ({
+  tags: [],
   tag: '',
   tagPosts: [],
   tagPostsLoaded: false,
@@ -10,6 +10,9 @@ export const state = () => ({
 })
 
 export const mutations = {
+  SET_TAGS(state, tags) {
+    state.tags = tags
+  },
   SET_TAG(state, tag) {
     state.tag = tag
   },
@@ -25,9 +28,13 @@ export const mutations = {
 }
 
 export const actions = {
-  getBlogTag({ commit }, payload) {
-    const response = this.$prismic.api.tags.find(tag => convertStringToSlug(tag) === payload)
-    commit('SET_TAG', response)
+  async getBlogTags({ commit }) {
+    const tags = await getBlogTags(this.$prismic)
+    commit('SET_TAGS', tags)
+  },
+  async getBlogTag({ commit }, payload) {
+    const tag = await getBlogTag(this.$prismic, payload)
+    commit('SET_TAG', tag)
   },
   async getTagPosts({ commit }, payload) {
     commit('SET_TAG_POSTS_LOADED', false)
@@ -44,6 +51,9 @@ export const actions = {
 }
 
 export const getters = {
+  blogTags(state) {
+    return state.tags
+  },
   blogTag(state) {
     return state.tag
   },
