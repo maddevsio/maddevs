@@ -24,7 +24,9 @@ export default {
 
   async asyncData({ store, params, error }) {
     try {
-      store.dispatch('getBlogTag', params.uid)
+      await store.dispatch('getBlogTag', params.uid)
+
+      if (!store.getters.blogTag) return error({ statusCode: 404, message: 'Page not found' })
       return {
         openGraphUrl: `${process.env.domain}/blog/tag/${params.uid}/`,
       }
