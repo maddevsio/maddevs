@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 import TheLastPostSection from '@/components/Blog/Main/TheLastPostSection'
 import LatestPostsSection from '@/components/Blog/Main/LatestPostsSection'
 import CustomerUniversitySection from '@/components/Blog/Main/CustomerUniversitySection'
@@ -33,6 +33,10 @@ export default {
     }
   },
 
+  computed: {
+    ...mapGetters(['blogPageContent', 'customerContent', 'blogPosts', 'blogAuthors', 'blogTags']),
+  },
+
   created() {
     this.getContent()
   },
@@ -46,13 +50,13 @@ export default {
 
     getContent() {
       // Query to get blog home content
-      this.getBlogPageContent()
-      this.getCustomerUniversityContent()
+      if (!Object.keys(this.blogPageContent).length) this.getBlogPageContent()
+      if (!Object.keys(this.customerContent).length) this.getCustomerUniversityContent()
 
       // Query to get posts content to preview
-      this.getBlogPosts()
-      this.getBlogAuthors()
-      this.getBlogTags()
+      if (!this.blogPosts.length) this.getBlogPosts()
+      if (!this.blogAuthors.length) this.getBlogAuthors()
+      if (!this.blogTags.length) this.getBlogTags()
     },
   },
 }
