@@ -1,14 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ModalSearch component should render correctly 1`] = `
-<section class="modal-search">
-  <div class="container">
-    <div class="modal-search_form"><label><img src="@/assets/img/common/magnify.svg" alt="Magnify" class="modal-search_form-search"> <input type="text" placeholder="Search"></label> <button class="modal-search_form-close"><img src="@/assets/img/common/close-icon-search.svg" alt="Close"></button></div>
-    <!---->
-    <div class="modal-search_not-found">
-      No results found
-    </div>
-    <!---->
-  </div>
-</section>
-`;
+exports[`ModalSearch component should render correctly 1`] = `undefined`;

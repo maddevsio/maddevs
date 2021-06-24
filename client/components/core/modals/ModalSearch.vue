@@ -155,10 +155,6 @@ export default {
     document.addEventListener('keyup', this.listenKeys)
   },
 
-  created() {
-    if (!this.blogTags.length) this.getBlogTags()
-  },
-
   beforeDestroy() {
     document.removeEventListener('keyup', this.listenKeys)
   },
