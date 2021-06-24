@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UID page should render correctly 1`] = `
+<div>
+  <main
+    class="main"
+  >
+    <model-stub
+      optimalmodelfor=""
+      process="[object Object]"
+      subtitle=""
+      title=""
+      uid=""
+    />
+  </main>
+</div>
+`;

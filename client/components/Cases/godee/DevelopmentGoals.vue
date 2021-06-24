@@ -79,7 +79,7 @@ export default {
   data() {
     return {
       developmentGoals,
-      mobileResolution: 1025,
+      mobileResolution: 1024,
       animationSettingsCards: {
         reverse: true,
         limit: {
@@ -121,15 +121,15 @@ export default {
     if (!this.isMobile) window.addEventListener('scroll', this.scrollHandler)
   },
 
+  destroyed() {
+    if (!this.isMobile) window.removeEventListener('scroll', this.scrollHandler)
+  },
+
   methods: {
     scrollHandler() {
       const { transform } = this.$refs.cardsRightColumn.style
       const translateY = this.getNumberFromString(transform) // Get number without translateY() wrapper
 
-      this.calcContainerPadding(translateY)
-    },
-
-    calcContainerPadding(translateY) {
       this.$refs.container.style.marginBottom = `-${translateY}px`
     },
 
