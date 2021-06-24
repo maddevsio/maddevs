@@ -48,7 +48,7 @@ export default {
   },
 
   methods: {
-    ...mapActions(['getHomePageContent', 'getBlogPosts', 'getBlogAuthors', 'getCustomerUniversityContent']),
+    ...mapActions(['getHomePageContent', 'getBlogPosts', 'getBlogAuthors', 'getBlogTags', 'getCustomerUniversityContent']),
 
     getContent() {
       // Query to get blog home content
@@ -58,13 +58,14 @@ export default {
       // Query to get posts content to preview
       this.getBlogPosts()
       this.getBlogAuthors()
+      this.getBlogTags()
     },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
+@import '@/assets/styles/_vars';
 
 .home {
   padding-top: 100px;
