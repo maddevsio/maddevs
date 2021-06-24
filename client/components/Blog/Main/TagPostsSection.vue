@@ -3,12 +3,12 @@
     <div class="container">
       <div
         class="tag-posts__featured-post"
-        :class="[tagPosts.length === 1 ? 'tag-posts__featured-post--mb-0' : '']"
+        :class="[blogTagPosts.length === 1 ? 'tag-posts__featured-post--mb-0' : '']"
       >
         <FeaturedPost
-          v-if="tagPostsLoaded"
-          :post="tagPosts[0]"
-          :author="findAuthor(tagPosts[0].data.post_author.id, allAuthors)"
+          v-if="blogTagPostsLoaded"
+          :post="blogTagPosts[0]"
+          :author="findAuthor(blogTagPosts[0].data.post_author.id, blogAuthors)"
           theme="light"
           :disable-tag-link="true"
         />
@@ -18,9 +18,9 @@
         />
       </div>
       <div class="tag-posts__list">
-        <template v-if="tagPostsLoaded">
+        <template v-if="blogTagPostsLoaded">
           <section
-            v-for="post in tagPostsToShow"
+            v-for="post in blogTagPostsToShow"
             :key="post.id"
             :post="post"
             class="tag-posts__list-item"
@@ -28,7 +28,7 @@
             <PostCard
               :post="post"
               :tag="blogTag"
-              :author="findAuthor(post.data.post_author.id, allAuthors)"
+              :author="findAuthor(post.data.post_author.id, blogAuthors)"
               :disable-tag-link="true"
             />
           </section>
@@ -44,11 +44,11 @@
         </template>
       </div>
       <div
-        v-if="totalPages > tagPostsPage"
+        v-if="totalPages > blogTagPostsPage"
         class="tag-posts__load-more"
       >
         <LoadMoreButton
-          @click="getMoreTagPosts"
+          @click="getMoreBlogTagPosts"
         />
       </div>
     </div>
@@ -85,14 +85,20 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogTag', 'tagPosts', 'tagPostsLoaded', 'allAuthors', 'tagPostsPage']),
+    ...mapGetters([
+      'blogAuthors',
+      'blogTag',
+      'blogTagPosts',
+      'blogTagPostsLoaded',
+      'blogTagPostsPage',
+    ]),
 
-    tagPostsToShow() {
-      return this.tagPosts.slice(0, this.pageSize * this.tagPostsPage)
+    blogTagPostsToShow() {
+      return this.blogTagPosts.slice(0, this.pageSize * this.blogTagPostsPage)
     },
 
     totalPages() {
-      return Math.ceil(this.tagPosts.length / this.pageSize)
+      return Math.ceil(this.blogTagPosts.length / this.pageSize)
     },
   },
 
@@ -101,13 +107,13 @@ export default {
   },
 
   methods: {
-    ...mapActions(['getMoreTagPosts']),
+    ...mapActions(['getMoreBlogTagPosts']),
   },
 }
 </script>
 
 <style lang="scss" scoped>
-  @import '../../../assets/styles/_vars';
+  @import '@/assets/styles/_vars';
 
   .tag-posts {
     background-color: $bgcolor--white-primary;

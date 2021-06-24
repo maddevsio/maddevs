@@ -53,13 +53,13 @@ export default {
   },
 
   created() {
-    this.getTagPosts(this.blogTag)
+    this.getBlogTagPosts(this.blogTag)
     if (!this.blogAuthors.length) this.getBlogAuthors()
     if (!this.blogTags.length) this.getBlogTags()
   },
 
   methods: {
-    ...mapActions(['getTagPosts', 'getBlogAuthors', 'getBlogTags']),
+    ...mapActions(['getBlogTagPosts', 'getBlogAuthors', 'getBlogTags']),
   },
 }
 </script>

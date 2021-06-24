@@ -1,30 +1,6 @@
 /* eslint-disable no-shadow */
-import { getBlogAuthors, getBlogAuthor, getAuthorPosts } from '@/api/blogAuthors'
-import extractSchemaOrg from '@/helpers/extractSchemaOrg'
-
-const extractAuthorData = author => {
-  const socialNetworks = author.data.social_networks
-    .filter(item => item.network && item.link.url)
-    .map(item => ({
-      key: item.network.toLowerCase(),
-      title: item.network,
-      link: item.link,
-    }))
-
-  return {
-    type: author.type,
-    id: author.id,
-    uid: author.uid,
-    name: author.data.name,
-    position: author.data.position,
-    thumbnailImage: author.data.thumbnail_image,
-    image: author.data.image,
-    metaTitle: author.data.meta_title,
-    metaDescription: author.data.meta_description,
-    schemaOrgSnippet: extractSchemaOrg(author.data.schema_org_snippets),
-    socialNetworks,
-  }
-}
+import { getBlogAuthors, getBlogAuthor, getBlogAuthorPosts } from '@/api/blogAuthors'
+import extractAuthorData from '@/helpers/extractAuthorData'
 
 export const state = () => ({
   authors: [],
@@ -61,32 +37,32 @@ export const actions = {
     const author = await getBlogAuthor(this.$prismic, payload)
     commit('SET_AUTHOR', author)
   },
-  async getAuthorPosts({ commit }, payload) {
+  async getBlogAuthorPosts({ commit }, payload) {
     commit('SET_AUTHOR_POSTS_LOADED', false)
     commit('SET_AUTHOR_POSTS', [])
-    const posts = await getAuthorPosts(this.$prismic, payload)
+    const posts = await getBlogAuthorPosts(this.$prismic, payload)
     commit('SET_AUTHOR_POSTS', posts)
     commit('SET_AUTHOR_POSTS_LOADED', true)
   },
-  getMoreAuthorPosts({ commit, state }) {
+  getMoreBlogAuthorPosts({ commit, state }) {
     commit('SET_AUTHOR_POSTS_PAGE', state.authorPostsPage + 1)
   },
 }
 
 export const getters = {
-  allAuthors(state) {
+  blogAuthors(state) {
     return state.authors
   },
   blogAuthor(state) {
     return state.author
   },
-  authorPosts(state) {
+  blogAuthorPosts(state) {
     return state.authorPosts
   },
-  authorPostsLoaded(state) {
+  blogAuthorPostsLoaded(state) {
     return state.authorPostsLoaded
   },
-  authorPostsPage(state) {
+  blogAuthorPostsPage(state) {
     return state.authorPostsPage
   },
 }

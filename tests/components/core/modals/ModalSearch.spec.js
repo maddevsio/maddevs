@@ -36,6 +36,7 @@ describe('ModalSearch component', () => {
           position: 'Senior',
         },
       ],
+      blogTags: ['tag1', 'tag2'],
     },
   }
 
@@ -46,6 +47,7 @@ describe('ModalSearch component', () => {
           results: [],
         },
       }),
+      store,
       mocks,
     })
   })

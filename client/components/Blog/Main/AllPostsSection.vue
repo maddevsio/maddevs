@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="allPosts.length"
+    v-if="blogPosts.length"
     class="filtered-posts"
   >
     <div class="container">
@@ -8,7 +8,7 @@
         <Simplebar>
           <ul class="posts-filter__list">
             <li
-              v-for="(category, i) in homePageContent.categories"
+              v-for="(category, i) in blogPageContent.categories"
               :key="i"
               class="posts-filter__item-wrapper"
             >
@@ -19,7 +19,7 @@
                   name="Tag"
                   data-testid="test-post-input"
                   :value="category.title"
-                  :checked="postsCategory === category.title"
+                  :checked="blogPostsCategory === category.title"
                   @change="handleFilterChange"
                 >
                 <label :for="category.title">{{ category.title }}</label>
@@ -29,11 +29,11 @@
         </Simplebar>
       </div>
       <div
-        v-if="filteredPosts.length !== 0"
+        v-if="filteredBlogPosts.length !== 0"
         class="filtered-posts__list"
       >
         <section
-          v-for="(post) in filteredPostsToShow"
+          v-for="(post) in filteredBlogPostsToShow"
           :key="post.id"
           :post="post"
           class="filtered-posts__list-item"
@@ -41,15 +41,15 @@
         >
           <PostCard
             :post="post"
-            :author="findAuthor(post.data.post_author.id, allAuthors)"
+            :author="findAuthor(post.data.post_author.id, blogAuthors)"
           />
         </section>
       </div>
       <div
-        v-if="totalPages > postsPage"
+        v-if="totalPages > blogPostsPage"
         class="filtered-posts__load-more"
       >
-        <LoadMoreButton @click="getMorePosts" />
+        <LoadMoreButton @click="getMoreBlogPosts" />
       </div>
     </div>
   </div>
@@ -82,26 +82,26 @@ export default {
 
   computed: {
     ...mapGetters([
-      'homePageContent',
-      'allPosts',
-      'allAuthors',
-      'filteredPosts',
-      'postsCategory',
-      'postsPage',
+      'blogPageContent',
+      'blogPosts',
+      'blogAuthors',
+      'filteredBlogPosts',
+      'blogPostsCategory',
+      'blogPostsPage',
     ]),
 
-    filteredPostsToShow() {
-      return this.filteredPosts.slice(0, this.pageSize * this.postsPage)
+    filteredBlogPostsToShow() {
+      return this.filteredBlogPosts.slice(0, this.pageSize * this.blogPostsPage)
     },
 
     totalPages() {
-      return Math.ceil(this.filteredPosts.length / this.pageSize)
+      return Math.ceil(this.filteredBlogPosts.length / this.pageSize)
     },
   },
 
   watch: {
     // Fixes scroll position for async filtered posts list
-    filteredPosts() {
+    filteredBlogPosts() {
       const visitedLinkEl = document.querySelector(`a[href='${this.visitedPost}']`)
       if (
         visitedLinkEl
@@ -120,17 +120,17 @@ export default {
   },
 
   methods: {
-    ...mapActions(['changePostsCategory', 'getMorePosts']),
+    ...mapActions(['changeBlogPostsCategory', 'getMoreBlogPosts']),
 
     handleFilterChange(e) {
-      this.changePostsCategory(e.target.value)
+      this.changeBlogPostsCategory(e.target.value)
     },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
+@import '@/assets/styles/_vars';
 
 .posts-filter {
   min-width: 150px;

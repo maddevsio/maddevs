@@ -33,7 +33,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['getSearchResponse', 'getSearchQuery', 'allAuthors']),
+    ...mapGetters(['getSearchResponse', 'getSearchQuery', 'blogAuthors']),
 
     posts() {
       if (!this.getSearchResponse || !this.getSearchResponse.results) return null
@@ -46,7 +46,7 @@ export default {
   },
 
   watch: {
-    allAuthors(newVal) {
+    blogAuthors(newVal) {
       if (newVal && newVal.length) {
         this.$nextTick(() => {
           this.resetLazyLoad()

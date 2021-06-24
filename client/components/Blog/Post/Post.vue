@@ -75,7 +75,7 @@
         >
           <PostCard
             :post="post"
-            :author="findAuthor(post.data.post_author.id, allAuthors)"
+            :author="findAuthor(post.data.post_author.id, blogAuthors)"
           />
         </section>
       </div>
@@ -208,7 +208,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['allAuthors', 'blogTag']),
+    ...mapGetters(['blogAuthors', 'blogTag']),
 
     tableOfContentsSlice() {
       return this.slices && this.slices.find(slice => slice.slice_type === 'table_of_contents')
@@ -332,8 +332,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
-@import '../../../assets/styles/socialNetworkIcons';
+@import '@/assets/styles/_vars';
+@import '@/assets/styles/_socialNetworkIcons';
 
 .blog-post {
   margin: auto;

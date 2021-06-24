@@ -73,12 +73,12 @@ export default {
   },
 
   created() {
-    this.getAuthorPosts(this.blogAuthor.id)
+    this.getBlogAuthorPosts(this.blogAuthor.id)
     if (!this.blogTags.length) this.getBlogTags()
   },
 
   methods: {
-    ...mapActions(['getAuthorPosts', 'getBlogTags']),
+    ...mapActions(['getBlogAuthorPosts', 'getBlogTags']),
   },
 }
 </script>

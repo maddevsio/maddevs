@@ -129,7 +129,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
+@import '@/assets/styles/_vars';
 
 .post-card {
   width: 100%;

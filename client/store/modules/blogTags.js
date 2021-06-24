@@ -1,5 +1,5 @@
 /* eslint-disable no-shadow */
-import { getBlogTags, getBlogTag, getPostsByTag } from '@/api/blogTags'
+import { getBlogTags, getBlogTag, getBlogPostsByTag } from '@/api/blogTags'
 
 export const state = () => ({
   tags: [],
@@ -36,16 +36,16 @@ export const actions = {
     const tag = await getBlogTag(this.$prismic, payload)
     commit('SET_TAG', tag)
   },
-  async getTagPosts({ commit }, payload) {
+  async getBlogTagPosts({ commit }, payload) {
     commit('SET_TAG_POSTS_LOADED', false)
     commit('SET_TAG_POSTS', [])
 
-    const posts = await getPostsByTag(this.$prismic, payload)
+    const posts = await getBlogPostsByTag(this.$prismic, payload)
 
     commit('SET_TAG_POSTS', posts)
     commit('SET_TAG_POSTS_LOADED', true)
   },
-  getMoreTagPosts({ commit, state }) {
+  getMoreBlogTagPosts({ commit, state }) {
     commit('SET_TAG_POSTS_PAGE', state.tagPostsPage + 1)
   },
 }
@@ -57,16 +57,16 @@ export const getters = {
   blogTag(state) {
     return state.tag
   },
-  tagPosts(state) {
+  blogTagPosts(state) {
     return state.tagPosts
   },
-  tagPostsCount(state) {
+  blogTagPostsCount(state) {
     return state.tagPosts.length
   },
-  tagPostsLoaded(state) {
+  blogTagPostsLoaded(state) {
     return state.tagPostsLoaded
   },
-  tagPostsPage(state) {
+  blogTagPostsPage(state) {
     return state.tagPostsPage
   },
 }

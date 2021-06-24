@@ -24,7 +24,7 @@
               </p>
             </NuxtLink>
             <PostAuthor
-              v-bind="findAuthor(featuredCUPost.post_author.id, allAuthors)"
+              v-bind="findAuthor(featuredCUPost.post_author.id, blogAuthors)"
               theme="dark"
             />
             <NuxtLink
@@ -109,7 +109,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['customerContent', 'featuredCUPost', 'allAuthors']),
+    ...mapGetters(['customerContent', 'featuredCUPost', 'blogAuthors']),
 
     clusters() {
       return this.customerContent.body || []
@@ -133,7 +133,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/vars';
+@import '@/assets/styles/_vars';
 
 @mixin label {
   @include font('Inter', 13px, 400);

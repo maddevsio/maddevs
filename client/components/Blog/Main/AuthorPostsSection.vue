@@ -3,11 +3,11 @@
     <div class="container">
       <div
         class="author-posts__featured-post"
-        :class="[authorPosts.length === 1 ? 'author-posts__featured-post--mb-0' : '']"
+        :class="[blogAuthorPosts.length === 1 ? 'author-posts__featured-post--mb-0' : '']"
       >
         <FeaturedPost
-          v-if="authorPostsLoaded"
-          :post="authorPosts[0]"
+          v-if="blogAuthorPostsLoaded"
+          :post="blogAuthorPosts[0]"
           :author="blogAuthor"
           theme="light"
           :disable-author-link="true"
@@ -18,9 +18,9 @@
         />
       </div>
       <div class="author-posts__list">
-        <template v-if="authorPostsLoaded">
+        <template v-if="blogAuthorPostsLoaded">
           <section
-            v-for="post in authorPostsToShow"
+            v-for="post in blogAuthorPostsToShow"
             :key="post.id"
             :post="post"
             class="author-posts__list-item"
@@ -43,11 +43,11 @@
         </template>
       </div>
       <div
-        v-if="totalPages > authorPostsPage"
+        v-if="totalPages > blogAuthorPostsPage"
         class="author-posts__load-more"
       >
         <LoadMoreButton
-          @click="getMoreAuthorPosts"
+          @click="getMoreBlogAuthorPosts"
         />
       </div>
     </div>
@@ -80,14 +80,19 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogAuthor', 'authorPosts', 'authorPostsLoaded', 'authorPostsPage']),
+    ...mapGetters([
+      'blogAuthor',
+      'blogAuthorPosts',
+      'blogAuthorPostsLoaded',
+      'blogAuthorPostsPage',
+    ]),
 
-    authorPostsToShow() {
-      return this.authorPosts.slice(0, this.pageSize * this.authorPostsPage)
+    blogAuthorPostsToShow() {
+      return this.blogAuthorPosts.slice(0, this.pageSize * this.blogAuthorPostsPage)
     },
 
     totalPages() {
-      return Math.ceil(this.authorPosts.length / this.pageSize)
+      return Math.ceil(this.blogAuthorPosts.length / this.pageSize)
     },
   },
 
@@ -96,13 +101,13 @@ export default {
   },
 
   methods: {
-    ...mapActions(['getMoreAuthorPosts']),
+    ...mapActions(['getMoreBlogAuthorPosts']),
   },
 }
 </script>
 
 <style lang="scss" scoped>
-  @import '../../../assets/styles/_vars';
+  @import '@/assets/styles/_vars';
 
   .author-posts {
     background-color: $bgcolor--white-primary;

@@ -3,11 +3,11 @@
 import formatDate from '@/helpers/formatDate'
 
 import {
-  getHomePageContent, getBlogPosts, getCustomerUniversityMaster, getCustomerUniversityFeaturedPost,
+  getBlogPageContent, getBlogPosts, getCustomerUniversityMaster, getCustomerUniversityFeaturedPost,
 } from '@/api/blog'
 
 export const state = () => ({
-  homePageContent: {},
+  blogPageContent: {},
   customerContent: {},
   featuredCUPost: null,
   posts: [],
@@ -23,7 +23,7 @@ export const mutations = {
       title: this.$prismic.asText(category.category_title),
       tags: category.tags.length ? this.$prismic.asText(category.tags).split(/, */g) : [],
     }))
-    state.homePageContent = {
+    state.blogPageContent = {
       image: data.image.url,
       headline: data.headline[0].text,
       description: data.description[0].text,
@@ -55,11 +55,11 @@ export const mutations = {
 }
 
 export const actions = {
-  async getHomePageContent({ commit, state }) {
-    const pageContent = await getHomePageContent(this.$prismic)
+  async getBlogPageContent({ commit, state }) {
+    const pageContent = await getBlogPageContent(this.$prismic)
     commit('SET_BLOG_PAGE_CONTENT', pageContent)
     if (!state.postsCategory) {
-      commit('SET_POSTS_CATEGORY', state.homePageContent.categories[0].title)
+      commit('SET_POSTS_CATEGORY', state.blogPageContent.categories[0].title)
     }
   },
   async getBlogPosts({ commit }) {
@@ -75,18 +75,18 @@ export const actions = {
       commit('SET_FEATURED_CUSTOMER_POST', featuredPost)
     }
   },
-  getMorePosts({ commit, state }) {
+  getMoreBlogPosts({ commit, state }) {
     commit('SET_POSTS_PAGE', state.postsPage + 1)
   },
-  changePostsCategory({ commit }, filter) {
+  changeBlogPostsCategory({ commit }, filter) {
     commit('SET_POSTS_PAGE', 1)
     commit('SET_POSTS_CATEGORY', filter)
   },
 }
 
 export const getters = {
-  homePageContent(state) {
-    return state.homePageContent
+  blogPageContent(state) {
+    return state.blogPageContent
   },
   customerContent(state) {
     return state.customerContent
@@ -94,38 +94,38 @@ export const getters = {
   featuredCUPost(state) {
     return state.featuredCUPost
   },
-  allPosts(state) {
+  blogPosts(state) {
     return state.posts
   },
-  filteredPosts(state) {
-    if (state.postsCategory !== null && state.homePageContent.categories) {
-      const currentCategory = state.homePageContent.categories.find(tag => tag.title === state.postsCategory)
+  filteredBlogPosts(state) {
+    if (state.postsCategory !== null && state.blogPageContent.categories) {
+      const currentCategory = state.blogPageContent.categories.find(tag => tag.title === state.postsCategory)
       const currentTags = [...currentCategory.tags, currentCategory.title]
       return state.posts.filter(post => post.tags.some(tag => currentTags.includes(tag)))
     }
     return []
   },
-  recentPosts(state) {
+  recentBlogPosts(state) {
     const posts = state.posts.slice(0, 5)
     if (posts.length) {
       posts.splice(4, 0, {
         id: 'banner',
-        banner: state.homePageContent.banner || { url: '#' },
-        link: state.homePageContent.bannerLink || { link_type: 'Web', target: '_self', url: '#' },
+        banner: state.blogPageContent.banner || { url: '#' },
+        link: state.blogPageContent.bannerLink || { link_type: 'Web', target: '_self', url: '#' },
       })
     }
     return posts
   },
-  featuredPost(state) {
+  featuredBlogPost(state) {
     return state.featuredPost
   },
-  postsCategory(state) {
+  blogPostsCategory(state) {
     return state.postsCategory
   },
-  postsLoaded(state) {
+  blogPostsLoaded(state) {
     return state.postsLoaded
   },
-  postsPage(state) {
+  blogPostsPage(state) {
     return state.postsPage
   },
 }

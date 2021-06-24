@@ -26,7 +26,7 @@ export const getBlogTag = async (prismic, payload) => {
   }
 }
 
-export const getPostsByTag = async (prismic, payload) => {
+export const getBlogPostsByTag = async (prismic, payload) => {
   const prismicQuery = async (page = 1) => {
     let posts = []
     const response = await prismic.api.query(prismic.predicates.at('document.tags', [payload]), {

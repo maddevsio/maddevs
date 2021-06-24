@@ -32,7 +32,7 @@ export const getBlogAuthor = async (prismic, payload) => {
   }
 }
 
-export const getAuthorPosts = async (prismic, payload) => {
+export const getBlogAuthorPosts = async (prismic, payload) => {
   const prismicQuery = async (page = 1) => {
     let posts = []
     const response = await prismic.api.query([

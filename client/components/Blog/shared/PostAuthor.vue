@@ -87,7 +87,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/vars';
+@import '@/assets/styles/_vars';
 
 .post-author {
   max-width: 100%;
