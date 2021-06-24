@@ -24,10 +24,6 @@ const GODEE_MOCK = {
 const stubs = ['NuxtLink']
 
 const setDefaultStateForHeader = jest.fn()
-const removeEventListeners = jest.fn()
-const caseGoDeeScrollContainer = {
-  removeEventListener: jest.fn(),
-}
 
 const containerToRender = document.createElement('div')
 containerToRender.setAttribute('id', 'case-scroll-container')
@@ -58,11 +54,9 @@ describe('Header component', () => {
 
     wrapper.vm.$options.watch.$route.call({
       setDefaultStateForHeader,
-      removeEventListeners,
     })
 
     expect(setDefaultStateForHeader).toHaveBeenCalledTimes(1)
-    expect(removeEventListeners).toHaveBeenCalledTimes(1)
   })
 
   it('should render correctly', () => {
@@ -72,48 +66,6 @@ describe('Header component', () => {
     })
 
     expect(container).toMatchSnapshot()
-  })
-
-  it('should correctly render godee', () => {
-    const { container } = render(Header, {
-      mocks: GODEE_MOCK,
-      stubs,
-      container: document.body.appendChild(containerToRender),
-    })
-
-    const scrollBarWidth = containerToRender.offsetWidth - containerToRender.clientWidth
-    expect(container.querySelector('header').style.width).toBe(`calc(100% - ${scrollBarWidth}px)`)
-  })
-
-  it('should correctly render godee with small screen', () => {
-    window.innerWidth = 800
-
-    const { container } = render(Header, {
-      mocks: GODEE_MOCK,
-      stubs,
-      container: document.body.appendChild(containerToRender),
-    })
-
-    expect(container.querySelector('header').style.width).toBe('100%')
-  })
-
-  it('should correctly work setWidthForHeader method if haven\'t container', () => {
-    const callObject = {
-      $refs: {
-        header: {
-          style: {
-            width: '88%',
-          },
-        },
-      },
-    }
-    const wrapper = shallowMount(Header, {
-      mocks: GODEE_MOCK,
-      stubs,
-    })
-
-    wrapper.vm.$options.methods.setWidthForHeader.call(callObject)
-    expect(callObject.$refs.header.style.width).toBe('88%')
   })
 
   it('should correct work navigation click', async () => {
@@ -176,77 +128,6 @@ describe('Header component', () => {
     await fireEvent.scroll(mobileScrollBar, { target: { scrollTop: 50 } })
 
     expect(screen.queryAllByTestId('test-logo-text')).toHaveLength(0)
-  })
-
-  it('not call remove handler in path not contain godee', () => {
-    const wrapper = shallowMount(Header, {
-      mocks,
-      stubs,
-      container: document.body.appendChild(containerToRender),
-    })
-
-    wrapper.vm.$options.methods.removeEventListeners.call({
-      caseGoDeeScrollContainer,
-      ...mocks,
-    })
-
-    wrapper.vm.$options.methods.setWidthForHeader.call({
-      caseGoDeeScrollContainer,
-      $refs: {},
-      ...GODEE_MOCK,
-    })
-
-    expect(caseGoDeeScrollContainer.removeEventListener).toHaveBeenCalledTimes(0)
-  })
-
-  it('correctly call remove handler in path include godee', () => {
-    const wrapper = shallowMount(Header, {
-      mocks: GODEE_MOCK,
-      stubs,
-      container: document.body.appendChild(containerToRender),
-    })
-
-    wrapper.vm.$options.methods.removeEventListeners.call({
-      caseGoDeeScrollContainer,
-      ...GODEE_MOCK,
-    })
-
-    expect(caseGoDeeScrollContainer.removeEventListener).toHaveBeenCalledTimes(0)
-  })
-
-  it('should correctly work removeEventListeners handler if haven\'t godee container', () => {
-    const callObject = {
-      ...GODEE_MOCK,
-      setWidthForHeader: jest.fn(),
-      isGodeePage: true,
-    }
-    const wrapper = shallowMount(Header, {
-      mocks: GODEE_MOCK,
-      stubs,
-    })
-
-    wrapper.vm.$options.methods.removeEventListeners.call(callObject)
-
-    expect(window.removeEventListener).toHaveBeenCalledWith('resize', callObject.setWidthForHeader)
-  })
-
-  it('should correctly work removeEventListeners handler', () => {
-    const callObject = {
-      ...GODEE_MOCK,
-      caseGoDeeScrollContainer,
-      setWidthForHeader: jest.fn(),
-      isGodeePage: true,
-    }
-    const wrapper = shallowMount(Header, {
-      mocks: GODEE_MOCK,
-      stubs,
-      container: document.body.appendChild(containerToRender),
-    })
-
-    wrapper.vm.$options.methods.removeEventListeners.call(callObject)
-
-    expect(caseGoDeeScrollContainer.removeEventListener).toHaveBeenCalledTimes(1)
-    expect(window.removeEventListener).toHaveBeenCalledWith('resize', callObject.setWidthForHeader)
   })
 
   it('should correctly work disable scroll if body top is null', () => {

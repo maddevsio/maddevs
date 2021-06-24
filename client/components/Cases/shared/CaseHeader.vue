@@ -125,21 +125,13 @@ export default {
       this.isIphone = false
     }
     if (this.textOpacity) {
-      if (this.project === 'godee') {
-        document.getElementById('case-scroll-container').addEventListener('scroll', this.onScroll)
-      } else {
-        window.addEventListener('scroll', this.onScroll)
-      }
+      window.addEventListener('scroll', this.onScroll)
     }
   },
 
   destroyed() {
     if (this.textOpacity) {
-      if (this.scrollContainer) {
-        document.getElementById('case-scroll-container').removeEventListener('scroll', this.onScroll)
-      } else {
-        window.removeEventListener('scroll', this.onScroll)
-      }
+      window.removeEventListener('scroll', this.onScroll)
     }
   },
 
@@ -155,9 +147,6 @@ export default {
     },
 
     getScrollPosition() {
-      if (this.project === 'godee') {
-        return document.getElementById('case-scroll-container').scrollTop
-      }
       return window.scrollY
     },
   },

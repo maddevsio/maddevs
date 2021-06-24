@@ -171,7 +171,6 @@ export default {
       isActiveMobileMenu: false,
       isCasePage: false,
       isTransparentBG: true,
-      caseGoDeeScrollContainer: null,
       searchActive: false,
     }
   },
@@ -179,10 +178,6 @@ export default {
   computed: {
     logoTextIsActive() {
       return this.showLogoText && this.$nuxt.$route.name !== 'delivery-models'
-    },
-
-    isGodeePage() {
-      return this.$nuxt.$route.path.includes('/godee')
     },
 
     isBlogPage() {
@@ -193,7 +188,6 @@ export default {
   watch: {
     $route() {
       this.setDefaultStateForHeader()
-      this.removeEventListeners()
     },
 
     searchActive(opened) {
@@ -212,10 +206,8 @@ export default {
   },
 
   mounted() {
-    this.caseGoDeeScrollContainer = document.getElementById('case-scroll-container')
     this.addEventListeners()
     this.setStylesForHeader()
-    if (this.isCasePage && this.isGodeePage) this.setWidthForHeader()
   },
 
   methods: {
@@ -277,24 +269,8 @@ export default {
       }
     },
 
-    setWidthForHeader() {
-      if (!this.caseGoDeeScrollContainer) return
-      const scrollBarWidth = this.caseGoDeeScrollContainer.offsetWidth - this.caseGoDeeScrollContainer.clientWidth
-      if (this.$refs.header && this.$refs.overlay) {
-        if (window.innerWidth >= 991) {
-          this.$refs.header.style.width = `calc(100% - ${scrollBarWidth}px)`
-          this.$refs.overlay.style.width = `calc(100% - ${scrollBarWidth}px)`
-        } else {
-          this.$refs.header.style.width = '100%'
-          this.$refs.overlay.style.width = '100%'
-        }
-      }
-    },
-
     setStylesForHeader() {
-      const scrollTop = this.isGodeePage && this.caseGoDeeScrollContainer
-        ? this.caseGoDeeScrollContainer.scrollTop
-        : window.scrollY
+      const scrollTop = window.scrollY
       const area = document.querySelector('#case-header')
       if (!area) return
 
@@ -312,17 +288,6 @@ export default {
 
     addEventListeners() {
       window.addEventListener('scroll', this.scrollHandler)
-      if (!this.isGodeePage) return
-
-      window.addEventListener('resize', this.setWidthForHeader)
-      if (this.caseGoDeeScrollContainer) this.caseGoDeeScrollContainer.addEventListener('scroll', this.scrollHandler)
-    },
-
-    removeEventListeners() {
-      if (!this.isGodeePage) return
-
-      window.removeEventListener('resize', this.setWidthForHeader)
-      if (this.caseGoDeeScrollContainer) this.caseGoDeeScrollContainer.removeEventListener('scroll', this.scrollHandler)
     },
   },
 }
