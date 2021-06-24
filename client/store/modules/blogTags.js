@@ -33,6 +33,7 @@ export const actions = {
     commit('SET_TAGS', tags)
   },
   async getBlogTag({ commit }, payload) {
+    commit('SET_TAG_POSTS_PAGE', 1)
     const tag = await getBlogTag(this.$prismic, payload)
     commit('SET_TAG', tag)
   },

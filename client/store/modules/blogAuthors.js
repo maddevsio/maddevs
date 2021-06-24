@@ -34,6 +34,7 @@ export const actions = {
     if (Array.isArray(authors)) commit('SET_ALL_AUTHORS', authors)
   },
   async getBlogAuthor({ commit }, payload) {
+    commit('SET_AUTHOR_POSTS_PAGE', 1)
     const author = await getBlogAuthor(this.$prismic, payload)
     commit('SET_AUTHOR', author)
   },
