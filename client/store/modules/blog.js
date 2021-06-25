@@ -78,7 +78,7 @@ export const actions = {
   getMoreBlogPosts({ commit, state }) {
     commit('SET_POSTS_PAGE', state.postsPage + 1)
   },
-  changePostsCategory({ commit }, filter) {
+  changeBlogPostsCategory({ commit }, filter) {
     commit('SET_POSTS_PAGE', 1)
     commit('SET_POSTS_CATEGORY', filter)
   },

@@ -120,10 +120,10 @@ export default {
   },
 
   methods: {
-    ...mapActions(['changePostsCategory', 'getMoreBlogPosts']),
+    ...mapActions(['changeBlogPostsCategory', 'getMoreBlogPosts']),
 
     handleFilterChange(e) {
-      this.changePostsCategory(e.target.value)
+      this.changeBlogPostsCategory(e.target.value)
     },
   },
 }

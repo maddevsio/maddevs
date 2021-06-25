@@ -55,7 +55,7 @@ const store = {
     allAuthors: jest.fn(),
   },
   actions: {
-    changePostsCategory: jest.fn(),
+    changeBlogPostsCategory: jest.fn(),
     getMoreBlogPosts: jest.fn(),
   },
 }

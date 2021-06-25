@@ -217,7 +217,7 @@ describe('Blog module actions', () => {
     expect(store.commit).toHaveBeenCalledWith('SET_POSTS_PAGE', 2)
   })
 
-  it('should correctly called changePostsCategory', () => {
+  it('should correctly called changeBlogPostsCategory', () => {
     const store = {
       commit: jest.fn(),
       state: defaultState(),
@@ -225,7 +225,7 @@ describe('Blog module actions', () => {
 
     const filter = 'category'
 
-    actions.changePostsCategory(store, filter)
+    actions.changeBlogPostsCategory(store, filter)
     expect(store.commit).toHaveBeenCalledWith('SET_POSTS_PAGE', 1)
     expect(store.commit).toHaveBeenCalledWith('SET_POSTS_CATEGORY', filter)
   })

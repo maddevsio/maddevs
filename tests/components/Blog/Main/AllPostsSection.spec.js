@@ -32,7 +32,7 @@ const store = {
     allAuthors: jest.fn(),
   },
   actions: {
-    changePostsCategory: jest.fn(),
+    changeBlogPostsCategory: jest.fn(),
     getMoreBlogPosts: jest.fn(),
   },
 }
@@ -81,7 +81,7 @@ describe('AllPostsSection component', () => {
 
     const input = screen.getAllByTestId('test-post-input')
     await fireEvent.update(input[0], 'Hardware')
-    expect(store.actions.changePostsCategory).toHaveBeenCalledTimes(1)
+    expect(store.actions.changeBlogPostsCategory).toHaveBeenCalledTimes(1)
   })
 
   it('correctly call update class function from watcher if haven\'t parent node or not found attribute', () => {
