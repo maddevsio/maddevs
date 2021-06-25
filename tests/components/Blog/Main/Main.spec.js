@@ -24,7 +24,7 @@ const stubs = ['NuxtLink', 'FeaturedPost', 'CustomerUniversitySection']
 const store = {
   getters: {
     filteredBlogPosts: () => blogPosts,
-    featuredPost: () => blogPosts[0],
+    featuredBlogPost: () => blogPosts[0],
     blogPosts: () => blogPosts,
     allAuthors: () => [{}],
     postsLoaded: () => true,

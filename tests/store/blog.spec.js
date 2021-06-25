@@ -264,8 +264,8 @@ describe('Blog module getters', () => {
     expect(getters.blogPosts(state)).toBe(state.posts)
   })
 
-  it('featuredPost', () => {
-    expect(getters.featuredPost(state)).toBe(state.featuredPost)
+  it('featuredBlogPost', () => {
+    expect(getters.featuredBlogPost(state)).toBe(state.featuredPost)
   })
 
   it('postsCategory', () => {
