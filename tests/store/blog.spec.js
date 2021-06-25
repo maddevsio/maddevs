@@ -276,8 +276,8 @@ describe('Blog module getters', () => {
     expect(getters.blogPostsLoaded(state)).toBe(state.postsLoaded)
   })
 
-  it('postsPage', () => {
-    expect(getters.postsPage(state)).toBe(state.postsPage)
+  it('blogPostsPage', () => {
+    expect(getters.blogPostsPage(state)).toBe(state.postsPage)
   })
 
   it('filteredBlogPosts empty', () => {

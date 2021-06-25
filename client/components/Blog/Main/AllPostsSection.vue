@@ -46,7 +46,7 @@
         </section>
       </div>
       <div
-        v-if="totalPages > postsPage"
+        v-if="totalPages > blogPostsPage"
         class="filtered-posts__load-more"
       >
         <LoadMoreButton @click="getMoreBlogPosts" />
@@ -87,11 +87,11 @@ export default {
       'allAuthors',
       'filteredBlogPosts',
       'blogPostsCategory',
-      'postsPage',
+      'blogPostsPage',
     ]),
 
     filteredPostsToShow() {
-      return this.filteredBlogPosts.slice(0, this.pageSize * this.postsPage)
+      return this.filteredBlogPosts.slice(0, this.pageSize * this.blogPostsPage)
     },
 
     totalPages() {

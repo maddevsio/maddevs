@@ -32,7 +32,7 @@ const store = {
     recentBlogPosts: jest.fn(),
     featuredCUPost: jest.fn(),
     customerContent: () => {},
-    postsPage: () => 2,
+    blogPostsPage: () => 2,
     blogPageContent: () => blogContent.default,
   },
   actions: {

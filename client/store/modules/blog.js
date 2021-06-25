@@ -125,7 +125,7 @@ export const getters = {
   blogPostsLoaded(state) {
     return state.postsLoaded
   },
-  postsPage(state) {
+  blogPostsPage(state) {
     return state.postsPage
   },
 }
