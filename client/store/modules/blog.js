@@ -119,7 +119,7 @@ export const getters = {
   featuredBlogPost(state) {
     return state.featuredPost
   },
-  postsCategory(state) {
+  blogPostsCategory(state) {
     return state.postsCategory
   },
   postsLoaded(state) {

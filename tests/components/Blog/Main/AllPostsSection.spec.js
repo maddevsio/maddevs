@@ -26,7 +26,7 @@ const store = {
   getters: {
     filteredBlogPosts: () => blogPosts,
     blogPosts: () => blogPosts,
-    postsCategory: jest.fn(),
+    blogPostsCategory: jest.fn(),
     postsPage: () => 2,
     blogPageContent: () => blogContent.default,
     allAuthors: jest.fn(),

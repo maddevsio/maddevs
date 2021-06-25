@@ -19,7 +19,7 @@
                   name="Tag"
                   data-testid="test-post-input"
                   :value="category.title"
-                  :checked="postsCategory === category.title"
+                  :checked="blogPostsCategory === category.title"
                   @change="handleFilterChange"
                 >
                 <label :for="category.title">{{ category.title }}</label>
@@ -86,7 +86,7 @@ export default {
       'blogPosts',
       'allAuthors',
       'filteredBlogPosts',
-      'postsCategory',
+      'blogPostsCategory',
       'postsPage',
     ]),
 

@@ -268,8 +268,8 @@ describe('Blog module getters', () => {
     expect(getters.featuredBlogPost(state)).toBe(state.featuredPost)
   })
 
-  it('postsCategory', () => {
-    expect(getters.postsCategory(state)).toBe(state.postsCategory)
+  it('blogPostsCategory', () => {
+    expect(getters.blogPostsCategory(state)).toBe(state.postsCategory)
   })
 
   it('postsLoaded', () => {
