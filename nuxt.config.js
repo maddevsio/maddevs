@@ -117,6 +117,7 @@ module.exports = {
     { src: '~/plugins/sentry.js', mode: 'client' },
     { src: '~/plugins/lazy-load.js', mode: 'client' },
     { src: '~/plugins/pure-counter.js', mode: 'client' },
+    { src: '~/plugins/vue-parallax', mode: 'client' },
   ],
   /*
   ** Nuxt Modules

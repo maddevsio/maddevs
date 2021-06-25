@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FooterForm should render correctly 1`] = `
+<div>
+  <section>
+    <baseform-stub
+      additionalvalid="true"
+      buttonclassname="ui-button--transparent-bgc ui-button_submit-button-footer"
+      buttonlabel="Order a project now"
+      classname="footer-form"
+      emailrequired="true"
+      id="footer-form"
+      usedescription="true"
+    />
+     
+    <modalsuccess-stub
+      displaytime="3000"
+      id="footer-modal"
+    />
+  </section>
+</div>
+`;

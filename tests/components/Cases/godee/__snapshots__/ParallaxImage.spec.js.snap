@@ -3,13 +3,13 @@
 exports[`ParallaxImage component should render correctly 1`] = `
 <div>
   <div
-    class="case_parallax-layer"
+    class="case_parallax-layer m-48_top media-m-24_top m-48_bottom media-m-24_bottom m-auto"
   >
     <div
-      class="case_parallax-image-wrapper"
+      class="case_parallax-wrapper"
     >
       <div
-        class="case_parallax-image"
+        class="case_parallax"
         data-testid="test-case_parallax-image"
         style="background-image: url(img.jpg);"
       />
