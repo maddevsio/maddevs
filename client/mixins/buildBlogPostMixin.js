@@ -55,10 +55,8 @@ const buildBlogPostMixin = (postType = 'post') => ({
   },
 
   computed: {
-    compressedImage() {
-      const imageWithoutCrop = this.post.featuredImage.url.split('?auto')[0] // get image without crop and default compress params
-      const compressedImage = `${imageWithoutCrop}?q=50` // set custome compress params
-      return compressedImage
+    imageWithoutCrop() {
+      return this.post.featuredImage.url.split('?auto')[0] // get image without crop and default compress params
     },
   },
 
@@ -69,7 +67,7 @@ const buildBlogPostMixin = (postType = 'post') => ({
       description: this.post.metaDescription || '',
       url: this.openGraphUrl,
       jsonLd: this.schemaOrgSnippet,
-      image: this.compressedImage ? this.compressedImage : '/favicon.ico',
+      image: this.imageWithoutCrop ? this.imageWithoutCrop : '/favicon.ico',
     })
   },
 
