@@ -207,13 +207,13 @@ describe('Blog module actions', () => {
     expect(store.commit).toHaveBeenCalledWith('SET_POSTS_LOADED', true)
   })
 
-  it('should correctly called getMorePosts', () => {
+  it('should correctly called getMoreBlogPosts', () => {
     const store = {
       commit: jest.fn(),
       state: defaultState(),
     }
 
-    actions.getMorePosts(store)
+    actions.getMoreBlogPosts(store)
     expect(store.commit).toHaveBeenCalledWith('SET_POSTS_PAGE', 2)
   })
 

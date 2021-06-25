@@ -49,7 +49,7 @@
         v-if="totalPages > postsPage"
         class="filtered-posts__load-more"
       >
-        <LoadMoreButton @click="getMorePosts" />
+        <LoadMoreButton @click="getMoreBlogPosts" />
       </div>
     </div>
   </div>
@@ -120,7 +120,7 @@ export default {
   },
 
   methods: {
-    ...mapActions(['changePostsCategory', 'getMorePosts']),
+    ...mapActions(['changePostsCategory', 'getMoreBlogPosts']),
 
     handleFilterChange(e) {
       this.changePostsCategory(e.target.value)

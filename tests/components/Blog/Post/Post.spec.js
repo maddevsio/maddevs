@@ -56,7 +56,7 @@ const store = {
   },
   actions: {
     changePostsCategory: jest.fn(),
-    getMorePosts: jest.fn(),
+    getMoreBlogPosts: jest.fn(),
   },
 }
 

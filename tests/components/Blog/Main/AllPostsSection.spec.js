@@ -33,7 +33,7 @@ const store = {
   },
   actions: {
     changePostsCategory: jest.fn(),
-    getMorePosts: jest.fn(),
+    getMoreBlogPosts: jest.fn(),
   },
 }
 
@@ -130,6 +130,6 @@ describe('AllPostsSection component', () => {
     const button = screen.getByTestId('test-load-more-button')
     fireEvent.click(button)
 
-    expect(store.actions.getMorePosts).toHaveBeenCalledTimes(1)
+    expect(store.actions.getMoreBlogPosts).toHaveBeenCalledTimes(1)
   })
 })

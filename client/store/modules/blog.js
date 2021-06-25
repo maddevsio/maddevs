@@ -75,7 +75,7 @@ export const actions = {
       commit('SET_FEATURED_CUSTOMER_POST', featuredPost)
     }
   },
-  getMorePosts({ commit, state }) {
+  getMoreBlogPosts({ commit, state }) {
     commit('SET_POSTS_PAGE', state.postsPage + 1)
   },
   changePostsCategory({ commit }, filter) {
