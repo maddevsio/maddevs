@@ -6,7 +6,7 @@ import blogDocument from '../../../__mocks__/blogDocument'
 import recomendedPosts from '../../../__mocks__/recomendedPosts'
 import blogSlices from '../../../__mocks__/blogSlices'
 import allPosts from '../../../__mocks__/allPosts'
-import * as homeContent from '../../../__mocks__/homePageContent'
+import * as blogContent from '../../../__mocks__/blogPageContent'
 
 const props = {
   cluster: {},
@@ -51,7 +51,7 @@ const store = {
     allPosts: () => allPosts,
     postsCategory: jest.fn(),
     postsPage: () => 2,
-    homePageContent: () => homeContent.default,
+    blogPageContent: () => blogContent.default,
     allAuthors: jest.fn(),
   },
   actions: {

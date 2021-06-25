@@ -8,7 +8,7 @@
         <Simplebar>
           <ul class="posts-filter__list">
             <li
-              v-for="(category, i) in homePageContent.categories"
+              v-for="(category, i) in blogPageContent.categories"
               :key="i"
               class="posts-filter__item-wrapper"
             >
@@ -82,7 +82,7 @@ export default {
 
   computed: {
     ...mapGetters([
-      'homePageContent',
+      'blogPageContent',
       'allPosts',
       'allAuthors',
       'filteredPosts',
@@ -130,7 +130,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
+@import '@/assets/styles/_vars';
 
 .posts-filter {
   min-width: 150px;

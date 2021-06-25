@@ -28,14 +28,14 @@ describe('Blog api methods', () => {
     },
   }
 
-  it('getHomePageContent success', async () => {
-    const data = await api.getHomePageContent(prismic)
+  it('getBlogPageContent success', async () => {
+    const data = await api.getBlogPageContent(prismic)
     expect(data).toBe('data')
     expect(prismic.api.getSingle).toHaveBeenCalledWith('blog_home')
   })
 
-  it('getHomePageContent failure', async () => {
-    const data = await api.getHomePageContent(prismicFailure)
+  it('getBlogPageContent failure', async () => {
+    const data = await api.getBlogPageContent(prismicFailure)
     expect(data).toBe(error)
   })
 

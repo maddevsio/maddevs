@@ -1,4 +1,4 @@
-export const getHomePageContent = async prismic => {
+export const getBlogPageContent = async prismic => {
   try {
     const response = await prismic.api.getSingle('blog_home')
     return response.data

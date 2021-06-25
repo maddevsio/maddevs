@@ -5,7 +5,7 @@ import {
 
 jest.mock('@/api/blog', () => (
   {
-    getHomePageContent: jest.fn(() => 'test'),
+    getBlogPageContent: jest.fn(() => 'test'),
     getBlogPosts: jest.fn(() => 'test'),
     getCustomerUniversityMaster: jest.fn(() => ({
       featured_cu: {
@@ -27,7 +27,7 @@ actions.$prismic = {
 describe('Blog module state', () => {
   it('should correct returns default state', () => {
     const state = defaultState()
-    expect(state.homePageContent).toEqual({})
+    expect(state.blogPageContent).toEqual({})
     expect(state.customerContent).toEqual({})
     expect(state.featuredCUPost).toBeNull()
     expect(state.posts).toEqual([])
@@ -62,7 +62,7 @@ describe('Blog module mutations', () => {
 
     expect(state).toEqual({
       ...defaultState(),
-      homePageContent: {
+      blogPageContent: {
         banner: 'Banner',
         bannerLink: 'link',
         categories: [
@@ -163,11 +163,11 @@ describe('Blog module mutations', () => {
 })
 
 describe('Blog module actions', () => {
-  it('should correctly called getHomePageContent without postsCategory', async () => {
+  it('should correctly called getBlogPageContent without postsCategory', async () => {
     const store = {
       state: {
         ...defaultState(),
-        homePageContent: {
+        blogPageContent: {
           categories: [
             {
               title: '123',
@@ -178,13 +178,13 @@ describe('Blog module actions', () => {
       commit: jest.fn(),
     }
 
-    await actions.getHomePageContent(store)
+    await actions.getBlogPageContent(store)
 
     expect(store.commit).toHaveBeenCalledWith('SET_BLOG_PAGE_CONTENT', 'test')
     expect(store.commit).toHaveBeenCalledWith('SET_POSTS_CATEGORY', '123')
   })
 
-  it('should correctly called getHomePageContent with postsCategory', async () => {
+  it('should correctly called getBlogPageContent with postsCategory', async () => {
     const store = {
       state: {
         ...defaultState(),
@@ -193,7 +193,7 @@ describe('Blog module actions', () => {
       commit: jest.fn(),
     }
 
-    await actions.getHomePageContent(store)
+    await actions.getBlogPageContent(store)
     expect(store.commit).toHaveBeenCalledWith('SET_BLOG_PAGE_CONTENT', 'test')
   })
 
@@ -248,8 +248,8 @@ describe('Blog module actions', () => {
 describe('Blog module getters', () => {
   const state = defaultState()
 
-  it('homePageContent', () => {
-    expect(getters.homePageContent(state)).toBe(state.homePageContent)
+  it('blogPageContent', () => {
+    expect(getters.blogPageContent(state)).toBe(state.blogPageContent)
   })
 
   it('customerContent', () => {
@@ -287,13 +287,13 @@ describe('Blog module getters', () => {
 
   it('filteredPosts empty 2', () => {
     state.postsCategory = 'category'
-    state.homePageContent.categories = null
+    state.blogPageContent.categories = null
     expect(getters.filteredPosts(state)).toEqual([])
   })
 
   it('filteredPosts correct', () => {
     state.postsCategory = 'category'
-    state.homePageContent.categories = [{
+    state.blogPageContent.categories = [{
       title: 'category',
       tags: ['tag'],
     }]

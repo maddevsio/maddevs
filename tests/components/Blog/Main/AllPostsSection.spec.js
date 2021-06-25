@@ -3,7 +3,7 @@ import AllPostsSection from '@/components/Blog/Main/AllPostsSection'
 import Vuex from 'vuex'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
 import allPosts from '../../../__mocks__/allPosts'
-import * as homeContent from '../../../__mocks__/homePageContent'
+import * as blogContent from '../../../__mocks__/blogPageContent'
 
 const localVue = createLocalVue()
 localVue.use(Vuex)
@@ -11,7 +11,7 @@ localVue.use(Vuex)
 const recipeMock = jest.fn()
 const scroll = jest.fn()
 const windowsScroll = jest.fn()
-recipeMock.mockReturnValue('homePageContent')
+recipeMock.mockReturnValue('blogPageContent')
 
 const mocks = {
   $prismic: {
@@ -28,7 +28,7 @@ const store = {
     allPosts: () => allPosts,
     postsCategory: jest.fn(),
     postsPage: () => 2,
-    homePageContent: () => homeContent.default,
+    blogPageContent: () => blogContent.default,
     allAuthors: jest.fn(),
   },
   actions: {

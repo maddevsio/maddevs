@@ -29,7 +29,7 @@ const META_DATA = {
 
 const store = {
   getters: {
-    homePageContent: () => ({ description: DESCRIPTION }),
+    blogPageContent: () => ({ description: DESCRIPTION }),
   },
 }
 

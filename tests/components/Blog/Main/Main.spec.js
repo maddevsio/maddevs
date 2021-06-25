@@ -2,7 +2,7 @@ import { render } from '@testing-library/vue'
 import Main from '@/components/Blog/Main/Main'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
-import * as homeContent from '../../../__mocks__/homePageContent'
+import * as blogContent from '../../../__mocks__/blogPageContent'
 import allPosts from '../../../__mocks__/allPosts'
 
 const localVue = createLocalVue()
@@ -33,10 +33,10 @@ const store = {
     featuredCUPost: jest.fn(),
     customerContent: () => {},
     postsPage: () => 2,
-    homePageContent: () => homeContent.default,
+    blogPageContent: () => blogContent.default,
   },
   actions: {
-    getHomePageContent: jest.fn(),
+    getBlogPageContent: jest.fn(),
     getBlogPosts: () => jest.fn(),
     getCustomerUniversityContent: jest.fn(),
     getBlogAuthors: jest.fn(),
