@@ -280,18 +280,18 @@ describe('Blog module getters', () => {
     expect(getters.postsPage(state)).toBe(state.postsPage)
   })
 
-  it('filteredPosts empty', () => {
+  it('filteredBlogPosts empty', () => {
     state.postsCategory = null
-    expect(getters.filteredPosts(state)).toEqual([])
+    expect(getters.filteredBlogPosts(state)).toEqual([])
   })
 
-  it('filteredPosts empty 2', () => {
+  it('filteredBlogPosts empty 2', () => {
     state.postsCategory = 'category'
     state.blogPageContent.categories = null
-    expect(getters.filteredPosts(state)).toEqual([])
+    expect(getters.filteredBlogPosts(state)).toEqual([])
   })
 
-  it('filteredPosts correct', () => {
+  it('filteredBlogPosts correct', () => {
     state.postsCategory = 'category'
     state.blogPageContent.categories = [{
       title: 'category',
@@ -302,7 +302,7 @@ describe('Blog module getters', () => {
         tags: ['tag'],
       },
     ]
-    expect(getters.filteredPosts(state)).toEqual(state.posts)
+    expect(getters.filteredBlogPosts(state)).toEqual(state.posts)
   })
 
   it('recentPosts', () => {

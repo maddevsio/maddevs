@@ -47,7 +47,7 @@ const mocks = {
 
 const store = {
   getters: {
-    filteredPosts: () => blogPosts,
+    filteredBlogPosts: () => blogPosts,
     blogPosts: () => blogPosts,
     postsCategory: jest.fn(),
     postsPage: () => 2,

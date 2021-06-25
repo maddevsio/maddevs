@@ -97,7 +97,7 @@ export const getters = {
   blogPosts(state) {
     return state.posts
   },
-  filteredPosts(state) {
+  filteredBlogPosts(state) {
     if (state.postsCategory !== null && state.blogPageContent.categories) {
       const currentCategory = state.blogPageContent.categories.find(tag => tag.title === state.postsCategory)
       const currentTags = [...currentCategory.tags, currentCategory.title]

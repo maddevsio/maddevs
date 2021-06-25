@@ -29,7 +29,7 @@
         </Simplebar>
       </div>
       <div
-        v-if="filteredPosts.length !== 0"
+        v-if="filteredBlogPosts.length !== 0"
         class="filtered-posts__list"
       >
         <section
@@ -85,23 +85,23 @@ export default {
       'blogPageContent',
       'blogPosts',
       'allAuthors',
-      'filteredPosts',
+      'filteredBlogPosts',
       'postsCategory',
       'postsPage',
     ]),
 
     filteredPostsToShow() {
-      return this.filteredPosts.slice(0, this.pageSize * this.postsPage)
+      return this.filteredBlogPosts.slice(0, this.pageSize * this.postsPage)
     },
 
     totalPages() {
-      return Math.ceil(this.filteredPosts.length / this.pageSize)
+      return Math.ceil(this.filteredBlogPosts.length / this.pageSize)
     },
   },
 
   watch: {
     // Fixes scroll position for async filtered posts list
-    filteredPosts() {
+    filteredBlogPosts() {
       const visitedLinkEl = document.querySelector(`a[href='${this.visitedPost}']`)
       if (
         visitedLinkEl

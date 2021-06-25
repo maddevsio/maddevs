@@ -24,7 +24,7 @@ const stubs = ['NuxtLink']
 
 const store = {
   getters: {
-    filteredPosts: () => blogPosts,
+    filteredBlogPosts: () => blogPosts,
     blogPosts: () => blogPosts,
     postsCategory: jest.fn(),
     postsPage: () => 2,
@@ -96,7 +96,7 @@ describe('AllPostsSection component', () => {
       container: document.body.appendChild(singleLink),
     })
 
-    wrapper.vm.$options.watch.filteredPosts()
+    wrapper.vm.$options.watch.filteredBlogPosts()
     expect(scroll).toHaveBeenCalledTimes(0)
     expect(windowsScroll).toHaveBeenCalledTimes(0)
   })
@@ -111,7 +111,7 @@ describe('AllPostsSection component', () => {
       container: document.body.appendChild(containerToRender),
     })
 
-    wrapper.vm.$options.watch.filteredPosts()
+    wrapper.vm.$options.watch.filteredBlogPosts()
     expect(scroll).toHaveBeenCalledTimes(1)
     expect(windowsScroll).toHaveBeenCalledTimes(1)
   })
@@ -119,7 +119,7 @@ describe('AllPostsSection component', () => {
   it('should correct work get more posts handler', () => {
     const nextTick = jest.fn()
     mocks.$nextTick = nextTick
-    store.getters.filteredPosts = () => [...blogPosts, ...blogPosts]
+    store.getters.filteredBlogPosts = () => [...blogPosts, ...blogPosts]
     render(AllPostsSection, {
       localVue,
       mocks,
