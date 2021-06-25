@@ -94,7 +94,7 @@ export const getters = {
   featuredCUPost(state) {
     return state.featuredCUPost
   },
-  allPosts(state) {
+  blogPosts(state) {
     return state.posts
   },
   filteredPosts(state) {

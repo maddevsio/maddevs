@@ -2,7 +2,7 @@ import { render, screen, fireEvent } from '@testing-library/vue'
 import AllPostsSection from '@/components/Blog/Main/AllPostsSection'
 import Vuex from 'vuex'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
-import allPosts from '../../../__mocks__/allPosts'
+import blogPosts from '../../../__mocks__/blogPosts'
 import * as blogContent from '../../../__mocks__/blogPageContent'
 
 const localVue = createLocalVue()
@@ -24,8 +24,8 @@ const stubs = ['NuxtLink']
 
 const store = {
   getters: {
-    filteredPosts: () => allPosts,
-    allPosts: () => allPosts,
+    filteredPosts: () => blogPosts,
+    blogPosts: () => blogPosts,
     postsCategory: jest.fn(),
     postsPage: () => 2,
     blogPageContent: () => blogContent.default,
@@ -68,7 +68,7 @@ describe('AllPostsSection component', () => {
       store,
     })
 
-    expect(screen.getAllByTestId('test-single-post')).toHaveLength(allPosts.length)
+    expect(screen.getAllByTestId('test-single-post')).toHaveLength(blogPosts.length)
   })
 
   it('should correct work change post category', async () => {
@@ -119,7 +119,7 @@ describe('AllPostsSection component', () => {
   it('should correct work get more posts handler', () => {
     const nextTick = jest.fn()
     mocks.$nextTick = nextTick
-    store.getters.filteredPosts = () => [...allPosts, ...allPosts]
+    store.getters.filteredPosts = () => [...blogPosts, ...blogPosts]
     render(AllPostsSection, {
       localVue,
       mocks,

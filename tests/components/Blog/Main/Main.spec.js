@@ -3,7 +3,7 @@ import Main from '@/components/Blog/Main/Main'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
 import * as blogContent from '../../../__mocks__/blogPageContent'
-import allPosts from '../../../__mocks__/allPosts'
+import blogPosts from '../../../__mocks__/blogPosts'
 
 const localVue = createLocalVue()
 localVue.use(Vuex)
@@ -23,9 +23,9 @@ const stubs = ['NuxtLink', 'FeaturedPost', 'CustomerUniversitySection']
 
 const store = {
   getters: {
-    filteredPosts: () => allPosts,
-    featuredPost: () => allPosts[0],
-    allPosts: () => allPosts,
+    filteredPosts: () => blogPosts,
+    featuredPost: () => blogPosts[0],
+    blogPosts: () => blogPosts,
     allAuthors: () => [{}],
     postsLoaded: () => true,
     postsCategory: jest.fn(),

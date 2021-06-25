@@ -5,7 +5,7 @@ import Vuex from 'vuex'
 import blogDocument from '../../../__mocks__/blogDocument'
 import recomendedPosts from '../../../__mocks__/recomendedPosts'
 import blogSlices from '../../../__mocks__/blogSlices'
-import allPosts from '../../../__mocks__/allPosts'
+import blogPosts from '../../../__mocks__/blogPosts'
 import * as blogContent from '../../../__mocks__/blogPageContent'
 
 const props = {
@@ -47,8 +47,8 @@ const mocks = {
 
 const store = {
   getters: {
-    filteredPosts: () => allPosts,
-    allPosts: () => allPosts,
+    filteredPosts: () => blogPosts,
+    blogPosts: () => blogPosts,
     postsCategory: jest.fn(),
     postsPage: () => 2,
     blogPageContent: () => blogContent.default,

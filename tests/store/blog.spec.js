@@ -260,8 +260,8 @@ describe('Blog module getters', () => {
     expect(getters.featuredCUPost(state)).toBe(state.featuredCUPost)
   })
 
-  it('allPosts', () => {
-    expect(getters.allPosts(state)).toBe(state.posts)
+  it('blogPosts', () => {
+    expect(getters.blogPosts(state)).toBe(state.posts)
   })
 
   it('featuredPost', () => {

@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="allPosts.length"
+    v-if="blogPosts.length"
     class="filtered-posts"
   >
     <div class="container">
@@ -83,7 +83,7 @@ export default {
   computed: {
     ...mapGetters([
       'blogPageContent',
-      'allPosts',
+      'blogPosts',
       'allAuthors',
       'filteredPosts',
       'postsCategory',
