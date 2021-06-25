@@ -122,7 +122,7 @@ export const getters = {
   blogPostsCategory(state) {
     return state.postsCategory
   },
-  postsLoaded(state) {
+  blogPostsLoaded(state) {
     return state.postsLoaded
   },
   postsPage(state) {

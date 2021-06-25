@@ -2,7 +2,7 @@
   <div class="latest-posts">
     <div class="container">
       <div class="latest-posts__list">
-        <template v-if="postsLoaded">
+        <template v-if="blogPostsLoaded">
           <section
             v-for="post in recentBlogPosts"
             :key="post.id"
@@ -59,7 +59,7 @@ export default {
   mixins: [findPostAuthorMixin],
 
   computed: {
-    ...mapGetters(['postsLoaded', 'recentBlogPosts', 'allAuthors']),
+    ...mapGetters(['blogPostsLoaded', 'recentBlogPosts', 'allAuthors']),
   },
 }
 </script>

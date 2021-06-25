@@ -27,7 +27,7 @@ const store = {
     featuredBlogPost: () => blogPosts[0],
     blogPosts: () => blogPosts,
     allAuthors: () => [{}],
-    postsLoaded: () => true,
+    blogPostsLoaded: () => true,
     blogPostsCategory: jest.fn(),
     recentBlogPosts: jest.fn(),
     featuredCUPost: jest.fn(),

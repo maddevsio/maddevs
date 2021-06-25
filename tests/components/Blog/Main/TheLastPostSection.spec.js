@@ -19,7 +19,7 @@ const stubs = ['NuxtLink']
 const store = {
   getters: {
     featuredBlogPost: () => blogPosts[0],
-    postsLoaded: () => true,
+    blogPostsLoaded: () => true,
   },
 }
 
