@@ -32,7 +32,7 @@ module.exports = {
       { rel: 'sitemap', type: 'application/xml', href: 'https://maddevs.io/sitemap.xml' },
     ],
     script: [
-      // Init google tag manager and yandex metrika
+      // Init google tag manager
       {
         innerHTML: `
           window.onload = function () {
@@ -154,5 +154,8 @@ module.exports = {
     emailContact: process.env.NODE_EMAIL_CONTACT,
     sentryDsnFront: process.env.NODE_SENTRY_DSN_FRONT,
     ffEnvironment: process.env.FF_ENVIRONMENT,
+  },
+  router: {
+    trailingSlash: true,
   },
 }
