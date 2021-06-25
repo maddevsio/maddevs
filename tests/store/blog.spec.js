@@ -305,9 +305,9 @@ describe('Blog module getters', () => {
     expect(getters.filteredBlogPosts(state)).toEqual(state.posts)
   })
 
-  it('recentPosts', () => {
+  it('recentBlogPosts', () => {
     state.posts = [1, 2, 3, 4, 5, 6, 7, 8]
-    expect(getters.recentPosts(state)).toEqual([1, 2, 3, 4, {
+    expect(getters.recentBlogPosts(state)).toEqual([1, 2, 3, 4, {
       banner: {
         url: '#',
       },
@@ -320,8 +320,8 @@ describe('Blog module getters', () => {
     }, 5])
   })
 
-  it('recentPosts without banner', () => {
+  it('recentBlogPosts without banner', () => {
     state.posts = []
-    expect(getters.recentPosts(state)).toEqual([])
+    expect(getters.recentBlogPosts(state)).toEqual([])
   })
 })

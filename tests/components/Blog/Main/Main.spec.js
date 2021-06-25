@@ -29,7 +29,7 @@ const store = {
     allAuthors: () => [{}],
     postsLoaded: () => true,
     postsCategory: jest.fn(),
-    recentPosts: jest.fn(),
+    recentBlogPosts: jest.fn(),
     featuredCUPost: jest.fn(),
     customerContent: () => {},
     postsPage: () => 2,

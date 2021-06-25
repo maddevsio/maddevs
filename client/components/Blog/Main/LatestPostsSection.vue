@@ -4,7 +4,7 @@
       <div class="latest-posts__list">
         <template v-if="postsLoaded">
           <section
-            v-for="post in recentPosts"
+            v-for="post in recentBlogPosts"
             :key="post.id"
             :post="post"
             class="latest-posts__list-item"
@@ -59,13 +59,13 @@ export default {
   mixins: [findPostAuthorMixin],
 
   computed: {
-    ...mapGetters(['postsLoaded', 'recentPosts', 'allAuthors']),
+    ...mapGetters(['postsLoaded', 'recentBlogPosts', 'allAuthors']),
   },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
+@import '@/assets/styles/_vars';
 
 .latest-posts {
   background-color: $bgcolor--white-primary;

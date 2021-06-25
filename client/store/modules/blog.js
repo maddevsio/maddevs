@@ -105,7 +105,7 @@ export const getters = {
     }
     return []
   },
-  recentPosts(state) {
+  recentBlogPosts(state) {
     const posts = state.posts.slice(0, 5)
     if (posts.length) {
       posts.splice(4, 0, {
