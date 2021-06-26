@@ -48,7 +48,7 @@
     "googleapis": "^72.0.0",
     "mobile-device-detect": "^0.4.3",
     "multer": "^1.4.2",
-    "node-telegram-bot-api": "^0.52.0",
+    "node-telegram-bot-api": "^0.53.0",
     "nuxt": "^2.15.4",
     "prismjs": "^1.23.0",
     "request": "^2.88.2",
