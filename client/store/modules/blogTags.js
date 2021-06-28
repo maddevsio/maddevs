@@ -56,7 +56,7 @@ export const getters = {
   blogTagPostsLoaded(state) {
     return state.tagPostsLoaded
   },
-  tagPostsPage(state) {
+  blogTagPostsPage(state) {
     return state.tagPostsPage
   },
 }

@@ -22,7 +22,7 @@ const store = {
         id: '3',
       },
     ],
-    tagPostsPage: () => 1,
+    blogTagPostsPage: () => 1,
     blogTagPosts: () => tagPosts,
   },
 }

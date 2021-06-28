@@ -44,7 +44,7 @@
         </template>
       </div>
       <div
-        v-if="totalPages > tagPostsPage"
+        v-if="totalPages > blogTagPostsPage"
         class="tag-posts__load-more"
       >
         <LoadMoreButton
@@ -85,10 +85,10 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogTag', 'blogTagPosts', 'blogTagPostsLoaded', 'blogAuthors', 'tagPostsPage']),
+    ...mapGetters(['blogTag', 'blogTagPosts', 'blogTagPostsLoaded', 'blogAuthors', 'blogTagPostsPage']),
 
     tagPostsToShow() {
-      return this.blogTagPosts.slice(0, this.pageSize * this.tagPostsPage)
+      return this.blogTagPosts.slice(0, this.pageSize * this.blogTagPostsPage)
     },
 
     totalPages() {
