@@ -41,7 +41,7 @@ describe('Blog api methods', () => {
 
   it('getBlogPosts success', async () => {
     const data = await api.getBlogPosts(prismic)
-    expect(data).toBe('results')
+    expect(data).toEqual(['results'])
   })
 
   it('getBlogPosts failure', async () => {

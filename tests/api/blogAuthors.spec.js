@@ -51,7 +51,7 @@ describe('BlogAuthors api methods', () => {
 
   it('getBlogAuthorPosts success', async () => {
     const data = await api.getBlogAuthorPosts(prismic)
-    expect(data).toBe('results')
+    expect(data).toEqual(['results'])
     expect(prismic.api.query).toHaveBeenCalledTimes(3)
   })
 
