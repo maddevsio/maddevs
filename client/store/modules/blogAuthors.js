@@ -59,7 +59,7 @@ export const getters = {
   blogAuthorPosts(state) {
     return state.authorPosts
   },
-  authorPostsLoaded(state) {
+  blogAuthorPostsLoaded(state) {
     return state.authorPostsLoaded
   },
   authorPostsPage(state) {

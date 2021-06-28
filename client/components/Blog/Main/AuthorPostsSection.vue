@@ -6,7 +6,7 @@
         :class="[blogAuthorPosts.length === 1 ? 'author-posts__featured-post--mb-0' : '']"
       >
         <FeaturedPost
-          v-if="authorPostsLoaded"
+          v-if="blogAuthorPostsLoaded"
           :post="blogAuthorPosts[0]"
           :author="blogAuthor"
           theme="light"
@@ -18,7 +18,7 @@
         />
       </div>
       <div class="author-posts__list">
-        <template v-if="authorPostsLoaded">
+        <template v-if="blogAuthorPostsLoaded">
           <section
             v-for="post in authorPostsToShow"
             :key="post.id"
@@ -80,7 +80,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogAuthor', 'blogAuthorPosts', 'authorPostsLoaded', 'authorPostsPage']),
+    ...mapGetters(['blogAuthor', 'blogAuthorPosts', 'blogAuthorPostsLoaded', 'authorPostsPage']),
 
     authorPostsToShow() {
       return this.blogAuthorPosts.slice(0, this.pageSize * this.authorPostsPage)

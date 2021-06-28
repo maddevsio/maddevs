@@ -19,7 +19,7 @@ const store = {
       },
     }),
     blogAuthorPosts: () => blogPosts,
-    authorPostsLoaded: () => true,
+    blogAuthorPostsLoaded: () => true,
     authorPostsPage: () => 1,
   },
 }
