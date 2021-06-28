@@ -47,7 +47,7 @@
         class="author-posts__load-more"
       >
         <LoadMoreButton
-          @click="getMoreAuthorPosts"
+          @click="getMoreBlogAuthorPosts"
         />
       </div>
     </div>
@@ -96,7 +96,7 @@ export default {
   },
 
   methods: {
-    ...mapActions(['getMoreAuthorPosts']),
+    ...mapActions(['getMoreBlogAuthorPosts']),
   },
 }
 </script>

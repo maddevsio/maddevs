@@ -44,7 +44,7 @@ export const actions = {
     commit('SET_AUTHOR_POSTS', posts)
     commit('SET_AUTHOR_POSTS_LOADED', true)
   },
-  getMoreAuthorPosts({ commit, state }) {
+  getMoreBlogAuthorPosts({ commit, state }) {
     commit('SET_AUTHOR_POSTS_PAGE', state.authorPostsPage + 1)
   },
 }

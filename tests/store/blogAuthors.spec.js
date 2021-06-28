@@ -184,7 +184,7 @@ describe('BlogAuthors module actions', () => {
     expect(store.commit).toHaveBeenCalledWith('SET_AUTHOR_POSTS_LOADED', true)
   })
 
-  it('should correctly called getMoreAuthorPosts', () => {
+  it('should correctly called getMoreBlogAuthorPosts', () => {
     const store = {
       commit: jest.fn(),
       state: {
@@ -192,7 +192,7 @@ describe('BlogAuthors module actions', () => {
       },
     }
 
-    actions.getMoreAuthorPosts(store)
+    actions.getMoreBlogAuthorPosts(store)
 
     expect(store.commit).toHaveBeenCalledWith('SET_AUTHOR_POSTS_PAGE', store.state.authorPostsPage + 1)
   })
