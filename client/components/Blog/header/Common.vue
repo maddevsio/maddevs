@@ -72,7 +72,7 @@ export default {
   computed: {
     compressedImage() {
       const imageWithoutCrop = this.coverImageUrl.split('?auto')[0] // get image without crop and default compress params
-      const compressedImage = `${imageWithoutCrop}?q=40` // set custome compress params
+      const compressedImage = `${imageWithoutCrop}?q=50` // set custome compress params
       return compressedImage
     },
 
