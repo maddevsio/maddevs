@@ -96,7 +96,7 @@ describe('BlogTags module actions', () => {
       commit: jest.fn(),
     }
 
-    await actions.getTagPosts(store)
+    await actions.getBlogTagPosts(store)
 
     expect(getPostsByTag).toHaveBeenCalledTimes(1)
     expect(store.commit).toHaveBeenCalledWith('SET_TAG_POSTS_LOADED', false)

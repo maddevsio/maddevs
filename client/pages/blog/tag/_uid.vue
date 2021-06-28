@@ -51,12 +51,12 @@ export default {
   },
 
   created() {
-    this.getTagPosts(this.blogTag)
+    this.getBlogTagPosts(this.blogTag)
     this.getBlogAuthors()
   },
 
   methods: {
-    ...mapActions(['getTagPosts', 'getBlogAuthors']),
+    ...mapActions(['getBlogTagPosts', 'getBlogAuthors']),
   },
 }
 </script>

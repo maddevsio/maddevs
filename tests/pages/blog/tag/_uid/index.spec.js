@@ -13,7 +13,7 @@ const storeObj = {
     tagPostsCount: () => (1),
   },
   actions: {
-    getTagPosts: () => jest.fn(),
+    getBlogTagPosts: () => jest.fn(),
     getBlogAuthors: () => ([]),
   },
 }

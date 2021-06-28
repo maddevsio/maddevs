@@ -29,7 +29,7 @@ export const actions = {
     const response = this.$prismic.api.tags.find(tag => convertStringToSlug(tag) === payload)
     commit('SET_TAG', response)
   },
-  async getTagPosts({ commit }, payload) {
+  async getBlogTagPosts({ commit }, payload) {
     commit('SET_TAG_POSTS_LOADED', false)
     commit('SET_TAG_POSTS', [])
 
