@@ -12,7 +12,7 @@ const store = {
   getters: {
     blogTag: () => 'Blog tag',
     blogTagPostsCount: () => 5,
-    tagPostsLoaded: () => true,
+    blogTagPostsLoaded: () => true,
     blogAuthors: () => [
       {
         id: '1',

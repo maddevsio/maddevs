@@ -134,8 +134,8 @@ describe('BlogTags module getters', () => {
     expect(getters.blogTagPostsCount(state)).toBe(state.tagPosts.length)
   })
 
-  it('tagPostsLoaded', () => {
-    expect(getters.tagPostsLoaded(state)).toBe(state.tagPostsLoaded)
+  it('blogTagPostsLoaded', () => {
+    expect(getters.blogTagPostsLoaded(state)).toBe(state.tagPostsLoaded)
   })
 
   it('tagPostsPage', () => {

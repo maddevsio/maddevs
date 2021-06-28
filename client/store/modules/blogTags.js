@@ -53,7 +53,7 @@ export const getters = {
   blogTagPostsCount(state) {
     return state.tagPosts.length
   },
-  tagPostsLoaded(state) {
+  blogTagPostsLoaded(state) {
     return state.tagPostsLoaded
   },
   tagPostsPage(state) {

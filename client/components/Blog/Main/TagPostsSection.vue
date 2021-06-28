@@ -6,7 +6,7 @@
         :class="[blogTagPosts.length === 1 ? 'tag-posts__featured-post--mb-0' : '']"
       >
         <FeaturedPost
-          v-if="tagPostsLoaded"
+          v-if="blogTagPostsLoaded"
           :post="blogTagPosts[0]"
           :author="findAuthor(blogTagPosts[0].data.post_author.id, blogAuthors)"
           theme="light"
@@ -18,7 +18,7 @@
         />
       </div>
       <div class="tag-posts__list">
-        <template v-if="tagPostsLoaded">
+        <template v-if="blogTagPostsLoaded">
           <section
             v-for="post in tagPostsToShow"
             :key="post.id"
@@ -85,7 +85,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogTag', 'blogTagPosts', 'tagPostsLoaded', 'blogAuthors', 'tagPostsPage']),
+    ...mapGetters(['blogTag', 'blogTagPosts', 'blogTagPostsLoaded', 'blogAuthors', 'tagPostsPage']),
 
     tagPostsToShow() {
       return this.blogTagPosts.slice(0, this.pageSize * this.tagPostsPage)
