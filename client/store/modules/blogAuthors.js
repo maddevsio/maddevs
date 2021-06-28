@@ -74,7 +74,7 @@ export const actions = {
 }
 
 export const getters = {
-  allAuthors(state) {
+  blogAuthors(state) {
     return state.authors
   },
   blogAuthor(state) {

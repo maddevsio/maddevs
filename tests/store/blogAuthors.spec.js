@@ -201,8 +201,8 @@ describe('BlogAuthors module actions', () => {
 describe('BlogAuthors module getters', () => {
   const state = defaultState()
 
-  it('allAuthors', () => {
-    expect(getters.allAuthors(state)).toBe(state.authors)
+  it('blogAuthors', () => {
+    expect(getters.blogAuthors(state)).toBe(state.authors)
   })
 
   it('blogAuthor', () => {

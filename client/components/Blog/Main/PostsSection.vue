@@ -11,7 +11,7 @@
           >
             <PostCard
               :post="post"
-              :author="findAuthor(post.data.post_author.id, allAuthors)"
+              :author="findAuthor(post.data.post_author.id, blogAuthors)"
             />
           </section>
         </template>
@@ -53,7 +53,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['allAuthors']),
+    ...mapGetters(['blogAuthors']),
 
     sortedPosts() {
       const list = [...this.posts]
@@ -62,7 +62,7 @@ export default {
   },
 
   created() {
-    if (!this.allAuthors || (this.allAuthors && !this.allAuthors.length)) {
+    if (!this.blogAuthors || (this.blogAuthors && !this.blogAuthors.length)) {
       this.getBlogAuthors()
     }
   },

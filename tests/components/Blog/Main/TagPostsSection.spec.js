@@ -13,7 +13,7 @@ const store = {
     blogTag: () => 'Blog tag',
     tagPostsCount: () => 5,
     tagPostsLoaded: () => true,
-    allAuthors: () => [
+    blogAuthors: () => [
       {
         id: '1',
       }, {

@@ -8,7 +8,7 @@
         <FeaturedPost
           v-if="tagPostsLoaded"
           :post="tagPosts[0]"
-          :author="findAuthor(tagPosts[0].data.post_author.id, allAuthors)"
+          :author="findAuthor(tagPosts[0].data.post_author.id, blogAuthors)"
           theme="light"
           :disable-tag-link="true"
         />
@@ -28,7 +28,7 @@
             <PostCard
               :post="post"
               :tag="blogTag"
-              :author="findAuthor(post.data.post_author.id, allAuthors)"
+              :author="findAuthor(post.data.post_author.id, blogAuthors)"
               :disable-tag-link="true"
             />
           </section>
@@ -85,7 +85,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogTag', 'tagPosts', 'tagPostsLoaded', 'allAuthors', 'tagPostsPage']),
+    ...mapGetters(['blogTag', 'tagPosts', 'tagPostsLoaded', 'blogAuthors', 'tagPostsPage']),
 
     tagPostsToShow() {
       return this.tagPosts.slice(0, this.pageSize * this.tagPostsPage)

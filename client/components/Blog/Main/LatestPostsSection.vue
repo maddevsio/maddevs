@@ -24,7 +24,7 @@
             <PostCard
               v-else
               :post="post"
-              :author="findAuthor(post.data.post_author.id, allAuthors)"
+              :author="findAuthor(post.data.post_author.id, blogAuthors)"
             />
           </section>
         </template>
@@ -59,7 +59,7 @@ export default {
   mixins: [findPostAuthorMixin],
 
   computed: {
-    ...mapGetters(['blogPostsLoaded', 'recentBlogPosts', 'allAuthors']),
+    ...mapGetters(['blogPostsLoaded', 'recentBlogPosts', 'blogAuthors']),
   },
 }
 </script>

@@ -33,7 +33,7 @@ const store = {
         authors: [],
       },
       getters: {
-        allAuthors(state) {
+        blogAuthors(state) {
           return state.authors
         },
       },

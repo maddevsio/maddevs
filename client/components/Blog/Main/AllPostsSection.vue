@@ -41,7 +41,7 @@
         >
           <PostCard
             :post="post"
-            :author="findAuthor(post.data.post_author.id, allAuthors)"
+            :author="findAuthor(post.data.post_author.id, blogAuthors)"
           />
         </section>
       </div>
@@ -84,7 +84,7 @@ export default {
     ...mapGetters([
       'blogPageContent',
       'blogPosts',
-      'allAuthors',
+      'blogAuthors',
       'filteredBlogPosts',
       'blogPostsCategory',
       'blogPostsPage',

@@ -52,7 +52,7 @@ const store = {
     blogPostsCategory: jest.fn(),
     blogPostsPage: () => 2,
     blogPageContent: () => blogContent.default,
-    allAuthors: jest.fn(),
+    blogAuthors: jest.fn(),
   },
   actions: {
     changeBlogPostsCategory: jest.fn(),

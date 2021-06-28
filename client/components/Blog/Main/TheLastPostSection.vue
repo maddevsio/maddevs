@@ -4,7 +4,7 @@
       <FeaturedPost
         v-if="blogPostsLoaded && featuredBlogPost"
         :post="featuredBlogPost"
-        :author="findAuthor(featuredBlogPost.data.post_author.id, allAuthors)"
+        :author="findAuthor(featuredBlogPost.data.post_author.id, blogAuthors)"
       />
       <SkeletonFeaturedPost
         v-else
@@ -30,7 +30,7 @@ export default {
   mixins: [findPostAuthorMixin],
 
   computed: {
-    ...mapGetters(['featuredBlogPost', 'blogPostsLoaded', 'allAuthors']),
+    ...mapGetters(['featuredBlogPost', 'blogPostsLoaded', 'blogAuthors']),
   },
 }
 </script>
