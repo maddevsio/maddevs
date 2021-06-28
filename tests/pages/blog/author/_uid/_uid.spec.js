@@ -12,7 +12,7 @@ const storeObj = {
     blogAuthor: () => () => 'seo',
   },
   actions: {
-    getAuthorPosts: jest.fn(),
+    getBlogAuthorPosts: jest.fn(),
   },
 }
 

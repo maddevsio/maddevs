@@ -19,7 +19,7 @@ export const getBlogAuthor = async (prismic, payload) => {
   }
 }
 
-export const getAuthorPosts = async (prismic, payload) => {
+export const getBlogAuthorPosts = async (prismic, payload) => {
   try {
     const response = await prismic.api.query([
       prismic.predicates.at('document.type', 'post'),

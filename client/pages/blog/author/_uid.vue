@@ -71,11 +71,11 @@ export default {
   },
 
   created() {
-    this.getAuthorPosts(this.blogAuthor.id)
+    this.getBlogAuthorPosts(this.blogAuthor.id)
   },
 
   methods: {
-    ...mapActions(['getAuthorPosts']),
+    ...mapActions(['getBlogAuthorPosts']),
   },
 }
 </script>

@@ -3,13 +3,13 @@ import {
   state as defaultState, mutations, actions, getters,
 } from '@/store/modules/blogAuthors'
 
-import { getBlogAuthors, getBlogAuthor, getAuthorPosts } from '@/api/blogAuthors'
+import { getBlogAuthors, getBlogAuthor, getBlogAuthorPosts } from '@/api/blogAuthors'
 
 jest.mock('@/api/blogAuthors', () => (
   {
     getBlogAuthors: jest.fn(() => []),
     getBlogAuthor: jest.fn(() => 'test'),
-    getAuthorPosts: jest.fn(() => 'test'),
+    getBlogAuthorPosts: jest.fn(() => 'test'),
   }
 ))
 
@@ -170,14 +170,14 @@ describe('BlogAuthors module actions', () => {
     expect(store.commit).toHaveBeenCalledWith('SET_AUTHOR', 'test')
   })
 
-  it('should correctly called getAuthorPosts', async () => {
+  it('should correctly called getBlogAuthorPosts', async () => {
     const store = {
       commit: jest.fn(),
     }
 
-    await actions.getAuthorPosts(store)
+    await actions.getBlogAuthorPosts(store)
 
-    expect(getAuthorPosts).toHaveBeenCalledTimes(1)
+    expect(getBlogAuthorPosts).toHaveBeenCalledTimes(1)
     expect(store.commit).toHaveBeenCalledWith('SET_AUTHOR_POSTS_LOADED', false)
     expect(store.commit).toHaveBeenCalledWith('SET_AUTHOR_POSTS', [])
     expect(store.commit).toHaveBeenCalledWith('SET_AUTHOR_POSTS', 'test')
