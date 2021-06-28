@@ -126,8 +126,8 @@ describe('BlogTags module getters', () => {
     expect(getters.blogTag(state)).toBe(state.tag)
   })
 
-  it('tagPosts', () => {
-    expect(getters.tagPosts(state)).toBe(state.tagPosts)
+  it('blogTagPosts', () => {
+    expect(getters.blogTagPosts(state)).toBe(state.tagPosts)
   })
 
   it('tagPostsCount', () => {

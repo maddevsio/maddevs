@@ -47,7 +47,7 @@ export const getters = {
   blogTag(state) {
     return state.tag
   },
-  tagPosts(state) {
+  blogTagPosts(state) {
     return state.tagPosts
   },
   tagPostsCount(state) {

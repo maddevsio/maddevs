@@ -23,7 +23,7 @@ const store = {
       },
     ],
     tagPostsPage: () => 1,
-    tagPosts: () => tagPosts,
+    blogTagPosts: () => tagPosts,
   },
 }
 

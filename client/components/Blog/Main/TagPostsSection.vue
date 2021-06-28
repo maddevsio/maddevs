@@ -3,12 +3,12 @@
     <div class="container">
       <div
         class="tag-posts__featured-post"
-        :class="[tagPosts.length === 1 ? 'tag-posts__featured-post--mb-0' : '']"
+        :class="[blogTagPosts.length === 1 ? 'tag-posts__featured-post--mb-0' : '']"
       >
         <FeaturedPost
           v-if="tagPostsLoaded"
-          :post="tagPosts[0]"
-          :author="findAuthor(tagPosts[0].data.post_author.id, blogAuthors)"
+          :post="blogTagPosts[0]"
+          :author="findAuthor(blogTagPosts[0].data.post_author.id, blogAuthors)"
           theme="light"
           :disable-tag-link="true"
         />
@@ -85,14 +85,14 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogTag', 'tagPosts', 'tagPostsLoaded', 'blogAuthors', 'tagPostsPage']),
+    ...mapGetters(['blogTag', 'blogTagPosts', 'tagPostsLoaded', 'blogAuthors', 'tagPostsPage']),
 
     tagPostsToShow() {
-      return this.tagPosts.slice(0, this.pageSize * this.tagPostsPage)
+      return this.blogTagPosts.slice(0, this.pageSize * this.tagPostsPage)
     },
 
     totalPages() {
-      return Math.ceil(this.tagPosts.length / this.pageSize)
+      return Math.ceil(this.blogTagPosts.length / this.pageSize)
     },
   },
 
