@@ -11,7 +11,7 @@ const mocks = {
 const store = {
   getters: {
     blogTag: () => 'Blog tag',
-    tagPostsCount: () => 5,
+    blogTagPostsCount: () => 5,
     tagPostsLoaded: () => true,
     blogAuthors: () => [
       {

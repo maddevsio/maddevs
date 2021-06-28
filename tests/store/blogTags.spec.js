@@ -130,8 +130,8 @@ describe('BlogTags module getters', () => {
     expect(getters.blogTagPosts(state)).toBe(state.tagPosts)
   })
 
-  it('tagPostsCount', () => {
-    expect(getters.tagPostsCount(state)).toBe(state.tagPosts.length)
+  it('blogTagPostsCount', () => {
+    expect(getters.blogTagPostsCount(state)).toBe(state.tagPosts.length)
   })
 
   it('tagPostsLoaded', () => {

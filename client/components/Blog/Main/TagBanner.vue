@@ -5,7 +5,7 @@
         {{ blogTag }}
       </h1>
       <p class="current-tag__posts-count">
-        A collection of {{ tagPostsCount }} posts
+        A collection of {{ blogTagPostsCount }} posts
       </p>
     </div>
   </div>
@@ -18,7 +18,7 @@ export default {
   name: 'TagBanner',
 
   computed: {
-    ...mapGetters(['blogTag', 'tagPostsCount']),
+    ...mapGetters(['blogTag', 'blogTagPostsCount']),
   },
 }
 </script>

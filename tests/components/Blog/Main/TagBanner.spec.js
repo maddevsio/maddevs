@@ -4,7 +4,7 @@ import TagBanner from '@/components/Blog/Main/TagBanner'
 const store = {
   getters: {
     blogTag: () => 'Blog tag',
-    tagPostsCount: () => 5,
+    blogTagPostsCount: () => 5,
   },
 }
 
