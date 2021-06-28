@@ -3,11 +3,11 @@
     <div class="container">
       <div
         class="author-posts__featured-post"
-        :class="[authorPosts.length === 1 ? 'author-posts__featured-post--mb-0' : '']"
+        :class="[blogAuthorPosts.length === 1 ? 'author-posts__featured-post--mb-0' : '']"
       >
         <FeaturedPost
           v-if="authorPostsLoaded"
-          :post="authorPosts[0]"
+          :post="blogAuthorPosts[0]"
           :author="blogAuthor"
           theme="light"
           :disable-author-link="true"
@@ -80,14 +80,14 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogAuthor', 'authorPosts', 'authorPostsLoaded', 'authorPostsPage']),
+    ...mapGetters(['blogAuthor', 'blogAuthorPosts', 'authorPostsLoaded', 'authorPostsPage']),
 
     authorPostsToShow() {
-      return this.authorPosts.slice(0, this.pageSize * this.authorPostsPage)
+      return this.blogAuthorPosts.slice(0, this.pageSize * this.authorPostsPage)
     },
 
     totalPages() {
-      return Math.ceil(this.authorPosts.length / this.pageSize)
+      return Math.ceil(this.blogAuthorPosts.length / this.pageSize)
     },
   },
 

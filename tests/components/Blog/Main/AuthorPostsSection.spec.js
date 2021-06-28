@@ -18,7 +18,7 @@ const store = {
         url: 'someurl',
       },
     }),
-    authorPosts: () => blogPosts,
+    blogAuthorPosts: () => blogPosts,
     authorPostsLoaded: () => true,
     authorPostsPage: () => 1,
   },

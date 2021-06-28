@@ -209,8 +209,8 @@ describe('BlogAuthors module getters', () => {
     expect(getters.blogAuthor(state)).toBe(state.author)
   })
 
-  it('authorPosts', () => {
-    expect(getters.authorPosts(state)).toBe(state.authorPosts)
+  it('blogAuthorPosts', () => {
+    expect(getters.blogAuthorPosts(state)).toBe(state.authorPosts)
   })
 
   it('authorPostsLoaded', () => {

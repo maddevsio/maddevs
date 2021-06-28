@@ -56,7 +56,7 @@ export const getters = {
   blogAuthor(state) {
     return state.author
   },
-  authorPosts(state) {
+  blogAuthorPosts(state) {
     return state.authorPosts
   },
   authorPostsLoaded(state) {
