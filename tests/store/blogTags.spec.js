@@ -105,7 +105,7 @@ describe('BlogTags module actions', () => {
     expect(store.commit).toHaveBeenCalledWith('SET_TAG_POSTS_LOADED', true)
   })
 
-  it('should correctly called getMoreTagPosts', () => {
+  it('should correctly called getMoreBlogTagPosts', () => {
     const store = {
       commit: jest.fn(),
       state: {
@@ -113,7 +113,7 @@ describe('BlogTags module actions', () => {
       },
     }
 
-    actions.getMoreTagPosts(store)
+    actions.getMoreBlogTagPosts(store)
 
     expect(store.commit).toHaveBeenCalledWith('SET_TAG_POSTS_PAGE', store.state.tagPostsPage + 1)
   })

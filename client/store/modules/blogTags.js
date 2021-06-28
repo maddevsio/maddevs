@@ -38,7 +38,7 @@ export const actions = {
     commit('SET_TAG_POSTS', posts)
     commit('SET_TAG_POSTS_LOADED', true)
   },
-  getMoreTagPosts({ commit, state }) {
+  getMoreBlogTagPosts({ commit, state }) {
     commit('SET_TAG_POSTS_PAGE', state.tagPostsPage + 1)
   },
 }

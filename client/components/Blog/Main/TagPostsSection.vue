@@ -48,7 +48,7 @@
         class="tag-posts__load-more"
       >
         <LoadMoreButton
-          @click="getMoreTagPosts"
+          @click="getMoreBlogTagPosts"
         />
       </div>
     </div>
@@ -101,7 +101,7 @@ export default {
   },
 
   methods: {
-    ...mapActions(['getMoreTagPosts']),
+    ...mapActions(['getMoreBlogTagPosts']),
   },
 }
 </script>
