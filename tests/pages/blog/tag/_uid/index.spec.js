@@ -11,6 +11,7 @@ const storeObj = {
   getters: {
     blogTag: () => ('seo'),
     blogTagPostsCount: () => (1),
+    blogAuthors: () => ([]),
   },
   actions: {
     getBlogTagPosts: () => jest.fn(),

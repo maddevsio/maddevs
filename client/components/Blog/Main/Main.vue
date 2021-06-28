@@ -35,7 +35,10 @@ export default {
 
   computed: {
     ...mapGetters([
+      'blogPageContent',
+      'customerContent',
       'blogPosts',
+      'blogAuthors',
     ]),
   },
 
@@ -52,19 +55,19 @@ export default {
 
     getContent() {
       // Query to get blog home content
-      this.getBlogPageContent()
-      this.getCustomerUniversityContent()
+      if (!Object.keys(this.blogPageContent).length) this.getBlogPageContent()
+      if (!Object.keys(this.customerContent).length) this.getCustomerUniversityContent()
 
       // Query to get posts content to preview
-      this.getBlogPosts()
-      this.getBlogAuthors()
+      if (!this.blogPosts.length) this.getBlogPosts()
+      if (!this.blogAuthors.length) this.getBlogAuthors()
     },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
+@import '@/assets/styles/_vars';
 
 .home {
   padding-top: 100px;
