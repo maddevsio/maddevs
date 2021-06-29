@@ -32,8 +32,8 @@ export const actions = {
     const blogTags = await getBlogTags(this.$prismic)
     commit('SET_TAGS', blogTags)
   },
-  async getBlogTag({ commit }) {
-    const blogTag = await getBlogTag(this.$prismic)
+  async getBlogTag({ commit }, payload) {
+    const blogTag = await getBlogTag(this.$prismic, payload)
     commit('SET_TAG', blogTag)
   },
   async getBlogTagPosts({ commit }, payload) {
