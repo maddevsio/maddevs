@@ -25,8 +25,11 @@
 </template>
 
 <script>
+import mainMixins from '@/mixins/mainMixins'
+
 export default {
   name: 'HardwareVideoOnlyIos',
+  mixins: [mainMixins],
   mounted() {
     this.$refs.video.addEventListener('ended', this.onEndedHandler)
   },
@@ -41,8 +44,8 @@ export default {
     },
 
     toggleVideoState() {
-      if (this.$refs.video.paused) {
-        this.$refs.video.play()
+      if (this.$refs.video && this.$refs.video.paused) {
+        this.MixinPlayVideo(this.$refs.video)
         this.$refs.videoWrap.classList.remove('case_video-wrapper--paused')
       } else {
         this.$refs.video.pause()
