@@ -47,11 +47,11 @@ exports[`ModelsGrid component should render correctly 1`] = `
         animationspeed="0.75"
         classname="technical-assessment"
         full="true"
-        optimalmodelfor="Organizations looking for an unbiased expert assessment.,Businesses that need to effectively scale up their products.,Businesses in search of new product development directions.,Companies dealing with overwhelming tech issues and technical debt.,Organizations that have had several failed MVP launches.,Business owners that doubt their current teams’ competencies.,Companies facing disappointing performance and ruined relationships with the current IT contractor or in-house team."
+        optimalmodelfor="Organizations looking for an unbiased expert assessment.,Businesses in need to effectively scale up their products.,Businesses in search of new product development directions.,Companies dealing with overwhelming tech issues and technical debt.,Organizations that have had several failed MVP launches.,Business owners that doubt their current teams’ competencies.,Companies facing disappointing performance and ruined relationships with the current IT contractor or in-house team."
         process="[object Object]"
         startanimationonscreenpercent="60"
         subtitle=""
-        title=<span>Technical assessment & consulting</span> equip business with unbias expert assessment to solve technical issues and scale your business.
+        title=<span>Technical assessment & consulting</span> equip business with unbiased expert assessment to solve technical issues and scaling your business.
         uid="technical-assessment"
       />
       <modelcard-stub
