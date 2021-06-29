@@ -27,12 +27,14 @@
 </template>
 
 <script>
+import mainMixins from '@/mixins/mainMixins'
 import CasesListItem from '@/components/Cases/CasesListItem'
 import { casesList } from '@/data/casesList'
 
 export default {
   name: 'CasesList',
   components: { CasesListItem },
+  mixins: [mainMixins],
   props: {
     limit: {
       type: Number,
@@ -59,13 +61,9 @@ export default {
     autoplay() {
       const observerCallback = entries => entries.forEach(({ isIntersecting, target }) => {
         if (!isIntersecting) {
-          target.pause()
+          if (target) target.pause()
         } else {
-          try {
-            target.play()
-          } catch (err) {
-            // prevent catch
-          }
+          this.MixinPlayVideo(target)
         }
       })
 
