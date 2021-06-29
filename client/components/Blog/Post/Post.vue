@@ -239,7 +239,7 @@ export default {
   watch: {
     dataLoaded(loaded) {
       if (loaded) {
-        this.$nextTick(() => this.initNavbar())
+        this.$nextTick(() => this.setStylesForNavbar())
       }
     },
   },
@@ -290,41 +290,39 @@ export default {
     scrollHandler(event) {
       this.buttonIsActive = Boolean(event.target.scrollingElement.scrollTop !== 0)
       this.calcProgress()
-      this.initNavbar()
-    },
-
-    initNavbar() {
-      this.introductionContainer = document.getElementById('introduction-container') // ?
       this.setStylesForNavbar()
     },
 
     setStylesForNavbar() {
-      const introductionContainerHeight = this.introductionContainer.clientHeight
-      const scrollStartPoint = this.tableOfContentsSlice ? introductionContainerHeight + 100 : 650 // ?
+      this.introductionContainer = document.getElementById('introduction-container')
+
+      if (this.tableOfContentsSlice) this.handleNavbar()
+    },
+
+    handleNavbar() {
+      const introductionContainerHeight = this.introductionContainer.offsetHeight
+      const top = `${introductionContainerHeight + 30}px`
+      const scrollStartPoint = introductionContainerHeight + 100
       const scrollEndPoint = this.getScrollEndPoint()
 
       if (window.pageYOffset < scrollStartPoint) {
-        this.$refs.navbar.style.cssText = `
-          position: absolute;
-          top: ${introductionContainerHeight + 30}px;
-          left: -210px;
-        `
+        this.$refs.navbar.style.cssText = this.getStylesTemplate('absolute', top, 'auto', '-210px')
       } else {
-        this.$refs.navbar.style.cssText = `
-          position: fixed;
-          top: 100px;
-          left: calc(50vw - 619px);
-        `
+        this.$refs.navbar.style.cssText = this.getStylesTemplate('fixed', '100px', 'auto', 'calc(50vw - 619px)')
       }
 
       if (window.pageYOffset > scrollEndPoint) {
-        this.$refs.navbar.style.cssText = `
-          position: absolute;
-          top: auto;
-          bottom: 0;
-          left: -210px;
-        `
+        this.$refs.navbar.style.cssText = this.getStylesTemplate('absolute', 'auto', '0', '-210px')
       }
+    },
+
+    getStylesTemplate(position, top, bottom, left) {
+      return `
+        position: ${position}; 
+        top: ${top}; 
+        bottom: ${bottom}; 
+        left: ${left};
+      `
     },
 
     pathIsContainsInUrl(path) {
@@ -387,7 +385,9 @@ export default {
     margin-top: 0;
 
     &--vertical {
-      left: calc(50vw - 592px);
+      position: absolute;
+      top: 580px;
+      left: -183px;
 
       .blog-post__share-links {
         margin-top: 0;
