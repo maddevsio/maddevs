@@ -147,11 +147,11 @@ export const deliveryModels = {
     animationName: 'technicalAssessment',
     animationSpeed: 0.75,
     startAnimationOnScreenPercent: 60,
-    title: '<span>Technical assessment & consulting</span> equip business with unbias expert assessment to solve technical issues and scale your business.',
+    title: '<span>Technical assessment & consulting</span> equip business with unbiased expert assessment to solve technical issues and scaling your business.',
     subtitle: '',
     optimalModelFor: [
       'Organizations looking for an unbiased expert assessment.',
-      'Businesses that need to effectively scale up their products.',
+      'Businesses in need to effectively scale up their products.',
       'Businesses in search of new product development directions.',
       'Companies dealing with overwhelming tech issues and technical debt.',
       'Organizations that have had several failed MVP launches.',
@@ -164,14 +164,14 @@ export const deliveryModels = {
         {
           title: 'Define problems',
           content: [
-            'We start the assessment with several problem interviews with all project stakeholders to better understand the issues and suggest workarounds.',
+            'We start the assessment with several interviews with all project stakeholders to better understand the issues and then we suggest workarounds.',
           ],
         },
         {
           title: 'Conduct analysis and work plan',
           content: [
-            'Based on the issues identified and the customer’s requests, we decide whether our assessment should cover the complete product or only its critical components.',
-            'Our complex assessment involves analysing bottlenecks in the product stationing, UI/UX, architecture, and code, infrastructure, and organizational processes, including communication and knowledge management.',
+            'Based on the identified issues and the customer’s requests, we decide whether our assessment should cover the complete product or only its critical components.',
+            'Our complex assessment involves analysis code, infrastructure, organizational processes, including communications and knowledge management.',
             'We onboard a team of top-notch specialists with 10+ years of experience in the IT industry.',
           ],
         },
