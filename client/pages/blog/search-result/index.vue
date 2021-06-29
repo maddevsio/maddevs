@@ -33,7 +33,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['getSearchResponse', 'getSearchQuery', 'allAuthors']),
+    ...mapGetters(['getSearchResponse', 'getSearchQuery', 'blogAuthors', 'blogTags']),
 
     posts() {
       if (!this.getSearchResponse || !this.getSearchResponse.results) return null
@@ -46,7 +46,7 @@ export default {
   },
 
   watch: {
-    allAuthors(newVal) {
+    blogAuthors(newVal) {
       if (newVal && newVal.length) {
         this.$nextTick(() => {
           this.resetLazyLoad()
@@ -56,6 +56,8 @@ export default {
   },
 
   created() {
+    if (!this.blogTags.length) this.getBlogTags()
+
     if (!this.getSearchQuery) {
       if (process.browser) {
         const query = this.$route.query.searchBy.replace(/\//g, '')
@@ -69,7 +71,7 @@ export default {
   },
 
   methods: {
-    ...mapActions(['setSearchResponse']),
+    ...mapActions(['setSearchResponse', 'getBlogTags']),
 
     async getPosts(query) {
       const response = await this.$prismic.api.query(

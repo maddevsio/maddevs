@@ -10,10 +10,11 @@ localVue.use(Vuex)
 const storeObj = {
   getters: {
     blogTag: () => ('seo'),
-    tagPostsCount: () => (1),
+    blogTagPostsCount: () => (1),
+    blogAuthors: () => ([]),
   },
   actions: {
-    getTagPosts: () => jest.fn(),
+    getBlogTagPosts: () => jest.fn(),
     getBlogAuthors: () => ([]),
   },
 }

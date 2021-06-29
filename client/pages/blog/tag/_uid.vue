@@ -25,6 +25,8 @@ export default {
   async asyncData({ store, params, error }) {
     try {
       store.dispatch('getBlogTag', params.uid)
+
+      if (!store.getters.blogTag) return error({ statusCode: 404, message: 'Page not found' })
       return {
         openGraphUrl: `${process.env.domain}/blog/tag/${params.uid}/`,
       }
@@ -47,16 +49,17 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogTag']),
+    ...mapGetters(['blogTag', 'blogAuthors', 'blogTags']),
   },
 
   created() {
-    this.getTagPosts(this.blogTag)
-    this.getBlogAuthors()
+    this.getBlogTagPosts(this.blogTag)
+    if (!this.blogAuthors.length) this.getBlogAuthors()
+    if (!this.blogTags.length) this.getBlogTags()
   },
 
   methods: {
-    ...mapActions(['getTagPosts', 'getBlogAuthors']),
+    ...mapActions(['getBlogTagPosts', 'getBlogAuthors', 'getBlogTags']),
   },
 }
 </script>

@@ -67,15 +67,16 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogAuthor']),
+    ...mapGetters(['blogAuthor', 'blogTags']),
   },
 
   created() {
-    this.getAuthorPosts(this.blogAuthor.id)
+    this.getBlogAuthorPosts(this.blogAuthor.id)
+    if (!this.blogTags.length) this.getBlogTags()
   },
 
   methods: {
-    ...mapActions(['getAuthorPosts']),
+    ...mapActions(['getBlogAuthorPosts', 'getBlogTags']),
   },
 }
 </script>

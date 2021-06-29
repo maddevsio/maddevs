@@ -127,7 +127,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['allAuthors']),
+    ...mapGetters(['blogAuthors', 'blogTags']),
 
     searchPosts() {
       if (!this.response || !this.response.results || !this.response.results.length) return []
@@ -137,7 +137,7 @@ export default {
 
     tags() {
       const ignoreTags = ['iOS development', 'iOS', 'Featured post', 'Software features']
-      const { tags } = this.$prismic.api
+      const tags = this.blogTags
       if (!tags || (tags && !tags.length)) return []
       return tags.filter(tag => !ignoreTags.some(ignoreTag => ignoreTag === tag))
     },
@@ -180,7 +180,7 @@ export default {
 
     getAuthor(post, field) {
       if (post && post.data && post.data.post_author && post.data.post_author.id) {
-        const author = this.findAuthor(post.data.post_author.id, this.allAuthors)
+        const author = this.findAuthor(post.data.post_author.id, this.blogAuthors)
         return author[field]
       }
       return null

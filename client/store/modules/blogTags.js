@@ -1,8 +1,8 @@
 /* eslint-disable no-shadow */
-import { getPostsByTag } from '@/api/blogTags'
-import convertStringToSlug from '@/helpers/convertStringToSlug'
+import { getBlogTags, getBlogTag, getPostsByTag } from '@/api/blogTags'
 
 export const state = () => ({
+  tags: [],
   tag: '',
   tagPosts: [],
   tagPostsLoaded: false,
@@ -10,6 +10,9 @@ export const state = () => ({
 })
 
 export const mutations = {
+  SET_TAGS(state, tags) {
+    state.tags = tags
+  },
   SET_TAG(state, tag) {
     state.tag = tag
   },
@@ -25,11 +28,15 @@ export const mutations = {
 }
 
 export const actions = {
-  getBlogTag({ commit }, payload) {
-    const response = this.$prismic.api.tags.find(tag => convertStringToSlug(tag) === payload)
-    commit('SET_TAG', response)
+  async getBlogTags({ commit }) {
+    const blogTags = await getBlogTags(this.$prismic)
+    commit('SET_TAGS', blogTags)
   },
-  async getTagPosts({ commit }, payload) {
+  async getBlogTag({ commit }, payload) {
+    const blogTag = await getBlogTag(this.$prismic, payload)
+    commit('SET_TAG', blogTag)
+  },
+  async getBlogTagPosts({ commit }, payload) {
     commit('SET_TAG_POSTS_LOADED', false)
     commit('SET_TAG_POSTS', [])
 
@@ -38,25 +45,28 @@ export const actions = {
     commit('SET_TAG_POSTS', posts)
     commit('SET_TAG_POSTS_LOADED', true)
   },
-  getMoreTagPosts({ commit, state }) {
+  getMoreBlogTagPosts({ commit, state }) {
     commit('SET_TAG_POSTS_PAGE', state.tagPostsPage + 1)
   },
 }
 
 export const getters = {
+  blogTags(state) {
+    return state.tags
+  },
   blogTag(state) {
     return state.tag
   },
-  tagPosts(state) {
+  blogTagPosts(state) {
     return state.tagPosts
   },
-  tagPostsCount(state) {
+  blogTagPostsCount(state) {
     return state.tagPosts.length
   },
-  tagPostsLoaded(state) {
+  blogTagPostsLoaded(state) {
     return state.tagPostsLoaded
   },
-  tagPostsPage(state) {
+  blogTagPostsPage(state) {
     return state.tagPostsPage
   },
 }

@@ -5,7 +5,7 @@ import {
 
 jest.mock('@/api/blog', () => (
   {
-    getHomePageContent: jest.fn(() => 'test'),
+    getBlogPageContent: jest.fn(() => 'test'),
     getBlogPosts: jest.fn(() => 'test'),
     getCustomerUniversityMaster: jest.fn(() => ({
       featured_cu: {
@@ -27,7 +27,7 @@ actions.$prismic = {
 describe('Blog module state', () => {
   it('should correct returns default state', () => {
     const state = defaultState()
-    expect(state.homePageContent).toEqual({})
+    expect(state.blogPageContent).toEqual({})
     expect(state.customerContent).toEqual({})
     expect(state.featuredCUPost).toBeNull()
     expect(state.posts).toEqual([])
@@ -62,7 +62,7 @@ describe('Blog module mutations', () => {
 
     expect(state).toEqual({
       ...defaultState(),
-      homePageContent: {
+      blogPageContent: {
         banner: 'Banner',
         bannerLink: 'link',
         categories: [
@@ -163,11 +163,11 @@ describe('Blog module mutations', () => {
 })
 
 describe('Blog module actions', () => {
-  it('should correctly called getHomePageContent without postsCategory', async () => {
+  it('should correctly called getBlogPageContent without postsCategory', async () => {
     const store = {
       state: {
         ...defaultState(),
-        homePageContent: {
+        blogPageContent: {
           categories: [
             {
               title: '123',
@@ -178,13 +178,13 @@ describe('Blog module actions', () => {
       commit: jest.fn(),
     }
 
-    await actions.getHomePageContent(store)
+    await actions.getBlogPageContent(store)
 
     expect(store.commit).toHaveBeenCalledWith('SET_BLOG_PAGE_CONTENT', 'test')
     expect(store.commit).toHaveBeenCalledWith('SET_POSTS_CATEGORY', '123')
   })
 
-  it('should correctly called getHomePageContent with postsCategory', async () => {
+  it('should correctly called getBlogPageContent with postsCategory', async () => {
     const store = {
       state: {
         ...defaultState(),
@@ -193,7 +193,7 @@ describe('Blog module actions', () => {
       commit: jest.fn(),
     }
 
-    await actions.getHomePageContent(store)
+    await actions.getBlogPageContent(store)
     expect(store.commit).toHaveBeenCalledWith('SET_BLOG_PAGE_CONTENT', 'test')
   })
 
@@ -207,17 +207,17 @@ describe('Blog module actions', () => {
     expect(store.commit).toHaveBeenCalledWith('SET_POSTS_LOADED', true)
   })
 
-  it('should correctly called getMorePosts', () => {
+  it('should correctly called getMoreBlogPosts', () => {
     const store = {
       commit: jest.fn(),
       state: defaultState(),
     }
 
-    actions.getMorePosts(store)
+    actions.getMoreBlogPosts(store)
     expect(store.commit).toHaveBeenCalledWith('SET_POSTS_PAGE', 2)
   })
 
-  it('should correctly called changePostsCategory', () => {
+  it('should correctly called changeBlogPostsCategory', () => {
     const store = {
       commit: jest.fn(),
       state: defaultState(),
@@ -225,7 +225,7 @@ describe('Blog module actions', () => {
 
     const filter = 'category'
 
-    actions.changePostsCategory(store, filter)
+    actions.changeBlogPostsCategory(store, filter)
     expect(store.commit).toHaveBeenCalledWith('SET_POSTS_PAGE', 1)
     expect(store.commit).toHaveBeenCalledWith('SET_POSTS_CATEGORY', filter)
   })
@@ -248,8 +248,8 @@ describe('Blog module actions', () => {
 describe('Blog module getters', () => {
   const state = defaultState()
 
-  it('homePageContent', () => {
-    expect(getters.homePageContent(state)).toBe(state.homePageContent)
+  it('blogPageContent', () => {
+    expect(getters.blogPageContent(state)).toBe(state.blogPageContent)
   })
 
   it('customerContent', () => {
@@ -260,40 +260,40 @@ describe('Blog module getters', () => {
     expect(getters.featuredCUPost(state)).toBe(state.featuredCUPost)
   })
 
-  it('allPosts', () => {
-    expect(getters.allPosts(state)).toBe(state.posts)
+  it('blogPosts', () => {
+    expect(getters.blogPosts(state)).toBe(state.posts)
   })
 
-  it('featuredPost', () => {
-    expect(getters.featuredPost(state)).toBe(state.featuredPost)
+  it('featuredBlogPost', () => {
+    expect(getters.featuredBlogPost(state)).toBe(state.featuredPost)
   })
 
-  it('postsCategory', () => {
-    expect(getters.postsCategory(state)).toBe(state.postsCategory)
+  it('blogPostsCategory', () => {
+    expect(getters.blogPostsCategory(state)).toBe(state.postsCategory)
   })
 
-  it('postsLoaded', () => {
-    expect(getters.postsLoaded(state)).toBe(state.postsLoaded)
+  it('blogPostsLoaded', () => {
+    expect(getters.blogPostsLoaded(state)).toBe(state.postsLoaded)
   })
 
-  it('postsPage', () => {
-    expect(getters.postsPage(state)).toBe(state.postsPage)
+  it('blogPostsPage', () => {
+    expect(getters.blogPostsPage(state)).toBe(state.postsPage)
   })
 
-  it('filteredPosts empty', () => {
+  it('filteredBlogPosts empty', () => {
     state.postsCategory = null
-    expect(getters.filteredPosts(state)).toEqual([])
+    expect(getters.filteredBlogPosts(state)).toEqual([])
   })
 
-  it('filteredPosts empty 2', () => {
+  it('filteredBlogPosts empty 2', () => {
     state.postsCategory = 'category'
-    state.homePageContent.categories = null
-    expect(getters.filteredPosts(state)).toEqual([])
+    state.blogPageContent.categories = null
+    expect(getters.filteredBlogPosts(state)).toEqual([])
   })
 
-  it('filteredPosts correct', () => {
+  it('filteredBlogPosts correct', () => {
     state.postsCategory = 'category'
-    state.homePageContent.categories = [{
+    state.blogPageContent.categories = [{
       title: 'category',
       tags: ['tag'],
     }]
@@ -302,12 +302,12 @@ describe('Blog module getters', () => {
         tags: ['tag'],
       },
     ]
-    expect(getters.filteredPosts(state)).toEqual(state.posts)
+    expect(getters.filteredBlogPosts(state)).toEqual(state.posts)
   })
 
-  it('recentPosts', () => {
+  it('recentBlogPosts', () => {
     state.posts = [1, 2, 3, 4, 5, 6, 7, 8]
-    expect(getters.recentPosts(state)).toEqual([1, 2, 3, 4, {
+    expect(getters.recentBlogPosts(state)).toEqual([1, 2, 3, 4, {
       banner: {
         url: '#',
       },
@@ -320,8 +320,8 @@ describe('Blog module getters', () => {
     }, 5])
   })
 
-  it('recentPosts without banner', () => {
+  it('recentBlogPosts without banner', () => {
     state.posts = []
-    expect(getters.recentPosts(state)).toEqual([])
+    expect(getters.recentBlogPosts(state)).toEqual([])
   })
 })

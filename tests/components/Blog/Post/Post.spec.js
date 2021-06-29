@@ -5,8 +5,8 @@ import Vuex from 'vuex'
 import blogDocument from '../../../__mocks__/blogDocument'
 import recomendedPosts from '../../../__mocks__/recomendedPosts'
 import blogSlices from '../../../__mocks__/blogSlices'
-import allPosts from '../../../__mocks__/allPosts'
-import * as homeContent from '../../../__mocks__/homePageContent'
+import blogPosts from '../../../__mocks__/blogPosts'
+import * as blogContent from '../../../__mocks__/blogPageContent'
 
 const props = {
   cluster: {},
@@ -47,16 +47,16 @@ const mocks = {
 
 const store = {
   getters: {
-    filteredPosts: () => allPosts,
-    allPosts: () => allPosts,
-    postsCategory: jest.fn(),
-    postsPage: () => 2,
-    homePageContent: () => homeContent.default,
-    allAuthors: jest.fn(),
+    filteredBlogPosts: () => blogPosts,
+    blogPosts: () => blogPosts,
+    blogPostsCategory: jest.fn(),
+    blogPostsPage: () => 2,
+    blogPageContent: () => blogContent.default,
+    blogAuthors: jest.fn(),
   },
   actions: {
-    changePostsCategory: jest.fn(),
-    getMorePosts: jest.fn(),
+    changeBlogPostsCategory: jest.fn(),
+    getMoreBlogPosts: jest.fn(),
   },
 }
 

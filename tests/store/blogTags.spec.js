@@ -96,7 +96,7 @@ describe('BlogTags module actions', () => {
       commit: jest.fn(),
     }
 
-    await actions.getTagPosts(store)
+    await actions.getBlogTagPosts(store)
 
     expect(getPostsByTag).toHaveBeenCalledTimes(1)
     expect(store.commit).toHaveBeenCalledWith('SET_TAG_POSTS_LOADED', false)
@@ -105,7 +105,7 @@ describe('BlogTags module actions', () => {
     expect(store.commit).toHaveBeenCalledWith('SET_TAG_POSTS_LOADED', true)
   })
 
-  it('should correctly called getMoreTagPosts', () => {
+  it('should correctly called getMoreBlogTagPosts', () => {
     const store = {
       commit: jest.fn(),
       state: {
@@ -113,7 +113,7 @@ describe('BlogTags module actions', () => {
       },
     }
 
-    actions.getMoreTagPosts(store)
+    actions.getMoreBlogTagPosts(store)
 
     expect(store.commit).toHaveBeenCalledWith('SET_TAG_POSTS_PAGE', store.state.tagPostsPage + 1)
   })
@@ -126,19 +126,19 @@ describe('BlogTags module getters', () => {
     expect(getters.blogTag(state)).toBe(state.tag)
   })
 
-  it('tagPosts', () => {
-    expect(getters.tagPosts(state)).toBe(state.tagPosts)
+  it('blogTagPosts', () => {
+    expect(getters.blogTagPosts(state)).toBe(state.tagPosts)
   })
 
-  it('tagPostsCount', () => {
-    expect(getters.tagPostsCount(state)).toBe(state.tagPosts.length)
+  it('blogTagPostsCount', () => {
+    expect(getters.blogTagPostsCount(state)).toBe(state.tagPosts.length)
   })
 
-  it('tagPostsLoaded', () => {
-    expect(getters.tagPostsLoaded(state)).toBe(state.tagPostsLoaded)
+  it('blogTagPostsLoaded', () => {
+    expect(getters.blogTagPostsLoaded(state)).toBe(state.tagPostsLoaded)
   })
 
-  it('tagPostsPage', () => {
-    expect(getters.tagPostsPage(state)).toBe(state.tagPostsPage)
+  it('blogTagPostsPage', () => {
+    expect(getters.blogTagPostsPage(state)).toBe(state.tagPostsPage)
   })
 })

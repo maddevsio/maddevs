@@ -11,9 +11,9 @@ const mocks = {
 const store = {
   getters: {
     blogTag: () => 'Blog tag',
-    tagPostsCount: () => 5,
-    tagPostsLoaded: () => true,
-    allAuthors: () => [
+    blogTagPostsCount: () => 5,
+    blogTagPostsLoaded: () => true,
+    blogAuthors: () => [
       {
         id: '1',
       }, {
@@ -22,8 +22,8 @@ const store = {
         id: '3',
       },
     ],
-    tagPostsPage: () => 1,
-    tagPosts: () => tagPosts,
+    blogTagPostsPage: () => 1,
+    blogTagPosts: () => tagPosts,
   },
 }
 

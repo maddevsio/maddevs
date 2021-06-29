@@ -207,7 +207,7 @@ describe('Careers module actions', () => {
     expect(store.commit).toHaveBeenCalledWith('SET_VACANCIES_CATEGORY', category)
   })
 
-  it('should correctly called getMorePosts', () => {
+  it('should correctly called getMoreBlogPosts', () => {
     const store = {
       commit: jest.fn(),
       state: defaultState(),

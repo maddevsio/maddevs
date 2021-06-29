@@ -9,8 +9,8 @@ const mocks = {
 
 const store = {
   getters: {
-    postsLoaded: () => true,
-    recentPosts: jest.fn(),
+    blogPostsLoaded: () => true,
+    recentBlogPosts: jest.fn(),
   },
 }
 

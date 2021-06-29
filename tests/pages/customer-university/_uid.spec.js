@@ -8,7 +8,7 @@ const DESCRIPTION = 'test description'
 
 const store = {
   getters: {
-    homePageContent: () => ({ description: DESCRIPTION }),
+    blogPageContent: () => ({ description: DESCRIPTION }),
   },
 }
 

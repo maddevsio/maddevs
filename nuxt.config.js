@@ -67,7 +67,7 @@ module.exports = {
    ** Component will be ignored in building
    */
   generate: {
-    ...getRoutes(),
+    routes: getRoutes,
     fallback: '404.html',
   },
   css: [

@@ -3,13 +3,13 @@ import {
   state as defaultState, mutations, actions, getters,
 } from '@/store/modules/blogAuthors'
 
-import { getBlogAuthors, getBlogAuthor, getAuthorPosts } from '@/api/blogAuthors'
+import { getBlogAuthors, getBlogAuthor, getBlogAuthorPosts } from '@/api/blogAuthors'
 
 jest.mock('@/api/blogAuthors', () => (
   {
     getBlogAuthors: jest.fn(() => []),
     getBlogAuthor: jest.fn(() => 'test'),
-    getAuthorPosts: jest.fn(() => 'test'),
+    getBlogAuthorPosts: jest.fn(() => 'test'),
   }
 ))
 
@@ -170,21 +170,21 @@ describe('BlogAuthors module actions', () => {
     expect(store.commit).toHaveBeenCalledWith('SET_AUTHOR', 'test')
   })
 
-  it('should correctly called getAuthorPosts', async () => {
+  it('should correctly called getBlogAuthorPosts', async () => {
     const store = {
       commit: jest.fn(),
     }
 
-    await actions.getAuthorPosts(store)
+    await actions.getBlogAuthorPosts(store)
 
-    expect(getAuthorPosts).toHaveBeenCalledTimes(1)
+    expect(getBlogAuthorPosts).toHaveBeenCalledTimes(1)
     expect(store.commit).toHaveBeenCalledWith('SET_AUTHOR_POSTS_LOADED', false)
     expect(store.commit).toHaveBeenCalledWith('SET_AUTHOR_POSTS', [])
     expect(store.commit).toHaveBeenCalledWith('SET_AUTHOR_POSTS', 'test')
     expect(store.commit).toHaveBeenCalledWith('SET_AUTHOR_POSTS_LOADED', true)
   })
 
-  it('should correctly called getMoreAuthorPosts', () => {
+  it('should correctly called getMoreBlogAuthorPosts', () => {
     const store = {
       commit: jest.fn(),
       state: {
@@ -192,7 +192,7 @@ describe('BlogAuthors module actions', () => {
       },
     }
 
-    actions.getMoreAuthorPosts(store)
+    actions.getMoreBlogAuthorPosts(store)
 
     expect(store.commit).toHaveBeenCalledWith('SET_AUTHOR_POSTS_PAGE', store.state.authorPostsPage + 1)
   })
@@ -201,23 +201,23 @@ describe('BlogAuthors module actions', () => {
 describe('BlogAuthors module getters', () => {
   const state = defaultState()
 
-  it('allAuthors', () => {
-    expect(getters.allAuthors(state)).toBe(state.authors)
+  it('blogAuthors', () => {
+    expect(getters.blogAuthors(state)).toBe(state.authors)
   })
 
   it('blogAuthor', () => {
     expect(getters.blogAuthor(state)).toBe(state.author)
   })
 
-  it('authorPosts', () => {
-    expect(getters.authorPosts(state)).toBe(state.authorPosts)
+  it('blogAuthorPosts', () => {
+    expect(getters.blogAuthorPosts(state)).toBe(state.authorPosts)
   })
 
-  it('authorPostsLoaded', () => {
-    expect(getters.authorPostsLoaded(state)).toBe(state.authorPostsLoaded)
+  it('blogAuthorPostsLoaded', () => {
+    expect(getters.blogAuthorPostsLoaded(state)).toBe(state.authorPostsLoaded)
   })
 
-  it('authorPostsPage', () => {
-    expect(getters.authorPostsPage(state)).toBe(state.authorPostsPage)
+  it('blogAuthorPostsPage', () => {
+    expect(getters.blogAuthorPostsPage(state)).toBe(state.authorPostsPage)
   })
 })

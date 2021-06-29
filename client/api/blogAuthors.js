@@ -1,10 +1,18 @@
 export const getBlogAuthors = async prismic => {
+  const prismicQuery = async (page = 1) => {
+    let posts = []
+    const response = await prismic.api.query(prismic.predicates.at('document.type', 'author'), {
+      pageSize: 100,
+      page,
+    })
+    posts = posts.concat(response.results)
+    if (response.next_page) posts = posts.concat(await prismicQuery(page + 1))
+    return posts
+  }
+
   try {
-    const response = await prismic.api.query(
-      prismic.predicates.at('document.type', 'author'),
-      { pageSize: 100 },
-    )
-    return response.results
+    const authors = await prismicQuery()
+    return authors
   } catch (error) {
     return error
   }
@@ -19,16 +27,25 @@ export const getBlogAuthor = async (prismic, payload) => {
   }
 }
 
-export const getAuthorPosts = async (prismic, payload) => {
-  try {
+export const getBlogAuthorPosts = async (prismic, payload) => {
+  const prismicQuery = async (page = 1) => {
+    let posts = []
     const response = await prismic.api.query([
       prismic.predicates.at('document.type', 'post'),
       prismic.predicates.at('my.post.post_author', payload),
     ], {
       orderings: '[my.post.date desc]',
       pageSize: 100,
+      page,
     })
-    return response.results
+    posts = posts.concat(response.results)
+    if (response.next_page) posts = posts.concat(await prismicQuery(page + 1))
+    return posts
+  }
+
+  try {
+    const posts = await prismicQuery()
+    return posts
   } catch (error) {
     return error
   }

@@ -30,7 +30,7 @@ describe('ModalSearch component', () => {
       setSearchResponse: () => '',
     },
     getters: {
-      allAuthors: [
+      blogAuthors: [
         {
           id: '123',
           position: 'Senior',

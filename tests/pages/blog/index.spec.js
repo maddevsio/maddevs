@@ -6,7 +6,7 @@ const DESCRIPTION = 'test description'
 
 const store = {
   getters: {
-    homePageContent: () => ({ description: DESCRIPTION }),
+    blogPageContent: () => ({ description: DESCRIPTION }),
   },
 }
 
@@ -46,7 +46,7 @@ describe('Blog index component', () => {
     })
 
     const actual = wrapper.vm.$options.head.call({
-      homePageContent: {
+      blogPageContent: {
         description: DESCRIPTION,
       },
     })
@@ -64,7 +64,7 @@ describe('Blog index component', () => {
     })
 
     const actual = wrapper.vm.$options.head.call({
-      homePageContent: {
+      blogPageContent: {
         description: null,
       },
     })

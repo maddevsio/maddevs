@@ -2,8 +2,8 @@ import { render, screen, fireEvent } from '@testing-library/vue'
 import AllPostsSection from '@/components/Blog/Main/AllPostsSection'
 import Vuex from 'vuex'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
-import allPosts from '../../../__mocks__/allPosts'
-import * as homeContent from '../../../__mocks__/homePageContent'
+import blogPosts from '../../../__mocks__/blogPosts'
+import * as blogContent from '../../../__mocks__/blogPageContent'
 
 const localVue = createLocalVue()
 localVue.use(Vuex)
@@ -11,7 +11,7 @@ localVue.use(Vuex)
 const recipeMock = jest.fn()
 const scroll = jest.fn()
 const windowsScroll = jest.fn()
-recipeMock.mockReturnValue('homePageContent')
+recipeMock.mockReturnValue('blogPageContent')
 
 const mocks = {
   $prismic: {
@@ -24,16 +24,16 @@ const stubs = ['NuxtLink']
 
 const store = {
   getters: {
-    filteredPosts: () => allPosts,
-    allPosts: () => allPosts,
-    postsCategory: jest.fn(),
-    postsPage: () => 2,
-    homePageContent: () => homeContent.default,
-    allAuthors: jest.fn(),
+    filteredBlogPosts: () => blogPosts,
+    blogPosts: () => blogPosts,
+    blogPostsCategory: jest.fn(),
+    blogPostsPage: () => 2,
+    blogPageContent: () => blogContent.default,
+    blogAuthors: jest.fn(),
   },
   actions: {
-    changePostsCategory: jest.fn(),
-    getMorePosts: jest.fn(),
+    changeBlogPostsCategory: jest.fn(),
+    getMoreBlogPosts: jest.fn(),
   },
 }
 
@@ -68,7 +68,7 @@ describe('AllPostsSection component', () => {
       store,
     })
 
-    expect(screen.getAllByTestId('test-single-post')).toHaveLength(allPosts.length)
+    expect(screen.getAllByTestId('test-single-post')).toHaveLength(blogPosts.length)
   })
 
   it('should correct work change post category', async () => {
@@ -81,7 +81,7 @@ describe('AllPostsSection component', () => {
 
     const input = screen.getAllByTestId('test-post-input')
     await fireEvent.update(input[0], 'Hardware')
-    expect(store.actions.changePostsCategory).toHaveBeenCalledTimes(1)
+    expect(store.actions.changeBlogPostsCategory).toHaveBeenCalledTimes(1)
   })
 
   it('correctly call update class function from watcher if haven\'t parent node or not found attribute', () => {
@@ -96,7 +96,7 @@ describe('AllPostsSection component', () => {
       container: document.body.appendChild(singleLink),
     })
 
-    wrapper.vm.$options.watch.filteredPosts()
+    wrapper.vm.$options.watch.filteredBlogPosts()
     expect(scroll).toHaveBeenCalledTimes(0)
     expect(windowsScroll).toHaveBeenCalledTimes(0)
   })
@@ -111,7 +111,7 @@ describe('AllPostsSection component', () => {
       container: document.body.appendChild(containerToRender),
     })
 
-    wrapper.vm.$options.watch.filteredPosts()
+    wrapper.vm.$options.watch.filteredBlogPosts()
     expect(scroll).toHaveBeenCalledTimes(1)
     expect(windowsScroll).toHaveBeenCalledTimes(1)
   })
@@ -119,7 +119,7 @@ describe('AllPostsSection component', () => {
   it('should correct work get more posts handler', () => {
     const nextTick = jest.fn()
     mocks.$nextTick = nextTick
-    store.getters.filteredPosts = () => [...allPosts, ...allPosts]
+    store.getters.filteredBlogPosts = () => [...blogPosts, ...blogPosts]
     render(AllPostsSection, {
       localVue,
       mocks,
@@ -130,6 +130,6 @@ describe('AllPostsSection component', () => {
     const button = screen.getByTestId('test-load-more-button')
     fireEvent.click(button)
 
-    expect(store.actions.getMorePosts).toHaveBeenCalledTimes(1)
+    expect(store.actions.getMoreBlogPosts).toHaveBeenCalledTimes(1)
   })
 })

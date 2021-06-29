@@ -1,8 +1,8 @@
 const findPostAuthorMixin = {
   methods: {
-    findAuthor(authorId, allAuthors) {
-      if (!(allAuthors && allAuthors.length)) return null
-      return allAuthors.find(a => a.id === authorId)
+    findAuthor(authorId, authors) {
+      if (!(authors && authors.length)) return null
+      return authors.find(a => a.id === authorId)
     },
   },
 }

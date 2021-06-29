@@ -49,14 +49,14 @@ describe('BlogAuthors api methods', () => {
     expect(data).toBe(error)
   })
 
-  it('getAuthorPosts success', async () => {
-    const data = await api.getAuthorPosts(prismic)
-    expect(data).toBe('results')
+  it('getBlogAuthorPosts success', async () => {
+    const data = await api.getBlogAuthorPosts(prismic)
+    expect(data).toEqual(['results'])
     expect(prismic.api.query).toHaveBeenCalledTimes(3)
   })
 
-  it('getAuthorPosts failure', async () => {
-    const data = await api.getAuthorPosts(prismicFailure)
+  it('getBlogAuthorPosts failure', async () => {
+    const data = await api.getBlogAuthorPosts(prismicFailure)
     expect(data).toBe(error)
   })
 })

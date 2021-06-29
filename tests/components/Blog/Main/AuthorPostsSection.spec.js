@@ -1,6 +1,6 @@
 import { render } from '@testing-library/vue'
 import AuthorPostsSection from '@/components/Blog/Main/AuthorPostsSection'
-import allPosts from '../../../__mocks__/allPosts'
+import blogPosts from '../../../__mocks__/blogPosts'
 
 const mocks = {
   $prismic: {
@@ -18,9 +18,9 @@ const store = {
         url: 'someurl',
       },
     }),
-    authorPosts: () => allPosts,
-    authorPostsLoaded: () => true,
-    authorPostsPage: () => 1,
+    blogAuthorPosts: () => blogPosts,
+    blogAuthorPostsLoaded: () => true,
+    blogAuthorPostsPage: () => 1,
   },
 }
 

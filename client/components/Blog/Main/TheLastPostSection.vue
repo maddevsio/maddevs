@@ -2,9 +2,9 @@
   <div class="container">
     <div class="last-post">
       <FeaturedPost
-        v-if="postsLoaded && featuredPost"
-        :post="featuredPost"
-        :author="findAuthor(featuredPost.data.post_author.id, allAuthors)"
+        v-if="blogPostsLoaded && featuredBlogPost"
+        :post="featuredBlogPost"
+        :author="findAuthor(featuredBlogPost.data.post_author.id, blogAuthors)"
       />
       <SkeletonFeaturedPost
         v-else
@@ -30,7 +30,7 @@ export default {
   mixins: [findPostAuthorMixin],
 
   computed: {
-    ...mapGetters(['featuredPost', 'postsLoaded', 'allAuthors']),
+    ...mapGetters(['featuredBlogPost', 'blogPostsLoaded', 'blogAuthors']),
   },
 }
 </script>
