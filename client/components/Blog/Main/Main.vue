@@ -39,6 +39,7 @@ export default {
       'customerContent',
       'blogPosts',
       'blogAuthors',
+      'blogTags',
     ]),
   },
 
@@ -51,7 +52,7 @@ export default {
   },
 
   methods: {
-    ...mapActions(['getBlogPageContent', 'getBlogPosts', 'getBlogAuthors', 'getCustomerUniversityContent']),
+    ...mapActions(['getBlogPageContent', 'getBlogPosts', 'getBlogAuthors', 'getBlogTags', 'getCustomerUniversityContent']),
 
     getContent() {
       // Query to get blog home content
@@ -61,6 +62,7 @@ export default {
       // Query to get posts content to preview
       if (!this.blogPosts.length) this.getBlogPosts()
       if (!this.blogAuthors.length) this.getBlogAuthors()
+      if (!this.blogTags.length) this.getBlogTags()
     },
   },
 }

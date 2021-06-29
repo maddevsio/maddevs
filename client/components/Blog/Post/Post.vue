@@ -102,7 +102,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import SlicesBlock from '@/components/slices'
 import TableOfContents from '@/components/Blog/Post/TableOfContents'
 import BlogHeader from '@/components/Blog/header/Blog'
@@ -208,7 +208,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['blogAuthors', 'blogTag']),
+    ...mapGetters(['blogAuthors', 'blogTag', 'blogTags']),
 
     tableOfContentsSlice() {
       return this.slices && this.slices.find(slice => slice.slice_type === 'table_of_contents')
@@ -235,6 +235,10 @@ export default {
     },
   },
 
+  created() {
+    if (!this.blogTags.length && this.$route.name !== 'customer-university') this.getBlogTags()
+  },
+
   updated() {
     this.$nextTick(() => initializeLazyLoad())
   },
@@ -258,6 +262,8 @@ export default {
   },
 
   methods: {
+    ...mapActions(['getBlogTags']),
+
     copyAnchorLink(event) {
       const copyText = event.target.getAttribute('data-id')
       if (!copyText) return null
