@@ -86,12 +86,14 @@
         </section>
       </div>
     </div>
-    <CustomerUniversityNavigation
-      v-if="clusterPosts && cluster"
-      :id="id"
-      :cluster="cluster"
-      :cluster-posts="clusterPosts"
-    />
+    <div ref="clusterNavigation">
+      <CustomerUniversityNavigation
+        v-if="clusterPosts && cluster"
+        :id="id"
+        :cluster="cluster"
+        :cluster-posts="clusterPosts"
+      />
+    </div>
     <button
       v-if="buttonIsActive"
       class="blog-post__back-to-list"
@@ -292,16 +294,13 @@ export default {
     },
 
     initNavbar() {
-      this.introductionContainer = document.getElementById('introduction-container')
-
-      if (this.$refs.navbar && this.$refs.innerContainer && this.introductionContainer) this.setStylesForNavbar()
-
-      return null
+      this.introductionContainer = document.getElementById('introduction-container') // ?
+      this.setStylesForNavbar()
     },
 
     setStylesForNavbar() {
       const introductionContainerHeight = this.introductionContainer.clientHeight
-      const scrollStartPoint = this.tableOfContentsSlice ? introductionContainerHeight + 100 : 650
+      const scrollStartPoint = this.tableOfContentsSlice ? introductionContainerHeight + 100 : 650 // ?
       const scrollEndPoint = this.getScrollEndPoint()
 
       if (window.pageYOffset < scrollStartPoint) {
@@ -336,11 +335,10 @@ export default {
       const isCustomerUniversityPost = this.pathIsContainsInUrl('/customer-university/')
       const blogPostHeight = this.$refs.blogPost.offsetHeight
       const navbarHeight = this.$refs.navbar.offsetHeight
-      const recommendedPostsHeight = this.$refs.recommendedPosts.offsetHeight
+      const blogPostLastSectionHeight = isCustomerUniversityPost
+        ? this.$refs.clusterNavigation.offsetHeight : this.$refs.recommendedPosts.offsetHeight
 
-      if (isCustomerUniversityPost) return blogPostHeight - (recommendedPostsHeight + navbarHeight + 190)
-
-      return blogPostHeight - (recommendedPostsHeight + navbarHeight + 190)
+      return blogPostHeight - (blogPostLastSectionHeight + navbarHeight + 190)
     },
 
     calcProgress() {
