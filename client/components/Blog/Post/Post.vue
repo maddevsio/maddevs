@@ -1,14 +1,19 @@
 <template>
   <div
+    ref="blogPost"
     :class="wrapperClass"
     class="blog-post"
   >
     <div class="blog-post__background" />
-    <div class="blog-post__inner-container">
+    <div
+      ref="innerContainer"
+      class="blog-post__inner-container"
+    >
       <div
         v-if="dataLoaded"
-        class="blog-post__share"
-        :class="{ 'blog-post__share--vertical': !tableOfContentsSlice }"
+        ref="navbar"
+        class="blog-post__left-navbar"
+        :class="{ 'blog-post__left-navbar--vertical': !tableOfContentsSlice }"
       >
         <TableOfContents
           v-if="tableOfContentsSlice"
@@ -19,19 +24,19 @@
             :url="openGraphUrl"
             :title="metaTitle"
             network="facebook"
-            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
+            class="blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
           />
           <ShareNetwork
             :url="openGraphUrl"
             :title="metaTitle"
             network="twitter"
-            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
+            class="blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
           />
           <ShareNetwork
             :url="openGraphUrl"
             :title="metaTitle"
             network="linkedin"
-            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
+            class="blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
           />
         </div>
       </div>
@@ -63,6 +68,7 @@
     </div>
     <div
       v-if="showRecommended"
+      ref="recommendedPosts"
       class="blog-post__recommended-posts"
     >
       <div class="blog-post__recommended-posts-list container">
@@ -204,6 +210,7 @@ export default {
     return {
       buttonIsActive: false,
       dataLoaded: false,
+      introductionContainer: null,
     }
   },
 
@@ -230,7 +237,7 @@ export default {
   watch: {
     dataLoaded(loaded) {
       if (loaded) {
-        this.$nextTick(() => this.shareButtonsScroll())
+        this.$nextTick(() => this.initNavbar())
       }
     },
   },
@@ -240,8 +247,7 @@ export default {
   },
 
   mounted() {
-    window.addEventListener('scroll', this.handleScroll)
-    window.addEventListener('scroll', this.shareButtonsScroll)
+    window.addEventListener('scroll', this.scrollHandler)
     document.querySelectorAll('.copy-link')
       .forEach(link => link.addEventListener('click', this.copyAnchorLink))
     this.dataLoaded = true
@@ -253,8 +259,7 @@ export default {
   },
 
   destroyed() {
-    window.removeEventListener('scroll', this.handleScroll)
-    window.removeEventListener('scroll', this.shareButtonsScroll)
+    window.removeEventListener('scroll', this.scrollHandler)
   },
 
   methods: {
@@ -280,45 +285,62 @@ export default {
       })
     },
 
-    handleScroll(event) {
+    scrollHandler(event) {
       this.buttonIsActive = Boolean(event.target.scrollingElement.scrollTop !== 0)
       this.calcProgress()
+      this.initNavbar()
     },
 
-    shareButtonsScroll() {
-      const shareButtons = document.querySelector('.blog-post__share')
-      const shareButtonsContainer = document.querySelector('.blog-post__introduction-container')
+    initNavbar() {
+      this.introductionContainer = document.getElementById('introduction-container')
 
-      if (!shareButtons) return null
-      if (!shareButtonsContainer) return null
+      if (this.$refs.navbar && this.$refs.innerContainer && this.introductionContainer) this.setStylesForNavbar()
 
-      if (window.pageYOffset < (!this.tableOfContentsSlice ? 650 : shareButtonsContainer.clientHeight + 100)) {
-        if (!this.tableOfContentsSlice) {
-          shareButtons.style.cssText = 'position: absolute; top: 580px; left: -183px;'
-        } else {
-          shareButtons.style.cssText = `position: absolute; top: ${shareButtonsContainer.clientHeight + 30}px; left: -210px;`
-        }
-      } else if (
-        window.pageYOffset
-        > document.querySelector('.blog-post').offsetHeight
-          - (document.querySelector('.blog-post__recommended-posts')
-            ? document.querySelector('.blog-post__recommended-posts').offsetHeight
-            : 0)
-          - (document.querySelector('.blog-post > .cluster-navigation')
-            ? document.querySelector('.blog-post > .cluster-navigation').offsetHeight - 24
-            : 0)
-          - document.querySelector('.blog-post__share').offsetHeight
-          - 190
-      ) {
-        if (!this.tableOfContentsSlice) {
-          shareButtons.style.cssText = 'position: absolute; bottom: 0; top: auto; left: -183px;'
-        } else {
-          shareButtons.style.cssText = 'position: absolute; bottom: 0; top: auto; left: -210px;'
-        }
+      return null
+    },
+
+    setStylesForNavbar() {
+      const introductionContainerHeight = this.introductionContainer.clientHeight
+      const scrollStartPoint = this.tableOfContentsSlice ? introductionContainerHeight + 100 : 650
+      const scrollEndPoint = this.getScrollEndPoint()
+
+      if (window.pageYOffset < scrollStartPoint) {
+        this.$refs.navbar.style.cssText = `
+          position: absolute;
+          top: ${introductionContainerHeight + 30}px;
+          left: -210px;
+        `
       } else {
-        shareButtons.style.cssText = 'top: 100px'
+        this.$refs.navbar.style.cssText = `
+          position: fixed;
+          top: 100px;
+          left: calc(50vw - 619px);
+        `
       }
-      return true
+
+      if (window.pageYOffset > scrollEndPoint) {
+        this.$refs.navbar.style.cssText = `
+          position: absolute;
+          top: auto;
+          bottom: 0;
+          left: -210px;
+        `
+      }
+    },
+
+    pathIsContainsInUrl(path) {
+      return window.location.pathname.includes(path)
+    },
+
+    getScrollEndPoint() {
+      const isCustomerUniversityPost = this.pathIsContainsInUrl('/customer-university/')
+      const blogPostHeight = this.$refs.blogPost.offsetHeight
+      const navbarHeight = this.$refs.navbar.offsetHeight
+      const recommendedPostsHeight = this.$refs.recommendedPosts.offsetHeight
+
+      if (isCustomerUniversityPost) return blogPostHeight - (recommendedPostsHeight + navbarHeight + 190)
+
+      return blogPostHeight - (recommendedPostsHeight + navbarHeight + 190)
     },
 
     calcProgress() {
@@ -361,18 +383,10 @@ export default {
     margin: 25px auto 0;
   }
 
-  &__share {
+  &__left-navbar {
     display: flex;
-    position: fixed;
-    left: calc(50vw - 619px);
-    top: 750px;
     flex-direction: column;
     margin-top: 0;
-
-    &-links {
-      display: flex;
-      margin-top: 20px;
-    }
 
     &--vertical {
       left: calc(50vw - 592px);
@@ -387,6 +401,11 @@ export default {
         }
       }
     }
+  }
+
+  &__share-links {
+    display: flex;
+    margin-top: 20px;
   }
 
   &__share-link {

@@ -1,5 +1,8 @@
 <template>
-  <div class="blog-post__introduction-container">
+  <div
+    id="introduction-container"
+    class="blog-post__introduction-container"
+  >
     <slot name="beforeTitle" />
     <h1
       :id="createAnchorID(title)"
