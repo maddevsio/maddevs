@@ -17,7 +17,7 @@ const META_DATA = {
   description: DESCRIPTION,
   'og:url': 'https://maddevs.io/case-studies/R4TCA-web-application/',
   'og:type': 'website',
-  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
+  'og:site_name': 'Custom Software Development Company',
   'og:title': 'Mad Devs Case Study: the International Trade Centre (ITC)',
   'og:description': DESCRIPTION,
   'og:image': 'https://maddevs.io/itc-case.jpg',

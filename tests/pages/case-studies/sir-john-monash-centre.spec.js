@@ -10,7 +10,7 @@ const META_DATA = {
   title: 'Mad Devs: Software & Mobile App Development Company | Blog Author',
   'og:url': 'https://maddevs.io/case-studies/sir-john-monash-centre/',
   'og:type': 'website',
-  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
+  'og:site_name': 'Custom Software Development Company',
   'og:title': 'Mad Devs Case Study: Sir John Monash Centre',
   'og:description': DESCRIPTION,
   'og:image': 'https://maddevs.io/sjmc-case.png',
