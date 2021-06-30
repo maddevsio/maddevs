@@ -9,7 +9,7 @@
       <OpenPositions />
       <CTABanner />
     </div>
-    <ScrollToPositionsButton />
+    <ScrollToPositionsLink />
   </div>
 </template>
 
@@ -22,7 +22,7 @@ import KeyMetrics from '@/components/Careers/KeyMetrics'
 import EmployeesBenefits from '@/components/Careers/EmployeesBenefits'
 import OpenPositions from '@/components/Careers/OpenPositions'
 import CTABanner from '@/components/Careers/CTABanner'
-import ScrollToPositionsButton from '@/components/Careers/shared/ScrollToPositionsButton'
+import ScrollToPositionsLink from '@/components/Careers/shared/ScrollToPositionsLink'
 
 export default {
   name: 'Main',
@@ -34,7 +34,7 @@ export default {
     EmployeesBenefits,
     OpenPositions,
     CTABanner,
-    ScrollToPositionsButton,
+    ScrollToPositionsLink,
   },
 
   mounted() {

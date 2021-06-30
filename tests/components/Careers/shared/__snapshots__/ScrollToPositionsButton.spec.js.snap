@@ -1,15 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ScrollToPositionsButton component should render correctly 1`] = `
+exports[`ScrollToPositionsLink component should render correctly 1`] = `
 <div>
-  <label
+  <nuxtlink
     class="scroll-to-positions scroll-to-positions--hidden"
+    to="/careers/#open-positions"
   >
     <button
       class="underlined-button"
     >
-      See all 0 open positions
+      
+    See all 0 open positions
+  
     </button>
-  </label>
+  </nuxtlink>
 </div>
 `;
