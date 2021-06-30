@@ -27,6 +27,10 @@ const props = {
 
 Object.defineProperty(document, 'execCommand', { value: jest.fn() })
 
+Object.defineProperty(window, 'pageYOffset', {
+  value: 200,
+})
+
 const localVue = createLocalVue()
 localVue.use(Vuex)
 
@@ -66,6 +70,9 @@ const refs = { // use for offsetHeight random numbers
   },
   navbar: {
     offsetHeight: 400,
+    style: {
+      cssText: '',
+    },
   },
   recommendedPosts: {
     offsetHeight: 600,
@@ -149,7 +156,7 @@ describe('Post component', () => {
     })
   })
 
-  it('setStylesForNavbar should call function', () => {
+  it('setStylesForNavbar should call function if computed return true', () => {
     const wrapper = shallowMount(Post, {
       computed: {
         tableOfContentsSlice() {
@@ -162,6 +169,21 @@ describe('Post component', () => {
     wrapper.vm.setStylesForNavbar()
 
     expect(handleNavbarSpy).toHaveBeenCalledTimes(1)
+  })
+
+  it('setStylesForNavbar should not call function if computed return false', () => {
+    const wrapper = shallowMount(Post, {
+      computed: {
+        tableOfContentsSlice() {
+          return false
+        },
+      },
+    })
+    const handleNavbarSpy = jest.spyOn(wrapper.vm, 'handleNavbar').mockImplementation(() => jest.fn())
+
+    wrapper.vm.setStylesForNavbar()
+
+    expect(handleNavbarSpy).toHaveBeenCalledTimes(0)
   })
 
   it('data instance should contains html element', () => {
@@ -204,10 +226,10 @@ describe('Post component', () => {
   })
 
   it('method should return scroll end point count for default blog post', () => {
-    const wrapper = shallowMount(Post)
-    jest.spyOn(wrapper.vm, 'containsInUrl').mockImplementation(() => false)
-    wrapper.vm.$refs = refs
     const expectedResult = 6810
+    const wrapper = shallowMount(Post)
+    wrapper.vm.$refs = refs
+    jest.spyOn(wrapper.vm, 'containsInUrl').mockImplementation(() => false)
 
     const result = wrapper.vm.getScrollEndPoint()
 
@@ -215,12 +237,54 @@ describe('Post component', () => {
   })
 
   it('method should return scroll end point count for customer university post', () => {
-    const wrapper = shallowMount(Post)
-    jest.spyOn(wrapper.vm, 'containsInUrl').mockImplementation(() => true)
-    wrapper.vm.$refs = refs
     const expectedResult = 7110
+    const wrapper = shallowMount(Post)
+    wrapper.vm.$refs = refs
+    jest.spyOn(wrapper.vm, 'containsInUrl').mockImplementation(() => true)
 
     const result = wrapper.vm.getScrollEndPoint()
+
+    expect(result).toBe(expectedResult)
+  })
+
+  it('handleNavbar if window.pageYOffset less than scrollStartPoint', () => {
+    const mock = { offsetHeight: 200 }
+    const wrapper = shallowMount(Post)
+    const expectedResult = 'position: absolute; top: 230px; left: -210px;'
+    wrapper.setData({ introductionContainer: mock })
+    wrapper.vm.$refs = refs
+    jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => 300)
+
+    wrapper.vm.handleNavbar()
+    const result = wrapper.vm.$refs.navbar.style.cssText
+
+    expect(result).toBe(expectedResult)
+  })
+
+  it('handleNavbar if window.pageYOffset more than scrollStartPoint', () => {
+    const mock = { offsetHeight: 50 }
+    const wrapper = shallowMount(Post)
+    const expectedResult = 'position: fixed; top: 100px; left: calc(50vw - 619px);'
+    wrapper.setData({ introductionContainer: mock })
+    wrapper.vm.$refs = refs
+    jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => 300)
+
+    wrapper.vm.handleNavbar()
+    const result = wrapper.vm.$refs.navbar.style.cssText
+
+    expect(result).toBe(expectedResult)
+  })
+
+  it('handleNavbar if window.pageYOffset more than scrollEndPoint', () => {
+    const mock = { offsetHeight: 50 }
+    const wrapper = shallowMount(Post)
+    const expectedResult = 'position: absolute; bottom: 0px; left: -210px;'
+    wrapper.setData({ introductionContainer: mock })
+    wrapper.vm.$refs = refs
+    jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => 100)
+
+    wrapper.vm.handleNavbar()
+    const result = wrapper.vm.$refs.navbar.style.cssText
 
     expect(result).toBe(expectedResult)
   })
