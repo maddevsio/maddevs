@@ -7,6 +7,8 @@
           <img
             class="modal-search_form-search"
             src="@/assets/img/common/magnify.svg"
+            width="30"
+            height="35"
             alt="Magnify"
           >
           <input
@@ -23,6 +25,8 @@
         >
           <img
             src="@/assets/img/common/close-icon-search.svg"
+            width="24"
+            height="24"
             alt="Close"
           >
         </button>

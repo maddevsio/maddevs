@@ -97,6 +97,8 @@
             >
               <img
                 src="@/assets/img/common/magnify--white.svg"
+                width="16"
+                height="18"
                 alt="Magnify"
               >
             </button>

@@ -4,6 +4,8 @@
       v-if="name"
       :data-src="require(`@/assets/img/Home/svg/technologies/${name}.svg`)"
       :alt="imgAlt || alt"
+      width="40"
+      height="40"
       class="img_lazy case_technologies-item__tech-icon"
       :class="`case_technologies-item__${name} ${name}`"
     >
@@ -39,7 +41,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/cases/_mixins';
+@import '@/assets/styles/cases/_mixins';
 
 .case_technologies-item {
   display: flex;

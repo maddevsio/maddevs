@@ -16,6 +16,8 @@
               class="latest-posts__banner"
             >
               <img
+                width="390"
+                height="516"
                 class="img_lazy"
                 :data-src="post.banner.url"
                 :alt="post.id"

@@ -1943,6 +1943,8 @@ exports[`index page renders correctly 1`] = `
               alt="Arrow"
               class="quickProjectStart__arrow-icon img_lazy"
               data-src="[object Object]"
+              height="65"
+              width="165"
             />
           </div>
            
@@ -1984,6 +1986,8 @@ exports[`index page renders correctly 1`] = `
               alt="Arrow"
               class="quickProjectStart__arrow-icon img_lazy"
               data-src="[object Object]"
+              height="65"
+              width="165"
             />
           </div>
            
@@ -2025,6 +2029,8 @@ exports[`index page renders correctly 1`] = `
               alt="Arrow"
               class="quickProjectStart__arrow-icon img_lazy"
               data-src="[object Object]"
+              height="65"
+              width="165"
             />
           </div>
            
@@ -2066,6 +2072,8 @@ exports[`index page renders correctly 1`] = `
               alt="Arrow"
               class="quickProjectStart__arrow-icon img_lazy"
               data-src="[object Object]"
+              height="65"
+              width="165"
             />
           </div>
            

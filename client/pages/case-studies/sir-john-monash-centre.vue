@@ -29,6 +29,8 @@
       >
         <img
           :data-src="require(`@/assets/img/Studies/svg/play-icon.svg`)"
+          width="14"
+          height="14"
           alt="Play"
           class="case_play-icon img_lazy"
         >
@@ -45,6 +47,8 @@
         <img
           slot="icon"
           :data-src="require(`@/assets/img/Studies/svg/nambafood-footer.svg`)"
+          width="200"
+          height="63"
           alt="Namba Food"
           class="case_logotype-namba-food img_lazy"
         >

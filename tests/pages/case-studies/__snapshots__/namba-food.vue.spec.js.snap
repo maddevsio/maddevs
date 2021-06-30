@@ -86,6 +86,8 @@ exports[`NambaFood _uid component should render correctly 1`] = `
         alt="SJMC"
         class="case_logotype-sjmc img_lazy"
         data-src="[object Object]"
+        height="113"
+        width="253"
       />
        
       <h2

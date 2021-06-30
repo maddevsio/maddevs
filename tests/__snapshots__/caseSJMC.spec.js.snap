@@ -74,6 +74,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             alt="Play"
             class="case_play-icon img_lazy"
             data-src="[object Object]"
+            height="14"
+            width="14"
           />
           
       View video about SJMC
@@ -118,7 +120,9 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
     >
       <img
         alt="Close"
+        height="24"
         src="@/assets/img/Studies/svg/close-icon.svg"
+        width="24"
       />
     </button>
   </div>
@@ -170,6 +174,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
             alt="blockquote"
             class="case_mark img_lazy"
             data-src="[object Object]"
+            height="50"
+            width="50"
           />
            
           <blockquote
@@ -805,6 +811,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="blockquote"
               class="case_mark img_lazy"
               data-src="[object Object]"
+              height="50"
+              width="50"
             />
              
             <blockquote
@@ -1486,6 +1494,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="Go"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1503,6 +1513,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="Swift"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__swift swift"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1520,6 +1532,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="Java for Android"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__java java"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1537,6 +1551,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="Unity"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__unity unity"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1554,6 +1570,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="AWS"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__aws aws"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1571,6 +1589,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="CodeCommit"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__codecommit codecommit"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1588,6 +1608,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="Windows 10"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__windows windows"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1605,6 +1627,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="iOS"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__apple-black apple-black"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1622,6 +1646,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="Android"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__android-black-text android-black-text"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1639,6 +1665,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="Ubuntu"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__ubuntu ubuntu"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1656,6 +1684,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="Ansible"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__ansible ansible"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1673,6 +1703,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="Sentry"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1690,6 +1722,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="Elasticsearch"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__elastic elastic"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1707,6 +1741,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="Logstash"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__logstash logstash"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1724,6 +1760,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="Kibana"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__kibana kibana"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -1741,6 +1779,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="Prometheus"
               class="img_lazy case_technologies-item__tech-icon case_technologies-item__prometheus prometheus"
               data-src="[object Object]"
+              height="40"
+              width="40"
             />
              
             <p
@@ -2239,6 +2279,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
               alt="blockquote"
               class="case_mark img_lazy"
               data-src="[object Object]"
+              height="50"
+              width="50"
             />
              
             <blockquote
@@ -3562,8 +3604,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
                   data-src="s3 image url"
                   data-srcset="s3 image url"
                   data-testid="test-picture-img"
-                  height="0"
-                  width="0"
+                  height="71"
+                  width="71"
                 />
               </picture>
             </div>
@@ -3595,6 +3637,8 @@ exports[`sirJohnMonashCentre renders correctly 1`] = `
         alt="Namba Food"
         class="case_logotype-namba-food img_lazy"
         data-src="[object Object]"
+        height="63"
+        width="200"
       />
        
       <h2

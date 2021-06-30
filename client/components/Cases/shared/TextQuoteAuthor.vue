@@ -8,6 +8,8 @@
           :file="file"
           :extension="extension"
           :alt="author"
+          width="71"
+          height="71"
         />
       </div>
       <TextParagraph class="case_blockquote-author__name">

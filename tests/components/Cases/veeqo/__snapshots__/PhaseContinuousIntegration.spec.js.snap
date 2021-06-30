@@ -184,6 +184,8 @@ exports[`PhaseContinuousIntegration component should render correctly 1`] = `
         alt="blockquote"
         class="case_mark img_lazy"
         data-src="[object Object]"
+        height="50"
+        width="50"
       />
        
       <blockquote

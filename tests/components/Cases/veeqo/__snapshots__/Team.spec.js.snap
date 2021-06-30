@@ -130,8 +130,8 @@ exports[`Team component should render correctly 1`] = `
               data-src="img.jpg"
               data-srcset="img.jpg"
               data-testid="test-picture-img"
-              height="0"
-              width="0"
+              height="71"
+              width="71"
             />
           </picture>
         </div>
