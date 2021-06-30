@@ -47,8 +47,7 @@ export default {
 
 .vacancy-text-slice {
   &__icon {
-    font-size: 25px;
-    margin-right: 5px;
+    font-size: 27px;
   }
 }
 </style>
