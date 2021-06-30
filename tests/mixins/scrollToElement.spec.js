@@ -1,4 +1,4 @@
-import ScrollToPositionsButton from '@/components/Careers/shared/ScrollToPositionsButton'
+import ScrollToPositionsLink from '@/components/Careers/shared/ScrollToPositionsLink'
 import scrollToElementMixin from '@/mixins/scrollToElementMixin'
 import { shallowMount, createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
@@ -26,7 +26,7 @@ describe('Scroll to element Mixin', () => {
   window.scrollTo = WINDOW_SCROLL_TO
 
   beforeEach(() => {
-    wrapper = shallowMount(ScrollToPositionsButton, {
+    wrapper = shallowMount(ScrollToPositionsLink, {
       localVue,
       stubs,
       mixins: [scrollToElementMixin],

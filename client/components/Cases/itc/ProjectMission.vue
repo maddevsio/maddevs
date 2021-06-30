@@ -24,9 +24,9 @@
       <TextParagraph class="m-48_bottom media-m-24_bottom">
         To boost intra-regional and international trade, ITC trains Export Management Coaches (EMCs), who then deliver on-the-job coaching to offer practical and action-oriented advisory services to local businesses.
       </TextParagraph>
-      <h4 class="case_title_h4 m-24_bottom media-m-12_bottom">
+      <h3 class="case_title_h4 m-24_bottom media-m-12_bottom">
         Coaching focuses on five thematic areas
-      </h4>
+      </h3>
       <div class="case_thematic-areas m-24_bottom media-m-12_bottom">
         <CardThematicArea
           v-for="thematicArea in thematicAreas"
@@ -64,7 +64,7 @@
       </h4>
       <div class="case_statistics-container m-107_bottom media-m-41_bottom">
         <div class="case_statistics-item">
-          <h4 class="case_statistics-item_title">
+          <h5 class="case_statistics-item_title">
             <span
               data-purecounter-start="0"
               data-purecounter-end="40"
@@ -72,7 +72,7 @@
             >
               40
             </span>
-          </h4>
+          </h5>
           <TextParagraph
             class="case_statistics-item_description"
             color="#404143"
@@ -81,7 +81,7 @@
           </TextParagraph>
         </div>
         <div class="case_statistics-item">
-          <h4 class="case_statistics-item_title">
+          <h5 class="case_statistics-item_title">
             <span
               data-purecounter-start="0"
               data-purecounter-end="50"
@@ -89,7 +89,7 @@
             >
               50
             </span>
-          </h4>
+          </h5>
           <TextParagraph
             class="case_statistics-item_description"
             color="#404143"
@@ -98,7 +98,7 @@
           </TextParagraph>
         </div>
         <div class="case_statistics-item">
-          <h4 class="case_statistics-item_title">
+          <h5 class="case_statistics-item_title">
             <span
               data-purecounter-start="0"
               data-purecounter-end="200"
@@ -106,7 +106,7 @@
             >
               200
             </span>
-          </h4>
+          </h5>
           <TextParagraph
             class="case_statistics-item_description"
             color="#404143"

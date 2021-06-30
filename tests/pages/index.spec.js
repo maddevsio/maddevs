@@ -6,7 +6,7 @@ const META_DATA = {
   description: 'Mad Devs develops enterprise-level custom software solutions & mobile apps for finance, transportation, logistics, security, edtech, cloudtech & advertising industries.',
   'og:url': 'https://maddevs.io/',
   'og:type': 'website',
-  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
+  'og:site_name': 'Custom Software Development Company',
   'og:title': 'Custom Software Development Company | Mad Devs',
   'og:description': 'Mad Devs develops enterprise-level custom software solutions & mobile apps for finance, transportation, logistics, security, edtech, cloudtech & advertising industries.',
   'og:image': 'https://maddevs.io/Open-Graph.png',

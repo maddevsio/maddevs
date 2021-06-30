@@ -7,12 +7,12 @@
       <TextParagraph class="m-66_bottom">
         The main challenge for ITC was to coordinate missions and formalise recommendations provided by the coaches. Initially, the project was using a paper-based manual mission report to track their activities with SMEs. R4TCA implementers saw digitalisation as a major opportunity for improvement.
       </TextParagraph>
-      <h4
+      <h3
         v-prlx="animationSettingsTitle"
         class="case_title_h4 m-24_bottom"
       >
         Below are examples of issues that digitising the manual resolved:
-      </h4>
+      </h3>
       <div class="case_cards-container m-96_bottom media-m-48_bottom">
         <div class="case_column">
           <CardTechSolution
@@ -54,15 +54,15 @@
       </div>
     </div>
     <div class="container_regular">
-      <h4 class="case_title_h4 m-12_bottom">
+      <h3 class="case_title_h4 m-12_bottom">
         Saving efforts: Better reporting and coordination
-      </h4>
+      </h3>
       <TextParagraph class="m-48_bottom media-m-12_bottom">
         The web application we developed is now ITC’s reliable tool for coordinating EMCI. Both SMEs and coaches track their activities in electronic form, generating valuable data that is analysed and disseminated quickly and conveniently. ITC can monitor mission progress. Planning and implementing the project and missions became significantly easier and faster.
       </TextParagraph>
-      <h4 class="case_title_h4 m-12_bottom">
+      <h3 class="case_title_h4 m-12_bottom">
         Saving paper: Fully paperless and eco-friendly alternative
-      </h4>
+      </h3>
       <TextParagraph>
         Going paperless is an internationally recognised way to make your operations greener and more sustainable. The  digital tool is a long-term solution that can help prevent the extensive use of paper in future projects, too.
       </TextParagraph>
@@ -72,7 +72,7 @@
       >
         We at ITC could benefit from digital transformation. The paper-based manual was 200 pages long, and the coach needed to fill out two copies of it every time. Developing a web app to deal with it was a solution that had lots of pluses and not a single minus.
       </TextQuoteBox>
-      <h2 class="case_title-statistics case_text-align-center">
+      <h4 class="case_title-statistics case_text-align-center">
         <span
           data-purecounter-start="0"
           data-purecounter-end="400"
@@ -90,7 +90,7 @@
           200,000
         </span>
         sheets of paper
-      </h2>
+      </h4>
       <TextParagraph class="case_description-statistics m-96_bottom media-m-48_bottom m-auto case_text-align-center">
         the alternative costs of running a paper-based version of the R4TCA EMCI component
       </TextParagraph>

@@ -1,5 +1,5 @@
 import { render } from '@testing-library/vue'
-import ScrollToPositionsButton from '@/components/Careers/shared/ScrollToPositionsButton'
+import ScrollToPositionsLink from '@/components/Careers/shared/ScrollToPositionsLink'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
 
@@ -13,9 +13,9 @@ const store = {
   },
 }
 
-describe('ScrollToPositionsButton component', () => {
+describe('ScrollToPositionsLink component', () => {
   it('should render correctly', () => {
-    const { container } = render(ScrollToPositionsButton, {
+    const { container } = render(ScrollToPositionsLink, {
       store,
     })
 

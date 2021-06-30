@@ -56,13 +56,13 @@ exports[`ProjectMission component should render correctly 1`] = `
     
       </p>
        
-      <h4
+      <h3
         class="case_title_h4 m-24_bottom media-m-12_bottom"
       >
         
       Coaching focuses on five thematic areas
     
-      </h4>
+      </h3>
        
       <div
         class="case_thematic-areas m-24_bottom media-m-12_bottom"
@@ -301,7 +301,7 @@ exports[`ProjectMission component should render correctly 1`] = `
         <div
           class="case_statistics-item"
         >
-          <h4
+          <h5
             class="case_statistics-item_title"
           >
             <span
@@ -313,7 +313,7 @@ exports[`ProjectMission component should render correctly 1`] = `
             40
           
             </span>
-          </h4>
+          </h5>
            
           <p
             class="case_paragraph case_statistics-item_description"
@@ -328,7 +328,7 @@ exports[`ProjectMission component should render correctly 1`] = `
         <div
           class="case_statistics-item"
         >
-          <h4
+          <h5
             class="case_statistics-item_title"
           >
             <span
@@ -340,7 +340,7 @@ exports[`ProjectMission component should render correctly 1`] = `
             50
           
             </span>
-          </h4>
+          </h5>
            
           <p
             class="case_paragraph case_statistics-item_description"
@@ -355,7 +355,7 @@ exports[`ProjectMission component should render correctly 1`] = `
         <div
           class="case_statistics-item"
         >
-          <h4
+          <h5
             class="case_statistics-item_title"
           >
             <span
@@ -367,7 +367,7 @@ exports[`ProjectMission component should render correctly 1`] = `
             200
           
             </span>
-          </h4>
+          </h5>
            
           <p
             class="case_paragraph case_statistics-item_description"

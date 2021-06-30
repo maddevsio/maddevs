@@ -3,7 +3,7 @@ import { render } from '@testing-library/vue'
 import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
 
-const stubs = ['Banner', 'ProjectsCountries', 'Benefits', 'KeyMetrics', 'EmployeesBenefits', 'OpenPositions', 'CTABanner', 'ScrollToPositionsButton']
+const stubs = ['Banner', 'ProjectsCountries', 'Benefits', 'KeyMetrics', 'EmployeesBenefits', 'OpenPositions', 'CTABanner', 'ScrollToPositionsLink']
 
 const localVue = createLocalVue()
 localVue.use(Vuex)

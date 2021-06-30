@@ -9,8 +9,10 @@
       <img
         :srcset="$getMediaFromS3('/images/DeliveryModels/jpg/banner@2x.jpg')"
         :src="$getMediaFromS3('/images/DeliveryModels/jpg/banner.jpg')"
+        width="1680"
+        height="827"
         class="banner__image media_lazy"
-        alt=""
+        alt="Team"
       >
     </picture>
     <div class="container">

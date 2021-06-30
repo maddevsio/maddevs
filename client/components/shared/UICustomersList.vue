@@ -8,6 +8,8 @@
       data-testid="icon-wrapper"
     >
       <img
+        width="143"
+        height="64"
         class="icon-wrapper__icon media_lazy"
         :data-src="fileName(customer)"
         :alt="customer"

@@ -1,10 +1,14 @@
 <template>
-  <label
+  <NuxtLink
+    :to="`/careers/#open-positions`"
     :class="[(show && vacanciesLoaded && vacanciesCount) ? null : 'scroll-to-positions--hidden']"
     class="scroll-to-positions"
+    @click.native="scrollToElement('#open-positions')"
   >
-    <UnderlinedButton @click="scrollToElement('#open-positions')">See all {{ vacanciesCount }} open positions</UnderlinedButton>
-  </label>
+    <UnderlinedButton>
+      See all {{ vacanciesCount }} open positions
+    </UnderlinedButton>
+  </NuxtLink>
 </template>
 
 <script>
@@ -13,7 +17,7 @@ import UnderlinedButton from '@/components/Careers/shared/UnderlinedButton'
 import scrollToElementMixin from '@/mixins/scrollToElementMixin'
 
 export default {
-  name: 'ScrollToPositionsButton',
+  name: 'ScrollToPositionsLink',
   components: {
     UnderlinedButton,
   },

@@ -95,6 +95,8 @@ exports[`Veeqo root component should render correctly 1`] = `
         alt="The Evolution of Yourcast.TV"
         class="case_logotype-yourcast img_lazy"
         data-src="[object Object]"
+        height="57"
+        width="270"
       />
        
       <h2

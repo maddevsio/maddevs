@@ -30,6 +30,8 @@
     >
       <img
         src="@/assets/img/Studies/svg/close-icon.svg"
+        width="24"
+        height="24"
         alt="Close"
       >
     </button>

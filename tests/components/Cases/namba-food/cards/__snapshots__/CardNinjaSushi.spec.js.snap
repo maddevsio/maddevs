@@ -53,7 +53,9 @@ exports[`CardNinjaSushi component should render correctly 1`] = `
       <img
         alt="Macbook frame"
         class="case_card-content_macbook-frame"
+        height="790"
         src="[object Object]"
+        width="1441"
       />
        
       <picture>
@@ -67,8 +69,10 @@ exports[`CardNinjaSushi component should render correctly 1`] = `
           alt="Cases image"
           class="case_card-content_image"
           data-testid="test-case_card-content_image"
+          height="547"
           src="/images/Cases/nambafood/webp/ninja-sushi-slide.webp"
           srcset="/images/Cases/nambafood/webp/ninja-sushi-slide@2x.webp 2x"
+          width="1028"
         />
       </picture>
     </div>

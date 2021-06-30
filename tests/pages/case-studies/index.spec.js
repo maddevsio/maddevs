@@ -6,7 +6,7 @@ const META_DATA = {
   description: 'Discover how Mad Devs helps world-class brands and startups engineer their growth and reach desired outcomes with efficacy and creativity.',
   'og:url': 'https://maddevs.io/case-studies/',
   'og:type': 'website',
-  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
+  'og:site_name': 'Custom Software Development Company',
   'og:title': 'Mad Devs Custom Software Development Company',
   'og:description': 'Discover how Mad Devs helps world-class brands and startups engineer their growth and reach desired outcomes with efficacy and creativity.',
   'og:image': 'https://maddevs.io/Open-Graph.png',

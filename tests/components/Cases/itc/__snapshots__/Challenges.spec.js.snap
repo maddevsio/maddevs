@@ -24,13 +24,13 @@ exports[`Challenges component should render correctly 1`] = `
     
       </p>
        
-      <h4
+      <h3
         class="case_title_h4 m-24_bottom"
       >
         
       Below are examples of issues that digitising the manual resolved:
     
-      </h4>
+      </h3>
        
       <div
         class="case_cards-container m-96_bottom media-m-48_bottom"
@@ -122,13 +122,13 @@ exports[`Challenges component should render correctly 1`] = `
     <div
       class="container_regular"
     >
-      <h4
+      <h3
         class="case_title_h4 m-12_bottom"
       >
         
       Saving efforts: Better reporting and coordination
     
-      </h4>
+      </h3>
        
       <p
         class="case_paragraph m-48_bottom media-m-12_bottom"
@@ -138,13 +138,13 @@ exports[`Challenges component should render correctly 1`] = `
     
       </p>
        
-      <h4
+      <h3
         class="case_title_h4 m-12_bottom"
       >
         
       Saving paper: Fully paperless and eco-friendly alternative
     
-      </h4>
+      </h3>
        
       <p
         class="case_paragraph"
@@ -174,7 +174,7 @@ exports[`Challenges component should render correctly 1`] = `
         </p>
       </div>
        
-      <h2
+      <h4
         class="case_title-statistics case_text-align-center"
       >
         <span
@@ -207,7 +207,7 @@ exports[`Challenges component should render correctly 1`] = `
         
       sheets of paper
     
-      </h2>
+      </h4>
        
       <p
         class="case_paragraph case_description-statistics m-96_bottom media-m-48_bottom m-auto case_text-align-center"

@@ -28,6 +28,8 @@
     <div class="case_card-content_right-column">
       <img
         :src="require(`@/assets/img/Studies/svg/macbook-frame.svg`)"
+        width="1441"
+        height="790"
         alt="Macbook frame"
         class="case_card-content_macbook-frame"
       >
@@ -45,6 +47,8 @@
           :src="[img.x1]"
           :srcset="[img.x2 + ' 2x']"
           :alt="img.alt"
+          width="1028"
+          height="547"
           class="case_card-content_image"
           data-testid="test-case_card-content_image"
         >
