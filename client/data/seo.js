@@ -107,8 +107,11 @@ export const meta = {
 export const getMetadata = key => meta[key] || {}
 
 export const buildHead = ({
-  title, description, url, jsonLd, image = 'https://maddevs.io/Open-Graph.png', metaTitle,
+  lang = 'en', title, description, url, jsonLd, image = 'https://maddevs.io/Open-Graph.png', metaTitle,
 }, scripts = []) => ({
+  htmlAttrs: {
+    lang,
+  },
   title,
   meta: [
     { name: 'description', content: description },
