@@ -103,12 +103,16 @@ exports[`NationwideSuccess component should render correctly 1`] = `
                 alt="Yearly increase"
                 class="card-content_chart card-content_yearly-increase img_lazy"
                 data-src="[object Object]"
+                height="120"
+                width="191"
               />
                
               <img
                 alt="Yearly increase"
                 class="card-content_chart card-content_yearly-increase--mobile img_lazy"
                 data-src="[object Object]"
+                height="120"
+                width="332"
               />
             </div>
              
@@ -127,12 +131,16 @@ exports[`NationwideSuccess component should render correctly 1`] = `
                 alt="Increase in sales"
                 class="card-content_chart card-content_increase-in-sales img_lazy"
                 data-src="[object Object]"
+                height="120"
+                width="191"
               />
                
               <img
                 alt="Increase in sales"
                 class="card-content_chart card-content_increase-in-sales--mobile img_lazy"
                 data-src="[object Object]"
+                height="120"
+                width="332"
               />
             </div>
           </div>
@@ -335,8 +343,8 @@ exports[`NationwideSuccess component should render correctly 1`] = `
               data-src="img.jpg"
               data-srcset="img.jpg"
               data-testid="test-picture-img"
-              height="0"
-              width="0"
+              height="71"
+              width="71"
             />
           </picture>
         </div>

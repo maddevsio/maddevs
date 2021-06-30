@@ -76,6 +76,8 @@ exports[`SirJohnMonashCentre _uid component should render correctly 1`] = `
               alt="Play"
               class="case_play-icon img_lazy"
               data-src="[object Object]"
+              height="14"
+              width="14"
             />
             
       View video about SJMC
@@ -120,7 +122,9 @@ exports[`SirJohnMonashCentre _uid component should render correctly 1`] = `
       >
         <img
           alt="Close"
+          height="24"
           src="@/assets/img/Studies/svg/close-icon.svg"
+          width="24"
         />
       </button>
     </div>
@@ -135,6 +139,8 @@ exports[`SirJohnMonashCentre _uid component should render correctly 1`] = `
           alt="Namba Food"
           class="case_logotype-namba-food img_lazy"
           data-src="[object Object]"
+          height="63"
+          width="200"
         />
          
         <h2

@@ -51,6 +51,8 @@ exports[`Testimonials component should render correctly 1`] = `
                   alt="Photo"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="42"
+                  width="42"
                 />
               </div>
                
@@ -102,6 +104,8 @@ exports[`Testimonials component should render correctly 1`] = `
                   alt="Photo"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="42"
+                  width="42"
                 />
               </div>
                
@@ -153,6 +157,8 @@ exports[`Testimonials component should render correctly 1`] = `
                   alt="Photo"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="42"
+                  width="42"
                 />
               </div>
                
@@ -204,6 +210,8 @@ exports[`Testimonials component should render correctly 1`] = `
                   alt="Photo"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="42"
+                  width="42"
                 />
               </div>
                
@@ -255,6 +263,8 @@ exports[`Testimonials component should render correctly 1`] = `
                   alt="Photo"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="42"
+                  width="42"
                 />
               </div>
                

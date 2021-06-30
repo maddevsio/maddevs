@@ -3,6 +3,7 @@
     <div class="last-post">
       <FeaturedPost
         v-if="postsLoaded && featuredPost"
+        title-tag="h1"
         :post="featuredPost"
         :author="findAuthor(featuredPost.data.post_author.id, allAuthors)"
       />

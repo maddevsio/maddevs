@@ -30,6 +30,8 @@
       <img
         slot="icon"
         :data-src="require(`@/assets/img/Studies/svg/sjmc-footer.svg`)"
+        width="253"
+        height="113"
         alt="SJMC"
         class="case_logotype-sjmc img_lazy"
       >

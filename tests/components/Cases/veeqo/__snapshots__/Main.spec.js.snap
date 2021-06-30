@@ -31,6 +31,8 @@ exports[`Main component should render correctly 1`] = `
           alt="blockquote"
           class="case_mark img_lazy"
           data-src="[object Object]"
+          height="50"
+          width="50"
         />
          
         <blockquote
@@ -737,6 +739,8 @@ exports[`Main component should render correctly 1`] = `
           alt="blockquote"
           class="case_mark img_lazy"
           data-src="[object Object]"
+          height="50"
+          width="50"
         />
          
         <blockquote
@@ -1343,6 +1347,8 @@ exports[`Main component should render correctly 1`] = `
           alt="blockquote"
           class="case_mark img_lazy"
           data-src="[object Object]"
+          height="50"
+          width="50"
         />
          
         <blockquote
@@ -1522,6 +1528,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Ruby Programming Language Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__ruby ruby"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1539,6 +1547,8 @@ exports[`Main component should render correctly 1`] = `
             alt="NodeJS Logo"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__node node"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1556,6 +1566,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Elasticsearch Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__elastic elastic"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1573,6 +1585,8 @@ exports[`Main component should render correctly 1`] = `
             alt="PostgreSQL Database Management System Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1590,6 +1604,8 @@ exports[`Main component should render correctly 1`] = `
             alt="RebbitMQ Message Broker Software Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__rebbit-mq rebbit-mq"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1607,6 +1623,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Redis Data Structure Store Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__redis redis"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1624,6 +1642,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Memcached Memory Caching System Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__memcached memcached"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1641,6 +1661,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Cloudwatch Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__cloud-watch cloud-watch"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1658,6 +1680,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Prometheus Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__prometheus prometheus"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1675,6 +1699,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Grafana Software Application Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__grafana grafana"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1692,6 +1718,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Sentry Error Tracking System Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1709,6 +1737,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Heroku Cloud Platform Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__heroku heroku"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1726,6 +1756,8 @@ exports[`Main component should render correctly 1`] = `
             alt="AWS Cloud Computing Platforms Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__aws aws"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1743,6 +1775,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Kubernetes Container Orchestration System Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__kubernetes kubernetes"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1760,6 +1794,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Terraform Infrastructure as Code Software Tool Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__terraform terraform"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1777,6 +1813,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Travis CI Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__travis-ci travis-ci"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1794,6 +1832,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Jenkins Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__jenkins jenkins"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1811,6 +1851,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Docker Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__docker docker"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1828,6 +1870,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Helm Logo."
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__helm helm"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -1969,8 +2013,8 @@ exports[`Main component should render correctly 1`] = `
                 data-src="img.jpg"
                 data-srcset="img.jpg"
                 data-testid="test-picture-img"
-                height="0"
-                width="0"
+                height="71"
+                width="71"
               />
             </picture>
           </div>

@@ -179,7 +179,7 @@ export default {
           <${tag} class="anchor_title-h">${text}</${tag}>
           <div class="anchor_copy-link">
             <button data-id="${this.createAnchorID(text)}" class="copy-link">
-              <img src="${require('@/assets/img/common/anchor.svg')}" alt="Anchor" />
+              <img src="${require('@/assets/img/common/anchor.svg')}" alt="Anchor" width="16" height="16" />
             </button>
             <div class="anchor_copy-link-tooltip">Copy link</div>
           </div>

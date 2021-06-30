@@ -1706,7 +1706,9 @@ exports[`index page renders correctly 1`] = `
               </span>
                
               <h3>
-                Sir John Monash Centre
+                
+        Sir John Monash Centre
+      
               </h3>
                
               <p>
@@ -1763,7 +1765,9 @@ exports[`index page renders correctly 1`] = `
               </span>
                
               <h3>
-                Contactless Delivery Service
+                
+        Contactless Delivery Service
+      
               </h3>
                
               <p>
@@ -1820,7 +1824,9 @@ exports[`index page renders correctly 1`] = `
               </span>
                
               <h3>
-                The Evolution of Yourcast.TV
+                
+        The Evolution of Yourcast.TV
+      
               </h3>
                
               <p>
@@ -1877,7 +1883,9 @@ exports[`index page renders correctly 1`] = `
               </span>
                
               <h3>
-                Convenient shuttle bus service
+                
+        Convenient shuttle bus service
+      
               </h3>
                
               <p>
@@ -1943,6 +1951,8 @@ exports[`index page renders correctly 1`] = `
               alt="Arrow"
               class="quickProjectStart__arrow-icon img_lazy"
               data-src="[object Object]"
+              height="65"
+              width="165"
             />
           </div>
            
@@ -1984,6 +1994,8 @@ exports[`index page renders correctly 1`] = `
               alt="Arrow"
               class="quickProjectStart__arrow-icon img_lazy"
               data-src="[object Object]"
+              height="65"
+              width="165"
             />
           </div>
            
@@ -2025,6 +2037,8 @@ exports[`index page renders correctly 1`] = `
               alt="Arrow"
               class="quickProjectStart__arrow-icon img_lazy"
               data-src="[object Object]"
+              height="65"
+              width="165"
             />
           </div>
            
@@ -2066,6 +2080,8 @@ exports[`index page renders correctly 1`] = `
               alt="Arrow"
               class="quickProjectStart__arrow-icon img_lazy"
               data-src="[object Object]"
+              height="65"
+              width="165"
             />
           </div>
            

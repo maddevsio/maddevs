@@ -147,7 +147,9 @@ exports[`projects page renders correctly 1`] = `
               </span>
                
               <h3>
-                Sir John Monash Centre
+                
+        Sir John Monash Centre
+      
               </h3>
                
               <p>
@@ -204,7 +206,9 @@ exports[`projects page renders correctly 1`] = `
               </span>
                
               <h3>
-                Contactless Delivery Service
+                
+        Contactless Delivery Service
+      
               </h3>
                
               <p>
@@ -261,7 +265,9 @@ exports[`projects page renders correctly 1`] = `
               </span>
                
               <h3>
-                The Evolution of Yourcast.TV
+                
+        The Evolution of Yourcast.TV
+      
               </h3>
                
               <p>
@@ -318,7 +324,9 @@ exports[`projects page renders correctly 1`] = `
               </span>
                
               <h3>
-                Convenient shuttle bus service
+                
+        Convenient shuttle bus service
+      
               </h3>
                
               <p>
@@ -389,6 +397,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -401,6 +411,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -413,6 +425,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -425,6 +439,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -437,6 +453,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -449,6 +467,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -461,6 +481,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -473,6 +495,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -485,6 +509,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -497,6 +523,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -509,6 +537,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -521,6 +551,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -533,6 +565,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -545,6 +579,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -557,6 +593,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -569,6 +607,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -581,6 +621,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -593,6 +635,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -605,6 +649,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -617,6 +663,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -629,6 +677,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -641,6 +691,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -653,6 +705,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -665,6 +719,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -677,6 +733,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -689,6 +747,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -701,6 +761,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -713,6 +775,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
         <div
@@ -725,6 +789,8 @@ exports[`projects page renders correctly 1`] = `
             class="icon-wrapper__icon media_lazy"
             data-src="[object Object]"
             data-testid="customer-icon"
+            height="64"
+            width="143"
           />
         </div>
       </div>

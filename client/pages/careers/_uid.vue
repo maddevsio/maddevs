@@ -108,6 +108,7 @@ export default {
 
   head() {
     return buildHead({
+      lang: 'ru',
       title: this.vacancy.metaTitle || this.vacancy.title || '',
       metaTitle: this.vacancy.metaTitle || this.vacancy.title || '',
       description: this.vacancy.metaDescription || this.vacancy.subtitle || '',

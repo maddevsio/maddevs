@@ -6,7 +6,7 @@ const META_DATA = {
   description: 'Signing an NDA has been a standard practice at Mad Devs for each employee on the first day of work: we understand the importance of confidentiality in our clients\' projects.',
   'og:url': 'https://maddevs.io/nda/',
   'og:type': 'website',
-  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
+  'og:site_name': 'Custom Software Development Company',
   'og:title': 'Mad Devs: Work Under NDA',
   'og:description': 'Signing an NDA has been a standard practice at Mad Devs for each employee on the first day of work: we understand the importance of confidentiality in our clients\' projects.',
   'og:image': 'https://maddevs.io/Open-Graph.png',

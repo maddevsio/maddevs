@@ -193,7 +193,9 @@ exports[`namba food renders correctly 1`] = `
             <img
               alt="Macbook frame"
               class="case_card-content_macbook-frame"
+              height="790"
               src="[object Object]"
+              width="1441"
             />
              
             <picture>
@@ -207,8 +209,10 @@ exports[`namba food renders correctly 1`] = `
                 alt="Cases image"
                 class="case_card-content_image"
                 data-testid="test-case_card-content_image"
+                height="547"
                 src="s3 image url"
                 srcset="s3 image url 2x"
+                width="1028"
               />
             </picture>
           </div>
@@ -1857,6 +1861,8 @@ exports[`namba food renders correctly 1`] = `
           alt="blockquote"
           class="case_mark img_lazy"
           data-src="[object Object]"
+          height="50"
+          width="50"
         />
          
         <blockquote
@@ -2436,6 +2442,8 @@ exports[`namba food renders correctly 1`] = `
             alt="MySQL"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__mysql mysql"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2453,6 +2461,8 @@ exports[`namba food renders correctly 1`] = `
             alt="PHP Symfony2"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__symfony symfony"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2470,6 +2480,8 @@ exports[`namba food renders correctly 1`] = `
             alt="Laravel"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__laravel laravel"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2488,6 +2500,8 @@ exports[`namba food renders correctly 1`] = `
             alt="Docker"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__docker docker"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2505,6 +2519,8 @@ exports[`namba food renders correctly 1`] = `
             alt="Nginx"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__nginx nginx"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2522,6 +2538,8 @@ exports[`namba food renders correctly 1`] = `
             alt="Redis"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__redis redis"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2539,6 +2557,8 @@ exports[`namba food renders correctly 1`] = `
             alt="Python (Django)"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__python python"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2556,6 +2576,8 @@ exports[`namba food renders correctly 1`] = `
             alt="Golang"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2573,6 +2595,8 @@ exports[`namba food renders correctly 1`] = `
             alt="Kotlin"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__kotlin kotlin"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2590,6 +2614,8 @@ exports[`namba food renders correctly 1`] = `
             alt="Java"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__java java"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2607,6 +2633,8 @@ exports[`namba food renders correctly 1`] = `
             alt="Swift"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__swift swift"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2624,6 +2652,8 @@ exports[`namba food renders correctly 1`] = `
             alt="Firebase"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__firebase firebase"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2641,6 +2671,8 @@ exports[`namba food renders correctly 1`] = `
             alt="TestFlight"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__test-flight test-flight"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2658,6 +2690,8 @@ exports[`namba food renders correctly 1`] = `
             alt="OpenStreetMap"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__open-street-map open-street-map"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2675,6 +2709,8 @@ exports[`namba food renders correctly 1`] = `
             alt="PHP"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__php php"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2692,6 +2728,8 @@ exports[`namba food renders correctly 1`] = `
             alt="Jira Assistant"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__jira-assistant-blue jira-assistant-blue"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2709,6 +2747,8 @@ exports[`namba food renders correctly 1`] = `
             alt="Grafana"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__grafana grafana"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2726,6 +2766,8 @@ exports[`namba food renders correctly 1`] = `
             alt="Sentry"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -4048,12 +4090,16 @@ exports[`namba food renders correctly 1`] = `
                   alt="Yearly increase"
                   class="card-content_chart card-content_yearly-increase img_lazy"
                   data-src="[object Object]"
+                  height="120"
+                  width="191"
                 />
                  
                 <img
                   alt="Yearly increase"
                   class="card-content_chart card-content_yearly-increase--mobile img_lazy"
                   data-src="[object Object]"
+                  height="120"
+                  width="332"
                 />
               </div>
                
@@ -4072,12 +4118,16 @@ exports[`namba food renders correctly 1`] = `
                   alt="Increase in sales"
                   class="card-content_chart card-content_increase-in-sales img_lazy"
                   data-src="[object Object]"
+                  height="120"
+                  width="191"
                 />
                  
                 <img
                   alt="Increase in sales"
                   class="card-content_chart card-content_increase-in-sales--mobile img_lazy"
                   data-src="[object Object]"
+                  height="120"
+                  width="332"
                 />
               </div>
             </div>
@@ -4280,8 +4330,8 @@ exports[`namba food renders correctly 1`] = `
                 data-src="s3 image url"
                 data-srcset="s3 image url"
                 data-testid="test-picture-img"
-                height="0"
-                width="0"
+                height="71"
+                width="71"
               />
             </picture>
           </div>
@@ -4313,6 +4363,8 @@ exports[`namba food renders correctly 1`] = `
       alt="SJMC"
       class="case_logotype-sjmc img_lazy"
       data-src="[object Object]"
+      height="113"
+      width="253"
     />
      
     <h2

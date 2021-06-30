@@ -41,7 +41,11 @@
           :alt="logo.alt"
         >
         <span>{{ subtitle }}</span>
-        <h3>{{ title }}</h3>
+        <Component
+          :is="titleTag"
+        >
+          {{ title }}
+        </Component>
         <p>{{ desc }}</p>
         <NuxtLink :to="link">
           Explore
@@ -57,6 +61,11 @@ import { isMobile } from 'mobile-device-detect'
 
 export default {
   props: {
+    titleTag: {
+      type: String,
+      default: 'h3',
+    },
+
     width: {
       type: String,
       default: 'full',
@@ -135,7 +144,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
+@import '@/assets/styles/_vars';
 
 .cases-list_item {
   width: 100%;
@@ -258,7 +267,7 @@ export default {
       margin-bottom: 16px;
     }
 
-    h3 {
+    h2, h3 {
       max-width: 350px;
       font-size: 40px;
       letter-spacing: -0.04em;

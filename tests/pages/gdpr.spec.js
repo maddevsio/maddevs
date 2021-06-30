@@ -6,7 +6,7 @@ const META_DATA = {
   description: 'Mad Devs is committed to complying with the data protection and privacy rules in the EU General Data Protection Regulation (GDPR).',
   'og:url': 'https://maddevs.io/gdpr/',
   'og:type': 'website',
-  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
+  'og:site_name': 'Custom Software Development Company',
   'og:title': 'Mad Devs GDPR Compliance',
   'og:description': 'Mad Devs is committed to complying with the data protection and privacy rules in the EU General Data Protection Regulation (GDPR).',
   'og:image': 'https://maddevs.io/Open-Graph.png',

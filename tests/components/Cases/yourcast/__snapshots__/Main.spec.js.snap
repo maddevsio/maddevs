@@ -44,6 +44,8 @@ exports[`Main component should render correctly 1`] = `
           alt="blockquote"
           class="case_mark img_lazy"
           data-src="[object Object]"
+          height="50"
+          width="50"
         />
          
         <blockquote
@@ -410,6 +412,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Golang"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -427,6 +431,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Django"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__django django"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -444,6 +450,8 @@ exports[`Main component should render correctly 1`] = `
             alt="PostgreSQL"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -461,6 +469,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Nimble Streamer"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__nimble nimble"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -478,6 +488,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Plex Media Server"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__plex plex"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -495,6 +507,8 @@ exports[`Main component should render correctly 1`] = `
             alt="jQuery"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__jquery jquery"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -512,6 +526,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Video.js"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__video-js video-js"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -529,6 +545,8 @@ exports[`Main component should render correctly 1`] = `
             alt="Nginx"
             class="img_lazy case_technologies-item__tech-icon case_technologies-item__nginx-txt nginx-txt"
             data-src="[object Object]"
+            height="40"
+            width="40"
           />
            
           <p
@@ -2104,6 +2122,8 @@ exports[`Main component should render correctly 1`] = `
             alt="blockquote"
             class="case_mark img_lazy"
             data-src="[object Object]"
+            height="50"
+            width="50"
           />
            
           <blockquote
@@ -3869,8 +3889,8 @@ exports[`Main component should render correctly 1`] = `
                 data-src="img.jpg"
                 data-srcset="img.jpg"
                 data-testid="test-picture-img"
-                height="0"
-                width="0"
+                height="71"
+                width="71"
               />
             </picture>
           </div>

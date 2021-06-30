@@ -13,10 +13,12 @@ exports[`Banner component should render correctly 1`] = `
       />
        
       <img
-        alt=""
+        alt="Team"
         class="banner__image media_lazy"
+        height="827"
         src="img.jpg"
         srcset="img.jpg"
+        width="1680"
       />
     </picture>
      

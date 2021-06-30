@@ -110,11 +110,11 @@ exports[`ModelCard component should render correctly 1`] = `
       <div
         class="model-card__content"
       >
-        <h3
+        <h2
           class="model-card__title"
         >
           title
-        </h3>
+        </h2>
          
         <button
           class="model-card__button"

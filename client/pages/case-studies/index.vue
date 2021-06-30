@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <TitleDesc />
-    <CasesList />
+    <CasesList item-title-tag="h2" />
     <Customers light />
     <BuildDevTeam />
   </main>

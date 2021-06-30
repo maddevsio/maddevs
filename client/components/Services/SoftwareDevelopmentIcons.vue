@@ -9,6 +9,8 @@
       <img
         :data-src="require(`@/assets/img/Home/svg/technologies/${icon.name}.svg`)"
         :alt="icon.alt"
+        width="26"
+        height="26"
         class="img_lazy"
       >
       <span>{{ icon.alt }}</span>
@@ -29,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
+@import '@/assets/styles/_vars';
 
 .icons-list {
   display: grid;

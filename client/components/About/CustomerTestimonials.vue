@@ -52,10 +52,10 @@
                   rel="nofollow"
                 >
                   <img
-                    :width="testimonial.logoWidth"
                     :data-src="require(`@/assets/img/Home/svg/testimonials/${testimonial.customerProject}.svg`)"
                     :class="`customer-testimonials__${testimonial.customerProject}`"
                     :alt="testimonial.alt"
+                    :width="testimonial.logoWidth"
                     height="31"
                     class="img_lazy single-project__logo"
                   >

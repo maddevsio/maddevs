@@ -6,7 +6,7 @@ const META_DATA = {
   description: 'Check out our software and mobile app solutions for companies from transportation, logistic, edtech, cloudtech, security, advertising, and finance industries.',
   'og:url': 'https://maddevs.io/projects/',
   'og:type': 'website',
-  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
+  'og:site_name': 'Custom Software Development Company',
   'og:title': 'Key Customers, Case Studies and Open Source Projects | Mad Devs',
   'og:description': 'Check out our software and mobile app solutions for companies from transportation, logistic, edtech, cloudtech, security, advertising, and finance industries.',
   'og:image': 'https://maddevs.io/Open-Graph.png',

@@ -23,7 +23,7 @@ exports[`Main component should render correctly 1`] = `
       <ctabanner-stub />
     </div>
      
-    <scrolltopositionsbutton-stub />
+    <scrolltopositionslink-stub />
   </div>
 </div>
 `;
