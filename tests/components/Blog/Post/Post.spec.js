@@ -60,6 +60,21 @@ const store = {
   },
 }
 
+const refs = { // use for offsetHeight random numbers
+  blogPost: {
+    offsetHeight: 8000,
+  },
+  navbar: {
+    offsetHeight: 400,
+  },
+  recommendedPosts: {
+    offsetHeight: 600,
+  },
+  clusterNavigation: {
+    offsetHeight: 700,
+  },
+}
+
 const stubs = ['NuxtLink', 'ShareNetwork', 'PrismicRichText', 'PrismicEmbed', 'BlogHeader']
 
 const WINDOW_SCROLL_TO = jest.fn()
@@ -132,5 +147,81 @@ describe('Post component', () => {
       const result = wrapper.vm.copyAnchorLink(event)
       expect(result).toBeNull()
     })
+  })
+
+  it('setStylesForNavbar should call function', () => {
+    const wrapper = shallowMount(Post, {
+      computed: {
+        tableOfContentsSlice() {
+          return true
+        },
+      },
+    })
+    const handleNavbarSpy = jest.spyOn(wrapper.vm, 'handleNavbar').mockImplementation(() => jest.fn())
+
+    wrapper.vm.setStylesForNavbar()
+
+    expect(handleNavbarSpy).toHaveBeenCalledTimes(1)
+  })
+
+  it('data instance should contains html element', () => {
+    document.body.innerHTML = '<div id="introduction-container"></div>'
+    const wrapper = shallowMount(Post)
+    const element = document.getElementById('introduction-container')
+
+    wrapper.vm.setStylesForNavbar()
+
+    expect(wrapper.vm.$data.introductionContainer).toEqual(element)
+  })
+
+  it('getStylesTemplate should return string with params data', () => {
+    const wrapper = shallowMount(Post)
+    const expectedResult = 'position: absolute; top: auto; bottom: 0; left: -210px;'
+
+    const result = wrapper.vm.getStylesTemplate('absolute', 'auto', '0', '-210px')
+
+    expect(result).toBe(expectedResult)
+  })
+
+  it('method should return true if path contains in URL', () => {
+    const wrapper = shallowMount(Post)
+    Object.defineProperty(window, 'location', {
+      value: {
+        pathname: 'blog',
+      },
+    })
+
+    const result = wrapper.vm.containsInUrl('blog')
+
+    expect(result).toBe(true)
+  })
+
+  it('method should return false if path not contained in URL', () => {
+    const wrapper = shallowMount(Post)
+    const result = wrapper.vm.containsInUrl('customer-university')
+
+    expect(result).toBe(false)
+  })
+
+  it('method should return scroll end point count for default blog post', () => {
+    const wrapper = shallowMount(Post)
+    jest.spyOn(wrapper.vm, 'containsInUrl').mockImplementation(() => false)
+    wrapper.vm.$refs = refs
+    const expectedResult = 6810
+
+    const result = wrapper.vm.getScrollEndPoint()
+
+    expect(result).toBe(expectedResult)
+  })
+
+  it('method should return scroll end point count for customer university post', () => {
+    const wrapper = shallowMount(Post)
+    jest.spyOn(wrapper.vm, 'containsInUrl').mockImplementation(() => true)
+    wrapper.vm.$refs = refs
+    const expectedResult = 7110
+
+    const result = wrapper.vm.getScrollEndPoint()
+
+    expect(result).toBe(expectedResult)
   })
 })

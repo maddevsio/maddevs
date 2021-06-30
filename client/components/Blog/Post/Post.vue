@@ -317,20 +317,15 @@ export default {
     },
 
     getStylesTemplate(position, top, bottom, left) {
-      return `
-        position: ${position}; 
-        top: ${top}; 
-        bottom: ${bottom}; 
-        left: ${left};
-      `
+      return `position: ${position}; top: ${top}; bottom: ${bottom}; left: ${left};`
     },
 
-    pathIsContainsInUrl(path) {
+    containsInUrl(path) {
       return window.location.pathname.includes(path)
     },
 
     getScrollEndPoint() {
-      const isCustomerUniversityPost = this.pathIsContainsInUrl('/customer-university/')
+      const isCustomerUniversityPost = this.containsInUrl('/customer-university/')
       const blogPostHeight = this.$refs.blogPost.offsetHeight
       const navbarHeight = this.$refs.navbar.offsetHeight
       const blogPostLastSectionHeight = isCustomerUniversityPost
