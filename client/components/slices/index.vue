@@ -58,7 +58,10 @@
 
       <!-- Careers slices start -->
       <template v-else-if="slice.slice_type === 'vacancy_text'">
-        <VacancyTextBlock :slice="slice" />
+        <VacancyText
+          :slice="slice"
+          :html-serializer="serializer"
+        />
       </template>
       <!-- Careers slices end -->
     </section>
@@ -82,7 +85,7 @@ import GallerySlice from '@/components/slices/GallerySlice'
 import AuthorSlice from '@/components/slices/AuthorSlice'
 
 // Careers slices
-import VacancyTextBlock from '@/components/slices/Careers/VacancyTextBlock'
+import VacancyText from '@/components/slices/Careers/VacancyText'
 
 import linkResolver from '@/plugins/link-resolver'
 import mainMixins from '@/mixins/mainMixins'
@@ -104,7 +107,7 @@ export default {
     GallerySlice,
     SectionIdSlice,
     AuthorSlice,
-    VacancyTextBlock,
+    VacancyText,
   },
 
   mixins: [mainMixins],
