@@ -10,6 +10,8 @@
           :class="{ 'block-img-zoom': zoomEnabled }"
           :data-src="img.url"
           :alt="img.alt"
+          width="632"
+          height="170"
           @click="openModal"
         >
         <SimpleModal

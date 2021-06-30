@@ -16,7 +16,7 @@
         />
       </div>
       <div class="model-card__content">
-        <h3
+        <h2
           class="model-card__title"
           v-html="title"
         />

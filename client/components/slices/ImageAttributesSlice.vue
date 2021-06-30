@@ -11,7 +11,7 @@
             class="img_lazy"
             :data-src="img.url"
             :alt="img.alt"
-            width="680"
+            width="632"
             height="170"
           >
         </a>

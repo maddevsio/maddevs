@@ -97,6 +97,8 @@ exports[`slice block component should render correctly 1`] = `
               alt="alt text"
               class="img_lazy"
               data-src="https://images.prismic.io/superpupertest/4b27a325-c48e-4f20-943d-e40537291055_2020-12-08_14-11.png?auto=compress,format&rect=0,0,1231,306&w=1200&h=298"
+              height="170"
+              width="632"
             />
              
             <!---->
@@ -131,7 +133,7 @@ exports[`slice block component should render correctly 1`] = `
               class="img_lazy"
               data-src="https://images.prismic.io/superpupertest/4b27a325-c48e-4f20-943d-e40537291055_2020-12-08_14-11.png?auto=compress,format&rect=0,0,1231,306&w=1200&h=298"
               height="170"
-              width="680"
+              width="632"
             />
           </a>
         </div>
