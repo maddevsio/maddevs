@@ -7,6 +7,7 @@
       data-testid="test-slice-post"
       :class="slice.slice_type === 'quote' ? 'quote' : ''"
     >
+      <!-- Common slices start -->
       <!-- Text slice template -->
       <template v-if="slice.slice_type === 'text'">
         <!-- Here :slice="slice" passes the data to the component -->
@@ -53,13 +54,19 @@
       <template v-else-if="slice.slice_type === 'author'">
         <AuthorSlice :slice="slice" />
       </template>
+      <!-- Common slices end -->
+
+      <!-- Careers slices start -->
+      <template v-else-if="slice.slice_type === 'vacancy_text'">
+        <VacancyTextBlock :slice="slice" />
+      </template>
+      <!-- Careers slices end -->
     </section>
   </section>
 </template>
 
 <script>
-import linkResolver from '@/plugins/link-resolver'
-import mainMixins from '@/mixins/mainMixins'
+// Common slices
 import CodeBlockSlice from '@/components/slices/CodeBlockSlice/index.vue'
 import SectionIdSlice from '@/components/slices/SectionIdSlice'
 import QuoteSlice from '@/components/slices/QuoteSlice.vue'
@@ -73,6 +80,12 @@ import DoubleColumnBorderedSlice from '@/components/slices/DoubleColumnBorderedS
 import GithubGistSlice from '@/components/slices/GithubGistSlice'
 import GallerySlice from '@/components/slices/GallerySlice'
 import AuthorSlice from '@/components/slices/AuthorSlice'
+
+// Careers slices
+import VacancyTextBlock from '@/components/slices/Careers/VacancyTextBlock'
+
+import linkResolver from '@/plugins/link-resolver'
+import mainMixins from '@/mixins/mainMixins'
 
 export default {
   name: 'SlicesBlock',
@@ -91,6 +104,7 @@ export default {
     GallerySlice,
     SectionIdSlice,
     AuthorSlice,
+    VacancyTextBlock,
   },
 
   mixins: [mainMixins],
