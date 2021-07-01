@@ -6,9 +6,9 @@
         :class="[tagPosts.length === 1 ? 'tag-posts__featured-post--mb-0' : '']"
       >
         <FeaturedPost
-          v-if="tagPostsLoaded"
+          v-if="tagPostsLoaded && featuredPostAuthor"
           :post="tagPosts[0]"
-          :author="findAuthor(tagPosts[0].data.post_author.id, allAuthors)"
+          :author="featuredPostAuthor"
           theme="light"
           :disable-tag-link="true"
         />
@@ -88,11 +88,17 @@ export default {
     ...mapGetters(['blogTag', 'tagPosts', 'tagPostsLoaded', 'allAuthors', 'tagPostsPage']),
 
     tagPostsToShow() {
+      if (this.tagPosts && !this.tagPosts.length) return []
       return this.tagPosts.slice(0, this.pageSize * this.tagPostsPage)
     },
 
     totalPages() {
       return Math.ceil(this.tagPosts.length / this.pageSize)
+    },
+
+    featuredPostAuthor() {
+      if (this.tagPosts && !this.tagPosts.length) return null
+      return this.findAuthor(this.tagPosts[0].data.post_author.id, this.allAuthors)
     },
   },
 
