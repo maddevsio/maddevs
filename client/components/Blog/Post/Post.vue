@@ -5,15 +5,12 @@
     class="blog-post"
   >
     <div class="blog-post__background" />
-    <div
-      ref="innerContainer"
-      class="blog-post__inner-container"
-    >
+    <div class="blog-post__inner-container">
       <div
         v-if="dataLoaded"
         ref="navbar"
         class="blog-post__left-navbar"
-        :class="{ 'blog-post__left-navbar--vertical': !tableOfContentsSlice }"
+        :class="className"
       >
         <TableOfContents
           v-if="tableOfContentsSlice"
@@ -67,26 +64,27 @@
       </div>
     </div>
     <div
-      v-if="showRecommended"
-      ref="recommendedPosts"
-      class="blog-post__recommended-posts"
+      ref="postFooter"
     >
-      <div class="blog-post__recommended-posts-list container">
-        <section
-          v-for="post in recommendedPosts"
-          :key="post.id"
-          :post="post"
-          class="blog-post__recommended-post"
-          data-testid="test-recommended-post"
-        >
-          <PostCard
+      <div
+        v-if="showRecommended"
+        class="blog-post__recommended-posts"
+      >
+        <div class="blog-post__recommended-posts-list container">
+          <section
+            v-for="post in recommendedPosts"
+            :key="post.id"
             :post="post"
-            :author="findAuthor(post.data.post_author.id, allAuthors)"
-          />
-        </section>
+            class="blog-post__recommended-post"
+            data-testid="test-recommended-post"
+          >
+            <PostCard
+              :post="post"
+              :author="findAuthor(post.data.post_author.id, allAuthors)"
+            />
+          </section>
+        </div>
       </div>
-    </div>
-    <div ref="clusterNavigation">
       <CustomerUniversityNavigation
         v-if="clusterPosts && cluster"
         :id="id"
@@ -213,6 +211,9 @@ export default {
       buttonIsActive: false,
       dataLoaded: false,
       introductionContainer: null,
+      headerContainer: null,
+      isFixed: false,
+      isBottom: false,
     }
   },
 
@@ -233,6 +234,20 @@ export default {
 
     showRecommended() {
       return this.type !== 'customer_university' && this.recommendedPosts && this.recommendedPosts.length !== 0
+    },
+
+    className() {
+      const tableOfContentsSlice = this.slices && this.slices.find(slice => slice.slice_type === 'table_of_contents')
+
+      if (!tableOfContentsSlice) return 'blog-post__left-navbar--is-vertical'
+
+      if (this.isFixed && !this.isBottom) return 'blog-post__left-navbar--is-fixed'
+
+      if (!this.isFixed && !this.isBottom) return 'blog-post__left-navbar--is-top'
+
+      if (this.isBottom) return 'blog-post__left-navbar--is-bottom'
+
+      return ''
     },
   },
 
@@ -295,43 +310,40 @@ export default {
 
     setStylesForNavbar() {
       this.introductionContainer = document.getElementById('introduction-container')
+      this.headerContainer = document.getElementById('header-container')
 
       if (this.tableOfContentsSlice) this.handleNavbar()
     },
 
     handleNavbar() {
-      const introductionContainerHeight = this.introductionContainer.offsetHeight
-      const top = `${introductionContainerHeight + 30}px`
-      const scrollStartPoint = introductionContainerHeight + 100
+      const scrollStartPoint = this.getScrollStartPoint()
       const scrollEndPoint = this.getScrollEndPoint()
 
-      if (window.pageYOffset < scrollStartPoint) {
-        this.$refs.navbar.style.cssText = this.getStylesTemplate('absolute', top, 'auto', '-210px')
-      } else {
-        this.$refs.navbar.style.cssText = this.getStylesTemplate('fixed', '100px', 'auto', 'calc(50vw - 619px)')
-      }
+      this.setValueForCssVar()
 
-      if (window.pageYOffset > scrollEndPoint) {
-        this.$refs.navbar.style.cssText = this.getStylesTemplate('absolute', 'auto', '0', '-210px')
-      }
+      this.isFixed = window.pageYOffset > scrollStartPoint
+      this.isBottom = window.pageYOffset > scrollEndPoint
     },
 
-    getStylesTemplate(position, top, bottom, left) {
-      return `position: ${position}; top: ${top}; bottom: ${bottom}; left: ${left};`
+    setValueForCssVar() {
+      const indentFromIntroductionContainer = 30
+      const root = document.documentElement
+      const top = this.introductionContainer.offsetHeight + indentFromIntroductionContainer
+
+      root.style.setProperty('--top', `${top}px`)
     },
 
-    containsInUrl(path) {
-      return window.location.pathname.includes(path)
+    getScrollStartPoint() {
+      return this.introductionContainer.offsetHeight + this.headerContainer.offsetHeight
     },
 
     getScrollEndPoint() {
-      const isCustomerUniversityPost = this.containsInUrl('/customer-university/')
-      const blogPostHeight = this.$refs.blogPost.offsetHeight
-      const navbarHeight = this.$refs.navbar.offsetHeight
-      const blogPostLastSectionHeight = isCustomerUniversityPost
-        ? this.$refs.clusterNavigation.offsetHeight : this.$refs.recommendedPosts.offsetHeight
+      const { offsetHeight: blogPostHeight } = this.$refs.blogPost
+      const { offsetHeight: navbarHeight } = this.$refs.navbar
+      const { offsetHeight: postFooterHeight } = this.$refs.postFooter
+      const postFooterPadding = 200 // sum of padding from top and bottom
 
-      return blogPostHeight - (blogPostLastSectionHeight + navbarHeight + 190)
+      return blogPostHeight - (postFooterHeight + navbarHeight + postFooterPadding)
     },
 
     calcProgress() {
@@ -347,6 +359,10 @@ export default {
 <style lang="scss" scoped>
 @import '../../../assets/styles/vars';
 @import '../../../assets/styles/socialNetworkIcons';
+
+:root {
+  --top: 0px;
+}
 
 .blog-post {
   margin: auto;
@@ -379,7 +395,27 @@ export default {
     flex-direction: column;
     margin-top: 0;
 
-    &--vertical {
+    &--is-top,
+    &--is-bottom {
+      position: absolute;
+      left: -210px;
+    }
+
+    &--is-top {
+      top: var(--top);
+    }
+
+    &--is-bottom {
+      bottom: 0;
+    }
+
+    &--is-fixed {
+      position: fixed;
+      top: 100px;
+      left: calc(50vw - 619px);
+    }
+
+    &--is-vertical {
       position: absolute;
       top: 580px;
       left: -183px;
@@ -393,6 +429,10 @@ export default {
           margin-bottom: 30px;
         }
       }
+    }
+
+    @media only screen and (max-width: 1285px) {
+      display: none;
     }
   }
 
@@ -524,14 +564,6 @@ export default {
   z-index: 3;
   @media only screen and (max-width: 768px) {
     height: 1px;
-  }
-}
-
-@media only screen and (max-width: 1285px) {
-  .blog-post {
-    &__share {
-      display: none;
-    }
   }
 }
 

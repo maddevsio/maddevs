@@ -16,7 +16,7 @@
       class="header"
     >
       <div
-        ref="headerContainer"
+        id="header-container"
         class="container"
       >
         <div class="row">
