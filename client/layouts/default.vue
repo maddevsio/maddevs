@@ -27,9 +27,15 @@ export default {
     initHashLinks() {
       this.$nextTick(() => {
         if (window.location.hash) {
-          const section = document.querySelector(window.location.hash)
-          if (section) section.scrollIntoView({ block: 'start' })
+          try {
+            const section = document.querySelector(window.location.hash)
+            if (section) section.scrollIntoView({ block: 'start' })
+            return true
+          } catch {
+            return false
+          }
         }
+        return false
       })
     },
 
