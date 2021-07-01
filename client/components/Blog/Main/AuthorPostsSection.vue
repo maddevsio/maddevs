@@ -6,7 +6,7 @@
         :class="[authorPosts.length === 1 ? 'author-posts__featured-post--mb-0' : '']"
       >
         <FeaturedPost
-          v-if="authorPostsLoaded"
+          v-if="authorPostsLoaded && authorPosts && authorPosts.length"
           :post="authorPosts[0]"
           :author="blogAuthor"
           theme="light"
@@ -83,6 +83,7 @@ export default {
     ...mapGetters(['blogAuthor', 'authorPosts', 'authorPostsLoaded', 'authorPostsPage']),
 
     authorPostsToShow() {
+      if (this.authorPosts && !this.authorPosts.length) return []
       return this.authorPosts.slice(0, this.pageSize * this.authorPostsPage)
     },
 
