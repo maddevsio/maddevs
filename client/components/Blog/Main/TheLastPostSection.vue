@@ -2,10 +2,10 @@
   <div class="container">
     <div class="last-post">
       <FeaturedPost
-        v-if="postsLoaded && featuredPost"
+        v-if="postsLoaded && Author"
         title-tag="h1"
         :post="featuredPost"
-        :author="findAuthor(featuredPost.data.post_author.id, allAuthors)"
+        :author="Author"
       />
       <SkeletonFeaturedPost
         v-else
@@ -32,6 +32,11 @@ export default {
 
   computed: {
     ...mapGetters(['featuredPost', 'postsLoaded', 'allAuthors']),
+
+    Author() {
+      if (!this.featuredPost.data.post_author.id) return null
+      return this.findAuthor(this.featuredPost.data.post_author.id, this.allAuthors)
+    },
   },
 }
 </script>
