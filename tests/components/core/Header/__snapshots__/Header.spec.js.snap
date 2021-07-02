@@ -17,6 +17,7 @@ exports[`Header component should render correctly 1`] = `
     >
       <div
         class="container"
+        id="header-container"
       >
         <div
           class="row"
