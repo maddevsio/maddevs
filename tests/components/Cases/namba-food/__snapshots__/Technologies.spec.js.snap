@@ -32,6 +32,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="MySQL"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__mysql mysql"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -49,6 +51,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="PHP Symfony2"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__symfony symfony"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -66,6 +70,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="Laravel"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__laravel laravel"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -84,6 +90,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="Docker"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__docker docker"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -101,6 +109,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="Nginx"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__nginx nginx"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -118,6 +128,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="Redis"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__redis redis"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -135,6 +147,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="Python (Django)"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__python python"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -152,6 +166,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="Golang"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -169,6 +185,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="Kotlin"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__kotlin kotlin"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -186,6 +204,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="Java"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__java java"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -203,6 +223,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="Swift"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__swift swift"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -220,6 +242,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="Firebase"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__firebase firebase"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -237,6 +261,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="TestFlight"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__test-flight test-flight"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -254,6 +280,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="OpenStreetMap"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__open-street-map open-street-map"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -271,6 +299,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="PHP"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__php php"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -288,6 +318,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="Jira Assistant"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__jira-assistant-blue jira-assistant-blue"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -305,6 +337,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="Grafana"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__grafana grafana"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p
@@ -322,6 +356,8 @@ exports[`Technologies component should render correctly 1`] = `
           alt="Sentry"
           class="img_lazy case_technologies-item__tech-icon case_technologies-item__sentry-black sentry-black"
           data-src="[object Object]"
+          height="40"
+          width="40"
         />
          
         <p

@@ -14,7 +14,7 @@ const META_DATA = {
   description: DESCRIPTION,
   'og:url': 'https://maddevs.io/blog/',
   'og:type': 'website',
-  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
+  'og:site_name': 'Custom Software Development Company',
   'og:title': 'Blog',
   'og:description': DESCRIPTION,
   'og:image': 'https://maddevs.io/blog.png',

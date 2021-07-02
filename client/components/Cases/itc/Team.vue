@@ -1,8 +1,8 @@
 <template>
   <section class="container_regular">
-    <h3 class="case_title_h2 m-24_bottom">
+    <h2 class="case_title_h2 m-24_bottom">
       Meet the team
-    </h3>
+    </h2>
     <ListTeam class="m-96_bottom media-m-48_bottom">
       <ListTeamItem
         v-for="member in team"

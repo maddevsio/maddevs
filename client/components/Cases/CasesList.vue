@@ -8,6 +8,7 @@
         :video-file-name="item.video"
         :logo="item.logo"
         :subtitle="item.subtitle"
+        :title-tag="itemTitleTag"
         :title="item.title"
         :desc="item.desc"
         :width="item.width"
@@ -27,13 +28,20 @@
 </template>
 
 <script>
+import mainMixins from '@/mixins/mainMixins'
 import CasesListItem from '@/components/Cases/CasesListItem'
 import { casesList } from '@/data/casesList'
 
 export default {
   name: 'CasesList',
   components: { CasesListItem },
+  mixins: [mainMixins],
   props: {
+    itemTitleTag: {
+      type: String,
+      default: 'h3',
+    },
+
     limit: {
       type: Number,
       default: casesList.length,
@@ -59,13 +67,9 @@ export default {
     autoplay() {
       const observerCallback = entries => entries.forEach(({ isIntersecting, target }) => {
         if (!isIntersecting) {
-          target.pause()
+          if (target) target.pause()
         } else {
-          try {
-            target.play()
-          } catch (err) {
-            // prevent catch
-          }
+          this.MixinPlayVideo(target)
         }
       })
 

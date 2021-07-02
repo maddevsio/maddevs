@@ -10,7 +10,7 @@ const META_DATA = {
   title: 'Mad Devs: Software & Mobile App Development Company | Blog Author',
   'og:url': 'https://maddevs.io/case-studies/godee/',
   'og:type': 'website',
-  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
+  'og:site_name': 'Custom Software Development Company',
   'og:title': 'Mad Devs Case Study: GoDee - Convenient Shuttle Bus Service',
   'og:description': DESCRIPTION,
   'og:image': 'https://maddevs.io/godee.png',

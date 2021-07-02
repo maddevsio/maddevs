@@ -13,6 +13,8 @@
         <div class="testimonial-block__author-image">
           <img
             :data-src="require(`@/assets/img/DeliveryModels/png/customers/${author.image}.png`)"
+            width="42"
+            height="42"
             alt="Photo"
             class="img_lazy"
           >

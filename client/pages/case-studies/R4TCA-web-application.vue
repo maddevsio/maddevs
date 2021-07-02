@@ -27,6 +27,8 @@
       <img
         slot="icon"
         :data-src="require(`@/assets/img/Studies/svg/veeqo.svg`)"
+        width="195"
+        height="72"
         alt="Optimization for Veeqo"
         class="case_logotype-veeqo img_lazy"
       >

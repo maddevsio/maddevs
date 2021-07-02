@@ -71,6 +71,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Python"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -84,6 +86,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Go"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -97,6 +101,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Node.js"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -110,6 +116,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="C"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -123,6 +131,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="TypeScript"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -136,6 +146,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="PHP"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -149,6 +161,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Ruby"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -162,6 +176,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="C++"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -238,6 +254,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="JavaScript"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -251,6 +269,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="React"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -264,6 +284,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Babel"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -277,6 +299,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Vue"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -290,6 +314,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="PostCSS"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -303,6 +329,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Angular"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -316,6 +344,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Nuxt.js"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -329,6 +359,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="SASS"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -389,6 +421,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Android"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -402,6 +436,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Kotlin"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -415,6 +451,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Java"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -428,6 +466,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Firebase"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -441,6 +481,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="iOS"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -454,6 +496,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Objective-C"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -467,6 +511,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Swift"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>
@@ -480,6 +526,8 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
                   alt="Flutter"
                   class="img_lazy"
                   data-src="[object Object]"
+                  height="26"
+                  width="26"
                 />
                  
                 <span>

@@ -8,6 +8,7 @@ exports[`Index page should render correctly 1`] = `
     <titledesc-stub />
      
     <caseslist-stub
+      itemtitletag="h2"
       limit="6"
     />
      

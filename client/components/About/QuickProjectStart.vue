@@ -25,6 +25,8 @@
             <img
               v-if="idx !== steps.length - 1"
               :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)"
+              width="165"
+              height="65"
               class="quickProjectStart__arrow-icon img_lazy"
               alt="Arrow"
             >

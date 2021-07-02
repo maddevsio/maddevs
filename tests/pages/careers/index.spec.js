@@ -6,7 +6,7 @@ const META_DATA = {
   description: 'Join our team of 100+ staff members working on unique projects, master new IT skills, and build a fantastic career path in cloud and software engineering.',
   'og:url': 'https://maddevs.io/careers/',
   'og:type': 'website',
-  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
+  'og:site_name': 'Custom Software Development Company',
   'og:title': 'Mad Devs Careers: Work with Us',
   'og:description': 'Join our team of 100+ staff members working on unique projects, master new IT skills, and build a fantastic career path in cloud and software engineering.',
   'og:image': 'https://maddevs.io/Open-Graph.png',

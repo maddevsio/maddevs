@@ -6,7 +6,7 @@ const META_DATA = {
   description: 'We deliver software engineering and mobile app development services, DevOps and IT consulting services to businesses of any size.',
   'og:url': 'https://maddevs.io/services/',
   'og:type': 'website',
-  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
+  'og:site_name': 'Custom Software Development Company',
   'og:title': 'Custom Software Development Services | Mad Devs',
   'og:description': 'We deliver software engineering and mobile app development services, DevOps and IT consulting services to businesses of any size.',
   'og:image': 'https://maddevs.io/Open-Graph.png',

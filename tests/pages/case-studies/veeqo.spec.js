@@ -16,7 +16,7 @@ const META_DATA = {
   title: 'Mad Devs: Software & Mobile App Development Company | Blog Author',
   'og:url': 'https://maddevs.io/case-studies/veeqo/',
   'og:type': 'website',
-  'og:site_name': 'Mad Devs: Software & Mobile App Development Company',
+  'og:site_name': 'Custom Software Development Company',
   'og:title': 'Mad Devs Case Study: Veeqo an inventory management platform for e-commerce',
   'og:description': DESCRIPTION,
   'og:image': 'https://maddevs.io/veeqo-case.jpg',

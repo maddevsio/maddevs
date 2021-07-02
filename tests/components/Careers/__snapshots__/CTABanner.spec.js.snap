@@ -20,6 +20,7 @@ exports[`CTABanner component should render correctly 1`] = `
       >
         <uibutton-stub>
           <img
+            alt="Telegram"
             class="img_lazy"
             data-src="[object Object]"
             height="17"

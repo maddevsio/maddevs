@@ -25,9 +25,9 @@ export default {
         return this.getSearchQuery
       }
       if (process.browser) {
-        const query = this.$route.query.searchBy.replace(/\//g, '')
+        const query = this.$route.query.searchBy
         if (query && query.length) {
-          return query
+          return query.replace(/\//g, '')
         }
         return 'All'
       }

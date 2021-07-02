@@ -58,9 +58,9 @@ export default {
   created() {
     if (!this.getSearchQuery) {
       if (process.browser) {
-        const query = this.$route.query.searchBy.replace(/\//g, '')
+        const query = this.$route.query.searchBy
         if (query && query.length) {
-          this.getPosts(query)
+          this.getPosts(query.replace(/\//g, ''))
         } else {
           this.$router.push('/blog/')
         }

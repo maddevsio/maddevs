@@ -107,15 +107,18 @@ export const meta = {
 export const getMetadata = key => meta[key] || {}
 
 export const buildHead = ({
-  title, description, url, jsonLd, image = 'https://maddevs.io/Open-Graph.png', metaTitle,
+  lang = 'en', title, description, url, jsonLd, image = 'https://maddevs.io/Open-Graph.png', metaTitle,
 }, scripts = []) => ({
+  htmlAttrs: {
+    lang,
+  },
   title,
   meta: [
     { name: 'description', content: description },
     // Facebook / Open Graph
     { property: 'og:url', content: url },
     { property: 'og:type', content: 'website' },
-    { property: 'og:site_name', content: 'Mad Devs: Software & Mobile App Development Company' },
+    { property: 'og:site_name', content: 'Custom Software Development Company' },
     { property: 'og:title', content: metaTitle || title },
     { property: 'og:description', content: description },
     { property: 'og:image', content: image },

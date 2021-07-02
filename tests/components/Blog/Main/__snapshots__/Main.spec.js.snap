@@ -11,9 +11,45 @@ exports[`Main component should render correctly 1`] = `
       <div
         class="last-post"
       >
-        <featuredpost-stub
-          post="[object Object]"
-        />
+        <div
+          class="featured-post dark"
+        >
+          <div
+            class="row featured-post__wrapper"
+          >
+            <div
+              class="col-12 col-lg-6 featured-post__main"
+            >
+              <h2
+                class="featured-post__title background-grey animated dark"
+              />
+               
+              <p
+                class="featured-post__paragraph background-grey animated dark"
+              />
+               
+              <div
+                class="featured-post__data d-flex justify-content-between"
+              >
+                <div
+                  class="featured-post__meta"
+                >
+                  <span
+                    class="created-at"
+                  />
+                </div>
+              </div>
+            </div>
+             
+            <div
+              class="col-12 col-lg-6 featured-post__image-wrapper"
+            >
+              <div
+                class="featured-post__image background-grey animated dark"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
      

@@ -8,6 +8,9 @@ if (process.env.environment !== 'development') {
     dsn: process.env.sentryDsnFront,
     integrations: [new Integrations.BrowserTracing()],
     tracesSampleRate: 1.0,
-    ignoreErrors: ['ResizeObserver loop limit exceeded'],
+    ignoreErrors: [
+      'ResizeObserver loop limit exceeded', // https://stackoverflow.com/questions/49384120/resizeobserver-loop-limit-exceeded#comment86691361_49384120
+      'ResizeObserver loop completed with undelivered notifications.', // ^
+    ],
   })
 }

@@ -27,6 +27,8 @@
       <img
         slot="icon"
         :data-src="require(`@/assets/img/Studies/svg/yourcast-logo.svg`)"
+        width="270"
+        height="57"
         alt="The Evolution of Yourcast.TV"
         class="case_logotype-yourcast img_lazy"
       >

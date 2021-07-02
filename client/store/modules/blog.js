@@ -19,10 +19,13 @@ export const state = () => ({
 
 export const mutations = {
   SET_BLOG_PAGE_CONTENT(state, data) {
-    const categories = data.categories.map(category => ({
-      title: this.$prismic.asText(category.category_title),
-      tags: category.tags.length ? this.$prismic.asText(category.tags).split(/, */g) : [],
-    }))
+    let categories = []
+    if (data && data.categories && data.categories.length) {
+      categories = data.categories.map(category => ({
+        title: this.$prismic.asText(category.category_title),
+        tags: category.tags.length ? this.$prismic.asText(category.tags).split(/, */g) : [],
+      }))
+    }
     state.homePageContent = {
       image: data.image.url,
       headline: data.headline[0].text,

@@ -17,6 +17,7 @@ exports[`CasesList component should render correctly 1`] = `
         poster="/images/Cases/sjmc/jpg/sjmc-poster.jpg"
         subtitle="BYOD"
         title="Sir John Monash Centre"
+        titletag="h3"
         videofilename="/videos/sjmc/sjmc-main-video.b35a387.mp4#t=2"
         width="full"
       />
@@ -29,6 +30,7 @@ exports[`CasesList component should render correctly 1`] = `
         poster="/images/Cases/nambafood/jpg/nambafood-poster.jpg"
         subtitle="Foodtech"
         title="Contactless Delivery Service"
+        titletag="h3"
         videofilename="/videos/main.ef19480.mp4#t=1"
         width="big"
       />
@@ -41,6 +43,7 @@ exports[`CasesList component should render correctly 1`] = `
         poster="/images/Cases/yourcast/jpg/yourcast-poster.jpg"
         subtitle="Content Streaming"
         title="The Evolution of Yourcast.TV"
+        titletag="h3"
         videofilename="/videos/yourcast-banner.mp4#t=1"
         width="small"
       />
@@ -53,6 +56,7 @@ exports[`CasesList component should render correctly 1`] = `
         poster="/images/Cases/godee/jpg/godee-poster.jpg"
         subtitle="Transportation"
         title="Convenient shuttle bus service"
+        titletag="h3"
         videofilename="/videos/godee-case-main-video.mp4#t=1"
         width="full"
       />
@@ -65,6 +69,7 @@ exports[`CasesList component should render correctly 1`] = `
         poster="/images/Cases/itc/jpg/itc-banner.jpg"
         subtitle="Digital transformation"
         title="Ready4Trade Central Asia"
+        titletag="h3"
         videofilename="/videos/itc-banner.mp4#t=1"
         width="big"
       />
@@ -77,6 +82,7 @@ exports[`CasesList component should render correctly 1`] = `
         poster="/images/Cases/veeqo/svg/veeqo-banner-bg.svg"
         subtitle="Logistics"
         title="Optimization for Veeqo"
+        titletag="h3"
         videofilename="/videos/veeqo-banner.mp4#t=1"
         width="small"
       />

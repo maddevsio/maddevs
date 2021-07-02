@@ -75,7 +75,9 @@ exports[`BusinessModel component should render correctly 1`] = `
           <img
             alt="Macbook frame"
             class="case_card-content_macbook-frame"
+            height="790"
             src="[object Object]"
+            width="1441"
           />
            
           <picture>
@@ -89,8 +91,10 @@ exports[`BusinessModel component should render correctly 1`] = `
               alt="Cases image"
               class="case_card-content_image"
               data-testid="test-case_card-content_image"
+              height="547"
               src="img.jpg"
               srcset="img.jpg 2x"
+              width="1028"
             />
           </picture>
         </div>

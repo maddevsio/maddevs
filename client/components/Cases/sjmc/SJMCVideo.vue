@@ -30,6 +30,8 @@
     >
       <img
         src="@/assets/img/Studies/svg/close-icon.svg"
+        width="24"
+        height="24"
         alt="Close"
       >
     </button>
@@ -37,8 +39,11 @@
 </template>
 
 <script>
+import mainMixins from '@/mixins/mainMixins'
+
 export default {
   name: 'SJMCVideo',
+  mixins: [mainMixins],
   data() {
     return {
       fullscreenModIsActive: false,
@@ -64,7 +69,7 @@ export default {
 
         // Pause video when exit from fullscreen
         if (!this.$refs.video.paused) {
-          this.$refs.video.pause()
+          this.pause()
           this.showIcon = true
         }
       }
@@ -83,7 +88,7 @@ export default {
 
       if (this.flagFirstStartVideo) {
         try {
-          this.$refs.video.play()
+          this.MixinPlayVideo(this.$refs.video)
         } catch (err) {
           this.showIcon = true
         }
@@ -92,16 +97,22 @@ export default {
     },
 
     videoSetState() {
-      if (this.$refs.video.paused) {
+      if (this.$refs.video && this.$refs.video.paused) {
         try {
-          this.$refs.video.play()
+          this.MixinPlayVideo(this.$refs.video)
         } catch (err) {
           this.showIcon = true
         }
         this.showIcon = false
       } else {
-        this.$refs.video.pause()
+        this.pause()
         this.showIcon = true
+      }
+    },
+
+    pause() {
+      if (this.$refs.video) {
+        this.$refs.video.pause()
       }
     },
   },
