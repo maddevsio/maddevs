@@ -57,7 +57,7 @@
               {{ formattedDate(post) }}
             </div>
             <NuxtLink
-              :to="`/blog/author/${getAuthor(post, 'uid')}`"
+              :to="`/blog/author/${getAuthor(post, 'uid')}/`"
               class="modal-search_result-item_content-author"
             >
               <img
@@ -207,7 +207,7 @@ export default {
       if (this.searchPosts && this.searchPosts.length) {
         if (event.keyCode === 13) {
           if (this.value && this.value.length) {
-            this.$router.push({ path: '/blog/search-result', query: { searchBy: this.value } })
+            this.$router.push({ path: '/blog/search-result/', query: { searchBy: this.value } })
           } else {
             this.$router.push('/blog/')
           }
