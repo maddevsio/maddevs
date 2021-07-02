@@ -319,13 +319,13 @@ export default {
       const scrollStartPoint = this.getScrollStartPoint()
       const scrollEndPoint = this.getScrollEndPoint()
 
-      this.setValueForCssVar()
+      this.setStateForCssVar()
 
       this.isFixed = window.pageYOffset > scrollStartPoint
       this.isBottom = window.pageYOffset > scrollEndPoint
     },
 
-    setValueForCssVar() {
+    setStateForCssVar() {
       const indentFromIntroductionContainer = 30
       const root = document.documentElement
       const top = this.introductionContainer.offsetHeight + indentFromIntroductionContainer
@@ -341,7 +341,7 @@ export default {
       const { offsetHeight: blogPostHeight } = this.$refs.blogPost
       const { offsetHeight: navbarHeight } = this.$refs.navbar
       const { offsetHeight: postFooterHeight } = this.$refs.postFooter
-      const postFooterPadding = 200 // sum of padding from top and bottom
+      const postFooterPadding = 190 // sum of padding from top and bottom
 
       return blogPostHeight - (postFooterHeight + navbarHeight + postFooterPadding)
     },

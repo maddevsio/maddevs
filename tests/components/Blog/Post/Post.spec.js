@@ -70,15 +70,9 @@ const refs = { // use for offsetHeight random numbers
   },
   navbar: {
     offsetHeight: 400,
-    style: {
-      cssText: '',
-    },
   },
-  recommendedPosts: {
+  postFooter: {
     offsetHeight: 600,
-  },
-  clusterNavigation: {
-    offsetHeight: 700,
   },
 }
 
@@ -187,105 +181,106 @@ describe('Post component', () => {
   })
 
   it('data instance should contains html element', () => {
-    document.body.innerHTML = '<div id="introduction-container"></div>'
+    document.body.innerHTML = '<div id="introduction-container"/><div id="header-container"/>'
     const wrapper = shallowMount(Post)
-    const element = document.getElementById('introduction-container')
+    const introductionContainer = document.getElementById('introduction-container')
+    const headerContainer = document.getElementById('header-container')
 
     wrapper.vm.setStylesForNavbar()
 
-    expect(wrapper.vm.$data.introductionContainer).toEqual(element)
+    expect(wrapper.vm.introductionContainer).toEqual(introductionContainer)
+    expect(wrapper.vm.headerContainer).toEqual(headerContainer)
   })
 
-  it('getStylesTemplate should return string with params data', () => {
+  it('getScrollStartPoint should return scroll start point count', () => {
     const wrapper = shallowMount(Post)
-    const expectedResult = 'position: absolute; top: auto; bottom: 0; left: -210px;'
+    const state = { offsetHeight: 1 }
+    const expectedResult = 2
 
-    const result = wrapper.vm.getStylesTemplate('absolute', 'auto', '0', '-210px')
+    wrapper.vm.introductionContainer = state
+    wrapper.vm.headerContainer = state
+
+    const result = wrapper.vm.getScrollStartPoint()
 
     expect(result).toBe(expectedResult)
   })
 
-  it('method should return true if path contains in URL', () => {
-    const wrapper = shallowMount(Post)
-    Object.defineProperty(window, 'location', {
-      value: {
-        pathname: 'blog',
-      },
-    })
-
-    const result = wrapper.vm.containsInUrl('blog')
-
-    expect(result).toBe(true)
-  })
-
-  it('method should return false if path not contained in URL', () => {
-    const wrapper = shallowMount(Post)
-    const result = wrapper.vm.containsInUrl('customer-university')
-
-    expect(result).toBe(false)
-  })
-
-  it('method should return scroll end point count for default blog post', () => {
+  it('getScrollEndPoint should return scroll end point count', () => {
     const expectedResult = 6810
     const wrapper = shallowMount(Post)
     wrapper.vm.$refs = refs
-    jest.spyOn(wrapper.vm, 'containsInUrl').mockImplementation(() => false)
 
     const result = wrapper.vm.getScrollEndPoint()
 
     expect(result).toBe(expectedResult)
   })
 
-  it('method should return scroll end point count for customer university post', () => {
-    const expectedResult = 7110
+  it('setStateForCssVar should return scroll end point count', () => {
     const wrapper = shallowMount(Post)
-    wrapper.vm.$refs = refs
-    jest.spyOn(wrapper.vm, 'containsInUrl').mockImplementation(() => true)
+    const state = { offsetHeight: 1 }
+    const setPropertySpy = jest.spyOn(document.documentElement.style, 'setProperty').mockImplementation(() => jest.fn())
 
-    const result = wrapper.vm.getScrollEndPoint()
+    wrapper.vm.introductionContainer = state
 
-    expect(result).toBe(expectedResult)
+    wrapper.vm.setStateForCssVar()
+
+    expect(setPropertySpy).toHaveBeenCalledWith('--top', '31px')
   })
 
-  it('handleNavbar if window.pageYOffset less than scrollStartPoint', () => {
-    const mock = { offsetHeight: 200 }
+  it('handleNavbar should call methods: getScrollStartPoint, getScrollEndPoint, setStateForCssVar', () => {
     const wrapper = shallowMount(Post)
-    const expectedResult = 'position: absolute; top: 230px; left: -210px;'
-    wrapper.setData({ introductionContainer: mock })
-    wrapper.vm.$refs = refs
-    jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => 300)
+    const getScrollStartPointSpy = jest.spyOn(wrapper.vm, 'getScrollStartPoint').mockImplementation(() => jest.fn())
+    const getScrollEndPointSpy = jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => jest.fn())
+    const setStateForCssVarSpy = jest.spyOn(wrapper.vm, 'setStateForCssVar').mockImplementation(() => jest.fn())
 
     wrapper.vm.handleNavbar()
-    const result = wrapper.vm.$refs.navbar.style.cssText
 
-    expect(result).toBe(expectedResult)
+    expect(getScrollStartPointSpy).toHaveBeenCalledTimes(1)
+    expect(getScrollEndPointSpy).toHaveBeenCalledTimes(1)
+    expect(setStateForCssVarSpy).toHaveBeenCalledTimes(1)
   })
 
-  it('handleNavbar if window.pageYOffset more than scrollStartPoint', () => {
-    const mock = { offsetHeight: 50 }
+  it('handleNavbar should set true for isFixed if window.pageYOffset more than scrollStartPoint', () => {
     const wrapper = shallowMount(Post)
-    const expectedResult = 'position: fixed; top: 100px; left: calc(50vw - 619px);'
-    wrapper.setData({ introductionContainer: mock })
-    wrapper.vm.$refs = refs
-    jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => 300)
+    jest.spyOn(wrapper.vm, 'getScrollStartPoint').mockImplementation(() => 100)
+    jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => jest.fn())
+    jest.spyOn(wrapper.vm, 'setStateForCssVar').mockImplementation(() => jest.fn())
 
     wrapper.vm.handleNavbar()
-    const result = wrapper.vm.$refs.navbar.style.cssText
 
-    expect(result).toBe(expectedResult)
+    expect(wrapper.vm.isFixed).toBe(true)
   })
 
-  it('handleNavbar if window.pageYOffset more than scrollEndPoint', () => {
-    const mock = { offsetHeight: 50 }
+  it('handleNavbar should set false for isFixed if window.pageYOffset less than scrollStartPoint', () => {
     const wrapper = shallowMount(Post)
-    const expectedResult = 'position: absolute; bottom: 0px; left: -210px;'
-    wrapper.setData({ introductionContainer: mock })
-    wrapper.vm.$refs = refs
+    jest.spyOn(wrapper.vm, 'getScrollStartPoint').mockImplementation(() => 300)
+    jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => jest.fn())
+    jest.spyOn(wrapper.vm, 'setStateForCssVar').mockImplementation(() => jest.fn())
+
+    wrapper.vm.handleNavbar()
+
+    expect(wrapper.vm.isFixed).toBe(false)
+  })
+
+  it('handleNavbar should set true for isBottom if window.pageYOffset more than scrollEndPoint', () => {
+    const wrapper = shallowMount(Post)
     jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => 100)
+    jest.spyOn(wrapper.vm, 'getScrollStartPoint').mockImplementation(() => jest.fn())
+    jest.spyOn(wrapper.vm, 'setStateForCssVar').mockImplementation(() => jest.fn())
 
     wrapper.vm.handleNavbar()
-    const result = wrapper.vm.$refs.navbar.style.cssText
 
-    expect(result).toBe(expectedResult)
+    expect(wrapper.vm.isBottom).toBe(true)
+  })
+
+  it('handleNavbar should set false for isBottom if window.pageYOffset less than scrollEndPoint', () => {
+    const wrapper = shallowMount(Post)
+    jest.spyOn(wrapper.vm, 'getScrollEndPoint').mockImplementation(() => 300)
+    jest.spyOn(wrapper.vm, 'getScrollStartPoint').mockImplementation(() => jest.fn())
+    jest.spyOn(wrapper.vm, 'setStateForCssVar').mockImplementation(() => jest.fn())
+
+    wrapper.vm.handleNavbar()
+
+    expect(wrapper.vm.isBottom).toBe(false)
   })
 })
