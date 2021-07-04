@@ -8,11 +8,11 @@ const convertTagsToText = (text = '', excludedTags = []) => {
    */
   if (excludedTags && excludedTags.length) {
     for (const tag of excludedTags) {
-      const openTagRegex = new RegExp(`&lt;${tag}(.*?)&gt;`, 'g')
+      const openTagRegExp = new RegExp(`&lt;${tag}(.*?)&gt;`, 'g')
       // eslint-disable-next-line
-      const closeTagRegex = new RegExp(`&lt;\/${tag}&gt;`, 'g')
-      formatedText = formatedText.replace(openTagRegex, `<${tag} $1>`)
-      formatedText = formatedText.replace(closeTagRegex, `</${tag}>`)
+      const closeTagRegExp = new RegExp(`&lt;\/${tag}&gt;`, 'g')
+      formatedText = formatedText.replace(openTagRegExp, `<${tag} $1>`)
+      formatedText = formatedText.replace(closeTagRegExp, `</${tag}>`)
     }
   }
 
