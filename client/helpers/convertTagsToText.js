@@ -1,6 +1,6 @@
 const convertTagsToText = (text = '', excludedTags = []) => {
   // convert all html tags to text
-  let formatedText = text
+  let formattedText = text
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
   /**
@@ -11,12 +11,12 @@ const convertTagsToText = (text = '', excludedTags = []) => {
       const openTagRegExp = new RegExp(`&lt;${tag}(.*?)&gt;`, 'g')
       // eslint-disable-next-line
       const closeTagRegExp = new RegExp(`&lt;\/${tag}&gt;`, 'g')
-      formatedText = formatedText.replace(openTagRegExp, `<${tag} $1>`)
-      formatedText = formatedText.replace(closeTagRegExp, `</${tag}>`)
+      formattedText = formattedText.replace(openTagRegExp, `<${tag} $1>`)
+      formattedText = formattedText.replace(closeTagRegExp, `</${tag}>`)
     }
   }
 
-  return formatedText
+  return formattedText
 }
 
 export default convertTagsToText

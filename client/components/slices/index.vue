@@ -129,8 +129,8 @@ export default {
       } else {
         text = text.replace(/`(.*?)`/g, (_, inlineCode) => {
           // the second parameter of function excludes tags
-          const formatedCode = convertTagsToText(inlineCode, ['strong', 'em', 'a'])
-          return `<code class="inline-code">${formatedCode}</code>`
+          const formattedCode = convertTagsToText(inlineCode, ['strong', 'em', 'a'])
+          return `<code class="inline-code">${formattedCode}</code>`
         })
       }
 
