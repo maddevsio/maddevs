@@ -127,9 +127,9 @@ export default {
         // the second parameter of function excludes tags
         text = convertTagsToText(text, ['br'])
       } else {
-        text = text.replace(/`(.*?)`/g, (_, p1) => {
+        text = text.replace(/`(.*?)`/g, (_, inlineCode) => {
           // the second parameter of function excludes tags
-          const convertedCode = convertTagsToText(p1, ['strong', 'em', 'a'])
+          const convertedCode = convertTagsToText(inlineCode, ['strong', 'em', 'a'])
           return `<code class="inline-code">${convertedCode}</code>`
         })
       }
