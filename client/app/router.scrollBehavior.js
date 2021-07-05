@@ -29,16 +29,24 @@ export default async (to, from, savedPosition) => {
     $nuxt.$nextTick(() => $nuxt.$emit('triggerScroll'))
   }
 
-  const findEl = async (hash, x) => document.querySelector(hash)
-      || new Promise(resolve => {
-        if (x > 50) resolve()
-        setTimeout(() => { resolve(findEl(hash, (x + 1) || 1)) }, 100)
-      })
+  const findEl = async (hash, x) => {
+    try {
+      return document.querySelector(hash)
+        || new Promise(resolve => {
+          if (x > 50) resolve()
+          setTimeout(() => { resolve(findEl(hash, (x + 1) || 1)) }, 100)
+        })
+    } catch {
+      return null
+    }
+  }
 
   if (to.hash) {
     const hashEl = await findEl(to.hash)
-    if ('scrollBehavior' in document.documentElement.style) return window.scrollTo({ top: hashEl.offsetTop, behavior: 'smooth' })
-    return window.scrollTo(0, hashEl.offsetTop)
+    if (hashEl) {
+      if ('scrollBehavior' in document.documentElement.style) return window.scrollTo({ top: hashEl.offsetTop, behavior: 'smooth' })
+      return window.scrollTo(0, hashEl.offsetTop)
+    }
   }
 
   return new Promise(resolve => {

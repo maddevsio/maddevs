@@ -62,4 +62,11 @@ describe('link resolver function', () => {
 
     expect(linkResolver(DOC)).toBe(RESULT)
   })
+
+  it('should return /not-found/ if doc not valid', () => {
+    const RESULT = '/not-found/'
+    expect(linkResolver(null)).toBe(RESULT)
+    expect(linkResolver(undefined)).toBe(RESULT)
+    expect(linkResolver({})).toBe(RESULT)
+  })
 })
