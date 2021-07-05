@@ -89,6 +89,7 @@ import VacancyText from '@/components/slices/Careers/VacancyText'
 
 import linkResolver from '@/plugins/link-resolver'
 import mainMixins from '@/mixins/mainMixins'
+import convertTagsToText from '@/helpers/convertTagsToText'
 
 export default {
   name: 'SlicesBlock',
@@ -134,9 +135,21 @@ export default {
 
   methods: {
     htmlSerializer(type, element, content, children) {
-      const text = children.join('').replace(/`(.*?)`/g, '<span class="inline-code">$1</span>')
       const { Elements } = this.$prismic.dom.RichText
       const { Link } = this.$prismic.dom
+      let text = children.join('')
+
+      if (type === Elements.preformatted) {
+        // the second parameter of function excludes tags
+        text = convertTagsToText(text, ['br'])
+      } else {
+        text = text.replace(/`(.*?)`/g, (_, inlineCode) => {
+          // the second parameter of function excludes tags
+          const formattedCode = convertTagsToText(inlineCode, ['strong', 'em', 'a'])
+          return `<code class="inline-code">${formattedCode}</code>`
+        })
+      }
+
       switch (type) {
         case Elements.heading1: return this.createAnchorTag('h1', text)
         case Elements.heading2: return this.createAnchorTag('h2', text)
