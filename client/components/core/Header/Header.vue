@@ -8,8 +8,7 @@
       ref="header"
       data-testid="test-header"
       :class="{
-        transparent: isCasePage && !isActiveMobileMenu,
-        'is-transparent-bg': isTransparentBG && isCasePage,
+        'is-transparent-bg': !isActiveMobileMenu && isTransparentBG && isCasePage,
       }"
       class="header"
     >
@@ -251,9 +250,11 @@ export default {
     setStylesForHeader() {
       const scrollTop = window.scrollY
       const area = document.querySelector('#case-header')
+      const headerHeight = this.$refs.header.clientHeight
+
       if (!area) return
 
-      const areaHeight = area.offsetTop + area.offsetHeight
+      const areaHeight = (area.offsetTop + area.offsetHeight) - headerHeight
       // const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
       const isBeforeBottomPointSection = scrollTop <= areaHeight // Before Bottom point of the section
 
@@ -434,10 +435,6 @@ export default {
     width: 18px;
     height: 14px;
   }
-
-  &.transparent {
-    background: transparent;
-  }
 }
 
 /deep/ #header-logo-text {
@@ -447,17 +444,7 @@ export default {
 }
 
 .is-transparent-bg {
-  &::before {
-    transition: all 0.3s ease;
-    height: 175px;
-    background: $bgcolor--header-gradient;
-    opacity: 0.3;
-  }
-
-  /deep/ #header-logo-text {
-    opacity: 1;
-    transform: none;
-  }
+  background-color: transparent;
 }
 // ------------ END Overlay styles ------------- //
 .mobile-menu_is-open {

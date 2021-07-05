@@ -1,5 +1,5 @@
 <template>
-  <div
+  <main
     :class="wrapperClass"
     class="blog-post"
   >
@@ -98,7 +98,7 @@
       ref="progressBar"
       class="progress-bar"
     />
-  </div>
+  </main>
 </template>
 
 <script>

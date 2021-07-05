@@ -2,7 +2,7 @@
 
 exports[`Post component should render correctly with default props 1`] = `
 <div>
-  <div
+  <main
     class="blog-post"
     document="[object Object]"
   >
@@ -40,6 +40,6 @@ exports[`Post component should render correctly with default props 1`] = `
     <div
       class="progress-bar"
     />
-  </div>
+  </main>
 </div>
 `;

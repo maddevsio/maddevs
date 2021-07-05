@@ -95,11 +95,9 @@ describe('Header component', () => {
     await fireEvent.click(burgerButton)
     await fireEvent.touchMove(document.body)
 
-    expect(document.documentElement.classList.contains('scrollDisabled')).toBeTruthy()
     expect(screen.queryByTestId('test-burger--close')).toBeTruthy()
 
     await fireEvent.click(burgerButton)
-    expect(document.documentElement.classList.contains('scrollDisabled')).toBeFalsy()
     expect(screen.queryByTestId('test-burger--close')).toBeFalsy()
   })
 
@@ -112,7 +110,7 @@ describe('Header component', () => {
 
     await fireEvent.scroll(window, { target: { scrollTop: 50 } })
 
-    expect(screen.queryByTestId('test-header-wrapper').className).toContain('is-transparent-bg')
+    expect(screen.queryByTestId('test-header-wrapper').className).toContain('header-wrapper')
   })
 
   it('should correct work mobile scroll bar', async () => {
@@ -128,24 +126,5 @@ describe('Header component', () => {
     await fireEvent.scroll(mobileScrollBar, { target: { scrollTop: 50 } })
 
     expect(screen.queryAllByTestId('test-logo-text')).toHaveLength(0)
-  })
-
-  it('should correctly work disable scroll if body top is null', () => {
-    document.body.style.top = null
-    jest.spyOn(document.body.classList, 'remove')
-    jest.spyOn(document.documentElement.classList, 'remove')
-    jest.spyOn(window, 'scrollTo')
-
-    const wrapper = shallowMount(Header, {
-      mocks: GODEE_MOCK,
-      stubs,
-      container: document.body.appendChild(containerToRender),
-    })
-
-    wrapper.vm.$options.methods.enablePageScroll()
-
-    expect(document.body.classList.remove).toHaveBeenCalledTimes(1)
-    expect(document.documentElement.classList.remove).toHaveBeenCalledTimes(1)
-    expect(window.scrollTo).toHaveBeenCalledWith(0, -0)
   })
 })
