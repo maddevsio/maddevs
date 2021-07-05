@@ -295,6 +295,7 @@ export default {
     top: 0;
     right: 25px;
     padding: 11px 14px;
+    z-index: 3;
 
     &--close {
       width: 22px;
@@ -302,6 +303,10 @@ export default {
       margin-top: 3px;
       margin-right: 3px;
     }
+  }
+
+  &__logo-icon {
+    z-index: 3;
   }
 
   &__search-btn {
