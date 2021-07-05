@@ -11,7 +11,7 @@ const convertTagsToText = (text = '', excludedTags = []) => {
       const openTagRegExp = new RegExp(`&lt;${tag}(.*?)&gt;`, 'g')
       // eslint-disable-next-line
       const closeTagRegExp = new RegExp(`&lt;\/${tag}&gt;`, 'g')
-      formattedText = formattedText.replace(openTagRegExp, `<${tag} $1>`)
+      formattedText = formattedText.replace(openTagRegExp, `<${tag}$1>`)
       formattedText = formattedText.replace(closeTagRegExp, `</${tag}>`)
     }
   }
