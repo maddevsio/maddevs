@@ -3,16 +3,14 @@
     id="header"
     class="header-wrapper"
     data-testid="test-header-wrapper"
-    :class="{ 'is-transparent-bg': isTransparentBG && isCasePage }"
   >
-    <div
-      id="overlay"
-      ref="overlay"
-    />
     <header
       ref="header"
       data-testid="test-header"
-      :class="{ transparent: isCasePage && !isActiveMobileMenu }"
+      :class="{
+        transparent: isCasePage && !isActiveMobileMenu,
+        'is-transparent-bg': isTransparentBG && isCasePage,
+      }"
       class="header"
     >
       <div
@@ -129,7 +127,7 @@
     <!-- Mobile header -->
     <HeaderMobile
       v-if="isActiveMobileMenu"
-      :enable-page-scroll="enablePageScroll"
+      :enable-page-scroll="MixinEnableScrollOnBody"
       @changed-page="isActiveMobileMenu = false"
       @open-modal="$refs.modalContactMe.show()"
     />
@@ -150,6 +148,7 @@
 </template>
 
 <script>
+import scrollOnBody from '@/mixins/scrollOnBody'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import HeaderMobile from '@/components/core/Header/HeaderMobile'
 import HeaderLogo from '@/components/core/Header/HeaderLogo'
@@ -165,6 +164,8 @@ export default {
     HeaderLogo,
     ModalSearch,
   },
+
+  mixins: [scrollOnBody],
 
   data() {
     return {
@@ -194,10 +195,10 @@ export default {
 
     searchActive(opened) {
       if (opened) {
-        this.disableScrollOnBody()
+        this.MixinDisableScrollOnBody()
       } else {
         setTimeout(() => {
-          this.enableScrollOnBody()
+          this.MixinEnableScrollOnBody()
         }, 300)
       }
     },
@@ -218,30 +219,6 @@ export default {
       window.scrollTo(0, 0)
     },
 
-    enablePageScroll() {
-      const scrollY = document.body.style.top || '0'
-      document.body.classList.remove('scrollDisabled')
-      document.documentElement.classList.remove('scrollDisabled')
-      window.scrollTo(0, parseInt(scrollY, 10) * -1)
-    },
-
-    disablePageScroll() {
-      const { scrollY } = window
-      document.body.classList.add('scrollDisabled')
-      document.documentElement.classList.add('scrollDisabled')
-      document.body.style.top = `-${scrollY}px`
-    },
-
-    enableScrollOnBody() {
-      document.body.style.top = 'auto'
-      document.body.style.overflow = 'auto'
-    },
-
-    disableScrollOnBody() {
-      document.body.style.top = `-${window.scrollY}px`
-      document.body.style.overflow = 'hidden'
-    },
-
     setDefaultStateForHeader() {
       this.isCasePage = this.$nuxt.$route.name && this.$nuxt.$route.name.includes('case-studies-')
     },
@@ -258,14 +235,14 @@ export default {
     toggleMobileMenu() {
       this.isActiveMobileMenu = !this.isActiveMobileMenu
       if (this.isActiveMobileMenu) {
-        this.disablePageScroll()
+        this.MixinDisableScrollOnBody()
         this.$nextTick(() => {
           this.mobileHeaderScrollbar = document.getElementById('mobile-header-scrollbar')
           this.mobileHeaderScrollbar.addEventListener('scroll', this.handleMobileMenuScroll)
           this.mobileHeaderScrollbar.addEventListener('touchmove', this.handleMobileMenuScroll)
         })
       } else {
-        this.enablePageScroll()
+        this.MixinEnableScrollOnBody()
         this.mobileHeaderScrollbar.removeEventListener('scroll', this.handleMobileMenuScroll)
         this.mobileHeaderScrollbar.removeEventListener('touchmove', this.handleMobileMenuScroll)
       }
@@ -276,7 +253,7 @@ export default {
       const area = document.querySelector('#case-header')
       if (!area) return
 
-      const areaHeight = (area.offsetTop + area.offsetHeight) - (this.$refs.overlay && this.$refs.overlay.offsetHeight)
+      const areaHeight = area.offsetTop + area.offsetHeight
       // const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
       const isBeforeBottomPointSection = scrollTop <= areaHeight // Before Bottom point of the section
 
@@ -302,11 +279,14 @@ export default {
   width: 100%;
   height: 40px;
   padding: 11px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
   z-index: 3;
   background-color: $bgcolor--black;
+
+  &-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
 
   &__burger {
     display: none;
@@ -460,31 +440,6 @@ export default {
   }
 }
 
-// ------------ Overlay styles ------------- //
-#overlay {
-  width: 100%;
-  height: 40px;
-  padding: 11px 0;
-  position: fixed;
-  z-index: 2;
-
-  &::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: $bgcolor--black;
-    opacity: 1;
-  }
-
-  @media screen and (max-width: 1120px) {
-    height: 48px;
-    padding: 0;
-  }
-}
-
 /deep/ #header-logo-text {
   opacity: 0;
   transform: translateY(-100px) translateX(5%) scale(0.9);
@@ -492,7 +447,7 @@ export default {
 }
 
 .is-transparent-bg {
-  #overlay::before {
+  &::before {
     transition: all 0.3s ease;
     height: 175px;
     background: $bgcolor--header-gradient;

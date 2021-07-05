@@ -58,6 +58,7 @@
 <script>
 import Simplebar from 'simplebar-vue'
 import SuccessMessage from '@/components/core/modals/SuccessMessage'
+import scrollOnBody from '@/mixins/scrollOnBody'
 
 export default {
   name: 'Modal',
@@ -75,6 +76,8 @@ export default {
       },
     },
   },
+
+  mixins: [scrollOnBody],
 
   props: {
     id: {
@@ -118,7 +121,7 @@ export default {
     close() {
       setTimeout(() => {
         this.isVisible = false
-        this.enableScrollOnBody()
+        this.MixinEnableScrollOnBody()
       }, 200)
       setTimeout(() => {
         this.contentLoaded = false
@@ -131,7 +134,7 @@ export default {
     },
 
     show() {
-      this.disableScrollOnBody()
+      this.MixinDisableScrollOnBody()
       this.isVisible = true
       setTimeout(() => {
         this.contentLoaded = true
@@ -146,16 +149,6 @@ export default {
       if (e.keyCode === 27) {
         this.close()
       }
-    },
-
-    enableScrollOnBody() {
-      document.body.style.top = 'auto'
-      document.body.style.overflow = 'auto'
-    },
-
-    disableScrollOnBody() {
-      document.body.style.top = `-${window.scrollY}px`
-      document.body.style.overflow = 'hidden'
     },
   },
 }

@@ -26,6 +26,7 @@
 import BaseForm from '@/components/core/forms/BaseForm'
 import ModalSuccess from '@/components/core/modals/ModalSuccess'
 import createLeadMixin from '@/mixins/createLeadMixin'
+import scrollOnBody from '@/mixins/scrollOnBody'
 
 export default {
   name: 'FooterForm',
@@ -34,7 +35,7 @@ export default {
     ModalSuccess,
   },
 
-  mixins: [createLeadMixin(305480, 'Contact Me')],
+  mixins: [createLeadMixin(305480, 'Contact Me'), scrollOnBody],
 
   data() {
     return {
@@ -51,7 +52,7 @@ export default {
       // from mixin
       this.submitLead(variables)
 
-      this.disableScrollOnBody()
+      this.MixinDisableScrollOnBody()
       this.isSuccess = true
     },
 
@@ -61,17 +62,7 @@ export default {
 
     handleModalClose() {
       this.isSuccess = false
-      this.enableScrollOnBody()
-    },
-
-    enableScrollOnBody() {
-      document.body.style.top = 'auto'
-      document.body.style.overflow = 'auto'
-    },
-
-    disableScrollOnBody() {
-      document.body.style.top = `-${window.scrollY}px`
-      document.body.style.overflow = 'hidden'
+      this.MixinEnableScrollOnBody()
     },
   },
 }
