@@ -52,7 +52,7 @@ export default async (to, from, savedPosition) => {
   return new Promise(resolve => {
     $nuxt.$once('triggerScroll', () => {
       // section with filtered posts is rendered with a small delay, then offset heigh of the blog page changes
-      if (to.name === 'blog') return setTimeout(() => resolve(position), 50)
+      if (to.name === 'blog' || to.name === 'careers') return setTimeout(() => resolve(position), 50)
       return resolve(position)
     })
   })

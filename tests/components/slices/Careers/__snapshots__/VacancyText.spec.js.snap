@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VacancyText slice component is a Vue instance 1`] = `
+<div>
+  <div>
+    <div
+      class="vacancy-text-slice"
+    >
+      <h2
+        class="vacancy-text-slice__title"
+      >
+        <span
+          class="vacancy-text-slice__icon"
+        >
+          ☑️
+        </span>
+        
+      Title
+    
+      </h2>
+       
+      <prismicrichtext
+        class="vacancy-text-slice__content"
+        field="Content"
+        html-serializer="function htmlSerializer() {}"
+      />
+    </div>
+  </div>
+</div>
+`;
