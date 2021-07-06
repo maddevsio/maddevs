@@ -192,6 +192,7 @@ describe('PositionForm component', () => {
             userBrowser: 'name: Chrome, version: 91.0.4472.114',
             userOS: 'name: macOS, version: 10.15.7, versionName: Catalina',
             userPlatform: 'type: desktop, vendor: Apple',
+            documentReferrer: 'Navigated to the page directly',
           },
 
           attachment: {
