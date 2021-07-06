@@ -19,7 +19,7 @@
         <div class="row">
           <div class="header__left-nav_bar col">
             <NuxtLink
-              :to="`/`"
+              to="/"
               class="header__logo-icon"
             >
               <HeaderLogo
@@ -126,8 +126,7 @@
     <!-- Mobile header -->
     <HeaderMobile
       v-if="isActiveMobileMenu"
-      :enable-page-scroll="MixinEnableScrollOnBody"
-      @changed-page="isActiveMobileMenu = false"
+      @changed-page="onChangePage"
       @open-modal="$refs.modalContactMe.show()"
     />
     <!-- END Mobile header -->
@@ -216,6 +215,11 @@ export default {
     // Base methods
     goToTopPage() {
       window.scrollTo(0, 0)
+    },
+
+    onChangePage() {
+      this.isActiveMobileMenu = false
+      this.MixinEnableScrollOnBody()
     },
 
     setDefaultStateForHeader() {
@@ -505,7 +509,8 @@ export default {
         position: absolute;
         left: auto;
         right: 85px;
-        top: 2px;
+        top: 4px;
+        z-index: 3;
       }
     }
 

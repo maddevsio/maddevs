@@ -99,14 +99,6 @@ export default {
     FooterContacts,
   },
 
-  props: {
-    enablePageScroll: {
-      type: Function,
-      default: () => {},
-      required: true,
-    },
-  },
-
   data() {
     return {
       navigation,
