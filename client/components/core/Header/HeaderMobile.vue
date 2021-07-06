@@ -99,14 +99,6 @@ export default {
     FooterContacts,
   },
 
-  props: {
-    enablePageScroll: {
-      type: Function,
-      default: () => {},
-      required: true,
-    },
-  },
-
   data() {
     return {
       navigation,
@@ -124,12 +116,6 @@ export default {
   methods: {
     goToPage() {
       this.$emit('changed-page')
-      if (
-        document.body.classList.contains('scrollDisabled')
-        && document.documentElement.classList.contains('scrollDisabled')
-      ) {
-        this.enablePageScroll()
-      }
     },
 
     refreshImg() {

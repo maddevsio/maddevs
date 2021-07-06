@@ -7,10 +7,6 @@ exports[`Header component should render correctly 1`] = `
     data-testid="test-header-wrapper"
     id="header"
   >
-    <div
-      id="overlay"
-    />
-     
     <header
       class="header"
       data-testid="test-header"

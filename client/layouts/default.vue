@@ -56,4 +56,8 @@ export default {
 .default-layout {
   background-color: $bgcolor--black;
 }
+
+main {
+  margin-top: -62px !important;
+}
 </style>

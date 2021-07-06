@@ -1,10 +1,10 @@
 <template>
-  <section class="home">
+  <main class="home">
     <TheLastPostSection />
     <LatestPostsSection />
     <CustomerUniversitySection />
     <AllPostsSection />
-  </section>
+  </main>
 </template>
 
 <script>
