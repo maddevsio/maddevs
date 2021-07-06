@@ -8,7 +8,7 @@ async function create(req, res) {
   if (!isValid) return res.status(error.status).json(error)
 
   const ipInfo = await getIPInfo()
-  req.body.variables.ipInfo = ipInfo
+  req.ipInfo = ipInfo
 
   sendEmail(req)
   const response = await createLead(req)

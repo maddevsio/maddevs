@@ -1,12 +1,25 @@
 const sendpulse = require('sendpulse-api')
 const config = require('../config')
 
-function buildEmail({ body: { variables, templateId, attachment } }) {
+function buildEmail({
+  ipInfo: {
+    ip = 'Unknown',
+    country_name: country = 'Unknown',
+    city = 'Unknown',
+  },
+  body: {
+    variables, templateId, attachment,
+  },
+}) {
   const email = {
     subject: variables.subject,
     template: {
       id: templateId, // required
-      variables,
+      variables: {
+        ...variables,
+        ip,
+        geoIp: `Country: ${country}, City: ${city}`,
+      },
     },
     from: {
       name: variables.modalTitle,
