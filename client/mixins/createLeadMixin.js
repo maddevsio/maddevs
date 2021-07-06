@@ -15,6 +15,7 @@ const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing
       let userPlatform = 'Unknown'
       if (window && window.navigator && window.navigator.userAgent) {
         const { browser, os, platform } = bowser.parse(window.navigator.userAgent)
+
         userBrowser = `name: ${browser.name}, version: ${browser.version}`
         userOS = `name: ${os.name}, version: ${os.version}, versionName: ${os.versionName}`
         userPlatform = `type: ${platform.type}, vendor: ${platform.vendor}`
