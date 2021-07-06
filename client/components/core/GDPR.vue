@@ -44,7 +44,12 @@
           Privacy Policy
         </h2>
         <p class="gdpr__paragraph">
-          For your convenience, our Privacy Policy is available on our website in PDF format, you can also download it
+          For your convenience, our Privacy Policy is available on our website in
+          <a
+            class="gdpr__link"
+            download
+            href="/mad-devs-termsfeed-privacy-policy.pdf"
+          >PDF format</a>, you can also download it
           to your computer if needed. If you have any questions or concerns related to this document, please let us know
           via
           <a
@@ -116,7 +121,7 @@ export default {
 
   &__link {
     color: $remote-tech-staff-sub-title-grey;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   &__paragraph {
