@@ -4,6 +4,24 @@ import { render } from '@testing-library/vue'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
 import PositionForm from '@/components/Careers/shared/PositionForm'
 
+jest.mock('bowser', () => ({
+  parse: () => ({
+    browser: {
+      name: 'Chrome',
+      version: '91.0.4472.114',
+    },
+    os: {
+      name: 'macOS',
+      version: '10.15.7',
+      versionName: 'Catalina',
+    },
+    platform: {
+      type: 'desktop',
+      vendor: 'Apple',
+    },
+  }),
+}))
+
 const localVue = createLocalVue()
 
 localVue.use(Vuelidate)
@@ -171,6 +189,9 @@ describe('PositionForm component', () => {
             positionTitle: wrapper.vm.$props.position,
             subject: `Job Candidate Application for ${wrapper.vm.$props.position}`,
             modalTitle: 'Mad Devs Website Carrers Form',
+            userBrowser: 'name: Chrome, version: 91.0.4472.114',
+            userOS: 'name: macOS, version: 10.15.7, versionName: Catalina',
+            userPlatform: 'type: desktop, vendor: Apple',
           },
 
           attachment: {
