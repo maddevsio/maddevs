@@ -16,9 +16,9 @@ const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing
       if (window && window.navigator && window.navigator.userAgent) {
         const { browser, os, platform } = bowser.parse(window.navigator.userAgent)
 
-        userBrowser = `name: ${browser.name}, version: ${browser.version}`
-        userOS = `name: ${os.name}, version: ${os.version}, versionName: ${os.versionName}`
-        userPlatform = `type: ${platform.type}, vendor: ${platform.vendor}`
+        userBrowser = `Name: ${browser.name}, Version: ${browser.version}`
+        userOS = `Name: ${os.name}, Version: ${os.version}, VersionName: ${os.versionName}`
+        userPlatform = `Type: ${platform.type}, Vendor: ${platform.vendor}`
       }
 
       const baseTitle = 'Mad Devs Website Forms'
