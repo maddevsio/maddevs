@@ -10,11 +10,13 @@ export default ({ app }, inject) => { // eslint-disable-line
   // Replace data-src to src
   function replaceAttrs(target) {
     if (target.tagName === 'VIDEO') {
-      const videoSource = target.children[0]
-      if (typeof videoSource.tagName === 'string' && videoSource.tagName === 'SOURCE') {
-        videoSource.src = videoSource.dataset.src
+      if (target.children && target.children.length) {
+        const videoSource = target.children[0]
+        if (typeof videoSource.tagName === 'string' && videoSource.tagName === 'SOURCE') {
+          videoSource.src = videoSource.dataset.src
+        }
+        target.load()
       }
-      target.load()
     } else {
       target.src = target.dataset.src
       if (target.dataset.srcset) {
