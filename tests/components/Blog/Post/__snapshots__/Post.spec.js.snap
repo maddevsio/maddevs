@@ -31,9 +31,11 @@ exports[`Post component should render correctly with default props 1`] = `
       </div>
     </div>
      
-    <!---->
-     
-    <!---->
+    <div>
+      <!---->
+       
+      <!---->
+    </div>
      
     <!---->
      

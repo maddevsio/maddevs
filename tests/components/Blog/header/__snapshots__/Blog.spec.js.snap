@@ -4,6 +4,7 @@ exports[`header Blog is a Vue instance 1`] = `
 <div>
   <div
     class="blog-post__introduction-container"
+    id="introduction-container"
   >
      
     <h1
