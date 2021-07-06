@@ -52,7 +52,7 @@ export default {
       // from mixin
       this.submitLead(variables)
 
-      this.MixinDisableScrollOnBody()
+      this.disableScrollOnBody()
       this.isSuccess = true
     },
 
@@ -62,7 +62,7 @@ export default {
 
     handleModalClose() {
       this.isSuccess = false
-      this.MixinEnableScrollOnBody()
+      this.enableScrollOnBody()
     },
   },
 }

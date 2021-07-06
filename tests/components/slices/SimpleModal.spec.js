@@ -17,7 +17,7 @@ describe('SimpleModal component', () => {
     jest.useFakeTimers()
 
     const callObject = {
-      MixinEnableScrollOnBody: jest.fn(),
+      enableScrollOnBody: jest.fn(),
       isVisible: true,
       contentLoaded: true,
       isOverlay: true,
@@ -37,14 +37,14 @@ describe('SimpleModal component', () => {
     expect(setTimeout).toHaveBeenCalledTimes(3)
     expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 100)
     expect(callObject.$emit).toHaveBeenCalledTimes(1)
-    expect(callObject.MixinEnableScrollOnBody).toHaveBeenCalledTimes(1)
+    expect(callObject.enableScrollOnBody).toHaveBeenCalledTimes(1)
   })
 
   it('should correctly work show handler', async () => {
     jest.useFakeTimers()
 
     const callObject = {
-      MixinDisableScrollOnBody: jest.fn(),
+      disableScrollOnBody: jest.fn(),
       isVisible: false,
       contentLoaded: false,
       isOverlay: false,
@@ -63,7 +63,7 @@ describe('SimpleModal component', () => {
     expect(setTimeout).toHaveBeenCalledTimes(2)
     expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 100)
     expect(callObject.$emit).toHaveBeenCalledTimes(1)
-    expect(callObject.MixinDisableScrollOnBody).toHaveBeenCalledTimes(1)
+    expect(callObject.disableScrollOnBody).toHaveBeenCalledTimes(1)
     expect(callObject.isOverlay).toBeTruthy()
     expect(callObject.isVisible).toBeTruthy()
     expect(callObject.contentLoaded).toBeTruthy()

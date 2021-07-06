@@ -90,7 +90,7 @@ export default {
     close() {
       setTimeout(() => {
         this.isVisible = false
-        this.MixinEnableScrollOnBody()
+        this.enableScrollOnBody()
       }, 200)
       setTimeout(() => {
         this.contentLoaded = false
@@ -102,7 +102,7 @@ export default {
     },
 
     show() {
-      this.MixinDisableScrollOnBody()
+      this.disableScrollOnBody()
       this.isVisible = true
       setTimeout(() => {
         this.contentLoaded = true

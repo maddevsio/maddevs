@@ -193,10 +193,10 @@ export default {
 
     searchActive(opened) {
       if (opened) {
-        this.MixinDisableScrollOnBody()
+        this.disableScrollOnBody()
       } else {
         setTimeout(() => {
-          this.MixinEnableScrollOnBody()
+          this.enableScrollOnBody()
         }, 300)
       }
     },
@@ -219,7 +219,7 @@ export default {
 
     onChangePage() {
       this.isActiveMobileMenu = false
-      this.MixinEnableScrollOnBody()
+      this.enableScrollOnBody()
     },
 
     setDefaultStateForHeader() {
@@ -238,14 +238,14 @@ export default {
     toggleMobileMenu() {
       this.isActiveMobileMenu = !this.isActiveMobileMenu
       if (this.isActiveMobileMenu) {
-        this.MixinDisableScrollOnBody()
+        this.disableScrollOnBody()
         this.$nextTick(() => {
           this.mobileHeaderScrollbar = document.getElementById('mobile-header-scrollbar')
           this.mobileHeaderScrollbar.addEventListener('scroll', this.handleMobileMenuScroll)
           this.mobileHeaderScrollbar.addEventListener('touchmove', this.handleMobileMenuScroll)
         })
       } else {
-        this.MixinEnableScrollOnBody()
+        this.enableScrollOnBody()
         this.mobileHeaderScrollbar.removeEventListener('scroll', this.handleMobileMenuScroll)
         this.mobileHeaderScrollbar.removeEventListener('touchmove', this.handleMobileMenuScroll)
       }
