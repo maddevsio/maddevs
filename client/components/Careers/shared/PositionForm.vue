@@ -271,7 +271,7 @@ export default {
               userBrowser,
               userOS,
               userPlatform,
-              documentReferrer: document.referrer || 'Navigated to the page directly',
+              documentReferrer: document.referrer || 'Navigated to the site directly',
             },
 
             attachment: {
