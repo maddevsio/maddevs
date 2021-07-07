@@ -14,7 +14,7 @@ describe('CaseStudies', () => {
       },
     })
 
-    expect(screen.getByText('Convenient shuttle bus service')).not.toBeNull()
+    expect(screen.getByText('Sir John Monash Centre')).not.toBeNull()
     expect(container).toMatchSnapshot()
   })
 

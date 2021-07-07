@@ -1844,14 +1844,14 @@ exports[`index page renders correctly 1`] = `
           </nuxtlink-stub>
         </div>
         <div
-          class="cases-list_item cases-list_item--full cases-list_godee"
+          class="cases-list_item cases-list_item--full cases-list_sjmc"
           data-testid="test-case-card"
         >
           <nuxtlink-stub
             class="cases-list_item-link"
             disabled=""
             tag="a"
-            to="/case-studies/godee/"
+            to="/case-studies/sir-john-monash-centre/"
           >
             <video
               class="cases-list_item-video media_lazy"
@@ -1872,28 +1872,28 @@ exports[`index page renders correctly 1`] = `
               class="cases-list_item-info"
             >
               <img
-                alt="Godee logo"
-                height="23"
+                alt="SJMC logo"
+                height="60"
                 src="img.jpg"
-                width="105"
+                width="133"
               />
                
               <span>
-                Transportation
+                BYOD
               </span>
                
               <h3>
                 
-        Convenient shuttle bus service
+        Sir John Monash Centre
       
               </h3>
                
               <p>
-                Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.
+                Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.
               </p>
                
               <nuxtlink-stub
-                to="/case-studies/godee/"
+                to="/case-studies/sir-john-monash-centre/"
               >
                 
         Explore
