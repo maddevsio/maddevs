@@ -133,7 +133,7 @@ module.exports = {
   },
   gtm: {
     enabled: true,
-    id: 'GTM-NNKVRF3',
+    id: process.env.NODE_GOOGLE_TAG_MANAGER_ID,
   },
   env: {
     environment: process.env.NODE_ENV,
