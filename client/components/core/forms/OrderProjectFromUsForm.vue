@@ -24,11 +24,19 @@ export default {
 
   mixins: [createLeadMixin(304632, 'Order Project From Us')],
 
+  props: {
+    formLocation: {
+      type: String,
+      default: 'Unknown',
+    },
+  },
+
   methods: {
     handleSubmit(formData) {
       const variables = {
         ...exceptKeys(formData, 'description'),
         projectDescription: formData.description,
+        formLocation: this.formLocation,
       }
 
       // from mixin

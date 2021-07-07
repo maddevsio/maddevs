@@ -52,6 +52,7 @@
     <ModalOrderProjectFromUs
       id="order-project-from-us-modal"
       ref="modalOrderProjectFromUs"
+      :location="'\'Submit your project\' button, about page'"
     />
   </section>
 </template>

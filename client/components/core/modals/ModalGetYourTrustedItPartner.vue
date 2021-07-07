@@ -4,7 +4,7 @@
     :id="id"
     ref="modalGetYourTrustedItPartner"
   >
-    <GetYourTrustedItPartnerForm />
+    <GetYourTrustedItPartnerForm :form-location="location" />
   </Modal>
 </template>
 
@@ -21,6 +21,11 @@ export default {
 
   props: {
     id: {
+      type: String,
+      default: '',
+    },
+
+    location: {
       type: String,
       default: '',
     },

@@ -31,6 +31,13 @@ export default {
 
   mixins: [createLeadMixin(304628, 'Infrastructure audit')],
 
+  props: {
+    formLocation: {
+      type: String,
+      default: 'Unknown',
+    },
+  },
+
   data() {
     return {
       selectedProjectHost: null,
@@ -77,6 +84,7 @@ export default {
       const variables = {
         ...formData,
         selectedProjectHost: this.selectedProjectHost ? this.selectedProjectHost.label || '' : '',
+        formLocation: this.formLocation,
       }
 
       // from mixin

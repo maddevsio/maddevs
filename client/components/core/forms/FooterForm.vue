@@ -46,6 +46,7 @@ export default {
     handleSubmit(formData) {
       const variables = {
         ...formData,
+        formLocation: 'Footer component',
       }
 
       // from mixin

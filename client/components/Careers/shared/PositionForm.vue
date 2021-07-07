@@ -272,6 +272,7 @@ export default {
               userOS,
               userPlatform,
               documentReferrer: document.referrer || 'Navigated to the site directly',
+              formLocation: '\'I want to work for Mad Devs\' button, vacancy page',
             },
 
             attachment: {

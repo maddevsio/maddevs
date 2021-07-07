@@ -33,6 +33,13 @@ export default {
 
   mixins: [createLeadMixin(304629, 'Get your trusted IT partner')],
 
+  props: {
+    formLocation: {
+      type: String,
+      default: 'Unknown',
+    },
+  },
+
   validations: {
     needAssistanceWith: {
       maxLength: maxLength(256),
@@ -52,6 +59,7 @@ export default {
       const variables = {
         ...formData,
         needAssistanceWith: this.needAssistanceWith || '',
+        formLocation: this.formLocation,
       }
 
       // from mixin

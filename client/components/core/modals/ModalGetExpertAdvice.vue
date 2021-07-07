@@ -24,6 +24,11 @@ export default {
       type: String,
       default: '',
     },
+
+    location: {
+      type: String,
+      default: '',
+    },
   },
 
   methods: {

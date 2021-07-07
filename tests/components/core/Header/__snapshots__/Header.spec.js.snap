@@ -210,7 +210,9 @@ exports[`Header component should render correctly 1`] = `
       id="contact-me-modal"
       modaltitle=""
     >
-      <contactmeform-stub />
+      <contactmeform-stub
+        formlocation="'Contact me' button, header component"
+      />
     </modal-stub>
   </div>
 </div>

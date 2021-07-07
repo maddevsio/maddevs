@@ -4,7 +4,7 @@
     :id="id"
     ref="modalIndividuals"
   >
-    <IndividualsForm />
+    <IndividualsForm :form-location="location" />
   </Modal>
 </template>
 
@@ -21,6 +21,11 @@ export default {
 
   props: {
     id: {
+      type: String,
+      default: '',
+    },
+
+    location: {
       type: String,
       default: '',
     },
