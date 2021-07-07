@@ -1,7 +1,7 @@
 <template>
-  <main class="case_root case--godee">
+  <div class="case_root case--godee">
     <Main />
-  </main>
+  </div>
 </template>
 
 <script>
