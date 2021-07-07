@@ -57,7 +57,7 @@
               {{ formattedDate(post) }}
             </div>
             <NuxtLink
-              :to="`/blog/author/${getAuthor(post, 'uid')}`"
+              :to="`/blog/author/${getAuthor(post, 'uid')}/`"
               class="modal-search_result-item_content-author"
             >
               <img
@@ -207,7 +207,7 @@ export default {
       if (this.searchPosts && this.searchPosts.length) {
         if (event.keyCode === 13) {
           if (this.value && this.value.length) {
-            this.$router.push({ path: '/blog/search-result', query: { searchBy: this.value } })
+            this.$router.push({ path: '/blog/search-result/', query: { searchBy: this.value } })
           } else {
             this.$router.push('/blog/')
           }
@@ -264,6 +264,11 @@ export default {
       background-color: #000;
       padding-top: 15px;
 
+      @media only screen and (max-width: 440px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
       label {
         width: 100%;
         display: flex;
@@ -274,6 +279,11 @@ export default {
         width: 30px;
         height: 35px;
         margin-right: 22px;
+
+        @media only screen and (max-width: 440px) {
+          width: 25px;
+          height: 30px;
+        }
       }
 
       input {
@@ -284,6 +294,10 @@ export default {
         line-height: 130%;
         letter-spacing: -0.04em;
         @include font('Poppins', 33px, 600);
+
+        @media only screen and (max-width: 440px) {
+          @include font('Poppins', 26px, 600);
+        }
       }
 
       &-close {
@@ -296,6 +310,11 @@ export default {
         img {
           width: 24px;
           height: 24px;
+
+          @media only screen and (max-width: 440px) {
+            width: 19px;
+            height: 19px;
+          }
         }
       }
     }

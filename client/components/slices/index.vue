@@ -7,6 +7,7 @@
       data-testid="test-slice-post"
       :class="slice.slice_type === 'quote' ? 'quote' : ''"
     >
+      <!-- Common slices start -->
       <!-- Text slice template -->
       <template v-if="slice.slice_type === 'text'">
         <!-- Here :slice="slice" passes the data to the component -->
@@ -53,13 +54,22 @@
       <template v-else-if="slice.slice_type === 'author'">
         <AuthorSlice :slice="slice" />
       </template>
+      <!-- Common slices end -->
+
+      <!-- Careers slices start -->
+      <template v-else-if="slice.slice_type === 'vacancy_text'">
+        <VacancyText
+          :slice="slice"
+          :html-serializer="serializer"
+        />
+      </template>
+      <!-- Careers slices end -->
     </section>
   </section>
 </template>
 
 <script>
-import linkResolver from '@/plugins/link-resolver'
-import mainMixins from '@/mixins/mainMixins'
+// Common slices
 import CodeBlockSlice from '@/components/slices/CodeBlockSlice/index.vue'
 import SectionIdSlice from '@/components/slices/SectionIdSlice'
 import QuoteSlice from '@/components/slices/QuoteSlice.vue'
@@ -73,6 +83,13 @@ import DoubleColumnBorderedSlice from '@/components/slices/DoubleColumnBorderedS
 import GithubGistSlice from '@/components/slices/GithubGistSlice'
 import GallerySlice from '@/components/slices/GallerySlice'
 import AuthorSlice from '@/components/slices/AuthorSlice'
+
+// Careers slices
+import VacancyText from '@/components/slices/Careers/VacancyText'
+
+import linkResolver from '@/plugins/link-resolver'
+import mainMixins from '@/mixins/mainMixins'
+import convertTagsToText from '@/helpers/convertTagsToText'
 
 export default {
   name: 'SlicesBlock',
@@ -91,6 +108,7 @@ export default {
     GallerySlice,
     SectionIdSlice,
     AuthorSlice,
+    VacancyText,
   },
 
   mixins: [mainMixins],
@@ -117,9 +135,21 @@ export default {
 
   methods: {
     htmlSerializer(type, element, content, children) {
-      const text = children.join('').replace(/`(.*?)`/g, '<span class="inline-code">$1</span>')
       const { Elements } = this.$prismic.dom.RichText
       const { Link } = this.$prismic.dom
+      let text = children.join('')
+
+      if (type === Elements.preformatted) {
+        // the second parameter of function excludes tags
+        text = convertTagsToText(text, ['br'])
+      } else {
+        text = text.replace(/`(.*?)`/g, (_, inlineCode) => {
+          // the second parameter of function excludes tags
+          const formattedCode = convertTagsToText(inlineCode, ['strong', 'em', 'a'])
+          return `<code class="inline-code">${formattedCode}</code>`
+        })
+      }
+
       switch (type) {
         case Elements.heading1: return this.createAnchorTag('h1', text)
         case Elements.heading2: return this.createAnchorTag('h2', text)

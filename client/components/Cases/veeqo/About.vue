@@ -11,9 +11,9 @@
     </TextParagraph>
     <StatisticsContainer class="m-96_bottom media-m-48_bottom">
       <StatisticsItem
-        v-for="inventoryAndShippingItem in inventoryAndShipping"
+        v-for="(inventoryAndShippingItem, i) in inventoryAndShipping"
         v-bind="inventoryAndShippingItem"
-        :key="inventoryAndShippingItem.title"
+        :key="`${inventoryAndShippingItem.title}_${i}`"
       />
     </StatisticsContainer>
   </section>

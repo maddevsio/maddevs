@@ -3,32 +3,27 @@
     id="header"
     class="header-wrapper"
     data-testid="test-header-wrapper"
-    :class="{ 'is-transparent-bg': isTransparentBG && isCasePage }"
   >
-    <div
-      id="overlay"
-      ref="overlay"
-    />
     <header
       ref="header"
       data-testid="test-header"
-      :class="{ transparent: isCasePage && !isActiveMobileMenu }"
+      :class="{
+        'is-transparent-bg': !isActiveMobileMenu && isTransparentBG && isCasePage,
+      }"
       class="header"
     >
       <div
-        ref="headerContainer"
+        id="header-container"
         class="container"
       >
         <div class="row">
           <div class="header__left-nav_bar col">
             <NuxtLink
-              :to="`/`"
+              to="/"
               class="header__logo-icon"
             >
               <HeaderLogo
                 :is-show-text="logoTextIsActive"
-                :is-case-page="isCasePage"
-                :is-active-mobile-menu="isActiveMobileMenu"
                 class="header__header-logo"
               />
             </NuxtLink>
@@ -129,8 +124,7 @@
     <!-- Mobile header -->
     <HeaderMobile
       v-if="isActiveMobileMenu"
-      :enable-page-scroll="enablePageScroll"
-      @changed-page="isActiveMobileMenu = false"
+      @changed-page="onChangePage"
       @open-modal="$refs.modalContactMe.show()"
     />
     <!-- END Mobile header -->
@@ -150,6 +144,7 @@
 </template>
 
 <script>
+import scrollOnBody from '@/mixins/scrollOnBody'
 import UIModalTriggerButton from '@/components/shared/UIModalTriggerButton'
 import HeaderMobile from '@/components/core/Header/HeaderMobile'
 import HeaderLogo from '@/components/core/Header/HeaderLogo'
@@ -166,6 +161,8 @@ export default {
     ModalSearch,
   },
 
+  mixins: [scrollOnBody],
+
   data() {
     return {
       navigation,
@@ -179,7 +176,8 @@ export default {
 
   computed: {
     logoTextIsActive() {
-      return this.showLogoText && this.$nuxt.$route.name !== 'delivery-models'
+      if (this.$nuxt.$route.name === 'delivery-models') return false
+      return this.showLogoText
     },
 
     isBlogPage() {
@@ -212,34 +210,19 @@ export default {
     this.setStylesForHeader()
   },
 
+  beforeDestroy() {
+    this.removeEventListeners()
+  },
+
   methods: {
     // Base methods
     goToTopPage() {
       window.scrollTo(0, 0)
     },
 
-    enablePageScroll() {
-      const scrollY = document.body.style.top || '0'
-      document.body.classList.remove('scrollDisabled')
-      document.documentElement.classList.remove('scrollDisabled')
-      window.scrollTo(0, parseInt(scrollY, 10) * -1)
-    },
-
-    disablePageScroll() {
-      const { scrollY } = window
-      document.body.classList.add('scrollDisabled')
-      document.documentElement.classList.add('scrollDisabled')
-      document.body.style.top = `-${scrollY}px`
-    },
-
-    enableScrollOnBody() {
-      document.body.style.top = 'auto'
-      document.body.style.overflow = 'auto'
-    },
-
-    disableScrollOnBody() {
-      document.body.style.top = `-${window.scrollY}px`
-      document.body.style.overflow = 'hidden'
+    onChangePage() {
+      this.isActiveMobileMenu = false
+      this.enableScrollOnBody()
     },
 
     setDefaultStateForHeader() {
@@ -258,14 +241,14 @@ export default {
     toggleMobileMenu() {
       this.isActiveMobileMenu = !this.isActiveMobileMenu
       if (this.isActiveMobileMenu) {
-        this.disablePageScroll()
+        this.disableScrollOnBody()
         this.$nextTick(() => {
           this.mobileHeaderScrollbar = document.getElementById('mobile-header-scrollbar')
           this.mobileHeaderScrollbar.addEventListener('scroll', this.handleMobileMenuScroll)
           this.mobileHeaderScrollbar.addEventListener('touchmove', this.handleMobileMenuScroll)
         })
       } else {
-        this.enablePageScroll()
+        this.enableScrollOnBody()
         this.mobileHeaderScrollbar.removeEventListener('scroll', this.handleMobileMenuScroll)
         this.mobileHeaderScrollbar.removeEventListener('touchmove', this.handleMobileMenuScroll)
       }
@@ -274,22 +257,33 @@ export default {
     setStylesForHeader() {
       const scrollTop = window.scrollY
       const area = document.querySelector('#case-header')
+      const headerHeight = this.$refs.header.clientHeight
+      const earlyStartBGChange = 30 // For an earlier start change background header
+
       if (!area) return
 
-      const areaHeight = (area.offsetTop + area.offsetHeight) - (this.$refs.overlay && this.$refs.overlay.offsetHeight)
+      const areaHeight = (area.offsetTop + area.offsetHeight) - headerHeight
       // const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
-      const isBeforeBottomPointSection = scrollTop <= areaHeight // Before Bottom point of the section
+      const isBeforeBottomPointSection = scrollTop <= areaHeight - earlyStartBGChange // Before Bottom point of the section
 
       this.isTransparentBG = isBeforeBottomPointSection
+      this.showLogoText = isBeforeBottomPointSection
     },
 
     scrollHandler() {
-      if (this.$nuxt.$route.path.includes('/case-studies/')) this.setStylesForHeader()
-      this.changeLogoState(window.pageYOffset)
+      if (this.isCasePage) {
+        this.setStylesForHeader()
+      } else {
+        this.changeLogoState(window.pageYOffset)
+      }
     },
 
     addEventListeners() {
       window.addEventListener('scroll', this.scrollHandler)
+    },
+
+    removeEventListeners() {
+      window.removeEventListener('scroll', this.scrollHandler)
     },
   },
 }
@@ -302,18 +296,22 @@ export default {
   width: 100%;
   height: 40px;
   padding: 11px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
   z-index: 3;
   background-color: $bgcolor--black;
 
+  &-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
   &__burger {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 25px;
     padding: 11px 14px;
+    z-index: 3;
 
     &--close {
       width: 22px;
@@ -321,6 +319,10 @@ export default {
       margin-top: 3px;
       margin-right: 3px;
     }
+  }
+
+  &__logo-icon {
+    z-index: 3;
   }
 
   &__search-btn {
@@ -454,55 +456,10 @@ export default {
     width: 18px;
     height: 14px;
   }
-
-  &.transparent {
-    background: transparent;
-  }
-}
-
-// ------------ Overlay styles ------------- //
-#overlay {
-  width: 100%;
-  height: 40px;
-  padding: 11px 0;
-  position: fixed;
-  z-index: 2;
-
-  &::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: $bgcolor--black;
-    opacity: 1;
-  }
-
-  @media screen and (max-width: 1120px) {
-    height: 48px;
-    padding: 0;
-  }
-}
-
-/deep/ #header-logo-text {
-  opacity: 0;
-  transform: translateY(-100px) translateX(5%) scale(0.9);
-  transition: all 0.1s ease;
 }
 
 .is-transparent-bg {
-  #overlay::before {
-    transition: all 0.3s ease;
-    height: 175px;
-    background: $bgcolor--header-gradient;
-    opacity: 0.3;
-  }
-
-  /deep/ #header-logo-text {
-    opacity: 1;
-    transform: none;
-  }
+  background-color: transparent;
 }
 // ------------ END Overlay styles ------------- //
 .mobile-menu_is-open {
@@ -558,7 +515,8 @@ export default {
         position: absolute;
         left: auto;
         right: 85px;
-        top: 2px;
+        top: 4px;
+        z-index: 3;
       }
     }
 

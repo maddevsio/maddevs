@@ -58,8 +58,10 @@
 
 <script>
 import { isMobile } from 'mobile-device-detect'
+import mainMixins from '@/mixins/mainMixins'
 
 export default {
+  mixins: [mainMixins],
   props: {
     titleTag: {
       type: String,
@@ -121,17 +123,7 @@ export default {
 
   methods: {
     play() {
-      // NOTE: https://developers.google.com/web/updates/2017/06/play-request-was-interrupted
-      const playPromise = this.$refs.video.play()
-      if (playPromise !== undefined) {
-        playPromise.then(() => {
-          // Automatic playback started!
-          // Show playing UI.
-        }).catch(() => {
-          // Auto-play was prevented
-          // Show paused UI.
-        })
-      }
+      this.MixinPlayVideo(this.$refs.video)
     },
 
     pause() {

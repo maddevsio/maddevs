@@ -1,5 +1,6 @@
 <template>
-  <div
+  <main
+    ref="blogPost"
     :class="wrapperClass"
     class="blog-post"
   >
@@ -7,8 +8,9 @@
     <div class="blog-post__inner-container">
       <div
         v-if="dataLoaded"
-        class="blog-post__share"
-        :class="{ 'blog-post__share--vertical': !tableOfContentsSlice }"
+        ref="navbar"
+        class="blog-post__left-navbar"
+        :class="className"
       >
         <TableOfContents
           v-if="tableOfContentsSlice"
@@ -19,19 +21,19 @@
             :url="openGraphUrl"
             :title="metaTitle"
             network="facebook"
-            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
+            class="blog-post__share-link icon-wrapper__icon icon-wrapper__facebook-icon"
           />
           <ShareNetwork
             :url="openGraphUrl"
             :title="metaTitle"
             network="twitter"
-            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
+            class="blog-post__share-link icon-wrapper__icon icon-wrapper__twitter-icon"
           />
           <ShareNetwork
             :url="openGraphUrl"
             :title="metaTitle"
             network="linkedin"
-            class="blog-post__share-link blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
+            class="blog-post__share-link icon-wrapper__icon icon-wrapper__linkedin-icon"
           />
         </div>
       </div>
@@ -62,30 +64,34 @@
       </div>
     </div>
     <div
-      v-if="showRecommended"
-      class="blog-post__recommended-posts"
+      ref="postFooter"
     >
-      <div class="blog-post__recommended-posts-list container">
-        <section
-          v-for="post in recommendedPosts"
-          :key="post.id"
-          :post="post"
-          class="blog-post__recommended-post"
-          data-testid="test-recommended-post"
-        >
-          <PostCard
+      <div
+        v-if="showRecommended"
+        class="blog-post__recommended-posts"
+      >
+        <div class="blog-post__recommended-posts-list container">
+          <section
+            v-for="post in recommendedPosts"
+            :key="post.id"
             :post="post"
-            :author="findAuthor(post.data.post_author.id, allAuthors)"
-          />
-        </section>
+            class="blog-post__recommended-post"
+            data-testid="test-recommended-post"
+          >
+            <PostCard
+              :post="post"
+              :author="findAuthor(post.data.post_author.id, allAuthors)"
+            />
+          </section>
+        </div>
       </div>
+      <CustomerUniversityNavigation
+        v-if="clusterPosts && cluster"
+        :id="id"
+        :cluster="cluster"
+        :cluster-posts="clusterPosts"
+      />
     </div>
-    <CustomerUniversityNavigation
-      v-if="clusterPosts && cluster"
-      :id="id"
-      :cluster="cluster"
-      :cluster-posts="clusterPosts"
-    />
     <button
       v-if="buttonIsActive"
       class="blog-post__back-to-list"
@@ -98,7 +104,7 @@
       ref="progressBar"
       class="progress-bar"
     />
-  </div>
+  </main>
 </template>
 
 <script>
@@ -204,6 +210,10 @@ export default {
     return {
       buttonIsActive: false,
       dataLoaded: false,
+      introductionContainer: null,
+      headerContainer: null,
+      isFixed: false,
+      isBottom: false,
     }
   },
 
@@ -225,12 +235,26 @@ export default {
     showRecommended() {
       return this.type !== 'customer_university' && this.recommendedPosts && this.recommendedPosts.length !== 0
     },
+
+    className() {
+      const tableOfContentsSlice = this.slices && this.slices.find(slice => slice.slice_type === 'table_of_contents')
+
+      if (!tableOfContentsSlice) return 'blog-post__left-navbar--is-vertical'
+
+      if (this.isFixed && !this.isBottom) return 'blog-post__left-navbar--is-fixed'
+
+      if (!this.isFixed && !this.isBottom) return 'blog-post__left-navbar--is-top'
+
+      if (this.isBottom) return 'blog-post__left-navbar--is-bottom'
+
+      return ''
+    },
   },
 
   watch: {
     dataLoaded(loaded) {
       if (loaded) {
-        this.$nextTick(() => this.shareButtonsScroll())
+        this.$nextTick(() => this.setStylesForNavbar())
       }
     },
   },
@@ -240,8 +264,7 @@ export default {
   },
 
   mounted() {
-    window.addEventListener('scroll', this.handleScroll)
-    window.addEventListener('scroll', this.shareButtonsScroll)
+    window.addEventListener('scroll', this.scrollHandler)
     document.querySelectorAll('.copy-link')
       .forEach(link => link.addEventListener('click', this.copyAnchorLink))
     this.dataLoaded = true
@@ -253,8 +276,7 @@ export default {
   },
 
   destroyed() {
-    window.removeEventListener('scroll', this.handleScroll)
-    window.removeEventListener('scroll', this.shareButtonsScroll)
+    window.removeEventListener('scroll', this.scrollHandler)
   },
 
   methods: {
@@ -280,45 +302,48 @@ export default {
       })
     },
 
-    handleScroll(event) {
+    scrollHandler(event) {
       this.buttonIsActive = Boolean(event.target.scrollingElement.scrollTop !== 0)
       this.calcProgress()
+      this.setStylesForNavbar()
     },
 
-    shareButtonsScroll() {
-      const shareButtons = document.querySelector('.blog-post__share')
-      const shareButtonsContainer = document.querySelector('.blog-post__introduction-container')
+    setStylesForNavbar() {
+      this.introductionContainer = document.getElementById('introduction-container')
+      this.headerContainer = document.getElementById('header-container')
 
-      if (!shareButtons) return null
-      if (!shareButtonsContainer) return null
+      if (this.tableOfContentsSlice) this.handleNavbar()
+    },
 
-      if (window.pageYOffset < (!this.tableOfContentsSlice ? 650 : shareButtonsContainer.clientHeight + 100)) {
-        if (!this.tableOfContentsSlice) {
-          shareButtons.style.cssText = 'position: absolute; top: 580px; left: -183px;'
-        } else {
-          shareButtons.style.cssText = `position: absolute; top: ${shareButtonsContainer.clientHeight + 30}px; left: -210px;`
-        }
-      } else if (
-        window.pageYOffset
-        > document.querySelector('.blog-post').offsetHeight
-          - (document.querySelector('.blog-post__recommended-posts')
-            ? document.querySelector('.blog-post__recommended-posts').offsetHeight
-            : 0)
-          - (document.querySelector('.blog-post > .cluster-navigation')
-            ? document.querySelector('.blog-post > .cluster-navigation').offsetHeight - 24
-            : 0)
-          - document.querySelector('.blog-post__share').offsetHeight
-          - 190
-      ) {
-        if (!this.tableOfContentsSlice) {
-          shareButtons.style.cssText = 'position: absolute; bottom: 0; top: auto; left: -183px;'
-        } else {
-          shareButtons.style.cssText = 'position: absolute; bottom: 0; top: auto; left: -210px;'
-        }
-      } else {
-        shareButtons.style.cssText = 'top: 100px'
-      }
-      return true
+    handleNavbar() {
+      const scrollStartPoint = this.getScrollStartPoint()
+      const scrollEndPoint = this.getScrollEndPoint()
+
+      this.setStateForCssVar()
+
+      this.isFixed = window.pageYOffset > scrollStartPoint
+      this.isBottom = window.pageYOffset > scrollEndPoint
+    },
+
+    setStateForCssVar() {
+      const indentFromIntroductionContainer = 30
+      const root = document.documentElement
+      const top = this.introductionContainer.offsetHeight + indentFromIntroductionContainer
+
+      root.style.setProperty('--top', `${top}px`)
+    },
+
+    getScrollStartPoint() {
+      return this.introductionContainer.offsetHeight + this.headerContainer.offsetHeight
+    },
+
+    getScrollEndPoint() {
+      const { offsetHeight: blogPostHeight } = this.$refs.blogPost
+      const { offsetHeight: navbarHeight } = this.$refs.navbar
+      const { offsetHeight: postFooterHeight } = this.$refs.postFooter
+      const postFooterPadding = 190 // sum of padding from top and bottom
+
+      return blogPostHeight - (postFooterHeight + navbarHeight + postFooterPadding)
     },
 
     calcProgress() {
@@ -334,6 +359,10 @@ export default {
 <style lang="scss" scoped>
 @import '../../../assets/styles/vars';
 @import '../../../assets/styles/socialNetworkIcons';
+
+:root {
+  --top: 0px;
+}
 
 .blog-post {
   margin: auto;
@@ -361,21 +390,35 @@ export default {
     margin: 25px auto 0;
   }
 
-  &__share {
+  &__left-navbar {
     display: flex;
-    position: fixed;
-    left: calc(50vw - 619px);
-    top: 750px;
     flex-direction: column;
     margin-top: 0;
 
-    &-links {
-      display: flex;
-      margin-top: 20px;
+    &--is-top,
+    &--is-bottom {
+      position: absolute;
+      left: -210px;
     }
 
-    &--vertical {
-      left: calc(50vw - 592px);
+    &--is-top {
+      top: var(--top);
+    }
+
+    &--is-bottom {
+      bottom: 0;
+    }
+
+    &--is-fixed {
+      position: fixed;
+      top: 100px;
+      margin-left: -210px;
+    }
+
+    &--is-vertical {
+      position: absolute;
+      top: 580px;
+      left: -183px;
 
       .blog-post__share-links {
         margin-top: 0;
@@ -387,6 +430,15 @@ export default {
         }
       }
     }
+
+    @media only screen and (max-width: 1285px) {
+      display: none;
+    }
+  }
+
+  &__share-links {
+    display: flex;
+    margin-top: 20px;
   }
 
   &__share-link {
@@ -512,14 +564,6 @@ export default {
   z-index: 3;
   @media only screen and (max-width: 768px) {
     height: 1px;
-  }
-}
-
-@media only screen and (max-width: 1285px) {
-  .blog-post {
-    &__share {
-      display: none;
-    }
   }
 }
 
