@@ -43,6 +43,8 @@
 </template>
 
 <script>
+import scrollOnBody from '@/mixins/scrollOnBody'
+
 export default {
   name: 'Modal',
   directives: {
@@ -58,6 +60,8 @@ export default {
       },
     },
   },
+
+  mixins: [scrollOnBody],
 
   props: {
     appendToBody: {
@@ -113,16 +117,6 @@ export default {
       if (e.keyCode === 27) {
         this.close()
       }
-    },
-
-    enableScrollOnBody() {
-      document.body.style.top = 'auto'
-      document.body.style.overflow = 'auto'
-    },
-
-    disableScrollOnBody() {
-      document.body.style.top = `-${window.scrollY}px`
-      document.body.style.overflow = 'hidden'
     },
   },
 }

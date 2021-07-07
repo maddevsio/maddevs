@@ -6,7 +6,9 @@ exports[`Default layout renders correctly 1`] = `
 >
   <header-stub />
    
-  <nuxt-stub />
+  <nuxt-stub
+    class="main-section"
+  />
    
   <footer-stub />
 </div>

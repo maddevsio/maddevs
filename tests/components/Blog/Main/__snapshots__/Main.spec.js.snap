@@ -2,7 +2,7 @@
 
 exports[`Main component should render correctly 1`] = `
 <div>
-  <section
+  <main
     class="home"
   >
     <div
@@ -1493,6 +1493,6 @@ exports[`Main component should render correctly 1`] = `
         <!---->
       </div>
     </div>
-  </section>
+  </main>
 </div>
 `;

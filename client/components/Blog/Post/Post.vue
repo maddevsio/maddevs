@@ -1,5 +1,5 @@
 <template>
-  <div
+  <main
     ref="blogPost"
     :class="wrapperClass"
     class="blog-post"
@@ -104,7 +104,7 @@
       ref="progressBar"
       class="progress-bar"
     />
-  </div>
+  </main>
 </template>
 
 <script>
@@ -412,7 +412,7 @@ export default {
     &--is-fixed {
       position: fixed;
       top: 100px;
-      left: calc(50vw - 619px);
+      margin-left: -210px;
     }
 
     &--is-vertical {

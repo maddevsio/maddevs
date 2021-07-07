@@ -1,6 +1,6 @@
 import Modal from '@/components/slices/SimpleModal'
 import { render } from '@testing-library/vue'
-import { mount, shallowMount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 
 describe('SimpleModal component', () => {
   it('should render correctly', () => {
@@ -74,7 +74,7 @@ describe('SimpleModal component', () => {
     const event = {
       keyCode: 27,
     }
-    const wrapper = mount(Modal, {
+    const wrapper = shallowMount(Modal, {
       props: {
         components: [],
       },
@@ -91,32 +91,5 @@ describe('SimpleModal component', () => {
     }, event)
 
     expect(close).toHaveBeenCalledTimes(1)
-  })
-
-  it('should correctly work enableScrollOnBody handler', async () => {
-    const wrapper = mount(Modal, {
-      props: {
-        components: [],
-      },
-    })
-
-    expect(document.body.style.top).toBe('')
-    expect(document.body.style.overflow).toBe('')
-    await wrapper.vm.$options.methods.enableScrollOnBody()
-    expect(document.body.style.overflow).toBe('auto')
-  })
-
-  it('should correctly work disableScrollOnBody handler', async () => {
-    const wrapper = mount(Modal, {
-      props: {
-        components: [],
-      },
-    })
-
-    expect(document.body.style.top).toBe('')
-    expect(document.body.style.overflow).toBe('auto')
-    await wrapper.vm.$options.methods.disableScrollOnBody()
-    expect(document.body.style.overflow).toBe('hidden')
-    expect(document.body.style.top).toBe('-0px')
   })
 })
