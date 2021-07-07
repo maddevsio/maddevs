@@ -29,7 +29,7 @@ async function index(req, res) {
   const huntflowRes = await sendApplication(huntflowReq)
 
   const ipInfo = await getIPInfo()
-  emailReq.ipInfo = ipInfo
+  emailReq.body.ipInfo = ipInfo
 
   const emailRes = await sendEmail(emailReq, data => res.json({ email: data, huntflow: huntflowRes }))
 

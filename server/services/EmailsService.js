@@ -2,12 +2,12 @@ const sendpulse = require('sendpulse-api')
 const config = require('../config')
 
 function buildEmail({
-  ipInfo: {
-    ip = 'Unknown',
-    country_name: country = 'Unknown',
-    city = 'Unknown',
-  },
   body: {
+    ipInfo: {
+      ip = 'Unknown',
+      country_name: country = 'Unknown',
+      city = 'Unknown',
+    },
     variables, templateId, attachment,
   },
 }) {

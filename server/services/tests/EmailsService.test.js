@@ -7,12 +7,12 @@ jest.mock('sendpulse-api', () => ({
 
 describe('emailsService', () => {
   const req = {
-    ipInfo: {
-      ip: 'ip',
-      country_name: 'country',
-      city: 'city',
-    },
     body: {
+      ipInfo: {
+        ip: 'ip',
+        country_name: 'country',
+        city: 'city',
+      },
       variables: {
         modalTitle: 'title',
         emailTo: 'user',
@@ -33,8 +33,8 @@ describe('emailsService', () => {
         id: req.body.templateId, // required
         variables: {
           ...req.body.variables,
-          ip: req.ipInfo.ip,
-          geoIp: `Country: ${req.ipInfo.country_name}, City: ${req.ipInfo.city}`,
+          ip: req.body.ipInfo.ip,
+          geoIp: `Country: ${req.body.ipInfo.country_name}, City: ${req.body.ipInfo.city}`,
         },
       },
       from: {
@@ -63,8 +63,8 @@ describe('emailsService', () => {
         id: req.body.templateId, // required
         variables: {
           ...req.body.variables,
-          ip: req.ipInfo.ip,
-          geoIp: `Country: ${req.ipInfo.country_name}, City: ${req.ipInfo.city}`,
+          ip: req.body.ipInfo.ip,
+          geoIp: `Country: ${req.body.ipInfo.country_name}, City: ${req.body.ipInfo.city}`,
         },
       },
       from: {
