@@ -35,6 +35,7 @@
     <ModalInfrastructureAudit
       id="infrastructure-audit-modal"
       ref="modalInfrastructureAudit"
+      :location="'\'Get an infrastructure audit\' button, services page'"
     />
   </section>
 </template>

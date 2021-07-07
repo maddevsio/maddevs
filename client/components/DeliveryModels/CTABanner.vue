@@ -16,6 +16,7 @@
     <ModalContactMe
       id="contact-me-dm"
       ref="modalContactMe"
+      :location="'\'Estimate your project\' button, delivery models page'"
     />
   </div>
 </template>

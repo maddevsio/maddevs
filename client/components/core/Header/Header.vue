@@ -139,6 +139,7 @@
     <ModalContactMe
       id="contact-me-modal"
       ref="modalContactMe"
+      :location="'\'Contact me\' button, header component'"
     />
   </div>
 </template>

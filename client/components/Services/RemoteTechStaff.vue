@@ -30,11 +30,13 @@
     <ModalTeams
       id="teams-modal"
       ref="modalTeams"
+      :location="'\'Get a team of ultra-fast coders\' button, services page'"
     />
     <!-- this id should be unique, because it used for google analytics -->
     <ModalIndividuals
       id="individuals-modal"
       ref="modalIndividuals"
+      :location="'\'Get individual proactive rockets\', services page'"
     />
   </section>
 </template>

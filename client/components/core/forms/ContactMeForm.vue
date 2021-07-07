@@ -21,10 +21,18 @@ export default {
 
   mixins: [createLeadMixin(303792, 'Contact Me')],
 
+  props: {
+    formLocation: {
+      type: String,
+      default: 'Unknown',
+    },
+  },
+
   methods: {
     handleSubmit(formData) {
       const variables = {
         ...formData,
+        formLocation: this.formLocation,
       }
 
       // from mixin

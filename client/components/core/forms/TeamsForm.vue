@@ -33,6 +33,13 @@ export default {
 
   mixins: [createLeadMixin(304637, 'Teams')],
 
+  props: {
+    formLocation: {
+      type: String,
+      default: 'Unknown',
+    },
+  },
+
   data() {
     return {
       selectedTeamSize: null,
@@ -63,6 +70,7 @@ export default {
         ...exceptKeys(formData, ['description']),
         selectedTeamSize: this.selectedTeamSize ? this.selectedTeamSize.label || '' : '',
         projectDescription: formData.description,
+        formLocation: this.formLocation,
       }
 
       // from mixin

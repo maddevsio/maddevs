@@ -143,13 +143,15 @@
 
 <script>
 import { mapActions } from 'vuex'
-import { required, email, maxLength } from 'vuelidate/lib/validators'
-import { fileSizeValidation, fileExt } from '@/helpers/validators'
 import UIRadioButtons from '@/components/shared/UIRadioButtons'
 import UIButton from '@/components/shared/UIButton'
 import FormInput from '@/components/Careers/shared/FormInput'
 import FileInput from '@/components/Careers/shared/FileInput'
 import ModalSuccess from '@/components/core/modals/ModalSuccess'
+
+import { required, email, maxLength } from 'vuelidate/lib/validators'
+import { fileSizeValidation, fileExt } from '@/helpers/validators'
+import parseUserAgentForLeads from '@/helpers/parseUserAgentForLeads'
 
 export default {
   name: 'Careers',
@@ -231,6 +233,7 @@ export default {
     async buildApplicantData() {
       const splitedName = this.name.split(' ')
       const base64File = await this.toBase64(this.cvFile)
+      const { userBrowser, userOS, userPlatform } = parseUserAgentForLeads()
 
       return {
         body: {
@@ -256,6 +259,11 @@ export default {
               positionValue: this.grade.value,
               subject: `Job Candidate Application for ${this.position}`,
               modalTitle: 'Mad Devs Website Carrers Form',
+              userBrowser,
+              userOS,
+              userPlatform,
+              documentReferrer: (document && document.referrer) || 'Navigated to the site directly',
+              formLocation: '\'I want to work for Mad Devs\' button, vacancy page',
             },
 
             attachment: {

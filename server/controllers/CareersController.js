@@ -1,5 +1,6 @@
 const { sendEmail } = require('../services/EmailsService')
 const { sendApplication } = require('../services/HuntflowService')
+const { getIPInfo } = require('../services/IPService')
 const { validate } = require('../utils/validation')
 
 const parseRequest = req => ({
@@ -26,6 +27,9 @@ async function index(req, res) {
   if (!emailValidation.isValid) return res.status(emailValidation.error.status).json(emailValidation.error)
 
   const huntflowRes = await sendApplication(huntflowReq)
+
+  emailReq.body.ipInfo = await getIPInfo()
+
   const emailRes = await sendEmail(emailReq, data => res.json({ email: data, huntflow: huntflowRes }))
 
   return emailRes

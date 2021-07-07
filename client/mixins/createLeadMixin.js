@@ -1,6 +1,8 @@
 import { mapActions } from 'vuex'
+
 import delay from '@/helpers/delay'
 import exceptKeys from '@/helpers/exceptKeys'
+import parseUserAgentForLeads from '@/helpers/parseUserAgentForLeads'
 
 const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing') => ({
   methods: {
@@ -9,6 +11,7 @@ const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing
     async submitLead(variables) {
       if (!templateId) throw new Error('Template ID was not provided')
 
+      const { userBrowser, userOS, userPlatform } = parseUserAgentForLeads()
       const baseTitle = 'Mad Devs Website Forms'
       const payload = {
         templateId,
@@ -19,6 +22,11 @@ const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing
           projectDescriber: variables.description,
           agreeToGetMadDevsDiscountOffers: variables.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
           agreeWithPrivacyPolicy: variables.agreeWithPrivacyPolicy ? 'Yes' : 'No',
+          formLocation: variables.formLocation,
+          documentReferrer: (document && document.referrer) || 'Navigated to the site directly',
+          userBrowser,
+          userOS,
+          userPlatform,
           ...exceptKeys(variables, ['agreeToGetMadDevsDiscountOffers', 'agreeWithPrivacyPolicy', 'description']),
         },
       }
