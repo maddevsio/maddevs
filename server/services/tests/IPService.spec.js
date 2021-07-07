@@ -6,7 +6,7 @@ import { getIPInfo } from '../IPService'
 const response = { data: 'ip data' }
 jest.spyOn(axios, 'get').mockImplementation(() => Promise.resolve(response))
 
-describe('Huntflow service', () => {
+describe('IPinfo service', () => {
   it('should correctly return data from response', async () => {
     const data = await getIPInfo()
     expect(data).toBe('ip data')
