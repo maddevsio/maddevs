@@ -24,8 +24,6 @@
             >
               <HeaderLogo
                 :is-show-text="logoTextIsActive"
-                :is-case-page="isCasePage"
-                :is-active-mobile-menu="isActiveMobileMenu"
                 class="header__header-logo"
               />
             </NuxtLink>
@@ -178,7 +176,8 @@ export default {
 
   computed: {
     logoTextIsActive() {
-      return this.showLogoText && this.$nuxt.$route.name !== 'delivery-models'
+      if (this.$nuxt.$route.name === 'delivery-models') return false
+      return this.showLogoText
     },
 
     isBlogPage() {
@@ -209,6 +208,10 @@ export default {
   mounted() {
     this.addEventListeners()
     this.setStylesForHeader()
+  },
+
+  beforeDestroy() {
+    this.removeEventListeners()
   },
 
   methods: {
@@ -255,23 +258,32 @@ export default {
       const scrollTop = window.scrollY
       const area = document.querySelector('#case-header')
       const headerHeight = this.$refs.header.clientHeight
+      const earlyStartBGChange = 30 // For an earlier start change background header
 
       if (!area) return
 
       const areaHeight = (area.offsetTop + area.offsetHeight) - headerHeight
       // const isAfterTopPointSection = scrollTop >= area.offsetTop // After Top point of the section
-      const isBeforeBottomPointSection = scrollTop <= areaHeight // Before Bottom point of the section
+      const isBeforeBottomPointSection = scrollTop <= areaHeight - earlyStartBGChange // Before Bottom point of the section
 
       this.isTransparentBG = isBeforeBottomPointSection
+      this.showLogoText = isBeforeBottomPointSection
     },
 
     scrollHandler() {
-      if (this.$nuxt.$route.path.includes('/case-studies/')) this.setStylesForHeader()
-      this.changeLogoState(window.pageYOffset)
+      if (this.isCasePage) {
+        this.setStylesForHeader()
+      } else {
+        this.changeLogoState(window.pageYOffset)
+      }
     },
 
     addEventListeners() {
       window.addEventListener('scroll', this.scrollHandler)
+    },
+
+    removeEventListeners() {
+      window.removeEventListener('scroll', this.scrollHandler)
     },
   },
 }
@@ -295,7 +307,7 @@ export default {
 
   &__burger {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 25px;
     padding: 11px 14px;
@@ -444,12 +456,6 @@ export default {
     width: 18px;
     height: 14px;
   }
-}
-
-/deep/ #header-logo-text {
-  opacity: 0;
-  transform: translateY(-100px) translateX(5%) scale(0.9);
-  transition: all 0.1s ease;
 }
 
 .is-transparent-bg {
