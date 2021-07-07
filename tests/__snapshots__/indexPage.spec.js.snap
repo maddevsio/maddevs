@@ -1667,14 +1667,14 @@ exports[`index page renders correctly 1`] = `
         class="cases-list"
       >
         <div
-          class="cases-list_item cases-list_item--full cases-list_sjmc"
+          class="cases-list_item cases-list_item--full cases-list_veeqo"
           data-testid="test-case-card"
         >
           <nuxtlink-stub
             class="cases-list_item-link"
             disabled=""
             tag="a"
-            to="/case-studies/sir-john-monash-centre/"
+            to="/case-studies/veeqo/"
           >
             <video
               class="cases-list_item-video media_lazy"
@@ -1695,28 +1695,28 @@ exports[`index page renders correctly 1`] = `
               class="cases-list_item-info"
             >
               <img
-                alt="SJMC logo"
-                height="60"
+                alt="Veeqo logo"
+                height="23"
                 src="img.jpg"
-                width="133"
+                width="105"
               />
                
               <span>
-                BYOD
+                Logistics
               </span>
                
               <h3>
                 
-        Sir John Monash Centre
+        Optimization for Veeqo
       
               </h3>
                
               <p>
-                Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.
+                Our DevOps team optimized the infrastructure for Veeqo, an inventory and shipping e-commerce platform, and made it highly efficient, smooth, and cost-effective for our partners.
               </p>
                
               <nuxtlink-stub
-                to="/case-studies/sir-john-monash-centre/"
+                to="/case-studies/veeqo/"
               >
                 
         Explore
@@ -1726,14 +1726,14 @@ exports[`index page renders correctly 1`] = `
           </nuxtlink-stub>
         </div>
         <div
-          class="cases-list_item cases-list_item--big cases-list_nambafood"
+          class="cases-list_item cases-list_item--big cases-list_itc"
           data-testid="test-case-card"
         >
           <nuxtlink-stub
             class="cases-list_item-link"
             disabled=""
             tag="a"
-            to="/case-studies/namba-food/"
+            to="/case-studies/R4TCA-web-application/"
           >
             <video
               class="cases-list_item-video media_lazy"
@@ -1754,28 +1754,28 @@ exports[`index page renders correctly 1`] = `
               class="cases-list_item-info"
             >
               <img
-                alt="Namba Food logo"
-                height="80"
+                alt="ITC logo"
+                height="23"
                 src="img.jpg"
-                width="108"
+                width="105"
               />
                
               <span>
-                Foodtech
+                Digital transformation
               </span>
                
               <h3>
                 
-        Contactless Delivery Service
+        Ready4Trade Central Asia
       
               </h3>
                
               <p>
-                Mad Devs created the Namba Food delivery service from scratch. The solution orchestrates feature-rich apps for couriers, end-users, and business owners.
+                A web app customized for the delivery of export management coaching missions that contributes to the development of intra-regional and international trade in Central Asia
               </p>
                
               <nuxtlink-stub
-                to="/case-studies/namba-food/"
+                to="/case-studies/R4TCA-web-application/"
               >
                 
         Explore
@@ -1844,14 +1844,14 @@ exports[`index page renders correctly 1`] = `
           </nuxtlink-stub>
         </div>
         <div
-          class="cases-list_item cases-list_item--full cases-list_godee"
+          class="cases-list_item cases-list_item--full cases-list_sjmc"
           data-testid="test-case-card"
         >
           <nuxtlink-stub
             class="cases-list_item-link"
             disabled=""
             tag="a"
-            to="/case-studies/godee/"
+            to="/case-studies/sir-john-monash-centre/"
           >
             <video
               class="cases-list_item-video media_lazy"
@@ -1872,28 +1872,28 @@ exports[`index page renders correctly 1`] = `
               class="cases-list_item-info"
             >
               <img
-                alt="Godee logo"
-                height="23"
+                alt="SJMC logo"
+                height="60"
                 src="img.jpg"
-                width="105"
+                width="133"
               />
                
               <span>
-                Transportation
+                BYOD
               </span>
                
               <h3>
                 
-        Convenient shuttle bus service
+        Sir John Monash Centre
       
               </h3>
                
               <p>
-                Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute.
+                Mad Devs engineers helped Sir John Monash Centre to enhance and maintain the BYOD multimedia technology.
               </p>
                
               <nuxtlink-stub
-                to="/case-studies/godee/"
+                to="/case-studies/sir-john-monash-centre/"
               >
                 
         Explore
