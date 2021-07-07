@@ -1,7 +1,7 @@
 <template>
   <div class="default-layout">
     <Header />
-    <Nuxt />
+    <Nuxt class="main-section" />
     <Footer />
   </div>
 </template>
@@ -57,7 +57,7 @@ export default {
   background-color: $bgcolor--black;
 }
 
-main {
+.main-section {
   margin-top: -62px !important;
 }
 </style>

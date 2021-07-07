@@ -1,5 +1,5 @@
 <template>
-  <main class="case">
+  <div class="case">
     <CaseHeader
       :logo="logo"
       project="godee"
@@ -64,7 +64,7 @@
       Top Delivery Service in <br class="case_mobile-break-namba-food">
       Central Asia
     </CaseFooter>
-  </main>
+  </div>
 </template>
 
 <script>
