@@ -143,14 +143,15 @@
 
 <script>
 import { mapActions } from 'vuex'
-import bowser from 'bowser'
-import { required, email, maxLength } from 'vuelidate/lib/validators'
-import { fileSizeValidation, fileExt } from '@/helpers/validators'
 import UIRadioButtons from '@/components/shared/UIRadioButtons'
 import UIButton from '@/components/shared/UIButton'
 import FormInput from '@/components/Careers/shared/FormInput'
 import FileInput from '@/components/Careers/shared/FileInput'
 import ModalSuccess from '@/components/core/modals/ModalSuccess'
+
+import { required, email, maxLength } from 'vuelidate/lib/validators'
+import { fileSizeValidation, fileExt } from '@/helpers/validators'
+import parseUserAgentForLeads from '@/helpers/parseUserAgentForLeads'
 
 export default {
   name: 'Careers',
@@ -232,17 +233,7 @@ export default {
     async buildApplicantData() {
       const splitedName = this.name.split(' ')
       const base64File = await this.toBase64(this.cvFile)
-
-      let userBrowser = 'Unknown'
-      let userOS = 'Unknown'
-      let userPlatform = 'Unknown'
-      if (window && window.navigator && window.navigator.userAgent) {
-        const { browser, os, platform } = bowser.parse(window.navigator.userAgent)
-
-        userBrowser = `Name: ${browser.name}, Version: ${browser.version}`
-        userOS = `Name: ${os.name}, Version: ${os.version}, VersionName: ${os.versionName}`
-        userPlatform = `Type: ${platform.type}, Vendor: ${platform.vendor}`
-      }
+      const { userBrowser, userOS, userPlatform } = parseUserAgentForLeads()
 
       return {
         body: {

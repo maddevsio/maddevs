@@ -1,7 +1,8 @@
 import { mapActions } from 'vuex'
-import bowser from 'bowser'
+
 import delay from '@/helpers/delay'
 import exceptKeys from '@/helpers/exceptKeys'
+import parseUserAgentForLeads from '@/helpers/parseUserAgentForLeads'
 
 const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing') => ({
   methods: {
@@ -10,17 +11,7 @@ const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing
     async submitLead(variables) {
       if (!templateId) throw new Error('Template ID was not provided')
 
-      let userBrowser = 'Unknown'
-      let userOS = 'Unknown'
-      let userPlatform = 'Unknown'
-      if (window && window.navigator && window.navigator.userAgent) {
-        const { browser, os, platform } = bowser.parse(window.navigator.userAgent)
-
-        userBrowser = `Name: ${browser.name}, Version: ${browser.version}`
-        userOS = `Name: ${os.name}, Version: ${os.version}, VersionName: ${os.versionName}`
-        userPlatform = `Type: ${platform.type}, Vendor: ${platform.vendor}`
-      }
-
+      const { userBrowser, userOS, userPlatform } = parseUserAgentForLeads()
       const baseTitle = 'Mad Devs Website Forms'
       const payload = {
         templateId,
