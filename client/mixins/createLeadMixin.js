@@ -31,7 +31,6 @@ const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing
           userBrowser,
           userOS,
           userPlatform,
-          documentReferrer: (document && document.referrer) || 'Navigated to the site directly',
           ...exceptKeys(variables, ['agreeToGetMadDevsDiscountOffers', 'agreeWithPrivacyPolicy', 'description']),
         },
       }

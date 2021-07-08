@@ -266,7 +266,6 @@ export default {
               userBrowser,
               userOS,
               userPlatform,
-              documentReferrer: (document && document.referrer) || 'Navigated to the site directly',
               formLocation: '\'I want to work for Mad Devs\' button, vacancy page',
             },
 

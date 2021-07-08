@@ -204,7 +204,6 @@ describe('PositionForm component', () => {
             userBrowser: 'Name: Chrome, Version: 91.0.4472.114',
             userOS: 'Name: macOS, Version: 10.15.7, VersionName: Catalina',
             userPlatform: 'Type: desktop, Vendor: Apple',
-            documentReferrer: 'Navigated to the site directly',
             formLocation: '\'I want to work for Mad Devs\' button, vacancy page',
           },
 
