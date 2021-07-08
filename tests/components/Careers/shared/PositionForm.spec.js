@@ -49,6 +49,11 @@ const mocks = {
   buildApplicantData: jest.fn(),
   resetForm: jest.fn(),
   sendVacancy: jest.fn(),
+  getIPInfo: () => ({
+    ip: 'ip',
+    country_name: 'country',
+    city: 'city',
+  }),
   $refs: {
     fileInput: {
       reset: jest.fn(),
@@ -189,6 +194,8 @@ describe('PositionForm component', () => {
             positionTitle: wrapper.vm.$props.position,
             subject: `Job Candidate Application for ${wrapper.vm.$props.position}`,
             modalTitle: 'Mad Devs Website Carrers Form',
+            ip: 'ip',
+            geoIp: 'Country: country, City: city',
             userBrowser: 'Name: Chrome, Version: 91.0.4472.114',
             userOS: 'Name: macOS, Version: 10.15.7, VersionName: Catalina',
             userPlatform: 'Type: desktop, Vendor: Apple',

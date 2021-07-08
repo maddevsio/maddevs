@@ -1,9 +1,20 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
 import GetYourTrustedItPartnerForm from '@/components/core/forms/GetYourTrustedItPartnerForm'
+import Vuex from 'vuex'
+import { createLocalVue } from '@vue/test-utils'
 import formBaseProps from '../../../__mocks__/formBaseProps'
 
 import delay from '../../../../client/helpers/delay'
 
+const localVue = createLocalVue()
+localVue.use(Vuex)
+
+const store = {
+  actions: {
+    sendLead: jest.fn(),
+    getIPInfo: () => ({}),
+  },
+}
 const mocks = formBaseProps
 mocks.$v.needAssistanceWith = {
   $touch: jest.fn(),
@@ -13,6 +24,7 @@ describe('GetYourTrustedItPartnerForm component', () => {
   it('should render correctly', () => {
     const { container } = render(GetYourTrustedItPartnerForm, {
       mocks,
+      store,
     })
 
     expect(container).toMatchSnapshot()
@@ -21,6 +33,7 @@ describe('GetYourTrustedItPartnerForm component', () => {
   it('should correct call handler', async () => {
     render(GetYourTrustedItPartnerForm, {
       mocks,
+      store,
     })
 
     await fireEvent.update(screen.getByTestId('test-base-form-phoneNumber'), '+3 4546-657-9098-7875645342245')

@@ -219,7 +219,7 @@ export default {
   },
 
   methods: {
-    ...mapActions(['sendVacancy']),
+    ...mapActions(['sendVacancy', 'getIPInfo']),
 
     toBase64(file) {
       return new Promise((resolve, reject) => {
@@ -234,6 +234,7 @@ export default {
       const splitedName = this.name.split(' ')
       const base64File = await this.toBase64(this.cvFile)
       const { userBrowser, userOS, userPlatform } = parseUserAgentForLeads()
+      const { ip = 'Unknown', country_name: country = 'Unknown', city = 'Unknown' } = await this.getIPInfo()
 
       return {
         body: {
@@ -259,6 +260,8 @@ export default {
               positionValue: this.grade.value,
               subject: `Job Candidate Application for ${this.position}`,
               modalTitle: 'Mad Devs Website Carrers Form',
+              ip,
+              geoIp: `Country: ${country}, City: ${city}`,
               userBrowser,
               userOS,
               userPlatform,

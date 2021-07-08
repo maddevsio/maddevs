@@ -1,15 +1,27 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
 import ContactMeForm from '@/components/core/forms/ContactMeForm'
+import Vuex from 'vuex'
+import { createLocalVue } from '@vue/test-utils'
 import formBaseProps from '../../../__mocks__/formBaseProps'
 
 import delay from '../../../../client/helpers/delay'
 
+const localVue = createLocalVue()
+localVue.use(Vuex)
+
+const store = {
+  actions: {
+    sendLead: jest.fn(),
+    getIPInfo: () => ({}),
+  },
+}
 const mocks = formBaseProps
 
 describe('ContactMeForm component', () => {
   it('should render correctly', () => {
     const { container } = render(ContactMeForm, {
       mocks,
+      store,
     })
 
     expect(container).toMatchSnapshot()
@@ -18,6 +30,7 @@ describe('ContactMeForm component', () => {
   it('should correct call handler', async () => {
     render(ContactMeForm, {
       mocks,
+      store,
     })
 
     await fireEvent.update(screen.getByTestId('test-base-form-phoneNumber'), '+3 4546-657-9098-7875645342245')
