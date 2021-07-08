@@ -21,6 +21,7 @@
           v-html="title"
         />
         <button
+          type="button"
           class="model-card__button"
         >
           <span v-html="'↓'" />

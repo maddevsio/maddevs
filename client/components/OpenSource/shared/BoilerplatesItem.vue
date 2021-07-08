@@ -1,10 +1,10 @@
 <template>
-  <div>project card</div>
+  <div>boilerplates item</div>
 </template>
 
 <script>
 export default {
-  name: 'ProjectCard',
+  name: 'BoilerplatesItem',
 }
 </script>
 
