@@ -8,7 +8,11 @@ import delay from '../../../../client/helpers/delay'
 
 jest.mock('@/api/ipInfo', () => (
   {
-    getIPInfo: jest.fn(() => 'ip info'),
+    getIPInfo: () => ({
+      ip: 'ip',
+      country_name: 'country',
+      city: 'city',
+    }),
   }
 ))
 
