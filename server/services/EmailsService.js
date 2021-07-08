@@ -3,11 +3,6 @@ const config = require('../config')
 
 function buildEmail({
   body: {
-    ipInfo: {
-      ip = 'Unknown',
-      country_name: country = 'Unknown',
-      city = 'Unknown',
-    },
     variables, templateId, attachment,
   },
 }) {
@@ -15,11 +10,7 @@ function buildEmail({
     subject: variables.subject,
     template: {
       id: templateId, // required
-      variables: {
-        ...variables,
-        ip,
-        geoIp: `Country: ${country}, City: ${city}`,
-      },
+      variables,
     },
     from: {
       name: variables.modalTitle,
