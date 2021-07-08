@@ -27,7 +27,7 @@ describe('InfrastructureAuditForm component', () => {
     await fireEvent.click(screen.queryByTestId('test-privacy-policy-checkbox-input'))
     await fireEvent.click(screen.getByText(/Get an infrastructure audit/))
 
-    await delay(1500)
+    await delay(3000)
     expect(mocks.$v.$reset).toHaveBeenCalledTimes(1)
   })
 })

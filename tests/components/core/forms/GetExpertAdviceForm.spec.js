@@ -30,7 +30,7 @@ describe('GetExpertAdviceForm component', () => {
     await fireEvent.click(screen.queryByTestId('test-privacy-policy-checkbox-input'))
     await fireEvent.click(screen.getByText('Get expert advice'))
 
-    await delay(1500)
+    await delay(3000)
     // Called in BaseForm and GetExpertAdviceForm components
     expect(mocks.$v.$reset).toHaveBeenCalledTimes(2)
   })

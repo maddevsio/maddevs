@@ -30,7 +30,7 @@ describe('GetYourTrustedItPartnerForm component', () => {
     await fireEvent.click(screen.queryByTestId('test-privacy-policy-checkbox-input'))
     await fireEvent.click(screen.getByText('Get your trusted IT partner'))
 
-    await delay(1500)
+    await delay(3000)
     // Called in BaseForm and GetYourTrustedItPartnerForm components
     expect(mocks.$v.$reset).toHaveBeenCalledTimes(2)
   })
