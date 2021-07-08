@@ -29,8 +29,7 @@ export default {
   components: { UIButton },
   data() {
     return {
-      displayCookieNotice2: !loadState(LOCAL_STORAGE_KEYS.ACCEPT_COOKIE),
-      displayCookieNotice: true,
+      displayCookieNotice: !loadState(LOCAL_STORAGE_KEYS.ACCEPT_COOKIE),
     }
   },
 
@@ -82,7 +81,6 @@ export default {
   &__button {
     flex-basis: 129px;
     flex-shrink: 0;
-    //flex-grow: 1;
     padding: 7px 20px;
     @include font('Inter', 14px, 400);
     line-height: 23px;
