@@ -1,27 +1,21 @@
 /* eslint-disable prefer-promise-reject-errors */
 import 'regenerator-runtime'
-import * as api from '@/api/ipInfo'
+import axios from 'axios'
+import { getIPInfo } from '@/api/ipInfo'
 
-describe('ipInfo api methods', () => {
-  const error = new Error('error')
-  const success = jest.fn(() => Promise.resolve({ data: 'ip data' }))
-  const failure = jest.fn(() => Promise.reject(error))
+const response = { data: 'ip data' }
+jest.spyOn(axios, 'get').mockImplementation(() => Promise.resolve(response))
 
-  const axios = {
-    get: success,
-  }
-
-  const axiosFailure = {
-    get: failure,
-  }
-
-  it('getIPInfo success', async () => {
-    const result = await api.getIPInfo(axios)
-    expect(result).toEqual({ data: 'ip data' })
+describe('IPinfo service', () => {
+  it('should correctly return data from response', async () => {
+    const data = await getIPInfo()
+    expect(data).toBe('ip data')
   })
 
-  it('getIPInfo failure', async () => {
-    const result = await api.getIPInfo(axiosFailure)
-    expect(result).toEqual({})
+  it('should return the empty object if axios failed', async () => {
+    axios.get.mockImplementation(() => Promise.reject('error'))
+
+    const error = await getIPInfo()
+    expect(error).toEqual({})
   })
 })

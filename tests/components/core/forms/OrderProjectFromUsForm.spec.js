@@ -1,27 +1,15 @@
 import { render, fireEvent, screen } from '@testing-library/vue'
 import OrderProjectFromUsForm from '@/components/core/forms/OrderProjectFromUsForm'
-import Vuex from 'vuex'
-import { createLocalVue } from '@vue/test-utils'
 import formBaseProps from '../../../__mocks__/formBaseProps'
 
 import delay from '../../../../client/helpers/delay'
 
-const localVue = createLocalVue()
-localVue.use(Vuex)
-
-const store = {
-  actions: {
-    sendLead: jest.fn(),
-    getIPInfo: () => ({}),
-  },
-}
 const mocks = formBaseProps
 
 describe('OrderProjectFromUsForm component', () => {
   it('should render correctly', () => {
     const { container } = render(OrderProjectFromUsForm, {
       mocks,
-      store,
     })
 
     expect(container).toMatchSnapshot()
@@ -30,7 +18,6 @@ describe('OrderProjectFromUsForm component', () => {
   it('should correct call handler', async () => {
     render(OrderProjectFromUsForm, {
       mocks,
-      store,
     })
 
     await fireEvent.update(screen.getByTestId('test-base-form-phoneNumber'), '+3 4546-657-9098-7875645342245')
@@ -40,7 +27,7 @@ describe('OrderProjectFromUsForm component', () => {
     await fireEvent.click(screen.queryByTestId('test-privacy-policy-checkbox-input'))
     await fireEvent.click(screen.getByText(/Submit your project/))
 
-    await delay(1000)
+    await delay(1500)
     expect(mocks.$v.$reset).toHaveBeenCalledTimes(1)
   })
 })

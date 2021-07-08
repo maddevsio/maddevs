@@ -152,6 +152,7 @@ import ModalSuccess from '@/components/core/modals/ModalSuccess'
 import { required, email, maxLength } from 'vuelidate/lib/validators'
 import { fileSizeValidation, fileExt } from '@/helpers/validators'
 import parseUserAgentForLeads from '@/helpers/parseUserAgentForLeads'
+import { getIPInfo } from '@/api/ipInfo'
 
 export default {
   name: 'Careers',
@@ -219,7 +220,7 @@ export default {
   },
 
   methods: {
-    ...mapActions(['sendVacancy', 'getIPInfo']),
+    ...mapActions(['sendVacancy']),
 
     toBase64(file) {
       return new Promise((resolve, reject) => {
@@ -234,7 +235,7 @@ export default {
       const splitedName = this.name.split(' ')
       const base64File = await this.toBase64(this.cvFile)
       const { userBrowser, userOS, userPlatform } = parseUserAgentForLeads()
-      const { ip = 'Unknown', country_name: country = 'Unknown', city = 'Unknown' } = await this.getIPInfo()
+      const { ip = 'Unknown', country_name: country = 'Unknown', city = 'Unknown' } = await getIPInfo()
 
       return {
         body: {

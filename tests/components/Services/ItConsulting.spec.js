@@ -1,3 +1,4 @@
+import 'regenerator-runtime'
 import ItСonsulting from '@/components/Services/ItСonsulting.vue'
 import { render } from '@testing-library/vue'
 

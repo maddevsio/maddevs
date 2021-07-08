@@ -1,3 +1,4 @@
+import 'regenerator-runtime'
 import FormInput from '@/components/Careers/shared/FormInput'
 import PositionForm from '@/components/Careers/shared/PositionForm'
 import { render } from '@testing-library/vue'

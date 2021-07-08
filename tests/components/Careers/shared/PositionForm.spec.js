@@ -4,6 +4,16 @@ import { render } from '@testing-library/vue'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
 import PositionForm from '@/components/Careers/shared/PositionForm'
 
+jest.mock('@/api/ipInfo', () => (
+  {
+    getIPInfo: () => ({
+      ip: 'ip',
+      country_name: 'country',
+      city: 'city',
+    }),
+  }
+))
+
 jest.mock('bowser', () => ({
   parse: () => ({
     browser: {
@@ -49,11 +59,6 @@ const mocks = {
   buildApplicantData: jest.fn(),
   resetForm: jest.fn(),
   sendVacancy: jest.fn(),
-  getIPInfo: () => ({
-    ip: 'ip',
-    country_name: 'country',
-    city: 'city',
-  }),
   $refs: {
     fileInput: {
       reset: jest.fn(),

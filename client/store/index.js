@@ -5,7 +5,6 @@ import * as blogTags from './modules/blogTags'
 import * as blogSearch from './modules/blogSearch'
 import * as leads from './modules/leads'
 import * as careers from './modules/careers'
-import * as ipInfo from './modules/ipInfo'
 
 export default {
   modules: {
@@ -16,6 +15,5 @@ export default {
     blogSearch,
     leads,
     careers,
-    ipInfo,
   },
 }
