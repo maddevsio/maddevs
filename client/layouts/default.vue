@@ -2,6 +2,9 @@
   <div class="default-layout">
     <Header />
     <Nuxt class="main-section" />
+    <ClientOnly>
+      <CookieNotice />
+    </ClientOnly>
     <Footer />
   </div>
 </template>
@@ -10,10 +13,12 @@
 import Header from '@/components/core/Header/Header'
 import Footer from '@/components/core/Footer/Footer'
 import initIntercom from '@/helpers/intercom'
+import CookieNotice from '@/components/core/CookieNotice'
 
 export default {
   name: 'Default',
   components: {
+    CookieNotice,
     Header,
     Footer,
   },
