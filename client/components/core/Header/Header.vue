@@ -336,7 +336,7 @@ export default {
     padding: 10px;
     cursor: pointer;
 
-    @media screen and (max-width: 1160px) {
+    @media screen and (max-width: 1280px) {
       margin-right: 10px;
     }
 
@@ -407,7 +407,7 @@ export default {
       content: '↓';
       color: transparent;
     }
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 1320px) {
       margin-right: 10px;
     }
   }
@@ -425,15 +425,11 @@ export default {
     align-items: center;
     margin-right: 40px;
 
-    @media screen and (max-width: 1366px) {
-      margin-right: 49px;
-    }
-
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 1320px) {
       margin-right: 33px;
     }
 
-    @media screen and (max-width: 1180px) {
+    @media screen and (max-width: 1280px) {
       margin-right: 20px;
     }
   }
@@ -487,7 +483,7 @@ export default {
   opacity: 0;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1245px) {
   .header {
     max-height: 26px;
 
