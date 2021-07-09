@@ -3,8 +3,8 @@
     <ul class="boilerplates-list">
       <BoilerplatesListItem
         v-for="item of boilerplatesList"
-        :key="item.name"
-        :v-bind="item"
+        :key="item.id"
+        v-bind="item"
       />
     </ul>
   </section>
@@ -31,4 +31,9 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/_vars';
 
+.boilerplates-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 48px;
+}
 </style>
