@@ -1,3 +1,4 @@
+import 'regenerator-runtime'
 import { shallowMount } from '@vue/test-utils'
 import ServicesPage from '@/pages/services'
 
