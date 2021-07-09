@@ -7,10 +7,13 @@ const parseUserAgentForLeads = () => {
 
   if (window && window.navigator && window.navigator.userAgent) {
     const { browser, os, platform } = bowser.parse(window.navigator.userAgent)
+    const { name: browserName = 'Unknown', version: browserVersion = 'Unknown' } = browser
+    const { name: osName = 'Unknown', version: osVersion = 'Unknown', versionName: osVersionName = 'Unknown' } = os
+    const { type: platformType = 'Unknown', vendor: platformVendor = 'Unknown' } = platform
 
-    userBrowser = `Name: ${browser.name}, Version: ${browser.version}`
-    userOS = `Name: ${os.name}, Version: ${os.version}, VersionName: ${os.versionName}`
-    userPlatform = `Type: ${platform.type}, Vendor: ${platform.vendor}`
+    userBrowser = `Name: ${browserName}, Version: ${browserVersion}`
+    userOS = `Name: ${osName}, Version: ${osVersion}, VersionName: ${osVersionName}`
+    userPlatform = `Type: ${platformType}, Vendor: ${platformVendor}`
   }
 
   return {
