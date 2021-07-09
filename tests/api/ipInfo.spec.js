@@ -1,7 +1,7 @@
 /* eslint-disable prefer-promise-reject-errors */
 import 'regenerator-runtime'
 import axios from 'axios'
-import { getIPInfo } from '../IPService'
+import { getIPInfo } from '@/api/ipInfo'
 
 const response = { data: 'ip data' }
 jest.spyOn(axios, 'get').mockImplementation(() => Promise.resolve(response))

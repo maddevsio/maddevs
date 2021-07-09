@@ -1,3 +1,4 @@
+import 'regenerator-runtime'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
 import Vuelidate from 'vuelidate'
 import ModalContactMe from '@/components/core/modals/ModalContactMe'

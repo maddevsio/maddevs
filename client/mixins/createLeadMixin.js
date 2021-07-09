@@ -3,6 +3,7 @@ import { mapActions } from 'vuex'
 import delay from '@/helpers/delay'
 import exceptKeys from '@/helpers/exceptKeys'
 import parseUserAgentForLeads from '@/helpers/parseUserAgentForLeads'
+import { getIPInfo } from '@/api/ipInfo'
 
 const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing') => ({
   methods: {
@@ -12,6 +13,8 @@ const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing
       if (!templateId) throw new Error('Template ID was not provided')
 
       const { userBrowser, userOS, userPlatform } = parseUserAgentForLeads()
+      const { ip = 'Unknown', country_name: country = 'Unknown', city = 'Unknown' } = await getIPInfo()
+
       const baseTitle = 'Mad Devs Website Forms'
       const payload = {
         templateId,
@@ -23,7 +26,8 @@ const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing
           agreeToGetMadDevsDiscountOffers: variables.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
           agreeWithPrivacyPolicy: variables.agreeWithPrivacyPolicy ? 'Yes' : 'No',
           formLocation: variables.formLocation,
-          documentReferrer: (document && document.referrer) || 'Navigated to the site directly',
+          ip,
+          geoIp: `Country: ${country}, City: ${city}`,
           userBrowser,
           userOS,
           userPlatform,

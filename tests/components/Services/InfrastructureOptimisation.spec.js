@@ -1,3 +1,4 @@
+import 'regenerator-runtime'
 import InfrastructureOptimisation from '@/components/Services/InfrastructureOptimisation'
 import { render, screen } from '@testing-library/vue'
 

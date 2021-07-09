@@ -1,14 +1,10 @@
-const axios = require('axios')
+import axios from 'axios'
 
-async function getIPInfo() {
+export const getIPInfo = async () => {
   try {
     const response = await axios.get('https://ipapi.co/json')
     return response.data
   } catch (error) {
     return {}
   }
-}
-
-module.exports = {
-  getIPInfo,
 }
