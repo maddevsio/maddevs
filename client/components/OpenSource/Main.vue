@@ -1,9 +1,9 @@
 <template>
   <div class="open-source">
     <Banner />
-    <Paragraph />
+    <ParagraphSection />
     <FeaturedProjects />
-    <div class="careers_white-section">
+    <div class="open-source--bg-white">
       <Boilerplates />
       <CTABanner />
     </div>
@@ -12,7 +12,7 @@
 
 <script>
 import Banner from '@/components/OpenSource/Banner'
-import Paragraph from '@/components/OpenSource/Paragraph'
+import ParagraphSection from '@/components/OpenSource/ParagraphSection'
 import FeaturedProjects from '@/components/OpenSource/FeaturedProjects'
 import Boilerplates from '@/components/OpenSource/Boilerplates'
 import CTABanner from '@/components/OpenSource/CTABanner'
@@ -21,7 +21,7 @@ export default {
   name: 'Main',
   components: {
     Banner,
-    Paragraph,
+    ParagraphSection,
     FeaturedProjects,
     Boilerplates,
     CTABanner,
@@ -33,8 +33,10 @@ export default {
 @import '@/assets/styles/_vars';
 
 .open-source {
-  &_white-section {
+  color: $text-color--white-primary;
+  &--bg-white {
     background-color: $bgcolor--white-primary;
+    color: $text-color--black-oil;
   }
 }
 </style>

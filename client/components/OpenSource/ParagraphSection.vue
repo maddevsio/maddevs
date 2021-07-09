@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p class="paragraph">
+    <p class="paragraph-section">
       While we love writing code, nothing excites us more than <span>collaborating</span> with other members of the <span>tech community.</span>
     </p>
   </div>
@@ -8,20 +8,21 @@
 
 <script>
 export default {
-  name: 'Paragraph',
+  name: 'ParagraphSection',
 }
 </script>
 
 <style lang="scss" scoped>
 @import '@/assets/styles/_vars';
 
-.paragraph {
-  margin: 359px 0;
-  text-align: center;
+.paragraph-section {
+  padding: 360px 0;
   color: $text-color--silver;
-  font-weight: 600;
+  text-align: center;
   font-size: 60px;
+  font-weight: 600;
   line-height: 70px;
+  letter-spacing: -0.013em;
   span {
     color: $text-color--red-dark;
   }

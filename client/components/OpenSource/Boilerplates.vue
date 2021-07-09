@@ -1,31 +1,36 @@
 <template>
   <div class="boilerplates">
     <div class="container">
-      <h2 class="boilerplates__title">
-        Featured projects
-      </h2>
-      <p class="boilerplates__subtitle">
-        A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies.
-      </p>
-      <ul class="boilerplates__grid">
-        <BoilerplatesItem />
-      </ul>
+      <div class="boilerplates__head">
+        <TitleDesc
+          title="Boilerplates"
+          description="Build software faster with our collection <br /> of pre-configured code."
+        />
+      </div>
+      <BoilerplatesList />
     </div>
   </div>
 </template>
 
 <script>
-import BoilerplatesItem from '@/components/OpenSource/shared/BoilerplatesItem'
+import TitleDesc from '@/components/OpenSource/shared/TitleDesc'
+import BoilerplatesList from '@/components/OpenSource/shared/BoilerplatesList'
 
 export default {
-  name: 'FeaturedProjects',
+  name: 'Boilerplates',
   components: {
-    BoilerplatesItem,
+    TitleDesc,
+    BoilerplatesList,
   },
 }
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
+.boilerplates {
+  padding-top: 134px;
+  padding-bottom: 196px;
+  &__head {
+    margin-bottom: 46px;
+  }
+}
 </style>
