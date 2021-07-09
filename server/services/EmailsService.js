@@ -1,7 +1,9 @@
 const sendpulse = require('sendpulse-api')
 const config = require('../config')
 
-function buildEmail({ body: { variables, templateId, attachment } }) {
+function buildEmail({
+  body: { variables, templateId, attachment },
+}) {
   const email = {
     subject: variables.subject,
     template: {

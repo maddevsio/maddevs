@@ -25,6 +25,7 @@
     <ModalGetExpertAdvice
       id="get-expert-advice-modal"
       ref="modalGetExpertAdvice"
+      :location="'\'Get expert advice\' button, services page'"
     />
   </section>
 </template>

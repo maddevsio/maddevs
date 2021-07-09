@@ -20,6 +20,7 @@
       <ModalContactMe
         id="contact-me-cs"
         ref="modalContactMe"
+        :location="'\'Book a free consultation\' button, case studies page'"
       />
     </div>
   </div>

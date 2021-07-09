@@ -4,7 +4,7 @@
     :id="id"
     ref="modalTeams"
   >
-    <TeamsForm />
+    <TeamsForm :form-location="location" />
   </Modal>
 </template>
 
@@ -21,6 +21,11 @@ export default {
 
   props: {
     id: {
+      type: String,
+      default: '',
+    },
+
+    location: {
       type: String,
       default: '',
     },

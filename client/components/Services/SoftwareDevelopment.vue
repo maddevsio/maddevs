@@ -25,6 +25,7 @@
     <ModalGetYourTrustedItPartner
       id="get-your-trusted-it-partner-modal"
       ref="modalGetYourTrustedItPartner"
+      :location="'\'Get your trusted IT partner\' button, services page'"
     />
   </section>
 </template>

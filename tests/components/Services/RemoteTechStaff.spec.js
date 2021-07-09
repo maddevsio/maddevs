@@ -1,3 +1,4 @@
+import 'regenerator-runtime'
 import RemoteTechStaff from '@/components/Services/RemoteTechStaff'
 import { fireEvent, render, screen } from '@testing-library/vue'
 

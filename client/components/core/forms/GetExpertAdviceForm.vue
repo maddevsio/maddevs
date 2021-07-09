@@ -33,6 +33,13 @@ export default {
 
   mixins: [createLeadMixin(304641, 'Get Expert Advice')],
 
+  props: {
+    formLocation: {
+      type: String,
+      default: 'Unknown',
+    },
+  },
+
   validations: {
     questionsOnItConsulting: {
       maxLength: maxLength(256),
@@ -52,6 +59,7 @@ export default {
       const variables = {
         ...formData,
         questionsOnItConsulting: this.questionsOnItConsulting || '',
+        formLocation: this.formLocation,
       }
 
       // from mixin

@@ -26,6 +26,7 @@ async function index(req, res) {
   if (!emailValidation.isValid) return res.status(emailValidation.error.status).json(emailValidation.error)
 
   const huntflowRes = await sendApplication(huntflowReq)
+
   const emailRes = await sendEmail(emailReq, data => res.json({ email: data, huntflow: huntflowRes }))
 
   return emailRes

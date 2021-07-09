@@ -32,26 +32,6 @@ module.exports = {
       { rel: 'sitemap', type: 'application/xml', href: 'https://maddevs.io/sitemap.xml' },
     ],
     script: [
-      // Init google tag manager
-      {
-        innerHTML: `
-          window.onload = function () {
-            (function(w, d, s, l, i) {
-              w[l] = w[l] || [];
-              w[l].push({
-                "gtm.start": new Date().getTime(),
-                event: "gtm.js"
-              });
-              var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != "dataLayer" ? "&l=" + l : "";
-              j.async = true;
-              j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-              d.body.appendChild(j);
-            })(window, document, "script", "dataLayer", "GTM-NNKVRF3");
-          }
-        `,
-      },
       { src: 'https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver' },
     ],
   },
@@ -122,7 +102,13 @@ module.exports = {
   /*
   ** Nuxt Modules
   */
-  modules: ['@nuxtjs/axios', '@nuxtjs/robots', '@nuxtjs/prismic', '@nuxtjs/sitemap'],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/robots',
+    '@nuxtjs/prismic',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/gtm',
+  ],
   sitemap: {
     hostname: 'https://maddevs.io',
     gzip: false,
@@ -144,6 +130,10 @@ module.exports = {
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
     preview: false,
+  },
+  gtm: {
+    enabled: true,
+    id: process.env.NODE_GOOGLE_TAG_MANAGER_ID,
   },
   env: {
     environment: process.env.NODE_ENV,

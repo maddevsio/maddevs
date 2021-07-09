@@ -32,6 +32,13 @@ export default {
 
   mixins: [createLeadMixin(304625, 'Individuals')],
 
+  props: {
+    formLocation: {
+      type: String,
+      default: 'Unknown',
+    },
+  },
+
   data() {
     return {
       expertise: '',
@@ -44,6 +51,7 @@ export default {
         ...exceptKeys(formData, ['description']),
         interestedExpertise: this.expertise || '',
         projectDescription: formData.description,
+        formLocation: this.formLocation,
       }
 
       // from mixin

@@ -143,13 +143,16 @@
 
 <script>
 import { mapActions } from 'vuex'
-import { required, email, maxLength } from 'vuelidate/lib/validators'
-import { fileSizeValidation, fileExt } from '@/helpers/validators'
 import UIRadioButtons from '@/components/shared/UIRadioButtons'
 import UIButton from '@/components/shared/UIButton'
 import FormInput from '@/components/Careers/shared/FormInput'
 import FileInput from '@/components/Careers/shared/FileInput'
 import ModalSuccess from '@/components/core/modals/ModalSuccess'
+
+import { required, email, maxLength } from 'vuelidate/lib/validators'
+import { fileSizeValidation, fileExt } from '@/helpers/validators'
+import parseUserAgentForLeads from '@/helpers/parseUserAgentForLeads'
+import { getIPInfo } from '@/api/ipInfo'
 
 export default {
   name: 'Careers',
@@ -231,6 +234,8 @@ export default {
     async buildApplicantData() {
       const splitedName = this.name.split(' ')
       const base64File = await this.toBase64(this.cvFile)
+      const { userBrowser, userOS, userPlatform } = parseUserAgentForLeads()
+      const { ip = 'Unknown', country_name: country = 'Unknown', city = 'Unknown' } = await getIPInfo()
 
       return {
         body: {
@@ -256,6 +261,12 @@ export default {
               positionValue: this.grade.value,
               subject: `Job Candidate Application for ${this.position}`,
               modalTitle: 'Mad Devs Website Carrers Form',
+              ip,
+              geoIp: `Country: ${country}, City: ${city}`,
+              userBrowser,
+              userOS,
+              userPlatform,
+              formLocation: '\'I want to work for Mad Devs\' button, vacancy page',
             },
 
             attachment: {
