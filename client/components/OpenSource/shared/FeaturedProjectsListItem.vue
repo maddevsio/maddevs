@@ -6,23 +6,34 @@
     >
       <div class="featured-projects-list__item-info">
         <img
-          :src="$getMediaFromS3(`/images/OpenSource/svg/${name}.svg`)"
+          :src="$getMediaFromS3(`/images/OpenSource/svg/${logo.name}.svg`)"
           width="62"
           height="62"
-          :alt="name"
+          :alt="logo.alt"
         >
         <h3>{{ title }}</h3>
         <p>{{ description }}</p>
       </div>
-      <button>button</button>
+      <UIArrowButton />
     </NuxtLink>
   </li>
 </template>
 
 <script>
+import UIArrowButton from '@/components/shared/UIArrowButton'
+
 export default {
   name: 'FeaturedProjectsListItem',
+  components: {
+    UIArrowButton,
+  },
+
   props: {
+    logo: {
+      type: Object,
+      default: () => ({}),
+    },
+
     name: {
       type: String,
       default: '',
@@ -54,6 +65,12 @@ export default {
   display: block;
   border-radius: 4px;
   background-color: $bgcolor--black-pale;
+  &:hover {
+    /deep/ .ui-arrow-button {
+      background-color: $border-color--white;
+      color: $text-color--black-oil;
+    }
+  }
   &-link {
     box-sizing: border-box;
     display: flex;
@@ -79,9 +96,6 @@ export default {
       letter-spacing: -0.013em;
       color: $text-color--silver;
     }
-  }
-  button {
-    margin-top: 50px;
   }
 }
 </style>

@@ -3,7 +3,7 @@
     <ul class="featured-projects-list">
       <FeaturedProjectsListItem
         v-for="item of featuredProjectsList"
-        :key="item.name"
+        :key="item.id"
         v-bind="item"
       />
     </ul>
