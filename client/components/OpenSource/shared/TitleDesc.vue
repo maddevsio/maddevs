@@ -1,16 +1,14 @@
 <template>
-  <div class="container">
-    <section
-      class="title-desc"
-      :class="textColor === 'black' ? 'title-desc--black-text' : 'title-desc--white-text'"
-    >
-      <h2 v-html="title" />
-      <p
-        v-if="description"
-        v-html="description"
-      />
-    </section>
-  </div>
+  <section
+    class="title-desc"
+    :class="textColor === 'black' ? 'title-desc--black-text' : 'title-desc--white-text'"
+  >
+    <h2 v-html="title" />
+    <p
+      v-if="description"
+      v-html="description"
+    />
+  </section>
 </template>
 
 <script>
@@ -61,6 +59,30 @@ export default {
     font-weight: 600;
     line-height: 44px;
     letter-spacing: -0.013em;
+  }
+
+  @media screen and (max-width: 1024px) {
+    h2 {
+      font-size: 60px;
+      line-height: 60px;
+    }
+    p {
+      margin-top: 29px;
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    p {
+      margin-top: 21px;
+      font-size: 21px;
+      line-height: 30px;
+    }
   }
 }
 </style>
