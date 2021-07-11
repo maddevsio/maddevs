@@ -18,7 +18,7 @@ export default {
   mixins: [initLazyLoadMixin],
 
   head() {
-    return buildHead(getMetadata('open-source'))
+    return buildHead(getMetadata('openSource'))
   },
 
   mounted() {

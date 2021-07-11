@@ -22,8 +22,8 @@
         />
       </div>
       <img
-        class="boilerplates-list__item-logo"
-        :src="$getMediaFromS3(`/images/OpenSource/svg/${logo.name}.svg`)"
+        class="boilerplates-list__item-logo media_lazy"
+        :data-src="$getMediaFromS3(`/images/OpenSource/svg/${logo.name}.svg`)"
         :alt="logo.alt"
         :width="logo.width"
         :height="logo.height"
