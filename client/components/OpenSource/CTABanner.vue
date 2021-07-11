@@ -60,5 +60,42 @@ export default {
       font-size: 16px;
     }
   }
+
+  @media screen and (max-width: 1380px) {
+    /deep/ .cta-banner {
+      min-height: auto;
+    }
+  }
+
+  @media screen and (max-width: 1090px) {
+    /deep/ .cta-banner {
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 32px 0;
+      &__info {
+        text-align: center;
+        align-items: center;
+      }
+      &__image {
+        margin-top: 70px;
+        position: static;
+        width: 85%;
+        height: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 27px;
+    &__head {
+      margin-bottom: 25px;
+    }
+
+    /deep/ .cta-banner {
+      &__image {
+        width: calc(100% + 48px);
+      }
+    }
+  }
 }
 </style>
