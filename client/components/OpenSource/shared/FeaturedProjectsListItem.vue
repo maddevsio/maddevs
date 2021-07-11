@@ -14,7 +14,7 @@
         <h3>{{ title }}</h3>
         <p>{{ description }}</p>
       </div>
-      <UIArrowButton />
+      <UIArrowButton class="featured-projects-list__item-button" />
     </NuxtLink>
   </li>
 </template>
@@ -66,7 +66,7 @@ export default {
   border-radius: 4px;
   background-color: $bgcolor--black-pale;
   &:hover {
-    /deep/ .ui-arrow-button {
+    .featured-projects-list__item-button {
       background-color: $border-color--white;
       color: $text-color--black-oil;
     }

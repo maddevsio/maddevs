@@ -33,5 +33,19 @@ export default {
   &__head {
     margin-bottom: 85px;
   }
+
+  @media screen and (max-width: 1024px) {
+    padding-bottom: 137px;
+    &__head {
+      margin-bottom: 83px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 94px;
+    &__head {
+      margin-bottom: 50px;
+    }
+  }
 }
 </style>
