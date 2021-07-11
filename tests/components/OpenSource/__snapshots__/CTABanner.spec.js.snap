@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CTABanner component should render correctly 1`] = `
+<div>
+  <div
+    class="open-source-cta"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="open-source-cta__head"
+      >
+        <titledesc-stub
+          description=""
+          textcolor="black"
+          title="Contribute <br /> to open source"
+        />
+      </div>
+       
+      <uibanner-stub
+        image="img.jpg"
+        imagealttext="Team"
+        manname=""
+        manposition=""
+        text="Showcase your work, give feedback <br /> to others, and learn from each other."
+        title="Develop with <br /> Mad Devs"
+      >
+        <uibutton-stub>
+          
+        Contribute
+      
+        </uibutton-stub>
+      </uibanner-stub>
+    </div>
+  </div>
+</div>
+`;

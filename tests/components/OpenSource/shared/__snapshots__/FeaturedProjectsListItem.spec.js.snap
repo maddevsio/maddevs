@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeaturedProjectsListItem component should render correctly 1`] = `
+<div>
+  <li
+    class="featured-projects-list__item"
+  >
+    <a
+      class="featured-projects-list__item-link"
+      href="link"
+      target="_blank"
+    >
+      <div
+        class="featured-projects-list__item-info"
+      >
+        <img
+          class="media_lazy"
+          data-src="img.jpg"
+          height="62"
+          width="62"
+        />
+         
+        <h3>
+          title
+        </h3>
+         
+        <p>
+          description
+        </p>
+      </div>
+       
+      <button
+        class="ui-arrow-button featured-projects-list__item-button ui-arrow-button--white"
+        type="button"
+      >
+        <span>
+          ↓
+        </span>
+      </button>
+    </a>
+  </li>
+</div>
+`;

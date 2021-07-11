@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeaturedProjectsList component should render correctly 1`] = `
+<div>
+  <section>
+    <ul
+      class="featured-projects-list"
+    >
+      <featuredprojectslistitem-stub
+        description="A library for GPS and Accelerometer data \\"fusion\\" with Kalman filter."
+        id="location"
+        link="https://github.com/maddevsio/mad-location-manager/"
+        logo="[object Object]"
+        name=""
+        title="Mad Location Manager"
+      />
+      <featuredprojectslistitem-stub
+        description="A team management system that helps track performance and assists team members in daily remote stand-ups meetings."
+        id="comedian"
+        link="https://github.com/maddevsio/comedian/"
+        logo="[object Object]"
+        name=""
+        title="Comedian"
+      />
+      <featuredprojectslistitem-stub
+        description="Geocoder Ariadna on ElasticSearch with OpenStreetMap"
+        id="ariadna"
+        link="https://github.com/maddevsio/ariadna/"
+        logo="[object Object]"
+        name=""
+        title="Ariadna"
+      />
+      <featuredprojectslistitem-stub
+        description="Mad Devs website source code"
+        id="maddevs"
+        link="https://github.com/maddevsio/maddevs/"
+        logo="[object Object]"
+        name=""
+        title="Mad Devs website"
+      />
+      <featuredprojectslistitem-stub
+        description="Match faces on id cards with OCR capabilities."
+        id="idmatch"
+        link="https://github.com/maddevsio/idmatch/"
+        logo="[object Object]"
+        name=""
+        title="IDMatch"
+      />
+      <featuredprojectslistitem-stub
+        description="A solution to create lists of Youtube videos and stream them online"
+        id="yourcast"
+        link="https://github.com/maddevsio/yourcast.tv/"
+        logo="[object Object]"
+        name=""
+        title="YourcastTV"
+      />
+    </ul>
+     
+    <a
+      class="featured-projects-list__see-more"
+      href="https://github.com/maddevsio/"
+      target="_blank"
+    >
+      <button
+        class="ui-button"
+        style="position: relative; overflow: hidden;"
+      >
+        70+ Open source projects on GitHub
+        <div
+          class="wave"
+        />
+      </button>
+    </a>
+  </section>
+</div>
+`;

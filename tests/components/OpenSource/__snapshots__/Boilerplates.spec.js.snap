@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Boilerplates component should render correctly 1`] = `
+<div>
+  <div
+    class="boilerplates"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="boilerplates__head"
+      >
+        <titledesc-stub
+          description="Build software faster with our collection <br /> of pre-configured code."
+          textcolor="black"
+          title="Boilerplates"
+        />
+      </div>
+       
+      <boilerplateslist-stub />
+    </div>
+  </div>
+</div>
+`;

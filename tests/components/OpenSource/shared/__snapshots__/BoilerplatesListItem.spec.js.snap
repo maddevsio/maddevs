@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BoilerplatesListItem component should render correctly 1`] = `
+<div>
+  <li
+    class="boilerplates-list__item"
+  >
+    <a
+      class="boilerplates-list__item-link boilerplates-list__item-link--bottom-padding"
+      href="link"
+      target="_blank"
+    >
+      <div
+        class="boilerplates-list__item-info"
+      >
+        <h3>
+          title
+        </h3>
+         
+        <p>
+          description
+        </p>
+         
+        <button
+          class="ui-arrow-button boilerplates-list__item-button ui-arrow-button--black"
+          type="button"
+        >
+          <span>
+            ↓
+          </span>
+        </button>
+      </div>
+       
+      <img
+        class="boilerplates-list__item-logo media_lazy"
+        data-src="img.jpg"
+      />
+    </a>
+  </li>
+</div>
+`;
