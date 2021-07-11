@@ -7,12 +7,13 @@
         v-bind="item"
       />
     </ul>
-    <NuxtLink
-      to="#"
+    <a
+      href="https://github.com/maddevsio"
+      target="_blank"
       class="featured-projects-list__see-more"
     >
       <UIButton>70+ Open source projects on GitHub</UIButton>
-    </NuxtLink>
+    </a>
   </section>
 </template>
 

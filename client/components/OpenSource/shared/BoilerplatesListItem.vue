@@ -3,8 +3,9 @@
     class="boilerplates-list__item"
     :class="fullWidth ? 'boilerplates-list__item--full-width' : null"
   >
-    <NuxtLink
-      :to="link"
+    <a
+      :href="link"
+      target="_blank"
       class="boilerplates-list__item-link"
       :class="bottomPadding ? 'boilerplates-list__item-link--bottom-padding' : null"
     >
@@ -27,7 +28,7 @@
         :width="logo.width"
         :height="logo.height"
       >
-    </NuxtLink>
+    </a>
   </li>
 </template>
 

@@ -1,7 +1,8 @@
 <template>
   <li class="featured-projects-list__item">
-    <NuxtLink
-      :to="link"
+    <a
+      :href="link"
+      target="_blank"
       class="featured-projects-list__item-link"
     >
       <div class="featured-projects-list__item-info">
@@ -15,7 +16,7 @@
         <p>{{ description }}</p>
       </div>
       <UIArrowButton class="featured-projects-list__item-button" />
-    </NuxtLink>
+    </a>
   </li>
 </template>
 

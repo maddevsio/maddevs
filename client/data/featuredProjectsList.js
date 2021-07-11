@@ -7,7 +7,7 @@ export const featuredProjectsList = [
     },
     title: 'Mad Location Manager',
     description: 'A library for GPS and Accelerometer data "fusion" with Kalman filter.',
-    link: '',
+    link: 'https://github.com/maddevsio/mad-location-manager/',
   },
   {
     id: 'comedian',
@@ -17,7 +17,7 @@ export const featuredProjectsList = [
     },
     title: 'Comedian',
     description: 'A team management system that helps track performance and assists team members in daily remote stand-ups meetings.',
-    link: '',
+    link: 'https://github.com/maddevsio/comedian/',
   },
   {
     id: 'ariadna',
@@ -27,7 +27,7 @@ export const featuredProjectsList = [
     },
     title: 'Ariadna',
     description: 'Geocoder Ariadna on ElasticSearch with OpenStreetMap',
-    link: '',
+    link: 'https://github.com/maddevsio/ariadna/',
   },
   {
     id: 'maddevs',
@@ -37,7 +37,7 @@ export const featuredProjectsList = [
     },
     title: 'Mad Devs website',
     description: 'Mad Devs website source code',
-    link: '',
+    link: 'https://github.com/maddevsio/maddevs/',
   },
   {
     id: 'idmatch',
@@ -47,7 +47,7 @@ export const featuredProjectsList = [
     },
     title: 'IDMatch',
     description: 'Match faces on id cards with OCR capabilities.',
-    link: '',
+    link: 'https://github.com/maddevsio/idmatch/',
   },
   {
     id: 'yourcast',
@@ -57,6 +57,6 @@ export const featuredProjectsList = [
     },
     title: 'YourcastTV',
     description: 'A solution to create lists of Youtube videos and stream them online',
-    link: '',
+    link: 'https://github.com/maddevsio/yourcast.tv/',
   },
 ]
