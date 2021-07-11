@@ -177,7 +177,7 @@ export default {
 
   computed: {
     logoTextIsActive() {
-      if (this.$nuxt.$route.name === 'delivery-models') return false
+      if (this.$nuxt.$route.name === 'delivery-models' || this.$nuxt.$route.name === 'open-source') return false
       return this.showLogoText
     },
 

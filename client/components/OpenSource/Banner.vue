@@ -75,7 +75,6 @@ export default {
   }
   &__subtitle {
     margin-top: 64px;
-    font-weight: 600;
     font-size: 32px;
     letter-spacing: -0.013em;
     line-height: 44px;
