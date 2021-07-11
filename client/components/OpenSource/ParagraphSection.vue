@@ -26,5 +26,17 @@ export default {
   span {
     color: $text-color--red-dark;
   }
+
+  @media screen and (max-width: 1024px) {
+    padding: 195px 0;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 128px 0;
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 </style>
