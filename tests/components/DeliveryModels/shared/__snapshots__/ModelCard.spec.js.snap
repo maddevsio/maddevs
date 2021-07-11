@@ -117,7 +117,8 @@ exports[`ModelCard component should render correctly 1`] = `
         </h2>
          
         <button
-          class="model-card__button"
+          class="ui-arrow-button model-card__button ui-arrow-button--white"
+          type="button"
         >
           <span>
             ↓
