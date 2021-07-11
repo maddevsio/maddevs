@@ -33,7 +33,15 @@ export default {
 
 .boilerplates-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 48px;
+
+  @media screen and (max-width: 1260px) {
+    grid-gap: 24px;
+  }
+
+  @media screen and (max-width: 1090px) {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

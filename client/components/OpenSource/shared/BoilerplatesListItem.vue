@@ -1,14 +1,12 @@
 <template>
   <li
     class="boilerplates-list__item"
-    :class="[
-      fullWidth ? 'boilerplates-list__item--full-width' : null,
-      bottomPadding ? 'boilerplates-list__item--bottom-padding' : null,
-    ]"
+    :class="fullWidth ? 'boilerplates-list__item--full-width' : null"
   >
     <NuxtLink
       :to="link"
       class="boilerplates-list__item-link"
+      :class="bottomPadding ? 'boilerplates-list__item-link--bottom-padding' : null"
     >
       <div class="boilerplates-list__item-info">
         <h3
@@ -17,7 +15,10 @@
         <p
           v-html="description"
         />
-        <UIArrowButton color="black" />
+        <UIArrowButton
+          color="black"
+          class="boilerplates-list__item-button"
+        />
       </div>
       <img
         class="boilerplates-list__item-logo"
@@ -85,11 +86,8 @@ export default {
   &--full-width {
     grid-column: auto/span 2;
   }
-  &--bottom-padding {
-    padding-bottom: 104px;
-  }
   &:hover {
-    /deep/ .ui-arrow-button {
+    .boilerplates-list__item-button {
       background-color: $text-color--black-oil;
       color: $text-color--white-primary;
     }
@@ -106,6 +104,9 @@ export default {
     height: 100%;
     color: $text-color--black-oil;
     word-break: break-word;
+    &--bottom-padding {
+      padding-bottom: 104px;
+    }
   }
   &-info {
     h3 {
@@ -120,17 +121,69 @@ export default {
       letter-spacing: -0.013em;
       max-width: 814px;
     }
-    /deep/ .ui-arrow-button {
-      margin: 40px auto 0;
-    }
+  }
+  &-button {
+    margin: 40px auto 0;
   }
   &-logo {
     margin-top: 45px;
     display: block;
     line-height: 1;
-    max-width: 100%;
+    max-width: 75%;
     width: auto;
     height: auto;
+  }
+
+  @media screen and (max-width: 1260px) {
+    &-info {
+      h3 {
+        font-size: 40px;
+        line-height: 48px;
+      }
+      p {
+        margin-top: 16px;
+        font-size: 17px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1090px) {
+    /deep/ br {
+      display: none;
+    }
+    &--full-width {
+      grid-column: auto;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &-link {
+      padding-top: 51px;
+      &--bottom-padding {
+        padding-bottom: 65px;
+      }
+    }
+    &-button {
+      margin-top: 28px;
+    }
+    &-logo {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &-link {
+      padding: 29px 20px 0;
+      &--bottom-padding {
+        padding-bottom: 43px;
+      }
+    }
+    &-info {
+      h3 {
+        font-size: 32px;
+      }
+    }
   }
 }
 </style>
