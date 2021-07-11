@@ -54,10 +54,7 @@ export default {
 
     logo: {
       type: Object,
-      default: () => ({
-        marginTop: 45,
-        marginBottom: 0,
-      }),
+      default: () => ({}),
     },
 
     title: {

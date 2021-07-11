@@ -8,7 +8,12 @@ const mocks = {
 const props = {
   fullWidth: false,
   bottomPadding: true,
-  logo: 'logo name',
+  logo: {
+    name: 'logo name',
+    alt: 'alt text',
+    width: 23,
+    height: 32,
+  },
   title: 'title',
   description: 'description',
   link: 'link',

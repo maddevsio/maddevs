@@ -6,7 +6,10 @@ const mocks = {
 }
 
 const props = {
-  logo: 'logo name',
+  logo: {
+    name: 'logo name',
+    alt: 'alt text',
+  },
   name: 'name',
   title: 'title',
   description: 'description',
