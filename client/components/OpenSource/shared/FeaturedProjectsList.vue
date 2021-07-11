@@ -8,7 +8,7 @@
       />
     </ul>
     <a
-      href="https://github.com/maddevsio"
+      href="https://github.com/maddevsio/"
       target="_blank"
       class="featured-projects-list__see-more"
     >
