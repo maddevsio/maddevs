@@ -20,24 +20,21 @@
           class="model-card__title"
           v-html="title"
         />
-        <button
-          type="button"
-          class="model-card__button"
-        >
-          <span v-html="'↓'" />
-        </button>
+        <UIArrowButton class="model-card__button" />
       </div>
     </NuxtLink>
   </div>
 </template>
 
 <script>
+import UIArrowButton from '@/components/shared/UIArrowButton'
 import Lottie from 'vue-lottie/src/lottie.vue'
 
 export default {
   name: 'ModelCard',
   components: {
     Lottie,
+    UIArrowButton,
   },
 
   props: {
