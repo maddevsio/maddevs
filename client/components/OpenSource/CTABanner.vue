@@ -10,9 +10,14 @@
         :image="$getMediaFromS3('/images/OpenSource/png/team.png')"
         image-alt-text="Team"
       >
-        <UIButton>
-          Contribute
-        </UIButton>
+        <a
+          href="https://github.com/maddevsio"
+          target="_blank"
+        >
+          <UIButton>
+            Contribute
+          </UIButton>
+        </a>
       </UIBanner>
     </div>
   </div>
