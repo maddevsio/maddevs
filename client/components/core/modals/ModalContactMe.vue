@@ -33,15 +33,13 @@ export default {
 
   methods: {
     show() {
-      if (!this.$refs.modalContactMe.show) return false
+      if (!this.$refs.modalContactMe.show) return
       this.$refs.modalContactMe.show()
-      return true
     },
 
     close() {
-      if (!this.$refs.modalContactMe.close) return false
+      if (!this.$refs.modalContactMe.close) return
       this.$refs.modalContactMe.close()
-      return true
     },
   },
 }
