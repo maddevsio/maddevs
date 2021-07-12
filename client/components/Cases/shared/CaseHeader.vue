@@ -25,9 +25,10 @@
       Your browser does not support the video tag.
     </video>
     <div class="case_header-content">
+      <!-- sectionTextOpacity - value from changeOpacityOnScrollMixin mixin -->
       <div
-        ref="mainVideo"
-        :style="{opacity}"
+        ref="sectionText"
+        :style="{opacity: sectionTextOpacity}"
         class="case_header-text"
       >
         <div class="case_case-study-item">
@@ -38,7 +39,7 @@
         <slot name="actions" />
       </div>
       <img
-        :style="{opacity}"
+        :style="{opacity: sectionTextOpacity}"
         :width="logo.width"
         :height="logo.height"
         :src="$getMediaFromS3(`/images/Cases/${logo.folder}/svg/${logo.file}.svg`)"
@@ -51,8 +52,12 @@
 </template>
 
 <script>
+import changeSectionTextOpacityMixin from '@/mixins/changeSectionTextOpacityMixin'
+
 export default {
   name: 'Header',
+
+  mixins: [changeSectionTextOpacityMixin('sectionText')],
 
   props: {
     logo: {
@@ -100,11 +105,6 @@ export default {
       default: '',
     },
 
-    textOpacity: {
-      type: Boolean,
-      default: true,
-    },
-
     scrollContainer: {
       type: Object,
       default: null,
@@ -114,7 +114,6 @@ export default {
   data() {
     return {
       isIphone: false,
-      opacity: 1,
     }
   },
 
@@ -124,31 +123,6 @@ export default {
     } else {
       this.isIphone = false
     }
-    if (this.textOpacity) {
-      window.addEventListener('scroll', this.onScroll)
-    }
-  },
-
-  destroyed() {
-    if (this.textOpacity) {
-      window.removeEventListener('scroll', this.onScroll)
-    }
-  },
-
-  methods: {
-    onScroll() {
-      const { mainVideo } = this.$refs
-      if (!mainVideo) return
-      const { clientHeight } = mainVideo
-      const scrollPosition = this.getScrollPosition()
-      const result = ((clientHeight - scrollPosition) / clientHeight) + 0.2
-      if (result > 0 && result <= 1) this.opacity = ((clientHeight - scrollPosition) / clientHeight) + 0.2
-      if (scrollPosition === 0) this.opacity = 1
-    },
-
-    getScrollPosition() {
-      return window.scrollY
-    },
   },
 }
 </script>

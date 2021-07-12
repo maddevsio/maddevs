@@ -16,7 +16,12 @@
       >
     </picture>
     <div class="container">
-      <div class="banner__content">
+      <!-- sectionTextOpacity - value from changeOpacityOnScrollMixin mixin -->
+      <div
+        ref="sectionText"
+        class="banner__content"
+        :style="{opacity: sectionTextOpacity}"
+      >
         <h1 class="banner__title">
           Delivery <br> models
         </h1>
@@ -29,8 +34,11 @@
 </template>
 
 <script>
+import changeSectionTextOpacityMixin from '@/mixins/changeSectionTextOpacityMixin'
+
 export default {
   name: 'Banner',
+  mixins: [changeSectionTextOpacityMixin('sectionText')],
 }
 </script>
 
@@ -42,8 +50,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 85vh;
-  margin-top: 62px; // height of header component
+  height: 85vh;
+  min-height: 568px;
+  padding-top: 62px; // height of header component
   background: linear-gradient(180deg, rgba(17, 18, 19, 0) 60%, #111213 100%);
   overflow: hidden;
   &__image {
