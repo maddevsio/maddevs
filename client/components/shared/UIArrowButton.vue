@@ -2,9 +2,9 @@
   <button
     type="button"
     class="ui-arrow-button"
-    :class="color === 'black' ? 'ui-arrow-button--black' : 'ui-arrow-button--white'"
+    :class="colorClass"
   >
-    <span v-html="'↓'" />
+    <span>↓</span>
   </button>
 </template>
 
@@ -15,6 +15,12 @@ export default {
     color: {
       type: String,
       default: 'white',
+    },
+  },
+
+  computed: {
+    colorClass() {
+      return `ui-arrow-button--${this.color}`
     },
   },
 }

@@ -1,7 +1,7 @@
 <template>
   <section
     class="title-desc"
-    :class="textColor === 'black' ? 'title-desc--black-text' : 'title-desc--white-text'"
+    :class="colorClass"
   >
     <h2 v-html="title" />
     <p
@@ -28,6 +28,12 @@ export default {
     textColor: {
       type: String,
       default: 'black',
+    },
+  },
+
+  computed: {
+    colorClass() {
+      return `title-desc--${this.textColor}-text`
     },
   },
 }
