@@ -261,6 +261,7 @@ export default {
               positionValue: this.grade.value,
               subject: `Job Candidate Application for ${this.position}`,
               modalTitle: 'Mad Devs Website Carrers Form',
+              pageUrl: (window && window.location.href) || 'Unknown',
               ip,
               geoIp: `Country: ${country}, City: ${city}`,
               userBrowser,
