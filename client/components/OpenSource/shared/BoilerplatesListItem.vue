@@ -1,13 +1,13 @@
 <template>
   <li
     class="boilerplates-list__item"
-    :class="fullWidth ? 'boilerplates-list__item--full-width' : null"
+    :class="widthClass"
   >
     <a
       :href="link"
       target="_blank"
       class="boilerplates-list__item-link"
-      :class="bottomPadding ? 'boilerplates-list__item-link--bottom-padding' : null"
+      :class="paddingClass"
     >
       <div class="boilerplates-list__item-info">
         <h3
@@ -70,6 +70,16 @@ export default {
     link: {
       type: String,
       default: '',
+    },
+  },
+
+  computed: {
+    widthClass() {
+      return this.fullWidth ? 'boilerplates-list__item--full-width' : null
+    },
+
+    paddingClass() {
+      return this.bottomPadding ? 'boilerplates-list__item-link--bottom-padding' : null
     },
   },
 }
