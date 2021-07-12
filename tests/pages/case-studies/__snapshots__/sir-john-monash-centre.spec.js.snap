@@ -7,7 +7,7 @@ exports[`SirJohnMonashCentre _uid component should render correctly 1`] = `
   >
     <section
       class="case_header case_header-sjmc"
-      id="case-header"
+      id="transparent-header-area"
     >
       <div
         class="case_main-video_fallback"

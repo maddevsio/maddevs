@@ -26,6 +26,7 @@ const createLeadMixin = (templateId, title = 'Individuals', subject = 'Marketing
           agreeToGetMadDevsDiscountOffers: variables.agreeToGetMadDevsDiscountOffers ? 'Yes' : 'No',
           agreeWithPrivacyPolicy: variables.agreeWithPrivacyPolicy ? 'Yes' : 'No',
           formLocation: variables.formLocation,
+          pageUrl: (window && window.location.href) || 'Unknown',
           ip,
           geoIp: `Country: ${country}, City: ${city}`,
           userBrowser,

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main component should render correctly 1`] = `
+<div>
+  <div
+    class="open-source"
+  >
+    <banner-stub />
+     
+    <paragraphsection-stub />
+     
+    <featuredprojects-stub />
+     
+    <div
+      class="open-source--bg-white"
+    >
+      <boilerplates-stub />
+       
+      <ctabanner-stub />
+    </div>
+  </div>
+</div>
+`;

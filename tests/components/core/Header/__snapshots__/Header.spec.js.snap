@@ -98,6 +98,15 @@ exports[`Header component should render correctly 1`] = `
               <nuxtlink-stub
                 class="header__navigation-link"
                 data-testid="test-navigation-link"
+                to="/open-source/"
+              >
+                
+              Open Source
+            
+              </nuxtlink-stub>
+              <nuxtlink-stub
+                class="header__navigation-link"
+                data-testid="test-navigation-link"
                 to="/careers/"
               >
                 
