@@ -4,6 +4,7 @@ exports[`Banner component should render correctly 1`] = `
 <div>
   <div
     class="banner"
+    id="transparent-header-area"
   >
     <picture>
       <source
@@ -27,6 +28,7 @@ exports[`Banner component should render correctly 1`] = `
     >
       <div
         class="banner__content"
+        style="opacity: 1;"
       >
         <h1
           class="banner__title"

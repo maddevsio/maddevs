@@ -1,6 +1,6 @@
 <template>
   <section
-    id="case-header"
+    id="transparent-header-area"
     class="case_header"
     :class="`case_header-${project}`"
   >

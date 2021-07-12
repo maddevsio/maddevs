@@ -8,7 +8,7 @@
       ref="header"
       data-testid="test-header"
       :class="{
-        'is-transparent-bg': !isActiveMobileMenu && isTransparentBG && isCasePage,
+        'is-transparent-bg': !isActiveMobileMenu && isTransparentBG && hasTransparentHeaderArea,
       }"
       class="header"
     >
@@ -169,7 +169,7 @@ export default {
       navigation,
       showLogoText: true,
       isActiveMobileMenu: false,
-      isCasePage: false,
+      hasTransparentHeaderArea: false,
       isTransparentBG: true,
       searchActive: false,
     }
@@ -177,7 +177,6 @@ export default {
 
   computed: {
     logoTextIsActive() {
-      if (this.$nuxt.$route.name === 'delivery-models' || this.$nuxt.$route.name === 'open-source') return false
       return this.showLogoText
     },
 
@@ -227,7 +226,9 @@ export default {
     },
 
     setDefaultStateForHeader() {
-      this.isCasePage = this.$nuxt.$route.name && this.$nuxt.$route.name.includes('case-studies-')
+      const pagesWithTransparentHeaderArea = ['delivery-models', 'open-source']
+      const { name: routeName } = this.$nuxt.$route
+      if (routeName) this.hasTransparentHeaderArea = routeName.includes('case-studies-') || pagesWithTransparentHeaderArea.includes(routeName)
     },
 
     changeLogoState(scrollTop) {
@@ -257,7 +258,7 @@ export default {
 
     setStylesForHeader() {
       const scrollTop = window.scrollY
-      const area = document.querySelector('#case-header')
+      const area = document.querySelector('#transparent-header-area')
       const headerHeight = this.$refs.header.clientHeight
       const earlyStartBGChange = 30 // For an earlier start change background header
 
@@ -272,7 +273,7 @@ export default {
     },
 
     scrollHandler() {
-      if (this.isCasePage) {
+      if (this.hasTransparentHeaderArea) {
         this.setStylesForHeader()
       } else {
         this.changeLogoState(window.pageYOffset)

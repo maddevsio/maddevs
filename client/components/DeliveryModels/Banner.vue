@@ -1,5 +1,8 @@
 <template>
-  <div class="banner">
+  <div
+    id="transparent-header-area"
+    class="banner"
+  >
     <picture>
       <source
         :srcset="[$getMediaFromS3('/images/DeliveryModels/webp/banner.webp') + ' ', $getMediaFromS3('/images/DeliveryModels/webp/banner@2x.webp 2x')]"
