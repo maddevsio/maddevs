@@ -26,11 +26,16 @@ exports[`CTABanner component should render correctly 1`] = `
         text="Showcase your work, give feedback <br /> to others, and learn from each other."
         title="Develop with <br /> Mad Devs"
       >
-        <uibutton-stub>
-          
-        Contribute
-      
-        </uibutton-stub>
+        <a
+          href="https://github.com/maddevsio"
+          target="_blank"
+        >
+          <uibutton-stub>
+            
+          Contribute
+        
+          </uibutton-stub>
+        </a>
       </uibanner-stub>
     </div>
   </div>
