@@ -191,4 +191,66 @@ describe('ModalSearch component', () => {
     }
     expect(wrapper.vm.getAuthor(post, 'position')).toEqual('Senior')
   })
+
+  it('if post arg is empty > getAuthor will return null', () => {
+    wrapper = shallowMount(ModalSearch, {
+      localVue,
+      store,
+      mocks: {
+        ...mocks,
+      },
+    })
+    const post = undefined
+    expect(wrapper.vm.getAuthor(post, 'position')).toBeNull()
+  })
+
+  it('if field arg is empty > getAuthor will return null', () => {
+    wrapper = shallowMount(ModalSearch, {
+      localVue,
+      store,
+      mocks: {
+        ...mocks,
+      },
+    })
+    const post = {
+      data: {
+        post_author: {
+          id: '123',
+        },
+      },
+    }
+    expect(wrapper.vm.getAuthor(post)).toBeNull()
+  })
+
+  it('if post obj dosnt have key "id" > getAuthor will return null', () => {
+    wrapper = shallowMount(ModalSearch, {
+      localVue,
+      store,
+      mocks: {
+        ...mocks,
+      },
+    })
+    const post = {
+      data: {
+        post_author: {},
+      },
+    }
+    expect(wrapper.vm.getAuthor(post)).toBeNull()
+  })
+
+  it('if call onClose method > data response will be null', () => {
+    wrapper = shallowMount(ModalSearch, {
+      localVue,
+      store,
+      mocks: {
+        ...mocks,
+      },
+      data: () => ({
+        response: [{}, {}],
+      }),
+    })
+    expect(wrapper.vm.response).toEqual([{}, {}])
+    wrapper.vm.onClose()
+    expect(wrapper.vm.response).toBeNull()
+  })
 })
