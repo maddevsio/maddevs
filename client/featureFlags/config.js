@@ -4,5 +4,6 @@
  * Available environments - [development, staging, production]
  */
 export const config = {
+  openSourcePage: ['development', 'staging'],
   careersPageAnimations: ['development', 'staging'],
 }
