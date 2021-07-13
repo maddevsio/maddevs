@@ -33,10 +33,12 @@ export default {
 
   methods: {
     show() {
+      if (!this.$refs.modalTeams.show) return
       this.$refs.modalTeams.show()
     },
 
     close() {
+      if (!this.$refs.modalTeams.close) return
       this.$refs.modalTeams.close()
     },
   },

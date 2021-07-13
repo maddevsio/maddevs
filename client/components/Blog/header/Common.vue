@@ -20,11 +20,10 @@
       :class="imageBackgroundClass"
     >
       <img
-        :data-src="compressedImage"
+        :src="compressedImage"
         :width="coverImageWidth"
         :height="coverImageHeight"
         :alt="coverImageAltText"
-        class="img_lazy"
       >
     </div>
   </div>
@@ -84,6 +83,18 @@ export default {
       const extension = extractFileExtension(this.coverImageUrl)
       return allowedExtensions.includes(extension) ? 'blog-post__introduction-image--with-background' : ''
     },
+  },
+
+  head() {
+    return {
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          href: this.compressedImage,
+        },
+      ],
+    }
   },
 }
 </script>

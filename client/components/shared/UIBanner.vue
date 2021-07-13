@@ -1,10 +1,12 @@
 <template>
   <section class="cta-banner">
-    <h2 v-html="title" />
-    <p v-html="text" />
-    <!-- Child elements start -->
-    <slot />
-    <!-- Child elements end -->
+    <div class="cta-banner__info">
+      <h2 v-html="title" />
+      <p v-html="text" />
+      <!-- Child elements start -->
+      <slot />
+      <!-- Child elements end -->
+    </div>
     <img
       width="395"
       height="490"
@@ -59,6 +61,10 @@ export default {
 <style lang="scss" scoped>
 .cta-banner {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   position: relative;
   background-color: $bgcolor--silver;
   padding: 85px 105px;
@@ -69,10 +75,8 @@ export default {
     padding: 40px;
   }
   @media screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 40px 32px 0;
   }
 
@@ -129,6 +133,15 @@ export default {
       line-height: 21px;
       margin-bottom: 24px;
       text-align: center;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width: 768px) {
+      align-items: center;
     }
   }
 

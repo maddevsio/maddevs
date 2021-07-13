@@ -11,9 +11,8 @@
       class="post-author__image"
     >
       <img
-        :data-src="thumbnailImage.url"
+        :src="thumbnailImage.url"
         :alt="thumbnailImage.alt"
-        class="img_lazy"
         width="36"
         height="36"
       >
@@ -72,6 +71,18 @@ export default {
       type: String,
       default: 'light',
     },
+  },
+
+  head() {
+    return {
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          href: this.thumbnailImage.url,
+        },
+      ],
+    }
   },
 
   computed: {

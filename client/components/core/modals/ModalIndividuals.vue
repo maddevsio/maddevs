@@ -33,10 +33,12 @@ export default {
 
   methods: {
     show() {
+      if (!this.$refs.modalIndividuals.show) return
       this.$refs.modalIndividuals.show()
     },
 
     close() {
+      if (!this.$refs.modalIndividuals.close) return
       this.$refs.modalIndividuals.close()
     },
   },

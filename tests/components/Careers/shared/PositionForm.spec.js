@@ -32,6 +32,8 @@ jest.mock('bowser', () => ({
   }),
 }))
 
+Object.defineProperty(global.window, 'location', { value: { href: 'pageUrl' }, writable: true })
+
 const localVue = createLocalVue()
 
 localVue.use(Vuelidate)
@@ -199,6 +201,7 @@ describe('PositionForm component', () => {
             positionTitle: wrapper.vm.$props.position,
             subject: `Job Candidate Application for ${wrapper.vm.$props.position}`,
             modalTitle: 'Mad Devs Website Carrers Form',
+            pageUrl: 'pageUrl',
             ip: 'ip',
             geoIp: 'Country: country, City: city',
             userBrowser: 'Name: Chrome, Version: 91.0.4472.114',
