@@ -14,7 +14,7 @@ exports[`index page renders correctly 1`] = `
         class="text-content_wrapper container"
       >
         <div
-          class="main-title-wrapper col-xxl-7 col-xl-7 col-lg-7"
+          class="main-title-wrapper"
         >
           <h1
             class="banner-main_title"
@@ -37,7 +37,7 @@ exports[`index page renders correctly 1`] = `
         </div>
          
         <div
-          class="icon-item col-xxl-4 col-xl-5 col-lg-5"
+          class="icon-item"
         >
           <div
             class="animation-img-wrap"
@@ -112,10 +112,10 @@ exports[`index page renders correctly 1`] = `
         </h2>
          
         <div
-          class="weCreateItProject__projects-type_list row gy-0"
+          class="weCreateItProject__projects-list"
         >
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="weCreateItProject__project-item"
           >
             <p
               class="weCreateItProject__paragraph"
@@ -130,7 +130,7 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="weCreateItProject__project-item"
           >
             <p
               class="weCreateItProject__paragraph"
@@ -145,7 +145,7 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="weCreateItProject__project-item"
           >
             <p
               class="weCreateItProject__paragraph"
@@ -160,7 +160,7 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="weCreateItProject__project-item"
           >
             <p
               class="weCreateItProject__paragraph"
@@ -175,7 +175,7 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="weCreateItProject__project-item"
           >
             <p
               class="weCreateItProject__paragraph"
@@ -190,7 +190,7 @@ exports[`index page renders correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="weCreateItProject__project-item"
           >
             <p
               class="weCreateItProject__paragraph"
@@ -1916,14 +1916,14 @@ exports[`index page renders correctly 1`] = `
   </section>
    
   <section
-    class="quickProjectStart"
-    id="quickProjectStart"
+    class="quick-project-start"
+    id="quick-project-start"
   >
     <div
       class="container"
     >
       <h2
-        class="quickProjectStart__main-title"
+        class="quick-project-start__main-title"
       >
         
       Quick Project Start
@@ -1931,17 +1931,17 @@ exports[`index page renders correctly 1`] = `
       </h2>
        
       <div
-        class="quickProjectStart__content-list row"
+        class="quick-project-start__content-list"
       >
         <div
-          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_contact"
+          class="quick-project-start__list-item"
         >
           <div
-            class="quickProjectStart__icons-group"
+            class="quick-project-start__icons-group"
           >
             <img
               alt="contact"
-              class="quickProjectStart__main-icon img_lazy"
+              class="quick-project-start__main-icon img_lazy"
               data-src="[object Object]"
               height="73"
               width="52"
@@ -1949,7 +1949,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Arrow"
-              class="quickProjectStart__arrow-icon img_lazy"
+              class="quick-project-start__arrow-icon img_lazy"
               data-src="[object Object]"
               height="65"
               width="165"
@@ -1957,10 +1957,10 @@ exports[`index page renders correctly 1`] = `
           </div>
            
           <div
-            class="quickProjectStart__list-item-text-wrapper"
+            class="quick-project-start__list-item-text-wrapper"
           >
             <h3
-              class="quickProjectStart__title"
+              class="quick-project-start__title"
             >
               
             contact
@@ -1968,7 +1968,7 @@ exports[`index page renders correctly 1`] = `
             </h3>
              
             <p
-              class="quickProjectStart__description"
+              class="quick-project-start__description"
             >
               
             Submit your project request or project idea to us.
@@ -1977,14 +1977,14 @@ exports[`index page renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_analysis"
+          class="quick-project-start__list-item"
         >
           <div
-            class="quickProjectStart__icons-group"
+            class="quick-project-start__icons-group"
           >
             <img
               alt="analysis"
-              class="quickProjectStart__main-icon img_lazy"
+              class="quick-project-start__main-icon img_lazy"
               data-src="[object Object]"
               height="73"
               width="52"
@@ -1992,7 +1992,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Arrow"
-              class="quickProjectStart__arrow-icon img_lazy"
+              class="quick-project-start__arrow-icon img_lazy"
               data-src="[object Object]"
               height="65"
               width="165"
@@ -2000,10 +2000,10 @@ exports[`index page renders correctly 1`] = `
           </div>
            
           <div
-            class="quickProjectStart__list-item-text-wrapper"
+            class="quick-project-start__list-item-text-wrapper"
           >
             <h3
-              class="quickProjectStart__title"
+              class="quick-project-start__title"
             >
               
             analysis
@@ -2011,7 +2011,7 @@ exports[`index page renders correctly 1`] = `
             </h3>
              
             <p
-              class="quickProjectStart__description"
+              class="quick-project-start__description"
             >
               
             We will contact you to clarify your project requirements.
@@ -2020,14 +2020,14 @@ exports[`index page renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_proposal"
+          class="quick-project-start__list-item"
         >
           <div
-            class="quickProjectStart__icons-group"
+            class="quick-project-start__icons-group"
           >
             <img
               alt="proposal"
-              class="quickProjectStart__main-icon img_lazy"
+              class="quick-project-start__main-icon img_lazy"
               data-src="[object Object]"
               height="73"
               width="52"
@@ -2035,7 +2035,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Arrow"
-              class="quickProjectStart__arrow-icon img_lazy"
+              class="quick-project-start__arrow-icon img_lazy"
               data-src="[object Object]"
               height="65"
               width="165"
@@ -2043,10 +2043,10 @@ exports[`index page renders correctly 1`] = `
           </div>
            
           <div
-            class="quickProjectStart__list-item-text-wrapper"
+            class="quick-project-start__list-item-text-wrapper"
           >
             <h3
-              class="quickProjectStart__title"
+              class="quick-project-start__title"
             >
               
             proposal
@@ -2054,7 +2054,7 @@ exports[`index page renders correctly 1`] = `
             </h3>
              
             <p
-              class="quickProjectStart__description"
+              class="quick-project-start__description"
             >
               
             We will provide you with our free, non-binding bid or a tailored proposal.
@@ -2063,14 +2063,14 @@ exports[`index page renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_team"
+          class="quick-project-start__list-item"
         >
           <div
-            class="quickProjectStart__icons-group"
+            class="quick-project-start__icons-group"
           >
             <img
               alt="team"
-              class="quickProjectStart__main-icon img_lazy"
+              class="quick-project-start__main-icon img_lazy"
               data-src="[object Object]"
               height="73"
               width="52"
@@ -2078,7 +2078,7 @@ exports[`index page renders correctly 1`] = `
              
             <img
               alt="Arrow"
-              class="quickProjectStart__arrow-icon img_lazy"
+              class="quick-project-start__arrow-icon img_lazy"
               data-src="[object Object]"
               height="65"
               width="165"
@@ -2086,10 +2086,10 @@ exports[`index page renders correctly 1`] = `
           </div>
            
           <div
-            class="quickProjectStart__list-item-text-wrapper"
+            class="quick-project-start__list-item-text-wrapper"
           >
             <h3
-              class="quickProjectStart__title"
+              class="quick-project-start__title"
             >
               
             team
@@ -2097,7 +2097,7 @@ exports[`index page renders correctly 1`] = `
             </h3>
              
             <p
-              class="quickProjectStart__description"
+              class="quick-project-start__description"
             >
               
             We will assemble and prepare a team for your project.
@@ -2106,14 +2106,14 @@ exports[`index page renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_start"
+          class="quick-project-start__list-item"
         >
           <div
-            class="quickProjectStart__icons-group"
+            class="quick-project-start__icons-group"
           >
             <img
               alt="start"
-              class="quickProjectStart__main-icon img_lazy"
+              class="quick-project-start__main-icon img_lazy"
               data-src="[object Object]"
               height="73"
               width="52"
@@ -2123,10 +2123,10 @@ exports[`index page renders correctly 1`] = `
           </div>
            
           <div
-            class="quickProjectStart__list-item-text-wrapper"
+            class="quick-project-start__list-item-text-wrapper"
           >
             <h3
-              class="quickProjectStart__title"
+              class="quick-project-start__title"
             >
               
             start
@@ -2134,7 +2134,7 @@ exports[`index page renders correctly 1`] = `
             </h3>
              
             <p
-              class="quickProjectStart__description"
+              class="quick-project-start__description"
             >
               
             You will get to know the team and we’ll start the project work.Submit your project request or project idea to us.
@@ -2145,7 +2145,7 @@ exports[`index page renders correctly 1`] = `
       </div>
        
       <button
-        class="ui-button-modal-trigger quickProjectStart__button ui-button-modal-trigger--red"
+        class="ui-button-modal-trigger quick-project-start__button ui-button-modal-trigger--red"
       >
         
   Submit your project
@@ -2391,16 +2391,16 @@ exports[`index page renders correctly 1`] = `
       </h2>
        
       <div
-        class="customer-rates__top-row row"
+        class="customer-rates__row customer-rates__row--top"
       >
         <div
-          class="col-xl-4 col-md-4"
+          class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block-top-row"
+            class="customer-rates__rates-block customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item-top-row"
+              class="customer-rates__number-item customer-rates__number-item"
             >
               
             92%
@@ -2408,7 +2408,7 @@ exports[`index page renders correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description-top-row"
+              class="customer-rates__description customer-rates__description"
             >
               
             recommend us
@@ -2423,13 +2423,13 @@ exports[`index page renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="col-xl-4 col-md-4"
+          class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block-top-row"
+            class="customer-rates__rates-block customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item-top-row"
+              class="customer-rates__number-item customer-rates__number-item"
             >
               
             87%
@@ -2437,7 +2437,7 @@ exports[`index page renders correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description-top-row"
+              class="customer-rates__description customer-rates__description"
             >
               
             stay with us for
@@ -2452,13 +2452,13 @@ exports[`index page renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="col-xl-4 col-md-4"
+          class="customer-rates__row-item"
         >
           <div
-            class="customer-rates__rates-block customer-rates__rates-block-top-row"
+            class="customer-rates__rates-block customer-rates__rates-block"
           >
             <p
-              class="customer-rates__number-item customer-rates__number-item-top-row"
+              class="customer-rates__number-item customer-rates__number-item"
             >
               
             98%
@@ -2466,7 +2466,7 @@ exports[`index page renders correctly 1`] = `
             </p>
              
             <p
-              class="customer-rates__description customer-rates__description-top-row"
+              class="customer-rates__description customer-rates__description"
             >
               
             are satisfied with
@@ -2482,157 +2482,153 @@ exports[`index page renders correctly 1`] = `
         </div>
       </div>
        
-      <div
-        class="customer-rates__bottom-row"
+      <h3
+        class="customer-rates__section-sub-title"
       >
-        <h3
-          class="customer-rates__section-sub-title"
-        >
-          
-        Mad Devs' key metrics:
-      
-        </h3>
-         
+        
+      Mad Devs' key metrics:
+    
+      </h3>
+       
+      <div
+        class="customer-rates__row customer-rates__row--bottom"
+      >
         <div
-          class="row"
+          class="customer-rates__row-item"
         >
           <div
-            class="col-xl-2 col-lg-4 col-md-4 col-6"
+            class="customer-rates__rates-block customer-rates__rates-block"
           >
-            <div
-              class="customer-rates__rates-block customer-rates__rates-block-bottom-row"
+            <p
+              class="customer-rates__number-item customer-rates__number-item"
             >
-              <p
-                class="customer-rates__number-item customer-rates__number-item-bottom-row"
-              >
-                
-              10M+
-            
-              </p>
-               
-              <p
-                class="customer-rates__description customer-rates__description-bottom-row"
-              >
-                
-              US dollars raised by 5 customer startups in 2019.
-            
-              </p>
-            </div>
+              
+            10M+
+          
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description"
+            >
+              
+            US dollars raised by 5 customer startups in 2019.
+          
+            </p>
           </div>
+        </div>
+        <div
+          class="customer-rates__row-item"
+        >
           <div
-            class="col-xl-2 col-lg-4 col-md-4 col-6"
+            class="customer-rates__rates-block customer-rates__rates-block"
           >
-            <div
-              class="customer-rates__rates-block customer-rates__rates-block-bottom-row"
+            <p
+              class="customer-rates__number-item customer-rates__number-item"
             >
-              <p
-                class="customer-rates__number-item customer-rates__number-item-bottom-row"
-              >
-                
-              75%
-            
-              </p>
-               
-              <p
-                class="customer-rates__description customer-rates__description-bottom-row"
-              >
-                
-              of customers are now paying 50% less for IT infrastructure.
-            
-              </p>
-            </div>
+              
+            75%
+          
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description"
+            >
+              
+            of customers are now paying 50% less for IT infrastructure.
+          
+            </p>
           </div>
+        </div>
+        <div
+          class="customer-rates__row-item"
+        >
           <div
-            class="col-xl-2 col-lg-4 col-md-4 col-6"
+            class="customer-rates__rates-block customer-rates__rates-block"
           >
-            <div
-              class="customer-rates__rates-block customer-rates__rates-block-bottom-row"
+            <p
+              class="customer-rates__number-item customer-rates__number-item"
             >
-              <p
-                class="customer-rates__number-item customer-rates__number-item-bottom-row"
-              >
-                
-              30+
-            
-              </p>
-               
-              <p
-                class="customer-rates__description customer-rates__description-bottom-row"
-              >
-                
-              tech bloggers and conference speakers in our team.
-            
-              </p>
-            </div>
+              
+            30+
+          
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description"
+            >
+              
+            tech bloggers and conference speakers in our team.
+          
+            </p>
           </div>
+        </div>
+        <div
+          class="customer-rates__row-item"
+        >
           <div
-            class="col-xl-2 col-lg-4 col-md-4 col-6"
+            class="customer-rates__rates-block customer-rates__rates-block"
           >
-            <div
-              class="customer-rates__rates-block customer-rates__rates-block-bottom-row"
+            <p
+              class="customer-rates__number-item customer-rates__number-item"
             >
-              <p
-                class="customer-rates__number-item customer-rates__number-item-bottom-row"
-              >
-                
-              50+
-            
-              </p>
-               
-              <p
-                class="customer-rates__description customer-rates__description-bottom-row"
-              >
-                
-              projects delivered to customers by our team.
-            
-              </p>
-            </div>
+              
+            50+
+          
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description"
+            >
+              
+            projects delivered to customers by our team.
+          
+            </p>
           </div>
+        </div>
+        <div
+          class="customer-rates__row-item"
+        >
           <div
-            class="col-xl-2 col-lg-4 col-md-4 col-6"
+            class="customer-rates__rates-block customer-rates__rates-block"
           >
-            <div
-              class="customer-rates__rates-block customer-rates__rates-block-bottom-row"
+            <p
+              class="customer-rates__number-item customer-rates__number-item"
             >
-              <p
-                class="customer-rates__number-item customer-rates__number-item-bottom-row"
-              >
-                
-              100+
-            
-              </p>
-               
-              <p
-                class="customer-rates__description customer-rates__description-bottom-row"
-              >
-                
-              staff members work for Mad Devs.
-            
-              </p>
-            </div>
+              
+            100+
+          
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description"
+            >
+              
+            staff members work for Mad Devs.
+          
+            </p>
           </div>
+        </div>
+        <div
+          class="customer-rates__row-item"
+        >
           <div
-            class="col-xl-2 col-lg-4 col-md-4 col-6"
+            class="customer-rates__rates-block customer-rates__rates-block"
           >
-            <div
-              class="customer-rates__rates-block customer-rates__rates-block-bottom-row"
+            <p
+              class="customer-rates__number-item customer-rates__number-item"
             >
-              <p
-                class="customer-rates__number-item customer-rates__number-item-bottom-row"
-              >
-                
-              70+
-            
-              </p>
-               
-              <p
-                class="customer-rates__description customer-rates__description-bottom-row"
-              >
-                
-              open-source projects on GitHub.
-            
-              </p>
-            </div>
+              
+            70+
+          
+            </p>
+             
+            <p
+              class="customer-rates__description customer-rates__description"
+            >
+              
+            open-source projects on GitHub.
+          
+            </p>
           </div>
         </div>
       </div>
@@ -2640,14 +2636,14 @@ exports[`index page renders correctly 1`] = `
   </section>
    
   <section
-    class="meet-our_experts"
+    class="meet-our-experts"
     id="meet-our-experts"
   >
     <div
       class="container"
     >
       <h3
-        class="meet-our_experts__main-title"
+        class="meet-our-experts__main-title"
       >
         
       Meet our experts
@@ -2655,10 +2651,10 @@ exports[`index page renders correctly 1`] = `
       </h3>
        
       <div
-        class="meet-our_experts__experts-list row"
+        class="meet-our-experts__experts-list"
       >
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -2679,13 +2675,13 @@ exports[`index page renders correctly 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Marat Bediev
@@ -2693,7 +2689,7 @@ exports[`index page renders correctly 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Senior DevOps Engineer
@@ -2704,7 +2700,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -2717,7 +2713,7 @@ exports[`index page renders correctly 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -2738,13 +2734,13 @@ exports[`index page renders correctly 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Tamara Mun
@@ -2752,7 +2748,7 @@ exports[`index page renders correctly 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Head of Delivery Management
@@ -2763,7 +2759,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -2776,7 +2772,7 @@ exports[`index page renders correctly 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -2797,13 +2793,13 @@ exports[`index page renders correctly 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Andrew "Chuck" Minkin
@@ -2811,7 +2807,7 @@ exports[`index page renders correctly 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               CTO, Co-Founder
@@ -2822,7 +2818,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -2835,7 +2831,7 @@ exports[`index page renders correctly 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -2856,13 +2852,13 @@ exports[`index page renders correctly 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Nakylai Taiirova
@@ -2870,7 +2866,7 @@ exports[`index page renders correctly 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Senior Full-Stack Developer
@@ -2881,7 +2877,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -2894,7 +2890,7 @@ exports[`index page renders correctly 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -2915,13 +2911,13 @@ exports[`index page renders correctly 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Daria Utesheva
@@ -2929,7 +2925,7 @@ exports[`index page renders correctly 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Head of HR Department
@@ -2940,7 +2936,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -2953,7 +2949,7 @@ exports[`index page renders correctly 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -2974,13 +2970,13 @@ exports[`index page renders correctly 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Nuradil Alymkulov
@@ -2988,7 +2984,7 @@ exports[`index page renders correctly 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Senior Full-Stack Developer
@@ -2999,7 +2995,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -3012,7 +3008,7 @@ exports[`index page renders correctly 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -3033,13 +3029,13 @@ exports[`index page renders correctly 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Alice Jang
@@ -3047,7 +3043,7 @@ exports[`index page renders correctly 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Project Manager
@@ -3058,7 +3054,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -3071,7 +3067,7 @@ exports[`index page renders correctly 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -3092,13 +3088,13 @@ exports[`index page renders correctly 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Arthur Elizavetenkov
@@ -3106,7 +3102,7 @@ exports[`index page renders correctly 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Project Manager
@@ -3117,7 +3113,7 @@ exports[`index page renders correctly 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"

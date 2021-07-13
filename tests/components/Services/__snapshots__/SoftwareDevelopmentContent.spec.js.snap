@@ -3,7 +3,7 @@
 exports[`SoftwareDevelopmentContent component should render correctly 1`] = `
 <div>
   <div
-    class="content-item col-xl-4 col-lg-4"
+    class="content-item"
   >
     <div
       class="content-item__content-wrapper"

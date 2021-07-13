@@ -18,10 +18,10 @@ exports[`itСonsulting component should render correctly 1`] = `
       </h2>
        
       <div
-        class="it-consulting__content row"
+        class="it-consulting__content"
       >
         <div
-          class="it-consulting-item col-xl-4 col-lg-4"
+          class="it-consulting-item"
           type="technology-stack"
         >
           <div
@@ -57,7 +57,7 @@ exports[`itСonsulting component should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="it-consulting-item col-xl-4 col-lg-4"
+          class="it-consulting-item"
           type="process-audit"
         >
           <div
@@ -92,7 +92,7 @@ exports[`itСonsulting component should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="it-consulting-item col-xl-4 col-lg-4"
+          class="it-consulting-item"
           type="team-headcount"
         >
           <div

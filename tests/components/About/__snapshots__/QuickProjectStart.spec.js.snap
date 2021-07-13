@@ -2,14 +2,14 @@
 
 exports[`QuickProjectStart renders correctly 1`] = `
 <section
-  class="quickProjectStart"
-  id="quickProjectStart"
+  class="quick-project-start"
+  id="quick-project-start"
 >
   <div
     class="container"
   >
     <h2
-      class="quickProjectStart__main-title"
+      class="quick-project-start__main-title"
     >
       
       Quick Project Start
@@ -17,17 +17,17 @@ exports[`QuickProjectStart renders correctly 1`] = `
     </h2>
      
     <div
-      class="quickProjectStart__content-list row"
+      class="quick-project-start__content-list"
     >
       <div
-        class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_contact"
+        class="quick-project-start__list-item"
       >
         <div
-          class="quickProjectStart__icons-group"
+          class="quick-project-start__icons-group"
         >
           <img
             alt="contact"
-            class="quickProjectStart__main-icon img_lazy"
+            class="quick-project-start__main-icon img_lazy"
             data-src="[object Object]"
             height="73"
             width="52"
@@ -35,7 +35,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
            
           <img
             alt="Arrow"
-            class="quickProjectStart__arrow-icon img_lazy"
+            class="quick-project-start__arrow-icon img_lazy"
             data-src="[object Object]"
             height="65"
             width="165"
@@ -43,10 +43,10 @@ exports[`QuickProjectStart renders correctly 1`] = `
         </div>
          
         <div
-          class="quickProjectStart__list-item-text-wrapper"
+          class="quick-project-start__list-item-text-wrapper"
         >
           <h3
-            class="quickProjectStart__title"
+            class="quick-project-start__title"
           >
             
             contact
@@ -54,7 +54,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
           </h3>
            
           <p
-            class="quickProjectStart__description"
+            class="quick-project-start__description"
           >
             
             Submit your project request or project idea to us.
@@ -63,14 +63,14 @@ exports[`QuickProjectStart renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_analysis"
+        class="quick-project-start__list-item"
       >
         <div
-          class="quickProjectStart__icons-group"
+          class="quick-project-start__icons-group"
         >
           <img
             alt="analysis"
-            class="quickProjectStart__main-icon img_lazy"
+            class="quick-project-start__main-icon img_lazy"
             data-src="[object Object]"
             height="73"
             width="52"
@@ -78,7 +78,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
            
           <img
             alt="Arrow"
-            class="quickProjectStart__arrow-icon img_lazy"
+            class="quick-project-start__arrow-icon img_lazy"
             data-src="[object Object]"
             height="65"
             width="165"
@@ -86,10 +86,10 @@ exports[`QuickProjectStart renders correctly 1`] = `
         </div>
          
         <div
-          class="quickProjectStart__list-item-text-wrapper"
+          class="quick-project-start__list-item-text-wrapper"
         >
           <h3
-            class="quickProjectStart__title"
+            class="quick-project-start__title"
           >
             
             analysis
@@ -97,7 +97,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
           </h3>
            
           <p
-            class="quickProjectStart__description"
+            class="quick-project-start__description"
           >
             
             We will contact you to clarify your project requirements.
@@ -106,14 +106,14 @@ exports[`QuickProjectStart renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_proposal"
+        class="quick-project-start__list-item"
       >
         <div
-          class="quickProjectStart__icons-group"
+          class="quick-project-start__icons-group"
         >
           <img
             alt="proposal"
-            class="quickProjectStart__main-icon img_lazy"
+            class="quick-project-start__main-icon img_lazy"
             data-src="[object Object]"
             height="73"
             width="52"
@@ -121,7 +121,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
            
           <img
             alt="Arrow"
-            class="quickProjectStart__arrow-icon img_lazy"
+            class="quick-project-start__arrow-icon img_lazy"
             data-src="[object Object]"
             height="65"
             width="165"
@@ -129,10 +129,10 @@ exports[`QuickProjectStart renders correctly 1`] = `
         </div>
          
         <div
-          class="quickProjectStart__list-item-text-wrapper"
+          class="quick-project-start__list-item-text-wrapper"
         >
           <h3
-            class="quickProjectStart__title"
+            class="quick-project-start__title"
           >
             
             proposal
@@ -140,7 +140,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
           </h3>
            
           <p
-            class="quickProjectStart__description"
+            class="quick-project-start__description"
           >
             
             We will provide you with our free, non-binding bid or a tailored proposal.
@@ -149,14 +149,14 @@ exports[`QuickProjectStart renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_team"
+        class="quick-project-start__list-item"
       >
         <div
-          class="quickProjectStart__icons-group"
+          class="quick-project-start__icons-group"
         >
           <img
             alt="team"
-            class="quickProjectStart__main-icon img_lazy"
+            class="quick-project-start__main-icon img_lazy"
             data-src="[object Object]"
             height="73"
             width="52"
@@ -164,7 +164,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
            
           <img
             alt="Arrow"
-            class="quickProjectStart__arrow-icon img_lazy"
+            class="quick-project-start__arrow-icon img_lazy"
             data-src="[object Object]"
             height="65"
             width="165"
@@ -172,10 +172,10 @@ exports[`QuickProjectStart renders correctly 1`] = `
         </div>
          
         <div
-          class="quickProjectStart__list-item-text-wrapper"
+          class="quick-project-start__list-item-text-wrapper"
         >
           <h3
-            class="quickProjectStart__title"
+            class="quick-project-start__title"
           >
             
             team
@@ -183,7 +183,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
           </h3>
            
           <p
-            class="quickProjectStart__description"
+            class="quick-project-start__description"
           >
             
             We will assemble and prepare a team for your project.
@@ -192,14 +192,14 @@ exports[`QuickProjectStart renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2 quickProjectStart__list-item_start"
+        class="quick-project-start__list-item"
       >
         <div
-          class="quickProjectStart__icons-group"
+          class="quick-project-start__icons-group"
         >
           <img
             alt="start"
-            class="quickProjectStart__main-icon img_lazy"
+            class="quick-project-start__main-icon img_lazy"
             data-src="[object Object]"
             height="73"
             width="52"
@@ -209,10 +209,10 @@ exports[`QuickProjectStart renders correctly 1`] = `
         </div>
          
         <div
-          class="quickProjectStart__list-item-text-wrapper"
+          class="quick-project-start__list-item-text-wrapper"
         >
           <h3
-            class="quickProjectStart__title"
+            class="quick-project-start__title"
           >
             
             start
@@ -220,7 +220,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
           </h3>
            
           <p
-            class="quickProjectStart__description"
+            class="quick-project-start__description"
           >
             
             You will get to know the team and we’ll start the project work.Submit your project request or project idea to us.
@@ -231,7 +231,7 @@ exports[`QuickProjectStart renders correctly 1`] = `
     </div>
      
     <button
-      class="ui-button-modal-trigger quickProjectStart__button ui-button-modal-trigger--red"
+      class="ui-button-modal-trigger quick-project-start__button ui-button-modal-trigger--red"
     >
       
   Submit your project

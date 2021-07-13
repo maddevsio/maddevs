@@ -16,10 +16,10 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
           disable-author-link="true"
         >
           <div
-            class="row featured-post__wrapper"
+            class="featured-post__wrapper"
           >
             <div
-              class="col-12 col-lg-6 featured-post__info-wrapper"
+              class="featured-post__info-wrapper"
             >
               <nuxtlink-stub
                 class="featured-post__info"
@@ -102,7 +102,7 @@ exports[`AuthorPostsSection component should render correctly 1`] = `
             </div>
              
             <div
-              class="col-12 col-lg-6 featured-post__image-wrapper"
+              class="featured-post__image-wrapper"
             >
               <nuxtlink-stub
                 class="featured-post__image"

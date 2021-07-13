@@ -10,7 +10,7 @@ exports[`customer university header component should render correctly with defau
     title="[object Object]"
   >
     <div
-      class="row cluster-navigation"
+      class="cluster-navigation"
     >
       <div
         class="cluster-navigation__name"
@@ -21,7 +21,7 @@ exports[`customer university header component should render correctly with defau
       </div>
        
       <div
-        class="col-12 col-lg-5 mt-0 cluster-navigation__select-wrapper"
+        class="cluster-navigation__select-wrapper"
       >
         <div
           class="v-select cluster-navigation__select vs--single vs--unsearchable"
@@ -117,7 +117,7 @@ exports[`customer university header component should render correctly with defau
       </div>
        
       <div
-        class="col-12 col-lg-7 mt-0 cluster-navigation__buttons-wrapper"
+        class="cluster-navigation__buttons-wrapper"
       >
         <div
           class="cluster-navigation__buttons"

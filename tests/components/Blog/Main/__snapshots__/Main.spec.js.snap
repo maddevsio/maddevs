@@ -15,10 +15,10 @@ exports[`Main component should render correctly 1`] = `
           class="featured-post dark"
         >
           <div
-            class="row featured-post__wrapper"
+            class="featured-post__wrapper"
           >
             <div
-              class="col-12 col-lg-6 featured-post__main"
+              class="featured-post__main"
             >
               <h2
                 class="featured-post__title background-grey animated dark"
@@ -42,7 +42,7 @@ exports[`Main component should render correctly 1`] = `
             </div>
              
             <div
-              class="col-12 col-lg-6 featured-post__image-wrapper"
+              class="featured-post__image-wrapper"
             >
               <div
                 class="featured-post__image background-grey animated dark"
