@@ -12,6 +12,7 @@ const redirectToTrailingSlash = require('./middlewares/redirectToTrailingSlash')
 const redirectToCorrectBlogUrl = require('./middlewares/redirectToCorrectBlogUrl')
 const redirectToCustomerUrl = require('./middlewares/redirectToCustomerUrl')
 const redirectToCorrectPostUrl = require('./middlewares/redirectToCorrectPostUrl')
+const redirectsForHrTags = require('./middlewares/redirectsForHrTags')
 
 // config
 const config = require('./config')
@@ -38,11 +39,12 @@ function bootstrap() {
 
   // Custom middlewares
   app.use(applyXFrame)
-  app.use(redirectToHttps)
+  // app.use(redirectToHttps)
   app.use(redirectToTrailingSlash)
   app.use(redirectToCorrectBlogUrl)
   app.use(redirectToCustomerUrl)
   app.use(redirectToCorrectPostUrl)
+  app.use(redirectsForHrTags)
 
   // Routers
   app.use(webRouter)
