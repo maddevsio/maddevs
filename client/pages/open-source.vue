@@ -6,8 +6,8 @@
 
 <script>
 import Main from '@/components/OpenSource/Main'
-import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { getMetadata, buildHead } from '@/data/seo'
+import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
 import featureFlag from '@/featureFlags/featureFlag'
 
