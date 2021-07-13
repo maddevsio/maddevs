@@ -33,10 +33,12 @@ export default {
 
   methods: {
     show() {
+      if (!this.$refs.modalOrderProjectFromUs.show) return
       this.$refs.modalOrderProjectFromUs.show()
     },
 
     close() {
+      if (!this.$refs.modalOrderProjectFromUs.close) return
       this.$refs.modalOrderProjectFromUs.close()
     },
   },
