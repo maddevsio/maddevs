@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="featured-projects"
-    data-aos="fade-up"
-  >
+  <div class="featured-projects">
     <div class="container">
       <div class="featured-projects__head">
         <TitleDesc

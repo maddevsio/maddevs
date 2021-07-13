@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="open-source-cta"
-    data-aos="fade-up"
-  >
+  <div class="open-source-cta">
     <div class="container">
       <div class="open-source-cta__head">
         <TitleDesc title="Contribute <br /> to open source" />

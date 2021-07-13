@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="boilerplates"
-    data-aos="fade-up"
-  >
+  <div class="boilerplates">
     <div class="container">
       <div class="boilerplates__head">
         <TitleDesc
