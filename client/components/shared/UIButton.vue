@@ -40,8 +40,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars.scss';
-
 .ui-button {
   @include font('Inter', 16px, 700);
   border: 1px solid $border-color--red-opacity;

@@ -87,8 +87,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars.scss';
-
 .embed {
   /deep/ iframe {
     max-width: 100%;

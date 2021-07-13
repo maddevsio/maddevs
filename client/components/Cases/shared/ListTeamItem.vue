@@ -65,8 +65,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/cases/_mixins';
-
 .case_team-item {
   display: flex;
   align-items: center;
@@ -76,11 +74,11 @@ export default {
   }
 
   &__name {
-    @include default_text($text-color--black-oil, 18px, 22px, -0.035em, 600);
+    @include default-text($text-color--black-oil, 18px, 22px, -0.035em, 600);
   }
 
   &__position {
-    @include default_text($text-color--grey-opacity-40-percent, 13px, 20px, -0.02em, normal);
+    @include default-text($text-color--grey-opacity-40-percent, 13px, 20px, -0.02em, normal);
   }
 
   &__image {
@@ -100,7 +98,7 @@ export default {
     }
 
     &__name {
-      @include default_text($text-color--black-oil, 14px, 16px, -0.035em, 600);
+      @include default-text($text-color--black-oil, 14px, 16px, -0.035em, 600);
     }
 
     &__position {

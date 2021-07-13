@@ -98,9 +98,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/styles/cases/_mixins.scss';
-@import '@/assets/styles/_vars.scss';
-
 .thumb-example {
   img {
     display: block;
@@ -133,6 +130,6 @@ export default {
   margin: 9px 0;
   padding: 0 24px;
   text-align: center;
-  @include default_text($text-color--grey-img-description, 13px, 21.58px, -0.02em, normal);
+  @include default-text($text-color--grey-img-description, 13px, 21.58px, -0.02em, normal);
 }
 </style>

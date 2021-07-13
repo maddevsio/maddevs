@@ -31,8 +31,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .ui-link-btn {
   display: block;
   padding: 15px 31px 15px 28px;

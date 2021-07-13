@@ -31,8 +31,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../../assets/styles/_vars';
-
   .current-author {
     padding-top: 82px;
     padding-bottom: 55px;

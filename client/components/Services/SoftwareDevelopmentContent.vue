@@ -1,5 +1,5 @@
 <template>
-  <div class="content-item col-xl-4 col-lg-4">
+  <div class="content-item">
     <div class="content-item__content-wrapper">
       <div class="content-item__text-content">
         <ClientOnly>
@@ -71,8 +71,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .content-item {
   &__content-wrapper {
     height: calc(100% - 64px);

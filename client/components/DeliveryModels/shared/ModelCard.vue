@@ -133,8 +133,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .model-card {
   overflow: hidden;
   position: relative;

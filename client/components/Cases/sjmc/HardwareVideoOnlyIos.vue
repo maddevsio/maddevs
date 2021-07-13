@@ -57,8 +57,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../../assets/styles/vars';
-
   .case {
     &_video-wrapper {
       width: 23%;

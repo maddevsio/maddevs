@@ -8,17 +8,17 @@
         <span>Fantastic</span> <br>
         customer&nbsp;&nbsp;&nbsp;<span class="customer-rates__title-icon">rates:</span>
       </h2>
-      <div class="customer-rates__top-row row">
+      <div class="customer-rates__row customer-rates__row--top">
         <div
           v-for="item in percentages"
           :key="item.percent"
-          class="col-xl-4 col-md-4"
+          class="customer-rates__row-item"
         >
-          <div class="customer-rates__rates-block customer-rates__rates-block-top-row">
-            <p class="customer-rates__number-item customer-rates__number-item-top-row">
+          <div class="customer-rates__rates-block customer-rates__rates-block">
+            <p class="customer-rates__number-item customer-rates__number-item">
               {{ item.percent }}%
             </p>
-            <p class="customer-rates__description customer-rates__description-top-row">
+            <p class="customer-rates__description customer-rates__description">
               {{ item.description }}
               <br class="customer-rates__line-break">
               {{ item.descriptionSecond }}
@@ -26,24 +26,22 @@
           </div>
         </div>
       </div>
-      <div class="customer-rates__bottom-row">
-        <h3 class="customer-rates__section-sub-title">
-          Mad Devs' key metrics:
-        </h3>
-        <div class="row">
-          <div
-            v-for="metrick in keyMetricks"
-            :key="metrick.number"
-            class="col-xl-2 col-lg-4 col-md-4 col-6"
-          >
-            <div class="customer-rates__rates-block customer-rates__rates-block-bottom-row">
-              <p class="customer-rates__number-item customer-rates__number-item-bottom-row">
-                {{ metrick.number }}
-              </p>
-              <p class="customer-rates__description customer-rates__description-bottom-row">
-                {{ metrick.description }}
-              </p>
-            </div>
+      <h3 class="customer-rates__section-sub-title">
+        Mad Devs' key metrics:
+      </h3>
+      <div class="customer-rates__row customer-rates__row--bottom">
+        <div
+          v-for="metrick in keyMetricks"
+          :key="metrick.number"
+          class="customer-rates__row-item"
+        >
+          <div class="customer-rates__rates-block customer-rates__rates-block">
+            <p class="customer-rates__number-item customer-rates__number-item">
+              {{ metrick.number }}
+            </p>
+            <p class="customer-rates__description customer-rates__description">
+              {{ metrick.description }}
+            </p>
           </div>
         </div>
       </div>
@@ -66,8 +64,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .customer-rates {
   background-color: $bgcolor--white-darken;
   // margins and paddings for removing the dark line between sections, that appears when Chome browser is scaled > 100%
@@ -80,11 +76,11 @@ export default {
   }
 
   &__main-title {
-    @include h2_title;
+    @include h2-title;
   }
 
   &__section-sub-title {
-    @include h3_title;
+    @include h3-title;
     margin: 0 0 -20px;
   }
 
@@ -104,53 +100,139 @@ export default {
     color: $text-color--black-lighter;
   }
 
+  &__row {
+    display: grid;
+    &--top {
+      //margin-right: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+      .customer-rates {
+        &__rates-block {
+          padding-top: 28px;
+          padding-bottom: 40px;
+          line-height: 107px;
+          color: #111213;
+          @media  screen and (max-width: 1366px) {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+
+        &__number-item {
+          margin-bottom: 11px;
+          font-size: 102px;
+          line-height: 107px;
+          color: $text-color--black-lighter;
+          @media  screen and (max-width: 1199px) {
+            margin-bottom: 0;
+            font-size: 80px;
+          }
+          @media screen and (max-width: 834px) {
+            font-size: 56px;
+            line-height: 66px;
+          }
+          @media screen and (max-width: 767px) {
+            font-size: 50px;
+            line-height: 60px;
+          }
+          @media screen and (max-width: 540px) {
+            line-height: 63px;
+          }
+        }
+
+        &__description {
+          font-size: 16px;
+          line-height: 24px;
+          @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+    &--bottom {
+      margin-top: 20px;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 20px;
+      @media screen and (max-width: 1199px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media screen and (max-width: 1199px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .customer-rates {
+        &__rates-block {
+          height: 128px;
+          padding: 27px 20px;
+          @media screen and (max-width: 1199px) {
+            height: 110px;
+          }
+        }
+
+        &__number-item {
+          margin-top: 3px;
+          margin-bottom: 10px;
+          font-size: 44px;
+          line-height: 46px;
+          letter-spacing: -1.4px;
+          color: #ec1c24;
+          @media screen and (max-width: 767px) {
+            font-size: 38px;
+            line-height: 39px;
+            margin-top: 10px;
+          }
+          @media screen and (max-width: 540px) {
+            margin-top: 8px;
+            margin-bottom: 5px;
+          }
+        }
+
+        &__description {
+          font-size: 14px;
+          line-height: 22px;
+          @media screen and (max-width: 1366px) {
+            font-size: 13px;
+          }
+          @media screen and (max-width: 540px) {
+            font-size: 11px;
+            line-height: 17px;
+          }
+        }
+      }
+    }
+  }
+
   &__main-title br {
     display: none;
+    @media screen and (max-width: 965px) {
+      display: block;
+    }
+    @media screen and (max-width: 834px) {
+      display: none;
+    }
+    @media  screen and (max-width: 534px) {
+      display: block;
+    }
   }
 
   &__rates-block {
     background-color: $bgcolor--white;
-  }
-
-  &__rates-block-top-row {
-    padding-top: 28px;
-    padding-bottom: 40px;
-  }
-
-  &__rates-block-bottom-row {
-    height: 128px;
-    padding: 27px 20px;
-  }
-
-  &__number-item-top-row {
-    margin-bottom: 11px;
-    font-size: 102px;
-    line-height: 107px;
-    color: $text-color--black-lighter;
-  }
-
-  &__number-item-bottom-row {
-    margin-top: 3px;
-    margin-bottom: 10px;
-    font-size: 44px;
-    line-height: 46px;
-    letter-spacing: -1.4px;
-    color: $text-color--red;
+    @media  screen and (max-width: 834px) {
+      height: 103px;
+      padding: 20px 10px !important;
+    }
   }
 
   &__description {
     @include font('Inter', 16px, 400);
     letter-spacing: -0.02em;
-  }
-
-  &__description-top-row {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  &__description-bottom-row {
-    font-size: 14px;
-    line-height: 22px;
+    @media screen and (max-width: 834px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 
   &__title-icon {
@@ -186,116 +268,8 @@ export default {
 
   &__line-break {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 1366px) {
-  .customer-rates {
-    &__rates-block-bottom-row {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    &__description-bottom-row {
-      font-size: 13px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1199px) {
-  .customer-rates {
-    &__rates-block-bottom-row {
-      height: 110px;
-    }
-
-    &__number-item-top-row {
-      margin-bottom: 0;
-      font-size: 80px;
-    }
-
-    &__line-break {
+    @media screen and (max-width: 1199px) {
       display: block;
-    }
-  }
-}
-
-@media screen and (max-width: 965px) {
-  .customer-rates__main-title br {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 834px) {
-  .customer-rates {
-    &__main-title br {
-      display: none;
-    }
-
-    &__rates-block {
-      height: 103px;
-      padding: 20px 10px;
-    }
-
-    &__number-item-top-row {
-      font-size: 56px;
-      line-height: 66px;
-    }
-
-    &__description {
-      font-size: 12px;
-      line-height: 18px;
-    }
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .customer-rates {
-    &__number-item-top-row {
-      font-size: 50px;
-      line-height: 60px;
-    }
-
-    &__number-item-bottom-row {
-      font-size: 38px;
-      line-height: 39px;
-      margin-top: 10px;
-    }
-
-    &__description-top-row {
-      font-size: 14px;
-      line-height: 18px;
-    }
-  }
-}
-
-@media screen and (max-width: 534px) {
-  .customer-rates__main-title br {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 540px) {
-  .customer-rates {
-    &__number-item-top-row {
-      line-height: 66px;
-    }
-
-    &__number-item-bottom-row {
-      margin-top: 8px;
-      margin-bottom: 5px;
-    }
-  }
-}
-
-@media only screen and (max-width: 340px) {
-  .customer-rates {
-    &__description-bottom-row {
-      font-size: 11px;
-      line-height: 17px;
-    }
-
-    &__number-item-top-row {
-      line-height: 63px;
     }
   }
 }

@@ -62,8 +62,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .positions-grid {
   width: 100%;
   display: grid;

@@ -36,8 +36,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .customer-testimonials {
   padding: 68px 0 119px;
   &__title {

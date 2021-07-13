@@ -221,9 +221,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars.scss';
-@import '@/assets/styles/cases/_mixins.scss';
-
 /deep/ h1,
 /deep/ h2,
 /deep/ h3,

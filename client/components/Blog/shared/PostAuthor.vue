@@ -87,8 +87,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/vars';
-
 .post-author {
   max-width: 100%;
   display: inline-flex;

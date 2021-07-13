@@ -41,8 +41,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .build-dev-team {
   &_wrapper {
     background-color: #fff;

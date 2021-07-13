@@ -8,8 +8,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .title-desc {
   margin-top: 180px;
   margin-bottom: 54px;

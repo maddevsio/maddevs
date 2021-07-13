@@ -28,11 +28,11 @@
           />
         </div>
       </div>
-      <div class="open-source__projects row">
+      <div class="open-source__projects">
         <div
           v-for="project in projects"
           :key="project.name"
-          class="col-xl-4 col-lg-4 col-md-6"
+          class="open-source__projects-item"
         >
           <div
             :class="`open-source__project-${project.name}`"
@@ -78,9 +78,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-@import '../../assets/styles/_openSourceIcons';
-
 .open-source {
   padding-bottom: 108px;
   background: $bgcolor--white;
@@ -92,7 +89,7 @@ export default {
   }
 
   &__main-title {
-    @include h2_title;
+    @include h2-title;
     padding-bottom: 15px;
   }
 
@@ -170,6 +167,17 @@ export default {
 
   &__projects {
     margin-bottom: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__project {

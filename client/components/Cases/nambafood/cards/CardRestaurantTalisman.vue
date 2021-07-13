@@ -55,8 +55,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../../assets/styles/cases/_mixins';
-
 .card-content {
   &_title {
     margin-bottom: 4px;
@@ -64,7 +62,7 @@ export default {
   }
 
   &_paragraph {
-    @include default_text($text-color--black-lighter, 13px, 166%, -0.02em, normal);
+    @include default-text($text-color--black-lighter, 13px, 166%, -0.02em, normal);
   }
 
   &_statistics-item {
@@ -91,17 +89,17 @@ export default {
     @include title($text-color--black-lighter, 21.25px, -0.02em);
 
     span {
-      @include default_text($text-color--black-lighter, 17px, 28.22px, -0.035em, normal);
+      @include default-text($text-color--black-lighter, 17px, 28.22px, -0.035em, normal);
     }
   }
 
   @media screen and (max-width: 768px) {
     &_paragraph {
-      @include default_text($text-color--black-lighter, 16px, 150%, -0.02em, normal);
+      @include default-text($text-color--black-lighter, 16px, 150%, -0.02em, normal);
     }
 
     &_statistics-heading {
-      @include default_text($text-color--black-lighter, 13px, 166%, -0.02em, normal);
+      @include default-text($text-color--black-lighter, 13px, 166%, -0.02em, normal);
 
       br {
         display: none;

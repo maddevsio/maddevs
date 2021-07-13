@@ -43,8 +43,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .cookie-notice {
   position: fixed;
   bottom: 0;

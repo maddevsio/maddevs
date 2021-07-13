@@ -11,8 +11,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/cases/_mixins';
-
 .case-list_numbered {
   padding: 0;
   counter-reset: section;

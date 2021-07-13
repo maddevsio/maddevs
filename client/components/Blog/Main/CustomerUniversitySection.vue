@@ -133,8 +133,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/vars';
-
 @mixin label {
   @include font('Inter', 13px, 400);
   color: $text-color--grey-opacity-40-percent;

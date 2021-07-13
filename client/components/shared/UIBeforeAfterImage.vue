@@ -138,8 +138,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .comparsion {
   &-container {
     cursor: col-resize;

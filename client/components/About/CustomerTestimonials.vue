@@ -102,13 +102,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .customer-testimonials {
   background-color: #f5f7f9;
 
   &__title {
-    @include h2_title;
+    @include h2-title;
   }
 
   &__content-wrap {

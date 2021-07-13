@@ -26,8 +26,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars.scss';
-
 .textslice {
   word-break: break-word;
 }

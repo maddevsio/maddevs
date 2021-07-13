@@ -85,8 +85,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 /deep/ .position-tags__item {
   color: $text-color--grey-pale;
   font-size: 14px;

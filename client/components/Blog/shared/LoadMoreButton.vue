@@ -20,8 +20,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/_vars';
-
 .load-more-button {
   display: block;
   margin: 0 auto;

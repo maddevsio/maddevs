@@ -2,13 +2,13 @@
   <div class="banner-container">
     <div class="banner-content">
       <div class="text-content_wrapper container">
-        <div class="main-title-wrapper col-xxl-7 col-xl-7 col-lg-7">
+        <div class="main-title-wrapper">
           <h1 class="banner-main_title">
             <span class="main-title-black_part">Mad Devs</span>
             <span class="main-title-white_part"><br>Engineering<br>Your Growth</span>
           </h1>
         </div>
-        <div class="icon-item col-xxl-4 col-xl-5 col-lg-5">
+        <div class="icon-item">
           <div class="animation-img-wrap" />
         </div>
       </div>

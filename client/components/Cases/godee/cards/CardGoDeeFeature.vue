@@ -33,8 +33,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../../assets/styles/cases/_mixins';
-
 .card-content {
   &_title {
     margin-bottom: 10px;

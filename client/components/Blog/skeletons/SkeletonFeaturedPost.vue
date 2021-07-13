@@ -3,8 +3,8 @@
     class="featured-post"
     :class="theme"
   >
-    <div class="row featured-post__wrapper">
-      <div class="col-12 col-lg-6 featured-post__main">
+    <div class="featured-post__wrapper">
+      <div class="featured-post__main">
         <h2
           class="featured-post__title background-grey animated"
           :class="theme"
@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6 featured-post__image-wrapper">
+      <div class="featured-post__image-wrapper">
         <div
           class="featured-post__image background-grey animated"
           :class="theme"
@@ -42,7 +42,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/_vars';
 @keyframes SkeletonLoading {
   0% {
     background-position: 0 50%;
@@ -79,7 +78,12 @@ export default {
     color: $text-color--black;
   }
   &__wrapper {
+    display: grid;
     align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__title {
     margin-bottom: 15px;

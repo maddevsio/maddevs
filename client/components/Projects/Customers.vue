@@ -54,8 +54,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .customers {
   padding-bottom: 108px;
 
@@ -73,7 +71,7 @@ export default {
   }
 
   &__main-title {
-    @include h2_title;
+    @include h2-title;
     width: max-content;
     color: $text-color--white;
     padding-bottom: 4px;

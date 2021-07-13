@@ -49,8 +49,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/styles/_vars.scss';
-
 .code-sample {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 14px;

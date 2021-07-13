@@ -11,12 +11,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/cases/_mixins';
-
 .list-item {
   &_box {
-    @include list-item_box($bgcolor--white, 16px 17px 16px 46px, 8px);
-    @include default_text($text-color--black-oil, 17px, 166%, -0.035em, normal);
+    @include list-item-box($bgcolor--white, 16px 17px 16px 46px, 8px);
+    @include default-text($text-color--black-oil, 17px, 166%, -0.035em, normal);
 
     &::before {
       content: '––';
@@ -26,12 +24,12 @@ export default {
       position: absolute;
       left: 16px;
 
-      @include default_text($text-color--black-oil, 18px, 133%, -0.035em, normal);
+      @include default-text($text-color--black-oil, 18px, 133%, -0.035em, normal);
     }
 
     @media screen and (max-width: 768px) {
-      @include list-item_box($bgcolor--silver, 8px 16px 8px 46px, 8px);
-      @include default_text($text-color--black-oil, 16px, 150%, -0.02em, normal);
+      @include list-item-box($bgcolor--silver, 8px 16px 8px 46px, 8px);
+      @include default-text($text-color--black-oil, 16px, 150%, -0.02em, normal);
       margin-bottom: 10px;
     }
   }

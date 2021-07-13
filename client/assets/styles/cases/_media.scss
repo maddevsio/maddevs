@@ -3,7 +3,7 @@
   @media screen and (max-width: 576px) {
     padding: 0 44px;
   }
-  
+
    @media screen and (max-width: 440px) {
     padding: 0 24px;
   }
@@ -17,20 +17,20 @@
 
   .case {
     &_title_h2 {
-      @include title($text-color--black-oil, 25.63px, -0.034em); 
+      @include title($text-color--black-oil, 25.63px, -0.034em);
     }
 
     &_title_h3 {
-      @include title($text-color--black-oil, 22.78px, -1px); 
+      @include title($text-color--black-oil, 22.78px, -1px);
     }
 
     &_title_h4,
     &_title_h5 {
-      @include title($text-color--black-oil, 20.25px, -1px); 
+      @include title($text-color--black-oil, 20.25px, -1px);
     }
 
     &_link {
-      @include default_text($text-color--black-oil, 16px, 150%, -0.02em, normal);
+      @include default-text($text-color--black-oil, 16px, 150%, -0.02em, normal);
     }
   }
 }

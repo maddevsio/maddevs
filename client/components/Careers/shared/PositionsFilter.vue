@@ -38,8 +38,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .positions-filter {
   display: flex;
   flex-flow: row wrap;

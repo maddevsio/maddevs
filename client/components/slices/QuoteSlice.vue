@@ -57,8 +57,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars.scss';
-
 .block-quotation {
   @include font('Inter', 17px, 400);
   display: inline-block;

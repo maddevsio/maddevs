@@ -229,8 +229,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../../assets/styles/_vars';
-
   .modal-search {
     position: fixed;
     top: 0;

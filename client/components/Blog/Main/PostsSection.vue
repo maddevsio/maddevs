@@ -74,8 +74,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
-
 .posts-section {
   background-color: $bgcolor--white-primary;
   padding: 96px 0 80px;

@@ -307,8 +307,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars.scss';
-
 /deep/ .ui-button {
   width: 255px;
   height: 48px;

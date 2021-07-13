@@ -45,8 +45,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/cases/_mixins';
-
 .case {
   &_title {
     text-align: center;

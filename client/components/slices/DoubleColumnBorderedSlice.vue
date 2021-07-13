@@ -1,11 +1,11 @@
 <template>
   <div class="post-section-bordered">
-    <div class="post-section-bordered__inner row">
+    <div class="post-section-bordered__inner">
       <div
-        class="column_left col-12 col-lg-9"
+        class="post-section-bordered__column post-section-bordered__column--left"
         v-html="$prismic.asHtml(slice.primary.left_column)"
       />
-      <div class="column_right col-12 col-lg-3">
+      <div class="post-section-bordered__column post-section-bordered__column--right">
         <PrismicImage :field="slice.primary.right_column" />
       </div>
     </div>
@@ -25,8 +25,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/styles/_vars.scss';
-
 .post-section-bordered {
   border: 1px solid $border-color--silver;
   margin-bottom: 48px;
@@ -34,7 +32,8 @@ export default {
   padding: 44px 24px 24px;
 
   &__inner {
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
     & > div {
       margin-top: 0;
     }
@@ -49,19 +48,23 @@ export default {
       margin-bottom: 6px;
       color: $text-color--grey-pale;
     }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      grid-template-columns: 3fr 1fr;
+    }
+  }
+
+  &__column {
+    &--left {
+      @media only screen and (max-width: 1024px) {
+        order: 2;
+      }
+    }
+    &--right {
+      @media only screen and (max-width: 1024px) {
+        order: 1;
+      }
+    }
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .post-section-bordered {
-    .column_left {
-      order: 2;
-    }
-
-    .column_right {
-      order: 1;
-      margin-bottom: 16px;
-    }
-  }
-}
 </style>

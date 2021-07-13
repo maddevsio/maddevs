@@ -81,9 +81,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-@import '../../assets/styles/_remoteTechStaffIcons';
-
 .remoteTechStaffContent {
   &__tech-staff {
     width: 503px;

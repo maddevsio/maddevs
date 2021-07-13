@@ -151,8 +151,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/styles/cases/_mixins';
-
 .case {
   &_cards-container {
     @include grid(repeat(2, 1fr), auto, 24px, 0);

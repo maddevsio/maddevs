@@ -129,8 +129,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars.scss';
-
 .careers-position {
   padding-bottom: 79px;
   background-color: $bgcolor--white-primary;

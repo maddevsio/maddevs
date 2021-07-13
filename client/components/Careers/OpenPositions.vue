@@ -34,8 +34,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .open-positions {
   padding: 82px 0 88px;
   &__head {

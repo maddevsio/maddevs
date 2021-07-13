@@ -41,8 +41,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
-
 .case {
   &_statistics-item {
     display: flex;

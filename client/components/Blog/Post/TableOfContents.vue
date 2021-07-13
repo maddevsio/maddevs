@@ -107,9 +107,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
-@import '../../../assets/styles/cases/mixins';
-
 .table-of-contents {
   width: 200px;
   max-width: 200px;

@@ -34,8 +34,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../../assets/styles/cases/mixins';
-
 .case {
   &_key-project-milestones {
     @include grid(1fr, auto, 0, 20px);

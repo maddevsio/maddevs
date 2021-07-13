@@ -1,5 +1,5 @@
 <template>
-  <div class="it-consulting-item col-xl-4 col-lg-4">
+  <div class="it-consulting-item">
     <div class="it-consulting-item__text-content">
       <ClientOnly>
         <UITitle
@@ -61,8 +61,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .it-consulting-item {
   &__text-content {
     height: calc(100% - 64px);

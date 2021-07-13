@@ -43,8 +43,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/_vars';
-
 .post-tag {
   white-space: nowrap;
   font-size: 13px;

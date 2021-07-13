@@ -32,8 +32,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_servicesBannerIcons';
-
 .banner {
   &__banner-content {
     margin-bottom: 34px;

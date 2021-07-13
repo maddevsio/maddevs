@@ -25,8 +25,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/cases/_mixins';
-
 .case {
   &_blockquote-box,
   &_quote-author {
@@ -35,7 +33,7 @@ export default {
 
   &_blockquote-box {
     border-left: 2px solid $border-color--red;
-    @include italic_text($text-color--quote-box, 17px, 166%, -0.035em);
+    @include italic-text($text-color--quote-box, 17px, 166%, -0.035em);
 
     &_text-modificator {
       color: $text-color--red;
@@ -43,7 +41,7 @@ export default {
   }
 
   &_quote-author {
-    @include italic_text($text-color--grey-opacity-40-percent, 16px, 166%, -0.035em);
+    @include italic-text($text-color--grey-opacity-40-percent, 16px, 166%, -0.035em);
   }
 
   @media screen and (max-width: 768px) {
@@ -53,7 +51,7 @@ export default {
     }
 
     &_blockquote-box {
-      @include italic_text($text-color--quote-box, 17px, 153%, -0.035em);
+      @include italic-text($text-color--quote-box, 17px, 153%, -0.035em);
     }
   }
 }
