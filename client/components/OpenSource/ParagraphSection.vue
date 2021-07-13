@@ -2,13 +2,9 @@
   <div class="paragraph-section">
     <div class="container">
       <p
-        v-for="(paragraph, i) in paragraphTexts"
-        ref="textBlock"
+        v-for="paragraph in paragraphTexts"
         :key="paragraph"
         class="paragraph-section__text"
-        :class="`paragraph-section__text-${i}`"
-        data-aos="fade-up"
-        :data-aos-anchor="`.paragraph-section__text-${i}`"
         v-html="paragraph"
       />
     </div>

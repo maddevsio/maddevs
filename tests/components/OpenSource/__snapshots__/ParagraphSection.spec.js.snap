@@ -3,21 +3,50 @@
 exports[`ParagraphSection component should render correctly 1`] = `
 <div>
   <div
-    class="container"
+    class="paragraph-section"
   >
-    <p
-      class="paragraph-section"
+    <div
+      class="container"
     >
-      
-    While we love writing code, nothing excites us more than 
-      <span>
-        collaborating
-      </span>
-       with other members of the 
-      <span>
-        tech community.
-      </span>
-    </p>
+      <p
+        class="paragraph-section__text"
+      >
+        While we love writing code, nothing excites us more than 
+        <span>
+          collaborating
+        </span>
+         with other members of the 
+        <span>
+          tech community.
+        </span>
+      </p>
+      <p
+        class="paragraph-section__text"
+      >
+        We love 
+        <span>
+          building
+        </span>
+         with new and emerging 
+        <span>
+          technologies
+        </span>
+         here at Mad Devs.
+      </p>
+      <p
+        class="paragraph-section__text"
+      >
+        Making 
+        <span>
+          the world
+        </span>
+         a better place, one line 
+        <span>
+          of code
+        </span>
+         at a time.
+      </p>
+    </div>
   </div>
 </div>
 `;

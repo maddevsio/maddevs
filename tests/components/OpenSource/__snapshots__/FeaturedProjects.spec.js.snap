@@ -4,6 +4,7 @@ exports[`FeaturedProjects component should render correctly 1`] = `
 <div>
   <div
     class="featured-projects"
+    data-aos="fade-up"
   >
     <div
       class="container"
