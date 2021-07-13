@@ -4,7 +4,6 @@ exports[`Boilerplates component should render correctly 1`] = `
 <div>
   <div
     class="boilerplates"
-    data-aos="fade-up"
   >
     <div
       class="container"
