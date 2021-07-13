@@ -72,5 +72,13 @@ export default {
       line-height: 40px;
     }
   }
+
+  @media screen and (max-width: 520px) {
+    &__text {
+      /deep/ br {
+        display: none;
+      }
+    }
+  }
 }
 </style>

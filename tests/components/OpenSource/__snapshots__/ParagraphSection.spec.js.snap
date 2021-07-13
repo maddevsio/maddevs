@@ -40,7 +40,9 @@ exports[`ParagraphSection component should render correctly 1`] = `
         <span>
           the world
         </span>
-         a better place, one line 
+         a better place, 
+        <br />
+         one line 
         <span>
           of code
         </span>
