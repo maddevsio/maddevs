@@ -22,6 +22,7 @@ const IGNORE_ROUTES = [
   '/blog/tag/assistant',
   '/blog/tag/hr-department',
   '/blog/tag/assistant-delivery-manager',
+  '/blog/tag/software-features',
 ]
 
 const getRoutes = async () => {
