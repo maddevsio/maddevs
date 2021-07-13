@@ -1,41 +1,40 @@
 <template>
   <section
-    id="quickProjectStart"
-    class="quickProjectStart"
+    id="quick-project-start"
+    class="quick-project-start"
   >
     <div class="container">
-      <h2 class="quickProjectStart__main-title">
+      <h2 class="quick-project-start__main-title">
         Quick Project Start
       </h2>
-      <div class="quickProjectStart__content-list row">
+      <div class="quick-project-start__content-list">
         <div
           v-for="(step, idx) in steps"
           :key="step.name"
-          :class="`quickProjectStart__list-item_${step.name}`"
-          class="quickProjectStart__list-item col-xl-2 col-lg-2 col-md-2"
+          class="quick-project-start__list-item"
         >
-          <div class="quickProjectStart__icons-group">
+          <div class="quick-project-start__icons-group">
             <img
               :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/${step.name}.svg`)"
               :alt="step.name"
               width="52"
               height="73"
-              class="quickProjectStart__main-icon img_lazy"
+              class="quick-project-start__main-icon img_lazy"
             >
             <img
               v-if="idx !== steps.length - 1"
               :data-src="require(`@/assets/img/Home/svg/qickProjectIcons/arrow.svg`)"
               width="165"
               height="65"
-              class="quickProjectStart__arrow-icon img_lazy"
+              class="quick-project-start__arrow-icon img_lazy"
               alt="Arrow"
             >
           </div>
-          <div class="quickProjectStart__list-item-text-wrapper">
-            <h3 class="quickProjectStart__title">
+          <div class="quick-project-start__list-item-text-wrapper">
+            <h3 class="quick-project-start__title">
               {{ step.name }}
             </h3>
-            <p class="quickProjectStart__description">
+            <p class="quick-project-start__description">
               {{ step.description }}
             </p>
           </div>
@@ -44,7 +43,7 @@
       <UIModalTriggerButton
         label="Submit your project"
         color="red"
-        class="quickProjectStart__button"
+        class="quick-project-start__button"
         @click="$refs.modalOrderProjectFromUs.show()"
       />
     </div>
@@ -78,9 +77,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
-.quickProjectStart {
+.quick-project-start {
   text-align: center;
   padding-bottom: 157px;
 
@@ -93,12 +90,18 @@ export default {
   }
 
   &__main-title {
-    @include h2_title;
+    @include h2-title;
     color: $text-color--white;
   }
 
   &__content-list {
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 80px;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
   }
 
   &__list-item,
@@ -109,10 +112,6 @@ export default {
   &__list-item {
     flex-direction: column;
     align-items: center;
-
-    &_contact {
-      padding: 0 15px;
-    }
   }
 
   &__main-icon,
@@ -169,7 +168,7 @@ export default {
 }
 
 @media only screen and (max-width: 960px) {
-  .quickProjectStart {
+  .quick-project-start {
     &__title {
       font-size: 18px;
       line-height: 21px;
@@ -200,7 +199,7 @@ export default {
 }
 
 @media only screen and (max-width: 767px) {
-  .quickProjectStart {
+  .quick-project-start {
     text-align: left;
 
     &__main-title {
@@ -210,7 +209,6 @@ export default {
     &__list-item {
       flex-direction: row;
       align-items: flex-start;
-      margin-top: 10px;
     }
 
     &__list-item-text-wrapper {

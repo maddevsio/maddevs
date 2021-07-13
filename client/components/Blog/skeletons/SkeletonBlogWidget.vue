@@ -25,8 +25,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
-
 @keyframes SkeletonLoading {
   0% {
     background-position: 0 50%;

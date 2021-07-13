@@ -31,8 +31,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .icons-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -123,8 +123,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars.scss';
-
 .modal {
   width: 100%;
   height: auto;

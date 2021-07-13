@@ -100,8 +100,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/vars';
-
 .blog-post {
   &__blog-title {
     @include font('Poppins', 52px, 400);

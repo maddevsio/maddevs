@@ -10,11 +10,11 @@
           We create <br>
           IT projects for:
         </h2>
-        <div class="weCreateItProject__projects-type_list row gy-0">
+        <div class="weCreateItProject__projects-list">
           <div
             v-for="[first, second] in industriesEntries"
             :key="first"
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="weCreateItProject__project-item"
           >
             <p class="weCreateItProject__paragraph">
               {{ first }}
@@ -60,8 +60,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .weCreateItProject {
   &__content-wrapper {
     padding: 0 45px 45px;
@@ -69,12 +67,25 @@ export default {
     background-color: $bgcolor--white;
   }
 
-  &__projects-type_list {
+  &__projects-list {
     margin: 0 0 63px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__project-item {
     padding: 0;
+    flex: 0 0 auto;
+    width: 33%;
+    @media screen and (max-width: 576px) {
+      padding: 0;
+      flex: 0 0 auto;
+      width: 50%;
+      &:nth-child(2n) {
+        padding-left: 26px;
+        box-sizing: border-box;
+      }
+    }
   }
 
   &__flags-list {
@@ -102,7 +113,7 @@ export default {
   }
 
   &__main-title {
-    @include h2_title;
+    @include h2-title;
     padding-top: 40px;
     margin-bottom: 23px;
 
@@ -220,12 +231,6 @@ export default {
 
     &__projects-type_list {
       margin: 0 0 27px;
-    }
-
-    &__project-item {
-      &:nth-child(2n) {
-        padding-left: 26px;
-      }
     }
   }
 }

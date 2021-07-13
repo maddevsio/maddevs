@@ -37,8 +37,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .model-banner {
   padding: 168px 0 108px;
   color: $text-color--white-primary;

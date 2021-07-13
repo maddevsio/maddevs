@@ -1,17 +1,17 @@
 <template>
   <section
     id="meet-our-experts"
-    class="meet-our_experts"
+    class="meet-our-experts"
   >
     <div class="container">
-      <h3 class="meet-our_experts__main-title">
+      <h3 class="meet-our-experts__main-title">
         Meet our experts
       </h3>
-      <div class="meet-our_experts__experts-list row">
+      <div class="meet-our-experts__experts-list">
         <div
           v-for="expert in experts"
           :key="expert.name"
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <UIImage
             :file-name="expert.image"
@@ -20,12 +20,12 @@
             width="295"
             height="401"
           />
-          <div class="meet-our_experts__expert-bottom_content">
-            <div class="meet-our_experts__expert-info">
-              <div class="meet-our_experts__expert-name">
+          <div class="meet-our-experts__expert-bottom_content">
+            <div class="meet-our-experts__expert-info">
+              <div class="meet-our-experts__expert-name">
                 {{ expert.name }}
               </div>
-              <div class="meet-our_experts__expert-position">
+              <div class="meet-our-experts__expert-position">
                 {{ expert.position }}
               </div>
             </div>
@@ -35,7 +35,7 @@
             width="24"
             height="24"
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
           >
           <a
             :href="expert.linkedin"
@@ -67,9 +67,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
-.meet-our_experts {
+.meet-our-experts {
   padding-bottom: 100px;
   background-color: $bgcolor--white-darken;
 
@@ -82,20 +80,28 @@ export default {
   }
 
   &__main-title {
-    @include h3_title;
+    @include h3-title;
     text-align: center;
     color: $text-color--black-lighter;
   }
 
+  &__experts-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   &__expert-item {
     position: relative;
-
+    border: 1px solid;
+    border-color: transparent;
+    transition: all .2s ease;
     &:hover {
-      a {
-        border: 1px solid $border-color--red;
-      }
-
-      .meet-our_experts__expert {
+        border-color: $border-color--red;
+      .meet-our-experts__expert {
         &-name,
         &-position {
           color: $text-color--white;
@@ -105,12 +111,12 @@ export default {
     }
 
     a {
-      transition: all 0.1s;
       position: absolute;
       top: 0;
-      left: calc(var(--bs-gutter-x) / 2);
-      width: calc(100% - var(--bs-gutter-x));
-      height: calc(100% - 1px);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: all .3s ease;
     }
   }
 
@@ -142,7 +148,7 @@ export default {
     padding: 4px 8px;
     background-color: $bgcolor--white-darken;
     letter-spacing: -0.02em;
-    transition: all 0.1s;
+    transition: all .2s ease;
   }
 
   &__expert-name {

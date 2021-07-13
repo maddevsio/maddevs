@@ -39,9 +39,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../../assets/styles/cases/_mixins';
-@import '../../../../assets/styles/vars';
-
 .card-content {
   display: flex;
   justify-content: space-between;

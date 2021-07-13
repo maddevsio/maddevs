@@ -65,8 +65,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .model-process {
   padding-bottom: 96px;
   &__title {

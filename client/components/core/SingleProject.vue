@@ -150,8 +150,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .single-project {
   position: relative;
   z-index: 99;

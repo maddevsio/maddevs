@@ -115,8 +115,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/styles/_vars.scss';
-
 .author-slice {
   display: flex;
   justify-content: space-between;

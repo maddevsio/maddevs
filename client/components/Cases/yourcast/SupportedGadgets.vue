@@ -48,8 +48,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../../assets/styles/cases/mixins';
-
 .case {
   &_supported-gadgets {
     @include grid(repeat(3, 1fr), auto, 15px, 0);

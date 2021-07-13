@@ -85,8 +85,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/vars';
-
 .cluster-navigation {
   background: $bgcolor--silver;
   padding: 77px 0 85px;

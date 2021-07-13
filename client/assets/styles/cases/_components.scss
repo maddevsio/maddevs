@@ -16,7 +16,7 @@
   }
 
   &_link {
-    @include default_text($text-color--black-oil, 17px, 166%, -0.035em, normal);
+    @include default-text($text-color--black-oil, 17px, 166%, -0.035em, normal);
   }
 
   &_full-screen-video,
@@ -88,7 +88,7 @@
 
   &_image-description {
     text-align: center;
-    @include default_text($text-color--grey-img-description, 13px, 21.58px, -0.02em, normal);
+    @include default-text($text-color--grey-img-description, 13px, 21.58px, -0.02em, normal);
   }
 
   &_red-text {

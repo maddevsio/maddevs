@@ -27,8 +27,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .metrica-card {
   padding: 22px 27px 30px;
   border-radius: 4px;

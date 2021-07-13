@@ -60,10 +60,10 @@ exports[`CaseStudies component should render correctly 1`] = `
       </div>
        
       <div
-        class="open-source__projects row"
+        class="open-source__projects"
       >
         <div
-          class="col-xl-4 col-lg-4 col-md-6"
+          class="open-source__projects-item"
         >
           <div
             class="open-source__project open-source__project-mad-location"
@@ -90,7 +90,7 @@ exports[`CaseStudies component should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="col-xl-4 col-lg-4 col-md-6"
+          class="open-source__projects-item"
         >
           <div
             class="open-source__project open-source__project-comedian"
@@ -121,7 +121,7 @@ exports[`CaseStudies component should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="col-xl-4 col-lg-4 col-md-6"
+          class="open-source__projects-item"
         >
           <div
             class="open-source__project open-source__project-ariadna"
@@ -152,7 +152,7 @@ exports[`CaseStudies component should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="col-xl-4 col-lg-4 col-md-6"
+          class="open-source__projects-item"
         >
           <div
             class="open-source__project open-source__project-id-match"
@@ -179,7 +179,7 @@ exports[`CaseStudies component should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="col-xl-4 col-lg-4 col-md-6"
+          class="open-source__projects-item"
         >
           <div
             class="open-source__project open-source__project-your-cast"
@@ -206,7 +206,7 @@ exports[`CaseStudies component should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="col-xl-4 col-lg-4 col-md-6"
+          class="open-source__projects-item"
         >
           <div
             class="open-source__project open-source__project-heimdall"

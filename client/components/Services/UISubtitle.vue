@@ -11,8 +11,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .item-sub-title {
   @include font('Poppins', 23px, 600);
   line-height: 136%;

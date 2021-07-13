@@ -128,9 +128,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/styles/cases/_header';
-@import '@/assets/styles/cases/_mixins';
-
 .case {
   &_header {
     display: flex;
@@ -168,7 +165,7 @@ export default {
   }
 
   &_header-text {
-    @include default_text($text-color--white, 17px, 166%, -0.035em, normal);
+    @include default-text($text-color--white, 17px, 166%, -0.035em, normal);
   }
 
   &_header-title {
@@ -226,7 +223,7 @@ export default {
 
     &_header-info,
     &_case-study-item {
-      @include default_text($text-color--white, 16px, 150%, -0.02em, normal);
+      @include default-text($text-color--white, 16px, 150%, -0.02em, normal);
     }
 
     &_case-study-item {

@@ -62,8 +62,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .delivery-model {
   &--bg-white {
     background-color: $bgcolor--white-primary;

@@ -30,8 +30,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .presentation {
   padding: 157px 0;
   &__content {

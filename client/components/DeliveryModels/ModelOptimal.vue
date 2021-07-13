@@ -31,8 +31,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .model-optimal {
   padding: 111px 0 119px;
   &__title {

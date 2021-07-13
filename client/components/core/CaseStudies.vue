@@ -50,8 +50,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .case-studies {
   &--projects .projects-flame-background {
     position: absolute;
@@ -77,7 +75,7 @@ export default {
   }
 
   &__main-title {
-    @include h2_title;
+    @include h2-title;
     padding-bottom: 30px;
     color: $text-color--white;
     text-align: left;

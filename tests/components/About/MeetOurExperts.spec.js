@@ -10,6 +10,6 @@ describe('MeetOurExperts', () => {
 
   it('correctly length of elements in DOM', () => {
     const { container } = render(MeetOurExperts)
-    expect(container.querySelectorAll('.meet-our_experts__expert-item')).toHaveLength(8)
+    expect(container.querySelectorAll('.meet-our-experts__expert-item')).toHaveLength(8)
   })
 })

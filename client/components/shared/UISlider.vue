@@ -54,7 +54,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/styles/_vars';
 .ui-slider {
   &_slider-img {
     width: 100%;

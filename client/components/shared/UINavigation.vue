@@ -44,8 +44,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .navigation-wrap {
   margin-top: 30px;
   margin-bottom: 60px;

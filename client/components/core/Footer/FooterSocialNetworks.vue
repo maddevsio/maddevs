@@ -36,8 +36,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
-
 @mixin social-network-list-grid {
   .footerSocialNetworkList {
     display: grid;

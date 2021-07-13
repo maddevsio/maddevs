@@ -19,8 +19,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/styles/_vars';
-
 .underlined-button {
   cursor: pointer;
   outline: none;

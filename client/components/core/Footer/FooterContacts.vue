@@ -82,8 +82,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
-
 @mixin contacts-head-content {
   &__head-content {
     flex-direction: column;

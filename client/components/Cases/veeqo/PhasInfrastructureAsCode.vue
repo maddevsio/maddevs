@@ -43,8 +43,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/cases/_mixins';
-
 .case {
   &_advantages-list {
     margin: 0;
@@ -53,7 +51,7 @@ export default {
 
   &_advantages-item {
     margin-bottom: 10px;
-    @include default_text($text-color--black-oil, 17px, 166%, -0.03em, 400);
+    @include default-text($text-color--black-oil, 17px, 166%, -0.03em, 400);
 
     &:last-child {
       margin-bottom: 0;

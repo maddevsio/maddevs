@@ -71,8 +71,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .careers-cta-banner {
   &_container {
     padding-bottom: 100px;

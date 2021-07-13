@@ -18,10 +18,10 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
       </h2>
        
       <div
-        class="software-development__content row"
+        class="software-development__content"
       >
         <div
-          class="content-item col-xl-4 col-lg-4"
+          class="content-item"
         >
           <div
             class="content-item__content-wrapper"
@@ -188,7 +188,7 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="content-item col-xl-4 col-lg-4"
+          class="content-item"
         >
           <div
             class="content-item__content-wrapper"
@@ -371,7 +371,7 @@ exports[`SoftwareDevelopment component should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="content-item col-xl-4 col-lg-4"
+          class="content-item"
         >
           <div
             class="content-item__content-wrapper"

@@ -113,8 +113,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../../assets/styles/_vars';
-
   .tag-posts {
     background-color: $bgcolor--white-primary;
     padding: 60px 0 71px;

@@ -108,6 +108,7 @@ module.exports = {
     '@nuxtjs/prismic',
     '@nuxtjs/sitemap',
     '@nuxtjs/gtm',
+    '@nuxtjs/style-resources',
   ],
   sitemap: {
     hostname: 'https://maddevs.io',
@@ -147,5 +148,11 @@ module.exports = {
   },
   router: {
     trailingSlash: true,
+  },
+  styleResources: {
+    scss: [
+      '~/assets/styles/_vars.scss',
+      '~/assets/styles/_mixins.scss',
+    ],
   },
 }

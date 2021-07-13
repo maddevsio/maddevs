@@ -7,7 +7,7 @@
       <h2 class="it-consulting__main-title">
         IT Consulting
       </h2>
-      <div class="it-consulting__content row">
+      <div class="it-consulting__content">
         <ItConsultingContent
           v-for="type in consultungTypes"
           :key="type.type"
@@ -53,18 +53,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .it-consulting {
   padding-bottom: 76px;
   background-color: $bgcolor--white-darken;
 
   &__content {
     margin-bottom: 22px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    @media screen and (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__main-title {
-    @include h2_title;
+    @include h2-title;
     padding-top: 76px;
     margin-bottom: 8px;
     text-align: center;

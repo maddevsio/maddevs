@@ -65,9 +65,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-@import '../../assets/styles/_commonIcons';
-
 .nda {
   width: 100%;
   height: 100%;
@@ -87,7 +84,7 @@ export default {
 
   &__title {
     color: $text-color--white;
-    @include h2_title;
+    @include h2-title;
   }
 
   &__link {

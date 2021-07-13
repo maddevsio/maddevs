@@ -39,7 +39,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/styles/_vars';
 .error-page {
   display: flex;
   flex-direction: column;

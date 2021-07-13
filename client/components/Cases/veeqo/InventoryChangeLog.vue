@@ -44,9 +44,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-@import '@/assets/styles/cases/_mixins';
-
 .case {
   &_container {
     max-height: 498px;

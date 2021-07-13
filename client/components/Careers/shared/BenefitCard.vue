@@ -36,8 +36,6 @@ export default {
 </script>
 
 <style lang="scss" scroped>
-@import '@/assets/styles/_vars.scss';
-
 .benefit-card {
   padding: 16px;
   background-color: $bgcolor--silver;

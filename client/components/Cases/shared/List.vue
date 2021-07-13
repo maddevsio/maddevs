@@ -11,8 +11,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/cases/_mixins';
-
 .case_list {
   display: flex;
   flex-direction: column;

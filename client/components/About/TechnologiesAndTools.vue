@@ -78,8 +78,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../assets/styles/vars';
-
 // establish Technical legends colors
 $tech_legends: (
   'devops': rgba(40, 29, 29, 1),
@@ -840,7 +838,7 @@ $tech_legends: (
 
 .technologies-and_tools {
   &__main-title {
-    @include h2_title;
+    @include h2-title;
 
     color: $text-color--white;
     text-align: left;

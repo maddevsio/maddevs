@@ -56,8 +56,6 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import '../assets/styles/_vars';
-
 .default-layout {
   background-color: $bgcolor--black;
 }

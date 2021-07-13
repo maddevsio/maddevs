@@ -58,8 +58,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .scroll-to-positions {
   cursor: pointer;
   border: 0px solid;

@@ -605,9 +605,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-@import '../../assets/styles/_commonIcons';
-
 .privacy {
   width: 100%;
   height: 100%;
@@ -664,7 +661,7 @@ export default {
   }
 
   &__title {
-    @include h2_title;
+    @include h2-title;
   }
 
   &__sec-title {

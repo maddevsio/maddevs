@@ -209,9 +209,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-@import '../../assets/styles/_commonIcons';
-
 .faq {
   position: relative;
   background-color: $bgcolor--black;
@@ -229,7 +226,7 @@ export default {
 
   &__title {
     color: $text-color--white;
-    @include h2_title;
+    @include h2-title;
   }
 
   &__link {

@@ -11,8 +11,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .paragraph {
   @include font('Inter', 16px, 400);
   line-height: 24px;

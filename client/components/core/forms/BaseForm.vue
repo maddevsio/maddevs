@@ -249,8 +249,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/vars';
-
 .form {
   /deep/ .v-placeholder-asterisk {
     @include font('Inter', 16px, 400);

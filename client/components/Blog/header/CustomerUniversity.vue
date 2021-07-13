@@ -8,7 +8,7 @@
     :cover-image-height="featuredImage.dimensions.height"
   >
     <template #beforeTitle>
-      <div class="row cluster-navigation">
+      <div class="cluster-navigation">
         <div
           v-if="clusterName"
           class="cluster-navigation__name"
@@ -21,7 +21,7 @@
         >
           &zwnj;
         </div>
-        <div class="col-12 col-lg-5 mt-0 cluster-navigation__select-wrapper">
+        <div class="cluster-navigation__select-wrapper">
           <VueSelect
             :options="postOptions"
             :clearable="false"
@@ -38,7 +38,7 @@
             @option:selected="handleChange"
           />
         </div>
-        <div class="col-12 col-lg-7 mt-0 cluster-navigation__buttons-wrapper">
+        <div class="cluster-navigation__buttons-wrapper">
           <div class="cluster-navigation__buttons">
             <NuxtLink
               :to="prevArticleUrl"
@@ -167,15 +167,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/vars';
-@import '../../../assets/styles/commonIcons';
-
 .cluster-navigation {
   color: white;
   align-items: center;
   margin-bottom: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
 
   &__name {
+    flex-shrink: 0;
+    width: 100%;
     @include font('Inter', 16px, 400);
     line-height: 166%;
     letter-spacing: -0.035em;
@@ -184,6 +187,12 @@ export default {
   }
 
   &__select {
+    &-wrapper {
+      width: 41%;
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+      }
+    }
     /deep/ .vs {
       &__dropdown-toggle {
         padding: 13px 15px 13px 20px;
@@ -257,6 +266,12 @@ export default {
 
   &__buttons {
     text-align: right;
+    &-wrapper {
+      width: 41%;
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+      }
+    }
   }
 
   &__link {
@@ -320,6 +335,8 @@ export default {
 
 @media screen and (max-width: 991px) {
   .cluster-navigation {
+    padding: 0 14px;
+    margin-top: 0;
     &__name {
       margin-bottom: 13.5px;
       margin-top: 0;

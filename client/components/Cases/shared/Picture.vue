@@ -113,8 +113,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../../../assets/styles/_vars';
-
 .image {
   width: 100%;
   height: auto;

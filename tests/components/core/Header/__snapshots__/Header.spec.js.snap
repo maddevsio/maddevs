@@ -16,10 +16,10 @@ exports[`Header component should render correctly 1`] = `
         id="header-container"
       >
         <div
-          class="row"
+          class="header__content"
         >
           <div
-            class="header__left-nav_bar col"
+            class="header__left-nav_bar"
           >
             <nuxtlink-stub
               class="header__logo-icon"
@@ -150,7 +150,7 @@ exports[`Header component should render correctly 1`] = `
           </div>
            
           <div
-            class="header__right-content col-auto"
+            class="header__right-content"
           >
             <!---->
              

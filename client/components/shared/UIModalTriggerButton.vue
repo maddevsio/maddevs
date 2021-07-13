@@ -43,8 +43,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .ui-button-modal-trigger {
   @include font('Inter', 18px, 400);
   height: 65px;

@@ -34,8 +34,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/styles/cases/_mixins';
-
 .case {
   &_footer {
     display: flex;
@@ -66,7 +64,7 @@ export default {
     border: 0;
     cursor: pointer;
     text-decoration: none;
-    @include default_text($text-color--white-primary, 17px, 166%, -0.035em, normal);
+    @include default-text($text-color--white-primary, 17px, 166%, -0.035em, normal);
   }
 
   // --------- NambaFood footer styles --------- //
@@ -124,7 +122,7 @@ export default {
     }
 
     &_next-project-button {
-      @include default_text($text-color--white-primary, 16px, 150%, -0.02em, normal);
+      @include default-text($text-color--white-primary, 16px, 150%, -0.02em, normal);
     }
 
     &_logotype-namba-food {

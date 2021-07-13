@@ -7,7 +7,7 @@
       <h2 class="software-development__main-title">
         Software Development
       </h2>
-      <div class="software-development__content row">
+      <div class="software-development__content">
         <SoftwareDevelopmentContent
           v-for="category in developmentCategories"
           :key="category.type"
@@ -53,12 +53,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .software-development {
   &__main-title {
     text-align: center;
-    @include h2_title;
+    @include h2-title;
   }
 
   &__main-title,
@@ -95,6 +93,13 @@ export default {
 
   &__content {
     margin-bottom: 22px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 1fr;
+    }
 
     @media screen and (min-width: 400px) and (max-width: 1023px) {
       font-size: 16px;

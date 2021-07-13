@@ -3,8 +3,8 @@
     :class="`featured-post--${theme}-theme`"
     class="featured-post"
   >
-    <div class="row featured-post__wrapper">
-      <div class="col-12 col-lg-6 featured-post__info-wrapper">
+    <div class="featured-post__wrapper">
+      <div class="featured-post__info-wrapper">
         <NuxtLink
           :to="link"
           class="featured-post__info"
@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6 featured-post__image-wrapper">
+      <div class="featured-post__image-wrapper">
         <NuxtLink
           :to="link"
           class="featured-post__image"
@@ -121,8 +121,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/_vars';
-
 .featured-post {
   &--dark-theme {
     * {
@@ -138,7 +136,14 @@ export default {
     text-decoration: none;
   }
   &__wrapper {
+    display: grid;
     align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    @media only screen and (max-width: 992px) {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
   }
   &__info-wrapper{
     margin-top: 0;

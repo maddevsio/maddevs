@@ -6,10 +6,10 @@ exports[`featured post component is a Vue instance 1`] = `
     class="featured-post featured-post--dark-theme"
   >
     <div
-      class="row featured-post__wrapper"
+      class="featured-post__wrapper"
     >
       <div
-        class="col-12 col-lg-6 featured-post__info-wrapper"
+        class="featured-post__info-wrapper"
       >
         <nuxtlink-stub
           class="featured-post__info"
@@ -62,7 +62,7 @@ exports[`featured post component is a Vue instance 1`] = `
       </div>
        
       <div
-        class="col-12 col-lg-6 featured-post__image-wrapper"
+        class="featured-post__image-wrapper"
       >
         <nuxtlink-stub
           class="featured-post__image"

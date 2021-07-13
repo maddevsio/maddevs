@@ -81,7 +81,6 @@ export default {
 
 <style lang="scss">
 @import '@/assets/styles/cases/_base';
-@import '@/assets/styles/cases/_mixins';
 @import '@/assets/styles/cases/_components';
 @import '@/assets/styles/cases/_media';
 

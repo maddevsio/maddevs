@@ -9,7 +9,7 @@ describe('QuickProjectStart', () => {
   })
 
   it('correctly length of elements in DOM', () => {
-    const contentItems = wrapper.findAll('.quickProjectStart__list-item')
+    const contentItems = wrapper.findAll('.quick-project-start__list-item')
     expect(contentItems).toHaveLength(5)
   })
 

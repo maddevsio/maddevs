@@ -50,9 +50,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/cases/_mixins';
-@import '../../../assets/styles/vars';
-
 .card-content {
   @include grid(154px 195px 173px 254px, auto, 0, 0);
 

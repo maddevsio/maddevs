@@ -60,9 +60,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../../assets/styles/cases/_mixins';
-@import '../../../../assets/styles/vars';
-
 .card-content {
   display: flex;
   justify-content: space-between;
@@ -116,7 +113,7 @@ export default {
 
   &_price-heading,
   &_price-number {
-    @include default_text($text-color--white-primary, 15px, 44.25px, -0.035em, normal);
+    @include default-text($text-color--white-primary, 15px, 44.25px, -0.035em, normal);
   }
 
   @media screen and (max-width: 960px) {

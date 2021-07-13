@@ -25,10 +25,10 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
         </h2>
          
         <div
-          class="weCreateItProject__projects-type_list row gy-0"
+          class="weCreateItProject__projects-list"
         >
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="weCreateItProject__project-item"
           >
             <p
               class="weCreateItProject__paragraph"
@@ -43,7 +43,7 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="weCreateItProject__project-item"
           >
             <p
               class="weCreateItProject__paragraph"
@@ -58,7 +58,7 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="weCreateItProject__project-item"
           >
             <p
               class="weCreateItProject__paragraph"
@@ -73,7 +73,7 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="weCreateItProject__project-item"
           >
             <p
               class="weCreateItProject__paragraph"
@@ -88,7 +88,7 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="weCreateItProject__project-item"
           >
             <p
               class="weCreateItProject__paragraph"
@@ -103,7 +103,7 @@ exports[`WeCreateItProjectsFor should render correctly 1`] = `
             </p>
           </div>
           <div
-            class="weCreateItProject__project-item col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6"
+            class="weCreateItProject__project-item"
           >
             <p
               class="weCreateItProject__paragraph"

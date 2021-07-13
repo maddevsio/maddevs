@@ -94,13 +94,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .remoteTechStaff {
   background-color: $bgcolor--black;
 
   &__main-title {
-    @include h2_title;
+    @include h2-title;
     color: $text-color--red;
   }
 

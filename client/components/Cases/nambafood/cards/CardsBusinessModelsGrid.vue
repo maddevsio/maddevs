@@ -67,8 +67,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../../assets/styles/cases/_mixins';
-
 .case_business-models-grid {
   margin: 25px 0;
   @include grid(repeat(2, 1fr), auto, 25px, 0);

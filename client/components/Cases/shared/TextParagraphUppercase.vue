@@ -11,11 +11,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/styles/cases/_mixins';
-
 .case {
   &_paragraph-uppercase {
-    @include default_text($text-color--grey-opacity-40-percent, 16px, 135%, -0.035em, normal);
+    @include default-text($text-color--grey-opacity-40-percent, 16px, 135%, -0.035em, normal);
     text-transform: uppercase;
   }
 }

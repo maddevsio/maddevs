@@ -76,8 +76,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../assets/styles/cases/_mixins';
-
 .card-content {
   height: 100%;
   display: flex;

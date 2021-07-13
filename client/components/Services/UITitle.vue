@@ -11,8 +11,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/vars';
-
 .item-title {
   @include font('Poppins', 40px, 700);
   margin-bottom: 24px;

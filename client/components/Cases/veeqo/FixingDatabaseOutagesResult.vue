@@ -39,9 +39,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-@import '@/assets/styles/cases/_mixins';
-
 .case {
   &_result-container {
     @include grid(repeat(3, 1fr), auto, 0, 0);

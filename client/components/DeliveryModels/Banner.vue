@@ -46,8 +46,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .banner {
   position: relative;
   display: flex;

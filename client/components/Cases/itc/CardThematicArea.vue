@@ -69,8 +69,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '@/assets/styles/_vars';
-
   .card {
     display: flex;
     justify-content: space-between;

@@ -79,8 +79,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars.scss';
-
 .block-img {
   margin-bottom: 10px;
   text-align: center;

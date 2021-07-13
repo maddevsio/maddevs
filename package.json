@@ -32,6 +32,7 @@
     "@nuxtjs/prismic": "^1.2.6",
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.4.0",
+    "@nuxtjs/style-resources": "^1.2.0",
     "@sentry/node": "^6.3.1",
     "@sentry/tracing": "^6.2.3",
     "@sentry/vue": "^6.3.1",

@@ -3,14 +3,14 @@
 exports[`MeetOurExperts is a Vue instance 1`] = `
 <div>
   <section
-    class="meet-our_experts"
+    class="meet-our-experts"
     id="meet-our-experts"
   >
     <div
       class="container"
     >
       <h3
-        class="meet-our_experts__main-title"
+        class="meet-our-experts__main-title"
       >
         
       Meet our experts
@@ -18,10 +18,10 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
       </h3>
        
       <div
-        class="meet-our_experts__experts-list row"
+        class="meet-our-experts__experts-list"
       >
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -42,13 +42,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Marat Bediev
@@ -56,7 +56,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Senior DevOps Engineer
@@ -67,7 +67,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -80,7 +80,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -101,13 +101,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Tamara Mun
@@ -115,7 +115,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Head of Delivery Management
@@ -126,7 +126,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -139,7 +139,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -160,13 +160,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Andrew "Chuck" Minkin
@@ -174,7 +174,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               CTO, Co-Founder
@@ -185,7 +185,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -198,7 +198,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -219,13 +219,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Nakylai Taiirova
@@ -233,7 +233,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Senior Full-Stack Developer
@@ -244,7 +244,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -257,7 +257,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -278,13 +278,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Daria Utesheva
@@ -292,7 +292,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Head of HR Department
@@ -303,7 +303,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -316,7 +316,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -337,13 +337,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Nuradil Alymkulov
@@ -351,7 +351,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Senior Full-Stack Developer
@@ -362,7 +362,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -375,7 +375,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -396,13 +396,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Alice Jang
@@ -410,7 +410,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Project Manager
@@ -421,7 +421,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"
@@ -434,7 +434,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           />
         </div>
         <div
-          class="meet-our_experts__expert-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6"
+          class="meet-our-experts__expert-item"
         >
           <picture>
             <source
@@ -455,13 +455,13 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
           </picture>
            
           <div
-            class="meet-our_experts__expert-bottom_content"
+            class="meet-our-experts__expert-bottom_content"
           >
             <div
-              class="meet-our_experts__expert-info"
+              class="meet-our-experts__expert-info"
             >
               <div
-                class="meet-our_experts__expert-name"
+                class="meet-our-experts__expert-name"
               >
                 
               Arthur Elizavetenkov
@@ -469,7 +469,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
               </div>
                
               <div
-                class="meet-our_experts__expert-position"
+                class="meet-our-experts__expert-position"
               >
                 
               Project Manager
@@ -480,7 +480,7 @@ exports[`MeetOurExperts is a Vue instance 1`] = `
            
           <img
             alt="Linkedin"
-            class="meet-our_experts__expert-linkedin-link img_lazy"
+            class="meet-our-experts__expert-linkedin-link img_lazy"
             data-src="[object Object]"
             height="24"
             width="24"

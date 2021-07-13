@@ -72,8 +72,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .success-modal {
   width: 514.16px;
   height: 356px;

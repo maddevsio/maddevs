@@ -16,8 +16,8 @@
         id="header-container"
         class="container"
       >
-        <div class="row">
-          <div class="header__left-nav_bar col">
+        <div class="header__content">
+          <div class="header__left-nav_bar">
             <NuxtLink
               to="/"
               class="header__logo-icon"
@@ -84,7 +84,7 @@
             </div>
             <!-- END Burget btn -->
           </div>
-          <div class="header__right-content col-auto">
+          <div class="header__right-content">
             <button
               v-if="isBlogPage"
               class="header__search-btn"
@@ -292,14 +292,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_vars';
-
 .header {
   width: 100%;
   height: 40px;
   padding: 11px 0;
   z-index: 3;
   background-color: $bgcolor--black;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &-wrapper {
     position: sticky;
@@ -521,7 +525,7 @@ export default {
     &__header-logo {
       width: 28px;
       height: 49px;
-      margin-top: 20px;
+      margin-top: 1px;
       margin-left: -55px;
     }
   }
