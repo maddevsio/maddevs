@@ -1,0 +1,54 @@
+[
+  {
+    "from": "/blog/tag/featured-post",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/tag/copywriter",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/tag/marketing",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/tag/it",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/tag/python",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/tag/django",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/tag/go",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/tag/golang",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/tag/ios",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/tag/hr",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/tag/assistant",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/tag/hr-department",
+    "to": "https://maddevs.io/careers/#open-positions"
+  },
+  {
+    "from": "/blog/tag/assistant-delivery-manager",
+    "to": "https://maddevs.io/careers/#open-positions"
+  }
+]
