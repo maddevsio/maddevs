@@ -28,7 +28,7 @@ export default {
 
   mounted() {
     const textBlocks = gsap.utils.toArray('.paragraph-section__text')
-    const tl = gsap.timeline({
+    const timeLine = gsap.timeline({
       scrollTrigger: {
         trigger: '.paragraph-section',
         scrub: 1,
@@ -39,7 +39,7 @@ export default {
     })
 
     textBlocks.forEach(textBlock => {
-      tl.fromTo(textBlock,
+      timeLine.fromTo(textBlock,
         { opacity: 0, scale: 0.87 },
         {
           scale: 1, opacity: 1, repeat: 1, yoyo: true, yoyoEase: true,
