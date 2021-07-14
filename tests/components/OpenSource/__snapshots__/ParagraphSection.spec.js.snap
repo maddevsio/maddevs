@@ -15,7 +15,7 @@ exports[`ParagraphSection component should render correctly 1`] = `
     >
       <p
         class="paragraph-section__text"
-        style="transform: scale(0.87, 0.87) ; opacity: 0;"
+        style=""
       >
         While we love writing code, nothing excites us more than 
         <span>
@@ -28,7 +28,7 @@ exports[`ParagraphSection component should render correctly 1`] = `
       </p>
       <p
         class="paragraph-section__text"
-        style="transform: scale(0.87, 0.87) ; opacity: 0;"
+        style=""
       >
         We love 
         <span>
@@ -42,7 +42,7 @@ exports[`ParagraphSection component should render correctly 1`] = `
       </p>
       <p
         class="paragraph-section__text"
-        style="transform: scale(0.87, 0.87) ; opacity: 0;"
+        style=""
       >
         Making 
         <span>
