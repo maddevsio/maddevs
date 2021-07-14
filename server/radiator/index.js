@@ -21,7 +21,7 @@ function runRadiator() {
     slack: true,
     telegram: true,
     range: 'day',
-    slackChannelId: 'radiator-test-channel',
+    slackChannelId: 'mad-marketing',
     telegramChannelId: -1001456401847,
     websiteUrl: 'https://maddevs.io',
     analyticsViewId: '230523659',
@@ -47,10 +47,11 @@ function runRadiator() {
   const weeklyConfig = {
     ...baseConfig,
     range: 'week',
+    slackChannelId: 'general',
     schedule: {
       period: 'week',
-      time: 12,
-      weekDay: 3,
+      time: 15 - 6, // heroku works with UTC timezone, so we need to calculate diff between Bishkek(UTC+6)
+      weekDay: 5,
     },
   }
 
@@ -59,7 +60,7 @@ function runRadiator() {
     range: 'day',
     schedule: {
       period: 'day',
-      time: 12,
+      time: 9 - 6, // heroku works with UTC timezone, so we need to calculate diff between Bishkek(UTC+6)
     },
   }
 
