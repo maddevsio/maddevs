@@ -34,7 +34,7 @@ export default {
         scrub: 1,
         pin: true,
         start: 'top top+=5%+',
-        end: '+=1400',
+        end: '+=3000',
       },
     })
 
@@ -60,6 +60,7 @@ export default {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    max-width: 1240px;
     font-size: 60px;
     font-weight: 600;
     line-height: 70px;
