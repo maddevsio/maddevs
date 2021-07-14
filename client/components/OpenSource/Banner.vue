@@ -122,6 +122,7 @@ export default {
   }
 
   @media screen and (max-width: 1024px) {
+    height: 85vh;
     &__title {
       font-size: 80px;
       line-height: 88px;

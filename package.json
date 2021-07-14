@@ -48,7 +48,6 @@
     "express": "^4.17.1",
     "form-data": "^4.0.0",
     "googleapis": "^72.0.0",
-    "gsap": "^3.7.0",
     "mobile-device-detect": "^0.4.3",
     "multer": "^1.4.2",
     "node-telegram-bot-api": "^0.52.0",
