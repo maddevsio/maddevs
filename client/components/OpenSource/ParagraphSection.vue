@@ -12,7 +12,11 @@
 </template>
 
 <script>
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { paragraphTexts } from '@/data/openSourceTexts'
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default {
   name: 'ParagraphSection',
@@ -20,6 +24,27 @@ export default {
     return {
       paragraphTexts,
     }
+  },
+
+  mounted() {
+    const textBlocks = gsap.utils.toArray('.paragraph-section__text')
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.paragraph-section',
+        scrub: 1,
+        pin: true,
+        start: 'top top+=5%+',
+        end: '+=2000',
+      },
+    })
+
+    textBlocks.forEach(textBlock => {
+      tl.fromTo(textBlock,
+        { opacity: 0, scale: 0.87 },
+        {
+          scale: 1, opacity: 1, repeat: 1, yoyo: true, yoyoEase: true,
+        })
+    })
   },
 }
 </script>
@@ -30,13 +55,17 @@ export default {
 .paragraph-section {
   padding: 360px 0;
   &__text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     font-size: 60px;
     font-weight: 600;
     line-height: 70px;
     letter-spacing: -0.013em;
     color: $text-color--silver;
     text-align: center;
-    margin-bottom: 40px;
     &:nth-child(1) {
       /deep/ span {
         color: $text-color--red-dark;
