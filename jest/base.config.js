@@ -32,10 +32,10 @@ module.exports = {
   setupFiles: ['jest-canvas-mock'],
   coverageThreshold: {
     global: {
-      branches: 68.92,
-      statements: 88.32,
-      functions: 83.09,
-      lines: 88.5,
+      branches: 67.70,
+      statements: 87.30,
+      functions: 82.95,
+      lines: 87.5,
     },
   },
   modulePathIgnorePatterns: [
