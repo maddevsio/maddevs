@@ -64,7 +64,7 @@ export default {
   }
 
   @media screen and (max-width: 1024px) {
-    padding: 195px 0;
+    padding: 72px 0;
     &__text {
       font-size: 32px;
       line-height: 40px;
@@ -72,7 +72,7 @@ export default {
   }
 
   @media screen and (max-width: 768px) {
-    padding: 128px 0;
+    padding: 52px 0;
     &__text {
       font-size: 28px;
       line-height: 40px;
