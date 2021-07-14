@@ -12,11 +12,11 @@ exports[`ParagraphSection component should render correctly 1`] = `
         class="paragraph-section__text paragraph-section__text--undefined"
         data-aos="fade-up"
       >
-        While we love writing code, nothing excites us more than
+        While we love writing code, nothing excites us more than 
         <span>
           collaborating
         </span>
-         with other members of the
+         with other members of the 
         <span>
           tech community.
         </span>
@@ -25,11 +25,11 @@ exports[`ParagraphSection component should render correctly 1`] = `
         class="paragraph-section__text paragraph-section__text--undefined"
         data-aos="fade-up"
       >
-        We love
+        We love 
         <span>
           building
         </span>
-         with new and emerging
+         with new and emerging 
         <span>
           technologies
         </span>
@@ -39,13 +39,13 @@ exports[`ParagraphSection component should render correctly 1`] = `
         class="paragraph-section__text paragraph-section__text--undefined"
         data-aos="fade-up"
       >
-        Making
+        Making 
         <span>
           the world
         </span>
-         a better place,
+         a better place, 
         <br />
-         one line
+         one line 
         <span>
           of code
         </span>
