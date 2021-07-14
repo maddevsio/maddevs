@@ -4,6 +4,7 @@
     <BenefitsFromPekloTool />
     <HowPekloToolWorks />
     <KeywordGrouping />
+    <ClusterisationAlgorithm />
   </section>
 </template>
 
@@ -12,6 +13,7 @@ import About from '@/components/Cases/peklo/About'
 import BenefitsFromPekloTool from '@/components/Cases/peklo/BenefitsFromPekloTool'
 import HowPekloToolWorks from '@/components/Cases/peklo/HowPekloToolWorks'
 import KeywordGrouping from '@/components/Cases/peklo/KeywordGrouping'
+import ClusterisationAlgorithm from '@/components/Cases/peklo/ClusterisationAlgorithm'
 
 export default {
   name: 'Main',
@@ -20,6 +22,7 @@ export default {
     BenefitsFromPekloTool,
     HowPekloToolWorks,
     KeywordGrouping,
+    ClusterisationAlgorithm,
   },
 }
 </script>

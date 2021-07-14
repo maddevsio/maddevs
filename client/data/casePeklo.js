@@ -39,3 +39,18 @@ export const howPekloToolWorksCards = [
     iconHeight: '121.25',
   },
 ]
+
+export const slides = [
+  {
+    fileName: 'peklo-first-slide',
+    pictureFolder: 'peklo',
+    fileExtension: 'jpg',
+    alt: 'Clusterisation algorithm',
+  },
+  {
+    fileName: 'peklo-second-slide',
+    pictureFolder: 'peklo',
+    fileExtension: 'jpg',
+    alt: 'Clusterisation algorithm',
+  },
+]

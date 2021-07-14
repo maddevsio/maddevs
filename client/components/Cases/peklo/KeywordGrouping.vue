@@ -6,7 +6,7 @@
     <TextParagraph class="m-24_bottom">
       The heart of Peklo Tool is a smart technology that groups keywords. Performed manually, grouping can take an overwhelmingly long time. It gets virtually unmanageable if a planned contextual advertising campaign uses thousands or tens of thousands of keywords, which they often do.
     </TextParagraph>
-    <div class="case_img-wrapper m-12_bottom">
+    <div class="case_img-wrapper m-12_bottom media-m-8_bottom">
       <Picture
         :width="817"
         :height="459"
@@ -90,6 +90,16 @@ export default {
 
   &_card-title {
     color: $text-color--white;
+  }
+
+  @media screen and (max-width: 768px) {
+    &_cards {
+      @include grid(repeat(1, 1fr), auto, 0, 24px);
+    }
+
+    &_img-alt {
+      font-size: 11px;
+    }
   }
 }
 </style>
