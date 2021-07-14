@@ -10,7 +10,7 @@
       <UIBanner
         title="Develop with <br /> Mad Devs"
         text="Showcase your work, give feedback <br /> to others, and learn from each other."
-        :image="$getMediaFromS3('/images/OpenSource/png/devteam.png')"
+        :image="$getMediaFromS3('/images/OpenSource/png/team.png')"
         image-alt-text="Team"
       >
         <a
