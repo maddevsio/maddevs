@@ -22,7 +22,7 @@ function runRadiator() {
     telegram: true,
     range: 'day',
     slackChannelId: 'mad-marketing',
-    telegramChannelId: -1001456401847,
+    telegramChannelId: -1001428775098,
     websiteUrl: 'https://maddevs.io',
     analyticsViewId: '230523659',
     analyticsConversions: [
