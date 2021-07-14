@@ -85,7 +85,7 @@ export default {
   align-items: center;
   justify-content: center;
   padding-top: 62px;
-  height: 100vh;
+  height: 85vh;
   min-height: 568px;
   background: linear-gradient(180deg, rgba(17, 18, 19, 0) 75%, #111213 100%);
   overflow: hidden;
