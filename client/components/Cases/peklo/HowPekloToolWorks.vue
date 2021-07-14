@@ -8,7 +8,16 @@
         In digital marketing, “contextual advertising” refers to a method of targeting ads based on what content users access. Advertisers use keywords to make sure that the users who see certain ads can actually be interested in buying the product.
       </TextParagraph>
     </div>
-    <div class="container_full case_iframe m-48_bottom" />
+    <div class="case_iframe-wrapper m-48_bottom m-auto">
+      <iframe
+        src="https://www.youtube.com/embed/RYAUgOba-wg"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="case_iframe"
+      />
+    </div>
     <div class="container_regular">
       <h4 class="case_title_h4 m-24_bottom media-m-12_bottom">
         Here’s how Peklo Tool increases the efficacy of contextual advertising:
@@ -86,6 +95,31 @@ export default {
     position: absolute;
     right: 0;
     bottom: 0;
+  }
+
+  &_iframe-wrapper {
+    width: 1046px;
+    height: 588px;
+  }
+
+  &_iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 1046px) {
+    &_iframe-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      width: 100%;
+      height: 100%;
+    }
+
+    &_iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
   @media screen and (max-width: 890px) {

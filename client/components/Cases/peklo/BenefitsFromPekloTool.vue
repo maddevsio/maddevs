@@ -10,7 +10,17 @@
           :key="card.title"
           :class="`background-color-${card.color}`"
         >
-          <h4 class="case_title_h4 case_card-title m-8_bottom">
+          <div class="case_card-img">
+            <Picture
+              :width="396"
+              :height="200"
+              :file="card.img"
+              :alt="card.title"
+              folder="peklo"
+              extension="png"
+            />
+          </div>
+          <h4 class="case_title_h4 case_card-title m-24_top m-8_bottom">
             {{ card.title }}
           </h4>
           <TextParagraph color="#ffffff">
@@ -32,6 +42,7 @@
 
 <script>
 import TextParagraph from '@/components/Cases/shared/TextParagraph'
+import Picture from '@/components/Cases/shared/Picture'
 import Card from '@/components/Cases/shared/Card'
 import { benefitsCards } from '@/data/casePeklo'
 
@@ -40,6 +51,7 @@ export default {
   components: {
     TextParagraph,
     Card,
+    Picture,
   },
 
   data() {
@@ -65,6 +77,28 @@ export default {
 
   &_card-title {
     color: $text-color--white;
+  }
+
+  &_card-img {
+    min-width: 396px;
+    margin: -32px 0 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and (max-width: 768px) {
+      margin: -20px 0 0;
+    }
+
+    @media screen and (min-width: 470px) and (max-width: 720px) {
+      min-width: 550px
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    &_cards-group {
+      @include grid(repeat(1, 1fr), auto, 0, 24px);
+    }
   }
 }
 </style>
