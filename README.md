@@ -9,6 +9,11 @@
 ![Coverage functions](client/static/badge-functions.svg)
 ![Coverage lines](client/static/badge-lines.svg)
 
+## Additional docs
+
+* [How to remove link from sitemap.xml](./docs/how_to_remove_link_from_sitemap_xml.md)
+
+
 ## Requirements
 
 ### Environment variables

@@ -33,10 +33,12 @@ export default {
 
   methods: {
     show() {
+      if (!this.$refs.modalGetYourTrustedItPartner.show) return
       this.$refs.modalGetYourTrustedItPartner.show()
     },
 
     close() {
+      if (!this.$refs.modalGetYourTrustedItPartner.close) return
       this.$refs.modalGetYourTrustedItPartner.close()
     },
   },

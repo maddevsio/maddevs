@@ -17,13 +17,13 @@ describe('ModalContactMe component', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('if call method "show" and ref modalContactMe is undefined > will return false', () => {
+  it('if call method "show" and ref modalContactMe is undefined > "show" method in ref modalContactMe not call', () => {
     wrapper = shallowMount(ModalContactMe)
     wrapper.vm.show()
     expect(mockShow).not.toHaveBeenCalled()
   })
 
-  it('if call method "show" and ref modalContactMe exist > will return true', () => {
+  it('if call method "show" and ref modalContactMe exist > "show" method in ref modalContactMe call', () => {
     wrapper = shallowMount(ModalContactMe, {
       stubs: {
         Modal: {
@@ -38,13 +38,13 @@ describe('ModalContactMe component', () => {
     expect(mockShow).toHaveBeenCalledTimes(1)
   })
 
-  it('if call method "close" and ref modalContactMe is undefined > will return false', () => {
+  it('if call method "close" and ref modalContactMe is undefined > "close" method in ref modalContactMe not call', () => {
     wrapper = shallowMount(ModalContactMe)
     wrapper.vm.close()
     expect(mockClose).not.toHaveBeenCalled()
   })
 
-  it('if call method "close" and ref modalContactMe exist > will return true', () => {
+  it('if call method "close" and ref modalContactMe exist > "close" method in ref modalContactMe call', () => {
     wrapper = shallowMount(ModalContactMe, {
       stubs: {
         Modal: {
