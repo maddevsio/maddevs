@@ -1,6 +1,6 @@
 import 'regenerator-runtime'
-import getDevicesData from '../../../radiator/analytics/getDevicesData'
-import getAnalytics from '../../../radiator/analytics/getAnalytics'
+import getDevicesData from '../../../server/radiator/analytics/getDevicesData'
+import getAnalytics from '../../../server/radiator/analytics/getAnalytics'
 
 jest.mock('../../../radiator/analytics/getAnalytics', () => jest.fn())
 

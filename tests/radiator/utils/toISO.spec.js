@@ -1,4 +1,4 @@
-import toISO from '../../../radiator/utils/countryISO/toISO'
+import toISO from '../../../server/radiator/utils/countryISO/toISO'
 
 describe('toISO utility', () => {
   it('should correctly return code', () => {

@@ -1,4 +1,4 @@
-import fromISO from '../../../radiator/utils/countryISO/fromISO'
+import fromISO from '../../../server/radiator/utils/countryISO/fromISO'
 
 describe('fromISO utility', () => {
   it('should correctly return country', () => {

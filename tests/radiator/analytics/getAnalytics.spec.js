@@ -1,6 +1,6 @@
 import 'regenerator-runtime'
 import { google } from 'googleapis'
-import getAnalytics from '../../../radiator/analytics/getAnalytics'
+import getAnalytics from '../../../server/radiator/analytics/getAnalytics'
 
 jest.mock('googleapis', () => ({
   google: {

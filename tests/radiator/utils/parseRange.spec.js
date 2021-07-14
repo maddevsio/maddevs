@@ -1,4 +1,4 @@
-import parseRange from '../../../radiator/utils/parseRange'
+import parseRange from '../../../server/radiator/utils/parseRange'
 
 class MockedDate {
   constructor() {

@@ -1,7 +1,7 @@
 import 'regenerator-runtime'
-import main from '../../../radiator/slack'
-import buildMessage from '../../../radiator/slack/buildMessage'
-import sendMessage from '../../../radiator/slack/sendMessage'
+import main from '../../../server/radiator/slack'
+import buildMessage from '../../../server/radiator/slack/buildMessage'
+import sendMessage from '../../../server/radiator/slack/sendMessage'
 
 jest.mock('../../../radiator/slack/buildMessage', () => jest.fn())
 jest.mock('../../../radiator/slack/sendMessage', () => jest.fn())

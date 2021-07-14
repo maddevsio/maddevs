@@ -1,7 +1,7 @@
 import 'regenerator-runtime'
 import fs from 'fs'
 import { google } from 'googleapis'
-import authorize from '../../../radiator/analytics/auth'
+import authorize from '../../../server/radiator/analytics/auth'
 
 jest.spyOn(fs, 'writeFile').mockImplementation((_, __, fn) => fn())
 jest.spyOn(fs, 'unlink').mockImplementation((_, fn) => fn())

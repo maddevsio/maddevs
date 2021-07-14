@@ -5,6 +5,9 @@ const bodyParser = require('body-parser')
 // sentry
 const { configureSentry } = require('./sentry')
 
+// radiator
+const runRadiator = require('./radiator')
+
 // custom middlewares
 const applyXFrame = require('./middlewares/applyXFrame')
 const redirectToHttps = require('./middlewares/redirectToHttps')
@@ -54,6 +57,9 @@ function bootstrap() {
 
   // Errors handler
   app.use(Sentry.Handlers.errorHandler())
+
+  // radiator running
+  if (process.env.FF_ENVIRONMENT === 'staging') runRadiator()
 
   return app
 }

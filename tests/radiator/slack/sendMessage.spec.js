@@ -1,6 +1,6 @@
 import 'regenerator-runtime'
 import axios from 'axios'
-import sendMessage from '../../../radiator/slack/sendMessage'
+import sendMessage from '../../../server/radiator/slack/sendMessage'
 
 jest.spyOn(axios, 'post')
 

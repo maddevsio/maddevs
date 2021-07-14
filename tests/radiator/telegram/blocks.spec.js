@@ -6,7 +6,7 @@ import {
   listItem,
   countryListItem,
   performanceListItem,
-} from '../../../radiator/telegram/blocks'
+} from '../../../server/radiator/telegram/blocks'
 
 describe('Radiator > telegram > blocks', () => {
   it('header block', () => {

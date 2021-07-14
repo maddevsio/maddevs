@@ -1,6 +1,6 @@
 import 'regenerator-runtime'
 import axios from 'axios'
-import main from '../../../radiator/lighthouse'
+import main from '../../../server/radiator/lighthouse'
 
 jest.spyOn(axios, 'get')
 

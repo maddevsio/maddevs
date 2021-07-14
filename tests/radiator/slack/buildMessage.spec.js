@@ -1,4 +1,4 @@
-import buildMessage from '../../../radiator/slack/buildMessage'
+import buildMessage from '../../../server/radiator/slack/buildMessage'
 
 describe('Radiator > slack > buildMessage', () => {
   it('should correctly build message for slack', () => {

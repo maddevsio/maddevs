@@ -1,10 +1,10 @@
 import 'regenerator-runtime'
-import authorize from '../../../radiator/analytics/auth'
-import getCoreData from '../../../radiator/analytics/getCoreData'
-import getCountriesData from '../../../radiator/analytics/getCountriesData'
-import getDevicesData from '../../../radiator/analytics/getDevicesData'
-import getGoalsData from '../../../radiator/analytics/getGoalsData'
-import main from '../../../radiator/analytics'
+import authorize from '../../../server/radiator/analytics/auth'
+import getCoreData from '../../../server/radiator/analytics/getCoreData'
+import getCountriesData from '../../../server/radiator/analytics/getCountriesData'
+import getDevicesData from '../../../server/radiator/analytics/getDevicesData'
+import getGoalsData from '../../../server/radiator/analytics/getGoalsData'
+import main from '../../../server/radiator/analytics'
 
 jest.mock('../../../radiator/analytics/auth', () => jest.fn(() => new Promise(res => res(jest.fn()))))
 jest.mock('../../../radiator/analytics/getCoreData', () => jest.fn(() => 'data'))

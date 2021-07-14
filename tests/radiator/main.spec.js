@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
 import 'regenerator-runtime'
-import getAnalyticsData from '../../radiator/analytics'
-import getLighthouseData from '../../radiator/lighthouse'
-import sendMessageToSlack from '../../radiator/slack'
-import sendMessageToTelegram from '../../radiator/telegram'
-import parseRange from '../../radiator/utils/parseRange'
-import main from '../../radiator/main'
+import getAnalyticsData from '../../server/radiator/analytics'
+import getLighthouseData from '../../server/radiator/lighthouse'
+import sendMessageToSlack from '../../server/radiator/slack'
+import sendMessageToTelegram from '../../server/radiator/telegram'
+import parseRange from '../../server/radiator/utils/parseRange'
+import main from '../../server/radiator/main'
 
 jest.mock('../../radiator/analytics', () => jest.fn(() => new Promise(res => res('analytics'))))
 jest.mock('../../radiator/lighthouse', () => jest.fn(() => new Promise(res => res('lighthouse'))))

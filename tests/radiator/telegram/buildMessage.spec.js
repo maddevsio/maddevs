@@ -1,4 +1,4 @@
-import buildMessage from '../../../radiator/telegram/buildMessage'
+import buildMessage from '../../../server/radiator/telegram/buildMessage'
 
 describe('Radiator > telegram > buildMessage', () => {
   it('should correctly build message for telegram', () => {

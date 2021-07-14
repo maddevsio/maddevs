@@ -1,6 +1,6 @@
 import {
   header, divider, section, list, listItem, countryListItem, performanceListItem,
-} from '../../../radiator/slack/blocks'
+} from '../../../server/radiator/slack/blocks'
 
 describe('Radiator > slack > blocks', () => {
   it('header block', () => {

@@ -1,6 +1,6 @@
 import 'regenerator-runtime'
-import getCountriesData from '../../../radiator/analytics/getCountriesData'
-import getAnalytics from '../../../radiator/analytics/getAnalytics'
+import getCountriesData from '../../../server/radiator/analytics/getCountriesData'
+import getAnalytics from '../../../server/radiator/analytics/getAnalytics'
 
 jest.mock('../../../radiator/analytics/getAnalytics', () => jest.fn(() => new Promise(res => res({
   reports: [

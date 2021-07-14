@@ -1,4 +1,4 @@
-import getPercentage from '../../../radiator/utils/getPercentage'
+import getPercentage from '../../../server/radiator/utils/getPercentage'
 
 describe('getPercentage utility', () => {
   it('should return 0 if no first or last argument', () => {

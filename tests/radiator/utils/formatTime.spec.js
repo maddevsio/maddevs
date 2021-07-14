@@ -1,4 +1,4 @@
-import formatTime from '../../../radiator/utils/formatTime'
+import formatTime from '../../../server/radiator/utils/formatTime'
 
 describe('formatTime utility', () => {
   it('should correctly return if argument is less than 60', () => {

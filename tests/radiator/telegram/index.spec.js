@@ -1,7 +1,7 @@
 import 'regenerator-runtime'
 import TelegramBot from 'node-telegram-bot-api'
-import main from '../../../radiator/telegram'
-import buildMessage from '../../../radiator/telegram/buildMessage'
+import main from '../../../server/radiator/telegram'
+import buildMessage from '../../../server/radiator/telegram/buildMessage'
 
 jest.mock('../../../radiator/telegram/buildMessage', () => jest.fn())
 
