@@ -49,25 +49,25 @@ export default {
         {
           rel: 'preload',
           as: 'image',
-          href: this.$getMediaFromS3('/images/OpenSource/webp/webp.webp'),
+          href: this.$getMediaFromS3('/images/OpenSource/webp/banner.webp'),
         },
 
         {
           rel: 'preload',
           as: 'image',
-          href: this.$getMediaFromS3('/images/OpenSource/webp/webp@2x.webp'),
+          href: this.$getMediaFromS3('/images/OpenSource/webp/banner@2x.webp'),
         },
 
         {
           rel: 'preload',
           as: 'image',
-          href: this.$getMediaFromS3('/images/OpenSource/png/main.png'),
+          href: this.$getMediaFromS3('/images/OpenSource/png/banner.png'),
         },
 
         {
           rel: 'preload',
           as: 'image',
-          href: this.$getMediaFromS3('/images/OpenSource/png/main@2x.png'),
+          href: this.$getMediaFromS3('/images/OpenSource/png/banner@2x.png'),
         },
       ],
     }
