@@ -5,13 +5,13 @@
   >
     <picture>
       <source
-        :srcset="[$getMediaFromS3('/images/OpenSource/webp/main.webp') + ' ', $getMediaFromS3('/images/OpenSource/webp/main@2x.webp 2x')]"
+        :srcset="[$getMediaFromS3('/images/OpenSource/webp/banner.webp') + ' ', $getMediaFromS3('/images/OpenSource/webp/banner@2x.webp 2x')]"
         type="image/webp"
         class="banner__image"
       >
       <img
-        :srcset="$getMediaFromS3('/images/OpenSource/png/main@2x.png')"
-        :src="$getMediaFromS3('/images/OpenSource/png/main.png')"
+        :srcset="$getMediaFromS3('/images/OpenSource/png/banner@2x.png')"
+        :src="$getMediaFromS3('/images/OpenSource/png/banner.png')"
         width="1680"
         height="969"
         class="banner__image"

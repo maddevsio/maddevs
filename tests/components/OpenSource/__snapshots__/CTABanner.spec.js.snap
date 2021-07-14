@@ -4,6 +4,7 @@ exports[`CTABanner component should render correctly 1`] = `
 <div>
   <div
     class="open-source-cta"
+    data-aos="fade-up"
   >
     <div
       class="container"
