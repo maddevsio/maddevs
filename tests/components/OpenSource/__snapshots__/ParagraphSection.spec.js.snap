@@ -3,54 +3,49 @@
 exports[`ParagraphSection component should render correctly 1`] = `
 <div>
   <div
-    class="pin-spacer"
-    style="display: block; position: relative; overflow: visible; box-sizing: border-box; width: 0px; height: 0px; padding: 0px;"
-  />
-  <div
     class="paragraph-section"
-    style="transform: translate(0, 0); left: 0px; top: 0px; margin: 0px;"
   >
     <div
       class="container"
     >
       <p
-        class="paragraph-section__text"
-        style="transform: scale(0.87, 0.87) ; opacity: 0;"
+        class="paragraph-section__text paragraph-section__text--undefined"
+        data-aos="fade-up"
       >
-        While we love writing code, nothing excites us more than 
+        While we love writing code, nothing excites us more than
         <span>
           collaborating
         </span>
-         with other members of the 
+         with other members of the
         <span>
           tech community.
         </span>
       </p>
       <p
-        class="paragraph-section__text"
-        style="transform: scale(0.87, 0.87) ; opacity: 0;"
+        class="paragraph-section__text paragraph-section__text--undefined"
+        data-aos="fade-up"
       >
-        We love 
+        We love
         <span>
           building
         </span>
-         with new and emerging 
+         with new and emerging
         <span>
           technologies
         </span>
          here at Mad Devs.
       </p>
       <p
-        class="paragraph-section__text"
-        style="transform: scale(0.87, 0.87) ; opacity: 0;"
+        class="paragraph-section__text paragraph-section__text--undefined"
+        data-aos="fade-up"
       >
-        Making 
+        Making
         <span>
           the world
         </span>
-         a better place, 
+         a better place,
         <br />
-         one line 
+         one line
         <span>
           of code
         </span>
