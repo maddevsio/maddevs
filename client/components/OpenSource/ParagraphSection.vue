@@ -5,6 +5,9 @@
         v-for="paragraph in paragraphTexts"
         :key="paragraph"
         class="paragraph-section__text"
+        :class="`paragraph-section__text--${i}`"
+        data-aos="fade-up"
+        :data-aos-anchor="(i > 0) ? `paragraph-section__text--${i - 1}` : null"
         v-html="paragraph"
       />
     </div>
@@ -12,11 +15,7 @@
 </template>
 
 <script>
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { paragraphTexts } from '@/data/openSourceTexts'
-
-gsap.registerPlugin(ScrollTrigger)
 
 export default {
   name: 'ParagraphSection',
@@ -25,27 +24,6 @@ export default {
       paragraphTexts,
     }
   },
-
-  mounted() {
-    const textBlocks = gsap.utils.toArray('.paragraph-section__text')
-    const timeLine = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.paragraph-section',
-        scrub: 1,
-        pin: true,
-        start: 'top top+=5%+',
-        end: '+=3000',
-      },
-    })
-
-    textBlocks.forEach(textBlock => {
-      timeLine.fromTo(textBlock,
-        { opacity: 0, scale: 0.87 },
-        {
-          scale: 1, opacity: 1, repeat: 1, yoyo: true, yoyoEase: true,
-        })
-    })
-  },
 }
 </script>
 
@@ -53,20 +31,18 @@ export default {
 @import '@/assets/styles/_vars';
 
 .paragraph-section {
-  padding: 360px 0;
+  padding: 120px 0;
   &__text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
     width: 100%;
-    max-width: 1240px;
-    font-size: 60px;
+    max-width: 860px;
+    font-size: 42px;
     font-weight: 600;
-    line-height: 70px;
+    line-height: 46px;
     letter-spacing: -0.013em;
     color: $text-color--silver;
     text-align: center;
+    margin-bottom: 80px;
     &:nth-child(1) {
       /deep/ span {
         color: $text-color--red-dark;
@@ -100,6 +76,7 @@ export default {
     &__text {
       font-size: 28px;
       line-height: 40px;
+      margin-bottom: 40px;
     }
   }
 
