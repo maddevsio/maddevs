@@ -34,7 +34,7 @@ export default {
         scrub: 1,
         pin: true,
         start: 'top top+=5%+',
-        end: '+=2000',
+        end: '+=1400',
       },
     })
 
