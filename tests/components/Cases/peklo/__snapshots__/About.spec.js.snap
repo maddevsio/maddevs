@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular m-48_top media-m-24_top"
+  >
+    <p
+      class="case_paragraph m-12_bottom"
+    >
+      
+    Peklo Tool is a service that simplifies and automates the process of creating contextual advertising campaigns for Google Ads and its Russian-language analogue Yandex Direct. We built it from scratch for Peklo Studio, a digital marketing agency.
+  
+    </p>
+     
+    <p
+      class="case_paragraph case_bold-text m-12_bottom"
+    >
+      
+    Peklo Tool’s two major functions are:
+  
+    </p>
+     
+    <ul
+      class="case_list m-72_bottom media-m-48_bottom"
+    >
+      <li
+        class="list-item_dot"
+      >
+        Saving up dozens of working hours in digital marketing specialists’ time
+      </li>
+       
+      <li
+        class="list-item_dot"
+      >
+        Making contextual advertising campaigns measurably more effective
+      </li>
+    </ul>
+     
+    <h2
+      class="case_title_h2 m-12_bottom media-m-24_bottom"
+    >
+      
+    The needs that Peklo Tool meets
+  
+    </h2>
+     
+    <p
+      class="case_paragraph m-24_bottom media-m-12_bottom"
+    >
+      
+    Launching contextual ads is a slow, routine, and highly repetitive activity. A marketer or entrepreneur spends days upon days dealing with hundreds of lines in several spreadsheets.
+  
+    </p>
+     
+    <p
+      class="case_paragraph m-24_bottom media-m-12_bottom"
+    >
+      
+    Tedious as it is, the process also features a high risk of errors. When it comes to processing large data arrays, humans are famously prone to mistakes. This work is better left to the reliable machines.
+  
+    </p>
+     
+    <p
+      class="case_paragraph m-72_bottom media-m-48_bottom"
+    >
+      
+    The Peklo Tool team’s effort was to develop an automation solution to speed up the launch of campaigns and rule out human error.
+  
+    </p>
+  </section>
+</div>
+`;
