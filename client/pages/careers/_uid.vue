@@ -68,6 +68,8 @@ import { buildHead } from '@/data/seo'
 import { employeesBenefits as benefits } from '@/data/benefits'
 import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
+import featureFlag from '@/featureFlags/featureFlag'
+
 export default {
   name: 'CareersPosition',
   components: {
@@ -78,12 +80,15 @@ export default {
     PositionForm,
   },
 
-  mixins: [initLazyLoadMixin, animateOnScrollMixin({
-    offset: 200,
-    delay: 50,
-    anchorPlacement: 'top-center',
-    duration: 1000,
-  })],
+  mixins: [initLazyLoadMixin,
+    animateOnScrollMixin({
+      offset: 200,
+      delay: 50,
+      anchorPlacement: 'top-center',
+      duration: 1000,
+    },
+    featureFlag('careersPageAnimations')),
+  ],
 
   async asyncData({ store, params, error }) {
     const openGraphUrl = `${process.env.domain}/careers/${params.uid}/`

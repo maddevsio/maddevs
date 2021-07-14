@@ -10,8 +10,6 @@ import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
-import featureFlag from '@/featureFlags/featureFlag'
-
 export default {
   name: 'OpenSource',
   components: {
@@ -24,11 +22,6 @@ export default {
     anchorPlacement: 'top-center',
     duration: 1000,
   })],
-
-  asyncData({ error }) {
-    if (!featureFlag('openSourcePage')) return error({ statusCode: 404, message: 'Page not found' })
-    return {}
-  },
 
   head() {
     return buildHead(getMetadata('openSource'))
