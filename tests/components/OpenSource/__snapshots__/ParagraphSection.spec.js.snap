@@ -3,13 +3,19 @@
 exports[`ParagraphSection component should render correctly 1`] = `
 <div>
   <div
+    class="pin-spacer"
+    style="display: block; position: relative; overflow: visible; box-sizing: border-box; width: 0px; height: 0px; padding: 0px;"
+  />
+  <div
     class="paragraph-section"
+    style="transform: translate(0, 0); left: 0px; top: 0px; margin: 0px;"
   >
     <div
       class="container"
     >
       <p
         class="paragraph-section__text"
+        style="transform: scale(0.87, 0.87) ; opacity: 0;"
       >
         While we love writing code, nothing excites us more than 
         <span>
@@ -22,6 +28,7 @@ exports[`ParagraphSection component should render correctly 1`] = `
       </p>
       <p
         class="paragraph-section__text"
+        style="transform: scale(0.87, 0.87) ; opacity: 0;"
       >
         We love 
         <span>
@@ -35,6 +42,7 @@ exports[`ParagraphSection component should render correctly 1`] = `
       </p>
       <p
         class="paragraph-section__text"
+        style="transform: scale(0.87, 0.87) ; opacity: 0;"
       >
         Making 
         <span>
