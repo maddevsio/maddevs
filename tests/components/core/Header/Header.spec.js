@@ -1,4 +1,4 @@
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount, RouterLinkStub } from '@vue/test-utils'
 import { render, screen, fireEvent } from '@testing-library/vue'
 
 import Header from '@/components/core/Header/Header'
@@ -126,5 +126,35 @@ describe('Header component', () => {
     await fireEvent.scroll(mobileScrollBar, { target: { scrollTop: 50 } })
 
     expect(screen.queryAllByTestId('test-logo-text')).toHaveLength(0)
+  })
+
+  it('if call method "show" and ref modalContactMe is undefined > "show" method in ref modalContactMe not call', () => {
+    const mockShow = jest.fn()
+    const wrapper = shallowMount(Header, {
+      mocks: GODEE_MOCK,
+      stubs,
+      container: document.body.appendChild(containerToRender),
+    })
+    wrapper.vm.showModal()
+    expect(mockShow).not.toHaveBeenCalled()
+  })
+
+  it('if call method "show" and ref modalContactMe exist > "show" method in ref modalContactMe call', () => {
+    const mockShow = jest.fn()
+    const wrapper = shallowMount(Header, {
+      mocks: GODEE_MOCK,
+      container: document.body.appendChild(containerToRender),
+      stubs: {
+        NuxtLink: RouterLinkStub,
+        ModalContactMe: {
+          render(h) { return h('div') },
+          methods: {
+            show: mockShow,
+          },
+        },
+      },
+    })
+    wrapper.vm.showModal()
+    expect(mockShow).toHaveBeenCalledTimes(1)
   })
 })
