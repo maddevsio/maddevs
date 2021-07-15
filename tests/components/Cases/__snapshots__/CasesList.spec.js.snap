@@ -35,16 +35,16 @@ exports[`CasesList component should render correctly 1`] = `
         width="big"
       />
       <caseslistitem-stub
-        class="cases-list_yourcast"
+        class="cases-list_peklo"
         data-testid="test-case-card"
-        desc="Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick."
-        link="/case-studies/yourcast/"
+        desc="Mad Devs developed parsing- and clusterisation-based software that automates keyword grouping and text generation, making the launch of contextual ads two times faster."
+        link="/case-studies/peklo/"
         logo="[object Object]"
-        poster="/images/Cases/yourcast/jpg/yourcast-poster.jpg"
-        subtitle="Content Streaming"
-        title="The Evolution of Yourcast.TV"
+        poster="/images/Cases/peklo/jpg/peklo-banner.jpg"
+        subtitle="Contextual ad launcher"
+        title="Peklo Tool for better ad campaigns"
         titletag="h3"
-        videofilename="/videos/yourcast-banner.mp4#t=1"
+        videofilename="/videos/peklo-banner.mp4#t=1"
         width="small"
       />
       <caseslistitem-stub
@@ -61,16 +61,16 @@ exports[`CasesList component should render correctly 1`] = `
         width="full"
       />
       <caseslistitem-stub
-        class="cases-list_godee"
+        class="cases-list_yourcast"
         data-testid="test-case-card"
-        desc="Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute."
-        link="/case-studies/godee/"
+        desc="Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick."
+        link="/case-studies/yourcast/"
         logo="[object Object]"
-        poster="/images/Cases/godee/jpg/godee-poster.jpg"
-        subtitle="Transportation"
-        title="Convenient shuttle bus service"
+        poster="/images/Cases/yourcast/jpg/yourcast-poster.jpg"
+        subtitle="Content Streaming"
+        title="The Evolution of Yourcast.TV"
         titletag="h3"
-        videofilename="/videos/godee-case-main-video.mp4#t=1"
+        videofilename="/videos/yourcast-banner.mp4#t=1"
         width="big"
       />
       <caseslistitem-stub
@@ -85,6 +85,19 @@ exports[`CasesList component should render correctly 1`] = `
         titletag="h3"
         videofilename="/videos/main.ef19480.mp4#t=1"
         width="small"
+      />
+      <caseslistitem-stub
+        class="cases-list_godee"
+        data-testid="test-case-card"
+        desc="Mad Devs helped GoDee with developing feature-rich software to re-invent public mobility by building new smart ways of a daily commute."
+        link="/case-studies/godee/"
+        logo="[object Object]"
+        poster="/images/Cases/godee/jpg/godee-poster.jpg"
+        subtitle="Transportation"
+        title="Convenient shuttle bus service"
+        titletag="h3"
+        videofilename="/videos/godee-case-main-video.mp4#t=1"
+        width="full"
       />
     </section>
      
