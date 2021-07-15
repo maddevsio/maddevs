@@ -25,7 +25,7 @@
       <!-- Book -->
       <div class="ebook-banner_book">
         <img
-          src="@/assets/img/common/book.svg"
+          src="@/assets/img/Ebook/book.svg"
           alt="Ebook"
         >
       </div>

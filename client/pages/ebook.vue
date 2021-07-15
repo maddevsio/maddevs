@@ -1,11 +1,13 @@
 <template>
   <main class="main">
     <Banner />
+    <Learn />
   </main>
 </template>
 
 <script>
 import Banner from '@/components/Ebook/Banner'
+import Learn from '@/components/Ebook/Learn'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
@@ -15,6 +17,7 @@ export default {
   name: 'MainEbook',
   components: {
     Banner,
+    Learn,
   },
 
   mixins: [initLazyLoadMixin],
