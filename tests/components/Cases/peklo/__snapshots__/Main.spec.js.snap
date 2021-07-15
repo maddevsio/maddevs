@@ -12,6 +12,12 @@ exports[`Main component should render correctly 1`] = `
     <keywordgrouping-stub />
      
     <clusterisationalgorithm-stub />
+     
+    <peklotoolunderthehood-stub />
+     
+    <technologies-stub />
+     
+    <team-stub />
   </section>
 </div>
 `;

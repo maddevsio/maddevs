@@ -1691,6 +1691,84 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
       The structure of a contextual advertising campaign for a car repair business. Ad texts have been generated automatically based on keyword groups and unique selling propositions.
     
       </p>
+       
+      <h3
+        class="case_title_h3 m-24_bottom media-m-12_bottom"
+      >
+        
+      Additional functions
+    
+      </h3>
+       
+      <div
+        class="case_cards"
+      >
+        <div
+          class="case_cards-group"
+        >
+          <div
+            class="case_card background-color-black"
+          >
+            <h4
+              class="case_title_h4 case_card-title m-8_bottom"
+            >
+              
+            Detection of negative keywords
+          
+            </h4>
+             
+            <p
+              class="case_paragraph"
+              style="color: rgb(255, 255, 255);"
+            >
+              
+            The tool identifies irrelevant keywords for narrower, more specific targeting.
+          
+            </p>
+          </div>
+           
+          <div
+            class="case_card background-color-gray"
+          >
+            <h4
+              class="case_title_h4 case_card-title m-8_bottom"
+            >
+              
+            Removal of explicit and implicit duplicates
+          
+            </h4>
+             
+            <p
+              class="case_paragraph"
+              style="color: rgb(255, 255, 255);"
+            >
+              
+            Duplicates inevitably occur, and the tool is configured to eliminate them.
+          
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="case_card background-color-yellow m-96_bottom media-m-48_bottom"
+        >
+          <h4
+            class="case_title_h4 m-8_bottom"
+          >
+            
+          Elimination of negative keywords across groups
+        
+          </h4>
+           
+          <p
+            class="case_paragraph"
+          >
+            
+          This reduces competition among keywords so that users see relevant ads and get to the right pages.
+        
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 </div>

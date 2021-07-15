@@ -78,3 +78,95 @@ export const pekloToolUnderTheHoodCards = [
     iconHeight: '110',
   },
 ]
+
+export const technologies = [
+  {
+    name: 'go',
+    alt: 'Golang',
+    imgAlt: 'Golang',
+  },
+  {
+    name: 'postgresql',
+    alt: 'PostgreSQL',
+    imgAlt: 'PostgreSQL',
+  },
+  {
+    name: 'docker',
+    alt: 'Docker',
+    imgAlt: 'Docker',
+  },
+  {
+    name: 'gitlab',
+    alt: 'Gitlab',
+    imgAlt: 'Gitlab',
+  },
+  {
+    name: 'ruby',
+    alt: 'Ruby',
+    imgAlt: 'Ruby',
+  },
+  {
+    name: 'vue',
+    alt: 'Vue.js',
+    imgAlt: 'Vue.js',
+  },
+]
+
+export const team = [
+  {
+    name: 'Oleg Katkov',
+    position: 'Software Engineer',
+    image: {
+      file: 'oleg-katkov',
+    },
+  },
+  {
+    name: 'Pavel Kalashnikov',
+    position: 'Full-Stack Developer',
+    image: {
+      file: 'pavel-kalashnikov',
+    },
+  },
+  {
+    name: 'Meder Akkozov',
+    position: 'Backend Developer',
+    image: {
+      file: 'meder-akkozov',
+    },
+  },
+  {
+    name: 'Alisa Manakova',
+    position: 'Frontend Developer',
+    image: {
+      file: 'alisa-manakova',
+    },
+  },
+  {
+    name: 'Denis Grushkin',
+    position: 'Frontend Developer',
+    image: {
+      file: 'denis-grushkin',
+    },
+  },
+  {
+    name: 'Anton Grushkin',
+    position: 'Frontend Developer',
+    image: {
+      file: 'anton-grushkin',
+    },
+  },
+  {
+    name: 'Dmitrii Khalezin',
+    position: 'DevOps Engineer',
+    image: {
+      file: 'dmitrii-khalezin',
+    },
+  },
+  {
+    name: 'Vladimir Shebarshov',
+    position: 'Frontend Developer',
+    image: {
+      file: 'vladimir-shebarshov',
+    },
+  },
+]

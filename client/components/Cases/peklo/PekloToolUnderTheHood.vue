@@ -1,5 +1,5 @@
 <template>
-  <section class="container_full background-color-black p-48_top p-48_bottom media-p-41_top media-p-41_bottom">
+  <section class="container_full background-color-black m-48_bottom p-48_top p-48_bottom media-p-41_top media-p-41_bottom">
     <div class="container_regular">
       <h2 class="case_title_h2 case_title m-12_bottom">
         Peklo Tool under the hood
