@@ -3,7 +3,7 @@
 exports[`InternationalTradeCenter root component should render correctly 1`] = `
 <div>
   <main
-    class="case case--veeqo"
+    class="case case--itc"
   >
     <section
       class="case_header case_header-itc"
