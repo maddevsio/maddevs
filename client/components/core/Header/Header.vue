@@ -114,7 +114,7 @@
             <UIModalTriggerButton
               label="Contact me"
               color="red"
-              @click="$refs.modalContactMe.show()"
+              @click="showModal"
             />
           </div>
         </div>
@@ -125,7 +125,7 @@
     <HeaderMobile
       v-if="isActiveMobileMenu"
       @changed-page="onChangePage"
-      @open-modal="$refs.modalContactMe.show()"
+      @open-modal="showModal"
     />
     <!-- END Mobile header -->
 
@@ -218,6 +218,11 @@ export default {
     // Base methods
     goToTopPage() {
       window.scrollTo(0, 0)
+    },
+
+    showModal() {
+      if (!this.$refs?.modalContactMe?.show) return
+      this.$refs.modalContactMe.show()
     },
 
     onChangePage() {

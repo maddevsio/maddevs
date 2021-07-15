@@ -45,7 +45,7 @@
         label="Submit your project"
         color="red"
         class="quickProjectStart__button"
-        @click="$refs.modalOrderProjectFromUs.show()"
+        @click="show"
       />
     </div>
     <!-- this id should be unique, because it used for google analytics -->
@@ -73,6 +73,13 @@ export default {
       steps,
       modalWindowName: 'order-project-from-us-modal',
     }
+  },
+
+  methods: {
+    show() {
+      if (!this.$refs?.modalOrderProjectFromUs?.show) return
+      this.$refs.modalOrderProjectFromUs.show()
+    },
   },
 }
 </script>

@@ -18,7 +18,7 @@
         label="Get expert advice"
         color="black"
         class="it-consulting__button"
-        @click="$refs.modalGetExpertAdvice.show()"
+        @click="show"
       />
     </div>
     <!-- this id should be unique, because it used for google analytics -->
@@ -48,6 +48,13 @@ export default {
     return {
       consultungTypes,
     }
+  },
+
+  methods: {
+    show() {
+      if (!this.$refs?.modalGetExpertAdvice?.show) return
+      this.$refs.modalGetExpertAdvice.show()
+    },
   },
 }
 </script>

@@ -8,7 +8,7 @@
       man-name="Tamara Mun"
       man-position="Head of Delivery <br /> Management"
     >
-      <UIButton @click="$refs.modalContactMe.show()">
+      <UIButton @click="show">
         Estimate your project
       </UIButton>
     </UIBanner>
@@ -31,6 +31,13 @@ export default {
     UIBanner,
     UIButton,
     ModalContactMe: () => import('@/components/core/modals/ModalContactMe'),
+  },
+
+  methods: {
+    show() {
+      if (!this.$refs?.modalContactMe?.show) return
+      this.$refs.modalContactMe.show()
+    },
   },
 }
 </script>
