@@ -1,22 +1,22 @@
 <template>
-  <main class="case case--itc">
+  <main class="case case--peklo">
     <CaseHeader
       :logo="logo"
-      project="itc"
-      video-name="/videos/itc-banner.mp4"
-      video-fallback-path="/images/Cases/itc/jpg/itc-banner.jpg"
+      project="peklo"
+      video-name="/videos/peklo-banner.mp4"
+      video-fallback-path="/images/Cases/peklo/jpg/peklo-banner.jpg"
     >
       <h1
         slot="title"
         class="case_header-title"
       >
-        Ready4Trade <br> Central Asia
+        Peklo Tool for search <br> ad campaigns
       </h1>
       <p
         slot="description"
         class="case_header-description"
       >
-        A web app customized for the delivery of export management coaching <br> missions that contributes to the development of <span class="case_nowrap">intra-regional</span> <br> and international trade in Central Asia
+        Mad Devs developed parsing- and clusterisation-based software that <br> automates keyword grouping and text generation, making the launch <br> of contextual ads two times faster.
       </p>
     </CaseHeader>
     <Main />
@@ -40,7 +40,7 @@
 <script>
 import CaseHeader from '@/components/Cases/shared/CaseHeader'
 import Footer from '@/components/Cases/shared/CaseFooter'
-import Main from '@/components/Cases/itc/Main'
+import Main from '@/components/Cases/peklo/Main'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { getMetadata, buildHead } from '@/data/seo'
 
@@ -57,11 +57,11 @@ export default {
   data() {
     return {
       logo: {
-        width: 377,
-        height: 154.95,
-        folder: 'itc',
-        file: 'itc-logo',
-        alt: 'International trade center logo',
+        width: 206.34,
+        height: 149.71,
+        folder: 'peklo',
+        file: 'peklo-logo',
+        alt: 'Peklo Tool for search ad campaigns',
       },
     }
   },
@@ -86,15 +86,22 @@ export default {
 @import '@/assets/styles/cases/_media';
 
 .case {
-  &_header-itc {
-    background-color: rgba(16, 17, 19, 0.5);
+  &_header-peklo {
+    background-color: rgba(16, 17, 19, 0.9);
   }
 
-  &_itc-logo {
-    width: 377px;
-    height: 154.95px;
-    margin-left: 127px;
-    margin-bottom: 32px;
+  &_header-title {
+    @media screen and (max-width: 768px) {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &_peklo-logo {
+    width: 206.34px;
+    height: 149.71px;
+    margin-left: 170px;
 
     @media screen and (max-width: 1320px) {
       margin-left: 70px;
@@ -102,17 +109,13 @@ export default {
 
     @media screen and (max-width: 1170px) {
       margin-left: 0;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     @media screen and (max-width: 655px) {
-      width: 192px;
-      height: 78.97px;
+      width: 137.86px;
+      height: 99.25px;
     }
-  }
-
-  &_nowrap {
-    white-space: nowrap;
   }
 
   &_logotype-veeqo {
