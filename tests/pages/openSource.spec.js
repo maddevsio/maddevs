@@ -17,6 +17,7 @@ describe('OpenSource page', () => {
         $lazyLoad: {
           init: () => {},
         },
+        featureFlag: jest.fn(),
       },
     })
 
