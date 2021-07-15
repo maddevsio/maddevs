@@ -105,7 +105,7 @@ export default {
     z-index: 2;
     display: block;
     margin: 0 auto;
-    max-width: 816px;
+    max-width: 1028px;
     text-align: center;
   }
   &__title {

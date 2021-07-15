@@ -22,7 +22,8 @@ export default {
 @import '@/assets/styles/_vars';
 
 .paragraph-section {
-  padding: 120px 0;
+  padding-top: 134px;
+  padding-bottom: 196px;
   &__text {
     margin: 0 auto;
     width: 100%;
@@ -36,7 +37,8 @@ export default {
   }
 
   @media screen and (max-width: 1024px) {
-    padding: 72px 0;
+    padding-top: 72px;
+    padding-bottom: 124px;
     &__text {
       font-size: 32px;
       line-height: 40px;
@@ -44,7 +46,8 @@ export default {
   }
 
   @media screen and (max-width: 768px) {
-    padding: 52px 0;
+    padding-top: 52px;
+    padding-bottom: 73px;
     &__text {
       font-size: 28px;
       line-height: 40px;
