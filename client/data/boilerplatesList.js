@@ -9,7 +9,7 @@ export const boilerplatesList = [
       width: 506,
       height: 114,
     },
-    title: 'Aws–Eks–Base',
+    title: 'AWS–EKS–Base',
     description: 'This boilerplate contains the know-how of the Mad Devs team for the rapid deployment of a Kubernetes cluster, supporting services, and the underlying infrastructure in the Amazon cloud.',
     link: 'https://github.com/maddevsio/aws-eks-base/',
   },
