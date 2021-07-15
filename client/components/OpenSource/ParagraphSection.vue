@@ -5,7 +5,7 @@
   >
     <div class="container">
       <p class="paragraph-section__text">
-        70+ of Mad Devs' open source projects have been shared with the community via GitHub.
+        <span>70+</span> of Mad Devs' <span>open source projects</span> have been shared with the community via <span>GitHub.</span>
       </p>
     </div>
   </div>
@@ -32,8 +32,11 @@ export default {
     font-weight: 700;
     line-height: 77px;
     letter-spacing: -0.013em;
-    color: $text-color--green-light;
+    color: $text-color--silver;
     text-align: center;
+    span {
+      color: $text-color--green-light;
+    }
   }
 
   @media screen and (max-width: 1024px) {
