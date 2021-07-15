@@ -10,7 +10,7 @@
         slot="title"
         class="case_header-title"
       >
-        Peklo Tool for search <br> ad campaigns
+        Peklo Tool for better <br> ad campaigns
       </h1>
       <p
         slot="description"
@@ -21,18 +21,18 @@
     </CaseHeader>
     <Main />
     <Footer
-      link="/case-studies/veeqo/"
-      class-name="veeqo"
+      link="/case-studies/R4TCA-web-application/"
+      class-name="itc"
     >
       <img
         slot="icon"
-        :data-src="require(`@/assets/img/Studies/svg/veeqo.svg`)"
+        :data-src="require(`@/assets/img/Studies/svg/itc.svg`)"
         width="195"
         height="72"
-        alt="Optimization for Veeqo"
-        class="case_logotype-veeqo img_lazy"
+        alt="Ready4Trade Central Asiao"
+        class="case_logotype-itc img_lazy"
       >
-      Optimization for Veeqo
+      Ready4Trade Central Asia
     </Footer>
   </main>
 </template>
@@ -68,8 +68,8 @@ export default {
 
   head() {
     return buildHead({
-      ...getMetadata('itc'),
-      image: 'https://maddevs.io/itc-case.jpg',
+      ...getMetadata('peklo'),
+      image: 'https://maddevs.io/peklo.jpg',
     })
   },
 
@@ -118,13 +118,13 @@ export default {
     }
   }
 
-  &_logotype-veeqo {
-    width: 195px;
-    height: 72px;
+  &_logotype-itc {
+    width: 210px;
+    height: 90px;
     margin-bottom: 30px;
   }
 
-  &_title-veeqo {
+  &_title-itc {
     margin-bottom: 51px;
 
     @media screen and (max-width: 430px) {
@@ -133,13 +133,13 @@ export default {
   }
 
   @media screen and (max-width: 768px) {
-    &_logotype-veeqo {
-      width: 120px;
-      height: 44px;
+    &_logotype-itc {
+      width: 135px;
+      height: 55px;
       margin-bottom: 21px;
     }
 
-    &_title-veeqo {
+    &_title-itc {
       margin-bottom: 31px;
     }
   }

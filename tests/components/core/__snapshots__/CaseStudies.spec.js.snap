@@ -61,6 +61,7 @@ exports[`CaseStudies should render correctly 1`] = `
             >
               <img
                 alt="Veeqo logo"
+                class="cases-list_item-info-logo cases-list_item-info-veeqo-logotype"
                 height="23"
                 src="img.jpg"
                 width="105"
@@ -120,6 +121,7 @@ exports[`CaseStudies should render correctly 1`] = `
             >
               <img
                 alt="ITC logo"
+                class="cases-list_item-info-logo cases-list_item-info-itc-logo"
                 height="23"
                 src="img.jpg"
                 width="105"
@@ -150,14 +152,14 @@ exports[`CaseStudies should render correctly 1`] = `
           </nuxtlink>
         </div>
         <div
-          class="cases-list_item cases-list_item--small cases-list_yourcast"
+          class="cases-list_item cases-list_item--small cases-list_peklo"
           data-testid="test-case-card"
         >
           <nuxtlink
             class="cases-list_item-link"
             disabled="disabled"
             tag="a"
-            to="/case-studies/yourcast/"
+            to="/case-studies/peklo/"
           >
             <video
               class="cases-list_item-video media_lazy"
@@ -178,28 +180,29 @@ exports[`CaseStudies should render correctly 1`] = `
               class="cases-list_item-info"
             >
               <img
-                alt="Yourcast logo"
-                height="25"
+                alt="Peklo Tool for search ad campaigns"
+                class="cases-list_item-info-logo cases-list_item-info-peklo-logo"
+                height="80"
                 src="img.jpg"
                 width="120"
               />
                
               <span>
-                Content Streaming
+                Contextual ad launcher
               </span>
                
               <h3>
                 
-        The Evolution of Yourcast.TV
+        Peklo Tool for better ad campaigns
       
               </h3>
                
               <p>
-                Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.
+                Mad Devs developed parsing- and clusterisation-based software that automates keyword grouping and text generation, making the launch of contextual ads two times faster.
               </p>
                
               <nuxtlink
-                to="/case-studies/yourcast/"
+                to="/case-studies/peklo/"
               >
                 
         Explore
@@ -238,6 +241,7 @@ exports[`CaseStudies should render correctly 1`] = `
             >
               <img
                 alt="SJMC logo"
+                class="cases-list_item-info-logo cases-list_item-info-sjmc-logo"
                 height="60"
                 src="img.jpg"
                 width="133"
@@ -345,6 +349,7 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             >
               <img
                 alt="Veeqo logo"
+                class="cases-list_item-info-logo cases-list_item-info-veeqo-logotype"
                 height="23"
                 src="img.jpg"
                 width="105"
@@ -404,6 +409,7 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             >
               <img
                 alt="ITC logo"
+                class="cases-list_item-info-logo cases-list_item-info-itc-logo"
                 height="23"
                 src="img.jpg"
                 width="105"
@@ -434,14 +440,14 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
           </nuxtlink>
         </div>
         <div
-          class="cases-list_item cases-list_item--small cases-list_yourcast"
+          class="cases-list_item cases-list_item--small cases-list_peklo"
           data-testid="test-case-card"
         >
           <nuxtlink
             class="cases-list_item-link"
             disabled="disabled"
             tag="a"
-            to="/case-studies/yourcast/"
+            to="/case-studies/peklo/"
           >
             <video
               class="cases-list_item-video media_lazy"
@@ -462,28 +468,29 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
               class="cases-list_item-info"
             >
               <img
-                alt="Yourcast logo"
-                height="25"
+                alt="Peklo Tool for search ad campaigns"
+                class="cases-list_item-info-logo cases-list_item-info-peklo-logo"
+                height="80"
                 src="img.jpg"
                 width="120"
               />
                
               <span>
-                Content Streaming
+                Contextual ad launcher
               </span>
                
               <h3>
                 
-        The Evolution of Yourcast.TV
+        Peklo Tool for better ad campaigns
       
               </h3>
                
               <p>
-                Mad Devs developed a secure and private video streaming service and live video broadcasting cinema to provide entertainment experience to isolated groups feeling homesick.
+                Mad Devs developed parsing- and clusterisation-based software that automates keyword grouping and text generation, making the launch of contextual ads two times faster.
               </p>
                
               <nuxtlink
-                to="/case-studies/yourcast/"
+                to="/case-studies/peklo/"
               >
                 
         Explore
@@ -522,6 +529,7 @@ exports[`CaseStudies should render correctly with type=projects 1`] = `
             >
               <img
                 alt="SJMC logo"
+                class="cases-list_item-info-logo cases-list_item-info-sjmc-logo"
                 height="60"
                 src="img.jpg"
                 width="133"

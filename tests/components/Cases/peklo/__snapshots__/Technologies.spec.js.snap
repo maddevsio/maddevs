@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Technologies component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular"
+  >
+    <h2
+      class="case_title_h2 m-24_bottom media-m-12_bottom"
+    >
+      
+    Technology stack
+  
+    </h2>
+     
+    <ul
+      class="case_list-technologies m-96_bottom media-m-48_bottom"
+    >
+      <li
+        class="case_technologies-item"
+      >
+        <img
+          alt="Golang"
+          class="img_lazy case_technologies-item__tech-icon case_technologies-item__go go"
+          data-src="[object Object]"
+          height="40"
+          width="40"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Golang
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <img
+          alt="PostgreSQL"
+          class="img_lazy case_technologies-item__tech-icon case_technologies-item__postgresql postgresql"
+          data-src="[object Object]"
+          height="40"
+          width="40"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    PostgreSQL
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <img
+          alt="Docker"
+          class="img_lazy case_technologies-item__tech-icon case_technologies-item__docker docker"
+          data-src="[object Object]"
+          height="40"
+          width="40"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Docker
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <img
+          alt="Gitlab"
+          class="img_lazy case_technologies-item__tech-icon case_technologies-item__gitlab gitlab"
+          data-src="[object Object]"
+          height="40"
+          width="40"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Gitlab
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <img
+          alt="Ruby"
+          class="img_lazy case_technologies-item__tech-icon case_technologies-item__ruby ruby"
+          data-src="[object Object]"
+          height="40"
+          width="40"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Ruby
+  
+        </p>
+      </li>
+      <li
+        class="case_technologies-item"
+      >
+        <img
+          alt="Vue.js"
+          class="img_lazy case_technologies-item__tech-icon case_technologies-item__vue vue"
+          data-src="[object Object]"
+          height="40"
+          width="40"
+        />
+         
+        <p
+          class="case_technologies-item__tech-name"
+        >
+          
+    Vue.js
+  
+        </p>
+      </li>
+    </ul>
+  </section>
+</div>
+`;
