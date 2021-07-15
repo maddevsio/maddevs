@@ -12,9 +12,17 @@ exports[`ParagraphSection component should render correctly 1`] = `
       <p
         class="paragraph-section__text"
       >
-        
-      70+ of Mad Devs' open source projects have been shared with the community via GitHub.
-    
+        <span>
+          70+
+        </span>
+         of Mad Devs' 
+        <span>
+          open source projects
+        </span>
+         have been shared with the community via 
+        <span>
+          GitHub.
+        </span>
       </p>
     </div>
   </div>

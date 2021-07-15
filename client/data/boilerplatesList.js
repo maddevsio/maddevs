@@ -34,7 +34,7 @@ export const boilerplatesList = [
       height: 142,
     },
     title: 'React <br /> boilerplate',
-    description: 'Starter kit for quick development start, which allows you to save time on routine project setup and start developing right away.',
+    description: 'Starter kit for quick development start, which allows you to save time on routine and start developing right away.',
     link: 'https://github.com/maddevsio/react-madboiler/',
   },
 ]
