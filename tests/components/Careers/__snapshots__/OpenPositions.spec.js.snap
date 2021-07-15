@@ -11,7 +11,6 @@ exports[`OpenPositions component should render correctly 1`] = `
     >
       <div
         class="open-positions__head"
-        data-aos="fade-up"
       >
         <h2
           class="open-positions__title"
@@ -24,9 +23,7 @@ exports[`OpenPositions component should render correctly 1`] = `
         <positionsfilter-stub />
       </div>
        
-      <positionsgrid-stub
-        data-aos="fade-up"
-      />
+      <positionsgrid-stub />
     </div>
   </div>
 </div>

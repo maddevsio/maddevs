@@ -10,21 +10,15 @@
           <SlicesBlock
             v-if="vacancy.slices && vacancy.slices.length"
             :slices="vacancy.slices"
-            data-aos="fade"
-            data-aos-duration="800"
           />
           <div class="careers-position__benefits">
             <h2
               class="careers-position__benefits-title"
-              data-aos="fade-right"
-              data-aos-duration="800"
             >
               Employees benefits
             </h2>
             <div
               class="careers-position__benefits-grid"
-              data-aos="fade-left"
-              data-aos-duration="800"
             >
               <BenefitCard
                 v-for="benefit in benefits"
@@ -37,13 +31,10 @@
         <div
           id="careers-position-form"
           class="careers-position__contacts"
-          data-aos="fade-up"
-          data-aos-duration="800"
         >
           <HRContactCard />
           <div
             class="careers-position__form"
-            data-aos="fade-up"
           >
             <PositionForm
               :position="vacancy.position"
@@ -66,9 +57,6 @@ import PositionForm from '@/components/Careers/shared/PositionForm'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { buildHead } from '@/data/seo'
 import { employeesBenefits as benefits } from '@/data/benefits'
-import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
-
-import featureFlag from '@/featureFlags/featureFlag'
 
 export default {
   name: 'CareersPosition',
@@ -80,15 +68,7 @@ export default {
     PositionForm,
   },
 
-  mixins: [initLazyLoadMixin,
-    animateOnScrollMixin({
-      offset: 200,
-      delay: 50,
-      anchorPlacement: 'top-center',
-      duration: 1000,
-    },
-    featureFlag('careersPageAnimations')),
-  ],
+  mixins: [initLazyLoadMixin],
 
   async asyncData({ store, params, error }) {
     const openGraphUrl = `${process.env.domain}/careers/${params.uid}/`

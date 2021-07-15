@@ -18,6 +18,7 @@
       extension="png"
       alt="Roman Leonov"
       folder="peklo"
+      data-aos="fade-up"
     >
       We don’t like the routine work that fellow digital marketing specialists have to do, so we’re happy to have created a solution for them. I’d like to thank our co-founders and partners at Mad Devs for this product. It lives, it works as intended, and it’s now bugless and supersmooth.
     </TextQuoteAuthor>

@@ -25,6 +25,7 @@ exports[`HowPekloToolWorks component should render correctly 1`] = `
      
     <div
       class="case_iframe-wrapper m-48_bottom m-auto"
+      data-aos="fade-up"
     >
       <iframe
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -49,6 +50,7 @@ exports[`HowPekloToolWorks component should render correctly 1`] = `
        
       <div
         class="case_cards-list m-96_bottom media-m-48_bottom"
+        data-aos="fade-up"
       >
         <div
           class="case_card case_card background-color-silver"

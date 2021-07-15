@@ -1,12 +1,10 @@
 import AOS from 'aos'
 
-function animateOnScrollMixin(config = {}, useAnimations = true) {
+function animateOnScrollMixin(config = {}) {
   return {
     mounted() {
-      if (useAnimations) {
-        import('aos/dist/aos.css')
-        AOS.init(config)
-      }
+      import('aos/dist/aos.css')
+      AOS.init(config)
     },
   }
 }

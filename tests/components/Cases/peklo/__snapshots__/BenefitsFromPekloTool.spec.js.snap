@@ -15,6 +15,7 @@ exports[`BenefitsFromPekloTool component should render correctly 1`] = `
      
     <div
       class="case_cards"
+      data-aos="fade-up"
     >
       <div
         class="case_cards-group"

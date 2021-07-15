@@ -7,7 +7,6 @@ exports[`ProjectsCountries component should render correctly 1`] = `
   >
     <h2
       class="projects-countries_title"
-      data-aos="fade-up"
     >
       
     Global projects in 20+ countries
@@ -16,8 +15,6 @@ exports[`ProjectsCountries component should render correctly 1`] = `
      
     <p
       class="projects-countries_description"
-      data-aos="fade-up"
-      data-aos-duration="1000"
     >
       
     We build solutions for 35M+ users worldwide

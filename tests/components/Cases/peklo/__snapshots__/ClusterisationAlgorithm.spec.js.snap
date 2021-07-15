@@ -34,6 +34,7 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
     >
       <div
         class="container_regular"
+        data-aos="fade-up"
       >
         <div
           class="case_lottie"
@@ -1556,6 +1557,7 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
      
     <div
       class="container_middle m-48_bottom media-m-24_bottom slider"
+      data-aos="fade-up"
     >
       <swiper-stub
         boxshadow="true"
@@ -1631,6 +1633,7 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
        
       <div
         class="case_quote-wrap m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
+        data-aos="fade-up"
       >
         <blockquote
           class="case_blockquote-box m-auto"
@@ -1668,6 +1671,7 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
      
     <div
       class="container_middle case_img-wrapper m-12_bottom media-m-8_bottom"
+      data-aos="fade-up"
     >
       <picture-stub
         alt="Generation of ad texts"
@@ -1685,6 +1689,7 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
     >
       <p
         class="case_paragraph case_img-alt m-96_bottom media-m-48_bottom"
+        data-aos="fade-up"
         style="color: rgb(164, 168, 180);"
       >
         
@@ -1702,6 +1707,7 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
        
       <div
         class="case_cards"
+        data-aos="fade-up"
       >
         <div
           class="case_cards-group"

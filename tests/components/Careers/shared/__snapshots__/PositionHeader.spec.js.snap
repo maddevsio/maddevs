@@ -15,8 +15,6 @@ exports[`PositionHeader component should render correctly 1`] = `
          
         <h1
           class="careers-position__title"
-          data-aos="fade-right"
-          data-aos-duration="600"
         >
           
         Title
@@ -25,8 +23,6 @@ exports[`PositionHeader component should render correctly 1`] = `
          
         <p
           class="careers-position__subtitle"
-          data-aos="fade-right"
-          data-aos-duration="600"
         >
           
         Subtitle
@@ -37,8 +33,6 @@ exports[`PositionHeader component should render correctly 1`] = `
          
         <button
           class="ui-button careers-position__apply-button"
-          data-aos="fade-up"
-          data-aos-duration="600"
           style="position: relative; overflow: hidden;"
           type="button"
         >

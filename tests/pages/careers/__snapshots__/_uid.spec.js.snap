@@ -16,9 +16,7 @@ exports[`Careers _uid component should render correctly 1`] = `
           class="careers-position__container"
         >
           <div
-            class="careers-position__labels aos-init aos-animate"
-            data-aos="fade-right"
-            data-aos-duration="600"
+            class="careers-position__labels"
           >
             <div
               class="position-labels"
@@ -36,9 +34,7 @@ exports[`Careers _uid component should render correctly 1`] = `
           </div>
            
           <h1
-            class="careers-position__title aos-init aos-animate"
-            data-aos="fade-right"
-            data-aos-duration="600"
+            class="careers-position__title"
           >
             
         
@@ -50,9 +46,7 @@ exports[`Careers _uid component should render correctly 1`] = `
           <!---->
            
           <button
-            class="ui-button careers-position__apply-button aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-duration="600"
+            class="ui-button careers-position__apply-button"
             style="position: relative; overflow: hidden;"
             type="button"
           >
@@ -82,9 +76,7 @@ exports[`Careers _uid component should render correctly 1`] = `
             class="careers-position__benefits"
           >
             <h2
-              class="careers-position__benefits-title aos-init aos-animate"
-              data-aos="fade-right"
-              data-aos-duration="800"
+              class="careers-position__benefits-title"
             >
               
             Employees benefits
@@ -92,9 +84,7 @@ exports[`Careers _uid component should render correctly 1`] = `
             </h2>
              
             <div
-              class="careers-position__benefits-grid aos-init aos-animate"
-              data-aos="fade-left"
-              data-aos-duration="800"
+              class="careers-position__benefits-grid"
             >
               <div
                 class="benefit-card"
@@ -285,9 +275,7 @@ exports[`Careers _uid component should render correctly 1`] = `
         </div>
          
         <div
-          class="careers-position__contacts aos-init aos-animate"
-          data-aos="fade-up"
-          data-aos-duration="800"
+          class="careers-position__contacts"
           id="careers-position-form"
         >
           <div
@@ -342,8 +330,7 @@ exports[`Careers _uid component should render correctly 1`] = `
           </div>
            
           <div
-            class="careers-position__form aos-init aos-animate"
-            data-aos="fade-up"
+            class="careers-position__form"
           >
             <div>
               <form

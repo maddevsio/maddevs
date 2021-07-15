@@ -1,7 +1,6 @@
 <template>
   <div
     class="careers-cta-banner_container container"
-    data-aos="fade-up"
   >
     <UIBanner
       title="Can’t find your <br /> next role?"
