@@ -5,22 +5,23 @@ exports[`CTABanner component should render correctly 1`] = `
   <div
     class="cta-banner_container container"
   >
-    <uibanner-stub
+    <div
       image="[object Object]"
-      imagealttext="Tamara"
-      manname="Tamara Mun"
-      manposition="Head of Delivery <br /> Management"
+      image-alt-text="Tamara"
+      man-name="Tamara Mun"
+      man-position="Head of Delivery <br /> Management"
       text="Together we build solutions that bring digital innovation."
       title="Build your product <br /> with Mad Devs"
-    >
-      <uibutton-stub>
-        
-      Estimate your project
-    
-      </uibutton-stub>
-    </uibanner-stub>
+    />
      
-    <!---->
+    <modal-stub
+      id="contact-me-dm"
+      modaltitle=""
+    >
+      <contactmeform-stub
+        formlocation="'Estimate your project' button, delivery models page"
+      />
+    </modal-stub>
   </div>
 </div>
 `;

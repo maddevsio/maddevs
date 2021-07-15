@@ -239,6 +239,11 @@ exports[`QuickProjectStart renders correctly 1`] = `
     </button>
   </div>
    
-  <!---->
+  <transition-stub
+    mode="out-in"
+    name="main-fade"
+  >
+    <!---->
+  </transition-stub>
 </section>
 `;

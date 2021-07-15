@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BuildDevTeam renders correctly 1`] = `
+<div
+  class="build-dev-team_wrapper"
+>
+  <div
+    class="container"
+  >
+    <div
+      image="[object Object]"
+      image-alt-text="Chuk"
+      man-name="Andrew “Chuck” Minkin"
+      man-position="CTO, Co-Founder"
+      text="Book a call with us and we’ll guide you through a structured process to assess the right solution for your business. You'll be talking to technical experts, not account managers."
+      title="Let’s build or scale up your development team?"
+    />
+     
+    <transition-stub
+      mode="out-in"
+      name="main-fade"
+    >
+      <!---->
+    </transition-stub>
+  </div>
+</div>
+`;

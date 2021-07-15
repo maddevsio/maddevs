@@ -1,13 +1,13 @@
-import { shallowMount } from '@vue/test-utils'
-import { render } from '@testing-library/vue'
-import CTABanner from '@/components/DeliveryModels/CTABanner'
+import 'regenerator-runtime'
+import { mount, shallowMount } from '@vue/test-utils'
+import BuildDevTeam from '@/components/Cases/BuildDevTeam'
 
-describe('CTABanner component', () => {
+describe('BuildDevTeam', () => {
   let wrapper = null
   let mockShow = null
 
   beforeEach(() => {
-    wrapper = shallowMount(CTABanner, {
+    wrapper = mount(BuildDevTeam, {
       stubs: {
         UIBanner: {
           render(h) { return h('div') },
@@ -22,20 +22,15 @@ describe('CTABanner component', () => {
     mockShow = null
   })
 
-  it('should render correctly', () => {
-    const { container } = render(CTABanner, {
-      stubs: {
-        UIBanner: {
-          render(h) { return h('div') },
-        },
-        UIButton: {
-          render(h) { return h('div') },
-        },
-      },
-    })
-
-    expect(container).toMatchSnapshot()
+  // ------ IMPORTANT ----- //
+  it('is a Vue instance', () => {
+    expect(wrapper.exists()).toBeTruthy()
   })
+
+  it('renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
+  // --------------------- //
 
   it('if call method "show" and ref modalContactMe is undefined > "show" method in ref modalContactMe not call', () => {
     wrapper.vm.show()
@@ -43,7 +38,7 @@ describe('CTABanner component', () => {
   })
 
   it('if call method "show" and ref modalContactMe exist > "show" method in ref modalContactMe call', () => {
-    wrapper = shallowMount(CTABanner, {
+    wrapper = shallowMount(BuildDevTeam, {
       stubs: {
         UIBanner: {
           render(h) { return h('div') },

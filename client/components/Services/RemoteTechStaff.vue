@@ -15,14 +15,14 @@
           :hovered="hovered === 'teams'"
           @mouseover="handleMouseOver"
           @mouseout="handleMouseOut"
-          @click="$refs.modalTeams.show()"
+          @click="showModalTeams"
         />
         <RemoteTechStaffContent
           v-bind="individuals"
           :hovered="hovered === 'individuals'"
           @mouseover="handleMouseOver"
           @mouseout="handleMouseOut"
-          @click="$refs.modalIndividuals.show()"
+          @click="showModalIndividuals"
         />
       </div>
     </div>
@@ -88,6 +88,16 @@ export default {
     handleMouseOut() {
       // teams is hovered by default
       this.hovered = 'teams'
+    },
+
+    showModalTeams() {
+      if (!this.$refs?.modalTeams?.show) return
+      this.$refs.modalTeams.show()
+    },
+
+    showModalIndividuals() {
+      if (!this.$refs?.modalIndividuals?.show) return
+      this.$refs.modalIndividuals.show()
     },
   },
 }

@@ -18,7 +18,7 @@
         label="Get your trusted IT partner"
         color="grey"
         class="software-development__button"
-        @click="$refs.modalGetYourTrustedItPartner.show()"
+        @click="show"
       />
     </div>
     <!-- this id should be unique, because it used for google analytics -->
@@ -48,6 +48,13 @@ export default {
     return {
       developmentCategories,
     }
+  },
+
+  methods: {
+    show() {
+      if (!this.$refs?.modalGetYourTrustedItPartner?.show) return
+      this.$refs.modalGetYourTrustedItPartner.show()
+    },
   },
 }
 </script>
