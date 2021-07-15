@@ -19,10 +19,9 @@ function runRadiator() {
       telegramToken: process.env.RADIATOR_TELEGRAM_TOKEN,
     },
     slack: true,
-    telegram: true,
+    telegram: false,
     range: 'day',
     slackChannelId: 'mad-marketing',
-    telegramChannelId: -1001428775098,
     websiteUrl: 'https://maddevs.io',
     analyticsViewId: '230523659',
     analyticsConversions: [
@@ -48,6 +47,8 @@ function runRadiator() {
     ...baseConfig,
     range: 'week',
     slackChannelId: 'general',
+    telegram: true,
+    telegramChannelId: -1001428775098,
     schedule: {
       period: 'week',
       time: 15 - 6, // heroku works with UTC timezone, so we need to calculate diff between Bishkek(UTC+6)
