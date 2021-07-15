@@ -21,6 +21,7 @@ export default {
     delay: 50,
     anchorPlacement: 'top-center',
     duration: 1000,
+    once: true,
   })],
 
   head() {

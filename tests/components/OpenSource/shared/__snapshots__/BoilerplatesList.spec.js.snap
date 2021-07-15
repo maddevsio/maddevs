@@ -13,7 +13,7 @@ exports[`BoilerplatesList component should render correctly 1`] = `
         id="aws"
         link="https://github.com/maddevsio/aws-eks-base/"
         logo="[object Object]"
-        title="Aws–Eks–Base"
+        title="AWS–EKS–Base"
       />
       <boilerplateslistitem-stub
         description="Vue Mad Boiler can take the hassle out of it by giving you a ready-made, set-up project."

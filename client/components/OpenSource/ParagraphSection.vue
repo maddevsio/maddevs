@@ -1,29 +1,20 @@
 <template>
-  <div class="paragraph-section">
+  <div
+    class="paragraph-section"
+    data-aos="fade-up"
+  >
     <div class="container">
-      <p
-        v-for="paragraph in paragraphTexts"
-        :key="paragraph"
-        class="paragraph-section__text"
-        :class="`paragraph-section__text--${i}`"
-        data-aos="fade-up"
-        :data-aos-anchor="(i > 0) ? `paragraph-section__text--${i - 1}` : null"
-        v-html="paragraph"
-      />
+      <p class="paragraph-section__text">
+        70+ of Mad Devs' open source projects have been shared with the community via GitHub.
+      </p>
     </div>
   </div>
 </template>
 
 <script>
-import { paragraphTexts } from '@/data/openSourceTexts'
 
 export default {
   name: 'ParagraphSection',
-  data() {
-    return {
-      paragraphTexts,
-    }
-  },
 }
 </script>
 
@@ -31,40 +22,23 @@ export default {
 @import '@/assets/styles/_vars';
 
 .paragraph-section {
-  padding: 120px 0;
+  padding-top: 134px;
+  padding-bottom: 196px;
   &__text {
     margin: 0 auto;
     width: 100%;
-    max-width: 860px;
-    font-size: 42px;
-    font-weight: 600;
-    line-height: 46px;
+    max-width: 1028px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
     letter-spacing: -0.013em;
-    color: $text-color--silver;
+    color: $text-color--green-light;
     text-align: center;
-    margin-bottom: 80px;
-    &:nth-child(1) {
-      /deep/ span {
-        color: $text-color--red-dark;
-      }
-    }
-    &:nth-child(2) {
-      /deep/ span {
-        color: $text-color--green;
-      }
-    }
-    &:nth-child(3) {
-      /deep/ span {
-        color: $text-color--yellow;
-      }
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   @media screen and (max-width: 1024px) {
-    padding: 72px 0;
+    padding-top: 72px;
+    padding-bottom: 124px;
     &__text {
       font-size: 32px;
       line-height: 40px;
@@ -72,19 +46,12 @@ export default {
   }
 
   @media screen and (max-width: 768px) {
-    padding: 52px 0;
+    padding-top: 52px;
+    padding-bottom: 73px;
     &__text {
       font-size: 28px;
       line-height: 40px;
       margin-bottom: 40px;
-    }
-  }
-
-  @media screen and (max-width: 520px) {
-    &__text {
-      /deep/ br {
-        display: none;
-      }
     }
   }
 }
