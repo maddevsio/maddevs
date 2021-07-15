@@ -8,7 +8,7 @@
       ref="header"
       data-testid="test-header"
       :class="{
-        'is-transparent-bg': !isActiveMobileMenu && isTransparentBG && isCasePage,
+        'is-transparent-bg': !isActiveMobileMenu && isTransparentBG && hasTransparentHeaderArea,
       }"
       class="header"
     >
@@ -114,7 +114,7 @@
             <UIModalTriggerButton
               label="Contact me"
               color="red"
-              @click="$refs.modalContactMe.show()"
+              @click="showModal"
             />
           </div>
         </div>
@@ -125,7 +125,7 @@
     <HeaderMobile
       v-if="isActiveMobileMenu"
       @changed-page="onChangePage"
-      @open-modal="$refs.modalContactMe.show()"
+      @open-modal="showModal"
     />
     <!-- END Mobile header -->
 
@@ -169,7 +169,7 @@ export default {
       navigation,
       showLogoText: true,
       isActiveMobileMenu: false,
-      isCasePage: false,
+      hasTransparentHeaderArea: false,
       isTransparentBG: true,
       searchActive: false,
     }
@@ -177,7 +177,6 @@ export default {
 
   computed: {
     logoTextIsActive() {
-      if (this.$nuxt.$route.name === 'delivery-models') return false
       return this.showLogoText
     },
 
@@ -221,13 +220,20 @@ export default {
       window.scrollTo(0, 0)
     },
 
+    showModal() {
+      if (!this.$refs?.modalContactMe?.show) return
+      this.$refs.modalContactMe.show()
+    },
+
     onChangePage() {
       this.isActiveMobileMenu = false
       this.enableScrollOnBody()
     },
 
     setDefaultStateForHeader() {
-      this.isCasePage = this.$nuxt.$route.name && this.$nuxt.$route.name.includes('case-studies-')
+      const pagesWithTransparentHeaderArea = ['delivery-models', 'open-source']
+      const { name: routeName } = this.$nuxt.$route
+      if (routeName) this.hasTransparentHeaderArea = routeName.includes('case-studies-') || pagesWithTransparentHeaderArea.includes(routeName)
     },
 
     changeLogoState(scrollTop) {
@@ -257,7 +263,7 @@ export default {
 
     setStylesForHeader() {
       const scrollTop = window.scrollY
-      const area = document.querySelector('#case-header')
+      const area = document.querySelector('#transparent-header-area')
       const headerHeight = this.$refs.header.clientHeight
       const earlyStartBGChange = 30 // For an earlier start change background header
 
@@ -272,7 +278,7 @@ export default {
     },
 
     scrollHandler() {
-      if (this.isCasePage) {
+      if (this.hasTransparentHeaderArea) {
         this.setStylesForHeader()
       } else {
         this.changeLogoState(window.pageYOffset)
@@ -336,7 +342,7 @@ export default {
     padding: 10px;
     cursor: pointer;
 
-    @media screen and (max-width: 1160px) {
+    @media screen and (max-width: 1280px) {
       margin-right: 10px;
     }
 
@@ -407,7 +413,7 @@ export default {
       content: '↓';
       color: transparent;
     }
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 1320px) {
       margin-right: 10px;
     }
   }
@@ -425,15 +431,11 @@ export default {
     align-items: center;
     margin-right: 40px;
 
-    @media screen and (max-width: 1366px) {
-      margin-right: 49px;
-    }
-
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 1320px) {
       margin-right: 33px;
     }
 
-    @media screen and (max-width: 1180px) {
+    @media screen and (max-width: 1280px) {
       margin-right: 20px;
     }
   }
@@ -487,7 +489,7 @@ export default {
   opacity: 0;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1245px) {
   .header {
     max-height: 26px;
 

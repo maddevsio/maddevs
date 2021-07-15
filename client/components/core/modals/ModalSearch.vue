@@ -183,11 +183,15 @@ export default {
     },
 
     getAuthor(post, field) {
-      if (post && post.data && post.data.post_author && post.data.post_author.id) {
-        const author = this.findAuthor(post.data.post_author.id, this.allAuthors)
+      try {
+        if (!post || !field) return null
+        const authorId = post.data.post_author.id
+        if (!authorId) return null
+        const author = this.findAuthor(authorId, this.allAuthors)
         return author[field]
+      } catch {
+        return null
       }
-      return null
     },
 
     link(post) {

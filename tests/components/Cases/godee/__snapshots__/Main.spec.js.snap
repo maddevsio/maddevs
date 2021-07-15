@@ -10,7 +10,7 @@ exports[`Main component should render correctly 1`] = `
   >
     <section
       class="case_header case_header-godee"
-      id="case-header"
+      id="transparent-header-area"
     >
       <div
         class="case_main-video_fallback"

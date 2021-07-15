@@ -5,6 +5,9 @@ const bodyParser = require('body-parser')
 // sentry
 const { configureSentry } = require('./sentry')
 
+// radiator
+const runRadiator = require('./radiator')
+
 // custom middlewares
 const applyXFrame = require('./middlewares/applyXFrame')
 const redirectToHttps = require('./middlewares/redirectToHttps')
@@ -12,6 +15,8 @@ const redirectToTrailingSlash = require('./middlewares/redirectToTrailingSlash')
 const redirectToCorrectBlogUrl = require('./middlewares/redirectToCorrectBlogUrl')
 const redirectToCustomerUrl = require('./middlewares/redirectToCustomerUrl')
 const redirectToCorrectPostUrl = require('./middlewares/redirectToCorrectPostUrl')
+const redirectHrTags = require('./middlewares/redirectHrTags')
+const redirectInvalidLinks = require('./middlewares/redirectInvalidLinks')
 
 // config
 const config = require('./config')
@@ -43,6 +48,8 @@ function bootstrap() {
   app.use(redirectToCorrectBlogUrl)
   app.use(redirectToCustomerUrl)
   app.use(redirectToCorrectPostUrl)
+  app.use(redirectHrTags)
+  app.use(redirectInvalidLinks)
 
   // Routers
   app.use(webRouter)
@@ -50,6 +57,9 @@ function bootstrap() {
 
   // Errors handler
   app.use(Sentry.Handlers.errorHandler())
+
+  // radiator running
+  if (process.env.FF_ENVIRONMENT === 'staging') runRadiator()
 
   return app
 }

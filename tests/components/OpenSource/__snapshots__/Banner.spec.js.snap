@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner component should render correctly 1`] = `
+<div>
+  <div
+    class="banner"
+    id="transparent-header-area"
+  >
+    <picture>
+      <source
+        class="banner__image"
+        srcset="img.jpg ,img.jpg"
+        type="image/webp"
+      />
+       
+      <img
+        alt="Programmer"
+        class="banner__image"
+        height="969"
+        src="img.jpg"
+        srcset="img.jpg"
+        width="1680"
+      />
+    </picture>
+     
+    <div
+      class="container"
+    >
+      <div
+        class="banner__content"
+        style="opacity: 1;"
+      >
+        <h1
+          class="banner__title"
+        >
+          
+        The power 
+          <br />
+           of open source
+      
+        </h1>
+         
+        <p
+          class="banner__subtitle"
+        >
+          
+        While we love writing code, nothing excites us more than collaborating with other members of the tech community.
+        We love building with new and emerging technologies here at Mad Devs. Making the world a better place,one line of code at a time.
+      
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -7,7 +7,7 @@ exports[`CaseHeader component should render correctly 1`] = `
     class="case_header case_header-"
     file="some-filename"
     height="100"
-    id="case-header"
+    id="transparent-header-area"
     picturefolder=""
     width="100"
   >

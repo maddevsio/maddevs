@@ -33,10 +33,12 @@ export default {
 
   methods: {
     show() {
+      if (!this.$refs.modalInfrastructureAudit.show) return
       this.$refs.modalInfrastructureAudit.show()
     },
 
     close() {
+      if (!this.$refs.modalInfrastructureAudit.close) return
       this.$refs.modalInfrastructureAudit.close()
     },
   },

@@ -26,7 +26,7 @@
           <UIModalTriggerButton
             label="Get an infrastructure audit"
             class="infrastructure-optimisation__button"
-            @click="$refs.modalInfrastructureAudit.show()"
+            @click="show"
           />
         </div>
       </div>
@@ -58,6 +58,13 @@ export default {
     return {
       infrastructureOptimisation,
     }
+  },
+
+  methods: {
+    show() {
+      if (!this.$refs?.modalInfrastructureAudit?.show) return
+      this.$refs.modalInfrastructureAudit.show()
+    },
   },
 }
 </script>

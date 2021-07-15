@@ -96,7 +96,7 @@
       v-if="buttonIsActive"
       class="blog-post__back-to-list"
       data-testid="test-back-list"
-      @click="scrollToTop()"
+      @click="scrollToTop"
     >
       <i />
     </button>

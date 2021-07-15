@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ParagraphSection component should render correctly 1`] = `
+<div>
+  <div
+    class="paragraph-section"
+    data-aos="fade-up"
+  >
+    <div
+      class="container"
+    >
+      <p
+        class="paragraph-section__text"
+      >
+        <span>
+          70+
+        </span>
+         of Mad Devs' 
+        <span>
+          open source projects
+        </span>
+         have been shared with the community via 
+        <span>
+          GitHub.
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;

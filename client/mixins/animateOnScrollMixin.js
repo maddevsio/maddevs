@@ -1,9 +1,9 @@
 import AOS from 'aos'
 
-function animateOnScrollMixin(config = {}) {
+function animateOnScrollMixin(config = {}, useAnimations = true) {
   return {
     mounted() {
-      if (this.featureFlag('careersPageAnimations')) {
+      if (useAnimations) {
         import('aos/dist/aos.css')
         AOS.init(config)
       }

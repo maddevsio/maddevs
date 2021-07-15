@@ -5,12 +5,17 @@ exports[`UIBanner component should render correctly 1`] = `
   <section
     class="cta-banner"
   >
-    <h2>
-      Title
-    </h2>
+    <div
+      class="cta-banner__info"
+    >
+      <h2>
+        Title
+      </h2>
+       
+      <p />
+       
+    </div>
      
-    <p />
-      
     <img
       alt=""
       class="cta-banner__image"

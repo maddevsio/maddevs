@@ -70,6 +70,10 @@ export const headerNavigation = [
     link: '/delivery-models/',
   },
   {
+    title: 'Open Source',
+    link: '/open-source/',
+  },
+  {
     title: 'Careers',
     link: '/careers/',
   },

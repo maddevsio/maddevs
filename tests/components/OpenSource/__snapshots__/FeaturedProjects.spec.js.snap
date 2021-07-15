@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FeaturedProjects component should render correctly 1`] = `
+<div>
+  <div
+    class="featured-projects"
+    data-aos="fade-up"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="featured-projects__head"
+      >
+        <titledesc-stub
+          description="A few listed projects to show the diversity of our community participant roster and some of the promising concepts that are emerging in development technologies."
+          textcolor="white"
+          title="Featured projects"
+        />
+      </div>
+       
+      <featuredprojectslist-stub />
+    </div>
+  </div>
+</div>
+`;

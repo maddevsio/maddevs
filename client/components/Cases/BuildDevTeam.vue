@@ -11,7 +11,7 @@
       >
         <UIButton
           class="build-dev-team__button"
-          @click="$refs.modalContactMe.show()"
+          @click="show"
         >
           Book a free consultation
         </UIButton>
@@ -36,6 +36,13 @@ export default {
     UIBanner,
     UIButton,
     ModalContactMe: () => import('@/components/core/modals/ModalContactMe'),
+  },
+
+  methods: {
+    show() {
+      if (!this.$refs?.modalContactMe?.show) return
+      this.$refs.modalContactMe.show()
+    },
   },
 }
 </script>
