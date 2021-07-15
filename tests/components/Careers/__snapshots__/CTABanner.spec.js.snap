@@ -4,7 +4,6 @@ exports[`CTABanner component should render correctly 1`] = `
 <div>
   <div
     class="careers-cta-banner_container container"
-    data-aos="fade-up"
   >
     <uibanner-stub
       image="[object Object]"

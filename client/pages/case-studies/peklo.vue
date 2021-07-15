@@ -43,6 +43,7 @@ import Footer from '@/components/Cases/shared/CaseFooter'
 import Main from '@/components/Cases/peklo/Main'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 import { getMetadata, buildHead } from '@/data/seo'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 export default {
   name: 'CaseITC',
@@ -52,7 +53,13 @@ export default {
     Main,
   },
 
-  mixins: [initLazyLoadMixin],
+  mixins: [initLazyLoadMixin, animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  })],
 
   data() {
     return {

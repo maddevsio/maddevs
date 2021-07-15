@@ -23,6 +23,7 @@ exports[`KeywordGrouping component should render correctly 1`] = `
      
     <div
       class="case_img-wrapper m-12_bottom media-m-8_bottom"
+      data-aos="fade-up"
     >
       <picture-stub
         alt="Keyword grouping"
@@ -37,6 +38,7 @@ exports[`KeywordGrouping component should render correctly 1`] = `
      
     <p
       class="case_paragraph case_img-alt m-56_bottom media-m-32_bottom"
+      data-aos="fade-up"
       style="color: rgb(164, 168, 180);"
     >
       
@@ -54,6 +56,7 @@ exports[`KeywordGrouping component should render correctly 1`] = `
      
     <div
       class="case_cards"
+      data-aos="fade-up"
     >
       <div
         class="case_card background-color-black-primary-bg"
@@ -100,6 +103,7 @@ exports[`KeywordGrouping component should render correctly 1`] = `
      
     <div
       class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
+      data-aos="fade-up"
     >
       <img
         alt="blockquote"

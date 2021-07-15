@@ -6,7 +6,6 @@
     <div class="container">
       <div
         class="open-positions__head"
-        data-aos="fade-up"
       >
         <h2 class="open-positions__title">
           Open positions
@@ -14,7 +13,6 @@
         <PositionsFilter />
       </div>
       <PositionsGrid
-        data-aos="fade-up"
       />
     </div>
   </div>

@@ -4,14 +4,11 @@
   >
     <h2
       class="projects-countries_title"
-      data-aos="fade-up"
     >
       Global projects in 20+ countries
     </h2>
     <p
       class="projects-countries_description"
-      data-aos="fade-up"
-      data-aos-duration="1000"
     >
       We build solutions for 35M+ users worldwide
     </p>
