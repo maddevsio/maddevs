@@ -24,8 +24,9 @@ export default {
       delay: 50,
       anchorPlacement: 'top-center',
       duration: 1000,
-    },
-    featureFlag('careersPageAnimations')),
+      once: true,
+      disable: !featureFlag('careersPageAnimations'),
+    }),
   ],
 
   head() {
