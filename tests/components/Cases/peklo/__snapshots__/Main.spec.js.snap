@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main component should render correctly 1`] = `
+<div>
+  <section>
+    <about-stub />
+     
+    <benefitsfrompeklotool-stub />
+     
+    <howpeklotoolworks-stub />
+     
+    <keywordgrouping-stub />
+     
+    <clusterisationalgorithm-stub />
+     
+    <peklotoolunderthehood-stub />
+     
+    <technologies-stub />
+     
+    <team-stub />
+  </section>
+</div>
+`;

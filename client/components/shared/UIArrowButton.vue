@@ -48,7 +48,6 @@ export default {
     border: 1px solid $text-color--black-oil;
     color: $text-color--black-oil;
     &:hover,
-    &:focus,
     &--active {
       background-color: $text-color--black-oil;
       color: $text-color--white-primary;
@@ -58,7 +57,6 @@ export default {
     border: 1px solid $text-color--white-primary;
     color: $text-color--white-primary;
     &:hover,
-    &:focus,
     &--active {
       background-color: $text-color--white-primary;
       color: $text-color--black-oil;

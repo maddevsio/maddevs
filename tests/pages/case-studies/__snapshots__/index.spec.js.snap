@@ -9,7 +9,7 @@ exports[`Index page should render correctly 1`] = `
      
     <caseslist-stub
       itemtitletag="h2"
-      limit="6"
+      limit="7"
     />
      
     <customers-stub

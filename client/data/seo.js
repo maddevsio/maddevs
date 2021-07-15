@@ -112,6 +112,12 @@ export const meta = {
     url: 'https://maddevs.io/ebook/',
     jsonLd: '',
   },
+  peklo: {
+    title: 'Mad Devs Case Study: Peklo Tool Keyword Grouping Software',
+    description: 'AdTech Case Study: How to build a keyword grouping tool? Read Peklo Tool\'s story of preparing keywords groups to launch effective ads in Google and Yandex.',
+    url: 'https://maddevs.io/case-studies/peklo/',
+    jsonLd: '{"@context": "https://schema.org", "@type": "WebPage", "name": "Mad Devs Case Study: Peklo Tool Keyword Grouping Software", "description": "AdTech Case Study: How to build a keyword grouping tool? Read Peklo Tool\'s story of preparing keywords groups to launch effective ads in Google and Yandex.", "publisher": {"@type": "ProfilePage", "name": "Mad Devs Group Limited"}}',
+  },
   ...deliveryModelsSeo,
   ...tagPagesSeo,
 }

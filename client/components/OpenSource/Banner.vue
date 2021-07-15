@@ -29,7 +29,8 @@
           The power <br> of open source
         </h1>
         <p class="banner__subtitle">
-          70+ of Mad Devs' open source projects have been shared with the community via GitHub.
+          While we love writing code, nothing excites us more than collaborating with other members of the tech community.
+          We love building with new and emerging technologies here at Mad Devs. Making the world a better place,one line of code at a time.
         </p>
       </div>
     </div>
@@ -104,7 +105,7 @@ export default {
     z-index: 2;
     display: block;
     margin: 0 auto;
-    max-width: 816px;
+    max-width: 1028px;
     text-align: center;
   }
   &__title {
