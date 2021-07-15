@@ -5,4 +5,5 @@
  */
 export const config = {
   careersPageAnimations: ['development', 'staging'],
+  ebookPage: ['development', 'staging'],
 }
