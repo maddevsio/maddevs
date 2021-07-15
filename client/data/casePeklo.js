@@ -54,3 +54,27 @@ export const slides = [
     alt: 'Clusterisation algorithm',
   },
 ]
+
+export const pekloToolUnderTheHoodCards = [
+  {
+    title: 'Go Service for campaign generation',
+    description: 'Go puts dictionaries in RAM, ensuring high speed of keyword processing',
+    icon: 'go',
+    iconWidth: '221',
+    iconHeight: '112',
+  },
+  {
+    title: 'Ruby on Rails for backend',
+    description: 'it deals with business logic, data management, and admin functionality',
+    icon: 'ruby',
+    iconWidth: '133',
+    iconHeight: '133',
+  },
+  {
+    title: 'Vue.js <br> for frontend',
+    description: 'it provides the user interface for the service’s <br> clients',
+    icon: 'vue',
+    iconWidth: '211',
+    iconHeight: '110',
+  },
+]
