@@ -11,6 +11,7 @@
     <div
       class="case_iframe-wrapper m-48_bottom m-auto"
       data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
     >
       <iframe
         src="https://www.youtube.com/embed/RYAUgOba-wg"
@@ -28,6 +29,7 @@
       <div
         class="case_cards-list m-96_bottom media-m-48_bottom"
         data-aos="fade-up"
+        data-aos-anchor-placement="bottom"
       >
         <Card
           v-for="card in howPekloToolWorksCards"

@@ -6,6 +6,7 @@
     <div
       class="case_cards"
       data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
     >
       <div class="case_cards-group">
         <Card
