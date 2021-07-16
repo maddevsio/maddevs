@@ -1,0 +1,418 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Team component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular"
+  >
+    <h2
+      class="case_title_h2 m-24_bottom"
+    >
+      
+    Meet the team
+  
+    </h2>
+     
+    <ul
+      class="case_list-team m-72_bottom media-m-41_bottom"
+    >
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Oleg Katkov"
+            class="image grey-background media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="50"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Oleg Katkov
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Software Engineer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Pavel Kalashnikov"
+            class="image grey-background media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="50"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Pavel Kalashnikov
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Full-Stack Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Meder Akkozov"
+            class="image grey-background media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="50"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Meder Akkozov
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Backend Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Alisa Manakova"
+            class="image grey-background media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="50"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Alisa Manakova
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Frontend Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Denis Grushkin"
+            class="image grey-background media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="50"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Denis Grushkin
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Frontend Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Anton Grushkin"
+            class="image grey-background media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="50"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Anton Grushkin
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Frontend Developer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Dmitrii Khalezin"
+            class="image grey-background media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="50"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Dmitrii Khalezin
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      DevOps Engineer
+    
+          </p>
+        </div>
+      </li>
+      <li
+        class="case_team-item"
+      >
+        <picture
+          class="case_team-item__image"
+        >
+          <source
+            class="image grey-background media_lazy"
+            data-srcset="img.jpg,img.jpg"
+            type="image/webp"
+          />
+           
+          <img
+            alt="Vladimir Shebarshov"
+            class="image grey-background media_lazy"
+            data-src="img.jpg"
+            data-srcset="img.jpg"
+            data-testid="test-picture-img"
+            height="50"
+            width="50"
+          />
+        </picture>
+         
+        <div
+          class="case_team-item__info"
+        >
+          <p
+            class="case_team-item__name"
+          >
+            
+      Vladimir Shebarshov
+    
+          </p>
+           
+          <p
+            class="case_team-item__position"
+          >
+            
+      Frontend Developer
+    
+          </p>
+        </div>
+      </li>
+    </ul>
+     
+    <blockquote
+      alt="Roman Leonov"
+      class="case_blockquote-author m-auto case_text-align-center m-72_bottom p-48_top media-m-48_bottom"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
+    >
+      
+    We don’t like the routine work that fellow digital marketing specialists have to do, so we’re happy to have created a solution for them. I’d like to thank our co-founders and partners at Mad Devs for this product. It lives, it works as intended, and it’s now bugless and supersmooth.
+   
+      <div
+        class="case_blockquote-author__author-info m-24_top"
+      >
+        <div
+          class="case_blockquote-author__photo m-auto"
+        >
+          <picture>
+            <source
+              class="image media_lazy"
+              data-srcset="img.jpg,img.jpg"
+              type="image/webp"
+            />
+             
+            <img
+              alt="Roman Leonov"
+              class="image media_lazy"
+              data-src="img.jpg"
+              data-srcset="img.jpg"
+              data-testid="test-picture-img"
+              height="71"
+              width="71"
+            />
+          </picture>
+        </div>
+         
+        <p
+          class="case_paragraph case_blockquote-author__name"
+        >
+          
+      Roman Leonov
+    
+        </p>
+         
+        <p
+          class="case_blockquote-author__position"
+        >
+          
+      Founder Peklo Studio & Peklo Tool
+    
+        </p>
+      </div>
+    </blockquote>
+  </section>
+</div>
+`;

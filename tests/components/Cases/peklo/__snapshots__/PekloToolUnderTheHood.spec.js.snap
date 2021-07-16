@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PekloToolUnderTheHood component should render correctly 1`] = `
+<div>
+  <section
+    class="container_full background-color-black m-48_bottom p-48_top p-48_bottom media-p-41_top media-p-41_bottom"
+  >
+    <div
+      class="container_regular"
+    >
+      <h2
+        class="case_title_h2 case_title m-12_bottom"
+      >
+        
+      Peklo Tool under the hood
+    
+      </h2>
+       
+      <p
+        class="case_paragraph case_bold m-24_bottom"
+      >
+        
+      Peklo Tool’s architecture features three main components:
+    
+      </p>
+       
+      <div
+        class="case_cards m-48_bottom media-m-38_bottom"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom"
+      >
+        <div
+          class="case_card background-color-gray"
+        >
+          <div
+            class="case_card-text-wrapper"
+          >
+            <h5
+              class="case_title_h5 case_card-title m-8_bottom"
+            >
+              Go Service for campaign generation
+            </h5>
+             
+            <p
+              class="case_paragraph case_card-description"
+              style="color: rgb(207, 207, 208);"
+            >
+              Go puts dictionaries in RAM, ensuring high speed of keyword processing
+            </p>
+          </div>
+           
+          <div
+            class="case_icon-wrapper"
+          >
+            <img
+              alt="Go Service for campaign generation"
+              class="case_card-icon media_lazy case_card-icon-go"
+              data-src="s3 image url"
+              height="112"
+              width="221"
+            />
+          </div>
+        </div>
+        <div
+          class="case_card background-color-gray"
+        >
+          <div
+            class="case_card-text-wrapper"
+          >
+            <h5
+              class="case_title_h5 case_card-title m-8_bottom"
+            >
+              Ruby on Rails for backend
+            </h5>
+             
+            <p
+              class="case_paragraph case_card-description"
+              style="color: rgb(207, 207, 208);"
+            >
+              it deals with business logic, data management, and admin functionality
+            </p>
+          </div>
+           
+          <div
+            class="case_icon-wrapper"
+          >
+            <img
+              alt="Ruby on Rails for backend"
+              class="case_card-icon media_lazy case_card-icon-ruby"
+              data-src="s3 image url"
+              height="133"
+              width="133"
+            />
+          </div>
+        </div>
+        <div
+          class="case_card background-color-gray"
+        >
+          <div
+            class="case_card-text-wrapper"
+          >
+            <h5
+              class="case_title_h5 case_card-title m-8_bottom"
+            >
+              Vue.js 
+              <br />
+               for frontend
+            </h5>
+             
+            <p
+              class="case_paragraph case_card-description"
+              style="color: rgb(207, 207, 208);"
+            >
+              it provides the user interface for the service’s 
+              <br />
+               clients
+            </p>
+          </div>
+           
+          <div
+            class="case_icon-wrapper"
+          >
+            <img
+              alt="Vue.js <br> for frontend"
+              class="case_card-icon media_lazy case_card-icon-vue"
+              data-src="s3 image url"
+              height="110"
+              width="211"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <p
+        class="case_paragraph case_architecture-description m-24_bottom m-auto"
+        style="color: rgb(160, 160, 161);"
+      >
+        
+      Other components deal with payments, file and data storage, and load. Structurally, Peklo Tool’s architecture looks like this:
+    
+      </p>
+       
+      <img
+        alt="Peklo Tool’s architecture"
+        class="case_architecture-img media_lazy"
+        data-src="s3 image url"
+        height="408"
+        width="816"
+      />
+    </div>
+  </section>
+</div>
+`;

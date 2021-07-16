@@ -10,7 +10,6 @@ exports[`Benefits component should render correctly 1`] = `
     >
       <div
         class="benefits_description"
-        data-aos="fade-up"
       >
         <h2
           class="benefits_title"
@@ -33,7 +32,6 @@ exports[`Benefits component should render correctly 1`] = `
        
       <ul
         class="benefits_list"
-        data-aos="fade-up"
       >
         <li
           class="benefits_list-item"
@@ -78,7 +76,6 @@ exports[`Benefits component should render correctly 1`] = `
     >
       <div
         class="benefits_description"
-        data-aos="fade-up"
       >
         <h2
           class="benefits_title"
@@ -101,7 +98,6 @@ exports[`Benefits component should render correctly 1`] = `
        
       <ul
         class="benefits_list"
-        data-aos="fade-up"
       >
         <li
           class="benefits_list-item"
@@ -146,7 +142,6 @@ exports[`Benefits component should render correctly 1`] = `
     >
       <div
         class="benefits_description"
-        data-aos="fade-up"
       >
         <h2
           class="benefits_title"
@@ -169,7 +164,6 @@ exports[`Benefits component should render correctly 1`] = `
        
       <ul
         class="benefits_list"
-        data-aos="fade-up"
       >
         <li
           class="benefits_list-item"

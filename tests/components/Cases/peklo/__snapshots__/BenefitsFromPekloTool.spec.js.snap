@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BenefitsFromPekloTool component should render correctly 1`] = `
+<div>
+  <section
+    class="container_regular"
+  >
+    <h2
+      class="case_title_h2 m-24_bottom"
+    >
+      
+    Who benefits from Peklo Tool
+  
+    </h2>
+     
+    <div
+      class="case_cards"
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
+    >
+      <div
+        class="case_cards-group"
+      >
+        <div
+          class="case_card background-color-black"
+        >
+          <div
+            class="case_card-img"
+          >
+            <picture-stub
+              alt="Digital marketing specialists"
+              extension="png"
+              file="laptop"
+              folder="peklo"
+              height="200"
+              lazy="true"
+              width="396"
+            />
+          </div>
+           
+          <h4
+            class="case_title_h4 case_card-title m-24_top m-8_bottom"
+          >
+            
+          Digital marketing specialists
+        
+          </h4>
+           
+          <p
+            class="case_paragraph"
+            style="color: rgb(255, 255, 255);"
+          >
+            
+          Automation allows launching contextual ads 2-3 times faster. The saved time can be spent on strategic and creative work that humans are good at, like KPI analysis and media planning.
+        
+          </p>
+        </div>
+        <div
+          class="case_card background-color-gray"
+        >
+          <div
+            class="case_card-img"
+          >
+            <picture-stub
+              alt="Promotion agencies"
+              extension="png"
+              file="team-communication"
+              folder="peklo"
+              height="200"
+              lazy="true"
+              width="396"
+            />
+          </div>
+           
+          <h4
+            class="case_title_h4 case_card-title m-24_top m-8_bottom"
+          >
+            
+          Promotion agencies
+        
+          </h4>
+           
+          <p
+            class="case_paragraph"
+            style="color: rgb(255, 255, 255);"
+          >
+            
+          Resources (in specialists’ time) needed to start a contextual ad campaign decrease by 50-80%. It makes delivering the results the customer needs more achievable.
+        
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="case_card background-color-yellow m-96_bottom media-m-48_bottom"
+      >
+        <h4
+          class="case_title_h4 m-8_bottom"
+        >
+          
+        Entrepreneurs
+      
+        </h4>
+         
+        <p
+          class="case_paragraph"
+        >
+          
+        Subscription to Peklo Tool pays off after a single contextual advertising campaign. The money saved by automation can significantly exceed the service’s price.
+      
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;

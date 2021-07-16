@@ -2,13 +2,11 @@
   <div class="key-metrics_container container">
     <h2
       class="key-metrics_title"
-      data-aos="fade-up"
     >
       Mad Devs’ key metrics
     </h2>
     <div
       class="key-metrics_grid"
-      data-aos="fade-up"
     >
       <MetricCard
         v-for="metrica in keyMetrics"

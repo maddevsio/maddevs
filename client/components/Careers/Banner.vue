@@ -4,15 +4,11 @@
   >
     <h1
       class="banner_title"
-      data-aos="fade-down"
-      data-aos-duration="800"
     >
       Career at <br> Mad Devs
     </h1>
     <div
       class="banner_img-wrap"
-      data-aos="fade-up"
-      data-aos-duration="800"
     >
       <picture>
         <source
@@ -32,9 +28,6 @@
     </div>
     <p
       class="banner_description"
-      data-aos="fade-up"
-      data-aos-duration="800"
-      data-aos-offset="120"
     >
       Here at Mad Devs, we partner with projects where <span>our teams thrive</span>. Innovating solutions, carrying ownership, delivering sustainable value, and celebrating successes—these make a happy workplace where things get done.
     </p>
