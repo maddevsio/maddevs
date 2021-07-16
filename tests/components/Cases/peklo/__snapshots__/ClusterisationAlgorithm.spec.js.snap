@@ -35,6 +35,7 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
       <div
         class="container_regular"
         data-aos="fade-up"
+        data-aos-anchor-placement="bottom"
       >
         <div
           class="case_lottie"
@@ -1558,6 +1559,7 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
     <div
       class="container_middle m-48_bottom media-m-24_bottom slider"
       data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
     >
       <swiper-stub
         boxshadow="true"
@@ -1634,6 +1636,7 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
       <div
         class="case_quote-wrap m-48_top m-48_bottom media-m-24_top media-m-24_bottom m-auto"
         data-aos="fade-up"
+        data-aos-anchor-placement="bottom"
       >
         <blockquote
           class="case_blockquote-box m-auto"
@@ -1670,33 +1673,33 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
     </div>
      
     <div
-      class="container_middle case_img-wrapper m-12_bottom media-m-8_bottom"
+      class="container_middle case_img-wrapper"
       data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
     >
       <picture-stub
         alt="Generation of ad texts"
-        extension="jpg"
+        extension="png"
         file="generation-of-ad-texts"
         folder="peklo"
         height="517"
         lazy="true"
         width="1026"
       />
-    </div>
-     
-    <div
-      class="container_regular"
-    >
+       
       <p
-        class="case_paragraph case_img-alt m-96_bottom media-m-48_bottom"
-        data-aos="fade-up"
+        class="case_paragraph case_img-alt m-12_top media-m-8_top m-96_bottom media-m-48_bottom m-auto"
         style="color: rgb(164, 168, 180);"
       >
         
       The structure of a contextual advertising campaign for a car repair business. Ad texts have been generated automatically based on keyword groups and unique selling propositions.
     
       </p>
-       
+    </div>
+     
+    <div
+      class="container_regular"
+    >
       <h3
         class="case_title_h3 m-24_bottom media-m-12_bottom"
       >
@@ -1708,6 +1711,7 @@ exports[`ClusterisationAlgorithm component should render correctly 1`] = `
       <div
         class="case_cards"
         data-aos="fade-up"
+        data-aos-anchor-placement="bottom"
       >
         <div
           class="case_cards-group"

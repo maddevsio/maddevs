@@ -44,13 +44,13 @@ export const slides = [
   {
     fileName: 'peklo-first-slide',
     pictureFolder: 'peklo',
-    fileExtension: 'jpg',
+    fileExtension: 'png',
     alt: 'Clusterisation algorithm',
   },
   {
     fileName: 'peklo-second-slide',
     pictureFolder: 'peklo',
-    fileExtension: 'jpg',
+    fileExtension: 'png',
     alt: 'Clusterisation algorithm',
   },
 ]

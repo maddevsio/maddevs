@@ -7,31 +7,35 @@
       The heart of Peklo Tool is a smart technology that groups keywords. Performed manually, grouping can take an overwhelmingly long time. It gets virtually unmanageable if a planned contextual advertising campaign uses thousands or tens of thousands of keywords, which they often do.
     </TextParagraph>
     <div
-      class="case_img-wrapper m-12_bottom media-m-8_bottom"
       data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
     >
-      <Picture
-        :width="817"
-        :height="459"
-        file="keyword-grouping"
-        alt="Keyword grouping"
-        folder="peklo"
-        extension="jpg"
-      />
+      <div
+        class="case_img-wrapper m-12_bottom media-m-8_bottom"
+      >
+        <Picture
+          :width="817"
+          :height="459"
+          file="keyword-grouping"
+          alt="Keyword grouping"
+          folder="peklo"
+          extension="jpg"
+        />
+      </div>
+      <TextParagraph
+        class="case_img-alt m-56_bottom media-m-32_bottom"
+        color="#a4a8b4"
+      >
+        The “Appliance Repair” niche 379 keywords in 369 ad groups within 0.176 seconds
+      </TextParagraph>
     </div>
-    <TextParagraph
-      class="case_img-alt m-56_bottom media-m-32_bottom"
-      color="#a4a8b4"
-      data-aos="fade-up"
-    >
-      The “Appliance Repair” niche 379 keywords in 369 ad groups within 0.176 seconds
-    </TextParagraph>
     <TextParagraph class="m-24_bottom">
       Automating the grouping process was challenging because human language was involved. All the possible spelling options (including typos) for keywords need to be considered. Normally, neural networks and natural language processing (NLP) technologies would be used to handle the linguistic variations. But with them, grouping would’ve been slow, so we found an alternative solution.
     </TextParagraph>
     <div
       class="case_cards"
       data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
     >
       <Card class="background-color-black-primary-bg">
         <h4 class="case_title_h4 case_card-title m-8_bottom">
@@ -54,6 +58,7 @@
       class="m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
       author="Oleg Katkov, Software engineer at Mad Devs"
       data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
     >
       Speed was a priority. We wanted to create a tool that could impress the user by grouping keywords instantly. By integrating the dictionaries, we achieved it. The grouping process takes Peklo Tool only a few seconds.
     </TextQuote>

@@ -10,6 +10,7 @@
       <div
         class="case_cards m-48_bottom media-m-38_bottom"
         data-aos="fade-up"
+        data-aos-anchor-placement="bottom"
       >
         <div
           v-for="card in pekloToolUnderTheHoodCards"
