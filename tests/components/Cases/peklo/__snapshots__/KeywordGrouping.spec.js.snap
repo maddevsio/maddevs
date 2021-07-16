@@ -22,29 +22,32 @@ exports[`KeywordGrouping component should render correctly 1`] = `
     </p>
      
     <div
-      class="case_img-wrapper m-12_bottom media-m-8_bottom"
       data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
     >
-      <picture-stub
-        alt="Keyword grouping"
-        extension="jpg"
-        file="keyword-grouping"
-        folder="peklo"
-        height="459"
-        lazy="true"
-        width="817"
-      />
+      <div
+        class="case_img-wrapper m-12_bottom media-m-8_bottom"
+      >
+        <picture-stub
+          alt="Keyword grouping"
+          extension="jpg"
+          file="keyword-grouping"
+          folder="peklo"
+          height="459"
+          lazy="true"
+          width="817"
+        />
+      </div>
+       
+      <p
+        class="case_paragraph case_img-alt m-56_bottom media-m-32_bottom"
+        style="color: rgb(164, 168, 180);"
+      >
+        
+      The “Appliance Repair” niche 379 keywords in 369 ad groups within 0.176 seconds
+    
+      </p>
     </div>
-     
-    <p
-      class="case_paragraph case_img-alt m-56_bottom media-m-32_bottom"
-      data-aos="fade-up"
-      style="color: rgb(164, 168, 180);"
-    >
-      
-    The “Appliance Repair” niche 379 keywords in 369 ad groups within 0.176 seconds
-  
-    </p>
      
     <p
       class="case_paragraph m-24_bottom"
@@ -57,6 +60,7 @@ exports[`KeywordGrouping component should render correctly 1`] = `
     <div
       class="case_cards"
       data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
     >
       <div
         class="case_card background-color-black-primary-bg"
@@ -104,6 +108,7 @@ exports[`KeywordGrouping component should render correctly 1`] = `
     <div
       class="case_quote-wrap m-auto m-96_top m-96_bottom media-m-48_top media-m-48_bottom"
       data-aos="fade-up"
+      data-aos-anchor-placement="bottom"
     >
       <img
         alt="blockquote"
