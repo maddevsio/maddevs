@@ -1,5 +1,5 @@
 <template>
-  <main class="main">
+  <main class="main ebook-page">
     <Banner />
     <Learn />
     <Read />
@@ -39,3 +39,13 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+  .ebook-page {
+    /deep/ .container {
+      @media screen and (max-width: 1024px) {
+        padding: 0 24px;
+      }
+    }
+  }
+</style>
