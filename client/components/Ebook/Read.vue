@@ -1,5 +1,8 @@
 <template>
-  <section class="ebook-read">
+  <section
+    id="read-online"
+    class="ebook-read"
+  >
     <div class="container">
       <h2>Read articles online</h2>
 

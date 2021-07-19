@@ -15,10 +15,14 @@ exports[`Banner component should render correctly with no data 1`] = `
         <uibutton-stub>
           Download PDF
           <img src="@/assets/img/common/arrow-up-right.svg" alt="arrow">
-        </uibutton-stub> <a href="#">Read it online</a>
+        </uibutton-stub>
+        <nuxtlink-stub to="#read-online">
+          Read it online
+        </nuxtlink-stub>
       </div>
     </div>
     <div class="ebook-banner_book"><img src="@/assets/img/Ebook/book.svg" alt="Ebook"></div>
   </div>
+  <modalebook-stub id="ebook-modal" location=""></modalebook-stub>
 </section>
 `;

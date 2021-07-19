@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Read component should render correctly with no data 1`] = `
-<section class="ebook-read">
+<section id="read-online" class="ebook-read">
   <div class="container">
     <h2>Read articles online</h2>
     <div class="ebook-read_content">
