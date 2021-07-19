@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReadCard component should render correctly with no data 1`] = `
+<nuxtlink-stub to="/customer-university/undefined/" class="ebook-read-card"><img src="https://example.com/image.jpg" alt="alt text">
+  <h4>1. title</h4>
+</nuxtlink-stub>
+`;

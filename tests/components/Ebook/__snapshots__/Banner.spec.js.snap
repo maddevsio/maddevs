@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner component should render correctly with no data 1`] = `
+<section class="ebook-banner">
+  <div class="container">
+    <div class="ebook-banner_info">
+      <h1>Custom Software Development: Pricing Strategies</h1>
+      <h5>This e-book is for you if you:</h5>
+      <ul>
+        <li>Are looking for software development services</li>
+        <li>Are an aspiring IT company searching for useful information</li>
+        <li>Are interested in pricing information for custom software development</li>
+      </ul>
+      <div class="ebook-banner_info-btns">
+        <uibutton-stub>
+          Download PDF
+          <img src="@/assets/img/common/arrow-up-right.svg" alt="arrow">
+        </uibutton-stub> <a href="#">Read it online</a>
+      </div>
+    </div>
+    <div class="ebook-banner_book"><img src="@/assets/img/Ebook/book.svg" alt="Ebook"></div>
+  </div>
+</section>
+`;

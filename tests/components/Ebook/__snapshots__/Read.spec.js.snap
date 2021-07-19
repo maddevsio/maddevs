@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Read component should render correctly with no data 1`] = `
+<section class="ebook-read">
+  <div class="container">
+    <h2>Read articles online</h2>
+    <div class="ebook-read_content">
+      <div class="ebook-read_cards">
+        <readcard-stub post="[object Object]"></readcard-stub>
+        <readcard-stub post="[object Object]"></readcard-stub>
+      </div>
+      <div class="ebook-read_form">
+        From
+      </div>
+    </div>
+  </div>
+</section>
+`;

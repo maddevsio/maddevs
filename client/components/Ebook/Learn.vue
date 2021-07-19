@@ -37,6 +37,7 @@ export default {
 
 .ebook-learn {
   padding-top: 130px;
+  padding-bottom: 96px;
 
   h2 {
     @include font('Inter', 42px, 600);

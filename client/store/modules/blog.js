@@ -3,7 +3,11 @@
 import formatDate from '@/helpers/formatDate'
 
 import {
-  getHomePageContent, getBlogPosts, getCustomerUniversityMaster, getCustomerUniversityFeaturedPost,
+  getHomePageContent,
+  getBlogPosts,
+  getCustomerUniversityMaster,
+  getCustomerUniversityFeaturedPost,
+  getCUPosts,
 } from '@/api/blog'
 
 export const state = () => ({
@@ -11,6 +15,7 @@ export const state = () => ({
   customerContent: {},
   featuredCUPost: null,
   posts: [],
+  CUPosts: [],
   featuredPost: null,
   postsCategory: null,
   postsLoaded: false,
@@ -37,6 +42,9 @@ export const mutations = {
   },
   SET_CUSTOMER_CONTENT(state, data) {
     state.customerContent = data
+  },
+  SET_CU_POSTS(state, posts) {
+    state.CUPosts = posts
   },
   SET_FEATURED_CUSTOMER_POST(state, post) {
     state.featuredCUPost = post
@@ -78,6 +86,10 @@ export const actions = {
       commit('SET_FEATURED_CUSTOMER_POST', featuredPost)
     }
   },
+  async getCustomerUniversityPosts({ commit }) {
+    const posts = await getCUPosts(this.$prismic)
+    commit('SET_CU_POSTS', posts)
+  },
   getMorePosts({ commit, state }) {
     commit('SET_POSTS_PAGE', state.postsPage + 1)
   },
@@ -99,6 +111,9 @@ export const getters = {
   },
   allPosts(state) {
     return state.posts
+  },
+  CUPosts(state) {
+    return state.CUPosts
   },
   filteredPosts(state) {
     if (state.postsCategory !== null && state.homePageContent.categories) {
