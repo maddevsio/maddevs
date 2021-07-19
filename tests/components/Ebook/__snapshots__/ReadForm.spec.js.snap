@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReadForm component should render correctly with no data 1`] = `
+<div class="read-form"><img src="@/assets/img/Ebook/book-rotated.svg" alt="Pricing strategies">
+  <h4>Get your copy of “Custom Software Development: Pricing Strategies”</h4>
+  <div class="read-form_fields"><input placeholder="Your name"> <input placeholder="Email"> <button>
+      Send me the ebook
+    </button></div>
+  <p>By providing your email address, you agree to our Privacy Policy. We will not send you any spam – only link for downloading the ebook and some more useful resources in the future.</p>
+</div>
+`;

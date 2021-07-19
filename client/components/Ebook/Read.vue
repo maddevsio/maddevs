@@ -13,7 +13,7 @@
         </div>
 
         <div class="ebook-read_form">
-          From
+          <ReadForm />
         </div>
       </div>
     </div>
@@ -23,10 +23,11 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 import ReadCard from '@/components/Ebook/ReadCard'
+import ReadForm from '@/components/Ebook/ReadForm'
 
 export default {
   name: 'EbookRead',
-  components: { ReadCard },
+  components: { ReadCard, ReadForm },
   computed: {
     ...mapGetters(['CUPosts']),
     posts() {

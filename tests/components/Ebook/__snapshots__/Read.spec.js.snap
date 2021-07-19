@@ -10,7 +10,7 @@ exports[`Read component should render correctly with no data 1`] = `
         <readcard-stub post="[object Object]"></readcard-stub>
       </div>
       <div class="ebook-read_form">
-        From
+        <readform-stub></readform-stub>
       </div>
     </div>
   </div>
