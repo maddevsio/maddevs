@@ -3,6 +3,7 @@
     <Banner />
     <Learn />
     <Read />
+    <Delivery />
   </main>
 </template>
 
@@ -10,6 +11,7 @@
 import Banner from '@/components/Ebook/Banner'
 import Learn from '@/components/Ebook/Learn'
 import Read from '@/components/Ebook/Read'
+import Delivery from '@/components/Ebook/Delivery'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
 
@@ -21,6 +23,7 @@ export default {
     Banner,
     Learn,
     Read,
+    Delivery,
   },
 
   mixins: [initLazyLoadMixin],
