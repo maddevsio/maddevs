@@ -62,14 +62,26 @@ export default {
 .ebook-banner {
   padding-top: 207px;
 
+  @media screen and (max-width: 768px) {
+    padding-top: 147px;
+  }
+
   > .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
   }
 
   &_info {
     margin-right: 30px;
+
+    @media screen and (max-width: 768px) {
+      margin-right: 0;
+    }
 
     h1 {
       max-width: 650px;
@@ -78,6 +90,12 @@ export default {
       color: #fff;
       margin-bottom: 72px;
       letter-spacing: -2px;
+
+      @media screen and (max-width: 540px) {
+        @include font('Inter', 42px, 600);
+        line-height: 48px;
+        margin-bottom: 32px;
+      }
     }
 
     h5 {
@@ -86,18 +104,40 @@ export default {
       line-height: 26px;
       color: #fff;
       margin-bottom: 16px;
+
+      @media screen and (max-width: 540px) {
+        @include font('Inter', 18px, 600);
+        line-height: 22px;
+      }
     }
 
     ul {
       margin-bottom: 48px;
-      list-style: inherit;
-      list-style-position: inside;
+      list-style: none;
 
       li {
+        display: flex;
+        align-items: flex-start;
         @include font('Inter', 16px, 400);
         line-height: 24px;
         color: #fff;
         letter-spacing: -0.4px;
+
+        @media screen and (max-width: 540px) {
+          margin-bottom: 15px;
+        }
+
+        &::before {
+          content: '';
+          width: 5px;
+          min-width: 5px;
+          max-width: 5px;
+          height: 5px;
+          display: inline-block;
+          border-radius: 100%;
+          background-color: #fff;
+          margin: 10px 10px 0;
+        }
       }
     }
 
@@ -127,6 +167,22 @@ export default {
       a {
         text-decoration-line: underline;
         text-underline-offset: 2px;
+      }
+    }
+  }
+
+  &_book {
+    img {
+      width: 100%;
+      max-width: 395px;
+
+      @media screen and (max-width: 768px) {
+        width: 211px;
+        margin-bottom: 71px;
+      }
+
+      @media screen and (max-width: 540px) {
+        margin-bottom: 47px;
       }
     }
   }
