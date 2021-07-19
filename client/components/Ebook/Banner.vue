@@ -11,14 +11,16 @@
           <li>Are interested in pricing information for custom software development</li>
         </ul>
         <div class="ebook-banner_info-btns">
-          <UIButton>
+          <UIButton @click="showModalEbook">
             Download PDF
             <img
               src="@/assets/img/common/arrow-up-right.svg"
               alt="arrow"
             >
           </UIButton>
-          <a href="#">Read it online</a>
+          <NuxtLink to="#read-online">
+            Read it online
+          </NuxtLink>
         </div>
       </div>
 
@@ -30,15 +32,27 @@
         >
       </div>
     </div>
+    <!-- this id should be unique, because it used for google analytics -->
+    <ModalEbook
+      id="ebook-modal"
+      ref="modalEbook"
+    />
   </section>
 </template>
 
 <script>
 import UIButton from '@/components/shared/UIButton'
+import ModalEbook from '@/components/core/modals/ModalEbook'
 
 export default {
   name: 'EbookBanner',
-  components: { UIButton },
+  components: { UIButton, ModalEbook },
+  methods: {
+    showModalEbook() {
+      if (!this.$refs?.modalEbook?.show) return
+      this.$refs.modalEbook.show()
+    },
+  },
 }
 </script>
 

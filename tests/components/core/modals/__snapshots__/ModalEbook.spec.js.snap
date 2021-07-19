@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalEbook component should render correctly with no data 1`] = `
+<modal-stub id="" modaltitle="">
+  <readform-stub></readform-stub>
+</modal-stub>
+`;
