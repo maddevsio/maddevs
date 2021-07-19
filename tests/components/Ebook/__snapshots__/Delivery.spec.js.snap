@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Delivery component should render correctly with no data 1`] = `
+<div class="ebook-delivery">
+  <div class="container">
+    <div title="Build your product <br /> with Mad Devs" text="Together we build solutions that bring digital innovation." image="[object Object]" image-alt-text="Tamara" man-name="Tamara Mun" man-position="Delivery Manager"></div>
+  </div>
+</div>
+`;
