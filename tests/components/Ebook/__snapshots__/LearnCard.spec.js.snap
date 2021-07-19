@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LearnCard component should render correctly with no data 1`] = `
+<section class="ebook-learn-card">
+  <!---->
+  <h4>Card title</h4>
+  <p>Card description</p>
+</section>
+`;
