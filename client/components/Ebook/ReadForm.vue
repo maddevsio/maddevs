@@ -68,9 +68,47 @@ export default {
   },
 
   methods: {
-    submit() {
+    toBase64(file) {
+      if (!file) return null
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader()
+        reader.readAsDataURL(file)
+        reader.onload = () => resolve(reader.result)
+        reader.onerror = error => reject(error)
+      })
+    },
+
+    getAttachBase64() {
+      return new Promise((resolve, reject) => {
+        try {
+          const { origin } = window.location
+          const fileName = 'custom-software-development-pricing-strategies-ebook.pdf' // This file from /static folder
+          fetch(`${origin}/${fileName}`)
+            .then(file => file.blob())
+            .then(blob => this.toBase64(blob).then(base64 => resolve(base64)))
+            .catch(error => reject(error))
+        } catch (error) {
+          reject(error)
+        }
+      })
+    },
+
+    async submit() {
       if (!this.isValid) return
-      this.$emit('submit', { name: this.name, email: this.email })
+      const base64File = await this.getAttachBase64()
+      const request = {
+        templateId: 348595, // Required
+        variables: {
+          senderName: this.name,
+          emailTo: this.email,
+        },
+
+        attachment: {
+          base64: base64File.replace(/^data:(.*,)?/, ''),
+          name: 'pricing-strategies-ebook.pdf',
+        },
+      }
+      console.log(request)
     },
   },
 }
