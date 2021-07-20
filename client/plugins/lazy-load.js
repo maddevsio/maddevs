@@ -33,7 +33,7 @@ export default ({ app }, inject) => { // eslint-disable-line
     observer.unobserve(target)
   })
 
-  // Disable lazy loading
+  // Reset lazy loading
   function resetLazy() {}
 
   // Disable lazy loading

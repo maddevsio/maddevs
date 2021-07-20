@@ -7,6 +7,9 @@
         :image="require('@/assets/img/DeliveryModels/png/Tamara.png')"
         image-alt-text="Tamara"
         man-name="Tamara Mun"
+        data-aos="fade-up"
+        data-aos-offset="800"
+        data-aos-duration="800"
         man-position="Delivery Manager"
       >
         <UIButton @click="goToDeliveryPage">

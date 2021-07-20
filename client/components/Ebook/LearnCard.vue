@@ -2,8 +2,11 @@
   <section class="ebook-learn-card">
     <img
       v-if="icon"
-      :src="require(`@/assets/img/Ebook/${icon}`)"
+      width="54"
+      height="54"
+      :data-src="require(`@/assets/img/Ebook/${icon}`)"
       alt="Icon"
+      class="media_lazy"
     >
     <h4>{{ title }}</h4>
     <p>{{ description }}</p>

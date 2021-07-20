@@ -1,6 +1,8 @@
 <template>
   <div class="read-form">
     <img
+      width="145"
+      height="176"
       src="@/assets/img/Ebook/book-rotated.png"
       alt="Pricing strategies"
     >

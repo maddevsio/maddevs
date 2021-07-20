@@ -14,8 +14,10 @@
           <UIButton @click="showModalEbook">
             Download PDF
             <img
-              src="@/assets/img/common/arrow-up-right.svg"
-              alt="arrow"
+              width="20"
+              height="20"
+              :data-src="require(`@/assets/img/common/arrow-up-right.svg`)"
+              class="media_lazy"
             >
           </UIButton>
           <NuxtLink to="#read-online-anchor">
@@ -27,6 +29,8 @@
       <!-- Book -->
       <div class="ebook-banner_book">
         <img
+          width="392"
+          height="555"
           src="@/assets/img/Ebook/book.svg"
           alt="Ebook"
         >

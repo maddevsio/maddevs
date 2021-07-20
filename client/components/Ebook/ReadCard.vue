@@ -4,7 +4,8 @@
     class="ebook-read-card"
   >
     <img
-      v-if="img"
+      width="288"
+      height="178"
       :src="img.url"
       :alt="img.alt"
     >

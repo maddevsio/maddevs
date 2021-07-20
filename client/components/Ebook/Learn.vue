@@ -1,9 +1,14 @@
 <template>
   <section class="ebook-learn">
     <div class="container">
-      <h2>From it, you will learn:</h2>
+      <h2>
+        From it, you will learn:
+      </h2>
 
-      <div class="ebook-learn_cards">
+      <div
+        class="ebook-learn_cards"
+        data-aos="fade-up"
+      >
         <LearnCard
           v-for="(card, i) of cards"
           :key="`card_${i}`"

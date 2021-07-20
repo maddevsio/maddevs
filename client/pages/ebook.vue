@@ -14,6 +14,7 @@ import Read from '@/components/Ebook/Read'
 import Delivery from '@/components/Ebook/Delivery'
 import { getMetadata, buildHead } from '@/data/seo'
 import initLazyLoadMixin from '@/mixins/initLazyLoadMixin'
+import animateOnScrollMixin from '@/mixins/animateOnScrollMixin'
 
 import featureFlag from '@/featureFlags/featureFlag'
 
@@ -26,7 +27,13 @@ export default {
     Delivery,
   },
 
-  mixins: [initLazyLoadMixin],
+  mixins: [initLazyLoadMixin, animateOnScrollMixin({
+    offset: 200,
+    delay: 50,
+    anchorPlacement: 'top-center',
+    duration: 1000,
+    once: true,
+  })],
 
   // NOTE: Remove if need show this page on production
   asyncData({ error }) {
@@ -36,6 +43,10 @@ export default {
 
   head() {
     return buildHead(getMetadata('ebook'))
+  },
+
+  mounted() {
+    this.$lazyLoad.init()
   },
 }
 </script>
