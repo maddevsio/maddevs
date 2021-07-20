@@ -27,10 +27,16 @@ function buildEmail({
 }
 
 function sendEmail(req, callback = () => {}) {
-  sendpulse.init(config.SENDPULSE_API_USER_ID, config.SENDPULSE_API_KEY, config.SENDPULSE_TOKEN_STORAGE, () => {
-    const email = buildEmail(req)
-    sendpulse.smtpSendMail(callback, email)
-  })
+  sendpulse.init(
+    config.SENDPULSE_API_USER_ID,
+    config.SENDPULSE_API_KEY,
+    config.SENDPULSE_TOKEN_STORAGE,
+
+    () => {
+      const email = buildEmail(req)
+      sendpulse.smtpSendMail(callback, email)
+    },
+  )
 }
 
 module.exports = {

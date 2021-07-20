@@ -36,6 +36,7 @@
 <script>
 import { email, maxLength, required } from 'vuelidate/lib/validators'
 import BaseInput from '@/components/core/forms/BaseInput'
+import { sendEmailWithBase64 } from '@/api/email'
 
 export default {
   name: 'ReadForm',
@@ -97,18 +98,25 @@ export default {
       if (!this.isValid) return
       const base64File = await this.getAttachBase64()
       const request = {
-        templateId: 348595, // Required
-        variables: {
-          senderName: this.name,
-          emailTo: this.email,
+        body: {
+          email: {
+            templateId: 348595, // Required
+            variables: {
+              subject: 'Mad Devs | Pricing strategies ebook',
+              senderName: this.name,
+              emailTo: this.email,
+            },
+
+            attachment: {
+              base64: base64File.replace(/^data:(.*,)?/, ''),
+              name: 'pricing-strategies-ebook.pdf',
+            },
+          },
         },
 
-        attachment: {
-          base64: base64File.replace(/^data:(.*,)?/, ''),
-          name: 'pricing-strategies-ebook.pdf',
-        },
+        base64: base64File.replace(/^data:(.*,)?/, ''),
       }
-      console.log(request)
+      sendEmailWithBase64(this.$axios, request)
     },
   },
 }
