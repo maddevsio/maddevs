@@ -11,6 +11,17 @@ describe('ReadForm component', () => {
         Learn: {
           render(h) { return h('div') },
         },
+        BaseInput: {
+          render(h) { return h('div') },
+        },
+      },
+      computed: {
+        isValid: () => true,
+      },
+      mocks: {
+        $v: {
+          name: '',
+        },
       },
     })
   })

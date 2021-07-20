@@ -1,20 +1,29 @@
 <template>
   <div class="read-form">
     <img
-      src="@/assets/img/Ebook/book-rotated.svg"
+      src="@/assets/img/Ebook/book-rotated.png"
       alt="Pricing strategies"
     >
     <h4>Get your copy of  “Custom Software Development: Pricing Strategies”</h4>
     <div class="read-form_fields">
-      <input
+      <BaseInput
         v-model="name"
+        name="name"
+        :show-label="false"
+        :required="true"
         placeholder="Your name"
-      >
-      <input
+        :validation="$v.name"
+      />
+      <BaseInput
         v-model="email"
+        name="email"
+        :show-label="false"
         placeholder="Email"
-      >
+        :required="true"
+        :validation="$v.email"
+      />
       <button
+        :class="{ 'read-form_btn--disabled': !isValid }"
         @click="submit"
       >
         Send me the ebook
@@ -25,8 +34,12 @@
 </template>
 
 <script>
+import { email, maxLength, required } from 'vuelidate/lib/validators'
+import BaseInput from '@/components/core/forms/BaseInput'
+
 export default {
   name: 'ReadForm',
+  components: { BaseInput },
   data() {
     return {
       name: '',
@@ -34,8 +47,29 @@ export default {
     }
   },
 
+  validations: {
+    email: {
+      required,
+      email,
+    },
+
+    name: {
+      required,
+      maxLength: maxLength(100),
+    },
+
+    validationGroup: ['email', 'name'],
+  },
+
+  computed: {
+    isValid() {
+      return !this.$v.validationGroup.$invalid
+    },
+  },
+
   methods: {
     submit() {
+      if (!this.isValid) return
       this.$emit('submit', { name: this.name, email: this.email })
     },
   },
@@ -79,33 +113,56 @@ export default {
     align-items: flex-start;
     justify-content: flex-start;
 
-    input {
+    /deep/ .field-item {
       width: 100%;
-      padding: 12px 15px;
-      @include font('Inter', 16px, 400);
-      line-height: 24px;
-      letter-spacing: -0.4px;
-      color: #707072;
-      border-radius: 4px;
-      border: 1px solid #707072;
-      background-color: transparent;
-      margin-bottom: 16px;
-      box-sizing: border-box;
+
+      input {
+        width: 100%;
+        padding: 12px 15px;
+        @include font('Inter', 16px, 400);
+        color: #707072;
+        border-radius: 4px;
+        border: 1px solid #707072;
+        background-color: transparent;
+        box-sizing: border-box;
+      }
+
+      .v-placeholder-asterisk {
+        left: 17px !important;
+        top: 50% !important;
+        transform: translateY(-50%);
+        color: #707072;
+      }
     }
 
     button {
       width: auto;
       padding: 12px 15px;
-      @include font('Inter', 16px, 400);
+      @include font('Inter', 16px, 600);
       line-height: 20px;
       letter-spacing: -0.4px;
-      color: #707072;
+      color: #A0A0A1;
       border-radius: 4px;
       border: 1px solid #707072;
       background-color: transparent;
       cursor: pointer;
       margin-bottom: 16px;
       box-sizing: border-box;
+
+      &:active {
+        background-color: #eee;
+      }
+    }
+  }
+
+  &_btn {
+    &--disabled {
+      opacity: 0.7;
+      cursor: not-allowed !important;
+
+      &:active {
+        background-color: transparent !important;
+      }
     }
   }
 

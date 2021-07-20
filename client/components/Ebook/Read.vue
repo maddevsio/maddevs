@@ -1,10 +1,9 @@
 <template>
-  <section
-    id="read-online"
-    class="ebook-read"
-  >
+  <section class="ebook-read">
     <div class="container">
-      <h2>Read articles online</h2>
+      <h2 id="read-online-anchor">
+        Read articles online
+      </h2>
 
       <div class="ebook-read_cards">
         <ReadCard

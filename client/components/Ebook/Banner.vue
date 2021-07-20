@@ -18,7 +18,7 @@
               alt="arrow"
             >
           </UIButton>
-          <NuxtLink to="#read-online">
+          <NuxtLink to="#read-online-anchor">
             Read it online
           </NuxtLink>
         </div>

@@ -16,7 +16,7 @@ exports[`Banner component should render correctly with no data 1`] = `
           Download PDF
           <img src="@/assets/img/common/arrow-up-right.svg" alt="arrow">
         </uibutton-stub>
-        <nuxtlink-stub to="#read-online">
+        <nuxtlink-stub to="#read-online-anchor">
           Read it online
         </nuxtlink-stub>
       </div>
